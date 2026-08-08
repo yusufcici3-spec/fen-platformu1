@@ -1,4 +1,4 @@
-import multer from "multer";
+import multer, { FileFilterCallback } from "multer";
 import path from "path";
 import fs from "fs";
 import { ApiError } from "../utils/apiResponse";
@@ -33,10 +33,10 @@ function fileFilterFor(allowedMime: string[], readableTypes: string) {
   return (
     _req: unknown,
     file: Express.Multer.File,
-    cb: (error: Error | null, acceptFile: boolean) => void
+    cb: FileFilterCallback
   ) => {
     if (!allowedMime.includes(file.mimetype)) {
-      return cb(new ApiError(415, `Yalnızca ${readableTypes} dosyaları yüklenebilir.`), false);
+      return cb(new ApiError(415, `Yalnızca ${readableTypes} dosyaları yüklenebilir.`) as unknown as Error);
     }
     cb(null, true);
   };
