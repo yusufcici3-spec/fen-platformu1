@@ -1,0 +1,1093 @@
+// ============================================================================
+// ORTAOKUL FEN BİLİMLERİ EĞİTİM PLATFORMU - VERİTABANI ŞEMASI
+// Prisma ORM + PostgreSQL
+// ============================================================================
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../backend/src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ----------------------------------------------------------------------------
+// KULLANICI ROLLERİ VE KİMLİK DOĞRULAMA
+// ----------------------------------------------------------------------------
+
+enum RoleName {
+  STUDENT   // Öğrenci
+  TEACHER   // Öğretmen
+  ADMIN     // Yönetici
+  PARENT    // Veli (Aşama 5)
+}
+
+model Role {
+  id    String   @id @default(uuid())
+  name  RoleName @unique
+  users User[]
+
+  @@map("roles")
+}
+
+model User {
+  id            String   @id @default(uuid())
+  firstName     String   @map("first_name")
+  lastName      String   @map("last_name")
+  email         String   @unique
+  passwordHash  String   @map("password_hash")
+  avatarUrl     String?  @map("avatar_url")
+  isActive      Boolean  @default(true) @map("is_active")
+  isEmailVerified Boolean @default(false) @map("is_email_verified")
+
+  roleId String @map("role_id")
+  role   Role   @relation(fields: [roleId], references: [id])
+
+  classLevel Int? @map("class_level") // öğrenci ise 5,6,7,8
+
+  // ---- Aşama 4: oyunlaştırma (puan/seri) alanları ----
+  points          Int       @default(0) // oyun/görev/rozet ile kazanılan toplam puan
+  currentStreak   Int       @default(0) @map("current_streak") // ardışık aktif gün sayısı
+  longestStreak   Int       @default(0) @map("longest_streak")
+  lastActiveDate  DateTime? @map("last_active_date") // seri hesaplamak için son aktif gün
+
+  resetPasswordToken   String?   @map("reset_password_token")
+  resetPasswordExpires DateTime? @map("reset_password_expires")
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  progress      Progress[]
+  announcements Announcement[]  @relation("AnnouncementAuthor")
+  createdTopics Topic[]         @relation("TopicAuthor")
+  createdQuestions Question[]   @relation("QuestionAuthor")
+
+  // ---- Aşama 3: soru bankası ve deneme sistemi ilişkileri ----
+  favoriteQuestions FavoriteQuestion[]  @relation("UserFavoriteQuestions")
+  wrongQuestions    WrongQuestion[]     @relation("UserWrongQuestions")
+  examResults       StudentExamResult[] @relation("UserExamResults")
+
+  // ---- Aşama 4: oyun, laboratuvar, görev ve liderlik ilişkileri ----
+  gameScores           GameScore[]
+  gameAchievements     GameAchievement[]
+  labExperimentAttempts LabExperimentAttempt[]
+  dailyChallenges      DailyChallenge[]
+  wonWeeklyChallenges  WeeklyChallenge[]       @relation("WeeklyChallengeWinner")
+  leaderboardEntries   LeaderboardEntry[]
+
+  // ---- Aşama 5: yapay zekâ destekli kişiselleştirilmiş öğrenme ----
+  studyPlanItems     StudyPlanItem[]
+  weeklyGoals        WeeklyGoal[]
+  studyTimeLogs      StudyTimeLog[]
+  notifications      Notification[]
+  assignmentsCreated Assignment[]           @relation("AssignmentTeacher")
+  submissions        AssignmentSubmission[]
+  teacherNotesAbout  TeacherNote[]           @relation("TeacherNoteStudent")
+  teacherNotesWritten TeacherNote[]          @relation("TeacherNoteAuthor")
+  childLinks         ParentChild[]           @relation("ParentLinks")
+  parentLinks        ParentChild[]           @relation("ChildLinks")
+  assistantMessages  AssistantMessage[]
+
+  @@map("users")
+}
+
+// ----------------------------------------------------------------------------
+// EĞİTİM İÇERİK YAPISI: Sınıf -> Ünite -> Konu -> Soru
+// ----------------------------------------------------------------------------
+
+/// NOT: Proje şartnamesindeki "Grades" (Sınıf Seviyeleri) tablosu karşılığıdır.
+/// Aşama 1'de "Class" adıyla oluşturulduğu için isim bütünlüğünü bozmamak adına
+/// bu model korunmuş, MEB müfredat alanları buna bağlı olarak genişletilmiştir.
+model Class {
+  id    String @id @default(uuid())
+  level Int    @unique // 5, 6, 7, 8
+  name  String // "5. Sınıf"
+  slug  String @unique // "5-sinif"
+
+  units Unit[]
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("classes")
+}
+
+model Unit {
+  id          String  @id @default(uuid())
+  code        String? // MEB ünite kodu, ör: "5.1"
+  title       String
+  slug        String
+  description String?
+  order       Int     @default(0)
+
+  classId String @map("class_id")
+  class   Class  @relation(fields: [classId], references: [id], onDelete: Cascade)
+
+  topics Topic[]
+
+  // Aşama 3: bu üniteye bağlı "ünite denemesi" tipi sınavlar
+  exams Exam[]
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@unique([classId, slug])
+  @@map("units")
+}
+
+model Topic {
+  id          String  @id @default(uuid())
+  title       String
+  slug        String
+  summary     String?
+  content     String? @db.Text
+  coverImage  String? @map("cover_image")
+  order       Int     @default(0)
+  isPublished Boolean @default(false) @map("is_published")
+
+  unitId String @map("unit_id")
+  unit   Unit   @relation(fields: [unitId], references: [id], onDelete: Cascade)
+
+  authorId String? @map("author_id")
+  author   User?   @relation("TopicAuthor", fields: [authorId], references: [id])
+
+  questions Question[]
+  progress  Progress[]
+
+  // Aşama 3: bu konuya bağlı "konu denemesi" tipi sınavlar
+  exams Exam[]
+
+  // ---- Aşama 2: MEB müfredat zenginleştirme ilişkileri ----
+  learningOutcomes LearningOutcome[]
+  contents         TopicContent[]
+  images           TopicImage[]
+  videos           TopicVideo[]
+  pdfs             TopicPDF[]
+  experiments      Experiment[]
+  glossaryTerms    GlossaryTerm[]
+
+  // ---- Aşama 4: oyun, simülasyon ve sanal laboratuvar ilişkileri ----
+  games           Game[]
+  simulations     Simulation[]
+  labExperiments  LabExperiment[]
+
+  // ---- Aşama 5: çalışma planı ve ödev ilişkileri ----
+  studyPlanItems StudyPlanItem[]
+  assignments    Assignment[]
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@unique([unitId, slug])
+  @@map("topics")
+}
+
+// ----------------------------------------------------------------------------
+// AŞAMA 2: MEB FEN BİLİMLERİ MÜFREDATI VE KONU ZENGİNLEŞTİRME
+// ----------------------------------------------------------------------------
+
+/// Kazanımlar (ör. "F.5.1.1. Güneş sistemindeki gezegenleri sıralar.")
+model LearningOutcome {
+  id          String  @id @default(uuid())
+  code        String? // MEB kazanım kodu, ör: "F.5.1.1"
+  description String  @db.Text
+  order       Int     @default(0)
+
+  topicId String @map("topic_id")
+  topic   Topic  @relation(fields: [topicId], references: [id], onDelete: Cascade)
+
+  // Aşama 3: bu kazanıma bağlı sorular
+  questions Question[]
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("learning_outcomes")
+}
+
+/// Konu anlatımı içindeki bölüm tipi.
+enum ContentBlockType {
+  EXPLANATION    // Konu anlatımı
+  IMPORTANT_INFO // Önemli bilgiler
+  DAILY_LIFE     // Günlük yaşam örnekleri
+}
+
+/// Bir konunun zengin metin editörüyle oluşturulmuş içerik blokları.
+/// Her konu; anlatım, önemli bilgiler ve günlük yaşam örnekleri gibi
+/// birden fazla bloktan oluşabilir; bloklar `order` alanına göre sıralanır.
+model TopicContent {
+  id       String           @id @default(uuid())
+  type     ContentBlockType @default(EXPLANATION)
+  title    String?
+  bodyHtml String           @map("body_html") @db.Text // zengin metin editöründen gelen HTML
+  order    Int              @default(0)
+
+  topicId String @map("topic_id")
+  topic   Topic  @relation(fields: [topicId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("topic_contents")
+}
+
+/// Konuya ait görseller (galeri).
+model TopicImage {
+  id      String  @id @default(uuid())
+  url     String
+  caption String?
+  order   Int     @default(0)
+
+  topicId String @map("topic_id")
+  topic   Topic  @relation(fields: [topicId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("topic_images")
+}
+
+enum VideoSource {
+  YOUTUBE
+  UPLOAD
+}
+
+/// Konuya ait videolar (YouTube bağlantısı veya yüklenen dosya).
+model TopicVideo {
+  id     String      @id @default(uuid())
+  title  String
+  source VideoSource @default(YOUTUBE)
+  url    String      // YouTube linki ya da /uploads/videos/... yolu
+  order  Int         @default(0)
+
+  topicId String @map("topic_id")
+  topic   Topic  @relation(fields: [topicId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("topic_videos")
+}
+
+/// Konuya ait PDF konu özetleri.
+model TopicPDF {
+  id    String @id @default(uuid())
+  title String
+  url   String // /uploads/pdfs/... yolu
+  order Int    @default(0)
+
+  topicId String @map("topic_id")
+  topic   Topic  @relation(fields: [topicId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("topic_pdfs")
+}
+
+/// Konuya bağlı deneyler.
+model Experiment {
+  id           String  @id @default(uuid())
+  title        String
+  materials    String  @db.Text // malzemeler, satır satır
+  steps        String  @db.Text // adımlar, satır satır
+  safetyNotes  String? @db.Text @map("safety_notes")
+  videoUrl     String? @map("video_url")
+  order        Int     @default(0)
+
+  topicId String @map("topic_id")
+  topic   Topic  @relation(fields: [topicId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("experiments")
+}
+
+/// Konuya özgü kavramlar / terimler sözlüğü.
+model GlossaryTerm {
+  id         String @id @default(uuid())
+  term       String
+  definition String @db.Text
+  order      Int    @default(0)
+
+  topicId String @map("topic_id")
+  topic   Topic  @relation(fields: [topicId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("glossary_terms")
+}
+
+// ----------------------------------------------------------------------------
+// SORU BANKASI (Aşama 1 temel alanlar + Aşama 3 zenginleştirme)
+// ----------------------------------------------------------------------------
+
+/// Desteklenen soru tipleri. "Görselli" ve "senaryolu" sorular ayrı bir tip
+/// değil; ilgili Question kaydına görsel eklenmesi (QuestionImage) veya
+/// `isScenario` bayrağının işaretlenmesiyle elde edilir.
+enum QuestionType {
+  MULTIPLE_CHOICE // Çoktan seçmeli
+  TRUE_FALSE      // Doğru / Yanlış
+  FILL_BLANK      // Boşluk doldurma
+  MATCHING        // Eşleştirme
+  OPEN_ENDED      // Açık uçlu
+  DRAG_DROP       // Sürükle bırak
+  INTERACTIVE     // İnteraktif (öğrenci tarafında özel bileşenle çözülür)
+}
+
+enum Difficulty {
+  EASY
+  MEDIUM
+  HARD
+}
+
+/// Soruları biçim/beceri açısından gruplamak için kullanılan serbest kategori
+/// (ör. "Yeni Nesil", "LGS Tipi", "Kavrama", "Analiz"). Müfredat organizasyonu
+/// (sınıf/ünite/konu/kazanım) zaten Topic/Unit/LearningOutcome ile sağlanır;
+/// bu tablo ek, çapraz bir sınıflandırma sağlar.
+model QuestionCategory {
+  id          String  @id @default(uuid())
+  name        String  @unique
+  slug        String  @unique
+  description String?
+
+  questions Question[]
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("question_categories")
+}
+
+/// Soru etiketleri (çoktan-çoğa). Arama/filtreleme için kullanılır.
+model QuestionTag {
+  id   String @id @default(uuid())
+  name String @unique
+  slug String @unique
+
+  questions Question[]
+
+  @@map("question_tags")
+}
+
+model Question {
+  id            String       @id @default(uuid())
+  type          QuestionType @default(MULTIPLE_CHOICE)
+  body          String       @db.Text
+  options       Json?        // Aşama 1 uyumluluğu için korunan basit format; yeni sorular QuestionOption kullanır
+  correctAnswer String       @map("correct_answer")
+  explanation   String?      @db.Text // kısa açıklama (ayrıntılı çözüm için QuestionSolution kullanılır)
+  difficulty    Difficulty   @default(MEDIUM)
+  points        Int          @default(10)
+  estimatedTimeSec Int?      @map("estimated_time_sec") // tahmini çözüm süresi (saniye)
+  isScenario    Boolean      @default(false) @map("is_scenario")
+  isNextGen     Boolean      @default(false) @map("is_next_gen") // yeni nesil beceri temelli
+  isActive      Boolean      @default(true) @map("is_active")
+
+  topicId String @map("topic_id")
+  topic   Topic  @relation(fields: [topicId], references: [id], onDelete: Cascade)
+
+  categoryId String?           @map("category_id")
+  category   QuestionCategory? @relation(fields: [categoryId], references: [id])
+
+  learningOutcomeId String?          @map("learning_outcome_id")
+  learningOutcome   LearningOutcome? @relation(fields: [learningOutcomeId], references: [id])
+
+  authorId String? @map("author_id")
+  author   User?   @relation("QuestionAuthor", fields: [authorId], references: [id])
+
+  tags QuestionTag[]
+
+  images    QuestionImage[]
+  choiceOptions QuestionOption[]
+  solution  QuestionSolution?
+
+  examQuestions    ExamQuestion[]
+  studentAnswers   StudentAnswer[]
+  favoritedBy      FavoriteQuestion[]
+  wrongFor         WrongQuestion[]
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("questions")
+}
+
+/// Soruya ait görseller (görselli sorular ve şık görselleri için).
+model QuestionImage {
+  id      String  @id @default(uuid())
+  url     String
+  caption String?
+  order   Int     @default(0)
+
+  questionId String   @map("question_id")
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("question_images")
+}
+
+/// Çoktan seçmeli / eşleştirme / sürükle-bırak şıkları için yapılandırılmış
+/// seçenek kaydı. `matchText`, eşleştirme sorularında şıkkın karşılık geldiği
+/// ikinci öğeyi tutar (ör. "Merkür" ↔ "En küçük gezegen").
+model QuestionOption {
+  id         String  @id @default(uuid())
+  text       String
+  imageUrl   String? @map("image_url")
+  matchText  String? @map("match_text")
+  isCorrect  Boolean @default(false) @map("is_correct")
+  order      Int     @default(0)
+
+  questionId String   @map("question_id")
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  studentAnswers StudentAnswer[]
+
+  @@map("question_options")
+}
+
+/// Sorunun ayrıntılı çözümü (adım adım anlatım + opsiyonel çözüm videosu).
+model QuestionSolution {
+  id              String  @id @default(uuid())
+  explanationHtml String  @db.Text @map("explanation_html")
+  videoUrl        String? @map("video_url")
+
+  questionId String   @unique @map("question_id")
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("question_solutions")
+}
+
+/// Öğrencinin favorilerine eklediği sorular.
+model FavoriteQuestion {
+  id String @id @default(uuid())
+
+  userId String @map("user_id")
+  user   User   @relation("UserFavoriteQuestions", fields: [userId], references: [id], onDelete: Cascade)
+
+  questionId String   @map("question_id")
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@unique([userId, questionId])
+  @@map("favorite_questions")
+}
+
+/// Öğrencinin yanlış yaptığı sorular (tekrar çözüm listesi için birikimli sayaç).
+model WrongQuestion {
+  id String @id @default(uuid())
+
+  userId String @map("user_id")
+  user   User   @relation("UserWrongQuestions", fields: [userId], references: [id], onDelete: Cascade)
+
+  questionId String   @map("question_id")
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  wrongCount  Int      @default(1) @map("wrong_count")
+  lastWrongAt DateTime @default(now()) @map("last_wrong_at")
+  resolved    Boolean  @default(false) // öğrenci sonradan doğru çözdüyse true
+
+  @@unique([userId, questionId])
+  @@map("wrong_questions")
+}
+
+// ----------------------------------------------------------------------------
+// DENEME SINAVLARI (Aşama 3: tip, deneme oturumu, otomatik puanlama)
+// ----------------------------------------------------------------------------
+
+enum ExamType {
+  TOPIC   // Konu denemesi
+  UNIT    // Ünite denemesi
+  GENERAL // Genel deneme
+  LGS     // LGS tarzı deneme
+}
+
+model Exam {
+  id          String   @id @default(uuid())
+  title       String
+  description String?
+  type        ExamType @default(GENERAL)
+  classLevel  Int      @map("class_level")
+  durationMin Int      @default(40) @map("duration_min")
+  isPublished Boolean  @default(false) @map("is_published")
+
+  // type=TOPIC ise topicId, type=UNIT ise unitId doldurulur (ikisi de opsiyonel)
+  topicId String? @map("topic_id")
+  topic   Topic?  @relation(fields: [topicId], references: [id])
+
+  unitId String? @map("unit_id")
+  unit   Unit?   @relation(fields: [unitId], references: [id])
+
+  examQuestions ExamQuestion[]
+  results       StudentExamResult[]
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("exams")
+}
+
+model ExamQuestion {
+  id    String @id @default(uuid())
+  order Int    @default(0)
+
+  examId String @map("exam_id")
+  exam   Exam   @relation(fields: [examId], references: [id], onDelete: Cascade)
+
+  questionId String   @map("question_id")
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@unique([examId, questionId])
+  @@map("exam_questions")
+}
+
+/// Bir öğrencinin bir denemeyi çözme oturumu (deneme "sonucu" bu kayıtla temsil edilir).
+model StudentExamResult {
+  id String @id @default(uuid())
+
+  userId String @map("user_id")
+  user   User   @relation("UserExamResults", fields: [userId], references: [id], onDelete: Cascade)
+
+  examId String @map("exam_id")
+  exam   Exam   @relation(fields: [examId], references: [id], onDelete: Cascade)
+
+  startedAt  DateTime  @default(now()) @map("started_at")
+  finishedAt DateTime? @map("finished_at")
+
+  correctCount    Int   @default(0) @map("correct_count")
+  wrongCount      Int   @default(0) @map("wrong_count")
+  blankCount      Int   @default(0) @map("blank_count")
+  totalScore      Int   @default(0) @map("total_score")
+  successPercent  Float @default(0) @map("success_percent")
+
+  answers StudentAnswer[]
+
+  @@map("student_exam_results")
+}
+
+/// Bir deneme oturumu içindeki tek bir soruya verilen cevap.
+model StudentAnswer {
+  id String @id @default(uuid())
+
+  resultId String            @map("result_id")
+  result   StudentExamResult @relation(fields: [resultId], references: [id], onDelete: Cascade)
+
+  questionId String   @map("question_id")
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  selectedOptionId String?         @map("selected_option_id")
+  selectedOption   QuestionOption? @relation(fields: [selectedOptionId], references: [id])
+
+  answerText String? @db.Text @map("answer_text") // boşluk doldurma / açık uçlu serbest metin
+
+  isCorrect Boolean? @map("is_correct") // null = henüz değerlendirilmedi (ör. açık uçlu)
+
+  answeredAt DateTime @default(now()) @map("answered_at")
+
+  @@unique([resultId, questionId])
+  @@map("student_answers")
+}
+
+// ----------------------------------------------------------------------------
+// AŞAMA 4: EĞİTSEL OYUNLAR
+// ----------------------------------------------------------------------------
+
+/// Desteklenen 10 eğitsel oyun türü.
+enum GameType {
+  QUIZ                 // Fen Bilgisi Yarışması
+  MATCHING              // Kavram Eşleştirme
+  MEMORY                // Hafıza Kartları
+  WORD_SEARCH           // Kelime Avı
+  HANGMAN                // Adam Asmaca
+  DRAG_DROP              // Sürükle-Bırak Etkinlikleri
+  TRUE_FALSE_MARATHON    // Doğru-Yanlış Maratonu
+  WHEEL_OF_FORTUNE       // Çarkıfelek
+  SCIENCE_ADVENTURE      // Bilim Macerası
+  BADGE_HUNT             // Rozet Avı
+}
+
+model Game {
+  id          String   @id @default(uuid())
+  title       String
+  slug        String   @unique
+  description String?
+  instructions String? @db.Text
+  type        GameType @default(QUIZ)
+  classLevel  Int?     @map("class_level")
+  thumbnail   String?
+  hasSound    Boolean  @default(true) @map("has_sound")
+  isPublished Boolean  @default(false) @map("is_published")
+  config      Json?    // oyuna özel ayarlar (ör. kelime listesi kaynağı, tur sayısı)
+
+  topicId String? @map("topic_id")
+  topic   Topic?  @relation(fields: [topicId], references: [id])
+
+  levels       GameLevel[]
+  scores       GameScore[]
+  achievements GameAchievement[]
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("games")
+}
+
+/// Bir oyunun seviye tanımları (zorluk artışı, süre limiti, kilit açma eşiği).
+model GameLevel {
+  id               String     @id @default(uuid())
+  levelNumber      Int        @map("level_number")
+  title            String
+  difficulty       Difficulty @default(MEDIUM)
+  timeLimitSec     Int?       @map("time_limit_sec")
+  minScoreToUnlock Int        @default(0) @map("min_score_to_unlock")
+  config           Json?
+  order            Int        @default(0)
+
+  gameId String @map("game_id")
+  game   Game   @relation(fields: [gameId], references: [id], onDelete: Cascade)
+
+  scores GameScore[]
+
+  @@unique([gameId, levelNumber])
+  @@map("game_levels")
+}
+
+/// Bir öğrencinin bir oyun oturumunu bitirdiğinde kaydedilen skor.
+model GameScore {
+  id           String   @id @default(uuid())
+  score        Int
+  correctCount Int      @default(0) @map("correct_count")
+  wrongCount   Int      @default(0) @map("wrong_count")
+  durationSec  Int?     @map("duration_sec")
+  playedAt     DateTime @default(now()) @map("played_at")
+
+  userId String @map("user_id")
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  gameId String @map("game_id")
+  game   Game   @relation(fields: [gameId], references: [id], onDelete: Cascade)
+
+  levelId String?    @map("level_id")
+  level   GameLevel? @relation(fields: [levelId], references: [id])
+
+  @@map("game_scores")
+}
+
+/// Bir kullanıcının kazandığı rozet kaydı (oyun, görev, seri veya haftalık
+/// etkinlik kaynaklı olabilir). Rozet kataloğu `Badge` tablosunda tutulur.
+model GameAchievement {
+  id     String @id @default(uuid())
+  source String // "game" | "daily_challenge" | "weekly_challenge" | "streak" | "exam"
+
+  userId String @map("user_id")
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  badgeId String @map("badge_id")
+  badge   Badge  @relation(fields: [badgeId], references: [id])
+
+  gameId String? @map("game_id")
+  game   Game?   @relation(fields: [gameId], references: [id])
+
+  earnedAt DateTime @default(now()) @map("earned_at")
+
+  @@unique([userId, badgeId])
+  @@map("game_achievements")
+}
+
+// ----------------------------------------------------------------------------
+// AŞAMA 4: SANAL LABORATUVAR
+// ----------------------------------------------------------------------------
+
+/// Etkileşimli simülasyon kataloğu. `componentKey`, frontend'de hangi React
+/// simülasyon bileşeninin render edileceğini belirler (ör. "circuit-builder").
+model Simulation {
+  id           String  @id @default(uuid())
+  slug         String  @unique
+  title        String
+  description  String? @db.Text
+  componentKey String  @map("component_key")
+  thumbnail    String?
+  classLevel   Int?    @map("class_level")
+  isPublished  Boolean @default(false) @map("is_published")
+  order        Int     @default(0)
+
+  topicId String? @map("topic_id")
+  topic   Topic?  @relation(fields: [topicId], references: [id])
+
+  labExperiments LabExperiment[]
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("simulations")
+}
+
+/// Sanal laboratuvar deneyi: amaç, malzemeler, adımlar, sonuç/açıklama ve
+/// güvenlik uyarıları içeren yapılandırılmış deney kaydı.
+model LabExperiment {
+  id                String  @id @default(uuid())
+  slug              String  @unique
+  title             String
+  purpose           String  @db.Text @map("purpose") // Amaç
+  materials         String  @db.Text // Gerekli malzemeler
+  steps             String  @db.Text // Deney adımları
+  resultExplanation String  @db.Text @map("result_explanation") // Sonuç ve açıklama
+  safetyWarnings    String  @db.Text @map("safety_warnings") // Güvenlik uyarıları
+  classLevel        Int     @map("class_level")
+  isPublished       Boolean @default(false) @map("is_published")
+  order             Int     @default(0)
+
+  simulationId String?     @map("simulation_id")
+  simulation   Simulation? @relation(fields: [simulationId], references: [id])
+
+  topicId String? @map("topic_id")
+  topic   Topic?  @relation(fields: [topicId], references: [id])
+
+  attempts LabExperimentAttempt[]
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("lab_experiments")
+}
+
+/// Bir öğrencinin bir sanal deneyi tamamladığı her seferin kaydı
+/// ("Simülasyon geçmişi" ve "Deney başarıları" için).
+model LabExperimentAttempt {
+  id          String   @id @default(uuid())
+  completedAt DateTime @default(now()) @map("completed_at")
+  notes       String?  @db.Text
+
+  userId String @map("user_id")
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  labExperimentId String        @map("lab_experiment_id")
+  labExperiment   LabExperiment @relation(fields: [labExperimentId], references: [id], onDelete: Cascade)
+
+  @@map("lab_experiment_attempts")
+}
+
+// ----------------------------------------------------------------------------
+// AŞAMA 4: GÜNLÜK GÖREVLER VE HAFTALIK ETKİNLİKLER
+// ----------------------------------------------------------------------------
+
+enum DailyChallengeType {
+  SOLVE_QUESTIONS  // 10 soru çöz
+  COMPLETE_TOPIC   // 1 konu tamamla
+  DO_EXPERIMENT    // 1 deney yap
+  FINISH_GAME      // 1 oyun bitir
+}
+
+/// Bir kullanıcı için o güne özel otomatik oluşturulan görev.
+/// İlk erişimde `getOrCreateTodayChallenges` ile 4 görev birden üretilir.
+model DailyChallenge {
+  id            String             @id @default(uuid())
+  date          DateTime           @db.Date
+  type          DailyChallengeType
+  targetCount   Int                @map("target_count")
+  currentCount  Int                @default(0) @map("current_count")
+  rewardPoints  Int                @default(10) @map("reward_points")
+  isCompleted   Boolean            @default(false) @map("is_completed")
+  completedAt   DateTime?          @map("completed_at")
+
+  userId String @map("user_id")
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@unique([userId, date, type])
+  @@map("daily_challenges")
+}
+
+/// Haftalık turnuva/etkinlik tanımı (sınıf bazlı). Hafta sonunda
+/// `finalize` işlemiyle o haftanın en yüksek puanlı öğrencisi
+/// ("Haftanın Bilim İnsanı") belirlenip rozet verilir.
+model WeeklyChallenge {
+  id          String   @id @default(uuid())
+  weekStart   DateTime @db.Date @map("week_start")
+  weekEnd     DateTime @db.Date @map("week_end")
+  classLevel  Int      @map("class_level")
+  title       String
+  description String?
+  isFinalized Boolean  @default(false) @map("is_finalized")
+
+  winnerUserId String? @map("winner_user_id")
+  winner       User?   @relation("WeeklyChallengeWinner", fields: [winnerUserId], references: [id])
+  winnerScore  Int?    @map("winner_score")
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@unique([weekStart, classLevel])
+  @@map("weekly_challenges")
+}
+
+/// Liderlik tablosu anlık görünümü/geçmişi. Genel ve oyun bazlı sıralamalar
+/// canlı sorgulanır; bu tablo özellikle haftalık sonuçların kalıcı
+/// arşivlenmesi için kullanılır (bkz. WeeklyChallenge.finalize).
+enum LeaderboardScope {
+  WEEKLY
+  ALL_TIME
+}
+
+model LeaderboardEntry {
+  id         String           @id @default(uuid())
+  scope      LeaderboardScope
+  classLevel Int              @map("class_level")
+  periodKey  String?          @map("period_key") // ör. "2026-W05"; ALL_TIME için null
+  totalScore Int              @map("total_score")
+  rank       Int
+
+  userId String @map("user_id")
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@unique([scope, classLevel, periodKey, userId])
+  @@map("leaderboard_entries")
+}
+
+// ----------------------------------------------------------------------------
+// ROZETLER VE İLERLEME
+// ----------------------------------------------------------------------------
+
+model Badge {
+  id          String  @id @default(uuid())
+  title       String
+  description String?
+  icon        String?
+  criteria    Json?
+
+  achievements GameAchievement[]
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("badges")
+}
+
+model Progress {
+  id           String   @id @default(uuid())
+  userId       String   @map("user_id")
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  topicId      String   @map("topic_id")
+  topic        Topic    @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  completion   Int      @default(0) // yüzde 0-100
+  score        Int      @default(0)
+  lastActivity DateTime @default(now()) @map("last_activity")
+
+  @@unique([userId, topicId])
+  @@map("progress")
+}
+
+// ----------------------------------------------------------------------------
+// DUYURULAR
+// ----------------------------------------------------------------------------
+
+model Announcement {
+  id      String  @id @default(uuid())
+  title   String
+  content String  @db.Text
+  isPinned Boolean @default(false) @map("is_pinned")
+
+  // Aşama 5: öğretmenin belirli bir sınıfa veya tek bir öğrenciye duyuru göndermesi için
+  classLevel   Int?    @map("class_level")
+  targetUserId String? @map("target_user_id")
+
+  authorId String? @map("author_id")
+  author   User?   @relation("AnnouncementAuthor", fields: [authorId], references: [id])
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("announcements")
+}
+
+// ----------------------------------------------------------------------------
+// AŞAMA 5: YAPAY ZEKÂ DESTEKLİ KİŞİSELLEŞTİRİLMİŞ ÖĞRENME
+// ----------------------------------------------------------------------------
+
+/// Veli-öğrenci bağlantısı (bir veli birden fazla çocuğu takip edebilir).
+model ParentChild {
+  id String @id @default(uuid())
+
+  parentId String @map("parent_id")
+  parent   User   @relation("ParentLinks", fields: [parentId], references: [id], onDelete: Cascade)
+
+  childId String @map("child_id")
+  child   User   @relation("ChildLinks", fields: [childId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@unique([parentId, childId])
+  @@map("parent_child_links")
+}
+
+enum StudyPlanItemType {
+  TOPIC_REVIEW      // konu tekrarı
+  QUESTION_PRACTICE // soru pratiği
+  EXAM              // deneme
+  EXPERIMENT        // sanal deney
+  GAME              // eğitsel oyun
+}
+
+/// Yapay zekâ (kural tabanlı) motorun oluşturduğu günlük çalışma planı öğesi.
+model StudyPlanItem {
+  id          String            @id @default(uuid())
+  date        DateTime          @db.Date
+  type        StudyPlanItemType
+  title       String
+  description String?
+  estimatedMinutes Int          @default(15) @map("estimated_minutes")
+  isCompleted Boolean           @default(false) @map("is_completed")
+  completedAt DateTime?         @map("completed_at")
+  order       Int               @default(0)
+
+  userId String @map("user_id")
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  topicId String? @map("topic_id")
+  topic   Topic?  @relation(fields: [topicId], references: [id])
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("study_plan_items")
+}
+
+/// Haftalık öğrenme hedefleri (AI tarafından önerilir, gerçekleşen değerlerle karşılaştırılır).
+model WeeklyGoal {
+  id String @id @default(uuid())
+
+  weekStart DateTime @db.Date @map("week_start")
+
+  targetQuestions Int @default(50) @map("target_questions")
+  targetTopics    Int @default(2) @map("target_topics")
+  targetMinutes   Int @default(150) @map("target_minutes")
+
+  achievedQuestions Int @default(0) @map("achieved_questions")
+  achievedTopics    Int @default(0) @map("achieved_topics")
+  achievedMinutes   Int @default(0) @map("achieved_minutes")
+
+  userId String @map("user_id")
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@unique([userId, weekStart])
+  @@map("weekly_goals")
+}
+
+/// Günlük çalışma süresi kaydı ("Ortalama soru çözme süresi", "çalışma süresi" analizleri için).
+model StudyTimeLog {
+  id      String   @id @default(uuid())
+  date    DateTime @db.Date
+  minutes Int
+  source  String   // "question" | "exam" | "game" | "experiment" | "topic"
+
+  userId String @map("user_id")
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("study_time_logs")
+}
+
+enum NotificationType {
+  DAILY_REMINDER    // günlük çalışma hatırlatması
+  INCOMPLETE_TASK   // tamamlanmayan görev
+  NEW_EXAM          // yeni deneme
+  NEW_TOPIC         // yeni konu içeriği
+  BADGE_EARNED      // kazanılan rozet
+  WEEKLY_SUMMARY    // haftalık başarı özeti
+  TEACHER_NOTE      // öğretmen notu (veliye)
+  ASSIGNMENT        // yeni ödev
+  ANNOUNCEMENT      // duyuru
+}
+
+/// Uygulama içi bildirim kaydı (e-posta/push entegrasyonu olmadan da çalışan temel katman).
+model Notification {
+  id      String           @id @default(uuid())
+  type    NotificationType
+  title   String
+  message String
+  relatedUrl String?       @map("related_url")
+  isRead  Boolean          @default(false) @map("is_read")
+
+  userId String @map("user_id")
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("notifications")
+}
+
+/// Öğretmenin bir sınıfa verdiği ödev.
+model Assignment {
+  id          String    @id @default(uuid())
+  title       String
+  description String?   @db.Text
+  classLevel  Int       @map("class_level")
+  dueDate     DateTime  @map("due_date")
+
+  teacherId String @map("teacher_id")
+  teacher   User   @relation("AssignmentTeacher", fields: [teacherId], references: [id])
+
+  topicId String? @map("topic_id")
+  topic   Topic?  @relation(fields: [topicId], references: [id])
+
+  submissions AssignmentSubmission[]
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("assignments")
+}
+
+/// Bir öğrencinin bir ödevi tamamlama durumu.
+model AssignmentSubmission {
+  id          String    @id @default(uuid())
+  isCompleted Boolean   @default(false) @map("is_completed")
+  completedAt DateTime? @map("completed_at")
+  note        String?   @db.Text
+
+  assignmentId String     @map("assignment_id")
+  assignment   Assignment @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
+
+  studentId String @map("student_id")
+  student   User   @relation(fields: [studentId], references: [id], onDelete: Cascade)
+
+  @@unique([assignmentId, studentId])
+  @@map("assignment_submissions")
+}
+
+/// Öğretmenin bir öğrenci hakkında yazdığı, veli panelinde görünen not.
+model TeacherNote {
+  id   String @id @default(uuid())
+  note String @db.Text
+
+  teacherId String @map("teacher_id")
+  teacher   User   @relation("TeacherNoteAuthor", fields: [teacherId], references: [id])
+
+  studentId String @map("student_id")
+  student   User   @relation("TeacherNoteStudent", fields: [studentId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("teacher_notes")
+}
+
+/// Yapay zekâ destekli yardımcı ile yapılan sohbet geçmişi.
+model AssistantMessage {
+  id       String  @id @default(uuid())
+  role     String  // "user" | "assistant"
+  content  String  @db.Text
+  questionId String? @map("question_id") // ilgili soru varsa bağlamı korumak için
+
+  userId String @map("user_id")
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("assistant_messages")
+}

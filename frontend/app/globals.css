@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --grid-line: rgba(11, 27, 51, 0.06);
+}
+
+.dark {
+  --grid-line: rgba(241, 247, 244, 0.06);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-lab-paper text-lab-ink dark:bg-lab-ink dark:text-lab-paper font-body antialiased transition-colors duration-300;
+}
+
+::selection {
+  @apply bg-beaker/30;
+}
+
+/* Erişilebilirlik: klavye odağı her zaman görünür olsun */
+:focus-visible {
+  outline: 2px solid theme("colors.beaker.DEFAULT");
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.grid-paper-bg {
+  background-image: linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
