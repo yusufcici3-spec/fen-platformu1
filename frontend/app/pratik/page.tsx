@@ -3,7 +3,7 @@
 import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { PageHeader } from "@/components/ui/PageHeader";
-import { PracticeSession } from "../../components/questions/PracticeSession";
+import PracticeSession from "../../components/questions/PracticeSession";
 
 export default function PracticePage() {
   return (
