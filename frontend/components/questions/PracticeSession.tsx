@@ -1,49 +1,36 @@
 "use client";
 
-import { Suspense } from "react";
-import { useSearchParams } from "next/navigation";
-import { PageHeader } from "@/components/ui/PageHeader";
-import { PracticeSession } from "@/components/questions/PracticeSession";
-
-export default function PracticePage() {
-  return (
-    <Suspense fallback={<div>Yükleniyor...</div>}>
-      <PracticeContent />
-    </Suspense>
-  );
+// 1. PracticePage'den gönderdiğin verilerin tiplerini tanımlıyoruz
+export interface PracticeScope {
+  topicId?: string;
+  unitId?: string;
+  classLevel?: number;
+  title?: string;
 }
 
-function PracticeContent() {
-  const params = useSearchParams();
+export interface PracticeSessionProps {
+  scope?: PracticeScope;
+}
 
-  const topicId = params.get("topicId") ?? undefined;
-  const unitId = params.get("unitId") ?? undefined;
-
-  const classLevelParam = params.get("classLevel");
-  const classLevel = classLevelParam
-    ? Number(classLevelParam)
-    : undefined;
-
-  const title = params.get("title") ?? "Soru Çöz";
+// 2. Bileşen fonksiyonu
+export function PracticeSession({ scope }: PracticeSessionProps) {
+  // Gelen verileri scope içinden çekebilirsin:
+  const { topicId, unitId, classLevel, title } = scope || {};
 
   return (
-    <>
-      <PageHeader
-        eyebrow="Pratik Modu"
-        title={title}
-        description="Soruları tek tek çöz, anında geri bildirim al."
-      />
+    <div className="space-y-4 rounded-lg border p-6 bg-card text-card-foreground shadow-sm">
+      <h2 className="text-xl font-semibold">
+        {title ?? "Pratik Oturumu"}
+      </h2>
+      
+      {/* Test/Geliştirme amaçlı gelen değerleri kontrol etmek istersen: */}
+      <div className="text-sm text-muted-foreground space-y-1">
+        {topicId && <p>Konu ID: {topicId}</p>}
+        {unitId && <p>Ünite ID: {unitId}</p>}
+        {classLevel && <p>Sınıf Düzeyi: {classLevel}. Sınıf</p>}
+      </div>
 
-      <section className="mx-auto max-w-2xl px-4 py-10 sm:px-6 lg:px-8">
-        <PracticeSession
-          scope={{
-            topicId,
-            unitId,
-            classLevel,
-            title,
-          }}
-        />
-      </section>
-    </>
+      {/* Soru çözme mantığı ve component kodların buraya gelecek */}
+    </div>
   );
 }
