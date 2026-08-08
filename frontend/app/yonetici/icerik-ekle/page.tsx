@@ -64,7 +64,6 @@ export default function IcerikEklePage() {
     <CurriculumShell title="Yeni İçerik & Soru Ekle">
       <Card className="max-w-2xl mx-auto p-6">
         <form onSubmit={handleSubmit} className="space-y-6">
-          {/* Sınıf Seçimi */}
           <div>
             <label className="block text-sm font-medium mb-2">Sınıf Düzeyi</label>
             <div className="flex gap-3">
@@ -85,7 +84,6 @@ export default function IcerikEklePage() {
             </div>
           </div>
 
-          {/* Ünite & Konu */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium mb-1">Ünite Adı</label>
@@ -111,7 +109,6 @@ export default function IcerikEklePage() {
             </div>
           </div>
 
-          {/* Soru Metni */}
           <div>
             <label className="block text-sm font-medium mb-1">Soru Metni / Kazanım Detayı</label>
             <textarea
@@ -124,7 +121,6 @@ export default function IcerikEklePage() {
             />
           </div>
 
-          {/* Şıklar */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div>
               <label className="block text-xs font-semibold mb-1">A Şıkkı</label>
@@ -168,7 +164,6 @@ export default function IcerikEklePage() {
             </div>
           </div>
 
-          {/* Doğru Cevap */}
           <div>
             <label className="block text-sm font-medium mb-1">Doğru Cevap</label>
             <select
@@ -183,7 +178,6 @@ export default function IcerikEklePage() {
             </select>
           </div>
 
-          {/* Bildirim Mesajı */}
           {message && (
             <div
               className={`p-3 rounded-lg text-sm ${
@@ -196,7 +190,6 @@ export default function IcerikEklePage() {
             </div>
           )}
 
-          {/* Kaydet Butonu */}
           <button
             type="submit"
             disabled={isSubmitting}
