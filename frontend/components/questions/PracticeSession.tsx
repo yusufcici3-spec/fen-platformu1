@@ -1,6 +1,6 @@
 "use client";
 
-// 1. PracticePage'den gönderdiğin verilerin tiplerini tanımlıyoruz
+// 1. Tip Tanımlamaları
 export interface PracticeScope {
   topicId?: string;
   unitId?: string;
@@ -12,9 +12,8 @@ export interface PracticeSessionProps {
   scope?: PracticeScope;
 }
 
-// 2. Bileşen fonksiyonu
-export function PracticeSession({ scope }: PracticeSessionProps) {
-  // Gelen verileri scope içinden çekebilirsin:
+// 2. Bileşen (Default Export)
+export default function PracticeSession({ scope }: PracticeSessionProps) {
   const { topicId, unitId, classLevel, title } = scope || {};
 
   return (
@@ -22,15 +21,15 @@ export function PracticeSession({ scope }: PracticeSessionProps) {
       <h2 className="text-xl font-semibold">
         {title ?? "Pratik Oturumu"}
       </h2>
-      
-      {/* Test/Geliştirme amaçlı gelen değerleri kontrol etmek istersen: */}
+
+      {/* Test / Geliştirme amaçlı verileri görmek istersen: */}
       <div className="text-sm text-muted-foreground space-y-1">
         {topicId && <p>Konu ID: {topicId}</p>}
         {unitId && <p>Ünite ID: {unitId}</p>}
         {classLevel && <p>Sınıf Düzeyi: {classLevel}. Sınıf</p>}
       </div>
 
-      {/* Soru çözme mantığı ve component kodların buraya gelecek */}
+      {/* Soru çözme mantığın ve bileşen kodların buraya gelecek */}
     </div>
   );
 }
