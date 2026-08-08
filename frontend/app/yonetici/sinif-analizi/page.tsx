@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { CurriculumShell } from "@/components/admin/CurriculumShell";
 import { Card } from "@/components/ui/Card";
@@ -14,7 +14,7 @@ interface ClassAnalysis {
   perStudent: { studentId: string; name: string; answeredCount: number }[];
 }
 
-export default function ClassAnalysisPage() {
+function ClassAnalysisContent() {
   const { accessToken } = useAuth();
   const searchParams = useSearchParams();
   const [classLevel, setClassLevel] = useState(Number(searchParams.get("classLevel") ?? 5));
@@ -94,5 +94,13 @@ export default function ClassAnalysisPage() {
         </div>
       )}
     </CurriculumShell>
+  );
+}
+
+export default function ClassAnalysisPage() {
+  return (
+    <Suspense fallback={<p className="p-6 text-sm text-lab-inkMuted">Yükleniyor...</p>}>
+      <ClassAnalysisContent />
+    </Suspense>
   );
 }
