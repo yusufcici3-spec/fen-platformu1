@@ -72,7 +72,7 @@ async function callAnthropic(
     throw new Error(`Anthropic API hatası: ${response.status}`);
   }
 
-  const data = await response.json();
+  const data: any = await response.json();
   const textBlock = data.content?.find((c: { type: string }) => c.type === "text");
   return textBlock?.text ?? "Şu anda yanıt veremiyorum, lütfen tekrar dene.";
 }
