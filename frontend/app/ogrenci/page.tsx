@@ -11,7 +11,7 @@ import { useAuth } from "@/context/AuthContext";
 import { apiFetch } from "@/lib/api";
 import { MyStats, Suggestions } from "@/types/questions";
 
-export const STUDENT_NAV_ITEMS = [
+ const STUDENT_NAV_ITEMS = [
   { href: "/ogrenci", label: "Genel Bakış", icon: "🏠" },
   { href: "/ogrenci/analiz", label: "Gelişim Analizim", icon: "📈" },
   { href: "/ogrenci/takvim", label: "Çalışma Takvimim", icon: "🗓️" },
