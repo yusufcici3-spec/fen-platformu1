@@ -15,12 +15,12 @@ export function sanitizeQuestionForViewer<
 >(question: T, role: RoleName | undefined): T {
   if (role === "ADMIN" || role === "TEACHER") return question;
 
-  const clone = { ...question } as T & { correctAnswer?: string; solution?: unknown };
+  const clone = { ...question } as any;
   delete clone.correctAnswer;
   delete clone.solution;
 
   if (clone.choiceOptions) {
-    clone.choiceOptions = clone.choiceOptions.map((opt) => ({ ...opt, isCorrect: undefined })) as never;
+    clone.choiceOptions = clone.choiceOptions.map((opt: any) => ({ ...opt, isCorrect: undefined }));
   }
 
   return clone as T;
