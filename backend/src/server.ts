@@ -1,24 +1,33 @@
 import { createApp } from "./app";
-import { env } from "./config/env";
 import { prisma } from "./config/db";
 
 const app = createApp();
 
-async function start() {
-  try {
-    await prisma.$connect();
-    console.log("✅ Veritabanına bağlanıldı.");
+export default app;
 
-    app.listen(env.port, () => {
-      console.log(`🚀 Fen Platformu API http://localhost:${env.port} adresinde çalışıyor (${env.nodeEnv})`);
-    });
-  } catch (error) {
-    console.error("❌ Sunucu başlatılamadı:", error);
-    process.exit(1);
+// Yerel geliştirmede normal Express sunucusu olarak çalıştır.
+// Vercel production ortamında app'i sadece export eder.
+if (process.env.NODE_ENV !== "production") {
+  const { env } = require("./config/env");
+
+  async function start() {
+    try {
+      await prisma.$connect();
+      console.log("✅ Veritabanına bağlanıldı.");
+
+      app.listen(env.port, () => {
+        console.log(
+          `🚀 Fen Platformu API http://localhost:${env.port} adresinde çalışıyor (${env.nodeEnv})`
+        );
+      });
+    } catch (error) {
+      console.error("❌ Sunucu başlatılamadı:", error);
+      process.exit(1);
+    }
   }
-}
 
-start();
+  start();
+}
 
 process.on("SIGINT", async () => {
   await prisma.$disconnect();
