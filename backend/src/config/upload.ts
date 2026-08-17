@@ -1,4 +1,4 @@
-import multer from "multer";
+import multer, { FileFilterCallback } from "multer";
 import path from "path";
 import fs from "fs";
 import { ApiError } from "../utils/apiResponse";
@@ -6,7 +6,7 @@ import { ApiError } from "../utils/apiResponse";
 const IS_VERCEL = Boolean(process.env.VERCEL);
 
 // Vercel'de /var/task yazılabilir değildir.
-// Şimdilik geçici dosyalar için /tmp kullanıyoruz.
+// Geçici dosyalar için /tmp kullanıyoruz.
 // Yerel çalışmada mevcut uploads klasörü kullanılmaya devam eder.
 const UPLOAD_ROOT = IS_VERCEL
   ? "/tmp/uploads"
@@ -60,18 +60,14 @@ function fileFilterFor(
   return (
     _req: unknown,
     file: Express.Multer.File,
-    cb: (
-      error: Error | null,
-      acceptFile: boolean
-    ) => void
+    cb: FileFilterCallback
   ) => {
     if (!allowedMime.includes(file.mimetype)) {
       return cb(
         new ApiError(
           415,
           `Yalnızca ${readableTypes} dosyaları yüklenebilir.`
-        ),
-        false
+        )
       );
     }
 
