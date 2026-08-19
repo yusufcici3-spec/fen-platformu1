@@ -1,7 +1,15 @@
 import { createApp } from "./app";
 import { prisma } from "./config/db";
+import cors from "cors";
 
 const app = createApp();
+
+// Frontend'den gelen isteklerin engellenmesini önleyen CORS ayarı
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 
 // Vercel serverless ortamında Prisma bağlantısının hazır olduğundan emin olmak için middleware
 app.use(async (req, res, next) => {
