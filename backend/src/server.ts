@@ -1,15 +1,25 @@
 import { createApp } from "./app";
 import { prisma } from "./config/db";
-import cors from "cors";
 
 const app = createApp();
 
-// Frontend'den gelen isteklerin engellenmesini önleyen CORS ayarı
-app.use(cors({
-  origin: '*',
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
-}));
+// Vercel Serverless ortamında CORS kilidini kökten çözen middleware
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Credentials", "true");
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET,OPTIONS,PATCH,DELETE,POST,PUT");
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version, Authorization"
+  );
+
+  // Tarayıcının gönderdiği ilk kontrol (OPTIONS) isteğine doğrudan 200 OK yanıtı dönüyoruz
+  if (req.method === "OPTIONS") {
+    res.status(200).end();
+    return;
+  }
+  next();
+});
 
 // Vercel serverless ortamında Prisma bağlantısının hazır olduğundan emin olmak için middleware
 app.use(async (req, res, next) => {
