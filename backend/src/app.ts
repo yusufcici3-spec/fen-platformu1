@@ -19,12 +19,20 @@ export function createApp(): Application {
   // ---- Güvenlik başlıkları ----
   app.use(helmet());
 
-  // ---- CORS: sadece frontend origin'ine izin ver ----
+  // ---- CORS ----
+  // Production ortamında frontend adresi açıkça izinli olmalı.
+  // credentials: true ile birlikte '*' kullanılamaz.
+  const clientUrl = env.isProd
+    ? process.env.FRONTEND_URL ?? "https://fen-platformu1-lrho.vercel.app"
+    : env.clientUrl;
+
   app.use(
     cors({
-      origin: env.clientUrl,
+      origin: clientUrl,
       credentials: true,
-    })
+      methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+      allowedHeaders: ["Content-Type", "Authorization"],
+    }),
   );
 
   // ---- Gövde ayrıştırma ----
@@ -42,12 +50,16 @@ export function createApp(): Application {
   // ---- Genel rate limiting ----
   app.use("/api", generalLimiter);
 
-  // ---- Yüklenen dosyaları statik olarak sun (avatarlar, konu görselleri) ----
+  // ---- Yüklenen dosyaları statik olarak sun ----
   app.use("/uploads", express.static(path.resolve(__dirname, "../../uploads")));
 
   // ---- Sağlık kontrolü ----
   app.get("/api/health", (_req, res) => {
-    res.json({ success: true, message: "Fen Platformu API çalışıyor.", time: new Date().toISOString() });
+    res.json({
+      success: true,
+      message: "Fen Platformu API çalışıyor.",
+      time: new Date().toISOString(),
+    });
   });
 
   // ---- Ana API rotaları ----
