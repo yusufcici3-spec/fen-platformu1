@@ -3,25 +3,38 @@ import { prisma } from "./config/db";
 
 const app = createApp();
 
-// Vercel Serverless ortamında CORS kilidini kökten çözen middleware
+const allowedOrigin =
+  process.env.FRONTEND_URL ?? "https://fen-platformu1-lrho.vercel.app";
+
+// Frontend kayıt/giriş istekleri için CORS ayarları.
+// credentials: true kullanıldığı için Access-Control-Allow-Origin '*' olamaz.
 app.use((req, res, next) => {
+  const requestOrigin = req.headers.origin;
+
+  if (requestOrigin === allowedOrigin) {
+    res.setHeader("Access-Control-Allow-Origin", allowedOrigin);
+  }
+
+  res.setHeader("Vary", "Origin");
   res.setHeader("Access-Control-Allow-Credentials", "true");
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Methods", "GET,OPTIONS,PATCH,DELETE,POST,PUT");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+  );
   res.setHeader(
     "Access-Control-Allow-Headers",
-    "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version, Authorization"
+    "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version, Authorization",
   );
 
-  // Tarayıcının gönderdiği ilk kontrol (OPTIONS) isteğine doğrudan 200 OK yanıtı dönüyoruz
   if (req.method === "OPTIONS") {
-    res.status(200).end();
+    res.status(204).end();
     return;
   }
+
   next();
 });
 
-// Vercel serverless ortamında Prisma bağlantısının hazır olduğundan emin olmak için middleware
+// Vercel serverless ortamında Prisma bağlantısının hazır olduğundan emin ol.
 app.use(async (req, res, next) => {
   try {
     await prisma.$connect();
@@ -34,13 +47,13 @@ app.use(async (req, res, next) => {
 
 export default app;
 
-// Yerel geliştirmede (localhost) çalıştırma
+// Yerel geliştirmede localhost üzerinde çalıştır.
 if (process.env.NODE_ENV !== "production") {
   const { env } = require("./config/env");
 
   app.listen(env.port, () => {
     console.log(
-      `🚀 Fen Platformu API http://localhost:${env.port} adresinde çalışıyor (${env.nodeEnv})`
+      `🚀 Fen Platformu API http://localhost:${env.port} adresinde çalışıyor (${env.nodeEnv})`,
     );
   });
 }
