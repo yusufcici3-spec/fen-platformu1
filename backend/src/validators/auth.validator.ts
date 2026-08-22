@@ -11,7 +11,7 @@ export const registerSchema = z.object({
       .regex(/[A-Z]/, "Şifre en az bir büyük harf içermeli.")
       .regex(/[a-z]/, "Şifre en az bir küçük harf içermeli.")
       .regex(/[0-9]/, "Şifre en az bir rakam içermeli."),
-    role: z.enum(["STUDENT", "TEACHER", "PARENT"]).default("STUDENT"),
+    role: z.enum(["STUDENT", "PARENT"]).default("STUDENT"),
     classLevel: z.number().int().min(5).max(8).optional(),
   }),
 });
