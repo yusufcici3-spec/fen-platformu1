@@ -11,7 +11,7 @@ export function RegisterForm() {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [role, setRole] = useState<"STUDENT" | "TEACHER" | "PARENT">("STUDENT");
+  const [role, setRole] = useState<"STUDENT" | "PARENT">("STUDENT");
   const [classLevel, setClassLevel] = useState(5);
   const [error, setError] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -24,21 +24,24 @@ export function RegisterForm() {
     setIsSubmitting(true);
 
     try {
-      const res = await apiFetch<{ accessToken: string; user: AuthUser }>("/auth/kayit", {
-        method: "POST",
-        body: JSON.stringify({
-          firstName,
-          lastName,
-          email,
-          password,
-          role,
-          ...(role === "STUDENT" ? { classLevel } : {}),
-        }),
-      });
+      const res = await apiFetch<{ accessToken: string; user: AuthUser }>(
+        "/auth/kayit",
+        {
+          method: "POST",
+          body: JSON.stringify({
+            firstName,
+            lastName,
+            email,
+            password,
+            role,
+            ...(role === "STUDENT" ? { classLevel } : {}),
+          }),
+        }
+      );
 
       if (res.data) {
         login(res.data.user, res.data.accessToken);
-        router.push(role === "STUDENT" ? "/ogrenci" : role === "PARENT" ? "/veli" : "/ogretmen");
+        router.push(role === "STUDENT" ? "/ogrenci" : "/veli");
       }
     } catch (err) {
       setError(err instanceof Error ? err.message : "Kayıt oluşturulamadı.");
@@ -57,7 +60,9 @@ export function RegisterForm() {
 
       <div className="grid grid-cols-2 gap-3">
         <div>
-          <label className="text-sm font-medium" htmlFor="firstName">Ad</label>
+          <label className="text-sm font-medium" htmlFor="firstName">
+            Ad
+          </label>
           <input
             id="firstName"
             required
@@ -66,8 +71,11 @@ export function RegisterForm() {
             className="mt-1 w-full rounded-lg border border-lab-paperLine bg-transparent px-3 py-2 text-sm outline-none focus:border-beaker dark:border-white/10"
           />
         </div>
+
         <div>
-          <label className="text-sm font-medium" htmlFor="lastName">Soyad</label>
+          <label className="text-sm font-medium" htmlFor="lastName">
+            Soyad
+          </label>
           <input
             id="lastName"
             required
@@ -79,7 +87,9 @@ export function RegisterForm() {
       </div>
 
       <div>
-        <label className="text-sm font-medium" htmlFor="email">E-posta</label>
+        <label className="text-sm font-medium" htmlFor="email">
+          E-posta
+        </label>
         <input
           id="email"
           type="email"
@@ -91,7 +101,9 @@ export function RegisterForm() {
       </div>
 
       <div>
-        <label className="text-sm font-medium" htmlFor="password">Şifre</label>
+        <label className="text-sm font-medium" htmlFor="password">
+          Şifre
+        </label>
         <input
           id="password"
           type="password"
@@ -106,7 +118,7 @@ export function RegisterForm() {
 
       <div>
         <span className="text-sm font-medium">Rol</span>
-        <div className="mt-1 grid grid-cols-3 gap-2">
+        <div className="mt-1 grid grid-cols-2 gap-2">
           {(["STUDENT", "PARENT"] as const).map((r) => (
             <button
               type="button"
@@ -118,7 +130,7 @@ export function RegisterForm() {
                   : "border-lab-paperLine dark:border-white/10"
               }`}
             >
-              {r === "STUDENT" ? "Öğrenci" : r === "TEACHER" ? "Öğretmen" : "Veli"}
+              {r === "STUDENT" ? "Öğrenci" : "Veli"}
             </button>
           ))}
         </div>
@@ -126,7 +138,9 @@ export function RegisterForm() {
 
       {role === "STUDENT" && (
         <div>
-          <label className="text-sm font-medium" htmlFor="classLevel">Sınıf</label>
+          <label className="text-sm font-medium" htmlFor="classLevel">
+            Sınıf
+          </label>
           <select
             id="classLevel"
             value={classLevel}
@@ -151,7 +165,7 @@ export function RegisterForm() {
       </button>
 
       <p className="text-center text-sm text-lab-inkMuted dark:text-lab-paper/60">
-        Zaten hesabınız var mı?{" "}
+        Zaten hesabınız var?{" "}
         <Link href="/giris" className="font-semibold text-beaker hover:underline">
           Giriş yapın
         </Link>
