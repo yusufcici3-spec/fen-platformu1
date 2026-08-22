@@ -107,7 +107,7 @@ export function RegisterForm() {
       <div>
         <span className="text-sm font-medium">Rol</span>
         <div className="mt-1 grid grid-cols-3 gap-2">
-          {(["STUDENT", "TEACHER", "PARENT"] as const).map((r) => (
+          {(["STUDENT", "PARENT"] as const).map((r) => (
             <button
               type="button"
               key={r}
