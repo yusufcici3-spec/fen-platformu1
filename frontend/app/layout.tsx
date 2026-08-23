@@ -27,14 +27,14 @@ const plexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "FenLab | Ortaokul Fen Bilimleri Eğitim Platformu",
-    template: "%s | FenLab",
+    default: "Fen ve Bilim Kulübü | Ortaokul Fen Bilimleri Eğitim Platformu",
+    template: "%s | Fen ve Bilim Kulübü",
   },
   description:
     "5, 6, 7 ve 8. sınıf öğrencileri için konu anlatımları, sorular, denemeler ve eğitsel oyunlarla fen bilimleri öğrenme platformu.",
   keywords: ["fen bilimleri", "ortaokul", "5. sınıf", "6. sınıf", "7. sınıf", "8. sınıf", "eğitim platformu"],
   openGraph: {
-    title: "FenLab | Ortaokul Fen Bilimleri Eğitim Platformu",
+    title: "Fen ve Bilim Kulübü | Ortaokul Fen Bilimleri Eğitim Platformu",
     description:
       "Konu anlatımları, sorular, denemeler ve eğitsel oyunlarla fen bilimlerini keşfet.",
     type: "website",
