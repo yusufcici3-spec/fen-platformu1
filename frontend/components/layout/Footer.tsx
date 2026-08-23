@@ -36,10 +36,14 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-5">
           <div className="col-span-2">
-            <div className="flex items-center gap-2 font-display text-lg font-bold">
-              <span className="grid h-9 w-9 place-items-center rounded-full bg-beaker text-white">🧪</span>
-              FenLab
-            </div>
+              <div className="flex items-center gap-2 font-display text-lg font-bold">
+                <img
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663906411114/UjgJIopRxhqNxAZu.png"
+                  alt="Fen ve Bilim Kulübü logosu"
+                  className="h-9 w-9 rounded-full object-cover ring-2 ring-beaker/30"
+                />
+                Fen ve Bilim <span className="text-beaker">Kulübü</span>
+              </div>
             <p className="mt-3 max-w-xs text-sm text-lab-inkMuted dark:text-lab-paper/60">
               Ortaokul öğrencileri için hazırlanmış, meraklı zihinler için tasarlanmış fen bilimleri
               öğrenme platformu.
@@ -68,7 +72,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-lab-paperLine/70 pt-6 text-xs text-lab-inkMuted dark:border-white/10 dark:text-lab-paper/50 sm:flex-row">
-          <p>© {new Date().getFullYear()} FenLab. Tüm hakları saklıdır.</p>
+          <p>© {new Date().getFullYear()} Fen ve Bilim Kulübü. Tüm hakları saklıdır.</p>
           <p>Meraklı zihinler için, sabırla inşa edildi. 🔬</p>
         </div>
       </div>
