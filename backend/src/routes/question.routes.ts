@@ -34,6 +34,6 @@ router.post("/:id/favori", requireAuth, questionController.toggleFavorite);
 
 router.post("/", ...staff, validate(createQuestionSchema), questionController.createQuestion);
 router.put("/:id", ...staff, validate(updateQuestionSchema), questionController.updateQuestion);
-router.delete("/:id", requireAuth, requireRole("ADMIN"), questionController.deleteQuestion);
+router.delete("/:id", requireAuth, requireRole("ADMIN","TEACHER"), questionController.deleteQuestion);
 
 export default router;
