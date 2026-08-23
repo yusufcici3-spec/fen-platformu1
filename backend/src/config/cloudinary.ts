@@ -18,7 +18,7 @@ export function uploadBuffer(
         folder,
         resource_type: resourceType,
       },
-      (error, result) => {
+      (error: unknown, result: UploadApiResponse | undefined) => {
         if (error || !result) {
           reject(error ?? new Error("Cloudinary yüklemesi başarısız."));
           return;
