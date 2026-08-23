@@ -41,7 +41,22 @@ export function createApp(): Application {
   app.use(cookieParser());
 
   // ---- XSS ve HTTP Parameter Pollution koruması ----
-  app.use(xssClean());
+  // Rich-text alanları (bodyHtml/content) bilinçli olarak HTML içerir.
+  // xss-clean bu alanlardaki <p>, <h1>, <strong> gibi etiketleri kaçışlayıp
+  // ekranda düz metin olarak görünmesine neden olur. Bu nedenle yalnızca
+  // rich-text içeren isteklerde xss-clean'i atlıyor; bu alanlar yalnızca
+  // yetkili öğretmen/yönetici rotalarından kabul edilir.
+  const xssMiddleware = xssClean();
+  app.use((req, res, next) => {
+    const isRichTextRoute =
+      req.method !== "GET" &&
+      (req.path.startsWith("/api/konu-icerikleri") || req.path.startsWith("/api/konular"));
+
+    // Rich text yalnızca yetkili konu rotalarında kabul edilir; diğer tüm
+    // isteklerde genel XSS temizliği çalışmaya devam eder.
+    if (isRichTextRoute) return next();
+    return xssMiddleware(req, res, next);
+  });
   app.use(hpp());
 
   // ---- İstek loglama ----
