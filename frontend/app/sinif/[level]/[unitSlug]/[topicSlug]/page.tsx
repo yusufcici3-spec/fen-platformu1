@@ -11,6 +11,7 @@ import { VideoList } from "@/components/topic/VideoList";
 import { PdfList } from "@/components/topic/PdfList";
 import { PrevNextNav } from "@/components/topic/PrevNextNav";
 import { MarkCompleteButton } from "@/components/topic/MarkCompleteButton";
+import { decodeStoredHtml } from "@/lib/renderHtml";
 
 interface Params {
   level: string;
@@ -81,7 +82,7 @@ export default async function TopicPage({ params }: { params: Params }) {
         ) : topic.content ? (
           <div
             className="prose prose-sm max-w-none dark:prose-invert"
-            dangerouslySetInnerHTML={{ __html: topic.content }}
+            dangerouslySetInnerHTML={{ __html: decodeStoredHtml(topic.content) }}
           />
         ) : null}
 
