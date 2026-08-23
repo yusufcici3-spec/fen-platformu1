@@ -29,14 +29,19 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-lab-paperLine/70 bg-lab-paper/90 backdrop-blur dark:border-white/10 dark:bg-lab-ink/90">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-        <Link href="/" className="flex min-w-0 items-center gap-2 font-display text-sm font-bold tracking-tight sm:text-lg">
+        <Link href="/" className="flex shrink-0 items-center gap-2 font-display text-xs font-bold tracking-tight sm:text-base lg:text-lg">
           <img
             src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663906411114/UjgJIopRxhqNxAZu.png"
             alt="Fen ve Bilim Kulübü logosu"
             className="h-9 w-9 shrink-0 rounded-full object-cover ring-2 ring-beaker/30"
           />
-          <span className="truncate">
-            Fen ve Bilim <span className="text-beaker">Kulübü</span>
+          <span className="flex min-w-0 flex-col leading-tight">
+            <span className="whitespace-nowrap text-xs sm:text-base lg:text-lg">
+              Fen ve Bilim <span className="text-beaker">Kulübü</span>
+            </span>
+            <span className="whitespace-nowrap text-[9px] font-medium tracking-wide text-lab-inkMuted dark:text-lab-paper/55 sm:text-[10px]">
+              Yusuf Cici
+            </span>
           </span>
         </Link>
 
