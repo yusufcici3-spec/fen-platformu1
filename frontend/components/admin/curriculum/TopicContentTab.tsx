@@ -5,6 +5,7 @@ import { useAuth } from "@/context/AuthContext";
 import { apiFetch } from "@/lib/api";
 import { RichTextEditor } from "@/components/admin/RichTextEditor";
 import { TopicContentBlock, ContentBlockType } from "@/types/curriculum";
+import { decodeStoredHtml } from "@/lib/renderHtml";
 
 const TYPE_LABELS: Record<ContentBlockType, string> = {
   EXPLANATION: "Konu Anlatımı",
@@ -105,7 +106,7 @@ export function TopicContentTab({
               </div>
               <div
                 className="prose prose-sm mt-2 max-w-none dark:prose-invert"
-                dangerouslySetInnerHTML={{ __html: block.bodyHtml }}
+                dangerouslySetInnerHTML={{ __html: decodeStoredHtml(block.bodyHtml) }}
               />
             </div>
           ))
