@@ -29,10 +29,14 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-lab-paperLine/70 bg-lab-paper/90 backdrop-blur dark:border-white/10 dark:bg-lab-ink/90">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-2 font-display text-lg font-bold tracking-tight">
-          <span className="grid h-9 w-9 place-items-center rounded-full bg-beaker text-white">🧪</span>
-          <span>
-            Fen<span className="text-beaker">Lab</span>
+        <Link href="/" className="flex min-w-0 items-center gap-2 font-display text-sm font-bold tracking-tight sm:text-lg">
+          <img
+            src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663906411114/UjgJIopRxhqNxAZu.png"
+            alt="Fen ve Bilim Kulübü logosu"
+            className="h-9 w-9 shrink-0 rounded-full object-cover ring-2 ring-beaker/30"
+          />
+          <span className="truncate">
+            Fen ve Bilim <span className="text-beaker">Kulübü</span>
           </span>
         </Link>
 
