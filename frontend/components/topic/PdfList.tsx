@@ -1,5 +1,13 @@
 import { TopicPdf } from "@/types/curriculum";
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:5000/api";
+
+function resolveMediaUrl(url: string) {
+  if (url.startsWith("http://") || url.startsWith("https://")) return url;
+  const apiOrigin = API_URL.replace(/\/api\/?$/, "");
+  return `${apiOrigin}${url.startsWith("/") ? url : `/${url}`}`;
+}
+
 export function PdfList({ pdfs }: { pdfs: TopicPdf[] }) {
   if (pdfs.length === 0) return null;
 
@@ -12,7 +20,7 @@ export function PdfList({ pdfs }: { pdfs: TopicPdf[] }) {
         {pdfs.map((pdf) => (
           <a
             key={pdf.id}
-            href={pdf.url}
+            href={resolveMediaUrl(pdf.url)}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 rounded-card border border-lab-paperLine bg-white p-4 text-sm font-medium transition hover:border-beaker dark:border-white/10 dark:bg-lab-inkSoft"
