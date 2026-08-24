@@ -10,13 +10,15 @@ cloudinary.config({
 export function uploadBuffer(
   buffer: Buffer,
   folder: string,
-  resourceType: "image" | "video" | "raw" = "image"
+  resourceType: "image" | "video" | "raw" = "image",
+  publicId?: string
 ): Promise<UploadApiResponse> {
   return new Promise((resolve, reject) => {
     const stream = cloudinary.uploader.upload_stream(
       {
         folder,
         resource_type: resourceType,
+        ...(publicId ? { public_id: publicId } : {}),
       },
       (error: unknown, result: UploadApiResponse | undefined) => {
         if (error || !result) {
