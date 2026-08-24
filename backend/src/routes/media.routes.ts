@@ -16,6 +16,17 @@ import { ApiError } from "../utils/apiResponse";
 const router = Router();
 const staff = [requireAuth, requireRole("ADMIN", "TEACHER")];
 
+function makePdfPublicId(originalName: string) {
+  const baseName = originalName.replace(/\.pdf$/i, "");
+  const normalized = baseName
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-zA-Z0-9_-]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .toLowerCase();
+  return `${Date.now()}-${normalized || "konu-ozeti"}.pdf`;
+}
+
 router.post(
   "/gorseller/dosya-yukle",
   ...staff,
@@ -50,7 +61,8 @@ router.post(
   uploadTopicPdf.single("pdf"),
   catchAsync(async (req, res) => {
     if (!req.file) throw new ApiError(400, "PDF dosyası seçilmedi.");
-    const result = await uploadBuffer(req.file.buffer, "fen-platform/pdfs", "raw");
+    const publicId = makePdfPublicId(req.file.originalname || "konu-ozeti.pdf");
+    const result = await uploadBuffer(req.file.buffer, "fen-platform/pdfs", "raw", publicId);
     res.json({ success: true, message: "PDF yüklendi.", data: { url: result.secure_url } });
   })
 );
