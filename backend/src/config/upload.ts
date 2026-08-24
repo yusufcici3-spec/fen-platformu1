@@ -109,7 +109,9 @@ export const uploadTopicVideo = multer({
 });
 
 export const uploadTopicPdf = multer({
-  storage: storageFor("pdfs"),
+  // PDF route’u dosyayı Cloudinary’ye buffer olarak gönderir.
+  // Vercel’de yerel dosya yolları kalıcı olmadığı için diskStorage kullanılmaz.
+  storage: multer.memoryStorage(),
   fileFilter: fileFilterFor(
     ALLOWED_PDF_MIME,
     "PDF"
