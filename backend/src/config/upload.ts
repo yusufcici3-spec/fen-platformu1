@@ -87,7 +87,9 @@ export const uploadAvatar = multer({
 });
 
 export const uploadTopicImage = multer({
-  storage: storageFor("topics"),
+  // Konu görselleri Cloudinary’ye buffer olarak gönderilir.
+  // Vercel’de geçici disk yolu kullanmak yerine bellekte tutuyoruz.
+  storage: multer.memoryStorage(),
   fileFilter: fileFilterFor(
     ALLOWED_IMAGE_MIME,
     "PNG, JPEG, WEBP veya GIF"
@@ -98,7 +100,8 @@ export const uploadTopicImage = multer({
 });
 
 export const uploadTopicVideo = multer({
-  storage: storageFor("videos"),
+  // Video rotası da Cloudinary’ye buffer gönderdiği için bellekte tutulur.
+  storage: multer.memoryStorage(),
   fileFilter: fileFilterFor(
     ALLOWED_VIDEO_MIME,
     "MP4, WEBM veya OGG"
