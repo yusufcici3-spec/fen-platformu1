@@ -7,7 +7,7 @@ import { Question } from "@/types/questions";
 import { GameShell } from "./GameShell";
 import { GameResultScreen } from "./GameResultScreen";
 
-const SECONDS_PER_QUESTION = 8;
+const SECONDS_PER_QUESTION = 30;
 
 export function TrueFalseMarathon({
   gameId,
