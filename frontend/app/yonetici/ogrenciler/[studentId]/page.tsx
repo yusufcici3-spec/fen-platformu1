@@ -73,23 +73,39 @@ export default function StudentReportPage({ params }: { params: { studentId: str
         <Card className="flex justify-center">
           <DevelopmentScoreGauge score={report.developmentScore} />
         </Card>
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
-          <Card>
-            <p className="text-xs font-mono text-lab-inkMuted dark:text-lab-paper/50">BAŞARI ORANI</p>
-            <p className="mt-1 font-display text-2xl font-bold">%{report.successPercent}</p>
-          </Card>
-          <Card>
-            <p className="text-xs font-mono text-lab-inkMuted dark:text-lab-paper/50">ÇALIŞMA SÜRESİ</p>
-            <p className="mt-1 font-display text-2xl font-bold">{report.totalStudyMinutes} dk</p>
-          </Card>
-          <Card>
-            <p className="text-xs font-mono text-lab-inkMuted dark:text-lab-paper/50">TAMAMLANAN KONU</p>
-            <p className="mt-1 font-display text-2xl font-bold">{report.completedTopicsCount}</p>
-          </Card>
-          <Card>
-            <p className="text-xs font-mono text-lab-inkMuted dark:text-lab-paper/50">DENEME ORT.</p>
-            <p className="mt-1 font-display text-2xl font-bold">%{report.examPerformance.averageSuccess}</p>
-          </Card>
+        <div className="space-y-4">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <Card className="border-beaker/30 bg-beaker/5">
+              <p className="text-xs font-mono text-lab-inkMuted dark:text-lab-paper/50">ÇÖZÜLEN SORU</p>
+              <p className="mt-1 font-display text-2xl font-bold text-beaker">{report.totalAnswered}</p>
+            </Card>
+            <Card className="border-leaf/30 bg-leaf/5">
+              <p className="text-xs font-mono text-lab-inkMuted dark:text-lab-paper/50">DOĞRU</p>
+              <p className="mt-1 font-display text-2xl font-bold text-leaf">{report.correctCount}</p>
+            </Card>
+            <Card className="border-reaction-dark/30 bg-reaction-dark/5">
+              <p className="text-xs font-mono text-lab-inkMuted dark:text-lab-paper/50">YANLIŞ</p>
+              <p className="mt-1 font-display text-2xl font-bold text-reaction-dark">{report.wrongCount}</p>
+            </Card>
+          </div>
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+            <Card>
+              <p className="text-xs font-mono text-lab-inkMuted dark:text-lab-paper/50">BAŞARI ORANI</p>
+              <p className="mt-1 font-display text-2xl font-bold">%{report.successPercent}</p>
+            </Card>
+            <Card>
+              <p className="text-xs font-mono text-lab-inkMuted dark:text-lab-paper/50">ÇALIŞMA SÜRESİ</p>
+              <p className="mt-1 font-display text-2xl font-bold">{report.totalStudyMinutes} dk</p>
+            </Card>
+            <Card>
+              <p className="text-xs font-mono text-lab-inkMuted dark:text-lab-paper/50">TAMAMLANAN KONU</p>
+              <p className="mt-1 font-display text-2xl font-bold">{report.completedTopicsCount}</p>
+            </Card>
+            <Card>
+              <p className="text-xs font-mono text-lab-inkMuted dark:text-lab-paper/50">DENEME ORT.</p>
+              <p className="mt-1 font-display text-2xl font-bold">%{report.examPerformance.averageSuccess}</p>
+            </Card>
+          </div>
         </div>
       </div>
 
