@@ -188,7 +188,11 @@ export const checkPracticeAnswer = catchAsync(async (req: Request, res: Response
 
   const question = await prisma.question.findUnique({
     where: { id: req.params.id },
-    include: { choiceOptions: true, solution: true },
+    include: {
+      choiceOptions: true,
+      solution: true,
+      topic: { include: { unit: { include: { class: true } } } },
+    },
   });
   if (!question) throw new ApiError(404, "Soru bulunamadı.");
 
@@ -200,8 +204,67 @@ export const checkPracticeAnswer = catchAsync(async (req: Request, res: Response
     isCorrect = answerText.trim().toLocaleLowerCase("tr") === question.correctAnswer.trim().toLocaleLowerCase("tr");
   }
 
-  // Giriş yapmış öğrenci için yanlış/doğru geçmişini güncelle
+  // Giriş yapmış öğrenci için pratik cevaplarını da kalıcı cevap geçmişine yaz.
+  // Gelişim raporu StudentAnswer kayıtlarını okuduğu için, pratik modundaki
+  // cevaplar burada ayrı bir serbest-pratik oturumuna bağlanır.
   if (req.user && req.user.role === "STUDENT") {
+    const classLevel = question.topic.unit.class.level;
+    let practiceExam = await prisma.exam.findFirst({
+      where: { title: "Serbest Pratik Soruları", type: "GENERAL", classLevel },
+      select: { id: true },
+    });
+
+    if (!practiceExam) {
+      practiceExam = await prisma.exam.create({
+        data: {
+          title: "Serbest Pratik Soruları",
+          description: "Pratik modunda çözülen sorular için otomatik kayıt.",
+          type: "GENERAL",
+          classLevel,
+          durationMin: 9999,
+          isPublished: true,
+        },
+        select: { id: true },
+      });
+    }
+
+    let practiceResult = await prisma.studentExamResult.findFirst({
+      where: { userId: req.user.id, examId: practiceExam.id, finishedAt: null },
+      orderBy: { startedAt: "desc" },
+      select: { id: true },
+    });
+
+    if (!practiceResult) {
+      practiceResult = await prisma.studentExamResult.create({
+        data: { userId: req.user.id, examId: practiceExam.id },
+        select: { id: true },
+      });
+    }
+
+    await prisma.studentAnswer.upsert({
+      where: { resultId_questionId: { resultId: practiceResult.id, questionId: question.id } },
+      update: { selectedOptionId, answerText, isCorrect },
+      create: { resultId: practiceResult.id, questionId: question.id, selectedOptionId, answerText, isCorrect },
+    });
+
+    const practiceAnswers = await prisma.studentAnswer.findMany({
+      where: { resultId: practiceResult.id },
+      select: { isCorrect: true },
+    });
+    const practiceCorrect = practiceAnswers.filter((answer) => answer.isCorrect === true).length;
+    const practiceWrong = practiceAnswers.filter((answer) => answer.isCorrect === false).length;
+    await prisma.studentExamResult.update({
+      where: { id: practiceResult.id },
+      data: {
+        correctCount: practiceCorrect,
+        wrongCount: practiceWrong,
+        blankCount: practiceAnswers.filter((answer) => answer.isCorrect === null).length,
+        totalScore: practiceCorrect * 2,
+        successPercent: practiceAnswers.length > 0 ? (practiceCorrect / practiceAnswers.length) * 100 : 0,
+      },
+    });
+
+    // Giriş yapmış öğrenci için yanlış/doğru geçmişini güncelle
     if (isCorrect) {
       await prisma.wrongQuestion.updateMany({
         where: { userId: req.user.id, questionId: question.id },
