@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { useAuth } from "@/context/AuthContext";
 import { apiFetch } from "@/lib/api";
+import { checkGameAnswer } from "./checkGameAnswer";
 import { sfx } from "@/lib/sound";
 import { Question } from "@/types/questions";
 import { GameShell } from "./GameShell";
@@ -29,6 +31,7 @@ export function WheelOfFortune({
   topicId?: string | null;
   classLevel?: number | null;
 }) {
+  const { accessToken } = useAuth();
   const [rotation, setRotation] = useState(0);
   const [isSpinning, setIsSpinning] = useState(false);
   const [selectedSegment, setSelectedSegment] = useState<number | null>(null);
@@ -79,13 +82,21 @@ export function WheelOfFortune({
     }, 3200);
   }
 
-  function handleAnswer() {
-    if (!question || selectedSegment === null) return;
-    const correctOption = question!.choiceOptions.find((o) => o.isCorrect);
-    const isCorrect = !!correctOption && answer.selectedOptionId === correctOption.id;
-    setIsRevealed(true);
+  async function handleAnswer() {
+    if (!question || selectedSegment === null || !answer.selectedOptionId) return;
 
-    const basePoints = Math.max(0, SEGMENTS[selectedSegment!].points);
+    let isCorrect = false;
+    try {
+      const result = await checkGameAnswer(question.id, accessToken, {
+        selectedOptionId: answer.selectedOptionId,
+      });
+      isCorrect = result.isCorrect;
+    } catch {
+      isCorrect = false;
+    }
+
+    setIsRevealed(true);
+    const basePoints = Math.max(0, SEGMENTS[selectedSegment].points);
     if (isCorrect) {
       sfx.correct();
       setScore((s) => s + basePoints * multiplier);
