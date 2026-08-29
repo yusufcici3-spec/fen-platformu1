@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
+import { useAuth } from "@/context/AuthContext";
 import { apiFetch } from "@/lib/api";
+import { checkGameAnswer } from "./checkGameAnswer";
 import { sfx } from "@/lib/sound";
 import { Question } from "@/types/questions";
 import { GameShell } from "./GameShell";
@@ -18,6 +20,7 @@ export function TrueFalseMarathon({
   topicId?: string | null;
   classLevel?: number | null;
 }) {
+  const { accessToken } = useAuth();
   const [question, setQuestion] = useState<Question | null>(null);
   const [askedIds, setAskedIds] = useState<string[]>([]);
   const [streak, setStreak] = useState(0);
@@ -67,10 +70,20 @@ export function TrueFalseMarathon({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [secondsLeft, isFinished, isLoading, flash]);
 
-  function handleAnswer(chosenOptionId: string | null) {
+  async function handleAnswer(chosenOptionId: string | null) {
     if (!question) return;
-    const correctOption = question.choiceOptions.find((o) => o.isCorrect);
-    const isCorrect = !!chosenOptionId && chosenOptionId === correctOption?.id;
+
+    let isCorrect = false;
+    if (chosenOptionId) {
+      try {
+        const result = await checkGameAnswer(question.id, accessToken, {
+          selectedOptionId: chosenOptionId,
+        });
+        isCorrect = result.isCorrect;
+      } catch {
+        isCorrect = false;
+      }
+    }
 
     if (isCorrect) {
       sfx.correct();
