@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
+import { useAuth } from "@/context/AuthContext";
 import { apiFetch } from "@/lib/api";
+import { checkGameAnswer } from "./checkGameAnswer";
 import { sfx } from "@/lib/sound";
 import { Question } from "@/types/questions";
 import { GameShell } from "./GameShell";
@@ -20,6 +22,7 @@ export function ScienceAdventure({
   topicId?: string | null;
   classLevel?: number | null;
 }) {
+  const { accessToken } = useAuth();
   const [unlockedIndex, setUnlockedIndex] = useState(0);
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [question, setQuestion] = useState<Question | null>(null);
@@ -52,12 +55,20 @@ export function ScienceAdventure({
     loadQuestionFor(askedIds);
   }
 
-  function handleAnswer() {
-    if (!question) return;
-    const correctOption = question.choiceOptions.find((o) => o.isCorrect);
-    const isCorrect = !!correctOption && answer.selectedOptionId === correctOption.id;
-    setIsRevealed(true);
+  async function handleAnswer() {
+    if (!question || !answer.selectedOptionId) return;
 
+    let isCorrect = false;
+    try {
+      const result = await checkGameAnswer(question.id, accessToken, {
+        selectedOptionId: answer.selectedOptionId,
+      });
+      isCorrect = result.isCorrect;
+    } catch {
+      isCorrect = false;
+    }
+
+    setIsRevealed(true);
     if (isCorrect) {
       sfx.correct();
       setScore((s) => s + 15);
