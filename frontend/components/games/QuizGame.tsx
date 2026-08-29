@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
+import { useAuth } from "@/context/AuthContext";
 import { apiFetch } from "@/lib/api";
+import { checkGameAnswer } from "./checkGameAnswer";
 import { sfx } from "@/lib/sound";
 import { Question } from "@/types/questions";
 import { GameShell } from "./GameShell";
@@ -20,6 +22,7 @@ export function QuizGame({
   topicId?: string | null;
   classLevel?: number | null;
 }) {
+  const { accessToken } = useAuth();
   const [round, setRound] = useState(0);
   const [question, setQuestion] = useState<Question | null>(null);
   const [askedIds, setAskedIds] = useState<string[]>([]);
@@ -70,10 +73,20 @@ export function QuizGame({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [secondsLeft, isRevealed, isFinished, isLoading]);
 
-  function handleReveal(userAnswered: boolean) {
+  async function handleReveal(userAnswered: boolean) {
     if (!question) return;
-    const correctOption = question.choiceOptions.find((o) => o.isCorrect);
-    const isCorrect = userAnswered && !!correctOption && answer.selectedOptionId === correctOption.id;
+
+    let isCorrect = false;
+    if (userAnswered && answer.selectedOptionId) {
+      try {
+        const result = await checkGameAnswer(question.id, accessToken, {
+          selectedOptionId: answer.selectedOptionId,
+        });
+        isCorrect = result.isCorrect;
+      } catch {
+        isCorrect = false;
+      }
+    }
 
     setIsRevealed(true);
     if (isCorrect) {
