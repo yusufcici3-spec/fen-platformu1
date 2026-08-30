@@ -63,9 +63,9 @@ export default async function GamesPage() {
                 className="group rounded-card border border-lab-paperLine bg-white p-5 transition hover:-translate-y-1 hover:border-beaker hover:shadow-md dark:border-white/10 dark:bg-lab-inkSoft"
               >
                 <div className="flex items-center gap-2">
-                  <span className="text-2xl">{TYPE_ICONS[game.type]}</span>
+                  <span className="text-2xl">{game.slug === "bilim-basamaklari" || game.slug === "fen-bilim-basamaklari" ? "🔬" : TYPE_ICONS[game.type]}</span>
                   <span className="font-mono text-xs font-semibold text-beaker-dark dark:text-beaker-light">
-                    {TYPE_LABELS[game.type]}
+                    {game.slug === "bilim-basamaklari" || game.slug === "fen-bilim-basamaklari" ? "Bilim Basamakları" : TYPE_LABELS[game.type]}
                   </span>
                 </div>
                 <h3 className="mt-2 font-display text-lg font-semibold">{game.title}</h3>
