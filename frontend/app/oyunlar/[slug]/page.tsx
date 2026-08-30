@@ -44,7 +44,12 @@ export default function PlayGamePage({ params }: { params: { slug: string } }) {
 
   // Bilim Basamakları, mevcut QUIZ türü altyapısını kullanır ancak slug üzerinden
   // tamamen özgün oyun ekranına yönlendirilir; yeni veritabanı enum/migration gerekmez.
-  if (game.slug === "bilim-basamaklari" || game.slug === "fen-bilim-basamaklari") {
+  const normalizedTitle = game.title.toLocaleLowerCase("tr-TR");
+  if (
+    game.slug === "bilim-basamaklari" ||
+    game.slug === "fen-bilim-basamaklari" ||
+    normalizedTitle.includes("bilim basamakları")
+  ) {
     return <ScienceLadder gameId={game.id} topicId={game.topicId} classLevel={game.classLevel} />;
   }
 
