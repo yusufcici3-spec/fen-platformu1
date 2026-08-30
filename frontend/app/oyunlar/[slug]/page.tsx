@@ -14,6 +14,7 @@ import { TrueFalseMarathon } from "@/components/games/TrueFalseMarathon";
 import { WheelOfFortune } from "@/components/games/WheelOfFortune";
 import { ScienceAdventure } from "@/components/games/ScienceAdventure";
 import { BadgeHunt } from "@/components/games/BadgeHunt";
+import { ScienceLadder } from "@/components/games/ScienceLadder";
 
 export default function PlayGamePage({ params }: { params: { slug: string } }) {
   const [game, setGame] = useState<Game | null | undefined>(undefined);
@@ -40,6 +41,12 @@ export default function PlayGamePage({ params }: { params: { slug: string } }) {
   }
 
   const terms = game.topic?.glossaryTerms ?? [];
+
+  // Bilim Basamakları, mevcut QUIZ türü altyapısını kullanır ancak slug üzerinden
+  // tamamen özgün oyun ekranına yönlendirilir; yeni veritabanı enum/migration gerekmez.
+  if (game.slug === "bilim-basamaklari" || game.slug === "fen-bilim-basamaklari") {
+    return <ScienceLadder gameId={game.id} topicId={game.topicId} classLevel={game.classLevel} />;
+  }
 
   switch (game.type) {
     case "QUIZ":
