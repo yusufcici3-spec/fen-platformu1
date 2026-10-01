@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#08101f">
+<title>Tutulma Laboratuvarı — Güneş ve Ay Tutulması</title>
+<style>
+  :root{color-scheme:dark;--bg:#080e1a;--panel:#101a2b;--panel2:#131f33;--line:#26354c;--text:#f3f6ff;--muted:#a9b7cd;--gold:#ffc95c;--blue:#6ab8ff;--mint:#82e5c2;--pink:#ff9f9b}
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% -18%,#1a2b49 0%,#0b1322 48%,var(--bg) 100%);color:var(--text);font:16px/1.5 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+  .wrap{max-width:1100px;margin:auto;padding:clamp(18px,4vw,42px) clamp(14px,3vw,28px) 32px}
+  header{text-align:center;margin:0 auto 24px;max-width:760px}
+  .eyebrow{color:var(--gold);font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;font-weight:800}
+  h1{font-size:clamp(2rem,5vw,3.25rem);line-height:1.08;margin:8px 0 12px;letter-spacing:-.04em}
+  header p{color:var(--muted);margin:0;font-size:clamp(.95rem,2vw,1.08rem)}
+  .panel{background:linear-gradient(145deg,rgba(19,31,51,.97),rgba(12,20,35,.97));border:1px solid rgba(148,177,219,.17);border-radius:22px;box-shadow:0 20px 70px #0005;overflow:hidden}
+  .toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 20px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+  .tabs{display:flex;gap:8px;padding:5px;background:#091321;border:1px solid #22324a;border-radius:14px}
+  button{font:inherit;color:inherit;cursor:pointer}
+  .tab{border:0;background:transparent;border-radius:10px;padding:9px 15px;color:var(--muted);font-weight:750;transition:.2s}
+  .tab[aria-selected="true"]{background:#24344d;color:white;box-shadow:inset 0 0 0 1px #3b5273}
+  .tab:focus-visible,.control:focus-visible,.icon-btn:focus-visible,.moon:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+  .small-hint{color:var(--muted);font-size:.86rem}
+  .scene{position:relative;background:radial-gradient(ellipse at 50% 55%,#14233a 0%,#0b1526 52%,#09111e 100%);overflow:hidden;touch-action:none}
+  svg{display:block;width:100%;height:auto;min-height:270px;max-height:520px;user-select:none}
+  .space-dots circle{fill:#dce9ff;opacity:.55;animation:twinkle 3s ease-in-out infinite alternate}
+  .space-dots circle:nth-child(3n){animation-delay:-1.2s}.space-dots circle:nth-child(4n){animation-delay:-2s}
+  @keyframes twinkle{from{opacity:.18}to{opacity:.72}}
+  .orbit{fill:none;stroke:#9bb4d6;stroke-width:1.5;stroke-dasharray:5 8;opacity:.34}
+  .orbit-label{fill:#96a8c1;font-size:13px;letter-spacing:1.4px}
+  .body-label{fill:#dce5f4;font-size:14px;font-weight:700;text-anchor:middle}
+  .sub-label{fill:#94a7c2;font-size:11px;text-anchor:middle}
+  .moon{cursor:grab;touch-action:none;outline:none}.moon.dragging{cursor:grabbing}
+  .moon .hit-area{fill:transparent;stroke:transparent;stroke-width:3}
+  .moon:focus .hit-area{stroke:var(--gold);stroke-dasharray:5 4}
+  .sun-glow{animation:sun-breathe 4s ease-in-out infinite alternate;transform-origin:120px 250px}
+  @keyframes sun-breathe{to{opacity:.68;transform:scale(1.06)}}
+  .shadow{transition:opacity .12s ease}
+  .caption-float{fill:#d3e0f4;font-size:13px;font-weight:700;text-anchor:middle}
+  .scene-status{position:absolute;top:14px;left:50%;transform:translateX(-50%);z-index:2;white-space:nowrap;border:1px solid #304562;background:#0a1422d9;border-radius:999px;padding:7px 13px;font-size:.81rem;font-weight:750;color:#d9e5f6;box-shadow:0 5px 24px #0004}
+  .scene-status.active{color:#17202b;background:#ffd374;border-color:#ffe3a4}
+  .controls{padding:18px 20px 20px;border-top:1px solid var(--line)}
+  .control-row{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px}
+  .btns{display:flex;gap:8px}
+  .control{border:1px solid #31445f;background:#1b2a41;border-radius:11px;padding:9px 13px;font-weight:750;transition:background .15s,transform .15s}
+  .control:hover{background:#263a57}.control:active{transform:scale(.97)}
+  .play{background:#eebc56;color:#1b1a15;border-color:#f8d48e}.play:hover{background:#ffd27a}
+  .orbit-control{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:11px;min-width:0}
+  input[type=range]{width:100%;accent-color:var(--gold);cursor:pointer;touch-action:pan-y}
+  .range-label{font-size:.8rem;color:var(--muted);white-space:nowrap}
+  .readout{min-width:76px;text-align:right;color:#e8edf7;font-variant-numeric:tabular-nums;font-size:.9rem}
+  .control-help{color:var(--muted);font-size:.85rem;margin:12px 0 0;text-align:center}
+  .facts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
+  .fact{border:1px solid rgba(148,177,219,.14);background:rgba(16,26,43,.8);border-radius:16px;padding:17px 18px}
+  .fact h2{font-size:1rem;margin:0 0 6px;display:flex;align-items:center;gap:9px}
+  .fact p{margin:0;color:var(--muted);font-size:.91rem}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px currentColor;display:inline-block}.dot.moon-dot{background:#cad7eb}.dot.earth-dot{background:#63b6ff}
+  .note{margin:15px 2px 0;text-align:center;color:#8293ad;font-size:.78rem}
+  @media(max-width:650px){.wrap{padding-top:24px}.toolbar{padding:13px;justify-content:center}.small-hint{width:100%;text-align:center}.tabs{width:100%}.tab{flex:1;padding:9px 7px;font-size:.9rem}.scene-status{top:10px;font-size:.73rem;padding:6px 10px}.controls{padding:15px 13px}.control-row{grid-template-columns:1fr;gap:13px}.btns{justify-content:center}.orbit-control{grid-template-columns:auto 1fr auto}.readout{min-width:58px}.facts{grid-template-columns:1fr;gap:10px}.fact{padding:14px 15px}svg{min-height:240px}}
+  @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <div class="eyebrow">Gökyüzünü keşfet · etkileşimli simülasyon</div>
+    <h1>Tutulma Laboratuvarı</h1>
+    <p>Ay’ı yörüngesinde sürükle; Güneş ve Ay tutulmalarının nasıl oluştuğunu keşfet.</p>
+  </header>
+  <section class="panel" aria-label="Tutulma simülasyonu">
+    <div class="toolbar">
+      <div class="tabs" role="tablist" aria-label="Tutulma türü">
+        <button class="tab" id="solarTab" role="tab" aria-selected="true" aria-controls="sim">Güneş tutulması</button>
+        <button class="tab" id="lunarTab" role="tab" aria-selected="false" aria-controls="sim">Ay tutulması</button>
+      </div>
+      <div class="small-hint">Ay’ı tutup yörünge boyunca hareket ettirebilirsin</div>
+    </div>
+    <div class="scene" id="sim" role="tabpanel" aria-labelledby="solarTab">
+      <div class="scene-status" id="status" aria-live="polite">Ay’ı yörüngede sürükle</div>
+      <svg id="sky" viewBox="0 0 1000 500" role="img" aria-label="Güneş, Dünya ve Ay’ın yörüngesini gösteren etkileşimli tutulma şeması">
+        <defs>
+          <radialGradient id="sunFill"><stop offset="0" stop-color="#fff8d9"/><stop offset=".55" stop-color="#ffd76f"/><stop offset="1" stop-color="#ff9d38"/></radialGradient>
+          <radialGradient id="earthFill" cx="35%" cy="30%"><stop offset="0" stop-color="#9be7ff"/><stop offset=".45" stop-color="#338fe0"/><stop offset="1" stop-color="#12336b"/></radialGradient>
+          <radialGradient id="moonFill" cx="35%" cy="28%"><stop offset="0" stop-color="#f9fbff"/><stop offset=".65" stop-color="#ccd6e5"/><stop offset="1" stop-color="#8493aa"/></radialGradient>
+          <linearGradient id="penumbra"><stop offset="0" stop-color="#8596ae" stop-opacity=".18"/><stop offset="1" stop-color="#8596ae" stop-opacity=".04"/></linearGradient>
+          <linearGradient id="umbra"><stop offset="0" stop-color="#020711" stop-opacity=".78"/><stop offset="1" stop-color="#020711" stop-opacity=".4"/></linearGradient>
+          <filter id="glow"><feGaussianBlur stdDeviation="15" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <clipPath id="earthClip"><circle id="earthClipCircle" cx="800" cy="250" r="39"/></clipPath>
+          <clipPath id="moonClip"><circle id="moonClipCircle" cx="610" cy="250" r="24"/></clipPath>
+        </defs>
+        <g class="space-dots" aria-hidden="true">
+          <circle cx="48" cy="86" r="1.6"/><circle cx="207" cy="128" r="1.2"/><circle cx="290" cy="53" r="1.5"/><circle cx="381" cy="105" r="1"/><circle cx="495" cy="64" r="1.8"/><circle cx="588" cy="127" r="1.3"/><circle cx="713" cy="64" r="1.2"/><circle cx="926" cy="92" r="1.7"/><circle cx="967" cy="189" r="1"/><circle cx="51" cy="374" r="1.2"/><circle cx="217" cy="427" r="1.5"/><circle cx="339" cy="379" r="1"/><circle cx="514" cy="439" r="1.7"/><circle cx="674" cy="391" r="1.3"/><circle cx="891" cy="431" r="1.4"/><circle cx="958" cy="331" r="1.2"/><circle cx="165" cy="276" r="1"/><circle cx="382" cy="292" r="1.5"/><circle cx="727" cy="298" r="1"/><circle cx="846" cy="141" r="1.2"/>
+        </g>
+        <g id="solarShadow" class="shadow" opacity="0">
+          <path id="solarPenumbra" fill="url(#penumbra)"/>
+          <path id="solarUmbra" fill="url(#umbra)"/>
+        </g>
+        <g id="lunarShadow" class="shadow" opacity="0">
+          <path id="lunarPenumbra" fill="url(#penumbra)"/>
+          <path id="lunarUmbra" fill="url(#umbra)"/>
+        </g>
+        <circle id="sunGlow" class="sun-glow" cx="120" cy="250" r="50" fill="#ffba4a" opacity=".28" filter="url(#glow)"/>
+        <circle id="sun" cx="120" cy="250" r="35" fill="url(#sunFill)"/>
+        <text id="sunLabel" class="body-label" x="120" y="315">GÜNEŞ</text>
+        <ellipse id="orbit" class="orbit" cx="800" cy="250" rx="190" ry="190"/>
+        <text id="orbitLabel" class="orbit-label" x="500" y="474" text-anchor="middle">AY’IN YÖRÜNGESİ</text>
+        <g id="earthGroup">
+          <circle id="earth" cx="800" cy="250" r="39" fill="url(#earthFill)"/>
+          <g id="earthLand" clip-path="url(#earthClip)" fill="#64c894" opacity=".86">
+            <path d="M775 225l12-8 13 5 3 12-8 8-2 13-10 6-7-11-12-2 4-12zM809 266l13-4 13 9-5 13-12 3-9-9zM824 223l9 3 5 8-7 4-8-6z"/>
+          </g>
+        </g>
+        <text id="earthLabel" class="body-label" x="800" y="315">DÜNYA</text>
+        <g id="moonGroup" class="moon" tabindex="0" role="slider" aria-label="Ay’ın yörüngedeki konumu" aria-valuemin="-180" aria-valuemax="180" aria-valuenow="180" aria-valuetext="Tutulma hizasında">
+          <circle class="hit-area" cx="610" cy="250" r="34"/>
+          <circle id="moon" cx="610" cy="250" r="24" fill="url(#moonFill)"/>
+          <g id="moonMarks" clip-path="url(#moonClip)" fill="#a9b5c8" opacity=".52"><circle cx="600" cy="242" r="4"/><circle cx="618" cy="259" r="5"/><circle cx="614" cy="238" r="2.5"/><circle cx="602" cy="263" r="2"/></g>
+        </g>
+        <text id="moonLabel" class="body-label" x="610" y="302">AY · SÜRÜKLE</text>
+        <text id="shadowLabel" class="caption-float" x="704" y="205" opacity="0">GÖLGE</text>
+      </svg>
+    </div>
+    <div class="controls">
+      <div class="control-row">
+        <div class="btns">
+          <button class="control play" id="playBtn" type="button" aria-label="Animasyonu oynat">▶ Oynat</button>
+          <button class="control" id="resetBtn" type="button">↺ Hizala</button>
+        </div>
+        <label class="orbit-control" for="angle">
+          <span class="range-label">Yörüngede konum</span>
+          <input id="angle" type="range" min="-180" max="180" step="1" value="180" aria-label="Ay’ın yörüngedeki konumu">
+          <output id="readout" class="readout" for="angle">180°</output>
+        </label>
+      </div>
+      <p class="control-help">İpucu: Ay’ı tutup sürükle, kaydırıcıyı kullan veya klavyede ← → tuşlarına bas.</p>
+    </div>
+  </section>
+  <section class="facts" aria-label="Tutulmalar hakkında bilgiler">
+    <article class="fact"><h2><span class="dot"></span>Güneş tutulması</h2><p>Ay, Güneş ile Dünya arasına girer. Ay’ın gölgesi Dünya üzerine düşer.</p></article>
+    <article class="fact"><h2><span class="dot moon-dot"></span>Ay tutulması</h2><p>Dünya, Güneş ile Ay arasına girer. Dünya’nın gölgesi Ay’ın üzerine düşer.</p></article>
+  </section>
+  <p class="note">Eğitim amaçlı basitleştirilmiş şema: uzaklıklar ve gök cisimlerinin boyutları ölçekte değildir. Her yeni ayda veya dolunayda tutulma gerçekleşmez; yörüngeler hafif eğiktir.</p>
+</main>
+<script>
+(()=>{
+  const $=id=>document.getElementById(id);
+  const svg=$('sky'), moonGroup=$('moonGroup'), moon=$('moon'), moonMarks=$('moonMarks'), angleInput=$('angle');
+  const state={mode:'solar',angle:180,playing:false,last:0,raf:0,dragging:false};
+  const settings={solar:{earthX:800,r:190,target:180},lunar:{earthX:470,r:190,target:0}};
+  const norm=a=>{while(a>180)a-=360;while(a< -180)a+=360;return a};
+  const diff=(a,b)=>Math.abs(norm(a-b));
+  function p(x,y,r,a){const rad=a*Math.PI/180;return{x:x+r*Math.cos(rad),y:250+r*Math.sin(rad)}}
+  function pointString(points){return points.map(q=>`${q.x.toFixed(1)},${q.y.toFixed(1)}`).join(' ')}
+  function draw(){
+    const cfg=settings[state.mode], ex=cfg.earthX, pos=p(ex,250,cfg.r,state.angle), aligned=diff(state.angle,cfg.target), eclipse=aligned<13;
+    $('earth').setAttribute('cx',ex);$('earthClipCircle').setAttribute('cx',ex);$('earthLabel').setAttribute('x',ex);
+    $('earthLand').setAttribute('transform',`translate(${ex-800},0)`);
+    $('orbit').setAttribute('cx',ex);$('orbit').setAttribute('cy','250');$('orbitLabel').setAttribute('x',(ex+120)/2);
+    $('moon').setAttribute('cx',pos.x);$('moon').setAttribute('cy',pos.y);$('moonClipCircle').setAttribute('cx',pos.x);$('moonClipCircle').setAttribute('cy',pos.y);
+    moonMarks.setAttribute('transform',`translate(${pos.x-610},${pos.y-250})`);
+    moonGroup.querySelector('.hit-area').setAttribute('cx',pos.x);moonGroup.querySelector('.hit-area').setAttribute('cy',pos.y);
+    $('moonLabel').setAttribute('x',pos.x);$('moonLabel').setAttribute('y',pos.y+48);
+    const solar=state.mode==='solar';$('solarShadow').setAttribute('opacity',solar&&eclipse?'.9':'0');$('lunarShadow').setAttribute('opacity',!solar&&eclipse?'.9':'0');
+    if(solar){
+      const start={x:pos.x+24,y:pos.y};const endX=ex-35;const span=Math.max(1,endX-start.x);const centerY=pos.y+(250-pos.y)*span/(span+55);const spread=Math.max(5,span*.12);
+      $('solarPenumbra').setAttribute('d',`M${start.x},${start.y-22} L${endX},${250-spread} L${endX},${250+spread} L${start.x},${start.y+22} Z`);
+      $('solarUmbra').setAttribute('d',`M${start.x},${start.y-9} L${endX},${250-5} L${endX},${250+5} L${start.x},${start.y+9} Z`);
+      $('shadowLabel').setAttribute('x',(pos.x+ex)/2);$('shadowLabel').setAttribute('y',225);$('shadowLabel').textContent='AY’IN GÖLGESİ';
+      $('sun').setAttribute('cx','120');$('sunGlow').setAttribute('cx','120');$('sunLabel').setAttribute('x','120');
+    }else{
+      const startX=ex+39,endX=975,span=endX-startX,spread=44;
+      $('lunarPenumbra').setAttribute('d',`M${startX},206 L${endX},${250-spread} L${endX},${250+spread} L${startX},294 Z`);
+      $('lunarUmbra').setAttribute('d',`M${startX},231 L${Math.min(endX,startX+span*.75)},${250-15} L${Math.min(endX,startX+span*.75)},${250+15} L${startX},269 Z`);
+      $('shadowLabel').setAttribute('x',Math.min(890,ex+150));$('shadowLabel').setAttribute('y',205);$('shadowLabel').textContent='DÜNYA’NIN GÖLGESİ';
+    }
+    $('shadowLabel').setAttribute('opacity',eclipse?'1':'0');
+    const status=$('status');status.classList.toggle('active',eclipse);
+    if(eclipse)status.textContent=solar?'Tutulma! Ay’ın gölgesi Dünya’ya düşüyor':'Tutulma! Dünya’nın gölgesi Ay’a düşüyor';
+    else status.textContent=solar?'Ay’ı Güneş ile Dünya arasına hizala':'Ay’ı Dünya’nın gölgesine getir';
+    $('angle').value=state.angle;$('readout').value=`${Math.round(state.angle)}°`;moonGroup.setAttribute('aria-valuenow',Math.round(state.angle));moonGroup.setAttribute('aria-valuetext',eclipse?'Tutulma hizasında':`${Math.round(state.angle)} derece`);
+    svg.setAttribute('aria-label',solar?'Güneş solda, Dünya sağda; Ay’ı sürükleyerek Güneş ile Dünya arasına getir.':'Güneş solda, Dünya ortada; Ay’ı sürükleyerek Dünya’nın arkasındaki gölgeye getir.');
+    $('sceneTitle');
+  }
+  function selectMode(mode){state.mode=mode;state.angle=settings[mode].target;state.playing=false;updatePlay();$('solarTab').setAttribute('aria-selected',mode==='solar');$('lunarTab').setAttribute('aria-selected',mode==='lunar');$('sim').setAttribute('aria-labelledby',mode==='solar'?'solarTab':'lunarTab');draw()}
+  function updatePlay(){$('playBtn').textContent=state.playing?'❚❚ Duraklat':'▶ Oynat';$('playBtn').setAttribute('aria-label',state.playing?'Animasyonu duraklat':'Animasyonu oynat')}
+  function setAngle(a){state.angle=norm(a);draw()}
+  function animate(t){if(!state.playing)return;if(!state.last)state.last=t;const dt=Math.min(60,t-state.last);state.last=t;setAngle(state.angle+(state.mode==='solar'?-1:1)*dt*.015);state.raf=requestAnimationFrame(animate)}
+  function startStop(){state.playing=!state.playing;state.last=0;updatePlay();if(state.playing)state.raf=requestAnimationFrame(animate);else cancelAnimationFrame(state.raf)}
+  function pointerAngle(e){const pt=svg.createSVGPoint();pt.x=e.clientX;pt.y=e.clientY;const q=pt.matrixTransform(svg.getScreenCTM().inverse()),cfg=settings[state.mode];return Math.atan2(q.y-250,q.x-cfg.earthX)*180/Math.PI}
+  moonGroup.addEventListener('pointerdown',e=>{e.preventDefault();state.dragging=true;state.playing=false;updatePlay();moonGroup.classList.add('dragging');moonGroup.setPointerCapture(e.pointerId);setAngle(pointerAngle(e))});
+  moonGroup.addEventListener('pointermove',e=>{if(state.dragging)setAngle(pointerAngle(e))});
+  function endDrag(){state.dragging=false;moonGroup.classList.remove('dragging')}
+  moonGroup.addEventListener('pointerup',endDrag);moonGroup.addEventListener('pointercancel',endDrag);
+  moonGroup.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'||e.key==='ArrowDown'){e.preventDefault();setAngle(state.angle-4)}if(e.key==='ArrowRight'||e.key==='ArrowUp'){e.preventDefault();setAngle(state.angle+4)}});
+  angleInput.addEventListener('input',e=>{state.playing=false;updatePlay();setAngle(Number(e.target.value))});
+  $('solarTab').addEventListener('click',()=>selectMode('solar'));$('lunarTab').addEventListener('click',()=>selectMode('lunar'));
+  $('playBtn').addEventListener('click',startStop);$('resetBtn').addEventListener('click',()=>{state.playing=false;updatePlay();setAngle(settings[state.mode].target)});
+  draw();
+})();
+</script>
+</body>
+</html>
