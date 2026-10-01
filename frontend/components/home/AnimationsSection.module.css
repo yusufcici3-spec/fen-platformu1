@@ -1,0 +1,137 @@
+.section {
+  width: 100%;
+  padding: clamp(34px, 5vw, 68px) 0;
+  scroll-margin-top: 84px;
+  color: #17233f;
+}
+
+.container {
+  width: min(100% - 40px, 1180px);
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 22px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 9px;
+  color: #5976b4;
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: .14em;
+}
+
+.eyebrow > span { color: #efaa46; font-size: 14px; }
+.title { margin: 0; color: #17233f; font-size: clamp(26px, 3vw, 36px); line-height: 1.12; letter-spacing: -.035em; }
+.description { max-width: 650px; margin: 8px 0 0; color: #68758f; font-size: 14px; line-height: 1.55; }
+.headerNote { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 8px; padding: 9px 12px; border: 1px solid #e2e9f4; border-radius: 999px; color: #59709e; background: #fff; font-size: 10px; font-weight: 750; }
+.headerNote > span { color: #7393d1; font-size: 13px; }
+
+.grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.card {
+  --grade-accent: #92a4c8;
+  position: relative;
+  display: flex;
+  min-height: 218px;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 17px;
+  border: 1px solid #e5eaf3;
+  border-radius: 19px;
+  background: linear-gradient(150deg, #fff 0%, #f8faff 100%);
+  box-shadow: 0 7px 24px rgba(25, 47, 88, .055);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.card:hover { transform: translateY(-3px); border-color: color-mix(in srgb, var(--grade-accent) 52%, #e5eaf3); box-shadow: 0 14px 30px rgba(25, 47, 88, .11); }
+.gradeFive { --grade-accent: #66a9de; }
+.gradeSix { --grade-accent: #4eb9a1; }
+.gradeSeven { --grade-accent: #e49a58; }
+.gradeEight { --grade-accent: #9a89ec; }
+.cardTop { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+.gradeNumber { display: grid; width: 42px; height: 42px; place-items: center; border: 1px solid color-mix(in srgb, var(--grade-accent) 22%, white); border-radius: 14px; color: color-mix(in srgb, var(--grade-accent) 84%, #263b65); background: color-mix(in srgb, var(--grade-accent) 11%, white); font-size: 22px; font-weight: 850; letter-spacing: -.04em; }
+.status, .activeStatus { display: inline-flex; align-items: center; gap: 6px; padding: 6px 8px; border: 1px solid #e9edf5; border-radius: 999px; color: #8591a8; background: rgba(255,255,255,.76); font-size: 9px; font-weight: 750; white-space: nowrap; }
+.gradeLabel { margin: 0 0 5px; color: var(--grade-accent); font-size: 9px; font-weight: 900; letter-spacing: .12em; }
+.card h3 { margin: 0; color: #202d49; font-size: 16px; line-height: 1.25; letter-spacing: -.02em; }
+.cardDescription { margin: 7px 0 0; color: #71809a; font-size: 11px; line-height: 1.55; }
+.cardFoot { margin-top: 13px; padding-top: 10px; border-top: 1px solid #edf0f6; color: #9aa5b9; font-size: 9px; }
+
+.featuredCard {
+  border-color: rgba(81, 126, 218, .32);
+  color: #f6f8ff;
+  background:
+    radial-gradient(circle at 88% 10%, rgba(79, 139, 220, .28), transparent 35%),
+    radial-gradient(circle at 14% 84%, rgba(121, 103, 217, .22), transparent 43%),
+    linear-gradient(145deg, #13284f 0%, #101a37 65%, #171b3b 100%);
+  box-shadow: 0 12px 32px rgba(36, 67, 128, .2);
+}
+
+.featuredCard::after {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  width: 90px;
+  height: 90px;
+  border: 1px solid rgba(197, 218, 255, .12);
+  border-radius: 50%;
+  content: "";
+  box-shadow: 0 0 0 11px rgba(197, 218, 255, .035), 0 0 0 23px rgba(197, 218, 255, .025);
+  pointer-events: none;
+}
+
+.featuredCard .gradeNumber { z-index: 1; border-color: rgba(204, 222, 255, .25); color: #f6f7ff; background: rgba(128, 149, 215, .19); }
+.featuredCard .activeStatus { z-index: 1; border-color: rgba(159, 230, 218, .24); color: #b4eee2; background: rgba(30, 80, 89, .28); }
+.activeStatus > span { width: 6px; height: 6px; border-radius: 50%; background: #8fe5d4; box-shadow: 0 0 9px rgba(143, 229, 212, .8); }
+.featuredCard .gradeLabel { color: #aebcf7; }
+.featuredCard h3 { max-width: 215px; color: #f4f6ff; }
+.featuredCard .cardDescription { max-width: 235px; color: #b5c1dc; }
+.openLink { z-index: 1; display: inline-flex; width: fit-content; align-items: center; gap: 8px; margin-top: 16px; padding: 9px 11px; border: 1px solid rgba(157, 226, 219, .28); border-radius: 10px; color: #d4fff7; background: rgba(77, 155, 151, .17); font-size: 10px; font-weight: 800; text-decoration: none; transition: background .18s ease, transform .18s ease; }
+.openLink:hover { transform: translateY(-1px); background: rgba(77, 155, 151, .3); }
+.openLink span { font-size: 14px; }
+.card:focus-within, .openLink:focus-visible { outline: 3px solid #5185d7; outline-offset: 3px; }
+
+:global(.dark) .section { color: #edf3ff; }
+:global(.dark) .title { color: #edf3ff; }
+:global(.dark) .description { color: #a8b5cb; }
+:global(.dark) .headerNote { border-color: #33425e; color: #d4dff2; background: #172138; }
+:global(.dark) .card:not(.featuredCard) { border-color: #2d3a53; background: linear-gradient(150deg, #172138 0%, #121b2e 100%); box-shadow: 0 8px 24px rgba(0, 0, 0, .16); }
+:global(.dark) .card:not(.featuredCard) h3 { color: #e7eefb; }
+:global(.dark) .card:not(.featuredCard) .cardDescription { color: #a5b2c9; }
+:global(.dark) .card:not(.featuredCard) .status { border-color: #384762; color: #b4c0d5; background: #202c43; }
+:global(.dark) .card:not(.featuredCard) .cardFoot { border-color: #2c3951; color: #8998b2; }
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .card { min-height: 190px; }
+}
+
+@media (max-width: 560px) {
+  .container { width: min(100% - 28px, 1180px); }
+  .header { align-items: flex-start; flex-direction: column; gap: 12px; }
+  .grid { gap: 10px; }
+  .card { min-height: 194px; padding: 13px; border-radius: 15px; }
+  .card h3 { font-size: 14px; }
+  .cardDescription { font-size: 10px; }
+  .gradeNumber { width: 36px; height: 36px; border-radius: 12px; font-size: 19px; }
+  .status, .activeStatus { padding: 5px 6px; font-size: 8px; }
+  .cardFoot { font-size: 8px; }
+  .openLink { padding: 8px 9px; font-size: 9px; }
+}
+
+@media (max-width: 360px) {
+  .grid { grid-template-columns: 1fr; }
+  .card { min-height: 170px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card, .openLink { transition: none; }
+}
