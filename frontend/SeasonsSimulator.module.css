@@ -1,0 +1,177 @@
+.simulator {
+  --space-bg: #070b18;
+  --panel-bg: rgba(12, 20, 43, 0.82);
+  --line: rgba(155, 178, 232, 0.16);
+  --text: #f2f5ff;
+  --muted: #9cabc9;
+  --cyan: #8de5d8;
+  position: relative;
+  isolation: isolate;
+  width: min(100%, 1180px);
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid rgba(151, 180, 255, 0.2);
+  border-radius: 28px;
+  color: var(--text);
+  background:
+    radial-gradient(ellipse at 13% 9%, rgba(60, 66, 145, 0.34), transparent 35%),
+    radial-gradient(ellipse at 88% 22%, rgba(25, 117, 158, 0.2), transparent 34%),
+    linear-gradient(145deg, #0a1024 0%, #070b18 56%, #0c1024 100%);
+  box-shadow: 0 24px 80px rgba(4, 9, 24, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  font-family: var(--font-geist-sans, var(--font-sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif));
+}
+
+.simulator *,
+.simulator *::before,
+.simulator *::after { box-sizing: border-box; }
+
+.spaceGlow {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.58;
+  background-image:
+    radial-gradient(1.5px 1.5px at 7% 14%, rgba(227, 236, 255, .85) 50%, transparent 100%),
+    radial-gradient(1px 1px at 25% 32%, rgba(194, 216, 255, .8) 50%, transparent 100%),
+    radial-gradient(1px 1px at 57% 10%, rgba(255, 255, 255, .7) 50%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 86% 15%, rgba(189, 217, 255, .72) 50%, transparent 100%),
+    radial-gradient(1px 1px at 74% 49%, rgba(255, 255, 255, .56) 50%, transparent 100%),
+    radial-gradient(1px 1px at 18% 72%, rgba(200, 220, 255, .65) 50%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 92% 83%, rgba(227, 236, 255, .78) 50%, transparent 100%),
+    radial-gradient(1px 1px at 45% 88%, rgba(255, 255, 255, .6) 50%, transparent 100%);
+}
+
+.content { position: relative; padding: clamp(20px, 4vw, 42px); }
+.header { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; margin-bottom: 26px; }
+.eyebrow { display: inline-flex; align-items: center; gap: 9px; margin-bottom: 12px; color: #aebbd8; font-size: 11px; font-weight: 800; letter-spacing: .16em; }
+.eyebrowDot { width: 8px; height: 8px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 12px rgba(141, 229, 216, .8); }
+.title { max-width: 760px; margin: 0; color: #f7f8ff; font-size: clamp(27px, 4vw, 43px); line-height: 1.08; letter-spacing: -.035em; }
+.description { max-width: 730px; margin: 11px 0 0; color: #a5b2d0; font-size: 15px; line-height: 1.55; }
+.seasonBadge { --season-color: #8ee6d4; display: grid; flex: 0 0 auto; min-width: 166px; gap: 3px; padding: 13px 16px; border: 1px solid color-mix(in srgb, var(--season-color) 48%, transparent); border-radius: 16px; background: rgba(15, 24, 48, .84); box-shadow: inset 0 0 24px color-mix(in srgb, var(--season-color) 8%, transparent); }
+.badgeKicker { color: #8494b5; font-size: 9px; font-weight: 800; letter-spacing: .12em; }
+.seasonBadge strong { color: var(--season-color); font-size: 20px; }
+.seasonBadge > span:last-child { color: #9daecc; font-size: 11px; }
+
+.summaryStrip { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 0 0 18px; }
+.summaryItem { display: flex; min-width: 0; align-items: center; gap: 12px; padding: 13px 14px; border: 1px solid rgba(150, 172, 224, .14); border-radius: 15px; background: rgba(11, 18, 39, .7); }
+.summaryIcon { display: grid; flex: 0 0 34px; width: 34px; height: 34px; place-items: center; border: 1px solid rgba(151, 184, 246, .18); border-radius: 11px; color: #ffcf7c; background: rgba(83, 71, 95, .2); font-size: 17px; }
+.summaryItem:nth-child(2) .summaryIcon { color: #ffd27c; }
+.summaryItem:nth-child(3) .summaryIcon { color: #a8b8ff; }
+.summaryItem:nth-child(4) .summaryIcon { color: #8de5d8; }
+.summaryItem > span:last-child { display: grid; min-width: 0; gap: 4px; }
+.summaryItem small { overflow: hidden; color: #8392b1; font-size: 9px; font-weight: 800; letter-spacing: .1em; text-overflow: ellipsis; white-space: nowrap; }
+.summaryItem strong { overflow: hidden; color: #ecf1ff; font-size: 18px; line-height: 1.1; text-overflow: ellipsis; white-space: nowrap; }
+
+.panel { min-width: 0; padding: 18px 20px 16px; border: 1px solid var(--line); border-radius: 20px; background: var(--panel-bg); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .025); }
+.panelHeader, .controlHeader { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+.panelHeader > div, .controlHeader > div:first-child { display: flex; min-width: 0; align-items: center; gap: 12px; }
+.sectionNumber { display: grid; flex: 0 0 30px; width: 30px; height: 30px; place-items: center; border: 1px solid rgba(141, 229, 216, .22); border-radius: 10px; color: var(--cyan); background: rgba(55, 112, 123, .14); font-size: 10px; font-weight: 800; }
+.panelHeader h3, .controlHeader h3 { margin: 0; color: #eef2ff; font-size: 15px; font-weight: 750; letter-spacing: -.01em; }
+.panelHeader p, .controlHeader p { margin: 4px 0 0; color: #8998b8; font-size: 11px; line-height: 1.4; }
+.livePill, .angleBadge { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 7px; padding: 8px 10px; border: 1px solid rgba(141, 229, 216, .19); border-radius: 999px; color: #c9d4ee; background: rgba(10, 18, 39, .7); font-size: 10px; font-weight: 700; }
+.livePill > span { width: 6px; height: 6px; border-radius: 50%; background: #8de5d8; box-shadow: 0 0 9px #8de5d8; }
+.angleBadge { border-color: rgba(255, 203, 119, .2); color: #ffd27c; }
+.orbitSvg { display: block; width: 100%; height: auto; margin: 3px auto 0; overflow: visible; }
+.orbitLabel { fill: #9eaccb; font-size: 12px; font-weight: 600; }
+.currentMarker { fill: #fff1cd; font-size: 10px; font-weight: 900; letter-spacing: .12em; }
+.sunCaption { fill: #ffdc9b; font-size: 9px; font-weight: 800; letter-spacing: .2em; }
+.milestones { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; padding-top: 4px; }
+.milestone { display: flex; min-width: 0; align-items: center; justify-content: center; gap: 7px; padding: 9px 6px; border: 1px solid rgba(135, 156, 205, .13); border-radius: 11px; color: #ced7ec; background: rgba(9, 15, 33, .55); font: inherit; font-size: 11px; cursor: pointer; transition: border-color .18s ease, background .18s ease, transform .18s ease; }
+.milestone:hover { transform: translateY(-1px); border-color: rgba(141, 229, 216, .42); background: rgba(40, 65, 96, .3); }
+.milestoneDot { flex: 0 0 7px; width: 7px; height: 7px; border-radius: 50%; background: #ffd27c; box-shadow: 0 0 8px rgba(255, 210, 124, .55); }
+.milestoneEvent { color: #8291af; font-size: 9px; }
+
+.scienceGrid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px; margin-top: 14px; }
+.hemisphereButton { flex: 0 0 auto; padding: 8px 10px; border: 1px solid rgba(139, 175, 239, .17); border-radius: 10px; color: #c2d0ec; background: rgba(11, 18, 39, .7); font: inherit; font-size: 10px; font-weight: 700; cursor: pointer; }
+.hemisphereButton span { margin-left: 5px; color: #8de5d8; }
+.globeSvg, .shadowSvg { display: block; width: 100%; height: auto; margin: 8px auto 0; }
+.svgCaption { fill: #c4d0e9; font-size: 12px; font-weight: 700; }
+.svgSubcaption { fill: #9dacca; font-size: 11px; font-weight: 500; }
+.sunRays { filter: drop-shadow(0 0 10px rgba(255, 194, 94, .4)); }
+.explainLine { display: flex; align-items: center; gap: 8px; margin: 2px 4px 0; color: #8999b8; font-size: 10px; }
+.sunDot { width: 8px; height: 8px; border: 2px solid #fff1dc; border-radius: 50%; background: #ff896b; box-shadow: 0 0 10px rgba(255, 137, 107, .6); }
+.angleLabel { fill: #8de5d8; font-size: 13px; font-weight: 800; }
+.shadowLegend { pointer-events: none; }
+
+.controlPanel { margin-top: 14px; padding: 20px; border: 1px solid rgba(143, 172, 225, .18); border-radius: 20px; background: linear-gradient(120deg, rgba(18, 30, 60, .9), rgba(12, 19, 42, .9)); }
+.controlHeader { align-items: flex-start; }
+.transport { display: flex; flex: 0 0 auto; align-items: center; gap: 8px; }
+.playButton, .resetButton { display: inline-flex; min-height: 38px; align-items: center; justify-content: center; gap: 8px; padding: 0 14px; border: 1px solid rgba(141, 229, 216, .25); border-radius: 11px; color: #071b26; background: linear-gradient(135deg, #a0f0df, #74d3dc); font: inherit; font-size: 12px; font-weight: 850; cursor: pointer; transition: transform .16s ease, filter .16s ease; }
+.playButton:hover, .resetButton:hover { transform: translateY(-1px); filter: brightness(1.06); }
+.playButton > span { font-size: 13px; }
+.resetButton { border-color: rgba(145, 163, 208, .18); color: #bfcae0; background: rgba(12, 20, 42, .82); }
+.speedControl { display: inline-flex; align-items: center; gap: 6px; color: #93a2c0; font-size: 10px; }
+.speedControl select { min-height: 36px; padding: 0 9px; border: 1px solid rgba(145, 163, 208, .18); border-radius: 10px; color: #d9e3f7; background: #111a34; font: inherit; font-size: 11px; }
+.dateControl { margin-top: 19px; }
+.rangeLabels { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 10px; color: #9baac8; font-size: 11px; }
+.rangeLabels label { color: #cad4e8; font-weight: 700; }
+.rangeLabels output { color: #8de5d8; font-size: 11px; font-weight: 750; font-variant-numeric: tabular-nums; }
+.range { display: block; width: 100%; height: 8px; margin: 0; border: 0; border-radius: 999px; outline: none; background: linear-gradient(90deg, #83e2d8 var(--range-fill, 50%), rgba(107, 127, 171, .28) var(--range-fill, 50%)); accent-color: #8de5d8; cursor: pointer; appearance: none; -webkit-appearance: none; }
+.range::-webkit-slider-thumb { width: 18px; height: 18px; border: 3px solid #e8fffb; border-radius: 50%; background: #73d7d5; box-shadow: 0 0 0 5px rgba(115, 215, 213, .14), 0 0 14px rgba(115, 215, 213, .55); appearance: none; -webkit-appearance: none; }
+.range::-moz-range-thumb { width: 13px; height: 13px; border: 3px solid #e8fffb; border-radius: 50%; background: #73d7d5; box-shadow: 0 0 0 5px rgba(115, 215, 213, .14), 0 0 14px rgba(115, 215, 213, .55); }
+.range:focus-visible::-webkit-slider-thumb { outline: 3px solid #fff; outline-offset: 3px; }
+.rangeTicks { display: flex; justify-content: space-between; gap: 8px; margin-top: 8px; color: #7282a3; font-size: 9px; }
+.adjustments { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; margin-top: 20px; padding-top: 17px; border-top: 1px solid rgba(143, 164, 206, .12); }
+.adjustment .range { height: 6px; }
+.adjustment .range::-webkit-slider-thumb { width: 15px; height: 15px; border-width: 2px; }
+.adjustment .range::-moz-range-thumb { width: 11px; height: 11px; border-width: 2px; }
+.controlHint { margin: 15px 0 0; color: #8493b1; font-size: 10px; line-height: 1.5; }
+.note { display: flex; align-items: flex-start; gap: 11px; margin-top: 14px; padding: 14px 16px; border: 1px solid rgba(135, 169, 219, .12); border-radius: 14px; background: rgba(8, 15, 32, .52); }
+.noteIcon { display: grid; flex: 0 0 20px; width: 20px; height: 20px; place-items: center; border: 1px solid rgba(141, 229, 216, .32); border-radius: 50%; color: #8de5d8; font-size: 11px; font-weight: 800; }
+.note p { margin: 0; color: #8e9db9; font-size: 10px; line-height: 1.65; }
+.note strong { color: #cbd8f0; }
+
+.simulator button:focus-visible, .simulator select:focus-visible, .simulator input:focus-visible { outline: 2px solid #d8fff9; outline-offset: 3px; }
+
+@media (max-width: 760px) {
+  .content { padding: 22px 18px; }
+  .header { align-items: flex-start; }
+  .seasonBadge { min-width: 130px; padding: 11px 12px; }
+  .summaryStrip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .scienceGrid { grid-template-columns: 1fr; }
+  .orbitLabel { font-size: 16px; }
+  .currentMarker { font-size: 13px; }
+  .sunCaption { font-size: 12px; }
+  .svgCaption { font-size: 16px; }
+  .svgSubcaption { font-size: 14px; }
+  .angleLabel { font-size: 17px; }
+}
+
+@media (max-width: 540px) {
+  .simulator { border-radius: 20px; }
+  .content { padding: 19px 13px; }
+  .header { display: grid; grid-template-columns: 1fr; gap: 15px; margin-bottom: 18px; }
+  .title { font-size: 29px; }
+  .description { font-size: 13px; }
+  .seasonBadge { display: flex; align-items: center; justify-content: space-between; min-width: 0; }
+  .badgeKicker { max-width: 44%; }
+  .seasonBadge strong { font-size: 16px; }
+  .summaryStrip { gap: 7px; }
+  .summaryItem { gap: 8px; padding: 10px 9px; }
+  .summaryIcon { flex-basis: 28px; width: 28px; height: 28px; border-radius: 9px; }
+  .summaryItem small { font-size: 8px; letter-spacing: .06em; }
+  .summaryItem strong { font-size: 15px; }
+  .panel { padding: 14px 11px 13px; border-radius: 16px; }
+  .panelHeader, .controlHeader { align-items: flex-start; }
+  .panelHeader h3, .controlHeader h3 { font-size: 13px; }
+  .panelHeader p, .controlHeader p { font-size: 10px; }
+  .sectionNumber { flex-basis: 26px; width: 26px; height: 26px; border-radius: 8px; }
+  .livePill { padding: 7px 8px; font-size: 9px; }
+  .milestones { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .milestone { flex-wrap: wrap; justify-content: flex-start; font-size: 10px; }
+  .hemisphereButton { padding: 7px 8px; font-size: 9px; }
+  .controlPanel { padding: 16px 12px; border-radius: 16px; }
+  .controlHeader { display: grid; gap: 14px; }
+  .transport { width: 100%; }
+  .playButton { flex: 1; }
+  .speedControl { margin-left: auto; }
+  .adjustments { grid-template-columns: 1fr; gap: 17px; }
+  .rangeTicks { font-size: 8px; }
+  .note { padding: 12px 10px; }
+  .note p { font-size: 9px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .milestone, .playButton, .resetButton { transition: none; }
+}
