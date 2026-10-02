@@ -1,0 +1,99 @@
+.simulator {
+  --space-0: #050a18;
+  --space-1: #0a1226;
+  --space-line: rgba(175, 199, 238, .14);
+  --space-muted: #a9b9d6;
+  overflow: hidden;
+  border: 1px solid #273655;
+  border-radius: 22px;
+  color: #edf4ff;
+  background: #0b1429;
+  box-shadow: 0 24px 70px rgba(15, 31, 62, .16);
+}
+.topBar { display:flex; justify-content:space-between; align-items:flex-end; gap:20px; padding:20px 22px 16px; border-bottom:1px solid var(--space-line); background:linear-gradient(135deg,#111e39,#0b1429 65%); }
+.eyebrow,.infoEyebrow { color:#8eacd8; font-size:9px; font-weight:850; letter-spacing:.14em; }
+.topBar h2 { margin:7px 0 0; color:#f4f7ff; font-size:clamp(20px,2.6vw,29px); line-height:1.15; letter-spacing:-.035em; }
+.topBar p { margin:7px 0 0; color:#a8b7d1; font-size:12px; line-height:1.5; }
+.viewToggle { display:flex; flex:0 0 auto; gap:4px; padding:4px; border:1px solid #31415f; border-radius:12px; background:#0a1122; }
+.viewToggle button,.speedButton,.speedActive { border:0; border-radius:8px; padding:8px 10px; color:#aab8d1; background:transparent; font:700 10px system-ui,sans-serif; cursor:pointer; }
+.viewToggle .activeToggle { color:#f0f7ff; background:#263a61; box-shadow:inset 0 0 0 1px rgba(173,205,255,.18); }
+.mainGrid { display:grid; grid-template-columns:minmax(0,1fr) 326px; align-items:stretch; }
+.sceneColumn { min-width:0; padding:16px; }
+.canvasFrame { position:relative; height:clamp(320px,42vw,492px); overflow:hidden; border:1px solid rgba(149,176,221,.17); border-radius:17px; background:var(--space-0); }
+.canvasFrame :global(.solar-system-canvas) { display:block; width:100%; height:100%; touch-action:manipulation; cursor:crosshair; }
+.sceneBadge { position:absolute; top:12px; left:12px; padding:6px 9px; border:1px solid rgba(177,205,255,.18); border-radius:999px; color:#c9dcfa; background:rgba(9,17,36,.78); font-size:8px; font-weight:800; letter-spacing:.13em; pointer-events:none; }
+.planetPicker { display:flex; gap:7px; overflow-x:auto; padding:12px 1px 5px; scrollbar-color:#51688f transparent; scrollbar-width:thin; }
+.planetButton,.selectedPlanetButton { display:inline-flex; flex:0 0 auto; align-items:center; gap:6px; border:1px solid #334362; border-radius:999px; padding:7px 10px; color:#b7c6de; background:#111e37; font:700 10px system-ui,sans-serif; cursor:pointer; transition:background .18s ease,border-color .18s ease,transform .18s ease; }
+.planetButton:hover,.selectedPlanetButton:hover { transform:translateY(-1px); border-color:#82a4df; }
+.selectedPlanetButton { border-color:#70c9d7; color:#f3ffff; background:#1c4854; box-shadow:0 0 16px rgba(93,194,205,.14); }
+.pickerNumber { display:grid; width:17px; height:17px; place-items:center; border-radius:50%; color:#c6d6f2; background:rgba(255,255,255,.1); font-size:8px; }
+.controls { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:10px; padding:11px 0 8px; border-top:1px solid var(--space-line); }
+.playGroup,.speedGroup { display:flex; align-items:center; gap:7px; }
+.playButton,.resetButton { display:inline-flex; align-items:center; justify-content:center; gap:7px; border:1px solid #4c9e9d; border-radius:10px; padding:9px 12px; color:#eafffd; background:linear-gradient(135deg,#21645f,#174249); font:800 10px system-ui,sans-serif; cursor:pointer; }
+.playButton:hover { background:#28716c; }
+.resetButton { border-color:#3c4d6b; color:#c2d0e5; background:#17233b; }
+.resetButton:hover { border-color:#7793bf; color:#fff; }
+.speedGroup > span { margin-right:2px; color:#95a6c1; font-size:9px; font-weight:700; }
+.speedButton,.speedActive { padding:7px 9px; border:1px solid #31415c; background:#101b31; }
+.speedActive { border-color:#7fa1d8; color:#f3f7ff; background:#263a5d; }
+.timelineLabel { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:7px; color:#9eafca; font-size:10px; }
+.timelineLabel strong { color:#e0ebff; font-size:10px; }
+.timeline,.zoomRow input[type="range"] { width:100%; height:4px; margin:10px 0 4px; accent-color:#75d3c5; cursor:pointer; }
+.zoomRow { display:flex; align-items:center; gap:9px; margin-top:7px; color:#aebdd4; font-size:9px; }
+.zoomRow label { white-space:nowrap; }
+.zoomRow input[type="range"] { flex:1; min-width:70px; margin:0; }
+.zoomRow > span { width:25px; text-align:right; color:#e0eaff; }
+.zoomRow .resetButton { padding:7px 9px; white-space:nowrap; font-size:9px; }
+.scaleNote { margin:10px 0 0; color:#8798b5; font-size:9px; line-height:1.6; }
+.infoPanel { min-width:0; padding:20px 18px 17px; border-left:1px solid var(--space-line); background:linear-gradient(180deg,#101c34,#0b1428); }
+.infoHeader { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:8px; }
+.planetType { padding:5px 8px; border:1px solid rgba(113,202,205,.2); border-radius:999px; color:#9ee1dc; background:rgba(45,111,115,.18); font-size:8px; font-weight:750; }
+.planetOrb { position:relative; width:132px; height:132px; margin:16px auto 12px; overflow:hidden; border:1px solid rgba(217,234,255,.25); border-radius:50%; background-color:#354e77; background-repeat:no-repeat; background-position:50% 50%; background-size:auto 100%; box-shadow:inset -12px -8px 25px rgba(0,0,0,.3),0 0 35px rgba(82,140,218,.16); }
+.planetOrb::after { position:absolute; inset:0; border-radius:50%; background:radial-gradient(ellipse at 32% 27%,rgba(255,255,255,.22),transparent 36%),radial-gradient(ellipse at 72% 64%,transparent 18%,rgba(0,5,18,.62) 100%); content:""; }
+.saturnOrb::before { position:absolute; z-index:0; top:42px; left:-25px; width:182px; height:48px; border:9px solid rgba(211,193,156,.7); border-right-color:rgba(132,109,80,.48); border-left-color:rgba(233,218,185,.78); border-radius:50%; transform:rotate(-18deg); content:""; }
+.infoPanel h3 { margin:0; color:#f4f7ff; text-align:center; font-size:25px; line-height:1.1; letter-spacing:-.035em; }
+.englishName { margin:4px 0 15px; color:#8d9fbc; text-align:center; font-size:10px; letter-spacing:.11em; text-transform:uppercase; }
+.statsGrid { display:grid; grid-template-columns:1fr 1fr; gap:7px; margin:0; }
+.statsGrid > div { min-width:0; padding:9px 10px; border:1px solid rgba(168,191,229,.12); border-radius:11px; background:rgba(24,39,67,.72); }
+.statsGrid > div:nth-child(2),.statsGrid > div:nth-child(5) { grid-column:1 / -1; }
+.statsGrid dt { color:#91a4c2; font-size:8px; font-weight:700; }
+.statsGrid dd { margin:4px 0 0; color:#f0f5ff; font-size:14px; font-weight:800; line-height:1.25; }
+.statsGrid dd small { color:#a7bad8; font-size:9px; font-weight:700; }
+.statsGrid > div > span { display:block; margin-top:3px; color:#8497b4; font-size:8px; line-height:1.45; }
+.atmosphereBlock,.factsBlock { margin-top:14px; }
+.atmosphereBlock h4,.factsBlock h4 { margin:0 0 6px; color:#b8c9e4; font-size:10px; letter-spacing:.02em; }
+.atmosphereBlock p { margin:0; color:#96a9c6; font-size:9px; line-height:1.55; }
+.factsBlock ol { display:grid; gap:7px; margin:0; padding-left:18px; color:#aebdd4; font-size:9px; line-height:1.5; }
+.factsBlock li { padding-left:2px; }
+.factsBlock li::marker { color:#7bcfc5; font-weight:800; }
+.sources { margin-top:14px; padding-top:10px; border-top:1px solid var(--space-line); color:#9caecc; font-size:8px; }
+.sources summary { cursor:pointer; font-weight:750; }
+.sources ul { display:grid; gap:6px; margin:8px 0 0; padding-left:16px; line-height:1.4; }
+.sources a { color:#a9c8ff; text-decoration:none; }
+.sources a:hover { text-decoration:underline; }
+
+@media (max-width: 900px) {
+  .mainGrid { grid-template-columns:minmax(0,1fr) 290px; }
+  .infoPanel { padding:16px 13px; }
+  .sceneColumn { padding:12px; }
+}
+@media (max-width: 720px) {
+  .topBar { align-items:flex-start; flex-direction:column; }
+  .mainGrid { grid-template-columns:1fr; }
+  .infoPanel { border-top:1px solid var(--space-line); border-left:0; }
+  .planetOrb { width:116px; height:116px; }
+  .canvasFrame { height:clamp(300px,70vw,430px); }
+}
+@media (max-width: 480px) {
+  .topBar { padding:16px 14px 13px; }
+  .sceneColumn { padding:9px; }
+  .viewToggle { width:100%; }
+  .viewToggle button { flex:1; padding:8px 5px; font-size:9px; }
+  .controls { align-items:flex-start; flex-direction:column; }
+  .speedGroup { align-self:flex-end; }
+  .canvasFrame { height:300px; }
+  .planetButton,.selectedPlanetButton { padding:6px 8px; font-size:9px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .planetButton,.selectedPlanetButton { transition:none; }
+}
