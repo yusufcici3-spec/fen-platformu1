@@ -38,6 +38,25 @@ export default async function ClassLevelPage({ params }: { params: { level: stri
         description="Bir üniteye tıklayarak o ünitedeki konuları görüntüleyebilirsin."
       />
       <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
+        {level === 6 && (
+          <Link
+            href="/laboratuvar/tutulmalar"
+            className="group mb-8 block rounded-card border border-beaker/25 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-beaker/30 dark:bg-lab-inkSoft"
+          >
+            <span className="font-mono text-xs font-semibold uppercase tracking-wide text-beaker-dark dark:text-beaker-light">
+              6. SINIF · GÜNEŞ SİSTEMİ VE TUTULMALAR
+            </span>
+            <h2 className="mt-2 font-display text-xl font-bold">
+              Güneş ve Ay tutulmalarını keşfet
+            </h2>
+            <p className="mt-2 max-w-3xl text-sm text-lab-inkMuted dark:text-lab-paper/65">
+              Tutulmaların nasıl oluştuğunu izle; Ay’ı sürükleyip etkileşimli simülasyonu kendin kontrol et.
+            </p>
+            <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-beaker">
+              Simülasyonu aç <span aria-hidden="true">→</span>
+            </span>
+          </Link>
+        )}
         {!classData || classData.units.length === 0 ? (
           <EmptyPanelState
             title="Bu sınıf için henüz ünite eklenmedi"
