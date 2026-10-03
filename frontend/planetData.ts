@@ -72,7 +72,7 @@ export const PLANETS: Planet[] = [
     rotationPeriodHours: -5832.5,
     knownMoons: 0,
     moonCountAsOf: "NASA/NSSDCA tablosu, 18 Mart 2025",
-    planetType: "Kayalık (karasal) gezegen",
+    planetType: "Kayalık (karasal ) gezegen",
     atmosphere:
       "Çoğunlukla karbondioksitten oluşan çok yoğun bir atmosferi vardır; bulutlarında sülfürik asit damlacıkları bulunur.",
     textureUrl: "/venus_atmosphere.jpg",
@@ -99,7 +99,7 @@ export const PLANETS: Planet[] = [
     rotationPeriodHours: 23.9345,
     knownMoons: 1,
     moonCountAsOf: "NASA/NSSDCA Dünya bilgi sayfası, 15 Kasım 2024",
-    planetType: "Kayalık (karasal) gezegen",
+    planetType: "Kayalık (karasal ) gezegen",
     atmosphere:
       "Kuru havanın yaklaşık %78’i azot, %21’i oksijendir; geri kalanı çoğunlukla argon ve az miktarda diğer gazlardır.",
     textureUrl: "/earth_daymap.jpg",
@@ -126,7 +126,7 @@ export const PLANETS: Planet[] = [
     rotationPeriodHours: 24.6229,
     knownMoons: 2,
     moonCountAsOf: "NASA Science Mars Moons sayfası, 5 Kasım 2024",
-    planetType: "Kayalık (karasal) gezegen",
+    planetType: "Kayalık (karasal ) gezegen",
     atmosphere:
       "Çok ince atmosferi çoğunlukla karbondioksitten oluşur; azot ve argon da bulunur.",
     textureUrl: "/mars.jpg",
@@ -259,5 +259,5 @@ export const PLANETS: Planet[] = [
 ];
 
 export const MAX_SIMULATION_DAYS = Math.max(
-  ...PLANETS.map((planet) => planet.orbitalPeriodDays),
+  ...PLANETS.map((planet ) => planet.orbitalPeriodDays),
 );
