@@ -1,0 +1,38 @@
+.page { min-height:70vh; padding:clamp(22px,4vw,44px) 0 64px; color:#17233f; }
+.container { width:min(100% - 40px,1220px); margin:0 auto; }
+.breadcrumbs { display:flex; align-items:center; gap:9px; margin-bottom:20px; color:#7b879e; font-size:12px; }
+.breadcrumbs a { color:#5c75a7; font-weight:700; text-decoration:none; }
+.breadcrumbs a:hover { color:#2c62ba; text-decoration:underline; }
+.hero { position:relative; overflow:hidden; margin-bottom:18px; padding:clamp(21px,4vw,36px); border:1px solid #e5ebf5; border-radius:23px; background:radial-gradient(circle at 90% 0%,rgba(101,154,231,.17),transparent 32%),linear-gradient(135deg,#f7faff 0%,#fff 62%,#f4f7ff 100%); }
+.eyebrow { display:inline-flex; align-items:center; padding:6px 9px; border:1px solid #dce6f7; border-radius:999px; color:#5e75a4; background:#fff; font-size:9px; font-weight:850; letter-spacing:.13em; }
+.hero h1 { margin:14px 0 0; color:#182744; font-size:clamp(27px,4vw,42px); line-height:1.12; letter-spacing:-.04em; }
+.hero > p { max-width:800px; margin:11px 0 0; color:#687793; font-size:14px; line-height:1.65; }
+.heroLinks { display:flex; align-items:center; flex-wrap:wrap; gap:12px 20px; margin-top:18px; }
+.heroLinks > span { display:inline-flex; align-items:center; gap:7px; color:#72809a; font-size:10px; font-weight:750; }
+.miniDot { width:7px; height:7px; border-radius:50%; background:#46b597; box-shadow:0 0 0 4px rgba(70,181,151,.12); }
+.heroLinks a,.bottomNav a { color:#5b75a8; font-size:10px; font-weight:800; text-decoration:none; }
+.heroLinks a:hover,.bottomNav a:hover { color:#2c62ba; text-decoration:underline; }
+.lessonNote { display:flex; align-items:flex-start; gap:12px; margin-top:16px; padding:15px 17px; border:1px solid #e3ebf7; border-radius:15px; background:#f7faff; }
+.noteIcon { display:grid; flex:0 0 21px; width:21px; height:21px; place-items:center; border:1px solid #b7c9e4; border-radius:50%; color:#4f74ac; font-size:11px; font-weight:850; }
+.lessonNote p { margin:0; color:#687792; font-size:11px; line-height:1.65; }
+.lessonNote strong { color:#30486e; }
+.bottomNav { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:19px; }
+.bottomNav a { font-size:11px; }
+:global(.dark) .page { color:#edf3ff; }
+:global(.dark) .breadcrumbs { color:#a5b1c7; }
+:global(.dark) .breadcrumbs a,:global(.dark) .heroLinks a,:global(.dark) .bottomNav a { color:#a8c4ff; }
+:global(.dark) .hero { border-color:#2c3b58; background:radial-gradient(circle at 90% 0%,rgba(101,154,231,.15),transparent 32%),linear-gradient(135deg,#17233b 0%,#121b2d 62%,#18223a 100%); }
+:global(.dark) .eyebrow { border-color:#344565; color:#b4c7eb; background:#1d2b46; }
+:global(.dark) .hero h1 { color:#f0f5ff; }
+:global(.dark) .hero > p,:global(.dark) .heroLinks > span { color:#aab8cf; }
+:global(.dark) .lessonNote { border-color:#2e3d58; background:#172238; }
+:global(.dark) .noteIcon { border-color:#536b92; color:#b4cbf2; }
+:global(.dark) .lessonNote p { color:#b1bfd4; }
+:global(.dark) .lessonNote strong { color:#e0eaff; }
+@media (max-width:600px) {
+  .container { width:min(100% - 24px,1220px); }
+  .breadcrumbs { margin-bottom:14px; font-size:10px; }
+  .hero { padding:20px 16px; border-radius:17px; }
+  .hero > p { font-size:12px; }
+  .bottomNav { align-items:flex-start; flex-direction:column; }
+}
