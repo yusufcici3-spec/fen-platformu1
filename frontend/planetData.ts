@@ -48,7 +48,7 @@ export const PLANETS: Planet[] = [
     planetType: "Kayalık (karasal) gezegen",
     atmosphere:
       "Yüzeye bağlı, çok seyrek bir ekzosferi vardır; oksijen, sodyum, hidrojen, helyum ve potasyum içerir.",
-    textureUrl: "/planet-textures/mercury.jpg",
+    textureUrl: "/mercury.jpg",
     phase: 0.32,
     facts: [
       "Merkür, Güneş çevresindeki turunu yaklaşık 88 Dünya gününde tamamlar; gezegenler arasında yılı en kısadır.",
@@ -75,7 +75,7 @@ export const PLANETS: Planet[] = [
     planetType: "Kayalık (karasal) gezegen",
     atmosphere:
       "Çoğunlukla karbondioksitten oluşan çok yoğun bir atmosferi vardır; bulutlarında sülfürik asit damlacıkları bulunur.",
-    textureUrl: "/planet-textures/venus_atmosphere.jpg",
+    textureUrl: "/venus_atmosphere.jpg",
     phase: 1.77,
     facts: [
       "Venüs, Güneş Sistemi’nin yüzeyi en sıcak gezegenidir; güçlü sera etkisi ısıyı hapseder.",
@@ -102,7 +102,7 @@ export const PLANETS: Planet[] = [
     planetType: "Kayalık (karasal) gezegen",
     atmosphere:
       "Kuru havanın yaklaşık %78’i azot, %21’i oksijendir; geri kalanı çoğunlukla argon ve az miktarda diğer gazlardır.",
-    textureUrl: "/planet-textures/earth_daymap.jpg",
+    textureUrl: "/earth_daymap.jpg",
     phase: 2.83,
     facts: [
       "Güneş ışığının Dünya’ya ulaşması yaklaşık 8 dakika sürer.",
@@ -129,7 +129,7 @@ export const PLANETS: Planet[] = [
     planetType: "Kayalık (karasal) gezegen",
     atmosphere:
       "Çok ince atmosferi çoğunlukla karbondioksitten oluşur; azot ve argon da bulunur.",
-    textureUrl: "/planet-textures/mars.jpg",
+    textureUrl: "/mars.jpg",
     phase: 3.62,
     facts: [
       "Mars’ın kızıl görünmesinin nedeni, yüzeyindeki demir minerallerinin paslanmasıdır.",
@@ -157,7 +157,7 @@ export const PLANETS: Planet[] = [
     planetType: "Gaz devi",
     atmosphere:
       "Çoğunlukla hidrojen ve helyumdan oluşur; bulut bantları ve büyük fırtınalar görülür.",
-    textureUrl: "/planet-textures/jupiter.jpg",
+    textureUrl: "/jupiter.jpg",
     phase: 4.24,
     facts: [
       "Büyük Kırmızı Leke, yüzyıllardır gözlenen dev bir fırtınadır ve Dünya’dan daha geniştir.",
@@ -185,7 +185,7 @@ export const PLANETS: Planet[] = [
     planetType: "Gaz devi",
     atmosphere:
       "Hacimce çoğunlukla hidrojen ve helyumdan oluşur; bulut bantları, jet akımları ve fırtınalar içerir.",
-    textureUrl: "/planet-textures/saturn.jpg",
+    textureUrl: "/saturn.jpg",
     phase: 5.02,
     facts: [
       "Satürn’ün katı bir yüzeyi yoktur; derinlere indikçe gaz ve sıvı katmanları sürer.",
@@ -213,7 +213,7 @@ export const PLANETS: Planet[] = [
     planetType: "Buz devi",
     atmosphere:
       "Çoğunlukla hidrojen ve helyum içerir; metan, gezegene mavi-yeşil görünüş verir.",
-    textureUrl: "/planet-textures/uranus.jpg",
+    textureUrl: "/uranus.jpg",
     phase: 5.81,
     facts: [
       "Uranüs, 1781’de William Herschel tarafından teleskopla keşfedildi; teleskopla bulunan ilk gezegendir.",
@@ -241,7 +241,7 @@ export const PLANETS: Planet[] = [
     planetType: "Buz devi",
     atmosphere:
       "Atmosferi çoğunlukla hidrojen ve helyumdan, az miktarda metandan oluşur; derinlere indikçe yoğun akışkan katmanlara geçer.",
-    textureUrl: "/planet-textures/neptune.jpg",
+    textureUrl: "/neptune.jpg",
     phase: 0.76,
     facts: [
       "Neptün, gökyüzü gözlemlerinden önce matematiksel tahminlerle yeri bulunan ilk gezegendir.",
