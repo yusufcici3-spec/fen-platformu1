@@ -18,8 +18,8 @@ const grades: GradeCard[] = [
   },
   {
     grade: "6",
-    title: "Güneş Sistemi ve Gezegenler",
-    description: "Gezegenleri seç, yakınlaştır ve gerçek uzaklıkları keşfet.",
+    title: "Gezegenler ve Tutulmalar",
+    description: "Gezegenleri yakından incele; Güneş ve Ay tutulmalarını simüle et.",
     className: styles.gradeSix,
     href: "/animasyonlar/6",
   },
@@ -58,7 +58,7 @@ export default function AnimationsSection() {
             <article key={item.grade} className={`${styles.card} ${item.className} ${styles.featuredCard}`}>
               <div className={styles.cardTop}>
                 <span className={styles.gradeNumber}>{item.grade}</span>
-                <span className={styles.activeStatus}><span aria-hidden="true" /> 1 animasyon</span>
+                <span className={styles.activeStatus}><span aria-hidden="true" /> 2 animasyon</span>
               </div>
               <div>
                 <p className={styles.gradeLabel}>{item.grade}. SINIF</p>
@@ -66,7 +66,7 @@ export default function AnimationsSection() {
                 <p className={styles.cardDescription}>{item.description}</p>
               </div>
               <Link className={styles.openLink} href={item.href}>
-                {item.grade}. sınıf animasyonunu aç <span aria-hidden="true">→</span>
+                {item.grade}. sınıf animasyonlarını aç <span aria-hidden="true">→</span>
               </Link>
             </article>
           ) : (
