@@ -7,6 +7,7 @@ type GradeCard = {
   description: string;
   className: string;
   href?: string;
+  animationCount?: number;
 };
 
 const grades: GradeCard[] = [
@@ -22,12 +23,15 @@ const grades: GradeCard[] = [
     description: "Gezegenleri yakından incele; Güneş ve Ay tutulmalarını simüle et.",
     className: styles.gradeSix,
     href: "/animasyonlar/6",
+    animationCount: 2,
   },
   {
     grade: "7",
-    title: "Bağlantıları keşfet",
-    description: "Kavramlar arasındaki ilişkileri gör.",
+    title: "Uzay Teknolojileri",
+    description: "Uzay istasyonu, sonda, teleskop, roket ve gözlemevini keşfet.",
     className: styles.gradeSeven,
+    href: "/animasyonlar/7",
+    animationCount: 1,
   },
   {
     grade: "8",
@@ -35,6 +39,7 @@ const grades: GradeCard[] = [
     description: "Dünya’nın yörüngesini kontrol et; Güneş ışınlarını ve gölgeyi keşfet.",
     className: styles.gradeEight,
     href: "/animasyonlar/8",
+    animationCount: 1,
   },
 ];
 
@@ -58,7 +63,9 @@ export default function AnimationsSection() {
             <article key={item.grade} className={`${styles.card} ${item.className} ${styles.featuredCard}`}>
               <div className={styles.cardTop}>
                 <span className={styles.gradeNumber}>{item.grade}</span>
-                <span className={styles.activeStatus}><span aria-hidden="true" /> 2 animasyon</span>
+                <span className={styles.activeStatus}>
+                  <span aria-hidden="true" /> {item.animationCount} animasyon
+                </span>
               </div>
               <div>
                 <p className={styles.gradeLabel}>{item.grade}. SINIF</p>
