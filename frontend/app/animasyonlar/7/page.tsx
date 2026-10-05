@@ -1,11 +1,12 @@
 import Link from "next/link";
 import SpaceTechnologySimulator from "@/components/animations/SpaceTechnologySimulator/SpaceTechnologySimulator";
+import StellarEvolutionSimulator from "@/components/animations/StellarEvolutionSimulator/StellarEvolutionSimulator";
 import styles from "./page.module.css";
 
 export const metadata = {
-  title: "7. Sınıf Animasyonları | Uzay Teknolojileri",
+  title: "7. Sınıf Animasyonları | Uzay ve Yıldızlar",
   description:
-    "Uzay istasyonu, uzay sondası, teleskop, roket, uzay mekiği ve gözlemevini etkileşimli simülatörle keşfet.",
+    "Uzay teknolojilerini keşfet; Güneş benzeri ve büyük kütleli yıldızların yaşam aşamalarını etkileşimli simülasyonla incele.",
 };
 
 export default function SeventhGradeSpaceTechnologyPage() {
@@ -15,20 +16,25 @@ export default function SeventhGradeSpaceTechnologyPage() {
         <nav className={styles.breadcrumbs} aria-label="Sayfa yolu">
           <Link href="/#animasyonlar">Animasyonlar</Link>
           <span aria-hidden="true">/</span>
-          <span aria-current="page">7. Sınıf · Uzay Teknolojileri</span>
+          <span aria-current="page">7. Sınıf · Uzay ve Yıldızlar</span>
         </nav>
 
         <header className={styles.hero}>
           <div className={styles.heroCopy}>
-            <span className={styles.eyebrow}>7. SINIF · GÖKYÜZÜNDEKİ TEKNOLOJİLER</span>
-            <h1>Uzay araçlarının görevini keşfet</h1>
+            <span className={styles.eyebrow}>7. SINIF · UZAYI KEŞFET</span>
+            <h1>Uzay araçlarını ve yıldızların yaşamını keşfet</h1>
             <p>
-              Uzay istasyonundan derin uzay sondalarına kadar farklı teknolojileri seç, yörüngedeki
-              hareketlerini izle ve görevlerinin nasıl çalıştığını öğren.
+              Uzay teknolojilerini incele; yıldızın başlangıç kütlesinin yaşamını nasıl değiştirdiğini
+              tıklanabilir, görsel bir simülasyonla adım adım öğren.
             </p>
-            <a className={styles.heroAction} href="#simulator">
-              Simülatörü keşfet <span aria-hidden="true">↓</span>
-            </a>
+            <div className={styles.heroActions}>
+              <a className={styles.heroAction} href="#simulator">
+                Uzay teknolojilerine git <span aria-hidden="true">↓</span>
+              </a>
+              <a className={`${styles.heroAction} ${styles.heroActionSecondary}`} href="#stellar-life">
+                Yıldızların yaşamını keşfet <span aria-hidden="true">✦</span>
+              </a>
+            </div>
           </div>
           <div className={styles.heroOrbit} aria-hidden="true">
             <span className={styles.heroRing} />
@@ -49,6 +55,17 @@ export default function SeventhGradeSpaceTechnologyPage() {
             <p>Aracı seç · hareketi durdur · görünümü yakınlaştır</p>
           </div>
           <SpaceTechnologySimulator />
+        </section>
+
+        <section id="stellar-life" className={`${styles.simulatorSection} ${styles.starLifeSection}`} aria-labelledby="stellar-title">
+          <div className={styles.sectionIntro}>
+            <div>
+              <span className={styles.sectionEyebrow}>KÜTLE, YILDIZIN KADERİNİ BELİRLER</span>
+              <h2 id="stellar-title">Bir yıldız nasıl yaşar, nasıl sonlanır?</h2>
+            </div>
+            <p>Aşamaya tıkla · iki yaşam yolunu karşılaştır · animasyonu oynat</p>
+          </div>
+          <StellarEvolutionSimulator />
         </section>
 
         <div className={styles.bottomNav}>

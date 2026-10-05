@@ -1,0 +1,165 @@
+.simulator {
+  --panel: #101a2a;
+  --line: rgba(157, 188, 226, .15);
+  --muted: #97a9c1;
+  overflow: hidden;
+  border: 1px solid rgba(133, 172, 221, .18);
+  border-radius: 22px;
+  color: #edf4ff;
+  background: linear-gradient(145deg, #0d192a 0%, #0a1424 58%, #11182d 100%);
+  box-shadow: 0 25px 65px rgba(0, 0, 0, .25);
+}
+
+.controlBar { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; padding: 18px 20px; border-bottom: 1px solid var(--line); background: rgba(255,255,255,.018); }
+.pathPicker { min-width: 0; }
+.controlCaption, .progressLabel { display: block; margin-bottom: 8px; color: #91a7c5; font-size: 9px; font-weight: 900; letter-spacing: .14em; }
+.pathButtons { display: flex; flex-wrap: wrap; gap: 8px; }
+.pathButton { display: flex; min-width: 190px; flex-direction: column; gap: 3px; padding: 9px 12px; border: 1px solid rgba(146, 196, 255, .17); border-radius: 11px; color: #c2d3e8; background: rgba(255,255,255,.025); text-align: left; font: inherit; font-size: 11px; font-weight: 850; cursor: pointer; transition: border-color .2s ease, background .2s ease, transform .2s ease; }
+.pathButton span { color: #8e9eb5; font-size: 9px; font-weight: 600; }
+.pathButton:hover { transform: translateY(-1px); border-color: rgba(113, 220, 215, .45); }
+.pathButtonActive { border-color: rgba(101, 226, 211, .54); color: #e8fffb; background: linear-gradient(135deg, rgba(44, 140, 143, .28), rgba(48, 94, 132, .2)); box-shadow: inset 0 0 0 1px rgba(100, 217, 209, .09); }
+.pathButtonActive span { color: #a7d5d4; }
+.pathButtonMassive.pathButtonActive { border-color: rgba(255, 151, 109, .58); background: linear-gradient(135deg, rgba(177, 76, 60, .28), rgba(107, 55, 78, .2)); }
+.transport { display: flex; min-width: max-content; flex-direction: column; align-items: flex-end; }
+.progressLabel { text-align: right; }
+.transportButtons { display: flex; align-items: center; gap: 7px; }
+.transportButtons button { display: inline-flex; min-width: 34px; height: 34px; align-items: center; justify-content: center; gap: 7px; padding: 0 10px; border: 1px solid rgba(151, 183, 222, .19); border-radius: 9px; color: #e2edfc; background: rgba(255,255,255,.04); font: inherit; font-size: 12px; font-weight: 800; cursor: pointer; transition: background .18s ease, border-color .18s ease; }
+.transportButtons button:hover:not(:disabled) { border-color: rgba(111, 221, 214, .5); background: rgba(95, 166, 174, .16); }
+.transportButtons button:disabled { opacity: .36; cursor: not-allowed; }
+.transportButtons .playButton { min-width: 140px; border-color: rgba(88, 220, 204, .32); color: #d4fff7; background: rgba(43, 128, 130, .17); }
+.playButton span { color: #8ce7d7; font-size: 11px; }
+
+.explorer { display: grid; grid-template-columns: minmax(0, 1.13fr) minmax(285px, .87fr); gap: 12px; padding: 14px; }
+.scene { position: relative; min-height: 350px; overflow: hidden; isolation: isolate; border: 1px solid rgba(150, 188, 237, .18); border-radius: 17px; background: radial-gradient(ellipse at 48% 54%, #172445, #080f1d 70%); }
+.sceneStars { position: absolute; z-index: -1; inset: 0; opacity: .7; background-image: radial-gradient(1px 1px at 12% 19%, #fff 50%, transparent 100%), radial-gradient(1px 1px at 82% 24%, #b8d6ff 50%, transparent 100%), radial-gradient(1.4px 1.4px at 64% 76%, #fff 50%, transparent 100%), radial-gradient(1px 1px at 30% 83%, #c1cfff 50%, transparent 100%), radial-gradient(1px 1px at 91% 65%, #fff 50%, transparent 100%), radial-gradient(1px 1px at 43% 33%, #fff 50%, transparent 100%); background-size: 170px 170px, 210px 210px, 230px 230px, 190px 190px, 250px 250px, 180px 180px; }
+.sceneGlow { position: absolute; z-index: -1; top: 10%; left: 18%; width: 64%; height: 74%; border-radius: 50%; background: radial-gradient(ellipse, rgba(76, 109, 197, .15), transparent 67%); filter: blur(15px); }
+.sceneImage { z-index: -1; object-fit: cover; animation: photoEnter .65s ease both; }
+.sceneShade { position: absolute; z-index: 0; inset: 0; background: linear-gradient(180deg, rgba(4, 10, 22, .1) 0%, rgba(4, 10, 22, .03) 38%, rgba(4, 10, 22, .83) 100%); pointer-events: none; }
+.sceneTopline { position: absolute; z-index: 1; top: 13px; right: 14px; left: 14px; display: flex; justify-content: space-between; gap: 8px; color: #e5edfc; font-size: 8px; font-weight: 900; letter-spacing: .11em; text-shadow: 0 1px 10px #000; }
+.sceneTopline span:first-child { display: inline-flex; align-items: center; gap: 7px; }
+.sceneTopline i { width: 6px; height: 6px; border-radius: 50%; background: #84e7d7; box-shadow: 0 0 10px #84e7d7; }
+.sceneCaption { position: absolute; z-index: 1; right: 20px; bottom: 20px; left: 20px; }
+.scenePhase { color: #92e6d9; font-size: 8px; font-weight: 900; letter-spacing: .16em; }
+.sceneCaption h3 { margin: 5px 0 2px; color: #fff; font-size: clamp(22px, 3vw, 32px); line-height: 1.05; letter-spacing: -.04em; text-shadow: 0 2px 16px rgba(0,0,0,.55); }
+.sceneCaption p { margin: 0; color: rgba(232, 240, 255, .8); font-size: 10px; text-shadow: 0 1px 8px #000; }
+.imageCredit { position: absolute; z-index: 1; top: 35px; right: 14px; max-width: 75%; color: rgba(235, 242, 255, .74); font-size: 8px; text-align: right; text-shadow: 0 1px 6px #000; }
+
+.celestial { position: absolute; z-index: -1; top: 48%; left: 50%; width: clamp(110px, 20vw, 205px); aspect-ratio: 1; transform: translate(-50%, -50%); animation: starPulse 4s ease-in-out infinite; }
+.celestialCore { position: absolute; z-index: 1; top: 50%; left: 50%; width: 76%; aspect-ratio: 1; border: 1px solid rgba(255,255,255,.34); border-radius: 50%; background: radial-gradient(circle at 30% 25%, #fff4c7 0%, #ffc269 17%, #fc684d 50%, #7e2858 83%, #211532 100%); box-shadow: inset -16px -12px 25px rgba(18, 14, 42, .55), 0 0 34px rgba(254, 143, 88, .42), 0 0 90px rgba(238, 89, 99, .19); transform: translate(-50%, -50%); }
+.celestialCorona { position: absolute; top: 50%; left: 50%; width: 100%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, rgba(255, 164, 85, .24), rgba(220, 74, 100, .08) 53%, transparent 72%); transform: translate(-50%, -50%); }
+.celestialRing { position: absolute; z-index: 2; top: 50%; left: 50%; width: 160%; height: 42%; border: 2px solid rgba(240, 194, 137, .72); border-right-color: rgba(95, 183, 255, .8); border-bottom-color: rgba(230, 123, 185, .55); border-radius: 50%; filter: drop-shadow(0 0 9px rgba(255, 177, 96, .64)); transform: translate(-50%, -50%) rotate(-18deg); }
+.protostar .celestialCore { width: 40%; background: radial-gradient(circle at 38% 32%, #fff9c4, #ffd26b 25%, #ff722e 60%, #9c3d57); box-shadow: 0 0 23px #ffb34d, 0 0 60px rgba(255, 110, 60, .55); }
+.protostar .celestialRing { width: 185%; height: 37%; border-width: 8px; border-color: rgba(255, 203, 135, .12); border-top-color: rgba(255, 195, 123, .8); border-bottom-color: rgba(124, 168, 255, .4); }
+.supergiant { width: clamp(180px, 31vw, 305px); }
+.supergiant .celestialCore { width: 90%; background: radial-gradient(circle at 31% 26%, #ffe6ad 0%, #ffad59 18%, #f04a3d 48%, #832947 80%, #301638 100%); box-shadow: inset -25px -20px 34px rgba(27, 9, 36, .57), 0 0 55px rgba(246, 86, 71, .54), 0 0 130px rgba(236, 72, 89, .24); }
+.supergiant .celestialRing { display: none; }
+.blackHole { width: clamp(140px, 24vw, 235px); }
+.blackHole .celestialCore { width: 43%; border: 0; background: #020309; box-shadow: 0 0 0 10px rgba(8, 9, 20, .9), 0 0 35px rgba(255, 185, 94, .5); }
+.blackHole .celestialRing { width: 170%; height: 61%; border-width: 10px; border-top-color: #ffe3a3; border-left-color: #ff9e54; border-right-color: #8bbcff; border-bottom-color: #b877ff; filter: drop-shadow(0 0 8px #ff9e54) drop-shadow(0 0 24px rgba(165, 113, 255, .56)); transform: translate(-50%, -50%) rotate(-15deg); }
+
+.detailCard { display: flex; min-height: 350px; flex-direction: column; padding: clamp(17px, 2.2vw, 24px); border: 1px solid var(--line); border-radius: 17px; background: linear-gradient(150deg, rgba(22, 36, 58, .94), rgba(12, 22, 38, .96)); }
+.detailHeader { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+.detailKicker { color: #8ce0d3; font-size: 9px; font-weight: 900; letter-spacing: .14em; }
+.timeScale { max-width: 48%; padding: 6px 8px; border: 1px solid rgba(165, 190, 225, .16); border-radius: 99px; color: #b9c7db; background: rgba(255,255,255,.035); font-size: 8px; line-height: 1.25; text-align: center; }
+.detailCard h3 { margin: 15px 0 8px; color: #f7f9ff; font-size: clamp(21px, 2.5vw, 29px); line-height: 1.08; letter-spacing: -.04em; }
+.summary { margin: 0; color: #c1cee1; font-size: 12px; line-height: 1.65; }
+.factList { display: grid; gap: 9px; margin: 16px 0 18px; padding: 0; list-style: none; }
+.factList li { position: relative; padding-left: 15px; color: #aebdd3; font-size: 10px; line-height: 1.5; }
+.factList li::before { position: absolute; top: .48em; left: 0; width: 6px; height: 6px; border-radius: 50%; background: #73ddd0; box-shadow: 0 0 8px rgba(115, 221, 208, .55); content: ""; }
+.sourceLink { display: inline-flex; width: fit-content; align-items: center; gap: 7px; margin-top: auto; color: #9fe4da; font-size: 9px; font-weight: 800; text-decoration: none; }
+.sourceLink:hover { color: #fff; text-decoration: underline; }
+
+.timeline { padding: 18px; border-top: 1px solid var(--line); background: rgba(4, 10, 20, .28); }
+.trackHeader { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; margin-bottom: 13px; }
+.trackEyebrow { color: #84dcd2; font-size: 8px; font-weight: 900; letter-spacing: .15em; }
+.trackHeader h3 { margin: 4px 0 0; color: #f3f7ff; font-size: 16px; letter-spacing: -.02em; }
+.trackHint { color: #8297b3; font-size: 9px; }
+.sharedTrack, .branchTrack { padding: 13px; border: 1px solid rgba(152, 184, 225, .13); border-radius: 14px; background: rgba(255,255,255,.025); }
+.sharedTrack { margin-bottom: 10px; }
+.trackLabel { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; color: #93a5bf; font-size: 9px; }
+.sharedBadge { padding: 5px 7px; border: 1px solid rgba(96, 210, 197, .27); border-radius: 99px; color: #9ce5db; background: rgba(70, 168, 160, .1); font-size: 8px; font-weight: 900; letter-spacing: .08em; white-space: nowrap; }
+.sequence { display: flex; min-width: 0; align-items: center; gap: 7px; }
+.sequenceItem { display: flex; min-width: 0; flex: 1 1 0; align-items: center; gap: 7px; }
+.stageNode { display: inline-flex; min-width: 0; min-height: 40px; flex: 1 1 0; align-items: center; gap: 8px; padding: 7px 9px; border: 1px solid rgba(143, 173, 211, .17); border-radius: 10px; color: #b7c5d9; background: rgba(6, 14, 27, .56); text-align: left; font: inherit; font-size: 9px; font-weight: 800; line-height: 1.25; cursor: pointer; transition: border-color .18s ease, color .18s ease, background .18s ease, transform .18s ease; }
+.stageNode:hover { transform: translateY(-1px); border-color: rgba(120, 218, 208, .5); color: #f2fffd; }
+.stageNodeSelected { border-color: rgba(100, 224, 208, .68); color: #f0fffd; background: linear-gradient(135deg, rgba(45, 144, 144, .3), rgba(43, 85, 119, .23)); box-shadow: 0 0 18px rgba(78, 211, 198, .09), inset 0 0 0 1px rgba(100, 224, 208, .1); }
+.nodeMark { width: 7px; height: 7px; flex: 0 0 7px; border-radius: 50%; background: #7d91ad; box-shadow: 0 0 0 3px rgba(125, 145, 173, .1); }
+.stageNodeSelected .nodeMark { background: #89e5d7; box-shadow: 0 0 11px rgba(137, 229, 215, .9); }
+.nodeText { min-width: 0; }
+.arrow { flex: 0 0 auto; color: #697e9d; font-size: 13px; }
+.branchGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.branchTrack { min-width: 0; transition: border-color .2s ease, background .2s ease; }
+.branchTrackActive { border-color: rgba(101, 206, 194, .3); background: linear-gradient(140deg, rgba(42, 102, 111, .15), rgba(255,255,255,.02)); }
+.branchHeading { display: flex; align-items: center; gap: 9px; margin-bottom: 12px; }
+.branchIndex { display: grid; width: 27px; height: 27px; flex: 0 0 27px; place-items: center; border: 1px solid rgba(122, 210, 200, .25); border-radius: 9px; color: #a9eee3; background: rgba(64, 150, 145, .11); font-size: 9px; font-weight: 900; }
+.branchIndexMassive { border-color: rgba(255, 159, 118, .27); color: #ffc3a3; background: rgba(182, 85, 66, .12); }
+.branchHeading h4 { margin: 0; color: #e8effb; font-size: 11px; }
+.branchHeading p { margin: 3px 0 0; color: #8397b3; font-size: 8px; }
+.branchTrack .sequence { gap: 5px; }
+.branchTrack .sequenceItem { gap: 5px; }
+.branchTrack .stageNode { padding: 7px; font-size: 8px; }
+.massiveSequence { display: flex; min-width: 0; align-items: center; gap: 5px; }
+.massiveSequence > .sequence { flex: 1 1 0; }
+.outcomeGroup { min-width: 0; flex: 1.15 1 0; }
+.outcomeCaption { display: block; margin: 0 0 5px 2px; color: #8fa2bb; font-size: 8px; }
+.outcomeButtons { display: flex; gap: 5px; }
+.outcomeButtons .stageNode { min-height: 45px; }
+.scaleNote { display: flex; align-items: flex-start; gap: 9px; margin-top: 11px; padding: 10px 12px; border: 1px solid rgba(145, 175, 214, .1); border-radius: 10px; color: #8598b2; background: rgba(255,255,255,.018); }
+.scaleNote p { margin: 0; font-size: 8px; line-height: 1.55; }
+.infoMark { display: grid; width: 15px; height: 15px; flex: 0 0 15px; place-items: center; border: 1px solid rgba(132, 170, 214, .4); border-radius: 50%; color: #a8c4e4; font-size: 9px; font-weight: 900; }
+
+.pathButton:focus-visible, .transportButtons button:focus-visible, .stageNode:focus-visible, .sourceLink:focus-visible { outline: 2px solid #8ce8dc; outline-offset: 3px; }
+
+@keyframes starPulse { 0%, 100% { filter: brightness(.96); } 50% { filter: brightness(1.12); } }
+@keyframes photoEnter { from { opacity: .72; transform: scale(1.025); } to { opacity: 1; transform: scale(1); } }
+
+@media (max-width: 980px) {
+  .explorer { grid-template-columns: minmax(0, 1fr) minmax(260px, .82fr); }
+  .branchGrid { grid-template-columns: 1fr; }
+  .branchTrack .stageNode { font-size: 9px; }
+}
+
+@media (max-width: 760px) {
+  .controlBar { align-items: stretch; flex-direction: column; }
+  .transport { align-items: flex-start; }
+  .progressLabel { text-align: left; }
+  .explorer { grid-template-columns: 1fr; }
+  .scene { min-height: 320px; }
+  .detailCard { min-height: auto; }
+  .massiveSequence { overflow-x: auto; padding-bottom: 5px; }
+  .massiveSequence > .sequence { min-width: 300px; }
+  .outcomeGroup { min-width: 210px; }
+}
+
+@media (max-width: 520px) {
+  .controlBar { padding: 14px; }
+  .pathButtons { display: grid; grid-template-columns: 1fr 1fr; }
+  .pathButton { min-width: 0; padding: 8px; font-size: 10px; }
+  .pathButton span { font-size: 8px; }
+  .transportButtons .playButton { min-width: 126px; }
+  .explorer { padding: 10px; }
+  .scene { min-height: 285px; }
+  .sceneCaption { right: 14px; bottom: 15px; left: 14px; }
+  .sceneTopline { font-size: 7px; }
+  .sceneTopline span:last-child { max-width: 46%; text-align: right; }
+  .imageCredit { top: 31px; font-size: 7px; }
+  .detailCard { padding: 15px; }
+  .timeline { padding: 13px 10px; }
+  .trackHeader { align-items: flex-start; flex-direction: column; gap: 5px; }
+  .trackLabel { align-items: flex-start; flex-direction: column; gap: 6px; }
+  .sequence { min-width: 490px; }
+  .sharedTrack, .branchTrack { overflow: hidden; }
+  .sharedTrack { overflow-x: auto; }
+  .branchTrack .sequence { min-width: 0; overflow-x: auto; }
+  .branchTrack .sequenceItem { flex: 0 0 auto; }
+  .branchTrack .stageNode { flex: 0 0 130px; }
+  .branchTrack .massiveSequence { min-width: 0; }
+  .branchTrack .massiveSequence > .sequence { min-width: 300px; }
+  .branchTrack .outcomeGroup { min-width: 190px; }
+  .stageNode { min-height: 38px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .celestial, .sceneImage { animation: none; }
+  .pathButton, .transportButtons button, .stageNode { transition: none; }
+}

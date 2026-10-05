@@ -27,11 +27,11 @@ const grades: GradeCard[] = [
   },
   {
     grade: "7",
-    title: "Uzay Teknolojileri",
-    description: "Uzay istasyonu, sonda, teleskop, roket ve gözlemevini keşfet.",
+    title: "Uzay ve Yıldızlar",
+    description: "Uzay teknolojilerini keşfet; yıldızların yaşam döngüsünü kütlelerine göre incele.",
     className: styles.gradeSeven,
     href: "/animasyonlar/7",
-    animationCount: 1,
+    animationCount: 2,
   },
   {
     grade: "8",
