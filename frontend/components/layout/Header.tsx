@@ -1,4 +1,4 @@
-"use client";
+  "use client";
 
 import Link from "next/link";
 import { useState } from "react";
@@ -15,7 +15,7 @@ const NAV_LINKS = [
   { href: "/sinif/8", label: "8. Sınıf" },
   { href: "/denemeler", label: "Denemeler" },
   { href: "/oyunlar", label: "Oyunlar" },
-  { href: "/laboratuvar", label: "Laboratuvar" },
+  { href: "/#animasyonlar", label: "Animasyonlar" },
   { href: "/blog", label: "Blog" },
   { href: "/arama", label: "🔍 Ara" },
   { href: "/iletisim", label: "İletişim" },
@@ -153,3 +153,4 @@ function UserMenu({ userName, role, onLogout }: { userName: string; role: string
     </div>
   );
 }
+      

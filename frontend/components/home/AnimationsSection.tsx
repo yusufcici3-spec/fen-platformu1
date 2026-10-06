@@ -13,9 +13,11 @@ type GradeCard = {
 const grades: GradeCard[] = [
   {
     grade: "5",
-    title: "Keşfetmeye başla",
-    description: "Fen konularını animasyonlarla keşfet.",
+    title: "Ay’ın Evreleri",
+    description: "Ay’ın aydınlık bölümünün döngü boyunca nasıl değiştiğini keşfet.",
     className: styles.gradeFive,
+    href: "/animasyonlar/5",
+    animationCount: 1,
   },
   {
     grade: "6",

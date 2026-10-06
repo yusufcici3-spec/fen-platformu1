@@ -1,0 +1,286 @@
+.simulator {
+  --night: #081323;
+  --panel: #101d32;
+  --panel-soft: #14243b;
+  --line: rgba(164, 195, 231, .16);
+  --muted: #a7b7ce;
+  overflow: hidden;
+  padding: clamp(15px, 2.5vw, 25px);
+  border: 1px solid rgba(126, 164, 213, .2);
+  border-radius: 22px;
+  color: #edf4ff;
+  background:
+    radial-gradient(ellipse at 13% 5%, rgba(60, 116, 170, .11), transparent 34%),
+    linear-gradient(150deg, #091426 0%, #0d192c 52%, #10192d 100%);
+  box-shadow: 0 20px 54px rgba(0, 0, 0, .2);
+}
+
+.simulatorHeading,
+.panelHeading,
+.pickerHeading,
+.transportRow,
+.sliderLabel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.simulatorHeading { margin-bottom: 16px; }
+.kicker,
+.panelEyebrow,
+.earthViewLabel,
+.phaseCounter {
+  color: #83ddd5;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: .15em;
+}
+.simulatorHeading h3 { margin: 5px 0 0; color: #f3f7ff; font-size: clamp(19px, 2.2vw, 25px); letter-spacing: -.035em; }
+.scaleNote { color: #8193ad; font-size: 10px; text-align: right; }
+
+.modelGrid { display: grid; grid-template-columns: minmax(0, 1.62fr) minmax(250px, .78fr); gap: 13px; }
+.orbitPanel,
+.phasePanel {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  background: rgba(13, 27, 47, .84);
+}
+.orbitPanel { padding: 15px; }
+.panelHeading { align-items: flex-end; margin-bottom: 10px; }
+.panelHeading h4,
+.pickerHeading h4 { margin: 5px 0 0; color: #eef4ff; font-size: 14px; letter-spacing: -.02em; }
+.directionTag { flex: 0 0 auto; padding: 6px 8px; border: 1px solid rgba(255, 203, 110, .17); border-radius: 999px; color: #f5d69b; background: rgba(244, 177, 73, .08); font-size: 9px; }
+
+.orbitStage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 760 / 420;
+  overflow: hidden;
+  border: 1px solid rgba(130, 167, 208, .11);
+  border-radius: 14px;
+  background:
+    radial-gradient(circle at 49% 50%, rgba(31, 69, 107, .23), transparent 20%),
+    radial-gradient(circle at 22% 18%, rgba(180, 205, 255, .75) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 72% 21%, rgba(180, 205, 255, .65) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 87% 70%, rgba(180, 205, 255, .65) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 14% 78%, rgba(180, 205, 255, .62) 0 1px, transparent 1.5px),
+    linear-gradient(145deg, #07101e, #0a1424 65%, #0a1221);
+  background-size: auto, 100% 100%, 100% 100%, 100% 100%, 100% 100%, auto;
+}
+.orbitSvg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.orbitLine { fill: none; stroke: rgba(156, 190, 226, .32); stroke-width: 1.4; stroke-dasharray: 3 6; }
+.orbitDirection { fill: none; stroke: rgba(151, 184, 221, .56); stroke-width: 1.3; stroke-dasharray: 4 5; }
+.sunRays path { fill: none; stroke: rgba(255, 211, 123, .38); stroke-width: 1.4; }
+.sun path { fill: none; stroke: #ffd979; stroke-width: 2; stroke-linecap: round; opacity: .82; }
+.earth { filter: drop-shadow(0 0 16px rgba(71, 172, 219, .28)); }
+.svgLabel { fill: #f3d48c; font-size: 11px; font-weight: 900; letter-spacing: 1.3px; }
+.orbitLabel { fill: #93a9c4; font-size: 9px; font-weight: 750; letter-spacing: 1.2px; }
+.orbitPoint { fill: #d0dbee; opacity: .52; }
+.orbitPointActive { fill: #fff0c8; stroke: #ffcf68; stroke-width: 3; filter: drop-shadow(0 0 7px rgba(255, 204, 105, .8)); }
+.movingMoon {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  width: clamp(31px, 6.5vw, 51px);
+  aspect-ratio: 1;
+  place-items: center;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 8px rgba(220, 235, 255, .46));
+  transition: left .45s ease, top .45s ease;
+  pointer-events: none;
+}
+.movingMoon svg { width: 100%; height: 100%; }
+.stageCaption { position: absolute; right: 9px; bottom: 8px; padding: 5px 7px; border: 1px solid rgba(166, 197, 231, .15); border-radius: 7px; color: #b3c2d8; background: rgba(6, 15, 29, .72); font-size: 8px; }
+.orbitLegend { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 10px; color: #a4b4cb; font-size: 9px; }
+.orbitLegend span { display: inline-flex; align-items: center; gap: 6px; }
+.orbitLegend i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; }
+.sunLegend { background: #ffc75d; box-shadow: 0 0 8px rgba(255, 199, 93, .5); }
+.earthLegend { background: #3aa6c6; }
+.moonLegend { background: #dce7f6; }
+
+.phasePanel { display: flex; flex-direction: column; align-items: center; padding: 17px 16px 14px; text-align: center; background: radial-gradient(circle at 50% 18%, rgba(84, 109, 158, .16), transparent 40%), rgba(13, 27, 47, .86); }
+.earthViewLabel { align-self: flex-start; color: #aab6f2; }
+.phaseMoonWrap { display: grid; min-height: 164px; place-items: center; margin: 3px 0 0; }
+.phaseMoonWrap svg { filter: drop-shadow(0 0 22px rgba(225, 234, 255, .17)); }
+.moonDisk { display: block; flex: 0 0 auto; overflow: visible; }
+.phaseCounter { margin: 5px 0 3px; color: #8599bb; font-size: 8px; }
+.phaseName { margin: 0; color: #fbf3dd; font-size: clamp(18px, 2vw, 23px); letter-spacing: -.04em; }
+.phaseDescription { max-width: 330px; margin: 8px 0 12px; color: #b5c3d9; font-size: 10px; line-height: 1.6; }
+.phaseStats { display: grid; width: 100%; grid-template-columns: 1fr 1fr; gap: 7px; margin-top: auto; }
+.phaseStats > div { display: flex; min-height: 52px; flex-direction: column; justify-content: center; gap: 4px; padding: 8px; border: 1px solid rgba(148, 176, 211, .13); border-radius: 10px; background: rgba(7, 17, 31, .48); }
+.phaseStats span { color: #8498b3; font-size: 8px; }
+.phaseStats strong { color: #e6edf9; font-size: 10px; }
+.observation { margin: 9px 0 0; color: #f0ce91; font-size: 9px; line-height: 1.4; }
+
+.controls { margin-top: 13px; padding: 14px; border: 1px solid var(--line); border-radius: 15px; background: rgba(15, 30, 51, .83); }
+.transportRow { align-items: center; flex-wrap: wrap; }
+.transportButtons { display: flex; flex-wrap: wrap; gap: 7px; }
+.secondaryButton,
+.playButton,
+.speedButton,
+.speedActive {
+  display: inline-flex;
+  min-height: 35px;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 8px 11px;
+  border: 1px solid rgba(155, 184, 219, .2);
+  border-radius: 9px;
+  color: #d2ddef;
+  background: rgba(21, 39, 64, .9);
+  font: inherit;
+  font-size: 10px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform .16s ease, background .16s ease, border-color .16s ease;
+}
+.secondaryButton:hover,
+.speedButton:hover { border-color: rgba(173, 204, 242, .45); background: rgba(35, 58, 89, .95); }
+.playButton { border-color: rgba(122, 226, 213, .4); color: #d7fffa; background: rgba(45, 143, 139, .22); }
+.playButton:hover { transform: translateY(-1px); background: rgba(45, 143, 139, .34); }
+.playButton span { font-size: 12px; }
+.speedControls { display: flex; align-items: center; gap: 5px; color: #8fa2bd; font-size: 9px; }
+.speedButton,
+.speedActive { min-height: 28px; padding: 5px 8px; font-size: 9px; }
+.speedActive { border-color: rgba(180, 157, 255, .48); color: #eee6ff; background: rgba(116, 91, 170, .32); }
+.sliderLabel { margin: 14px 0 5px; color: #9bacbf; font-size: 9px; }
+.sliderLabel strong { color: #e6edf9; font-size: 10px; }
+.daySlider { width: 100%; height: 8px; margin: 0; appearance: none; border-radius: 999px; outline: none; background: linear-gradient(90deg, #7b91e8, #86dfd4 55%, #ffc96a); cursor: pointer; }
+.daySlider::-webkit-slider-thumb { width: 18px; height: 18px; appearance: none; border: 3px solid #f3f7ff; border-radius: 50%; background: #53bab7; box-shadow: 0 0 0 4px rgba(83, 186, 183, .18); }
+.daySlider::-moz-range-thumb { width: 14px; height: 14px; border: 3px solid #f3f7ff; border-radius: 50%; background: #53bab7; box-shadow: 0 0 0 4px rgba(83, 186, 183, .18); }
+.daySlider:focus-visible::-webkit-slider-thumb { outline: 3px solid #f1c96e; outline-offset: 3px; }
+.sliderEnds { display: flex; justify-content: space-between; margin-top: 5px; color: #71849f; font-size: 8px; }
+
+.phasePicker { margin-top: 17px; }
+.pickerHeading { align-items: flex-end; margin-bottom: 9px; }
+.pickerHeading > span { color: #8397b1; font-size: 9px; text-align: right; }
+.phaseButtons { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 7px; }
+.phaseButton,
+.phaseButtonActive {
+  display: flex;
+  min-width: 0;
+  min-height: 103px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 8px 5px;
+  border: 1px solid rgba(157, 186, 221, .14);
+  border-radius: 12px;
+  color: #b4c2d7;
+  background: rgba(13, 26, 44, .72);
+  font: inherit;
+  cursor: pointer;
+  transition: transform .16s ease, border-color .16s ease, background .16s ease;
+}
+.phaseButton:hover,
+.phaseButtonActive:hover { transform: translateY(-2px); border-color: rgba(159, 205, 232, .42); }
+.phaseButtonActive { border-color: rgba(127, 222, 213, .56); color: #effffc; background: rgba(41, 117, 123, .2); box-shadow: inset 0 0 0 1px rgba(127, 222, 213, .12); }
+.phaseButton svg { width: 34px; height: 34px; }
+.phaseButton span,
+.phaseButtonActive span { max-width: 100%; font-size: 8px; font-weight: 800; line-height: 1.25; text-align: center; }
+.phaseButton small,
+.phaseButtonActive small { color: #8195b0; font-size: 7px; }
+.phaseButtonActive small { color: #a5d8d1; }
+
+.learningGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-top: 13px; }
+.learningCard { position: relative; min-height: 112px; padding: 13px; border: 1px solid rgba(159, 187, 222, .13); border-radius: 13px; background: rgba(13, 27, 47, .72); }
+.learningNumber { color: #82dad2; font-size: 8px; font-weight: 900; letter-spacing: .13em; }
+.learningCard h4 { margin: 6px 0 5px; color: #e5edf9; font-size: 11px; }
+.learningCard p { margin: 0; color: #96a9c3; font-size: 9px; line-height: 1.5; }
+.misconceptionCard { border-color: rgba(245, 194, 115, .2); background: rgba(58, 43, 31, .28); }
+.misconceptionCard .learningNumber { color: #f4c779; }
+
+.quiz { display: grid; grid-template-columns: minmax(180px, .72fr) minmax(0, 1.7fr); gap: 13px; align-items: center; margin-top: 13px; padding: 14px; border: 1px solid rgba(156, 184, 218, .14); border-radius: 14px; background: linear-gradient(105deg, rgba(38, 51, 81, .62), rgba(16, 31, 53, .7)); }
+.quizCopy h4 { margin: 5px 0 0; color: #eff4ff; font-size: 13px; }
+.quizOptions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+.answerButton,
+.answerWrong,
+.answerCorrect { min-height: 46px; padding: 8px; border: 1px solid rgba(156, 185, 220, .17); border-radius: 9px; color: #b5c4da; background: rgba(7, 17, 31, .62); font: inherit; font-size: 8px; line-height: 1.4; text-align: left; cursor: pointer; }
+.answerButton:hover { border-color: rgba(132, 206, 214, .44); color: #eef9ff; }
+.answerWrong { border-color: rgba(255, 126, 126, .44); color: #ffd4d4; background: rgba(122, 43, 52, .22); }
+.answerCorrect { border-color: rgba(112, 225, 182, .5); color: #d8fff0; background: rgba(27, 112, 88, .24); }
+.quizFeedback,
+.quizFeedbackCorrect { grid-column: 1 / -1; margin: -2px 0 0; color: #f5c58d; font-size: 9px; line-height: 1.45; }
+.quizFeedbackCorrect { color: #9fe6d2; }
+.sourceNote { margin: 11px 0 0; color: #7589a4; font-size: 8px; line-height: 1.5; text-align: right; }
+.sourceNote a { color: #a7c5ec; text-decoration: none; }
+.sourceNote a:hover { text-decoration: underline; }
+
+.secondaryButton:focus-visible,
+.playButton:focus-visible,
+.speedButton:focus-visible,
+.speedActive:focus-visible,
+.phaseButton:focus-visible,
+.phaseButtonActive:focus-visible,
+.answerButton:focus-visible,
+.answerWrong:focus-visible,
+.answerCorrect:focus-visible { outline: 3px solid #f1c96e; outline-offset: 2px; }
+
+@media (max-width: 980px) {
+  .modelGrid { grid-template-columns: minmax(0, 1.25fr) minmax(230px, .75fr); }
+  .phaseButtons { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .phaseButton,
+  .phaseButtonActive { min-height: 88px; }
+  .quiz { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px) {
+  .simulator { padding: 13px; border-radius: 17px; }
+  .simulatorHeading { align-items: flex-start; flex-direction: column; gap: 5px; }
+  .scaleNote { text-align: left; }
+  .modelGrid { grid-template-columns: 1fr; }
+  .phasePanel { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 14px; align-items: center; text-align: left; }
+  .earthViewLabel { grid-column: 1 / -1; }
+  .phaseMoonWrap { grid-row: span 5; min-height: 130px; margin: 0; }
+  .phaseMoonWrap svg { width: 118px; height: 118px; }
+  .phaseCounter { align-self: end; margin: 5px 0 0; }
+  .phaseName { align-self: start; }
+  .phaseDescription { margin: 4px 0 7px; }
+  .phaseStats { grid-column: 1 / -1; }
+  .observation { grid-column: 1 / -1; }
+  .phaseButtons { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .learningGrid { grid-template-columns: 1fr; }
+  .learningCard { min-height: auto; }
+  .quizOptions { grid-template-columns: 1fr; }
+  .answerButton,
+  .answerWrong,
+  .answerCorrect { min-height: 38px; }
+}
+
+@media (max-width: 430px) {
+  .orbitPanel { padding: 10px; }
+  .panelHeading { align-items: flex-start; flex-direction: column; gap: 7px; }
+  .directionTag { padding: 5px 7px; }
+  .phasePanel { grid-template-columns: 88px minmax(0, 1fr); column-gap: 10px; padding: 12px; }
+  .phaseMoonWrap { min-height: 95px; }
+  .phaseMoonWrap svg { width: 88px; height: 88px; }
+  .phaseDescription { font-size: 9px; }
+  .transportRow { align-items: flex-start; flex-direction: column; }
+  .transportButtons { width: 100%; }
+  .secondaryButton,
+  .playButton { flex: 1; padding-inline: 7px; font-size: 9px; }
+  .speedControls { align-self: flex-end; }
+  .phasePicker .pickerHeading { align-items: flex-start; flex-direction: column; gap: 5px; }
+  .pickerHeading > span { text-align: left; }
+  .phaseButtons { gap: 5px; }
+  .phaseButton,
+  .phaseButtonActive { min-height: 84px; padding: 6px 3px; }
+  .phaseButton span,
+  .phaseButtonActive span { font-size: 7px; }
+  .sourceNote { text-align: left; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .movingMoon,
+  .secondaryButton,
+  .playButton,
+  .speedButton,
+  .speedActive,
+  .phaseButton,
+  .phaseButtonActive { transition: none; }
+}
