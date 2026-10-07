@@ -43,6 +43,16 @@ export default function EighthGradeAnimationsPage() {
           </p>
         </aside>
 
+        <Link href="/animasyonlar/8/kalitim" className={styles.relatedAnimation}>
+          <span className={styles.relatedIcon} aria-hidden="true">🧬</span>
+          <span className={styles.relatedCopy}>
+            <span className={styles.relatedEyebrow}>2. ÜNİTE · DNA VE GENETİK KOD</span>
+            <strong>Bezelyelerde kalıtımı keşfet</strong>
+            <span>Genotipleri seç, 45 farklı çaprazlamada yavru sonuçlarını incele.</span>
+          </span>
+          <span className={styles.relatedArrow} aria-hidden="true">→</span>
+        </Link>
+
         <div className={styles.bottomNav}>
           <Link href="/#animasyonlar">← Diğer sınıf animasyonları</Link>
           <Link href="/sinif/8">8. sınıf ünitelerine git →</Link>

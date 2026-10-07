@@ -8,6 +8,8 @@ type GradeCard = {
   className: string;
   href?: string;
   animationCount?: number;
+  secondaryHref?: string;
+  secondaryLabel?: string;
 };
 
 const grades: GradeCard[] = [
@@ -38,10 +40,12 @@ const grades: GradeCard[] = [
   {
     grade: "8",
     title: "Güneş açısı ve mevsimler",
-    description: "Dünya’nın yörüngesini kontrol et; Güneş ışınlarını ve gölgeyi keşfet.",
+    description: "Güneş açısı, mevsimler ve bezelyelerde kalıtımı etkileşimli keşfet.",
     className: styles.gradeEight,
     href: "/animasyonlar/8",
-    animationCount: 1,
+    animationCount: 2,
+    secondaryHref: "/animasyonlar/8/kalitim",
+    secondaryLabel: "Kalıtım çaprazlamaları",
   },
 ];
 
@@ -74,9 +78,16 @@ export default function AnimationsSection() {
                 <h3>{item.title}</h3>
                 <p className={styles.cardDescription}>{item.description}</p>
               </div>
-              <Link className={styles.openLink} href={item.href}>
-                {item.grade}. sınıf animasyonlarını aç <span aria-hidden="true">→</span>
-              </Link>
+              <div className={styles.openLinks}>
+                <Link className={styles.openLink} href={item.href}>
+                  {item.grade}. sınıf animasyonlarını aç <span aria-hidden="true">→</span>
+                </Link>
+                {item.secondaryHref && (
+                  <Link className={styles.secondaryLink} href={item.secondaryHref}>
+                    {item.secondaryLabel ?? "Ek animasyon"} <span aria-hidden="true">→</span>
+                  </Link>
+                )}
+              </div>
             </article>
           ) : (
             <article key={item.grade} className={`${styles.card} ${item.className}`} aria-label={`${item.grade}. sınıf animasyonları yakında`}>
