@@ -1,0 +1,300 @@
+.simulator {
+  --ink: #1e2b43;
+  --muted: #6b7890;
+  --line: #e5eaf2;
+  --paper: #fff;
+  position: relative;
+  overflow: hidden;
+  padding: clamp(16px, 3vw, 28px);
+  border: 1px solid #e0e7f1;
+  border-radius: 24px;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(248, 215, 122, .13), transparent 28%),
+    linear-gradient(150deg, #fbfcff 0%, #f4f8ff 100%);
+  box-shadow: 0 18px 52px rgba(33, 56, 93, .09);
+}
+
+.simulatorHeader, .resultsHeading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.headerEyebrow, .parentEyebrow {
+  display: inline-flex;
+  color: #6580ad;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: .14em;
+}
+
+.simulatorHeader h2 {
+  margin: 7px 0 0;
+  color: #1e2d49;
+  font-size: clamp(20px, 2.8vw, 28px);
+  line-height: 1.15;
+  letter-spacing: -.035em;
+}
+
+.simulatorHeader p {
+  max-width: 650px;
+  margin: 7px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.crossCount, .outcomeCount {
+  flex: 0 0 auto;
+  padding: 7px 10px;
+  border: 1px solid #d8e4f1;
+  border-radius: 999px;
+  color: #58749e;
+  background: rgba(255, 255, 255, .75);
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.modelStrip {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin: 19px 0 15px;
+  padding: 12px 14px;
+  border: 1px solid #e9e4cf;
+  border-radius: 14px;
+  background: #fffaf0;
+}
+
+.modelIcon {
+  display: grid;
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border-radius: 11px;
+  color: #705c28;
+  background: #f9e7b5;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.modelStrip p {
+  margin: 0;
+  color: #6d6247;
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+.modelStrip strong, .modelStrip b { color: #4b411f; }
+
+.parents {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 42px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+}
+
+.parentCard {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  background: var(--paper);
+  box-shadow: 0 7px 18px rgba(37, 59, 91, .045);
+}
+
+.parentTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 76px;
+}
+
+.parentTop h3 {
+  margin: 4px 0 2px;
+  color: #24334f;
+  font-size: 14px;
+}
+
+.parentPhenotype { margin: 0; color: var(--muted); font-size: 10px; font-weight: 700; }
+.parentSeed { display: grid; width: 78px; height: 68px; place-items: center; border-radius: 15px; background: #f8f7ef; }
+.peaSeed { display: block; flex: 0 0 auto; overflow: visible; }
+.selectLabel, .gameteLabel { display: block; margin: 12px 0 6px; color: #66748c; font-size: 10px; font-weight: 800; }
+
+.genotypeSelect {
+  width: 100%;
+  min-height: 40px;
+  padding: 0 10px;
+  border: 1px solid #dce4ef;
+  border-radius: 10px;
+  outline: none;
+  color: #263751;
+  background: #fff;
+  font: inherit;
+  font-size: 11px;
+}
+
+.genotypeSelect:focus-visible { outline: 3px solid rgba(76, 128, 210, .3); border-color: #6890c7; }
+.gameteBlock { margin-top: 10px; }
+.gameteLabel { margin: 0 0 6px; font-size: 9px; }
+.gameteList { display: flex; min-height: 28px; flex-wrap: wrap; gap: 5px; }
+.gameteChip { display: grid; min-width: 34px; min-height: 27px; place-items: center; padding: 3px 7px; border: 1px solid #dce6f1; border-radius: 8px; color: #43638c; background: #f4f8fc; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 10px; font-weight: 850; }
+
+.crossSymbol {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border: 1px solid #e5eaf2;
+  border-radius: 50%;
+  color: #7185a5;
+  background: #fff;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.quickPresets { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 15px; }
+.quickLabel { color: #738098; font-size: 9px; font-weight: 850; }
+.presetButtons { display: flex; flex-wrap: wrap; gap: 6px; }
+.presetButton { padding: 6px 9px; border: 1px solid #dce5f0; border-radius: 999px; color: #526d91; background: #fff; font: inherit; font-size: 9px; font-weight: 750; cursor: pointer; }
+.presetButton:hover { border-color: #a6c0e1; background: #f2f7ff; }
+
+.crossLibrary {
+  margin-top: 13px;
+  padding: 10px 12px;
+  border: 1px solid #e4e9f1;
+  border-radius: 13px;
+  background: rgba(255, 255, 255, .72);
+}
+
+.crossLibrary summary { color: #536b8e; font-size: 10px; font-weight: 850; cursor: pointer; }
+.crossLibrary > p { margin: 8px 0; color: #7a879c; font-size: 9px; line-height: 1.5; }
+.crossLibraryGrid { display: grid; max-height: 210px; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 5px; overflow: auto; padding: 2px; }
+.crossLibraryGrid button { min-width: 0; padding: 6px 4px; border: 1px solid #e2e9f2; border-radius: 8px; color: #687891; background: #fff; font: inherit; font-size: 9px; cursor: pointer; }
+.crossLibraryGrid button span { color: #263d5e; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 850; }
+.crossLibraryGrid button:hover, .crossLibraryGrid button.selectedPair { border-color: #82a7d5; color: #365d91; background: #edf5ff; }
+
+.runRow { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 15px; }
+.runRow p { margin: 0; color: #748198; font-size: 10px; line-height: 1.5; }
+.runButton { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 8px; min-height: 42px; padding: 0 16px; border: 0; border-radius: 12px; color: #fff; background: linear-gradient(135deg, #4b8c69, #277e62); box-shadow: 0 8px 18px rgba(44, 122, 91, .2); font: inherit; font-size: 11px; font-weight: 850; cursor: pointer; transition: transform .18s ease, box-shadow .18s ease; }
+.runButton:hover { transform: translateY(-1px); box-shadow: 0 11px 21px rgba(44, 122, 91, .26); }
+.runButton span { color: #fde9a7; font-size: 15px; }
+.runButton:focus-visible, .presetButton:focus-visible, .crossLibraryGrid button:focus-visible { outline: 3px solid rgba(76, 128, 210, .35); outline-offset: 2px; }
+
+.results { margin-top: 25px; padding-top: 22px; border-top: 1px solid #dfe7f0; }
+.resultsHeading { align-items: center; margin-bottom: 13px; }
+.resultsHeading h3 { margin: 4px 0 0; color: #243451; font-size: 19px; letter-spacing: -.025em; }
+.resultColumns { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 12px; align-items: start; }
+.punnettCard, .outcomesCard, .genotypePanel { min-width: 0; padding: 14px; border: 1px solid #e3e9f1; border-radius: 16px; background: rgba(255, 255, 255, .88); }
+.sectionTitle { display: flex; align-items: center; gap: 9px; margin-bottom: 12px; }
+.sectionTitle > span { display: grid; flex: 0 0 27px; width: 27px; height: 27px; place-items: center; border-radius: 9px; color: #5a789f; background: #edf3fa; font-size: 9px; font-weight: 900; }
+.sectionTitle h4 { margin: 0; color: #2c3e5b; font-size: 12px; }
+.sectionTitle p { margin: 3px 0 0; color: #8792a5; font-size: 9px; }
+.squareScroll { overflow-x: auto; padding-bottom: 3px; }
+.punnettGrid { display: grid; width: 100%; gap: 5px; }
+.cornerCell, .columnHeader, .rowHeader { display: grid; min-height: 32px; place-items: center; border-radius: 8px; color: #5c7396; background: #f0f5fb; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 9px; font-weight: 850; text-align: center; }
+.cornerCell { font-family: inherit; font-size: 8px; line-height: 1.35; }
+.rowHeader { align-self: stretch; }
+.punnettCell { display: flex; min-width: 0; min-height: 84px; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 4px 2px; border: 1px solid rgba(104, 128, 160, .13); border-radius: 10px; animation: seedReveal .42s both cubic-bezier(.2,.8,.25,1.15); }
+.punnettCell strong { color: #263853; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 9px; }
+.punnettCell small { color: #66758c; font-size: 7px; line-height: 1.25; text-align: center; }
+
+.phenotypeGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
+.outcomeCard { display: flex; min-width: 0; min-height: 130px; flex-direction: column; align-items: center; justify-content: center; gap: 4px; padding: 8px 5px; border: 1px solid rgba(104, 128, 160, .12); border-radius: 12px; text-align: center; }
+.outcomeCard > strong { color: #30415c; font-size: 9px; }
+.outcomeFraction { color: #687890; font-size: 9px; font-weight: 750; }
+.outcomePercent { color: #354b69; font-size: 12px; font-weight: 900; }
+.roundYellow { background: linear-gradient(145deg, #fff9e8, #fffdf8); }
+.roundGreen { background: linear-gradient(145deg, #f0faeb, #fbfff9); }
+.wrinkledYellow { background: linear-gradient(145deg, #fff7e6, #fffdf8); }
+.wrinkledGreen { background: linear-gradient(145deg, #eef8e9, #fafff8); }
+.ratioSummary { display: grid; grid-template-columns: auto 1fr; align-items: baseline; gap: 4px 9px; margin-top: 9px; padding: 10px; border: 1px solid #e8edf4; border-radius: 10px; background: #fbfcfe; }
+.ratioSummary > span { color: #738098; font-size: 9px; font-weight: 750; }
+.ratioSummary > strong { color: #2d4362; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+.ratioSummary > small { grid-column: 1 / -1; color: #8b96a8; font-size: 8px; line-height: 1.45; }
+
+.genotypePanel { margin-top: 12px; }
+.genotypeGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px 12px; }
+.genotypeRow { display: grid; grid-template-columns: auto minmax(25px, 1fr) auto auto; align-items: center; gap: 6px; min-width: 0; }
+.genotypeRow code { color: #365477; font-size: 9px; font-weight: 900; }
+.genotypeRow > strong { color: #53657e; font-size: 8px; }
+.genotypeRow > small { color: #8190a5; font-size: 8px; }
+.genotypeBar { height: 5px; overflow: hidden; border-radius: 999px; background: #e9edf2; }
+.genotypeBar > span { display: block; height: 100%; min-width: 3px; border-radius: inherit; background: linear-gradient(90deg, #72b871, #f0c45b); }
+.probabilityNote { margin: 12px 0 0; padding: 10px 12px; border-left: 3px solid #e4b750; border-radius: 0 9px 9px 0; color: #727c8f; background: #fffaf0; font-size: 9px; line-height: 1.6; }
+.probabilityNote strong { color: #66552e; }
+
+@keyframes seedReveal {
+  from { opacity: 0; transform: translateY(7px) scale(.94); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+:global(.dark) .simulator { --ink: #e7eefb; --muted: #aab8cf; --line: #33425d; --paper: #18253b; border-color: #34425d; color: #e7eefb; background: radial-gradient(circle at 100% 0%, rgba(241, 192, 79, .08), transparent 28%), linear-gradient(150deg, #141f34 0%, #101a2d 100%); box-shadow: 0 18px 52px rgba(0, 0, 0, .2); }
+:global(.dark) .simulatorHeader h2, :global(.dark) .parentTop h3, :global(.dark) .resultsHeading h3, :global(.dark) .sectionTitle h4 { color: #edf3ff; }
+:global(.dark) .headerEyebrow, :global(.dark) .parentEyebrow { color: #a9bee0; }
+:global(.dark) .crossCount, :global(.dark) .outcomeCount { border-color: #3a4b68; color: #c5d6f0; background: #1b2b44; }
+:global(.dark) .modelStrip { border-color: #544a31; background: #2b281f; }
+:global(.dark) .modelStrip p { color: #d1c39b; }
+:global(.dark) .modelStrip strong, :global(.dark) .modelStrip b { color: #f2dfaa; }
+:global(.dark) .modelIcon { color: #f2dfaa; background: #51452d; }
+:global(.dark) .parentCard, :global(.dark) .punnettCard, :global(.dark) .outcomesCard, :global(.dark) .genotypePanel { border-color: #34425b; background: rgba(24, 37, 59, .9); }
+:global(.dark) .parentSeed { background: #253047; }
+:global(.dark) .genotypeSelect { border-color: #40516d; color: #e4ecfa; background: #17243a; }
+:global(.dark) .gameteChip, :global(.dark) .cornerCell, :global(.dark) .columnHeader, :global(.dark) .rowHeader { border-color: #3b4c68; color: #c0d3f0; background: #24334c; }
+:global(.dark) .crossSymbol, :global(.dark) .presetButton, :global(.dark) .crossLibrary { border-color: #354560; color: #d6e3f7; background: #1b2a42; }
+:global(.dark) .crossLibrary summary { color: #c1d3ee; }
+:global(.dark) .crossLibrary > p, :global(.dark) .quickLabel, :global(.dark) .runRow p { color: #9eacc2; }
+:global(.dark) .crossLibraryGrid button { border-color: #3a4b66; color: #c1cee0; background: #192840; }
+:global(.dark) .crossLibraryGrid button span { color: #e3edfb; }
+:global(.dark) .crossLibraryGrid button:hover, :global(.dark) .crossLibraryGrid button.selectedPair { border-color: #7699c8; background: #263a58; }
+:global(.dark) .presetButton:hover { border-color: #6788b4; background: #263a58; }
+:global(.dark) .results { border-color: #354560; }
+:global(.dark) .sectionTitle > span { color: #c1d5f2; background: #293a55; }
+:global(.dark) .sectionTitle p, :global(.dark) .parentPhenotype, :global(.dark) .selectLabel, :global(.dark) .gameteLabel { color: #9eacc2; }
+:global(.dark) .punnettCell { border-color: rgba(163, 184, 215, .12); }
+:global(.dark) .punnettCell strong, :global(.dark) .outcomeCard > strong { color: #e2ebf8; }
+:global(.dark) .punnettCell small, :global(.dark) .outcomeFraction { color: #b6c3d7; }
+:global(.dark) .outcomePercent { color: #f0e0b2; }
+:global(.dark) .roundYellow, :global(.dark) .wrinkledYellow { background: linear-gradient(145deg, #393323, #2c2a25); }
+:global(.dark) .roundGreen, :global(.dark) .wrinkledGreen { background: linear-gradient(145deg, #26372d, #222d2b); }
+:global(.dark) .ratioSummary { border-color: #354660; background: #17243a; }
+:global(.dark) .ratioSummary > span, :global(.dark) .ratioSummary > small, :global(.dark) .genotypeRow > strong, :global(.dark) .genotypeRow > small { color: #a5b3c9; }
+:global(.dark) .ratioSummary > strong, :global(.dark) .genotypeRow code { color: #d5e4f7; }
+:global(.dark) .genotypeBar { background: #35435a; }
+:global(.dark) .probabilityNote { border-color: #806b3b; color: #d1c39b; background: #2b281f; }
+:global(.dark) .probabilityNote strong { color: #f0dfa9; }
+
+@media (max-width: 900px) {
+  .resultColumns { grid-template-columns: 1fr; }
+  .phenotypeGrid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .outcomeCard { min-height: 112px; }
+}
+
+@media (max-width: 640px) {
+  .simulator { padding: 14px; border-radius: 18px; }
+  .simulatorHeader { flex-direction: column; gap: 10px; }
+  .crossCount { align-self: flex-start; }
+  .modelStrip { align-items: flex-start; padding: 10px; }
+  .modelStrip p { font-size: 10px; }
+  .parents { grid-template-columns: 1fr; gap: 8px; }
+  .parentCard { padding: 12px; }
+  .parentTop { min-height: 62px; }
+  .parentSeed { width: 65px; height: 56px; }
+  .crossSymbol { width: 30px; height: 30px; justify-self: center; font-size: 18px; }
+  .crossLibraryGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .runRow { align-items: stretch; flex-direction: column; }
+  .runButton { justify-content: center; }
+  .resultsHeading { align-items: flex-start; flex-direction: column; gap: 8px; }
+  .phenotypeGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .genotypeGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .punnettGrid { min-width: 330px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .runButton { transition: none; }
+  .punnettCell { animation: none; }
+}
