@@ -57,6 +57,7 @@
 .gradeSix { --grade-accent: #4eb9a1; }
 .gradeSeven { --grade-accent: #e49a58; }
 .gradeEight { --grade-accent: #9a89ec; }
+.gradeEight.featuredCard { min-height: 252px; }
 .cardTop { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
 .gradeNumber { display: grid; width: 42px; height: 42px; place-items: center; border: 1px solid color-mix(in srgb, var(--grade-accent) 22%, white); border-radius: 14px; color: color-mix(in srgb, var(--grade-accent) 84%, #263b65); background: color-mix(in srgb, var(--grade-accent) 11%, white); font-size: 22px; font-weight: 850; letter-spacing: -.04em; }
 .status, .activeStatus { display: inline-flex; align-items: center; gap: 6px; padding: 6px 8px; border: 1px solid #e9edf5; border-radius: 999px; color: #8591a8; background: rgba(255,255,255,.76); font-size: 9px; font-weight: 750; white-space: nowrap; }
@@ -94,10 +95,14 @@
 .featuredCard .gradeLabel { color: #aebcf7; }
 .featuredCard h3 { max-width: 215px; color: #f4f6ff; }
 .featuredCard .cardDescription { max-width: 235px; color: #b5c1dc; }
-.openLink { z-index: 1; display: inline-flex; width: fit-content; align-items: center; gap: 8px; margin-top: 16px; padding: 9px 11px; border: 1px solid rgba(157, 226, 219, .28); border-radius: 10px; color: #d4fff7; background: rgba(77, 155, 151, .17); font-size: 10px; font-weight: 800; text-decoration: none; transition: background .18s ease, transform .18s ease; }
+.openLinks { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: flex-start; gap: 7px; margin-top: 14px; }
+.openLink { display: inline-flex; width: fit-content; align-items: center; gap: 8px; padding: 9px 11px; border: 1px solid rgba(157, 226, 219, .28); border-radius: 10px; color: #d4fff7; background: rgba(77, 155, 151, .17); font-size: 10px; font-weight: 800; text-decoration: none; transition: background .18s ease, transform .18s ease; }
 .openLink:hover { transform: translateY(-1px); background: rgba(77, 155, 151, .3); }
 .openLink span { font-size: 14px; }
-.card:focus-within, .openLink:focus-visible { outline: 3px solid #5185d7; outline-offset: 3px; }
+.secondaryLink { display: inline-flex; align-items: center; gap: 7px; padding: 7px 10px; border: 1px solid rgba(201, 215, 255, .23); border-radius: 9px; color: #d9e2ff; background: rgba(93, 108, 171, .18); font-size: 9px; font-weight: 800; text-decoration: none; transition: background .18s ease, transform .18s ease; }
+.secondaryLink:hover { transform: translateY(-1px); background: rgba(110, 127, 197, .32); }
+.secondaryLink span { font-size: 12px; }
+.card:focus-within, .openLink:focus-visible, .secondaryLink:focus-visible { outline: 3px solid #5185d7; outline-offset: 3px; }
 
 :global(.dark) .section { color: #edf3ff; }
 :global(.dark) .title { color: #edf3ff; }
@@ -125,6 +130,8 @@
   .status, .activeStatus { padding: 5px 6px; font-size: 8px; }
   .cardFoot { font-size: 8px; }
   .openLink { padding: 8px 9px; font-size: 9px; }
+  .secondaryLink { padding: 7px 8px; font-size: 8px; }
+  .gradeEight.featuredCard { min-height: 228px; }
 }
 
 @media (max-width: 360px) {
