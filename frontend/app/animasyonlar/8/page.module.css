@@ -20,6 +20,15 @@
 .bottomNav { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 19px; }
 .bottomNav a { color: #5b75a8; font-size: 11px; font-weight: 750; text-decoration: none; }
 .bottomNav a:hover { color: #2c62ba; text-decoration: underline; }
+.relatedAnimation { display: flex; align-items: center; gap: 13px; margin-top: 18px; padding: 16px 18px; border: 1px solid #dfe9d9; border-radius: 16px; color: inherit; background: linear-gradient(110deg, #f5faef 0%, #fff 65%, #fff9e8 100%); text-decoration: none; transition: transform .18s ease, box-shadow .18s ease; }
+.relatedAnimation:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(47, 89, 58, .1); }
+.relatedIcon { display: grid; flex: 0 0 44px; width: 44px; height: 44px; place-items: center; border: 1px solid #dce8d3; border-radius: 13px; background: #fff; font-size: 22px; }
+.relatedCopy { display: grid; gap: 4px; }
+.relatedEyebrow { color: #66865d; font-size: 8px; font-weight: 900; letter-spacing: .12em; }
+.relatedCopy strong { color: #2a4b36; font-size: 13px; }
+.relatedCopy > span:last-child { color: #74826d; font-size: 10px; line-height: 1.45; }
+.relatedArrow { margin-left: auto; color: #5c9169; font-size: 22px; font-weight: 700; }
+.relatedAnimation:focus-visible { outline: 3px solid #4f8a63; outline-offset: 3px; }
 
 :global(.dark) .page { color: #edf3ff; }
 :global(.dark) .breadcrumbs { color: #a5b1c7; }
@@ -32,11 +41,21 @@
 :global(.dark) .noteIcon { border-color: #536b92; color: #b4cbf2; }
 :global(.dark) .lessonNote p { color: #b1bfd4; }
 :global(.dark) .lessonNote strong { color: #e0eaff; }
+:global(.dark) .relatedAnimation { border-color: #3f5543; background: linear-gradient(110deg, #1c3027 0%, #17243a 65%, #312d20 100%); }
+:global(.dark) .relatedIcon { border-color: #405643; background: #26382d; }
+:global(.dark) .relatedEyebrow { color: #b2d0a8; }
+:global(.dark) .relatedCopy strong { color: #e0efd9; }
+:global(.dark) .relatedCopy > span:last-child { color: #b4c3ac; }
+:global(.dark) .relatedArrow { color: #a7d0a8; }
 
 @media (max-width: 600px) {
   .container { width: min(100% - 24px, 1220px); }
   .breadcrumbs { margin-bottom: 14px; font-size: 10px; }
   .hero { padding: 20px 16px; border-radius: 17px; }
   .hero > p { font-size: 12px; }
+  .relatedAnimation { gap: 10px; padding: 13px; }
+  .relatedIcon { flex-basis: 38px; width: 38px; height: 38px; font-size: 19px; }
+  .relatedCopy strong { font-size: 12px; }
+  .relatedCopy > span:last-child { font-size: 9px; }
   .bottomNav { align-items: flex-start; flex-direction: column; }
 }
