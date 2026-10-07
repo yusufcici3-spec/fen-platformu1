@@ -31,11 +31,13 @@ const grades: GradeCard[] = [
   },
   {
     grade: "7",
-    title: "Uzay ve Yıldızlar",
-    description: "Uzay teknolojilerini keşfet; yıldızların yaşam döngüsünü kütlelerine göre incele.",
+    title: "Uzay, Yıldızlar ve Enerji",
+    description: "Uzay teknolojilerini, yıldızların yaşamını ve enerji dönüşümünü keşfet.",
     className: styles.gradeSeven,
     href: "/animasyonlar/7",
-    animationCount: 2,
+    animationCount: 3,
+    secondaryHref: "/animasyonlar/7/kuvvet-enerji",
+    secondaryLabel: "Potansiyel ve kinetik enerji",
   },
   {
     grade: "8",
