@@ -4,9 +4,9 @@ import StellarEvolutionSimulator from "@/components/animations/StellarEvolutionS
 import styles from "./page.module.css";
 
 export const metadata = {
-  title: "7. Sınıf Animasyonları | Uzay ve Yıldızlar",
+  title: "7. Sınıf Animasyonları | Uzay, Yıldızlar ve Enerji",
   description:
-    "Uzay teknolojilerini keşfet; Güneş benzeri ve büyük kütleli yıldızların yaşam aşamalarını etkileşimli simülasyonla incele.",
+    "Uzay teknolojilerini, yıldızların yaşamını ve kuvvet-enerji konularını etkileşimli simülasyonlarla keşfet.",
 };
 
 export default function SeventhGradeSpaceTechnologyPage() {
@@ -34,6 +34,9 @@ export default function SeventhGradeSpaceTechnologyPage() {
               <a className={`${styles.heroAction} ${styles.heroActionSecondary}`} href="#stellar-life">
                 Yıldızların yaşamını keşfet <span aria-hidden="true">✦</span>
               </a>
+              <Link className={`${styles.heroAction} ${styles.heroActionSecondary}`} href="/animasyonlar/7/kuvvet-enerji">
+                Kuvvet ve enerjiye git <span aria-hidden="true">↗</span>
+              </Link>
             </div>
           </div>
           <div className={styles.heroOrbit} aria-hidden="true">
