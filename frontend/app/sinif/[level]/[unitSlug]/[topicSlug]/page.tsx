@@ -67,6 +67,7 @@ export default async function TopicPage({ params }: { params: Params }) {
             >
               📝 Bu Konudan Soru Çöz
             </Link>
+
             {level === 8 &&
               params.unitSlug === "dna-ve-genetik-kod" &&
               params.topicSlug === "kalitim-ve-genetik-muhendisligi" && (
@@ -75,6 +76,16 @@ export default async function TopicPage({ params }: { params: Params }) {
                   className="inline-flex items-center gap-2 rounded-full border border-beaker px-5 py-2.5 text-sm font-semibold text-beaker-dark hover:bg-beaker/10 dark:text-beaker-light"
                 >
                   🧬 Bezelye çaprazlama simülatörünü aç
+                </Link>
+              )}
+
+            {level === 7 &&
+              /kuvvet|enerji|kinetik|potansiyel/i.test(`${params.unitSlug} ${params.topicSlug}`) && (
+                <Link
+                  href="/animasyonlar/7/kuvvet-enerji"
+                  className="inline-flex items-center gap-2 rounded-full border border-beaker px-5 py-2.5 text-sm font-semibold text-beaker-dark hover:bg-beaker/10 dark:text-beaker-light"
+                >
+                  ⚡ Kinetik ve potansiyel enerji simülatörünü aç
                 </Link>
               )}
           </div>
