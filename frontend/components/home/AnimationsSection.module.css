@@ -36,7 +36,6 @@
 .headerNote > span { color: #7393d1; font-size: 13px; }
 
 .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
-
 .card {
   --grade-accent: #92a4c8;
   position: relative;
@@ -58,8 +57,8 @@
 .gradeSix { --grade-accent: #4eb9a1; }
 .gradeSeven { --grade-accent: #e49a58; }
 .gradeEight { --grade-accent: #9a89ec; }
-.gradeSeven.featuredCard, .gradeEight.featuredCard { min-height: 252px; }
-
+.gradeFive.featuredCard { min-height: 252px; }
+.gradeEight.featuredCard { min-height: 252px; }
 .cardTop { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
 .gradeNumber { display: grid; width: 42px; height: 42px; place-items: center; border: 1px solid color-mix(in srgb, var(--grade-accent) 22%, white); border-radius: 14px; color: color-mix(in srgb, var(--grade-accent) 84%, #263b65); background: color-mix(in srgb, var(--grade-accent) 11%, white); font-size: 22px; font-weight: 850; letter-spacing: -.04em; }
 .status, .activeStatus { display: inline-flex; align-items: center; gap: 6px; padding: 6px 8px; border: 1px solid #e9edf5; border-radius: 999px; color: #8591a8; background: rgba(255,255,255,.76); font-size: 9px; font-weight: 750; white-space: nowrap; }
@@ -133,7 +132,8 @@
   .cardFoot { font-size: 8px; }
   .openLink { padding: 8px 9px; font-size: 9px; }
   .secondaryLink { padding: 7px 8px; font-size: 8px; }
-  .gradeSeven.featuredCard, .gradeEight.featuredCard { min-height: 228px; }
+  .gradeFive.featuredCard { min-height: 228px; }
+  .gradeEight.featuredCard { min-height: 228px; }
 }
 
 @media (max-width: 360px) {
