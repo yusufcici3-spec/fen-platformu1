@@ -15,11 +15,13 @@ type GradeCard = {
 const grades: GradeCard[] = [
   {
     grade: "5",
-    title: "Ay’ın Evreleri",
-    description: "Ay’ın aydınlık bölümünün döngü boyunca nasıl değiştiğini keşfet.",
+    title: "Ay’ın Evreleri ve Kuvvet",
+    description: "Ay’ın evrelerini keşfet; dinamometreyle ağırlıkları ölçüp karşılaştır.",
     className: styles.gradeFive,
     href: "/animasyonlar/5",
-    animationCount: 1,
+    animationCount: 2,
+    secondaryHref: "/animasyonlar/5/dinamometre",
+    secondaryLabel: "Dinamometreyle kuvvet ölç",
   },
   {
     grade: "6",
@@ -31,13 +33,11 @@ const grades: GradeCard[] = [
   },
   {
     grade: "7",
-    title: "Uzay, Yıldızlar ve Enerji",
-    description: "Uzay teknolojilerini, yıldızların yaşamını ve enerji dönüşümünü keşfet.",
+    title: "Uzay ve Yıldızlar",
+    description: "Uzay teknolojilerini keşfet; yıldızların yaşam döngüsünü kütlelerine göre incele.",
     className: styles.gradeSeven,
     href: "/animasyonlar/7",
-    animationCount: 3,
-    secondaryHref: "/animasyonlar/7/kuvvet-enerji",
-    secondaryLabel: "Potansiyel ve kinetik enerji",
+    animationCount: 2,
   },
   {
     grade: "8",
