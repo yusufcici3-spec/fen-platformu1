@@ -1,0 +1,112 @@
+.simulator { overflow: hidden; border: 1px solid rgba(143, 176, 217, .18); border-radius: 22px; color: #e9f1fc; background: linear-gradient(145deg, #101d33 0%, #0a1424 100%); box-shadow: 0 20px 55px rgba(0, 0, 0, .2); }
+.header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 21px 23px 18px; border-bottom: 1px solid rgba(157, 185, 223, .12); }
+.eyebrow, .panelEyebrow { color: #80d8d0; font-size: 9px; font-weight: 900; letter-spacing: .15em; }
+.header h2 { margin: 6px 0 5px; color: #f2f6ff; font-size: clamp(19px, 2.5vw, 25px); letter-spacing: -.035em; }
+.header p { margin: 0; color: #9aadc5; font-size: 11px; line-height: 1.55; }
+.modeBadge { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 7px; padding: 8px 10px; border: 1px solid rgba(128, 216, 208, .22); border-radius: 999px; color: #c5ebe3; background: rgba(37, 82, 87, .2); font-size: 8px; font-weight: 900; letter-spacing: .08em; }
+.modeBadge i, .instrumentTopline > span:first-child i { width: 6px; height: 6px; border-radius: 50%; background: #81dfcf; box-shadow: 0 0 9px rgba(129, 223, 207, .72); }
+.layout { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(300px, .8fr); }
+.instrumentPanel { min-width: 0; padding: 17px 19px 18px; border-right: 1px solid rgba(157, 185, 223, .12); }
+.instrumentTopline { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 10px; color: #80d8d0; font-size: 8px; font-weight: 900; letter-spacing: .13em; }
+.instrumentTopline > span:first-child { display: inline-flex; align-items: center; gap: 7px; }
+.capacityPill { padding: 6px 8px; border: 1px solid rgba(148, 174, 206, .14); border-radius: 999px; color: #91a7c2; background: rgba(24, 41, 62, .65); font-size: 8px; font-weight: 650; letter-spacing: 0; }
+.capacityPill b { margin-left: 4px; color: #f5d8a7; font-size: 9px; }
+.instrumentScene { overflow: hidden; border: 1px solid rgba(142, 174, 214, .14); border-radius: 15px; background: #0d192a; }
+.instrumentSvg { display: block; width: 100%; max-height: 535px; }
+.readingBanner { display: flex; align-items: center; justify-content: space-evenly; gap: 8px; padding: 10px 12px; border-top: 1px solid rgba(143, 175, 211, .14); background: rgba(20, 36, 56, .82); }
+.readingBanner > div:not(.readingDivider) { display: grid; gap: 3px; text-align: center; }
+.readingBanner span { color: #8ea2bb; font-size: 8px; }
+.readingBanner strong { color: #ffe0aa; font-size: 14px; }
+.readingOverload strong { color: #ff9f96; }
+.readingDivider { width: 1px; height: 28px; background: rgba(143, 175, 211, .2); }
+.instrumentCaption { margin: 10px 2px 0; color: #7e92ab; font-size: 9px; line-height: 1.55; }
+.controls { min-width: 0; padding: 18px; background: rgba(15, 26, 44, .75); }
+.panelHeading { display: flex; align-items: center; gap: 10px; }
+.panelIcon { display: grid; width: 34px; height: 34px; place-items: center; border: 1px solid rgba(129, 196, 230, .2); border-radius: 11px; color: #b4d9ef; background: rgba(62, 106, 143, .19); font-size: 20px; }
+.panelEyebrow { color: #8da5bf; font-size: 7px; }
+.panelHeading h3 { margin: 3px 0 0; color: #edf4ff; font-size: 14px; }
+.helperText { margin: 11px 0 13px; color: #8fa3bb; font-size: 9px; line-height: 1.55; }
+.presetGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
+.presetButton { display: grid; grid-template-columns: 30px 1fr; grid-template-rows: auto auto; align-items: center; column-gap: 7px; min-height: 51px; padding: 7px 9px; border: 1px solid rgba(128, 164, 205, .19); border-radius: 10px; color: #e7eef9; background: linear-gradient(145deg, rgba(28, 48, 72, .8), rgba(20, 35, 55, .84)); text-align: left; cursor: pointer; transition: border-color .15s ease, transform .15s ease, background .15s ease; }
+.presetButton:hover:not(:disabled) { transform: translateY(-1px); border-color: rgba(255, 202, 128, .55); background: #233850; }
+.presetButton:disabled { opacity: .45; cursor: not-allowed; }
+.weightIcon { display: grid; grid-row: span 2; width: 27px; height: 27px; place-items: center; border: 1px solid rgba(255, 203, 133, .3); border-radius: 8px; color: #ffd28d; background: rgba(191, 113, 59, .16); font-size: 15px; }
+.presetButton strong { align-self: end; font-size: 10px; }
+.presetButton small { align-self: start; color: #8fa4bc; font-size: 8px; }
+.customForm { margin-top: 13px; }
+.customForm label, .capacityBlock > label { display: block; margin-bottom: 6px; color: #bdcadd; font-size: 9px; font-weight: 750; }
+.customForm label span { color: #768aa3; font-size: 8px; font-weight: 500; }
+.customInputRow { display: flex; align-items: center; gap: 6px; }
+.customInputRow input, .capacityBlock select { min-width: 0; border: 1px solid #344a64; border-radius: 8px; color: #edf4ff; background: #15253a; font: inherit; font-size: 10px; }
+.customInputRow input { flex: 1; height: 34px; padding: 0 9px; }
+.customInputRow > span { color: #91a5bd; font-size: 9px; }
+.customInputRow button { height: 34px; padding: 0 12px; border: 1px solid rgba(127, 218, 206, .33); border-radius: 8px; color: #d5fff3; background: rgba(55, 123, 115, .3); font-size: 9px; font-weight: 800; cursor: pointer; }
+.customInputRow button:disabled { opacity: .45; cursor: not-allowed; }
+.capacityBlock { margin-top: 14px; }
+.capacityBlock select { width: 100%; height: 35px; padding: 0 9px; }
+.capacityBlock small { display: block; margin-top: 5px; color: #7489a2; font-size: 8px; line-height: 1.5; }
+.hangingList { margin-top: 14px; padding: 11px; border: 1px solid rgba(143, 175, 211, .14); border-radius: 11px; background: rgba(8, 16, 29, .46); }
+.listHeading { display: flex; justify-content: space-between; color: #7f94ad; font-size: 7px; font-weight: 900; letter-spacing: .12em; }
+.listHeading b { color: #8198b3; letter-spacing: 0; }
+.emptyList { margin: 10px 0 8px; color: #7d91aa; font-size: 8px; line-height: 1.5; }
+.hangingList ul { display: grid; gap: 5px; max-height: 120px; overflow-y: auto; margin: 8px 0; padding: 0; list-style: none; }
+.hangingList li { display: flex; align-items: center; justify-content: space-between; gap: 7px; padding: 5px 6px; border-radius: 7px; color: #c7d4e3; background: rgba(33, 51, 73, .58); font-size: 9px; }
+.hangingList li > span { display: inline-flex; align-items: center; gap: 6px; }
+.hangingList li i { display: grid; width: 18px; height: 18px; place-items: center; border-radius: 5px; color: #ffd894; background: rgba(198, 133, 68, .17); font-size: 8px; font-style: normal; }
+.hangingList li small { color: #8ea3bb; font-size: 8px; }
+.hangingList li button, .comparisonHeader > button { padding: 4px 7px; border: 1px solid rgba(141, 164, 194, .17); border-radius: 6px; color: #a9bbce; background: rgba(47, 65, 87, .45); font-size: 8px; cursor: pointer; }
+.hangingList li button:hover, .comparisonHeader > button:hover:not(:disabled) { border-color: rgba(226, 158, 127, .4); color: #ffd3c4; }
+.massTotal, .forceTotal { display: flex; align-items: center; justify-content: space-between; padding-top: 8px; border-top: 1px solid rgba(143, 175, 211, .1); color: #899db5; font-size: 8px; }
+.massTotal strong, .forceTotal strong { color: #efd6ad; font-size: 10px; }
+.forceTotal { margin-top: 7px; }
+.actionRow { display: grid; gap: 7px; margin-top: 12px; }
+.saveButton, .resetButton { min-height: 34px; border-radius: 8px; font-size: 9px; font-weight: 800; cursor: pointer; }
+.saveButton { border: 1px solid rgba(127, 218, 206, .32); color: #d5fff3; background: rgba(55, 123, 115, .31); }
+.saveButton:hover { background: rgba(55, 123, 115, .48); }
+.resetButton { border: 1px solid rgba(147, 166, 191, .17); color: #a4b5c8; background: transparent; }
+.resetButton:hover { background: rgba(45, 63, 85, .48); }
+.comparison { padding: 16px 19px 17px; border-top: 1px solid rgba(157, 185, 223, .12); }
+.comparisonHeader { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.comparisonHeader h3 { margin: 4px 0 0; color: #e9f1fc; font-size: 14px; }
+.comparisonHeader > button:disabled { opacity: .4; cursor: not-allowed; }
+.noMeasurements { margin: 11px 0 1px; color: #7f93ac; font-size: 9px; line-height: 1.55; }
+.tableWrap { overflow-x: auto; margin-top: 12px; }
+.tableWrap table { width: 100%; border-collapse: collapse; font-size: 9px; text-align: left; }
+.tableWrap th { padding: 8px; border-bottom: 1px solid rgba(143, 175, 211, .2); color: #8196af; font-size: 7px; font-weight: 850; letter-spacing: .07em; white-space: nowrap; }
+.tableWrap td { padding: 8px; border-bottom: 1px solid rgba(143, 175, 211, .08); color: #c3d0df; white-space: nowrap; }
+.tableValid, .tableOverload { padding: 4px 6px; border-radius: 99px; font-size: 7px; }
+.tableValid { color: #a8e6d7; background: rgba(55, 123, 115, .2); }
+.tableOverload { color: #ffb5ac; background: rgba(164, 76, 77, .22); }
+.learningStrip { display: flex; align-items: center; gap: 10px; padding: 12px 19px; border-top: 1px solid rgba(157, 185, 223, .12); background: rgba(23, 37, 58, .6); }
+.learningMark { display: grid; flex: 0 0 27px; width: 27px; height: 27px; place-items: center; border: 1px solid rgba(242, 196, 119, .23); border-radius: 9px; color: #ffd38a; background: rgba(125, 93, 47, .19); font-size: 12px; }
+.learningStrip p { margin: 0; color: #9bacbf; font-size: 8px; line-height: 1.55; }
+.learningStrip p strong { color: #e8d5ae; }
+.presetButton:focus-visible, .customInputRow input:focus-visible, .customInputRow button:focus-visible, .capacityBlock select:focus-visible, .hangingList button:focus-visible, .saveButton:focus-visible, .resetButton:focus-visible, .comparisonHeader button:focus-visible { outline: 2px solid #a8d4ff; outline-offset: 2px; }
+
+@media (max-width: 850px) {
+  .layout { grid-template-columns: minmax(0, 1fr) minmax(270px, .88fr); }
+  .instrumentPanel { padding: 14px; }
+  .controls { padding: 15px; }
+}
+@media (max-width: 680px) {
+  .layout { grid-template-columns: 1fr; }
+  .instrumentPanel { border-right: 0; border-bottom: 1px solid rgba(157, 185, 223, .12); }
+  .instrumentSvg { max-height: 520px; }
+  .controls { padding: 16px; }
+}
+@media (max-width: 480px) {
+  .simulator { border-radius: 16px; }
+  .header { align-items: flex-start; flex-direction: column; gap: 10px; padding: 17px 15px 14px; }
+  .header p { font-size: 10px; }
+  .instrumentPanel { padding: 12px 9px; }
+  .instrumentTopline { align-items: flex-start; flex-direction: column; gap: 7px; }
+  .instrumentSvg { max-height: none; }
+  .capacityPill { font-size: 8px; }
+  .controls { padding: 14px 12px; }
+  .comparison { padding: 14px 11px; }
+  .learningStrip { align-items: flex-start; padding: 11px 12px; }
+  .tableWrap table { min-width: 550px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .presetButton { transition: none; }
+}
