@@ -54,10 +54,10 @@
 
 .card:hover { transform: translateY(-3px); border-color: color-mix(in srgb, var(--grade-accent) 52%, #e5eaf3); box-shadow: 0 14px 30px rgba(25, 47, 88, .11); }
 .gradeFive { --grade-accent: #66a9de; }
+.gradeFive.featuredCard { min-height: 252px; }
 .gradeSix { --grade-accent: #4eb9a1; }
 .gradeSeven { --grade-accent: #e49a58; }
 .gradeEight { --grade-accent: #9a89ec; }
-.gradeFive.featuredCard { min-height: 252px; }
 .gradeEight.featuredCard { min-height: 252px; }
 .cardTop { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
 .gradeNumber { display: grid; width: 42px; height: 42px; place-items: center; border: 1px solid color-mix(in srgb, var(--grade-accent) 22%, white); border-radius: 14px; color: color-mix(in srgb, var(--grade-accent) 84%, #263b65); background: color-mix(in srgb, var(--grade-accent) 11%, white); font-size: 22px; font-weight: 850; letter-spacing: -.04em; }

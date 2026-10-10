@@ -3,9 +3,9 @@ import MoonPhasesSimulator from "@/components/animations/MoonPhasesSimulator/Moo
 import styles from "./page.module.css";
 
 export const metadata = {
-  title: "5. Sınıf Animasyonları | Ay’ın Evreleri ve Kuvvet",
+  title: "5. Sınıf Animasyonları | Ay’ın Evreleri ve Yüzeyi",
   description:
-    "Ay’ın evrelerini ve kuvvet ölçümünü etkileşimli Ay simülatörü ve dinamometre deneyimiyle keşfet.",
+    "Ay’ın evrelerini keşfet; astronotla Ay yüzeyinde ilerleyerek kraterleri, mare alanlarını ve regolit tabakasını incele.",
 };
 
 export default function FifthGradeMoonPhasesPage() {
@@ -33,8 +33,8 @@ export default function FifthGradeMoonPhasesPage() {
               <a className={`${styles.heroAction} ${styles.heroActionSecondary}`} href="#moon-learning">
                 Evrelerin sırasını öğren <span aria-hidden="true">✦</span>
               </a>
-              <Link className={`${styles.heroAction} ${styles.heroActionSecondary}`} href="/animasyonlar/5/dinamometre">
-                Dinamometreyle kuvvet ölç <span aria-hidden="true">↗</span>
+              <Link className={styles.heroAction} href="/animasyonlar/5/ay-yuzeyi">
+                Astronotla Ay yüzeyini keşfet <span aria-hidden="true">→</span>
               </Link>
             </div>
           </div>

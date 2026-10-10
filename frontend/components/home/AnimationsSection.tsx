@@ -15,13 +15,13 @@ type GradeCard = {
 const grades: GradeCard[] = [
   {
     grade: "5",
-    title: "Ay’ın Evreleri ve Kuvvet",
-    description: "Ay’ın evrelerini keşfet; dinamometreyle ağırlıkları ölçüp karşılaştır.",
+    title: "Ay’ın Evreleri ve Yüzeyi",
+    description: "Ay’ın evrelerini keşfet; astronotla yüzeydeki kraterleri ve yer şekillerini incele.",
     className: styles.gradeFive,
     href: "/animasyonlar/5",
     animationCount: 2,
-    secondaryHref: "/animasyonlar/5/dinamometre",
-    secondaryLabel: "Dinamometreyle kuvvet ölç",
+    secondaryHref: "/animasyonlar/5/ay-yuzeyi",
+    secondaryLabel: "Astronotla Ay yüzeyini keşfet",
   },
   {
     grade: "6",
