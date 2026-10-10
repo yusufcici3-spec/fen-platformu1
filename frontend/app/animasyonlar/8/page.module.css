@@ -29,6 +29,12 @@
 .relatedCopy > span:last-child { color: #74826d; font-size: 10px; line-height: 1.45; }
 .relatedArrow { margin-left: auto; color: #5c9169; font-size: 22px; font-weight: 700; }
 .relatedAnimation:focus-visible { outline: 3px solid #4f8a63; outline-offset: 3px; }
+.dnaAnimation { border-color: #dbe4f5; background: linear-gradient(110deg, #f1f6ff 0%, #fff 65%, #f6f4ff 100%); }
+.dnaAnimation .relatedEyebrow { color: #6178a9; }
+.dnaAnimation .relatedCopy strong { color: #33486d; }
+.dnaAnimation .relatedCopy > span:last-child { color: #75839a; }
+.dnaAnimation .relatedArrow { color: #6681b5; }
+.dnaAnimation:focus-visible { outline-color: #5679b7; }
 
 :global(.dark) .page { color: #edf3ff; }
 :global(.dark) .breadcrumbs { color: #a5b1c7; }
@@ -47,6 +53,11 @@
 :global(.dark) .relatedCopy strong { color: #e0efd9; }
 :global(.dark) .relatedCopy > span:last-child { color: #b4c3ac; }
 :global(.dark) .relatedArrow { color: #a7d0a8; }
+:global(.dark) .dnaAnimation { border-color: #3a4864; background: linear-gradient(110deg, #1b2940 0%, #17243a 65%, #292640 100%); }
+:global(.dark) .dnaAnimation .relatedEyebrow { color: #b8c9ed; }
+:global(.dark) .dnaAnimation .relatedCopy strong { color: #e0eaff; }
+:global(.dark) .dnaAnimation .relatedCopy > span:last-child { color: #b0bdd2; }
+:global(.dark) .dnaAnimation .relatedArrow { color: #b5c7f0; }
 
 @media (max-width: 600px) {
   .container { width: min(100% - 24px, 1220px); }
