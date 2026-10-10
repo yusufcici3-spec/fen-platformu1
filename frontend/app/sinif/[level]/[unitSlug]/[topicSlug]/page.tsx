@@ -67,6 +67,14 @@ export default async function TopicPage({ params }: { params: Params }) {
             >
               📝 Bu Konudan Soru Çöz
             </Link>
+            {level === 8 && params.unitSlug === "dna-ve-genetik-kod" && (
+              <Link
+                href="/animasyonlar/8/dna-eslesmesi"
+                className="inline-flex items-center gap-2 rounded-full border border-beaker px-5 py-2.5 text-sm font-semibold text-beaker-dark hover:bg-beaker/10 dark:text-beaker-light"
+              >
+                🧬 DNA baz eşleşmesi etkinliğini aç
+              </Link>
+            )}
             {level === 8 &&
               params.unitSlug === "dna-ve-genetik-kod" &&
               params.topicSlug === "kalitim-ve-genetik-muhendisligi" && (
@@ -77,14 +85,6 @@ export default async function TopicPage({ params }: { params: Params }) {
                   🧬 Bezelye çaprazlama simülatörünü aç
                 </Link>
               )}
-            {level === 5 && /kuvvet|dinamometre|olculmesi/i.test(`${params.unitSlug} ${params.topicSlug}`) && (
-              <Link
-                href="/animasyonlar/5/dinamometre"
-                className="inline-flex items-center gap-2 rounded-full border border-beaker px-5 py-2.5 text-sm font-semibold text-beaker-dark hover:bg-beaker/10 dark:text-beaker-light"
-              >
-                ⚖️ Dinamometreyle kuvvet ölçümünü aç
-              </Link>
-            )}
           </div>
         </div>
       </div>
