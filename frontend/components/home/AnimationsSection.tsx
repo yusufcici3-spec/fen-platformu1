@@ -8,20 +8,17 @@ type GradeCard = {
   className: string;
   href?: string;
   animationCount?: number;
-  secondaryHref?: string;
-  secondaryLabel?: string;
+  secondaryLinks?: Array<{ href: string; label: string }>;
 };
 
 const grades: GradeCard[] = [
   {
     grade: "5",
-    title: "Ay’ın Evreleri ve Yüzeyi",
-    description: "Ay’ın evrelerini keşfet; astronotla yüzeydeki kraterleri ve yer şekillerini incele.",
+    title: "Ay’ın Evreleri",
+    description: "Ay’ın aydınlık bölümünün döngü boyunca nasıl değiştiğini keşfet.",
     className: styles.gradeFive,
     href: "/animasyonlar/5",
-    animationCount: 2,
-    secondaryHref: "/animasyonlar/5/ay-yuzeyi",
-    secondaryLabel: "Astronotla Ay yüzeyini keşfet",
+    animationCount: 1,
   },
   {
     grade: "6",
@@ -42,12 +39,14 @@ const grades: GradeCard[] = [
   {
     grade: "8",
     title: "Güneş açısı ve mevsimler",
-    description: "Güneş açısı, mevsimler ve bezelyelerde kalıtımı etkileşimli keşfet.",
+    description: "Güneş açısını, bezelyelerde kalıtımı ve DNA baz eşleşmelerini etkileşimli keşfet.",
     className: styles.gradeEight,
     href: "/animasyonlar/8",
-    animationCount: 2,
-    secondaryHref: "/animasyonlar/8/kalitim",
-    secondaryLabel: "Kalıtım çaprazlamaları",
+    animationCount: 3,
+    secondaryLinks: [
+      { href: "/animasyonlar/8/kalitim", label: "Kalıtım çaprazlamaları" },
+      { href: "/animasyonlar/8/dna-eslesmesi", label: "DNA baz eşleşmeleri" },
+    ],
   },
 ];
 
@@ -84,11 +83,11 @@ export default function AnimationsSection() {
                 <Link className={styles.openLink} href={item.href}>
                   {item.grade}. sınıf animasyonlarını aç <span aria-hidden="true">→</span>
                 </Link>
-                {item.secondaryHref && (
-                  <Link className={styles.secondaryLink} href={item.secondaryHref}>
-                    {item.secondaryLabel ?? "Ek animasyon"} <span aria-hidden="true">→</span>
+                {item.secondaryLinks?.map((link) => (
+                  <Link key={link.href} className={styles.secondaryLink} href={link.href}>
+                    {link.label} <span aria-hidden="true">→</span>
                   </Link>
-                )}
+                ))}
               </div>
             </article>
           ) : (
