@@ -1,0 +1,53 @@
+.page { min-height: 70vh; padding: clamp(22px, 4vw, 44px) 0 64px; color: #17233f; }
+.container { width: min(100% - 40px, 1220px); margin: 0 auto; }
+.breadcrumbs { display: flex; align-items: center; flex-wrap: wrap; gap: 9px; margin-bottom: 20px; color: #7b879e; font-size: 12px; }
+.breadcrumbs a { color: #5c75a7; font-weight: 700; text-decoration: none; }
+.breadcrumbs a:hover, .bottomNav a:hover { color: #2c62ba; text-decoration: underline; }
+.hero { position: relative; display: flex; align-items: center; overflow: hidden; min-height: 222px; margin-bottom: 18px; padding: clamp(21px, 4vw, 36px); border: 1px solid #e0e8f3; border-radius: 23px; background: radial-gradient(circle at 91% 45%, rgba(111, 153, 220, .16), transparent 26%), radial-gradient(circle at 8% 100%, rgba(114, 189, 155, .11), transparent 38%), linear-gradient(135deg, #f7faff 0%, #fff 58%, #f5f8ff 100%); }
+.hero > div:first-child { position: relative; z-index: 1; max-width: 850px; }
+.eyebrow { display: inline-flex; color: #647fae; font-size: 9px; font-weight: 900; letter-spacing: .13em; }
+.hero .eyebrow { padding: 6px 9px; border: 1px solid #dce6f7; border-radius: 999px; background: rgba(255,255,255,.87); }
+.hero h1 { margin: 13px 0 0; color: #182744; font-size: clamp(29px, 4vw, 43px); line-height: 1.08; letter-spacing: -.045em; }
+.hero p { max-width: 780px; margin: 11px 0 0; color: #687793; font-size: 13px; line-height: 1.65; }
+.heroFacts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.heroFacts span { padding: 7px 10px; border: 1px solid #dce7f5; border-radius: 999px; color: #637593; background: rgba(255,255,255,.84); font-size: 9px; }
+.heroFacts b { color: #496d9f; }
+.heroArt { position: absolute !important; top: 50%; right: 6%; width: 175px; height: 175px; transform: translateY(-50%); opacity: .72; }
+.helixRail { position: absolute; inset: 10px 40px; border: 5px solid transparent; border-left-color: #6b9acb; border-right-color: #65a987; border-radius: 50%; transform: rotate(24deg) scaleX(.72); filter: drop-shadow(0 0 9px rgba(96, 146, 192, .2)); }
+.helixRungs { position: absolute; inset: 26px 40px; display: flex; flex-direction: column; justify-content: space-between; transform: rotate(24deg); }
+.helixRungs i { height: 3px; border-radius: 5px; background: linear-gradient(90deg, #df7884 0 47%, #aabbd2 47% 53%, #5595d0 53% 100%); }
+.heroBase { position: absolute; right: 0; bottom: 13px; padding: 7px 10px; border: 1px solid #dbe5f2; border-radius: 8px; color: #607aa0; background: #fff; font-size: 10px; font-weight: 900; box-shadow: 0 5px 16px rgba(54, 77, 118, .1); }
+.learning { margin-top: 19px; padding: 18px 20px; border: 1px solid #e5ebf3; border-radius: 16px; background: #fbfcff; }
+.learningHeading h2 { margin: 5px 0 0; color: #263954; font-size: clamp(16px, 2.2vw, 21px); letter-spacing: -.025em; }
+.learningGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
+.learningCard { display: flex; align-items: flex-start; gap: 10px; padding: 12px; border: 1px solid #e5ebf3; border-radius: 12px; background: linear-gradient(145deg, #fff, #f7faff); }
+.baseMark { display: grid; flex: 0 0 29px; width: 29px; height: 29px; place-items: center; border: 1px solid; border-radius: 9px; font-size: 12px; font-weight: 900; }
+.adenine { border-color: #efcbd1; color: #c95466; background: #fff0f2; }
+.guanine { border-color: #d0e5d2; color: #45865a; background: #eff9f1; }
+.dna { border-color: #d0dced; color: #597aa9; background: #f0f5fc; }
+.learningCard h3 { margin: 1px 0 5px; color: #344663; font-size: 10px; line-height: 1.4; }
+.learningCard p { margin: 0; color: #728097; font-size: 9px; line-height: 1.55; }
+.sourceLinks { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin-top: 14px; padding-top: 12px; border-top: 1px solid #e9edf4; color: #8792a5; font-size: 8px; }
+.sourceLinks a { color: #5578aa; font-weight: 750; text-decoration: none; }
+.sourceLinks a:hover { text-decoration: underline; }
+.modelNote { margin: 9px 0 0; color: #8995a7; font-size: 8px; line-height: 1.55; }
+.bottomNav { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 19px; }
+.bottomNav a { color: #5b75a8; font-size: 10px; font-weight: 750; text-decoration: none; }
+:global(.dark) .page { color: #edf3ff; }
+:global(.dark) .breadcrumbs { color: #a5b1c7; }
+:global(.dark) .breadcrumbs a, :global(.dark) .bottomNav a { color: #a8c4ff; }
+:global(.dark) .hero { border-color: #2c3b58; background: radial-gradient(circle at 91% 45%, rgba(111, 153, 220, .14), transparent 26%), linear-gradient(135deg, #17233b 0%, #121b2d 62%, #18223a 100%); }
+:global(.dark) .hero .eyebrow { border-color: #344565; color: #b4c7eb; background: #1d2b46; }
+:global(.dark) .hero h1, :global(.dark) .learningHeading h2 { color: #f0f5ff; }
+:global(.dark) .hero p { color: #aab8cf; }
+:global(.dark) .heroFacts span { border-color: #3b4b67; color: #c0cee5; background: #1b2940; }
+:global(.dark) .heroFacts b { color: #c3d5fa; }
+:global(.dark) .heroBase { border-color: #3b4b67; color: #ccdaf1; background: #1c2b42; }
+:global(.dark) .learning { border-color: #2e3d58; background: #172238; }
+:global(.dark) .learningCard { border-color: #34435b; background: linear-gradient(145deg, #1e2d45, #18243a); }
+:global(.dark) .learningCard h3 { color: #e0eaff; }
+:global(.dark) .learningCard p, :global(.dark) .modelNote { color: #a2b0c5; }
+:global(.dark) .sourceLinks { border-color: #33425a; color: #9eacc2; }
+:global(.dark) .sourceLinks a { color: #b4cbf2; }
+@media (max-width: 760px) { .heroArt { right: 1%; opacity: .35; } .hero > div:first-child { max-width: 90%; } .learningGrid { grid-template-columns: 1fr; } .learningCard { align-items: center; } }
+@media (max-width: 600px) { .container { width: min(100% - 24px, 1220px); } .breadcrumbs { margin-bottom: 14px; font-size: 10px; } .hero { min-height: 240px; padding: 20px 16px; border-radius: 17px; } .hero > div:first-child { max-width: 100%; } .heroArt { top: auto; right: -11px; bottom: -53px; width: 125px; height: 125px; transform: none; opacity: .18; } .hero p { font-size: 11px; } .heroFacts { gap: 6px; } .heroFacts span { padding: 6px 8px; font-size: 8px; } .learning { padding: 14px; } .learningCard { padding: 10px; } .bottomNav { align-items: flex-start; flex-direction: column; } }

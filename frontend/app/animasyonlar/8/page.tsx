@@ -53,6 +53,16 @@ export default function EighthGradeAnimationsPage() {
           <span className={styles.relatedArrow} aria-hidden="true">→</span>
         </Link>
 
+        <Link href="/animasyonlar/8/dna-eslesmesi" className={`${styles.relatedAnimation} ${styles.dnaAnimation}`}>
+          <span className={styles.relatedIcon} aria-hidden="true">🧬</span>
+          <span className={styles.relatedCopy}>
+            <span className={styles.relatedEyebrow}>2. ÜNİTE · DNA VE GENETİK KOD</span>
+            <strong>DNA baz eşleşmelerini kendin yap</strong>
+            <span>Adenin, timin, guanin ve sitozinle değiştirilebilir DNA zincirini tamamla.</span>
+          </span>
+          <span className={styles.relatedArrow} aria-hidden="true">→</span>
+        </Link>
+
         <div className={styles.bottomNav}>
           <Link href="/#animasyonlar">← Diğer sınıf animasyonları</Link>
           <Link href="/sinif/8">8. sınıf ünitelerine git →</Link>

@@ -64,6 +64,7 @@ export default function PeaInheritancePage() {
           <Link href="/sinif/8/dna-ve-genetik-kod/kalitim-ve-genetik-muhendisligi">
             ← Kalıtım ve Genetik Mühendisliği konusuna dön
           </Link>
+          <Link href="/animasyonlar/8/dna-eslesmesi">DNA baz eşleşmesi etkinliğine git →</Link>
           <Link href="/animasyonlar/8">8. sınıf animasyonlarına dön →</Link>
         </div>
       </div>
