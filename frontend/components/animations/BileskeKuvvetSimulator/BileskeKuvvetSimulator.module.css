@@ -1,0 +1,85 @@
+.simulator { --ink: #1e2d49; --muted: #6d7b91; --line: #e2e9f2; overflow: hidden; border: 1px solid #dfe7f2; border-radius: 22px; color: var(--ink); background: linear-gradient(145deg, #fbfdff 0%, #f5f8ff 100%); box-shadow: 0 18px 48px rgba(36, 62, 108, .09); }
+.header { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: clamp(16px, 3vw, 24px); border-bottom: 1px solid var(--line); background: radial-gradient(circle at 90% 0%, rgba(103, 142, 217, .1), transparent 30%), rgba(255, 255, 255, .65); }
+.eyebrow { color: #647fae; font-size: 10px; font-weight: 900; letter-spacing: .14em; }
+.header h2 { margin: 6px 0 4px; color: #1f3152; font-size: clamp(20px, 2.7vw, 27px); line-height: 1.18; letter-spacing: -.035em; }
+.header p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.55; }
+.netBadge { display: grid; flex: 0 0 auto; min-width: 92px; gap: 4px; justify-items: center; padding: 10px 12px; border: 1px solid #cfe6d8; border-radius: 13px; color: #3c7a58; background: #f3fbf6; text-align: center; }
+.netBadge span { font-size: 9px; font-weight: 900; letter-spacing: .09em; }
+.netBadge strong { color: #2f8a57; font-size: 20px; }
+.netBalanced { border-color: #dcd2f0; color: #6a58a0; background: #f8f5ff; }
+.netBalanced strong { color: #6a58a0; }
+
+.modeSwitch { display: flex; gap: 8px; padding: 12px 16px; border-bottom: 1px solid #e8edf5; background: rgba(244, 248, 255, .8); }
+.modeButton { flex: 1; min-height: 44px; padding: 0 12px; border: 1px solid #d6e0ed; border-radius: 10px; color: #4c6385; background: #fff; font: inherit; font-size: 13px; font-weight: 800; cursor: pointer; transition: border-color .15s ease, background .15s ease; }
+.modeButton:hover { border-color: #9eb4d2; background: #f3f7fc; }
+.modeButton[aria-pressed="true"] { border-color: #4f7fd0; color: #2b5cb0; background: #eaf2ff; }
+.modeButton:focus-visible, .secondaryButton:focus-visible, .control input:focus-visible { outline: 3px solid #93c5fd; outline-offset: 2px; }
+
+.stage { padding: 14px 16px 4px; }
+.stage svg { display: block; width: 100%; height: auto; border: 1px solid #e2e9f2; border-radius: 14px; background: #fff; }
+.panel { fill: #f8fafc; stroke: #e2e8f0; }
+.originLine { stroke: #94a3b8; stroke-width: 1.5; stroke-dasharray: 4 4; }
+.arrowLabel { font-size: 14px; font-weight: 700; paint-order: stroke; stroke: #f8fafc; stroke-width: 5px; stroke-linejoin: round; }
+.ground { fill: #e2e8f0; }
+.groundLine { stroke: #94a3b8; stroke-width: 2; }
+.tick { stroke: #94a3b8; stroke-width: 2; }
+.box { fill: #d9b27c; stroke: #8a6a3a; stroke-width: 2; }
+.boxLine { stroke: #8a6a3a; stroke-width: 1.5; }
+.boxText { fill: #5b4220; font-size: 14px; font-weight: 700; }
+.caption { margin: 8px 2px 0; color: #7a879b; font-size: 12px; line-height: 1.5; }
+
+.result { display: grid; gap: 7px; margin: 12px 16px 0; padding: 13px 15px; border: 1px solid #e2e9f2; border-radius: 14px; background: #fff; }
+.equation { margin: 0; color: #2f8a57; font-size: clamp(16px, 2.4vw, 19px); font-weight: 800; line-height: 1.35; }
+.explanation { margin: 0; color: #4f5f78; font-size: 14px; line-height: 1.55; }
+.status { margin: 0; padding: 9px 11px; border-radius: 9px; color: #3a4a66; background: #f0f4fa; font-size: 14px; line-height: 1.5; }
+
+.controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; padding: 14px 16px 4px; }
+.control label { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; color: #3a4a66; font-size: 14px; font-weight: 700; }
+.control b { margin-left: auto; font-weight: 800; }
+.control input { width: 100%; height: 32px; margin: 0; }
+.dot { display: inline-block; width: 12px; height: 12px; border-radius: 50%; }
+.dotBlue { background: #2f6fd0; }
+.dotOrange { background: #d9661f; }
+.sliderBlue { accent-color: #2f6fd0; }
+.sliderOrange { accent-color: #d9661f; }
+
+.actions { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px 16px 14px; }
+.secondaryButton { min-height: 44px; padding: 0 14px; border: 1px solid #d9e2ee; border-radius: 10px; color: #4c6385; background: #fff; font: inherit; font-size: 13px; font-weight: 800; cursor: pointer; transition: border-color .15s ease, background .15s ease; }
+.secondaryButton:hover { border-color: #9eb4d2; background: #f3f7fc; }
+
+.tryBox { margin: 0 16px 16px; padding: 12px 15px; border: 1px solid #e2e9f2; border-radius: 14px; background: #fbfcff; }
+.tryTitle { margin: 0 0 6px; color: #344663; font-size: 14px; font-weight: 800; }
+.tryBox ol { margin: 0; padding-left: 20px; color: #556580; font-size: 13px; line-height: 1.7; }
+
+:global(.dark) .simulator { --ink: #e6eeff; --muted: #a2b0c5; --line: #2e3d58; border-color: #2e3d58; background: linear-gradient(145deg, #172238 0%, #121b2d 100%); box-shadow: none; }
+:global(.dark) .header { background: rgba(23, 34, 56, .8); }
+:global(.dark) .header h2 { color: #f0f5ff; }
+:global(.dark) .eyebrow { color: #9db6e6; }
+:global(.dark) .modeSwitch { border-color: #2e3d58; background: rgba(23, 34, 56, .8); }
+:global(.dark) .modeButton, :global(.dark) .secondaryButton { border-color: #3b4b67; color: #c0cee5; background: #1b2940; }
+:global(.dark) .modeButton:hover, :global(.dark) .secondaryButton:hover { border-color: #5c75a7; background: #223250; }
+:global(.dark) .modeButton[aria-pressed="true"] { border-color: #6b97e0; color: #cfe0ff; background: #243a62; }
+:global(.dark) .stage svg { border-color: #34435b; background: #0f1a2c; }
+:global(.dark) .panel { fill: #15223a; stroke: #2f4060; }
+:global(.dark) .arrowLabel { stroke: #15223a; }
+:global(.dark) .ground { fill: #1c2a42; }
+:global(.dark) .caption { color: #94a3b8; }
+:global(.dark) .result, :global(.dark) .tryBox { border-color: #34435b; background: #18243a; }
+:global(.dark) .explanation { color: #b6c3d8; }
+:global(.dark) .status { color: #d3def2; background: #1f2d47; }
+:global(.dark) .equation { color: #6fd39a; }
+:global(.dark) .control label, :global(.dark) .tryTitle { color: #dbe6fb; }
+:global(.dark) .tryBox ol { color: #a9b8cf; }
+:global(.dark) .netBadge { border-color: #2f5a44; color: #8fd8ae; background: #17302a; }
+:global(.dark) .netBadge strong { color: #6fd39a; }
+:global(.dark) .netBalanced { border-color: #4a4272; color: #cbbcf5; background: #241f3d; }
+:global(.dark) .netBalanced strong { color: #cbbcf5; }
+
+@media (max-width: 600px) {
+  .header { align-items: flex-start; }
+  .modeSwitch { flex-direction: column; }
+  .stage { padding: 12px 10px 2px; }
+  .result { margin: 10px 10px 0; }
+  .controls, .actions { padding-left: 10px; padding-right: 10px; }
+  .tryBox { margin: 0 10px 12px; }
+}
