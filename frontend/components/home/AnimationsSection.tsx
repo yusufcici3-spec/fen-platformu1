@@ -35,8 +35,11 @@ const grades: GradeCard[] = [
     description: "Uzay teknolojilerini keşfet; yıldızların yaşam döngüsünü kütlelerine göre incele.",
     className: styles.gradeSeven,
     href: "/animasyonlar/7",
-    animationCount: 3,
-    secondaryLinks: [{ href: "/animasyonlar/7/agirlik-enlem", label: "Ağırlık kutupta mı ekvatorda mı büyük?" }],
+    animationCount: 4,
+    secondaryLinks: [
+      { href: "/animasyonlar/7/agirlik-enlem", label: "Ağırlık kutupta mı ekvatorda mı büyük?" },
+      { href: "/animasyonlar/7/kinetik-potansiyel", label: "Kinetik ve potansiyel enerji" },
+    ],
   },
   {
     grade: "8",
