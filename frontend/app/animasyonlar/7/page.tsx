@@ -37,6 +37,9 @@ export default function SeventhGradeSpaceTechnologyPage() {
               <Link className={`${styles.heroAction} ${styles.heroActionSecondary}`} href="/animasyonlar/7/kuvvet-enerji">
                 Kuvvet ve enerjiye git <span aria-hidden="true">↗</span>
               </Link>
+              <Link className={`${styles.heroAction} ${styles.heroActionSecondary}`} href="/animasyonlar/7/agirlik-enlem">
+                Ağırlık ve enlem <span aria-hidden="true">↗</span>
+              </Link>
             </div>
           </div>
           <div className={styles.heroOrbit} aria-hidden="true">

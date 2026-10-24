@@ -14,11 +14,12 @@ type GradeCard = {
 const grades: GradeCard[] = [
   {
     grade: "5",
-    title: "Ay’ın Evreleri",
-    description: "Ay’ın aydınlık bölümünün döngü boyunca nasıl değiştiğini keşfet.",
+    title: "Ay’ın Evreleri ve Yüzeyi",
+    description: "Ay’ın evrelerini keşfet; astronotla yüzeydeki kraterleri ve yer şekillerini incele.",
     className: styles.gradeFive,
     href: "/animasyonlar/5",
-    animationCount: 1,
+    animationCount: 2,
+    secondaryLinks: [{ href: "/animasyonlar/5/ay-yuzeyi", label: "Astronotla Ay yüzeyini keşfet" }],
   },
   {
     grade: "6",
@@ -34,7 +35,8 @@ const grades: GradeCard[] = [
     description: "Uzay teknolojilerini keşfet; yıldızların yaşam döngüsünü kütlelerine göre incele.",
     className: styles.gradeSeven,
     href: "/animasyonlar/7",
-    animationCount: 2,
+    animationCount: 3,
+    secondaryLinks: [{ href: "/animasyonlar/7/agirlik-enlem", label: "Ağırlık kutupta mı ekvatorda mı büyük?" }],
   },
   {
     grade: "8",

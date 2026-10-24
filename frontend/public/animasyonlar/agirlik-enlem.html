@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ağırlık ve Enlem</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout concept: a physics bench. Earth cross-section stage on the left with its controls, a dial gauge and a weight-vs-latitude graph on the right, explanation below. */
+:root {
+  --bg: #eef2f6;
+  --surface: #ffffff;
+  --surface-2: #f4f7fa;
+  --ink: #142033;
+  --ink-2: #4d5b6e;
+  --line: #d6dee8;
+  --pull: #1f6fb2;
+  --spin: #c9650f;
+  --weight: #17895a;
+  --accent: #1f6fb2;
+  --ocean: #4a9fd8;
+  --mantle: #d9833d;
+  --core: #f4d27a;
+  --inner: #fff0b8;
+  --f-display: "Bricolage Grotesque", "IBM Plex Sans", system-ui, sans-serif;
+  --f-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d1520; --surface: #142030; --surface-2: #192738; --ink: #e7eef7; --ink-2: #9fb1c7; --line: #273a50;
+    --pull: #5ba8ee; --spin: #f29a4a; --weight: #4fcb8c; --accent: #5ba8ee;
+    --ocean: #3b86bd; --mantle: #b9692c; --core: #e8c56d; --inner: #f7e3a0;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0d1520; --surface: #142030; --surface-2: #192738; --ink: #e7eef7; --ink-2: #9fb1c7; --line: #273a50;
+  --pull: #5ba8ee; --spin: #f29a4a; --weight: #4fcb8c; --accent: #5ba8ee;
+  --ocean: #3b86bd; --mantle: #b9692c; --core: #e8c56d; --inner: #f7e3a0;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.55;
+  padding-block: 22px 48px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 1120px; margin: 0 auto; display: flex; flex-direction: column; gap: 22px; }
+h1, h2, h3 { font-family: var(--f-display); font-weight: 700; margin: 0; text-wrap: balance; letter-spacing: -0.01em; }
+h1 { font-size: clamp(27px, 5.4vw, 42px); line-height: 1.1; }
+h2 { font-size: clamp(20px, 3.4vw, 26px); }
+h3 { font-size: 17px; }
+p { margin: 0; }
+.lead { color: var(--ink-2); max-width: 64ch; margin-top: 8px; font-size: 16px; }
+.eyebrow { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); margin-bottom: 6px; }
+
+.lab { display: grid; gap: 18px; grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr); align-items: start; }
+@media (max-width: 900px) { .lab { grid-template-columns: minmax(0, 1fr); } }
+.col { display: flex; flex-direction: column; gap: 18px; min-width: 0; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px; min-width: 0; }
+.card h3 { margin-bottom: 4px; }
+.sub { color: var(--ink-2); font-size: 13px; }
+canvas { display: block; width: 100%; border-radius: 10px; }
+#stage { aspect-ratio: 1 / 1; touch-action: pan-y; cursor: crosshair; }
+#dial { aspect-ratio: 1 / 1; }
+#graph { aspect-ratio: 16 / 10; touch-action: pan-y; cursor: col-resize; }
+
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 8px 2px 2px; font-size: 13px; color: var(--ink-2); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 18px; height: 4px; border-radius: 2px; display: inline-block; }
+
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-top: 10px; }
+@media (max-width: 520px) { .stats { grid-template-columns: minmax(0, 1fr); } }
+.stat { background: var(--surface-2); border-radius: 10px; padding: 8px 10px; min-width: 0; }
+.stat small { display: block; color: var(--ink-2); font-size: 12px; }
+.stat b { font-family: var(--f-mono); font-weight: 500; font-size: 18px; font-variant-numeric: tabular-nums; }
+.stat b em { font-style: normal; font-size: 12px; color: var(--ink-2); margin-left: 3px; }
+.note { margin-top: 8px; font-size: 13px; color: var(--ink-2); }
+.note strong { color: var(--ink); font-weight: 600; }
+.warn { margin-top: 8px; padding: 8px 10px; border-radius: 10px; background: color-mix(in srgb, var(--spin) 16%, var(--surface)); border: 1px solid var(--spin); font-size: 13px; }
+
+.ctl { display: grid; gap: 4px; padding-block: 10px; border-top: 1px solid var(--line); }
+.ctl:first-child { border-top: 0; padding-top: 2px; }
+.ctl-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+.ctl-head label { font-weight: 600; }
+.ctl-head output { font-family: var(--f-mono); font-size: 14px; font-variant-numeric: tabular-nums; color: var(--accent); text-align: right; }
+input[type=range] { width: 100%; accent-color: var(--accent); margin: 4px 0; min-height: 28px; }
+.btns { display: flex; flex-wrap: wrap; gap: 6px; }
+button, .chk {
+  font: inherit; font-size: 13px; color: var(--ink); background: var(--surface-2); border: 1px solid var(--line);
+  border-radius: 8px; padding: 6px 10px; cursor: pointer; min-height: 34px;
+}
+button:hover { border-color: var(--accent); }
+button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.chk { display: flex; align-items: center; gap: 8px; }
+.chk input { accent-color: var(--accent); width: 18px; height: 18px; margin: 0; }
+details { border-top: 1px solid var(--line); padding-top: 10px; margin-top: 4px; }
+summary { cursor: pointer; font-weight: 600; font-size: 13px; color: var(--ink-2); }
+
+.why { display: grid; gap: 22px; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+@media (max-width: 760px) { .why { grid-template-columns: minmax(0, 1fr); } }
+.why > div { border-top: 3px solid var(--line); padding-top: 12px; display: grid; gap: 6px; align-content: start; }
+.why .r1 { border-color: var(--spin); }
+.why .r2 { border-color: var(--pull); }
+.formula { font-family: var(--f-mono); font-size: 15px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; display: inline-block; }
+.split { display: flex; height: 26px; border-radius: 8px; overflow: hidden; background: var(--surface-2); border: 1px solid var(--line); }
+.split span { display: block; height: 100%; transition: width 0.25s ease; }
+.split-key { display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 13px; margin-top: 6px; }
+.split-key i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; }
+.tablewrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; min-width: 0; font-size: 14px; }
+@media (max-width: 520px) { table { font-size: 12.5px; } th, td { padding: 7px 5px; } th { font-size: 10.5px; letter-spacing: 0; } }
+th, td { text-align: right; padding: 8px 10px; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+th:first-child, td:first-child { text-align: left; }
+th { font-weight: 600; color: var(--ink-2); font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; }
+td { font-family: var(--f-mono); }
+td:first-child { font-family: var(--f-body); font-weight: 500; }
+tr.diff td { font-weight: 500; color: var(--weight); }
+.try { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; }
+.try ul { margin: 8px 0 0; padding-left: 20px; display: grid; gap: 4px; }
+.foot { font-size: 12.5px; color: var(--ink-2); max-width: 80ch; }
+.vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+</style></head><body>
+
+
+<main class="wrap">
+  <header>
+    <div class="eyebrow">Fen Bilimleri · Ağırlık ve yerçekimi</div>
+    <h1>Aynı cisim kutupta ekvatordan daha ağırdır</h1>
+    <p class="lead">Dünya'nın üzerinde dolaş: enlemi değiştir, cismin kütlesini seç, Dünya'nın dönüş hızını ayarla ve ağırlığın nasıl değiştiğini kadranda izle.</p>
+  </header>
+
+  <section class="lab" aria-label="Etkileşimli laboratuvar">
+    <div class="col">
+      <div class="card">
+        <h3>Dünya'nın kesiti</h3>
+        <p class="sub">Dünya'ya dokun ya da fareyle sürükleyerek enlemi seç.</p>
+        <canvas id="stage" role="img" aria-label="Dünya kesiti, seçili enlemde duran bir kişi ve ona etki eden kuvvetler"></canvas>
+        <div class="legend" aria-hidden="true">
+          <span><i style="background:var(--pull)"></i>Çekim kuvveti</span>
+          <span><i style="background:var(--spin)"></i>Dönmeden doğan merkezkaç etkisi</span>
+          <span><i style="background:var(--weight)"></i>Ağırlık (bileşke)</span>
+        </div>
+        <div class="stats" aria-label="Ölçüm sonuçları">
+          <div class="stat"><small>Ağırlık</small><b id="sW">–<em>N</em></b></div>
+          <div class="stat"><small>Yerçekimi ivmesi</small><b id="sG">–<em>m/s²</em></b></div>
+          <div class="stat"><small>Baskül ne gösterir?</small><b id="sK">–<em>kg</em></b></div>
+        </div>
+        <div id="warn" class="warn" hidden></div>
+        <p class="note">Oklar gösterim için büyütülmüştür. Hesaplar gerçek oranlarla yapılır.</p>
+      </div>
+
+      <div class="card">
+        <h3>Kontroller</h3>
+        <div class="ctl">
+          <div class="ctl-head"><label for="lat">Enlem</label><output id="latOut" for="lat">41,0°</output></div>
+          <input id="lat" type="range" min="0" max="90" step="0.5" value="41" aria-label="Enlem (derece)">
+          <div class="btns" id="latBtns">
+            <button type="button" data-lat="0">Ekvator 0°</button>
+            <button type="button" data-lat="41">İstanbul 41°</button>
+            <button type="button" data-lat="90">Kutup 90°</button>
+          </div>
+        </div>
+        <div class="ctl">
+          <div class="ctl-head"><label for="mass">Cismin kütlesi</label><output id="massOut" for="mass">70 kg</output></div>
+          <input id="mass" type="range" min="1" max="150" step="1" value="70" aria-label="Kütle (kilogram)">
+          <p class="sub">Kütle her yerde aynı kalır. Değişen, ağırlıktır.</p>
+        </div>
+        <div class="ctl">
+          <div class="ctl-head"><label for="spin">Dünya'nın dönüş hızı</label><output id="spinOut" for="spin">×1,0 · gün 24 saat</output></div>
+          <input id="spin" type="range" min="0" max="18" step="0.1" value="1" aria-label="Dönüş hızı çarpanı">
+          <div class="btns" id="spinBtns">
+            <button type="button" data-spin="0">Dönmesin ×0</button>
+            <button type="button" data-spin="1">Gerçek ×1</button>
+            <button type="button" data-spin="17">×17</button>
+          </div>
+        </div>
+        <div class="ctl">
+          <label class="chk"><input id="sphere" type="checkbox"> Dünya'yı tam küre say (basıklık olmasın)</label>
+          <div class="btns">
+            <button type="button" id="playBtn" aria-pressed="true">Animasyon çalışıyor</button>
+          </div>
+          <details>
+            <summary>Çizim ayarları</summary>
+            <div class="ctl">
+              <div class="ctl-head"><label for="shapeX">Basıklığı abart</label><output id="shapeOut" for="shapeX">×30</output></div>
+              <input id="shapeX" type="range" min="1" max="60" step="1" value="30">
+            </div>
+            <div class="ctl">
+              <div class="ctl-head"><label for="arrowX">Okları büyüt</label><output id="arrowOut" for="arrowX">×120</output></div>
+              <input id="arrowX" type="range" min="1" max="300" step="1" value="120">
+            </div>
+            <p class="sub">Bunlar yalnızca çizimi etkiler. Gerçek Dünya'da basıklık yaklaşık 1/298'dir.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <h3>Yay terazisi (kadran)</h3>
+        <p class="sub" id="dialNote">Kadran yakınlaştırılmıştır.</p>
+        <canvas id="dial" role="img" aria-label="Ağırlığı Newton cinsinden gösteren kadran"></canvas>
+        <div class="legend" aria-hidden="true">
+          <span><i style="background:var(--spin)"></i>E: ekvatordaki ağırlık</span>
+          <span><i style="background:var(--pull)"></i>K: kutuptaki ağırlık</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Enleme göre ağırlık</h3>
+        <p class="sub">Grafiğe dokunarak da enlemi seçebilirsin. Dikey eksen yakınlaştırılmıştır.</p>
+        <canvas id="graph" role="img" aria-label="Ağırlığın enleme göre değişimini gösteren grafik"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="whyH" style="display:grid; gap:16px">
+    <div>
+      <h2 id="whyH">Ağırlık neden değişiyor?</h2>
+      <p class="lead">Ağırlık, Dünya'nın cisme uyguladığı çekim kuvvetinin yere basma etkisidir. Kütle m her yerde aynıdır, değişen yerçekimi ivmesi g'dir.</p>
+    </div>
+    <div class="formula">W = m · g</div>
+    <div class="why">
+      <div class="r1">
+        <h3>1. Dünya dönüyor</h3>
+        <p>Ekvatordaki bir nokta 24 saatte yaklaşık 40 000 km'lik daire çizer, yani saatte yaklaşık 1 670 km hızla gider. Kutupta ise nokta olduğu yerde kendi etrafında döner. Daire çizen cisim dışarı doğru savrulmak ister. Bu etki ekvatorda g'yi yaklaşık 0,034 m/s² azaltır, kutupta hiç azaltmaz.</p>
+      </div>
+      <div class="r2">
+        <h3>2. Dünya basık</h3>
+        <p>Dünya tam küre değil. Ekvator yarıçapı yaklaşık 6 378 km, kutup yarıçapı yaklaşık 6 357 km. Kutuptaki bir cisim Dünya'nın merkezine yaklaşık 21 km daha yakındır ve daha güçlü çekilir. Bu da g'yi kutupta yaklaşık 0,018 m/s² artırır.</p>
+      </div>
+    </div>
+    <div>
+      <h3 style="margin-bottom:8px">Ekvator ile kutup arasındaki g farkı (şu anki ayarlarla)</h3>
+      <div class="split" id="splitBar" role="img" aria-label="Farkın dönme ve basıklık payları"></div>
+      <div class="split-key" id="splitKey"></div>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Yer</th><th>g (m/s²)</th><th>Ağırlık (N)</th><th>Baskül (kg)</th></tr></thead>
+        <tbody id="tbl"></tbody>
+      </table>
+    </div>
+    <div class="try">
+      <h3>Dene</h3>
+      <ul>
+        <li>Dönüş hızını <b>×0</b> yap. Ekvator ile kutup arasındaki fark küçülür ama kalır, çünkü Dünya hâlâ basık.</li>
+        <li>Bir de «Dünya'yı tam küre say» kutusunu işaretle. Fark sıfır olur.</li>
+        <li>Dönüş hızını <b>×17</b> yap ve enlemi 0° yap. Ekvatordaki cisim ağırlığını kaybeder, gün de yaklaşık 1,4 saate iner.</li>
+      </ul>
+    </div>
+    <p class="foot">Değerler deniz seviyesi için WGS84 yerçekimi formülüyle hesaplanır. Baskül değeri, ağırlık Newton cinsinden 9,80665'e bölünerek bulunur. Güney yarımkürede aynı değerler geçerlidir, çünkü ağırlık enlemin işaretine değil büyüklüğüne bağlıdır.</p>
+  </section>
+</main>
+
+<script>
+(() => {
+  document.documentElement.lang = "tr";
+  const TAU = Math.PI * 2, DEG = Math.PI / 180;
+  const nf = (d) => new Intl.NumberFormat("tr-TR", { minimumFractionDigits: d, maximumFractionDigits: d });
+  const f0 = nf(0), f1 = nf(1), f2 = nf(2), f3 = nf(3), f4 = nf(4);
+  const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
+
+  // ---------- physics (WGS84) ----------
+  const GE = 9.7803253359, KK = 0.00193185265241, E2 = 0.00669437999013;
+  const A_EQ = 6378137, FLAT = 1 / 298.257223563, W_EARTH = 7.292115e-5;
+  const G_SPHERE = 9.8203, R_MEAN = 6371000, KGF = 9.80665;
+
+  function rimP(latDeg) { // distance from the axis at sea level
+    const s = Math.sin(latDeg * DEG), c = Math.cos(latDeg * DEG);
+    return state.sphere ? R_MEAN * c : (A_EQ / Math.sqrt(1 - E2 * s * s)) * c;
+  }
+  function gSomig(latDeg) {
+    const s2 = Math.pow(Math.sin(latDeg * DEG), 2);
+    return GE * (1 + KK * s2) / Math.sqrt(1 - E2 * s2);
+  }
+  function calc(latDeg, m = state.spin) {
+    const p = rimP(latDeg), c = Math.cos(latDeg * DEG), w = W_EARTH * m;
+    const full = w * w * p;      // centrifugal acceleration (horizontal)
+    const rad = full * c;        // part that lightens the object
+    let pull;
+    if (state.sphere) pull = G_SPHERE;
+    else pull = gSomig(latDeg) + W_EARTH * W_EARTH * p * c; // pull without rotation
+    return { p, full, rad, pull, g: pull - rad };
+  }
+  const weightN = (lat) => state.mass * Math.max(0, calc(lat).g);
+
+  // ---------- state ----------
+  const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const state = { lat: 41, mass: 70, spin: 1, sphere: false, shapeX: 30, arrowX: 120, playing: !reduce, theta: 0, needle: null, dirty: true };
+
+  // ---------- theme ----------
+  let TH = {};
+  function readTheme() {
+    const cs = getComputedStyle(document.documentElement);
+    const g = (n) => cs.getPropertyValue(n).trim();
+    TH = { surface: g("--surface"), surface2: g("--surface-2"), ink: g("--ink"), ink2: g("--ink-2"), line: g("--line"),
+      pull: g("--pull"), spin: g("--spin"), weight: g("--weight"), ocean: g("--ocean"), mantle: g("--mantle"), core: g("--core"), inner: g("--inner") };
+    state.dirty = true;
+  }
+  function hexA(hex, a) {
+    let h = (hex || "#000000").replace("#", "");
+    if (h.length === 3) h = h.split("").map((c) => c + c).join("");
+    const n = parseInt(h, 16);
+    return `rgba(${(n >> 16) & 255},${(n >> 8) & 255},${n & 255},${a})`;
+  }
+  readTheme();
+  if (window.matchMedia) window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", readTheme);
+  new MutationObserver(readTheme).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+
+  // ---------- canvases ----------
+  const cvStage = document.getElementById("stage"), cvDial = document.getElementById("dial"), cvGraph = document.getElementById("graph");
+  function fit(cv) {
+    const ctx = cv.getContext("2d");
+    const ro = new ResizeObserver(() => {
+      const r = cv.getBoundingClientRect();
+      const dpr = Math.min(window.devicePixelRatio || 1, 2.5);
+      cv.width = Math.max(1, Math.round(r.width * dpr));
+      cv.height = Math.max(1, Math.round(r.height * dpr));
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      cv._w = r.width; cv._h = r.height; state.dirty = true;
+    });
+    ro.observe(cv);
+    return ctx;
+  }
+  const xStage = fit(cvStage), xDial = fit(cvDial), xGraph = fit(cvGraph);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => (state.dirty = true));
+
+  const fontBody = (px, w = 400) => `${w} ${px}px "IBM Plex Sans", system-ui, sans-serif`;
+  const fontMono = (px, w = 400) => `${w} ${px}px "IBM Plex Mono", ui-monospace, monospace`;
+
+  function arrow(ctx, x0, y0, x1, y1, color, lw) {
+    const dx = x1 - x0, dy = y1 - y0, L = Math.hypot(dx, dy);
+    if (L < 2) return;
+    const ux = dx / L, uy = dy / L, hs = Math.min(9 + lw * 1.6, L * 0.55);
+    const paint = (c, w) => {
+      ctx.strokeStyle = c; ctx.fillStyle = c; ctx.lineWidth = w; ctx.lineCap = "round"; ctx.setLineDash([]);
+      ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x1 - ux * hs * 0.6, y1 - uy * hs * 0.6); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(x1, y1);
+      ctx.lineTo(x1 - ux * hs + uy * hs * 0.45, y1 - uy * hs - ux * hs * 0.45);
+      ctx.lineTo(x1 - ux * hs - uy * hs * 0.45, y1 - uy * hs + ux * hs * 0.45);
+      ctx.closePath(); ctx.fill();
+    };
+    paint(hexA(TH.surface, 0.85), lw + 3.5);
+    paint(color, lw);
+  }
+  function rrect(ctx, x, y, w, h, r) {
+    ctx.beginPath(); ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r);
+    ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath();
+  }
+
+  // ---------- Earth stage ----------
+  let geo = { cx: 0, cy: 0, a: 1, b: 1 };
+
+  function forceVectors(lat, dirX, dirY, Lg, maxLen) {
+    const c = calc(lat), ratio = c.full / c.pull;
+    let g = [dirX * Lg, dirY * Lg], cv = [ratio * state.arrowX * Lg, 0];
+    let w = [g[0] + cv[0], g[1] + cv[1]];
+    const m = Math.max(Math.hypot(...g), Math.hypot(...cv), Math.hypot(...w));
+    const s = m > maxLen ? maxLen / m : 1;
+    return { g: g.map((v) => v * s), c: cv.map((v) => v * s), w: w.map((v) => v * s) };
+  }
+
+  function drawPerson(ctx, P, n, h) {
+    const side = [-n[1], n[0]];
+    const at = (u, s) => [P[0] + n[0] * u * h + side[0] * s * h, P[1] + n[1] * u * h + side[1] * s * h];
+    ctx.strokeStyle = TH.ink; ctx.fillStyle = TH.ink; ctx.lineWidth = Math.max(2, h * 0.06); ctx.lineCap = "round";
+    const seg = (p, q) => { ctx.beginPath(); ctx.moveTo(p[0], p[1]); ctx.lineTo(q[0], q[1]); ctx.stroke(); };
+    seg(at(0, 0.2), at(0.45, 0)); seg(at(0, -0.2), at(0.45, 0));
+    seg(at(0.45, 0), at(0.8, 0));
+    seg(at(0.72, 0), at(0.5, 0.3)); seg(at(0.72, 0), at(0.5, -0.3));
+    const hd = at(0.92, 0);
+    ctx.beginPath(); ctx.arc(hd[0], hd[1], h * 0.11, 0, TAU); ctx.fill();
+    ctx.lineWidth = Math.max(3, h * 0.08); ctx.strokeStyle = TH.ink2;
+    seg(at(-0.02, 0.32), at(-0.02, -0.32));
+  }
+
+  function drawStage(ctx, w, h, t) {
+    ctx.clearRect(0, 0, w, h);
+    const S = Math.min(w, h), cx = w / 2, cy = h / 2 + S * 0.015, a = S * 0.265;
+    const b = state.sphere ? a : a * (1 - FLAT * state.shapeX);
+    geo = { cx, cy, a, b };
+    const lat = state.lat, ph = lat * DEG;
+
+    // atmosphere
+    ctx.strokeStyle = hexA(TH.pull, 0.16); ctx.lineWidth = S * 0.024;
+    ctx.beginPath(); ctx.ellipse(cx, cy, a * 1.035, b * 1.035, 0, 0, TAU); ctx.stroke();
+    // layers
+    const layers = [[1, TH.ocean], [0.965, TH.mantle], [0.55, TH.core], [0.22, TH.inner]];
+    layers.forEach(([k, c]) => { ctx.fillStyle = c; ctx.beginPath(); ctx.ellipse(cx, cy, a * k, b * k, 0, 0, TAU); ctx.fill(); });
+
+    // equator & axis
+    ctx.setLineDash([5, 5]); ctx.lineWidth = 1.3; ctx.strokeStyle = TH.ink2;
+    ctx.beginPath(); ctx.moveTo(cx - a * 1.16, cy); ctx.lineTo(cx + a * 1.16, cy); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(cx, cy - b * 1.3); ctx.lineTo(cx, cy + b * 1.3); ctx.stroke();
+    ctx.setLineDash([]);
+    const fs = Math.max(11, S * 0.03);
+    ctx.fillStyle = TH.ink2; ctx.font = fontBody(fs);
+    ctx.textAlign = "left"; ctx.textBaseline = "middle";
+    ctx.fillText("Ekvator", cx - a * 1.16, cy - fs * 0.9);
+    ctx.textAlign = "center"; ctx.textBaseline = "bottom";
+    ctx.fillText("Kuzey kutbu", cx, cy - b * 1.3 - 2);
+    ctx.textBaseline = "top"; ctx.fillText("Güney kutbu", cx, cy + b * 1.3 + 2);
+
+    // spin indicator above the north pole
+    if (state.spin > 0.01) {
+      const ry = S * 0.02, rx = S * 0.065, py = cy - b * 1.3 - fs * 1.7;
+      ctx.strokeStyle = TH.spin; ctx.lineWidth = 2.2; ctx.setLineDash([6, 5]); ctx.lineDashOffset = -t * 18 * state.spin;
+      ctx.beginPath(); ctx.ellipse(cx, py, rx, ry, 0, 0.15 * Math.PI, 0.85 * Math.PI); ctx.stroke(); ctx.setLineDash([]);
+      const ex = cx - rx * Math.cos(0.15 * Math.PI) * -1, ey = py + ry * Math.sin(0.15 * Math.PI);
+      ctx.fillStyle = TH.spin; ctx.beginPath(); ctx.moveTo(ex + 6, ey - 4); ctx.lineTo(ex - 5, ey - 7); ctx.lineTo(ex - 3, ey + 4); ctx.closePath(); ctx.fill();
+    }
+
+    // person position
+    const beta = Math.atan2(b * Math.sin(ph), a * Math.cos(ph));
+    const P = [cx + a * Math.cos(beta), cy - b * Math.sin(beta)];
+    const n = [Math.cos(ph), -Math.sin(ph)];
+
+    // latitude arc
+    ctx.strokeStyle = TH.ink; ctx.lineWidth = 1.6; ctx.beginPath();
+    ctx.arc(cx, cy, a * 0.36, 0, -ph, true); ctx.stroke();
+    ctx.fillStyle = "#142033"; ctx.font = fontBody(fs, 600); ctx.textAlign = "left"; ctx.textBaseline = "middle";
+    if (lat > 4) ctx.fillText("φ", cx + a * 0.4 * Math.cos(ph / 2) - 2, cy - a * 0.4 * Math.sin(ph / 2));
+
+    // person
+    drawPerson(ctx, P, n, S * 0.075);
+
+    // arrows at the person
+    const dl = Math.hypot(cx - P[0], cy - P[1]), dir = [(cx - P[0]) / dl, (cy - P[1]) / dl];
+    const fv = forceVectors(lat, dir[0], dir[1], S * 0.13, S * 0.17);
+    const O = [P[0] + n[0] * S * 0.035, P[1] + n[1] * S * 0.035];
+    arrow(ctx, O[0], O[1], O[0] + fv.g[0], O[1] + fv.g[1], TH.pull, 3);
+    arrow(ctx, O[0], O[1], O[0] + fv.c[0], O[1] + fv.c[1], TH.spin, 3);
+
+    // force diagram (top right)
+    const bx = S * 0.655, by = S * 0.02, bw = S * 0.335, bh = S * 0.285;
+    ctx.fillStyle = hexA(TH.surface2, 0.96); ctx.strokeStyle = TH.line; ctx.lineWidth = 1; rrect(ctx, bx, by, bw, bh, 10); ctx.fill(); ctx.stroke();
+    ctx.fillStyle = TH.ink2; ctx.font = fontBody(Math.max(10, S * 0.026), 500); ctx.textAlign = "left"; ctx.textBaseline = "top";
+    ctx.fillText("Kuvvetler", bx + 9, by + 7);
+    const Od = [bx + bw * 0.6, by + bh * 0.3];
+    const v2 = forceVectors(lat, dir[0], dir[1], S * 0.15, S * 0.165);
+    ctx.setLineDash([3, 4]); ctx.strokeStyle = hexA(TH.ink2, 0.7); ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(Od[0] + v2.g[0], Od[1] + v2.g[1]); ctx.lineTo(Od[0] + v2.w[0], Od[1] + v2.w[1]);
+    ctx.lineTo(Od[0] + v2.c[0], Od[1] + v2.c[1]); ctx.stroke(); ctx.setLineDash([]);
+    arrow(ctx, Od[0], Od[1], Od[0] + v2.g[0], Od[1] + v2.g[1], TH.pull, 2.6);
+    arrow(ctx, Od[0], Od[1], Od[0] + v2.c[0], Od[1] + v2.c[1], TH.spin, 2.6);
+    arrow(ctx, Od[0], Od[1], Od[0] + v2.w[0], Od[1] + v2.w[1], TH.weight, 4);
+
+    // top view inset (bottom left)
+    const ic = [S * 0.16, S * 0.835], ir = S * 0.095;
+    ctx.fillStyle = hexA(TH.ocean, 0.9); ctx.beginPath(); ctx.arc(ic[0], ic[1], ir, 0, TAU); ctx.fill();
+    ctx.strokeStyle = TH.ink2; ctx.lineWidth = 1.2; ctx.stroke();
+    const rp = ir * Math.cos(ph);
+    ctx.setLineDash([3, 3]); ctx.strokeStyle = hexA("#ffffff", 0.75); ctx.beginPath(); ctx.arc(ic[0], ic[1], Math.max(rp, 0.5), 0, TAU); ctx.stroke(); ctx.setLineDash([]);
+    const th = state.theta, pp = [ic[0] + rp * Math.cos(th), ic[1] - rp * Math.sin(th)];
+    if (state.spin > 0.01 && rp > 3) {
+      const vlen = Math.min(ir * 0.7, 8 + 7 * Math.sqrt(state.spin) * Math.cos(ph));
+      arrow(ctx, pp[0], pp[1], pp[0] - Math.sin(th) * vlen, pp[1] - Math.cos(th) * vlen, TH.ink, 1.8);
+      const olen = Math.min(ir * 0.65, 5 + 3.2 * state.spin * state.spin * Math.cos(ph));
+      arrow(ctx, pp[0], pp[1], pp[0] + Math.cos(th) * olen, pp[1] - Math.sin(th) * olen, TH.spin, 2.2);
+    }
+    ctx.fillStyle = "#142033"; ctx.beginPath(); ctx.arc(ic[0], ic[1], 2.2, 0, TAU); ctx.fill();
+    ctx.fillStyle = TH.weight; ctx.strokeStyle = "#ffffff"; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.arc(pp[0], pp[1], 4.2, 0, TAU); ctx.fill(); ctx.stroke();
+    ctx.fillStyle = TH.ink2; ctx.font = fontBody(Math.max(10, S * 0.025)); ctx.textAlign = "center"; ctx.textBaseline = "bottom";
+    const v = state.spin * W_EARTH * rimP(lat) * 3.6, fz = Math.max(10, S * 0.025);
+    ctx.fillText("Kuzeyden bakış", ic[0], ic[1] - ir - fz * 1.5 - 3);
+    ctx.fillStyle = TH.ink;
+    ctx.fillText("hız ≈ " + f0.format(v) + " km/sa", ic[0], ic[1] - ir - 3);
+  }
+
+  // ---------- gauge window & ticks ----------
+  function gaugeWindow() {
+    const gLo = calc(0).g, gHi = calc(90).g;
+    let lo = 9.70, hi = 9.85;
+    if (gLo < 9.72) lo = Math.max(0, Math.floor((gLo - 0.05) * 20) / 20);
+    if (gHi > 9.84) hi = gHi + 0.02;
+    if (state.spin >= 4) { lo = 0; hi = Math.max(hi, 9.9); }
+    return { lo, hi };
+  }
+  function niceTicks(lo, hi, count) {
+    const span = hi - lo, raw = span / count, mag = Math.pow(10, Math.floor(Math.log10(raw)));
+    const step = [1, 2, 5, 10].map((k) => k * mag).find((s) => s >= raw) || mag * 10;
+    const out = [];
+    for (let v = Math.ceil(lo / step) * step; v <= hi + 1e-9; v += step) out.push(+v.toFixed(8));
+    return { step, ticks: out };
+  }
+  const fmtTick = (v, step) => (step < 1 ? f1.format(v) : f0.format(v));
+
+  // ---------- dial ----------
+  function drawDial(ctx, w, h) {
+    ctx.clearRect(0, 0, w, h);
+    const S = Math.min(w, h), cx = w / 2, cy = h * 0.5, R = S * 0.32;
+    const m = state.mass, win = gaugeWindow(), lo = win.lo * m, hi = win.hi * m;
+    const a0 = 0.75 * Math.PI, a1 = 2.25 * Math.PI;
+    const ang = (v) => a0 + (a1 - a0) * clamp((v - lo) / (hi - lo), 0, 1);
+    ctx.fillStyle = TH.surface2; ctx.strokeStyle = TH.line; ctx.lineWidth = 1.2;
+    ctx.beginPath(); ctx.arc(cx, cy, R * 1.3, 0, TAU); ctx.fill(); ctx.stroke();
+    const tw = S * 0.03;
+    ctx.lineCap = "butt"; ctx.strokeStyle = TH.line; ctx.lineWidth = tw;
+    ctx.beginPath(); ctx.arc(cx, cy, R, a0, a1); ctx.stroke();
+    const wE = weightN(0), wK = weightN(90);
+    ctx.strokeStyle = hexA(TH.weight, 0.6); ctx.lineWidth = tw;
+    ctx.beginPath(); ctx.arc(cx, cy, R, ang(wE), Math.max(ang(wK), ang(wE) + 0.012)); ctx.stroke();
+    // needle
+    const na = ang(state.needle == null ? wK : state.needle);
+    ctx.strokeStyle = TH.ink; ctx.lineWidth = Math.max(2.5, S * 0.012); ctx.lineCap = "round";
+    ctx.beginPath(); ctx.moveTo(cx - Math.cos(na) * R * 0.14, cy - Math.sin(na) * R * 0.14); ctx.lineTo(cx + Math.cos(na) * (R - tw * 1.2), cy + Math.sin(na) * (R - tw * 1.2)); ctx.stroke();
+    ctx.fillStyle = TH.ink; ctx.beginPath(); ctx.arc(cx, cy, S * 0.025, 0, TAU); ctx.fill();
+    // ticks
+    const tk = niceTicks(lo, hi, 7);
+    ctx.fillStyle = TH.ink; ctx.strokeStyle = TH.ink; ctx.textAlign = "center"; ctx.textBaseline = "middle"; ctx.font = fontMono(Math.max(10, S * 0.036));
+    tk.ticks.forEach((v) => {
+      const aa = ang(v), c = Math.cos(aa), s = Math.sin(aa);
+      ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(cx + c * (R - tw * 0.9), cy + s * (R - tw * 0.9)); ctx.lineTo(cx + c * (R - tw * 2.1), cy + s * (R - tw * 2.1)); ctx.stroke();
+      ctx.fillText(fmtTick(v, tk.step), cx + c * (R - tw * 3.9), cy + s * (R - tw * 3.9));
+      for (let i = 1; i < 5; i++) {
+        const vv = v + (tk.step * i) / 5; if (vv > hi) break;
+        const a2 = ang(vv), c2 = Math.cos(a2), s2 = Math.sin(a2);
+        ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(cx + c2 * (R - tw * 0.9), cy + s2 * (R - tw * 0.9)); ctx.lineTo(cx + c2 * (R - tw * 1.5), cy + s2 * (R - tw * 1.5)); ctx.stroke();
+      }
+    });
+    // E and K markers
+    [[wE, "E", TH.spin], [wK, "K", TH.pull]].forEach(([v, L, c]) => {
+      const aa = ang(v), co = Math.cos(aa), si = Math.sin(aa);
+      const r1 = R + tw * 0.7, r2 = R + tw * 2.2;
+      ctx.fillStyle = c; ctx.beginPath(); ctx.moveTo(cx + co * r1, cy + si * r1);
+      ctx.lineTo(cx + co * r2 - si * tw * 0.8, cy + si * r2 + co * tw * 0.8); ctx.lineTo(cx + co * r2 + si * tw * 0.8, cy + si * r2 - co * tw * 0.8); ctx.closePath(); ctx.fill();
+      ctx.font = fontBody(Math.max(11, S * 0.04), 600); ctx.fillText(L, cx + co * (R + tw * 3.9), cy + si * (R + tw * 3.9));
+    });
+    // text
+    ctx.fillStyle = TH.ink2; ctx.font = fontBody(Math.max(11, S * 0.042)); ctx.textAlign = "center"; ctx.textBaseline = "middle";
+    ctx.fillText("Newton (N)", cx, cy + R * 0.5);
+    ctx.fillStyle = TH.ink; ctx.font = fontMono(Math.max(12, S * 0.05), 500);
+    ctx.fillText(f0.format(m) + " kg'lık cisim", cx, cy + R * 0.72);
+  }
+
+  // ---------- graph ----------
+  let gPlot = { x0: 0, x1: 1 };
+  function drawGraph(ctx, w, h) {
+    ctx.clearRect(0, 0, w, h);
+    const padL = 54, padR = 14, padT = 12, padB = 34, x0 = padL, x1 = w - padR, y0 = padT, y1 = h - padB;
+    gPlot = { x0, x1 };
+    const pts = []; let mn = Infinity, mx = -Infinity;
+    for (let l = 0; l <= 90; l += 1) { const v = weightN(l); pts.push(v); mn = Math.min(mn, v); mx = Math.max(mx, v); }
+    let span = mx - mn; if (span < 1e-6) { span = mx * 0.01 || 1; mn -= span / 2; mx += span / 2; }
+    const lo = mn - span * 0.25, hi = mx + span * 0.25;
+    const X = (l) => x0 + (x1 - x0) * (l / 90), Y = (v) => y1 - (y1 - y0) * ((v - lo) / (hi - lo));
+    ctx.font = fontMono(11); ctx.textBaseline = "middle"; ctx.textAlign = "right";
+    const tk = niceTicks(lo, hi, 4);
+    const dec = tk.step < 0.1 ? 2 : tk.step < 1 ? 1 : 0;
+    tk.ticks.forEach((v) => {
+      ctx.strokeStyle = TH.line; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(x0, Y(v)); ctx.lineTo(x1, Y(v)); ctx.stroke();
+      ctx.fillStyle = TH.ink2; ctx.fillText(nf(dec).format(v), x0 - 6, Y(v));
+    });
+    ctx.textAlign = "center"; ctx.textBaseline = "top";
+    for (let l = 0; l <= 90; l += 15) {
+      ctx.strokeStyle = TH.line; ctx.beginPath(); ctx.moveTo(X(l), y1); ctx.lineTo(X(l), y1 + 4); ctx.stroke();
+      ctx.fillStyle = TH.ink2; ctx.fillText(l + "°", X(l), y1 + 6);
+    }
+    ctx.fillStyle = TH.ink2; ctx.font = fontBody(11); ctx.textAlign = "left"; ctx.textBaseline = "alphabetic";
+    ctx.fillText("Ağırlık (N)", 6, y0 + 8);
+    ctx.textAlign = "right"; ctx.fillText("Enlem", x1, h - 3);
+    // area + curve
+    const grd = ctx.createLinearGradient(0, y0, 0, y1); grd.addColorStop(0, hexA(TH.weight, 0.28)); grd.addColorStop(1, hexA(TH.weight, 0));
+    ctx.beginPath(); pts.forEach((v, i) => (i ? ctx.lineTo(X(i), Y(v)) : ctx.moveTo(X(i), Y(v))));
+    ctx.lineTo(X(90), y1); ctx.lineTo(X(0), y1); ctx.closePath(); ctx.fillStyle = grd; ctx.fill();
+    ctx.beginPath(); pts.forEach((v, i) => (i ? ctx.lineTo(X(i), Y(v)) : ctx.moveTo(X(i), Y(v))));
+    ctx.strokeStyle = TH.weight; ctx.lineWidth = 2.6; ctx.lineJoin = "round"; ctx.stroke();
+    // end markers
+    [[0, TH.spin, "E"], [90, TH.pull, "K"]].forEach(([l, c, t]) => {
+      ctx.fillStyle = c; ctx.beginPath(); ctx.arc(X(l), Y(pts[l]), 4.5, 0, TAU); ctx.fill();
+      ctx.font = fontBody(11, 600); ctx.textAlign = l ? "right" : "left"; ctx.textBaseline = "bottom"; ctx.fillText(t, X(l) + (l ? -8 : 8), Y(pts[l]) - 6);
+    });
+    // current
+    const cur = weightN(state.lat), cxp = X(state.lat), cyp = Y(cur);
+    ctx.setLineDash([4, 4]); ctx.strokeStyle = TH.ink2; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(cxp, y0); ctx.lineTo(cxp, y1); ctx.stroke(); ctx.setLineDash([]);
+    ctx.fillStyle = TH.surface; ctx.strokeStyle = TH.ink; ctx.lineWidth = 2.4; ctx.beginPath(); ctx.arc(cxp, cyp, 6, 0, TAU); ctx.fill(); ctx.stroke();
+    const label = f1.format(state.lat) + "° · " + f2.format(cur) + " N";
+    ctx.font = fontMono(12, 500); const tw = ctx.measureText(label).width + 12;
+    let lx = cxp - tw / 2; lx = clamp(lx, x0, x1 - tw);
+    const ly = cyp < (y0 + y1) / 2 ? cyp + 12 : cyp - 34;
+    ctx.fillStyle = hexA(TH.surface2, 0.96); ctx.strokeStyle = TH.line; ctx.lineWidth = 1; rrect(ctx, lx, ly, tw, 22, 6); ctx.fill(); ctx.stroke();
+    ctx.fillStyle = TH.ink; ctx.textAlign = "left"; ctx.textBaseline = "middle"; ctx.fillText(label, lx + 6, ly + 11);
+  }
+
+  // ---------- UI ----------
+  const $ = (id) => document.getElementById(id);
+  const el = { lat: $("lat"), mass: $("mass"), spin: $("spin"), sphere: $("sphere"), shapeX: $("shapeX"), arrowX: $("arrowX"), play: $("playBtn") };
+
+  function updateUI() {
+    const c = calc(state.lat), W = state.mass * Math.max(0, c.g);
+    $("latOut").textContent = f1.format(state.lat) + "°";
+    $("massOut").textContent = f0.format(state.mass) + " kg";
+    const day = state.spin > 0.001 ? 24 / state.spin : null;
+    $("spinOut").textContent = "×" + f1.format(state.spin) + " · " + (day === null ? "Dünya dönmüyor" : day >= 1 ? "gün " + f1.format(day) + " saat" : "gün " + f0.format(day * 60) + " dk");
+    $("shapeOut").textContent = "×" + f0.format(state.shapeX);
+    $("arrowOut").textContent = "×" + f0.format(state.arrowX);
+    $("sW").innerHTML = f2.format(W) + "<em>N</em>";
+    $("sG").innerHTML = f4.format(Math.max(0, c.g)) + "<em>m/s²</em>";
+    $("sK").innerHTML = f2.format(W / KGF) + "<em>kg</em>";
+    const warn = $("warn");
+    if (c.g <= 0.02) { warn.hidden = false; warn.textContent = "Bu enlemde merkezkaç etkisi çekimi dengeliyor: cisim ağırlığını kaybeder ve yerden ayrılır."; }
+    else warn.hidden = true;
+    const wE = weightN(0), wK = weightN(90), pct = wE > 0 ? ((wK - wE) / wE) * 100 : 0;
+    $("dialNote").textContent = "Kadran yakınlaştırılmıştır. Ekvator ile kutup arasındaki gerçek fark yalnızca %" + f2.format(pct) + ".";
+    // split bar
+    const eq = calc(0), po = calc(90);
+    const dRot = eq.rad - po.rad, dFlat = po.pull - eq.pull, tot = dRot + dFlat;
+    const bar = $("splitBar"), key = $("splitKey");
+    if (tot > 1e-5) {
+      const pr = (dRot / tot) * 100, pf = (dFlat / tot) * 100;
+      bar.innerHTML = `<span style="width:${pr}%;background:var(--spin)"></span><span style="width:${pf}%;background:var(--pull)"></span>`;
+      key.innerHTML = `<span><i style="background:var(--spin)"></i>Dönme: ${f4.format(dRot)} m/s² (%${f0.format(pr)})</span><span><i style="background:var(--pull)"></i>Basıklık: ${f4.format(dFlat)} m/s² (%${f0.format(pf)})</span><span>Toplam fark: ${f4.format(tot)} m/s²</span>`;
+    } else {
+      bar.innerHTML = ""; key.innerHTML = "<span>Bu ayarlarda ekvator ile kutup arasında fark yok.</span>";
+    }
+    // table
+    const rows = [["Ekvator", 0], ["İstanbul", 41], ["Kutup", 90]];
+    let html = "";
+    rows.forEach(([n, l]) => { const g = Math.max(0, calc(l).g), w = state.mass * g; html += `<tr><td>${n} ${l}°</td><td>${f4.format(g)}</td><td>${f2.format(w)}</td><td>${f2.format(w / KGF)}</td></tr>`; });
+    const gd = Math.max(0, calc(90).g) - Math.max(0, calc(0).g), wd = state.mass * gd;
+    html += `<tr class="diff"><td>Kutup − ekvator</td><td>${f4.format(gd)}</td><td>${f2.format(wd)}</td><td>${f2.format(wd / KGF)}</td></tr>`;
+    $("tbl").innerHTML = html;
+    // button states
+    document.querySelectorAll("#latBtns button").forEach((b) => b.setAttribute("aria-pressed", String(Math.abs(+b.dataset.lat - state.lat) < 0.01)));
+    document.querySelectorAll("#spinBtns button").forEach((b) => b.setAttribute("aria-pressed", String(Math.abs(+b.dataset.spin - state.spin) < 0.01)));
+    el.lat.value = state.lat;
+    state.dirty = true;
+  }
+  const bind = (id, key, parse) => el[id].addEventListener("input", () => { state[key] = parse(el[id]); updateUI(); });
+  bind("lat", "lat", (e) => +e.value); bind("mass", "mass", (e) => +e.value); bind("spin", "spin", (e) => +e.value);
+  bind("shapeX", "shapeX", (e) => +e.value); bind("arrowX", "arrowX", (e) => +e.value);
+  el.sphere.addEventListener("change", () => { state.sphere = el.sphere.checked; updateUI(); });
+  document.querySelectorAll("#latBtns button").forEach((b) => b.addEventListener("click", () => { state.lat = +b.dataset.lat; updateUI(); }));
+  document.querySelectorAll("#spinBtns button").forEach((b) => b.addEventListener("click", () => { state.spin = +b.dataset.spin; el.spin.value = state.spin; updateUI(); }));
+  const setPlay = () => { el.play.setAttribute("aria-pressed", String(state.playing)); el.play.textContent = state.playing ? "Animasyon çalışıyor" : "Animasyon duraklatıldı"; state.dirty = true; };
+  el.play.addEventListener("click", () => { state.playing = !state.playing; setPlay(); });
+  setPlay();
+
+  // ---------- pointer input ----------
+  function setLat(v) { state.lat = clamp(Math.round(v * 2) / 2, 0, 90); updateUI(); }
+  function stagePoint(e) { const r = cvStage.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; }
+  function latFromStage(pt) {
+    const dx = Math.abs(pt[0] - geo.cx), dy = Math.abs(pt[1] - geo.cy);
+    const psi = Math.atan2(dy, Math.max(dx, 1e-6));
+    return Math.atan(Math.pow(geo.a / geo.b, 2) * Math.tan(Math.min(psi, Math.PI / 2 - 1e-6))) / DEG;
+  }
+  let dragS = false, tapS = null;
+  cvStage.addEventListener("pointerdown", (e) => {
+    if (e.pointerType === "touch") { tapS = [e.clientX, e.clientY]; return; }
+    dragS = true; cvStage.setPointerCapture(e.pointerId); setLat(latFromStage(stagePoint(e)));
+  });
+  cvStage.addEventListener("pointermove", (e) => { if (dragS) setLat(latFromStage(stagePoint(e))); });
+  cvStage.addEventListener("pointerup", (e) => {
+    dragS = false;
+    if (tapS && Math.hypot(e.clientX - tapS[0], e.clientY - tapS[1]) < 8) setLat(latFromStage(stagePoint(e)));
+    tapS = null;
+  });
+  cvStage.addEventListener("pointercancel", () => { dragS = false; tapS = null; });
+  let dragG = false;
+  const latFromGraph = (e) => { const r = cvGraph.getBoundingClientRect(); return ((e.clientX - r.left - gPlot.x0) / (gPlot.x1 - gPlot.x0)) * 90; };
+  cvGraph.addEventListener("pointerdown", (e) => { dragG = true; cvGraph.setPointerCapture(e.pointerId); setLat(latFromGraph(e)); });
+  cvGraph.addEventListener("pointermove", (e) => { if (dragG) setLat(latFromGraph(e)); });
+  cvGraph.addEventListener("pointerup", () => (dragG = false));
+  cvGraph.addEventListener("pointercancel", () => (dragG = false));
+
+  // ---------- loop ----------
+  let last = performance.now();
+  function frame(now) {
+    const dt = Math.min(0.05, (now - last) / 1000); last = now;
+    if (state.playing) { state.theta += dt * (TAU / 10) * state.spin; state.dirty = true; }
+    const target = weightN(state.lat);
+    if (state.needle == null) state.needle = target;
+    const diff = target - state.needle;
+    if (Math.abs(diff) > 1e-4 * Math.max(1, state.mass)) { state.needle += diff * (1 - Math.exp(-dt * 12)); state.dirty = true; } else state.needle = target;
+    if (state.dirty && !document.hidden) {
+      state.dirty = false;
+      if (cvStage._w) drawStage(xStage, cvStage._w, cvStage._h, now / 1000);
+      if (cvDial._w) drawDial(xDial, cvDial._w, cvDial._h);
+      if (cvGraph._w) drawGraph(xGraph, cvGraph._w, cvGraph._h);
+    }
+    requestAnimationFrame(frame);
+  }
+  updateUI();
+  requestAnimationFrame(frame);
+})();
+</script>
+<script>
+(function(){
+  function post(){try{parent.postMessage({type:"agirlik-enlem-height",height:document.documentElement.scrollHeight},"*")}catch(e){}}
+  window.addEventListener("message",function(e){var d=e.data;if(d&&d.type==="agirlik-enlem-theme"){document.documentElement.setAttribute("data-theme",d.theme==="dark"?"dark":"light")}});
+  window.addEventListener("load",post);window.addEventListener("resize",post);
+  if(window.ResizeObserver){new ResizeObserver(post).observe(document.body)}
+  try{parent.postMessage({type:"agirlik-enlem-ready"},"*")}catch(e){}
+})();
+</script>
+</body></html>
