@@ -1,0 +1,570 @@
+{
+  "classLevel": 5,
+  "code": "5.1",
+  "hours": 22,
+  "title": "Gökyüzündeki Komşularımız ve Biz",
+  "slug": "gokyuzundeki-komsularimiz-ve-biz",
+  "description": "Güneş’in yapısını ve dönmesini, Ay’ın özelliklerini, hareketlerini ve evrelerini inceler; Güneş, Dünya ve Ay’ı temsil eden bilimsel modeller kurarız.",
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı (2024), 5. sınıf 1. ünite",
+  "topics": [
+    {
+      "slug": "gunes-yildizimizi-taniyalim",
+      "title": "Güneş: Yıldızımızı Tanıyalım",
+      "summary": "Güneş’in bir yıldız olduğunu, katmanlı yapısını ve kendi ekseni etrafında nasıl döndüğünü gözlem verilerinden çıkarıyoruz.",
+      "outcome": {
+        "code": "FB.5.1.1.1",
+        "description": "Güneş’in yapısı ve dönme hareketi ile ilgili bilgileri toplayabilme."
+      },
+      "skills": [
+        "Bilgi toplama",
+        "Veri okuma",
+        "Çıkarım yapma"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🔍 Merak Et",
+          "bodyHtml": "<p>Her sabah Güneş doğuyor ve gün boyunca bize ışık ve sıcaklık veriyor. Peki Güneş tam olarak nedir? Bir gezegen mi, yoksa başka bir şey mi? Neden hiç sönmüyor? <strong>Güneş de kendi etrafında dönüyor mu?</strong> Bunu ona hiç dokunmadan, yalnızca gözlem verileriyle nasıl anlayabiliriz?</p><p>Bu konuda bu soruların cevabını bilgi toplayarak ve verileri yorumlayarak arayacağız.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Güneş Bir Yıldızdır",
+          "bodyHtml": "<p>Güneş, <strong>kendi ışığını ve ısısını üreten</strong> dev bir gaz küresidir; yani bir <strong>yıldızdır</strong>. Gökyüzünde geceleri gördüğümüz yıldızlar da Güneş gibi kendi ışığını üretir; yalnızca çok daha uzaktadırlar, bu yüzden küçük birer nokta gibi görünürler.</p><ul><li>Güneş, Dünya’ya <strong>en yakın yıldızdır</strong>.</li><li>Güneş sisteminin merkezindedir; gezegenler Güneş’in çevresinde dolanır.</li><li>Güneş sistemindeki tüm kütlenin yaklaşık %99,8’i Güneş’te toplanmıştır.</li><li>Çoğunlukla <strong>hidrojen</strong> ve <strong>helyum</strong> gazlarından oluşur; Dünya gibi katı bir yüzeyi yoktur.</li></ul><p>Güneş’in çapı Dünya’nın çapının yaklaşık <strong>109 katıdır</strong>. Güneş’in içine yaklaşık 1,3 milyon tane Dünya sığabilir. Güneş’ten çıkan ışık, yaklaşık 150 milyon kilometrelik yolu <strong>8 dakika 20 saniyede</strong> alıp Dünya’ya ulaşır.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Güneş’in Yapısı",
+          "bodyHtml": "<p>Güneş katmanlardan oluşur. Katmanları içten dışa doğru şöyle sıralayabiliriz:</p><table><thead><tr><th>Katman</th><th>Özelliği</th></tr></thead><tbody><tr><td><strong>Çekirdek</strong></td><td>Güneş’in merkezidir. Enerji burada üretilir. Sıcaklığı yaklaşık 15 milyon °C’dir.</td></tr><tr><td><strong>Işınım bölgesi</strong></td><td>Çekirdekte üretilen enerji, ışık biçiminde bu bölgeden dışarı doğru ilerler.</td></tr><tr><td><strong>Taşınım bölgesi</strong></td><td>Sıcak gazlar yükselir, soğuyan gazlar alçalır; enerji yüzeye bu hareketle taşınır.</td></tr><tr><td><strong>Fotosfer</strong></td><td>Güneş’in görünen “yüzeyidir”. Sıcaklığı yaklaşık 5500 °C’dir. Işığın büyük bölümü buradan yayılır.</td></tr><tr><td><strong>Kromosfer</strong></td><td>Fotosferin üstündeki ince ve kırmızımsı katmandır.</td></tr><tr><td><strong>Korona</strong></td><td>En dış katmandır. Çok seyrek gazlardan oluşur. Normalde parlak ışık yüzünden görünmez; Güneş tutulmasında ince bir hâle gibi görülebilir.</td></tr></tbody></table>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Güneş Kendi Etrafında Döner",
+          "bodyHtml": "<p>Güneş, tıpkı Dünya gibi <strong>kendi ekseni etrafında döner</strong>. Bunu nasıl anlarız? Güneş’in yüzeyinde bazen çevresinden daha soğuk olduğu için daha koyu görünen bölgeler bulunur. Bunlara <strong>Güneş lekeleri</strong> denir (sıcaklıkları yaklaşık 3500–4000 °C’dir).</p><p>Güneş lekeleri günler boyunca izlendiğinde, Güneş diskinin bir kenarından doğup karşı kenarına doğru <strong>aynı yönde yer değiştirdiği</strong> görülür. Lekeler Güneş’in yüzeyine bağlı olduğuna göre bu hareket, Güneş’in dönmesinin bir kanıtıdır.</p><ul><li>Güneş, Dünya ile aynı yönde, yani <strong>batıdan doğuya</strong> doğru döner.</li><li>Güneş katı değil gazdan oluştuğu için her yeri aynı hızda dönmez: ekvator bölgesi yaklaşık <strong>25 günde</strong>, kutup bölgeleri yaklaşık <strong>35 günde</strong> bir tur atar.</li></ul>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Önemli Bilgiler",
+          "bodyHtml": "<ul><li>Güneş bir <strong>yıldızdır</strong>; gezegen veya uydu değildir.</li><li>Güneş’in katmanları içten dışa: çekirdek, ışınım bölgesi, taşınım bölgesi, fotosfer, kromosfer, korona.</li><li>Güneş lekelerinin yer değiştirmesi, Güneş’in <strong>kendi ekseni etrafında döndüğünü</strong> gösterir.</li><li><strong>Güvenlik:</strong> Güneş’e çıplak gözle, güneş gözlüğüyle, dürbünle veya teleskopla doğrudan <strong>asla bakılmaz</strong>. Kalıcı göz hasarı oluşabilir. Gözlem ancak uygun güneş filtreleriyle ve bir yetişkin gözetiminde yapılır.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏠 Günlük Yaşamdan ve Bilim Tarihinden",
+          "bodyHtml": "<ul><li><strong>Yaşam kaynağı:</strong> Bitkiler fotosentez için Güneş ışığını kullanır; besin zincirinin başlangıcı böylece Güneş’e dayanır.</li><li><strong>Güneş enerjisi:</strong> Güneş panelleri Güneş ışığını elektrik enerjisine dönüştürür. Çatılarda gördüğün paneller temiz enerji üretir.</li><li><strong>Gözlemin tarihi:</strong> Galileo Galilei 1610 yıllarında teleskopla Güneş lekelerini gözlemleyerek Güneş’in döndüğünü gösteren verilere ulaştı. Osmanlı bilgini Takiyüddin ise 1577’de kurduğu İstanbul Rasathanesi’nde gökyüzü gözlemleri yaptırdı. İkisi de bilimin <strong>dikkatli gözleme ve veriye</strong> dayandığını gösterir.</li></ul>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Yıldız",
+          "definition": "Kendi ışığını ve ısısını üreten, çok büyük gaz küresi şeklindeki gök cismi."
+        },
+        {
+          "term": "Güneş lekesi",
+          "definition": "Güneş’in yüzeyinde çevresinden daha soğuk olduğu için koyu görünen bölge."
+        },
+        {
+          "term": "Fotosfer",
+          "definition": "Güneş’in görünen yüzeyi olarak kabul edilen, ışığın büyük bölümünü yayan katman."
+        },
+        {
+          "term": "Korona",
+          "definition": "Güneş’in en dış, çok seyrek gazlardan oluşan katmanı."
+        },
+        {
+          "term": "Dönme hareketi",
+          "definition": "Bir gök cisminin kendi ekseni etrafında dönmesi."
+        }
+      ],
+      "activity": {
+        "title": "Güneş Lekesi Gözlem Defteri",
+        "materials": "Kâğıt, kalem, cetvel, birinci–beşinci güne ait örnek Güneş lekesi çizimleri (öğretmenin verdiği veya internetten alınmış gözlem görselleri)",
+        "steps": "1) Aynı lekenin art arda beş günde Güneş diski üzerindeki konumunu işaretleyen örnek çizimlere bak.\n2) Her gün lekenin diskin sol kenarına olan uzaklığını cetvelle ölç ve tabloya yaz.\n3) Lekenin hangi yöne ve nasıl bir düzenle kaydığını belirt.\n4) “Leke yer değiştiriyorsa Güneş hakkında ne söyleyebiliriz?” sorusuna kanıtlarınla cevap yaz.\n5) Sonucunu bir arkadaşınla karşılaştır.",
+        "safetyNotes": "Bu etkinlik hazır görsellerle yapılır. Gerçek Güneş’e doğrudan, gözlükle ya da dürbünle ASLA bakma. Gerçek gözlem için yalnızca öğretmen gözetiminde, uygun güneş filtresiyle çalış."
+      },
+      "quiz": [
+        {
+          "body": "Güneş’in bir yıldız olarak sınıflandırılmasının asıl nedeni nedir?",
+          "options": [
+            "Dünya’ya çok yakın olması",
+            "Kendi ışığını ve ısısını üretmesi",
+            "Gökyüzünde parlak görünmesi",
+            "Küre şeklinde olması"
+          ],
+          "answer": 1,
+          "explanation": "Yıldızlar kendi ışığını ve ısısını üretir. Gezegenler ve uydular ise yalnızca ışığı yansıtır.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Güneş’in gözle görünen “yüzeyi” olarak kabul edilen katmanı hangisidir?",
+          "options": [
+            "Çekirdek",
+            "Korona",
+            "Fotosfer",
+            "Taşınım bölgesi"
+          ],
+          "answer": 2,
+          "explanation": "Fotosfer, Güneş’in görünen yüzeyidir ve sıcaklığı yaklaşık 5500 °C’dir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Güneş lekelerinin günler içinde aynı yönde yer değiştirdiği gözlenmiştir. Bu gözlemden hangi sonuç çıkarılabilir?",
+          "options": [
+            "Güneş kendi ekseni etrafında döner.",
+            "Güneş küçülmektedir.",
+            "Güneş Dünya’nın etrafında dolanır.",
+            "Güneş’in sıcaklığı sabittir."
+          ],
+          "answer": 0,
+          "explanation": "Lekeler Güneş’in yüzeyine bağlıdır. Yer değiştirmeleri, Güneş’in dönmesinin kanıtıdır.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Güneş’i güvenli biçimde gözlemlemek için aşağıdakilerden hangisi doğrudur?",
+          "options": [
+            "Güneş gözlüğü takıp doğrudan bakmak",
+            "Dürbünle kısa süre bakmak",
+            "Gözleri kısarak bakmak",
+            "Uygun güneş filtresi kullanıp bir yetişkin gözetiminde gözlemek"
+          ],
+          "answer": 3,
+          "explanation": "Güneş’e doğrudan bakmak kalıcı göz hasarına yol açar. Uygun filtre ve yetişkin gözetimi gerekir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Güneş’in çapı Dünya’nın çapının yaklaşık kaç katıdır?",
+          "options": [
+            "Yaklaşık 10 katı",
+            "Yaklaşık 109 katı",
+            "Yaklaşık 1000 katı",
+            "Yaklaşık 2 katı"
+          ],
+          "answer": 1,
+          "explanation": "Güneş’in çapı Dünya’nın çapının yaklaşık 109 katıdır.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": [
+        {
+          "label": "Ay’ın evreleri animasyonunu aç",
+          "href": "/animasyonlar/5"
+        }
+      ]
+    },
+    {
+      "slug": "ay-in-ozellikleri-ve-hareketleri",
+      "title": "Ay’ın Özellikleri ve Hareketleri",
+      "summary": "Ay’ın yüzey şekillerini, boyutunu ve Dünya çevresindeki hareketini inceleyerek neden hep aynı yüzünü gördüğümüzü açıklıyoruz.",
+      "outcome": {
+        "code": "FB.5.1.2.1",
+        "description": "Ay’ın özellikleri, dönme ve dolanma hareketleri ile ilgili bilimsel çıkarım yapabilme."
+      },
+      "skills": [
+        "Gözlem",
+        "Bilimsel çıkarım",
+        "Karşılaştırma"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🔍 Merak Et",
+          "bodyHtml": "<p>Ay’a baktığında koyu lekeler ve parlak bölgeler görürsün. Yıllar geçse de bu desen <strong>hep aynı</strong> kalır. Ay neden hep aynı yüzünü bize gösteriyor? Dönmüyor mu? Ay’da hava, rüzgâr ya da su var mı?</p><p>Bu soruları Ay’ın özelliklerini ve hareketlerini inceleyerek cevaplayacağız.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Ay’ın Özellikleri",
+          "bodyHtml": "<p>Ay, Dünya’nın <strong>tek doğal uydusudur</strong>. Uydu, bir gezegenin çevresinde dolanan gök cismidir.</p><ul><li><strong>Şekli ve boyutu:</strong> Küreye benzer, kayalık bir gök cismidir. Çapı yaklaşık 3474 km’dir; bu, Dünya’nın çapının yaklaşık dörtte biri demektir.</li><li><strong>Uzaklığı:</strong> Dünya’ya ortalama yaklaşık 384 000 km uzaktadır.</li><li><strong>Kendi ışığı yoktur:</strong> Parlak görünmesinin nedeni, <strong>Güneş’ten gelen ışığı yansıtmasıdır</strong>.</li><li><strong>Atmosferi yoktur:</strong> Bu yüzden Ay’da rüzgâr, bulut, yağmur ve ses yoktur. Astronotların ayak izleri çok uzun süre bozulmadan kalır.</li><li><strong>Sıcaklık farkı büyüktür:</strong> Gündüz yaklaşık +127 °C’ye çıkarken gece yaklaşık −173 °C’ye düşebilir.</li><li><strong>Çekim kuvveti:</strong> Ay’ın çekim kuvveti Dünya’nınkinin yaklaşık altıda biridir. Bu yüzden bir cismin Ay’daki ağırlığı Dünya’dakinin yaklaşık altıda biri kadardır; kütlesi ise değişmez.</li></ul>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Ay’ın Yüzey Şekilleri",
+          "bodyHtml": "<table><thead><tr><th>Yüzey şekli</th><th>Nasıl oluştu?</th></tr></thead><tbody><tr><td><strong>Kraterler</strong></td><td>Göktaşlarının Ay’a çarpmasıyla oluşan çukurlardır. Atmosfer olmadığı için erimeden yıllarca kalırlar.</td></tr><tr><td><strong>Ay denizleri</strong></td><td>Koyu renkli, düz alanlardır. Eskiden akan lavların donmasıyla oluşmuştur. İçlerinde <strong>su yoktur</strong>.</td></tr><tr><td><strong>Dağlar ve yüksek araziler</strong></td><td>Açık renkli, engebeli bölgelerdir.</td></tr></tbody></table>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Dönme ve Dolanma",
+          "bodyHtml": "<p>Ay iki hareket yapar:</p><ul><li><strong>Dönme:</strong> Ay, kendi ekseni etrafında döner.</li><li><strong>Dolanma:</strong> Ay, Dünya’nın çevresinde yörüngesi boyunca dolanır.</li></ul><p>Ay’ın kendi ekseni etrafında bir tur dönmesi ile Dünya çevresinde bir tur dolanması <strong>yaklaşık aynı sürede (yaklaşık 27 gün)</strong> gerçekleşir. Bu yüzden Ay’ın <strong>hep aynı yüzü</strong> Dünya’ya dönüktür. Ay’ın diğer yüzünü Dünya’dan hiç göremeyiz; bu yüz ilk kez 1959’da bir uzay aracı tarafından fotoğraflandı.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Önemli Bilgiler",
+          "bodyHtml": "<ul><li>Ay, Dünya’nın <strong>doğal uydusudur</strong> ve kendi ışığı yoktur.</li><li><strong>Dönme</strong> = kendi ekseni etrafında dönmek; <strong>dolanma</strong> = başka bir cismin çevresinde yörüngede dolanmak.</li><li>Ay’ın dönme ve dolanma süreleri yaklaşık eşit olduğu için Dünya’dan hep aynı yüzünü görürüz.</li><li>Ay’da atmosfer olmadığı için rüzgâr, yağmur ve ses yoktur.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏠 Günlük Yaşamdan ve Bilim Tarihinden",
+          "bodyHtml": "<ul><li><strong>Takvim:</strong> Hicrî takvim, Ay’ın hareketine dayanır; aylar yeni Ay (hilal) ile başlar.</li><li><strong>Deniz kıyıları:</strong> Gelgit olayında Ay’ın çekim kuvveti etkilidir; deniz seviyesi gün içinde yükselip alçalır.</li><li><strong>Ay yolculuğu:</strong> 1969’da Apollo 11 görevi ile insanlar ilk kez Ay yüzeyine ayak bastı. Astronotlar orada yürüyüş yaparken Ay’ın zayıf çekim kuvvetini doğrudan deneyimledi.</li></ul><p>İstersen sitedeki <a href=\"/animasyonlar/5/ay-yuzeyi\">Astronotla Ay yüzeyini keşfet</a> etkinliğine göz atabilirsin.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Uydu",
+          "definition": "Bir gezegenin çevresinde dolanan doğal veya yapay gök cismi."
+        },
+        {
+          "term": "Krater",
+          "definition": "Göktaşı çarpması sonucu yüzeyde oluşan çukur."
+        },
+        {
+          "term": "Atmosfer",
+          "definition": "Bir gök cismini saran gaz tabakası."
+        },
+        {
+          "term": "Dolanma hareketi",
+          "definition": "Bir gök cisminin başka bir cismin çevresinde yörüngesi boyunca ilerlemesi."
+        },
+        {
+          "term": "Yansıtma",
+          "definition": "Işığın bir yüzeye çarpıp geri dönmesi; Ay’ın Güneş ışığıyla parlak görünmesinin nedeni."
+        }
+      ],
+      "activity": {
+        "title": "Dönme ve Dolanma Modeli",
+        "materials": "İki öğrenci, tebeşir, boş bir alan (sınıf veya bahçe)",
+        "steps": "1) Yere tebeşirle bir daire çiz ve ortasına bir öğrenci “Dünya” olarak dursun.\n2) Diğer öğrenci “Ay” olsun ve daire üzerinde yürüyerek Dünya’nın çevresinde dolansın.\n3) “Ay” öğrenci yürürken yüzü hep “Dünya”ya dönük kalsın.\n4) Bir tam tur boyunca “Ay”ın yüzünün hangi yöne baktığını, sınıf arkadaşların gözlemleyip kaydetsin.\n5) Sonucu yorumla: Neden Dünya’dan Ay’ın hep aynı yüzünü görürüz?",
+        "safetyNotes": "Yürürken koşma ve itişme. Alanı önce engellerden temizle."
+      },
+      "quiz": [
+        {
+          "body": "Ay’ın Dünya’nın çevresindeki hareketine ne ad verilir?",
+          "options": [
+            "Dönme",
+            "Çekim",
+            "Yansıma",
+            "Dolanma"
+          ],
+          "answer": 3,
+          "explanation": "Bir cismin başka bir cismin çevresindeki hareketine dolanma denir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Ay’ın Dünya’dan hep aynı yüzünün görülmesinin nedeni aşağıdakilerden hangisidir?",
+          "options": [
+            "Ay’ın dönme ve dolanma sürelerinin yaklaşık eşit olması",
+            "Ay’ın hiç dönmemesi",
+            "Ay’ın Dünya’dan çok uzak olması",
+            "Güneş’in Ay’ı hep aynı yerden aydınlatması"
+          ],
+          "answer": 0,
+          "explanation": "Ay’ın bir tur dönme ve bir tur dolanma süresi yaklaşık eşittir. Bu yüzden aynı yüzü Dünya’ya dönüktür.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Ay’da rüzgâr ve yağmur olmamasının nedeni nedir?",
+          "options": [
+            "Ay’ın çok soğuk olması",
+            "Ay’ın Dünya’dan uzak olması",
+            "Ay’ın atmosferinin bulunmaması",
+            "Ay’ın çok küçük olması"
+          ],
+          "answer": 2,
+          "explanation": "Rüzgâr ve yağmur atmosfer gerektirir. Ay’ın atmosferi yoktur.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Ay yüzeyindeki kraterler nasıl oluşmuştur?",
+          "options": [
+            "Rüzgârın aşındırmasıyla",
+            "Göktaşlarının çarpmasıyla",
+            "Yağmur sularının birikmesiyle",
+            "Güneş lekeleriyle"
+          ],
+          "answer": 1,
+          "explanation": "Kraterler, göktaşlarının Ay yüzeyine çarpması sonucu oluşan çukurlardır.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Ay’ın gökyüzünde parlak görünmesinin nedeni nedir?",
+          "options": [
+            "Kendi ışığını üretmesi",
+            "Dünya’nın ışık vermesi",
+            "Güneş ışığını yansıtması",
+            "Yıldızların ışığı"
+          ],
+          "answer": 2,
+          "explanation": "Ay’ın kendi ışığı yoktur; Güneş’ten gelen ışığı yansıtır.",
+          "difficulty": "EASY"
+        }
+      ],
+      "links": [
+        {
+          "label": "Astronotla Ay yüzeyini keşfet",
+          "href": "/animasyonlar/5/ay-yuzeyi"
+        }
+      ]
+    },
+    {
+      "slug": "ay-in-evreleri",
+      "title": "Ay’ın Evreleri",
+      "summary": "Ay’ın görünen aydınlık kısmının neden her gün değiştiğini; evrelerin sırasını ve oluşumunu bir model ile açıklıyoruz.",
+      "outcome": {
+        "code": "FB.5.1.2.2",
+        "description": "Ay’ın evrelerini temsil eden bilimsel model oluşturabilme."
+      },
+      "skills": [
+        "Model oluşturma",
+        "Sıralama",
+        "Tahmin etme"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🔍 Merak Et",
+          "bodyHtml": "<p>Bir akşam Ay incecik bir hilal gibidir, bir hafta sonra yarım daire, iki hafta sonra ise bütün bir daire gibi görünür. <strong>Ay gerçekten şekil mi değiştiriyor?</strong> Ay’ın bir kısmını mı yutan biri var? Bu gözlemi açıklayabilmek için kendi modelimizi kuracağız.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Evreler Neden Oluşur?",
+          "bodyHtml": "<p>Ay’ın <strong>şekli değişmez</strong>. Ay her zaman bir küredir ve <strong>her zaman yarısı Güneş tarafından aydınlatılır</strong>. Ancak Ay, Dünya’nın çevresinde dolanırken Dünya’dan baktığımızda aydınlık yüzünün <strong>farklı büyüklükteki bölümünü</strong> görürüz. Bu görünümlere <strong>Ay’ın evreleri</strong> denir.</p><p>Evrelerin sebebi Ay’ın, Güneş ve Dünya’ya göre <strong>konumunun değişmesidir</strong>.</p><ul><li><strong>Yeni Ay:</strong> Ay, Dünya ile Güneş arasındadır; aydınlık yüz Dünya’ya dönük değildir, Ay görünmez.</li><li><strong>Dolunay:</strong> Dünya, Ay ile Güneş arasındadır; aydınlık yüzün tamamı Dünya’dan görünür.</li></ul>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Evrelerin Sırası",
+          "bodyHtml": "<table><thead><tr><th>Sıra</th><th>Evre</th><th>Görünüm</th></tr></thead><tbody><tr><td>1</td><td><strong>Yeni Ay</strong></td><td>Ay görünmez.</td></tr><tr><td>2</td><td><strong>Hilal</strong> (büyüyen)</td><td>İnce bir ışık kıvrımı.</td></tr><tr><td>3</td><td><strong>İlk dördün</strong></td><td>Yarım daire; Türkiye’den bakınca sağ yarı aydınlıktır.</td></tr><tr><td>4</td><td><strong>Şişkin Ay</strong> (büyüyen)</td><td>Yarım daireden büyük, tam daireden küçük.</td></tr><tr><td>5</td><td><strong>Dolunay</strong></td><td>Tam daire.</td></tr><tr><td>6</td><td><strong>Şişkin Ay</strong> (küçülen)</td><td>Aydınlık bölüm küçülür.</td></tr><tr><td>7</td><td><strong>Son dördün</strong></td><td>Yarım daire; Türkiye’den bakınca sol yarı aydınlıktır.</td></tr><tr><td>8</td><td><strong>Hilal</strong> (küçülen)</td><td>İnce bir ışık kıvrımı; sonra tekrar Yeni Ay.</td></tr></tbody></table><p>Bu döngü yaklaşık <strong>29,5 günde</strong> (yaklaşık bir ay) tamamlanır ve sürekli tekrar eder.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Önemli Bilgiler",
+          "bodyHtml": "<ul><li>Ay’ın <strong>şekli değişmez</strong>; değişen, Dünya’dan görünen aydınlık kısımdır.</li><li>Ay’ın yarısı her zaman aydınlıktır.</li><li>Evreler <strong>Dünya’nın gölgesi</strong> ile oluşmaz. Dünya’nın gölgesinin Ay’a düşmesi <em>Ay tutulması</em> olayıdır ve ayrı bir olaydır.</li><li>Evrelerin sırası hep aynıdır: Yeni Ay → Hilal → İlk dördün → Şişkin Ay → Dolunay → Şişkin Ay → Son dördün → Hilal → Yeni Ay.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏠 Günlük Yaşamdan",
+          "bodyHtml": "<ul><li><strong>Takvim:</strong> Hicrî aylar yeni Ay’ın ilk hilalinin görülmesiyle başlar; bu yüzden dini günlerin tarihleri her yıl miladi takvimde yaklaşık 10–11 gün kayar.</li><li><strong>Gece gözlemi:</strong> Dolunay zamanı gece oldukça aydınlıktır; yeni Ay zamanı ise yıldızları gözlemek için en uygun zamandır.</li><li><strong>Deniz ve balıkçılık:</strong> Ay’ın evreleri gelgit olayıyla ilişkilidir; denizciler bu bilgiyi yüzyıllardır kullanır.</li></ul><p>Sitedeki <a href=\"/animasyonlar/5\">Ay’ın evreleri animasyonunu</a> açarak Ay’ı yörüngesinde döndür ve evreleri kendin gözle.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Evre",
+          "definition": "Ay’ın Dünya’dan bakıldığında görünen aydınlık kısmının aldığı biçim."
+        },
+        {
+          "term": "Yeni Ay",
+          "definition": "Ay’ın aydınlık yüzünün Dünya’ya dönük olmadığı, Ay’ın görünmediği evre."
+        },
+        {
+          "term": "Hilal",
+          "definition": "Ay’ın ince bir ışık kıvrımı gibi göründüğü evre."
+        },
+        {
+          "term": "Dördün",
+          "definition": "Ay’ın yarım daire biçiminde göründüğü evre."
+        },
+        {
+          "term": "Dolunay",
+          "definition": "Ay’ın tam bir daire gibi göründüğü evre."
+        }
+      ],
+      "activity": {
+        "title": "Ay’ın Evreleri Modeli",
+        "materials": "Karartılabilen bir oda, LED lamba (Güneş), stiroform veya tenis topu (Ay), kalem ya da çubuk, çizim defteri",
+        "steps": "1) Lambayı odanın bir köşesine yerleştir; lamba Güneş’i temsil etsin.\n2) Kendini Dünya olarak düşün ve topu kolunu uzatarak başının önünde tut.\n3) Bulunduğun yerde yavaşça kendi etrafında dön ve topun aydınlık kısmının nasıl değiştiğini izle.\n4) Topun 8 farklı konumunda aydınlık kısmı çiz ve evrelere adını yaz.\n5) Hangi konumda hiç aydınlık kısım görünmediğini, hangisinde tamamının göründüğünü belirt.\n6) Modelinin gerçek durumdan farkını tartış (ör. gerçek mesafeler, boyutlar).",
+        "safetyNotes": "Sıcak ampul yerine LED lamba kullan. Elektrik kablolarına ve prizlere dikkat et, ıslak elle dokunma."
+      },
+      "quiz": [
+        {
+          "body": "Ay’ın evrelerinin oluşmasının asıl nedeni aşağıdakilerden hangisidir?",
+          "options": [
+            "Ay’ın Dünya çevresinde dolanırken aydınlık yüzünün bize farklı görünmesi",
+            "Ay’ın şeklinin değişmesi",
+            "Dünya’nın gölgesinin Ay’a düşmesi",
+            "Güneş’in ışığının azalması"
+          ],
+          "answer": 0,
+          "explanation": "Ay şekil değiştirmez. Dolanırken Dünya’dan görünen aydınlık kısım değiştiği için evreler oluşur.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Dolunay evresinde Güneş, Dünya ve Ay’ın konumu nasıldır?",
+          "options": [
+            "Ay, Güneş ile Dünya arasındadır.",
+            "Üçü de aynı yerdedir.",
+            "Güneş, Dünya ile Ay arasındadır.",
+            "Dünya, Güneş ile Ay arasındadır."
+          ],
+          "answer": 3,
+          "explanation": "Dolunayda Dünya, Güneş ile Ay arasında yer alır ve Ay’ın aydınlık yüzü tamamen Dünya’ya dönüktür.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Yeni Ay’dan sonra gelen evre hangisidir?",
+          "options": [
+            "Dolunay",
+            "Büyüyen hilal",
+            "Son dördün",
+            "Şişkin Ay"
+          ],
+          "answer": 1,
+          "explanation": "Evre sırası: Yeni Ay → büyüyen hilal → ilk dördün → ...",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Ay’ın evre döngüsü yaklaşık kaç günde tamamlanır?",
+          "options": [
+            "Yaklaşık 7 gün",
+            "Yaklaşık 24 saat",
+            "Yaklaşık 365 gün",
+            "Yaklaşık 29,5 gün"
+          ],
+          "answer": 3,
+          "explanation": "Bir evre döngüsü yaklaşık 29,5 gün sürer.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Aşağıdaki ifadelerden hangisi doğrudur?",
+          "options": [
+            "Ay’ın her zaman yarısı Güneş tarafından aydınlatılır.",
+            "Ay evreleri Dünya’nın gölgesi nedeniyle oluşur.",
+            "Ay yalnızca dolunayda küre şeklindedir.",
+            "Yeni Ay’da Ay yok olur."
+          ],
+          "answer": 0,
+          "explanation": "Ay her zaman küredir ve yarısı Güneş tarafından aydınlatılır. Değişen, bizim gördüğümüz kısımdır.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": [
+        {
+          "label": "Ay’ın evreleri animasyonunu aç",
+          "href": "/animasyonlar/5"
+        }
+      ]
+    },
+    {
+      "slug": "gunes-dunya-ve-ay-modeli",
+      "title": "Güneş, Dünya ve Ay Modeli",
+      "summary": "Güneş, Dünya ve Ay’ın hareketlerini ve büyüklüklerini ölçekli bir model ile temsil ediyoruz.",
+      "outcome": {
+        "code": "FB.5.1.3.1",
+        "description": "Güneş, Dünya ve Ay’ın birbirlerine göre hareketlerini ve hacimsel büyüklüklerini temsil eden bilimsel model oluşturabilme."
+      },
+      "skills": [
+        "Model oluşturma",
+        "Ölçekleme",
+        "Karşılaştırma"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🔍 Merak Et",
+          "bodyHtml": "<p>Güneş, Dünya ve Ay’ı bir araya getirip bir model yapmak istesek hangisi ne kadar büyük olmalı? Birbirlerine ne kadar uzakta durmalılar? Hangisi hangisinin çevresinde, ne kadar sürede dolanır? <strong>Güneş’in modelini bir bahçeye sığdırabilir miyiz?</strong></p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Hareketler",
+          "bodyHtml": "<table><thead><tr><th>Hareket</th><th>Kim yapar?</th><th>Süresi</th><th>Sonucu</th></tr></thead><tbody><tr><td><strong>Dünya’nın dönmesi</strong></td><td>Dünya kendi ekseni etrafında (batıdan doğuya)</td><td>Yaklaşık 24 saat</td><td>Gece ve gündüz</td></tr><tr><td><strong>Dünya’nın dolanması</strong></td><td>Dünya, Güneş’in çevresinde</td><td>Yaklaşık 365 gün 6 saat</td><td>Bir yıl</td></tr><tr><td><strong>Ay’ın dolanması</strong></td><td>Ay, Dünya’nın çevresinde</td><td>Yaklaşık 27 gün</td><td>Ay’ın Dünya çevresinde bir turu</td></tr><tr><td><strong>Güneş’in dönmesi</strong></td><td>Güneş kendi ekseni etrafında</td><td>Yaklaşık 25–35 gün</td><td>Güneş lekelerinin hareketi</td></tr></tbody></table><p>Ay, Dünya’nın çevresinde dolanırken Dünya ile birlikte Güneş’in çevresinde de ilerler.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Büyüklükleri Karşılaştıralım",
+          "bodyHtml": "<ul><li>Güneş’in çapı Dünya’nın çapının yaklaşık <strong>109 katıdır</strong>.</li><li>Dünya’nın çapı Ay’ın çapının yaklaşık <strong>4 katıdır</strong> (Ay’ın çapı Dünya’nın yaklaşık dörtte biridir).</li><li>Güneş’in içine yaklaşık <strong>1,3 milyon</strong> Dünya, Dünya’nın içine ise yaklaşık <strong>50</strong> Ay sığar.</li></ul><p>Bu büyüklükleri gösterebilmek için <strong>ölçekli model</strong> kurarız. Dünya’yı 1 cm çaplı bir boncukla gösterirsek:</p><table><thead><tr><th>Gök cismi / uzaklık</th><th>Modeldeki karşılığı</th></tr></thead><tbody><tr><td>Dünya</td><td>1 cm çaplı boncuk</td></tr><tr><td>Ay</td><td>Yaklaşık 3 mm çaplı küçük boncuk</td></tr><tr><td>Güneş</td><td>Yaklaşık 109 cm (1 metreden fazla) çaplı büyük daire</td></tr><tr><td>Dünya–Ay uzaklığı</td><td>Yaklaşık 30 cm</td></tr><tr><td>Dünya–Güneş uzaklığı</td><td>Yaklaşık 117 metre</td></tr></tbody></table><p>Görüldüğü gibi gök cisimleri arasındaki uzaklıklar, boyutlarına göre çok büyüktür.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Bilimsel Model Nedir?",
+          "bodyHtml": "<p>Model, gerçek bir olayı veya varlığı anlamamıza yardım eden <strong>basitleştirilmiş bir temsildir</strong>. Güneş, Dünya ve Ay modelleri gerçeğin kendisi değildir; her modelin <strong>güçlü yanları</strong> ve <strong>sınırlılıkları</strong> vardır. Örneğin sınıf içinde yaptığın bir modelde uzaklıkları da aynı ölçekle göstermek mümkün olmaz.</p><p>Bu nedenle bilim insanları modelleri sürekli test eder, gözlem ve verilerle <strong>geliştirir</strong>.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Önemli Bilgiler",
+          "bodyHtml": "<ul><li>Boyut sıralaması: <strong>Güneş &gt; Dünya &gt; Ay</strong>.</li><li>Dünya’nın dönmesi <strong>gece-gündüzü</strong>, Güneş etrafında dolanması <strong>yılı</strong> oluşturur.</li><li>Ay, Dünya’nın çevresinde yaklaşık 27 günde dolanır.</li><li>Modellerin sınırlılıkları vardır; model gerçeğin kendisi değildir.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏠 Günlük Yaşamdan",
+          "bodyHtml": "<ul><li><strong>Gece-gündüz:</strong> Uyku ve uyanıklık düzenimiz, Dünya’nın dönmesine göre şekillenir.</li><li><strong>Takvim:</strong> Bir yılın 365 gün olması, Dünya’nın Güneş çevresindeki turuna dayanır; her dört yılda bir artık yıl eklenmesinin nedeni, turun tam 365 gün değil, yaklaşık 365 gün 6 saat sürmesidir.</li><li><strong>Haritalar ve maketler:</strong> Mimarlar ve mühendisler de büyük yapıları ölçekli modellerle önceden test eder.</li></ul><p>Güneş sistemini keşfetmek için sitedeki <a href=\"/animasyonlar/6\">6. sınıf Güneş sistemi animasyonlarını</a> da deneyebilirsin.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Model",
+          "definition": "Gerçek bir olayı veya varlığı anlamak için yapılan basitleştirilmiş temsil."
+        },
+        {
+          "term": "Ölçek",
+          "definition": "Model ile gerçek büyüklük arasındaki sabit oran."
+        },
+        {
+          "term": "Yörünge",
+          "definition": "Bir gök cisminin başka bir cismin çevresinde izlediği yol."
+        },
+        {
+          "term": "Yıl",
+          "definition": "Dünya’nın Güneş çevresinde bir tur dolanma süresi."
+        }
+      ],
+      "activity": {
+        "title": "Ölçekli Güneş–Dünya–Ay Modeli",
+        "materials": "1 cm çaplı boncuk (Dünya), yaklaşık 3 mm çaplı boncuk veya mercimek (Ay), tebeşir, ip, cetvel veya mezura, okul bahçesi",
+        "steps": "1) Yere, 55 cm’lik bir ip ve tebeşirle 109 cm çaplı bir daire çiz; bu daire Güneş’i temsil etsin.\n2) 1 cm’lik boncuğu Dünya, 3 mm’lik boncuğu Ay olarak seç.\n3) Dünya ile Ay’ı birbirinden yaklaşık 30 cm uzağa yerleştir.\n4) Dünya’yı Güneş dairesinden yaklaşık 117 metre uzağa götür (yaklaşık 195 adım). Bu uzaklığı bahçede adımlayarak göster.\n5) Modelinin güçlü yanını ve sınırlılığını yaz.\n6) Arkadaşlarınla modellerinizi karşılaştırıp hangisinin gerçeği daha iyi temsil ettiğini tartış.",
+        "safetyNotes": "Küçük boncukları ağzına alma. Bahçede çalışırken öğretmeninden ayrılma ve yola çıkma."
+      },
+      "quiz": [
+        {
+          "body": "Dünya’nın kendi ekseni etrafında dönmesinin sonucu aşağıdakilerden hangisidir?",
+          "options": [
+            "Mevsimlerin oluşması",
+            "Ay’ın evrelerinin oluşması",
+            "Gece ve gündüzün oluşması",
+            "Yılın oluşması"
+          ],
+          "answer": 2,
+          "explanation": "Dünya kendi etrafında yaklaşık 24 saatte döner; bu, gece ve gündüzü oluşturur.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Dünya’nın Güneş’in çevresinde bir tur dolanma süresi yaklaşık ne kadardır?",
+          "options": [
+            "24 saat",
+            "365 gün 6 saat",
+            "27 gün",
+            "29,5 gün"
+          ],
+          "answer": 1,
+          "explanation": "Dünya Güneş’in çevresindeki bir turu yaklaşık 365 gün 6 saatte tamamlar. Buna bir yıl denir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Güneş, Dünya ve Ay’ın boyutları büyükten küçüğe doğru nasıl sıralanır?",
+          "options": [
+            "Dünya – Güneş – Ay",
+            "Güneş – Ay – Dünya",
+            "Güneş – Dünya – Ay",
+            "Ay – Dünya – Güneş"
+          ],
+          "answer": 2,
+          "explanation": "Güneş en büyüktür, Dünya ondan çok küçüktür, Ay ise Dünya’dan da küçüktür.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Dünya’yı 1 cm çaplı gösteren ölçekli bir modelde Ay’ı yaklaşık kaç cm çaplı göstermek gerekir?",
+          "options": [
+            "Yaklaşık 0,3 cm",
+            "Yaklaşık 1 cm",
+            "Yaklaşık 3 cm",
+            "Yaklaşık 10 cm"
+          ],
+          "answer": 0,
+          "explanation": "Ay’ın çapı Dünya’nın yaklaşık dörtte biridir; bu yüzden modelde yaklaşık 0,3 cm (3 mm) olur.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bilimsel modellerle ilgili aşağıdakilerden hangisi doğrudur?",
+          "options": [
+            "Model gerçeğin birebir aynısıdır.",
+            "Modeller yalnızca bilim insanları tarafından kullanılır.",
+            "Bir model yapıldıktan sonra asla değiştirilmez.",
+            "Modellerin sınırlılıkları vardır ve geliştirilebilir."
+          ],
+          "answer": 3,
+          "explanation": "Modeller gerçeği basitleştirir. Sınırlılıkları vardır ve yeni verilerle geliştirilir.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": [
+        {
+          "label": "Güneş tutulması ve Ay tutulması laboratuvarı",
+          "href": "/laboratuvar/tutulmalar"
+        }
+      ]
+    }
+  ]
+}

@@ -19,6 +19,7 @@
     "db:migrate": "prisma migrate dev",
     "db:deploy": "prisma migrate deploy",
     "db:seed": "prisma db seed",
+    "db:seed:maarif5": "ts-node ../database/seed-maarif-5-unite-1.ts",
     "db:studio": "prisma studio"
   },
   "dependencies": {
