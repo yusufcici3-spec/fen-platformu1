@@ -4,6 +4,7 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { EmptyPanelState } from "@/components/ui/EmptyPanelState";
 import { apiFetch } from "@/lib/api";
 import { UnitSummary, TopicSummary } from "@/types/curriculum";
+import { getStaticUnitsForLevel } from "@/lib/maarifContent";
 
 const VALID_LEVELS = [5, 6, 7, 8];
 
@@ -29,6 +30,9 @@ export default async function ClassLevelPage({ params }: { params: { level: stri
   } catch {
     classData = null;
   }
+
+  const staticUnits = getStaticUnitsForLevel(level);
+  const dbUnits = (classData?.units ?? []).filter((u) => !staticUnits.some((s) => s.slug === u.slug));
 
   return (
     <>
@@ -57,14 +61,40 @@ export default async function ClassLevelPage({ params }: { params: { level: stri
             </span>
           </Link>
         )}
-        {!classData || classData.units.length === 0 ? (
+        {staticUnits.length > 0 && (
+          <div className="mb-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {staticUnits.map((unit) => (
+              <Link
+                key={unit.slug}
+                href={`/sinif/${level}/${unit.slug}`}
+                className="group rounded-card border border-beaker/30 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-beaker/30 dark:bg-lab-inkSoft"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="font-mono text-xs font-semibold text-beaker-dark dark:text-beaker-light">
+                    Ünite {unit.code} · Maarif Modeli
+                  </span>
+                  <span className="rounded-full bg-lab-paperLine/60 px-2.5 py-1 text-xs font-medium text-lab-inkMuted dark:bg-white/10 dark:text-lab-paper/60">
+                    {unit.topics.length} konu
+                  </span>
+                </div>
+                <h2 className="mt-2 font-display text-lg font-semibold">{unit.title}</h2>
+                <p className="mt-2 line-clamp-3 text-sm text-lab-inkMuted dark:text-lab-paper/60">{unit.description}</p>
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-beaker">
+                  Konuları görüntüle
+                  <span className="transition group-hover:translate-x-1">→</span>
+                </span>
+              </Link>
+            ))}
+          </div>
+        )}
+        {staticUnits.length === 0 && (!classData || classData.units.length === 0) ? (
           <EmptyPanelState
             title="Bu sınıf için henüz ünite eklenmedi"
             description="Üniteler yönetim panelinden eklendikçe burada listelenecek."
           />
-        ) : (
+        ) : dbUnits.length === 0 ? null : (
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {classData.units.map((unit) => (
+            {dbUnits.map((unit) => (
               <Link
                 key={unit.id}
                 href={`/sinif/${level}/${unit.slug}`}
