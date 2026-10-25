@@ -3,6 +3,7 @@ import { DailyQuestion } from "@/components/home/DailyQuestion";
 import { DailyFact } from "@/components/home/DailyFact";
 import { ClassesSection } from "@/components/home/ClassesSection";
 import AnimationsSection from "@/components/home/AnimationsSection";
+import { YazililarSection } from "@/components/home/YazililarSection";
 import { RecentAdditions } from "@/components/home/RecentAdditions";
 import { PopularTopics } from "@/components/home/PopularTopics";
 import { StatsSection } from "@/components/home/StatsSection";
@@ -19,6 +20,7 @@ export default function HomePage() {
 
       <ClassesSection />
       <AnimationsSection />
+      <YazililarSection />
       <RecentAdditions />
       <PopularTopics />
       <StatsSection />
