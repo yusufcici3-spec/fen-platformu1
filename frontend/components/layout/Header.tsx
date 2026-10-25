@@ -16,6 +16,7 @@ const NAV_LINKS = [
   { href: "/denemeler", label: "Denemeler" },
   { href: "/oyunlar", label: "Oyunlar" },
   { href: "/#animasyonlar", label: "Animasyonlar" },
+  { href: "/yazililar", label: "Yazılılar" },
   { href: "/videolar", label: "Videolar" },
   { href: "/blog", label: "Blog" },
   { href: "/arama", label: "🔍 Ara" },
