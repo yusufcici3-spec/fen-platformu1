@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>İp Çekme Etkinliği</title>
+<style>
+:root{--bg:#EEF3F7;--panel:#FFFFFF;--ink:#14263A;--muted:#566A7F;--line:#D3DEE8;--left:#C2562B;--right:#1F6FB2;--net:#17895A;--stage:#F7FAFC;--ground:#DCE6EE;--warn:#B8860B;
+--f-d:"Trebuchet MS","Segoe UI",system-ui,sans-serif;--f-m:ui-monospace,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0D1620;--panel:#142231;--ink:#E7EEF6;--muted:#9DB0C4;--line:#274058;--left:#F08A5D;--right:#5BA8EE;--net:#4FCB8C;--stage:#0F1B27;--ground:#1C2E3F;--warn:#E8C25A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0D1620;--panel:#142231;--ink:#E7EEF6;--muted:#9DB0C4;--line:#274058;--left:#F08A5D;--right:#5BA8EE;--net:#4FCB8C;--stage:#0F1B27;--ground:#1C2E3F;--warn:#E8C25A;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.5 var(--f-d);padding:16px max(16px,env(safe-area-inset-right)) 28px max(16px,env(safe-area-inset-left))}
+.wrap{max-width:1000px;margin:0 auto;display:grid;gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;min-width:0}
+h2{margin:0 0 8px;font-size:16px}
+.tabs{display:inline-flex;gap:3px;padding:3px;border:1px solid var(--line);border-radius:10px;margin-bottom:10px}
+.tabs button{border:0;background:transparent;color:var(--muted);padding:7px 14px;border-radius:7px;font:600 14px var(--f-d);cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+canvas{display:block;width:100%;border:1px solid var(--line);border-radius:10px;background:var(--stage)}
+.status{min-height:2.8em;margin:10px 0 0;font-weight:600}
+.teams{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.team h2{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.team.l h2{color:var(--left)}.team.r h2{color:var(--right)}
+.team h2 span{font:600 14px var(--f-m);color:var(--ink)}
+.btns{display:flex;flex-wrap:wrap;gap:6px}
+button.add,button.act{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:9px;padding:8px 11px;font:600 14px var(--f-d);cursor:pointer;min-height:40px}
+button.add:hover,button.act:hover{border-color:var(--ink)}
+button.act.main{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+button:disabled{opacity:.4;cursor:not-allowed}
+button:focus-visible{outline:2px solid var(--right);outline-offset:2px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;min-height:30px}
+.chip{font:600 13px var(--f-m);padding:3px 9px;border-radius:999px;border:1px solid currentColor}
+.l .chip{color:var(--left)}.r .chip{color:var(--right)}
+.calc{display:grid;gap:6px;font:500 15px var(--f-m)}
+.calc .big{font-size:18px;color:var(--net);font-weight:700}
+.calc small{color:var(--muted);font:400 13px var(--f-d)}
+.task p.q{font-size:17px;font-weight:700;margin:4px 0 10px}
+.dots{display:flex;gap:6px;margin-bottom:10px}
+.dots i{width:12px;height:12px;border-radius:50%;border:2px solid var(--line)}
+.dots i.cur{border-color:var(--ink)}.dots i.ok{background:var(--net);border-color:var(--net)}
+.fb{margin:10px 0 0;min-height:2.6em;font-weight:600}
+.fb.good{color:var(--net)}.fb.bad{color:var(--warn)}
+.rule{font-size:13px;color:var(--muted);margin:0}
+.hide{display:none!important}
+@media (max-width:640px){.teams{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style></head><body>
+<main class="wrap">
+ <section class="card">
+  <div class="tabs" role="group" aria-label="Mod"><button id="tFree" aria-pressed="true">Serbest deney</button><button id="tTask" aria-pressed="false">Görevler</button></div>
+  <canvas id="cv" role="img" aria-label="İp çekme: iki takımın kuvvetleri ve bileşke kuvvet oku"></canvas>
+  <p class="status" id="status" aria-live="polite"></p>
+ </section>
+ <div class="teams">
+  <section class="card team l"><h2>Sol takım <span id="sumL">0 N</span></h2>
+   <div class="btns" id="addL"></div><div class="chips" id="chipsL"></div>
+   <div class="btns" style="margin-top:10px"><button class="act" id="undoL">Son oyuncuyu çıkar</button></div></section>
+  <section class="card team r"><h2>Sağ takım <span id="sumR">0 N</span></h2>
+   <div class="btns" id="addR"></div><div class="chips" id="chipsR"></div>
+   <div class="btns" style="margin-top:10px"><button class="act" id="undoR">Son oyuncuyu çıkar</button></div></section>
+ </div>
+ <section class="card"><h2>Bileşke kuvvet</h2>
+  <div class="calc"><div id="calcLine"></div><div class="big" id="netLine"></div><small id="rule"></small></div>
+  <div class="btns" style="margin-top:12px"><button class="act main" id="go">▶ Çekmeye başla</button><button class="act" id="reset">Sıfırla</button></div>
+ </section>
+ <section class="card task hide" id="taskCard"><h2>Görev</h2>
+  <div class="dots" id="dots"></div><p class="q" id="taskQ"></p>
+  <div class="btns"><button class="act main" id="check">Kontrol et</button><button class="act" id="next" disabled>Sonraki görev →</button></div>
+  <p class="fb" id="fb" aria-live="polite"></p></section>
+ <p class="rule">Aynı yöndeki kuvvetler toplanır; zıt yöndeki kuvvetlerin farkı alınır. Bileşke kuvvet, büyük kuvvetle aynı yöndedir. Bileşke 0 N ise kuvvetler dengelenmiştir ve hareket durumu değişmez.</p>
+</main>
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+var FORCES=[10,20,30,50], MAXP=5;
+var L=[],R=[],pos=0,running=false,winner=null,mode='free',ti=0,done=[];
+var cv=$('cv'),cx=cv.getContext('2d'),W=0,H=0,dpr=1,dirty=true,last=0;
+var tasks=[
+ {q:'Bileşke kuvvet sağa doğru 30 N olsun.',ok:function(a){return a.net===30},hint:'Sağ kuvvetten sol kuvveti çıkar: sağ − sol = 30 N.'},
+ {q:'İp hareket etmesin: bileşke kuvvet 0 N olsun. Her iki takımda da en az 2 oyuncu bulunsun.',ok:function(a){return a.net===0&&L.length>=2&&R.length>=2},hint:'İki takımın toplam kuvveti eşit olmalı ve her takımda en az 2 oyuncu olmalı.'},
+ {q:'Sol takımın toplam kuvveti 60 N olsun ve bileşke kuvvet sola doğru 20 N olsun.',ok:function(a){return a.sl===60&&a.net===-20},hint:'Sağ takımın toplamı, sol takımdan 20 N az olmalı.'},
+ {q:'Sol takımda 3, sağ takımda 2 oyuncu olsun; yine de bileşke kuvvet sağa doğru 20 N olsun.',ok:function(a){return L.length===3&&R.length===2&&a.net===20},hint:'Kazanan, oyuncu sayısı fazla olan değil; toplam kuvveti büyük olan takımdır.'},
+ {q:'Bileşke kuvvet sola doğru 40 N olsun. Sağ takımda en az 1 oyuncu bulunsun.',ok:function(a){return a.net===-40&&R.length>=1},hint:'Önce sol toplamı sağ toplamdan 40 N fazla yap.'}
+];
+function sum(a){return a.reduce(function(x,y){return x+y},0)}
+function acc(){var sl=sum(L),sr=sum(R);return {sl:sl,sr:sr,net:sr-sl}}
+function fmt(n){return n.toLocaleString('tr-TR')}
+
+function fit(){dpr=Math.min(window.devicePixelRatio||1,2.5);var w=cv.clientWidth;W=w;H=Math.max(250,Math.min(330,Math.round(w*0.42)));cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr);cv.style.height=H+'px';dirty=true}
+if(window.ResizeObserver)new ResizeObserver(function(){if(cv.clientWidth!==W)fit()}).observe(cv);
+function col(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim()}
+
+function arrow(x,y,dir,len,color,label){
+ if(len<2)return;
+ var ex=x+dir*len;cx.strokeStyle=color;cx.fillStyle=color;cx.lineWidth=5;cx.lineCap='round';
+ cx.beginPath();cx.moveTo(x,y);cx.lineTo(ex-dir*8,y);cx.stroke();
+ cx.beginPath();cx.moveTo(ex,y);cx.lineTo(ex-dir*14,y-9);cx.lineTo(ex-dir*14,y+9);cx.closePath();cx.fill();
+ cx.font='700 13px ui-monospace,Menlo,monospace';cx.textAlign='center';cx.textBaseline='bottom';cx.fillText(label,x+dir*len/2,y-8);
+}
+function person(x,gy,dir,n,color,size){
+ var s=size,lean=-dir*0.35;
+ cx.strokeStyle=color;cx.fillStyle=color;cx.lineWidth=4;cx.lineCap='round';
+ var hx=x+lean*s*1.2,hy=gy-s*2.4;
+ cx.beginPath();cx.arc(hx,hy,s*0.38,0,Math.PI*2);cx.fill();
+ cx.beginPath();cx.moveTo(hx,hy+s*0.4);cx.lineTo(x,gy-s*1.1);cx.stroke();
+ cx.beginPath();cx.moveTo(x,gy-s*1.1);cx.lineTo(x-s*0.4,gy);cx.moveTo(x,gy-s*1.1);cx.lineTo(x+s*0.4,gy);cx.stroke();
+ cx.beginPath();cx.moveTo(hx,hy+s*0.7);cx.lineTo(x+dir*s*1.0,gy-s*1.8);cx.stroke();
+ cx.fillStyle=col('--ink');cx.font='700 12px ui-monospace,Menlo,monospace';cx.textAlign='center';cx.textBaseline='top';cx.fillText(W<560?String(n):n+' N',x,gy+5);
+}
+function draw(){
+ cx.setTransform(dpr,0,0,dpr,0,0);cx.clearRect(0,0,W,H);
+ var a=acc(),ink=col('--ink'),muted=col('--muted'),cl=col('--left'),cr=col('--right'),cn=col('--net');
+ var gy=H*0.72,ry=gy-H*0.2,mid=W/2,span=W<560?W*0.17:W*0.22;
+ cx.fillStyle=col('--ground');cx.fillRect(0,gy,W,H-gy);
+ // kazanma çizgileri
+ cx.save();cx.setLineDash([5,5]);cx.strokeStyle=muted;cx.lineWidth=1.3;
+ [-1,1].forEach(function(s){cx.beginPath();cx.moveTo(mid+s*span,ry-30);cx.lineTo(mid+s*span,gy);cx.stroke()});
+ cx.beginPath();cx.moveTo(mid,ry-30);cx.lineTo(mid,gy);cx.globalAlpha=.5;cx.stroke();cx.restore();
+ // ip
+ var fx=mid+pos*span;
+ cx.strokeStyle=ink;cx.lineWidth=3;cx.beginPath();cx.moveTo(10,ry);cx.lineTo(W-10,ry);cx.stroke();
+ // oyuncular
+ var size=Math.max(8,Math.min(17,W/46));
+ var gap=Math.max(W<560?24:0,Math.min(70,(mid-span-30)/MAXP));
+ L.forEach(function(f,i){person(30+i*gap,gy,1,f,cl,size)});
+ R.forEach(function(f,i){person(W-30-i*gap,gy,-1,f,cr,size)});
+ // etiketler (kuvvetler) — oyuncu altı
+ // bayrak
+ cx.fillStyle=col('--warn');cx.strokeStyle=ink;cx.lineWidth=2;
+ cx.beginPath();cx.moveTo(fx,ry);cx.lineTo(fx,ry-26);cx.stroke();
+ cx.beginPath();cx.moveTo(fx,ry-26);cx.lineTo(fx+(a.net>=0?1:-1)*18,ry-20);cx.lineTo(fx,ry-14);cx.closePath();cx.fill();
+ cx.fillStyle=ink;cx.beginPath();cx.arc(fx,ry,5,0,Math.PI*2);cx.fill();
+ // kuvvet okları
+ var k=Math.min((W*0.36)/Math.max(100,a.sl,a.sr),3.2);
+ var ay=H*0.2;
+ arrow(fx,ay,-1,a.sl*k,cl,a.sl?fmt(a.sl)+' N':'');
+ arrow(fx,ay,1,a.sr*k,cr,a.sr?fmt(a.sr)+' N':'');
+ var ny=H*0.2+40;
+ if(a.net!==0)arrow(fx,ny,a.net>0?1:-1,Math.abs(a.net)*k,cn,'Bileşke '+fmt(Math.abs(a.net))+' N');
+ else{cx.fillStyle=cn;cx.font='700 13px ui-monospace,Menlo,monospace';cx.textAlign='center';cx.textBaseline='middle';cx.fillText('Bileşke 0 N · dengelenmiş',fx,ny)}
+ if(winner){cx.fillStyle=winner==='L'?cl:cr;cx.font='800 18px "Trebuchet MS",sans-serif';cx.textAlign='center';cx.textBaseline='middle';cx.fillText((winner==='L'?'Sol':'Sağ')+' takım kazandı!',mid,gy+(H-gy)/2)}
+}
+function chips(el,arr){el.innerHTML='';arr.forEach(function(f){var s=document.createElement('span');s.className='chip';s.textContent=f+' N';el.appendChild(s)})}
+function ui(){
+ var a=acc();
+ $('sumL').textContent=fmt(a.sl)+' N';$('sumR').textContent=fmt(a.sr)+' N';
+ chips($('chipsL'),L);chips($('chipsR'),R);
+ var parts;
+ if(a.sl&&a.sr){$('calcLine').textContent=(a.sr>=a.sl?fmt(a.sr)+' − '+fmt(a.sl):fmt(a.sl)+' − '+fmt(a.sr))+' = '+fmt(Math.abs(a.net))+' N'}
+ else if(a.sl||a.sr){$('calcLine').textContent='Karşı kuvvet yok: '+fmt(Math.max(a.sl,a.sr))+' N'}
+ else $('calcLine').textContent='Henüz kuvvet uygulanmıyor';
+ $('netLine').textContent=a.net===0?(a.sl?'Bileşke kuvvet = 0 N (kuvvetler dengelenmiş)':'Bileşke kuvvet = 0 N'):'Bileşke kuvvet = '+fmt(Math.abs(a.net))+' N, '+(a.net>0?'sağa':'sola')+' doğru';
+ $('rule').textContent=a.net===0?'Kuvvetler dengelenmiş: ip hareket etmez.':'Kuvvetler dengelenmemiş: ip büyük kuvvetin yönünde hareket eder.';
+ ['L','R'].forEach(function(s){var arr=s==='L'?L:R;var b=document.querySelectorAll('#add'+s+' button');for(var i=0;i<b.length;i++)b[i].disabled=arr.length>=MAXP;$('undo'+s).disabled=!arr.length});
+ $('go').textContent=running?'⏸ Durdur':'▶ Çekmeye başla';
+ var st;
+ if(winner)st=(winner==='L'?'Sol':'Sağ')+' takım bayrağı çizgiye getirdi. Yeni deneme için Sıfırla\'ya bas.';
+ else if(!a.sl&&!a.sr)st='Takımlara oyuncu ekleyerek kuvvet uygula.';
+ else if(a.net===0)st='Kuvvetler eşit ve zıt yönlü: bileşke 0 N, ip yerinde duruyor.';
+ else st=running?'İp '+(a.net>0?'sağa':'sola')+' doğru hareket ediyor.':'Hazır! Çekmeye başla\'ya bas.';
+ $('status').textContent=st;
+}
+function frame(now){
+ var dt=Math.min((now-last)/1000,0.05);last=now;
+ if(running&&!winner){var a=acc();pos+=a.net/110*dt;
+  if(pos>=1){pos=1;winner='R';running=false}else if(pos<=-1){pos=-1;winner='L';running=false}
+  dirty=true;ui()}
+ if(dirty){draw();dirty=false}
+ requestAnimationFrame(frame);
+}
+function changed(){pos=0;winner=null;running=false;dirty=true;ui();$('fb').textContent='';$('fb').className='fb'}
+function build(el,side){FORCES.forEach(function(f){var b=document.createElement('button');b.className='add';b.textContent='+'+f+' N';b.addEventListener('click',function(){var arr=side==='L'?L:R;if(arr.length<MAXP){arr.push(f);changed()}});el.appendChild(b)})}
+build($('addL'),'L');build($('addR'),'R');
+$('undoL').addEventListener('click',function(){L.pop();changed()});
+$('undoR').addEventListener('click',function(){R.pop();changed()});
+$('go').addEventListener('click',function(){var a=acc();if(winner||(!a.sl&&!a.sr))return;running=!running;ui()});
+$('reset').addEventListener('click',function(){L=[];R=[];changed()});
+function setMode(m){mode=m;$('tFree').setAttribute('aria-pressed',String(m==='free'));$('tTask').setAttribute('aria-pressed',String(m==='task'));$('taskCard').classList.toggle('hide',m!=='task');if(m==='task')showTask();L=[];R=[];changed()}
+$('tFree').addEventListener('click',function(){setMode('free')});
+$('tTask').addEventListener('click',function(){setMode('task')});
+function showTask(){
+ var d=$('dots');d.innerHTML='';tasks.forEach(function(_,i){var e=document.createElement('i');if(done[i])e.className='ok';else if(i===ti)e.className='cur';d.appendChild(e)});
+ $('taskQ').textContent=ti<tasks.length?(ti+1)+'/'+tasks.length+' · '+tasks[ti].q:'Tebrikler! Tüm görevleri tamamladın 🎉';
+ $('check').disabled=ti>=tasks.length;$('next').disabled=true;
+}
+$('check').addEventListener('click',function(){
+ if(ti>=tasks.length)return;var a=acc(),fb=$('fb');
+ if(!a.sl&&!a.sr){fb.textContent='Önce takımlara oyuncu ekle.';fb.className='fb bad';return}
+ if(tasks[ti].ok(a)){done[ti]=true;fb.textContent='Doğru! Bileşke kuvvet: '+fmt(Math.abs(a.net))+' N'+(a.net?(a.net>0?' sağa':' sola'):'')+'.';fb.className='fb good';showTask();$('check').disabled=true;$('next').disabled=false;
+  if(ti===tasks.length-1){ti++;showTask();fb.textContent='Doğru! Tüm görevler bitti.';fb.className='fb good'}}
+ else{fb.textContent='Henüz değil. Şu an bileşke '+(a.net?fmt(Math.abs(a.net))+' N '+(a.net>0?'sağa':'sola'):'0 N')+'. İpucu: '+tasks[ti].hint;fb.className='fb bad'}
+});
+$('next').addEventListener('click',function(){ti++;L=[];R=[];changed();showTask()});
+if(window.matchMedia){var mq=matchMedia('(prefers-color-scheme: dark)');if(mq.addEventListener)mq.addEventListener('change',function(){dirty=true})}
+new MutationObserver(function(){dirty=true}).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+fit();ui();requestAnimationFrame(function(n){last=n;requestAnimationFrame(frame)});
+})();
+</script>
+<script>
+(function(){
+  function post(){try{parent.postMessage({type:"html-anim-height",height:document.documentElement.scrollHeight},"*")}catch(e){}}
+  window.addEventListener("message",function(e){var d=e.data;if(d&&d.type==="html-anim-theme"){document.documentElement.setAttribute("data-theme",d.theme==="dark"?"dark":"light")}});
+  window.addEventListener("load",post);window.addEventListener("resize",post);
+  if(window.ResizeObserver){new ResizeObserver(post).observe(document.body)}
+  try{parent.postMessage({type:"html-anim-ready"},"*")}catch(e){}
+})();
+</script>
+</body></html>
