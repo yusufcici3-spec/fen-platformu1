@@ -28,6 +28,8 @@ export default function SixthGradePlanetAnimationsPage() {
           <div className={styles.heroLinks}>
             <span><i className={styles.miniDot} /> Kontroller sende · dokunmatik uyumlu</span>
             <a href="#tutulma-laboratuvari">Tutulma simülatörüne git ↓</a>
+            <Link href="/animasyonlar/6/bileske-kuvvet">Bileşke kuvvet simülatörü ↗</Link>
+            <Link href="/animasyonlar/6/ip-cekme">İp çekme etkinliği ↗</Link>
           </div>
         </header>
 
