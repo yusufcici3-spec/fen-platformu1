@@ -3,7 +3,7 @@
  * ünitesini, konularını, kazanımlarını, anlatım bloklarını, kavramlarını, etkinliklerini ve
  * sorularını veritabanına ekler. Tekrar çalıştırmak güvenlidir (var olanı çoğaltmaz).
  *
- * İçerik kaynağı: frontend/content/maarif/5-unite-1.json (sitedeki statik sayfalarla aynı dosya).
+ * İçerik kaynağı: frontend/content/maarif/5-unite-*.json (sitedeki statik sayfalarla aynı dosya).
  * Çalıştırmak için: cd backend && npm run db:seed:maarif5
  */
 import fs from "fs";
@@ -17,7 +17,7 @@ type Topic = {
   slug: string;
   title: string;
   summary: string;
-  outcome: { code: string; description: string };
+  outcome: { code: string; description: string; details?: string[] };
   sections: { type: "EXPLANATION" | "IMPORTANT_INFO" | "DAILY_LIFE"; title: string; bodyHtml: string }[];
   glossary: { term: string; definition: string }[];
   activity: { title: string; materials: string; steps: string; safetyNotes: string };
@@ -25,8 +25,7 @@ type Topic = {
 };
 type Unit = { classLevel: number; code: string; title: string; slug: string; description: string; topics: Topic[] };
 
-async function main() {
-  const file = path.join(__dirname, "../frontend/content/maarif/5-unite-1.json");
+async function seedUnit(file: string) {
   const unit: Unit = JSON.parse(fs.readFileSync(file, "utf8"));
 
   const classItem = await prisma.class.upsert({
@@ -42,7 +41,7 @@ async function main() {
   });
   const authorId = author?.id ?? null;
 
-  const unitCount = await prisma.unit.count({ where: { classId: classItem.id } });
+  const unitOrder = Number(unit.code.split(".")[1]) - 1;
   const dbUnit = await prisma.unit.upsert({
     where: { classId_slug: { classId: classItem.id, slug: unit.slug } },
     update: { code: unit.code, title: unit.title, description: unit.description },
@@ -52,7 +51,7 @@ async function main() {
       title: unit.title,
       slug: unit.slug,
       description: unit.description,
-      order: unitCount,
+      order: unitOrder,
     },
   });
 
@@ -134,7 +133,13 @@ async function main() {
 
     console.log(`✔ ${t.title}`);
   }
-  console.log("✅ 5. sınıf 1. ünite (Maarif Modeli) eklendi.");
+  console.log(`✅ ${unit.classLevel}. sınıf ${unit.code} ünitesi (Maarif Modeli) eklendi.`);
+}
+
+async function main() {
+  const dir = path.join(__dirname, "../frontend/content/maarif");
+  const files = fs.readdirSync(dir).filter((f) => /^5-unite-\d+\.json$/.test(f)).sort();
+  for (const f of files) await seedUnit(path.join(dir, f));
 }
 
 main()
