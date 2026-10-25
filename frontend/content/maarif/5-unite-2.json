@@ -1,0 +1,622 @@
+{
+  "classLevel": 5,
+  "code": "5.2",
+  "hours": 22,
+  "title": "Kuvveti Tanıyalım",
+  "slug": "kuvveti-taniyalim",
+  "description": "Kuvveti dinamometre ile ölçer, kendi dinamometre modelimizi tasarlar, kütle ile ağırlığı karşılaştırır ve sürtünme kuvvetinin farklı ortamlardaki etkilerini inceleriz.",
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı (2024), 5. sınıf 2. ünite",
+  "topics": [
+    {
+      "slug": "kuvvet-ve-kuvvetin-olculmesi",
+      "title": "Kuvvet ve Kuvvetin Ölçülmesi",
+      "summary": "Kuvvetin etkilerini ve niteliklerini tanır, dinamometre ile ölçer ve sonucu Newton (N) birimiyle ifade ederiz.",
+      "outcome": {
+        "code": "FB.5.2.1",
+        "description": "Kuvveti büyüklüğü ile operasyonel olarak tanımlayabilme.",
+        "details": [
+          "Kuvvetin niteliklerini tanımlar.",
+          "Kuvvetin büyüklüğünü dinamometre ile ölçer.",
+          "Kuvvetin büyüklüğünü Newton (N) birimiyle ifade eder."
+        ]
+      },
+      "skills": [
+        "Operasyonel tanımlama",
+        "Ölçme ve veri kaydetme",
+        "Karşılaştırma"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🔍 Merak Et",
+          "bodyHtml": "<p>Bir kapıyı itiyorsun, çekmeceyi çekiyorsun, topa vuruyorsun. Hepsinde bir <strong>kuvvet</strong> uyguluyorsun. Peki bir kuvvetin “büyük” ya da “küçük” olduğunu nasıl anlarız? İki arkadaşın uyguladığı kuvvetleri <strong>sayılarla</strong> karşılaştırabilir miyiz?</p><p>Kuvveti görmeyiz ama etkisini görürüz. Bu konuda kuvveti ölçmeyi ve ifade etmeyi öğreneceğiz.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Kuvvet ve Etkileri",
+          "bodyHtml": "<p><strong>Kuvvet</strong>, bir cisme uygulanan <strong>itme</strong> veya <strong>çekme</strong> etkisidir. Kuvvet cisimlerin üzerinde şu değişikliklere yol açabilir:</p><table><thead><tr><th>Kuvvetin etkisi</th><th>Örnek</th></tr></thead><tbody><tr><td>Durgun cismi hareket ettirir</td><td>Duran topa vurulması</td></tr><tr><td>Hareketli cismin hızını artırır veya azaltır</td><td>Bisikletin pedallanması, fren yapılması</td></tr><tr><td>Hareketli cismin yönünü değiştirir</td><td>Raketin gelen topu geri göndermesi</td></tr><tr><td>Hareketli cismi durdurur</td><td>Kalecinin topu tutması</td></tr><tr><td>Cismin şeklini değiştirir</td><td>Hamuru ezmek, yayı germek, lastiği çekmek</td></tr></tbody></table>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Kuvvetin Nitelikleri",
+          "bodyHtml": "<p>Bir kuvveti tam olarak tanımlamak için şu niteliklerini bilmemiz gerekir:</p><ul><li><strong>Büyüklüğü:</strong> Kuvvetin ne kadar olduğu (ör. 3 N).</li><li><strong>Yönü:</strong> Kuvvetin hangi yönde (sağa, sola, yukarı, aşağı) uygulandığı.</li><li><strong>Uygulama noktası:</strong> Kuvvetin cismin hangi noktasına uygulandığı.</li></ul><p>Kuvveti çizerek gösterirken <strong>ok</strong> kullanırız: okun başladığı yer uygulama noktasını, okun yönü kuvvetin yönünü, okun uzunluğu ise büyüklüğünü gösterir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Kuvvet Nasıl Ölçülür? Dinamometre",
+          "bodyHtml": "<p>Kuvvetin büyüklüğünü ölçen alete <strong>dinamometre</strong> denir. İçinde bir <strong>yay</strong> bulunur. Dinamometreye kuvvet uygulandığında yay uzar; kuvvet ne kadar büyükse yay o kadar çok uzar ve gösterge skalada daha büyük bir değeri gösterir.</p><ul><li><strong>Kanca:</strong> Ağırlık asılan ya da çekilen uç.</li><li><strong>Yay:</strong> Kuvvetle uzayan esnek parça.</li><li><strong>Gösterge ve skala:</strong> Ölçülen değeri okuduğumuz bölüm.</li><li><strong>Ölçüm sınırı:</strong> Ölçülebilecek en büyük kuvvet (ör. 0–5 N ya da 0–10 N).</li><li><strong>Bölme aralığı:</strong> Skalada iki çizgi arasındaki değer. Bölmeler ne kadar küçükse ölçüm o kadar duyarlıdır.</li></ul><p><strong>Doğru ölçüm için:</strong> Dinamometreyi dik tut, ölçüme başlamadan önce göstergenin sıfırı gösterdiğini kontrol et, göstergeye göz hizasından bak ve ölçüm sınırını <em>asla aşma</em>.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Kuvvetin Birimi: Newton (N)",
+          "bodyHtml": "<p>Kuvvetin birimi <strong>Newton</strong>’dur ve <strong>N</strong> sembolüyle gösterilir. Birim, adını bilim insanı Isaac Newton’dan alır. Dinamometredeki sayılar Newton cinsindendir.</p><p>Okul düzeyinde bir fikir vermek için: yaklaşık <strong>100 gram</strong> kütleli bir cismi dinamometreye astığımızda yaklaşık <strong>1 N</strong> okuruz.</p><p><strong>Operasyonel tanım:</strong> “Kuvvetin büyüklüğü, dinamometrenin gösterdiği değerdir ve Newton (N) ile ifade edilir.” Yani kuvveti, nasıl ölçtüğümüzü söyleyerek tanımlarız.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Yayın Esnekliği ve Kalınlığı",
+          "bodyHtml": "<table><thead><tr><th>Yay</th><th>Aynı kuvvetle uzaması</th><th>Hangi kuvvetleri ölçmeye uygun?</th></tr></thead><tbody><tr><td><strong>İnce / çok esnek</strong></td><td>Çok uzar</td><td>Küçük kuvvetler (daha duyarlıdır)</td></tr><tr><td><strong>Kalın / az esnek</strong></td><td>Az uzar</td><td>Büyük kuvvetler</td></tr></tbody></table><p>Bu yüzden 0–5 N’luk dinamometrenin yayı, 0–10 N’luk dinamometrenin yayından daha incedir.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Önemli Bilgiler",
+          "bodyHtml": "<ul><li>Kuvvet, cisme uygulanan <strong>itme veya çekmedir</strong>; cismin hareketini ve şeklini değiştirebilir.</li><li>Kuvvetin nitelikleri: <strong>büyüklük, yön ve uygulama noktası</strong>.</li><li>Kuvvet <strong>dinamometre</strong> ile ölçülür; birimi <strong>Newton (N)</strong>’dur.</li><li>Dinamometrenin <strong>ölçüm sınırı</strong> aşılırsa yay bozulabilir ve ölçüm güvenilir olmaz.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏠 Günlük Yaşamdan",
+          "bodyHtml": "<ul><li><strong>Yaylı kantarlar:</strong> Bazı pazar ve bagaj kantarları, içlerindeki yayın uzamasından yararlanır.</li><li><strong>Spor:</strong> Halter ve ok atma gibi sporlarda uygulanan kuvvetin büyüklüğü sonucu belirler.</li><li><strong>Kapı yayları ve amortisörler:</strong> Esnek parçalar, uygulanan kuvvete göre şekil değiştirir.</li></ul><p>Sitedeki <a href=\"/animasyonlar/5/dinamometre\">dinamometre simülatöründe</a> ağırlık ekleyerek göstergenin nasıl değiştiğini kendin görebilirsin.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Kuvvet",
+          "definition": "Bir cisme uygulanan itme veya çekme etkisi."
+        },
+        {
+          "term": "Newton (N)",
+          "definition": "Kuvvetin birimi."
+        },
+        {
+          "term": "Dinamometre",
+          "definition": "Kuvvetin büyüklüğünü ölçen, içinde yay bulunan alet."
+        },
+        {
+          "term": "Ölçüm sınırı",
+          "definition": "Bir ölçü aletinin ölçebileceği en büyük değer."
+        },
+        {
+          "term": "Esneklik",
+          "definition": "Bir cismin kuvvet kalkınca eski şekline dönebilme özelliği."
+        }
+      ],
+      "activity": {
+        "title": "Dinamometre ile Kuvvet Ölçelim",
+        "materials": "Dinamometre (0–5 N veya 0–10 N), 100 g, 200 g ve 500 g’lık kütleler, ip, ölçüm tablosu, kalem",
+        "steps": "1) Dinamometreyi dik tutup göstergenin sıfırı gösterdiğini kontrol et.\n2) Önce 100 g’lık kütleyi kancaya as ve değeri tabloya yaz.\n3) Aynı işlemi 200 g ve 500 g için tekrarla. Değerleri N cinsinden kaydet.\n4) Kütle arttıkça yayın uzamasının ve okunan değerin nasıl değiştiğini yorumla.\n5) 300 g’lık kütle için okunacak değeri önce tahmin et, sonra ölçerek kontrol et.\n6) Dinamometrenin ölçüm sınırını aşmamak için hangi önlemi aldığını yaz.",
+        "safetyNotes": "Kütleleri ayağına düşürme. Ölçüm sınırından büyük bir kuvvet uygulama; yay bozulur. Yayı elinle fazla çekme."
+      },
+      "quiz": [
+        {
+          "body": "Kuvvetin birimi aşağıdakilerden hangisidir?",
+          "options": [
+            "Kilogram (kg)",
+            "Metre (m)",
+            "Newton (N)",
+            "Litre (L)"
+          ],
+          "answer": 2,
+          "explanation": "Kuvvet Newton (N) ile ifade edilir; dinamometre Newton cinsinden değer gösterir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Havada ilerleyen bir top raketle vurulunca yönünü değiştiriyor. Bu, kuvvetin hangi etkisidir?",
+          "options": [
+            "Hareketli cismin yönünü değiştirmesi",
+            "Cismin şeklini değiştirmesi",
+            "Cismi durdurması",
+            "Cismin kütlesini artırması"
+          ],
+          "answer": 0,
+          "explanation": "Kuvvet, hareket hâlindeki bir cismin yönünü değiştirebilir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Dinamometre ile doğru ölçüm yapmak için aşağıdakilerden hangisi yapılmalıdır?",
+          "options": [
+            "Yay sonuna kadar çekilmelidir.",
+            "Göstergeye uzaktan bakılmalıdır.",
+            "Ölçüm sınırından büyük kuvvet uygulanmalıdır.",
+            "Ölçüme başlamadan önce göstergenin sıfırı gösterdiği kontrol edilmelidir."
+          ],
+          "answer": 3,
+          "explanation": "Önce sıfır kontrolü yapılır, ölçüm göz hizasından okunur ve ölçüm sınırı aşılmaz.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Ölçüm sınırı 5 N olan bir dinamometreye 8 N’luk kuvvet uygulanırsa ne olabilir?",
+          "options": [
+            "Ölçüm daha duyarlı olur.",
+            "Yay bozulabilir ve ölçüm güvenilir olmaz.",
+            "Gösterge 8 N’yi doğru gösterir.",
+            "Hiçbir şey olmaz."
+          ],
+          "answer": 1,
+          "explanation": "Ölçüm sınırı aşılırsa yay kalıcı olarak uzayabilir; bu da sonraki ölçümleri bozar.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Bir dinamometrenin skalasında her 1 N, 5 eşit bölmeye ayrılmıştır. Gösterge 2 N çizgisinden sonraki 3. bölmeyi gösteriyorsa okunan değer kaç N’dur?",
+          "options": [
+            "2,3 N",
+            "2,2 N",
+            "2,6 N",
+            "3,2 N"
+          ],
+          "answer": 2,
+          "explanation": "Bir bölme 1 ÷ 5 = 0,2 N’dur. 3 bölme 0,6 N eder. Okunan değer 2 + 0,6 = 2,6 N’dur.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": [
+        {
+          "label": "Dinamometre simülatörünü aç",
+          "href": "/animasyonlar/5/dinamometre"
+        }
+      ]
+    },
+    {
+      "slug": "dinamometre-modeli-tasarlayalim",
+      "title": "Dinamometre Modeli Tasarlayalım",
+      "summary": "Basit malzemelerle kendi dinamometre modelimizi tasarlar, bilinen kuvvetlerle ölçeklendirir ve kanıtlara göre geliştiririz.",
+      "outcome": {
+        "code": "FB.5.2.2",
+        "description": "Basit araç gereçle bilimsel bir dinamometre modeli oluşturabilme.",
+        "details": [
+          "Basit araç gereçlerle bir dinamometre modeli önerir.",
+          "Tasarladığı modeli yeni kanıtlara göre günceller."
+        ]
+      },
+      "skills": [
+        "Bilimsel model oluşturma",
+        "Tasarlama ve deneme",
+        "İş birliği"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🔍 Merak Et",
+          "bodyHtml": "<p>Okulda dinamometre olmasaydı kuvveti ölçemez miydik? Evde bulabileceğin bir <strong>lastik</strong>, bir <strong>karton</strong> ve birkaç <strong>ataşla</strong> kuvvet ölçen bir alet yapabilir misin? Ölçeğini nasıl hazırlarsın? Aletin ne kadar güvenilir olduğunu nasıl anlarsın?</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Dinamometre Modeli Nasıl Olur?",
+          "bodyHtml": "<p>Bilimsel bir <strong>model</strong>, gerçek bir aletin ya da olayın nasıl çalıştığını anlamamıza yardım eden basitleştirilmiş bir temsildir. Basit bir dinamometre modelinin dört parçası vardır:</p><ul><li><strong>Askı noktası:</strong> Modelin sabitlendiği yer (masa kenarı, çivi, kapı kolu).</li><li><strong>Esnek parça:</strong> Kuvvetle uzayan lastik ya da yay.</li><li><strong>Gösterge:</strong> Uzamayı gösteren işaret (ataş, iğne, ince çubuk).</li><li><strong>Ölçek:</strong> Göstergenin yanına yerleştirilen karton ya da cetvel.</li></ul><p>Esnek parçanın <strong>kalınlığı</strong> ve <strong>esnekliği</strong> modelin ne kadar kuvveti ölçebileceğini belirler: ince lastik küçük kuvvetleri, kalın lastik büyük kuvvetleri ölçmeye uygundur.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Modelin Ölçeğini Hazırlamak",
+          "bodyHtml": "<ol><li>Hiçbir şey asılı değilken göstergenin yerini ölçeğe <strong>0</strong> olarak işaretle.</li><li>Kütlesi bilinen bir cismi as (ör. 100 g ≈ <strong>1 N</strong>); göstergenin yerini <strong>1 N</strong> olarak işaretle.</li><li>200 g için <strong>2 N</strong>, 300 g için <strong>3 N</strong> işaretlerini koy.</li><li>İşaretler arasındaki uzaklıkların <strong>eşit</strong> olup olmadığına bak. Esnek parça düzgün uzuyorsa 1 N’luk bölmelerin boyu birbirine eşit çıkar.</li><li>Ölçeğin ucundaki değer, modelin <strong>ölçüm sınırıdır</strong>.</li></ol><p>Bunu sitedeki <a href=\"/animasyonlar/5/dinamometre-olcekle\">“Dinamometreni ölçeklendir”</a> etkinliğinde bilgisayarda deneyebilirsin.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Tasarım Döngüsü: Dene, Ölç, Geliştir",
+          "bodyHtml": "<table><thead><tr><th>Adım</th><th>Ne yapılır?</th></tr></thead><tbody><tr><td><strong>1. Sorunu belirle</strong></td><td>Hangi kuvvetleri ölçmek istiyoruz? (ör. 0–5 N)</td></tr><tr><td><strong>2. Model öner</strong></td><td>Malzemeleri seç, çizimini yap.</td></tr><tr><td><strong>3. Yap ve dene</strong></td><td>Bilinen kütlelerle ölçeği hazırla, test et.</td></tr><tr><td><strong>4. Kanıt topla</strong></td><td>Gerçek dinamometreyle karşılaştır, hataları not et.</td></tr><tr><td><strong>5. Güncelle</strong></td><td>Kanıtlara göre modeli geliştir, tekrar dene.</td></tr></tbody></table><p><strong>Örnek:</strong> Lastik çok uzayıp ölçeğin dışına çıkıyorsa, daha kalın (daha az uzayan) bir lastik kullanabilir ya da ölçeği uzatabilirsin. Bu, modelini <em>yeni kanıta göre güncellemektir</em>.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Önemli Bilgiler",
+          "bodyHtml": "<ul><li>Model, gerçeğin birebir kendisi değildir; <strong>sınırlılıkları</strong> vardır (lastik zamanla gevşer, uzun süre gerilince kalıcı uzar).</li><li>Ölçeği oluştururken <strong>bilinen kuvvetler</strong> kullanılır.</li><li>Bilimsel modeller <strong>test edilir ve geliştirilir</strong>.</li><li>Farklı tasarımları karşılaştırmak, en iyi çözümü bulmamıza yardım eder.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏠 Günlük Yaşamdan ve Bilim Tarihinden",
+          "bodyHtml": "<ul><li><strong>Mühendislik:</strong> Bagaj kantarı, yaylı baskül ve bazı pazar kantarları da yayın uzamasından yararlanır.</li><li><strong>Bilim tarihi:</strong> Robert Hooke 17. yüzyılda yayların uzamasının uygulanan kuvvetle birlikte arttığını gösterdi. Dinamometrenin çalışma mantığı buna dayanır.</li><li><strong>Ekip çalışması:</strong> Mühendisler de bir tasarımı arkadaşlarıyla paylaşıp eleştirilere göre geliştirir.</li></ul>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Model",
+          "definition": "Bir alet ya da olayı anlamak için yapılan basitleştirilmiş temsil."
+        },
+        {
+          "term": "Ölçekleme (kalibrasyon)",
+          "definition": "Bilinen değerlerle bir ölçü aletinin skalasını işaretleme işlemi."
+        },
+        {
+          "term": "Sıfır noktası",
+          "definition": "Hiçbir kuvvet uygulanmadığında göstergenin bulunduğu konum."
+        },
+        {
+          "term": "Ölçüm aralığı",
+          "definition": "Aletin ölçebileceği en küçük ve en büyük değerler arasındaki bölge."
+        },
+        {
+          "term": "Tasarım",
+          "definition": "Bir sorunu çözmek için bir ürünü planlayıp çizme ve yapma süreci."
+        }
+      ],
+      "activity": {
+        "title": "Lastik Dinamometre Tasarımı",
+        "materials": "2 farklı kalınlıkta lastik, ataş (kanca ve gösterge), karton şerit veya cetvel, bant, ip, 100 g ve 200 g’lık kütleler, kalem, ölçüm tablosu",
+        "steps": "1) Lastiği masa kenarına veya bir askıya sabitle; yanına karton ölçeği yerleştir.\n2) Boştayken göstergeyi 0 olarak işaretle.\n3) 100 g’lık kütleyi as ve göstergenin yerini 1 N olarak işaretle. 200 g için 2 N’u işaretle.\n4) İşaretler arası uzaklıkları cetvelle ölç ve tabloya yaz. Eşit mi?\n5) Aynı denemeyi diğer lastikle yap. Hangi lastik daha duyarlı, hangisi daha büyük kuvveti ölçmeye uygun?\n6) Bilinmeyen bir cismin ağırlığını modelinle ölç; gerçek dinamometreyle karşılaştır.\n7) Farkı yorumla ve modelini nasıl geliştireceğini yaz (ör. daha kalın lastik, daha uzun ölçek).",
+        "safetyNotes": "Lastiği aşırı germe; kopup yüzüne çarpabilir. Kütleleri ayaklarının üzerine bırakma. Modelini yüzüne yakın tutma."
+      },
+      "quiz": [
+        {
+          "body": "Basit bir dinamometre modelinin ölçeğini hazırlamak için ne yapılır?",
+          "options": [
+            "Bilinen kütleler asılıp göstergenin yerleri işaretlenir.",
+            "Göstergenin yerleri tahmin edilerek işaretlenir.",
+            "Lastik kopana kadar çekilir.",
+            "Ölçek rastgele çizilir."
+          ],
+          "answer": 0,
+          "explanation": "Ölçek, kuvveti bilinen cisimler (ör. 100 g ≈ 1 N) asılarak göstergenin konumları işaretlenerek hazırlanır.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Aynı yükle ince lastik çok, kalın lastik az uzuyor. Büyük kuvvetleri ölçmek için hangisi daha uygundur?",
+          "options": [
+            "İnce lastik",
+            "Kalın lastik",
+            "İkisi de aynıdır",
+            "Lastik hiç uygun değildir"
+          ],
+          "answer": 1,
+          "explanation": "Kalın lastik az uzadığı için büyük kuvvetlerde bile ölçeğin dışına çıkmaz.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Modelde 1 N için gösterge 2 cm, 2 N için 4 cm uzuyor. Lastik düzgün uzuyorsa 3 N için gösterge kaç cm uzar?",
+          "options": [
+            "5 cm",
+            "3 cm",
+            "8 cm",
+            "6 cm"
+          ],
+          "answer": 3,
+          "explanation": "Uzama kuvvetle orantılıdır: 1 N’da 2 cm ise 3 N’da 3 × 2 = 6 cm olur.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Modelin lastiği denemede ölçeğin dışına çıkıyor. Yeni kanıta göre hangi güncelleme uygundur?",
+          "options": [
+            "Denemeyi bırakmak",
+            "Lastiği daha çok germek",
+            "Daha kalın bir lastik kullanmak veya ölçeği uzatmak",
+            "Ölçeği silmek"
+          ],
+          "answer": 2,
+          "explanation": "Bilimsel model, test sonuçlarına göre geliştirilir. Kalın lastik veya daha uzun ölçek sorunu çözer.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Bilimsel modellerle ilgili aşağıdakilerden hangisi doğrudur?",
+          "options": [
+            "Test sonuçlarına göre geliştirilebilir ve sınırlılıkları vardır.",
+            "Gerçeğin birebir aynısıdır.",
+            "Bir kez yapılınca asla değişmez.",
+            "Yalnızca bilim insanları kullanır."
+          ],
+          "answer": 0,
+          "explanation": "Modeller gerçeği basitleştirir; sınırlılıkları vardır ve yeni kanıtlarla geliştirilir.",
+          "difficulty": "EASY"
+        }
+      ],
+      "links": [
+        {
+          "label": "Dinamometreni ölçeklendir etkinliğini aç",
+          "href": "/animasyonlar/5/dinamometre-olcekle"
+        }
+      ]
+    },
+    {
+      "slug": "kutle-ve-agirlik",
+      "title": "Kütle ve Ağırlık",
+      "summary": "Kütle ile ağırlığın tanımlarını, birimlerini ve ölçü aletlerini karşılaştırır; Dünya ile Ay’da neyin değişip neyin değişmediğini inceleriz.",
+      "outcome": {
+        "code": "FB.5.2.3",
+        "description": "Kütle ve ağırlık kavramlarını karşılaştırabilme.",
+        "details": [
+          "Kütle ve ağırlığa ilişkin özellikleri belirler.",
+          "Bu özelliklerdeki benzerlikleri listeler.",
+          "Bu özelliklerdeki farklılıkları listeler."
+        ]
+      },
+      "skills": [
+        "Karşılaştırma",
+        "Veri okuma",
+        "Bilgi toplama"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🔍 Merak Et",
+          "bodyHtml": "<p>Astronotlar Ay’da zıplayarak yürür ve kendilerini “hafif” hisseder. Peki vücutlarındaki madde miktarı gerçekten azalmış mıdır? Markette tartı <em>kilogram</em> gösterirken dinamometre <em>Newton</em> gösterir. <strong>Kütle ile ağırlık aynı şey midir?</strong></p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Kütle Nedir?",
+          "bodyHtml": "<p><strong>Kütle</strong>, bir cismi oluşturan <strong>madde miktarıdır</strong>.</p><ul><li>Birimi <strong>kilogram (kg)</strong> ve <strong>gram (g)</strong>’dır.</li><li><strong>Eşit kollu terazi</strong> ile ölçülür (cismi, kütlesi bilinen cisimlerle karşılaştırırız).</li><li>Cismin bulunduğu yere göre <strong>değişmez</strong>. Dünya’da da Ay’da da aynıdır.</li></ul>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Ağırlık Nedir?",
+          "bodyHtml": "<p><strong>Ağırlık</strong>, Dünya’nın (ya da bulunulan gök cisminin) bir cismi merkezine doğru çekme kuvvetidir. Bu kuvvete <strong>yer çekimi kuvveti</strong> da denir.</p><ul><li>Bir <strong>kuvvet</strong> olduğu için birimi <strong>Newton (N)</strong>’dur.</li><li><strong>Dinamometre</strong> ile ölçülür.</li><li>Bulunduğu yere göre <strong>değişir</strong>: Ay’ın çekim kuvveti Dünya’nınkinin yaklaşık altıda biri olduğu için bir cismin Ay’daki ağırlığı Dünya’dakinin yaklaşık altıda biridir.</li></ul><p>Okul düzeyinde, Dünya’da <strong>1 kg</strong> kütleli cismin ağırlığı yaklaşık <strong>10 N</strong>’dur (100 g ≈ 1 N).</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Karşılaştıralım",
+          "bodyHtml": "<table><thead><tr><th>Özellik</th><th>Kütle</th><th>Ağırlık</th></tr></thead><tbody><tr><td><strong>Tanım</strong></td><td>Madde miktarı</td><td>Yer çekimi kuvveti</td></tr><tr><td><strong>Birimi</strong></td><td>kg, g</td><td>Newton (N)</td></tr><tr><td><strong>Ölçü aleti</strong></td><td>Eşit kollu terazi</td><td>Dinamometre</td></tr><tr><td><strong>Yere göre</strong></td><td>Değişmez</td><td>Değişir</td></tr><tr><td><strong>Bir kuvvet mi?</strong></td><td>Hayır</td><td>Evet</td></tr></tbody></table><p><strong>Benzerlikler:</strong></p><ul><li>İkisi de cisimlerle ilgili <strong>ölçülebilen</strong> niceliklerdir.</li><li>Aynı yerde, kütle arttıkça ağırlık da artar (kütle 2 katına çıkarsa ağırlık da 2 katına çıkar).</li></ul>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Dünya’da ve Ay’da",
+          "bodyHtml": "<table><thead><tr><th>Cisim</th><th>Dünya’da kütlesi</th><th>Dünya’da ağırlığı</th><th>Ay’da kütlesi</th><th>Ay’da ağırlığı (yaklaşık)</th></tr></thead><tbody><tr><td>Elma</td><td>200 g</td><td>2 N</td><td>200 g</td><td>≈ 0,3 N</td></tr><tr><td>Çanta</td><td>6 kg</td><td>60 N</td><td>6 kg</td><td>≈ 10 N</td></tr><tr><td>Öğrenci</td><td>60 kg</td><td>600 N</td><td>60 kg</td><td>≈ 100 N</td></tr></tbody></table><p>Kütle aynı kalırken <strong>ağırlık yaklaşık altıda birine</strong> düşer. Ay’da zıplamanın kolay olmasının nedeni budur.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Önemli Bilgiler",
+          "bodyHtml": "<ul><li>Kütle = madde miktarı (kg, g; terazi). Ağırlık = yer çekimi kuvveti (N; dinamometre).</li><li>Bir cismin <strong>kütlesi her yerde aynıdır</strong>; <strong>ağırlığı</strong> bulunduğu yere göre değişir.</li><li><strong>Dikkat:</strong> Günlük konuşmada “ağırlığım 40 kilo” deriz; oysa bu, <strong>kütleyi</strong> anlatır. Doğrusu “kütlem 40 kg”dır.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏠 Günlük Yaşamdan ve Bilim Tarihinden",
+          "bodyHtml": "<ul><li><strong>Tartılar:</strong> Banyo tartısı ve market kantarı genellikle kütle gösterecek şekilde ayarlıdır; içinde kuvvete duyarlı bir düzenek bulunur.</li><li><strong>Uzay yolculuğu:</strong> Astronotların kütlesi değişmez; Ay’da ağırlıkları azaldığı için daha uzağa zıplarlar.</li><li><strong>Bilim tarihi:</strong> Türk-İslam bilginlerinden El-Hâzinî (12. yüzyıl), <em>Mizânü’l-Hikme</em> adlı eserinde cisimlerin ağırlığını ve çekimi inceledi. Bîrûnî de çeşitli maddelerin ağırlıklarını ölçerek karşılaştırdı.</li></ul><p>İleri okuma: Dünya’da bile ağırlık her yerde tam aynı değildir. Sitedeki <a href=\"/animasyonlar/7/agirlik-enlem\">“Ağırlık ve Enlem” animasyonunda</a> (7. sınıf) kutuplarda ve ekvatorda ne olduğunu inceleyebilirsin.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Kütle",
+          "definition": "Bir cismi oluşturan madde miktarı."
+        },
+        {
+          "term": "Ağırlık",
+          "definition": "Yer çekiminin cisme uyguladığı kuvvet."
+        },
+        {
+          "term": "Yer çekimi kuvveti",
+          "definition": "Bir gök cisminin, çevresindeki cisimleri merkezine doğru çekmesi."
+        },
+        {
+          "term": "Eşit kollu terazi",
+          "definition": "Kütle ölçmekte kullanılan, iki kefeli alet."
+        },
+        {
+          "term": "Kilogram (kg)",
+          "definition": "Kütlenin birimi."
+        }
+      ],
+      "activity": {
+        "title": "Kütle mi, Ağırlık mı?",
+        "materials": "Eşit kollu terazi (yoksa mutfak terazisi), dinamometre, kütleleri farklı 3 cisim (silgi, kalemlik, su dolu şişe), ölçüm tablosu, hesap makinesi",
+        "steps": "1) Her cismin kütlesini terazide ölç ve gram olarak tabloya yaz.\n2) Aynı cismin ağırlığını dinamometreyle ölç ve N olarak tabloya yaz.\n3) Ağırlık ÷ kütle (kg) oranını hesapla. Cisimlerde yaklaşık aynı sonucu buluyor musun?\n4) Cismin Ay’da dinamometrede kaç N göstereceğini tahmin et (yaklaşık altıda biri).\n5) Kütle ile ağırlığın benzerliklerini ve farklılıklarını iki sütunlu bir tabloyla yaz.",
+        "safetyNotes": "Cam cisim kullanma. Ağırlıkları ayağına düşürme. Dinamometrenin ölçüm sınırını aşma."
+      },
+      "quiz": [
+        {
+          "body": "Kütle ile ilgili aşağıdakilerden hangisi doğrudur?",
+          "options": [
+            "Bulunduğu yere göre değişir.",
+            "Dinamometre ile ölçülür.",
+            "Birimi Newton’dur.",
+            "Bulunduğu yere göre değişmez."
+          ],
+          "answer": 3,
+          "explanation": "Kütle madde miktarıdır; Dünya’da da Ay’da da aynıdır. Terazi ile ölçülür, birimi kg’dır.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Ağırlığı ölçmek için hangi alet kullanılır?",
+          "options": [
+            "Eşit kollu terazi",
+            "Dinamometre",
+            "Cetvel",
+            "Termometre"
+          ],
+          "answer": 1,
+          "explanation": "Ağırlık bir kuvvettir ve dinamometre ile ölçülür.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Dünya’daki 5 kg kütleli bir cisim Ay’a götürülürse hangisi doğru olur?",
+          "options": [
+            "Kütlesi azalır, ağırlığı değişmez.",
+            "İkisi de artar.",
+            "Kütlesi değişmez, ağırlığı azalır.",
+            "İkisi de değişmez."
+          ],
+          "answer": 2,
+          "explanation": "Ay’ın çekimi daha zayıftır; ağırlık azalır, madde miktarı olan kütle ise aynı kalır.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Dünya’da ağırlığı 60 N olan bir cismin Ay’daki ağırlığı yaklaşık kaç N olur? (Ay’ın çekimi Dünya’nınkinin yaklaşık altıda biridir.)",
+          "options": [
+            "10 N",
+            "60 N",
+            "360 N",
+            "6 N"
+          ],
+          "answer": 0,
+          "explanation": "60 N ÷ 6 = 10 N.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Aşağıdakilerden hangisi kütle ile ağırlığın bir benzerliğidir?",
+          "options": [
+            "İkisi de aynı birimle ölçülür.",
+            "İkisi de ölçülebilir ve aynı yerde kütle arttıkça ağırlık da artar.",
+            "İkisi de her yerde sabittir.",
+            "İkisi de aynı aletle ölçülür."
+          ],
+          "answer": 1,
+          "explanation": "İkisi de ölçülebilir niceliklerdir; aynı yerde kütle arttıkça ağırlık da artar. Birimleri ve ölçü aletleri ise farklıdır.",
+          "difficulty": "EASY"
+        }
+      ],
+      "links": [
+        {
+          "label": "Ağırlık ve enlem animasyonu (7. sınıf)",
+          "href": "/animasyonlar/7/agirlik-enlem"
+        }
+      ]
+    },
+    {
+      "slug": "surtunme-kuvveti",
+      "title": "Sürtünme Kuvveti",
+      "summary": "Sürtünme kuvvetinin katı, sıvı ve gaz ortamlardaki etkilerini örnekleri karşılaştırarak genellemeye ulaşırız.",
+      "outcome": {
+        "code": "FB.5.2.4",
+        "description": "Sürtünme kuvvetinin çeşitli ortamlardaki etkileri hakkında tümevarımsal akıl yürütebilme.",
+        "details": [
+          "Günlük yaşamdaki ön bilgilerini kullanarak örüntü oluşturur.",
+          "Sürtünme kuvvetinin farklı ortamlardaki etkileri hakkında genelleme yapar."
+        ]
+      },
+      "skills": [
+        "Tümevarımsal akıl yürütme",
+        "Örüntü bulma",
+        "Genelleme yapma"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🔍 Merak Et",
+          "bodyHtml": "<p>Buzda yürümek neden halıda yürümekten çok daha zordur? Bir topu yuvarladığında neden bir süre sonra durur? Paraşütle atlayan biri neden yavaş iner? <strong>Hepsinin arkasında aynı kuvvet olabilir mi?</strong></p><p>Bu konuda birçok örneği inceleyip ortak bir sonuca, yani bir <strong>genellemeye</strong> ulaşacağız.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Sürtünme Kuvveti Nedir?",
+          "bodyHtml": "<p>Birbirine temas eden iki yüzey arasında, hareketi <strong>engelleyen</strong> kuvvete <strong>sürtünme kuvveti</strong> denir.</p><ul><li>Sürtünme kuvveti, hareketin yönüne <strong>zıt yöndedir</strong>.</li><li>Hareket eden bir cisim, üzerine başka bir kuvvet uygulanmazsa sürtünme yüzünden <strong>yavaşlar ve durur</strong>.</li><li>Sürtünme ısı oluşturur: ellerini birbirine sürttüğünde ısındığını hissedersin.</li></ul>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Katı Yüzeylerde Sürtünme",
+          "bodyHtml": "<p>Sürtünme kuvvetinin büyüklüğü yüzeylerin <strong>pürüzlülüğüne</strong> bağlıdır.</p><table><thead><tr><th>Yüzey</th><th>Pürüzlülük</th><th>Sürtünme</th></tr></thead><tbody><tr><td>Zımpara kâğıdı, kaba halı</td><td>Çok pürüzlü</td><td>Büyük</td></tr><tr><td>Ahşap masa</td><td>Orta</td><td>Orta</td></tr><tr><td>Cam, buz</td><td>Az pürüzlü</td><td>Küçük</td></tr></tbody></table><p>Pürüzlü yüzeyde cismi hareket ettirmek için daha büyük bir kuvvet uygulamak gerekir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Sıvı ve Gaz Ortamlarda: Su ve Hava Direnci",
+          "bodyHtml": "<p>Sürtünme yalnızca katı yüzeylerde olmaz. Sıvı ve gaz ortamlar da içlerinde hareket eden cisimlere zıt yönde bir kuvvet uygular:</p><ul><li><strong>Su direnci:</strong> Su içinde hareket eden cisme (yüzücü, gemi) uygulanan sürtünme kuvvetidir. Suda yürümenin havadan zor olmasının nedeni budur.</li><li><strong>Hava direnci:</strong> Havada hareket eden cisme (bisikletli, paraşütçü, düşen yaprak) uygulanan sürtünme kuvvetidir.</li></ul><p>Cismin <strong>şekli</strong> ve ortamla temas eden <strong>yüzeyi</strong> direnci etkiler: Paraşüt geniş yüzeyi sayesinde hava direncini artırır ve iniş yavaşlar; yarış arabası ve yüzücü başlığı ise direnci azaltacak biçimde tasarlanır.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Yararlı ve Zararlı Etkiler",
+          "bodyHtml": "<table><thead><tr><th>Yararlı olduğu durumlar</th><th>Zararlı olduğu durumlar</th></tr></thead><tbody><tr><td>Yürürken ayağımızın kaymaması</td><td>Makine parçalarının aşınması ve ısınması</td></tr><tr><td>Araç frenlerinin tekerleği durdurması</td><td>Araçların daha çok yakıt harcaması</td></tr><tr><td>Kalemin kâğıda iz bırakması</td><td>Kayakçının hız kaybetmesi</td></tr><tr><td>Kibrit çakılması</td><td>Mobilyaları sürüklemenin zorlaşması</td></tr></tbody></table><p><strong>Artırmak için:</strong> pürüzlü taban, kış lastiği ve zincir, geniş paraşüt. <strong>Azaltmak için:</strong> yağlama, tekerlek ve rulman, cilalama, aerodinamik şekil.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Örüntüden Genellemeye (Tümevarım)",
+          "bodyHtml": "<p><strong>Tümevarım</strong>, birçok örnekteki ortak durumu bulup genel bir sonuca ulaşmaktır. Şu örüntüleri düşün:</p><ul><li>Buz → sürtünme az → cisim kolay kayar.</li><li>Ahşap masa → sürtünme orta → cismi çekmek için orta kuvvet gerekir.</li><li>Zımpara kâğıdı → sürtünme çok → cismi çekmek için büyük kuvvet gerekir.</li></ul><p><strong>Genelleme:</strong> “Yüzey ne kadar pürüzlüyse sürtünme kuvveti o kadar büyüktür.” Aynı fikir su ve hava direnci için de geçerlidir: ortamla temas eden yüzey ne kadar genişse direnç o kadar büyüktür.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Önemli Bilgiler",
+          "bodyHtml": "<ul><li>Sürtünme kuvveti, temas eden yüzeyler arasında oluşur ve <strong>hareketin tersi yönündedir</strong>.</li><li>Pürüzlü yüzeylerde sürtünme <strong>daha büyük</strong>, az pürüzlü yüzeylerde <strong>daha küçüktür</strong>.</li><li>Su ve hava direnci de bir çeşit sürtünme kuvvetidir.</li><li>Sürtünme yararlı da zararlı da olabilir; <strong>artırılıp azaltılabilir</strong>.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏠 Günlük Yaşamdan ve Tarihten",
+          "bodyHtml": "<ul><li><strong>İstanbul’un fethi (1453):</strong> Gemilerin karadan Haliç’e indirilmesinde, yere serilen kızakların yağlanmasıyla sürtünme azaltıldı.</li><li><strong>Sanat:</strong> Kömür kalem ya da pastel boya, kâğıt yüzeyindeki sürtünme sayesinde iz bırakır.</li><li><strong>Spor:</strong> Kayakçılar kayak tabanlarını mumlayarak sürtünmeyi azaltır; tırmanıcılar eldivenle sürtünmeyi artırır.</li><li><strong>Düşünce deneyi:</strong> Sürtünme olmasaydı yürüyemez, araçlar duramaz ve bağlar çözülürdü.</li></ul>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Sürtünme kuvveti",
+          "definition": "Birbirine temas eden yüzeyler arasında hareketi engelleyen kuvvet."
+        },
+        {
+          "term": "Pürüzlü yüzey",
+          "definition": "Üzerinde çıkıntı ve girintiler olan, düz olmayan yüzey."
+        },
+        {
+          "term": "Su direnci",
+          "definition": "Su içinde hareket eden cisme uygulanan sürtünme kuvveti."
+        },
+        {
+          "term": "Hava direnci",
+          "definition": "Havada hareket eden cisme uygulanan sürtünme kuvveti."
+        },
+        {
+          "term": "Genelleme",
+          "definition": "Birçok örnekten ortak bir sonuç çıkarmak."
+        }
+      ],
+      "activity": {
+        "title": "Hangi Yüzeyde Sürtünme Daha Büyük?",
+        "materials": "Dinamometre, ipli ahşap blok, dört farklı yüzey (düz masa, halı, zımpara kâğıdı, plastik/cam levha), ölçüm tablosu",
+        "steps": "1) Bloğu sırayla her yüzeye koy ve dinamometreyle yatay, sabit ve yavaş bir hızla çek.\n2) Blok hareket ederken dinamometrenin gösterdiği değeri N olarak tabloya yaz.\n3) Her yüzeyde ölçümü 3 kez tekrarla ve ortalamayı hesapla.\n4) Yüzeyleri sürtünmenin en az olduğundan en çok olduğuna doğru sırala.\n5) Sonuçlardan bir örüntü bul ve “Yüzey pürüzlü oldukça ... ” cümlesiyle bir genelleme yaz.\n6) Genellemenin su ve hava direnci için de geçerli olup olmadığını tartış.",
+        "safetyNotes": "Zımpara kâğıdını elinle sürtme. Blok masadan düşmesin, masa kenarında çalışma. Dinamometrenin ölçüm sınırını aşma."
+      },
+      "quiz": [
+        {
+          "body": "Sürtünme kuvvetinin yönü hakkında aşağıdakilerden hangisi doğrudur?",
+          "options": [
+            "Hareketle aynı yöndedir.",
+            "Yönü yoktur.",
+            "Her zaman yukarı doğrudur.",
+            "Hareketin tersi yöndedir."
+          ],
+          "answer": 3,
+          "explanation": "Sürtünme kuvveti hareketi engellediği için hareketin tersi yönünde etki eder.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Aynı ahşap blok hangi yüzeyde en zor çekilir?",
+          "options": [
+            "Buz",
+            "Cam",
+            "Zımpara kâğıdı",
+            "Cilalı mermer"
+          ],
+          "answer": 2,
+          "explanation": "Zımpara kâğıdı çok pürüzlü olduğu için sürtünme en büyüktür.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Aşağıdakilerden hangisi sürtünmeyi azaltmak için yapılan bir uygulamadır?",
+          "options": [
+            "Makine parçalarını yağlamak",
+            "Ayakkabı tabanını pürüzlü yapmak",
+            "Paraşütü geniş yapmak",
+            "Kışın lastiğe zincir takmak"
+          ],
+          "answer": 0,
+          "explanation": "Yağlama, yüzeyler arasındaki sürtünmeyi azaltır. Diğerleri sürtünmeyi artırır.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Yüzücülerin vücutlarını ince ve düzgün tutmaları hangi kuvveti azaltmak içindir?",
+          "options": [
+            "Hava direnci",
+            "Mıknatıs kuvveti",
+            "Yer çekimi",
+            "Su direnci"
+          ],
+          "answer": 3,
+          "explanation": "Suda hareket eden cisme uygulanan sürtünme kuvvetine su direnci denir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Dinamometreyle çekilen bir bloğun farklı yüzeylerdeki değerleri: buz 1 N, cam 2 N, ahşap 4 N, zımpara 7 N. Bu verilerden hangi genelleme yapılabilir?",
+          "options": [
+            "Yüzey pürüzlü oldukça sürtünme kuvveti azalır.",
+            "Yüzey pürüzlü oldukça sürtünme kuvveti artar.",
+            "Sürtünme yüzeyden etkilenmez.",
+            "Sürtünme yalnızca buzda vardır."
+          ],
+          "answer": 1,
+          "explanation": "Pürüzlülük arttıkça cismi çekmek için gereken kuvvet de artıyor. Tümevarımla bu genellemeye ulaşırız.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": [
+        {
+          "label": "Kuvvet ve enerji animasyonu (7. sınıf, sürtünme ayarlı)",
+          "href": "/animasyonlar/7/kuvvet-enerji"
+        }
+      ]
+    }
+  ]
+}
