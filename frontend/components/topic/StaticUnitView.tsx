@@ -26,7 +26,7 @@ export async function StaticUnitView({ level: LEVEL, unitSlug: UNIT_SLUG }: { le
   return (
     <>
       <PageHeader
-        eyebrow={`${LEVEL}. Sınıf · Ünite ${unit.code} · ${unit.hours} ders saati`}
+        eyebrow={`${LEVEL}. Sınıf · Ünite ${unit.code}${unit.hours ? ` · ${unit.hours} ders saati` : ""}`}
         title={unit.title}
         description={unit.description}
       />
