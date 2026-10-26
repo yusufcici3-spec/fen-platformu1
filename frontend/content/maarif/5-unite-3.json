@@ -1,0 +1,599 @@
+{
+  "classLevel": 5,
+  "code": "5.3",
+  "title": "Canlıların Yapısına Yolculuk",
+  "slug": "canlilarin-yapisina-yolculuk",
+  "description": "Bitki ve hayvan hücrelerini karşılaştırır, hücreden organizmaya basamakları öğrenir; destek ve hareket sistemini tanıyıp sağlığını korumanın yollarını araştırırız.",
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı (2024), 5. sınıf 3. ünite",
+  "topics": [
+    {
+      "slug": "bitki-ve-hayvan-hucreleri",
+      "title": "Bitki ve Hayvan Hücreleri",
+      "summary": "Hücrenin temel kısımlarını tanır, bitki ve hayvan hücrelerini ortak ve farklı yönleriyle karşılaştırırız.",
+      "outcome": {
+        "code": "FB.5.3.1.1",
+        "description": "Bitki ve hayvan hücrelerini temel kısımları ve özellikleri bakımından karşılaştırabilme.",
+        "details": [
+          "Hücrenin temel kısımlarını ve görevlerini belirtir.",
+          "Bitki ve hayvan hücrelerinin benzerliklerini ve farklılıklarını karşılaştırır."
+        ]
+      },
+      "skills": [
+        "Karşılaştırma",
+        "Gözlem",
+        "Model okuma"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🔍 Merak Et",
+          "bodyHtml": "<p>Bir tuğla duvar tuğlalardan oluşur. Peki <strong>canlılar</strong> neyden oluşur? Çıplak gözle görmediğimiz, ama her canlının vücudunu oluşturan çok küçük yapılar olabilir mi? Bir elma ile bir kedinin vücudu aynı yapı birimlerinden mi oluşur?</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Hücre Nedir?",
+          "bodyHtml": "<p><strong>Hücre</strong>, canlıların yapı ve görev birimidir. Her canlı bir ya da daha fazla hücreden oluşur.</p><ul><li><strong>Tek hücreli canlılar:</strong> Vücutları tek hücreden oluşur (bakteri, amip).</li><li><strong>Çok hücreli canlılar:</strong> Vücutları çok sayıda hücreden oluşur (bitkiler, hayvanlar, insan).</li></ul><p>Hücreler çok küçük olduğu için <strong>mikroskop</strong> ile görülür. Hücreyi ilk kez 1665’te Robert Hooke, kendi yaptığı mikroskopla mantar parçasını inceleyerek gördü ve küçük odacıklara benzettiği için “cell” adını verdi.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Hücrenin Temel Kısımları",
+          "bodyHtml": "<table><thead><tr><th>Kısım</th><th>Görevi</th></tr></thead><tbody><tr><td><strong>Hücre zarı</strong></td><td>Hücreyi çevreler; hücreye madde giriş çıkışını kontrol eder.</td></tr><tr><td><strong>Sitoplazma</strong></td><td>Hücre zarı ile çekirdek arasındaki jel kıvamlı sıvıdır; organeller bunun içinde bulunur.</td></tr><tr><td><strong>Çekirdek</strong></td><td>Hücrenin yönetim merkezidir; hücrenin tüm etkinliklerini yönetir.</td></tr><tr><td><strong>Mitokondri</strong></td><td>Besinlerden hücrenin ihtiyacı olan enerjiyi sağlar.</td></tr></tbody></table><p>Hücre içindeki bu küçük görevli yapılara <strong>organel</strong> denir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Bitki Hücresine Özgü Kısımlar",
+          "bodyHtml": "<ul><li><strong>Hücre duvarı:</strong> Hücre zarının dışında bulunan sert ve esnek olmayan katmandır. Bitki hücresine şekil verir ve onu korur.</li><li><strong>Kloroplast (yeşil plastit):</strong> İçinde klorofil bulunur. Güneş ışığıyla besin üretiminin (fotosentez) yapıldığı organeldir; bitkilere yeşil rengini verir.</li><li><strong>Büyük koful:</strong> Su ve çeşitli maddeler depolar. Bitki hücresinde genellikle tek ve büyüktür.</li></ul><figure style=\"margin:1.25rem 0\"><img src=\"/maarif/bitki-hayvan-hucresi.svg\" alt=\"Bitki ve hayvan hücresinin şematik çizimi\" loading=\"lazy\" style=\"width:100%;max-width:680px;height:auto;display:block;margin:0 auto;border-radius:14px\"/><figcaption style=\"text-align:center;font-size:0.8rem;opacity:.75;margin-top:.4rem\">Şekil: Hayvan ve bitki hücresi (şematik çizim, boyutlar ölçekli değildir).</figcaption></figure>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Karşılaştıralım",
+          "bodyHtml": "<table><thead><tr><th>Özellik</th><th>Hayvan hücresi</th><th>Bitki hücresi</th></tr></thead><tbody><tr><td>Hücre zarı, sitoplazma, çekirdek, mitokondri</td><td>Var</td><td>Var</td></tr><tr><td>Hücre duvarı</td><td>Yok</td><td>Var</td></tr><tr><td>Kloroplast</td><td>Yok</td><td>Var (yeşil bölgelerde)</td></tr><tr><td>Koful</td><td>Yok ya da küçük</td><td>Büyük</td></tr><tr><td>Şekil</td><td>Yuvarlak veya düzensiz</td><td>Köşeli, düzgün</td></tr></tbody></table><p><strong>Ortak yönler:</strong> İkisi de zar, sitoplazma, çekirdek ve mitokondriye sahiptir; ikisi de canlıdır ve görevleri yerine getirir.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Önemli Bilgiler",
+          "bodyHtml": "<ul><li>Hücre, canlıların yapı ve görev birimidir.</li><li>Her hücrede <strong>zar, sitoplazma ve çekirdek</strong> bulunur.</li><li><strong>Hücre duvarı, kloroplast ve büyük koful</strong> bitki hücresine özgüdür.</li><li>Hücreleri mikroskopla görürüz.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏠 Günlük Yaşamdan ve Bilim Tarihinden",
+          "bodyHtml": "<ul><li><strong>Mikroskop:</strong> Antonie van Leeuwenhoek mikroskopla ilk kez bakteri ve tek hücreli canlıları gözlemledi.</li><li><strong>Soğan zarı:</strong> Soğanın ince zarını mikroskopta incelediğinde köşeli, duvarlı bitki hücrelerini kolayca görürsün.</li><li><strong>Yumurta:</strong> Tavuk yumurtasının sarısı tek bir dev hayvan hücresidir.</li></ul>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Hücre",
+          "definition": "Canlıların yapı ve görev birimi."
+        },
+        {
+          "term": "Çekirdek",
+          "definition": "Hücrenin yönetim merkezi."
+        },
+        {
+          "term": "Mitokondri",
+          "definition": "Hücreye enerji sağlayan organel."
+        },
+        {
+          "term": "Kloroplast",
+          "definition": "Bitki hücresinde besin üretiminin yapıldığı yeşil organel."
+        },
+        {
+          "term": "Hücre duvarı",
+          "definition": "Bitki hücresinin zarı dışında bulunan sert koruyucu katman."
+        },
+        {
+          "term": "Organel",
+          "definition": "Hücre içindeki küçük görevli yapı."
+        }
+      ],
+      "activity": {
+        "title": "Hücre Modeli Yapalım",
+        "materials": "Poşet veya şeffaf kap, jelatin ya da jöle, farklı renkli kil/boncuk, karton, boya, renkli kalemler",
+        "steps": "1) Hayvan hücresi için yuvarlak bir kap hazırla; içine jöle (sitoplazma) koy.\n2) Büyük bir boncukla çekirdeği, küçük boncuklarla mitokondrileri yerleştir.\n3) Bitki hücresi için köşeli bir karton kutu kullan; kutunun kenarlarını hücre duvarı olarak kalınlaştır.\n4) Yeşil boncuklarla kloroplast, büyük bir kapla koful ekle.\n5) Her kısma etiket yaz ve iki modeli karşılaştıran bir tablo hazırla.\n6) Modelin hücreye benzeyen ve benzemeyen yönlerini yaz.",
+        "safetyNotes": "Küçük boncukları ağzına götürme. Makası dikkatle kullan. Sıcak jöle dökerken yetişkin yardımı al."
+      },
+      "quiz": [
+        {
+          "body": "Canlıların yapı ve görev birimi aşağıdakilerden hangisidir?",
+          "options": [
+            "Doku",
+            "Hücre",
+            "Organ",
+            "Sistem"
+          ],
+          "answer": 1,
+          "explanation": "Hücre, canlıların yapı ve görev birimidir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Aşağıdakilerden hangisi hem bitki hem hayvan hücresinde bulunur?",
+          "options": [
+            "Hücre duvarı",
+            "Kloroplast",
+            "Büyük koful",
+            "Çekirdek"
+          ],
+          "answer": 3,
+          "explanation": "Çekirdek, hücre zarı, sitoplazma ve mitokondri her iki hücrede de bulunur.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Bitki hücresini hayvan hücresinden ayıran yapılar hangileridir?",
+          "options": [
+            "Hücre duvarı, kloroplast ve büyük koful",
+            "Çekirdek ve sitoplazma",
+            "Mitokondri ve hücre zarı",
+            "Yalnızca çekirdek"
+          ],
+          "answer": 0,
+          "explanation": "Hücre duvarı, kloroplast ve büyük koful bitki hücresine özgüdür.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Hücrenin enerji sağlayan organeli hangisidir?",
+          "options": [
+            "Kloroplast",
+            "Çekirdek",
+            "Mitokondri",
+            "Hücre duvarı"
+          ],
+          "answer": 2,
+          "explanation": "Mitokondri besinlerden enerji sağlar. Kloroplast ise besin üretir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Mikroskopta köşeli, duvarlı ve içinde yeşil yapılar bulunan bir hücre görülüyor. Bu hücre için ne söylenebilir?",
+          "options": [
+            "Hayvan hücresidir.",
+            "Hücre değildir.",
+            "Bakteridir.",
+            "Bitki hücresidir."
+          ],
+          "answer": 3,
+          "explanation": "Hücre duvarı ve kloroplast bitki hücresine özgüdür.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "hucreden-organizmaya",
+      "title": "Hücreden Organizmaya",
+      "summary": "Hücre, doku, organ, organ sistemi ve organizma arasındaki basamaklı yapıyı örneklerle ilişkilendiririz.",
+      "outcome": {
+        "code": "FB.5.3.1.2",
+        "description": "Hücre, doku, organ, sistem ve organizma hiyerarşisine ilişkin anlayış oluşturabilme.",
+        "details": [
+          "Hücre, doku, organ, organ sistemi ve organizma kavramlarını açıklar.",
+          "Bu yapıları küçükten büyüğe doğru sıralar.",
+          "Örneklerle yapıların birbiriyle ilişkisini gösterir."
+        ]
+      },
+      "skills": [
+        "Sınıflandırma",
+        "Sıralama",
+        "İlişkilendirme"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🔍 Merak Et",
+          "bodyHtml": "<p>Kalbin kası, bacağındaki kastan farklı olabilir mi? Tek bir hücre koşabilir mi? Bir bina tuğladan duvara, duvardan odaya, odadan binaya nasıl büyürse, <strong>canlı vücudu</strong> da hücrelerden başlayıp nasıl organize olur?</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Basamaklar",
+          "bodyHtml": "<ul><li><strong>Hücre:</strong> Canlının yapı ve görev birimi.</li><li><strong>Doku:</strong> Aynı yapı ve görevdeki hücrelerin bir araya gelmesiyle oluşur (kas dokusu, sinir dokusu, deri dokusu).</li><li><strong>Organ:</strong> Farklı dokuların bir araya gelerek belirli bir görevi yapmasıyla oluşur (kalp, mide, akciğer).</li><li><strong>Organ sistemi:</strong> Birlikte çalışan organların oluşturduğu gruptur (dolaşım sistemi, sindirim sistemi).</li><li><strong>Organizma:</strong> Tüm sistemlerin birlikte çalıştığı bütün canlıdır (insan, kedi, çiçek).</li></ul><figure style=\"margin:1.25rem 0\"><img src=\"/maarif/hucreden-organizmaya.svg\" alt=\"Hücreden organizmaya basamakların şeması\" loading=\"lazy\" style=\"width:100%;max-width:680px;height:auto;display:block;margin:0 auto;border-radius:14px\"/><figcaption style=\"text-align:center;font-size:0.8rem;opacity:.75;margin-top:.4rem\">Şekil: Hücreden organizmaya (örnek: kalp).</figcaption></figure>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Örneklerle",
+          "bodyHtml": "<table><thead><tr><th>Basamak</th><th>İnsandan örnek</th><th>Bitkiden örnek</th></tr></thead><tbody><tr><td>Hücre</td><td>Kas hücresi</td><td>Yaprak hücresi</td></tr><tr><td>Doku</td><td>Kas dokusu</td><td>Yaprak epidermis dokusu</td></tr><tr><td>Organ</td><td>Kalp, mide</td><td>Yaprak, kök, gövde</td></tr><tr><td>Organ sistemi</td><td>Sindirim sistemi</td><td>Kök sistemi, gövde sistemi</td></tr><tr><td>Organizma</td><td>İnsan</td><td>Elma ağacı</td></tr></tbody></table>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Neden Böyle Bir Düzen Var?",
+          "bodyHtml": "<p>Hücreler <strong>iş bölümü</strong> yapar. Her doku ayrı bir iş yapar, organlar dokuları birlikte kullanır, sistemler de organları. Böylece canlı, besin alma, hareket etme ve boşaltım gibi işleri düzenli yürütür. Bir parça aksarsa tüm vücut etkilenebilir.</p><p><strong>Not:</strong> Tek hücreli canlılarda (amip gibi) bu basamaklar yoktur; tüm işlevleri tek hücre yapar.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Önemli Bilgiler",
+          "bodyHtml": "<ul><li>Sıralama: <strong>hücre → doku → organ → organ sistemi → organizma</strong>.</li><li>Dokular benzer hücrelerden, organlar farklı dokulardan oluşur.</li><li>Organ sistemleri birlikte çalışarak organizmayı yaşatır.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏠 Günlük Yaşamdan",
+          "bodyHtml": "<ul><li><strong>Orkestra benzetmesi:</strong> Her müzisyen bir hücre, enstrüman grubu doku, bölümler organ, orkestranın tamamı organizmaya benzetilebilir.</li><li><strong>Bitkilerde:</strong> Bir elma ağacında yaprak, gövde ve kök bir organizmanın organlarıdır.</li><li><strong>Tıp:</strong> Organ nakli, bir organın başka bir bedene nakledilmesidir.</li></ul>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Doku",
+          "definition": "Aynı yapı ve görevdeki hücre topluluğu."
+        },
+        {
+          "term": "Organ",
+          "definition": "Farklı dokulardan oluşan, belirli görevi olan yapı."
+        },
+        {
+          "term": "Organ sistemi",
+          "definition": "Birlikte çalışan organların oluşturduğu grup."
+        },
+        {
+          "term": "Organizma",
+          "definition": "Tüm sistemleriyle bütün hâlindeki canlı."
+        },
+        {
+          "term": "Tek hücreli",
+          "definition": "Vücudu yalnızca bir hücreden oluşan canlı."
+        }
+      ],
+      "activity": {
+        "title": "Hiyerarşi Kartları",
+        "materials": "Karton, makas, renkli kalemler, 5 farklı renkte kart",
+        "steps": "1) Her basamak için bir kart hazırla: hücre, doku, organ, sistem, organizma.\n2) Kartların arkasına örnek yaz (kas hücresi, kas dokusu, kalp, dolaşım sistemi, insan).\n3) Kartları karıştır ve küçükten büyüğe sırala.\n4) Aynı sırayı bitki örneğiyle yap (yaprak hücresi, … , ağaç).\n5) Kartları arkadaşınla karıştırıp birbirinize sorun.\n6) Sırayı kendi cümlelerinle açıkla.",
+        "safetyNotes": "Makası dikkatle kullan. Kartları keskin kenarlı bırakma."
+      },
+      "quiz": [
+        {
+          "body": "Aşağıdakilerden hangisi küçükten büyüğe doğru doğru sıralamadır?",
+          "options": [
+            "Organ – doku – hücre – sistem",
+            "Hücre – doku – organ – sistem – organizma",
+            "Doku – hücre – organ – organizma",
+            "Sistem – organ – doku – hücre"
+          ],
+          "answer": 1,
+          "explanation": "Doğru sıra: hücre → doku → organ → organ sistemi → organizma.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Aynı yapı ve görevdeki hücrelerin bir araya gelmesiyle ne oluşur?",
+          "options": [
+            "Doku",
+            "Organ",
+            "Sistem",
+            "Organizma"
+          ],
+          "answer": 0,
+          "explanation": "Benzer hücreler doku oluşturur.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Kalp aşağıdakilerden hangisine örnektir?",
+          "options": [
+            "Hücre",
+            "Doku",
+            "Organ",
+            "Organizma"
+          ],
+          "answer": 2,
+          "explanation": "Kalp, farklı dokulardan oluşan bir organdır.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Mide, bağırsak ve karaciğer birlikte hangi yapıyı oluşturur?",
+          "options": [
+            "Doku",
+            "Sindirim sistemi",
+            "Hücre",
+            "Organizma"
+          ],
+          "answer": 1,
+          "explanation": "Birlikte çalışan organlar organ sistemini oluşturur; bunlar sindirime katkı yapar.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Amip tek hücreli bir canlıdır. Bu nedenle amipte hangisi bulunmaz?",
+          "options": [
+            "Çekirdek",
+            "Hücre zarı",
+            "Sitoplazma",
+            "Doku ve organ gibi basamaklar"
+          ],
+          "answer": 3,
+          "explanation": "Tek hücreli canlılarda tüm görevleri tek hücre yapar; doku, organ ve sistem yoktur.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "destek-ve-hareket-sistemi",
+      "title": "Destek ve Hareket Sistemi",
+      "summary": "İskelet, eklemler ve kasların yapısını sınıflandırır, hareketin nasıl gerçekleştiğini inceleriz.",
+      "outcome": {
+        "code": "FB.5.3.2.1",
+        "description": "Destek ve hareket sistemi yapılarını sınıflandırabilme.",
+        "details": [
+          "Destek ve hareket sistemini oluşturan yapıları belirler.",
+          "Kemik, eklem ve kasları özelliklerine göre sınıflandırır."
+        ]
+      },
+      "skills": [
+        "Sınıflandırma",
+        "Model okuma",
+        "Gözlem"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🔍 Merak Et",
+          "bodyHtml": "<p>Vücudumuz neden yumuşak bir balon gibi çökmez? Yürürken, koşarken ve yazı yazarken bu hareketleri nasıl yaparız? Kemiksiz bir vücudumuz olsaydı ne olurdu?</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Destek ve Hareket Sistemi Nedir?",
+          "bodyHtml": "<p>Vücuda şekil veren, onu ayakta tutan ve hareket etmemizi sağlayan sisteme <strong>destek ve hareket sistemi</strong> denir. Üç ana yapıdan oluşur: <strong>iskelet (kemikler), eklemler ve kaslar</strong>.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 İskelet ve Kemikler",
+          "bodyHtml": "<p>Yetişkin bir insanda yaklaşık <strong>206 kemik</strong> bulunur. Kemikler görevlerine ve şekillerine göre sınıflandırılır.</p><table><thead><tr><th>Kemik türü</th><th>Özelliği</th><th>Örnek</th></tr></thead><tbody><tr><td><strong>Uzun kemikler</strong></td><td>Boyu enine göre uzundur.</td><td>Uyluk, kaval, pazı</td></tr><tr><td><strong>Yassı kemikler</strong></td><td>Yassı ve geniştir; iç organları korur.</td><td>Kafatası, kaburga, kürek</td></tr><tr><td><strong>Kısa kemikler</strong></td><td>Kısa ve küçüktür.</td><td>El ve ayak bileği kemikleri</td></tr><tr><td><strong>Düzensiz kemikler</strong></td><td>Düzensiz şekillidir.</td><td>Omurlar</td></tr></tbody></table><figure style=\"margin:1.25rem 0\"><img src=\"/maarif/iskelet-sistemi.svg\" alt=\"İnsan iskeleti ve bölümleri\" loading=\"lazy\" style=\"width:100%;max-width:680px;height:auto;display:block;margin:0 auto;border-radius:14px\"/><figcaption style=\"text-align:center;font-size:0.8rem;opacity:.75;margin-top:.4rem\">Şekil: İnsan iskeletinin bölümleri.</figcaption></figure><p><strong>Kemiklerin görevleri:</strong> vücuda şekil vermek, iç organları korumak (kafatası beyni, kaburgalar kalp ve akciğerleri), kaslara tutunma yeri olmak ve hareketi sağlamak.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Eklemler",
+          "bodyHtml": "<p>İki ya da daha fazla kemiğin birleştiği yere <strong>eklem</strong> denir. Eklemler hareket yeteneklerine göre üçe ayrılır:</p><table><thead><tr><th>Eklem türü</th><th>Hareketi</th><th>Örnek</th></tr></thead><tbody><tr><td><strong>Oynamaz eklem</strong></td><td>Hareket etmez.</td><td>Kafatası kemikleri</td></tr><tr><td><strong>Yarı oynar eklem</strong></td><td>Az hareket eder.</td><td>Omurlar</td></tr><tr><td><strong>Oynar eklem</strong></td><td>Çok yönlü, geniş hareket eder.</td><td>Diz, dirsek, omuz</td></tr></tbody></table><figure style=\"margin:1.25rem 0\"><img src=\"/maarif/eklem-cesitleri.svg\" alt=\"Üç eklem türü\" loading=\"lazy\" style=\"width:100%;max-width:680px;height:auto;display:block;margin:0 auto;border-radius:14px\"/><figcaption style=\"text-align:center;font-size:0.8rem;opacity:.75;margin-top:.4rem\">Şekil: Eklem çeşitleri.</figcaption></figure><p>Eklemlerde kemik uçları <strong>kıkırdak</strong> ile kaplıdır; kıkırdak sürtünmeyi azaltır ve kemikleri darbelerden korur.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Kaslar",
+          "bodyHtml": "<p>Kaslar kemiklere <strong>tendon</strong> adı verilen yapılarla bağlanır. Kaslar <strong>kasılıp gevşeyerek</strong> kemikleri hareket ettirir.</p><ul><li>Kaslar yalnızca <strong>çeker</strong>, itemez. Bu yüzden zıt çalışan çiftler hâlinde bulunurlar.</li><li>Kol bükülürken <strong>pazı kası kasılır</strong>, arka kol kası gevşer. Kol düzelirken tersi olur.</li><li>İskelet kasları isteğimizle çalışır; kalp ve bağırsak kasları isteğimiz dışında çalışır.</li></ul><figure style=\"margin:1.25rem 0\"><img src=\"/maarif/kas-calisma.svg\" alt=\"Kol bükülürken ve düzken kasların durumu\" loading=\"lazy\" style=\"width:100%;max-width:680px;height:auto;display:block;margin:0 auto;border-radius:14px\"/><figcaption style=\"text-align:center;font-size:0.8rem;opacity:.75;margin-top:.4rem\">Şekil: Kol hareketinde kasların çalışması (şematik).</figcaption></figure>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Önemli Bilgiler",
+          "bodyHtml": "<ul><li>Destek ve hareket sistemi: <strong>iskelet, eklemler ve kaslar</strong>.</li><li>Eklemler: <strong>oynamaz, yarı oynar, oynar</strong>.</li><li>Kaslar yalnızca <strong>kasılarak çeker</strong>; zıt çiftler hâlinde çalışır.</li><li>Kemikler iç organları korur, vücuda şekil verir.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏠 Günlük Yaşamdan",
+          "bodyHtml": "<ul><li><strong>Bebekler:</strong> Yeni doğan bebeklerde yetişkinden fazla (yaklaşık 300) kemik bulunur; büyürken bazıları birleşir.</li><li><strong>Sporcular:</strong> Düzenli antrenman kasları güçlendirir.</li><li><strong>Biyonik:</strong> Mühendisler, eklem ve kas çalışmasını örnek alarak robot kolları ve protezler tasarlar.</li></ul>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "İskelet",
+          "definition": "Vücuda şekil veren ve destekleyen kemikler topluluğu."
+        },
+        {
+          "term": "Eklem",
+          "definition": "İki ya da daha fazla kemiğin birleştiği yer."
+        },
+        {
+          "term": "Kas",
+          "definition": "Kasılıp gevşeyerek hareketi sağlayan doku."
+        },
+        {
+          "term": "Tendon",
+          "definition": "Kası kemiğe bağlayan yapı."
+        },
+        {
+          "term": "Kıkırdak",
+          "definition": "Eklemlerde kemik uçlarını kaplayan esnek doku."
+        }
+      ],
+      "activity": {
+        "title": "Kol Modeli Yapalım",
+        "materials": "Karton (2 şerit), raptiye veya perçin, iki balon ya da iki lastik, ip, makas",
+        "steps": "1) İki karton şeridi dirsek olacak şekilde raptiyeyle birleştir (eklem).\n2) Üst kolun üzerine bir lastik (pazı kası), altına bir lastik (arka kol kası) bağla.\n3) Pazı lastiğini kısaltırken arka kol lastiğinin ne olduğunu gözle.\n4) Kolu bük ve düzelt; hangi kasın kasıldığını, hangisinin gevşediğini tabloya yaz.\n5) Modelin gerçek kola benzeyen ve benzemeyen yönlerini tartış.",
+        "safetyNotes": "Raptiyeyi ucu sivri bırakma, bantla kapat. Lastiği aşırı germe; yüzüne çarpabilir."
+      },
+      "quiz": [
+        {
+          "body": "Destek ve hareket sistemini oluşturan yapılar aşağıdakilerden hangisinde doğru verilmiştir?",
+          "options": [
+            "İskelet, eklemler ve kaslar",
+            "Kalp, akciğer, mide",
+            "Beyin, göz, kulak",
+            "Deri, saç, tırnak"
+          ],
+          "answer": 0,
+          "explanation": "Destek ve hareket sistemi iskelet, eklemler ve kaslardan oluşur.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Kafatası kemikleri hangi eklem türüyle birleşir?",
+          "options": [
+            "Oynar eklem",
+            "Yarı oynar eklem",
+            "Oynamaz eklem",
+            "Hiçbiri"
+          ],
+          "answer": 2,
+          "explanation": "Kafatası kemikleri oynamaz eklemle birleşir; beyni korur.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Kolumuzu bükerken aşağıdakilerden hangisi gerçekleşir?",
+          "options": [
+            "Pazı kası gevşer, arka kol kası kasılır.",
+            "İkisi de kasılır.",
+            "İkisi de gevşer.",
+            "Pazı kası kasılır, arka kol kası gevşer."
+          ],
+          "answer": 3,
+          "explanation": "Kol bükülürken pazı kası kasılır, arka kol kası gevşer.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Diz ve dirsek hangi eklem türüne örnektir?",
+          "options": [
+            "Oynamaz",
+            "Oynar",
+            "Yarı oynar",
+            "Kıkırdak"
+          ],
+          "answer": 1,
+          "explanation": "Diz ve dirsek geniş hareket yapan oynar eklemlerdir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Kaburgalar, aşağıdaki işlevlerden hangisini yapar?",
+          "options": [
+            "Kalp ve akciğerleri korur.",
+            "Besin üretir.",
+            "Enerji depolar.",
+            "Kan pompalar."
+          ],
+          "answer": 0,
+          "explanation": "Kaburgalar kafes şeklinde kalp ve akciğerleri korur.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "destek-ve-hareket-sistemi-sagligi",
+      "title": "Destek ve Hareket Sistemini Koruyalım",
+      "summary": "Kemik, eklem ve kasları sağlıklı tutmak için neler yapılması gerektiğini araştırır, sağlıklı alışkanlıklar belirleriz.",
+      "outcome": {
+        "code": "FB.5.3.2.2",
+        "description": "Destek ve hareket sisteminin sağlığını korumak için yapılması gerekenlere ilişkin bilgi toplayabilme.",
+        "details": [
+          "Destek ve hareket sisteminin sağlığını korumaya yönelik alışkanlıkları araştırır.",
+          "Topladığı bilgileri düzenleyerek sunar."
+        ]
+      },
+      "skills": [
+        "Bilgi toplama",
+        "Araştırma",
+        "İletişim"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🔍 Merak Et",
+          "bodyHtml": "<p>Neden ağır bir çantayı tek omuzda taşımak yerine iki omuzda taşımalıyız? Süt içmek kemiklerimiz için neden önemlidir? Bacağın kırıldığında doktor neden alçı yapar?</p><p>Bu konuda <strong>bilgi toplayıp</strong> destek ve hareket sistemini korumanın yollarını belirleyeceğiz.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Bilgiyi Nereden Toplarız?",
+          "bodyHtml": "<ul><li><strong>Güvenilir kaynaklar:</strong> ders kitabı, bilimsel kitaplar, sağlık kuruluşlarının (Sağlık Bakanlığı gibi) sayfaları.</li><li><strong>Uzmanlar:</strong> doktor, beden eğitimi öğretmeni, diyetisyen, fizyoterapist.</li><li><strong>Gözlem ve görüşme:</strong> Ailemizle ve çevremizle yapacağımız görüşmeler.</li></ul><p>Topladığımız bilgileri <strong>tablo, poster ya da kısa sunu</strong> ile düzenleyip arkadaşlarımızla paylaşırız.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Sağlıklı Beslenme",
+          "bodyHtml": "<ul><li><strong>Kalsiyum</strong> kemikleri sert tutar: süt, yoğurt, peynir gibi besinler.</li><li><strong>D vitamini</strong> kalsiyumun kemiklere yerleşmesine yardım eder: güneş ışığı, balık, yumurta.</li><li><strong>Protein</strong> kaslar için gereklidir: et, tavuk, baklagiller, yumurta.</li><li>Yeterli su içmek ve dengeli beslenmek kas ve eklemlerin çalışmasına yardım eder.</li></ul>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Düzenli Hareket ve Spor",
+          "bodyHtml": "<ul><li>Yürüyüş, koşu, yüzme ve bisiklet gibi etkinlikler kemikleri ve kasları güçlendirir.</li><li>Spora başlamadan <strong>ısınma</strong> hareketleri yapmak kas yaralanmalarını azaltır.</li><li>Bisiklet, paten ve kaykayda <strong>kask, dizlik ve dirseklik</strong> kullanmak kemik ve eklemleri korur.</li><li>Hareketsiz yaşam (uzun süre ekran başında oturmak) kasları zayıflatır.</li></ul>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Doğru Duruş ve Taşıma",
+          "bodyHtml": "<p>Yanlış oturma ve ağır yük taşıma <strong>omurga eğriliklerine</strong> ve ağrılara neden olabilir.</p><figure style=\"margin:1.25rem 0\"><img src=\"/maarif/dogru-durus.svg\" alt=\"Doğru ve yanlış oturuş\" loading=\"lazy\" style=\"width:100%;max-width:680px;height:auto;display:block;margin:0 auto;border-radius:14px\"/><figcaption style=\"text-align:center;font-size:0.8rem;opacity:.75;margin-top:.4rem\">Şekil: Doğru ve yanlış oturuş.</figcaption></figure><ul><li>Sırtını dik tut, ayaklarını yere bas.</li><li>Okul çantasını <strong>iki omuza</strong> asarak taşı ve çok ağır yapma.</li><li>Telefon ya da kitaba bakarken boynunu aşırı eğme.</li><li>Eğilip yük kaldırırken dizlerini bük, belinden değil bacaklarından güç al.</li></ul>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📖 Kaza ve Yaralanmada",
+          "bodyHtml": "<ul><li>Kemik kırıldığından şüphelenirsen yaralıyı <strong>hareket ettirme</strong> ve hemen <strong>112</strong>’yi ara.</li><li>Kırık, doktor tarafından alçı veya atel ile sabitlenir; kemikler zamanla kaynar.</li><li>Burkulma ve incinmelerde zorlamadan dinlenmek gerekir.</li></ul>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Önemli Bilgiler",
+          "bodyHtml": "<ul><li>Kalsiyum, D vitamini ve proteinden zengin <strong>dengeli beslenme</strong> kemik ve kasları korur.</li><li><strong>Düzenli egzersiz</strong> kasları ve kemikleri güçlendirir.</li><li><strong>Doğru duruş</strong> ve çanta taşıma omurgayı korur.</li><li>Spor yaparken koruyucu ekipman kullanılmalıdır.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏠 Günlük Yaşamdan",
+          "bodyHtml": "<ul><li><strong>Okulda:</strong> Teneffüste kısa hareketler yapmak kasları rahatlatır.</li><li><strong>Evde:</strong> Her 30 dakikalık ekran süresinden sonra ayağa kalkıp esneme yapmak iyi bir alışkanlıktır.</li><li><strong>Güneşlenme:</strong> Kısa süreli güneşlenme D vitamini üretimine yardım eder (güneşin en yakıcı saatlerinde kaçınılmalıdır).</li></ul>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Kalsiyum",
+          "definition": "Kemikleri sert tutan mineral."
+        },
+        {
+          "term": "D vitamini",
+          "definition": "Kalsiyumun kemiklere yerleşmesine yardım eden vitamin."
+        },
+        {
+          "term": "Isınma",
+          "definition": "Spordan önce kasları hazırlayan hafif hareketler."
+        },
+        {
+          "term": "Omurga eğriliği",
+          "definition": "Omurganın yanlış duruş sonucu eğrilmesi."
+        },
+        {
+          "term": "Alçı",
+          "definition": "Kırık kemiği sabit tutan sert sargı."
+        }
+      ],
+      "activity": {
+        "title": "Kemik Sağlığı Posteri ve Sirke Deneyi",
+        "materials": "Karton, renkli kalemler, dergi kupürleri, temiz bir tavuk kemiği, sirke, kavanoz, defter",
+        "steps": "1) Aile bireylerine “Kemik ve kasları korumak için ne yapıyorsunuz?” diye sor; cevapları tabloya yaz.\n2) Kitap ve güvenilir sitelerden üç sağlıklı alışkanlık bul.\n3) Bulduğun bilgileri poster ya da kısa sunuda düzenle.\n4) Deney: Temiz tavuk kemiğini kavanozdaki sirkeye koy; 3 gün bekle, her gün defterine gözlemini yaz.\n5) Kemiğin nasıl değiştiğini (esneyip esnemediğini) gözle ve kalsiyumun kemikteki önemi hakkında yorum yap.",
+        "safetyNotes": "Çiğ tavuk kemiğine dokunduktan sonra ellerini sabunla yıka. Sirkeyi göze sıçratma, yetişkin eşliğinde çalış. Kavanozu ağzı kapalı tut."
+      },
+      "quiz": [
+        {
+          "body": "Kemiklerin sağlıklı gelişmesi için en önemli mineral hangisidir?",
+          "options": [
+            "Demir",
+            "Sodyum",
+            "Kalsiyum",
+            "Potasyum"
+          ],
+          "answer": 2,
+          "explanation": "Kalsiyum kemikleri sert ve dayanıklı tutar; süt ürünlerinde bulunur.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Aşağıdakilerden hangisi destek ve hareket sisteminin sağlığına zarar verir?",
+          "options": [
+            "Düzenli spor",
+            "Okul çantasını tek omuzda ağır taşımak",
+            "Süt ve yoğurt tüketmek",
+            "Doğru oturmak"
+          ],
+          "answer": 1,
+          "explanation": "Ağır çantayı tek omuzda taşımak omurgayı yanlış yükler.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Bisiklete binerken kask, dizlik ve dirseklik takmanın amacı nedir?",
+          "options": [
+            "Daha hızlı gitmek",
+            "Daha çok terlemek",
+            "Daha güzel görünmek",
+            "Kemik ve eklemleri darbelerden korumak"
+          ],
+          "answer": 3,
+          "explanation": "Koruyucu ekipman düşme ve çarpmalarda kemik ve eklemleri korur.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Bir arkadaşının bacağının kırıldığından şüpheleniyorsun. İlk yapılacak şey nedir?",
+          "options": [
+            "Hareket ettirmeden 112’yi aramak",
+            "Hemen ayağa kaldırmak",
+            "Kırık bacağı çekiştirmek",
+            "Aynı yerde zıplatmak"
+          ],
+          "answer": 0,
+          "explanation": "Kırık şüphesinde yaralı hareket ettirilmez, 112 aranır.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Bilgi toplarken en güvenilir kaynak aşağıdakilerden hangisidir?",
+          "options": [
+            "Tanımadığın bir kişinin sosyal medya paylaşımı",
+            "Reklam videoları",
+            "Sağlık Bakanlığı gibi resmî kuruluşların sayfaları",
+            "Kulaktan duyulan sözler"
+          ],
+          "answer": 2,
+          "explanation": "Resmî sağlık kuruluşları ve uzmanlar güvenilir kaynaklardır.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    }
+  ]
+}
