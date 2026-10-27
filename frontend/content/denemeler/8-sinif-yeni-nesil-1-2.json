@@ -1,0 +1,375 @@
+{
+  "id": "8-sinif-yeni-nesil-1-2",
+  "slug": "8-sinif-yeni-nesil-1-2",
+  "title": "8. Sınıf Yeni Nesil Deneme: Mevsimler ve İklim · Yaşamı Kolaylaştıran Kuvvet",
+  "description": "1. ve 2. ünite kapsamlı, uzun senaryolu ve şemalı 20 soruluk yeni nesil deneme. (Maarif Modeli)",
+  "classLevel": 8,
+  "durationMin": 40,
+  "units": [
+    "Mevsimler ve İklim",
+    "Yaşamı Kolaylaştıran Kuvvet"
+  ],
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı, 8. sınıf 1. ve 2. ünite",
+  "questions": [
+    {
+      "no": 1,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "FB.8.1.1",
+      "skill": "Çıkarım yapma",
+      "scenario": "Fen kulübünde mevsimlerin oluşumunu inceleyen Elif, masanın ortasına Güneş’i temsil eden bir lamba yerleştiriyor. Dünya’yı temsil eden, ekseni eğik bir küreyi lambanın çevresinde dört farklı konuma (A, B, C, D) koyuyor. Kürenin dönme eksenini her konumda masanın sağ üst köşesine doğru, aynı yönde ve aynı eğiklikte tutuyor. Her konumda kürenin Kuzey Yarım Küre’sine (K ile gösterilen kutba yakın yarısına) düşen ışınları ve aydınlık-karanlık sınırını gözlemliyor.",
+      "image": "/denemeler/8-1-2/q01.svg",
+      "imageAlt": "Dünya’nın Güneş çevresindeki dört konumu ve eksen eğikliği",
+      "stem": "Elif’in modeline göre Kuzey Yarım Küre’de yaz mevsiminin başladığı konum ve bunun nedeni aşağıdakilerden hangisinde doğru verilmiştir?",
+      "options": [
+        "D konumu; Dünya bu konumda Güneş’e en yakın noktadadır.",
+        "A konumu; Güneş ışınları Ekvator’a dik gelir ve gece ile gündüz süreleri eşittir.",
+        "B konumu; Kuzey Yarım Küre Güneş’e doğru eğik olduğu için ışınlar daha dik gelir ve gündüzler uzar.",
+        "C konumu; Dünya’nın dönme ekseni bu konumda Güneş’e doğru yön değiştirir."
+      ],
+      "answer": 2,
+      "explanation": "Dönme ekseni her konumda aynı yöne bakar. B konumunda eksenin Kuzey Kutbu tarafı Güneş’e doğru eğiktir; ışınlar Kuzey Yarım Küre’ye daha dik gelir ve gündüz süresi uzar. A ve C konumları ekinoks konumlarıdır (ışınlar Ekvator’a dik, gece-gündüz eşit). D’de Kuzey Yarım Küre Güneş’ten uzağa eğiktir (kış)."
+    },
+    {
+      "no": 2,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "FB.8.1.1",
+      "skill": "Veri yorumlama",
+      "scenario": "Ayşe, Ankara’daki okulunun bahçesine 1 metre boyunda bir direk dikiyor. Yılın dört farklı gününde (21 Mart, 21 Haziran, 23 Eylül, 21 Aralık) öğle vakti direğin gölge boyunu ölçüp sütun grafiğiyle gösteriyor. Ölçümlerini yaparken her seferinde aynı saatte, aynı yerde ve aynı direkle çalışıyor. Öğretmeni, Ayşe’den bu verileri Dünya’nın hareketleriyle ilişkilendirerek yorumlamasını istiyor.",
+      "image": "/denemeler/8-1-2/q02.svg",
+      "imageAlt": "Dört tarihte öğle gölge boyu sütun grafiği",
+      "stem": "Ayşe’nin grafiğinden aşağıdaki çıkarımlardan hangisi yapılabilir?",
+      "options": [
+        "Haziran’da öğle vakti Güneş ışınları yüzeye daha büyük açıyla (daha dik) geldiği için gölge boyu en kısadır.",
+        "Aralık’ta Dünya Güneş’ten en uzak konumda olduğu için gölge boyu en uzundur.",
+        "Gölge boyu ile Güneş ışınlarının yüzeye düşme açısı doğru orantılıdır.",
+        "Mart ve Eylül’de gölge boylarının eşit çıkması, bu tarihlerde Dünya’nın Güneş’e olan uzaklığının tamamen aynı olmasından kaynaklanır."
+      ],
+      "answer": 0,
+      "explanation": "Güneş ışınları yüzeye ne kadar dik gelirse gölge o kadar kısa olur. Ankara’da Haziran’da öğle ışınları en dik (açı en büyük), Aralık’ta en eğik gelir. Gölge boyu ile düşme açısı ters ilişkilidir. Aralık’ta Dünya Güneş’e daha yakındır; gölge boyunu belirleyen uzaklık değil ışık açısıdır."
+    },
+    {
+      "no": 3,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "FB.8.1.1",
+      "skill": "Grafik okuma",
+      "scenario": "Bir meteoroloji istasyonunda staj yapan Mert, Kuzey Yarım Küre’de bulunan bir şehirde ayın 21’inde ölçülen gündüz sürelerini grafiğe döküyor. Grafikte gündüz süresinin yıl boyunca değiştiğini, bazı aylarda 12 saat çizgisini kestiğini fark ediyor. Mert, bu değişimin nedenini anlamak için Dünya’nın Güneş çevresindeki hareketini ve eksen eğikliğini inceliyor.",
+      "image": "/denemeler/8-1-2/q03.svg",
+      "imageAlt": "Gündüz süresinin aylara göre değişimini gösteren çizgi grafik",
+      "stem": "Mert’in grafiği Dünya’nın hareketleriyle ilişkilendirildiğinde aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        "Gündüz süresi yıl boyunca değişmez çünkü Dünya kendi ekseni etrafında her gün 24 saatte bir tur atar.",
+        "En uzun gündüz Haziran’da yaşandığı için bu şehir Güney Yarım Küre’de yer almaktadır.",
+        "Aralık’ta gündüzün en kısa olması, Dünya’nın Güneş’e en yakın konumda bulunmasının sonucudur.",
+        "Mart ve Eylül aylarında gündüz ile gece süreleri yaklaşık eşittir; bu tarihlerde Güneş ışınları Ekvator’a dik gelir."
+      ],
+      "answer": 3,
+      "explanation": "Grafikte gündüz süresi Mart ve Eylül’de 12 saattir (ekinoks); bu tarihlerde Güneş ışınları Ekvator’a diktir. Gündüz süresinin değişmesi eksen eğikliği ve dolanma nedeniyledir. Haziran’da gündüzün en uzun olması şehrin Kuzey Yarım Küre’de olduğunu gösterir. Aralık’ta Dünya Güneş’e daha yakındır."
+    },
+    {
+      "no": 4,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "FB.8.1.1",
+      "skill": "Çıkarım yapma",
+      "scenario": "Mert, uzay ajansının internet sitesinde Dünya’nın Güneş’e göre konumunu gösteren bir şema buluyor. Şemada Güneş ışınlarının Ekvator’a dik geldiği, aydınlık-karanlık sınırının ise her iki kutuptan geçtiği görülüyor. Mert, şemanın yılın hangi günlerine ait olabileceğini ve bu konumda Dünya’nın farklı yerlerinde neler yaşandığını tahmin etmeye çalışıyor.",
+      "image": "/denemeler/8-1-2/q04.svg",
+      "imageAlt": "Güneş ışınlarının Ekvator’a dik geldiği Dünya şeması",
+      "stem": "Mert’in incelediği şemadaki konum için aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Dünya’nın 21 Haziran tarihindeki konumudur; Kuzey Kutbu’nda gündüz 24 saat sürer.",
+        "Dünya’nın 21 Mart veya 23 Eylül tarihlerindeki konumudur; Dünya’nın her yerinde gece ve gündüz süreleri yaklaşık eşittir.",
+        "Dünya’nın 21 Aralık tarihindeki konumudur; Güney Yarım Küre’de yaz mevsimi başlar.",
+        "Dünya’nın 21 Haziran tarihindeki konumudur; Güneş ışınları Yengeç Dönencesi’ne diktir."
+      ],
+      "answer": 1,
+      "explanation": "Işınlar Ekvator’a dik ve aydınlık-karanlık sınırı kutuplardan geçiyorsa bu bir ekinokstur (21 Mart, 23 Eylül). Her enlem çemberinin yarısı aydınlık, yarısı karanlıktır; dolayısıyla Dünya’nın her yerinde gece-gündüz yaklaşık eşittir."
+    },
+    {
+      "no": 5,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "FB.8.1.1",
+      "skill": "Neden-sonuç ilişkisi",
+      "scenario": "Haziran ayında Norveç’in Tromsø kentine giden Kaan, saat gece yarısı olmasına rağmen Güneş’in hâlâ ufkun üzerinde olduğunu görüyor. Rehberi, bu olayın yalnızca Kuzey Kutup Dairesi içindeki bölgelere özgü olduğunu ve kış aylarında tam tersinin yaşandığını söylüyor. Kaan, bu durumu 21 Haziran’daki Dünya modeliyle açıklamak istiyor. Modelde Dünya’nın kendi ekseni etrafında döndüğünü ve eksenin Güneş’e doğru eğik durduğunu hatırlıyor.",
+      "image": "/denemeler/8-1-2/q05.svg",
+      "imageAlt": "21 Haziran’da Kuzey Kutup Dairesi içinin aydınlık kalması",
+      "stem": "Kaan’ın gördüğü olayın nedeni ve Aralık ayında aynı bölgede yaşanacak durum aşağıdakilerden hangisinde doğru verilmiştir?",
+      "options": [
+        "Eksen eğikliği nedeniyle Haziran’da bu bölge Dünya dönerken hep aydınlıkta kalır; Aralık’ta ise bölge uzun süre hiç aydınlanmaz.",
+        "Haziran’da Dünya Güneş’e en yakın konumda olduğu için Güneş hiç batmaz; Aralık’ta aynı bölgede gündüz 12 saat olur.",
+        "Dünya’nın dönme hızı kutuplarda daha yavaş olduğu için Güneş batmaz; Aralık’ta bu hız artar.",
+        "Kutup bölgesi Ay’ın ışığıyla aydınlandığı için gece olmaz; Aralık’ta Ay görünmez."
+      ],
+      "answer": 0,
+      "explanation": "21 Haziran’da Kuzey Kutbu Güneş’e doğru eğiktir. Kuzey Kutup Dairesi içindeki bölge, Dünya dönerken aydınlık yarıda kalır (gece güneşi). Aralık’ta ise aynı bölge karanlık yarıda kalır (kutup gecesi)."
+    },
+    {
+      "no": 6,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "FB.8.1.1",
+      "skill": "Veri yorumlama",
+      "scenario": "Deniz, “Yaz aylarında Dünya Güneş’e daha yakın olduğu için hava ısınır.” diyor. Kerem ise bu görüşe katılmıyor ve bir kaynaktan Dünya’nın Güneş’e olan uzaklığını araştırıyor. Buldukları veriye göre Dünya Ocak ayının başında Güneş’e yaklaşık 147 milyon km, Temmuz ayının başında ise yaklaşık 152 milyon km uzaklıktadır. Kuzey Yarım Küre’de yaşayan iki arkadaş, bu verilerin mevsimlerle nasıl ilişkilendirileceğini tartışıyor.",
+      "image": "/denemeler/8-1-2/q06.svg",
+      "imageAlt": "Dünya’nın yörüngesinde Ocak ve Temmuz konumlarındaki uzaklıklar",
+      "stem": "Verilere göre arkadaşların vardığı sonuçlardan hangisi doğrudur?",
+      "options": [
+        "Dünya Güneş’e yaklaştıkça Kuzey Yarım Küre’de sıcaklık artar; bu nedenle Ocak ayı yaz mevsimidir.",
+        "Güney Yarım Küre’de mevsimler Kuzey Yarım Küre’dekinin aynısı olduğu için Ocak’ta orada da kış yaşanır.",
+        "Kuzey Yarım Küre’de yaz, Dünya Güneş’ten daha uzakken yaşandığına göre mevsimlerin asıl nedeni uzaklık değil, eksen eğikliği ve dolanmadır.",
+        "Dünya’nın Güneş’e olan uzaklığı her ay aynı olduğundan mevsimler yalnızca eksen eğikliğinin bir sonucudur."
+      ],
+      "answer": 2,
+      "explanation": "Dünya Ocak’ta Güneş’e daha yakın, Temmuz’da daha uzaktır; ancak Kuzey Yarım Küre’de Ocak kış, Temmuz yazdır. Mevsimler eksen eğikliği ve Dünya’nın Güneş çevresindeki dolanması sonucu oluşur. Güney Yarım Küre’de mevsimler Kuzey’in tersidir. Uzaklık her ay aynı değildir; ancak mevsimlerin nedeni değildir."
+    },
+    {
+      "no": 7,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "FB.8.1.2",
+      "skill": "Sınıflandırma",
+      "scenario": "Hava haberlerini ve bölge tanıtımlarını inceleyen Defne, dört ifadeyi not alıyor: I. “Önümüzdeki üç gün Ege kıyılarında sağanak yağış bekleniyor.” II. “Rize’de yıl boyunca her mevsim yağış görülür.” III. “Dün Ağrı’da kar yağışı nedeniyle köy yolları kapandı.” IV. “Akdeniz’de yazlar sıcak ve kurak geçer.” Öğretmeni, Defne’den bu ifadeleri hava olayı ve iklim olarak ayırmasını istiyor.",
+      "image": "/denemeler/8-1-2/q07.svg",
+      "imageAlt": "Dört haber ifadesi kartı",
+      "stem": "Defne’nin notlarından hangileri iklimle ilgili bir bilgi verir?",
+      "options": [
+        "I ve II",
+        "I ve III",
+        "II ve IV",
+        "III ve IV"
+      ],
+      "answer": 2,
+      "explanation": "İklim, bir bölgede uzun yıllar boyunca gözlenen hava olaylarının ortalamasıdır; II (her mevsim yağış) ve IV (sıcak ve kurak yaz) iklim özelliğidir. I ve III kısa süreli, belirli bir zamandaki hava olaylarını anlatır."
+    },
+    {
+      "no": 8,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "FB.8.1.2",
+      "skill": "Karşılaştırma",
+      "scenario": "Dr. Selin bir şehrin 1974’ten 2023’e kadar olan yıllık ortalama sıcaklık verilerini grafiğe dökerek sıcaklıkların yaklaşık 1 °C arttığını belirliyor. Aynı şehirde çalışan Dr. Barış ise radar ve uydu görüntüleriyle yarın şehre düşecek yağışı ve sıcaklığı tahmin ediyor. İki bilim insanı, çalışmalarını bir fen kulübü öğrencisine anlatıyor ve öğrenci hangisinin hangi alanda çalıştığını belirlemeye çalışıyor.",
+      "image": "/denemeler/8-1-2/q08.svg",
+      "imageAlt": "Elli yıllık sıcaklık grafiği ve yarınki hava durumu kartı",
+      "stem": "Bu iki bilim insanının çalışma alanları aşağıdakilerden hangisinde doğru verilmiştir?",
+      "options": [
+        "Dr. Selin meteorologdur ve kısa süreli verileri inceler; Dr. Barış iklim bilimcidir ve uzun yılların ortalamasını inceler.",
+        "İkisi de meteorologdur çünkü ikisi de sıcaklık verisini inceler.",
+        "İkisi de iklim bilimcidir çünkü ikisi de aynı şehri inceler.",
+        "Dr. Selin iklim bilimcidir ve uzun yıllara ait verileri inceler; Dr. Barış meteorologdur ve kısa süreli hava durumunu inceler."
+      ],
+      "answer": 3,
+      "explanation": "İklim bilimciler uzun yılları kapsayan verilerle iklimi, meteorologlar ise kısa süreli hava olaylarını ve hava tahminini inceler."
+    },
+    {
+      "no": 9,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "FB.8.1.1",
+      "skill": "Çıkarım yapma",
+      "scenario": "Zeynep, bir iklim sitesinde adları gizlenmiş K ve L şehirlerinin aylık ortalama sıcaklıklarını gösteren grafiği buluyor. K şehrinde sıcaklıklar Temmuz–Ağustos aylarında en yüksek, Ocak’ta en düşük; L şehrinde ise Ocak’ta en yüksek, Temmuz’da en düşük değerleri alıyor. İki şehrin Dünya üzerindeki konumları hakkında tahmin yürütmek istiyor.",
+      "image": "/denemeler/8-1-2/q09.svg",
+      "imageAlt": "K ve L şehirlerinin aylık sıcaklık grafiği",
+      "stem": "Zeynep’in grafiğine göre aşağıdaki çıkarımlardan hangisi yapılabilir?",
+      "options": [
+        "K ve L aynı yarım kürede yer alır; çünkü ikisi de aynı gezegende bulunur.",
+        "L Kuzey Yarım Küre’de, K Güney Yarım Küre’de olabilir; çünkü Aralık’ta Dünya Kuzey’de Güneş’e daha yakındır.",
+        "K Kuzey, L Güney Yarım Küre’de olabilir; Aralık’ta Güneş ışınları L’nin bulunduğu yarım küreye daha dik geldiği için L’de sıcaklık yüksektir.",
+        "İki şehrin de Ekvator’da olması gerekir; çünkü mevsim farkları yalnızca Ekvator’da yaşanır."
+      ],
+      "answer": 2,
+      "explanation": "Mevsimler iki yarım kürede zıttır. K’de Temmuz sıcak (Kuzey), L’de Ocak sıcak (Güney). Aralık’ta Güneş ışınları Güney Yarım Küre’ye daha dik gelir; bu nedenle L’de sıcaklık yüksektir."
+    },
+    {
+      "no": 10,
+      "unit": "Yaşamı Kolaylaştıran Kuvvet",
+      "outcome": "FB.8.2.1",
+      "skill": "Sınıflandırma",
+      "scenario": "Teknoloji tasarım atölyesinde çalışan öğrenciler, günlük yaşamdaki altı düzeneği fotoğraflayıp basit makine çeşidine göre gruplandırıyor: A) Engelli rampası, B) Kuyudaki çıkrık, C) Şişe kapağındaki vida dişleri, D) Bayrak direğindeki makara, E) Tahterevalli, F) Bisiklet dişlisi. Öğrencilerden biri, hazırlanan etiketlerin doğru olup olmadığını kontrol ediyor ve her düzeneğin hangi basit makine grubuna girdiğini tartışıyor.",
+      "image": "/denemeler/8-1-2/q10.svg",
+      "imageAlt": "Altı farklı basit makine örneği",
+      "stem": "Aşağıdaki eşleştirmelerden hangisi doğrudur?",
+      "options": [
+        "A – eğik düzlem, B – çıkrık, E – kaldıraç",
+        "A – vida, C – eğik düzlem, F – makara",
+        "B – kaldıraç, D – çark ve kasnak, E – eğik düzlem",
+        "C – çıkrık, D – kaldıraç, F – eğik düzlem"
+      ],
+      "answer": 0,
+      "explanation": "Rampa eğik düzlemdir, çıkrık dönen kol ve silindirle çalışır, tahterevalli bir kaldıraçtır. Vida dişleri eğik düzlemin silindire sarılmış hâlidir; bayrak direğindeki makara sabit makaradır; bisiklet dişlisi çark-kasnak grubundadır."
+    },
+    {
+      "no": 11,
+      "unit": "Yaşamı Kolaylaştıran Kuvvet",
+      "outcome": "FB.8.2.1",
+      "skill": "Hesaplama ve yorumlama",
+      "scenario": "Marangoz Ali, 60 N ağırlığındaki bir kutuyu levyeyle kaldırmak istiyor. Levyenin dayanak noktası ile kutu arasındaki uzaklık 20 cm, dayanak noktası ile Ali’nin kuvvet uyguladığı nokta arasındaki uzaklık ise 60 cm’dir. Levye ve dayanak noktasındaki sürtünmeler önemsizdir. Ali, kutuyu levyeyle kaldırdığında kuvvetten mi yoldan mı kazanç sağladığını merak ediyor.",
+      "image": "/denemeler/8-1-2/q11.svg",
+      "imageAlt": "Dayanak noktası, yük ve kuvvet uzaklıklarıyla bir levye",
+      "stem": "Ali’nin uygulaması gereken kuvvet ve bu kaldıracın sağladığı kazanç aşağıdakilerden hangisinde doğru verilmiştir?",
+      "options": [
+        "20 N; yoldan kazanç sağlanır, kuvvette kayıp olur.",
+        "20 N; kuvvetten kazanç sağlanır, yolda kayıp olur.",
+        "180 N; kuvvetten kazanç sağlanır, yolda kayıp olur.",
+        "60 N; ne kuvvetten ne de yoldan kazanç sağlanır."
+      ],
+      "answer": 1,
+      "explanation": "Denge koşulu: Yük × yük kolu = Kuvvet × kuvvet kolu → 60 × 20 = F × 60 → F = 20 N. Kuvvet kolu yük kolundan uzun olduğu için kuvvetten kazanç vardır; ancak kuvvet noktası daha uzun yol alır (yolda kayıp). İş kazancı yoktur."
+    },
+    {
+      "no": 12,
+      "unit": "Yaşamı Kolaylaştıran Kuvvet",
+      "outcome": "FB.8.2.1",
+      "skill": "Karşılaştırma",
+      "scenario": "Bir mutfak ve atölye setini inceleyen Ece; fıstık kıracağı, cımbız ve makas için dayanak noktasının, yükün (sıkıştırılan ya da kesilen şeyin) ve kuvvet uygulanan noktanın birbirine olan uzaklıklarını ölçüyor. Ölçümleri bir şemada topluyor. Sürtünmeler önemsizdir. Ece, hangi aletlerin kuvvetten kazanç sağladığını belirlemek istiyor.",
+      "image": "/denemeler/8-1-2/q12.svg",
+      "imageAlt": "Fıstık kıracağı, cımbız ve makas için kuvvet ve yük kolları",
+      "stem": "Ece’nin ölçümlerine göre hangi aletler kuvvetten kazanç sağlar?",
+      "options": [
+        "Yalnız II",
+        "II ve III",
+        "I ve II",
+        "I ve III"
+      ],
+      "answer": 3,
+      "explanation": "Kuvvet kolu yük kolundan uzunsa kuvvetten kazanç vardır. I: 12 > 3 (kazanç). II: 6 < 12 (kazanç yok, kuvvette kayıp). III: 10 > 5 (kazanç). Cımbız kuvvetten kazanç değil, yoldan (ince iş) kazanç sağlar."
+    },
+    {
+      "no": 13,
+      "unit": "Yaşamı Kolaylaştıran Kuvvet",
+      "outcome": "FB.8.2.1",
+      "skill": "Hesaplama ve yorumlama",
+      "scenario": "Bir inşaatta çalışan usta, 120 N ağırlığındaki bir kovayı yukarı çıkarmak için bir sabit ve bir hareketli makaradan oluşan düzenek kuruyor. İpin bir ucu tavana bağlı, diğer ucundan işçi aşağı doğru çekiyor. Makara ağırlıkları ve sürtünmeler önemsizdir. İşçi, düzeneğin kendisine nasıl bir kolaylık sağladığını anlamaya çalışıyor.",
+      "image": "/denemeler/8-1-2/q13.svg",
+      "imageAlt": "Bir sabit ve bir hareketli makaradan oluşan düzenek",
+      "stem": "İşçinin ipe uygulaması gereken kuvvet kaç N’dir ve sabit makaranın düzeneğe katkısı nedir?",
+      "options": [
+        "60 N; sabit makara yalnızca kuvvetin yönünü değiştirir.",
+        "120 N; sabit makara kuvveti yarıya indirir.",
+        "60 N; sabit makara kuvveti iki katına çıkarır.",
+        "30 N; sabit makara kuvvetin yönünü değiştirmez."
+      ],
+      "answer": 0,
+      "explanation": "Hareketli makara yükü iki ip parçası taşıdığı için kuvveti yarıya indirir: 120 / 2 = 60 N. Sabit makara kuvvetten kazanç sağlamaz, yalnızca yönünü değiştirir (aşağı çekerek yukarı kaldırma)."
+    },
+    {
+      "no": 14,
+      "unit": "Yaşamı Kolaylaştıran Kuvvet",
+      "outcome": "FB.8.2.1",
+      "skill": "Hesaplama ve yorumlama",
+      "scenario": "Bir liman çalışanı, 240 N ağırlığındaki yükü iki sabit ve iki hareketli makaradan oluşan bir palangayla kaldırıyor. Şemada yükü taşıyan toplam 4 ip parçası numaralandırılmıştır. Makara ağırlıkları ve sürtünmeler önemsizdir. Çalışan, yükü 0,5 m yükseltmek için ipi ne kadar çekmesi gerektiğini ve ne kadar kuvvet uygulayacağını hesaplamak istiyor.",
+      "image": "/denemeler/8-1-2/q14.svg",
+      "imageAlt": "Dört ip parçasının yükü taşıdığı palanga",
+      "stem": "Çalışanın uygulaması gereken kuvvet ve çekmesi gereken ip uzunluğu aşağıdakilerden hangisinde doğru verilmiştir?",
+      "options": [
+        "60 N; 0,5 m",
+        "120 N; 1 m",
+        "60 N; 2 m",
+        "240 N; 2 m"
+      ],
+      "answer": 2,
+      "explanation": "Yükü 4 ip parçası taşıdığı için kuvvet 240 / 4 = 60 N olur. Yük 0,5 m yükselirken her ip parçası 0,5 m kısalır; çalışanın çekmesi gereken ip uzunluğu 4 × 0,5 = 2 m’dir. Kuvvetten kazanç yoldan kayıpla ödenir."
+    },
+    {
+      "no": 15,
+      "unit": "Yaşamı Kolaylaştıran Kuvvet",
+      "outcome": "FB.8.2.1",
+      "skill": "Karşılaştırma ve hesaplama",
+      "scenario": "Bir kamyon firmasında çalışan Selim, 200 N ağırlığındaki bir yükü, yüksekliği 1 m olan bir platforma çıkarmak için üç farklı rampadan birini seçecektir. K, L ve M rampalarının boyları sırasıyla 2 m, 4 m ve 5 m, yükseklikleri ise üçünde de 1 m’dir. Rampalarda sürtünme yoktur ve yük rampa boyunca sabit hızla çıkarılır.",
+      "image": "/denemeler/8-1-2/q15.svg",
+      "imageAlt": "Yükseklikleri aynı, boyları farklı üç rampa",
+      "stem": "Selim’in bu rampalarla ilgili yaptığı aşağıdaki çıkarımlardan hangisi doğrudur?",
+      "options": [
+        "En az kuvvet K rampasında gerekir; çünkü K rampası en dik olandır.",
+        "En az kuvvet M rampasında gerekir; bu rampada yapılan iş de diğerlerinden azdır.",
+        "Üç rampada da gereken kuvvet eşittir; çünkü yükseklikler aynıdır.",
+        "En az kuvvet M rampasında gerekir; ancak üç rampada da yapılan iş aynıdır."
+      ],
+      "answer": 3,
+      "explanation": "Eğik düzlemde kuvvet = Yük × yükseklik / boy. K: 100 N, L: 50 N, M: 40 N. Boy arttıkça kuvvet azalır. Ancak iş = kuvvet × yol her rampada 200 J’dür; basit makineler iş kazancı sağlamaz."
+    },
+    {
+      "no": 16,
+      "unit": "Yaşamı Kolaylaştıran Kuvvet",
+      "outcome": "FB.8.2.1",
+      "skill": "Hesaplama ve yorumlama",
+      "scenario": "Köyün kuyusundan su çeken Hatice, 80 N ağırlığındaki dolu kovayı çıkrıkla yukarı çekiyor. Çıkrığın silindirinin yarıçapı 10 cm, kolunun uzunluğu 40 cm’dir. Hatice, kolu çevirerek kovayı sabit hızla kaldırıyor. Sürtünmeler ve ipin ağırlığı önemsizdir. Hatice, daha az kuvvetle çalışabilmek için çıkrık üzerinde değişiklik yapmayı düşünüyor.",
+      "image": "/denemeler/8-1-2/q16.svg",
+      "imageAlt": "Kol ve silindirden oluşan çıkrık",
+      "stem": "Hatice’nin kola uygulaması gereken kuvvet ve bu kuvveti daha da azaltmak için yapabileceği değişiklik aşağıdakilerden hangisinde doğru verilmiştir?",
+      "options": [
+        "20 N; silindirin yarıçapını artırmak",
+        "20 N; kolun uzunluğunu artırmak",
+        "40 N; kolun uzunluğunu artırmak",
+        "320 N; silindirin yarıçapını azaltmak"
+      ],
+      "answer": 1,
+      "explanation": "Çıkrıkta Kuvvet × kol uzunluğu = Yük × silindir yarıçapı → F × 40 = 80 × 10 → F = 20 N. Kol uzadıkça ya da silindir yarıçapı küçüldükçe gereken kuvvet azalır; silindir yarıçapını artırmak kuvveti artırır."
+    },
+    {
+      "no": 17,
+      "unit": "Yaşamı Kolaylaştıran Kuvvet",
+      "outcome": "FB.8.2.1",
+      "skill": "Karşılaştırma",
+      "scenario": "Bir atölyede çalışan Ömer, aynı çapa ve aynı uzunluğa sahip iki vidayı aynı cins tahtaya sıkıştıracaktır. K vidasının diş aralığı (adım) 1 mm, L vidasının adımı 2 mm’dir. İki vida da tahtaya 10 mm girecektir. Ömer, vidaları tornavidayla sürtünmeler önemsiz kabul edilerek döndürüyor ve iki vidanın sıkılması arasındaki farkı gözlemlemek istiyor.",
+      "image": "/denemeler/8-1-2/q17.svg",
+      "imageAlt": "Adımları 1 mm ve 2 mm olan iki vida",
+      "stem": "Ömer’in gözlemlerinden hangisi doğrudur?",
+      "options": [
+        "K vidası daha çok kuvvetle sıkılır, ancak daha az tur gerekir.",
+        "L vidası daha az kuvvetle sıkılır, çünkü adımı daha büyüktür.",
+        "K vidası daha az kuvvetle sıkılır, ancak tahtaya girmesi için daha çok tur gerekir.",
+        "İki vida da aynı kuvvet ve aynı tur sayısıyla sıkılır."
+      ],
+      "answer": 2,
+      "explanation": "Adım küçüldükçe vida daha çok tur atar ama her turda daha küçük ilerler; bu nedenle gereken kuvvet azalır (kuvvetten kazanç, yoldan kayıp). K: 10 tur, L: 5 tur."
+    },
+    {
+      "no": 18,
+      "unit": "Yaşamı Kolaylaştıran Kuvvet",
+      "outcome": "FB.8.2.1",
+      "skill": "Hesaplama ve yorumlama",
+      "scenario": "Bir makine mühendisi, bir motorun dönme hareketini bir fana kayışla iletmek istiyor. Motor tarafındaki giriş kasnağının yarıçapı 30 cm, fan tarafındaki kasnağın yarıçapı 10 cm’dir. Kayış kaymıyor, sürtünmeler önemsizdir. Mühendis, giriş kasnağı 1 tur döndüğünde fan kasnağının kaç tur döneceğini ve sistemin bu durumda ne sağladığını belirlemek istiyor.",
+      "image": "/denemeler/8-1-2/q18.svg",
+      "imageAlt": "Büyük ve küçük kasnaktan oluşan kayış-kasnak sistemi",
+      "stem": "Mühendisin bulacağı sonuç aşağıdakilerden hangisidir?",
+      "options": [
+        "Fan kasnağı 3 tur döner; dönme hızı artarken kuvvetten kayıp olur.",
+        "Fan kasnağı 3 tur döner; kuvvet de aynı oranda artar.",
+        "Fan kasnağı 1/3 tur döner; dönme hızı azalırken kuvvet artar.",
+        "Fan kasnağı 1 tur döner; ne hız ne de kuvvet değişir."
+      ],
+      "answer": 0,
+      "explanation": "Kayışın aldığı yol iki kasnakta eşittir: 2π·30·1 = 2π·10·n → n = 3 tur. Küçük kasnak daha hızlı döner (hız kazancı), fakat çıkış kuvveti giriş kuvvetinin yaklaşık üçte biri olur."
+    },
+    {
+      "no": 19,
+      "unit": "Yaşamı Kolaylaştıran Kuvvet",
+      "outcome": "FB.8.2.1",
+      "skill": "Sınıflandırma",
+      "scenario": "Bir bisikletin parçalarını inceleyen Aylin, bisikletin birden fazla basit makineden oluşan bir bileşik makine olduğunu fark ediyor. Şemada I) Fren kolu, II) Pedal, ön dişli, zincir ve arka dişli düzeneği, III) Sele ayarını sabitleyen vida ve IV) Gidondaki zil kolu işaretlenmiştir. Aylin, bu parçaların her birinin hangi basit makineye benzediğini belirleyip bir tabloya yazıyor.",
+      "image": "/denemeler/8-1-2/q19.svg",
+      "imageAlt": "Parçaları numaralandırılmış bisiklet",
+      "stem": "Aylin’in aşağıdaki eşleştirmelerinden hangisi doğrudur?",
+      "options": [
+        "I – eğik düzlem, II – kaldıraç, III – makara",
+        "I – kaldıraç, II – çark ve kasnak (dişli), III – vida",
+        "I – makara, II – vida, IV – eğik düzlem",
+        "II – eğik düzlem, III – kaldıraç, IV – çark ve kasnak"
+      ],
+      "answer": 1,
+      "explanation": "Fren kolu bir kaldıraçtır. Zincir ve dişliler çark-kasnak sistemidir. Sele sabitleme düzeneğinde vida kullanılır. Zil kolu da kaldıraçtır. Birden fazla basit makinenin birleşmesiyle oluşan sisteme bileşik makine denir."
+    },
+    {
+      "no": 20,
+      "unit": "Yaşamı Kolaylaştıran Kuvvet",
+      "outcome": "FB.8.2.2",
+      "skill": "Modeli kanıtla değerlendirme",
+      "scenario": "Hazal, 100 N ağırlığındaki saksıyı balkona çıkarmak için bir düzenek tasarlıyor. İlk modelde (Model 1) yalnızca bir sabit makara kullanıyor ve dinamometre 100 N gösteriyor. Daha az kuvvetle çalışmak için ikinci modelde (Model 2) bir hareketli makara ekliyor ve bu kez dinamometre 52 N gösteriyor. Hazal, 52 N’un neden 50 N olmadığını merak ediyor ve modelini yeni kanıtlara göre değerlendirmek istiyor.",
+      "image": "/denemeler/8-1-2/q20.svg",
+      "imageAlt": "Model 1 ve Model 2 için dinamometre değerleri",
+      "stem": "Hazal’ın elde ettiği veriler ve modelindeki değişiklik için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        "Hareketli makara eklemek kuvveti değiştirmemiştir; 52 N’luk değer ölçüm hatasıdır.",
+        "Model 2’de iş kazancı sağlanmıştır; çünkü kuvvet 100 N’dan 52 N’a düşmüştür.",
+        "Sabit makara çıkarılırsa kuvvet 52 N’un da altına düşer; çünkü sabit makara kuvveti artırır.",
+        "Hareketli makara eklemek kuvveti yaklaşık yarıya indirmiştir; ölçülen değerin 50 N’dan biraz fazla çıkması sürtünme ve hareketli makaranın ağırlığıyla açıklanabilir."
+      ],
+      "answer": 3,
+      "explanation": "İdeal durumda hareketli makara kuvveti yarıya (50 N) indirir. Gerçekte sürtünme ve makara ağırlığı nedeniyle 52 N ölçülmüştür. Kuvvetten kazanç yoldan kayıpla ödenir; iş kazancı yoktur. Model, yeni kanıtlara göre geliştirilebilir (örn. daha az sürtünmeli makara)."
+    }
+  ]
+}

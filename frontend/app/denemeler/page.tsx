@@ -2,6 +2,7 @@ import Link from "next/link";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { apiFetch } from "@/lib/api";
 import { Exam } from "@/types/questions";
+import { STATIC_EXAMS } from "@/lib/staticExams";
 
 export const metadata = { title: "Denemeler" };
 
@@ -69,6 +70,32 @@ export default async function ExamsPage() {
         title="Deneme Sınavları"
         description="Konu, ünite, genel veya LGS tarzı denemelerle bilgini ölç."
       />
+
+      <section className="mx-auto max-w-5xl px-4 pt-14 sm:px-6 lg:px-8">
+        <h2 className="font-display text-xl font-bold">Yeni Nesil Denemeler</h2>
+        <p className="mt-1 text-sm text-lab-inkMuted dark:text-lab-paper/60">
+          Uzun senaryolu, şemalı sorulardan oluşan hazır denemeler. Giriş yapmadan çözebilirsin.
+        </p>
+        <div className="mt-4 grid gap-4 sm:grid-cols-2">
+          {STATIC_EXAMS.map((exam) => (
+            <Link
+              key={exam.id}
+              href={`/denemeler/yeni-nesil/${exam.slug}`}
+              className="rounded-card border border-beaker/40 bg-beaker/5 p-5 transition hover:border-beaker hover:shadow-md"
+            >
+              <div className="flex items-center gap-2">
+                <span className="rounded-full bg-beaker px-2.5 py-1 text-xs font-semibold text-white">Yeni Nesil</span>
+                <span className="text-xs text-lab-inkMuted dark:text-lab-paper/50">
+                  {exam.classLevel}. Sınıf · {exam.durationMin} dk
+                </span>
+              </div>
+              <h3 className="mt-2 font-display text-lg font-semibold">{exam.title}</h3>
+              <p className="mt-2 text-sm text-lab-inkMuted dark:text-lab-paper/60">{exam.description}</p>
+              <span className="mt-3 inline-block text-sm font-semibold text-beaker">{exam.questions.length} soru →</span>
+            </Link>
+          ))}
+        </div>
+      </section>
 
       <section className="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8">
         {exams.length === 0 ? (
