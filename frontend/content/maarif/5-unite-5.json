@@ -1,0 +1,139 @@
+{
+  "classLevel": 5,
+  "code": "5.5",
+  "title": "Maddenin Doğası",
+  "slug": "maddenin-dogasi",
+  "description": "Tanecikli yapı, ısı ve sıcaklık, hâl değişimleri ve ısı yalıtımını öğreniriz.",
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı, 5. sınıf",
+  "topics": [
+    {
+      "slug": "tanecikli-yapi",
+      "title": "Maddenin Tanecikli Yapısı",
+      "summary": "Katı, sıvı ve gaz hâllerini karşılaştır.",
+      "outcome": {
+        "code": "FB.5.4.1",
+        "description": "Konu kavramlarını örnekler ve bilimsel gözlemle açıklayabilme.",
+        "details": [
+          "Temel kavramları açıklar.",
+          "Günlük yaşamdan örnekler verir."
+        ]
+      },
+      "skills": [
+        "Gözlem",
+        "Karşılaştırma",
+        "Model okuma"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🔬 Madde Taneciklerden Oluşur",
+          "bodyHtml": "<p>Maddeler taneciklerden oluşur. Tanecikler arasında boşluk vardır ve hareket ederler. Taneciklerin dizilişi ve hareketi maddenin hâline göre değişir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧊 Katı, Sıvı ve Gaz",
+          "bodyHtml": "<div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px'><div style='padding:14px;background:#e7f6ff;border-radius:12px;text-align:center'><div style='font-size:2rem'>🧊</div><b>Katı</b><p>Belirli şekil ve hacim.</p><small>Tanecikler yakın, titreşim yapar.</small></div><div style='padding:14px;background:#e5faf5;border-radius:12px;text-align:center'><div style='font-size:2rem'>🥛</div><b>Sıvı</b><p>Belirli hacim.</p><small>Kabın şeklini alır.</small></div><div style='padding:14px;background:#f4edff;border-radius:12px;text-align:center'><div style='font-size:2rem'>🎈</div><b>Gaz</b><p>Bulunduğu kabı doldurur.</p><small>Tanecikler daha uzaktır.</small></div></div>"
+        }
+      ],
+      "glossary": [],
+      "activity": {
+        "title": "Gözlem etkinliği",
+        "materials": "Konuya uygun günlük yaşam nesneleri ve çalışma kâğıdı",
+        "steps": "Örnekleri incele, tahminini yaz ve gözlem sonuçlarını karşılaştır.",
+        "safetyNotes": "Deneylerde öğretmeninin veya bir yetişkinin yönlendirmelerine uy."
+      },
+      "quiz": [
+        {
+          "body": "Maddenin bütün hâllerinin ortak özelliği nedir?",
+          "options": [
+            "Taneciklerden oluşmaları",
+            "Hepsinin belirli şekli olması",
+            "Taneciklerin hareketsiz olması"
+          ],
+          "answer": 0,
+          "explanation": "Bütün maddeler taneciklerden oluşur.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Hangi hâlin belirli şekli yoktur ama belirli hacmi vardır?",
+          "options": [
+            "Katı",
+            "Sıvı",
+            "Gaz"
+          ],
+          "answer": 1,
+          "explanation": "Sıvılar belirli hacme sahiptir, kabın şeklini alır.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "isi-hal-degisimi-yalitim",
+      "title": "Isı, Hâl Değişimi ve Yalıtım",
+      "summary": "Isı-sıcaklık farkını, hâl değişimlerini ve yalıtımı öğren.",
+      "outcome": {
+        "code": "FB.5.4.1",
+        "description": "Konu kavramlarını örnekler ve bilimsel gözlemle açıklayabilme.",
+        "details": [
+          "Temel kavramları açıklar.",
+          "Günlük yaşamdan örnekler verir."
+        ]
+      },
+      "skills": [
+        "Gözlem",
+        "Karşılaştırma",
+        "Model okuma"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🔥 Isı ve 🌡️ Sıcaklık",
+          "bodyHtml": "<p><strong>Isı</strong>, sıcaklık farkı nedeniyle bir maddeden diğerine aktarılan enerjidir. Isı genellikle sıcak olandan soğuk olana aktarılır. <strong>Sıcaklık</strong>, maddenin ne kadar sıcak veya soğuk olduğunu gösterir ve termometreyle ölçülür.</p><figure><div style='font-size:2.3rem;text-align:center;background:#fff2e8;padding:18px;border-radius:14px'>🔥　➡️　🧊</div></figure>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧊 Hâl Değişimleri",
+          "bodyHtml": "<p><strong>Erime:</strong> katıdan sıvıya; <strong>donma:</strong> sıvıdan katıya; <strong>buharlaşma:</strong> sıvıdan gaza; <strong>yoğuşma:</strong> gazdan sıvıya geçiştir. Süblimleşme katıdan doğrudan gaza, kırağılaşma gazdan doğrudan katıya geçiştir.</p><figure><div style='display:flex;justify-content:center;gap:10px;flex-wrap:wrap;background:#f1f8fc;padding:18px;border-radius:14px;font-size:1.2rem'><b>🧊 Katı</b><span>⇄</span><b>💧 Sıvı</b><span>⇄</span><b>☁️ Gaz</b></div></figure>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏠 Isı İletimi ve Yalıtım",
+          "bodyHtml": "<p>Metaller ısıyı görece kolay iletir. Tahta, plastik, yün ve köpük ısı aktarımını azaltmak için kullanılabilir. Binalarda ısı yalıtımı enerji tasarrufuna yardımcı olur.</p><figure><div style='font-size:3rem;text-align:center;background:#eaf7ff;padding:18px;border-radius:14px'>🥄　🧤　🏠</div><figcaption style='text-align:center'>İletkenler ve yalıtkanlar farklı amaçlarla kullanılır.</figcaption></figure>"
+        }
+      ],
+      "glossary": [],
+      "activity": {
+        "title": "Gözlem etkinliği",
+        "materials": "Konuya uygun günlük yaşam nesneleri ve çalışma kâğıdı",
+        "steps": "Örnekleri incele, tahminini yaz ve gözlem sonuçlarını karşılaştır.",
+        "safetyNotes": "Deneylerde öğretmeninin veya bir yetişkinin yönlendirmelerine uy."
+      },
+      "quiz": [
+        {
+          "body": "Sıcaklığı hangi araç ölçer?",
+          "options": [
+            "Dinamometre",
+            "Termometre",
+            "Cetvel"
+          ],
+          "answer": 1,
+          "explanation": "Termometre sıcaklığı ölçer.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Buzun sıvı suya dönüşmesi nedir?",
+          "options": [
+            "Donma",
+            "Erime",
+            "Yoğuşma"
+          ],
+          "answer": 1,
+          "explanation": "Katıdan sıvıya geçiş erimedir.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    }
+  ]
+}
