@@ -1,0 +1,144 @@
+{
+  "classLevel": 5,
+  "code": "5.4",
+  "title": "Işığın Dünyası",
+  "slug": "isigin-dunyasi",
+  "description": "Işığın yayılması, maddelerin ışığı geçirme özellikleri ve gölge oluşumunu öğreniriz.",
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı, 5. sınıf",
+  "topics": [
+    {
+      "slug": "isigin-yayilmasi",
+      "title": "Işığın Yayılması",
+      "summary": "Işık kaynaklarını ve ışığın doğrusal yayılmasını öğren.",
+      "outcome": {
+        "code": "FB.5.4.1",
+        "description": "Konu kavramlarını örnekler ve bilimsel gözlemle açıklayabilme.",
+        "details": [
+          "Temel kavramları açıklar.",
+          "Günlük yaşamdan örnekler verir."
+        ]
+      },
+      "skills": [
+        "Gözlem",
+        "Karşılaştırma",
+        "Model okuma"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "☀️ Işık Kaynakları",
+          "bodyHtml": "<p>Işık, çevremizdeki cisimleri görmemizi sağlar. <strong>Güneş</strong> doğal, <strong>ampul</strong> ise yapay ışık kaynağıdır.</p><figure><div style='font-size:3rem;text-align:center;background:#fff7db;border-radius:14px;padding:18px'>☀️　💡　🕯️</div><figcaption style='text-align:center'>Doğal ve yapay ışık kaynakları.</figcaption></figure>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "➡️ Işık Doğrusal Yayılır",
+          "bodyHtml": "<p>Işık, saydam ve aynı özellikteki bir ortamda <strong>doğrusal yollar boyunca</strong> yayılır. Işın çizimleri, ışığın yönünü gösteren oklarla yapılır.</p><figure><div style='font-size:1.5rem;text-align:center;background:#eff9fc;padding:22px;border-radius:14px'>☀️ ━━━━━━━━━ ➜</div><figcaption style='text-align:center'>Işık ışınları düz çizgilerle modellenir.</figcaption></figure>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🔎 Günlük Yaşam",
+          "bodyHtml": "<p>El feneri ışığının ilerlemesi ve gölge oluşumu ışığın doğrusal yayılmasıyla açıklanabilir.</p>"
+        }
+      ],
+      "glossary": [],
+      "activity": {
+        "title": "Gözlem etkinliği",
+        "materials": "Konuya uygun günlük yaşam nesneleri ve çalışma kâğıdı",
+        "steps": "Örnekleri incele, tahminini yaz ve gözlem sonuçlarını karşılaştır.",
+        "safetyNotes": "Deneylerde öğretmeninin veya bir yetişkinin yönlendirmelerine uy."
+      },
+      "quiz": [
+        {
+          "body": "Işık saydam ve aynı özellikteki ortamda nasıl yayılır?",
+          "options": [
+            "Doğrusal",
+            "Dairesel",
+            "Yalnız aşağı"
+          ],
+          "answer": 0,
+          "explanation": "Işık doğrusal yayılır.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Hangisi doğal ışık kaynağıdır?",
+          "options": [
+            "Ampul",
+            "Güneş",
+            "El feneri"
+          ],
+          "answer": 1,
+          "explanation": "Güneş doğal ışık kaynağıdır.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "isik-ve-golge",
+      "title": "Işık ve Maddeler: Gölge",
+      "summary": "Saydam, yarı saydam ve opak maddeleri; tam gölgeyi öğren.",
+      "outcome": {
+        "code": "FB.5.4.1",
+        "description": "Konu kavramlarını örnekler ve bilimsel gözlemle açıklayabilme.",
+        "details": [
+          "Temel kavramları açıklar.",
+          "Günlük yaşamdan örnekler verir."
+        ]
+      },
+      "skills": [
+        "Gözlem",
+        "Karşılaştırma",
+        "Model okuma"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🪟 Saydam Maddeler",
+          "bodyHtml": "<p>Işığın büyük bölümünü geçirir; arkalarındaki cisimler genellikle net görülür. <strong>Örnek:</strong> temiz cam, temiz su ve hava.</p><figure><div style='font-size:2rem;text-align:center;background:#e3f7ff;padding:18px;border-radius:14px'>☀️ → 🪟 → 👁️</div></figure>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🌤️ Yarı Saydam ve Opak Maddeler",
+          "bodyHtml": "<p><strong>Yarı saydam</strong> maddeler ışığın bir bölümünü geçirir (buzlu cam, yağlı kâğıt). <strong>Opak</strong> maddeler ışığı geçirmez (tahta, metal, karton).</p><figure><div style='display:flex;justify-content:center;gap:12px;flex-wrap:wrap;font-size:2rem;background:#f3eaff;padding:18px;border-radius:14px'>🪟　📕　🪵</div></figure>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🌑 Tam Gölge",
+          "bodyHtml": "<p>Işık doğrusal yayıldığından, ışığın önüne opak bir cisim konulduğunda ışığın ulaşamadığı bölgede gölge oluşabilir. Kaynak, opak cisim ve ekran gölge düzeneğini oluşturur.</p><figure><div style='font-size:1.7rem;text-align:center;background:#f4f8fc;padding:20px;border-radius:14px'>☀️ → ⬛ → ▰</div><figcaption style='text-align:center'>Işık kaynağı, cisim ve ekran.</figcaption></figure>"
+        }
+      ],
+      "glossary": [],
+      "activity": {
+        "title": "Gözlem etkinliği",
+        "materials": "Konuya uygun günlük yaşam nesneleri ve çalışma kâğıdı",
+        "steps": "Örnekleri incele, tahminini yaz ve gözlem sonuçlarını karşılaştır.",
+        "safetyNotes": "Deneylerde öğretmeninin veya bir yetişkinin yönlendirmelerine uy."
+      },
+      "quiz": [
+        {
+          "body": "Hangisi saydam maddedir?",
+          "options": [
+            "Karton",
+            "Temiz cam",
+            "Tahta"
+          ],
+          "answer": 1,
+          "explanation": "Temiz cam ışığın büyük bölümünü geçirir.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Gölge oluşumunda hangi cisim ışığı engeller?",
+          "options": [
+            "Opak cisim",
+            "Saydam cam",
+            "Hava"
+          ],
+          "answer": 0,
+          "explanation": "Opak cisim ışığın geçmesini engeller.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    }
+  ]
+}
