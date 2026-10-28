@@ -1,0 +1,186 @@
+{
+  "classLevel": 5,
+  "code": "5.6",
+  "hours": 16,
+  "title": "Yaşamımızdaki Elektrik",
+  "slug": "yasamimizdaki-elektrik",
+  "description": "Basit elektrik devresinin elemanlarını tanır, devre şemalarını okur ve çizer; devredeki değişkenleri gözlemleyerek ampul parlaklığını etkileyen durumlar hakkında çıkarım yaparız.",
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı (2024), 5. sınıf. İçerik öğretim amacıyla özgün biçimde hazırlanmıştır.",
+  "topics": [
+    {
+      "slug": "elektrik-devresinin-elemanlari",
+      "title": "Elektrik Devresinin Elemanları",
+      "summary": "Pil, ampul, bağlantı kablosu ve anahtarın görevlerini tanıyalım.",
+      "outcome": {
+        "code": "FB.5.6.1",
+        "description": "Basit elektrik devresini oluşturan elemanları tanıyıp görevleriyle ilişkilendirebilme.",
+        "details": [
+          "Devre elemanlarını adlandırır ve görevlerini açıklar.",
+          "Bir devrenin çalışması için gerekli temel elemanları belirler.",
+          "Gözlem sonuçlarını kullanarak devrenin çalışıp çalışmayacağını tahmin eder."
+        ]
+      },
+      "skills": [
+        "Gözlem",
+        "Sınıflandırma",
+        "Bilimsel çıkarım",
+        "Model oluşturma"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🔋 1. Pil: Enerji sağlayan eleman",
+          "bodyHtml": "<p><strong>Pil</strong>, elektrik devresinde elektrik enerjisi sağlayan elemandır. Pilin artı (+) ve eksi (−) kutupları vardır. Pilin türüne ve devredeki diğer elemanlara uygun bağlantı yapılmalıdır.</p><div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px'><div style='background:#fff4d6;padding:16px;border-radius:14px;text-align:center'><div style='font-size:2.7rem'>🔋</div><b>Pil</b><p>Enerji sağlar.</p></div><div style='background:#fff0ed;padding:16px;border-radius:14px;text-align:center'><div style='font-size:2.7rem'>💡</div><b>Ampul</b><p>Elektrik enerjisini ışık enerjisine dönüştürür.</p></div></div><p><strong>Düşün:</strong> Pil devreden çıkarılırsa ampulün yanması beklenir mi? Neden?</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧵 2. Bağlantı kablosu ve anahtar",
+          "bodyHtml": "<p><strong>Bağlantı kabloları</strong> devre elemanları arasında iletken bir yol oluşturur. <strong>Anahtar</strong> devreyi açıp kapatmaya yarar. Anahtar kapalı konumdayken devre yolu tamamlanır; açık konumdayken yol kesilir.</p><div style='background:#edf8ff;border-radius:14px;padding:18px;text-align:center'><div style='font-size:1.35rem'>🔋 ━━━━━ 💡</div><div style='font-size:1.35rem'>　┃　　　┃</div><div style='font-size:1.35rem'>　┗━━🔘━┛</div><p style='margin:8px 0 0'>Kapalı devre: Elektrik akımının dolaşabileceği kesintisiz yol.</p></div>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⚡ Açık devre ve kapalı devre",
+          "bodyHtml": "<div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px'><div style='background:#eaf8ef;border-radius:14px;padding:14px;text-align:center'><div style='font-size:2rem'>🔋━━💡</div><b>Kapalı devre</b><p>Yol tamamdır; uygun devrede ampul yanar.</p></div><div style='background:#fff0ef;border-radius:14px;padding:14px;text-align:center'><div style='font-size:2rem'>🔋━　💡</div><b>Açık devre</b><p>Yol kesiktir; ampul yanmaz.</p></div></div><p>Ampul yanmıyorsa pilin, ampulün, kabloların ve anahtarın bağlantılarını kontrol ederiz. Bu, sistemli problem çözmeye örnektir.</p>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏠 Günlük yaşamla bağlantı",
+          "bodyHtml": "<p>Oda lambasının anahtarı, elektrikli oyuncakların açma-kapama düğmesi ve el feneri benzer bir mantıkla çalışır. Evdeki elektrik prizleri deney amacıyla kullanılmamalıdır; sınıf etkinliklerinde yalnızca öğretmenin sağladığı düşük gerilimli pil devreleri kullanılmalıdır.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🗺️ Devre şeması ne işe yarar?",
+          "bodyHtml": "<p>Devre şeması, devre elemanlarını standart sembollerle gösteren çizimdir. Gerçek devrenin görünüşünü değil, elemanların nasıl bağlandığını anlatır.</p><div style='background:#f4f1ff;border-radius:14px;padding:16px;text-align:center'><div style='font-size:1.1rem'>Pil ─── Anahtar ─── Ampul</div><p>Şemada semboller kullanılır; kablolar bağlantı çizgileriyle gösterilir.</p></div><p>Şema çizerken bağlantıların birleştiği yerleri açıkça belirtmek, devreyi doğru okumayı kolaylaştırır.</p>"
+        }
+      ],
+      "glossary": [],
+      "activity": {
+        "title": "Kendi devre modelini tasarla",
+        "materials": "Bir pil yatağı ve uygun pil, küçük ampul-duyu, bağlantı kabloları, anahtar ve çalışma kâğıdı",
+        "steps": "1. Devre elemanlarını isimleri ve görevleriyle eşleştir. 2. Öğretmen gözetiminde kapalı bir devre kur. 3. Anahtarı açıp kapatarak ampulün durumunu gözlemle. 4. Kurduğun devrenin şemasını çiz ve gözlemini açıklayarak yaz.",
+        "safetyNotes": "Yalnızca öğretmenin sağladığı düşük gerilimli pil kullan. Priz elektriğine dokunma; kabloları prize bağlama. Devreyi kurarken pilin ısındığını fark edersen kullanmayı bırakıp öğretmenine haber ver."
+      },
+      "quiz": [
+        {
+          "body": "Elektrik devresinde enerji sağlayan eleman hangisidir?",
+          "options": [
+            "Ampul",
+            "Pil",
+            "Anahtar"
+          ],
+          "answer": 1,
+          "explanation": "Pil, basit elektrik devresine enerji sağlar.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Anahtar açık konumdaysa basit devrede ne beklenir?",
+          "options": [
+            "Devre yolu kesilir, ampul yanmaz",
+            "Ampul kesinlikle daha parlak yanar",
+            "Pil enerji sağlamaz hâle gelir"
+          ],
+          "answer": 0,
+          "explanation": "Açık anahtar devre yolunu keser.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bağlantı kablosunun temel görevi nedir?",
+          "options": [
+            "Işığı üretmek",
+            "Devre elemanları arasında iletken yol oluşturmak",
+            "Sıcaklığı ölçmek"
+          ],
+          "answer": 1,
+          "explanation": "Kablolar devre elemanlarını elektriksel olarak bağlar.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "devre-semasi-ve-parlaklik",
+      "title": "Devre Şemaları ve Ampul Parlaklığı",
+      "summary": "Devreyi şemayla gösterelim; devre elemanlarındaki değişiklikleri karşılaştıralım.",
+      "outcome": {
+        "code": "FB.5.6.2",
+        "description": "Elektrik devresi modellerini ve gözlem sonuçlarını kullanarak devrenin çalışmasına ilişkin çıkarım yapabilme.",
+        "details": [
+          "Basit devreyi şemayla gösterir.",
+          "Devre elemanlarındaki değişiklikleri kontrollü biçimde karşılaştırır.",
+          "Gözlemlerini tabloya kaydeder ve kanıta dayalı sonuç çıkarır."
+        ]
+      },
+      "skills": [
+        "Model oluşturma",
+        "Değişkenleri kontrol etme",
+        "Veri kaydetme",
+        "Kanıta dayalı açıklama"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🧩 Devre şemasını adım adım oku",
+          "bodyHtml": "<p>Önce pil sembolünü, ampul sembolünü ve anahtarın konumunu bul. Ardından bağlantı çizgilerini takip ederek kesintisiz bir yol olup olmadığını kontrol et.</p><div style='background:#eef8ff;border-radius:14px;padding:18px;text-align:center'><div style='font-size:2rem'>🔋 ─── 🔘 ─── 💡</div><p>Elemanların sırası değişse bile bağlantıların kesintisiz olması önemlidir.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "💡 Ampul neden yanar veya yanmaz?",
+          "bodyHtml": "<p>Bir ampulün yanması için devrenin tamamlanmış olması, pilin ve ampulün çalışır durumda bulunması ve bağlantıların doğru yapılması gerekir. Bağlantı kopuksa veya anahtar açıksa ampul yanmayabilir.</p><div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px'><div style='background:#e8f8ef;padding:14px;border-radius:12px;text-align:center'><div style='font-size:2rem'>💡</div><b>Devre tamam</b><p>Ampul yanabilir.</p></div><div style='background:#fff0ef;padding:14px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🌑</div><b>Bağlantı kopuk</b><p>Ampul yanmaz.</p></div></div>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "🔬 Bilimsel karşılaştırma nasıl yapılır?",
+          "bodyHtml": "<p>Bir değişkenin etkisini araştırırken diğer koşulları aynı tutarız. Örneğin iki devrede de aynı tür ampul ve aynı bağlantı düzeni kullanılır; yalnızca pil sayısı değiştirilirse gözlem daha anlamlı olur. Her pil ve ampulün özellikleri sonucu etkileyebileceğinden, gözlem gerçek devre üzerinde yapılmalıdır.</p>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🛠️ Mühendislik tasarımı",
+          "bodyHtml": "<p>Bir tasarımcı, kolay açılıp kapanan ve enerji kaynağı güvenli biçimde yerleştirilmiş bir el feneri devresi kurmak ister. Önce ihtiyacı belirler, bir model tasarlar, dener ve sorun varsa tasarımını geliştirir. Bu döngü mühendislik tasarım sürecidir.</p>"
+        }
+      ],
+      "glossary": [],
+      "activity": {
+        "title": "Tahmin et–dene–açıkla",
+        "materials": "Öğretmen tarafından sağlanan pil, ampul, kablo ve anahtar; gözlem tablosu",
+        "steps": "Devrenin hangi durumda çalışacağını önce tahmin et. Öğretmen gözetiminde dene. Tahmininle gözlemini karşılaştır ve farkın nedenini yaz. Sonuçlarını sınıf arkadaşlarının sonuçlarıyla karşılaştır.",
+        "safetyNotes": "Elektrik devrelerini yalnızca düşük gerilimli pil ile kur. Isınan elemanları kullanma; kısa devre oluşturacak bağlantılardan kaçın."
+      },
+      "quiz": [
+        {
+          "body": "Bir devre şeması en çok neyi gösterir?",
+          "options": [
+            "Devrenin renklerini",
+            "Elemanların bağlantı biçimini",
+            "Ampulün markasını"
+          ],
+          "answer": 1,
+          "explanation": "Şema elemanların nasıl bağlandığını gösterir.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bilimsel karşılaştırmada neden diğer koşulları aynı tutarız?",
+          "options": [
+            "Sonucu hangi değişkenin etkilediğini anlayabilmek için",
+            "Deneyi daha renkli yapmak için",
+            "Bütün sonuçlar aynı çıksın diye"
+          ],
+          "answer": 0,
+          "explanation": "Kontrollü karşılaştırma, değişkenin etkisini yorumlamaya yardım eder.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Ampul yanmıyorsa ilk yapılacak uygun işlem hangisidir?",
+          "options": [
+            "Priz elektriğine bağlamak",
+            "Bağlantıları ve anahtar konumunu kontrol etmek",
+            "Pili ısıtmak"
+          ],
+          "answer": 1,
+          "explanation": "Güvenli biçimde bağlantılar kontrol edilir.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    }
+  ]
+}
