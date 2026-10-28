@@ -2,7 +2,13 @@
 
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import styles from './page.module.css';
+
+const MicroscopeScene = dynamic(() => import('./MicroscopeScene'), {
+  ssr: false,
+  loading: () => <div className={styles.sceneLoading}>Mikroskop hazırlanıyor…</div>,
+});
 
 type Sample = { id: string; name: string; emoji: string; title: string; description: string; hint: string; color: string };
 const samples: Sample[] = [
@@ -21,6 +27,9 @@ export default function MikroskopAnimasyonuPage() {
   const [light, setLight] = useState(65);
   const [running, setRunning] = useState(true);
   const [showLabels, setShowLabels] = useState(true);
+  const [looking, setLooking] = useState(false);
+  const [arrived, setArrived] = useState(false);
+  const stepBack = () => { setArrived(false); setLooking(false); };
   const sample = samples.find((s) => s.id === sampleId) ?? samples[0];
   const shapes = useMemo(() => Array.from({ length: 46 }, (_, i) => ({
     x: (i * 37 + 11) % 94 + 3,
@@ -55,7 +64,18 @@ export default function MikroskopAnimasyonuPage() {
 
         <section className={styles.scopePanel} aria-label="Mikroskop görüntüsü ve kontrolleri">
           <div className={styles.scopeTop}><div><span className={styles.liveDot} /> CANLI GÖRÜNTÜ MODELİ</div><button className={styles.smallButton} onClick={() => { setZoom(2); setFocus(55); setLight(65); setRunning(true); }}>↺ Sıfırla</button></div>
-          <div className={styles.microscopeView} style={{ ['--sample-color' as string]: sample.color, ['--light' as string]: `${light}%`, ['--focus' as string]: `${(100-focus)/18}px` }}>
+          <div className={styles.stage3d}>
+            <MicroscopeScene sampleColor={sample.color} looking={looking} onPick={() => setLooking(true)} onArrived={() => setArrived(true)} />
+            {!looking && (
+              <div className={styles.sceneHint}>
+                <span>🖱️ Sürükleyerek döndür · mikroskopa dokun, okülerden bak</span>
+                <button type="button" className={styles.primary} onClick={() => setLooking(true)}>👁 Okülerden bak</button>
+              </div>
+            )}
+            {looking && !arrived && <div className={styles.sceneHint}><span>Okülere yaklaşılıyor…</span></div>}
+            <div className={`${styles.eyeOverlay} ${arrived ? styles.eyeOn : ''}`} aria-hidden={!arrived}>
+              <div className={styles.eyeWrap}>
+          <div className={styles.microscopeView}  style={{ ['--sample-color' as string]: sample.color, ['--light' as string]: `${light}%`, ['--focus' as string]: `${(100-focus)/18}px` }}>
             <div className={`${styles.specimen} ${styles[sampleId]}`} style={{ transform: `scale(${0.78 + zoom * 0.25})`, filter: `blur(${Math.max(0, Math.abs(focus - 55) / 14)}px)` }}>
               {shapes.map((shape, i) => <span key={`${sampleId}-${i}`} className={`${styles.particle} ${running ? styles.moving : ''}`} style={{ left: `${shape.x}%`, top: `${shape.y}%`, width: `${shape.size * (0.65 + zoom * 0.24)}px`, height: `${shape.size * (0.65 + zoom * 0.24)}px`, transform: `rotate(${shape.rotate}deg)`, animationDelay: `${shape.delay}s` }} />)}
               {sampleId === 'onion' && Array.from({ length: 20 }, (_, i) => <span key={`cell-${i}`} className={styles.plantCell} style={{ left: `${(i % 5) * 19 + 4}%`, top: `${Math.floor(i / 5) * 23 + 4}%` }}><i /></span>)}
@@ -66,6 +86,10 @@ export default function MikroskopAnimasyonuPage() {
             <div className={styles.viewVignette} />
             {showLabels && <div className={styles.viewLabel}>{sample.title}<small>{zoom * 100}× model büyütme</small></div>}
             <div className={styles.scaleMark}>└──── 100 µm (temsili)</div>
+          </div>
+              </div>
+              <button type="button" className={styles.backButton} onClick={stepBack}>← Masaya dön</button>
+            </div>
           </div>
           <div className={styles.controlGrid}>
             <label className={styles.control}><span><b>🔎 Büyütme</b><strong>{zoom * 100}×</strong></span><input aria-label="Büyütme" type="range" min="1" max="4" step="1" value={zoom} onChange={(e) => setZoom(Number(e.target.value))} /><span className={styles.rangeEnds}><small>100×</small><small>400×</small></span></label>
