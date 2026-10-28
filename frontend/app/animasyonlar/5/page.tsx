@@ -3,9 +3,9 @@ import MoonPhasesSimulator from "@/components/animations/MoonPhasesSimulator/Moo
 import styles from "./page.module.css";
 
 export const metadata = {
-  title: "5. Sınıf Animasyonları | Ay’ın Evreleri ve Yüzeyi",
+  title: "5. Sınıf Animasyonları | Fen Bilimleri",
   description:
-    "Ay’ın evrelerini keşfet; astronotla Ay yüzeyinde ilerleyerek kraterleri, mare alanlarını ve regolit tabakasını incele.",
+    "5. sınıf fen bilimleri için etkileşimli animasyonlar ve Işığın Dünyası 4. ünite konu anlatımı.",
 };
 
 export default function FifthGradeMoonPhasesPage() {
