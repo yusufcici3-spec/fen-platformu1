@@ -1,0 +1,375 @@
+{
+  "id": "8-sinif-yeni-nesil-mevsim-dna",
+  "slug": "8-sinif-yeni-nesil-mevsim-dna",
+  "title": "8. Sınıf Yeni Nesil Deneme: Mevsimler ve İklim · DNA ve Genetik Kod",
+  "description": "Mevsimler ve İklim ile DNA ve Genetik Kod konularından, uzun senaryolu ve şemalı 20 soruluk yeni nesil deneme.",
+  "classLevel": 8,
+  "durationMin": 40,
+  "units": [
+    "Mevsimler ve İklim",
+    "DNA ve Genetik Kod"
+  ],
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı, 8. sınıf Mevsimler ve İklim; DNA ve Genetik Kod",
+  "questions": [
+    {
+      "no": 1,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "FB.8.1.1",
+      "skill": "Çıkarım yapma",
+      "scenario": "Fen kulübünde bir model çalışması yapan Elif, Güneş’i temsil eden lambanın çevresinde dört konuma (A, B, C, D) bir küre yerleştiriyor. Bu kez gerçek Dünya’dan farklı olarak kürenin dönme eksenini, yörünge düzlemine tam dik (eğiklik 0°) tutuyor ve her konumda ekseni aynı yönde bırakıyor. Elif, bu hayali Dünya’da mevsimlerin ve gece-gündüz sürelerinin nasıl olacağını tahmin etmeye çalışıyor.",
+      "image": "/denemeler/8-mevsim-dna/q01.svg",
+      "imageAlt": "Eksen eğikliği 0° olan modelde dört konum",
+      "stem": "Elif’in bu modeline göre aşağıdaki çıkarımlardan hangisi yapılabilir?",
+      "options": [
+        "Kuzey Yarım Küre’de sürekli yaz, Güney Yarım Küre’de sürekli kış yaşanır.",
+        "Dünya’nın hiçbir yerinde mevsim farkı oluşmaz; gece ve gündüz süreleri yıl boyunca her yerde yaklaşık eşit olur.",
+        "Mevsimler Dünya Güneş’e yaklaşıp uzaklaştıkça oluşur; bu nedenle mevsimler yine yaşanır.",
+        "Kutuplarda yılın yarısında gündüz, yarısında gece olur."
+      ],
+      "answer": 1,
+      "explanation": "Mevsimlerin nedeni eksen eğikliği ve Dünya’nın Güneş çevresinde dolanmasıdır. Eksen dik olsaydı Güneş ışınları yıl boyunca aynı enlemlere aynı açıyla gelir, aydınlık-karanlık sınırı hep kutuplardan geçer; gece-gündüz süreleri her yerde yaklaşık eşit olur ve mevsim oluşmazdı."
+    },
+    {
+      "no": 2,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "FB.8.1.1",
+      "skill": "Tahmin etme",
+      "scenario": "Bir uzay tasarım yarışmasına katılan öğrenciler, Güneş çevresinde aynı yörüngede dolanan üç gezegeni (X, Dünya ve Z) hayal ediyor. Gezegenlerin eksen eğiklikleri sırasıyla 10°, 23,5° ve 40° olarak belirleniyor; başka bütün özellikleri aynıdır. Öğretmen, öğrencilerden “dönence” ve “kutup dairesi” enlemlerini, eksen eğikliği ile ilişkilendirerek tahmin etmelerini istiyor. Dönence enleminin eksen eğikliğine eşit, Kutup Dairesi enleminin ise 90° eksi eksen eğikliği olduğu bilgisi veriliyor.",
+      "image": "/denemeler/8-mevsim-dna/q02.svg",
+      "imageAlt": "Eksen eğiklikleri farklı üç gezegen",
+      "stem": "Öğrencilerin yapacağı tahminlerden hangisi doğrudur?",
+      "options": [
+        "Mevsim farkları en çok X gezegeninde yaşanır; çünkü eksen eğikliği ne kadar küçükse mevsimler o kadar belirgindir.",
+        "Üç gezegende de dönenceler 23,5° enleminde bulunur; çünkü yörüngeleri aynıdır.",
+        "Z gezegeninde Kutup Dairesi 40° enleminde yer alır; çünkü dönence ile kutup dairesi aynı enlemdedir.",
+        "Dönence enlemi X’te 10°, Z’de 40° olur; mevsim farkları en çok Z gezegeninde yaşanır ve Z’de Kutup Daireleri 50° enleminde yer alır."
+      ],
+      "answer": 3,
+      "explanation": "Eksen eğikliği arttıkça Güneş ışınlarının dik geldiği enlem aralığı (dönenceler) ekvatordan uzaklaşır ve mevsim farkları artar. Kutup Dairesi = 90° − eğiklik olduğundan Z’de 50°’dir. Yörünge aynı olsa da dönenceler eğikliğe bağlıdır."
+    },
+    {
+      "no": 3,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "FB.8.1.1",
+      "skill": "Deney sonucu yorumlama",
+      "scenario": "Merve, aynı el fenerini masaya 20 cm uzaklıktan önce yüzeye dik, sonra eğik tutarak aydınlatıyor. Fener yüzeye dik tutulduğunda aydınlanan alan yaklaşık 4 cm², eğik tutulduğunda ise yaklaşık 8 cm² oluyor. Fenerden çıkan ışık miktarı iki durumda da aynıdır. Merve, bu deneyi yaz ve kış mevsimlerindeki Güneş ışınlarının geliş açısıyla ilişkilendirmek istiyor.",
+      "image": "/denemeler/8-mevsim-dna/q03.svg",
+      "imageAlt": "Dik ve eğik tutulan el fenerinin aydınlattığı alan",
+      "stem": "Merve’nin deney sonuçlarından hareketle aşağıdaki çıkarımlardan hangisi yapılabilir?",
+      "options": [
+        "Işınlar yüzeye daha dik geldiğinde aynı enerji daha küçük alana dağılır; birim yüzeye düşen enerji artar ve yüzey daha çok ısınır.",
+        "Işınlar yüzeye eğik geldiğinde fenerden çıkan enerji miktarı artar; bu nedenle yüzey daha çok ısınır.",
+        "Işınların geliş açısı değişse de birim yüzeye düşen enerji değişmez.",
+        "Işınlar eğik geldiğinde aydınlanan alan küçüldüğü için birim yüzeye düşen enerji artar."
+      ],
+      "answer": 0,
+      "explanation": "Aynı miktarda ışık dik gelirse küçük alana (4 cm²), eğik gelirse büyük alana (8 cm²) yayılır. Birim yüzeye düşen enerji dik gelişte iki katıdır. Yazın Güneş ışınları daha dik geldiği için hava daha sıcaktır."
+    },
+    {
+      "no": 4,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "FB.8.1.1",
+      "skill": "Çıkarım yapma",
+      "scenario": "Bir coğrafya projesinde Dünya’nın kesitini inceleyen öğrenciler, Ekvator ve iki dönencenin bulunduğu enlemlerde A, B, C ve D şehirlerini işaretliyor. A şehri Ekvator’da (0°), B şehri Yengeç Dönencesi’nde (23,5° K), C şehri Oğlak Dönencesi’nde (23,5° G), D şehri ise 40° Kuzey enlemindedir. Öğrenciler, yılın iki özel gününde (21 Haziran ve 21 Aralık) öğle vakti Güneş ışınlarının hangi şehirlere dik geldiğini bulmaya çalışıyor.",
+      "image": "/denemeler/8-mevsim-dna/q04.svg",
+      "imageAlt": "Ekvator ve dönencelerdeki dört şehir",
+      "stem": "Öğle vakti Güneş ışınlarının dik geldiği şehirler aşağıdakilerden hangisinde doğru verilmiştir?",
+      "options": [
+        "21 Haziran’da A şehrine, 21 Aralık’ta D şehrine",
+        "21 Haziran’da C şehrine, 21 Aralık’ta B şehrine",
+        "21 Haziran’da B şehrine, 21 Aralık’ta C şehrine",
+        "21 Haziran’da D şehrine, 21 Aralık’ta A şehrine"
+      ],
+      "answer": 2,
+      "explanation": "21 Haziran’da Güneş ışınları Yengeç Dönencesi’ne (23,5° K), 21 Aralık’ta Oğlak Dönencesi’ne (23,5° G) dik gelir. Dolayısıyla B ve C şehirleri bu günlerde ışınları tam dik alır. A şehrine ışınlar 21 Mart ve 23 Eylül’de dik gelir."
+    },
+    {
+      "no": 5,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "FB.8.1.1",
+      "skill": "Grafik okuma",
+      "scenario": "Üç arkadaş, farklı enlemlerdeki üç şehrin yıl boyunca ayın 21’inde ölçülen gündüz sürelerini bir grafikte topluyor. X şehrinde gündüz süresi yıl boyunca 12 saattir. Y şehrinde gündüz süresi 9 ile 15 saat arasında, Z şehrinde ise 0 ile 24 saat arasında değişiyor. Şehirlerin biri Ekvator’a çok yakın, biri orta enlemde, biri Kuzey Kutup Dairesi’nin içinde yer almaktadır.",
+      "image": "/denemeler/8-mevsim-dna/q05.svg",
+      "imageAlt": "Üç farklı enlemde gündüz süresi grafiği",
+      "stem": "Grafiğe göre şehirlerin konumları ve nedeni aşağıdakilerden hangisinde doğru verilmiştir?",
+      "options": [
+        "X orta enlemde, Y Ekvator’a yakın, Z Kutup Dairesi içindedir; enlem arttıkça gündüz süresi yıl içinde değişmez.",
+        "X Kutup Dairesi içinde, Y orta enlemde, Z Ekvator’a yakındır; Ekvator’da gündüz süresi en çok değişir.",
+        "X, Y ve Z aynı enlemdedir; fark Dünya’nın Güneş’e olan uzaklığından kaynaklanır.",
+        "X Ekvator’a yakın, Y orta enlemde, Z Kutup Dairesi içindedir; enlem arttıkça eksen eğikliğinin gündüz süresine etkisi artar."
+      ],
+      "answer": 3,
+      "explanation": "Ekvator’da gündüz süresi yıl boyunca yaklaşık 12 saattir. Enlem arttıkça yıl içindeki değişim artar; Kutup Dairesi içinde yılın bir bölümünde gündüz 24 saat, bir bölümünde 0 saat sürer."
+    },
+    {
+      "no": 6,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "FB.8.1.1",
+      "skill": "Neden-sonuç ilişkisi",
+      "scenario": "Ankara’da yaşayan Can, Avustralya’nın Sydney şehrinde yaşayan arkadaşıyla Aralık ayında mesajlaşıyor. Can kar yağışından, arkadaşı ise sıcak plaj havasından bahsediyor. Birlikte iki şehrin Ocak ve Temmuz aylarındaki ortalama sıcaklıklarını (Ankara: 0 °C ve 24 °C, Sydney: 23 °C ve 12 °C) buluyorlar ve Dünya’nın 21 Aralık’taki konumunu gösteren şemayı inceliyorlar. Şemada Dünya’nın dönme ekseni Güneş’ten uzağa eğiktir.",
+      "image": "/denemeler/8-mevsim-dna/q06.svg",
+      "imageAlt": "21 Aralık’ta Dünya, Ankara ve Sydney",
+      "stem": "Verilere ve şemaya göre arkadaşların varacağı sonuç aşağıdakilerden hangisidir?",
+      "options": [
+        "Sydney, Aralık’ta Ankara’dan daha çok Güneş’e yakın olduğu için orada yaz yaşanır.",
+        "Aralık’ta Güney Yarım Küre Güneş’e doğru eğik olduğundan Sydney’e ışınlar daha dik gelir ve gündüzler uzun olur; bu yüzden orada yaz, Ankara’da kış yaşanır.",
+        "Sydney’de eksen eğikliği Ankara’dakinden farklı olduğu için mevsimler ters olur.",
+        "Aralık’ta iki şehirde de aynı mevsim yaşanır; çünkü Dünya Güneş’ten her yere eşit uzaklıktadır."
+      ],
+      "answer": 1,
+      "explanation": "Mevsimler iki yarım kürede zıt yaşanır. 21 Aralık’ta Güney Yarım Küre Güneş’e eğiktir: ışınlar dik gelir, gündüz uzar ve sıcaklık artar. Aynı anda Kuzey Yarım Küre’de ışınlar eğik, gündüz kısadır (kış)."
+    },
+    {
+      "no": 7,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "FB.8.1.2",
+      "skill": "Grafik yorumlama",
+      "scenario": "Bir tarım mühendisi, X şehrinde zeytin ve narenciye yetiştirmeyi planlıyor. Şehrin Meteoroloji kayıtlarından uzun yıllar ortalamasını gösteren bir grafik hazırlıyor. Grafikte kırmızı çizgi aylık ortalama sıcaklığı, mavi çubuklar ise aylık ortalama yağışı gösteriyor. Mühendis, grafikten bölgenin iklimi hakkında bir sonuca ulaşmak istiyor.",
+      "image": "/denemeler/8-mevsim-dna/q07.svg",
+      "imageAlt": "Sıcaklık çizgisi ve yağış çubuklarından oluşan iklim grafiği",
+      "stem": "Mühendisin grafikten ulaşacağı sonuç aşağıdakilerden hangisidir?",
+      "options": [
+        "Yazları sıcak ve kurak, kışları ılık ve yağışlı olan bir iklim görülür; bu bilgi uzun yıllık ortalamalara dayandığı için iklim bilgisidir.",
+        "Yıl boyunca her mevsim yağışlı ve yazları serin geçen bir iklim görülür.",
+        "Grafik yalnızca bir yıla ait hava durumunu gösterir; iklim bilgisi vermez.",
+        "En çok yağış Temmuz ayında görülür; bu nedenle yaz mevsimi en yağışlıdır."
+      ],
+      "answer": 0,
+      "explanation": "Grafikte Temmuz–Ağustos’ta sıcaklık en yüksek, yağış en düşüktür; Aralık–Ocak’ta ise yağış en yüksektir. Bu özellikler Akdeniz iklimini yansıtır. Uzun yıllık ortalamalar hava durumunu değil, iklimi gösterir."
+    },
+    {
+      "no": 8,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "FB.8.1.2",
+      "skill": "Karşılaştırma",
+      "scenario": "Ocak ayının son haftasında hava durumu haberlerini izleyen Duru, bölgenin üç günlük tahminini (Kaynak 1) ve bölgenin 1991–2020 yılları ortalamalarını gösteren bir iklim tablosunu (Kaynak 2) yan yana koyuyor. Pazar günü için beklenen sıcaklık (15 °C) bölgenin Ocak ortalamasından (5 °C) çok yüksek. Duru ve arkadaşı bu farkın “bölgenin iklimi değişiyor” anlamına gelip gelmediğini tartışıyor.",
+      "image": "/denemeler/8-mevsim-dna/q08.svg",
+      "imageAlt": "Üç günlük tahmin ve otuz yıllık iklim tablosu",
+      "stem": "Duru ve arkadaşının tartışmasına göre aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Kaynak 1 iklim bilgisi, Kaynak 2 hava durumu bilgisi verir; çünkü uzun yıllık ortalamalar tahmin için kullanılır.",
+        "İki kaynak da aynı türde bilgi verir; çünkü ikisi de sıcaklık değeri içerir.",
+        "Kaynak 1 kısa süreli hava durumunu, Kaynak 2 uzun yıllara ait iklim bilgisini gösterir; tek bir günün yüksek sıcaklığı iklimin değiştiğini tek başına kanıtlamaz.",
+        "Pazar günkü yüksek sıcaklık, bölgenin iklimini hemen değiştirmiştir."
+      ],
+      "answer": 2,
+      "explanation": "Hava durumu belirli bir yerde kısa süredeki atmosfer olaylarıdır; iklim ise uzun yıllar boyunca bu olayların ortalamasıdır. Bir günün sıcaklığı iklimi tek başına değiştirmez."
+    },
+    {
+      "no": 9,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "FB.8.1.1",
+      "skill": "Veri yorumlama",
+      "scenario": "Bir okul gezisinde astronomi atölyesine katılan Eda, üç farklı şehrin 21 Haziran’daki gündüz ve gece sürelerini bir tabloda topluyor. K şehrinde gündüz ve gece süreleri eşit, L şehrinde gündüz süresi 15 saat 10 dakika, M şehrinde ise 9 saat 10 dakikadır. Şehirlerden biri Ekvator’a çok yakın, ikisi ise yaklaşık 40° enleminde, farklı yarım kürelerdedir.",
+      "image": "/denemeler/8-mevsim-dna/q09.svg",
+      "imageAlt": "21 Haziran’da üç şehrin gündüz-gece süreleri tablosu",
+      "stem": "Eda’nın tablosuna göre şehirlerle ilgili aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "K Ekvator’a yakındır; L Güney Yarım Küre’de, M Kuzey Yarım Küre’de bulunur; çünkü 21 Haziran’da Güney’de gündüz uzundur.",
+        "K Ekvator’a yakındır; L Kuzey Yarım Küre’de, M Güney Yarım Küre’de bulunur; çünkü 21 Haziran’da Kuzey Yarım Küre’de gündüz uzundur.",
+        "K Kutup Dairesi içindedir; L ve M Ekvator’a yakındır; çünkü gündüz süreleri farklıdır.",
+        "L ve M aynı yarım kürededir; çünkü gündüz ve gece sürelerinin toplamı aynıdır."
+      ],
+      "answer": 1,
+      "explanation": "21 Haziran’da Güneş ışınları Yengeç Dönencesi’ne diktir; Kuzey Yarım Küre’de gündüz uzun (L), Güney Yarım Küre’de kısa (M) olur. Ekvator’da gece-gündüz yaklaşık eşittir (K). Her üç şehirde de gündüz ile gece toplamı 24 saattir."
+    },
+    {
+      "no": 10,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "FB.8.1.1",
+      "skill": "Deney tasarlama ve yorumlama",
+      "scenario": "Barış, Güneş ışınlarının geliş açısının sıcaklığa etkisini araştırmak için üç düzenek kuruyor. Üç düzenekte de aynı lamba, aynı uzaklık, aynı siyah kâğıt ve aynı termometre kullanıyor; her düzeneği 10 dakika boyunca çalıştırıyor. Yalnızca kâğıdın lambaya göre eğimini 90°, 60° ve 30° olarak değiştiriyor. Başlangıçta termometreler 25 °C’yi gösteriyor; 10 dakika sonra sırasıyla 38 °C, 35 °C ve 29 °C okuyor.",
+      "image": "/denemeler/8-mevsim-dna/q10.svg",
+      "imageAlt": "Farklı açılarda yerleştirilmiş üç termometre düzeneği",
+      "stem": "Barış’ın deneyi ve sonucu için aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Bağımsız değişken sıcaklıktır; açı küçüldükçe sıcaklık artışı da artar. Işığın geliş açısı sabit tutulan değişkendir.",
+        "Bağımsız değişken sürenin uzunluğudur; açı büyüdükçe sıcaklık düşer. Lamba uzaklığı değiştirilmelidir.",
+        "Açı ne olursa olsun sıcaklık artışı aynıdır; çünkü lambanın gücü değişmemiştir.",
+        "Bağımsız değişken ışığın geliş açısıdır; açı küçüldükçe sıcaklık artışı azalır. Lambanın uzaklığı, süre ve kâğıt sabit tutulan değişkenlerdir."
+      ],
+      "answer": 3,
+      "explanation": "Araştırılan etken (ışığın geliş açısı) bağımsız değişkendir; ölçülen sıcaklık bağımlı değişkendir. Doğru sonuç için diğer değişkenler sabit tutulur. Açı küçüldükçe ışık geniş alana yayılır ve sıcaklık artışı azalır; bu da kışın havanın daha soğuk olmasıyla ilişkilidir."
+    },
+    {
+      "no": 11,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "F.8.2.1.1",
+      "skill": "Sıralama",
+      "scenario": "Biyoloji laboratuvarında mikroskopla hücre çekirdeğini inceleyen Kerem, ekranda büyütülen görüntüleri art arda izliyor. Önce X biçimli bir yapıyı (kromozom), sonra bu yapının içindeki sarmal bir molekülü (DNA), ardından molekülün üzerindeki bir bölgeyi (gen) ve son olarak bu bölgeyi oluşturan fosfat, şeker ve azotlu bazdan oluşan küçük birimleri (nükleotid) görüyor. Kerem, bu yapıların birbiriyle ilişkisini bir sıralama olarak yazmak istiyor.",
+      "image": "/denemeler/8-mevsim-dna/q11.svg",
+      "imageAlt": "Kromozom, DNA ve nükleotidin birbirinin içindeki yerleri",
+      "stem": "Kerem’in sıralamayı küçükten büyüğe doğru yaparsa aşağıdakilerden hangisini yazması gerekir?",
+      "options": [
+        "Gen – nükleotid – DNA – kromozom",
+        "Kromozom – DNA – gen – nükleotid",
+        "Nükleotid – gen – DNA – kromozom",
+        "Nükleotid – DNA – gen – kromozom"
+      ],
+      "answer": 2,
+      "explanation": "Nükleotidler birleşerek DNA’yı oluşturur; DNA’nın belirli bir özelliği belirleyen bölgesi gendir. Kromozomlar ise sarmallanmış DNA’dan oluşur. Küçükten büyüğe: nükleotid < gen < DNA < kromozom."
+    },
+    {
+      "no": 12,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "F.8.2.1.2",
+      "skill": "Model üzerinde gösterme",
+      "scenario": "Bir bilim kulübünün DNA modeli yarışmasında Selin, DNA’nın bir bölümünü merdiven biçiminde yapıyor. Modelde üst ipliğin bazları A–T–G–C–C–A–T–G sırasıyla dizilmiş; alt ipliğin bazları ise henüz yerleştirilmemiş. Selin, DNA’da A’nın yalnızca T ile, G’nin yalnızca C ile eşleştiğini hatırlıyor ve alt ipliği buna göre tamamlıyor. Daha sonra modeldeki toplam G (guanin) sayısını da bulmak istiyor.",
+      "image": "/denemeler/8-mevsim-dna/q12.svg",
+      "imageAlt": "Üst ipliği verilmiş, alt ipliği boş DNA merdiven modeli",
+      "stem": "Selin’in yapacağı alt iplik dizilimi ve toplam G sayısı aşağıdakilerden hangisinde doğru verilmiştir?",
+      "options": [
+        "Alt iplik: T–A–C–G–G–T–A–C; toplam G sayısı 4",
+        "Alt iplik: T–A–C–G–G–T–A–C; toplam G sayısı 2",
+        "Alt iplik: A–T–G–C–C–A–T–G; toplam G sayısı 4",
+        "Alt iplik: U–A–C–G–G–U–A–C; toplam G sayısı 4"
+      ],
+      "answer": 0,
+      "explanation": "Baz eşleşmesi: A=T, G≡C. Üst iplik ATGCCATG olduğundan alt iplik TACGGTAC olur. Üstte 2 G (3. ve 8. baz), altta 2 G (4. ve 5. baz) vardır; toplam 4 G. U (urasil) DNA’da bulunmaz."
+    },
+    {
+      "no": 13,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "F.8.2.1.3",
+      "skill": "Modelleme",
+      "scenario": "Bir hücre bölünmeden önce DNA’sını eşler. Laboratuvarda çalışan Ayşe, kısa bir DNA parçasının (6 baz çiftinden oluşan) eşlenmesini modelliyor: önce iki ipliği birbirinden ayırıyor, sonra her ipliğe karşı gelen yeni nükleotidleri yerleştiriyor. Modelinde ana DNA’nın iki ipliğini mavi, yeni yerleştirdiği nükleotidlerden oluşan iplikleri yeşil renkle gösteriyor. Sonunda iki yeni DNA molekülü elde ediyor.",
+      "image": "/denemeler/8-mevsim-dna/q13.svg",
+      "imageAlt": "Ana DNA ve eşlenme sonunda oluşan iki yeni DNA",
+      "stem": "Ayşe’nin modeli için aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "İki DNA molekülünden biri tamamen eski, diğeri tamamen yeni iplikten oluşur.",
+        "Her iki DNA’da da iki iplik de yenidir ve toplam 6 yeni nükleotid kullanılmıştır.",
+        "İki DNA molekülü birbirinden farklıdır; çünkü her birinde farklı bazlar bulunur.",
+        "İki DNA molekülü birbirinin aynıdır; her birinde bir eski, bir yeni iplik bulunur ve toplam 12 yeni nükleotid kullanılmıştır."
+      ],
+      "answer": 3,
+      "explanation": "DNA eşlenmesinde ana DNA’nın iki ipliği ayrılır, her biri yeni bir ipliğin kalıbı olur (yarı korunumlu eşleme). Her yeni iplik 6 nükleotitten oluşur: 2 × 6 = 12 yeni nükleotid. Sonuçta iki DNA özdeştir ve her birinde bir eski, bir yeni iplik vardır."
+    },
+    {
+      "no": 14,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "F.8.2.2.1",
+      "skill": "Sınıflandırma",
+      "scenario": "Bir okul bahçesinde bezelye yetiştiren Nur, tohum rengini belirleyen gen için baskın alel Y (sarı) ve çekinik alel y (yeşil) olduğunu öğreniyor. Dört bitkinin tohum renklerini ve genotiplerini bir tabloya yazıyor: Bitki 1: YY, sarı; Bitki 2: Yy, sarı; Bitki 3: yy, yeşil; Bitki 4: Yy, sarı. Nur, bu bitkilerdeki genotip, fenotip, homozigot ve heterozigot kavramlarını karşılaştırıyor.",
+      "image": "/denemeler/8-mevsim-dna/q14.svg",
+      "imageAlt": "Genotipleri farklı dört bezelye bitkisi",
+      "stem": "Nur’un tablosuna göre aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Bitki 2 ve Bitki 4 homozigot (saf döl) bitkilerdir.",
+        "Bitki 1 ve Bitki 4’ün fenotipi aynıdır, ancak genotipleri farklıdır.",
+        "Bitki 3’ün genotipi heterozigottur; çünkü tohumları yeşildir.",
+        "Bitki 1 çekinik karakter taşıyan bir bitkidir; çünkü genotipi YY’dir."
+      ],
+      "answer": 1,
+      "explanation": "Fenotip dış görünüştür (sarı/yeşil); genotip gen yapısıdır. Bitki 1 (YY) ve Bitki 4 (Yy) sarıdır ama genotipleri farklıdır. YY ve yy homozigot, Yy heterozigottur. Baskın aleli (Y) taşıyan bitki sarı tohum verir."
+    },
+    {
+      "no": 15,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "F.8.2.2.2",
+      "skill": "Problem çözme",
+      "scenario": "Genetik atölyesinde çalışan bir bahçıvan, tohumları sarı olan iki melez (Yy) bezelye bitkisini çaprazlıyor ve bu çaprazlamadan toplam 400 tohum elde ediyor. Sarı tohum rengi baskın (Y), yeşil tohum rengi çekiniktir (y). Bahçıvan, Punnett karesinden yararlanarak elde edeceği tohumların oranlarını tahmin ediyor ve özellikle yeşil tohumların sayısı ile sarı tohumlar içindeki saf döllerin (YY) oranını merak ediyor.",
+      "image": "/denemeler/8-mevsim-dna/q15.svg",
+      "imageAlt": "Yy × Yy çaprazlaması için Punnett karesi",
+      "stem": "Bahçıvanın bulacağı sonuçlar aşağıdakilerden hangisinde doğru verilmiştir?",
+      "options": [
+        "Yeşil tohum sayısı 100; sarı tohumların 1/2’si saf dölüdür (YY).",
+        "Yeşil tohum sayısı 200; sarı tohumların 1/3’ü saf dölüdür (YY).",
+        "Yeşil tohum sayısı 100; sarı tohumların 1/3’ü saf dölüdür (YY).",
+        "Yeşil tohum sayısı 300; sarı tohumların tamamı saf dölüdür (YY)."
+      ],
+      "answer": 2,
+      "explanation": "Yy × Yy çaprazlamasında oranlar 1 YY : 2 Yy : 1 yy olur. Yeşil (yy) = 400 × 1/4 = 100. Sarı tohum sayısı 300’dür; bunların 100’ü YY’dir, yani sarıların 1/3’ü saf dölüdür."
+    },
+    {
+      "no": 16,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "F.8.2.2.2",
+      "skill": "Çıkarım yapma",
+      "scenario": "Bir hayvan bakımı kursunda öğrenciler, siyah tüylü bir erkek ile siyah tüylü bir dişi kobay faresini çiftleştiriyor. Yavruların dördünden biri beyaz, diğer üçü siyah tüylü doğuyor. Siyah tüy rengi baskın (S), beyaz tüy rengi çekiniktir (s). Öğrenciler, soy ağacını çiziyor ve ebeveynlerin genotiplerini bulmaya çalışıyor; ayrıca bir sonraki yavrunun beyaz olma olasılığını hesaplamak istiyorlar.",
+      "image": "/denemeler/8-mevsim-dna/q16.svg",
+      "imageAlt": "Siyah ebeveynlerden beyaz yavrunun doğduğu soy ağacı",
+      "stem": "Öğrencilerin bulacağı sonuç aşağıdakilerden hangisidir?",
+      "options": [
+        "Anne ve baba Ss genotipindedir; bir sonraki yavrunun beyaz olma olasılığı %25’tir.",
+        "Anne ve baba SS genotipindedir; bir sonraki yavru kesinlikle siyah olur.",
+        "Baba SS, anne Ss genotipindedir; bir sonraki yavrunun beyaz olma olasılığı %25’tir.",
+        "Anne ve baba Ss genotipindedir; bir sonraki yavrunun beyaz olma olasılığı %50’dir."
+      ],
+      "answer": 0,
+      "explanation": "Beyaz yavru ss olmalıdır; bir s’yi anneden, bir s’yi babadan almıştır. Ebeveynler siyah olduğuna göre ikisi de Ss’dir. Ss × Ss çaprazlamasında yavruların 1/4’ü ss’dir; yani her yavru için beyaz olma olasılığı %25’tir."
+    },
+    {
+      "no": 17,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "F.8.2.2.3",
+      "skill": "Tartışma ve çıkarım",
+      "scenario": "Genetik danışmanlığı tanıtım videosu izleyen Elif, videoda iki kuzenin evliliğinden doğacak çocukta çekinik bir genetik özelliğin ortaya çıkma riskinin neden arttığının anlatıldığını duyuyor. Videoda gösterilen soy ağacında iki kuzenin ortak büyükanne ve büyükbabası olduğu, çekinik “a” geninin bu ortak atadan torunlara geçebileceği belirtiliyor. Elif, akraba evliliklerinin genetik sonuçlarını arkadaşlarına açıklamak istiyor.",
+      "image": "/denemeler/8-mevsim-dna/q17.svg",
+      "imageAlt": "Ortak atadan gelen iki kuzenin soy ağacı",
+      "stem": "Elif’in arkadaşlarına yapacağı açıklamalardan hangisi doğrudur?",
+      "options": [
+        "Akraba evliliği çekinik genleri baskın hâle getirir; bu yüzden risk artar.",
+        "Akraba evliliğinde çocukların kromozom sayısı değişir; bu yüzden risk artar.",
+        "Akrabalar ortak atalardan aynı çekinik geni taşıyabilir; bu nedenle çocukta çekinik genlerin bir araya gelme olasılığı ve çekinik özelliğin ortaya çıkma riski artar.",
+        "Akraba evliliğinde hiçbir risk yoktur; çünkü çekinik genler hiçbir zaman ortaya çıkmaz."
+      ],
+      "answer": 2,
+      "explanation": "Akrabalar ortak atalardan aynı genleri alma olasılığı yüksek olduğundan çekinik bir gen için ikisi de taşıyıcı olabilir. Çocuk her ebeveynden bir çekinik gen alırsa (aa) çekinik özellik ortaya çıkar. Kromozom sayısı değişmez; çekinik gen baskın hâle gelmez."
+    },
+    {
+      "no": 18,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "F.8.2.3.3",
+      "skill": "Karşılaştırma",
+      "scenario": "Bir öğrenci, üç farklı durumu inceliyor: I. Aynı genotipteki iki fideden güneşte yetişen 30 cm, gölgede yetişen 20 cm boylanmış. II. Kırmızı gözlü meyve sineği ebeveynlerden beyaz gözlü bir yavru doğmuş. III. Ortanca çiçeği asidik toprakta mavi, bazik toprakta pembe açmış. Öğretmeni, bu durumların mutasyon mu modifikasyon mu olduğunu ve sonraki nesillere aktarılıp aktarılmadığını sorguluyor.",
+      "image": "/denemeler/8-mevsim-dna/q18.svg",
+      "imageAlt": "Üç farklı durumun kartları",
+      "stem": "Öğrencinin incelediği durumlardan hangisi DNA’daki değişim sonucudur ve sonraki nesillere aktarılabilir?",
+      "options": [
+        "Yalnız I",
+        "Yalnız II",
+        "I ve III",
+        "II ve III"
+      ],
+      "answer": 1,
+      "explanation": "Mutasyon, DNA’nın yapısındaki kalıcı değişmedir ve kalıtsaldır (II). Modifikasyon ise çevre koşullarının etkisiyle ortaya çıkan, DNA’yı değiştirmeyen ve sonraki nesle aktarılmayan değişimdir (I ve III)."
+    },
+    {
+      "no": 19,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "F.8.2.4.1",
+      "skill": "Gözlem ve yorumlama",
+      "scenario": "Bir doğa belgeselinde çöl tilkisi ve kutup tilkisi karşılaştırılıyor. Çöl tilkisinin kulakları vücuduna göre çok büyük, kutup tilkisinin kulakları ise küçüktür. Belgeselin anlatıcısı, kulaklardaki damarların vücut ısısının dışarı atılmasına yardım ettiğini söylüyor. Öğrenciler, bu iki canlının yaşadığı ortama uyumunu gözlemleyerek açıklamak istiyor.",
+      "image": "/denemeler/8-mevsim-dna/q19.svg",
+      "imageAlt": "Çöl tilkisi ve kutup tilkisi karşılaştırması",
+      "stem": "Öğrencilerin açıklamalarından hangisi doğrudur?",
+      "options": [
+        "Kutup tilkisinin kulakları soğuk yüzünden küçülmüştür; bu durum yaşam boyu kazanılan bir değişimdir.",
+        "Çöl tilkisinin kulakları büyük olduğu için daha çok ısı kazanır; bu özellik ortama uyum sağlamaz.",
+        "İki tilkinin kulak boyutu rastlantıdır; yaşadıkları ortamla ilişkisi yoktur.",
+        "Çöl tilkisinin büyük kulakları ısıyı kolay atmasına, kutup tilkisinin küçük kulakları ısı kaybını azaltmasına yardım eder; bu özellikler yaşadıkları ortama uyumdur (adaptasyon)."
+      ],
+      "answer": 3,
+      "explanation": "Canlıların yaşadıkları ortama uygun yapı ve davranışlar geliştirmesine adaptasyon (uyum) denir. Büyük kulak ısı atılımını artırır (sıcak çöl), küçük kulak ısı kaybını azaltır (soğuk bölge)."
+    },
+    {
+      "no": 20,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "F.8.2.5.1",
+      "skill": "İlişkilendirme",
+      "scenario": "Şeker hastası bir yakını olan Cem, hastalar için gereken insülinin eskiden hayvanlardan elde edildiğini, bugün ise büyük bölümünün bakterilere ürettirildiğini öğreniyor. İşlemde insan hücresinden insülin geni alınıyor, bakterinin halka şeklindeki DNA’sına (plazmit) ekleniyor ve bakteri çoğaldıkça insülin üretiyor. Cem, genetik mühendisliği ile biyoteknoloji arasındaki ilişkiyi anlamaya çalışıyor; genleri değiştirilmiş besinler konusunda da yarar ve zarar ikilemlerini tartışıyor.",
+      "image": "/denemeler/8-mevsim-dna/q20.svg",
+      "imageAlt": "İnsan insülin geninin bakteriye aktarılma adımları",
+      "stem": "Cem’in öğrendiği bu uygulama için aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Bu uygulama genetik mühendisliğine örnektir; genin başka bir canlıya aktarılmasıyla insanlığa yararlı bir ürün (insülin) elde edilmiştir.",
+        "Bu uygulama iki farklı bitki türünün çiftleştirilmesiyle yapılan geleneksel melezlemedir.",
+        "Bu uygulamada bakterinin DNA’sı hiç değiştirilmez; yalnızca bakteri çoğaltılır.",
+        "Genetik mühendisliği yalnızca zararlı sonuç doğurur; bu nedenle hiçbir uygulaması insanlığa yararlı değildir."
+      ],
+      "answer": 0,
+      "explanation": "Genetik mühendisliği, bir canlının genetik yapısının değiştirilmesi veya gen aktarımı demektir. Biyoteknoloji bu yöntemleri ürün elde etmede kullanır. İnsülin üretimi insanlığa yararlı bir örnektir; her uygulamanın yarar ve riskleri ayrıca tartışılmalıdır."
+    }
+  ]
+}
