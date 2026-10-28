@@ -24,6 +24,7 @@ const grades: GradeCard[] = [
       { href: "/animasyonlar/5/dinamometre", label: "Dinamometreyle kuvveti ölç" },
       { href: "/animasyonlar/5/dinamometre-olcekle", label: "Dinamometreni ölçeklendir" },
       { href: "/animasyonlar/5/mikroskop", label: "Mikroskop masasında preparat incele" },
+      { href: "/animasyonlar/5/5-unite", label: "5. Ünite: Maddenin Doğası" },
       { href: "/animasyonlar/5/4-unite", label: "4. Ünite: Işığın Dünyası" },
     ],
   },
