@@ -1,0 +1,191 @@
+{
+  "classLevel": 5,
+  "code": "5.7",
+  "hours": 18,
+  "title": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+  "slug": "surdurulebilir-yasam-ve-geri-donusum",
+  "description": "Doğal kaynakların sınırlı olduğunu fark eder; atıkları türlerine göre ayırır, geri dönüşüm ve yeniden kullanımın önemini değerlendirir, okul ve ev için sürdürülebilir yaşam önerileri geliştiririz.",
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı (2024), 5. sınıf. İçerik öğretim amacıyla özgün biçimde hazırlanmıştır.",
+  "topics": [
+    {
+      "slug": "kaynaklari-verimli-kullanma",
+      "title": "Doğal Kaynaklar ve Verimli Kullanım",
+      "summary": "Su, enerji ve ham maddeleri korumanın neden önemli olduğunu keşfedelim.",
+      "outcome": {
+        "code": "FB.5.7.1",
+        "description": "Doğal kaynakların verimli kullanımı ve sürdürülebilir yaşam arasında ilişki kurabilme.",
+        "details": [
+          "Doğal kaynaklara örnek verir.",
+          "İsrafın çevresel sonuçlarını açıklar.",
+          "Kaynakları verimli kullanmaya yönelik uygulanabilir öneriler geliştirir."
+        ]
+      },
+      "skills": [
+        "Gözlem",
+        "Neden-sonuç ilişkisi kurma",
+        "Problem çözme",
+        "Sorumlu karar verme"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🌍 Doğal kaynaklar nelerdir?",
+          "bodyHtml": "<p>Su, toprak, hava, ormanlar, güneş ışığı ve yer altı kaynakları yaşamımızı sürdürmemize yardımcı olur. Bazı kaynaklar kısa sürede yenilenebilir; bazıları ise oluşmaları çok uzun zaman aldığı için sınırlıdır. Kaynakları bilinçli kullanmak gelecek kuşakların ihtiyaçlarını da gözetmektir.</p><div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:10px'><div style='background:#e4f6ff;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2.5rem'>💧</div><b>Su</b><p>Yaşam için gerekli</p></div><div style='background:#e9f7e8;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2.5rem'>🌳</div><b>Orman</b><p>Canlılara yaşam alanı</p></div><div style='background:#fff4d8;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2.5rem'>☀️</div><b>Güneş</b><p>Yenilenebilir enerji kaynağı</p></div></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🚿 İsrafı azaltmak için ne yapabiliriz?",
+          "bodyHtml": "<p>Su kullanırken gereksiz akışı önlemek, kullanılmayan ışıkları kapatmak, ihtiyaç kadar kâğıt kullanmak ve dayanıklı ürünleri tercih etmek kaynak tüketimini azaltır.</p><div style='background:#eff9ef;border-radius:14px;padding:16px'><p>💧 Musluğu gereksiz açık bırakma</p><p>💡 Boş odadaki ışığı kapat</p><p>📄 Kâğıdın iki yüzünü de değerlendir</p><p>🧺 Tek kullanımlık yerine yeniden kullanılabilir ürün seç</p></div>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "♻️ Azalt – Yeniden Kullan – Geri Dönüştür",
+          "bodyHtml": "<div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px'><div style='background:#e7f5ff;border-radius:14px;padding:14px;text-align:center'><div style='font-size:2rem'>➖</div><b>Azalt</b><p>En başta daha az atık oluştur.</p></div><div style='background:#fff2dc;border-radius:14px;padding:14px;text-align:center'><div style='font-size:2rem'>🔁</div><b>Yeniden kullan</b><p>Eşyaya başka bir kullanım olanağı ver.</p></div><div style='background:#e8f8eb;border-radius:14px;padding:14px;text-align:center'><div style='font-size:2rem'>♻️</div><b>Geri dönüştür</b><p>Uygun atığı işleyerek ham maddeye dönüştür.</p></div></div><p>Genellikle en etkili ilk adım, gereksiz tüketimi ve atık oluşumunu azaltmaktır.</p>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏫 Okulda sürdürülebilir yaşam",
+          "bodyHtml": "<p>Sınıfta kâğıt tüketimini takip etmek, matarayı tekrar kullanmak, yemek israfını azaltmak ve atıkları doğru kutulara ayırmak ortak yaşam alanını iyileştirir. Küçük adımlar, düzenli uygulandığında anlamlı sonuçlar doğurabilir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📊 Veriye dayalı karar verelim",
+          "bodyHtml": "<p>Bir hafta boyunca sınıfta kullanılan kâğıt sayısını veya çöpe atılan plastik şişe sayısını kaydedebiliriz. İlk hafta ve uygulama sonrası haftanın verilerini karşılaştırarak aldığımız önlemin etkisini değerlendirebiliriz.</p><div style='background:#f3f0ff;padding:16px;border-radius:14px;text-align:center'><div style='font-size:2rem'>📝 ➜ 📈 ➜ 💡</div><b>Veri topla → Karşılaştır → Çözüm geliştir</b></div>"
+        }
+      ],
+      "glossary": [],
+      "activity": {
+        "title": "Sınıfımızın kaynak kullanım haritası",
+        "materials": "Gözlem çizelgesi, kalem, sınıf içi atık/kaynak kullanımına ilişkin sayım tablosu",
+        "steps": "1. Bir kaynak veya atık türü seçin. 2. Bir hafta boyunca miktarını kaydedin. 3. İsrafı azaltacak bir öneri belirleyin. 4. Uygulama sonrası verileri tekrar toplayın. 5. Önce-sonra sonuçlarını karşılaştırıp sınıfa sunun.",
+        "safetyNotes": "Atıkları incelerken kesici, kirli veya tehlikeli maddelere dokunmayın. Sayımı öğretmen gözetiminde ve hijyen kurallarına uyarak yapın."
+      },
+      "quiz": [
+        {
+          "body": "Sürdürülebilir yaşamın temel amaçlarından biri hangisidir?",
+          "options": [
+            "Kaynakları gereksiz tüketmek",
+            "Bugünün ihtiyaçlarını karşılarken gelecek kuşakları da gözetmek",
+            "Her ürünü tek kullanımlık seçmek"
+          ],
+          "answer": 1,
+          "explanation": "Sürdürülebilirlik kaynakların gelecek için de korunmasını amaçlar.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Aşağıdakilerden hangisi kaynak israfını azaltır?",
+          "options": [
+            "Musluğu açık bırakmak",
+            "Kâğıdın yalnız bir yüzünü kullanmak",
+            "Kullanılmayan ışıkları kapatmak"
+          ],
+          "answer": 2,
+          "explanation": "Gereksiz aydınlatmayı kapatmak enerji tüketimini azaltır.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Atık miktarını azaltmak için ilk tercih genellikle hangisi olmalıdır?",
+          "options": [
+            "Daha az tüketip gereksiz atığı önlemek",
+            "Her şeyi çöpe atmak",
+            "Kullanılabilir eşyaları hemen yenilemek"
+          ],
+          "answer": 0,
+          "explanation": "Atık oluşumunu kaynağında azaltmak öncelikli yaklaşımdır.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "atik-ayirma-ve-geri-donusum",
+      "title": "Atıkların Ayrılması ve Geri Dönüşüm",
+      "summary": "Atıkları türlerine göre ayırmayı ve geri dönüşümün çevresel katkılarını öğrenelim.",
+      "outcome": {
+        "code": "FB.5.7.2",
+        "description": "Atık türlerini özelliklerine göre sınıflandırıp geri dönüşümün önemini gerekçelendirebilme.",
+        "details": [
+          "Yaygın atık türlerini sınıflandırır.",
+          "Geri dönüşüm ile yeniden kullanımı ayırt eder.",
+          "Atıkların yanlış yönetilmesinin çevresel etkilerini açıklar."
+        ]
+      },
+      "skills": [
+        "Sınıflandırma",
+        "Karşılaştırma",
+        "Çevresel farkındalık",
+        "İletişim"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🗂️ Atıklar türlerine göre ayrılır",
+          "bodyHtml": "<p>Kağıt-karton, cam, metal ve uygun plastik ambalajlar yerel toplama sisteminin kurallarına göre ayrı biriktirilebilir. Organik mutfak atıkları farklı biçimde değerlendirilebilir. Pil, elektronik eşya ve kimyasal içeren atıklar sıradan çöpe atılmamalı; uygun toplama noktalarına teslim edilmelidir.</p><div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:10px'><div style='background:#eaf4ff;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>📄</div><b>Kağıt</b></div><div style='background:#e9f8ee;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🍾</div><b>Cam</b></div><div style='background:#fff1e5;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🥫</div><b>Metal</b></div><div style='background:#f3edff;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🧴</div><b>Plastik ambalaj</b></div></div><p>Toplama kutularının renkleri belediyeye veya uygulamaya göre değişebilir; üzerindeki açıklamaları izlemek gerekir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "♻️ Geri dönüşüm nasıl işler?",
+          "bodyHtml": "<div style='background:#f1f9f2;border-radius:14px;padding:18px;text-align:center'><div style='font-size:1.45rem'>Atığı ayır 📦 ➜ Topla 🚚 ➜ Uygun tesiste işle ⚙️ ➜ Yeni ham madde/ürün 🆕</div></div><p>Geri dönüşüm, uygun atıkların işlenerek üretimde yeniden kullanılabilecek malzemelere dönüştürülmesidir. Böylece bazı ham maddelerin çıkarılması, enerji kullanımı ve atık miktarı azaltılabilir. Sonuçlar, malzemenin türüne ve kullanılan sürece bağlıdır.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "🔁 Yeniden kullanım ile geri dönüşüm aynı değildir",
+          "bodyHtml": "<p><strong>Yeniden kullanım:</strong> Bir kavanozu temizleyip saklama kabı olarak kullanmak gibi, ürünü yeniden değerlendirmektir.</p><p><strong>Geri dönüşüm:</strong> Kullanılmış malzemenin işlenerek ham maddeye dönüştürülmesidir.</p><div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px'><div style='background:#fff5de;padding:14px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🫙</div><b>Yeniden kullanım</b><p>Kavanoz başka amaçla kullanılır.</p></div><div style='background:#e9f7ff;padding:14px;border-radius:12px;text-align:center'><div style='font-size:2rem'>♻️</div><b>Geri dönüşüm</b><p>Malzeme işlenir.</p></div></div>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🌿 Atıkların çevreye etkisi",
+          "bodyHtml": "<p>Atıkların gelişigüzel bırakılması toprağı ve suyu kirletebilir, canlılara zarar verebilir ve yaşam alanlarını bozabilir. Atıkları azaltmak, doğru ayırmak ve uygun toplama noktalarına ulaştırmak çevrenin korunmasına yardımcı olur.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧠 Bir atık için karar ver",
+          "bodyHtml": "<p>Bir nesneyi elden çıkarmadan önce kendine sor: Onu kullanmaya devam edebilir miyim? Başka bir amaçla değerlendirebilir miyim? Bulunduğum yerde hangi atık toplama kuralı geçerli? Bu sorular doğru karar vermeyi kolaylaştırır.</p>"
+        }
+      ],
+      "glossary": [],
+      "activity": {
+        "title": "Atık dedektifleri",
+        "materials": "Temiz ve güvenli ambalaj örnekleri veya resim kartları, etiketler, sınıflandırma tablosu",
+        "steps": "Kartları kağıt-karton, cam, metal, plastik ambalaj, organik ve özel toplama gerektiren atıklar şeklinde sınıflandırın. Her seçim için nedeninizi açıklayın. Yanlış sınıflandırıldığında ne olabileceğini tartışın. Sınıf için atık ayırma rehberi hazırlayın.",
+        "safetyNotes": "Kirli, keskin, kırık cam, pil, elektronik atık veya kimyasal kapları etkinlikte ellemeyin; bunları yalnızca resim kartlarıyla inceleyin."
+      },
+      "quiz": [
+        {
+          "body": "Kullanılmış bir kavanozu yıkayıp kalemlik olarak kullanmak hangi örnektir?",
+          "options": [
+            "Yeniden kullanım",
+            "Erime",
+            "Atığı doğaya bırakma"
+          ],
+          "answer": 0,
+          "explanation": "Ürünü işlemek yerine yeni bir amaçla kullanmak yeniden kullanımdır.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Kullanılmış pil için en uygun yaklaşım hangisidir?",
+          "options": [
+            "Doğaya bırakmak",
+            "Normal çöpe gelişigüzel atmak",
+            "Uygun pil toplama noktasına teslim etmek"
+          ],
+          "answer": 2,
+          "explanation": "Piller özel toplama noktalarında biriktirilmelidir.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Geri dönüşümün olası yararlarından biri nedir?",
+          "options": [
+            "Ham madde ihtiyacını azaltmaya katkı sağlamak",
+            "Atık miktarını her zaman artırmak",
+            "Bütün çevre sorunlarını tek başına çözmek"
+          ],
+          "answer": 0,
+          "explanation": "Geri dönüşüm bazı ham maddelerin yeniden kullanımına katkı sağlar; tek başına bütün sorunları çözmez.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    }
+  ]
+}
