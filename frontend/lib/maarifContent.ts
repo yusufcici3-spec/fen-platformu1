@@ -1,6 +1,8 @@
 import unit51 from "@/content/maarif/5-unite-1.json";
 import unit52 from "@/content/maarif/5-unite-2.json";
 import unit53 from "@/content/maarif/5-unite-3.json";
+import unit54 from "@/content/maarif/5-unite-4.json";
+import unit55 from "@/content/maarif/5-unite-5.json";
 
 export type StaticSection = {
   type: "EXPLANATION" | "IMPORTANT_INFO" | "DAILY_LIFE";
