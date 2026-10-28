@@ -28,6 +28,7 @@ export default async function UnitPage({ params }: { params: { level: string; un
         <PageHeader eyebrow={`${level}. Sınıf · Ünite ${staticUnit.code}`} title={staticUnit.title} description={staticUnit.description} />
         <section className="mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
           <Link href={`/sinif/${level}`} className="text-sm font-semibold text-beaker hover:underline">← Tüm Ünitelere Dön</Link>
+          {level === 5 && staticUnit.slug === "canlilarin-yapisina-yolculuk" && <Link href="/laboratuvar/destek-hareket" className="mt-5 block rounded-2xl border border-beaker/30 bg-beaker/5 p-5 transition hover:shadow-md"><span className="text-xs font-bold uppercase tracking-wide text-beaker">Etkileşimli Fen Laboratuvarı</span><h2 className="mt-2 text-xl font-bold">🦴 Destek ve Hareket Sistemi: Kemikleri Keşfet</h2><p className="mt-2 text-sm text-lab-inkMuted dark:text-lab-paper/65">İskelet modelinde kemikleri seç; görevlerini, türlerini ve vücuttaki yerlerini incele.</p><span className="mt-3 inline-flex text-sm font-semibold text-beaker">Animasyonu aç →</span></Link>}
           <div className="mt-6 grid gap-4">
             {staticUnit.topics.map((topic, index) => (
               <Link key={topic.slug} href={`/sinif/${level}/${staticUnit.slug}/${topic.slug}`} className="group flex items-center gap-4 rounded-card border border-lab-paperLine bg-white p-5 transition hover:border-beaker hover:shadow-md dark:border-white/10 dark:bg-lab-inkSoft">
