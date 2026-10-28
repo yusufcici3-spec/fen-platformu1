@@ -42,7 +42,6 @@ export default function FifthGradeMoonPhasesPage() {
               <Link className={`${styles.heroAction} ${styles.heroActionSecondary}`} href="/animasyonlar/5/dinamometre-olcekle">
                 Dinamometreni ölçeklendir <span aria-hidden="true">↗</span>
               </Link>
-              <Link className={styles.heroAction} href="/animasyonlar/5/5-unite">\n                5. Ünite: Maddenin Doğası <span aria-hidden="true">🧪</span>\n              </Link>\n              <Link className={styles.heroAction} href="/animasyonlar/5/mikroskop">
                 Mikroskop masası <span aria-hidden="true">🔬</span>
               </Link>
             </div>
