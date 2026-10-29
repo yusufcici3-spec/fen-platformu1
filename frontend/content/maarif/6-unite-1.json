@@ -1,0 +1,331 @@
+{
+  "classLevel": 6,
+  "code": "6.1",
+  "hours": 12,
+  "title": "Güneş Sistemi ve Tutulmalar",
+  "slug": "gunes-sistemi-ve-tutulmalar",
+  "description": "Gezegenleri özelliklerine göre sınıflandırır, Güneş sistemi için bilimsel modeller geliştirir; Güneş ve Ay tutulmalarını kanıtlar ve modeller yardımıyla açıklarız.",
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı (2024), 6. sınıf 1. ünite",
+  "topics": [
+    {
+      "slug": "gunes-sistemi-ve-gezegenler",
+      "title": "Güneş Sistemi ve Gezegenler",
+      "summary": "Gezegenleri Güneş'e uzaklıklarına, yapılarına, büyüklüklerine, halkalarına ve uydularına göre karşılaştırıp gruplandıralım.",
+      "outcome": {
+        "code": "FB.6.1.1–FB.6.1.2",
+        "description": "Güneş sistemindeki gezegenleri niteliklerine göre sınıflandırır ve Güneş sistemiyle ilgili bilimsel model oluşturur.",
+        "details": [
+          "Gezegenlerin temel özelliklerini belirler ve karşılaştırır.",
+          "Gezegenleri ortak özelliklerine göre gruplandırıp etiketler.",
+          "Bir Güneş sistemi modeli önerir; yeni bilgiler ışığında modelini geliştirir."
+        ]
+      },
+      "skills": [
+        "Sınıflandırma",
+        "Karşılaştırma",
+        "Görsel okuryazarlık",
+        "Bilimsel model oluşturma",
+        "Kanıta dayalı düşünme"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🚀 Merak et: Güneş sisteminde neler var?",
+          "bodyHtml": "<p>Gece gökyüzüne baktığında Ay'ı, bazı gezegenleri ve yıldızları görebilirsin. Peki Dünya nerede bulunur? Dünya, <strong>Güneş Sistemi</strong> adı verilen büyük gök cismi ailesinin bir üyesidir.</p><div style=\"margin:1rem 0;padding:1rem;border-radius:16px;background:linear-gradient(135deg,#101b43,#283c73);color:#fff;text-align:center\"><div style=\"font-size:2.6rem\">☀️</div><strong>GÜNEŞ SİSTEMİ</strong><p style=\"margin:.4rem 0\">Güneş + 8 gezegen + uydular + cüce gezegenler + asteroitler + kuyruklu yıldızlar + diğer küçük gök cisimleri</p><div style=\"font-size:1.7rem;letter-spacing:.12rem\">☿️ ♀️ 🌍 🔴 🟠 🪐 🔵 🔵</div><small>Gezegen simgeleri temsili gösterimdir; boyutlar ve aralıklar ölçekli değildir.</small></div><p>Güneş Sistemi'nin merkezinde <strong>Güneş</strong> bulunur. Gezegenler Güneş'in çevresinde dolanır. Güneş kendi ışığını üretir; gezegenler ise Güneş'ten gelen ışığı yansıttıkları için görünür.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🪐 Güneş'e yakınlık sırası",
+          "bodyHtml": "<p>Güneş'e en yakın gezegenden en uzağa doğru sıralama şöyledir:</p><div style=\"display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem;margin:1rem 0\"><div style=\"padding:.7rem;border-radius:12px;background:#f7d6bd;color:#42251a;text-align:center\"><strong>1. Merkür</strong><br>☿️</div><div style=\"padding:.7rem;border-radius:12px;background:#f5e1b5;color:#42251a;text-align:center\"><strong>2. Venüs</strong><br>🟡</div><div style=\"padding:.7rem;border-radius:12px;background:#cde8ff;color:#17324c;text-align:center\"><strong>3. Dünya</strong><br>🌍</div><div style=\"padding:.7rem;border-radius:12px;background:#f8c8b8;color:#51251c;text-align:center\"><strong>4. Mars</strong><br>🔴</div><div style=\"padding:.7rem;border-radius:12px;background:#ead4b7;color:#38291b;text-align:center\"><strong>5. Jüpiter</strong><br>🟠</div><div style=\"padding:.7rem;border-radius:12px;background:#f4e2aa;color:#3b3215;text-align:center\"><strong>6. Satürn</strong><br>🪐</div><div style=\"padding:.7rem;border-radius:12px;background:#c9f0ed;color:#163d3b;text-align:center\"><strong>7. Uranüs</strong><br>🔵</div><div style=\"padding:.7rem;border-radius:12px;background:#cbdcff;color:#1c2e54;text-align:center\"><strong>8. Neptün</strong><br>🔵</div></div><p><strong>Akılda tut:</strong> Merkür, Venüs, Dünya, Mars, Jüpiter, Satürn, Uranüs, Neptün. Görsellerdeki simgeler gezegenlerin gerçek renklerini ve boyutlarını tam olarak yansıtmaz.</p><p><strong>Önemli:</strong> Gezegenlerin yörüngeleri ve aralarındaki uzaklıklar çok büyük olduğundan, bir sayfaya sığdırılan çizimler gerçek ölçeği gösteremez.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🪨 Karasal ve gazsal gezegenler",
+          "bodyHtml": "<p>Gezegenleri yapılarına göre iki temel grupta inceleyebiliriz:</p><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.8rem;margin:1rem 0\"><div style=\"border:2px solid #d89b6a;border-radius:16px;padding:1rem\"><div style=\"font-size:2rem;text-align:center\">🌍 🪨 🔴</div><h4 style=\"text-align:center;margin:.4rem 0\"><strong>Karasal gezegenler</strong></h4><p>Merkür, Venüs, Dünya ve Mars.</p><ul><li>Katı, kayalık yüzeyleri vardır.</li><li>Güneş'e daha yakın bölgede bulunurlar.</li><li>Gazsal gezegenlere göre daha küçüktürler.</li></ul></div><div style=\"border:2px solid #7796d1;border-radius:16px;padding:1rem\"><div style=\"font-size:2rem;text-align:center\">🟠 🪐 🔵</div><h4 style=\"text-align:center;margin:.4rem 0\"><strong>Gazsal / dış gezegenler</strong></h4><p>Jüpiter, Satürn, Uranüs ve Neptün.</p><ul><li>Çok büyük hacimlere sahip olabilirler.</li><li>Kalın gaz katmanları bulunur; Uranüs ve Neptün buz devleri olarak da tanımlanır.</li><li>Hepsinin halka sistemi vardır; halkaların belirginliği farklıdır.</li></ul></div></div><p>Bu gruplandırma, gezegenleri ortak özelliklerine göre sınıflandırmanın bir örneğidir. Bir bilim insanı sınıflandırma yaparken kullandığı ölçütü açıkça belirtir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📊 Gezegenleri karşılaştıralım",
+          "bodyHtml": "<div style=\"overflow-x:auto\"><table><thead><tr><th>Gezegen</th><th>Grup</th><th>Ayırt edici özellik</th><th>Halka</th></tr></thead><tbody><tr><td>Merkür</td><td>Karasal</td><td>Güneş'e en yakın; en küçük gezegen</td><td>Yok</td></tr><tr><td>Venüs</td><td>Karasal</td><td>Çok yoğun atmosferi nedeniyle yüzeyi çok sıcaktır</td><td>Yok</td></tr><tr><td>Dünya</td><td>Karasal</td><td>Yüzeyinde bilinen yaşam bulunan gezegen</td><td>Yok</td></tr><tr><td>Mars</td><td>Karasal</td><td>Kızıl gezegen olarak bilinir</td><td>Yok</td></tr><tr><td>Jüpiter</td><td>Dış gezegen</td><td>En büyük gezegen</td><td>Var</td></tr><tr><td>Satürn</td><td>Dış gezegen</td><td>Belirgin halkalarıyla tanınır</td><td>Var</td></tr><tr><td>Uranüs</td><td>Dış gezegen</td><td>Dönme ekseni belirgin biçimde eğiktir</td><td>Var</td></tr><tr><td>Neptün</td><td>Dış gezegen</td><td>Güneş'e en uzak gezegen</td><td>Var</td></tr></tbody></table></div><p>Gezegenlerin <strong>uydu sayıları</strong> zaman içinde yeni gözlemlerle güncellenebildiği için bu ünitede sayıları ezberlemek yerine temel nitelikleri karşılaştırmaya odaklanırız.</p><p><strong>Halka ve uydu farkı:</strong> Uydu bir gök cisminin çevresinde dolanır. Halka ise gezegenin çevresindeki çok sayıda küçük parçacığın oluşturduğu yapıdır.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "☄️ Asteroit, meteor ve meteorit",
+          "bodyHtml": "<p>Güneş Sistemi yalnızca gezegenlerden oluşmaz. Gezegenler arasında ve farklı yörüngelerde küçük gök cisimleri de bulunur.</p><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.6rem;margin:1rem 0\"><div style=\"background:#f2e6d4;border-radius:12px;padding:.8rem;text-align:center;color:#34281b\"><div style=\"font-size:2rem\">🪨</div><strong>Asteroit</strong><p>Güneş çevresinde dolanan kayaç yapılı küçük gök cismi.</p></div><div style=\"background:#dcecff;border-radius:12px;padding:.8rem;text-align:center;color:#1c304a\"><div style=\"font-size:2rem\">🌠</div><strong>Meteor</strong><p>Gök taşının atmosfere girerken oluşturduğu ışıklı iz olayı.</p></div><div style=\"background:#e8e0f5;border-radius:12px;padding:.8rem;text-align:center;color:#35274b\"><div style=\"font-size:2rem\">🪨</div><strong>Meteorit</strong><p>Atmosferden geçip yeryüzüne ulaşabilen parça.</p></div></div><p><strong>Asteroit kuşağı</strong>, Mars ile Jüpiter'in yörüngeleri arasında çok sayıda asteroidin bulunduğu bölgedir. Atmosfere giren parçanın tamamı yanıp yok olmaz ve yeryüzüne ulaşırsa ona <strong>meteorit</strong> denir. Meteoritlerin oluşturduğu çukurlara meteor çukuru denebilir.</p><p>Bir bilimsel model, gerçek sistemi basitleştirerek gösterir. Örneğin sınıfta farklı boyutlardaki toplarla gezegenleri temsil edebiliriz; ancak topların aralıkları gerçek uzaklıkları göstermez.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Konunun püf noktaları",
+          "bodyHtml": "<ul><li>Güneş'e yakınlık sırası: <strong>Merkür → Venüs → Dünya → Mars → Jüpiter → Satürn → Uranüs → Neptün</strong>.</li><li>Karasal gezegenler: <strong>Merkür, Venüs, Dünya, Mars</strong>.</li><li>Dış gezegenler: <strong>Jüpiter, Satürn, Uranüs, Neptün</strong>; hepsinin halka sistemi vardır.</li><li>En büyük gezegen Jüpiter, Güneş'e en uzak gezegen Neptün'dür.</li><li>Asteroit kuşağı Mars ile Jüpiter arasındadır.</li><li>Meteor ışıklı olayın adıdır; yeryüzüne ulaşan parça meteorit olarak adlandırılır.</li><li>Güneş Sistemi modeli hazırlanırken modelin hangi özellikleri doğru, hangi özellikleri temsilî gösterdiği açıklanmalıdır.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🌍 Bilim tarihi ve yaşamla bağlantı",
+          "bodyHtml": "<p>Türk-İslam bilim insanı <strong>Biruni</strong>, Dünya'nın ve gezegenlerin hareketlerine ilişkin görüşleriyle bilim tarihinde önemli bir yere sahiptir. Gök cisimlerini açıklarken gözlem ve matematikten yararlanılması, bilimsel düşünmenin önemini gösterir.</p><p>Uzay araştırmaları; iletişim, hava tahmini ve Dünya'yı gözlemleme gibi alanlarda kullandığımız teknolojilerin gelişmesine katkı sağlar. Bilimsel bilgi yeni kanıtlarla gelişebilir; bu nedenle modellerimizi gerektiğinde güncelleriz.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Güneş Sistemi",
+          "definition": "Güneş ve onun çekim etkisiyle çevresinde dolanan gezegenler ile diğer gök cisimlerinden oluşan sistem."
+        },
+        {
+          "term": "Gezegen",
+          "definition": "Bir yıldızın çevresinde dolanan, kendi ışığını üretmeyen gök cismi."
+        },
+        {
+          "term": "Karasal gezegen",
+          "definition": "Katı ve kayalık yüzeye sahip gezegen grubu."
+        },
+        {
+          "term": "Asteroit",
+          "definition": "Güneş çevresinde dolanan, gezegenlerden küçük kayaç yapılı gök cismi."
+        },
+        {
+          "term": "Meteor",
+          "definition": "Gök taşının atmosferde ilerlerken oluşturduğu ışıklı olay."
+        },
+        {
+          "term": "Meteorit",
+          "definition": "Atmosferden geçerek yeryüzüne ulaşan gök taşı parçası."
+        },
+        {
+          "term": "Bilimsel model",
+          "definition": "Bir sistemi anlamak ve açıklamak için kullanılan basitleştirilmiş temsil."
+        }
+      ],
+      "activity": {
+        "title": "Gezegenleri sınıflandır ve modelini geliştir",
+        "materials": "8 farklı boyutta top veya kâğıt daire, ip, etiketler, geri dönüştürülebilir karton, kalem",
+        "steps": "1) Sekiz gezegenin adını kartlara yaz. 2) Önce Güneş'e yakınlık sırasına göre diz. 3) Gezegenleri karasal ve dış gezegen olarak iki gruba ayır. 4) Her gezegenin bir özelliğini etikete yaz. 5) Modelini bir bilimsel görselle karşılaştır; yanlış veya eksik gördüğün kısmı değiştir. 6) Modelinin gerçek uzaklıkları ve büyüklükleri neden tam göstermediğini açıkla.",
+        "safetyNotes": "Maket malzemelerini keserken öğretmeninden yardım al. Etkinlikte yeniden kullanılabilir malzemeleri tercih et."
+      },
+      "quiz": [
+        {
+          "body": "Güneş'e en yakın gezegen hangisidir?",
+          "options": [
+            "Venüs",
+            "Merkür",
+            "Dünya",
+            "Mars"
+          ],
+          "answer": 1,
+          "explanation": "Merkür, Güneş'e en yakın gezegendir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Aşağıdaki gezegen çiftlerinden hangisi karasal gezegenlerden oluşur?",
+          "options": [
+            "Jüpiter – Satürn",
+            "Uranüs – Neptün",
+            "Venüs – Mars",
+            "Satürn – Dünya"
+          ],
+          "answer": 2,
+          "explanation": "Venüs ve Mars katı, kayalık yüzeye sahip karasal gezegenlerdir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Asteroit kuşağı hangi iki gezegenin yörüngeleri arasında bulunur?",
+          "options": [
+            "Merkür ile Venüs",
+            "Dünya ile Mars",
+            "Mars ile Jüpiter",
+            "Satürn ile Uranüs"
+          ],
+          "answer": 2,
+          "explanation": "Asteroit kuşağının büyük bölümü Mars ile Jüpiter arasındadır.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bir öğrenci, gezegen modelinde tüm gezegenleri eşit büyüklükte toplarla gösteriyor. Modelin hangi yönü geliştirilmelidir?",
+          "options": [
+            "Gezegen adları kaldırılmalıdır",
+            "Gezegenlerin hacimsel büyüklük farkları dikkate alınmalıdır",
+            "Güneş modelden çıkarılmalıdır",
+            "Tüm gezegenler sabit yıldız olarak etiketlenmelidir"
+          ],
+          "answer": 1,
+          "explanation": "Gezegenlerin boyutları birbirinden farklıdır. Model, bu özelliği daha doğru yansıtacak şekilde geliştirilebilir.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Atmosferden geçerek yeryüzüne ulaşan gök taşı parçasına ne ad verilir?",
+          "options": [
+            "Asteroit kuşağı",
+            "Uydu",
+            "Meteorit",
+            "Yörünge"
+          ],
+          "answer": 2,
+          "explanation": "Yeryüzüne ulaşan parça meteorit olarak adlandırılır.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": [
+        {
+          "label": "6. sınıf tutulmalar laboratuvarını aç",
+          "href": "/laboratuvar/tutulmalar"
+        }
+      ]
+    },
+    {
+      "slug": "gunes-ve-ay-tutulmalari",
+      "title": "Güneş ve Ay Tutulmaları",
+      "summary": "Işığın doğrusal yayılması ve Güneş, Dünya, Ay'ın konumlarıyla tutulmaların nasıl oluştuğunu modelleyelim.",
+      "outcome": {
+        "code": "FB.6.1.3–FB.6.1.4",
+        "description": "Güneş ve Ay tutulmalarıyla ilgili bilimsel çıkarım yapar ve tutulmaları açıklayan bir model oluşturur.",
+        "details": [
+          "Güneş ve Ay tutulmasının özelliklerini tanımlar.",
+          "Tutulmalarla ilgili veri ve gözlemleri kaydeder, karşılaştırır ve değerlendirir.",
+          "Tutulma modeli önerir ve yeni kanıtlarla geliştirir."
+        ]
+      },
+      "skills": [
+        "Bilimsel çıkarım yapma",
+        "Model oluşturma",
+        "Gözlem ve veri kaydetme",
+        "Karşılaştırma",
+        "İş birliği"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🌑 Tutulma nedir?",
+          "bodyHtml": "<p><strong>Tutulma</strong>, Güneş, Dünya ve Ay'ın belirli bir doğrultuda hizalanması sonucunda bir gök cisminin ışığının başka bir gök cismi tarafından kısmen ya da tamamen engellenmesiyle oluşur. Işık doğrusal yayıldığı için ışık kaynağı ile cisimlerin konumları önemlidir.</p><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:.8rem;margin:1rem 0\"><div style=\"background:#151d3a;color:#fff;border-radius:16px;padding:1rem;text-align:center\"><div style=\"font-size:2rem\">☀️ → 🌑 → 🌍</div><strong>Güneş tutulması</strong><p>Ay, Güneş ile Dünya arasına girer.</p></div><div style=\"background:#172b4b;color:#fff;border-radius:16px;padding:1rem;text-align:center\"><div style=\"font-size:2rem\">☀️ → 🌍 → 🌕</div><strong>Ay tutulması</strong><p>Dünya, Güneş ile Ay arasına girer.</p></div></div><p>Bu çizimler konum sırasını gösteren şemalardır; gök cisimlerinin boyutları ve uzaklıkları ölçekli değildir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "☀️ Güneş tutulması nasıl oluşur?",
+          "bodyHtml": "<p>Güneş tutulmasında <strong>Ay, Güneş ile Dünya arasındadır</strong>. Ay'ın gölgesi Dünya'nın üzerine düşer. Dünya'nın gölgenin düştüğü belirli bölgelerinde Güneş'in tamamı veya bir bölümü örtülmüş gibi görünür.</p><div style=\"margin:1rem 0;padding:1rem;border-radius:16px;background:#10182f;color:#fff;text-align:center\"><div style=\"font-size:1.6rem\">☀️　🌑　🌍</div><div style=\"font-size:1.2rem;letter-spacing:.2rem\">\\　▸　▸　／</div><p><strong>Güneş → Ay → Dünya</strong></p><p style=\"font-size:.9rem\">Ay'ın gölgesi Dünya üzerine düşer.</p></div><ul><li>Güneş, Ay ve Dünya yaklaşık aynı doğrultuda olmalıdır.</li><li>Güneş tutulması gündüz yaşanır ve Dünya'nın her yerinden görülmez.</li><li>Güneş tutulması sırasında Güneş'e çıplak gözle veya sıradan güneş gözlüğüyle bakmak tehlikelidir. Yalnızca tutulma için onaylı özel güneş gözlem filtresi kullanılmalıdır.</li></ul>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🌕 Ay tutulması nasıl oluşur?",
+          "bodyHtml": "<p>Ay tutulmasında <strong>Dünya, Güneş ile Ay arasındadır</strong>. Dünya'nın gölgesi Ay'ın üzerine düşer. Bu olay Ay dolunay evresindeyken gerçekleşebilir.</p><div style=\"margin:1rem 0;padding:1rem;border-radius:16px;background:#10182f;color:#fff;text-align:center\"><div style=\"font-size:1.6rem\">☀️　🌍　🌕</div><div style=\"font-size:1.2rem;letter-spacing:.2rem\">\\　▸　▸　／</div><p><strong>Güneş → Dünya → Ay</strong></p><p style=\"font-size:.9rem\">Dünya'nın gölgesi Ay üzerine düşer.</p></div><ul><li>Ay tutulması gece, Ay gökyüzündeyken gözlemlenir.</li><li>Dünya'nın gölgesi Ay'ın tamamını veya bir bölümünü kaplayabilir.</li><li>Tutulma sırasında Ay bazen kızılımsı görünebilir; Dünya atmosferinden geçen ışığın özellikleri bunda etkilidir.</li></ul>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🔍 İki tutulmayı karşılaştıralım",
+          "bodyHtml": "<div style=\"overflow-x:auto\"><table><thead><tr><th>Özellik</th><th>Güneş tutulması</th><th>Ay tutulması</th></tr></thead><tbody><tr><td>Ortadaki gök cismi</td><td>Ay</td><td>Dünya</td></tr><tr><td>Sıralama</td><td>Güneş – Ay – Dünya</td><td>Güneş – Dünya – Ay</td></tr><tr><td>Gölge nereye düşer?</td><td>Dünya'ya</td><td>Ay'a</td></tr><tr><td>Hangi zaman diliminde görülür?</td><td>Gündüz</td><td>Gece</td></tr><tr><td>Ay'ın evresi</td><td>Yeni ay</td><td>Dolunay</td></tr><tr><td>Güvenli gözlem</td><td>Özel onaylı güneş filtresi gerekir</td><td>Çıplak gözle gözlemek güvenlidir</td></tr></tbody></table></div><p><strong>Neden her ay tutulma olmaz?</strong> Ay'ın yörüngesi, Dünya'nın Güneş çevresindeki yörünge düzlemine göre eğiktir. Bu nedenle her yeni ayda veya dolunayda üç gök cismi tam hizalanmaz.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🔦 Evde güvenli model oluştur",
+          "bodyHtml": "<p>Tutulmaları anlamak için Güneş yerine bir el feneri, Dünya ve Ay yerine farklı büyüklükte iki top kullanabilirsin. Fener ışığının doğrusal ilerlemesi, gölge oluşumunu gözlemlemeyi sağlar.</p><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.7rem;margin:1rem 0\"><div style=\"border:1px solid #e5b55c;border-radius:14px;padding:.8rem\"><strong>Model A: Güneş tutulması</strong><p>Fener → küçük top (Ay) → büyük top (Dünya)</p><p>Ay'ı fener ile Dünya topunun arasına yerleştir; gölgenin nereye düştüğünü gözle.</p></div><div style=\"border:1px solid #7796d1;border-radius:14px;padding:.8rem\"><strong>Model B: Ay tutulması</strong><p>Fener → büyük top (Dünya) → küçük top (Ay)</p><p>Dünya topunu fener ile Ay topunun arasına getir; Ay topunda oluşan gölgeyi gözle.</p></div></div><p>Modelini gerçek tutulma görselleriyle karşılaştır. Topların boyutları ve aralıkları gerçeği tam olarak yansıtmaz; modelin amacı konumları ve gölgeyi açıklamaktır.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Sınavda karıştırma!",
+          "bodyHtml": "<ul><li><strong>Güneş tutulması:</strong> Ortada Ay vardır; Ay'ın gölgesi Dünya'ya düşer; yeni ay evresinde olabilir.</li><li><strong>Ay tutulması:</strong> Ortada Dünya vardır; Dünya'nın gölgesi Ay'a düşer; dolunay evresinde olabilir.</li><li>Güneş tutulmasında Güneş'e doğrudan bakılmaz. Normal güneş gözlüğü yeterli koruma sağlamaz.</li><li>Her yeni ayda Güneş, her dolunayda Ay tutulması yaşanmaz; yörünge düzlemleri eğiktir.</li><li>Model oluştururken gölgeyi, ışık kaynağını ve cisimlerin sıralamasını açıkça göster.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "📚 Bilim tarihi: Fergani ve gökyüzü gözlemleri",
+          "bodyHtml": "<p>Türk-İslam bilim insanı <strong>Fergani</strong>, gök cisimlerinin hareketleri ve tutulmaların zamanlarının belirlenmesiyle ilgili bilimsel çalışmalarıyla anılır. Tutulmaların tahmin edilebilmesi, gökyüzü hareketlerinin düzenli gözlenmesi ve matematiksel olarak incelenmesi sayesinde mümkün olmuştur.</p><p>Günümüzde astronomlar tutulma tarihlerini hesaplayarak gözlem ekiplerinin hazırlık yapmasına yardımcı olur. Bilimsel tahminler, gözlem ve modellerin birlikte kullanılmasına dayanır.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Güneş tutulması",
+          "definition": "Ay'ın Güneş ile Dünya arasına girip gölgesini Dünya üzerine düşürmesiyle oluşan olay."
+        },
+        {
+          "term": "Ay tutulması",
+          "definition": "Dünya'nın Güneş ile Ay arasına girerek gölgesini Ay üzerine düşürmesiyle oluşan olay."
+        },
+        {
+          "term": "Gölge",
+          "definition": "Işığın opak bir cisim tarafından engellenmesiyle ışığın ulaşamadığı bölgede oluşan karanlık alan."
+        },
+        {
+          "term": "Yeni ay",
+          "definition": "Ay'ın Dünya'dan görünen aydınlık yüzünün çok az olduğu evre."
+        },
+        {
+          "term": "Dolunay",
+          "definition": "Ay'ın Dünya'dan görünen yüzünün tamamına yakınının aydınlık göründüğü evre."
+        },
+        {
+          "term": "Model",
+          "definition": "Gerçek bir olayı veya sistemi anlamak için kullanılan basitleştirilmiş gösterim."
+        }
+      ],
+      "activity": {
+        "title": "Tutulma dedektifleri: Işık ve gölge",
+        "materials": "El feneri, bir büyük top ve bir küçük top, karanlıklaştırılabilen bir ortam, gözlem tablosu",
+        "steps": "1) Feneri sabit bir yere koy. 2) Küçük topu fener ile büyük top arasına yerleştir ve gölgeyi gözlemle. 3) Sonra büyük topu fener ile küçük top arasına yerleştir. 4) Her modelde hangi cismin ortada olduğunu ve gölgenin nereye düştüğünü kaydet. 5) Sonuçlarını bir arkadaşınla karşılaştır ve modelinin sınırlılıklarını yaz.",
+        "safetyNotes": "El fenerini kimsenin gözüne tutma. Etkinlikte Güneş'e bakma deneyi yapılmaz; gerçek Güneş gözlemi için öğretmen gözetimi ve uygun özel filtre gerekir."
+      },
+      "quiz": [
+        {
+          "body": "Güneş tutulmasında gök cisimleri hangi sırada bulunur?",
+          "options": [
+            "Güneş – Dünya – Ay",
+            "Ay – Güneş – Dünya",
+            "Güneş – Ay – Dünya",
+            "Dünya – Ay – Güneş"
+          ],
+          "answer": 2,
+          "explanation": "Güneş tutulmasında Ay, Güneş ile Dünya arasına girer.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Ay tutulmasında hangi gök cisminin gölgesi Ay üzerine düşer?",
+          "options": [
+            "Güneş'in",
+            "Dünya'nın",
+            "Mars'ın",
+            "Venüs'ün"
+          ],
+          "answer": 1,
+          "explanation": "Ay tutulmasında Dünya, Güneş ile Ay arasında bulunur ve gölgesi Ay'a düşer.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Bir öğrenci, Güneş tutulmasında ortada Dünya'nın bulunduğunu söylüyor. Öğrencinin hangi bilgiyi düzeltmesi gerekir?",
+          "options": [
+            "Güneş tutulmasında Ay ortadadır",
+            "Ay tutulması gündüz olur",
+            "Dünya ışık üretir",
+            "Güneş bir uydudur"
+          ],
+          "answer": 0,
+          "explanation": "Güneş tutulmasında ortada Ay; Ay tutulmasında ortada Dünya bulunur.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Her dolunayda Ay tutulması görülmemesinin temel nedeni hangisidir?",
+          "options": [
+            "Ay ışık üretmediği için",
+            "Dünya'nın dönmemesi",
+            "Ay'ın yörüngesinin yörünge düzlemine göre eğik olması",
+            "Güneş'in her gece sönmesi"
+          ],
+          "answer": 2,
+          "explanation": "Ay'ın yörünge düzlemi eğik olduğu için her dolunayda tam hizalanma gerçekleşmez.",
+          "difficulty": "HARD"
+        },
+        {
+          "body": "Bir tutulma modelinde el feneri, büyük top ve küçük top kullanılıyor. Ay tutulmasını temsil etmek için doğru dizilim hangisidir?",
+          "options": [
+            "Fener – küçük top – büyük top",
+            "Fener – büyük top – küçük top",
+            "Büyük top – fener – küçük top",
+            "Küçük top – büyük top – fener"
+          ],
+          "answer": 1,
+          "explanation": "Ay tutulmasında Dünya Güneş ile Ay arasındadır; modelde fener – büyük top – küçük top sıralaması kullanılır.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": [
+        {
+          "label": "Etkileşimli tutulma simülasyonunu aç",
+          "href": "/laboratuvar/tutulmalar"
+        }
+      ]
+    }
+  ]
+}
