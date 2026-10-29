@@ -1,0 +1,301 @@
+{
+  "classLevel": 6,
+  "code": "6.2",
+  "hours": 14,
+  "title": "Kuvvetin Etkisinde Hareket",
+  "slug": "kuvvetin-etkisinde-hareket",
+  "description": "Kuvvetlerin cisimlerin hareketi üzerindeki etkilerini gözlemleyelim; aynı ve zıt yönlü kuvvetleri karşılaştıralım, bileşke kuvveti belirleyelim ve dengelenmiş kuvvetleri günlük yaşam örnekleriyle açıklayalım.",
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı (2024), 6. sınıf 2. ünite. İçerik, öğrenme hedeflerini destekleyen özgün anlatım ve etkinliklerle hazırlanmıştır.",
+  "topics": [
+    {
+      "slug": "kuvvet-ve-bileske-kuvvet",
+      "title": "Kuvvet ve Bileşke Kuvvet",
+      "summary": "Kuvvetin cisimler üzerindeki etkilerini inceleyelim; aynı ve zıt yönde uygulanan kuvvetlerden bileşke kuvveti bulalım.",
+      "outcome": {
+        "code": "FB.6.2.1",
+        "description": "Bir cisme etki eden kuvvetlerin bileşkesine ilişkin bilimsel çıkarım yapabilme.",
+        "details": [
+          "Kuvvetin cisimlerin hareketini veya şeklini değiştirebileceğine örnek verir.",
+          "Bir cisme etki eden kuvvetleri yön ve büyüklük bakımından gösterir.",
+          "Aynı ve zıt yönlü kuvvetlerin bileşkesini hesaplar ve sonucunu yorumlar."
+        ]
+      },
+      "skills": [
+        "Gözlem yapma",
+        "Veri yorumlama",
+        "Karşılaştırma",
+        "Model oluşturma",
+        "Bilimsel çıkarım yapma"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🧲 Merak et: Kuvvet ne yapabilir?",
+          "bodyHtml": "<p>Bir futbol topuna vurduğunda top hareket etmeye başlar. Hareket eden bir topu tuttuğunda yavaşlatıp durdurabilirsin. Oyun hamurunu sıktığında şekli değişir. Bu örneklerin hepsinde <strong>kuvvet</strong> etkilidir.</p><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.7rem;margin:1rem 0\"><div style=\"padding:1rem;border-radius:16px;background:#e0f2fe;color:#12344a;text-align:center\"><div style=\"font-size:2.5rem\">⚽</div><strong>Hareket ettirir</strong><p style=\"font-size:.9rem\">Duran topa vurmak</p></div><div style=\"padding:1rem;border-radius:16px;background:#dcfce7;color:#17432b;text-align:center\"><div style=\"font-size:2.5rem\">🛑</div><strong>Durdurur</strong><p style=\"font-size:.9rem\">Hareketli topu tutmak</p></div><div style=\"padding:1rem;border-radius:16px;background:#fef3c7;color:#5a3c09;text-align:center\"><div style=\"font-size:2.5rem\">🧽</div><strong>Şekli değiştirir</strong><p style=\"font-size:.9rem\">Sünger sıkmak</p></div><div style=\"padding:1rem;border-radius:16px;background:#f3e8ff;color:#45236b;text-align:center\"><div style=\"font-size:2.5rem\">↪️</div><strong>Yönünü değiştirir</strong><p style=\"font-size:.9rem\">Topa yandan vurmak</p></div></div><p><strong>Kuvvet</strong>, cisimlerin hareketini veya şeklini değiştirebilen itme ya da çekme etkisidir. Kuvvetin etkisini anlamak için cismin kuvvet uygulanmadan önceki ve sonraki durumunu karşılaştırırız.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "➡️ Kuvvetin yönü ve büyüklüğü",
+          "bodyHtml": "<p>Kuvvetin yalnızca ne kadar büyük olduğu değil, <strong>hangi yönde uygulandığı</strong> da önemlidir. Kuvveti okla gösterebiliriz: okun uzunluğu kuvvetin büyüklüğünü, okun baktığı yön ise kuvvetin yönünü temsil eder.</p><div style=\"margin:1rem 0;padding:1.2rem;border-radius:16px;background:#101b36;color:#fff\"><p style=\"text-align:center;font-weight:700\">Kuvvet okları (şematik gösterim)</p><div style=\"display:grid;grid-template-columns:1fr 1fr;gap:1rem;text-align:center\"><div><div style=\"font-size:2.4rem\">📦 ━━━▶</div><strong>Sağa doğru kuvvet</strong><p style=\"font-size:.85rem\">Ok sağa yönelmiştir.</p></div><div><div style=\"font-size:2.4rem\">◀━━━ 📦</div><strong>Sola doğru kuvvet</strong><p style=\"font-size:.85rem\">Ok sola yönelmiştir.</p></div></div><p style=\"font-size:.8rem;opacity:.8;text-align:center\">Okların uzunluğu örnek amaçlıdır; ölçekli ölçüm değildir.</p></div><p>Bu ünitedeki hesaplamalarda kuvvetlerin büyüklükleri <strong>newton (N)</strong> birimiyle verilebilir. Örneğin 5 N, 5 newton büyüklüğünde bir kuvveti belirtir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧮 Bileşke kuvvet nedir?",
+          "bodyHtml": "<p>Bir cisme aynı anda birden fazla kuvvet etki edebilir. Bu kuvvetlerin cisim üzerindeki toplam etkisini tek bir kuvvetle ifade edebiliriz. Bu kuvvete <strong>bileşke kuvvet</strong> denir. Bileşke kuvvet, genellikle <strong>R</strong> harfiyle gösterilir.</p><div style=\"border:2px solid #93c5fd;border-radius:16px;padding:1rem;margin:1rem 0\"><h4 style=\"text-align:center;margin:0 0 .6rem\">Aynı yönlü kuvvetler</h4><div style=\"font-size:1.35rem;text-align:center\">📦　━━▶ 4 N　+　━━▶ 3 N</div><div style=\"font-size:1.5rem;text-align:center;margin:.5rem\">📦　━━━━━━━━▶</div><p style=\"text-align:center\"><strong>R = 4 N + 3 N = 7 N sağa</strong></p><p style=\"text-align:center;font-size:.9rem\">Aynı yönlü kuvvetlerin büyüklükleri toplanır; bileşke aynı yöndedir.</p></div><div style=\"border:2px solid #fca5a5;border-radius:16px;padding:1rem;margin:1rem 0\"><h4 style=\"text-align:center;margin:0 0 .6rem\">Zıt yönlü kuvvetler</h4><div style=\"font-size:1.35rem;text-align:center\">◀━━ 2 N　📦　━━━▶ 6 N</div><div style=\"font-size:1.5rem;text-align:center;margin:.5rem\">📦　━━━━▶</div><p style=\"text-align:center\"><strong>R = 6 N − 2 N = 4 N sağa</strong></p><p style=\"text-align:center;font-size:.9rem\">Zıt yönlü kuvvetlerin büyüklükleri çıkarılır; bileşke büyük kuvvetin yönündedir.</p></div><p><strong>Unutma:</strong> Bileşke kuvveti bulurken yönleri dikkate almadan bütün sayıları toplamak doğru değildir. Önce kuvvetlerin aynı mı, zıt mı yönlü olduğunu belirle.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🪢 Halat çekme oyunuyla öğren",
+          "bodyHtml": "<p>İki takım halatın zıt uçlarından çektiğinde her takımın uyguladığı kuvvet farklı olabilir. Örneğin sağdaki takım 80 N, soldaki takım 50 N kuvvet uyguluyorsa:</p><div style=\"margin:1rem 0;padding:1rem;border-radius:16px;background:#f1f5f9;color:#1e293b;text-align:center\"><div style=\"font-size:2rem\">👥　◀━━ 🪢 ━━━━━▶　👥</div><p><strong>Sol: 50 N　|　Sağ: 80 N</strong></p><p>R = 80 − 50 = <strong>30 N sağa</strong></p><p style=\"font-size:.9rem\">Bileşke sıfır olmadığı için iki tarafın etkisi eşit değildir. Halatın hareketi, başlangıç koşulları ve sürtünme gibi etkenlere de bağlıdır.</p></div><p>Bu örnek, kuvvetleri büyüklük ve yönleriyle birlikte değerlendirmemiz gerektiğini gösterir.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Bileşke kuvvet için kısa yol",
+          "bodyHtml": "<ul><li><strong>Aynı yönlü:</strong> Büyüklükleri topla; yön değişmez.</li><li><strong>Zıt yönlü:</strong> Küçük büyüklüğü büyükten çıkar; yön büyük kuvvetin yönüdür.</li><li><strong>Eşit ve zıt yönlü:</strong> Bileşke kuvvet 0 N olur.</li><li>Kuvvet birimi newtondur (N).</li><li>Okun yönü kuvvetin yönünü, uzunluğu ise şematik olarak büyüklüğünü gösterir.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏡 Günlük yaşamla bağlantı",
+          "bodyHtml": "<ul><li><strong>Alışveriş arabası:</strong> Arabayı itmek hızını veya hareket durumunu değiştirebilir.</li><li><strong>Kapı:</strong> Kapıyı iterek açar, çekerek kapatabilirsin.</li><li><strong>Fren:</strong> Bisikletin frenine basmak hareketi yavaşlatır.</li><li><strong>Römork çekmek:</strong> Çekme kuvveti, aracın ve yükün hareketini etkiler.</li><li><strong>Takım oyunları:</strong> Halat çekmede iki tarafın kuvvetleri karşılaştırılır.</li></ul>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Kuvvet",
+          "definition": "Cisimlerin hareketini veya şeklini değiştirebilen itme ya da çekme etkisi."
+        },
+        {
+          "term": "Kuvvetin yönü",
+          "definition": "Kuvvetin uygulandığı doğrultuda hangi tarafa etki ettiğini gösterir."
+        },
+        {
+          "term": "Newton (N)",
+          "definition": "Kuvvetin SI birimi."
+        },
+        {
+          "term": "Bileşke kuvvet",
+          "definition": "Bir cisme etki eden kuvvetlerin toplam etkisini temsil eden tek kuvvet."
+        }
+      ],
+      "activity": {
+        "title": "Bileşke kuvvet dedektifi",
+        "materials": "Kâğıt, kalem, küçük bir kutu resmi veya oyuncak kutu, kuvvet oklarını göstermek için renkli kalemler",
+        "steps": "1) Bir kutuya sağa doğru 4 N ve 2 N kuvvet uygulandığını gösteren iki ok çiz. 2) Bileşkeyi hesapla ve yönünü yaz. 3) Bu kez sağa 7 N, sola 3 N kuvvet çiz. 4) Bileşke kuvvetin büyüklüğünü ve yönünü belirle. 5) Son örnekte sağa 5 N ve sola 5 N kuvvet göster; bileşkenin neden sıfır olduğunu açıkla.",
+        "safetyNotes": "Etkinlik kâğıt üzerinde yapılabilir. Gerçek cisimlerle çalışırken ağır eşyaları çekme veya kaldırma; sınıf eşyalarını hareket ettirmeden önce öğretmeninden izin al."
+      },
+      "quiz": [
+        {
+          "body": "Kuvvet aşağıdakilerden hangisini yapabilir?",
+          "options": [
+            "Her zaman cismin rengini değiştirir",
+            "Cismin hareketini veya şeklini değiştirebilir",
+            "Her cismi mutlaka hızlandırır",
+            "Cisimlerin kütlesini yok eder"
+          ],
+          "answer": 1,
+          "explanation": "Kuvvet; cismi hareket ettirebilir, durdurabilir, hızını veya yönünü değiştirebilir ve şeklini değiştirebilir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Bir cisme sağa doğru 3 N ve 5 N kuvvet uygulanıyor. Bileşke kuvvet kaç N ve hangi yöndedir?",
+          "options": [
+            "2 N sağa",
+            "8 N sağa",
+            "8 N sola",
+            "15 N sağa"
+          ],
+          "answer": 1,
+          "explanation": "Kuvvetler aynı yönlü olduğu için toplanır: 3 + 5 = 8 N sağa.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Bir cisme sağa 9 N, sola 4 N kuvvet etki ediyor. Bileşke kuvvet nedir?",
+          "options": [
+            "13 N sola",
+            "5 N sola",
+            "5 N sağa",
+            "0 N"
+          ],
+          "answer": 2,
+          "explanation": "Zıt yönlü kuvvetler çıkarılır: 9 − 4 = 5 N. Yön, büyük kuvvetin yönü olan sağadır.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Sağa 6 N ve sola 6 N kuvvet uygulanan bir cisim için bileşke kuvvet kaçtır?",
+          "options": [
+            "12 N sağa",
+            "6 N sola",
+            "0 N",
+            "12 N sola"
+          ],
+          "answer": 2,
+          "explanation": "Eşit büyüklükte ve zıt yönlü kuvvetler birbirini dengeler; bileşke 0 N olur.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bir öğrenci 7 N sağa ve 2 N sola kuvvetin bileşkesini 9 N sağa buluyor. Hatası nedir?",
+          "options": [
+            "Kuvvet birimi kullanması",
+            "Zıt yönlü kuvvetleri toplaması",
+            "Büyük kuvvetin yönünü yazması",
+            "Kuvvetleri okla göstermesi"
+          ],
+          "answer": 1,
+          "explanation": "Kuvvetler zıt yönlü olduğunda büyüklükler toplanmaz, çıkarılır. Doğru sonuç 5 N sağadır.",
+          "difficulty": "HARD"
+        }
+      ],
+      "links": [
+        {
+          "label": "6. sınıf tutulmalar laboratuvarını aç",
+          "href": "/laboratuvar/tutulmalar"
+        }
+      ]
+    },
+    {
+      "slug": "dengelenmis-ve-dengelenmemis-kuvvetler",
+      "title": "Dengelenmiş ve Dengelenmemiş Kuvvetler",
+      "summary": "Bileşke kuvvetin sıfır olup olmamasına göre kuvvetlerin dengelenmiş veya dengelenmemiş olduğunu belirleyelim.",
+      "outcome": {
+        "code": "FB.6.2.2",
+        "description": "Dengelenmiş ve dengelenmemiş kuvvetlerin cisimlerin hareketine etkisini gözlem ve model üzerinden açıklayabilme.",
+        "details": [
+          "Bileşke kuvvet ile kuvvet dengesi arasındaki ilişkiyi açıklar.",
+          "Dengelenmiş ve dengelenmemiş kuvvetlere günlük yaşamdan örnekler verir.",
+          "Bir cismin hareket durumuna ilişkin çıkarım yaparken yalnızca hareket edip etmediğine değil, hareketindeki değişime de dikkat eder."
+        ]
+      },
+      "skills": [
+        "Sınıflandırma",
+        "Gözlem",
+        "Neden-sonuç ilişkisi kurma",
+        "Modelleme",
+        "Kanıta dayalı açıklama"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "⚖️ Kuvvetler ne zaman dengelenir?",
+          "bodyHtml": "<p>Bir cisme etki eden kuvvetlerin bileşkesi <strong>0 N</strong> ise kuvvetler dengelenmiştir. Bileşke kuvvet sıfırdan farklıysa kuvvetler dengelenmemiştir.</p><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.8rem;margin:1rem 0\"><div style=\"border:2px solid #86efac;border-radius:16px;padding:1rem;background:#f0fdf4;color:#14532d;text-align:center\"><div style=\"font-size:2.2rem\">◀━━ 📦 ━━▶</div><strong>Dengelenmiş</strong><p>5 N sola + 5 N sağa</p><p><strong>R = 0 N</strong></p></div><div style=\"border:2px solid #fca5a5;border-radius:16px;padding:1rem;background:#fff1f2;color:#881337;text-align:center\"><div style=\"font-size:2.2rem\">📦 ━━━━━▶</div><strong>Dengelenmemiş</strong><p>2 N sola + 7 N sağa</p><p><strong>R = 5 N sağa</strong></p></div></div><p>Kuvvetlerin dengelenip dengelenmediğini belirlemek için önce her bir kuvvetin yönünü ve büyüklüğünü incele, sonra bileşkeyi bul.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🚲 Dengelenmiş kuvvetler hareketi nasıl etkiler?",
+          "bodyHtml": "<p>Bileşke kuvvetin sıfır olması, cismin mutlaka durduğu anlamına gelmez. Bu ayrım çok önemlidir.</p><ul><li>Duran bir cisme etki eden kuvvetler dengelenmişse cisim durmaya devam edebilir.</li><li>Düz bir yolda sabit süratle ve doğrultusunu değiştirmeden ilerleyen bir bisiklette, ideal koşullarda kuvvetler dengelenmiş kabul edilebilir.</li><li>Hareket hâlindeki bir cismin hareket durumunun değişmemesi, bileşke kuvvetin sıfır olduğu durumla uyumludur.</li></ul><div style=\"margin:1rem 0;padding:1rem;border-radius:16px;background:#e0f2fe;color:#0c4a6e;text-align:center\"><div style=\"font-size:2.4rem\">🛒　⇦ 10 N　　10 N ⇨</div><strong>İki tarafın etkisi eşit</strong><p>R = 10 − 10 = 0 N</p><p style=\"font-size:.9rem\">Şema, kuvvetlerin eşit büyüklükte ve zıt yönlü olduğunu gösterir.</p></div><p><strong>Dikkat:</strong> Dengelenmiş kuvvetler cismin hızını kendiliğinden artırmaz veya azaltmaz. Cisim duruyorsa durur; sabit hızla hareket ediyorsa hareketini sürdürebilir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🏃 Dengelenmemiş kuvvetler hareketi nasıl etkiler?",
+          "bodyHtml": "<p>Bileşke kuvvet sıfır değilse kuvvetler dengelenmemiştir. Bu durumda cismin hareketinde değişim olabilir: cisim hızlanabilir, yavaşlayabilir, durabilir, harekete başlayabilir veya yön değiştirebilir.</p><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.7rem;margin:1rem 0\"><div style=\"padding:.9rem;border-radius:14px;background:#ffedd5;color:#7c2d12;text-align:center\"><div style=\"font-size:2rem\">🏀</div><strong>Harekete başlama</strong><p>Topa vurmak</p></div><div style=\"padding:.9rem;border-radius:14px;background:#dbeafe;color:#1e3a8a;text-align:center\"><div style=\"font-size:2rem\">🚴</div><strong>Hızlanma</strong><p>Pedala daha güçlü basmak</p></div><div style=\"padding:.9rem;border-radius:14px;background:#fce7f3;color:#831843;text-align:center\"><div style=\"font-size:2rem\">🛑</div><strong>Yavaşlama</strong><p>Fren yapmak</p></div><div style=\"padding:.9rem;border-radius:14px;background:#ede9fe;color:#4c1d95;text-align:center\"><div style=\"font-size:2rem\">🏓</div><strong>Yön değiştirme</strong><p>Topa yandan vurmak</p></div></div><p>Burada belirleyici olan, bileşke kuvvetin sıfırdan farklı olmasıdır. Bileşkenin yönü, cismin hızındaki değişimin yönünü belirler; cismin mevcut hareket yönü de önemlidir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🔍 Günlük yaşam örneklerini sınıflandıralım",
+          "bodyHtml": "<div style=\"overflow-x:auto\"><table><thead><tr><th>Durum</th><th>Olası kuvvet durumu</th><th>Neden?</th></tr></thead><tbody><tr><td>Masada duran kitap</td><td>Dengelenmiş</td><td>Ağırlık ve masanın destek kuvveti birbirini dengeler.</td></tr><tr><td>Halat çekmede iki takım eşit çekiyor</td><td>Dengelenmiş olabilir</td><td>Karşılıklı kuvvetlerin büyüklükleri eşitse bileşke sıfırdır.</td></tr><tr><td>Fren yapan bisiklet</td><td>Dengelenmemiş</td><td>Hareket yönüne zıt net kuvvet bisikleti yavaşlatır.</td></tr><tr><td>Duran futbol topuna vurulması</td><td>Dengelenmemiş</td><td>Topun hareket durumu değişir.</td></tr><tr><td>Düz yolda sabit süratle giden araç</td><td>Yaklaşık dengelenmiş</td><td>Net kuvvet sıfır kabul edilebilir; sürtünme ve motor kuvveti dengededir.</td></tr></tbody></table></div><p>Gerçek hayatta sürtünme ve hava direnci gibi kuvvetler de vardır. Bu nedenle olayları yorumlarken hangi kuvvetlerin hesaba katıldığını belirtmek gerekir.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Karıştırma!",
+          "bodyHtml": "<ul><li><strong>Dengelenmiş kuvvetler:</strong> Bileşke kuvvet 0 N'dır.</li><li><strong>Dengelenmemiş kuvvetler:</strong> Bileşke kuvvet 0 N'dan farklıdır.</li><li>Dengelenmiş kuvvetler, cismin mutlaka durduğu anlamına gelmez.</li><li>Dengelenmemiş kuvvetler, cismin hareket durumunda değişikliğe neden olabilir.</li><li>Önce kuvvetleri yön ve büyüklükleriyle göster; sonra bileşkeyi belirle.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏡 Yaşamdan bilimsel çıkarım",
+          "bodyHtml": "<p>Bir asansörün durduğu katta beklemesi, masadaki kitabın hareketsiz kalması ve halat çekme oyununda iki tarafın eşit kuvvet uygulaması kuvvet dengesiyle ilişkilendirilebilir. Bir futbol topunun vurulunca hareket etmesi veya bisikletin frenle yavaşlaması ise bileşke kuvvetin sıfır olmadığı durumlara örnektir.</p><p>Bilimsel açıklama yaparken yalnızca “cisim hareket ediyor” demek yeterli değildir. <strong>Hareket değişiyor mu, kuvvetlerin bileşkesi nedir?</strong> sorularını da sormalıyız.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Dengelenmiş kuvvetler",
+          "definition": "Bir cisme etki eden kuvvetlerin bileşkesinin sıfır olduğu durum."
+        },
+        {
+          "term": "Dengelenmemiş kuvvetler",
+          "definition": "Bir cisme etki eden kuvvetlerin bileşkesinin sıfırdan farklı olduğu durum."
+        },
+        {
+          "term": "Bileşke",
+          "definition": "Birden fazla kuvvetin toplam etkisini temsil eden tek kuvvet."
+        },
+        {
+          "term": "Sürtünme kuvveti",
+          "definition": "Temas eden yüzeyler arasında harekete karşı koyabilen kuvvet."
+        }
+      ],
+      "activity": {
+        "title": "Kuvvet dengesi kartları",
+        "materials": "Kâğıt kartlar, kalemler, iki farklı renkte kalem",
+        "steps": "1) Kartlara şu durumları yaz: masada duran kitap, fren yapan bisiklet, sabit süratle ilerleyen araç, duran topa vurulması, eşit kuvvetlerle çekilen halat. 2) Her durum için kuvvet oklarını çiz. 3) Bileşkenin sıfır olup olmadığını tartış. 4) Durumları dengelenmiş ve dengelenmemiş olarak sınıflandır. 5) Her kararını bir bilimsel gerekçeyle açıkla.",
+        "safetyNotes": "Kart etkinliği güvenlidir. Bisiklet veya ağır eşya ile deney yapmaya çalışma; örnekleri çizim ve tartışmayla incele."
+      },
+      "quiz": [
+        {
+          "body": "Bir cisme etki eden kuvvetlerin bileşkesi 0 N ise kuvvetler nasıl adlandırılır?",
+          "options": [
+            "Dengelenmemiş",
+            "Dengelenmiş",
+            "Sürtünmesiz",
+            "Hareketsiz"
+          ],
+          "answer": 1,
+          "explanation": "Bileşke kuvvet sıfır olduğunda kuvvetler dengelenmiştir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Aşağıdakilerden hangisi dengelenmiş kuvvetlere örnek olabilir?",
+          "options": [
+            "Duran topa vurulması",
+            "Fren yapan bisiklet",
+            "Masa üzerinde hareketsiz duran kitap",
+            "Yandan vurulup yön değiştiren top"
+          ],
+          "answer": 2,
+          "explanation": "Kitaba aşağı yönde ağırlık, yukarı yönde masanın destek kuvveti etki eder; bu kuvvetler dengelenebilir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Dengelenmiş kuvvetlerin etkisindeki bir cisim için hangisi doğrudur?",
+          "options": [
+            "Mutlaka durur",
+            "Mutlaka hızlanır",
+            "Hareket durumu değişmeyebilir",
+            "Her zaman yön değiştirir"
+          ],
+          "answer": 2,
+          "explanation": "Dengelenmiş kuvvetler cismin mutlaka durduğu anlamına gelmez; cisim durabilir veya sabit hızla hareketini sürdürebilir.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Hareket hâlindeki bir bisiklet fren yapınca yavaşlıyor. Bu durum hangi kuvvet durumuyla açıklanır?",
+          "options": [
+            "Bileşke kuvvet sıfırdır",
+            "Kuvvetler dengelenmemiştir",
+            "Kuvvet yoktur",
+            "Bisikletin kütlesi sıfırlanır"
+          ],
+          "answer": 1,
+          "explanation": "Frenleme sonucunda hareket değiştiği için net kuvvet sıfır değildir; kuvvetler dengelenmemiştir.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bir cisme sağa 8 N ve sola 8 N kuvvet etki ediyor. En doğru çıkarım hangisidir?",
+          "options": [
+            "Bileşke 16 N sağadır",
+            "Bileşke 8 N sola doğrudur",
+            "Bileşke 0 N'dır; kuvvetler dengelenmiştir",
+            "Cisim kesinlikle hareket etmektedir"
+          ],
+          "answer": 2,
+          "explanation": "Eşit büyüklükte zıt yönlü kuvvetler birbirini dengeler. Cismin durup durmadığı yalnız bu bilgiden kesin olarak belirlenemez.",
+          "difficulty": "HARD"
+        }
+      ],
+      "links": [
+        {
+          "label": "Kuvvet ve bileşke kuvvet konusuna dön",
+          "href": "/sinif/6/kuvvetin-etkisinde-hareket/kuvvet-ve-bileske-kuvvet"
+        }
+      ]
+    }
+  ]
+}
