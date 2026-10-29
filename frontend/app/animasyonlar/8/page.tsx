@@ -63,6 +63,16 @@ export default function EighthGradeAnimationsPage() {
           <span className={styles.relatedArrow} aria-hidden="true">→</span>
         </Link>
 
+        <Link href="/animasyonlar/8/passafenola" className={`${styles.relatedAnimation} ${styles.dnaAnimation}`}>
+          <span className={styles.relatedIcon} aria-hidden="true">🎯</span>
+          <span className={styles.relatedCopy}>
+            <span className={styles.relatedEyebrow}>OYUN · MEVSİMLER VE İKLİM + DNA VE GENETİK KOD</span>
+            <strong>Passafenola</strong>
+            <span>21 harfli passaparola: her harf için fen sorusunu bil, süre bitmeden turu tamamla.</span>
+          </span>
+          <span className={styles.relatedArrow} aria-hidden="true">→</span>
+        </Link>
+
         <div className={styles.bottomNav}>
           <Link href="/#animasyonlar">← Diğer sınıf animasyonları</Link>
           <Link href="/sinif/8">8. sınıf ünitelerine git →</Link>

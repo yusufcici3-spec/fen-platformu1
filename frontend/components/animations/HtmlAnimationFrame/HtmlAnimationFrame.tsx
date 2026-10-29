@@ -23,6 +23,9 @@ export default function HtmlAnimationFrame({ src, title, minHeight = 700 }: Prop
         setHeight(Math.max(minHeight, Math.ceil(data.height)));
       } else if (data?.type === "html-anim-ready") {
         sendTheme();
+      } else if (data?.type === "html-anim-scroll") {
+        // iç pencere (ör. oyun sonucu) açıldığında animasyonu görünür alana getirir
+        frameRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     }
     window.addEventListener("message", onMessage);

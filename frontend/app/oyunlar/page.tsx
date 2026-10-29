@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { PageHeader } from "@/components/ui/PageHeader";
-import { EmptyPanelState } from "@/components/ui/EmptyPanelState";
 import { apiFetch } from "@/lib/api";
 import { Game } from "@/types/games";
 
@@ -32,6 +31,18 @@ const TYPE_ICONS: Record<string, string> = {
   BADGE_HUNT: "🏅",
 };
 
+// Veritabanına bağlı olmayan, doğrudan sayfa olarak yayınlanan oyunlar.
+const STATIC_GAMES = [
+  {
+    href: "/animasyonlar/8/passafenola",
+    icon: "🎯",
+    label: "8. Sınıf · Passaparola",
+    title: "Passafenola",
+    description:
+      "Mevsimler ve İklim ile DNA ve Genetik Kod ünitelerinden 21 harflik passaparola. Soruyu oku, cevabı yaz, süre bitmeden harfleri tamamla.",
+  },
+];
+
 export default async function GamesPage() {
   let games: Game[] = [];
   try {
@@ -49,37 +60,48 @@ export default async function GamesPage() {
         description="Eğlenerek öğrenmek için fen bilimleri temalı oyunları keşfet. Her oyunda seviye, süre, puan ve rozet kazanma sistemi var."
       />
       <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
-        {games.length === 0 ? (
-          <EmptyPanelState
-            title="Henüz yayınlanmış oyun yok"
-            description="Oyunlar yönetim panelinden eklendikçe burada listelenecek."
-          />
-        ) : (
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {games.map((game) => (
-              <Link
-                key={game.id}
-                href={`/oyunlar/${game.slug}`}
-                className="group rounded-card border border-lab-paperLine bg-white p-5 transition hover:-translate-y-1 hover:border-beaker hover:shadow-md dark:border-white/10 dark:bg-lab-inkSoft"
-              >
-                <div className="flex items-center gap-2">
-                  <span className="text-2xl">{game.slug === "bilim-basamaklari" || game.slug === "fen-bilim-basamaklari" ? "🔬" : TYPE_ICONS[game.type]}</span>
-                  <span className="font-mono text-xs font-semibold text-beaker-dark dark:text-beaker-light">
-                    {game.slug === "bilim-basamaklari" || game.slug === "fen-bilim-basamaklari" ? "Bilim Basamakları" : TYPE_LABELS[game.type]}
-                  </span>
-                </div>
-                <h3 className="mt-2 font-display text-lg font-semibold">{game.title}</h3>
-                {game.description && (
-                  <p className="mt-2 text-sm text-lab-inkMuted dark:text-lab-paper/60">{game.description}</p>
-                )}
-                <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-beaker">
-                  Oyna
-                  <span className="transition group-hover:translate-x-1">→</span>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {STATIC_GAMES.map((game) => (
+            <Link
+              key={game.href}
+              href={game.href}
+              className="group rounded-card border border-lab-paperLine bg-white p-5 transition hover:-translate-y-1 hover:border-beaker hover:shadow-md dark:border-white/10 dark:bg-lab-inkSoft"
+            >
+              <div className="flex items-center gap-2">
+                <span className="text-2xl">{game.icon}</span>
+                <span className="font-mono text-xs font-semibold text-beaker-dark dark:text-beaker-light">{game.label}</span>
+              </div>
+              <h3 className="mt-2 font-display text-lg font-semibold">{game.title}</h3>
+              <p className="mt-2 text-sm text-lab-inkMuted dark:text-lab-paper/60">{game.description}</p>
+              <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-beaker">
+                Oyna
+                <span className="transition group-hover:translate-x-1">→</span>
+              </span>
+            </Link>
+          ))}
+          {games.map((game) => (
+            <Link
+              key={game.id}
+              href={`/oyunlar/${game.slug}`}
+              className="group rounded-card border border-lab-paperLine bg-white p-5 transition hover:-translate-y-1 hover:border-beaker hover:shadow-md dark:border-white/10 dark:bg-lab-inkSoft"
+            >
+              <div className="flex items-center gap-2">
+                <span className="text-2xl">{game.slug === "bilim-basamaklari" || game.slug === "fen-bilim-basamaklari" ? "🔬" : TYPE_ICONS[game.type]}</span>
+                <span className="font-mono text-xs font-semibold text-beaker-dark dark:text-beaker-light">
+                  {game.slug === "bilim-basamaklari" || game.slug === "fen-bilim-basamaklari" ? "Bilim Basamakları" : TYPE_LABELS[game.type]}
                 </span>
-              </Link>
-            ))}
-          </div>
-        )}
+              </div>
+              <h3 className="mt-2 font-display text-lg font-semibold">{game.title}</h3>
+              {game.description && (
+                <p className="mt-2 text-sm text-lab-inkMuted dark:text-lab-paper/60">{game.description}</p>
+              )}
+              <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-beaker">
+                Oyna
+                <span className="transition group-hover:translate-x-1">→</span>
+              </span>
+            </Link>
+          ))}
+        </div>
       </section>
     </>
   );

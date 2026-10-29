@@ -56,10 +56,11 @@ const grades: GradeCard[] = [
     description: "Güneş açısını, bezelyelerde kalıtımı ve DNA baz eşleşmelerini etkileşimli keşfet.",
     className: styles.gradeEight,
     href: "/animasyonlar/8",
-    animationCount: 3,
+    animationCount: 4,
     secondaryLinks: [
       { href: "/animasyonlar/8/kalitim", label: "Kalıtım çaprazlamaları" },
       { href: "/animasyonlar/8/dna-eslesmesi", label: "DNA baz eşleşmeleri" },
+      { href: "/animasyonlar/8/passafenola", label: "Passafenola oyunu" },
     ],
   },
 ];
