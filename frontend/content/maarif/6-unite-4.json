@@ -1,0 +1,697 @@
+{
+  "classLevel": 6,
+  "code": "6.4",
+  "hours": 22,
+  "title": "Işığın Yansıması ve Renkler",
+  "slug": "isigin-yansimasi-ve-renkler",
+  "description": "Işığın farklı yüzeylerden nasıl yansıdığını, aynaların özelliklerini, ışığın soğurulmasını, renklerin oluşumunu ve güneş enerjisinin kullanım alanlarını gözlem, model ve günlük yaşam örnekleriyle keşfedelim.",
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı (2024), 6. sınıf 4. ünite. Öğrenme çıktıları resmî programla eşleştirilmiş, anlatım ve etkinlikler özgün hazırlanmıştır.",
+  "topics": [
+    {
+      "slug": "isigin-farkli-yuzeylerde-yansimasi",
+      "title": "Işığın Farklı Yüzeylerde Yansıması",
+      "summary": "Düzgün ve pürüzlü yüzeylerde yansımanın nasıl değiştiğini gözlemleyelim.",
+      "outcome": {
+        "code": "FB.6.4.1",
+        "description": "Işığın farklı yüzeylerdeki yansıma olaylarına ilişkin bilimsel çıkarım yapabilme.",
+        "details": [
+          "Düzgün ve pürüzlü yüzeylerde yansımanın özelliklerini tanımlar.",
+          "Farklı yüzeylerdeki yansıma hakkında gözlem verileri toplar ve kaydeder.",
+          "Yansımayı düzgün yansıma ve dağınık yansıma olarak sınıflandırır."
+        ]
+      },
+      "skills": [
+        "Bilimsel gözlem",
+        "Veri toplama",
+        "Karşılaştırma",
+        "Bilimsel çıkarım"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "💡 Işığın yansıması nedir?",
+          "bodyHtml": "<p>Işık bir yüzeye çarptığında yön değiştirerek geldiği ortama geri dönebilir. Bu olaya <strong>yansıma</strong> denir. Aynada kendimizi görebilmemiz, durgun suda görüntümüzün oluşması ve parlak metal yüzeylerde ışık parlaması yansıma ile açıklanır.</p><div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.7rem;margin:1rem 0'><div style='background:#e0f2fe;padding:1rem;border-radius:14px;text-align:center;color:#0c4a6e'><div style='font-size:2.4rem'>🪞</div><b>Ayna</b><p>Düzenli ve net görüntü</p></div><div style='background:#dcfce7;padding:1rem;border-radius:14px;text-align:center;color:#14532d'><div style='font-size:2.4rem'>🌊</div><b>Durgun su</b><p>Yansıma görülebilir</p></div><div style='background:#fef3c7;padding:1rem;border-radius:14px;text-align:center;color:#713f12'><div style='font-size:2.4rem'>🥄</div><b>Parlak metal</b><p>Işığı yansıtır</p></div></div><p>Yansımanın nasıl gerçekleştiği, ışığın çarptığı yüzeyin düzgün ya da pürüzlü olmasına bağlıdır.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "✨ Düzgün yansıma",
+          "bodyHtml": "<p>Cam ayna, durgun su ve iyi cilalanmış metal gibi <strong>düzgün yüzeylerde</strong> birbirine paralel gelen ışınlar yansıdıktan sonra da belirli bir düzeni korur. Bu nedenle yüzeyde net görüntü oluşabilir.</p><div style='padding:1rem;background:#eff6ff;border-radius:14px;margin:1rem 0;color:#1e3a8a'><div style='font-size:2rem;text-align:center'>☀️ ↘　↘　↘　│ ayna │　↗　↗　↗</div><b>Düzgün yansıma – şematik gösterim</b><p>Yansıyan ışınlar düzenli bir doğrultuda ilerler; görüntü seçilebilir.</p></div><p><strong>Örnekler:</strong> Banyo aynası, sakin göl yüzeyi, cilalı metal levha.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🌫️ Dağınık yansıma",
+          "bodyHtml": "<p>Duvar, kâğıt, kumaş ve pürüzlü tahta gibi yüzeylerde ışık farklı yönlere yansır. Buna <strong>dağınık yansıma</strong> denir. Yüzeyin farklı noktalarındaki normallerin yönü değiştiği için yansıyan ışınlar farklı yönlere dağılır. Bu yüzden net bir ayna görüntüsü oluşmaz.</p><div style='padding:1rem;background:#fff7ed;border-radius:14px;margin:1rem 0;color:#7c2d12'><div style='font-size:2rem;text-align:center'>☀️ ↘　↘　↘　〰 pürüzlü yüzey  ↗ ↑ ↖</div><b>Dağınık yansıma – şematik gösterim</b><p>Işık birçok yöne yayılır; cisimleri farklı konumlardan görebiliriz.</p></div><p><strong>Önemli:</strong> Dağınık yansımada ışık yok olmaz. Işık yine yansır, ancak farklı yönlere dağılır.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🔍 Düzgün ve dağınık yansımayı karşılaştıralım",
+          "bodyHtml": "<div style='overflow-x:auto'><table><thead><tr><th>Özellik</th><th>Düzgün yansıma</th><th>Dağınık yansıma</th></tr></thead><tbody><tr><td>Yüzey</td><td>Düzgün/parlak</td><td>Pürüzlü</td></tr><tr><td>Işığın yönü</td><td>Düzenli yansır</td><td>Farklı yönlere dağılır</td></tr><tr><td>Net görüntü</td><td>Oluşabilir</td><td>Oluşmaz</td></tr><tr><td>Örnek</td><td>Ayna, durgun su</td><td>Duvar, kâğıt</td></tr></tbody></table></div><p>Bir yüzeyin parlak görünmesi tek başına yeterli değildir; yüzeyin pürüzsüzlüğü yansımanın düzenini etkiler.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Hatırla",
+          "bodyHtml": "<ul><li>Yansıma, ışığın bir yüzeye çarpıp geldiği ortama geri dönmesidir.</li><li>Düzgün yüzeylerde düzgün yansıma gerçekleşir.</li><li>Pürüzlü yüzeylerde dağınık yansıma gerçekleşir.</li><li>Dağınık yansımada ışık kaybolmaz, farklı yönlere yansır.</li><li>Özel ışınlarla görüntü çizimi bu ünitede amaçlanmaz.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏡 Günlük yaşam bağlantısı",
+          "bodyHtml": "<p>Fotoğrafçılar net görüntü elde etmek için ışığı ve yansıtıcı yüzeyleri dikkatle kullanır. Mat duvarlarda görüntümüzü göremeyiz ama duvarı aydınlatan ışığın dağınık yansıması sayesinde duvarı görebiliriz. Parlak ve temiz bir ayna ise düzgün yansıma ile görüntümüzü oluşturur.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Yansıma",
+          "definition": "Işığın bir yüzeye çarptıktan sonra geldiği ortama geri dönmesi."
+        },
+        {
+          "term": "Düzgün yansıma",
+          "definition": "Düzgün yüzeyden ışığın düzenli biçimde yansıması."
+        },
+        {
+          "term": "Dağınık yansıma",
+          "definition": "Pürüzlü yüzeyden ışığın farklı yönlere yansıması."
+        }
+      ],
+      "activity": {
+        "title": "Folyo dedektifleri",
+        "materials": "Bir parça alüminyum folyo, düz karton, el feneri ve gözlem çizelgesi.",
+        "steps": "1) Folyoyu düz hâlde tutup ışığı üzerine yöneltin. 2) Folyoyu buruşturup yeniden açın ve ışığı tekrar yöneltin. 3) Işığın yansıdığı bölgeleri gözlemleyin. 4) Hangi yüzeyde yansımanın daha düzenli olduğunu not edin. 5) Sonucunuzu düzgün ve dağınık yansıma kavramlarıyla açıklayın.",
+        "safetyNotes": "El fenerini kimsenin gözüne tutmayın. Güneş'e veya çok parlak ışık kaynaklarına doğrudan bakmayın."
+      },
+      "quiz": [
+        {
+          "body": "Aşağıdaki yüzeylerden hangisinde düzgün yansıma görülmesi beklenir?",
+          "options": [
+            "Buruşturulmuş kâğıt",
+            "Pürüzlü duvar",
+            "Düz ayna",
+            "Kumaş"
+          ],
+          "answer": 2,
+          "explanation": "Düz ayna düzgün yüzeyli olduğu için ışığı düzenli yansıtır.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Dağınık yansımada ışık için hangisi doğrudur?",
+          "options": [
+            "Yok olur",
+            "Farklı yönlere yansır",
+            "Yalnız yukarı gider",
+            "Renge dönüşür"
+          ],
+          "answer": 1,
+          "explanation": "Pürüzlü yüzeylerde ışık farklı yönlere yansır; kaybolmaz.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Bir duvarı farklı konumlardan görebilmemizin temel nedeni nedir?",
+          "options": [
+            "Duvarın ışık üretmesi",
+            "Işığın duvarda dağınık yansıması",
+            "Duvarın saydam olması",
+            "Işığın duvarda durması"
+          ],
+          "answer": 1,
+          "explanation": "Duvarın pürüzlü yüzeyi ışığı farklı yönlere yansıtır.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "yansima-kanunlari",
+      "title": "Işığın Yansımasında Gelen Işın ve Yansıyan Işın",
+      "summary": "Gelen ışın, yansıyan ışın, yüzey normali ve açıları model üzerinde inceleyelim.",
+      "outcome": {
+        "code": "FB.6.4.2",
+        "description": "Işığın yansımasında gelen ışın, yansıyan ışın ve yüzeyin normali arasındaki ilişkiyi kanıt kullanarak açıklayabilme.",
+        "details": [
+          "Yansıma deneyinde gözlem verilerini kaydeder.",
+          "Gelme ve yansıma açılarına ilişkin veri seti oluşturur.",
+          "Gözlem verilerine dayanarak gelme açısı ile yansıma açısı arasındaki ilişkiyi açıklar."
+        ]
+      },
+      "skills": [
+        "Deney tasarlama",
+        "Ölçüm ve veri kaydı",
+        "Model oluşturma",
+        "Kanıt kullanma"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "📐 Yansımanın temel kavramları",
+          "bodyHtml": "<p>Işık bir aynaya çarptığında yansıma olayını açıklamak için üç temel çizgi kullanırız:</p><ul><li><strong>Gelen ışın:</strong> Aynaya doğru ilerleyen ışındır.</li><li><strong>Yansıyan ışın:</strong> Aynadan geri dönen ışındır.</li><li><strong>Yüzey normali:</strong> Işığın aynaya çarptığı noktadan yüzeye dik çizilen hayalî çizgidir.</li></ul><div style='padding:1rem;background:#eff6ff;border-radius:14px;color:#1e3a8a;text-align:center;margin:1rem 0'><div style='font-size:2.3rem'>↘　│　↗</div><b>Gelen ışın　Normal　Yansıyan ışın</b><p>Ayna yüzeyi yatay, normal yüzeye dik kabul edilir. Şema kavramları tanıtmak içindir.</p></div><p>Açıları ölçerken yüzeyle değil, <strong>normal çizgisiyle</strong> aralarındaki açıya bakarız.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧭 Gelme açısı ve yansıma açısı",
+          "bodyHtml": "<p><strong>Gelme açısı</strong>, gelen ışın ile normal arasındaki açıdır. <strong>Yansıma açısı</strong>, yansıyan ışın ile normal arasındaki açıdır.</p><div style='padding:1rem;background:#f0fdf4;border-radius:14px;color:#14532d;text-align:center;margin:1rem 0'><div style='font-size:2.2rem'>　↘　│　↗</div><b>Gelme açısı = Yansıma açısı</b><p>Örneğin gelme açısı 35° ise yansıma açısı da 35° olur.</p></div><p>Işık ışınının aynaya geliş yönünü değiştirirsek yansıma yönü de değişir. Ancak her durumda gelme açısı ve yansıma açısı birbirine eşittir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧪 Deney verisiyle kanıtlayalım",
+          "bodyHtml": "<p>Bir ışık kaynağını düz aynaya farklı açılarla yöneltip açıölçerle açıları ölçtüğümüzü düşünelim:</p><div style='overflow-x:auto'><table><thead><tr><th>Gelme açısı</th><th>Yansıma açısı</th></tr></thead><tbody><tr><td>20°</td><td>20°</td></tr><tr><td>40°</td><td>40°</td></tr><tr><td>60°</td><td>60°</td></tr></tbody></table></div><p>Tablodaki veriler, gelme açısı ile yansıma açısının eşit olduğunu gösterir. Bilimsel çıkarımımızı ölçüm sonuçlarıyla desteklemiş oluruz.</p><p><strong>Dikkat:</strong> Açıları aynanın yüzeyinden değil, yüzeye dik olan normalden ölçeriz.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ En önemli kural",
+          "bodyHtml": "<ul><li>Gelme açısı = Yansıma açısı.</li><li>Her iki açı da normal çizgisine göre ölçülür.</li><li>Normal, ışığın aynaya çarptığı noktada yüzeye diktir.</li><li>Bu sınıf düzeyinde ilişkiyi deney, ölçüm ve model üzerinden açıklamak esastır.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🔦 Günlük yaşamda yansıma",
+          "bodyHtml": "<p>El fenerini aynaya farklı açılarda tuttuğumuzda ışığın duvara düştüğü yer değişir. Periskoplarda aynalar ışığın yönünü değiştirmek için kullanılır. Bu örneklerde ışığın geliş ve yansıma yönleri arasındaki ilişki önemlidir.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Gelen ışın",
+          "definition": "Yansıtıcı yüzeye doğru ilerleyen ışık ışını."
+        },
+        {
+          "term": "Yansıyan ışın",
+          "definition": "Yüzeye çarptıktan sonra geri dönen ışık ışını."
+        },
+        {
+          "term": "Yüzey normali",
+          "definition": "Işığın çarptığı noktada yüzeye dik çizilen hayalî doğru."
+        },
+        {
+          "term": "Gelme açısı",
+          "definition": "Gelen ışın ile normal arasındaki açı."
+        },
+        {
+          "term": "Yansıma açısı",
+          "definition": "Yansıyan ışın ile normal arasındaki açı."
+        }
+      ],
+      "activity": {
+        "title": "Açıları ölç, kuralı keşfet",
+        "materials": "Düz ayna, el feneri, açıölçer, kâğıt ve kalem.",
+        "steps": "1) Aynayı kâğıt üzerine dik konumda yerleştirin. 2) Işığın aynaya çarptığı noktayı işaretleyin. 3) Bu noktadan aynaya dik normal çizgisi çizin. 4) Işığı farklı yönlerden aynaya gönderin. 5) Gelen ışın ve normal arasındaki açıyı, yansıyan ışın ve normal arasındaki açıyı ölçüp tabloya yazın. 6) Ölçümlerinizi karşılaştırıp sonuç çıkarın.",
+        "safetyNotes": "El fenerini göze tutmayın; aynayı güneş ışığını insanların gözüne yansıtacak şekilde kullanmayın."
+      },
+      "quiz": [
+        {
+          "body": "Gelme açısı 42° olan ışının yansıma açısı kaç derecedir?",
+          "options": [
+            "21°",
+            "42°",
+            "48°",
+            "84°"
+          ],
+          "answer": 1,
+          "explanation": "Gelme açısı yansıma açısına eşittir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Gelme ve yansıma açıları hangi çizgiye göre ölçülür?",
+          "options": [
+            "Ayna yüzeyi",
+            "Yüzey normali",
+            "Masa kenarı",
+            "Gelen ışının uzantısı"
+          ],
+          "answer": 1,
+          "explanation": "Açılar normal ile ışınlar arasında ölçülür.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Gelme açısı 25° iken aynaya gelen ışının yönü değiştirilirse ne olur?",
+          "options": [
+            "Yansıma açısı da yeni gelme açısına eşit olur",
+            "Yansıma açısı daima 90° olur",
+            "Işık yansımaz",
+            "Normal ortadan kalkar"
+          ],
+          "answer": 0,
+          "explanation": "Işının geliş yönü değiştiğinde açı değişir; yansıma açısı yeni gelme açısına eşit kalır.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "ayna-cesitleri",
+      "title": "Ayna Çeşitleri ve Kullanım Alanları",
+      "summary": "Düz, çukur ve tümsek aynalarda görüntüleri gözlemleyip günlük yaşamla ilişkilendirelim.",
+      "outcome": {
+        "code": "FB.6.4.3",
+        "description": "Günlük hayattaki ayna çeşitlerine ilişkin bilimsel çıkarım yapabilme.",
+        "details": [
+          "Düz, çukur ve tümsek aynaların niteliklerini gözlemleyerek tanımlar.",
+          "Ayna çeşitleriyle görüntü özelliklerine yönelik veri toplar.",
+          "Günlük yaşamda kullanılan aynaları özelliklerine göre sınıflandırır."
+        ]
+      },
+      "skills": [
+        "Gözlem",
+        "Karşılaştırma",
+        "Sınıflandırma",
+        "Günlük yaşamla ilişkilendirme"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🪞 Düz ayna",
+          "bodyHtml": "<p>Düz aynanın yansıtıcı yüzeyi düzdür. Düz aynada görüntü <strong>düz</strong>, <strong>cisimle aynı boyda</strong> ve <strong>sanal</strong> oluşur. Görüntü aynanın arkasındaymış gibi görünür. Sağ-sol yönlerinin ters algılanması da düz aynayla ilgili günlük bir gözlemdir.</p><div style='padding:1rem;background:#eff6ff;border-radius:14px;color:#1e3a8a;text-align:center'><div style='font-size:2.2rem'>🙂　│🪞│　🙂</div><b>Düz ayna: görüntü düz ve aynı boyda</b></div><p><strong>Kullanım alanları:</strong> Ev ve okul aynaları, kuaför aynaları, bazı periskop düzenekleri.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🥄 Çukur ayna",
+          "bodyHtml": "<p>Çukur aynanın yansıtıcı yüzeyi içe doğru kavislidir. Cismin aynaya uzaklığına bağlı olarak görüntü büyük veya küçük, düz veya ters olabilir. Cisim aynaya yakınken görüntü büyük ve düz görülebilir; uzaklık değiştiğinde görüntünün özellikleri de değişebilir.</p><div style='padding:1rem;background:#fff7ed;border-radius:14px;color:#7c2d12;text-align:center'><div style='font-size:2.2rem'>🙂　(　</div><b>Çukur ayna – içe kıvrımlı yüzey</b><p>Görüntü özelliği cismin uzaklığına göre değişebilir.</p></div><p><strong>Kullanım alanları:</strong> Makyaj ve tıraş aynaları, dişçi aynaları, ışığı bir noktada toplamaya yarayan yansıtıcılar.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🚗 Tümsek ayna",
+          "bodyHtml": "<p>Tümsek aynanın yansıtıcı yüzeyi dışa doğru bombelidir. Görüntü her zaman <strong>düz ve cisimden küçük</strong> oluşur. Daha geniş bir alanı görmeye yardımcı olur.</p><div style='padding:1rem;background:#f0fdf4;border-radius:14px;color:#14532d;text-align:center'><div style='font-size:2.2rem'>🙂　)</div><b>Tümsek ayna – dışa bombeli yüzey</b><p>Görüntü düz ve küçüktür; görüş alanı geniştir.</p></div><p><strong>Kullanım alanları:</strong> Araç yan aynaları, market ve otopark güvenlik aynaları, keskin virajlardaki trafik aynaları.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📊 Üç ayna çeşidini karşılaştıralım",
+          "bodyHtml": "<div style='overflow-x:auto'><table><thead><tr><th>Ayna</th><th>Yüzey</th><th>Görüntü</th><th>Kullanım</th></tr></thead><tbody><tr><td>Düz</td><td>Düz</td><td>Düz, aynı boy</td><td>Ev aynası</td></tr><tr><td>Çukur</td><td>İçe kıvrık</td><td>Uzaklığa göre değişebilir</td><td>Dişçi aynası</td></tr><tr><td>Tümsek</td><td>Dışa bombeli</td><td>Daima düz ve küçük</td><td>Araç yan aynası</td></tr></tbody></table></div><p>Çukur aynada görüntünün özellikleri cismin aynaya uzaklığına göre değişir. Bu ünitede özel ışınlarla görüntü çizimi ve matematiksel hesaplama yapılmaz.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📚 Bilim tarihinden: İbnü'l-Heysem",
+          "bodyHtml": "<p>İbnü'l-Heysem, ışık ve görme üzerine deneysel çalışmalar yapan önemli bilim insanlarından biridir. Işığın doğrusal yayılması ve yansıma üzerine incelemeleri optik biliminin gelişimine katkı sağlamıştır. Bilimsel bilgiyi gözlem ve deneyle sınaması, bugünkü bilimsel çalışma anlayışı açısından da önemlidir.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Aynaları karıştırma",
+          "bodyHtml": "<ul><li>Düz ayna: düz, aynı boyda görüntü.</li><li>Çukur ayna: görüntü özelliği uzaklığa göre değişebilir.</li><li>Tümsek ayna: daima düz ve küçük görüntü, geniş görüş alanı.</li><li>Araç yan aynalarında tümsek ayna kullanılması daha geniş alanı görmeyi sağlar.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏡 Günlük yaşam örnekleri",
+          "bodyHtml": "<p>Kuaförde boy aynası düz aynadır. Diş hekimi ağız içini daha büyük incelemek için çukur aynadan yararlanabilir. Araçların yan aynalarında tümsek ayna kullanılarak sürücünün daha geniş bir alanı görmesi sağlanır.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Düz ayna",
+          "definition": "Yansıtıcı yüzeyi düz olan ayna."
+        },
+        {
+          "term": "Çukur ayna",
+          "definition": "Yansıtıcı yüzeyi içe doğru kıvrık olan ayna."
+        },
+        {
+          "term": "Tümsek ayna",
+          "definition": "Yansıtıcı yüzeyi dışa doğru bombeli olan ayna."
+        },
+        {
+          "term": "Sanal görüntü",
+          "definition": "Işınların kendileri değil uzantıları kesişiyormuş gibi algılanan görüntü."
+        }
+      ],
+      "activity": {
+        "title": "Ayna gözlem istasyonu",
+        "materials": "Düz ayna, metal kaşık, küçük tümsek güvenlik aynası veya uygun görsel, gözlem tablosu.",
+        "steps": "1) Düz aynadaki görüntünüzün boyunu ve yönünü gözlemleyin. 2) Kaşığın iç yüzeyine farklı uzaklıklardan bakarak görüntünüzün nasıl değiştiğini kaydedin. 3) Kaşığın dış yüzeyindeki görüntüyü inceleyin. 4) Gözlemlerinizi düz, çukur ve tümsek ayna özellikleriyle eşleştirin.",
+        "safetyNotes": "Cam aynaları düşürmeyin; kırılabilir nesneleri öğretmen gözetiminde kullanın. Metal kaşığın keskin kenarlarına dikkat edin."
+      },
+      "quiz": [
+        {
+          "body": "Görüntüsü daima düz ve cisimden küçük olan ayna hangisidir?",
+          "options": [
+            "Düz ayna",
+            "Çukur ayna",
+            "Tümsek ayna",
+            "Hepsi"
+          ],
+          "answer": 2,
+          "explanation": "Tümsek aynada görüntü daima düz ve küçüktür.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Diş hekimlerinin ağız içini daha büyük incelemek için kullanabildiği ayna hangisidir?",
+          "options": [
+            "Çukur ayna",
+            "Tümsek ayna",
+            "Düz ayna",
+            "Saydam ayna"
+          ],
+          "answer": 0,
+          "explanation": "Çukur ayna, uygun uzaklıkta büyük ve düz görüntü oluşturabilir.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Araç yan aynalarında tümsek ayna kullanılmasının temel nedeni nedir?",
+          "options": [
+            "Görüntüyü büyütmesi",
+            "Daha geniş görüş alanı sağlaması",
+            "Görüntüyü ters çevirmesi",
+            "Işığı soğurması"
+          ],
+          "answer": 1,
+          "explanation": "Tümsek aynalar daha geniş bir alanın görülmesine yardımcı olur.",
+          "difficulty": "EASY"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "isigin-sogurulmasi",
+      "title": "Işığın Soğurulması",
+      "summary": "Işığın maddeler tarafından soğurulmasını ve ışık enerjisinin ısıya dönüşmesini inceleyelim.",
+      "outcome": {
+        "code": "FB.6.4.4",
+        "description": "Işığın madde ile etkileşimi sonucunda soğurulabileceğini bilimsel gözlemle açıklayabilme.",
+        "details": [
+          "Işık ve madde etkileşimine ilişkin gözlemler yapar.",
+          "Sıcaklık değişimine ilişkin verileri kaydeder.",
+          "Işığın madde tarafından soğurulabileceğini kanıtlara dayanarak açıklar."
+        ]
+      },
+      "skills": [
+        "Deney yapma",
+        "Veri kaydetme",
+        "Değişkenleri kontrol etme",
+        "Çıkarım"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🌞 Işığın soğurulması nedir?",
+          "bodyHtml": "<p>Işık bir maddeye ulaştığında bir kısmı yansıyabilir, bir kısmı madde tarafından soğurulabilir. <strong>Soğurulma</strong>, ışık enerjisinin madde tarafından alınmasıdır. Soğurulan ışık enerjisinin bir bölümü maddenin iç enerjisini artırabilir ve sıcaklığını yükseltebilir.</p><div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.7rem;margin:1rem 0'><div style='background:#fee2e2;padding:1rem;border-radius:14px;text-align:center;color:#7f1d1d'><div style='font-size:2.3rem'>☀️</div><b>Işık</b><p>Maddeye ulaşır</p></div><div style='background:#fef3c7;padding:1rem;border-radius:14px;text-align:center;color:#713f12'><div style='font-size:2.3rem'>⬛</div><b>Soğurulma</b><p>Enerji maddeye aktarılır</p></div><div style='background:#ffedd5;padding:1rem;border-radius:14px;text-align:center;color:#7c2d12'><div style='font-size:2.3rem'>🌡️</div><b>Sıcaklık</b><p>Artış görülebilir</p></div></div><p>Güneş altında kalan koyu renkli bir yüzeyin ısınması, ışığın soğurulmasına örnektir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "⬛ Siyah ve beyaz yüzeyler",
+          "bodyHtml": "<p>Aynı koşullarda koyu renkli yüzeyler genellikle üzerlerine gelen ışığın daha büyük bölümünü soğurur. Açık renkli ve beyaz yüzeyler ise ışığın daha büyük bölümünü yansıtır. Bu nedenle güneş altında siyah bir yüzey, benzer koşullardaki beyaz yüzeye göre daha fazla ısınabilir.</p><div style='display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin:1rem 0'><div style='background:#1f2937;color:white;padding:1rem;border-radius:14px;text-align:center'><div style='font-size:2rem'>⬛</div><b>Siyah yüzey</b><p>Işığın daha fazlasını soğurabilir.</p></div><div style='background:#f8fafc;color:#1e293b;padding:1rem;border:1px solid #cbd5e1;border-radius:14px;text-align:center'><div style='font-size:2rem'>⬜</div><b>Beyaz yüzey</b><p>Işığın daha fazlasını yansıtabilir.</p></div></div><p>Sonuç; yüzeyin rengine, yapısına, ışığın şiddetine ve deney koşullarına bağlıdır.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧪 Deney: Hangi yüzey daha çok ısınır?",
+          "bodyHtml": "<p>Özdeş iki kabın birini siyah, diğerini beyaz kâğıtla kaplayıp eşit miktarda su koyduğumuzu düşünelim. İkisini aynı uzaklıkta, aynı süre ışık altında bekletip sıcaklıklarını ölçeriz. Başlangıç sıcaklığı ve diğer koşullar aynı tutulmalıdır.</p><div style='padding:1rem;background:#fff7ed;border-radius:14px;color:#7c2d12;text-align:center'><div style='font-size:2rem'>☀️　⬛🌡️　⬜🌡️</div><b>Adil deney: yalnızca yüzey rengi değişsin.</b><p>Ölçüm sonuçları tabloya yazılır ve hangi kabın daha fazla ısındığı karşılaştırılır.</p></div><p>Bu deneyde ışık kaynağı, uzaklık, süre, kapların boyutu ve su miktarı sabit tutulur. Böylece yüzey renginin etkisini inceleyebiliriz.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Hatırla",
+          "bodyHtml": "<ul><li>Işığın soğurulması, ışık enerjisinin madde tarafından alınmasıdır.</li><li>Soğurulan enerji maddenin sıcaklığını artırabilir.</li><li>Koyu yüzeyler genellikle daha fazla, açık yüzeyler daha fazla ışık yansıtır.</li><li>Karşılaştırma deneylerinde diğer değişkenler sabit tutulmalıdır.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "👕 Günlük yaşam bağlantısı",
+          "bodyHtml": "<p>Yazın açık renkli kıyafetlerin tercih edilmesi, açık renklerin ışığı daha çok yansıtmasıyla ilişkilidir. Güneş enerjili su ısıtıcılarında ve güneş kolektörlerinde ışığın soğurulmasından yararlanılır. Koyu renkli asfaltın güneşli havalarda ısınması da benzer bir örnektir.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Soğurulma",
+          "definition": "Işık enerjisinin madde tarafından alınması."
+        },
+        {
+          "term": "Yansıtma",
+          "definition": "Işığın yüzeye çarpıp geri dönmesi."
+        }
+      ],
+      "activity": {
+        "title": "Renk ve sıcaklık gözlemi",
+        "materials": "Siyah ve beyaz kâğıt, iki özdeş kap, su, termometre ve zamanlayıcı.",
+        "steps": "1) İki özdeş kaba eşit miktarda ve aynı sıcaklıkta su koyun. 2) Kapları siyah ve beyaz kâğıtla kaplayın. 3) Aynı ışık koşulunda eşit süre bekletin. 4) Başlangıç ve bitiş sıcaklıklarını ölçerek tabloya yazın. 5) Sonuçları karşılaştırıp ışığın soğurulmasıyla ilişkilendirin.",
+        "safetyNotes": "Sıcak su kullanmayın. Deney için doğrudan güneşe bakmayın; termometreyi dikkatli kullanın."
+      },
+      "quiz": [
+        {
+          "body": "Işığın soğurulması ne anlama gelir?",
+          "options": [
+            "Işığın madde tarafından alınması",
+            "Işığın yok olması",
+            "Işığın ses üretmesi",
+            "Işığın yalnızca aynada ilerlemesi"
+          ],
+          "answer": 0,
+          "explanation": "Soğurulmada ışık enerjisi madde tarafından alınır.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Aynı koşullarda güneş altında hangi yüzeyin daha fazla ısınması beklenir?",
+          "options": [
+            "Siyah yüzey",
+            "Beyaz yüzey",
+            "Her zaman ikisi eşit",
+            "Saydam hava"
+          ],
+          "answer": 0,
+          "explanation": "Siyah yüzey ışığın daha büyük bölümünü soğurabilir.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bir deneyde yüzey renginin ısınmaya etkisi inceleniyor. Hangisi sabit tutulmalıdır?",
+          "options": [
+            "Yüzey rengi",
+            "Kapların boyutu ve ışık altında kalma süresi",
+            "Ölçülen sıcaklık",
+            "Deneyin sonucu"
+          ],
+          "answer": 1,
+          "explanation": "Adil karşılaştırma için yüzey rengi dışında koşullar aynı tutulmalıdır.",
+          "difficulty": "HARD"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "beyaz-isik-ve-renkler",
+      "title": "Beyaz Işık ve Renkler",
+      "summary": "Beyaz ışığın renklerden oluştuğunu ve cisimlerin renkli görünmesini açıklayalım.",
+      "outcome": {
+        "code": "FB.6.4.5–FB.6.4.6",
+        "description": "Beyaz ışığın tüm ışık renklerinin bileşiminden oluştuğuna ve cisimlerin siyah, beyaz ve renkli görünmesine ilişkin bilimsel çıkarım yapabilme.",
+        "details": [
+          "Beyaz ışığın renk bileşenlerini gözlem ve modelle tanımlar.",
+          "Beyaz ışığın renklerden oluştuğuna ilişkin verileri yorumlar.",
+          "Cisimlerin renkli görünmesini yansıma ve soğurulma ile açıklar."
+        ]
+      },
+      "skills": [
+        "Gözlem",
+        "Modelleme",
+        "Veri yorumlama",
+        "Bilimsel açıklama"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🌈 Beyaz ışık tek renkten mi oluşur?",
+          "bodyHtml": "<p>Güneş ışığı bize beyaz ya da renksiz görünse de farklı ışık renklerinin birleşiminden oluşur. Yağmur damlalarının ışığı ayırmasıyla gökkuşağında farklı renkleri görebiliriz. Bu gözlem, beyaz ışığın birden fazla rengi içerdiğini gösterir.</p><div style='padding:1rem;background:#f8fafc;border-radius:14px;text-align:center;margin:1rem 0'><div style='font-size:2rem'>☀️ → 🌈</div><b>Beyaz ışık → Renklerin bileşimi</b><p>Gökkuşağı, beyaz ışığın renklerine ayrılmasına örnektir.</p></div><p>Bu ünitede ışığın ana ve ara renkleri nitel olarak ele alınır; ışık spektrumu ve filtrelerin ayrıntılarına girilmez.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🎨 Newton renk çarkı",
+          "bodyHtml": "<p>Newton renk çarkında farklı ışık renklerini temsil eden bölümler bulunur. Çark hızlı döndürüldüğünde renkler gözümüzde birleşmiş gibi algılanır ve çark açık/beyaza yakın görünebilir. Bu etkinlik, beyaz ışığın renklerin bileşimi olduğu çıkarımını destekler.</p><div style='padding:1rem;background:#fefce8;border-radius:14px;text-align:center;color:#713f12'><div style='font-size:2.6rem'>🔴 🟠 🟡 🟢 🔵 🟣</div><b>Renk çarkı – temsili</b><p>Hızlı dönüşte renkler birleşmiş gibi algılanır.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🟥 Cisimleri neden renkli görürüz?",
+          "bodyHtml": "<p>Bir cismi beyaz ışık altında gördüğümüzde cisim, üzerine gelen ışığın bazı renklerini soğurur, bazılarını yansıtır. Gözümüze ulaşan yansıyan ışığın rengi, cismin hangi renkte algılandığını belirler.</p><ul><li><strong>Kırmızı cisim:</strong> Kırmızı ışığı yansıtır; diğer renklerin önemli bölümünü soğurur.</li><li><strong>Yeşil cisim:</strong> Yeşil ışığı yansıtır.</li><li><strong>Beyaz cisim:</strong> Üzerine gelen görünür ışık renklerinin büyük bölümünü yansıtır.</li><li><strong>Siyah cisim:</strong> Üzerine gelen ışığın büyük bölümünü soğurur; çok azını yansıtır.</li></ul><div style='display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem;margin:1rem 0'><div style='background:#fee2e2;padding:.8rem;border-radius:12px;text-align:center'><div style='font-size:2rem'>🟥</div><b>Kırmızı</b><p>Kırmızı ışığı yansıtır.</p></div><div style='background:#dcfce7;padding:.8rem;border-radius:12px;text-align:center'><div style='font-size:2rem'>🟩</div><b>Yeşil</b><p>Yeşil ışığı yansıtır.</p></div><div style='background:#f1f5f9;padding:.8rem;border-radius:12px;text-align:center'><div style='font-size:2rem'>⬜</div><b>Beyaz</b><p>Işığın çoğunu yansıtır.</p></div><div style='background:#1f2937;color:white;padding:.8rem;border-radius:12px;text-align:center'><div style='font-size:2rem'>⬛</div><b>Siyah</b><p>Işığın çoğunu soğurur.</p></div></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🔦 Işık değişirse cismin görünen rengi değişebilir",
+          "bodyHtml": "<p>Cisimlerin rengi, üzerlerine düşen ışığın rengine bağlı olarak farklı algılanabilir. Örneğin kırmızı bir cisim kırmızı ışık altında belirgin görünür. Üzerine yalnızca yeşil ışık düşerse kırmızı ışığı yansıtamadığı için koyu görünebilir. Beyaz cisim ise üzerine düşen ışığın rengini yansıtabildiğinden farklı renkli ışıklar altında farklı renkte görünür.</p><div style='padding:1rem;background:#eff6ff;border-radius:14px;color:#1e3a8a'><b>Örnek:</b><p>Beyaz kâğıt + kırmızı ışık → kırmızımsı görünüm.</p><p>Kırmızı cisim + yalnız yeşil ışık → koyu görünüm.</p></div><p>Bu nedenle mağazada gördüğümüz bir giysinin rengi, evde farklı aydınlatma altında biraz farklı algılanabilir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📚 Bilim tarihinden: Ali Kuşçu ve İbnü'l-Heysem",
+          "bodyHtml": "<p>İbnü'l-Heysem ışık ve görme üzerine deneysel çalışmalar yapmıştır. Ali Kuşçu ise astronomi ve matematik alanlarında önemli eserler vermiştir. Bilim tarihinde ışık, görme ve renk üzerine yapılan çalışmalar doğayı gözlemleyerek açıklama geleneğinin gelişmesine katkı sağlamıştır.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Renklerle ilgili kısa özet",
+          "bodyHtml": "<ul><li>Beyaz ışık farklı ışık renklerinin birleşimidir.</li><li>Cisimler, yansıttıkları ışığın rengine göre görülür.</li><li>Beyaz cisim ışığın büyük bölümünü yansıtır.</li><li>Siyah cisim ışığın büyük bölümünü soğurur.</li><li>Cismin görünen rengi, üzerine düşen ışığın rengine bağlı olarak değişebilir.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "📸 Günlük yaşam",
+          "bodyHtml": "<p>Sahne ışıklarında, fotoğraf çekimlerinde ve mağaza aydınlatmalarında ışığın rengi önemlidir. Bir giysinin farklı ışık altında farklı görünmesi, yansıma ve soğurulma olaylarıyla açıklanır.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Beyaz ışık",
+          "definition": "Farklı görünür ışık renklerinin birleşimi."
+        },
+        {
+          "term": "Yansıyan renk",
+          "definition": "Cisimden yansıyıp gözümüze ulaşan ışığın rengi."
+        },
+        {
+          "term": "Soğurulma",
+          "definition": "Işık enerjisinin madde tarafından alınması."
+        }
+      ],
+      "activity": {
+        "title": "Newton renk çarkı tasarla",
+        "materials": "Karton, pergel veya daire şablonu, boya kalemleri, kalem ve öğretmen gözetiminde döndürülebilecek basit bir düzenek.",
+        "steps": "1) Kartondan daire kesin. 2) Daireyi farklı renk dilimlerine ayırıp boyayın. 3) Ortasından kalem geçecek şekilde delik açın. 4) Çarkı güvenli biçimde döndürün. 5) Hızlı ve yavaş dönüşte gördüğünüz renkleri karşılaştırıp gözleminizi yazın.",
+        "safetyNotes": "Makas ve delici araçları öğretmen gözetiminde kullanın. Çarkı yüzünüze yakın döndürmeyin."
+      },
+      "quiz": [
+        {
+          "body": "Beyaz ışığın yapısıyla ilgili hangisi doğrudur?",
+          "options": [
+            "Tek bir renkten oluşur",
+            "Farklı ışık renklerinin birleşimidir",
+            "Yalnız kırmızı ışık içerir",
+            "Işık değildir"
+          ],
+          "answer": 1,
+          "explanation": "Beyaz ışık farklı görünür ışık renklerinin birleşimidir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Beyaz ışık altında kırmızı görünen bir cisim hangi ışığı yansıtır?",
+          "options": [
+            "Yeşil",
+            "Mavi",
+            "Kırmızı",
+            "Hiçbirini"
+          ],
+          "answer": 2,
+          "explanation": "Kırmızı cisim kırmızı ışığı yansıtır; diğer renklerin önemli bölümünü soğurur.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Beyaz bir cisim yalnız mavi ışık altında hangi renkte görünür?",
+          "options": [
+            "Mavi",
+            "Kırmızı",
+            "Siyah",
+            "Yeşil"
+          ],
+          "answer": 0,
+          "explanation": "Beyaz cisim üzerine düşen ışığın rengini yansıtabildiği için mavi görünür.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Kırmızı bir cisim yalnız yeşil ışık altında tutulursa nasıl görünebilir?",
+          "options": [
+            "Parlak kırmızı",
+            "Koyu veya siyaha yakın",
+            "Beyaz",
+            "Mavi"
+          ],
+          "answer": 1,
+          "explanation": "Kırmızı cisim yeşil ışığı yansıtamaz; büyük ölçüde soğurduğundan koyu görünür.",
+          "difficulty": "HARD"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "gunes-enerjisi-uygulamalari",
+      "title": "Güneş Enerjisinin Günlük Yaşam ve Teknolojide Kullanımı",
+      "summary": "Güneş enerjisinin bugünkü ve gelecekteki kullanım alanlarını sorgulayalım.",
+      "outcome": {
+        "code": "FB.6.4.7",
+        "description": "Güneş enerjisinin günlük hayat ve teknolojideki yenilikçi uygulamalarına ilişkin eleştirel düşünebilme.",
+        "details": [
+          "Güneş enerjisi uygulamalarına ilişkin fikirleri sorgular.",
+          "Güneş enerjisinin yararları ve sınırlılıkları hakkında akıl yürütür.",
+          "Gelecekte güneş enerjisinden yararlanma yollarına ilişkin özgün fikirlerini sunar."
+        ]
+      },
+      "skills": [
+        "Eleştirel düşünme",
+        "Fikir geliştirme",
+        "Problem çözme",
+        "Sunum ve iletişim"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "☀️ Güneş enerjisi nedir?",
+          "bodyHtml": "<p>Güneş, Dünya için önemli bir ışık ve enerji kaynağıdır. Güneş enerjisi, güneş ışığından ve güneş kaynaklı ışıma enerjisinden yararlanılarak elde edilir. Güneş panelleri ışık enerjisini elektrik enerjisine dönüştürebilir; güneş kolektörleri ise suyu veya başka bir akışkanı ısıtmak için kullanılabilir.</p><div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.7rem;margin:1rem 0'><div style='background:#fef3c7;padding:1rem;border-radius:14px;text-align:center;color:#713f12'><div style='font-size:2.3rem'>☀️</div><b>Güneş ışığı</b><p>Enerji kaynağı</p></div><div style='background:#dbeafe;padding:1rem;border-radius:14px;text-align:center;color:#1e3a8a'><div style='font-size:2.3rem'>🔋</div><b>Güneş paneli</b><p>Elektrik üretimi</p></div><div style='background:#fee2e2;padding:1rem;border-radius:14px;text-align:center;color:#7f1d1d'><div style='font-size:2.3rem'>🚿</div><b>Kolektör</b><p>Su ısıtma</p></div></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🏠 Günümüzde kullanım alanları",
+          "bodyHtml": "<ul><li><strong>Güneş panelleri:</strong> Evlerde, okullarda ve santrallerde elektrik üretir.</li><li><strong>Güneş kolektörleri:</strong> Kullanım suyunu ısıtmada yararlanılır.</li><li><strong>Hesap makineleri ve küçük cihazlar:</strong> Küçük güneş hücreleri enerji sağlayabilir.</li><li><strong>Sokak aydınlatmaları:</strong> Gündüz enerji depolanıp gece aydınlatmada kullanılabilir.</li><li><strong>Uzay araçları:</strong> Güneş panelleri bazı uyduların ve uzay araçlarının elektrik ihtiyacını karşılar.</li></ul>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🌍 Güneş enerjisinin yararları ve sınırlılıkları",
+          "bodyHtml": "<div style='display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin:1rem 0'><div style='background:#dcfce7;color:#14532d;padding:1rem;border-radius:14px'><b>Yararları</b><ul><li>Yenilenebilir kaynaktır.</li><li>Çalışırken doğrudan yakıt yakmaz.</li><li>Uygun yerlerde enerji giderlerini azaltabilir.</li></ul></div><div style='background:#fff7ed;color:#7c2d12;padding:1rem;border-radius:14px'><b>Sınırlılıkları</b><ul><li>Gece üretim olmaz.</li><li>Bulut ve mevsim koşulları üretimi etkiler.</li><li>Depolama ve kurulum maliyeti olabilir.</li></ul></div></div><p>Bir enerji teknolojisini değerlendirirken yalnızca yararlarına değil, kullanım koşullarına, maliyetine, çevresel etkilerine ve geri dönüşümüne de bakmalıyız.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🚀 Geleceğin güneş enerjisi fikirleri",
+          "bodyHtml": "<p>Gelecekte binaların dış cephelerine entegre edilen güneş hücreleri, tarım alanlarında bitkilerin gelişimine uygun gölgeleme sağlayan paneller, güneş enerjisiyle çalışan deniz suyu arıtma sistemleri ve daha verimli enerji depolama çözümleri yaygınlaşabilir. Bu fikirlerin her birinde verimlilik, güvenlik, maliyet ve çevre etkileri birlikte düşünülmelidir.</p><div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.7rem;margin:1rem 0'><div style='background:#e0f2fe;padding:.9rem;border-radius:14px;text-align:center'><div style='font-size:2rem'>🏙️</div><b>Güneş cepheleri</b></div><div style='background:#dcfce7;padding:.9rem;border-radius:14px;text-align:center'><div style='font-size:2rem'>🌱</div><b>Tarımda paneller</b></div><div style='background:#fef3c7;padding:.9rem;border-radius:14px;text-align:center'><div style='font-size:2rem'>💧</div><b>Su arıtma</b></div></div>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Değerlendirirken sor",
+          "bodyHtml": "<ul><li>Bu teknoloji hangi enerji ihtiyacını karşılıyor?</li><li>Güneş ışığının olmadığı zamanlarda nasıl çalışacak?</li><li>Enerji depolama gerekiyor mu?</li><li>Kurulum ve bakım maliyeti nedir?</li><li>Çevreye ve canlılara etkisi nelerdir?</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🌿 Sürdürülebilir gelecek",
+          "bodyHtml": "<p>Güneş enerjisinden yararlanmak fosil yakıt kullanımını azaltmaya yardımcı olabilir. Enerji tasarrufu yapmak, verimli cihazlar seçmek ve yenilenebilir enerji çözümlerini doğru planlamak sürdürülebilir yaşamı destekler.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Güneş paneli",
+          "definition": "Güneş ışığını elektrik enerjisine dönüştüren sistem."
+        },
+        {
+          "term": "Güneş kolektörü",
+          "definition": "Güneş enerjisinden yararlanarak su veya başka akışkanları ısıtan sistem."
+        },
+        {
+          "term": "Yenilenebilir enerji",
+          "definition": "Doğal süreçlerle sürekli yenilenebilen kaynaklardan elde edilen enerji."
+        }
+      ],
+      "activity": {
+        "title": "Geleceğin güneş enerjisi tasarımı",
+        "materials": "Kâğıt, renkli kalemler, geri dönüştürülebilir ambalaj ve sunum kartı.",
+        "steps": "1) Okul, ev veya mahallede enerji ihtiyacı olan bir alan seçin. 2) Güneş enerjisiyle çalışan özgün bir çözüm tasarlayın. 3) Tasarımınızın nasıl çalışacağını çizimle gösterin. 4) Yararlarını ve sınırlılıklarını yazın. 5) Çevreye etkisini değerlendirip sınıfta sunun.",
+        "safetyNotes": "Model hazırlarken kesici araçları öğretmen gözetiminde kullanın; elektrik bağlantılarını kendiniz yapmaya çalışmayın."
+      },
+      "quiz": [
+        {
+          "body": "Güneş panelinin temel görevi nedir?",
+          "options": [
+            "Işığı sese dönüştürmek",
+            "Güneş ışığından elektrik enerjisi elde etmek",
+            "Rüzgâr üretmek",
+            "Suyu dondurmak"
+          ],
+          "answer": 1,
+          "explanation": "Güneş panelleri güneş ışığını elektrik enerjisine dönüştürür.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Güneş enerjisinin sınırlılıklarından biri hangisidir?",
+          "options": [
+            "Yenilenebilir olması",
+            "Gece güneş ışığı olmaması",
+            "Elektrik üretebilmesi",
+            "Yakıt yakmaması"
+          ],
+          "answer": 1,
+          "explanation": "Güneş ışığı gece olmadığından üretim için depolama veya başka kaynak gerekir.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bir güneş enerjisi projesini değerlendirirken hangisi dikkate alınmalıdır?",
+          "options": [
+            "Yalnızca görünüşü",
+            "Verim, maliyet ve çevresel etkiler",
+            "Sadece rengi",
+            "Yalnızca büyüklüğü"
+          ],
+          "answer": 1,
+          "explanation": "Teknolojik çözümler verim, maliyet, güvenlik ve çevresel etkiler birlikte değerlendirilerek seçilir.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    }
+  ]
+}
