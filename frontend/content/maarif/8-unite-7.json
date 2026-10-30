@@ -1,0 +1,361 @@
+{
+  "classLevel": 8,
+  "code": "8.7",
+  "hours": 24,
+  "title": "Elektrik Yükleri ve Elektrik Enerjisi",
+  "slug": "elektrik-yukleri-ve-elektrik-enerjisi",
+  "description": "Elektrik yüklerini ve elektriklenme çeşitlerini modellerle kavrayalım; topraklamanın güvenlikteki önemini, elektrik enerjisinin dönüşümünü, güç santrallerini ve tasarruflu enerji kullanımını günlük yaşamla ilişkilendirelim.",
+  "source": "T.C. Millî Eğitim Bakanlığı, 8. sınıf Fen Bilimleri Öğretim Programı, 7. ünite: Elektrik Yükleri ve Elektrik Enerjisi (F.8.7). 24 ders saati ve F.8.7.1–F.8.7.3 kazanımları esas alınarak özgün anlatım, SVG şemalar, karşılaştırma tabloları ve ölçme soruları hazırlanmıştır.",
+  "topics": [
+    {
+      "slug": "elektrik-yukleri-ve-elektriklenme",
+      "title": "Elektrik Yükleri ve Elektriklenme",
+      "summary": "Elektrik yüklerini, yükler arasındaki etkileşimi ve sürtünme, dokunma, etki ile elektriklenmeyi modellerle öğrenelim.",
+      "outcome": {
+        "code": "F.8.7.1.1–F.8.7.1.3",
+        "description": "Elektriklenmeyi doğa olayları ve teknolojik uygulamalarla açıklar; yüklerin etkileşimini yorumlar ve elektriklenme çeşitlerini deneylerle ayırt eder.",
+        "details": [
+          "Pozitif ve negatif elektrik yüklerini tanır.",
+          "Aynı cins yüklerin ittiğini, zıt cins yüklerin çektiğini açıklar.",
+          "Sürtünme, dokunma ve etki ile elektriklenmeyi karşılaştırır."
+        ]
+      },
+      "skills": [
+        "Gözlem",
+        "Karşılaştırma",
+        "Model oluşturma",
+        "Bilimsel çıkarım"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "⚛️ Elektrik yükleri nereden gelir?",
+          "bodyHtml": "<p>Maddeler atomlardan oluşur. Atomun çekirdeğinde <strong>pozitif yüklü protonlar</strong> ve yüksüz nötronlar, çekirdeğin çevresinde ise <strong>negatif yüklü elektronlar</strong> bulunur. Elektriklenme olaylarında genellikle elektron alışverişi gerçekleşir; protonlar atom çekirdeğinde kalır.</p><div style='background:#eff6ff;padding:14px;border-radius:14px;text-align:center'><svg viewBox='0 0 320 170' width='100%' xmlns='http://www.w3.org/2000/svg'><circle cx='160' cy='82' r='22' fill='#fef3c7' stroke='#92400e'/><text x='160' y='78' text-anchor='middle' font-size='12' fill='#78350f'>p+</text><text x='160' y='92' text-anchor='middle' font-size='10' fill='#78350f'>n⁰</text><ellipse cx='160' cy='82' rx='100' ry='42' fill='none' stroke='#2563eb' stroke-width='2'/><ellipse cx='160' cy='82' rx='100' ry='42' fill='none' stroke='#2563eb' stroke-width='2' transform='rotate(60 160 82)'/><circle cx='260' cy='82' r='9' fill='#60a5fa'/><text x='260' y='86' text-anchor='middle' font-size='11' fill='#082f49'>−</text><circle cx='110' cy='39' r='9' fill='#60a5fa'/><text x='110' y='43' text-anchor='middle' font-size='11' fill='#082f49'>−</text><text x='160' y='155' text-anchor='middle' font-size='11' fill='#1e3a8a'>Atom modeli (şematik)</text></svg><p><b>Proton:</b> + &nbsp; <b>Elektron:</b> − &nbsp; <b>Nötron:</b> 0</p></div><p>Bir cisim elektron alırsa negatif, elektron verirse pozitif yüklenir. Elektron sayısı ile proton sayısı eşitse cisim nötrdür.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "➕➖ Yükler birbirini nasıl etkiler?",
+          "bodyHtml": "<p>Elektrik yükleri arasında itme ve çekme kuvvetleri vardır. <strong>Aynı cins yükler birbirini iter; zıt cins yükler birbirini çeker.</strong></p><div style='display:grid;grid-template-columns:1fr 1fr;gap:10px;text-align:center'><div style='background:#fee2e2;padding:12px;border-radius:12px;color:#7f1d1d'><div style='font-size:2rem'>＋ ⟵　⟶ ＋</div><b>İtme</b><p>Aynı cins yükler</p></div><div style='background:#dbeafe;padding:12px;border-radius:12px;color:#1e3a8a'><div style='font-size:2rem'>＋ ⟶　⟵ −</div><b>Çekme</b><p>Zıt cins yükler</p></div></div><p>Nötr bir cisim, yüklü bir cisim tarafından çekilebilir. Bu durum, nötr cismin içindeki yüklerin yer değiştirebilmesiyle açıklanır.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧶 Sürtünme ile elektriklenme",
+          "bodyHtml": "<p>İki farklı cisim birbirine sürtüldüğünde elektronlar bir cisimden diğerine geçebilir. Elektron alan cisim negatif, elektron veren cisim pozitif yüklenir. Toplam yük korunur; yükler yoktan var olmaz.</p><div style='background:#f8fafc;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🧤　⇄　🎈</div><p><b>Örnek:</b> Balonun saça sürtülmesiyle elektron alışverişi olabilir. Balon ve saç zıt yüklerle yüklenebilir; balon saç tellerini çekebilir.</p><small>Görsel olayın basitleştirilmiş modelidir.</small></div><p>Günlük yaşamda kazağı çıkarırken çıtırtı duyulması ve kuru havada saçların birbirini itmesi statik elektrikle ilişkilidir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🤝 Dokunma ile elektriklenme",
+          "bodyHtml": "<p>Yüklü bir cisim, iletken bir nötr cisme dokundurulduğunda yüklerin bir bölümü aktarılabilir. Dokunma sonrasında cisimler aynı cins yükle yüklenebilir. Yük paylaşımı cismin özelliklerine ve koşullara bağlıdır.</p><div style='background:#ecfeff;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🔵(− − −)　→　⚪</div><p>Yüklü cisim temas ettiğinde elektronlar iletken cisimler arasında yer değiştirebilir.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧲 Etki ile elektriklenme",
+          "bodyHtml": "<p>Yüklü bir cisim, nötr iletken cisme dokunmadan yaklaştırıldığında iletkendeki yükler yeniden dağılır. Bu olaya <strong>etki ile elektriklenme</strong> denir. Cisim toplamda nötr kalabilir; ancak yakın ve uzak bölgelerde yük dağılımı farklılaşır.</p><div style='background:#f5f3ff;padding:12px;border-radius:12px;text-align:center'><svg viewBox='0 0 320 125' width='100%' xmlns='http://www.w3.org/2000/svg'><circle cx='65' cy='60' r='27' fill='#fecaca' stroke='#991b1b'/><text x='65' y='66' text-anchor='middle' font-size='22' fill='#7f1d1d'>−</text><rect x='170' y='32' width='125' height='56' rx='26' fill='#e0e7ff' stroke='#3730a3'/><g fill='#2563eb' font-size='20'><text x='185' y='66'>＋＋</text></g><g fill='#b91c1c' font-size='20'><text x='250' y='66'>−−</text></g><path d='M100 60H158' stroke='#64748b' stroke-width='2' stroke-dasharray='4 4'/><text x='160' y='115' text-anchor='middle' font-size='10' fill='#334155'>Temas yok; yük dağılımı değişir</text></svg></div><p>Etki ile elektriklenme, dokunma olmadan gerçekleşir. Topraklama ile birlikte uygulanırsa cisim kalıcı olarak yüklenebilir.</p>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🌩️ Doğada ve teknolojide elektriklenme",
+          "bodyHtml": "<p>Bulutlarda ve yeryüzünde elektrik yüklerinin ayrılması, uygun koşullarda yıldırım ve şimşek gibi olaylara yol açabilir. Fotokopi makineleri ve bazı yazıcılar, toner parçacıklarının elektriksel yüklerle yönlendirilmesi ilkesinden yararlanır. Toz tutucular da havadaki parçacıkları elektriksel yöntemlerle yakalayabilir.</p><p><strong>Güvenlik:</strong> Fırtınalı havalarda açık alanlardan, yüksek ve tek başına duran ağaçlardan uzak durulmalı; yıldırım tehlikesinde güvenli kapalı bir yapıya geçilmelidir.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "📌 Hızlı tekrar",
+          "bodyHtml": "<ul><li>Elektriklenmede elektron alışverişi olur.</li><li>Elektron alan cisim negatif, elektron veren cisim pozitif yüklenir.</li><li>Aynı yükler iter, zıt yükler çeker.</li><li>Sürtünme, dokunma ve etki elektriklenme çeşitleridir.</li><li>Etki ile elektriklenmede cisimler birbirine dokunmaz.</li></ul>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Elektrik yükü",
+          "definition": "Maddelerin elektriksel etkileşimini belirleyen özellik."
+        },
+        {
+          "term": "Elektron",
+          "definition": "Negatif elektrik yüklü atom altı parçacık."
+        },
+        {
+          "term": "Sürtünme ile elektriklenme",
+          "definition": "Sürtünme sırasında elektron aktarımıyla yüklenme."
+        },
+        {
+          "term": "Etki ile elektriklenme",
+          "definition": "Yüklü cismin yaklaştırılmasıyla iletkendeki yüklerin yeniden dağılması."
+        }
+      ],
+      "activity": {
+        "title": "Elektriklenme çeşitlerini modelleyelim",
+        "materials": "Balon, yün kumaş, küçük kâğıt parçaları, çizim kâğıdı",
+        "steps": "Balonu yün kumaşa sürtüp küçük kâğıt parçalarına yaklaştırın. Gözleminizi kaydedin ve elektron alışverişini oklarla modelleyin. Dokunma ve etki ile elektriklenmeyi çizimle karşılaştırın.",
+        "safetyNotes": "Etkinliği yalnızca küçük ve güvenli materyallerle, öğretmen gözetiminde yapın. Priz, kablo veya elektrik şebekesi kullanmayın."
+      },
+      "quiz": [
+        {
+          "body": "Elektron alan bir cisim hangi yükle yüklenir?",
+          "options": [
+            "Pozitif",
+            "Negatif",
+            "Nötr olmak zorundadır",
+            "Yüksüz proton"
+          ],
+          "answer": 1,
+          "explanation": "Elektron negatif yüklüdür; elektron alan cismin negatif yük miktarı artar.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Aşağıdaki yük çiftlerinden hangisi birbirini iter?",
+          "options": [
+            "+ ve −",
+            "Nötr ve +",
+            "+ ve +",
+            "Nötr ve −"
+          ],
+          "answer": 2,
+          "explanation": "Aynı cins elektrik yükleri birbirini iter.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Yüklü bir cisim nötr iletkene dokunmadan yaklaştırılıyor. İletkendeki yüklerin yer değiştirmesi hangi elektriklenme çeşididir?",
+          "options": [
+            "Sürtünme",
+            "Dokunma",
+            "Etki",
+            "Isınma"
+          ],
+          "answer": 2,
+          "explanation": "Temas olmadan yüklerin yeniden dağılması etki ile elektriklenmedir.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "elektrik-yuklu-cisimler-ve-topraklama",
+      "title": "Elektrik Yüklü Cisimler ve Topraklama",
+      "summary": "Pozitif, negatif ve nötr cisimleri; elektroskopu ve topraklamanın güvenlikteki rolünü öğrenelim.",
+      "outcome": {
+        "code": "F.8.7.2.1–F.8.7.2.2",
+        "description": "Cisimleri elektrik yüklerine göre sınıflandırır ve topraklama olayını günlük yaşam ve güvenlik örnekleriyle açıklar.",
+        "details": [
+          "Pozitif, negatif ve nötr cisimleri ayırt eder.",
+          "Nötr cismin yüksüz parçacıklardan oluşmadığını açıklar.",
+          "Elektroskopun kullanım amacını ve topraklamayı açıklar."
+        ]
+      },
+      "skills": [
+        "Sınıflandırma",
+        "Modelleme",
+        "Güvenlik farkındalığı"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "⚖️ Pozitif, negatif ve nötr cisim",
+          "bodyHtml": "<p>Bir cismin yük durumu, proton ve elektron sayılarının karşılaştırılmasıyla belirlenir. <strong>Proton sayısı elektron sayısından fazlaysa pozitif</strong>, elektron sayısı fazlaysa negatif, sayılar eşitse nötrdür.</p><div style='display:grid;grid-template-columns:repeat(3,1fr);gap:7px;text-align:center'><div style='background:#fee2e2;padding:10px;border-radius:12px'><div style='font-size:1.6rem'>＋＋＋</div><b>Pozitif</b><small>p > e</small></div><div style='background:#dbeafe;padding:10px;border-radius:12px'><div style='font-size:1.6rem'>− − −</div><b>Negatif</b><small>e > p</small></div><div style='background:#dcfce7;padding:10px;border-radius:12px'><div style='font-size:1.6rem'>＋ − ＋ −</div><b>Nötr</b><small>p = e</small></div></div><p><strong>Önemli:</strong> Nötr cisimde elektrik yükleri yok değildir. Pozitif ve negatif yük miktarları eşittir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🔍 Elektroskop ne işe yarar?",
+          "bodyHtml": "<p><strong>Elektroskop</strong>, bir cismin elektrikle yüklü olup olmadığını anlamaya ve uygun koşullarda yükünün cinsini değerlendirmeye yarayan araçtır. Üstte metal topuz, iletken bağlantı ve hareket edebilen yapraklar bulunur.</p><div style='background:#f8fafc;padding:12px;border-radius:12px;text-align:center'><svg viewBox='0 0 300 190' width='100%' xmlns='http://www.w3.org/2000/svg'><circle cx='150' cy='24' r='17' fill='#fbbf24' stroke='#92400e' stroke-width='2'/><path d='M150 41V118' stroke='#64748b' stroke-width='5'/><path d='M150 118L116 164M150 118L184 164' stroke='#d97706' stroke-width='5' stroke-linecap='round'/><path d='M90 174H210' stroke='#64748b' stroke-width='5' stroke-linecap='round'/><text x='190' y='28' font-size='11' fill='#334155'>Metal topuz</text><text x='195' y='103' font-size='11' fill='#334155'>İletken çubuk</text><text x='190' y='153' font-size='11' fill='#334155'>Yapraklar</text></svg><small>Elektroskopun temel bölümleri (şematik)</small></div><p>Yüklü bir cisim elektroskopa yaklaştırıldığında veya dokundurulduğunda yaprakların hareketi gözlenebilir. Bu ünitede elektroskopun temel kullanım amacı tanınır.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🌍 Topraklama nedir?",
+          "bodyHtml": "<p><strong>Topraklama</strong>, bir iletkenin iletken bağlantı aracılığıyla Dünya ile elektriksel olarak ilişkilendirilmesidir. Dünya çok büyük bir yük deposu gibi davranabilir. Koşullara göre elektronlar cisim ile Dünya arasında geçiş yapabilir ve cismin fazla yükü dengelenebilir.</p><div style='background:#ecfdf5;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>⚡ → 🏠 → 🌍</div><p>Yüklerin güvenli biçimde toprağa aktarılması, elektrik çarpması riskini azaltmaya yardımcı olur.</p></div>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏡 Günlük yaşamda topraklama",
+          "bodyHtml": "<ul><li>Çamaşır makinesi, bulaşık makinesi ve buzdolabı gibi metal gövdeli cihazlarda koruyucu topraklama önemlidir.</li><li>Elektrik tesisatındaki topraklama hattı, arıza durumunda tehlikeli gerilimlerin oluşma riskini azaltmaya yardımcı olur.</li><li>Yıldırımdan korunma sistemlerinde paratoner, yıldırım akımının güvenli bir yoldan toprağa iletilmesini amaçlar.</li></ul><p><strong>Unutma:</strong> Elektrik tesisatı ve cihaz onarımları uzman kişilerce yapılmalıdır. Prizlere veya kablolara deney amacıyla dokunulmaz.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "📌 Hızlı tekrar",
+          "bodyHtml": "<ul><li>p > e ise pozitif, e > p ise negatif, p = e ise nötr.</li><li>Nötr cisimde proton ve elektron sayıları eşittir.</li><li>Elektroskop, elektrik yükünü belirlemeye yardımcı olur.</li><li>Topraklama, elektrik güvenliği için önemli bir koruma uygulamasıdır.</li></ul>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Nötr cisim",
+          "definition": "Pozitif ve negatif yük miktarları eşit olan cisim."
+        },
+        {
+          "term": "Elektroskop",
+          "definition": "Cisimlerin elektriksel yük durumunu incelemeye yarayan araç."
+        },
+        {
+          "term": "Topraklama",
+          "definition": "İletkenin Dünya ile elektriksel bağlantı kurması."
+        },
+        {
+          "term": "Paratoner",
+          "definition": "Yıldırım akımını güvenli bir yoldan toprağa iletmeyi amaçlayan sistem."
+        }
+      ],
+      "activity": {
+        "title": "Yük durumlarını sınıflandıralım",
+        "materials": "Pozitif, negatif ve nötr yük kartları; elektroskop çizimi",
+        "steps": "Proton ve elektron sayılarını gösteren kartları inceleyin. Her kartı pozitif, negatif veya nötr olarak sınıflandırın. Ardından topraklamanın neden güvenlik sağladığını bir şema üzerinde açıklayın.",
+        "safetyNotes": "Gerçek elektrik tesisatına müdahale etmeyin. Etkinlik kâğıt ve model üzerinden yürütülmelidir."
+      },
+      "quiz": [
+        {
+          "body": "Bir cisimde proton sayısı elektron sayısına eşitse cisim nasıldır?",
+          "options": [
+            "Pozitif",
+            "Negatif",
+            "Nötr",
+            "İletken"
+          ],
+          "answer": 2,
+          "explanation": "Pozitif ve negatif yük miktarları eşit olduğunda cisim nötrdür.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Elektroskopun temel kullanım amacı nedir?",
+          "options": [
+            "Sıcaklığı ölçmek",
+            "Elektrik yükü hakkında bilgi edinmek",
+            "Akım üretmek",
+            "Işık şiddetini ölçmek"
+          ],
+          "answer": 1,
+          "explanation": "Elektroskop, cismin elektriksel yük durumunu incelemeye yarar.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Topraklamanın temel amaçlarından biri hangisidir?",
+          "options": [
+            "Elektrik enerjisini depolamak",
+            "Elektrik güvenliğini artırmak",
+            "Cihazı daha fazla ısıtmak",
+            "Elektronları yok etmek"
+          ],
+          "answer": 1,
+          "explanation": "Topraklama, arıza durumlarında elektrik çarpması riskini azaltmaya yardımcı olur.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "elektrik-enerjisinin-donusumu-ve-uretimi",
+      "title": "Elektrik Enerjisinin Dönüşümü ve Üretimi",
+      "summary": "Elektrik enerjisinin farklı enerji türlerine dönüşmesini, santrallerin çalışma mantığını ve tasarruflu kullanımı inceleyelim.",
+      "outcome": {
+        "code": "F.8.7.3.1–F.8.7.3.6",
+        "description": "Elektrik enerjisinin dönüşümlerini örnekler ve modellerle açıklar; güç santrallerini değerlendirir ve enerjinin bilinçli kullanımına yönelik öneriler geliştirir.",
+        "details": [
+          "Elektrik enerjisinin ısı, ışık ve hareket enerjisine dönüşümünü örnekler.",
+          "Hareket enerjisinden elektrik enerjisi üretimini açıklar.",
+          "Güç santrallerinin çalışma ilkelerini, avantaj ve sınırlılıklarını karşılaştırır.",
+          "Elektrik enerjisinin tasarruflu kullanımına yönelik öneriler geliştirir."
+        ]
+      },
+      "skills": [
+        "Karşılaştırma",
+        "Sistem düşünme",
+        "Model tasarlama",
+        "Veri yorumlama"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🔄 Elektrik enerjisi başka enerjilere dönüşür",
+          "bodyHtml": "<p>Elektrikli araçlar çalışırken elektrik enerjisi başka enerji türlerine dönüşür. Bir cihazda birden fazla dönüşüm birlikte gerçekleşebilir.</p><div style='display:grid;grid-template-columns:repeat(2,1fr);gap:8px;text-align:center'><div style='background:#fef3c7;padding:12px;border-radius:12px'><div style='font-size:2rem'>🔥</div><b>Isı enerjisi</b><p>Ütü, tost makinesi</p></div><div style='background:#fef9c3;padding:12px;border-radius:12px'><div style='font-size:2rem'>💡</div><b>Işık enerjisi</b><p>Lamba, LED</p></div><div style='background:#dbeafe;padding:12px;border-radius:12px'><div style='font-size:2rem'>🌀</div><b>Hareket enerjisi</b><p>Vantilatör, mikser</p></div><div style='background:#f3e8ff;padding:12px;border-radius:12px'><div style='font-size:2rem'>🔊</div><b>Ses enerjisi</b><p>Hoparlör, zil</p></div></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "💡 Cihazlarda enerji dönüşümü",
+          "bodyHtml": "<ul><li><strong>Elektrikli ısıtıcı:</strong> Elektrik → Isı</li><li><strong>LED lamba:</strong> Elektrik → Işık (bir miktar ısı da oluşabilir)</li><li><strong>Vantilatör:</strong> Elektrik → Hareket (ayrıca ses ve ısı oluşabilir)</li><li><strong>Hoparlör:</strong> Elektrik → Ses</li><li><strong>Elektrik motoru:</strong> Elektrik → Hareket</li></ul><p>Enerji dönüşümünde enerji yok olmaz; bir türden başka türlere aktarılır. Gerçek cihazlarda enerjinin bir bölümü çevreye ısı ve ses olarak yayılabilir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "⚙️ Hareket enerjisinden elektrik enerjisi",
+          "bodyHtml": "<p>Jeneratörler, hareket enerjisini elektrik enerjisine dönüştürür. Jeneratörün dönmesini sağlayan türbin; su, rüzgâr veya buhar gibi kaynaklarla hareket ettirilebilir.</p><div style='background:#eff6ff;padding:12px;border-radius:12px;text-align:center'><div style='font-size:1.5rem'>💨 / 💧 / ♨️ → ⚙️ → ⚡</div><b>Enerji kaynağı → Türbin → Jeneratör → Elektrik</b><p>Bu şema birçok santralin ortak enerji dönüşümünü basitleştirerek gösterir.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🏭 Güç santralleri nasıl çalışır?",
+          "bodyHtml": "<p>Elektrik santralleri farklı enerji kaynaklarından yararlanır. Bazı santrallerde türbin-jeneratör sistemi bulunur; güneş panellerinde ise ışık enerjisi doğrudan elektrik enerjisine dönüştürülür.</p><ul><li><strong>Hidroelektrik:</strong> Suyun hareketi türbini döndürür.</li><li><strong>Rüzgâr:</strong> Rüzgâr türbin kanatlarını döndürür.</li><li><strong>Termik:</strong> Yakıtın enerjisiyle elde edilen ısı, buhar oluşturup türbini döndürebilir.</li><li><strong>Jeotermal:</strong> Yer içinden gelen ısıdan yararlanılır.</li><li><strong>Nükleer:</strong> Çekirdek tepkimeleriyle elde edilen ısı, buhar-türbin sisteminde kullanılabilir.</li><li><strong>Güneş:</strong> Fotovoltaik paneller ışığı elektrik enerjisine dönüştürür.</li></ul>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "⚖️ Santrallerin avantajları ve sınırlılıkları",
+          "bodyHtml": "<p>Her enerji kaynağının çevresel, ekonomik ve coğrafi yönlerden avantajları ve sınırlılıkları vardır. Değerlendirme yapılırken yalnızca elektrik üretim miktarı değil; kaynak sürekliliği, çevresel etkiler, kurulum maliyeti ve atık yönetimi de dikkate alınmalıdır.</p><div style='overflow-x:auto'><table style='width:100%;border-collapse:collapse;font-size:.9rem'><tr style='background:#e2e8f0'><th style='padding:7px;border:1px solid #cbd5e1'>Kaynak</th><th style='padding:7px;border:1px solid #cbd5e1'>Öne çıkan yön</th><th style='padding:7px;border:1px solid #cbd5e1'>Dikkat edilmesi gereken</th></tr><tr><td style='padding:7px;border:1px solid #cbd5e1'>Rüzgâr</td><td style='padding:7px;border:1px solid #cbd5e1'>Yenilenebilir</td><td style='padding:7px;border:1px solid #cbd5e1'>Rüzgâra bağlı üretim</td></tr><tr><td style='padding:7px;border:1px solid #cbd5e1'>Güneş</td><td style='padding:7px;border:1px solid #cbd5e1'>Yenilenebilir</td><td style='padding:7px;border:1px solid #cbd5e1'>Güneşlenme koşulları</td></tr><tr><td style='padding:7px;border:1px solid #cbd5e1'>Hidroelektrik</td><td style='padding:7px;border:1px solid #cbd5e1'>Yenilenebilir kaynak</td><td style='padding:7px;border:1px solid #cbd5e1'>Ekosistem ve su rejimi etkileri</td></tr><tr><td style='padding:7px;border:1px solid #cbd5e1'>Termik</td><td style='padding:7px;border:1px solid #cbd5e1'>Kontrollü üretim</td><td style='padding:7px;border:1px solid #cbd5e1'>Yakıt tüketimi ve emisyonlar</td></tr><tr><td style='padding:7px;border:1px solid #cbd5e1'>Nükleer</td><td style='padding:7px;border:1px solid #cbd5e1'>Yüksek miktarda sürekli üretim</td><td style='padding:7px;border:1px solid #cbd5e1'>Radyoaktif atık ve güvenlik yönetimi</td></tr></table></div>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "💰 Elektrik enerjisini bilinçli kullanalım",
+          "bodyHtml": "<p>Elektrik tasarrufu, gereksiz tüketimi azaltarak aile ve ülke ekonomisine katkı sağlar. Enerji verimli cihazlar tercih etmek, kullanılmayan aydınlatmaları kapatmak, gün ışığından yararlanmak ve cihazları kullanım amacına uygun çalıştırmak önemlidir.</p><p>Elektrik tüketimi cihazın gücüne ve çalışma süresine bağlıdır. Aynı cihaz daha uzun süre çalıştırıldığında genellikle daha fazla elektrik enerjisi tüketir. Etiketlerde güç çoğunlukla watt (W), tüketilen enerji ise kilovatsaat (kWh) ile ifade edilir.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "📌 Hızlı tekrar",
+          "bodyHtml": "<ul><li>Elektrik enerjisi ısı, ışık, hareket ve ses enerjisine dönüşebilir.</li><li>Jeneratör hareket enerjisini elektrik enerjisine dönüştürür.</li><li>Güneş paneli ışık enerjisini doğrudan elektrik enerjisine dönüştürür.</li><li>Santraller kaynaklarına ve çevresel etkilerine göre değerlendirilir.</li><li>Tasarruf, gereksiz tüketimi azaltmak ve enerjiyi verimli kullanmaktır.</li></ul>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Jeneratör",
+          "definition": "Hareket enerjisini elektrik enerjisine dönüştüren araç."
+        },
+        {
+          "term": "Türbin",
+          "definition": "Akışkanın hareket enerjisiyle dönebilen makine."
+        },
+        {
+          "term": "Yenilenebilir enerji",
+          "definition": "Doğal süreçlerle kendini yenileyebilen kaynaklardan elde edilen enerji."
+        },
+        {
+          "term": "Kilovatsaat (kWh)",
+          "definition": "Elektrik enerjisi tüketimini ifade etmekte kullanılan birim."
+        }
+      ],
+      "activity": {
+        "title": "Enerji dönüşümü modeli tasarlayalım",
+        "materials": "Kâğıt, renkli kalemler, cihaz görselleri veya kartları",
+        "steps": "Bir elektrikli cihaz seçin. Elektrik enerjisinin hangi enerji türlerine dönüştüğünü oklarla gösterin. Dönüşümün günlük yaşamdaki sonucunu ve enerji tasarrufu için bir öneriyi modelinize ekleyin.",
+        "safetyNotes": "Elektrik devresi kurmayın ve şebeke elektriğiyle deney yapmayın. Modeli çizim veya kartlarla hazırlayın."
+      },
+      "quiz": [
+        {
+          "body": "Vantilatör çalışırken elektrik enerjisi öncelikle hangi enerji türüne dönüşür?",
+          "options": [
+            "Kimyasal",
+            "Hareket",
+            "Nükleer",
+            "Potansiyel"
+          ],
+          "answer": 1,
+          "explanation": "Vantilatörün motoru pervaneyi döndürerek elektrik enerjisini hareket enerjisine dönüştürür.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Güneş panelinin temel enerji dönüşümü hangisidir?",
+          "options": [
+            "Isı → Ses",
+            "Hareket → Elektrik",
+            "Işık → Elektrik",
+            "Elektrik → Kimyasal"
+          ],
+          "answer": 2,
+          "explanation": "Fotovoltaik paneller güneş ışığını elektrik enerjisine dönüştürür.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bir elektrikli cihazın tükettiği enerji hangi iki değişkene bağlıdır?",
+          "options": [
+            "Renk ve şekil",
+            "Güç ve çalışma süresi",
+            "Kütle ve hacim",
+            "Ses ve sıcaklık"
+          ],
+          "answer": 1,
+          "explanation": "Tüketilen enerji cihazın gücü ve çalışma süresiyle ilişkilidir.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    }
+  ]
+}
