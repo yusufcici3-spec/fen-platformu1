@@ -5,7 +5,7 @@ import styles from "./page.module.css";
 export const metadata = {
   title: "Passafenola 7 | 7. Sınıf Fen Bilimleri",
   description:
-    "Güneş Sistemi ve Ötesi ile Hücre ve Bölünmeler ünitelerinden 21 harflik passaparola oyunu. Her harf için soruyu oku, cevabı yaz, süre bitmeden harfleri tamamla.",
+    "Güneş Sistemi ve Ötesi ile Kuvvet, İş ve Enerji ünitelerinden 21 harflik passaparola oyunu. Her harf için soruyu oku, cevabı yaz, süre bitmeden harfleri tamamla.",
 };
 
 export default function Passafenola7Page() {
@@ -21,7 +21,7 @@ export default function Passafenola7Page() {
         </nav>
 
         <header className={styles.hero}>
-          <span className={styles.eyebrow}>7. SINIF · GÜNEŞ SİSTEMİ VE ÖTESİ · HÜCRE VE BÖLÜNMELER · OYUN</span>
+          <span className={styles.eyebrow}>7. SINIF · GÜNEŞ SİSTEMİ VE ÖTESİ · KUVVET, İŞ VE ENERJİ · OYUN</span>
           <h1>Passafenola 7</h1>
           <p>
             Her harf için bir fen sorusu gelir; cevap o harfle başlar. Doğru bilirsen harf yeşile, yanlışsa

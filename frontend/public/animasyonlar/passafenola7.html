@@ -113,7 +113,7 @@ html.embedded .review{max-height:340px}
 <div class="app">
   <header>
     <h1>7. Sınıf Fen Bilimleri · Passafenola</h1>
-    <p>Güneş Sistemi ve Ötesi &nbsp;•&nbsp; Hücre ve Bölünmeler</p>
+    <p>Güneş Sistemi ve Ötesi &nbsp;•&nbsp; Kuvvet, İş ve Enerji</p>
   </header>
 
   <main class="stage">
@@ -156,7 +156,7 @@ html.embedded .review{max-height:340px}
   <div class="modal">
     <h2>🎯 Passafenola'ya hoş geldin!</h2>
     <p>Her harf için bir soru gelir; cevap o harfle başlar. Doğru bilirsen harf yeşil, yanlışsa kırmızı olur. Pas geçtiğin sorular tur sonunda tekrar sorulur.</p>
-    <p><b>Konular:</b> Güneş Sistemi ve Ötesi, Hücre ve Bölünmeler</p>
+    <p><b>Konular:</b> Güneş Sistemi ve Ötesi, Kuvvet, İş ve Enerji</p>
     <p style="margin-top:14px">Süreni seç:</p>
     <div class="opts" id="opts">
       <label><input type="radio" name="t" value="300"><span>5 dk</span></label>
@@ -182,8 +182,8 @@ html.embedded .review{max-height:340px}
   </div>
 </div>
 <script>
-// Ünite 1: Güneş Sistemi ve Ötesi  |  Ünite 2: Hücre ve Bölünmeler
-const UNITS = { 1: "1. Ünite · Güneş Sistemi ve Ötesi", 2: "2. Ünite · Hücre ve Bölünmeler" };
+// Ünite 1: Güneş Sistemi ve Ötesi  |  Ünite 2: Kuvvet, İş ve Enerji İlişkileri / Enerji Dönüşümleri
+const UNITS = { 1: "1. Ünite · Güneş Sistemi ve Ötesi", 2: "2. Ünite · Kuvvet, İş ve Enerji" };
 
 const Q = [
   { l: "A", unit: 1, a: "Asteroit", alt: ["Asteroid", "Asteroit kuşağı"],
@@ -195,45 +195,45 @@ const Q = [
   { l: "C", unit: 1, a: "Cüce gezegen", alt: ["Cüce"],
     q: "Plüton gibi Güneş etrafında dolanan, yuvarlak ama yörüngesini temizleyememiş gök cisimlerine ne denir? (İki kelime)",
     note: "Plüton, 2006'dan beri cüce gezegen sayılıyor." },
-  { l: "D", unit: 2, a: "Doku", alt: [],
-    q: "Aynı görevi yapan, yapıca ve işlevce benzer hücrelerin bir araya gelmesiyle oluşan yapıya ne denir?",
-    note: "Hücre → doku → organ → sistem → organizma şeklinde düzenlenir." },
-  { l: "E", unit: 2, a: "Eşey hücresi", alt: ["Eşey", "Eşey hücreleri"],
-    q: "Mayoz bölünme sonucu oluşan sperm ve yumurta gibi üreme hücrelerine ne denir? (İki kelime)",
-    note: "Eşey hücreleri kromozom sayısı yarıya inmiş hücrelerdir." },
+  { l: "D", unit: 2, a: "Dinamometre", alt: [],
+    q: "Cisimlere uygulanan kuvveti, içindeki yayın uzamasından yararlanarak ölçen alete ne denir?",
+    note: "Dinamometre kuvveti newton (N) cinsinden ölçer." },
+  { l: "E", unit: 2, a: "Enerji", alt: [],
+    q: "İş yapabilme yeteneğine ne denir? Birimi joule (J)'dür.",
+    note: "Enerji yoktan var edilemez, vardan yok edilemez; yalnızca dönüşür." },
   { l: "F", unit: 1, a: "Fotosfer", alt: [],
     q: "Güneş'in gözlemlediğimiz, ışık yayan görünür yüzey tabakasının adı nedir?",
     note: "Güneş'in katmanları: çekirdek, fotosfer, kromosfer, korona." },
   { l: "G", unit: 1, a: "Galaksi", alt: [],
     q: "Milyarlarca yıldızın, gazın ve tozun kütle çekimiyle bir arada tutulduğu dev yıldız topluluğuna ne denir?",
     note: "Evrende yüz milyarlarca galaksi olduğu tahmin edilir." },
-  { l: "H", unit: 2, a: "Hücre", alt: [],
-    q: "Canlıların yapı ve görev bakımından en küçük birimine ne denir?",
-    note: "Hücreler mikroskopla incelenir; ilk kez Robert Hooke tarafından gözlendi." },
-  { l: "İ", unit: 2, a: "İnterfaz", alt: ["Interfaz"],
-    q: "Hücre bölünmeden önceki hazırlık evresinde hücre büyür ve DNA kendini eşler. Bu evrenin adı nedir?",
-    note: "İnterfazda DNA eşlenir, sonra bölünme başlar." },
+  { l: "H", unit: 2, a: "Hız", alt: ["Sürat"],
+    q: "Kinetik enerji, cismin kütlesine ve bir de hangi büyüklüğe bağlıdır? (Birim zamandaki yer değiştirme)",
+    note: "Kütlesi ve hızı arttıkça cismin kinetik enerjisi artar." },
+  { l: "İ", unit: 2, a: "İş", alt: [],
+    q: "Bir cisme uygulanan kuvvetin, cismi kuvvet doğrultusunda yer değiştirmesiyle yapılan fiziksel büyüklüğe ne denir? (İş = kuvvet × yol)",
+    note: "Fizikte iş yapılması için cismin kuvvet yönünde yol alması gerekir." },
   { l: "K", unit: 1, a: "Kuyruklu yıldız", alt: ["Kuyruklu"],
     q: "Buz, toz ve kayaçtan oluşan, Güneş'e yaklaştıkça uzun bir kuyruk geliştiren gök cismine ne denir? (İki kelime)",
     note: "Kuyruk her zaman Güneş'ten uzağa doğru uzanır." },
-  { l: "L", unit: 2, a: "Lizozom", alt: [],
-    q: "Hücrede besinleri ve yaşlanmış organelleri sindiren enzimleri taşıyan organelin adı nedir?",
-    note: "Lizozom, hücrenin sindirim organelidir." },
-  { l: "M", unit: 2, a: "Mitoz", alt: ["Mitoz bölünme"],
-    q: "Bir hücreden, ana hücreyle aynı kromozom sayısına sahip iki yeni hücre oluşturan; büyüme ve onarımı sağlayan bölünme türü hangisidir?",
-    note: "Mitozda kromozom sayısı değişmez." },
+  { l: "L", unit: 2, a: "Lamba", alt: ["Ampul"],
+    q: "Elektrik enerjisini ışık ve ısı enerjisine dönüştüren ev aletine ne denir?",
+    note: "Lambada elektrik enerjisi → ışık + ısı enerjisine dönüşür." },
+  { l: "M", unit: 2, a: "Mekanik enerji", alt: ["Mekanik"],
+    q: "Bir cismin kinetik ve potansiyel enerjilerinin toplamına ne denir? (İki kelime)",
+    note: "Sürtünmesiz ortamda mekanik enerji korunur." },
   { l: "N", unit: 1, a: "Nebula", alt: ["Bulutsu"],
     q: "Yıldızların doğduğu, gaz ve tozdan oluşan dev bulutlara ne denir?",
     note: "Türkçesi \"bulutsu\"dur." },
-  { l: "O", unit: 2, a: "Organel", alt: ["Organeller"],
-    q: "Hücre içinde belirli bir görevi yapan mitokondri, ribozom gibi yapıların genel adı nedir?",
-    note: "Organeller hücrenin yaşamsal faaliyetlerini sürdürmesini sağlar." },
-  { l: "P", unit: 2, a: "Protein", alt: [],
-    q: "Ribozomlarda üretilen, hücrenin yapımında ve onarımında görev alan organik besin hangisidir?",
-    note: "Ribozomlar protein sentezinin yapıldığı organellerdir." },
-  { l: "R", unit: 2, a: "Ribozom", alt: [],
-    q: "Hem sitoplazmada serbest hem de endoplazmik retikulum üzerinde bulunan, protein üretiminden sorumlu organel hangisidir?",
-    note: "Ribozom zarsız bir organeldir." },
+  { l: "O", unit: 2, a: "Otomobil", alt: ["Araba", "Araç"],
+    q: "Yakıttaki kimyasal enerjiyi hareket enerjisine dönüştüren, günlük hayatta sık kullanılan taşıt hangisidir?",
+    note: "Motorda kimyasal enerji → ısı → hareket enerjisine dönüşür." },
+  { l: "P", unit: 2, a: "Potansiyel enerji", alt: ["Potansiyel", "Çekim potansiyel enerjisi"],
+    q: "Bir cismin yerden yüksekliğinden dolayı sahip olduğu depolanmış enerjiye ne denir? (İki kelime)",
+    note: "Yükseklik arttıkça çekim potansiyel enerjisi artar." },
+  { l: "R", unit: 2, a: "Rüzgâr", alt: ["Rüzgar"],
+    q: "Türbin kanatlarını döndürerek elektrik üretiminde kullanılan, hareketli havaya ait yenilenebilir enerji kaynağı hangisidir?",
+    note: "Rüzgâr enerjisinde hareket enerjisi elektrik enerjisine dönüşür." },
   { l: "S", unit: 1, a: "Samanyolu", alt: ["Samanyolu galaksisi"],
     q: "Güneş sistemimizin içinde bulunduğu galaksinin adı nedir?",
     note: "Samanyolu, sarmal yapılı bir galaksidir." },
@@ -243,12 +243,12 @@ const Q = [
   { l: "U", unit: 1, a: "Uydu", alt: ["Yapay uydu", "Doğal uydu"],
     q: "Bir gezegenin çevresinde dolanan doğal ya da yapay cisme ne denir? Ay, Dünya'nın doğal ... sidir.",
     note: "Hava durumunu izleyen ve haberleşmeyi sağlayan yapay uydular vardır." },
-  { l: "V", unit: 2, a: "Vakuol", alt: ["Koful"],
-    q: "Bitki hücrelerinde su, besin ve atık maddeleri depolayan büyük kesecik organelin bilimsel adı nedir? (Türkçesi: koful)",
-    note: "Bitki hücresinde koful büyük, hayvan hücresinde küçüktür." },
-  { l: "Z", unit: 2, a: "Zar", alt: ["Hücre zarı"],
-    q: "Hücreyi çevreleyen, madde alışverişini kontrol eden ince yapıya hücre ... denir. Boşluğu doldur.",
-    note: "Hücre zarı seçici geçirgendir; hem hayvan hem bitki hücresinde bulunur." }
+  { l: "V", unit: 2, a: "Verim", alt: [],
+    q: "Yararlı enerjinin harcanan toplam enerjiye oranına ne denir? Makineler için ne kadar iyi çalıştıklarının ölçüsüdür.",
+    note: "Hiçbir makinenin verimi %100 olamaz; bir kısım enerji ısıya dönüşür." },
+  { l: "Z", unit: 2, a: "Zaman", alt: [],
+    q: "Güç, yapılan işin hangi büyüklüğe bölünmesiyle bulunur? (İş / ...)",
+    note: "Aynı işi daha kısa sürede yapan makinenin gücü daha büyüktür." }
 ];
 
 const $ = id => document.getElementById(id);

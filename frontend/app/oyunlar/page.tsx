@@ -39,7 +39,7 @@ const STATIC_GAMES = [
     label: "7. Sınıf · Passaparola",
     title: "Passafenola 7",
     description:
-      "Güneş Sistemi ve Ötesi ile Hücre ve Bölünmeler ünitelerinden 21 harflik passaparola. Soruyu oku, cevabı yaz, süre bitmeden harfleri tamamla.",
+      "Güneş Sistemi ve Ötesi ile Kuvvet, İş ve Enerji ünitelerinden 21 harflik passaparola. Soruyu oku, cevabı yaz, süre bitmeden harfleri tamamla.",
   },
   {
     href: "/animasyonlar/8/passafenola",
