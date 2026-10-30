@@ -16,6 +16,7 @@ import unit71 from "@/content/maarif/7-unite-1.json";
 import unit72 from "@/content/maarif/7-unite-2.json";
 import unit73 from "@/content/maarif/7-unite-3.json";
 import unit74 from "@/content/maarif/7-unite-4.json";
+// 7. sinif 5. unite: Maddenin Dogasina Yolculuk
 import unit75 from "@/content/maarif/7-unite-5.json";
 
 export type StaticSection = {
