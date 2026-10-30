@@ -1,3 +1,4 @@
+// Son yayin tetikleme: 7. sinif unite 6-7 ve 8. sinif unite 7 kayitlari.
 import unit51 from "@/content/maarif/5-unite-1.json";
 import unit52 from "@/content/maarif/5-unite-2.json";
 import unit53 from "@/content/maarif/5-unite-3.json";
