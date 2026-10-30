@@ -1,0 +1,257 @@
+{
+  "classLevel": 7,
+  "code": "7.7",
+  "hours": 12,
+  "title": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+  "slug": "surdurulebilir-yasam-ve-geri-donusum",
+  "description": "Besin zinciri ve enerji akışını modelleyelim; su başta olmak üzere doğal kaynakların tasarruflu kullanımını, su ayak izini ve atık su yönetimini günlük yaşamla ilişkilendirelim.",
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı, 7. sınıf 7. ünite: Sürdürülebilir Yaşam ve Geri Dönüşüm, 12 ders saati. FB.7.7.1.1 ve FB.7.7.2.1 öğrenme çıktıları esas alınarak özgün anlatım, besin ağı ve ekoloji piramidi şemaları, araştırma etkinlikleri ve ölçme soruları hazırlanmıştır.",
+  "topics": [
+    {
+      "slug": "besin-zinciri-ve-enerji-akisi",
+      "title": "Besin Zinciri ve Enerji Akışı",
+      "summary": "Canlılar arasındaki beslenme ilişkilerini, üretici-tüketici-ayrıştırıcı rollerini ve enerji aktarımını inceleyelim.",
+      "outcome": {
+        "code": "FB.7.7.1.1",
+        "description": "Besin zincirindeki canlılar arasındaki nedensel ilişkileri ortaya koyar ve besin zincirini bir bütün olarak açıklar.",
+        "details": [
+          "Üretici, tüketici ve ayrıştırıcı canlıları sınıflandırır.",
+          "Besin zincirinde okların yönünü açıklar.",
+          "Canlılar arasındaki enerji aktarımını yorumlar."
+        ]
+      },
+      "skills": [
+        "Bilimsel gözlem",
+        "Sınıflandırma",
+        "Karşılaştırma",
+        "Bilimsel çıkarım",
+        "Model oluşturma"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🌱 Besin zinciri nedir?",
+          "bodyHtml": "<p>Bir ekosistemde canlıların birbirleriyle beslenme yoluyla kurduğu ilişki <strong>besin zinciri</strong> olarak modellenir. Zincirdeki her canlı, başka bir canlı için besin kaynağı olabilir. Oklar, besinden onu tüketen canlıya doğru çizilir.</p><div style='background:#f0fdf4;padding:14px;border-radius:14px;text-align:center;color:#14532d'><div style='font-size:1.35rem'>☀️ → 🌿 → 🐛 → 🐦 → 🦅</div><b>Örnek besin zinciri</b><p>Güneş → ot → çekirge → kurbağa → yılan</p><small>Ok, besin ve enerji aktarımının yönünü gösterir.</small></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🌿 Üretici, tüketici ve ayrıştırıcılar",
+          "bodyHtml": "<ul><li><strong>Üreticiler:</strong> Fotosentezle kendi besinini üreten bitkiler ve bazı mikroskobik canlılar.</li><li><strong>Tüketiciler:</strong> Besinlerini diğer canlıları tüketerek sağlayan canlılar.</li><li><strong>Ayrıştırıcılar:</strong> Ölü canlı kalıntılarını ve atıkları parçalayarak maddelerin doğaya dönmesine katkı sağlayan bakteri ve mantarlar.</li></ul><div style='display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;text-align:center'><div style='background:#dcfce7;padding:10px;border-radius:12px'><div style='font-size:2rem'>🌿</div><b>Üretici</b></div><div style='background:#dbeafe;padding:10px;border-radius:12px'><div style='font-size:2rem'>🐇</div><b>Tüketici</b></div><div style='background:#fef3c7;padding:10px;border-radius:12px'><div style='font-size:2rem'>🍄</div><b>Ayrıştırıcı</b></div></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🕸️ Besin ağı",
+          "bodyHtml": "<p>Doğada canlılar yalnızca tek bir besin zincirinde yer almaz. Bir canlının birden fazla besin kaynağı veya avcısı olabilir. Birbirine bağlı çok sayıda besin zincirine <strong>besin ağı</strong> denir.</p><div style='background:#eff6ff;padding:14px;border-radius:14px;text-align:center;color:#1e3a8a'><div style='font-size:1.1rem'>🌿 → 🐛 → 🐦</div><div style='font-size:1.1rem'>🌿 → 🐭 → 🦉</div><div style='font-size:1.1rem'>🌾 → 🐭 → 🦊</div><p>Bir canlı birden fazla zincirin parçası olabilir.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🔺 Ekoloji piramidi ve enerji",
+          "bodyHtml": "<p>Ekoloji piramidi, ekosistemdeki beslenme basamaklarını gösterir. Genellikle üreticiler tabanda, onları tüketen canlılar üst basamaklarda yer alır. Bir basamaktan diğerine aktarılabilen enerji azalır; enerjinin bir bölümü canlıların yaşamsal faaliyetlerinde kullanılır ve çevreye aktarılır.</p><div style='background:#f8fafc;padding:12px;border-radius:14px;text-align:center'><svg viewBox='0 0 300 190' width='100%' xmlns='http://www.w3.org/2000/svg'><path d='M150 12L188 65H112Z' fill='#fca5a5' stroke='#7f1d1d'/><path d='M112 69H188L218 121H82Z' fill='#fde68a' stroke='#92400e'/><path d='M82 125H218L258 180H42Z' fill='#86efac' stroke='#166534'/><text x='150' y='53' font-size='11' text-anchor='middle' fill='#451a03'>Üst tüketici</text><text x='150' y='105' font-size='11' text-anchor='middle' fill='#451a03'>Tüketiciler</text><text x='150' y='160' font-size='12' text-anchor='middle' fill='#14532d'>Üreticiler</text></svg><small>Basamaklar şematik olarak gösterilmiştir.</small></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧪 Biyolojik birikim",
+          "bodyHtml": "<p>Doğada kolay parçalanmayan bazı zararlı maddeler canlıların vücutlarında birikebilir. Bu maddelerin besin zinciri boyunca üst basamaklardaki canlılarda daha yüksek miktarlara ulaşmasına <strong>biyolojik birikim</strong> denir.</p><p>Bu nedenle besin zincirinin üst basamaklarındaki canlılar kirleticilerden daha fazla etkilenebilir. Çevre kirliliğini önlemek, canlı sağlığını ve ekosistem dengesini korumaya yardımcı olur.</p>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🌍 Ekosistemde denge",
+          "bodyHtml": "<p>Bir türün sayısındaki değişim, onunla beslenen veya onun besin olduğu diğer türleri de etkileyebilir. Örneğin bir bölgede otçul canlıların azalması, bu canlılarla beslenen etçillerin besin bulmasını zorlaştırabilir. Canlıların ve çevresel koşulların birlikte oluşturduğu bu ilişkiler ekosistem dengesinin önemini gösterir.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "📌 Hızlı tekrar",
+          "bodyHtml": "<ul><li>Üreticiler kendi besinini üretir; tüketiciler diğer canlılarla beslenir.</li><li>Ayrıştırıcılar maddelerin doğaya geri kazandırılmasına katkı sağlar.</li><li>Besin zincirinde ok, besinden tüketiciye doğrudur.</li><li>Besin ağı, birden fazla besin zincirinin birbirine bağlanmasıdır.</li><li>Besin basamakları yükseldikçe aktarılabilen enerji azalır.</li><li>Biyolojik birikim, bazı zararlı maddelerin besin zincirinde birikmesidir.</li></ul>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Besin zinciri",
+          "definition": "Canlılar arasındaki beslenme ilişkisini sıralı gösteren model."
+        },
+        {
+          "term": "Üretici",
+          "definition": "Kendi besinini üretebilen canlı."
+        },
+        {
+          "term": "Tüketici",
+          "definition": "Besinini diğer canlıları tüketerek sağlayan canlı."
+        },
+        {
+          "term": "Ayrıştırıcı",
+          "definition": "Organik kalıntıları parçalayarak maddelerin doğaya dönmesine katkı sağlayan canlı."
+        },
+        {
+          "term": "Biyolojik birikim",
+          "definition": "Bazı zararlı maddelerin canlılarda ve besin zincirinde birikmesi."
+        }
+      ],
+      "activity": {
+        "title": "Bir Besin Ağı Kuralım",
+        "materials": "Canlı görselleri veya kartları, ip, pano, etiketler",
+        "steps": "Üretici, tüketici ve ayrıştırıcı canlı kartlarını gruplandırın. Oklarla en az üç besin zinciri kurun ve bu zincirleri birleştirerek besin ağı oluşturun. Okların yönünü açıklayın.",
+        "safetyNotes": "Canlıları doğal ortamlarından toplamayın; görsel veya kart kullanın. Etkinlikte yalnızca basılı materyallerden yararlanın."
+      },
+      "quiz": [
+        {
+          "body": "Besin zincirinde kendi besinini fotosentezle üreten canlılar hangi gruptadır?",
+          "options": [
+            "Tüketici",
+            "Üretici",
+            "Ayrıştırıcı",
+            "Avcı"
+          ],
+          "answer": 1,
+          "explanation": "Bitkiler gibi fotosentez yapan canlılar üreticidir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Besin zincirinde okların yönü neyi gösterir?",
+          "options": [
+            "Canlının hareket yönünü",
+            "Besin ve enerji aktarım yönünü",
+            "Suyun akış yönünü",
+            "Canlıların büyüklüğünü"
+          ],
+          "answer": 1,
+          "explanation": "Oklar besinden onu tüketen canlıya doğru çizilir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Besin zincirindeki bazı zararlı maddelerin üst basamaklarda daha fazla birikmesine ne denir?",
+          "options": [
+            "Fotosentez",
+            "Buharlaşma",
+            "Biyolojik birikim",
+            "Solunum"
+          ],
+          "answer": 2,
+          "explanation": "Besin zinciri boyunca bazı zor parçalanan kirleticilerin canlılarda birikmesi biyolojik birikimdir.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "surdurulebilir-yasam-ve-kaynaklar",
+      "title": "Sürdürülebilir Yaşam ve Kaynakların Korunması",
+      "summary": "Doğal kaynakları korumanın neden gerekli olduğunu, su ayak izini ve kaynak kullanımını günlük yaşam örnekleriyle değerlendirelim.",
+      "outcome": {
+        "code": "FB.7.7.2.1",
+        "description": "Kaynakların tasarruflu kullanımının önemini sorgular, araştırma verilerini yorumlar ve kanıta dayalı çözüm önerileri geliştirir.",
+        "details": [
+          "Doğal kaynakları sınıflandırır ve sınırlı kaynakların önemini açıklar.",
+          "Su tasarrufu için ölçülebilir öneriler geliştirir.",
+          "Sürdürülebilir yaşam için bireysel ve toplumsal sorumlulukları tartışır."
+        ]
+      },
+      "skills": [
+        "Bilimsel gözlem",
+        "Sınıflandırma",
+        "Karşılaştırma",
+        "Bilimsel çıkarım",
+        "Model oluşturma"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "♻️ Sürdürülebilir yaşam nedir?",
+          "bodyHtml": "<p><strong>Sürdürülebilir yaşam</strong>, bugünün ihtiyaçlarını karşılarken gelecek nesillerin ihtiyaçlarını karşılayabilme olanaklarını da koruyan yaşam biçimidir. Enerji, su ve ham maddeleri bilinçli kullanmak; atıkları azaltmak ve doğal yaşamı korumak bu anlayışın parçalarıdır.</p><div style='background:#f0fdf4;padding:14px;border-radius:14px;text-align:center;color:#14532d'><div style='font-size:2.3rem'>🌍 ♻️ 🌱</div><b>Azalt – Yeniden kullan – Geri dönüştür</b><p>Önce gereksiz tüketimi azaltmak, sonra yeniden kullanmak ve uygun atıkları geri dönüşüme ayırmak önemlidir.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "💧 Tatlı su kaynakları neden önemlidir?",
+          "bodyHtml": "<p>Dünya'daki suyun büyük bölümü tuzlu sudur. İnsanların doğrudan kullanabildiği tatlı su kaynakları sınırlıdır. Akarsular, göller, barajlar, yer altı suları ve buzullar tatlı su kaynakları arasında sayılabilir. Bu kaynakların kirlenmesi ve aşırı kullanılması suya erişimi zorlaştırabilir.</p><p>Su kaynaklarını korumak için suyu gereksiz yere akıtmamak, sızıntıları onarmak, kirleticileri suya karıştırmamak ve suyu verimli kullanan yöntemleri tercih etmek gerekir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "👣 Su ayak izi nedir?",
+          "bodyHtml": "<p><strong>Su ayak izi</strong>, bir kişi, ürün veya etkinlikle ilişkili doğrudan ve dolaylı tatlı su kullanımını ifade eder. Yalnızca musluktan kullandığımız su değil; yiyeceklerin, giysilerin ve ürünlerin üretiminde kullanılan su da bu kavramla ilişkilidir.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;text-align:center'><div style='background:#dbeafe;padding:12px;border-radius:12px'><div style='font-size:2rem'>🚿</div><b>Doğrudan kullanım</b><p>Duş, el yıkama, temizlik</p></div><div style='background:#e0f2fe;padding:12px;border-radius:12px'><div style='font-size:2rem'>👕</div><b>Dolaylı kullanım</b><p>Ürünlerin üretiminde kullanılan su</p></div></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🚰 Atık su ve arıtma",
+          "bodyHtml": "<p>Kullanım sonucunda kirlenmiş ve özellikleri değişmiş suya <strong>atık su</strong> denir. Evlerden, sanayiden ve bazı tarımsal faaliyetlerden kaynaklanabilir. Atık suların uygun arıtma süreçlerinden geçirilmesi, çevreye verilecek zararın azaltılmasına yardımcı olur.</p><div style='background:#eff6ff;padding:14px;border-radius:14px;text-align:center;color:#1e3a8a'><div style='font-size:1.2rem'>🏠 → 🚿 → 🏭 → 🌊</div><b>Kullanım – Atık su – Arıtma – Uygun deşarj/yeniden kullanım</b><p>Arıtma süreci suyun kirletici özelliklerini azaltmayı amaçlar.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📉 Kaynak tasarrufu için çözüm üretelim",
+          "bodyHtml": "<ul><li>Musluğu gereksiz yere açık bırakmamak.</li><li>Su sızıntılarını fark edildiğinde yetkililere bildirmek.</li><li>İhtiyaç kadar tüketmek, gıda israfını azaltmak.</li><li>Tek kullanımlık ürünleri azaltıp yeniden kullanılabilir ürünleri tercih etmek.</li><li>Atıkları türlerine göre ayırarak geri dönüşüm sistemlerine uygun şekilde vermek.</li><li>Enerji verimli aydınlatma ve cihaz kullanımını desteklemek.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏫 Okulda su tasarrufu projesi",
+          "bodyHtml": "<p>Okulda su tasarrufu için önce problem belirlenir: örneğin muslukların gereğinden uzun süre açık kalması. Ardından gözlem ve kayıt yapılır, çözüm önerileri geliştirilir, uygulama sonrasında veriler karşılaştırılır. Böylece önerinin işe yarayıp yaramadığı kanıta dayalı olarak değerlendirilebilir.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "📌 Hızlı tekrar",
+          "bodyHtml": "<ul><li>Sürdürülebilir yaşam kaynakları gelecek nesiller için de korumayı amaçlar.</li><li>Tatlı su kaynakları sınırlıdır ve kirlenmeye karşı korunmalıdır.</li><li>Su ayak izi doğrudan ve dolaylı su kullanımını kapsar.</li><li>Atık su uygun arıtma süreçlerinden geçirilmelidir.</li><li>Kaynak tasarrufu için problem belirleme, veri toplama, çözüm geliştirme ve sonucu değerlendirme adımları izlenebilir.</li></ul>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Sürdürülebilir yaşam",
+          "definition": "Doğal kaynakları gelecek nesillerin ihtiyaçlarını da gözeterek kullanma anlayışı."
+        },
+        {
+          "term": "Su ayak izi",
+          "definition": "Bir kişi, ürün veya etkinlikle ilişkili doğrudan ve dolaylı su kullanımı."
+        },
+        {
+          "term": "Atık su",
+          "definition": "Kullanım sonucunda kirlenmiş ve özellikleri değişmiş su."
+        },
+        {
+          "term": "Tatlı su kaynağı",
+          "definition": "Tuzluluk oranı düşük, canlılar ve insan kullanımı açısından önemli su kaynağı."
+        }
+      ],
+      "activity": {
+        "title": "Okulumuzun Su Tasarrufu Planı",
+        "materials": "Gözlem çizelgesi, kalem, okul krokisi, sayaç verileri varsa kayıt",
+        "steps": "Okulda su kullanımına ilişkin gözlenebilir bir problem belirleyin. Bir hafta boyunca gözlem ve veri kaydı planlayın. Tasarruf önerisi geliştirin; uygulama öncesi ve sonrası verileri karşılaştırarak sonucu sınıfta sunun.",
+        "safetyNotes": "Su tesisatına müdahale etmeyin. Musluk, vana veya sayaç gibi donanımları yalnızca yetkili yetişkinler kontrol etmelidir."
+      },
+      "quiz": [
+        {
+          "body": "Su ayak izi hangi kullanımları kapsar?",
+          "options": [
+            "Yalnızca duşta kullanılan suyu",
+            "Doğrudan ve dolaylı su kullanımını",
+            "Yalnızca içme suyunu",
+            "Sadece yağmur suyunu"
+          ],
+          "answer": 1,
+          "explanation": "Su ayak izi, günlük doğrudan kullanımın yanında ürünlerin üretiminde kullanılan dolaylı suyu da kapsar.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Kullanım sonucunda kirlenmiş ve özellikleri değişmiş suya ne ad verilir?",
+          "options": [
+            "Saf su",
+            "Atık su",
+            "Yağmur suyu",
+            "Distile su"
+          ],
+          "answer": 1,
+          "explanation": "Kullanım sonucu kirlenen su atık sudur; çevreye verilmeden önce uygun arıtma gerekebilir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Sürdürülebilir yaşamın temel amaçlarından biri hangisidir?",
+          "options": [
+            "Kaynakları mümkün olduğunca hızlı tüketmek",
+            "Yalnızca bugünün ihtiyaçlarını düşünmek",
+            "Kaynakları gelecek nesiller için de korumak",
+            "Atıkları doğaya bırakmak"
+          ],
+          "answer": 2,
+          "explanation": "Sürdürülebilirlik, bugünün ihtiyaçlarını karşılarken gelecek nesillerin olanaklarını korumayı amaçlar.",
+          "difficulty": "EASY"
+        }
+      ],
+      "links": []
+    }
+  ]
+}
