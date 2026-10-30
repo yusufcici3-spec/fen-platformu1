@@ -1,0 +1,307 @@
+{
+  "classLevel": 6,
+  "code": "6.5",
+  "hours": 32,
+  "title": "Maddenin Ayırt Edici Özellikleri",
+  "slug": "maddenin-ayirt-edici-ozellikleri",
+  "description": "Genleşme ve büzülme, erime-donma-kaynama noktaları ve yoğunluk konularını deneyler, ölçümler, modeller ve günlük yaşam örnekleriyle keşfedelim.",
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı, 6. sınıf 5. ünite. Öğrenme çıktıları resmî programla eşleştirilmiş; anlatım, şemalar ve etkinlikler özgün hazırlanmıştır.",
+  "topics": [
+    {
+      "slug": "genlesme-ve-buzulme",
+      "title": "Genleşme ve Büzülme",
+      "summary": "Isıtılan ve soğutulan maddelerin boyutlarında meydana gelen değişimleri gözlemleyelim.",
+      "outcome": {
+        "code": "FB.6.5.1",
+        "description": "Isı etkisiyle maddelerin genleşip büzüleceğine yönelik bilimsel gözleme dayalı tahmin edebilme.",
+        "details": [
+          "Maddelerin ısı alıp vermesiyle boyutlarında meydana gelen değişimleri tanımlar.",
+          "Gözlem verilerini kullanarak genleşme ve büzülmeye yönelik tahmin oluşturur.",
+          "Günlük yaşam örneklerini bilimsel gerekçelerle açıklar."
+        ]
+      },
+      "skills": [
+        "Bilimsel gözlem",
+        "Tahmin etme",
+        "Deney tasarlama",
+        "Veriye dayalı çıkarım"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🌡️ Genleşme ve büzülme nedir?",
+          "bodyHtml": "<p>Maddeler ısı aldığında taneciklerinin hareketliliği genellikle artar ve tanecikler arasındaki ortalama uzaklık büyür. Bunun sonucunda maddenin boyutlarında veya hacminde artış görülebilir. Bu olaya <strong>genleşme</strong> denir.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0'><div style='background:#fff1e6;border-radius:14px;padding:14px;text-align:center;color:#7c2d12'><div style='font-size:2.5rem'>🔥 ➜ ↔️</div><b>Isı alan madde</b><p>Genleşme eğilimi gösterir.</p></div><div style='background:#e0f2fe;border-radius:14px;padding:14px;text-align:center;color:#164e63'><div style='font-size:2.5rem'>❄️ ➜ ↔️</div><b>Isı veren madde</b><p>Büzülme eğilimi gösterir.</p></div></div><p>Madde soğuduğunda taneciklerin hareketliliği azalır ve çoğu maddede tanecikler birbirine yaklaşır. Maddenin boyut veya hacminin azalmasına <strong>büzülme</strong> denir.</p><p><strong>Unutma:</strong> Genleşme ve büzülme maddenin miktarının artması ya da azalması değildir; boyut veya hacim değişimidir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧪 Deney: Metal bilye ve halka",
+          "bodyHtml": "<p>Metal bilye oda sıcaklığında metal halkadan geçebilir. Bilye ısıtıldığında genleşir ve halkadan geçmesi zorlaşabilir. Soğutulduğunda ise büzülerek ilk boyutlarına yaklaşır.</p><div style='background:#f1f5f9;border-radius:14px;padding:14px;margin:12px 0;text-align:center'><div style='font-size:2.2rem'>⚪ → 🔥 → ⚪⬆️</div><b>Şematik deney gösterimi</b><p>Isıtma öncesi ve sonrası bilyenin halka ile ilişkisi gözlemlenir.</p></div><p>Deneyde değiştirilen değişken bilyenin sıcaklığıdır. Bilyenin başlangıçtaki büyüklüğü ve halkanın özellikleri sabit tutulur. Gözlem sonucu kaydedilerek tahminimiz test edilir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🏗️ Günlük yaşamda genleşme ve büzülme",
+          "bodyHtml": "<div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px'><div style='background:#fef3c7;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🛤️</div><b>Raylar</b><p>Raylar arasında sıcaklık değişimine uygun boşluk bırakılır.</p></div><div style='background:#dbeafe;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🌉</div><b>Köprüler</b><p>Genleşme derzleri sıcaklıkla boy değişimini karşılar.</p></div><div style='background:#dcfce7;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🌡️</div><b>Termometre</b><p>Sıvının sıcaklıkla hacim değiştirmesinden yararlanır.</p></div></div><p>Elektrik tellerinin sıcak havalarda sarkması, soğuk havalarda ise daha gergin görünmesi de genleşme ve büzülmeyle ilişkilidir.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Önemli bilgiler",
+          "bodyHtml": "<ul><li>Isı alan maddelerin çoğu genleşir.</li><li>Isı veren maddelerin çoğu büzülür.</li><li>Genleşme ve büzülme katı, sıvı ve gaz maddelerde gözlenebilir.</li><li>Su, donarken birçok maddenin aksine genleşir.</li><li>Gözlem ve deney sonuçları tahminlerimizi kontrol etmemizi sağlar.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🔎 Düşün ve yorumla",
+          "bodyHtml": "<p>Yazın elektrik tellerinin daha sarkık görünmesinin nedeni nedir? Kışın metal kavanoz kapağını açmak zorlaştığında kapağı ılık suyla ısıtmak neden işe yarayabilir? Her iki olayı da genleşme-büzülme kavramlarıyla açıklayabilirsin.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Genleşme",
+          "definition": "Isı alan maddenin boyut veya hacminin artması."
+        },
+        {
+          "term": "Büzülme",
+          "definition": "Isı veren maddenin boyut veya hacminin azalması."
+        }
+      ],
+      "activity": {
+        "title": "Sıcaklık değişimi gözlem günlüğü",
+        "materials": "Öğretmen gözetiminde kullanılacak iki kap, ılık ve soğuk su, kapalı plastik şişe.",
+        "steps": "1) Kapalı şişeyi önce oda sıcaklığında gözlemleyin. 2) Öğretmen kontrolünde ılık su dolu kaba yerleştirin. 3) Şişenin şeklinde değişim olup olmadığını gözlemleyin. 4) Soğuk suya alındığında gözleminizi kaydedin. 5) Sonuçları genleşme ve büzülme kavramlarıyla açıklayın.",
+        "safetyNotes": "Kaynar su kullanmayın. Cam kapları ani sıcaklık değişimine maruz bırakmayın. Etkinliği öğretmen gözetiminde yapın."
+      },
+      "quiz": [
+        {
+          "body": "Isıtılan metal bir çubuğun uzunluğunun artması hangi olaydır?",
+          "options": [
+            "Büzülme",
+            "Genleşme",
+            "Donma",
+            "Yoğuşma"
+          ],
+          "answer": 1,
+          "explanation": "Isı alan metal çubuğun boyutları artar; bu olaya genleşme denir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Köprülerde sıcaklık değişimlerine uygun boşluklar bırakılmasının temel nedeni nedir?",
+          "options": [
+            "Köprünün rengini değiştirmek",
+            "Genleşme ve büzülmeye yer sağlamak",
+            "Köprünün kütlesini artırmak",
+            "Sürtünmeyi tamamen yok etmek"
+          ],
+          "answer": 1,
+          "explanation": "Köprü malzemeleri sıcaklıkla boyut değiştirebilir. Derzler bu değişime olanak sağlar.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "hal-degisim-noktalari",
+      "title": "Maddenin Erime, Donma ve Kaynama Noktaları",
+      "summary": "Saf maddelerin hâl değişimlerini sıcaklık-zaman gözlemleriyle inceleyelim.",
+      "outcome": {
+        "code": "FB.6.5.2",
+        "description": "Maddelerin erime, donma ve kaynama noktasını gösteren deney yapabilme.",
+        "details": [
+          "Erime, donma ve kaynama olaylarını tanımlar.",
+          "Hâl değişim noktalarını belirlemeye yönelik deney tasarlar.",
+          "Ölçüm sonuçlarını tablo ve grafikle kaydederek yorumlar."
+        ]
+      },
+      "skills": [
+        "Deney tasarlama",
+        "Sıcaklık ölçme",
+        "Veri kaydetme",
+        "Grafik yorumlama"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🧊 Maddenin hâl değişimleri",
+          "bodyHtml": "<p>Maddeler doğada katı, sıvı ve gaz hâlde bulunabilir. Isı alıp verme sonucunda bir hâlden başka bir hâle geçebilirler.</p><div style='display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;text-align:center;margin:14px 0'><div style='background:#dbeafe;padding:12px;border-radius:12px;color:#1e3a8a'><div style='font-size:2rem'>🧊</div><b>Katı</b></div><div style='background:#dcfce7;padding:12px;border-radius:12px;color:#14532d'><div style='font-size:2rem'>💧</div><b>Sıvı</b></div><div style='background:#fef3c7;padding:12px;border-radius:12px;color:#78350f'><div style='font-size:2rem'>☁️</div><b>Gaz</b></div></div><ul><li><strong>Erime:</strong> Katının ısı alarak sıvıya dönüşmesi.</li><li><strong>Donma:</strong> Sıvının ısı vererek katıya dönüşmesi.</li><li><strong>Kaynama:</strong> Sıvının belirli bir sıcaklıkta her yerinde gaz hâline geçmesi.</li></ul>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🌡️ Erime ve donma noktası",
+          "bodyHtml": "<p>Saf kristal katılar belirli bir basınçta kendilerine özgü erime sıcaklığında erir. Saf maddelerin donma noktası, aynı basınçta erime noktasıyla aynıdır.</p><div style='background:#eff6ff;border-radius:14px;padding:14px;text-align:center;color:#1e3a8a'><div style='font-size:2rem'>🧊 ➜ 💧</div><b>Erime: katıdan sıvıya</b><div style='font-size:2rem;margin-top:8px'>💧 ➜ 🧊</div><b>Donma: sıvıdan katıya</b></div><p>Örneğin saf su normal atmosfer basıncında 0 °C'de donar; buz da 0 °C'de erir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "♨️ Kaynama noktası",
+          "bodyHtml": "<p>Bir sıvının buhar basıncının dış basınca eşit olduğu ve sıvının her yerinde gaz kabarcıklarının oluştuğu sıcaklığa <strong>kaynama noktası</strong> denir. Saf su normal atmosfer basıncında 100 °C'de kaynar.</p><p>Kaynama noktası dış basınca bağlıdır. Yüksek yerlerde atmosfer basıncı daha düşük olduğundan su daha düşük sıcaklıkta kaynayabilir. Bu nedenle kaynama noktası belirtilirken basınç koşulu da önemlidir.</p><div style='background:#fff7ed;border-radius:14px;padding:14px;text-align:center;color:#7c2d12'><div style='font-size:2rem'>💧 ♨️ ➜ ☁️</div><b>Sıvıdan gaza geçiş</b></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📊 Isınma sırasında sıcaklık nasıl değişir?",
+          "bodyHtml": "<p>Saf bir madde hâl değiştirirken, belirli basınç altında hâl değişimi tamamlanana kadar sıcaklığı sabit kalır. Verilen enerji tanecikler arasındaki etkileşimleri değiştirmede kullanılır.</p><div style='background:#f8fafc;padding:14px;border-radius:12px;margin:12px 0'><b>Şematik sıcaklık-zaman grafiği</b><div style='font-size:1.7rem;text-align:center;margin:10px'>📈 ────┐　 ────┐</div><p>Yatay bölümler, hâl değişiminin sürdüğü ve sıcaklığın sabit kaldığı aralıkları temsil eder. Bu çizim örnektir; ölçüm grafiği değildir.</p></div><p>Deneyde sıcaklık belirli zaman aralıklarıyla ölçülür, tabloya kaydedilir ve grafik oluşturularak yorumlanır.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Karıştırma!",
+          "bodyHtml": "<ul><li>Erime: katı → sıvı; ısı alır.</li><li>Donma: sıvı → katı; ısı verir.</li><li>Kaynama: sıvı → gaz; ısı alır.</li><li>Saf maddelerin erime ve donma noktaları aynı sıcaklıktadır.</li><li>Kaynama noktası dış basınca bağlıdır.</li><li>Kaynama ile buharlaşma aynı olay değildir; buharlaşma her sıcaklıkta yüzeyde gerçekleşebilir.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🍳 Yaşamla bağlantı",
+          "bodyHtml": "<p>Dondurma erirken katıdan sıvıya geçer. Buzlukta su donarak katı hâle gelir. Yemek pişirirken suyun kaynaması sıvıdan gaz hâline geçişe örnektir. Bu olayları gözlemleyerek hâl değişimlerini sınıflandırabilirsin.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Erime noktası",
+          "definition": "Saf katının belirli basınçta sıvıya dönüştüğü sıcaklık."
+        },
+        {
+          "term": "Donma noktası",
+          "definition": "Saf sıvının belirli basınçta katıya dönüştüğü sıcaklık."
+        },
+        {
+          "term": "Kaynama noktası",
+          "definition": "Sıvının belirli basınçta kaynamaya başladığı sıcaklık."
+        },
+        {
+          "term": "Buharlaşma",
+          "definition": "Sıvının yüzeyinden her sıcaklıkta gaz hâline geçmesi."
+        }
+      ],
+      "activity": {
+        "title": "Hâl değişimi veri tablosu",
+        "materials": "Öğretmen tarafından hazırlanmış güvenli sıcaklık-zaman ölçüm verileri, termometre görseli, grafik kâğıdı.",
+        "steps": "1) Öğretmeninizin sağladığı sıcaklık-zaman verilerini inceleyin. 2) Değerleri tabloya aktarın. 3) Sıcaklığın sabit kaldığı aralıkları belirleyin. 4) Bu aralıkların hangi hâl değişimine karşılık gelebileceğini tartışın. 5) Sonucunuzu grafikle sunun.",
+        "safetyNotes": "Isıtıcı ve kaynar sıvılarla deney yalnızca öğretmen tarafından, uygun laboratuvar güvenliğiyle yürütülmelidir."
+      },
+      "quiz": [
+        {
+          "body": "Saf buzun normal atmosfer basıncında erime sıcaklığı kaç °C'dir?",
+          "options": [
+            "0",
+            "25",
+            "50",
+            "100"
+          ],
+          "answer": 0,
+          "explanation": "Saf buz normal atmosfer basıncında 0 °C'de erir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Saf bir madde kaynarken, kaynama tamamlanana kadar sıcaklığı için hangisi söylenebilir?",
+          "options": [
+            "Sürekli artar",
+            "Sürekli azalır",
+            "Belirli basınçta sabit kalır",
+            "Her dakika iki katına çıkar"
+          ],
+          "answer": 2,
+          "explanation": "Saf maddenin kaynama süresince sıcaklığı, basınç sabitken değişmez.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "yogunluk",
+      "title": "Yoğunluk",
+      "summary": "Kütle ve hacim arasındaki ilişkiyi hesaplayalım; maddeleri yoğunluklarına göre karşılaştıralım.",
+      "outcome": {
+        "code": "FB.6.5.3 – FB.6.5.4 – FB.6.5.6",
+        "description": "Yoğunluğa ilişkin hesaplama yapma, deney verileriyle hipotezleri test etme ve bilimsel model oluşturma.",
+        "details": [
+          "Yoğunluğu kütle ve hacim ilişkisiyle açıklar ve hesaplar.",
+          "Deney verileriyle farklı maddelerin yoğunluklarını karşılaştırır.",
+          "Yoğunlukla ilgili hipotez kurar, test eder ve modelini kanıtlarla geliştirir."
+        ]
+      },
+      "skills": [
+        "Ölçme",
+        "Matematiksel işlem",
+        "Hipotez kurma",
+        "Model oluşturma"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "⚖️ Yoğunluk nedir?",
+          "bodyHtml": "<p>Bir maddenin birim hacimdeki kütlesine <strong>yoğunluk</strong> denir. Aynı hacimdeki farklı maddelerin kütleleri farklı olabilir. Yoğunluk, maddeleri ayırt etmede kullanılan özelliklerden biridir.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0'><div style='background:#dbeafe;border-radius:12px;padding:14px;text-align:center;color:#1e3a8a'><div style='font-size:2rem'>🧱</div><b>Kütle</b><p>Madde miktarıyla ilgilidir.</p></div><div style='background:#dcfce7;border-radius:12px;padding:14px;text-align:center;color:#14532d'><div style='font-size:2rem'>📦</div><b>Hacim</b><p>Kapladığı boşluktur.</p></div></div><p>Yoğunluk, kütlenin hacme bölünmesiyle bulunur: <strong>d = m / V</strong>. Burada d yoğunluk, m kütle, V hacimdir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧮 Yoğunluk nasıl hesaplanır?",
+          "bodyHtml": "<div style='background:#eff6ff;border-radius:14px;padding:16px;text-align:center;color:#1e3a8a;margin:12px 0'><div style='font-size:2rem;font-weight:bold'>d = m ÷ V</div><b>Yoğunluk = Kütle / Hacim</b></div><p><strong>Örnek:</strong> Kütlesi 60 gram, hacmi 20 cm³ olan bir cismin yoğunluğu:</p><p style='font-size:1.1rem;text-align:center'><strong>d = 60 ÷ 20 = 3 g/cm³</strong></p><p>Yoğunluk birimleri g/cm³ veya g/mL olabilir. Hesaplama yaparken kütle ve hacim birimlerinin uyumlu olmasına dikkat edilir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🔬 Hacmi nasıl belirleriz?",
+          "bodyHtml": "<p>Düzgün geometrik şekilli cisimlerin hacmi uygun matematiksel bağıntılarla hesaplanabilir. Düzensiz şekilli bir cismin hacmi ise dereceli silindirdeki sıvı seviyesindeki değişimden yararlanılarak bulunabilir.</p><div style='background:#f0fdf4;border-radius:14px;padding:14px;text-align:center;color:#14532d'><div style='font-size:2rem'>🧪 50 mL ➜ + taş ➜ 70 mL</div><b>Cismin hacmi = 70 − 50 = 20 mL</b><p>Bu örnekte cismin su seviyesini 20 mL yükselttiği kabul edilmiştir.</p></div><p>Ölçüm sırasında sıvı seviyesini göz hizasında okumak ve birimleri doğru yazmak önemlidir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧊 Suyun katı ve sıvı hâlinin yoğunluğu",
+          "bodyHtml": "<p>Su donarken genleşir. Aynı miktardaki su buz hâline geçtiğinde daha fazla hacim kaplar. Kütle aynı kalırken hacim arttığı için buzun yoğunluğu sıvı suyun yoğunluğundan küçüktür. Bu nedenle buz suyun üzerinde yüzer.</p><div style='background:#e0f2fe;border-radius:14px;padding:14px;text-align:center;color:#164e63;margin:12px 0'><div style='font-size:2.5rem'>🧊</div><b>Buz suyun üzerinde yüzer.</b><p>Buzun yoğunluğu sıvı suyun yoğunluğundan küçüktür.</p></div><p>Göller ve bazı su birikintileri yüzeyden donmaya başlar. Yüzeyde oluşan buz tabakası alttaki suyun bir anda tamamen donmasını yavaşlatır ve su canlıları için yaşam alanı oluşmasına katkı sağlar.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Yoğunlukta dikkat edilecekler",
+          "bodyHtml": "<ul><li>Yoğunluk = Kütle / Hacim.</li><li>Aynı maddenin miktarı artsa da aynı sıcaklık ve basınç koşullarında yoğunluğu değişmez.</li><li>Eşit hacimdeki maddelerden kütlesi büyük olanın yoğunluğu daha büyüktür.</li><li>Buzun yoğunluğu sıvı suyun yoğunluğundan küçüktür.</li><li>Yoğunluk birimi kullanılan kütle ve hacim birimlerine bağlıdır.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🌊 Günlük yaşam bağlantısı",
+          "bodyHtml": "<p>Denizde tuzlu suyun yoğunluğu tatlı suya göre genellikle daha büyüktür. Gemilerin tasarımında kaldırma kuvveti ve yoğunluk ilişkisi dikkate alınır. Buzdağlarının büyük bölümünün su altında kalması da buzun yoğunluğunun suya göre daha küçük olmasıyla açıklanır.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Yoğunluk",
+          "definition": "Bir maddenin birim hacminin kütlesi."
+        },
+        {
+          "term": "Kütle",
+          "definition": "Maddedeki madde miktarının ölçüsü."
+        },
+        {
+          "term": "Hacim",
+          "definition": "Maddenin uzayda kapladığı yer."
+        },
+        {
+          "term": "Birim hacim",
+          "definition": "1 cm³ veya 1 mL gibi belirlenmiş hacim miktarı."
+        }
+      ],
+      "activity": {
+        "title": "Yoğunluk dedektifleri",
+        "materials": "Öğretmen tarafından sağlanan kütle-hacim veri kartları, hesap makinesi, grafik kâğıdı.",
+        "steps": "1) Her örnek için kütle ve hacim verilerini okuyun. 2) d=m/V bağıntısıyla yoğunlukları hesaplayın. 3) Sonuçları büyükten küçüğe sıralayın. 4) Eşit hacimli örneklerin kütlelerini karşılaştırın. 5) Suyun ve buzun yoğunluklarıyla ilgili modeli çizip açıklayın.",
+        "safetyNotes": "Ölçüm araçlarını dikkatli kullanın; laboratuvar malzemelerini öğretmen yönergesi dışında kullanmayın."
+      },
+      "quiz": [
+        {
+          "body": "Kütlesi 80 g, hacmi 20 cm³ olan cismin yoğunluğu kaç g/cm³'tür?",
+          "options": [
+            "2",
+            "4",
+            "60",
+            "100"
+          ],
+          "answer": 1,
+          "explanation": "Yoğunluk = 80 ÷ 20 = 4 g/cm³.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Buzun suyun üzerinde yüzmesinin temel nedeni hangisidir?",
+          "options": [
+            "Buzun kütlesinin olmaması",
+            "Buzun yoğunluğunun sıvı sudan küçük olması",
+            "Buzun gaz hâlde olması",
+            "Suyun yoğunluğunun sıfır olması"
+          ],
+          "answer": 1,
+          "explanation": "Buzun yoğunluğu sıvı suyun yoğunluğundan küçüktür; bu nedenle yüzer.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    }
+  ]
+}
