@@ -1,0 +1,624 @@
+{
+  "classLevel": 7,
+  "code": "7.3",
+  "hours": 32,
+  "title": "Vücudumuzdaki Sistemler",
+  "slug": "vücudumuzdaki-sistemler",
+  "description": "Sindirim, dolaşım, solunum ve boşaltım sistemlerinin yapı ve organlarını, görevlerini ve birbirleriyle ilişkilerini keşfedelim. Sistem sağlığını koruma, kan ve organ bağışının toplumsal önemi ve bağımlılıklarla mücadele konusunda bilimsel bilgiye dayalı farkındalık geliştirelim.",
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı, 7. sınıf 3. ünite: Vücudumuzdaki Sistemler. 32 ders saati ve ünite kapsamı esas alınarak anlatım, görsel şemalar, etkinlikler ve ölçme soruları özgün hazırlanmıştır.",
+  "topics": [
+    {
+      "slug": "sindirim-sistemi",
+      "title": "Sindirim Sistemi",
+      "summary": "Besinlerin yapı taşlarına ayrılarak hücrelerimizin kullanabileceği hâle gelmesini keşfedelim.",
+      "outcome": {
+        "code": "FB.7.3.1",
+        "description": "Sindirim sistemini oluşturan yapı ve organları, görevleriyle ilişkilendirir.",
+        "details": [
+          "Besinlerin sindirim sürecini açıklar.",
+          "Sindirim sistemi organlarının görevlerini ilişkilendirir.",
+          "Fiziksel ve kimyasal sindirimi karşılaştırır."
+        ]
+      },
+      "skills": [
+        "Bilimsel gözlem",
+        "Süreçleri modelleme",
+        "Karşılaştırma",
+        "Günlük yaşamla ilişkilendirme"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🍎 Sindirim neden gereklidir?",
+          "bodyHtml": "<p>Yediğimiz besinler; büyüme, gelişme, hareket etme ve yaşamsal faaliyetlerimizi sürdürme için enerji ve yapı maddesi sağlar. Ancak besinlerin büyük bir kısmı, hücrelerin doğrudan kullanabileceği kadar küçük değildir. <strong>Sindirim</strong>, büyük besin moleküllerinin yapı taşlarına kadar parçalanmasıdır.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0'><div style='background:#fff7ed;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2.4rem'>🥪</div><b>Büyük besinler</b><p>Parçalanması gerekir.</p></div><div style='background:#ecfdf5;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2.4rem'>🧩</div><b>Küçük yapı taşları</b><p>Emilerek kana geçebilir.</p></div></div><p>Sindirim sonunda oluşan küçük moleküller ince bağırsakta emilir ve dolaşım sistemiyle hücrelere taşınır.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🦷 Sindirim nerede başlar? Ağız",
+          "bodyHtml": "<p>Sindirim <strong>ağızda</strong> başlar. Dişler besinleri küçük parçalara ayırarak fiziksel sindirim yapar. Dil besinleri tükürükle karıştırır ve yutmaya yardımcı olur. Tükürükte bulunan enzimler karbonhidratların kimyasal sindirimini başlatır.</p><div style='background:#eff6ff;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2.5rem'>👄 🦷 💧</div><b>Dişler parçalar · Dil karıştırır · Tükürük kimyasal sindirimi başlatır</b></div><p>Besinler yutulduktan sonra yutak ve yemek borusundan geçerek mideye ulaşır. Yemek borusunda kasların dalga şeklindeki hareketleri besini ilerletir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🫃 Mide: Karıştırma ve sindirim",
+          "bodyHtml": "<p><strong>Mide</strong>, kasılıp gevşeyerek besinleri çalkalar ve mide öz suyu ile karıştırır. Mide öz suyundaki asit ve enzimler özellikle proteinlerin kimyasal sindiriminde görev alır. Mide, besinleri bulamaç hâline getirerek ince bağırsağa aktarır.</p><div style='background:#fef2f2;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2.5rem'>🥣 ➜ 🫃</div><b>Mide: Karıştırma + kimyasal sindirim</b><p>Besinler burada tamamen sindirilmez; sindirim ince bağırsakta devam eder.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🌀 İnce bağırsak: Sindirimin tamamlanması ve emilim",
+          "bodyHtml": "<p><strong>İnce bağırsakta</strong> karbonhidrat, protein ve yağların kimyasal sindirimi tamamlanır. Pankreasın salgıladığı pankreas öz suyu ve karaciğerin ürettiği safra sindirime yardımcı olur. Safra, yağları küçük damlacıklara ayırarak enzimlerin etkisini kolaylaştırır; enzim değildir.</p><div style='background:#ecfdf5;padding:14px;border-radius:14px'><div style='font-size:2.2rem;text-align:center'>🌀</div><b>İnce bağırsak iç yüzeyindeki villuslar</b><p>Parmak benzeri çıkıntılar emilim yüzeyini artırır. Sindirim ürünleri buradan kan ve lenf dolaşımına geçerek vücuda taşınır.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "💧 Kalın bağırsak ve yardımcı organlar",
+          "bodyHtml": "<p><strong>Kalın bağırsak</strong>, sindirilemeyen artıkların içindeki su ve bazı minerallerin emilmesinde görevlidir. Atıklar dışkı hâline getirilir ve anüsten vücuttan uzaklaştırılır.</p><ul><li><strong>Karaciğer:</strong> Safra üretir.</li><li><strong>Safra kesesi:</strong> Safrayı depolar ve ince bağırsağa gönderir.</li><li><strong>Pankreas:</strong> Sindirim enzimleri içeren salgısını ince bağırsağa verir.</li></ul><p>Karaciğer, safra kesesi ve pankreas besinlerin geçtiği sindirim kanalı üzerinde değildir; sindirime yardımcı organlardır.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Fiziksel ve kimyasal sindirim",
+          "bodyHtml": "<div style='overflow-x:auto'><table><thead><tr><th>Fiziksel sindirim</th><th>Kimyasal sindirim</th></tr></thead><tbody><tr><td>Besinler küçük parçalara ayrılır.</td><td>Büyük moleküller yapı taşlarına ayrılır.</td></tr><tr><td>Besinin kimyasal yapısı değişmez.</td><td>Enzimler görev alır.</td></tr><tr><td>Çiğneme, mide kaslarının hareketi</td><td>Enzimlerle gerçekleşen parçalanma</td></tr></tbody></table></div><p><strong>Unutma:</strong> Safra yağları fiziksel olarak küçük damlacıklara ayırır; enzim olmadığı için kimyasal sindirim yapmaz.</p>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🥗 Sindirim sistemimizi koruyalım",
+          "bodyHtml": "<p>Dengeli ve çeşitli beslenmek, yeterli su içmek, besinleri iyi çiğnemek, hijyene dikkat etmek ve düzenli hareket etmek sindirim sisteminin sağlıklı çalışmasına destek olur. Çok hızlı yemek ve öğünleri sürekli düzensizleştirmek sindirim konforunu olumsuz etkileyebilir.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Sindirim",
+          "definition": "Besinlerin yapı taşlarına kadar parçalanması."
+        },
+        {
+          "term": "Enzim",
+          "definition": "Kimyasal tepkimeleri hızlandıran biyolojik madde."
+        },
+        {
+          "term": "Emilim",
+          "definition": "Sindirim ürünlerinin bağırsaktan kan veya lenfe geçmesi."
+        },
+        {
+          "term": "Villus",
+          "definition": "İnce bağırsakta emilim yüzeyini artıran çıkıntı."
+        },
+        {
+          "term": "Safra",
+          "definition": "Karaciğerde üretilen, yağları küçük damlacıklara ayıran salgı."
+        }
+      ],
+      "activity": {
+        "title": "Sindirim yolculuğu şeması",
+        "materials": "Kâğıt, renkli kalemler ve organ görselleri.",
+        "steps": "Ağızdan başlayarak yutak, yemek borusu, mide, ince bağırsak, kalın bağırsak ve anüse uzanan bir akış şeması çizin. Her organın yanına görevini yazın. Karaciğer, safra kesesi ve pankreası yardımcı organlar olarak ayrı gösterin.",
+        "safetyNotes": "Etkinlik çizim ve modelleme çalışmasıdır; gerçek vücut sıvıları veya kimyasallar kullanılmaz."
+      },
+      "quiz": [
+        {
+          "body": "Sindirim sisteminde besinlerin kana en yoğun şekilde geçtiği organ hangisidir?",
+          "options": [
+            "Mide",
+            "İnce bağırsak",
+            "Yemek borusu",
+            "Kalın bağırsak"
+          ],
+          "answer": 1,
+          "explanation": "İnce bağırsağın villusları emilim yüzeyini artırır; sindirim ürünleri burada emilir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Safranın sindirimdeki temel görevi hangisidir?",
+          "options": [
+            "Proteinleri enzimlerle parçalamak",
+            "Yağları küçük damlacıklara ayırmak",
+            "Besinleri yemek borusuna taşımak",
+            "Suyu kana geçirmek"
+          ],
+          "answer": 1,
+          "explanation": "Safra yağları fiziksel olarak küçük damlacıklara ayırır; enzim değildir.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Aşağıdakilerden hangisi kimyasal sindirime örnektir?",
+          "options": [
+            "Dişlerle besinleri çiğnemek",
+            "Midenin besinleri çalkalaması",
+            "Enzimlerin besin moleküllerini yapı taşlarına ayırması",
+            "Besinin yemek borusunda ilerlemesi"
+          ],
+          "answer": 2,
+          "explanation": "Kimyasal sindirimde enzimler büyük besin moleküllerini daha küçük moleküllere parçalar.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "dolasim-sistemi",
+      "title": "Dolaşım Sistemi",
+      "summary": "Kalp, kan ve damarların vücudumuzdaki madde taşınmasındaki görevlerini inceleyelim.",
+      "outcome": {
+        "code": "FB.7.3.2",
+        "description": "Dolaşım sistemini oluşturan yapı ve organların görevlerini açıklar.",
+        "details": [
+          "Kalbin yapısı ve görevini açıklar.",
+          "Kan damarlarını görevlerine göre karşılaştırır.",
+          "Kanın taşıma görevlerini ilişkilendirir."
+        ]
+      },
+      "skills": [
+        "Model oluşturma",
+        "Karşılaştırma",
+        "Veri yorumlama",
+        "Sistemler arası ilişki kurma"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "❤️ Dolaşım sistemi ne işe yarar?",
+          "bodyHtml": "<p>Dolaşım sistemi; oksijen, besin, hormon ve atık maddelerin vücutta taşınmasını sağlar. Bu sistemin temel yapıları <strong>kalp, kan ve kan damarlarıdır</strong>. Kalp pompa gibi çalışır; damarlar kanın vücutta dolaşmasını sağlar.</p><div style='background:#fff1f2;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2.5rem'>❤️ ➜ 🩸 ➜ 🫁 🧠 💪</div><b>Kalp kanı pompalar, kan maddeleri taşır.</b></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "❤️ Kalbin yapısı ve çalışması",
+          "bodyHtml": "<p>Kalp, göğüs boşluğunda iki akciğer arasında, hafifçe sol tarafa yakın konumda bulunan kaslı bir organdır. Dört odacığı vardır: sağ kulakçık, sağ karıncık, sol kulakçık ve sol karıncık. Kulakçıklar kanı toplar; karıncıklar kanı kalpten gönderir.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px'><div style='background:#dbeafe;padding:12px;border-radius:12px;text-align:center'><b>Sağ taraf</b><p>Vücuttan gelen oksijence fakir kanı akciğere gönderir.</p></div><div style='background:#fee2e2;padding:12px;border-radius:12px;text-align:center'><b>Sol taraf</b><p>Akciğerden gelen oksijence zengin kanı vücuda gönderir.</p></div></div><p>Kalbin kasılıp gevşemesi kanın damarlar içinde ilerlemesini sağlar. Kapakçıklar kanın geriye kaçmasını önlemeye yardımcı olur.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🩸 Kanın görevleri ve bileşenleri",
+          "bodyHtml": "<p>Kan; hücrelere oksijen ve besin taşır, karbondioksit ve bazı atıkların uzaklaştırılmasına katkı sağlar, vücut sıcaklığının düzenlenmesine ve savunmaya yardımcı olur.</p><ul><li><strong>Alyuvar:</strong> Oksijen taşınmasında görevlidir.</li><li><strong>Akyuvar:</strong> Vücudun mikroplara karşı savunmasında görev alır.</li><li><strong>Kan pulcukları:</strong> Kanın pıhtılaşmasına yardımcı olur.</li><li><strong>Plazma:</strong> Kanın sıvı kısmıdır; çözünmüş maddeleri taşır.</li></ul><div style='background:#f8fafc;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🩸</div><b>Kan = Plazma + kan hücreleri ve pulcuklar</b></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🛣️ Kan damarları",
+          "bodyHtml": "<div style='display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px'><div style='background:#fee2e2;padding:10px;border-radius:12px;text-align:center'><div style='font-size:1.8rem'>🔴</div><b>Atardamar</b><p>Kanı kalpten uzaklaştırır.</p></div><div style='background:#dbeafe;padding:10px;border-radius:12px;text-align:center'><div style='font-size:1.8rem'>🔵</div><b>Toplardamar</b><p>Kanı kalbe getirir.</p></div><div style='background:#dcfce7;padding:10px;border-radius:12px;text-align:center'><div style='font-size:1.8rem'>🕸️</div><b>Kılcal damar</b><p>Madde alışverişini sağlar.</p></div></div><p>Atardamar ve toplardamar isimleri kandaki oksijen miktarına göre değil, kanın kalbe göre hareket yönüne göre belirlenir. Akciğer atardamarı oksijence fakir, akciğer toplardamarı oksijence zengin kan taşır.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🔁 Küçük ve büyük kan dolaşımı",
+          "bodyHtml": "<p><strong>Küçük kan dolaşımı:</strong> Kalbin sağ karıncığından çıkan oksijence fakir kan akciğerlere gider. Akciğerlerde gaz alışverişi gerçekleşir ve oksijence zenginleşen kan kalbin sol kulakçığına döner.</p><p><strong>Büyük kan dolaşımı:</strong> Kalbin sol karıncığından çıkan oksijence zengin kan vücuda gönderilir. Hücrelere oksijen ve besin bırakıp karbondioksit alan kan, kalbin sağ kulakçığına döner.</p><div style='background:#f0fdf4;padding:14px;border-radius:14px;text-align:center'><b>Küçük dolaşım</b><p>Kalp ➜ Akciğer ➜ Kalp</p><div style='font-size:1.8rem'>❤️ ➜ 🫁 ➜ ❤️</div><b>Büyük dolaşım</b><p>Kalp ➜ Vücut ➜ Kalp</p><div style='font-size:1.8rem'>❤️ ➜ 🧍 ➜ ❤️</div></div>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Damarları karıştırma!",
+          "bodyHtml": "<ul><li>Atardamar kanı kalpten uzaklaştırır.</li><li>Toplardamar kanı kalbe getirir.</li><li>Kılcal damarlar madde alışverişinin gerçekleştiği ince damarlardır.</li><li>Atardamarların tamamı oksijence zengin kan taşımaz; akciğer atardamarı istisnadır.</li><li>Toplardamarların tamamı oksijence fakir kan taşımaz; akciğer toplardamarı istisnadır.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏃 Dolaşım sisteminin sağlığı",
+          "bodyHtml": "<p>Düzenli fiziksel aktivite, dengeli beslenme, yeterli uyku, tütün ve tütün ürünlerinden uzak durma ve rutin sağlık kontrolleri dolaşım sağlığını destekler. Nabız, kalbin bir dakikadaki atım sayısıyla ilişkilidir; hareket sırasında vücudun oksijen ihtiyacı arttığı için nabız hızlanabilir.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Kalp",
+          "definition": "Kanı damarlar aracılığıyla pompalayan kaslı organ."
+        },
+        {
+          "term": "Alyuvar",
+          "definition": "Oksijen taşınmasında görevli kan hücresi."
+        },
+        {
+          "term": "Akyuvar",
+          "definition": "Vücudun savunmasında görev alan kan hücresi."
+        },
+        {
+          "term": "Atardamar",
+          "definition": "Kanı kalpten uzaklaştıran damar."
+        },
+        {
+          "term": "Toplardamar",
+          "definition": "Kanı kalbe getiren damar."
+        },
+        {
+          "term": "Kılcal damar",
+          "definition": "Kan ile dokular arasında madde alışverişini sağlayan ince damar."
+        }
+      ],
+      "activity": {
+        "title": "Dolaşım yolu modeli",
+        "materials": "Kırmızı ve mavi ip, kâğıt kalp ve akciğer çizimleri.",
+        "steps": "Kalp, akciğer ve vücut bölümlerini kâğıda yerleştirin. Mavi ip ile oksijence fakir kanın kalpten akciğere gidişini, kırmızı ip ile oksijence zengin kanın kalpten vücuda gidişini gösterin. Atardamar, toplardamar ve kılcal damarları etiketleyin.",
+        "safetyNotes": "Maket ve çizim malzemeleri kullanın; kesici araç gerekiyorsa öğretmen gözetiminde çalışın."
+      },
+      "quiz": [
+        {
+          "body": "Kanı kalpten uzaklaştıran damar çeşidi hangisidir?",
+          "options": [
+            "Toplardamar",
+            "Atardamar",
+            "Kılcal damar",
+            "Lenf damarı"
+          ],
+          "answer": 1,
+          "explanation": "Atardamarlar kanı kalpten uzaklaştırır.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Kanın oksijen ve besinleri hücrelere bırakıp atıkları alması en çok hangi damarlarda gerçekleşir?",
+          "options": [
+            "Atardamar",
+            "Toplardamar",
+            "Kılcal damar",
+            "Aort"
+          ],
+          "answer": 2,
+          "explanation": "Kılcal damarların ince duvarları madde alışverişine uygundur.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Küçük kan dolaşımının temel amacı hangisidir?",
+          "options": [
+            "Besinleri sindirmek",
+            "Kanı akciğerlere götürerek gaz alışverişini sağlamak",
+            "Atıkları böbreğe taşımak",
+            "Vücut sıcaklığını tek başına üretmek"
+          ],
+          "answer": 1,
+          "explanation": "Küçük dolaşımda kan akciğerlere gider ve gaz alışverişi yaparak kalbe döner.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "solunum-sistemi",
+      "title": "Solunum Sistemi",
+      "summary": "Oksijenin vücuda alınmasını ve karbondioksitin dışarı verilmesini sağlayan yapıları tanıyalım.",
+      "outcome": {
+        "code": "FB.7.3.3",
+        "description": "Solunum sistemini oluşturan yapı ve organların görevlerini açıklar.",
+        "details": [
+          "Solunum sisteminin yapı ve organlarını tanımlar.",
+          "Soluk alıp verme sürecini açıklar.",
+          "Akciğerlerde gerçekleşen gaz alışverişini dolaşım sistemiyle ilişkilendirir."
+        ]
+      },
+      "skills": [
+        "Süreç modelleme",
+        "Gözlem",
+        "Neden-sonuç ilişkisi",
+        "Sistemler arası ilişki"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🌬️ Solunumun amacı",
+          "bodyHtml": "<p>Hücrelerimiz besinlerden enerji elde ederken oksijene ihtiyaç duyar. Solunum sistemi havadaki oksijenin vücuda alınmasını ve hücrelerde oluşan karbondioksitin dışarı atılmasını sağlar. <strong>Soluk alıp verme</strong> ile hücresel solunum aynı olay değildir: Soluk alıp verme gazların taşınması, hücresel solunum ise hücrelerde enerji elde edilmesi sürecidir.</p><div style='background:#eff6ff;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2.3rem'>🌬️ O₂ ➜ 🫁 ➜ 🩸</div><b>Oksijen akciğerlerden kana geçer.</b></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "👃 Havanın izlediği yol",
+          "bodyHtml": "<p>Solunum sırasında hava sırasıyla burun, yutak, gırtlak, soluk borusu ve bronşlardan geçerek akciğerlere ulaşır. Burun havayı süzer, ısıtır ve nemlendirir. Soluk borusundaki kıkırdak halkalar hava yolunun açık kalmasına yardımcı olur.</p><div style='background:#f8fafc;padding:14px;border-radius:14px;text-align:center'><div style='font-size:1.8rem'>👃 ➜ 🗣️ ➜ 🛤️ ➜ 🌿 ➜ 🫁</div><b>Burun → Yutak → Gırtlak → Soluk borusu → Bronşlar → Akciğerler</b></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🫁 Akciğerler ve alveoller",
+          "bodyHtml": "<p>Bronşlar akciğerlerin içinde daha ince bronşçuklara ayrılır. Bronşçukların uçlarında <strong>alveol</strong> adı verilen çok sayıda hava keseciği bulunur. Alveollerin çevresi kılcal damarlarla sarılıdır. Oksijen alveollerden kana, karbondioksit ise kandan alveollere geçer.</p><div style='background:#ecfdf5;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2.2rem'>🫧 🫧 🫧</div><b>Alveoller: Gaz alışverişinin gerçekleştiği yüzey</b><p>Geniş yüzey alanı ve ince duvar, gaz alışverişini kolaylaştırır.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "⬆️⬇️ Soluk alıp verme nasıl gerçekleşir?",
+          "bodyHtml": "<p><strong>Soluk alırken</strong> diyafram kasılır ve düzleşerek aşağı iner. Göğüs boşluğunun hacmi artar, akciğerlerdeki basınç azalır ve hava içeri girer.</p><p><strong>Soluk verirken</strong> diyafram gevşer ve kubbeleşerek yukarı çıkar. Göğüs boşluğunun hacmi azalır, akciğerlerdeki basınç artar ve hava dışarı çıkar.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px'><div style='background:#dbeafe;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>⬇️</div><b>Soluk alma</b><p>Diyafram kasılır, aşağı iner; göğüs hacmi artar.</p></div><div style='background:#fee2e2;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>⬆️</div><b>Soluk verme</b><p>Diyafram gevşer, yukarı çıkar; göğüs hacmi azalır.</p></div></div>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Solunum ve dolaşım birlikte çalışır",
+          "bodyHtml": "<p>Akciğerlerde kana geçen oksijen, dolaşım sistemiyle hücrelere taşınır. Hücrelerde oluşan karbondioksit kanla akciğerlere getirilir ve soluk verme sırasında dışarı atılır. Böylece solunum ve dolaşım sistemleri birlikte görev yapar.</p><div style='background:#f0fdf4;padding:14px;border-radius:14px;text-align:center'><b>Akciğer 🫁 ⇄ Kan 🩸 ⇄ Hücreler 🧫</b></div>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🌱 Solunum sistemini koruma",
+          "bodyHtml": "<p>Temiz hava bulunan ortamlarda bulunmak, ortamları havalandırmak, toz ve dumanı azaltmak, tütün ürünlerinden uzak durmak ve fiziksel olarak aktif olmak solunum sağlığını destekler. Öksürürken dirsek içini kullanmak ve elleri temiz tutmak solunum yoluyla yayılan enfeksiyonların bulaşma riskini azaltmaya yardımcı olur.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Bronş",
+          "definition": "Soluk borusunun akciğerlere ayrılan ana dalları."
+        },
+        {
+          "term": "Bronşçuk",
+          "definition": "Bronşların akciğer içindeki daha ince dalları."
+        },
+        {
+          "term": "Alveol",
+          "definition": "Akciğerlerde gaz alışverişinin gerçekleştiği hava keseciği."
+        },
+        {
+          "term": "Diyafram",
+          "definition": "Göğüs ve karın boşluklarını ayıran, soluk almaya yardımcı kas."
+        },
+        {
+          "term": "Gaz alışverişi",
+          "definition": "Oksijenin kana, karbondioksitin alveollere geçmesi."
+        }
+      ],
+      "activity": {
+        "title": "Akciğer modeli",
+        "materials": "Plastik şişe, iki küçük balon, bir büyük balon ve öğretmen desteği.",
+        "steps": "Öğretmeninizin hazırladığı modelde şişe göğüs boşluğunu, içteki balonlar akciğerleri, alttaki esnek balon diyaframı temsil eder. Alt balonu aşağı çekip iç balonların durumunu gözlemleyin; sonra bırakın. Modelin soluk alma-verme sürecini nasıl temsil ettiğini açıklayın.",
+        "safetyNotes": "Şişe kesme işlemini yalnızca öğretmen yapmalıdır. Balon parçalarını ağza almayın; küçük parçaları çocuklardan uzak tutun."
+      },
+      "quiz": [
+        {
+          "body": "Akciğerlerde gaz alışverişinin gerçekleştiği yapılar hangileridir?",
+          "options": [
+            "Bronşlar",
+            "Alveoller",
+            "Yutak",
+            "Gırtlak"
+          ],
+          "answer": 1,
+          "explanation": "Alveoller, çevrelerindeki kılcal damarlarla gaz alışverişinin gerçekleştiği hava kesecikleridir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Soluk alma sırasında diyaframın durumu hangisidir?",
+          "options": [
+            "Gevşeyip yukarı çıkar",
+            "Kasılıp aşağı iner",
+            "Hareketsiz kalır",
+            "Akciğerlerin içine geçer"
+          ],
+          "answer": 1,
+          "explanation": "Diyafram kasılarak düzleşir ve aşağı iner; göğüs boşluğunun hacmi artar.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Hücresel solunum ile soluk alıp verme arasındaki farkı en doğru açıklayan seçenek hangisidir?",
+          "options": [
+            "İkisi tamamen aynı olaydır",
+            "Soluk alıp verme gaz alışverişini sağlar; hücresel solunum hücrelerde enerji elde edilmesidir",
+            "Hücresel solunum yalnızca akciğerlerde olur",
+            "Soluk alıp verme besinleri sindirir"
+          ],
+          "answer": 1,
+          "explanation": "Soluk alıp verme gazların vücuda alınıp atılmasıdır; hücresel solunum hücrelerde enerji elde edilmesini sağlayan süreçtir.",
+          "difficulty": "HARD"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "bosaltim-sistemi",
+      "title": "Boşaltım Sistemi",
+      "summary": "Metabolizma sonucu oluşan atıkların vücuttan uzaklaştırılmasını ve böbreklerin görevini öğrenelim.",
+      "outcome": {
+        "code": "FB.7.3.4",
+        "description": "Boşaltım sistemini oluşturan yapı ve organların görevlerini açıklar.",
+        "details": [
+          "Böbreklerin kanı süzmedeki rolünü açıklar.",
+          "İdrarın oluşum ve vücuttan atılma yolunu sıralar.",
+          "Boşaltım sisteminin sağlığını koruma yollarını değerlendirir."
+        ]
+      },
+      "skills": [
+        "Sistem modelleme",
+        "Sıralama",
+        "Neden-sonuç ilişkisi",
+        "Sağlık okuryazarlığı"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🧹 Boşaltım neden gereklidir?",
+          "bodyHtml": "<p>Hücrelerde yaşamsal faaliyetler sonucunda atık maddeler oluşur. Bu maddelerin vücuttan uzaklaştırılması gerekir. <strong>Boşaltım</strong>, metabolizma sonucu oluşan atıkların ve fazla maddelerin vücuttan uzaklaştırılmasıdır. Böbrekler, deri ve akciğerler boşaltıma katkı sağlar.</p><div style='background:#eff6ff;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2.3rem'>🩸 ➜ 🫘 ➜ 💧</div><b>Böbrekler kanı süzer ve idrar oluşumuna katkı sağlar.</b></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🫘 Böbrekler ve nefronlar",
+          "bodyHtml": "<p>İnsanlarda iki böbrek bulunur. Böbrekler kandaki üre gibi atıkların ve fazla su ile minerallerin uzaklaştırılmasına yardımcı olur. Böbreklerin temel görev birimi <strong>nefron</strong>dur. Nefronlarda kan süzülür; vücudun ihtiyacı olan bazı maddeler geri emilir ve idrarın oluşumu gerçekleşir.</p><div style='background:#f0fdf4;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2.3rem'>🫘 🫘</div><b>Böbrekler: Kanın bileşimini düzenlemeye yardımcı olur.</b><p>Su ve mineral dengesi korunmasında önemli rol oynar.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "💧 İdrarın izlediği yol",
+          "bodyHtml": "<p>Böbreklerde oluşan idrar, <strong>üreter</strong> adı verilen kanallarla idrar kesesine (mesaneye) taşınır. Mesanede bir süre depolanır ve <strong>üretra</strong> yoluyla vücuttan atılır.</p><div style='background:#f8fafc;padding:14px;border-radius:14px;text-align:center'><div style='font-size:1.8rem'>🫘 ➜〰️➜ 🫙 ➜ ⬇️</div><b>Böbrek → Üreter → Mesane → Üretra</b></div><p>Üreter idrarı böbrekten mesaneye taşır; üretra idrarın vücuttan çıkış yoludur. Bu iki yapı karıştırılmamalıdır.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🌬️ Deri ve akciğerlerin boşaltıma katkısı",
+          "bodyHtml": "<p>Boşaltım yalnızca böbreklerle gerçekleşmez. Akciğerler hücresel faaliyetler sonucu oluşan karbondioksiti ve bir miktar su buharını dışarı verir. Deri, terleme yoluyla su ve bazı tuzların uzaklaştırılmasına katkı sağlar. Bu nedenle boşaltım sistemi konusu, vücudun farklı organlarıyla birlikte değerlendirilir.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px'><div style='background:#dbeafe;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🫁</div><b>Akciğer</b><p>Karbondioksit ve su buharı</p></div><div style='background:#fef3c7;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>💦</div><b>Deri</b><p>Terle su ve tuz</p></div></div>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Boşaltım ile sindirim atığını ayıralım",
+          "bodyHtml": "<p>Boşaltım, hücrelerdeki metabolik faaliyetler sonucu oluşan atıkların uzaklaştırılmasıdır. Sindirim sisteminde emilmeyen besin artıklarının dışkı olarak atılması ise sindirim sisteminin görevlerinden biridir. İdrar ve dışkı aynı şey değildir.</p><ul><li>İdrar böbreklerde oluşur.</li><li>Dışkı kalın bağırsakta şekillenir.</li><li>Akciğerler karbondioksiti uzaklaştırır.</li><li>Deri terleme ile su ve tuz atılmasına katkı sağlar.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🚰 Böbrek sağlığını korumak",
+          "bodyHtml": "<p>Günlük su ihtiyacı yaşa, aktiviteye, hava koşullarına ve sağlık durumuna göre değişir. Susuz kalmamaya dikkat etmek, dengeli beslenmek, gereksiz ilaç veya takviye kullanmamak ve sağlık sorunlarında sağlık uzmanına danışmak böbrek sağlığını korumaya yardımcı olur. İlaçlar doktor önerisi olmadan kullanılmamalıdır.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Böbrek",
+          "definition": "Kandaki atıkların ve fazla maddelerin uzaklaştırılmasına yardımcı olan organ."
+        },
+        {
+          "term": "Nefron",
+          "definition": "Böbreğin temel işlevsel birimi."
+        },
+        {
+          "term": "Üreter",
+          "definition": "İdrarı böbrekten mesaneye taşıyan kanal."
+        },
+        {
+          "term": "Mesane",
+          "definition": "İdrarı geçici olarak depolayan organ."
+        },
+        {
+          "term": "Üretra",
+          "definition": "İdrarın vücuttan atıldığı kanal."
+        },
+        {
+          "term": "Üre",
+          "definition": "Proteinlerin yıkımı sonucunda oluşan azotlu atık."
+        }
+      ],
+      "activity": {
+        "title": "İdrarın yolunu sırala",
+        "materials": "Organ adlarının yazılı olduğu kartlar ve oklar.",
+        "steps": "Böbrek, üreter, mesane ve üretra kartlarını doğru sıraya yerleştirin. Oklarla idrarın izlediği yolu gösterin. Deri ve akciğerlerin boşaltıma katkısını ayrı bir bölümde açıklayın.",
+        "safetyNotes": "Etkinlik kartlarla yapılır; gerçek idrar veya biyolojik örnek kullanılmaz."
+      },
+      "quiz": [
+        {
+          "body": "İdrarı böbreklerden mesaneye taşıyan yapı hangisidir?",
+          "options": [
+            "Üretra",
+            "Üreter",
+            "Nefron",
+            "Bronş"
+          ],
+          "answer": 1,
+          "explanation": "Üreter, idrarı böbrekten mesaneye taşır.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Böbreğin temel işlevsel birimi hangisidir?",
+          "options": [
+            "Alveol",
+            "Villus",
+            "Nefron",
+            "Bronşçuk"
+          ],
+          "answer": 2,
+          "explanation": "Nefron, böbrekte süzülme ve idrar oluşumunda görev alan temel birimdir.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Aşağıdakilerden hangisi boşaltıma katkı sağlayan organlardan biridir?",
+          "options": [
+            "Akciğer",
+            "Diş",
+            "Safra kesesi",
+            "Yutak"
+          ],
+          "answer": 0,
+          "explanation": "Akciğerler karbondioksit ve su buharını dışarı vererek boşaltıma katkı sağlar.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "sistem-sagligi-bagis-ve-bagimlilik",
+      "title": "Sistem Sağlığı, Bağış ve Bağımlılıkla Mücadele",
+      "summary": "Vücudumuzdaki sistemlerin sağlığını korumayı, organ ve kan bağışının toplumsal önemini ve bağımlılıklara karşı farkındalığı ele alalım.",
+      "outcome": {
+        "code": "FB.7.3.5",
+        "description": "Vücut sistemlerinin sağlığını korumaya yönelik önlemleri ve toplumsal dayanışmanın önemini değerlendirir.",
+        "details": [
+          "Sistem sağlığını koruyan davranışları gerekçeleriyle açıklar.",
+          "Kan ve organ bağışının toplumsal önemini tartışır.",
+          "Bağımlılık konusunda güvenilir bilgiye dayalı farkındalık geliştirir."
+        ]
+      },
+      "skills": [
+        "Bilgi toplama",
+        "Tartışma",
+        "Karar verme",
+        "Sağlık okuryazarlığı"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🛡️ Sistem sağlığı bir bütündür",
+          "bodyHtml": "<p>Sindirim, dolaşım, solunum ve boşaltım sistemleri birlikte çalışır. Bir sistemdeki aksaklık diğer sistemleri de etkileyebilir. Sağlıklı yaşam; dengeli beslenme, hareket, uyku, hijyen, temiz hava ve güvenli davranışların bir arada sürdürülmesiyle desteklenir.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px'><div style='background:#ecfdf5;padding:12px;border-radius:12px;text-align:center'>🥗<b> Dengeli beslenme</b></div><div style='background:#eff6ff;padding:12px;border-radius:12px;text-align:center'>🏃<b> Hareket</b></div><div style='background:#fef3c7;padding:12px;border-radius:12px;text-align:center'>😴<b> Yeterli uyku</b></div><div style='background:#fce7f3;padding:12px;border-radius:12px;text-align:center'>🧼<b> Hijyen</b></div></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🩸 Kan bağışının önemi",
+          "bodyHtml": "<p>Kan; ameliyat, kaza, bazı hastalıkların tedavisi ve acil sağlık durumlarında gerekebilir. Kan bağışı, uygun koşullarda ve yetkili sağlık kuruluşlarında gönüllü olarak gerçekleştirilen toplumsal dayanışma davranışıdır. Kan bağışında bağışçının sağlık durumu ve uygunluk ölçütleri sağlık personeli tarafından değerlendirilir.</p><div style='background:#fff1f2;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2.3rem'>🩸 🤝 🏥</div><b>Gönüllü kan bağışı hayat kurtarmaya destek olabilir.</b></div><p>Kan bağışının güvenli biçimde yapılabilmesi için yalnızca yetkili kurumların bilgilendirmeleri izlenmelidir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🫀 Organ bağışının toplumsal değeri",
+          "bodyHtml": "<p>Organ bağışı, kişinin organlarının nakil bekleyen hastalara umut olabilmesi amacıyla bağışlanmasına yönelik gönüllü bir karardır. Organ nakli, uygun tıbbi koşullar ve uzman değerlendirmesi gerektirir. Organ bağışı konusunda doğru bilgi edinmek, aile içinde konuşmak ve resmî sağlık kuruluşlarının açıklamalarını takip etmek önemlidir.</p><div style='background:#eff6ff;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2.3rem'>🫀 🫁 🫘 🤝</div><b>Organ bağışı: Dayanışma ve yaşam umudu</b></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🚭 Bağımlılık ve sağlıklı karar verme",
+          "bodyHtml": "<p>Bağımlılık, kişinin bir maddeyi kullanma veya bir davranışı sürdürme isteğini kontrol etmekte zorlanması ve bunun yaşamını olumsuz etkilemesidir. Tütün ürünleri, alkol ve diğer zararlı maddeler sağlık üzerinde ciddi riskler oluşturabilir. Teknoloji ve dijital oyunların kontrolsüz kullanımı da günlük yaşam, uyku, öğrenme ve sosyal ilişkileri olumsuz etkileyebilir.</p><p>Riskli bir durumla karşılaşıldığında güvenilir bir yetişkinden, okul rehberlik servisinden veya sağlık uzmanından destek istemek önemlidir. Yardım istemek güçlü ve doğru bir davranıştır.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "🌿 Yeşilay ve toplumsal farkındalık",
+          "bodyHtml": "<p><strong>Yeşilay</strong>, bağımlılıklarla mücadele ve sağlıklı yaşam bilincinin geliştirilmesi amacıyla çalışan bir sivil toplum kuruluşudur. Bağımlılıklara karşı koruyucu yaklaşım; doğru bilgiye ulaşmayı, riskli tekliflere hayır diyebilmeyi, destek istemeyi ve sağlıklı sosyal etkinliklere yönelmeyi kapsar.</p><ul><li>Bilgiyi güvenilir kaynaklardan doğrula.</li><li>Akran baskısı karşısında kendi sağlıklı kararını koru.</li><li>Bir arkadaşının zorlandığını fark edersen onu yargılamadan güvenilir bir yetişkine yönlendir.</li><li>Bağımlılıkla ilgili sorunlar profesyonel destekle ele alınmalıdır.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🤝 Sağlıklı yaşam için küçük adımlar",
+          "bodyHtml": "<p>Öğünlerde farklı besin gruplarına yer vermek, gün içinde hareket etmek, yeterli uyumak, kişisel hijyene dikkat etmek, zararlı alışkanlıklardan uzak durmak ve ihtiyaç duyulduğunda destek istemek sağlıklı yaşamın temel parçalarıdır. Sağlıkla ilgili kararlar kişiye özel olabileceğinden uzman görüşü önemlidir.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Kan bağışı",
+          "definition": "Uygun koşullarda gönüllü olarak kan verilmesi."
+        },
+        {
+          "term": "Organ bağışı",
+          "definition": "Organların nakil bekleyen kişilere umut olabilmesi amacıyla gönüllü bağış kararı."
+        },
+        {
+          "term": "Bağımlılık",
+          "definition": "Bir madde veya davranışı kontrol etmekte zorlanma durumu."
+        },
+        {
+          "term": "Yeşilay",
+          "definition": "Bağımlılıklarla mücadele ve sağlıklı yaşam bilinci için çalışan sivil toplum kuruluşu."
+        },
+        {
+          "term": "Koruyucu sağlık",
+          "definition": "Hastalık ve sağlık sorunlarının oluşma riskini azaltmaya yönelik davranış ve uygulamalar."
+        }
+      ],
+      "activity": {
+        "title": "Sağlıklı yaşam farkındalık afişi",
+        "materials": "A3 kâğıt, renkli kalemler ve güvenilir kaynaklardan alınmış kısa bilgiler.",
+        "steps": "Gruplara ayrılın. Bir grup sistem sağlığı, bir grup kan ve organ bağışı, bir grup bağımlılıklardan korunma başlığını seçsin. Güvenilir kaynaklardan bilgi toplayıp kısa, doğru ve yargılayıcı olmayan mesajlarla afiş hazırlayın. Afişleri sınıfta sunun.",
+        "safetyNotes": "Kişisel sağlık bilgileri paylaşılmamalı; hiçbir öğrenci kendi veya ailesinin sağlık durumunu açıklamaya zorlanmamalıdır."
+      },
+      "quiz": [
+        {
+          "body": "Kan bağışı hangi ilkeye dayanır?",
+          "options": [
+            "Zorunluluk",
+            "Gönüllülük ve toplumsal dayanışma",
+            "Ticari kazanç",
+            "Yarışma"
+          ],
+          "answer": 1,
+          "explanation": "Kan bağışı uygunluk değerlendirmesiyle gönüllü olarak yapılan toplumsal dayanışma davranışıdır.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Bağımlılıkla ilgili zorlandığını fark eden bir öğrencinin en uygun davranışı hangisidir?",
+          "options": [
+            "Durumu herkesten saklamak",
+            "Güvenilir bir yetişkinden veya uzmandan destek istemek",
+            "Kendi kendine tedavi uygulamak",
+            "Sorunu yok saymak"
+          ],
+          "answer": 1,
+          "explanation": "Güvenilir yetişkinlerden ve uzmanlardan destek almak güvenli ve doğru yaklaşımdır.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Organ bağışı konusunda doğru bilgiye ulaşmak için hangi yol tercih edilmelidir?",
+          "options": [
+            "Doğrulanmamış sosyal medya paylaşımları",
+            "Yetkili sağlık kuruluşlarının açıklamaları",
+            "Anonim söylentiler",
+            "Reklam yorumları"
+          ],
+          "answer": 1,
+          "explanation": "Organ bağışı tıbbi ve hukuki boyutları olan bir konudur; resmî ve yetkili kaynaklar esas alınmalıdır.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    }
+  ]
+}
