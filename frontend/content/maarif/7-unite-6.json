@@ -1,0 +1,346 @@
+{
+  "classLevel": 7,
+  "code": "7.6",
+  "hours": 12,
+  "title": "Elektriklenme",
+  "slug": "elektriklenme",
+  "description": "Elektrik yüklerinin özelliklerini, cisimlerin elektriklenme yollarını ve yük durumlarının nasıl sınıflandırıldığını günlük yaşam örnekleri ve güvenli deney modelleriyle keşfedelim.",
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı, 7. sınıf 6. ünite: Elektriklenme, 12 ders saati. FB.7.6.1.1–FB.7.6.1.3 öğrenme çıktıları esas alınarak özgün anlatım, şemalar, güvenli etkinlikler ve ölçme soruları hazırlanmıştır. Elektroskobun çalışma prensibinin ayrıntıları kapsam dışıdır.",
+  "topics": [
+    {
+      "slug": "elektrik-yukleri-ve-elektriklenme",
+      "title": "Elektrik Yükleri ve Elektriklenme",
+      "summary": "Elektrik yüklerini, atomdaki parçacıklarla ilişkisini ve yüklü cisimlerin birbirlerine uyguladığı etkileri inceleyelim.",
+      "outcome": {
+        "code": "FB.7.6.1.1",
+        "description": "Elektriklenme ile ilgili güvenilir bilgi toplar, doğrular ve kaydeder.",
+        "details": [
+          "Proton, elektron ve nötronun yük özelliklerini hatırlar.",
+          "Nötr ve yüklü cisimleri ayırt eder.",
+          "Aynı ve zıt elektrik yüklerinin etkileşimini açıklar."
+        ]
+      },
+      "skills": [
+        "Bilimsel gözlem",
+        "Sınıflandırma",
+        "Karşılaştırma",
+        "Bilimsel çıkarım",
+        "Model oluşturma"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "⚡ Elektriklenme nedir?",
+          "bodyHtml": "<p>Bazı cisimlerin birbirini çekmesi, itmesi veya hafif cisimleri kendine çekmesi elektriksel etkilerle açıklanır. Bir cismin elektron alması ya da elektron vermesi sonucunda elektrik yük dengesinin değişmesine <strong>elektriklenme</strong> denir.</p><div style='background:#eff6ff;padding:14px;border-radius:14px;text-align:center;color:#1e3a8a'><div style='font-size:2.4rem'>🎈 ➜ 🧻</div><b>Günlük yaşam örneği</b><p>Saça sürtülen balonun küçük kâğıt parçalarını çekmesi elektriklenmeye örnektir.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🔬 Atomdaki elektrik yükleri",
+          "bodyHtml": "<p>Atomda protonlar <strong>pozitif (+)</strong>, elektronlar <strong>negatif (−)</strong> yüklüdür. Nötronların elektrik yükü yoktur. Normal koşullarda nötr atomda proton ve elektron sayısı eşittir.</p><div style='display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;text-align:center'><div style='background:#fee2e2;padding:10px;border-radius:12px'><div style='font-size:2rem'>🔴</div><b>Proton</b><p>+ yük</p></div><div style='background:#e5e7eb;padding:10px;border-radius:12px'><div style='font-size:2rem'>⚪</div><b>Nötron</b><p>Yüksüz</p></div><div style='background:#dbeafe;padding:10px;border-radius:12px'><div style='font-size:2rem'>🔵</div><b>Elektron</b><p>− yük</p></div></div><p>Katı cisimlerde elektriklenme olayında genellikle hareket eden parçacık elektronlardır. Protonlar çekirdekte bağlıdır.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "➕ Pozitif, negatif ve nötr cisim",
+          "bodyHtml": "<ul><li><strong>Nötr cisim:</strong> Pozitif ve negatif yük miktarları eşittir.</li><li><strong>Negatif yüklü cisim:</strong> Elektron sayısı proton sayısından fazladır; elektron almıştır.</li><li><strong>Pozitif yüklü cisim:</strong> Elektron sayısı proton sayısından azdır; elektron vermiştir.</li></ul><div style='background:#f8fafc;padding:14px;border-radius:14px;color:#172554'><b>Yük karşılaştırma modeli</b><p>⚪ + ⚪ + 🔵 + 🔵 → Nötr (eşit sayıda)</p><p>🔵 🔵 🔵 + 🔴 🔴 → Negatif (elektron fazla)</p><p>🔴 🔴 🔴 + 🔵 🔵 → Pozitif (elektron az)</p><small>Şemadaki semboller yük miktarını temsil eden basitleştirilmiş modellerdir.</small></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧲 Elektrik yükleri birbirini nasıl etkiler?",
+          "bodyHtml": "<p><strong>Aynı cins yükler birbirini iter.</strong> Zıt cins yükler birbirini çeker. Yüklü bir cisim, nötr bir cismi de uygun koşullarda kendine çekebilir.</p><div style='display:grid;grid-template-columns:1fr 1fr;gap:10px;text-align:center'><div style='background:#dbeafe;padding:12px;border-radius:12px;color:#1e3a8a'><div style='font-size:2rem'>➕ ← → ➕</div><b>İtme</b><p>Aynı yükler</p></div><div style='background:#dcfce7;padding:12px;border-radius:12px;color:#14532d'><div style='font-size:2rem'>➕ → ← ➖</div><b>Çekme</b><p>Zıt yükler</p></div></div>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🌩️ Doğada ve teknolojide elektriklenme",
+          "bodyHtml": "<p>Bulutlarda ve çevresindeki hava hareketlerinde elektrik yüklerinin ayrışması, yıldırım ve şimşek gibi olaylarla ilişkilidir. Fotokopi makineleri ve bazı filtreleme sistemlerinde de elektriksel çekimden yararlanılır.</p><p><strong>Unutma:</strong> Yıldırım tehlikelidir. Fırtına sırasında açık alanlardan, yüksek ve tek başına duran nesnelerden uzaklaşıp güvenli kapalı bir yerde bulunmalıyız.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "📌 En önemli bilgiler",
+          "bodyHtml": "<ul><li>Proton pozitif, elektron negatif, nötron yüksüzdür.</li><li>Nötr cisimde pozitif ve negatif yük miktarı eşittir.</li><li>Elektron alan cisim negatif, elektron veren cisim pozitif yüklenir.</li><li>Aynı yükler iter, zıt yükler çeker.</li><li>Elektriklenme olaylarında elektron alışverişi gerçekleşir.</li></ul>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Elektriklenme",
+          "definition": "Bir cismin elektron alması veya vermesiyle yük dengesinin değişmesi."
+        },
+        {
+          "term": "Nötr cisim",
+          "definition": "Pozitif ve negatif yük miktarları eşit olan cisim."
+        },
+        {
+          "term": "Negatif yüklü",
+          "definition": "Elektron sayısı proton sayısından fazla olan cisim."
+        },
+        {
+          "term": "Pozitif yüklü",
+          "definition": "Elektron sayısı proton sayısından az olan cisim."
+        }
+      ],
+      "activity": {
+        "title": "Yükleri Modelleyelim",
+        "materials": "Renkli küçük kâğıt daireleri veya boncuklar, kâğıt, kalem",
+        "steps": "Protonları kırmızı, elektronları mavi sembollerle göstererek nötr, pozitif ve negatif üç atom modeli oluşturun. Her modelde proton ve elektron sayılarını karşılaştırıp yük durumunu açıklayın.",
+        "safetyNotes": "Yalnızca kâğıt ve boncuk gibi güvenli sınıf malzemeleri kullanın; elektrik prizleri veya yüksek gerilim kaynaklarıyla deney yapmayın."
+      },
+      "quiz": [
+        {
+          "body": "Bir atomda proton sayısı elektron sayısına eşitse atomun yük durumu nasıldır?",
+          "options": [
+            "Pozitif",
+            "Negatif",
+            "Nötr",
+            "Yüksüz protonlu"
+          ],
+          "answer": 2,
+          "explanation": "Pozitif ve negatif yük miktarları eşit olduğundan atom nötrdür.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Elektron alan bir cisim hangi yükle yüklenir?",
+          "options": [
+            "Pozitif",
+            "Negatif",
+            "Nötr",
+            "Yüksüz"
+          ],
+          "answer": 1,
+          "explanation": "Elektron negatif yüklüdür; elektron alan cismin negatif yük miktarı artar.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Aynı cins elektrik yükleri birbirine yaklaştırıldığında nasıl etkileşir?",
+          "options": [
+            "Birbirini iter",
+            "Birbirini çeker",
+            "Etkileşmez",
+            "Önce nötrleşir"
+          ],
+          "answer": 0,
+          "explanation": "Aynı cins yükler birbirini iter; zıt cins yükler birbirini çeker.",
+          "difficulty": "EASY"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "elektriklenme-cesitleri",
+      "title": "Elektriklenme Çeşitleri",
+      "summary": "Sürtünme, dokunma ve etki ile elektriklenmeyi güvenli gözlem örnekleriyle karşılaştıralım.",
+      "outcome": {
+        "code": "FB.7.6.1.2",
+        "description": "Elektriklenme çeşitlerini belirlemeye yönelik deney tasarlar ve sonuçlarını analiz eder.",
+        "details": [
+          "Sürtünme ile elektriklenmeyi açıklar.",
+          "Dokunma ile elektriklenmeyi temaslı elektriklenme olarak tanımlar.",
+          "Etki ile elektriklenmeyi temassız elektriklenme olarak açıklar."
+        ]
+      },
+      "skills": [
+        "Bilimsel gözlem",
+        "Sınıflandırma",
+        "Karşılaştırma",
+        "Bilimsel çıkarım",
+        "Model oluşturma"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🧤 Sürtünme ile elektriklenme",
+          "bodyHtml": "<p>İki farklı yalıtkan cisim birbirine sürtüldüğünde elektron alışverişi gerçekleşebilir. Cisimlerden biri elektron alarak negatif, diğeri elektron vererek pozitif yüklenebilir.</p><div style='background:#eff6ff;padding:14px;border-radius:14px;text-align:center;color:#1e3a8a'><div style='font-size:2.2rem'>🧶 ⇄ 🎈</div><b>Balon ve yün kumaş modeli</b><p>Sürtünme sonrasında balon elektriklenebilir ve küçük kâğıt parçalarını çekebilir.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🤝 Dokunma ile elektriklenme",
+          "bodyHtml": "<p>Yüklü bir cisim nötr bir iletken cisme dokundurulduğunda yüklerin bir kısmı aktarılabilir. Dokunma sonrasında cisimler genellikle <strong>aynı cins yükle</strong> yüklenmiş olur. Bu yöntem temaslı elektriklenmedir.</p><div style='background:#f0fdf4;padding:14px;border-radius:14px;text-align:center;color:#14532d'><div style='font-size:2rem'>➖ ●  +  ⚪  →  ➖ ●  +  ➖ ⚪</div><p>Yüklü cisim nötr iletkene dokunur; yük paylaşımı gerçekleşebilir.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🪄 Etki (tesir) ile elektriklenme",
+          "bodyHtml": "<p>Yüklü bir cisim, nötr iletken cisme dokunmadan yaklaştırıldığında iletken içindeki yükler yer değiştirir. Bu olaya <strong>etki ile elektriklenme</strong> denir. Cisimler arasında doğrudan temas yoktur; bu nedenle temassız elektriklenmedir.</p><div style='background:#fff7ed;padding:14px;border-radius:14px;text-align:center;color:#7c2d12'><div style='font-size:2rem'>➖ ➜ ⚪🔴</div><b>Yaklaştırma modeli</b><p>Yüklü cisim, nötr iletkendeki yük dağılımını etkiler.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📊 Elektriklenme yollarını karşılaştıralım",
+          "bodyHtml": "<table style='width:100%;border-collapse:collapse'><tr><th style='padding:7px;border:1px solid #cbd5e1'>Yol</th><th style='padding:7px;border:1px solid #cbd5e1'>Temas</th><th style='padding:7px;border:1px solid #cbd5e1'>Temel olay</th></tr><tr><td style='padding:7px;border:1px solid #cbd5e1'>Sürtünme</td><td style='padding:7px;border:1px solid #cbd5e1'>Var</td><td style='padding:7px;border:1px solid #cbd5e1'>Sürtünme sırasında elektron alışverişi</td></tr><tr><td style='padding:7px;border:1px solid #cbd5e1'>Dokunma</td><td style='padding:7px;border:1px solid #cbd5e1'>Var</td><td style='padding:7px;border:1px solid #cbd5e1'>Yük aktarımı</td></tr><tr><td style='padding:7px;border:1px solid #cbd5e1'>Etki</td><td style='padding:7px;border:1px solid #cbd5e1'>Yok</td><td style='padding:7px;border:1px solid #cbd5e1'>Yüklerin yer değiştirmesi</td></tr></table>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏠 Günlük yaşamdan örnekler",
+          "bodyHtml": "<ul><li>Balonun saça sürtülünce duvara tutunması: sürtünme ile elektriklenme.</li><li>Yüklü bir cismin iletken bir cisme dokunması: dokunma ile elektriklenme.</li><li>Yüklü bir çubuğun dokunmadan elektroskoba yaklaştırılması: etki ile elektriklenme gözlemi.</li></ul>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "📌 Karıştırma!",
+          "bodyHtml": "<p><strong>Temaslı elektriklenme:</strong> Sürtünme ve dokunma ile elektriklenme.</p><p><strong>Temassız elektriklenme:</strong> Etki (tesir) ile elektriklenme.</p><p>Etki ile elektriklenmede cisimler birbirine dokunmaz; yükler iletken içinde yeniden dağılır.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Temaslı elektriklenme",
+          "definition": "Cisimlerin temas etmesiyle gerçekleşen elektriklenme."
+        },
+        {
+          "term": "Temassız elektriklenme",
+          "definition": "Cisimler dokunmadan elektriksel etkileşimle yük dağılımının değişmesi."
+        },
+        {
+          "term": "Etki ile elektriklenme",
+          "definition": "Yüklü cismin yaklaştırılmasıyla iletkendeki yüklerin yer değiştirmesi."
+        }
+      ],
+      "activity": {
+        "title": "Elektriklenme Yollarını Sınıflandıralım",
+        "materials": "Balon, yün kumaş, küçük kâğıt parçaları, plastik tarak",
+        "steps": "Balonu yün kumaşa sürtüp küçük kâğıt parçalarına yaklaştırın. Gözleminizi kaydedin. Ardından sürtünme, dokunma ve etki örneklerini bir tabloya yerleştirin.",
+        "safetyNotes": "Balonu yalnızca sınıf etkinliğinde kullanın. Priz, kablo, yüksek gerilim veya yıldırım üzerinde deney yapmayın. Plastik tarak ve balonları yüzünüze yaklaştırmayın."
+      },
+      "quiz": [
+        {
+          "body": "İki yalıtkan cismin birbirine sürtülmesiyle gerçekleşen elektriklenme türü hangisidir?",
+          "options": [
+            "Dokunma",
+            "Etki",
+            "Sürtünme",
+            "Topraklama"
+          ],
+          "answer": 2,
+          "explanation": "Sürtünme sırasında elektron alışverişi gerçekleşebilir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Yüklü bir cismin nötr iletken cisme dokunmasıyla oluşan elektriklenme türü hangisidir?",
+          "options": [
+            "Dokunma",
+            "Etki",
+            "Yalıtılma",
+            "Mıknatıslanma"
+          ],
+          "answer": 0,
+          "explanation": "Cisimler temas ettiği için bu olay dokunma ile elektriklenmedir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Yüklü bir çubuk nötr iletkene dokunmadan yaklaştırılıyor. İletken içindeki yükler yer değiştiriyor. Bu olay nedir?",
+          "options": [
+            "Sürtünme",
+            "Etki ile elektriklenme",
+            "Dokunma ile elektriklenme",
+            "Kimyasal değişim"
+          ],
+          "answer": 1,
+          "explanation": "Temas olmadan yük dağılımının değişmesi etki ile elektriklenmedir.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "elektrik-yuklerinin-siniflandirilmasi-ve-elektroskop",
+      "title": "Elektrik Yüklerinin Sınıflandırılması ve Elektroskop",
+      "summary": "Cisimleri pozitif, negatif ve nötr olarak sınıflandıralım; elektroskobun ne işe yaradığını tanıyalım.",
+      "outcome": {
+        "code": "FB.7.6.1.3",
+        "description": "Cisimlerin elektrik yüklerini pozitif, negatif ve nötr olarak sınıflandırır; elektroskobun kullanım amacını açıklar.",
+        "details": [
+          "Cisimlerin yük durumlarını ayırt eder ve gruplandırır.",
+          "Elektron alışverişine göre yük durumunu yorumlar.",
+          "Elektroskobun parçalarını ve kullanım amacını tanır."
+        ]
+      },
+      "skills": [
+        "Bilimsel gözlem",
+        "Sınıflandırma",
+        "Karşılaştırma",
+        "Bilimsel çıkarım",
+        "Model oluşturma"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🧮 Yük durumunu nasıl belirleriz?",
+          "bodyHtml": "<p>Bir cismin yük durumunu belirlemek için pozitif ve negatif yük miktarları karşılaştırılır. Pozitif yük miktarı fazla ise pozitif, negatif yük miktarı fazla ise negatif, miktarlar eşitse nötrdür.</p><div style='background:#f8fafc;padding:14px;border-radius:14px;color:#172554'><p><b>Örnek 1:</b> 8 proton, 8 elektron → Nötr</p><p><b>Örnek 2:</b> 8 proton, 10 elektron → Negatif</p><p><b>Örnek 3:</b> 8 proton, 6 elektron → Pozitif</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🔍 Elektroskop nedir?",
+          "bodyHtml": "<p><strong>Elektroskop</strong>, bir cismin elektrik yüküne sahip olup olmadığını ve uygun karşılaştırmalarla yükünün niteliğini anlamaya yarayan araçtır. Elektroskopta metal topuz, iletken çubuk ve hareket edebilen yapraklar bulunur.</p><div style='background:#eff6ff;padding:14px;border-radius:14px;text-align:center;color:#1e3a8a'><svg viewBox='0 0 260 220' width='100%' xmlns='http://www.w3.org/2000/svg'><rect x='65' y='30' width='130' height='165' rx='18' fill='#dbeafe' stroke='#64748b' stroke-width='3'/><circle cx='130' cy='24' r='17' fill='#fbbf24' stroke='#92400e' stroke-width='3'/><path d='M130 41V110' stroke='#475569' stroke-width='6'/><path d='M130 110L105 165M130 110L155 165' stroke='#0f766e' stroke-width='5' stroke-linecap='round'/><path d='M130 41V12' stroke='#475569' stroke-width='4'/><text x='154' y='25' font-size='11' fill='#1e293b'>Topuz</text><text x='162' y='82' font-size='11' fill='#1e293b'>Çubuk</text><text x='160' y='160' font-size='11' fill='#1e293b'>Yapraklar</text></svg><b>Elektroskobun temel bölümleri</b><p>Topuz, iletken çubuk ve yapraklar</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧭 Elektroskop ne için kullanılır?",
+          "bodyHtml": "<p>Elektroskop, cismin elektrik yükü taşıyıp taşımadığını anlamaya yardımcı olur. Yüklü bir cisim elektroskoba yaklaştırıldığında veya temas ettirildiğinde yaprakların konumunda değişim gözlenebilir. Bu ünitede elektroskobun <strong>çalışma prensibinin ayrıntılı açıklaması değil</strong>, kullanım amacı ve temel parçaları üzerinde durulur.</p>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🧪 Bilimsel gözlem ve kayıt",
+          "bodyHtml": "<p>Bir deneyde önce tahmin yapılır, sonra gözlem gerçekleştirilir ve sonuçlar kaydedilir. Örneğin farklı cisimlerin elektroskoba yaklaştırılmasıyla oluşan gözlemler karşılaştırılabilir. Bilimsel sonuç, tek bir gözlemden aceleyle çıkarılmamalı; deney koşulları not edilmelidir.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "📌 Hızlı tekrar",
+          "bodyHtml": "<ul><li>Elektron fazla ise negatif; elektron az ise pozitif yük.</li><li>Proton ve elektron sayısı eşitse nötr cisim.</li><li>Elektroskop yük durumunu incelemek için kullanılır.</li><li>Elektroskobun temel parçaları topuz, iletken çubuk ve yapraklardır.</li><li>Ünite kapsamında elektroskobun çalışma prensibinin ayrıntısına girilmez.</li></ul>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Elektroskop",
+          "definition": "Cisimlerin elektrik yükü durumunu incelemeye yarayan araç."
+        },
+        {
+          "term": "Topuz",
+          "definition": "Elektroskobun üst bölümündeki iletken parça."
+        },
+        {
+          "term": "Yapraklar",
+          "definition": "Elektroskopta yük durumuna bağlı hareketi gözlenebilen ince iletken parçalar."
+        }
+      ],
+      "activity": {
+        "title": "Yük Kartlarını Gruplayalım",
+        "materials": "Proton ve elektron sayıları yazılı kartlar, üç başlık kartı",
+        "steps": "Kartları pozitif, negatif ve nötr başlıklarının altına yerleştirin. Her kartta proton ve elektron sayılarını karşılaştırarak kararınızı gerekçelendirin. Elektroskop çizimi üzerinde parçaları etiketleyin.",
+        "safetyNotes": "Etkinliği kâğıt kartlar ve çizim üzerinden yapın; elektrik tesisatına veya gerçek yüksek gerilim kaynaklarına bağlanmayın."
+      },
+      "quiz": [
+        {
+          "body": "Bir cisimde 12 proton ve 9 elektron bulunuyor. Cismin yük durumu nedir?",
+          "options": [
+            "Negatif",
+            "Pozitif",
+            "Nötr",
+            "Yüksüz proton"
+          ],
+          "answer": 1,
+          "explanation": "Proton sayısı elektron sayısından fazla olduğundan cisim pozitif yüklüdür.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bir cismin elektrik yükü taşıyıp taşımadığını incelemek için kullanılan araç hangisidir?",
+          "options": [
+            "Termometre",
+            "Dinamometre",
+            "Elektroskop",
+            "Barometre"
+          ],
+          "answer": 2,
+          "explanation": "Elektroskop, cisimlerin elektrik yükü durumunu incelemeye yarar.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Elektroskobun temel parçaları hangi seçenekte doğru verilmiştir?",
+          "options": [
+            "Topuz, iletken çubuk, yapraklar",
+            "Pil, ampul, anahtar",
+            "Mercek, ayna, prizma",
+            "Diyafram, mercek, ekran"
+          ],
+          "answer": 0,
+          "explanation": "Elektroskop topuz, iletken çubuk ve yapraklardan oluşur.",
+          "difficulty": "EASY"
+        }
+      ],
+      "links": []
+    }
+  ]
+}
