@@ -1,7 +1,7 @@
 {
   "classLevel": 6,
   "code": "6.3",
-  "hours": 16,
+  "hours": 22,
   "title": "Canlılarda Sistemler",
   "slug": "canlilarda-sistemler",
   "description": "Bitki ve hayvanlarda üreme, büyüme ve gelişmeyi; insan vücudundaki temel sistemleri ve bu sistemlerin sağlıklı çalışması için yapılması gerekenleri model, gözlem ve günlük yaşam örnekleriyle keşfedelim.",
@@ -12,13 +12,13 @@
       "title": "Bitki ve Hayvanlarda Üreme, Büyüme ve Gelişme",
       "summary": "Canlıların nesillerini nasıl sürdürdüğünü, bitkilerde çimlenme ve büyümeyi, hayvanlarda yaşam döngülerini inceleyelim.",
       "outcome": {
-        "code": "FB.6.3.1",
-        "description": "Bitki ve hayvanlarda üreme, büyüme ve gelişme süreçlerini gözlem ve modellerden yararlanarak açıklayabilme.",
+        "code": "FB.6.3.1–FB.6.3.4",
+        "description": "Eşeyli ve eşeysiz üremeyi karşılaştırır; bitki ve hayvanlarda üreme, büyüme ve gelişme süreçleri ile tohumun çimlenmesini etkileyen faktörler hakkında gözlem ve deneylerden bilimsel çıkarımlar yapar.",
         "details": [
-          "Eşeyli ve eşeysiz üremeye örnekler verir.",
-          "Çiçekli bitkilerde üreme yapılarını ve tozlaşma-döllenme sürecini açıklar.",
-          "Tohumun çimlenmesi ve bitkinin büyümesi için gerekli koşulları belirler.",
-          "Hayvanlarda büyüme ve gelişme süreçlerini yaşam döngüsü örnekleriyle karşılaştırır."
+          "Eşeyli ve eşeysiz üremenin benzerlik ve farklılıklarını karşılaştırır.",
+          "Bitkilerde üreme, büyüme ve gelişmeyi etkileyen temel faktörlere ilişkin veri toplar ve yorumlar.",
+          "Tohumun çimlenmesini etkileyen faktörler için hipotez oluşturur ve değişkenleri kontrol eder.",
+          "Hayvanlarda üreme, büyüme ve gelişme süreçlerini yaşam döngülerinden yararlanarak açıklar."
         ]
       },
       "skills": [
@@ -41,16 +41,6 @@
         },
         {
           "type": "EXPLANATION",
-          "title": "🌸 Çiçekli bitkilerde üreme",
-          "bodyHtml": "<p>Çiçekli bitkilerde çiçek, üreme yapısıdır. Çiçeğin temel bölümlerini tanıyalım:</p><div style=\"margin:1rem 0;padding:1rem;border-radius:16px;background:#f0fdf4;color:#14532d;text-align:center\"><div style=\"font-size:3.4rem\">🌼</div><b>Çiçek yapısı – temsili görsel</b><p style=\"font-size:.9rem\">Erkek organ: başçık ve sapçık · Dişi organ: tepecik, dişicik borusu ve yumurtalık</p></div><ul><li><strong>Erkek organ:</strong> Polenlerin üretildiği başçık ve onu taşıyan sapçıktan oluşur.</li><li><strong>Dişi organ:</strong> Tepecik, dişicik borusu ve yumurtalık bölümlerini içerir. Tohum taslakları yumurtalıkta bulunur.</li><li><strong>Çanak yaprak:</strong> Tomurcuk hâlindeki çiçeği korumaya yardımcı olur.</li><li><strong taç yaprak:</strong> Renk ve kokusuyla tozlaşmaya yardımcı canlıları çekebilir.</li></ul><p>Çiçeklerin şekil ve renkleri bitki türlerine göre değişebilir. Her çiçekte tüm yapılar aynı belirginlikte olmayabilir.</p>"
-        },
-        {
-          "type": "EXPLANATION",
-          "title": "🐝 Tozlaşma ve döllenme nasıl gerçekleşir?",
-          "bodyHtml": "<ol><li><strong>Tozlaşma:</strong> Polenlerin başçıktan dişi organın tepeciğine taşınmasıdır. Rüzgâr, böcekler ve bazı diğer hayvanlar bu taşınmaya yardımcı olabilir.</li><li><strong>Döllenme:</strong> Erkek üreme hücresinin yumurta hücresiyle birleşmesidir.</li><li><strong>Tohum ve meyve oluşumu:</strong> Döllenmeden sonra tohum taslağı tohuma, yumurtalık ise çoğu çiçekli bitkide meyveye dönüşür.</li><li><strong>Çimlenme:</strong> Uygun koşullarda tohumdan yeni bitki gelişmeye başlar.</li></ol><div style=\"display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;justify-content:center;margin:1rem 0;padding:1rem;background:#fff7ed;border-radius:14px;color:#7c2d12\"><b>🌼 Çiçek</b><span>→</span><b>🐝 Tozlaşma</b><span>→</span><b>✨ Döllenme</b><span>→</span><b>🍎 Meyve ve tohum</b><span>→</span><b>🌱 Yeni bitki</b></div><p><strong>Önemli:</strong> Tozlaşma ile döllenme aynı olay değildir. Tozlaşma polenin taşınması, döllenme ise üreme hücrelerinin birleşmesidir.</p>"
-        },
-        {
-          "type": "EXPLANATION",
           "title": "💧 Tohumun çimlenmesi için neler gerekir?",
           "bodyHtml": "<p>Bir tohumun çimlenebilmesi için uygun koşullar gerekir. Genel olarak <strong>su, oksijen ve uygun sıcaklık</strong> gereklidir. Tohumun çimlenmesi için ışık her bitki türünde zorunlu değildir; ancak fide büyüyüp fotosentez yapmaya başladığında ışık önem kazanır.</p><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.7rem;margin:1rem 0\"><div style=\"padding:.9rem;background:#dbeafe;color:#1e3a8a;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">💧</div><b>Su</b><p>Tohumun etkinleşmesine yardım eder.</p></div><div style=\"padding:.9rem;background:#fef3c7;color:#713f12;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">🌡️</div><b>Uygun sıcaklık</b><p>Yaşamsal olayların gerçekleşmesini sağlar.</p></div><div style=\"padding:.9rem;background:#e0f2fe;color:#164e63;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">🌬️</div><b>Oksijen</b><p>Solunum için gereklidir.</p></div></div><p>Tohumun çimlenmesinde ışık gerekliliği bitki türüne göre değişebilir. Çimlenme deneyinde değişkenleri kontrol ederek bilimsel sonuç çıkarabiliriz.</p>"
         },
@@ -68,6 +58,26 @@
           "type": "DAILY_LIFE",
           "title": "🌍 Yaşamla bağlantı: Tarım ve biyolojik çeşitlilik",
           "bodyHtml": "<p>Arıların ve diğer tozlaştırıcı canlıların bitkilerin üremesine katkısı tarımsal üretim açısından önemlidir. Çiçekli bitkilerin tozlaşması, birçok meyve ve sebzenin oluşmasına yardımcı olur. Tohumların uygun koşullarda saklanması ve yerel bitki çeşitlerinin korunması biyolojik çeşitliliğin sürdürülmesine katkı sağlar.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🌿 Bitkilerde büyüme ve gelişmeyi etkileyen faktörler",
+          "bodyHtml": "<p>Bitkilerin sağlıklı büyüyüp gelişebilmesi için su, mineral maddeler, uygun sıcaklık, ışık ve uygun ortam koşulları önemlidir. Bu faktörlerin etkisi bitki türüne ve gelişim evresine göre değişebilir.</p><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.7rem;margin:1rem 0\"><div style=\"background:#dbeafe;color:#1e3a8a;padding:.9rem;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">💧</div><b>Su</b><p>Madde taşınması ve yaşamsal olaylar</p></div><div style=\"background:#fef3c7;color:#713f12;padding:.9rem;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">☀️</div><b>Işık</b><p>Fotosentez için enerji</p></div><div style=\"background:#fee2e2;color:#7f1d1d;padding:.9rem;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">🌡️</div><b>Sıcaklık</b><p>Yaşamsal tepkimelerin hızı</p></div><div style=\"background:#dcfce7;color:#14532d;padding:.9rem;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">🪴</div><b>Mineraller</b><p>Sağlıklı gelişim</p></div></div><p>Bitkilerin gelişimi yalnızca tek bir faktöre bağlı değildir. Deney yaparken diğer koşulları sabit tutup bir faktörün etkisini incelemek gerekir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🌼 Bitkinin yaşam döngüsü",
+          "bodyHtml": "<p>Çiçekli bitkilerin yaşam döngüsü tohumla başlayabilir. Uygun koşullarda tohum çimlenir, fide oluşur, bitki büyür ve olgunlaştığında çiçek ve tohum oluşturabilir. Polenlerin dişi organın tepeciğine taşınmasına <strong>tozlaşma</strong> denir. Döllenme sonrasında tohum taslağı tohuma dönüşür.</p><div style=\"display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem;align-items:center;background:#f0fdf4;color:#14532d;padding:1rem;border-radius:14px\"><b>🌰 Tohum</b> → <b>🌱 Çimlenme</b> → <b>🪴 Fide</b> → <b>🌻 Olgun bitki</b> → <b>🌼 Çiçek ve tohum</b></div><p>Çiçekli bitkilerin temel kısımlarını model veya gerçek çiçek üzerinde incelemek, yapıların görevlerini anlamayı kolaylaştırır.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧪 Bilimsel deney: Değişkenleri kontrol edelim",
+          "bodyHtml": "<p>“Su miktarı tohumun çimlenmesini etkiler mi?” sorusunu araştırmak için aynı tür ve benzer özellikte tohumlar kullanılır. Bir gruba yeterli nem sağlanır, diğer gruba su verilmez. Kap, sıcaklık, tohum sayısı ve gözlem süresi aynı tutulur.</p><ul><li><strong>Bağımsız değişken:</strong> Değiştirdiğimiz faktör (su miktarı).</li><li><strong>Bağımlı değişken:</strong> Ölçtüğümüz sonuç (çimlenen tohum sayısı veya çimlenme süresi).</li><li><strong>Kontrol edilen değişkenler:</strong> Tohum türü, sıcaklık, kap ve tohum sayısı gibi sabit tuttuğumuz koşullar.</li></ul><p>Deneyden önce tahmin (hipotez) oluşturur, gözlemleri tabloya kaydeder ve kanıtlara dayanarak sonuç çıkarırız.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🐾 Hayvanlarda üreme, büyüme ve gelişme",
+          "bodyHtml": "<p>Hayvanlar farklı şekillerde ürer. Bazı hayvanlar yumurtlayarak, bazıları doğurarak çoğalır. Yavruların büyüme ve gelişme süreci türlere göre değişir.</p><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.7rem;margin:1rem 0\"><div style=\"background:#eff6ff;color:#1e3a8a;padding:.9rem;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">🦋</div><b>Kelebek</b><p>Yumurta → tırtıl → pupa → ergin</p></div><div style=\"background:#ecfdf5;color:#14532d;padding:.9rem;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">🐸</div><b>Kurbağa</b><p>Yumurta → iribaş → ergin</p></div><div style=\"background:#fff7ed;color:#7c2d12;padding:.9rem;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">🐈</div><b>Kedi</b><p>Yavru → genç → yetişkin</p></div></div><p>Kelebek ve kurbağa başkalaşım geçirir. Hayvanların büyüme ve gelişmesini beslenme, kalıtsal özellikler ve çevre koşulları etkileyebilir.</p>"
         }
       ],
       "glossary": [
@@ -98,6 +108,22 @@
         {
           "term": "Başkalasım",
           "definition": "Bazı hayvanlarda gelişim sırasında vücut yapısında belirgin değişikliklerin görülmesi."
+        },
+        {
+          "term": "Bağımsız değişken",
+          "definition": "Deneyde etkisi araştırılmak üzere değiştirilen faktör."
+        },
+        {
+          "term": "Bağımlı değişken",
+          "definition": "Deneyde ölçülen veya gözlenen sonuç."
+        },
+        {
+          "term": "Kontrol edilen değişken",
+          "definition": "Deney boyunca aynı tutulan koşul."
+        },
+        {
+          "term": "Yaşam döngüsü",
+          "definition": "Bir canlının oluşumundan üreme olgunluğuna ve yeni nesillerin oluşumuna uzanan yaşam evreleri."
         }
       ],
       "activity": {
@@ -166,6 +192,30 @@
           "answer": 1,
           "explanation": "Tozlaşma polenin dişi organ tepeciğine ulaşması; döllenme üreme hücrelerinin birleşmesidir.",
           "difficulty": "HARD"
+        },
+        {
+          "body": "Bir tohum deneyinde yalnızca su miktarı değiştiriliyorsa ölçülen çimlenme oranı hangi değişkendir?",
+          "options": [
+            "Bağımsız değişken",
+            "Bağımlı değişken",
+            "Kontrol edilen değişken",
+            "Deney aracı"
+          ],
+          "answer": 1,
+          "explanation": "Çimlenme oranı deneyde ölçülen sonuç olduğu için bağımlı değişkendir.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bitkilerin büyüme ve gelişmesini etkileyen faktörler için hangisi doğrudur?",
+          "options": [
+            "Yalnızca su etkilidir",
+            "Işık, su, sıcaklık ve mineraller etkili olabilir",
+            "Bitkiler çevre koşullarından etkilenmez",
+            "Bütün bitkiler aynı koşullarda en iyi gelişir"
+          ],
+          "answer": 1,
+          "explanation": "Bitki gelişimi birden fazla çevresel faktörden etkilenir.",
+          "difficulty": "EASY"
         }
       ],
       "links": []
@@ -175,8 +225,8 @@
       "title": "İnsan Vücudundaki Sistemler",
       "summary": "Destek ve hareket, sindirim, dolaşım, solunum ve boşaltım sistemlerinin temel görevlerini ve birlikte nasıl çalıştıklarını öğrenelim.",
       "outcome": {
-        "code": "FB.6.3.2",
-        "description": "İnsan vücudundaki temel sistemlerin yapı ve görevlerini model ve görsellerden yararlanarak açıklayabilme.",
+        "code": "Destekleyici konu anlatımı",
+        "description": "İnsan vücudundaki temel sistemlerin görevlerini ve birlikte çalışmalarını tanır.",
         "details": [
           "Destek ve hareket sisteminin temel yapılarını tanır.",
           "Sindirim, dolaşım, solunum ve boşaltım sistemlerinin görevlerini açıklar.",
@@ -333,6 +383,165 @@
           "answer": 0,
           "explanation": "Oksijen akciğerlerden kana geçer; dolaşım sistemi kanı kaslara taşır.",
           "difficulty": "HARD"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "denetleyici-ve-duzenleyici-sistemler",
+      "title": "Denetleyici ve Düzenleyici Sistemler",
+      "summary": "Sinir sistemi ve iç salgı bezlerinin vücudumuzdaki olayları nasıl yönettiğini, ergenlikte görülen değişimleri ve sağlıklı yaşam alışkanlıklarını öğrenelim.",
+      "outcome": {
+        "code": "FB.6.3.6–FB.6.3.9",
+        "description": "Sinir sisteminin görevlerini model üzerinde açıklar; iç salgı bezlerinin önemini yapılandırır; ergenlik dönemindeki değişimleri geneller ve bu sistemlerin sağlığı için yapılması gerekenleri araştırır.",
+        "details": [
+          "Merkezî ve çevresel sinir sisteminin görevlerini açıklar.",
+          "İç salgı bezlerinin salgıladığı hormonların vücut için önemini örneklerle açıklar.",
+          "Ergenlikte görülen bedensel ve ruhsal değişimlerin bireyden bireye farklılaşabileceğini fark eder.",
+          "Denetleyici ve düzenleyici sistemlerin sağlığını korumaya yönelik güvenilir bilgi toplar."
+        ]
+      },
+      "skills": [
+        "Model üzerinde gözlem",
+        "Bilgi toplama",
+        "Genelleme",
+        "Karşılaştırma",
+        "Sağlık okuryazarlığı"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🧠 Sinir sistemi: Vücudun iletişim ağı",
+          "bodyHtml": "<p>Çevremizden gelen bilgileri algılamamız, değerlendirmemiz ve uygun tepkiler vermemiz sinir sistemi sayesinde gerçekleşir. Sinir sistemi <strong>merkezî sinir sistemi</strong> ve <strong>çevresel sinir sistemi</strong> olarak incelenir.</p><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.7rem;margin:1rem 0\"><div style=\"background:#dbeafe;color:#1e3a8a;padding:1rem;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">🧠</div><b>Merkezî sinir sistemi</b><p>Beyin ve omurilik</p></div><div style=\"background:#fef3c7;color:#713f12;padding:1rem;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">🔀</div><b>Çevresel sinir sistemi</b><p>Sinirler aracılığıyla vücutla iletişim</p></div></div><p>Merkezî sinir sistemi bilgileri değerlendirir ve vücudun faaliyetlerini düzenler. Çevresel sinir sistemi, merkez ile vücudun diğer bölümleri arasında iletişim kurulmasına yardımcı olur.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧠 Beyin, beyincik, omurilik soğanı ve omurilik",
+          "bodyHtml": "<ul><li><strong>Beyin:</strong> Düşünme, öğrenme, hafıza, duyu bilgilerini değerlendirme ve istemli hareketlerin yönetiminde görevlidir.</li><li><strong>Beyincik:</strong> Hareketlerin uyumlu ve dengeli yapılmasına yardımcı olur.</li><li><strong>Omurilik soğanı:</strong> Solunum ve kalp atımı gibi yaşamsal faaliyetlerin düzenlenmesinde rol oynar.</li><li><strong>Omurilik:</strong> Beyin ile vücut arasında bilgi iletimini sağlar; bazı reflekslerin merkezidir.</li></ul><div style=\"margin:1rem 0;padding:1rem;border-radius:16px;background:#f5f3ff;color:#4c1d95;text-align:center\"><div style=\"font-size:3rem\">🧠</div><b>Merkezî sinir sistemi şeması</b><p>Beyin + beyincik + omurilik soğanı + omurilik</p><small>Şema temsildir; organların konum ve büyüklükleri ölçekli değildir.</small></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "⚡ Refleks nedir?",
+          "bodyHtml": "<p>Refleks, belirli bir uyarana karşı hızlı ve istemsiz gerçekleşen tepkidir. Örneğin çok sıcak bir yüzeye dokunulduğunda elin hızla geri çekilmesi refleks davranışıdır. Refleksler vücudun korunmasına yardımcı olur. Bazı reflekslerin yönetiminde omurilik görev alır.</p><div style=\"display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;justify-content:center;padding:1rem;background:#fff7ed;color:#7c2d12;border-radius:14px\"><b>Uyarı</b> → <b>Duyu siniri</b> → <b>Merkez</b> → <b>Hareket siniri</b> → <b>Tepki</b></div><p>Bu şema basitleştirilmiş bir anlatımdır; reflekslerin sinirsel yolları refleks türüne göre değişebilir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧪 İç salgı bezleri ve hormonlar",
+          "bodyHtml": "<p>İç salgı bezleri, <strong>hormon</strong> adı verilen kimyasal mesajları kana verir. Hormonlar büyüme, enerji kullanımı, kan şekerinin düzenlenmesi ve ergenlik gibi süreçlerde görev alır.</p><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.7rem;margin:1rem 0\"><div style=\"background:#dbeafe;color:#1e3a8a;padding:.9rem;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">📈</div><b>Büyüme hormonu</b><p>Büyüme ve gelişmede rol oynar.</p></div><div style=\"background:#fef3c7;color:#713f12;padding:.9rem;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">🦋</div><b>Tiroksin</b><p>Metabolizmanın düzenlenmesine katkı sağlar.</p></div><div style=\"background:#fee2e2;color:#7f1d1d;padding:.9rem;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">🍬</div><b>İnsülin ve glukagon</b><p>Kan şekerinin düzenlenmesinde görev alır.</p></div><div style=\"background:#f3e8ff;color:#581c87;padding:.9rem;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">⚡</div><b>Adrenalin</b><p>Heyecan ve tehlike durumlarında vücudun tepkilerine katkı sağlar.</p></div></div><p>Eşeysel hormonlar da ergenlik dönemindeki değişimlerde rol oynar. Hormonların etkileri birbiriyle bağlantılıdır ve vücudun dengesinin korunmasına yardım eder.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🌱 Ergenlik: Büyüme ve değişim dönemi",
+          "bodyHtml": "<p>Ergenlik, çocukluktan yetişkinliğe geçiş sürecidir. Bu dönemde bedensel, duygusal ve sosyal değişimler yaşanabilir. Değişimlerin başlama zamanı ve ilerleme hızı her bireyde aynı değildir; kişiden kişiye farklılık gösterebilir.</p><ul><li>Boy ve vücut yapısında değişimler görülebilir.</li><li>Terleme ve ciltte yağlanma artabilir.</li><li>Duygular daha yoğun yaşanabilir; zaman zaman duygu değişimleri olabilir.</li><li>Arkadaşlıklar ve sosyal ilişkiler önem kazanabilir.</li><li>Uyku ve beslenme gereksinimleri değişebilir.</li></ul><p><strong>Unutma:</strong> Ergenlikte herkes aynı zamanda ve aynı biçimde değişmez. Bireysel farklılıklar doğaldır; kimse başkalarının gelişimiyle kıyaslanmamalıdır. Sorularını güvendiğin bir yetişkine veya sağlık uzmanına yöneltebilirsin.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🛡️ Sinir ve iç salgı sistemlerinin sağlığını korumak",
+          "bodyHtml": "<ul><li>Düzenli uyku alışkanlığı geliştirmek.</li><li>Dengeli beslenmek ve yeterli su içmek.</li><li>Yaşa uygun fiziksel etkinliklere zaman ayırmak.</li><li>Stresle baş etmek için dinlenme, hobiler ve güvenilir kişilerle iletişimden yararlanmak.</li><li>Kafa ve omurilik yaralanmalarına yol açabilecek risklerden kaçınmak; güvenlik kurallarına uymak.</li><li>Sağlıkla ilgili bilgileri güvenilir kaynaklardan doğrulamak ve gerektiğinde sağlık uzmanına danışmak.</li></ul>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Hatırlaman gerekenler",
+          "bodyHtml": "<ul><li>Merkezî sinir sistemi beyin ve omurilikten oluşur.</li><li>Beyincik denge ve hareket uyumuna yardımcı olur.</li><li>Omurilik soğanı solunum ve kalp atımı gibi yaşamsal faaliyetlerde rol oynar.</li><li>Hormonlar kana verilen kimyasal mesajlardır.</li><li>Ergenlikteki değişimlerin zamanı ve biçimi bireyden bireye değişir.</li><li>Sağlıklı yaşam alışkanlıkları denetleyici ve düzenleyici sistemlerin sağlığını destekler.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏡 Günlük yaşamdan örnekler",
+          "bodyHtml": "<p>Bisiklet sürerken dengemizi korumamızda beyincik; trafik ışığını görüp durmamızda beyin ve sinirler; heyecanlandığımızda kalp atışımızın değişmesinde hormonlar ve sinir sistemi rol oynar. Bu örnekler vücudumuzdaki sistemlerin birlikte çalıştığını gösterir.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Sinir sistemi",
+          "definition": "Vücudun uyarıları algılamasını, değerlendirmesini ve yanıt oluşturmasını sağlayan sistem."
+        },
+        {
+          "term": "Merkezî sinir sistemi",
+          "definition": "Beyin ve omurilikten oluşan, bilgileri değerlendiren yapı."
+        },
+        {
+          "term": "Refleks",
+          "definition": "Belirli bir uyarana karşı hızlı ve istemsiz gerçekleşen tepki."
+        },
+        {
+          "term": "Hormon",
+          "definition": "İç salgı bezlerinden kana verilen ve hedef yapılarda etki oluşturan kimyasal mesaj."
+        },
+        {
+          "term": "İç salgı bezi",
+          "definition": "Hormonlarını doğrudan kana veren bez."
+        },
+        {
+          "term": "Ergenlik",
+          "definition": "Çocukluktan yetişkinliğe geçişte bedensel ve ruhsal değişimlerin yaşandığı dönem."
+        }
+      ],
+      "activity": {
+        "title": "Sinir sistemi ve hormonlar kavram haritası",
+        "materials": "Büyük kâğıt, renkli kalemler ve kavram kartları.",
+        "steps": "1) Kâğıdın ortasına 'Denetleyici ve Düzenleyici Sistemler' yaz. 2) Sinir sistemi ve iç salgı bezleri olarak iki ana dal oluştur. 3) Sinir sisteminin bölümlerini ve görevlerini ekle. 4) Hormon örneklerini ve görevlerini kartlarla ilişkilendir. 5) Ergenlikteki değişimlerin bireysel farklılık gösterebileceğini belirten bir not ekle. 6) Bilgilerini güvenilir kaynaklarla kontrol et.",
+        "safetyNotes": "Etkinlik araştırma ve poster çalışmasıdır. Kişisel sağlık bilgilerini paylaşmak zorunda değilsin; herkesin mahremiyetine saygı göster."
+      },
+      "quiz": [
+        {
+          "body": "Merkezî sinir sistemi hangi yapılardan oluşur?",
+          "options": [
+            "Kalp ve damarlar",
+            "Beyin ve omurilik",
+            "Akciğer ve bronşlar",
+            "Mide ve bağırsaklar"
+          ],
+          "answer": 1,
+          "explanation": "Merkezî sinir sistemi beyin ve omurilikten oluşur.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Denge ve hareketlerin uyumlu yapılmasına yardımcı olan yapı hangisidir?",
+          "options": [
+            "Beyincik",
+            "Mide",
+            "Böbrek",
+            "Kalın bağırsak"
+          ],
+          "answer": 0,
+          "explanation": "Beyincik, hareketlerin dengeli ve uyumlu olmasına katkı sağlar.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "İç salgı bezlerinin kana verdiği kimyasal mesajlara ne ad verilir?",
+          "options": [
+            "Enzim",
+            "Vitamin",
+            "Hormon",
+            "Antikor"
+          ],
+          "answer": 2,
+          "explanation": "İç salgı bezleri hormonları kana verir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Ergenlikle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+          "options": [
+            "Herkes aynı yaşta aynı değişimleri yaşar",
+            "Değişimlerin zamanı ve hızı bireyden bireye farklı olabilir",
+            "Ergenlikte duygusal değişim görülmez",
+            "Büyüme yalnızca tek bir hormona bağlıdır"
+          ],
+          "answer": 1,
+          "explanation": "Ergenlik süreci bireysel farklılıklar gösterir.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Aşağıdakilerden hangisi sinir sistemi sağlığını destekleyen bir davranıştır?",
+          "options": [
+            "Sürekli uykusuz kalmak",
+            "Güvenlik kurallarını önemsememek",
+            "Düzenli uyumak ve dengeli beslenmek",
+            "Sağlık bilgisini kaynağını kontrol etmeden paylaşmak"
+          ],
+          "answer": 2,
+          "explanation": "Düzenli uyku ve dengeli beslenme genel sağlığı destekler.",
+          "difficulty": "EASY"
         }
       ],
       "links": []
