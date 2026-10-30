@@ -1,0 +1,647 @@
+{
+  "classLevel": 7,
+  "code": "7.5",
+  "hours": 34,
+  "title": "Maddenin Doğasına Yolculuk",
+  "slug": "maddenin-dogasina-yolculuk",
+  "description": "Atomun temel parçacıklarını ve atom modellerinin tarihsel gelişimini inceleyelim. Molekül, element, bileşik ve karışım kavramlarını modellerle ayırt edelim; periyodik tabloyu okuyalım, çözünme hızını etkileyen faktörleri deneyle araştıralım ve karışımları uygun yöntemlerle ayıralım.",
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı, 7. sınıf 5. ünite: Maddenin Doğasına Yolculuk, 34 ders saati. FB.7.5.1–FB.7.5.10 öğrenme çıktıları esas alınarak anlatım, görsel modeller, deney etkinlikleri ve ölçme soruları özgün hazırlanmıştır.",
+  "topics": [
+    {
+      "slug": "atomun-yapisi-ve-bilimsel-modeller",
+      "title": "Atomun Yapısı ve Bilimsel Modeller",
+      "summary": "Atomu oluşturan temel parçacıkları ve atom modellerinin tarihsel gelişimini keşfedelim.",
+      "outcome": {
+        "code": "FB.7.5.1 – FB.7.5.2",
+        "description": "Atomun temel parçacıklarını çözümleyerek atom kavramına ilişkin bilimsel bilgilerin zamanla değişebileceğini sorgular.",
+        "details": [
+          "Proton, nötron ve elektronun özelliklerini belirler.",
+          "Atom modellerinin geçmişten günümüze gelişimini açıklar.",
+          "Bilimsel modellerin yeni kanıtlarla değişebileceğini fark eder."
+        ]
+      },
+      "skills": [
+        "Model oluşturma",
+        "Bilgi toplama",
+        "Bilimsel sorgulama",
+        "Karşılaştırma"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "⚛️ Atom nedir?",
+          "bodyHtml": "<p>Çevremizde gördüğümüz canlı ve cansız bütün maddeler tanecikli yapıdadır. Maddelerin özelliklerini taşıyan çok küçük yapı birimlerinden biri <strong>atom</strong>dur. Atomlar çıplak gözle görülemeyecek kadar küçüktür. Farklı atom türleri bir araya gelerek farklı maddeleri oluşturur.</p><div style='background:#eff6ff;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2.6rem'>⚛️</div><b>Atom: Maddenin yapı taşlarından biri</b><p>Atomun merkezinde çekirdek, çekirdeğin çevresinde elektronların bulunma olasılığının yüksek olduğu bölgeler vardır.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🔴 Atomun temel parçacıkları",
+          "bodyHtml": "<p>Atom; <strong>proton, nötron ve elektron</strong> adı verilen temel parçacıklardan oluşur. Proton ve nötron atomun çekirdeğinde, elektronlar ise çekirdeğin çevresindeki katmanlarda/modelde gösterilen bölgelerde bulunur.</p><div style='display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px'><div style='background:#fee2e2;padding:10px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🔴</div><b>Proton</b><p>Pozitif (+)</p><p>Çekirdekte</p></div><div style='background:#e5e7eb;padding:10px;border-radius:12px;text-align:center'><div style='font-size:2rem'>⚪</div><b>Nötron</b><p yükselti='0'>Yüksüz (0)</p><p>Çekirdekte</p></div><div style='background:#dbeafe;padding:10px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🔵</div><b>Elektron</b><p>Negatif (−)</p><p>Çekirdek çevresinde</p></div></div><p>Proton sayısı atomun hangi element olduğunu belirler. Nötr atomlarda proton sayısı elektron sayısına eşittir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🎯 Çekirdek ve elektron katmanları",
+          "bodyHtml": "<p>Atomun merkezinde pozitif yüklü protonları ve yüksüz nötronları içeren <strong>çekirdek</strong> bulunur. Elektronlar çekirdeğin çevresindeki enerji düzeylerinde bulunur. Ortaokul düzeyindeki Bohr modelinde bu bölgeler katmanlar şeklinde gösterilir.</p><div style='background:#f8fafc;padding:14px;border-radius:14px;text-align:center'><svg viewBox='0 0 300 190' width='100%' xmlns='http://www.w3.org/2000/svg'><circle cx='150' cy='95' r='28' fill='#fecaca' stroke='#dc2626' stroke-width='2'/><circle cx='150' cy='95' r='58' fill='none' stroke='#60a5fa' stroke-width='2'/><circle cx='150' cy='95' r='86' fill='none' stroke='#60a5fa' stroke-width='2'/><circle cx='150' cy='37' r='6' fill='#2563eb'/><circle cx='150' cy='181' r='6' fill='#2563eb'/><circle cx='64' cy='95' r='6' fill='#2563eb'/><circle cx='236' cy='95' r='6' fill='#2563eb'/><text x='150' y='91' font-size='10' text-anchor='middle' fill='#7f1d1d'>Çekirdek</text><text x='150' y='104' font-size='9' text-anchor='middle' fill='#7f1d1d'>p⁺ n⁰</text></svg><b>Şematik atom modeli</b><p>Çizim, atomun gerçek boyutlarını ve elektronların kesin yörüngelerini göstermez; öğretim amaçlı basitleştirilmiş modeldir.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🕰️ Atom modelleri nasıl değişti?",
+          "bodyHtml": "<p>Bilim insanları atomu açıklamak için farklı dönemlerde modeller geliştirmiştir. Yeni deneyler ve kanıtlar geldikçe modeller yenilenmiştir.</p><div style='display:grid;gap:8px'><div style='background:#fef3c7;padding:10px;border-radius:10px'><b>Demokritos</b><p>Maddenin bölünemeyen çok küçük taneciklerden oluşabileceği düşüncesini ortaya attı.</p></div><div style='background:#e0f2fe;padding:10px;border-radius:10px'><b>Dalton</b><p>Atomu içi dolu küreye benzeten bir model önerdi.</p></div><div style='background:#fce7f3;padding:10px;border-radius:10px'><b>Thomson</b><p>Pozitif yük içinde elektronların bulunduğu bir model geliştirdi.</p></div><div style='background:#dcfce7;padding:10px;border-radius:10px'><b>Rutherford</b><p>Atomun merkezinde küçük ve yoğun bir çekirdek bulunduğunu gösteren model önerdi.</p></div><div style='background:#ede9fe;padding:10px;border-radius:10px'><b>Bohr</b><p>Elektronların belirli enerji düzeylerinde/katmanlarda bulunduğunu açıkladı.</p></div><div style='background:#e0e7ff;padding:10px;border-radius:10px'><b>Modern atom teorisi</b><p>Elektronların kesin konumlarının belirlenemediğini, bulunma olasılıklarının elektron bulutuyla ifade edildiğini açıklar.</p></div></div>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Bilimsel bilgi değişebilir",
+          "bodyHtml": "<p>Atom modellerinin değişmesi bilimin güvenilmez olduğu anlamına gelmez. Bilimsel açıklamalar gözlem, deney ve yeni kanıtlarla geliştirilir. Bir model, doğayı anlamamıza yardımcı olan açıklama veya gösterimdir; gerçekliğin tüm ayrıntılarını birebir yansıtmayabilir.</p><ul><li>Yeni kanıtlar eski modellerin geliştirilmesini sağlayabilir.</li><li>Bilim insanları iddialarını kanıtlarla destekler.</li><li>Modeller karmaşık yapıları anlamayı kolaylaştırır.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🧩 Atom modeli tasarlayalım",
+          "bodyHtml": "<p>Oyun hamuru veya renkli kâğıtlarla proton, nötron ve elektronları farklı renklerde göstererek atom modeli hazırlayın. Modelinizin hangi yönlerinin gerçeği temsil ettiğini, hangi yönlerinin basitleştirme olduğunu açıklayın.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Atom",
+          "definition": "Maddenin yapı taşlarından biri olan çok küçük tanecik."
+        },
+        {
+          "term": "Proton",
+          "definition": "Pozitif yüklü, çekirdekte bulunan parçacık."
+        },
+        {
+          "term": "Nötron",
+          "definition": "Yüksüz, çekirdekte bulunan parçacık."
+        },
+        {
+          "term": "Elektron",
+          "definition": "Negatif yüklü, çekirdek çevresinde bulunan parçacık."
+        },
+        {
+          "term": "Çekirdek",
+          "definition": "Atomun proton ve nötronları içeren merkezi bölgesi."
+        },
+        {
+          "term": "Model",
+          "definition": "Bir sistemi anlamak için kullanılan temsil veya açıklama."
+        }
+      ],
+      "activity": {
+        "title": "Atom modelleri zaman şeridi",
+        "materials": "Karton, renkli kalemler, model görselleri ve bilgi kartları.",
+        "steps": "Demokritos'tan modern atom teorisine kadar modelleri tarih sırasına yerleştirin. Her modelin temel özelliğini bir cümleyle yazın. Yeni kanıtların hangi değişikliklere yol açtığını sınıfta tartışın.",
+        "safetyNotes": "Maket malzemelerini güvenli biçimde kullanın; küçük parçaları ağıza götürmeyin."
+      },
+      "quiz": [
+        {
+          "body": "Atom çekirdeğinde hangi parçacıklar bulunur?",
+          "options": [
+            "Proton ve nötron",
+            "Proton ve elektron",
+            "Nötron ve elektron",
+            "Yalnız elektron"
+          ],
+          "answer": 0,
+          "explanation": "Proton ve nötron çekirdekte bulunur; elektronlar çekirdek çevresindedir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Nötr bir atomda proton sayısı ile hangi parçacığın sayısı eşittir?",
+          "options": [
+            "Nötron",
+            "Elektron",
+            "Molekül",
+            "Çekirdek"
+          ],
+          "answer": 1,
+          "explanation": "Nötr atomda pozitif proton yükleri ile negatif elektron yükleri dengelenir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Atom modellerinin zamanla değişmesi aşağıdakilerden hangisini gösterir?",
+          "options": [
+            "Bilimsel bilginin kanıtlarla gelişebildiğini",
+            "Atomların sürekli büyüdüğünü",
+            "Bütün modellerin aynı olduğunu",
+            "Deneylerin gereksiz olduğunu"
+          ],
+          "answer": 0,
+          "explanation": "Yeni deney ve kanıtlar bilimsel modellerin geliştirilmesini sağlayabilir.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "molekuller-elementler-ve-bilesikler",
+      "title": "Moleküller, Elementler ve Bileşikler",
+      "summary": "Atomların bir araya gelerek molekülleri, elementleri ve bileşikleri nasıl oluşturduğunu modelleyelim.",
+      "outcome": {
+        "code": "FB.7.5.3 – FB.7.5.4",
+        "description": "Molekül modelleri oluşturur; saf maddeleri element ve bileşik olarak sınıflandırır.",
+        "details": [
+          "Aynı veya farklı atomlardan oluşan molekülleri modeller.",
+          "Saf maddeleri element ve bileşik olarak ayırt eder.",
+          "Element ve bileşik örneklerini sınıflandırır."
+        ]
+      },
+      "skills": [
+        "Bilimsel model oluşturma",
+        "Sınıflandırma",
+        "Karşılaştırma",
+        "Görsel okuryazarlık"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🧲 Molekül nedir?",
+          "bodyHtml": "<p>İki veya daha fazla atomun belirli bir düzen içinde bir araya gelmesiyle molekül oluşabilir. Moleküller aynı cins atomlardan veya farklı cins atomlardan oluşabilir. Atomları modellemek için farklı renklerde boncuk veya oyun hamuru kullanılabilir.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px'><div style='background:#dbeafe;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🔴—🔴</div><b>Aynı cins atomlar</b><p>O₂ gibi</p></div><div style='background:#fce7f3;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>⚪—🔴—⚪</div><b>Farklı cins atomlar</b><p>H₂O gibi</p></div></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧪 Element nedir?",
+          "bodyHtml": "<p><strong>Element</strong>, tek cins atomdan oluşan saf maddedir. Demir, bakır, altın, helyum ve oksijen elementlere örnektir. Elementler sembollerle gösterilir. Bir elementin tüm atomlarının proton sayısı aynıdır.</p><div style='background:#eff6ff;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2.2rem'>Fe　Cu　Au　O</div><b>Element sembolleri</b><p>Tek cins atom içerir.</p></div><p>Oksijen gazı O₂ moleküllerinden oluşsa da yalnızca oksijen atomu içerdiği için elementtir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧱 Bileşik nedir?",
+          "bodyHtml": "<p><strong>Bileşik</strong>, farklı cins atomların belirli oranlarda kimyasal bağlarla birleşmesiyle oluşan saf maddedir. Su (H₂O), karbondioksit (CO₂) ve sodyum klorür (NaCl) bileşik örnekleridir.</p><div style='display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px'><div style='background:#e0f2fe;padding:10px;border-radius:12px;text-align:center'><div style='font-size:1.6rem'>💧</div><b>H₂O</b><p>Su</p></div><div style='background:#dcfce7;padding:10px;border-radius:12px;text-align:center'><div style='font-size:1.6rem'>☁️</div><b>CO₂</b><p>Karbondioksit</p></div><div style='background:#fef3c7;padding:10px;border-radius:12px;text-align:center'><div style='font-size:1.6rem'>🧂</div><b>NaCl</b><p>Sodyum klorür</p></div></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "⚖️ Saf madde: Element mi, bileşik mi?",
+          "bodyHtml": "<div style='overflow-x:auto'><table><thead><tr><th>Özellik</th><th>Element</th><th>Bileşik</th></tr></thead><tbody><tr><td>Atom türü</td><td>Tek cins</td><td>En az iki farklı cins</td></tr><tr><td>Gösterim</td><td>Sembol</td><td>Formül</td></tr><tr><td>Örnek</td><td>Fe, Cu, O₂</td><td>H₂O, CO₂, NaCl</td></tr><tr><td>Kimyasal yollarla ayrılma</td><td>Daha basit maddelere ayrılamaz</td><td>Elementlerine ayrıştırılabilir</td></tr></tbody></table></div><p>Elementler ve bileşikler saf maddedir. Karışımlardan farklı olarak belirli bir kimyasal bileşime sahiptirler.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Molekül ile bileşiği karıştırma",
+          "bodyHtml": "<p>Her molekül bileşik değildir. O₂ molekülü aynı cins atomlardan oluştuğu için moleküler elementtir. H₂O molekülü farklı cins atomlardan oluştuğu için bileşiktir. Ayrıca NaCl gibi bazı bileşikler molekül şeklinde değil, iyonik kristal örgü yapısında bulunur.</p>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🎨 Tanecik modeli oluştur",
+          "bodyHtml": "<p>Farklı renkli boncuklarla O₂, H₂O ve CO₂ modelleri tasarlayın. Her renge bir atom türü karşılık gelsin. Modellerinizde atom sayısını ve atom türlerini belirterek element mi bileşik mi olduğunu açıklayın.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Molekül",
+          "definition": "İki veya daha fazla atomun bir araya gelmesiyle oluşan tanecik."
+        },
+        {
+          "term": "Element",
+          "definition": "Tek cins atomdan oluşan saf madde."
+        },
+        {
+          "term": "Bileşik",
+          "definition": "Farklı cins atomların belirli oranlarda kimyasal birleşmesiyle oluşan saf madde."
+        },
+        {
+          "term": "Saf madde",
+          "definition": "Her noktasında aynı tür taneciklerden oluşan madde."
+        },
+        {
+          "term": "Kimyasal bağ",
+          "definition": "Atomları veya iyonları bir arada tutan etkileşim."
+        }
+      ],
+      "activity": {
+        "title": "Molekül modeli atölyesi",
+        "materials": "Farklı renklerde oyun hamuru veya boncuk, kürdan ve model kartları.",
+        "steps": "Bir rengi hidrojen, diğerini oksijen, başka bir rengi karbon olarak belirleyin. O₂, H₂O ve CO₂ modellerini oluşturun. Her modelde kaç atom ve kaç atom türü bulunduğunu yazın. Element veya bileşik olarak sınıflandırın.",
+        "safetyNotes": "Kürdan ve küçük parçaları dikkatli kullanın; etkinlik malzemelerini ağıza götürmeyin."
+      },
+      "quiz": [
+        {
+          "body": "Aşağıdakilerden hangisi elementtir?",
+          "options": [
+            "H₂O",
+            "CO₂",
+            "Fe",
+            "NaCl"
+          ],
+          "answer": 2,
+          "explanation": "Fe demir elementinin sembolüdür ve tek cins atomdan oluşur.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "O₂ molekülü neden element olarak sınıflandırılır?",
+          "options": [
+            "İki farklı atom içerdiği için",
+            "Yalnızca oksijen atomlarından oluştuğu için",
+            "Karışım olduğu için",
+            "Formülü olmadığı için"
+          ],
+          "answer": 1,
+          "explanation": "O₂ iki atomlu moleküldür ancak atomların ikisi de oksijendir; bu nedenle elementtir.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Aşağıdakilerden hangisi bileşik örneğidir?",
+          "options": [
+            "Altın",
+            "Bakır",
+            "Helyum",
+            "Su"
+          ],
+          "answer": 3,
+          "explanation": "Su, hidrojen ve oksijen atomlarının belirli oranda birleşmesiyle oluşan bileşiktir.",
+          "difficulty": "EASY"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "element-sembolleri-periyodik-tablo-ve-formuller",
+      "title": "Element Sembolleri, Periyodik Tablo ve Bileşik Formülleri",
+      "summary": "İlk 18 elementin sembollerini, periyot ve grupları, yaygın bileşik formüllerini öğrenelim.",
+      "outcome": {
+        "code": "FB.7.5.5 – FB.7.5.7",
+        "description": "İlk 18 elementin sembollerini, periyodik tabloda grup ve periyotları ve yaygın bileşik formüllerini yapılandırır.",
+        "details": [
+          "İlk 18 elementin adlarını ve sembollerini eşleştirir.",
+          "Grup ve periyotların özelliklerini karşılaştırır.",
+          "Yaygın bileşiklerin adlarını formülleriyle eşleştirir."
+        ]
+      },
+      "skills": [
+        "Sınıflandırma",
+        "Örüntü bulma",
+        "Karşılaştırma",
+        "Bilgi okuryazarlığı"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🔤 Element sembolleri nasıl yazılır?",
+          "bodyHtml": "<p>Elementler, bilim dünyasında ortak bir dil oluşturmak için sembollerle gösterilir. Sembol bir veya iki harften oluşabilir. İlk harf daima büyük, ikinci harf varsa küçük yazılır. Örneğin karbon C, kalsiyum Ca ile gösterilir.</p><div style='background:#eff6ff;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2rem'>H　He　Li　Be　B　C　N　O　F　Ne</div><b>Sembollerde büyük-küçük harfe dikkat!</b></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧾 İlk 18 element",
+          "bodyHtml": "<div style='overflow-x:auto'><table><thead><tr><th>Atom no</th><th>Element</th><th>Sembol</th></tr></thead><tbody><tr><td>1</td><td>Hidrojen</td><td>H</td></tr><tr><td>2</td><td>Helyum</td><td>He</td></tr><tr><td>3</td><td>Lityum</td><td>Li</td></tr><tr><td>4</td><td>Berilyum</td><td>Be</td></tr><tr><td>5</td><td> Bor</td><td>B</td></tr><tr><td>6</td><td>Karbon</td><td>C</td></tr><tr><td>7</td><td>Azot</td><td>N</td></tr><tr><td>8</td><td>Oksijen</td><td>O</td></tr><tr><td>9</td><td>Flor</td><td>F</td></tr><tr><td>10</td><td>Neon</td><td>Ne</td></tr><tr><td>11</td><td>Sodyum</td><td>Na</td></tr><tr><td>12</td><td>Magnezyum</td><td>Mg</td></tr><tr><td>13</td><td>Alüminyum</td><td>Al</td></tr><tr><td>14</td><td>Silisyum</td><td>Si</td></tr><tr><td>15</td><td>Fosfor</td><td>P</td></tr><tr><td>16</td><td>Kükürt</td><td>S</td></tr><tr><td>17</td><td>Klor</td><td>Cl</td></tr><tr><td>18</td><td>Argon</td><td>Ar</td></tr></tbody></table></div><p>Programda ayrıca altın (Au), gümüş (Ag), bakır (Cu), çinko (Zn), kurşun (Pb), cıva (Hg), platin (Pt), demir (Fe) ve iyot (I) sembollerinin de tanınması beklenir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🗂️ Periyodik tablo: Elementlerin düzeni",
+          "bodyHtml": "<p>Periyodik tablo elementlerin artan <strong>atom numarasına</strong> (proton sayısına) göre sıralandığı tablodur. Elementler benzer özellikleri ve elektron dizilimleri dikkate alınarak düzenli sütun ve satırlarda yer alır.</p><div style='background:#f8fafc;padding:14px;border-radius:14px;text-align:center'><div style='display:grid;grid-template-columns:repeat(8,1fr);gap:4px;font-size:12px'><span style='background:#bfdbfe;padding:8px'>H</span><span style='grid-column:span 6'></span><span style='background:#bbf7d0;padding:8px'>He</span><span style='background:#bfdbfe;padding:8px'>Li</span><span style='background:#bfdbfe;padding:8px'>Be</span><span style='grid-column:span 4'></span><span style='background:#bbf7d0;padding:8px'>B</span><span style='background:#bbf7d0;padding:8px'>C</span><span style='background:#bbf7d0;padding:8px'>N</span><span style='background:#bbf7d0;padding:8px'>O</span><span style='background:#bbf7d0;padding:8px'>F</span><span style='background:#bbf7d0;padding:8px'>Ne</span></div><p>Şema ilk elementlerin yerleşimini temsili olarak gösterir.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "↔️ Grup ve periyot nedir?",
+          "bodyHtml": "<p>Periyodik tablodaki dikey sütunlara <strong>grup</strong>, yatay satırlara <strong>periyot</strong> denir. Aynı periyottaki element atomlarının katman sayıları aynıdır. İlk 18 elementte, helyum istisnası dışında, aynı A grubunda bulunan elementlerin son katman elektron sayıları aynıdır.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px'><div style='background:#dbeafe;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>⬇️</div><b>Grup</b><p>Dikey sütun</p></div><div style='background:#dcfce7;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>➡️</div><b>Periyot</b><p>Yatay satır</p></div></div><p>İlk 18 element için katman elektron dizilimleri, periyot ve grup ilişkisini anlamaya yardımcı olur. Örneğin sodyumun dizilimi 2-8-1 olduğundan 3 katmanı ve son katmanında 1 elektronu vardır.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "⚡ Elektron dizilimi ve iyon oluşumu",
+          "bodyHtml": "<p>Nötr atomlarda proton sayısı elektron sayısına eşittir. İlk 18 element için elektronlar katmanlara yerleştirilirken ilk katmanda en çok 2, ikinci ve üçüncü katmanlarda bu düzeyde kullanılan modelde en çok 8 elektron gösterilir. Son katmanı dolu olan helyum ve soygazlar kararlı yapıdadır.</p><p>Atomlar kararlı elektron düzenine ulaşmak için elektron alabilir veya verebilir. Elektron alan atom negatif, elektron veren atom pozitif yüklü iyon hâline gelir.</p><div style='background:#fef3c7;padding:12px;border-radius:12px;text-align:center'><b>Elektron alır ➜ Negatif iyon</b><p>Elektron verir ➜ Pozitif iyon</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧮 Bileşik formülleri nasıl okunur?",
+          "bodyHtml": "<p>Bileşik formülleri, bileşiği oluşturan elementlerin sembollerini ve atom sayılarını gösterir. Sembolün sağ altındaki küçük sayı, o elementten kaç atom bulunduğunu belirtir. Sayı yazılmamışsa bir atom kabul edilir.</p><div style='background:#eff6ff;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2rem'>H₂O</div><b>2 hidrojen + 1 oksijen atomu</b><p>CO₂: 1 karbon + 2 oksijen atomu</p></div><p>Yaygın bileşik formülleri: su H₂O, sodyum klorür NaCl, karbondioksit CO₂, karbonmonoksit CO, amonyak NH₃, kükürt dioksit SO₂, hidrojen klorür HCl, sülfürik asit H₂SO₄, sodyum hidroksit NaOH ve glikoz C₆H₁₂O₆.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Sembol ve formül ipuçları",
+          "bodyHtml": "<ul><li>Element sembolünün ilk harfi büyük, ikinci harfi varsa küçüktür.</li><li>Periyodik tabloda satır periyot, sütun grup olarak adlandırılır.</li><li>Atom numarası proton sayısına eşittir.</li><li>Nötr atomda proton sayısı elektron sayısına eşittir.</li><li>Formüldeki alt indis, atom sayısını belirtir.</li><li>Formülün başında katsayı varsa tüm formüldeki atom sayılarını çarpar; bu ünitede temel okuma alt indis üzerinden yapılır.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🃏 Element ve formül kartları",
+          "bodyHtml": "<p>Element adı-sembolü ve bileşik adı-formülü kartları hazırlayın. Kartları eşleştirin. Bir bileşik formülündeki atom türlerini ve sayılarını açıklayın. Hatalı yazılmış sembolleri bularak düzeltin.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Sembol",
+          "definition": "Elementi gösteren bir veya iki harfli uluslararası gösterim."
+        },
+        {
+          "term": "Atom numarası",
+          "definition": "Atom çekirdeğindeki proton sayısı."
+        },
+        {
+          "term": "Grup",
+          "definition": "Periyodik tablodaki dikey sütun."
+        },
+        {
+          "term": "Periyot",
+          "definition": "Periyodik tablodaki yatay satır."
+        },
+        {
+          "term": "İyon",
+          "definition": "Elektron almış veya vermiş yüklü atom."
+        },
+        {
+          "term": "Formül",
+          "definition": "Bir bileşiğin hangi elementlerden ve kaç atomdan oluştuğunu gösteren ifade."
+        }
+      ],
+      "activity": {
+        "title": "İlk 18 element eşleştirme oyunu",
+        "materials": "Element adı, sembolü ve atom numarası kartları.",
+        "steps": "Kartları karıştırın. Element adı, sembolü ve atom numarasını doğru eşleştirin. Ardından seçtiğiniz elementin katman elektron dizilimini yazıp grup ve periyot numarasıyla ilişkilendirin. Son olarak verilen bileşik formüllerini atom sayılarına göre okuyun.",
+        "safetyNotes": "Kart etkinliğinde özel güvenlik önlemi gerektiren malzeme kullanılmaz."
+      },
+      "quiz": [
+        {
+          "body": "Klor elementinin doğru sembolü hangisidir?",
+          "options": [
+            "C",
+            "Cl",
+            "CL",
+            "Cr"
+          ],
+          "answer": 1,
+          "explanation": "Klorun sembolü Cl şeklindedir; ilk harf büyük, ikinci harf küçüktür.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Periyodik tablodaki yatay sıralara ne ad verilir?",
+          "options": [
+            "Grup",
+            "Periyot",
+            "Katman",
+            "Çekirdek"
+          ],
+          "answer": 1,
+          "explanation": "Yatay sıralar periyot, dikey sütunlar grup olarak adlandırılır.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "CO₂ formülünde toplam kaç oksijen atomu bulunur?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answer": 1,
+          "explanation": "Oksijen sembolünün sağ altındaki 2 sayısı iki oksijen atomu olduğunu gösterir.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "karisimlar-ve-cozeltiler",
+      "title": "Karışımlar ve Çözeltiler",
+      "summary": "Saf maddelerden farklı olarak karışımların özelliklerini, homojen ve heterojen karışımları tanıyalım.",
+      "outcome": {
+        "code": "FB.7.5.8",
+        "description": "Karışımları homojen ve heterojen olarak sınıflandırır.",
+        "details": [
+          "Karışımın özelliklerini belirler.",
+          "Karışımları görünüş ve bileşen dağılımına göre inceler.",
+          "Homojen ve heterojen karışımları örneklerle sınıflandırır."
+        ]
+      },
+      "skills": [
+        "Sınıflandırma",
+        "Gözlem",
+        "Karşılaştırma",
+        "Günlük yaşamla ilişkilendirme"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🥗 Karışım nedir?",
+          "bodyHtml": "<p>İki veya daha fazla maddenin kendi özelliklerini kaybetmeden bir araya gelmesiyle <strong>karışım</strong> oluşur. Karışımları oluşturan maddeler farklı oranlarda bulunabilir. Karışımlar fiziksel yöntemlerle bileşenlerine ayrılabilir.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px'><div style='background:#dcfce7;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🥗</div><b>Salata</b><p>Heterojen</p></div><div style='background:#dbeafe;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🧂💧</div><b>Tuzlu su</b><p>Homojen</p></div></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🫗 Homojen karışımlar (çözeltiler)",
+          "bodyHtml": "<p>Her noktasında aynı özellik gösteren, bileşenleri gözle ayırt edilemeyen karışımlara <strong>homojen karışım</strong> denir. Homojen karışımların diğer adı çözeltidir. Çözelti, çözücü ve çözünenden oluşur. Tuzlu su ve şekerli su örnektir.</p><div style='background:#eff6ff;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2rem'>💧 + 🧂 = 🥛</div><b>Çözücü: Su · Çözünen: Tuz</b></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🪨 Heterojen karışımlar",
+          "bodyHtml": "<p>Her noktasında aynı özellik göstermeyen, bileşenleri farklı bölgelerde ayırt edilebilen karışımlara <strong>heterojen karışım</strong> denir. Kum-su, zeytinyağı-su ve ayran heterojen karışımlara örnektir.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px'><div style='background:#fef3c7;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🪨💧</div><b>Kum-su</b></div><div style='background:#fce7f3;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🫒💧</div><b>Yağ-su</b></div></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "⚖️ Bileşik ile karışım arasındaki fark",
+          "bodyHtml": "<div style='overflow-x:auto'><table><thead><tr><th>Özellik</th><th>Bileşik</th><th>Karışım</th></tr></thead><tbody><tr><td>Oluşum</td><td>Kimyasal birleşme</td><td>Fiziksel bir araya gelme</td></tr><tr><td>Oran</td><td>Belirli oran</td><td>Değişebilir oran</td></tr><tr><td>Özellik</td><td>Yeni özellikler</td><td>Bileşenler özelliklerini korur</td></tr><tr><td>Ayrılma</td><td>Kimyasal yöntemler</td><td>Fiziksel yöntemler</td></tr></tbody></table></div>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Karışım örnekleri",
+          "bodyHtml": "<ul><li>Homojen: Tuzlu su, şekerli su, hava (gaz karışımı).</li><li>Heterojen: Kum-su, yağ-su, salata, ayran.</li><li>Homojen karışımlarda çözücü ve çözünen bulunur.</li><li>Karışımların belirli bir formülü ve sabit erime-kaynama noktası yoktur.</li><li>Karışımı oluşturan maddeler kendi kimliklerini korur.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🧪 Karışımları gözlemleyelim",
+          "bodyHtml": "<p>Şeffaf bardaklarda suya ayrı ayrı tuz, şeker, kum ve bir miktar sıvı yağ ekleyin. Karıştırdıktan sonra karışımların her noktasının aynı görünüp görünmediğini gözlemleyin. Sonuçları homojen ve heterojen olarak sınıflandırın.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Karışım",
+          "definition": "İki veya daha fazla maddenin kimyasal özelliklerini kaybetmeden bir araya gelmesi."
+        },
+        {
+          "term": "Homojen karışım",
+          "definition": "Her noktasında aynı özellik gösteren karışım."
+        },
+        {
+          "term": "Heterojen karışım",
+          "definition": "Her noktasında aynı özellik göstermeyen karışım."
+        },
+        {
+          "term": "Çözelti",
+          "definition": "Homojen karışım."
+        },
+        {
+          "term": "Çözücü",
+          "definition": "Çözelti içinde genellikle miktarı fazla olan ve çözen bileşen."
+        },
+        {
+          "term": "Çözünen",
+          "definition": "Çözelti içinde çözücü içinde dağılan bileşen."
+        }
+      ],
+      "activity": {
+        "title": "Karışım dedektifleri",
+        "materials": "Şeffaf kaplar, su, tuz, şeker, kum, sıvı yağ ve karıştırma çubuğu.",
+        "steps": "Her kaba eşit miktarda su koyun. Kaplara sırasıyla tuz, şeker, kum ve yağ ekleyin. Aynı süre karıştırın. Görünüşlerini ve bileşenlerin ayırt edilip edilmediğini gözlemleyin. Karışımları homojen veya heterojen olarak etiketleyin.",
+        "safetyNotes": "Maddeleri tatmayın; deney sonunda ellerinizi yıkayın. Sıvı dökülmelerini temizleyin."
+      },
+      "quiz": [
+        {
+          "body": "Her noktasında aynı özellik gösteren karışımlara ne denir?",
+          "options": [
+            "Heterojen",
+            "Homojen",
+            "Element",
+            "Bileşik"
+          ],
+          "answer": 1,
+          "explanation": "Homojen karışımlar her noktasında aynı özellik gösterir; çözelti olarak da adlandırılır.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Aşağıdakilerden hangisi heterojen karışımdır?",
+          "options": [
+            "Tuzlu su",
+            "Şekerli su",
+            "Kum-su",
+            "Hava"
+          ],
+          "answer": 2,
+          "explanation": "Kum suda çözünmediği ve karışımın her yerinde aynı dağılım oluşmadığı için heterojendir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Karışımları bileşiklerden ayıran özellik hangisidir?",
+          "options": [
+            "Her zaman tek tür atom içermeleri",
+            "Bileşenlerin belirli oranlarda bulunması",
+            "Bileşenlerin kendi özelliklerini koruması ve oranların değişebilmesi",
+            "Kimyasal yöntemlerle ayrılmaları"
+          ],
+          "answer": 2,
+          "explanation": "Karışımlarda bileşenler özelliklerini korur ve karışım oranları değişebilir.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "cozunme-hizi-ve-karisimlarin-ayrilmasi",
+      "title": "Çözünme Hızı ve Karışımların Ayrılması",
+      "summary": "Çözünme hızını etkileyen faktörleri deneyle inceleyelim ve karışımları uygun fiziksel yöntemlerle ayıralım.",
+      "outcome": {
+        "code": "FB.7.5.9 – FB.7.5.10",
+        "description": "Çözünme hızına etki eden faktörler için hipotez oluşturur ve karışımları ayırmaya yönelik deney tasarlar.",
+        "details": [
+          "Temas yüzeyi, karıştırma ve sıcaklığın çözünme hızına etkisini araştırır.",
+          "Deneyde bağımsız, bağımlı ve kontrol edilen değişkenleri belirler.",
+          "Buharlaştırma, yoğunluk farkı ve damıtma yöntemlerini uygun karışımlarla ilişkilendirir."
+        ]
+      },
+      "skills": [
+        "Hipotez oluşturma",
+        "Deney tasarlama",
+        "Değişkenleri kontrol etme",
+        "Veri analizi"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "⏱️ Çözünme hızı nedir?",
+          "bodyHtml": "<p>Bir maddenin çözücü içinde dağılması ve çözeltinin oluşması belirli bir zaman alabilir. Çözünen maddenin çözünme süresini etkileyen koşullar, <strong>çözünme hızı</strong> üzerinde etkilidir. Bu ünitede temas yüzeyi, karıştırma ve sıcaklık değişkenleri deneyle incelenir.</p><div style='background:#eff6ff;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2rem'>🧊/🍬 + 💧 ➜ 🥛</div><b>Çözünme hızı: Çözünmenin ne kadar sürede gerçekleştiği</b></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧊 Temas yüzeyi ve karıştırma",
+          "bodyHtml": "<p><strong>Temas yüzeyi:</strong> Aynı miktardaki şeker toz hâline getirildiğinde suyla temas eden yüzey artar ve genellikle daha hızlı çözünür.</p><p><strong>Karıştırma:</strong> Karıştırma, çözünen taneciklerin çözücüyle temasını artırarak çözünme sürecini hızlandırabilir.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px'><div style='background:#dcfce7;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🧊</div><b>Küp şeker</b><p>Daha küçük temas yüzeyi</p></div><div style='background:#dbeafe;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🍚</div><b>Toz şeker</b><p>Daha büyük temas yüzeyi</p></div></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🌡️ Sıcaklığın etkisi",
+          "bodyHtml": "<p>Katı maddelerin çoğu için çözücünün sıcaklığı arttığında çözünme hızı artar. Ancak sıcaklık, çözünme miktarını ve hızını her madde için aynı biçimde etkilemeyebilir. Deney yaparken yalnızca sıcaklığı değiştirmeli, diğer koşulları sabit tutmalıyız.</p><div style='background:#fef3c7;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2rem'>❄️ 🥛　vs　♨️ 🥛</div><b>Soğuk su ve ılık su karşılaştırması</b><p>Aynı miktar ve tanecik boyutunda şeker kullanılır; yalnızca su sıcaklığı değiştirilir.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧪 Deneyde değişkenleri belirleyelim",
+          "bodyHtml": "<ul><li><strong>Bağımsız değişken:</strong> Araştırmacının değiştirdiği faktör (sıcaklık, karıştırma veya temas yüzeyi).</li><li><strong>Bağımlı değişken:</strong> Ölçülen sonuç (çözünme süresi/hızı).</li><li><strong>Kontrol edilen değişkenler:</strong> Sabit tutulan koşullar (su miktarı, şeker miktarı, kap türü gibi).</li></ul><p>Bilimsel karşılaştırma yapabilmek için bir deneyde mümkün olduğunca tek bir bağımsız değişken değiştirilir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧲 Karışımları ayırma: Buharlaştırma",
+          "bodyHtml": "<p><strong>Buharlaştırma</strong>, çözeltideki sıvı çözücünün buharlaştırılmasıyla çözünmüş katının elde edilmesi yöntemidir. Tuzlu sudan tuz elde edilmesi buna örnektir. Su buharlaşır, tuz geride kalır.</p><div style='background:#eff6ff;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2.2rem'>🥣💧 ➜ ♨️ ➜ 🧂</div><b>Tuzlu su ➜ Su buharı + tuz</b></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🌊 Yoğunluk farkıyla ayırma",
+          "bodyHtml": "<p>Birbirine karışmayan sıvılar yoğunlukları farklı olduğu için bekletildiğinde katmanlar oluşturabilir. <strong>Ayırma hunisi</strong> kullanılarak alt ve üst katmandaki sıvılar ayrı ayrı alınabilir. Zeytinyağı ve su bu yöntemle ayrılabilir. Katı-sıvı karışımlarında çökelme ve uygun koşullarda üstteki sıvıyı aktarma yöntemleri de yoğunluk farkından yararlanır.</p><div style='background:#fef3c7;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2rem'>🫒⬆️<br/>💧⬇️</div><b>Yağ üstte, su altta</b></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "♨️ Damıtma yöntemi",
+          "bodyHtml": "<p><strong>Damıtma</strong>, sıvıların kaynama noktası farkından yararlanarak ayırma veya çözelti içindeki çözücüyü geri kazanma yöntemidir. Karışım ısıtılır; daha kolay buharlaşan bileşenin buharı soğutucuda yeniden sıvı hâle getirilip toplanır. Tuzlu sudan saf su elde edilmesi basit damıtmaya örnektir.</p><div style='background:#eff6ff;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2rem'>🥣 ➜ ♨️ ➜ 💨 ➜ ❄️ ➜ 💧</div><b>Buharlaşma ve yoğunlaşma birlikte gerçekleşir.</b></div>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Hangi ayırma yöntemi seçilir?",
+          "bodyHtml": "<div style='overflow-x:auto'><table><thead><tr><th>Karışım</th><th>Yöntem</th><th>Temel ilke</th></tr></thead><tbody><tr><td>Tuzlu su (tuz elde etmek)</td><td>Buharlaştırma</td><td>Çözücünün uçması</td></tr><tr><td>Tuzlu su (su elde etmek)</td><td>Damıtma</td><td>Kaynama noktası farkı</td></tr><tr><td>Zeytinyağı-su</td><td>Ayırma hunisi</td><td>Yoğunluk farkı</td></tr><tr><td>Kum-su</td><td>Süzme</td><td>Tanecik boyutu farkı</td></tr><tr><td>Demir tozu-kum</td><td>Mıknatısla ayırma</td><td>Manyetik özellik farkı</td></tr></tbody></table></div><p>Bu ünitede özellikle buharlaştırma, yoğunluk farkı ve damıtma üzerinde durulur; eleme, süzme ve mıknatısla ayırma önceki öğrenmelerle ilişkilendirilir.</p>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🧫 Ayırma yöntemi seçme görevi",
+          "bodyHtml": "<p>Bir karışım kartı seçin: tuzlu su, yağ-su, kum-su veya demir tozu-kum. Karışımın bileşenlerini belirleyin, uygun ayırma yöntemini seçin ve seçiminizin nedenini açıklayın. Öğretmen gözetiminde güvenli bir model deney tasarlayın.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Çözünme hızı",
+          "definition": "Çözünen maddenin çözücü içinde çözünme sürecinin hızı."
+        },
+        {
+          "term": "Temas yüzeyi",
+          "definition": "Çözünen maddenin çözücüyle temas edebilen yüzey alanı."
+        },
+        {
+          "term": "Bağımsız değişken",
+          "definition": "Deneyde etkisi araştırılmak üzere değiştirilen faktör."
+        },
+        {
+          "term": "Bağımlı değişken",
+          "definition": "Bağımsız değişkene bağlı olarak ölçülen sonuç."
+        },
+        {
+          "term": "Buharlaştırma",
+          "definition": "Çözücüyü buharlaştırarak çözünmüş katıyı elde etme yöntemi."
+        },
+        {
+          "term": "Damıtma",
+          "definition": "Kaynama noktası farkından yararlanarak ayırma yöntemi."
+        }
+      ],
+      "activity": {
+        "title": "Şekerin çözünme hızını karşılaştıralım",
+        "materials": "Üç şeffaf bardak, eşit miktarda su, küp şeker, toz şeker, kaşık ve kronometre.",
+        "steps": "Birinci bardakta küp şekeri karıştırmadan, ikinci bardakta küp şekeri karıştırarak, üçüncü bardakta toz şekeri karıştırmadan çözündürmeyi deneyin. Su miktarını ve sıcaklığını eşit tutun. Çözünme sürelerini kaydedin. Sonuçlarınızı temas yüzeyi ve karıştırma ile ilişkilendirin. Daha sonra ayrı bir deneyde yalnızca sıcaklığı değiştirin.",
+        "safetyNotes": "Sıcak su deneyi yalnızca öğretmen gözetiminde ılık suyla yapılmalıdır. Sıcak kapları öğrenciler taşımamalı; çözeltiler tadılmamalıdır."
+      },
+      "quiz": [
+        {
+          "body": "Toz şekerin küp şekere göre genellikle daha hızlı çözünmesinin temel nedeni nedir?",
+          "options": [
+            "Kütlesinin her zaman daha fazla olması",
+            "Su ile temas yüzeyinin daha büyük olması",
+            "Suyun sıcaklığını artırması",
+            "Şekerin element olması"
+          ],
+          "answer": 1,
+          "explanation": "Toz şekerin toplam temas yüzeyi daha büyüktür; bu durum çözünme hızını artırabilir.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Tuzlu sudan yalnızca tuzu elde etmek için hangi yöntem kullanılabilir?",
+          "options": [
+            "Buharlaştırma",
+            "Ayırma hunisi",
+            "Mıknatısla ayırma",
+            "Eleme"
+          ],
+          "answer": 0,
+          "explanation": "Su buharlaştırılır ve çözünmüş tuz geride kalır.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Zeytinyağı ve su karışımını ayırmada hangi özellikten yararlanılır?",
+          "options": [
+            "Renk farkı",
+            "Yoğunluk farkı",
+            "Manyetik özellik",
+            "Tanecik boyutu"
+          ],
+          "answer": 1,
+          "explanation": "Birbirine karışmayan yağ ve su farklı yoğunlukları nedeniyle katman oluşturur.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    }
+  ]
+}
