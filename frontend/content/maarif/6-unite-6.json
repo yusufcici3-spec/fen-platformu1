@@ -1,0 +1,294 @@
+{
+  "classLevel": 6,
+  "code": "6.6",
+  "hours": 18,
+  "title": "Elektriğin İletimi ve Direnç",
+  "slug": "elektrigin-iletimi-ve-direnc",
+  "description": "Maddelerin elektrik iletkenliğini, devrede ampul parlaklığını etkileyen değişkenleri ve ayarlanabilir direnci deney ve modellerle inceleyelim.",
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı, 6. sınıf 6. ünite. Öğrenme çıktıları resmî programla eşleştirilmiş; anlatım, şemalar ve etkinlikler özgün hazırlanmıştır.",
+  "topics": [
+    {
+      "slug": "iletken-ve-yalitkan-maddeler",
+      "title": "Elektriğin İletimi: İletken ve Yalıtkan Maddeler",
+      "summary": "Farklı maddelerin elektrik akımını iletip iletmediğini basit devre modeliyle test edelim.",
+      "outcome": {
+        "code": "FB.6.6.1",
+        "description": "Maddelerin elektriği iletme durumlarını gösteren deney yapabilme.",
+        "details": [
+          "Maddelerin elektrik iletkenliğini test edecek devre tasarlar.",
+          "Deney sonuçlarını ölçer, kaydeder ve analiz eder.",
+          "Maddeleri iletken ve yalıtkan olarak sınıflandırır."
+        ]
+      },
+      "skills": [
+        "Deney tasarlama",
+        "Değişkenleri kontrol etme",
+        "Gözlem",
+        "Veri analizi"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🔌 Elektrik iletimi nedir?",
+          "bodyHtml": "<p>Elektrik akımının bir madde üzerinden geçebilmesi, maddenin elektrik iletkenliğiyle ilgilidir. Elektrik iletkenliği iyi olan maddelere <strong>iletken</strong>, elektrik akımını kolay iletmeyen maddelere <strong>yalıtkan</strong> denir.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0'><div style='background:#dcfce7;padding:14px;border-radius:14px;text-align:center;color:#14532d'><div style='font-size:2.4rem'>🔩</div><b>İletken</b><p>Bakır, alüminyum, demir gibi metaller.</p></div><div style='background:#fef3c7;padding:14px;border-radius:14px;text-align:center;color:#78350f'><div style='font-size:2.4rem'>🧤</div><b>Yalıtkan</b><p>Plastik, kauçuk, cam, kuru tahta gibi maddeler.</p></div></div><p>İletken ve yalıtkan maddeler günlük yaşamda birlikte kullanılır. Örneğin kablonun içindeki metal tel akımı iletirken dışındaki plastik kaplama temas riskini azaltır.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧪 İletkenlik testi nasıl yapılır?",
+          "bodyHtml": "<p>Basit bir pil-ampul devresinde iletkenliği test edilecek madde, devredeki açık bölüme yerleştirilir. Ampul yanarsa maddenin devreyi tamamlayacak ölçüde iletken olduğu anlaşılır. Ampul yanmazsa madde yalıtkan olabilir veya devrede başka bir sorun bulunabilir.</p><div style='background:#eff6ff;border-radius:14px;padding:14px;text-align:center;color:#1e3a8a'><div style='font-size:2rem'>🔋 ─ 💡 ─ [TEST EDİLEN MADDE] ─</div><b>Basit iletkenlik testinin şematik modeli</b><p>Test edilen madde devredeki boşluğu tamamlar.</p></div><p>Adil bir deney için her maddede aynı pil, ampul ve bağlantı kabloları kullanılmalı; yalnızca test edilen madde değiştirilmelidir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧰 Günlük yaşamda iletken ve yalıtkanlar",
+          "bodyHtml": "<ul><li><strong>Bakır:</strong> Elektrik kablolarının iç iletken bölümünde kullanılır.</li><li><strong>Alüminyum:</strong> Bazı enerji iletim hatlarında kullanılır.</li><li><strong>Plastik ve kauçuk:</strong> Kablo kaplamalarında ve yalıtımda kullanılır.</li><li><strong>Cam:</strong> Bazı elektrik yalıtım parçalarında kullanılabilir.</li></ul><p>Bir maddenin iletken olması, onun her koşulda güvenli olduğu anlamına gelmez. Elektrikle ilgili deneyler yalnızca düşük gerilimli eğitim devreleriyle ve öğretmen gözetiminde yapılmalıdır.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Hatırla",
+          "bodyHtml": "<ul><li>Metallerin çoğu iyi elektrik iletkenidir.</li><li>Plastik, kauçuk ve cam gibi maddeler yalıtkandır.</li><li>İletkenlik testi kontrollü bir basit devreyle yapılabilir.</li><li>Deneyde yalnızca test edilen madde değiştirilmelidir.</li><li>Şebeke elektriğiyle deney yapılmaz.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏠 Neden kablolar kaplanır?",
+          "bodyHtml": "<p>Kabloların içindeki iletken metal tel elektrik akımını taşır. Dışındaki yalıtkan kaplama ise iletken tele doğrudan temas edilmesini önlemeye yardımcı olur. Bu nedenle kablo kaplamalarının sağlam olması önemlidir.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "İletken",
+          "definition": "Elektrik akımını iletebilen madde."
+        },
+        {
+          "term": "Yalıtkan",
+          "definition": "Elektrik akımını kolay iletmeyen madde."
+        },
+        {
+          "term": "Elektrik devresi",
+          "definition": "Elektrik akımının dolaşabildiği kapalı bağlantı yolu."
+        }
+      ],
+      "activity": {
+        "title": "Maddeleri sınıflandıralım",
+        "materials": "Öğretmen gözetiminde düşük gerilimli pil-ampul devresi, bağlantı kabloları, metal ataş, plastik parça, tahta ve alüminyum folyo.",
+        "steps": "1) Basit devreyi öğretmeninizle kurun. 2) Devredeki test aralığına bir madde yerleştirin. 3) Ampulün yanıp yanmadığını gözlemleyin. 4) Her madde için sonucu tabloya kaydedin. 5) Maddeleri iletken ve yalıtkan olarak sınıflandırın.",
+        "safetyNotes": "Yalnızca öğretmenin sağladığı düşük gerilimli pil devresini kullanın. Priz, adaptör veya şebeke elektriğine kesinlikle bağlanmayın."
+      },
+      "quiz": [
+        {
+          "body": "Elektrik kablolarının iç kısmında çoğunlukla bakır kullanılmasının nedeni nedir?",
+          "options": [
+            "Yalıtkan olması",
+            "İyi bir iletken olması",
+            "Suyu emmesi",
+            "Saydam olması"
+          ],
+          "answer": 1,
+          "explanation": "Bakır elektriği iyi ileten bir metaldir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Bir iletkenlik deneyinde adil karşılaştırma yapmak için hangisi sabit tutulmalıdır?",
+          "options": [
+            "Test edilen madde",
+            "Devredeki pil ve ampul",
+            "Maddenin adı",
+            "Deney sonucu"
+          ],
+          "answer": 1,
+          "explanation": "Yalnızca test edilen madde değiştirilir; diğer devre elemanları aynı tutulur.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "ampul-parlakligi-ve-direnc",
+      "title": "Elektriksel Direnç ve Ampul Parlaklığı",
+      "summary": "İletken telin cinsi, uzunluğu ve kesit alanının devredeki parlaklığa etkisini inceleyelim.",
+      "outcome": {
+        "code": "FB.6.6.2",
+        "description": "Elektrik devresindeki ampulün parlaklığının bağlı olduğu değişkenleri belirlemeye yönelik deney yapabilme.",
+        "details": [
+          "Ampul parlaklığını etkileyen değişkenleri belirlemek için deney tasarlar.",
+          "İletken telin uzunluğu, kesit alanı ve cinsini kontrollü biçimde değiştirir.",
+          "Gözlem ve ölçüm sonuçlarını tabloya kaydederek yorumlar."
+        ]
+      },
+      "skills": [
+        "Deney tasarlama",
+        "Değişkenleri kontrol etme",
+        "Karşılaştırma",
+        "Veri yorumlama"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "💡 Elektriksel direnç nedir?",
+          "bodyHtml": "<p>Elektrik akımının geçişine karşı gösterilen zorluğa <strong>elektriksel direnç</strong> denir. Bir iletkenin direnci, devreden geçen akımı etkiler. Aynı koşullardaki basit bir devrede direnç arttığında ampulün parlaklığı azalabilir.</p><div style='background:#f8fafc;border-radius:14px;padding:14px;text-align:center;margin:12px 0'><div style='font-size:2rem'>🔋 ─ 🧵 ─ 💡</div><b>Devrede iletken telin direnci bulunur.</b><p>Direnç, elektrik akımına karşı gösterilen etkidir.</p></div><p>Direncin birimi ohm (Ω) olarak ifade edilir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📏 Telin uzunluğunun etkisi",
+          "bodyHtml": "<p>Aynı cins ve aynı kalınlıktaki iletken teller karşılaştırıldığında, telin uzunluğu arttıkça elektriksel direnç artar. Tel kısaldıkça direnç azalır.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px'><div style='background:#dbeafe;padding:12px;border-radius:12px;text-align:center;color:#1e3a8a'><div style='font-size:1.8rem'>━━━━</div><b>Kısa tel</b><p>Daha küçük direnç</p></div><div style='background:#fef3c7;padding:12px;border-radius:12px;text-align:center;color:#78350f'><div style='font-size:1.8rem'>━━━━━━━━━━━━</div><b>Uzun tel</b><p>Daha büyük direnç</p></div></div><p>Bu karşılaştırmada telin cinsi ve kesit alanı aynı tutulmalıdır.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "↔️ Telin kesit alanının etkisi",
+          "bodyHtml": "<p>Aynı cins ve aynı uzunluktaki tellerden kesit alanı büyük, yani daha kalın olan telin direnci daha küçüktür. Kesit alanı küçüldükçe direnç artar.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px'><div style='background:#dcfce7;padding:12px;border-radius:12px;text-align:center;color:#14532d'><div style='font-size:2rem'>━━</div><b>Kalın tel</b><p>Daha küçük direnç</p></div><div style='background:#fce7f3;padding:12px;border-radius:12px;text-align:center;color:#831843'><div style='font-size:2rem'>─</div><b>İnce tel</b><p>Daha büyük direnç</p></div></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧪 İletkenin cinsinin etkisi",
+          "bodyHtml": "<p>Aynı uzunluk ve kesit alanına sahip farklı maddelerden yapılmış tellerin dirençleri farklı olabilir. Çünkü her maddenin elektriksel iletkenlik özelliği farklıdır. Bu nedenle telin cinsi de direnci etkiler.</p><p>Deneyde telin cinsini araştırırken uzunluk ve kesit alanı aynı tutulmalıdır. Böylece gözlenen farkın hangi değişkenden kaynaklandığı anlaşılır.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Direnci etkileyen faktörler",
+          "bodyHtml": "<ul><li>Telin uzunluğu artarsa direnç artar.</li><li>Telin kesit alanı artarsa direnç azalır.</li><li>İletkenin cinsi değişirse direnç de değişebilir.</li><li>Bu ünitede faktörler deneyle karşılaştırılır; matematiksel direnç formülüyle işlem yapılması beklenmez.</li><li>Deneylerde aynı pil ve ampul kullanılarak değişkenler kontrollü incelenir.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🚗 Yol benzetmesi",
+          "bodyHtml": "<p>Elektrik akımını yolda ilerleyen araçlara benzetebiliriz. Uzun ve dar bir yol araçların ilerlemesini zorlaştırabilir; geniş bir yol ise geçişi kolaylaştırabilir. Bu benzetme, tel uzunluğu ve kesit alanının direnç üzerindeki etkisini anlamaya yardımcı olur. Elektrik akımı ile araç hareketinin tamamen aynı olaylar olmadığını unutma.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Elektriksel direnç",
+          "definition": "Elektrik akımının geçişine karşı gösterilen zorluk."
+        },
+        {
+          "term": "Kesit alanı",
+          "definition": "Telin enine kesitinin alanı; telin kalınlığıyla ilişkilidir."
+        },
+        {
+          "term": "Ohm",
+          "definition": "Elektriksel direnç birimi; Ω sembolüyle gösterilir."
+        }
+      ],
+      "activity": {
+        "title": "Tel özelliklerini karşılaştıralım",
+        "materials": "Öğretmen tarafından hazırlanmış düşük gerilimli devre, farklı uzunluk ve kalınlıkta güvenli deney telleri, gözlem çizelgesi.",
+        "steps": "1) Aynı cins ve kalınlıkta farklı uzunluktaki telleri sırayla devreye bağlayın. 2) Ampul parlaklığını gözlemleyip kaydedin. 3) Bu kez uzunluğu ve cinsi aynı tutup kalınlığı farklı telleri karşılaştırın. 4) Son olarak aynı boyutlarda farklı iletkenleri karşılaştırın. 5) Her deneyde yalnızca bir değişkeni değiştirerek sonuç çıkarın.",
+        "safetyNotes": "Deney yalnızca öğretmen gözetiminde düşük gerilimli pille yapılmalıdır. Şebeke elektriği kullanılmaz; teller ısınırsa devre hemen ayrılır."
+      },
+      "quiz": [
+        {
+          "body": "Aynı cins ve kalınlıktaki telin uzunluğu artırılırsa direnci nasıl değişir?",
+          "options": [
+            "Azalır",
+            "Artar",
+            "Sıfırlanır",
+            "Değişmez"
+          ],
+          "answer": 1,
+          "explanation": "Telin uzunluğu arttıkça elektriksel direnç artar.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Aynı cins ve uzunluktaki tellerden hangisinin direnci daha küçüktür?",
+          "options": [
+            "Daha ince olanın",
+            "Daha kalın olanın",
+            "Dirençleri kesinlikle aynıdır",
+            "Telin rengi farklı olanın"
+          ],
+          "answer": 1,
+          "explanation": "Kesit alanı büyük, yani daha kalın telin direnci daha küçüktür.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "ayarlanabilir-direnc-reosta",
+      "title": "Ayarlanabilir Direnç (Reosta)",
+      "summary": "Reostanın devredeki direnci değiştirerek ampul parlaklığını nasıl etkilediğini keşfedelim.",
+      "outcome": {
+        "code": "FB.6.6.3",
+        "description": "Ayarlanabilir direncin ampulün parlaklığına etkilerine yönelik bilimsel çıkarım yapabilme.",
+        "details": [
+          "Reostanın devredeki görevini açıklar.",
+          "Reostanın direnç değerinin değiştirilmesiyle ampul parlaklığında oluşan değişimi gözlemler.",
+          "Gözlem verilerini yorumlayarak bilimsel çıkarım yapar."
+        ]
+      },
+      "skills": [
+        "Deney yapma",
+        "Gözlem ve veri kaydı",
+        "Bilimsel çıkarım",
+        "Model okuryazarlığı"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🎚️ Reosta nedir?",
+          "bodyHtml": "<p><strong>Reosta</strong>, elektrik devresindeki direncin ayarlanmasını sağlayan devre elemanıdır. Hareketli sürgüsü kullanılarak devrede kullanılan direnç teli uzunluğu değiştirilebilir. Böylece devrenin direnci ayarlanır.</p><div style='background:#eff6ff;border-radius:14px;padding:14px;text-align:center;color:#1e3a8a;margin:12px 0'><div style='font-size:2.5rem'>🎚️</div><b>Reosta – ayarlanabilir direnç</b><p>Sürgünün konumu değiştikçe devrede kullanılan direnç miktarı değişebilir.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "💡 Reosta ampul parlaklığını nasıl etkiler?",
+          "bodyHtml": "<p>Aynı pil ve ampul kullanılan basit bir devrede reostanın direnci artırıldığında akım azalır ve ampulün parlaklığı düşebilir. Reostanın direnci azaltıldığında ise akım artar ve ampul daha parlak yanabilir.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0'><div style='background:#fef3c7;border-radius:12px;padding:12px;text-align:center;color:#78350f'><div style='font-size:2rem'>💡</div><b>Direnç artar</b><p>Parlaklık azalabilir.</p></div><div style='background:#dcfce7;border-radius:12px;padding:12px;text-align:center;color:#14532d'><div style='font-size:2rem'>✨💡</div><b>Direnç azalır</b><p>Parlaklık artabilir.</p></div></div><p>Bu ilişkiyi gözlemlemek için deney boyunca pil, ampul ve bağlantılar aynı tutulmalıdır.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧪 Deney sonuçlarını yorumlama",
+          "bodyHtml": "<p>Reostanın sürgüsü farklı konumlara getirilerek ampul parlaklığı gözlemlenir. Her konumda elde edilen gözlem bir tabloya yazılır. Sonuçlar karşılaştırılarak direnç değişiminin ampul parlaklığı üzerindeki etkisi açıklanır.</p><div style='overflow-x:auto'><table><thead><tr><th>Reosta ayarı</th><th>Direnç</th><th>Ampul parlaklığı</th></tr></thead><tbody><tr><td>A</td><td>Daha büyük</td><td>Daha az</td></tr><tr><td>B</td><td>Daha küçük</td><td>Daha fazla</td></tr></tbody></table></div><p>Tablo nitel bir örnektir; gerçek deneyde parlaklık gözlemle kaydedilir.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Bilmen gerekenler",
+          "bodyHtml": "<ul><li>Reosta ayarlanabilir dirençtir.</li><li>Direnç arttığında basit devrede ampul parlaklığı azalabilir.</li><li>Direnç azaldığında ampul parlaklığı artabilir.</li><li>Deneyde değişkenleri kontrol etmek gerekir.</li><li>Direncin kesit alanı, uzunluk ve iletkenin cinsiyle ilişkisi önceki konuda öğrenilmiştir.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🎛️ Nerelerde karşımıza çıkar?",
+          "bodyHtml": "<p>Ayarlanabilir direnç mantığı, bazı elektronik devrelerde akımın veya bir bileşenin çalışma koşullarının ayarlanmasında kullanılır. Günlük yaşamda ses ayarı gibi kontrol düğmeleriyle benzer bir ayarlama fikri görülse de her ses düğmesi doğrudan reosta olmak zorunda değildir.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Reosta",
+          "definition": "Elektrik devresindeki direnci ayarlamaya yarayan devre elemanı."
+        },
+        {
+          "term": "Sürgü",
+          "definition": "Reostada kullanılan direnç telinin devreye katılan kısmını değiştiren hareketli bölüm."
+        }
+      ],
+      "activity": {
+        "title": "Reosta ile parlaklığı gözlemleyelim",
+        "materials": "Öğretmen gözetiminde düşük gerilimli pil-ampul devresi, uygun reosta ve gözlem çizelgesi.",
+        "steps": "1) Öğretmeninizin kurduğu devreyi inceleyin. 2) Reosta sürgüsünü bir konuma getirin ve ampul parlaklığını gözlemleyin. 3) Sürgüyü başka konumlara alarak gözlemi tekrarlayın. 4) Her konumda parlaklığı tabloya kaydedin. 5) Direnç ve parlaklık arasındaki ilişkiyi açıklayın.",
+        "safetyNotes": "Yalnızca öğretmenin kurduğu düşük gerilimli eğitim devresini kullanın. Priz veya şebeke elektriğiyle deney yapmayın."
+      },
+      "quiz": [
+        {
+          "body": "Reostanın temel görevi nedir?",
+          "options": [
+            "Devredeki direnci ayarlamak",
+            "Pilin kimyasal enerjisini üretmek",
+            "Ampulün rengini değiştirmek",
+            "Kabloyu yalıtmak"
+          ],
+          "answer": 0,
+          "explanation": "Reosta, devredeki direncin ayarlanmasını sağlar.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Basit bir devrede reostanın direnci artırılırsa ampul parlaklığı genellikle nasıl değişir?",
+          "options": [
+            "Artar",
+            "Azalır",
+            "Kesinlikle değişmez",
+            "Ampul renk değiştirir"
+          ],
+          "answer": 1,
+          "explanation": "Direnç artınca devreden geçen akım azalabilir; ampulün parlaklığı düşer.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    }
+  ]
+}
