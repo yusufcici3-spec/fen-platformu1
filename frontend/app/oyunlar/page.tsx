@@ -34,6 +34,14 @@ const TYPE_ICONS: Record<string, string> = {
 // Veritabanına bağlı olmayan, doğrudan sayfa olarak yayınlanan oyunlar.
 const STATIC_GAMES = [
   {
+    href: "/animasyonlar/7/passafenola7",
+    icon: "🎯",
+    label: "7. Sınıf · Passaparola",
+    title: "Passafenola 7",
+    description:
+      "Güneş Sistemi ve Ötesi ile Hücre ve Bölünmeler ünitelerinden 21 harflik passaparola. Soruyu oku, cevabı yaz, süre bitmeden harfleri tamamla.",
+  },
+  {
     href: "/animasyonlar/8/passafenola",
     icon: "🎯",
     label: "8. Sınıf · Passaparola",

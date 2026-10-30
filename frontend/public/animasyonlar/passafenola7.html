@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Passafenola 7 – 7. Sınıf Fen Bilimleri</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:#02040c;color:#eaf3ff}
+.app{--ring:clamp(280px,min(92vw,100vh - 170px),640px);min-height:100vh;padding:14px 14px 28px;
+  background:radial-gradient(1100px 650px at 15% -5%,#10306f 0%,transparent 60%),radial-gradient(900px 600px at 100% 100%,#0a2257 0%,transparent 55%),#02040c;
+  display:flex;flex-direction:column;align-items:center;gap:12px}
+@media(min-width:901px){.app{--ring:clamp(300px,min(52vw,100vh - 150px),640px)}}
+header{text-align:center}
+header h1{margin:0;font-size:clamp(1.05rem,2.4vw,1.5rem);letter-spacing:.02em}
+header p{margin:4px 0 0;font-size:.85rem;color:#9db9e6}
+.stage{display:grid;grid-template-columns:auto;gap:22px;align-items:center;justify-content:center;width:100%;max-width:1180px}
+@media(min-width:901px){.stage{grid-template-columns:auto minmax(330px,500px)}}
+
+/* ---- halka ---- */
+.ring{position:relative;width:var(--ring);aspect-ratio:1;margin:0 auto}
+.b{position:absolute;width:10.6%;aspect-ratio:1;margin:-5.3% 0 0 -5.3%;border-radius:50%;display:grid;place-items:center;
+  font-weight:800;font-size:calc(var(--ring)*.05);color:#fff;text-shadow:0 1px 2px #0006;
+  background:radial-gradient(circle at 35% 28%,#d3ecff 0%,#3b95ff 30%,#0b4fc2 100%);
+  box-shadow:0 0 0 2px #cfe6ff55,0 4px 14px #0008,0 0 16px #2b7fff66;transition:background .35s,box-shadow .35s,transform .25s}
+.b.ok{background:radial-gradient(circle at 35% 28%,#d9ffe2 0%,#2ecf62 32%,#0b7d36 100%);box-shadow:0 0 0 2px #c9ffd9aa,0 0 18px #2ecf6299}
+.b.bad{background:radial-gradient(circle at 35% 28%,#ffe0e0 0%,#ff5a5a 32%,#a60f1b 100%);box-shadow:0 0 0 2px #ffd0d0aa,0 0 18px #ff5a5a99}
+.b.pas{background:radial-gradient(circle at 35% 28%,#fff3cf 0%,#ffb81c 32%,#b56a00 100%);box-shadow:0 0 0 2px #ffe9b3aa,0 0 16px #ffb81c88;color:#2b1700;text-shadow:none}
+.b.cur{background:radial-gradient(circle at 35% 28%,#fffbe0 0%,#ffe14a 35%,#e09b00 100%);color:#2b1700;text-shadow:none;transform:scale(1.22);z-index:3;
+  box-shadow:0 0 0 4px #ffe14a66,0 0 34px #ffd23f;animation:pulse 1s ease-in-out infinite alternate}
+.b.pop{animation:pop .55s ease-out}
+.b.shake{animation:shake .45s}
+@keyframes pulse{to{box-shadow:0 0 0 8px #ffe14a22,0 0 46px #ffd23f}}
+@keyframes pop{0%{transform:scale(1.22)}40%{transform:scale(1.6)}100%{transform:scale(1)}}
+@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-8px)}40%{transform:translateX(8px)}60%{transform:translateX(-6px)}80%{transform:translateX(6px)}}
+.core{position:absolute;inset:15%;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:calc(var(--ring)*.02);
+  background:radial-gradient(circle,#14408f 0%,#081d4d 55%,#040b22 100%);box-shadow:inset 0 0 60px #2b7fff55,0 0 50px #1b5fd455}
+.title{font-family:Georgia,"Times New Roman",serif;font-weight:700;color:#ffa800;background:#000;padding:.1em .5em;letter-spacing:.05em;font-size:calc(var(--ring)*.045)}
+.timer{font-variant-numeric:tabular-nums;font-weight:800;font-size:calc(var(--ring)*.13);line-height:1;text-shadow:0 0 22px #5aa2ff}
+.timer.low{color:#ff6b6b;animation:blink .6s steps(2) infinite}
+@keyframes blink{50%{opacity:.35}}
+.counts{display:flex;gap:calc(var(--ring)*.025);font-weight:700;font-size:calc(var(--ring)*.035)}
+.counts span{background:#0006;border-radius:99px;padding:.15em .6em}
+.rest{color:#9db9e6;font-size:calc(var(--ring)*.028)}
+
+/* ---- soru paneli ---- */
+.panel{background:#081434d9;border:1px solid #5a96ff59;border-radius:22px;padding:20px;box-shadow:0 10px 40px #0008;transition:filter .3s}
+.panel.blur{filter:blur(10px);pointer-events:none}
+.qhead{display:flex;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap}
+.badge{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-size:1.9rem;font-weight:800;color:#2b1700;
+  background:radial-gradient(circle at 35% 28%,#fffbe0 0%,#ffe14a 35%,#e09b00 100%);box-shadow:0 0 22px #ffd23f88}
+.chip{font-size:.8rem;padding:.3em .8em;border-radius:99px;border:1px solid #5a96ff88;color:#bcd6ff;background:#0b2a6a66}
+.chip.u2{border-color:#c68bff99;color:#e4c9ff;background:#3b1a6a55}
+.q{font-size:1.2rem;line-height:1.55;margin:0 0 6px}
+.start{color:#ffd23f;font-weight:700;font-size:.9rem;margin:0 0 4px}
+.pattern{min-height:1.8em;font-family:ui-monospace,Menlo,Consolas,monospace;letter-spacing:.2em;color:#ffd23f;font-size:1.15rem;margin:6px 0 10px}
+input[type=text]{width:100%;font-size:1.2rem;padding:.75em 1em;border-radius:14px;border:2px solid #4f86e6;background:#030c26;color:#fff;outline:none}
+input[type=text]:focus{border-color:#ffd23f;box-shadow:0 0 0 4px #ffd23f33}
+input.err{animation:shake .45s;border-color:#ff5a5a}
+.btns{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:10px;margin-top:12px}
+button{font:inherit;font-weight:700;border:0;border-radius:14px;padding:.8em .6em;cursor:pointer;color:#fff;transition:transform .12s,filter .12s}
+button:hover:not(:disabled){filter:brightness(1.12);transform:translateY(-1px)}
+button:disabled{opacity:.4;cursor:not-allowed}
+.go{background:linear-gradient(#2ecf62,#13873b)}
+.skip{background:linear-gradient(#ffb81c,#b56a00);color:#2b1700}
+.hintb{background:linear-gradient(#3b95ff,#0b4fc2)}
+.fb{margin-top:14px;min-height:4.2em;border-radius:14px;padding:.7em 1em;font-size:.95rem;line-height:1.45;background:#0006;border-left:5px solid #35508f;color:#b9ccf0}
+.fb.ok{border-color:#2ecf62;color:#d4ffe0;background:#0b3a1d77}
+.fb.bad{border-color:#ff5a5a;color:#ffdcdc;background:#4a101877}
+.fb.pas{border-color:#ffb81c;color:#fff0c8}
+.tools{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.tools button{background:#0b2a6a99;border:1px solid #5a96ff66;font-size:.85rem;padding:.5em 1em}
+.legend{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;font-size:.8rem;color:#9db9e6}
+.legend i{display:inline-block;width:.9em;height:.9em;border-radius:50%;margin-right:.35em;vertical-align:-.1em}
+
+/* ---- pencereler ---- */
+.overlay{position:fixed;inset:0;z-index:50;display:none;place-items:center;padding:14px;background:#02061ad9;backdrop-filter:blur(6px)}
+.overlay.show{display:grid}
+.modal{width:100%;max-width:720px;max-height:94vh;overflow:auto;background:linear-gradient(#0c2262,#061336);border:1px solid #5a96ff80;border-radius:26px;padding:26px;text-align:center;box-shadow:0 20px 80px #000a;animation:rise .5s ease-out}
+@keyframes rise{from{opacity:0;transform:translateY(24px) scale(.97)}}
+.modal h2{margin:0 0 6px;font-size:1.7rem}
+.modal p{color:#bcd0f2;line-height:1.55;margin:.4em 0}
+.opts{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:16px 0}
+.opts label{cursor:pointer}
+.opts input{position:absolute;opacity:0}
+.opts span{display:block;padding:.55em 1.1em;border-radius:99px;border:2px solid #4f86e6;background:#030c26}
+.opts input:checked+span{background:#ffd23f;color:#2b1700;border-color:#ffd23f;font-weight:700}
+.opts input:focus-visible+span{outline:3px solid #fff}
+.big{font-size:1.15rem;padding:.8em 2.2em;background:linear-gradient(#2ecf62,#13873b)}
+.score{font-size:3.2rem;font-weight:800;color:#ffd23f;margin:.1em 0}
+.stats{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:10px 0}
+.stats span{background:#0006;border-radius:99px;padding:.3em .9em;font-weight:700}
+.review{text-align:left;margin-top:14px;display:grid;gap:6px;max-height:38vh;overflow:auto;padding-right:4px}
+.row{display:grid;grid-template-columns:34px 1fr;gap:10px;align-items:start;background:#0005;border-radius:12px;padding:8px 10px;font-size:.9rem}
+.row b.l{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;color:#fff}
+.row.ok b.l{background:#13873b}.row.bad b.l{background:#a60f1b}.row.left b.l{background:#56627f}
+.row small{display:block;color:#9db9e6;margin-top:2px}
+.conf{position:fixed;top:-20px;width:10px;height:16px;z-index:60;animation:fall linear forwards;pointer-events:none}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}
+@media(max-width:520px){.btns{grid-template-columns:1fr 1fr}.go{grid-column:1/-1}.q{font-size:1.08rem}.modal{padding:18px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+html.embedded body{position:relative}
+html.embedded .app{min-height:0;--ring:clamp(280px,min(92vw,640px),640px)}
+@media(min-width:901px){html.embedded .app{--ring:clamp(300px,min(52vw,640px),640px)}}
+html.embedded .overlay{position:absolute;place-items:start center;padding-top:20px}
+html.embedded .modal{max-height:none}
+html.embedded .review{max-height:340px}
+</style>
+</head>
+<body>
+<noscript>Bu oyun için JavaScript gereklidir.</noscript>
+<div class="app">
+  <header>
+    <h1>7. Sınıf Fen Bilimleri · Passafenola</h1>
+    <p>Güneş Sistemi ve Ötesi &nbsp;•&nbsp; Hücre ve Bölünmeler</p>
+  </header>
+
+  <main class="stage">
+    <section class="ring" id="ring" aria-label="Harf halkası">
+      <div class="core">
+        <div class="title">PASSAFENOLA</div>
+        <div class="timer" id="timer">00:00</div>
+        <div class="counts"><span id="cOk">✔ 0</span><span id="cBad">✖ 0</span><span id="cPas">⏭ 0</span></div>
+        <div class="rest" id="rest">Kalan: 21</div>
+      </div>
+    </section>
+
+    <section class="panel" id="panel">
+      <div class="qhead"><div class="badge" id="badge">A</div><span class="chip" id="unit"></span></div>
+      <p class="start" id="start"></p>
+      <p class="q" id="q" aria-live="polite"></p>
+      <div class="pattern" id="pattern"></div>
+      <input type="text" id="ans" placeholder="Cevabını yaz ve Enter'a bas" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="send" aria-label="Cevap">
+      <div class="btns">
+        <button class="go" id="bGo">Cevapla ✔</button>
+        <button class="skip" id="bPas">Pas ⏭</button>
+        <button class="hintb" id="bHint">İpucu 💡</button>
+      </div>
+      <div class="fb" id="fb" aria-live="polite">Yeni soru için cevabını yaz. Bilmiyorsan "Pas" diyebilirsin; pas geçilen sorular turun sonunda tekrar sorulur.</div>
+    </section>
+  </main>
+
+  <div class="tools">
+    <button id="bPause">⏸ Duraklat</button>
+    <button id="bSound">🔊 Ses açık</button>
+    <button id="bRestart">↺ Baştan başla</button>
+  </div>
+  <div class="legend">
+    <span><i style="background:#3b95ff"></i>Sırada</span><span><i style="background:#2ecf62"></i>Doğru</span>
+    <span><i style="background:#ff5a5a"></i>Yanlış</span><span><i style="background:#ffb81c"></i>Pas</span>
+  </div>
+</div>
+
+<div class="overlay show" id="ovStart">
+  <div class="modal">
+    <h2>🎯 Passafenola'ya hoş geldin!</h2>
+    <p>Her harf için bir soru gelir; cevap o harfle başlar. Doğru bilirsen harf yeşil, yanlışsa kırmızı olur. Pas geçtiğin sorular tur sonunda tekrar sorulur.</p>
+    <p><b>Konular:</b> Güneş Sistemi ve Ötesi, Hücre ve Bölünmeler</p>
+    <p style="margin-top:14px">Süreni seç:</p>
+    <div class="opts" id="opts">
+      <label><input type="radio" name="t" value="300"><span>5 dk</span></label>
+      <label><input type="radio" name="t" value="480" checked><span>8 dk</span></label>
+      <label><input type="radio" name="t" value="720"><span>12 dk</span></label>
+      <label><input type="radio" name="t" value="0"><span>Süresiz</span></label>
+    </div>
+    <p id="best" style="font-size:.9rem"></p>
+    <button class="big" id="bBegin">Başla ▶</button>
+  </div>
+</div>
+
+<div class="overlay" id="ovPause"><div class="modal"><h2>⏸ Duraklatıldı</h2><p>Hazır olunca devam et.</p><button class="big" id="bResume">Devam ▶</button></div></div>
+
+<div class="overlay" id="ovEnd">
+  <div class="modal">
+    <h2 id="endTitle">Oyun bitti!</h2>
+    <div class="score" id="endScore"></div>
+    <p id="endMsg"></p>
+    <div class="stats" id="endStats"></div>
+    <div class="review" id="review"></div>
+    <p style="margin-top:16px"><button class="big" id="bAgain">Tekrar oyna ↺</button></p>
+  </div>
+</div>
+<script>
+// Ünite 1: Güneş Sistemi ve Ötesi  |  Ünite 2: Hücre ve Bölünmeler
+const UNITS = { 1: "1. Ünite · Güneş Sistemi ve Ötesi", 2: "2. Ünite · Hücre ve Bölünmeler" };
+
+const Q = [
+  { l: "A", unit: 1, a: "Asteroit", alt: ["Asteroid", "Asteroit kuşağı"],
+    q: "Mars ile Jüpiter arasındaki kuşakta Güneş etrafında dolanan, gezegenlerden çok daha küçük kayaç ve metal yapılı gök cisimlerine ne denir?",
+    note: "Asteroitler, Güneş sisteminin oluşumundan arta kalan parçalardır." },
+  { l: "B", unit: 1, a: "Beyaz cüce", alt: ["Beyaz cüce yıldız"],
+    q: "Güneş gibi orta kütleli yıldızların yaşamlarının sonunda geriye kalan, küçük, sıcak ve yoğun çekirdeğe ne denir? (İki kelime)",
+    note: "Güneş de milyarlarca yıl sonra bir beyaz cüceye dönüşecek." },
+  { l: "C", unit: 1, a: "Cüce gezegen", alt: ["Cüce"],
+    q: "Plüton gibi Güneş etrafında dolanan, yuvarlak ama yörüngesini temizleyememiş gök cisimlerine ne denir? (İki kelime)",
+    note: "Plüton, 2006'dan beri cüce gezegen sayılıyor." },
+  { l: "D", unit: 2, a: "Doku", alt: [],
+    q: "Aynı görevi yapan, yapıca ve işlevce benzer hücrelerin bir araya gelmesiyle oluşan yapıya ne denir?",
+    note: "Hücre → doku → organ → sistem → organizma şeklinde düzenlenir." },
+  { l: "E", unit: 2, a: "Eşey hücresi", alt: ["Eşey", "Eşey hücreleri"],
+    q: "Mayoz bölünme sonucu oluşan sperm ve yumurta gibi üreme hücrelerine ne denir? (İki kelime)",
+    note: "Eşey hücreleri kromozom sayısı yarıya inmiş hücrelerdir." },
+  { l: "F", unit: 1, a: "Fotosfer", alt: [],
+    q: "Güneş'in gözlemlediğimiz, ışık yayan görünür yüzey tabakasının adı nedir?",
+    note: "Güneş'in katmanları: çekirdek, fotosfer, kromosfer, korona." },
+  { l: "G", unit: 1, a: "Galaksi", alt: [],
+    q: "Milyarlarca yıldızın, gazın ve tozun kütle çekimiyle bir arada tutulduğu dev yıldız topluluğuna ne denir?",
+    note: "Evrende yüz milyarlarca galaksi olduğu tahmin edilir." },
+  { l: "H", unit: 2, a: "Hücre", alt: [],
+    q: "Canlıların yapı ve görev bakımından en küçük birimine ne denir?",
+    note: "Hücreler mikroskopla incelenir; ilk kez Robert Hooke tarafından gözlendi." },
+  { l: "İ", unit: 2, a: "İnterfaz", alt: ["Interfaz"],
+    q: "Hücre bölünmeden önceki hazırlık evresinde hücre büyür ve DNA kendini eşler. Bu evrenin adı nedir?",
+    note: "İnterfazda DNA eşlenir, sonra bölünme başlar." },
+  { l: "K", unit: 1, a: "Kuyruklu yıldız", alt: ["Kuyruklu"],
+    q: "Buz, toz ve kayaçtan oluşan, Güneş'e yaklaştıkça uzun bir kuyruk geliştiren gök cismine ne denir? (İki kelime)",
+    note: "Kuyruk her zaman Güneş'ten uzağa doğru uzanır." },
+  { l: "L", unit: 2, a: "Lizozom", alt: [],
+    q: "Hücrede besinleri ve yaşlanmış organelleri sindiren enzimleri taşıyan organelin adı nedir?",
+    note: "Lizozom, hücrenin sindirim organelidir." },
+  { l: "M", unit: 2, a: "Mitoz", alt: ["Mitoz bölünme"],
+    q: "Bir hücreden, ana hücreyle aynı kromozom sayısına sahip iki yeni hücre oluşturan; büyüme ve onarımı sağlayan bölünme türü hangisidir?",
+    note: "Mitozda kromozom sayısı değişmez." },
+  { l: "N", unit: 1, a: "Nebula", alt: ["Bulutsu"],
+    q: "Yıldızların doğduğu, gaz ve tozdan oluşan dev bulutlara ne denir?",
+    note: "Türkçesi \"bulutsu\"dur." },
+  { l: "O", unit: 2, a: "Organel", alt: ["Organeller"],
+    q: "Hücre içinde belirli bir görevi yapan mitokondri, ribozom gibi yapıların genel adı nedir?",
+    note: "Organeller hücrenin yaşamsal faaliyetlerini sürdürmesini sağlar." },
+  { l: "P", unit: 2, a: "Protein", alt: [],
+    q: "Ribozomlarda üretilen, hücrenin yapımında ve onarımında görev alan organik besin hangisidir?",
+    note: "Ribozomlar protein sentezinin yapıldığı organellerdir." },
+  { l: "R", unit: 2, a: "Ribozom", alt: [],
+    q: "Hem sitoplazmada serbest hem de endoplazmik retikulum üzerinde bulunan, protein üretiminden sorumlu organel hangisidir?",
+    note: "Ribozom zarsız bir organeldir." },
+  { l: "S", unit: 1, a: "Samanyolu", alt: ["Samanyolu galaksisi"],
+    q: "Güneş sistemimizin içinde bulunduğu galaksinin adı nedir?",
+    note: "Samanyolu, sarmal yapılı bir galaksidir." },
+  { l: "T", unit: 1, a: "Teleskop", alt: [],
+    q: "Uzaktaki gök cisimlerini daha büyük ve parlak görmemizi sağlayan optik araca ne denir?",
+    note: "Teleskoplar uzay araştırmalarının temel araçlarındandır." },
+  { l: "U", unit: 1, a: "Uydu", alt: ["Yapay uydu", "Doğal uydu"],
+    q: "Bir gezegenin çevresinde dolanan doğal ya da yapay cisme ne denir? Ay, Dünya'nın doğal ... sidir.",
+    note: "Hava durumunu izleyen ve haberleşmeyi sağlayan yapay uydular vardır." },
+  { l: "V", unit: 2, a: "Vakuol", alt: ["Koful"],
+    q: "Bitki hücrelerinde su, besin ve atık maddeleri depolayan büyük kesecik organelin bilimsel adı nedir? (Türkçesi: koful)",
+    note: "Bitki hücresinde koful büyük, hayvan hücresinde küçüktür." },
+  { l: "Z", unit: 2, a: "Zar", alt: ["Hücre zarı"],
+    q: "Hücreyi çevreleyen, madde alışverişini kontrol eden ince yapıya hücre ... denir. Boşluğu doldur.",
+    note: "Hücre zarı seçici geçirgendir; hem hayvan hem bitki hücresinde bulunur." }
+];
+
+const $ = id => document.getElementById(id);
+const N = Q.length;
+const MAX_HINTS = 3;
+
+// ---------- yardımcılar ----------
+function norm(s) {
+  return s.toLocaleLowerCase("tr").normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .replace(/ı/g, "i").replace(/[^a-z0-9]/g, "");
+}
+function lev(a, b) {
+  const d = Array.from({ length: a.length + 1 }, (_, i) => [i]);
+  for (let j = 1; j <= b.length; j++) d[0][j] = j;
+  for (let i = 1; i <= a.length; i++)
+    for (let j = 1; j <= b.length; j++)
+      d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+  return d[a.length][b.length];
+}
+function checkAnswer(item, raw) {
+  const n = norm(raw);
+  if (!n) return { ok: false, fuzzy: false };
+  const all = [item.a, ...(item.alt || [])].map(norm);
+  if (all.includes(n)) return { ok: true, fuzzy: false };
+  if (all.some(t => t.length >= 6 && lev(t, n) <= 1)) return { ok: true, fuzzy: true };
+  return { ok: false, fuzzy: false };
+}
+const mmss = s => String(Math.floor(s / 60)).padStart(2, "0") + ":" + String(Math.floor(s % 60)).padStart(2, "0");
+
+// ---------- ses ----------
+let sound = true, ac = null;
+function beep(f, d, type = "sine", v = 0.07, delay = 0) {
+  if (!sound) return;
+  try {
+    ac = ac || new (window.AudioContext || window.webkitAudioContext)();
+    const o = ac.createOscillator(), g = ac.createGain(), t = ac.currentTime + delay;
+    o.type = type; o.frequency.value = f;
+    g.gain.setValueAtTime(v, t); g.gain.exponentialRampToValueAtTime(0.0001, t + d);
+    o.connect(g); g.connect(ac.destination); o.start(t); o.stop(t + d);
+  } catch (e) {}
+}
+const sfx = {
+  ok: () => { beep(660, .12); beep(880, .2, "sine", .07, .1); },
+  bad: () => beep(170, .35, "sawtooth", .05),
+  pas: () => beep(440, .1, "triangle"),
+  tick: () => beep(950, .05, "square", .025),
+  end: () => { beep(523, .15); beep(659, .15, "sine", .07, .15); beep(784, .3, "sine", .07, .3); }
+};
+
+// ---------- halka ----------
+const ring = $("ring");
+const bubbles = Q.map((it, i) => {
+  const a = (-90 + i * 360 / N) * Math.PI / 180;
+  const el = document.createElement("div");
+  el.className = "b"; el.textContent = it.l;
+  el.style.left = (50 + 43 * Math.cos(a)) + "%";
+  el.style.top = (50 + 43 * Math.sin(a)) + "%";
+  ring.appendChild(el);
+  el.addEventListener("animationend", () => el.classList.remove("pop", "shake"));
+  return el;
+});
+
+// ---------- oyun durumu ----------
+let status, cur, elapsed, limit, hints, hintUsed, running, last, timerId, lastTickSec;
+
+function resetGame() {
+  status = Array(N).fill("pending");
+  cur = 0; elapsed = 0; hints = 0; hintUsed = false; running = false; lastTickSec = -1;
+}
+
+function counts() {
+  return {
+    ok: status.filter(s => s === "ok").length,
+    bad: status.filter(s => s === "bad").length,
+    pas: status.filter(s => s === "pas").length,
+    left: status.filter(s => s === "pending" || s === "pas").length
+  };
+}
+
+function render() {
+  bubbles.forEach((b, i) => {
+    const keep = b.classList.contains("pop") ? " pop" : b.classList.contains("shake") ? " shake" : "";
+    b.className = "b " + (i === cur && running ? "cur" : status[i] === "pending" ? "" : status[i]) + keep;
+  });
+  const c = counts();
+  $("cOk").textContent = "✔ " + c.ok; $("cBad").textContent = "✖ " + c.bad; $("cPas").textContent = "⏭ " + c.pas;
+  $("rest").textContent = "Kalan: " + c.left;
+  $("bHint").textContent = "İpucu 💡 " + (MAX_HINTS - hints);
+  $("bHint").disabled = !running || hints >= MAX_HINTS || hintUsed;
+  updateTimer();
+}
+
+function updateTimer() {
+  const t = $("timer");
+  if (limit > 0) {
+    const rem = Math.max(0, Math.ceil(limit - elapsed));
+    t.textContent = mmss(rem);
+    t.classList.toggle("low", rem <= 30);
+    if (running && rem <= 10 && rem !== lastTickSec) { lastTickSec = rem; sfx.tick(); }
+  } else {
+    t.textContent = mmss(elapsed); t.classList.remove("low");
+  }
+}
+
+function showQuestion() {
+  const it = Q[cur];
+  $("badge").textContent = it.l;
+  $("start").textContent = it.l + " harfi ile başlayan:";
+  $("q").textContent = it.q;
+  const u = $("unit"); u.textContent = UNITS[it.unit]; u.className = "chip u" + it.unit;
+  $("pattern").textContent = ""; hintUsed = false;
+  const inp = $("ans"); inp.value = ""; inp.disabled = !running;
+  if (running) inp.focus({ preventScroll: true });
+  render();
+}
+
+function feedback(kind, html) {
+  const f = $("fb"); f.className = "fb " + kind; f.innerHTML = html;
+}
+const esc = s => s.replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+
+function nextIndex() {
+  for (let k = 1; k <= N; k++) {
+    const i = (cur + k) % N;
+    if (status[i] === "pending" || status[i] === "pas") return i;
+  }
+  return -1;
+}
+
+function advance() {
+  const nx = nextIndex();
+  if (nx === -1) { finish("done"); return; }
+  cur = nx; showQuestion();
+}
+
+function submit() {
+  if (!running) return;
+  const raw = $("ans").value.trim();
+  if (!raw) { const i = $("ans"); i.classList.remove("err"); void i.offsetWidth; i.classList.add("err"); return; }
+  const it = Q[cur], r = checkAnswer(it, raw), b = bubbles[cur];
+  status[cur] = r.ok ? "ok" : "bad";
+  b.classList.remove("pop", "shake"); void b.offsetWidth;
+  if (r.ok) {
+    b.classList.add("pop"); sfx.ok();
+    feedback("ok", "✔ <b>Doğru!</b> " + esc(it.a) + (r.fuzzy ? " <small>(doğru yazımı)</small>" : "") + "<br>" + esc(it.note));
+  } else {
+    b.classList.add("shake"); sfx.bad();
+    feedback("bad", "✖ <b>Yanlış.</b> Doğru cevap: <b>" + esc(it.a) + "</b><br>" + esc(it.note));
+  }
+  advance();
+}
+
+function pass() {
+  if (!running) return;
+  status[cur] = "pas"; sfx.pas();
+  feedback("pas", "⏭ <b>Pas geçildi.</b> Bu soru turun sonunda tekrar sorulacak.");
+  advance();
+}
+
+function hint() {
+  if (!running || hints >= MAX_HINTS || hintUsed) return;
+  hints++; hintUsed = true;
+  const a = Q[cur].a;
+  let shown = 0;
+  $("pattern").textContent = [...a].map(ch => {
+    if (ch === " ") return "  ";
+    return shown++ < 2 ? ch.toLocaleUpperCase("tr") : "_";
+  }).join(" ");
+  render(); $("ans").focus({ preventScroll: true });
+}
+
+// ---------- zaman ----------
+function tick() {
+  if (!running) return;
+  const now = performance.now();
+  elapsed += (now - last) / 1000; last = now;
+  updateTimer();
+  if (limit > 0 && elapsed >= limit) finish("time");
+}
+
+function startGame() {
+  limit = parseInt(document.querySelector("input[name=t]:checked").value, 10);
+  resetGame(); running = true; last = performance.now();
+  clearInterval(timerId); timerId = setInterval(tick, 200);
+  $("ovStart").classList.remove("show"); $("ovEnd").classList.remove("show");
+  $("panel").classList.remove("blur");
+  feedback("", "Yeni soru için cevabını yaz. Bilmiyorsan \"Pas\" diyebilirsin; pas geçilen sorular turun sonunda tekrar sorulur.");
+  showQuestion();
+}
+
+function finish(reason) {
+  running = false; clearInterval(timerId);
+  const c = counts();
+  $("ans").disabled = true;
+  render();
+  const msgs = c.ok === N ? "Muhteşem! Passafenola şampiyonusun! 🏆"
+    : c.ok >= 17 ? "Harika bir performans! 🌟"
+    : c.ok >= 12 ? "Çok iyi gidiyorsun, biraz daha tekrarla! 👏"
+    : c.ok >= 7 ? "Fena değil! Konuları tekrar edip yeniden dene. 💪"
+    : "Başlangıç için güzel! Konu tekrarı yapıp tekrar dene. 📚";
+  $("endTitle").textContent = reason === "time" ? "⏰ Süre doldu!" : "🎉 Oyun bitti!";
+  $("endScore").textContent = c.ok + " / " + N;
+  $("endMsg").textContent = msgs;
+  $("endStats").innerHTML = "<span>✔ " + c.ok + " doğru</span><span>✖ " + c.bad + " yanlış</span><span>⏳ " + c.left +
+    " cevapsız</span><span>💡 " + hints + " ipucu</span><span>⏱ " + mmss(elapsed) + "</span>";
+  $("review").innerHTML = Q.map((it, i) => {
+    const s = status[i] === "ok" ? "ok" : status[i] === "bad" ? "bad" : "left";
+    return '<div class="row ' + s + '"><b class="l">' + it.l + "</b><div><b>" + esc(it.a) + "</b><small>" + esc(UNITS[it.unit]) +
+      " — " + esc(it.q) + "</small><small>💡 " + esc(it.note) + "</small></div></div>";
+  }).join("");
+  try {
+    const key = "passafenola7_best_" + limit, prev = parseInt(localStorage.getItem(key) || "-1", 10);
+    if (c.ok > prev) localStorage.setItem(key, String(c.ok));
+  } catch (e) {}
+  sfx.end();
+  if (c.ok >= 15) confetti();
+  setTimeout(() => $("ovEnd").classList.add("show"), 600);
+}
+
+function confetti() {
+  const cols = ["#ffd23f", "#2ecf62", "#3b95ff", "#ff5a5a", "#c68bff"];
+  for (let i = 0; i < 70; i++) {
+    const d = document.createElement("div");
+    d.className = "conf"; d.style.left = Math.random() * 100 + "vw";
+    d.style.background = cols[i % cols.length];
+    d.style.animationDuration = 2.5 + Math.random() * 2.5 + "s";
+    d.style.animationDelay = Math.random() * 1.2 + "s";
+    document.body.appendChild(d); setTimeout(() => d.remove(), 7000);
+  }
+}
+
+function showBest() {
+  try {
+    const sel = document.querySelector("input[name=t]:checked").value;
+    const b = localStorage.getItem("passafenola7_best_" + sel);
+    $("best").textContent = b !== null ? "Bu tarayıcıdaki en iyi sonucun: " + b + " / " + N : "";
+  } catch (e) { $("best").textContent = ""; }
+}
+
+// ---------- olaylar ----------
+$("bBegin").onclick = startGame;
+$("bAgain").onclick = () => { $("ovEnd").classList.remove("show"); $("ovStart").classList.add("show"); showBest(); };
+$("bGo").onclick = submit;
+$("bPas").onclick = pass;
+$("bHint").onclick = hint;
+$("ans").addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); submit(); } });
+$("bPause").onclick = () => {
+  if (!running) return;
+  running = false; $("panel").classList.add("blur"); $("ovPause").classList.add("show"); render();
+};
+$("bResume").onclick = () => {
+  $("ovPause").classList.remove("show"); $("panel").classList.remove("blur");
+  running = true; last = performance.now(); $("ans").disabled = false; $("ans").focus({ preventScroll: true }); render();
+};
+$("bSound").onclick = () => { sound = !sound; $("bSound").textContent = sound ? "🔊 Ses açık" : "🔇 Ses kapalı"; };
+$("bRestart").onclick = () => {
+  running = false; clearInterval(timerId); $("ovPause").classList.remove("show");
+  $("ovEnd").classList.remove("show"); $("ovStart").classList.add("show"); showBest();
+};
+document.querySelectorAll("input[name=t]").forEach(r => r.addEventListener("change", showBest));
+
+// ilk durum
+limit = 480; resetGame(); $("ans").disabled = true; $("panel").classList.add("blur"); showQuestion(); showBest();
+
+// ---------- site içine gömülü kullanım (iframe) ----------
+(function () {
+  if (window.parent === window) return;
+  document.documentElement.classList.add("embedded");
+  let interacted = false, lastH = 0, lastSig = "";
+  $("bBegin").addEventListener("click", () => { interacted = true; });
+  const post = m => { try { window.parent.postMessage(m, window.location.origin); } catch (e) {} };
+  function height() {
+    let h = document.body.getBoundingClientRect().height;
+    document.querySelectorAll(".overlay.show .modal").forEach(m => {
+      h = Math.max(h, m.getBoundingClientRect().bottom + window.scrollY + 24);
+    });
+    return Math.ceil(h);
+  }
+  function send() {
+    const v = height();
+    if (v !== lastH) { lastH = v; post({ type: "html-anim-height", height: v }); }
+  }
+  setInterval(send, 300); send(); post({ type: "html-anim-ready" });
+  new MutationObserver(() => {
+    const sig = [...document.querySelectorAll(".overlay.show")].map(o => o.id).join(",");
+    if (sig && sig !== lastSig && interacted) post({ type: "html-anim-scroll" });
+    lastSig = sig; send();
+  }).observe(document.body, { subtree: true, attributes: true, attributeFilter: ["class"] });
+})();
+</script>
+</body>
+</html>
