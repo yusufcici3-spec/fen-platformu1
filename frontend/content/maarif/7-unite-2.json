@@ -1,0 +1,369 @@
+{
+  "classLevel": 7,
+  "code": "7.2",
+  "hours": 20,
+  "title": "Kuvvet ve Enerjiyi Keşfedelim",
+  "slug": "kuvvet-ve-enerjiyi-kesfedelim",
+  "description": "Fiziksel anlamda işin kuvvet ve yer değiştirme ile ilişkisini inceleyelim; kinetik ve potansiyel enerjiyi karşılaştıralım; enerji dönüşümlerinden hareketle enerjinin korunumunu keşfedelim.",
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı, 7. sınıf 2. ünite. FB.7.2.1–FB.7.2.3 öğrenme çıktıları esas alınarak anlatım, görsel şemalar ve etkinlikler özgün hazırlanmıştır.",
+  "topics": [
+    {
+      "slug": "fiziksel-is-kuvvet-yer-degistirme",
+      "title": "Fiziksel Anlamda İş: Kuvvet ve Yer Değiştirme",
+      "summary": "Günlük yaşamda iş olarak adlandırdığımız durumlarla fiziksel anlamda iş kavramını karşılaştıralım.",
+      "outcome": {
+        "code": "FB.7.2.1",
+        "description": "Fiziksel anlamda yapılan işin bağlı olduğu faktörlere ilişkin bilimsel çıkarım yapabilme.",
+        "details": [
+          "Fiziksel anlamda yapılan işin niteliklerini tanımlar.",
+          "Fiziksel anlamda yapılan işin farklı örneklerini gözlemleyerek verileri toplar ve kaydeder.",
+          "Fiziksel anlamda yapılan işin kuvvet ve yer değiştirmeye bağlı olduğunu yorumlar ve değerlendirir."
+        ]
+      },
+      "skills": [
+        "Bilimsel çıkarım",
+        "Gözlem ve veri kaydı",
+        "Karşılaştırma",
+        "Günlük yaşamla ilişkilendirme"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "💪 Fiziksel anlamda iş nedir?",
+          "bodyHtml": "<p>Günlük konuşmada ders çalışmak, evi temizlemek veya bir işi tamamlamak için “iş yapmak” deriz. Fen bilimlerinde ise <strong>fiziksel anlamda iş</strong> için bir cisme kuvvet uygulanması ve cismin bu kuvvet doğrultusunda yer değiştirmesi gerekir.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0'><div style='background:#dcfce7;padding:14px;border-radius:13px;text-align:center;color:#14532d'><div style='font-size:2.4rem'>📦 ➡️</div><b>İş yapılır</b><p>Kutuya kuvvet uygulanır ve kutu kuvvet doğrultusunda hareket eder.</p></div><div style='background:#fee2e2;padding:14px;border-radius:13px;text-align:center;color:#7f1d1d'><div style='font-size:2.4rem'>🧍 📦</div><b>İş yapılmaz</b><p>Kutuya kuvvet uygulanır ancak kutu yer değiştirmez.</p></div></div><p>Yani yalnızca kuvvet uygulamak yeterli değildir; cismin yer değiştirmesi de gerekir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "➡️ Kuvvet ve yer değiştirme ilişkisi",
+          "bodyHtml": "<p>Bir cisme uygulanan kuvvet ile cismin yer değiştirmesi aynı doğrultuda ve aynı yönde olduğunda fiziksel anlamda iş yapılır. Kuvvetin büyüklüğü ve cismin kuvvet doğrultusundaki yer değiştirmesi arttıkça yapılan iş de artar.</p><div style='background:#eff6ff;border-radius:14px;padding:14px;text-align:center;color:#1e3a8a;margin:12px 0'><div style='font-size:2rem'>👤　➡️ F　📦　➡️ x</div><b>Kuvvet ve yer değiştirme aynı yönde</b><p>Bu durumda cisim üzerinde fiziksel anlamda iş yapılır.</p></div><p>Bu sınıf düzeyinde işin hangi faktörlere bağlı olduğu nitel olarak incelenir; kuvvet ile yer değiştirme arasındaki ilişki günlük yaşam örnekleriyle açıklanır.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧱 Her kuvvet uygulandığında iş yapılır mı?",
+          "bodyHtml": "<p><strong>Duvarı itmek:</strong> Duvara kuvvet uygularız fakat duvar yer değiştirmez. Bu nedenle duvar üzerinde fiziksel anlamda iş yapılmaz.</p><p><strong>Çantayı yatay taşımak:</strong> Çantayı yukarı yönde tutan kuvvet ile çantanın yatay yer değiştirmesi birbirine dik doğrultudadır. Bu ideal durumda çanta üzerinde taşıma kuvveti bakımından fiziksel iş yapılmaz.</p><p><strong>Kitabı raftan kaldırmak:</strong> Kitaba yukarı yönde kuvvet uygulanır ve kitap yukarı yönde yer değiştirir. Bu durumda fiziksel anlamda iş yapılır.</p><div style='background:#f8fafc;border-radius:13px;padding:14px'><b>Üç durumu karşılaştıralım</b><p>🧱 Duvarı itme: Yer değiştirme yok → İş yok.</p><p>🎒 Yatay taşıma: Kuvvet ve hareket dik → Taşıma kuvveti iş yapmaz.</p><p>📚 Kitabı kaldırma: Kuvvet ve hareket aynı yönde → İş yapılır.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📏 İşin birimi: Joule",
+          "bodyHtml": "<p>Fiziksel anlamda yapılan işin SI birimi <strong>joule</strong> (J) olarak adlandırılır. Bir cisme uygulanan kuvvet ve cismin yer değiştirmesi, yapılan işin büyüklüğünü etkiler. Örneğin aynı yönde 1 newtonluk kuvvetle cisim 1 metre yer değiştirdiğinde 1 joule iş yapılır.</p><div style='background:#fef3c7;border-radius:13px;padding:14px;text-align:center;color:#78350f'><div style='font-size:2rem'>1 J = 1 N × 1 m</div><b>Bir joule</b><p>Bir newtonluk kuvvetin, cismi kuvvet doğrultusunda bir metre yer değiştirmesiyle yapılan iş.</p></div>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Sınavda dikkat!",
+          "bodyHtml": "<ul><li>Fiziksel iş için kuvvet uygulanmalı ve cisim yer değiştirmelidir.</li><li>Yer değiştirme, kuvvet doğrultusunda olmalıdır.</li><li>Cisim hareket etmiyorsa fiziksel anlamda iş yapılmaz.</li><li>Günlük hayattaki “iş” sözcüğü ile fiziksel anlamdaki iş aynı değildir.</li><li>İş birimi joule (J) olarak gösterilir.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏡 Günlük yaşamdan örnekler",
+          "bodyHtml": "<p>Market arabasını iterek ilerletmek, yerden bir kitabı kaldırmak ve bir kutuyu iterek kaydırmak fiziksel iş örnekleridir. Ağır bir çantayı hareketsiz tutmak veya hareket etmeyen duvarı itmek ise fiziksel anlamda iş değildir. Her örnekte kuvvetin yönü ve cismin yer değiştirmesi birlikte değerlendirilmelidir.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Kuvvet",
+          "definition": "Cisimlerin hareketini, yönünü veya şeklini değiştirebilen etki."
+        },
+        {
+          "term": "Yer değiştirme",
+          "definition": "Bir cismin başlangıç konumundan son konumuna yönlü konum değişimi."
+        },
+        {
+          "term": "Fiziksel iş",
+          "definition": "Bir kuvvetin cismi kendi doğrultusunda yer değiştirmesiyle gerçekleşen enerji aktarımı."
+        },
+        {
+          "term": "Joule",
+          "definition": "Fiziksel iş ve enerji için kullanılan SI birimi."
+        }
+      ],
+      "activity": {
+        "title": "İş mi, değil mi? Gözlem istasyonu",
+        "materials": "Kitap, hafif kutu, masa ve gözlem çizelgesi.",
+        "steps": "1) Bir kitabı masadan alıp rafa koyun. 2) Hafif bir kutuyu iterek yatay doğrultuda hareket ettirin. 3) Duvarı hareket ettirmeden itme durumunu canlandırın. 4) Her durumda kuvvetin yönünü ve cismin yer değiştirip değiştirmediğini tabloya yazın. 5) Fiziksel anlamda iş yapılıp yapılmadığını gerekçelendirin.",
+        "safetyNotes": "Ağır cisimleri kaldırmayın; duvarı veya sabit eşyaları zorlayarak itmeyin. Etkinlikte hafif ve güvenli materyaller kullanın."
+      },
+      "quiz": [
+        {
+          "body": "Bir öğrenci duvarı bütün gücüyle itiyor ancak duvar hareket etmiyor. Duvar üzerinde fiziksel anlamda iş yapılır mı?",
+          "options": [
+            "Evet, kuvvet uygulandığı için",
+            "Hayır, yer değiştirme olmadığı için",
+            "Evet, öğrenci yorulduğu için",
+            "Hayır, duvar ağır olduğu için"
+          ],
+          "answer": 1,
+          "explanation": "Fiziksel anlamda iş için kuvvetin yanı sıra cismin kuvvet doğrultusunda yer değiştirmesi gerekir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Aşağıdaki olaylardan hangisinde fiziksel anlamda iş yapılır?",
+          "options": [
+            "Hareketsiz çantayı elde tutmak",
+            "Duvarı itip hareket ettirememek",
+            "Kitabı yerden alıp rafa koymak",
+            "Sabit duran masaya bakmak"
+          ],
+          "answer": 2,
+          "explanation": "Kitap yukarı yönde kuvvet uygulanarak yukarı yönde yer değiştirdiği için fiziksel iş yapılır.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Fiziksel anlamda yapılan işin birimi hangisidir?",
+          "options": [
+            "Newton",
+            "Metre",
+            "Joule",
+            "Kilogram"
+          ],
+          "answer": 2,
+          "explanation": "Fiziksel işin SI birimi joule (J) olarak adlandırılır.",
+          "difficulty": "EASY"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "kinetik-ve-potansiyel-enerji",
+      "title": "Kinetik ve Potansiyel Enerji",
+      "summary": "Hareketten ve konumdan kaynaklanan enerji türlerini örneklerle karşılaştıralım.",
+      "outcome": {
+        "code": "FB.7.2.2",
+        "description": "Enerji çeşitlerinden kinetik ve potansiyel enerjiyi karşılaştırabilme.",
+        "details": [
+          "Kinetik ve potansiyel enerjinin özelliklerini belirler.",
+          "Kinetik ve potansiyel enerjinin benzer özelliklerini listeler.",
+          "Kinetik ve potansiyel enerjinin farklı özelliklerini listeler."
+        ]
+      },
+      "skills": [
+        "Karşılaştırma",
+        "Sınıflandırma",
+        "Gözlem",
+        "Görsel okuryazarlık"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "⚡ Enerji nedir?",
+          "bodyHtml": "<p><strong>Enerji</strong>, iş yapabilme yeteneği olarak tanımlanır. Hareket eden veya bulunduğu konum nedeniyle enerjiye sahip olan cisimler çevreleriyle etkileşebilir. Bu ünitede özellikle kinetik ve potansiyel enerji üzerinde durulur.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0'><div style='background:#dbeafe;padding:14px;border-radius:13px;text-align:center;color:#1e3a8a'><div style='font-size:2.4rem'>🏃</div><b>Kinetik enerji</b><p>Hareketten kaynaklanır.</p></div><div style='background:#fef3c7;padding:14px;border-radius:13px;text-align:center;color:#78350f'><div style='font-size:2.4rem'>🏔️</div><b>Potansiyel enerji</b><p>Konum veya esneklikten kaynaklanır.</p></div></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🏃 Kinetik enerji: Hareket enerjisi",
+          "bodyHtml": "<p>Hareket hâlindeki cisimlerin sahip olduğu enerjiye <strong>kinetik enerji</strong> denir. Koşan bir çocuk, ilerleyen bisiklet, akan su ve hareket eden otomobil kinetik enerjiye sahiptir.</p><div style='background:#eff6ff;border-radius:13px;padding:14px;text-align:center;color:#1e3a8a'><div style='font-size:2.4rem'>🚴‍♀️ ➡️</div><b>Hareket varsa kinetik enerji vardır.</b><p>Cisim durduğunda hareketinden kaynaklanan kinetik enerjisi de sıfır olur.</p></div><p>Aynı koşullarda bir cismin hızı arttıkça kinetik enerjisi artar. Kütlesi daha büyük olan hareketli bir cisim de aynı hızda daha fazla kinetik enerjiye sahip olur.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "⛰️ Çekim potansiyel enerjisi",
+          "bodyHtml": "<p>Bir cismin bulunduğu konumdan, özellikle yerden yüksekliğinden dolayı sahip olduğu enerjiye <strong>çekim potansiyel enerjisi</strong> denir. Yüksekte duran saksı, dal üzerindeki elma ve barajda yüksekte birikmiş su buna örnektir.</p><div style='background:#f0fdf4;border-radius:13px;padding:14px;text-align:center;color:#14532d'><div style='font-size:2.3rem'>🍎<br/>🌳<br/>⬇️</div><b>Yüksekteki cismin çekim potansiyel enerjisi vardır.</b><p>Yükseklik ve kütle arttıkça çekim potansiyel enerjisi artar.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🌀 Esneklik potansiyel enerjisi",
+          "bodyHtml": "<p>Esnek cisimlerin sıkıştırılması veya gerilmesi sonucunda depoladığı enerjiye <strong>esneklik potansiyel enerjisi</strong> denir. Sıkıştırılmış yay, gerilmiş lastik ve bükülmüş esnek cetvel bu enerjiye örnek verilebilir.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px'><div style='background:#fce7f3;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🌀</div><b>Sıkıştırılmış yay</b><p>Esneklik potansiyel enerjisi depolar.</p></div><div style='background:#ede9fe;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🏹</div><b>Gerilmiş esnek cisim</b><p>Serbest bırakıldığında hareket oluşturabilir.</p></div></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "⚖️ Kinetik ve potansiyel enerjiyi karşılaştıralım",
+          "bodyHtml": "<div style='overflow-x:auto'><table><thead><tr><th>Özellik</th><th>Kinetik enerji</th><th>Potansiyel enerji</th></tr></thead><tbody><tr><td>Kaynağı</td><td>Hareket</td><td>Konum veya esneklik</td></tr><tr><td>Örnek</td><td>Giden bisiklet</td><td>Yüksekteki kitap, sıkıştırılmış yay</td></tr><tr><td>Hareket şartı</td><td>Hareket gerekir</td><td>Cisim dururken de olabilir</td></tr></tbody></table></div><p>İki enerji türü de cismin sahip olduğu enerjidir ve uygun koşullarda birbirine dönüşebilir.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Hatırlaman gerekenler",
+          "bodyHtml": "<ul><li>Kinetik enerji hareket enerjisidir.</li><li>Çekim potansiyel enerjisi konum ve yükseklikle ilişkilidir.</li><li>Esneklik potansiyel enerjisi esnek cismin sıkıştırılması veya gerilmesiyle depolanır.</li><li>Hareket eden bir cisim kinetik enerjiye sahiptir.</li><li>Potansiyel enerji, cisim hareketsizken de bulunabilir.</li><li>Bu ünitede enerji türleri kinetik ve potansiyel enerjiyle sınırlandırılır.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🎢 Günlük yaşam bağlantısı",
+          "bodyHtml": "<p>Hızla ilerleyen lunapark treni kinetik enerjiye sahiptir. Trenin en yüksek noktalarında çekim potansiyel enerjisi artar. Gerilmiş bir lastik serbest bırakıldığında esneklik potansiyel enerjisi hareket enerjisine dönüşebilir.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Enerji",
+          "definition": "İş yapabilme yeteneği."
+        },
+        {
+          "term": "Kinetik enerji",
+          "definition": "Cisimlerin hareketlerinden dolayı sahip oldukları enerji."
+        },
+        {
+          "term": "Potansiyel enerji",
+          "definition": "Cisimlerin konumları veya esneklikleri nedeniyle depoladıkları enerji."
+        },
+        {
+          "term": "Çekim potansiyel enerjisi",
+          "definition": "Cismin yerden yüksekliği ve kütlesiyle ilişkili enerji."
+        },
+        {
+          "term": "Esneklik potansiyel enerjisi",
+          "definition": "Esnek cismin sıkıştırılması veya gerilmesiyle depolanan enerji."
+        }
+      ],
+      "activity": {
+        "title": "Enerji türünü bul",
+        "materials": "Top, oyuncak araba, kitap, yaylı oyuncak veya güvenli esnek cetvel ve sınıflandırma tablosu.",
+        "steps": "1) Verilen cisimleri ve durumları gözlemleyin. 2) Hareket eden örnekleri kinetik enerji olarak işaretleyin. 3) Yüksekte bulunan veya esnetilmiş örnekleri potansiyel enerji olarak sınıflandırın. 4) Birden fazla enerji türünün birlikte bulunabileceği örnekleri tartışın. 5) Sonuçları tabloyla sunun.",
+        "safetyNotes": "Yay ve esnek cisimleri yüze doğru doğrultmayın. Ağır cisimleri yüksekten bırakmayın; etkinlikte hafif ve güvenli materyaller kullanın."
+      },
+      "quiz": [
+        {
+          "body": "Hareket hâlindeki bir bisiklet hangi enerji türüne sahiptir?",
+          "options": [
+            "Kinetik enerji",
+            "Yalnızca çekim potansiyel enerjisi",
+            "Yalnızca esneklik potansiyel enerjisi",
+            "Enerjisi yoktur"
+          ],
+          "answer": 0,
+          "explanation": "Hareket eden cisimler kinetik enerjiye sahiptir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Yüksek bir rafta hareketsiz duran kitabın sahip olduğu enerji hangisidir?",
+          "options": [
+            "Kinetik enerji",
+            "Çekim potansiyel enerjisi",
+            "Ses enerjisi",
+            "Elektrik enerjisi"
+          ],
+          "answer": 1,
+          "explanation": "Kitap hareket etmese de yerden yüksekte bulunduğu için çekim potansiyel enerjisine sahiptir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Gerilmiş bir lastik serbest bırakılmadan önce hangi enerjiye sahiptir?",
+          "options": [
+            "Kinetik enerji",
+            "Esneklik potansiyel enerjisi",
+            "Yalnızca çekim potansiyel enerjisi",
+            "Enerjiye sahip değildir"
+          ],
+          "answer": 1,
+          "explanation": "Gerilen esnek cisimde esneklik potansiyel enerjisi depolanır.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "enerji-donusumu-ve-korunumu",
+      "title": "Kinetik ve Potansiyel Enerji Dönüşümü – Enerjinin Korunumu",
+      "summary": "Hareket ve konum değişirken enerji türlerinin nasıl birbirine dönüştüğünü gözlemleyelim.",
+      "outcome": {
+        "code": "FB.7.2.3",
+        "description": "Enerji dönüşümünden hareketle enerjinin korunduğuna tümevarımsal akıl yürütebilme.",
+        "details": [
+          "Kinetik ve potansiyel enerjinin birbirine dönüşümüne yönelik örüntü bulur.",
+          "Enerjinin korunumuna yönelik genelleme yapar."
+        ]
+      },
+      "skills": [
+        "Tümevarımsal akıl yürütme",
+        "Gözlem ve örüntü bulma",
+        "Model oluşturma",
+        "Bilimsel genelleme"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🔄 Enerji dönüşümü nedir?",
+          "bodyHtml": "<p>Bir enerji türünün başka bir enerji türüne dönüşmesine <strong>enerji dönüşümü</strong> denir. Bu ünitede kinetik enerji ile potansiyel enerjinin birbirine dönüşmesine odaklanırız. Bir cismin hareketi ve konumu değiştikçe sahip olduğu enerji türleri de değişebilir.</p><div style='background:#eff6ff;padding:14px;border-radius:13px;text-align:center;color:#1e3a8a'><div style='font-size:2rem'>⛰️ ⇄ 🏃</div><b>Potansiyel enerji ⇄ Kinetik enerji</b><p>Enerji bir türden diğerine dönüşebilir.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🎢 Lunapark treninde enerji dönüşümü",
+          "bodyHtml": "<p>Lunapark treninin yüksek bir noktada hızı az, çekim potansiyel enerjisi fazladır. Aşağı doğru hareket ettikçe yüksekliği azalır, hızı artar; çekim potansiyel enerjisinin bir bölümü kinetik enerjiye dönüşür. Yeniden yukarı çıkarken kinetik enerjinin bir bölümü çekim potansiyel enerjisine dönüşür.</p><div style='background:#f8fafc;border-radius:13px;padding:14px;text-align:center'><div style='font-size:2rem'>🎢 ⬆️　➡️　⬇️</div><b>Yüksek nokta: Potansiyel fazla</b><p>Alçak ve hızlı bölüm: Kinetik enerji fazla</p><p>Bu şema enerji değişimini nitel olarak gösterir.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🪀 Sarkaçta enerji dönüşümü",
+          "bodyHtml": "<p>Bir sarkaç en uç noktadayken hızı anlık olarak çok küçüktür; çekim potansiyel enerjisi en büyük değerine ulaşır. Orta noktadan geçerken hızı en büyük, çekim potansiyel enerjisi daha küçüktür. Diğer uca yükselirken kinetik enerji yeniden potansiyel enerjiye dönüşür.</p><div style='background:#f0fdf4;border-radius:13px;padding:14px;text-align:center;color:#14532d'><div style='font-size:2rem'>↖️　🟢　↗️</div><b>Uç noktalar: Potansiyel enerji fazla</b><p>Orta nokta: Kinetik enerji fazla</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "⬇️ Serbest düşmede enerji dönüşümü",
+          "bodyHtml": "<p>Yerden belirli bir yükseklikte tutulan cisim serbest bırakıldığında aşağı doğru hızlanır. Yüksekliği azaldıkça çekim potansiyel enerjisi azalır, kinetik enerjisi artar. Hava direncinin ihmal edildiği ideal durumda mekanik enerji toplamı korunur.</p><p>Gerçek yaşamda hava direnci ve sürtünme nedeniyle enerjinin bir bölümü ısı gibi başka enerji türlerine aktarılabilir. Bu durum enerjinin yok olduğu anlamına gelmez.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "♻️ Enerjinin korunumu",
+          "bodyHtml": "<p><strong>Enerjinin korunumu</strong> ilkesine göre enerji yoktan var edilemez, var olan enerji de yok edilemez; enerji bir türden başka bir türe dönüşür veya aktarılır. Sürtünme ve hava direnci bulunan durumlarda mekanik enerjinin bir bölümü ısı gibi başka enerji türlerine dönüşebilir.</p><div style='background:#fef3c7;padding:14px;border-radius:13px;text-align:center;color:#78350f'><div style='font-size:2rem'>🔋 ➜ ⚙️ ➜ 🌡️</div><b>Enerji dönüşür, yok olmaz.</b><p>Bu örnekte hareketle ilişkili enerjinin bir bölümü çevreye ısı olarak aktarılabilir.</p></div>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Çok önemli!",
+          "bodyHtml": "<ul><li>Yükseklik azalırken çekim potansiyel enerjisi azalabilir, kinetik enerji artabilir.</li><li>Yükseklik artarken kinetik enerji potansiyel enerjiye dönüşebilir.</li><li>Sarkaç ve lunapark treni enerji dönüşümüne örnektir.</li><li>Sürtünme ve hava direnci mekanik enerjinin bir bölümünün ısıya dönüşmesine neden olabilir.</li><li>Enerji yok olmaz; dönüşür veya aktarılır.</li><li>Maarif Modeli kapsamında bu dönüşümler nitel olarak incelenir; matematiksel enerji dönüşümü hesaplamaları yapılmaz.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🏡 Hayatın içinden enerji dönüşümleri",
+          "bodyHtml": "<p>Salıncakta ileri-geri hareket ederken, kaydıraktan inerken veya esnetilmiş bir cismin serbest bırakılmasında kinetik ve potansiyel enerji dönüşümlerini gözlemleyebiliriz. Hareket zamanla yavaşladığında sürtünme nedeniyle enerjinin bir bölümü çevreye aktarılır.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Enerji dönüşümü",
+          "definition": "Enerjinin bir türden başka bir türe dönüşmesi."
+        },
+        {
+          "term": "Enerjinin korunumu",
+          "definition": "Enerjinin yoktan var edilememesi ve yok edilememesi; yalnızca dönüşmesi veya aktarılması."
+        },
+        {
+          "term": "Sürtünme",
+          "definition": "Temas eden yüzeyler arasında harekete karşı koyan etki."
+        },
+        {
+          "term": "Mekanik enerji",
+          "definition": "Bir sistemin kinetik ve potansiyel enerjilerinin toplamı."
+        }
+      ],
+      "activity": {
+        "title": "Sarkaçta enerji gözlemi",
+        "materials": "İp, hafif top veya silgi, sabitleme aparatı ve gözlem çizelgesi.",
+        "steps": "1) Öğretmeninizin yardımıyla hafif bir sarkaç modeli kurun. 2) Cismi bir yana çekip serbest bırakın. 3) Uç noktalarda ve orta noktada hızını ve yüksekliğini gözlemleyin. 4) Hangi konumda kinetik, hangi konumda potansiyel enerjinin fazla olduğunu kaydedin. 5) Gözlemlerinizden enerji dönüşümüne ilişkin bir genelleme yapın.",
+        "safetyNotes": "Sarkaç hafif olmalı ve sağlam biçimde sabitlenmelidir. Cismi yüzlere doğru savurmayın; etkinliği öğretmen gözetiminde yapın."
+      },
+      "quiz": [
+        {
+          "body": "Bir lunapark treni en yüksek noktadan aşağı inerken hangi değişim beklenir?",
+          "options": [
+            "Potansiyel enerji artar, kinetik enerji azalır",
+            "Potansiyel enerji azalır, kinetik enerji artar",
+            "Her iki enerji de yok olur",
+            "Kütlesi sürekli azalır"
+          ],
+          "answer": 1,
+          "explanation": "Yükseklik azalırken çekim potansiyel enerjisinin bir bölümü kinetik enerjiye dönüşür.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Sarkaç en uç noktadayken hangi enerji türü genellikle en fazladır?",
+          "options": [
+            "Kinetik enerji",
+            "Çekim potansiyel enerjisi",
+            "Hiçbir enerji",
+            "Yalnızca ses enerjisi"
+          ],
+          "answer": 1,
+          "explanation": "Uç noktada sarkacın yüksekliği en fazla, hızı anlık olarak çok küçüktür; çekim potansiyel enerjisi fazladır.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Sürtünme nedeniyle hareketli bir cismin mekanik enerjisinin azalması enerjinin yok olduğu anlamına gelir mi?",
+          "options": [
+            "Evet, enerji tamamen kaybolur",
+            "Hayır, enerjinin bir bölümü ısı gibi başka türlere dönüşür",
+            "Evet, yalnızca ağır cisimlerde kaybolur",
+            "Hayır, enerji yalnızca kütleye dönüşür"
+          ],
+          "answer": 1,
+          "explanation": "Sürtünme, mekanik enerjinin bir bölümünün ısı gibi başka enerji türlerine dönüşmesine neden olur; enerji korunur.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    }
+  ]
+}
