@@ -1,0 +1,479 @@
+{
+  "classLevel": 6,
+  "code": "6.7",
+  "hours": 18,
+  "title": "Sürdürülebilir Yaşam ve Etkileşim",
+  "slug": "surdurulebilir-yasam-ve-etkilesim",
+  "description": "Biyoçeşitliliğin doğal yaşam için önemini, canlıları tehdit eden faktörleri, ısınma amaçlı yakıt kullanımının çevresel etkilerini ve çevre sorunlarına yönelik çözüm yollarını araştırma, veri, tartışma ve proje çalışmalarıyla keşfedelim.",
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı, 6. sınıf 7. ünite. Öğrenme çıktıları FB.6.7.1–FB.6.7.4 ile eşleştirilmiş; konu anlatımları, şemalar, etkinlikler ve sorular özgün hazırlanmıştır.",
+  "topics": [
+    {
+      "slug": "biyocesitlilik-ve-dogal-yasam",
+      "title": "Biyoçeşitlilik ve Doğal Yaşam",
+      "summary": "Canlı çeşitliliğinin ekosistemlerin devamlılığı ve insan yaşamı için önemini sorgulayalım.",
+      "outcome": {
+        "code": "FB.6.7.1",
+        "description": "Biyoçeşitliliğin doğal yaşam için önemini sorgulayabilme.",
+        "details": [
+          "Biyoçeşitliliğin doğal yaşam için önemini tanımlar.",
+          "Biyoçeşitliliğin önemine ilişkin sorular sorar ve bilgi toplar.",
+          "Toplanan bilgilerin doğruluğunu değerlendirir ve kanıtlara dayalı çıkarım yapar."
+        ]
+      },
+      "skills": [
+        "Bilgi toplama",
+        "Bilimsel sorgulama",
+        "Kaynak değerlendirme",
+        "Çıkarım yapma"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🌿 Biyoçeşitlilik nedir?",
+          "bodyHtml": "<p><strong>Biyoçeşitlilik</strong>, bir bölgede yaşayan canlıların tür, kalıtsal özellik ve ekosistem çeşitliliğini kapsar. Bir ormanda ağaçlar, mantarlar, kuşlar, böcekler ve mikroorganizmalar birlikte yaşamın çeşitliliğini oluşturur.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:14px 0'><div style='background:#dcfce7;padding:14px;border-radius:14px;text-align:center;color:#14532d'><div style='font-size:2.5rem'>🌳 🐦 🦋</div><b>Canlı çeşitliliği</b><p>Bir alanda bulunan farklı canlı türleri.</p></div><div style='background:#dbeafe;padding:14px;border-radius:14px;text-align:center;color:#1e3a8a'><div style='font-size:2.5rem'>🌲 🏞️ 🌊</div><b>Yaşam alanı çeşitliliği</b><p>Orman, göl, deniz, çayır gibi ekosistemler.</p></div></div><p>Biyoçeşitlilik yalnızca canlı türlerinin sayısı değildir; canlıların genetik farklılıkları ve yaşadıkları ekosistemler de bu kavramın içindedir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🏡 Habitat ve ekosistem",
+          "bodyHtml": "<p><strong>Habitat</strong>, bir canlının doğal olarak yaşadığı ve ihtiyaçlarını karşıladığı yaşam alanıdır. <strong>Ekosistem</strong> ise belirli bir alandaki canlılar ile su, hava, toprak, ışık ve sıcaklık gibi cansız çevre faktörlerinin karşılıklı etkileşiminden oluşur.</p><div style='background:#f0fdf4;border-radius:14px;padding:14px;color:#14532d;margin:12px 0'><div style='font-size:2rem;text-align:center'>🌞 + 💧 + 🌱 + 🐛 + 🐦</div><b>Ekosistem modeli</b><p>Canlı ve cansız bileşenler birbirleriyle etkileşim hâlindedir. Bir bileşendeki değişim diğerlerini de etkileyebilir.</p></div><p>Örneğin gölde suyun kirlenmesi, su bitkilerini, balıkları ve balıklarla beslenen kuşları etkileyebilir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🔗 Biyoçeşitlilik neden önemlidir?",
+          "bodyHtml": "<ul><li><strong>Besin ilişkileri:</strong> Farklı canlılar besin ağlarının devamını sağlar.</li><li><strong>Tozlaşma:</strong> Arılar ve bazı böcekler bitkilerin çoğalmasına yardımcı olur.</li><li><strong>Toprak verimliliği:</strong> Ayrıştırıcı canlılar organik maddelerin parçalanmasına katkı sağlar.</li><li><strong>Doğal denge:</strong> Türler arasındaki etkileşimler ekosistemlerin işleyişini destekler.</li><li><strong>İnsan yaşamı:</strong> Besin, ilaç, ham madde ve temiz su kaynaklarının devamlılığı için önem taşır.</li></ul><div style='background:#fefce8;border-radius:14px;padding:14px;text-align:center;color:#713f12'><div style='font-size:2rem'>🐝 ➜ 🌼 ➜ 🍎</div><b>Tozlaşma ve besin üretimi</b><p>Canlılar arasındaki ilişkiler, insan yaşamını da doğrudan etkiler.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🇹🇷 Türkiye'nin biyoçeşitliliği ve endemik türler",
+          "bodyHtml": "<p>Türkiye; farklı iklimleri, yükselti özellikleri, denizleri, gölleri ve yaşam alanları sayesinde zengin bir biyoçeşitliliğe sahiptir. <strong>Endemik tür</strong>, doğal yayılışı belirli bir bölgeyle sınırlı olan türdür.</p><div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:12px 0'><div style='background:#fce7f3;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🌷</div><b>Van ters lalesi</b><p>Belirli yörelerle özdeşleşmiş bitki örneği.</p></div><div style='background:#dbeafe;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🐟</div><b>Abant alabalığı</b><p>Belirli su sistemleriyle ilişkili endemik balık.</p></div><div style='background:#dcfce7;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🌲</div><b>Sığla ağacı</b><p>Güneybatı Anadolu'da doğal yayılış gösterir.</p></div></div><p>Endemik türlerin korunması, yalnızca o türün değil, yaşadığı habitatın da korunmasına katkı sağlar.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Kavramları karıştırma",
+          "bodyHtml": "<ul><li><strong>Biyoçeşitlilik:</strong> Canlıların genetik, tür ve ekosistem çeşitliliği.</li><li><strong>Habitat:</strong> Bir canlının doğal yaşam alanı.</li><li><strong>Ekosistem:</strong> Canlı ve cansız çevrenin etkileşim bütünü.</li><li><strong>Endemik tür:</strong> Doğal yayılışı belirli bir bölgeyle sınırlı tür.</li><li>Biyoçeşitlilik, doğal dengenin ve yaşamın devamlılığının önemli unsurlarındandır.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🔎 Araştırma ve sorgulama",
+          "bodyHtml": "<p>Yakın çevrende kaç farklı bitki, kuş veya böcek türü gözlemleyebiliyorsun? Bir türün azalması besin ağını nasıl etkileyebilir? Araştırma yaparken bilgileri güvenilir bilimsel ve resmî kaynaklardan kontrol et; tek bir kaynağa dayanarak kesin yargıya varma.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Biyoçeşitlilik",
+          "definition": "Canlıların genetik, tür ve ekosistem düzeyindeki çeşitliliği."
+        },
+        {
+          "term": "Habitat",
+          "definition": "Bir canlının doğal yaşam alanı."
+        },
+        {
+          "term": "Ekosistem",
+          "definition": "Canlılar ile cansız çevrenin etkileşim bütünü."
+        },
+        {
+          "term": "Endemik tür",
+          "definition": "Doğal yayılışı belirli bir bölgeyle sınırlı olan tür."
+        },
+        {
+          "term": "Besin ağı",
+          "definition": "Ekosistemdeki beslenme ilişkilerinin oluşturduğu ağ."
+        }
+      ],
+      "activity": {
+        "title": "Okul bahçesinin biyoçeşitlilik haritası",
+        "materials": "Not defteri, kalem, gözlem çizelgesi ve okul bahçesinin basit krokisi.",
+        "steps": "1) Öğretmeninizle okul bahçesinde gözlem yapılabilecek bir alan belirleyin. 2) Canlılara zarar vermeden gördüğünüz bitki ve hayvanları kaydedin. 3) Gözlemlediğiniz canlıları gruplandırın. 4) Bu canlıların olası habitatlarını krokide işaretleyin. 5) Çeşitliliğin korunması için iki öneri geliştirin.",
+        "safetyNotes": "Canlıları toplamayın, yuvalara ve bitkilere zarar vermeyin. Bilinmeyen bitkilere dokunmayın; gözlemi öğretmen gözetiminde yapın."
+      },
+      "quiz": [
+        {
+          "body": "Bir canlının doğal olarak yaşadığı ve ihtiyaçlarını karşıladığı alana ne denir?",
+          "options": [
+            "Habitat",
+            "Yoğunluk",
+            "İklim",
+            "Buharlaşma"
+          ],
+          "answer": 0,
+          "explanation": "Habitat, canlının doğal yaşam alanıdır.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Aşağıdakilerden hangisi biyoçeşitliliğin ekosistem için önemine örnektir?",
+          "options": [
+            "Besin ağlarının devamına katkı sağlaması",
+            "Tüm canlıların aynı besinle beslenmesi",
+            "Cansız çevrenin ortadan kalkması",
+            "Bütün türlerin aynı habitatta yaşaması"
+          ],
+          "answer": 0,
+          "explanation": "Farklı türler arasındaki beslenme ilişkileri besin ağlarının ve ekosistem işleyişinin devamına katkı sağlar.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Doğal yayılışı yalnızca belirli bir bölgeyle sınırlı olan türe ne ad verilir?",
+          "options": [
+            "Göçmen",
+            "Endemik",
+            "Evcil",
+            "Ayrıştırıcı"
+          ],
+          "answer": 1,
+          "explanation": "Endemik türlerin doğal yayılışı belirli bir bölgeyle sınırlıdır.",
+          "difficulty": "EASY"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "biyocesitliligi-tehdit-eden-faktorler",
+      "title": "Biyoçeşitliliği Tehdit Eden Faktörler",
+      "summary": "Habitat kaybı, kirlilik, iklim değişikliği ve aşırı tüketimin canlı çeşitliliğine etkisini verilerle değerlendirelim.",
+      "outcome": {
+        "code": "FB.6.7.2",
+        "description": "Biyoçeşitliliği tehdit eden faktörleri araştırma verilerine dayalı tahmin edebilme.",
+        "details": [
+          "Biyoçeşitliliği tehdit eden faktörler hakkında önermeler oluşturur.",
+          "Veriye dayalı ve yalnızca varsayıma dayanan önermeleri karşılaştırır.",
+          "Araştırma verilerinden hareketle tahmin yapar ve tahmininin geçerliğini sorgular."
+        ]
+      },
+      "skills": [
+        "Veri okuryazarlığı",
+        "Tahmin etme",
+        "Karşılaştırma",
+        "Eleştirel düşünme"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "⚠️ Biyoçeşitlilik neden azalabilir?",
+          "bodyHtml": "<p>Canlıların yaşam alanlarının bozulması veya yok olması, çevre kirliliği, iklim değişikliği, aşırı avlanma ve istilacı türlerin yayılması biyoçeşitliliği tehdit edebilir. Bu faktörler tek başına ya da birlikte etkili olabilir.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0'><div style='background:#fee2e2;padding:12px;border-radius:12px;text-align:center;color:#7f1d1d'><div style='font-size:2rem'>🏗️</div><b>Habitat kaybı</b><p>Yaşam alanlarının daralması.</p></div><div style='background:#ffedd5;padding:12px;border-radius:12px;text-align:center;color:#7c2d12'><div style='font-size:2rem'>🗑️</div><b>Kirlilik</b><p>Su, hava ve toprağın kirlenmesi.</p></div><div style='background:#dbeafe;padding:12px;border-radius:12px;text-align:center;color:#1e3a8a'><div style='font-size:2rem'>🌡️</div><b>İklim değişikliği</b><p>Yaşam koşullarının değişmesi.</p></div><div style='background:#fef3c7;padding:12px;border-radius:12px;text-align:center;color:#78350f'><div style='font-size:2rem'>🌱</div><b>İstilacı türler</b><p>Yerel türler üzerinde baskı oluşması.</p></div></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🌳 Habitat kaybı ve parçalanması",
+          "bodyHtml": "<p>Ormanların tarım, yerleşim veya yol yapımı için değiştirilmesi canlıların barınma, beslenme ve üreme alanlarını azaltabilir. Büyük bir yaşam alanının yollar veya yapılaşma nedeniyle küçük parçalara ayrılması da canlıların hareketini ve popülasyonlar arasındaki etkileşimi zorlaştırabilir.</p><div style='background:#f0fdf4;border-radius:14px;padding:14px;text-align:center;color:#14532d'><div style='font-size:2rem'>🌳🌳🌳 ➜ 🛣️ ➜ 🌳　🌳</div><b>Habitat parçalanması – şematik model</b><p>Yaşam alanı bölündüğünde canlıların güvenli geçişleri ve kaynaklara ulaşmaları zorlaşabilir.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "💧 Kirlilik ve iklim değişikliği",
+          "bodyHtml": "<p>Atıkların suya karışması su canlılarına zarar verebilir; toprağa bırakılan zararlı maddeler bitkileri ve toprak canlılarını etkileyebilir. Hava kirliliği de canlıların sağlığını ve ekosistemlerin işleyişini olumsuz etkileyebilir.</p><p>İklim değişikliği sıcaklık ve yağış düzenlerini değiştirebilir. Bazı türler yeni koşullara uyum sağlayamayabilir veya uygun yaşam alanı bulmakta zorlanabilir. Bu etkileri değerlendirirken uzun dönemli gözlem ve araştırma verileri kullanılmalıdır.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📊 Veriye dayalı tahmin nasıl yapılır?",
+          "bodyHtml": "<p>Bir çevre sorunu hakkında tahmin yaparken ölçüm, gözlem ve güvenilir araştırma sonuçları kullanılır. Örneğin bir gölde yıllar içinde su kalitesinin bozulduğu ve bazı balık türlerinin sayısının azaldığı belirlenmişse, kirliliğin balık popülasyonunu olumsuz etkilediği yönünde araştırılabilir bir tahmin oluşturulabilir.</p><div style='background:#eff6ff;border-radius:14px;padding:14px;color:#1e3a8a'><b>Örnek akıl yürütme</b><p>Veri: Göldeki atık miktarı artmış, su kalitesi ölçümleri kötüleşmiş.</p><p>Tahmin: Kirlilik devam ederse hassas su canlılarının sayısı azalabilir.</p><p>Kontrol: Farklı yıllara ait güvenilir ölçümler ve canlı gözlemleri karşılaştırılır.</p></div><p>Birlikte değişen iki durumun mutlaka biri diğerine neden olduğunu söylemek için ek kanıt gerekir.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Kanıta dayalı düşün",
+          "bodyHtml": "<ul><li>Habitat kaybı, kirlilik, iklim değişikliği ve aşırı tüketim biyoçeşitliliği tehdit edebilir.</li><li>Bir tahmin, gözlem ve araştırma verileriyle desteklenmelidir.</li><li>Varsayım ile ölçülmüş veriyi birbirinden ayır.</li><li>Tek bir örnekten bütün ekosistemler için kesin sonuç çıkarma.</li><li>Birden fazla tehdidin aynı anda etkili olabileceğini unutma.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🦋 Koruma için neler yapabiliriz?",
+          "bodyHtml": "<p>Atıkları doğru şekilde ayırmak, suyu ve enerjiyi tasarruflu kullanmak, doğal alanları temiz tutmak, canlıların yaşam alanlarına zarar vermemek ve çevre koruma çalışmalarına katılmak biyoçeşitliliğin korunmasına katkı sağlar.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Habitat kaybı",
+          "definition": "Bir canlının yaşam alanının daralması, bozulması veya yok olması."
+        },
+        {
+          "term": "İstilacı tür",
+          "definition": "Yeni bir alana yayılarak yerel türler ve ekosistem üzerinde olumsuz etki oluşturabilen tür."
+        },
+        {
+          "term": "Popülasyon",
+          "definition": "Belirli bir alanda ve zamanda yaşayan aynı türe ait bireyler topluluğu."
+        },
+        {
+          "term": "Tahmin",
+          "definition": "Mevcut bilgi ve kanıtlardan hareketle geleceğe veya bilinmeyene yönelik öngörü."
+        }
+      ],
+      "activity": {
+        "title": "Tehdit – kanıt – tahmin tablosu",
+        "materials": "Öğretmenin sağladığı çevre gözlem verileri, kısa araştırma metinleri ve çalışma kâğıdı.",
+        "steps": "1) Bir çevre tehdidi seçin. 2) Bu tehditle ilgili en az iki gözlem veya araştırma verisini belirleyin. 3) Veriye dayalı bir önerme ve kanıta dayanmayan bir varsayım yazın. 4) İkisini karşılaştırın. 5) Verilerin desteklediği bir tahmin oluşturup hangi ek bilgiye ihtiyaç duyduğunuzu açıklayın.",
+        "safetyNotes": "Araştırma için güvenilir ve yaş düzeyine uygun kaynakları kullanın. Çevre örneklerini gözlemlerken tehlikeli veya kirli alanlara girmeyin."
+      },
+      "quiz": [
+        {
+          "body": "Bir orman alanının yol ve yapılaşma nedeniyle küçük parçalara ayrılması hangi tehdide örnektir?",
+          "options": [
+            "Habitat parçalanması",
+            "Tozlaşma",
+            "Buharlaşma",
+            "Yoğunlaşma"
+          ],
+          "answer": 0,
+          "explanation": "Yaşam alanının bölünerek küçük parçalara ayrılması habitat parçalanmasıdır.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Bir gölde kirlilik artışı ve balık sayısında azalma gözlenmiştir. Bilimsel bir tahmin için hangisi en uygundur?",
+          "options": [
+            "Balıkların hepsi kesinlikle yok olacaktır.",
+            "Kirlilik sürerse bazı balık türleri olumsuz etkilenebilir; ölçümlerle araştırılmalıdır.",
+            "Göldeki bütün canlılar aynı şekilde etkilenir.",
+            "Kirlilik ile canlılar arasında hiçbir ilişki olamaz."
+          ],
+          "answer": 1,
+          "explanation": "Tahmin, verilerle desteklenmeli ve yeni gözlem ve ölçümlerle sınanmalıdır.",
+          "difficulty": "HARD"
+        },
+        {
+          "body": "Aşağıdakilerden hangisi veriye dayalı bir çıkarım yapmaya yardımcı olur?",
+          "options": [
+            "Tek bir kişinin tahmini",
+            "Ölçüm ve gözlem kayıtları",
+            "Kaynağı belirsiz bir söylenti",
+            "Kanıtsız bir genelleme"
+          ],
+          "answer": 1,
+          "explanation": "Ölçüm ve gözlem kayıtları, tahminleri değerlendirmek için kanıt sağlar.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "isinma-amacli-yakitlarin-etkileri",
+      "title": "Isınma Amaçlı Yakıt Kullanımının İnsan ve Çevreye Etkileri",
+      "summary": "Yakıtların yanmasıyla oluşan gaz ve parçacıkların hava kalitesine, insan sağlığına ve çevreye etkilerini tartışalım.",
+      "outcome": {
+        "code": "FB.6.7.3",
+        "description": "Isınma amaçlı yakıt kullanımının insan ve çevre üzerine etkilerini tartışabilme.",
+        "details": [
+          "Isınma amaçlı yakıt kullanımının etkileri hakkında mantıksal temellendirme yapar.",
+          "Fikirlerdeki mantıksal çelişkileri belirler.",
+          "Kanıtlarla desteklenen geçerli fikirleri değerlendirir."
+        ]
+      },
+      "skills": [
+        "Bilimsel tartışma",
+        "Neden-sonuç ilişkisi kurma",
+        "Kanıt kullanma",
+        "Eleştirel düşünme"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🔥 Isınma amaçlı yakıtlar",
+          "bodyHtml": "<p>Ev ve binaları ısıtmak için doğal gaz, kömür, odun ve bazı sıvı yakıtlar kullanılabilir. Yakıtların yanması sırasında açığa çıkan maddeler, yakıtın türüne ve yanma koşullarına göre değişir. Yanma için oksijen gerekir; yetersiz yanma bazı zararlı ürünlerin oluşmasına yol açabilir.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0'><div style='background:#fef3c7;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🪵</div><b>Katı yakıt örnekleri</b><p>Odun, kömür</p></div><div style='background:#dbeafe;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🔥</div><b>Gaz yakıt örneği</b><p>Doğal gaz</p></div></div><p>Yakıtın türü ne olursa olsun, ısınma sistemlerinin uygun şekilde kurulması, bakımı ve havalandırma koşulları önemlidir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🌫️ Hava kirliliği nasıl oluşur?",
+          "bodyHtml": "<p>Yakıtların yanması sonucunda karbondioksit, su buharı ve yakıtın bileşimine ve yanma koşullarına bağlı olarak farklı gazlar ve parçacıklar oluşabilir. Özellikle uygun olmayan yanma ve baca koşulları hava kirleticilerinin artmasına neden olabilir.</p><div style='background:#f1f5f9;border-radius:14px;padding:14px;text-align:center'><div style='font-size:2rem'>🏠 🔥 ➜ 🌫️ ➜ 🌆</div><b>Isınma – emisyon – hava kalitesi</b><p>Şematik neden-sonuç gösterimi; gerçek emisyon miktarı yakıt ve sisteme göre değişir.</p></div><p>Havadaki kirleticiler görüş mesafesini azaltabilir, çevre kalitesini bozabilir ve insan sağlığını olumsuz etkileyebilir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🫁 İnsan sağlığı ve çevre üzerindeki etkiler",
+          "bodyHtml": "<ul><li><strong>Solunum sistemi:</strong> Bazı hava kirleticileri solunum yollarını tahriş edebilir ve mevcut solunum sorunlarını ağırlaştırabilir.</li><li><strong>Kalp-damar sistemi:</strong> Hava kirliliğine uzun süre maruz kalmak kalp ve damar sağlığı açısından risk oluşturabilir.</li><li><strong>Atmosfer:</strong> Karbondioksit gibi sera gazlarının artması iklim değişikliğini etkiler.</li><li><strong>Ekosistemler:</strong> Bazı kirleticiler toprak ve suya taşınarak canlıları etkileyebilir.</li></ul><p>Hava kirliliğinin etkisi kirleticinin türüne, miktarına, maruz kalma süresine ve kişinin sağlık durumuna bağlıdır.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "♻️ Daha sürdürülebilir ısınma",
+          "bodyHtml": "<p>Isı yalıtımı, enerji verimli sistemler, düzenli bakım ve gereksiz enerji tüketiminin azaltılması aynı konforu daha az enerjiyle sağlamaya yardımcı olabilir. Yenilenebilir enerji kaynaklarının uygun koşullarda kullanılması da fosil yakıtlara bağımlılığı azaltabilir.</p><div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px'><div style='background:#dcfce7;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🏡</div><b>Yalıtım</b><p>Isı kaybını azaltır.</p></div><div style='background:#dbeafe;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>⚙️</div><b>Bakım</b><p>Sistemlerin verimli çalışmasına katkı sağlar.</p></div><div style='background:#fef3c7;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>☀️</div><b>Yenilenebilir enerji</b><p>Uygun koşullarda alternatif sağlar.</p></div></div>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Tartışırken kanıt kullan",
+          "bodyHtml": "<ul><li>Yakıtların çevresel etkileri yakıt türüne ve yanma koşullarına göre değişir.</li><li>Eksik yanma bazı zararlı kirleticilerin oluşmasına neden olabilir.</li><li>Hava kirliliği insan sağlığını ve ekosistemleri etkileyebilir.</li><li>Isı yalıtımı ve enerji verimliliği yakıt tüketimini azaltabilir.</li><li>Bir fikri savunurken güvenilir veri ve neden-sonuç ilişkisi kullan.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "💬 Tartışma sorusu",
+          "bodyHtml": "<p>“Bir yakıtın ekonomik olması, çevreye etkisinin önemsiz olduğu anlamına gelir mi?” sorusunu iki farklı bakış açısından tartışın. Maliyet, hava kalitesi, sağlık ve uzun vadeli çevresel etkileri birlikte değerlendirin. Karşıt görüşteki geçerli kanıtları da dikkate alın.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Yakıt",
+          "definition": "Enerji elde etmek amacıyla kullanılan ve uygun koşullarda yanabilen madde."
+        },
+        {
+          "term": "Yanma",
+          "definition": "Bir maddenin oksijenle tepkimeye girerek enerji açığa çıkardığı kimyasal olay."
+        },
+        {
+          "term": "Hava kirliliği",
+          "definition": "Havanın canlılara ve çevreye zarar verebilecek maddelerle kirlenmesi."
+        },
+        {
+          "term": "Isı yalıtımı",
+          "definition": "Isı geçişini azaltmaya yönelik uygulama."
+        },
+        {
+          "term": "Sera gazı",
+          "definition": "Atmosferde ısı tutulumunu etkileyen gaz."
+        }
+      ],
+      "activity": {
+        "title": "Yakıt kullanımı için kanıt temelli tartışma",
+        "materials": "Öğretmen tarafından sağlanan yakıt türleri, hava kalitesi ve enerji verimliliği hakkında kısa bilgi kartları.",
+        "steps": "1) Sınıfta küçük gruplar oluşturun. 2) Her grup verilen kaynaklardan yakıtların yarar ve etkilerine ilişkin kanıtları belirlesin. 3) İddia, kanıt ve gerekçe tablosu hazırlayın. 4) Farklı görüşleri dinleyip çelişkili veya eksik akıl yürütmeleri belirleyin. 5) Kanıtlara dayalı ortak bir değerlendirme yazın.",
+        "safetyNotes": "Yakıt yakma veya duman çıkarma deneyi yapılmaz. Etkinlik yalnızca bilgi kartları, güvenilir veriler ve sınıf tartışmasıyla yürütülür."
+      },
+      "quiz": [
+        {
+          "body": "Isınma amacıyla kullanılan yakıtların çevreye etkisini azaltmaya yardımcı olan uygulama hangisidir?",
+          "options": [
+            "Binalarda ısı yalıtımı yapmak",
+            "Pencereleri sürekli açık bırakmak",
+            "Bakımı geciktirmek",
+            "Gereksiz yere daha fazla yakıt kullanmak"
+          ],
+          "answer": 0,
+          "explanation": "Isı yalıtımı enerji kaybını azaltır; böylece aynı ısınma için daha az yakıt gerekebilir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Yakıtların yanmasıyla oluşan hava kirleticileri hakkında hangisi doğrudur?",
+          "options": [
+            "Her yakıt aynı miktarda kirletici oluşturur.",
+            "Yanma koşulları ve yakıtın türü oluşan maddeleri etkiler.",
+            "Yanma sırasında hiçbir gaz oluşmaz.",
+            "Kirleticiler yalnızca bitkileri etkiler."
+          ],
+          "answer": 1,
+          "explanation": "Yakıtın bileşimi ve yanmanın gerçekleşme koşulları emisyonları etkiler.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bir tartışmada bilimsel olarak daha güçlü bir görüş oluşturmak için ne yapılmalıdır?",
+          "options": [
+            "Yalnızca kişisel düşünceye dayanmak",
+            "Karşıt görüşleri dinlememek",
+            "Güvenilir kanıt ve neden-sonuç ilişkisi kullanmak",
+            "İlk duyulan bilgiyi kesin kabul etmek"
+          ],
+          "answer": 2,
+          "explanation": "Bilimsel tartışmada iddialar güvenilir kanıtlarla desteklenmeli ve mantıksal tutarlılık değerlendirilmelidir.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "cevre-sorunlari-ve-cozumleri",
+      "title": "Çevre Sorunları ve Çözüm Önerileri",
+      "summary": "Yakın çevremizdeki çevre problemlerini tanımlayalım; uygulanabilir ve veriye dayalı çözümler geliştirelim.",
+      "outcome": {
+        "code": "FB.6.7.4",
+        "description": "Yakın çevresindeki veya ülkemizdeki bir çevre problemini çözebilme.",
+        "details": [
+          "Çevre sorununu ve nedenlerini yapılandırır, özetler.",
+          "Sorunun çözümüne yönelik veriye dayalı tahmin ve öneriler geliştirir.",
+          "Çözüm önerilerini uygulanabilirlik ve etkililik açısından değerlendirir."
+        ]
+      },
+      "skills": [
+        "Problem çözme",
+        "Veri toplama",
+        "Karar verme",
+        "Sosyal sorumluluk"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🌍 Çevre sorunu nedir?",
+          "bodyHtml": "<p>İnsan faaliyetleri veya doğal süreçler sonucunda çevrenin dengesinin bozulması, canlıların yaşamının olumsuz etkilenmesi çevre sorunlarına yol açabilir. Deniz ve tatlı su kirliliği, toprak kirliliği, hava kirliliği, orman yangınları ve ormansızlaşma önemli örneklerdir.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0'><div style='background:#dbeafe;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🌊</div><b>Su kirliliği</b><p>Su ortamına kirletici karışması.</p></div><div style='background:#fef3c7;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🌱</div><b>Toprak kirliliği</b><p>Toprağın zararlı maddelerle bozulması.</p></div><div style='background:#e2e8f0;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🏭</div><b>Hava kirliliği</b><p>Havanın kirleticilerle bozulması.</p></div><div style='background:#dcfce7;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2rem'>🌲</div><b>Ormansızlaşma</b><p>Orman alanlarının azalması.</p></div></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧩 Bir çevre problemini nasıl tanımlarız?",
+          "bodyHtml": "<p>Çözüm geliştirmek için önce sorunun nerede ve ne zaman görüldüğünü, kimleri veya hangi canlıları etkilediğini ve olası nedenlerini belirlemeliyiz. Gözlem, fotoğraf, anket, ölçüm ve güvenilir raporlar problem hakkında bilgi sağlayabilir.</p><div style='background:#eff6ff;border-radius:14px;padding:14px;color:#1e3a8a'><b>Problem tanımlama örneği</b><p>Yer: Okul çevresindeki dere.</p><p>Gözlem: Yağış sonrası su kenarında plastik atıklar birikiyor.</p><p>Olası neden: Atıkların uygun şekilde toplanmaması ve çevreye bırakılması.</p><p>Etkilenenler: Su canlıları, kuşlar, çevrede yaşayan insanlar.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🛠️ Çözüm önerisi geliştirirken",
+          "bodyHtml": "<p>Çözüm önerisi sorunun nedenine yönelik, uygulanabilir ve sonuçları izlenebilir olmalıdır. Örneğin okul bahçesinde atıkların karışık toplanması sorunu varsa uygun kutuların yerleştirilmesi, bilgilendirme yapılması ve toplanan atık miktarının takip edilmesi önerilebilir.</p><ol><li><strong>Sorunu belirle:</strong> Ne oluyor, nerede oluyor?</li><li><strong>Veri topla:</strong> Gözlem ve kayıtlarla durumu ortaya koy.</li><li><strong>Nedenleri incele:</strong> Sorunun kaynaklarını araştır.</li><li><strong>Çözüm öner:</strong> Birden fazla uygulanabilir seçenek geliştir.</li><li><strong>Değerlendir:</strong> Maliyet, etki, süre ve uygulanabilirliği karşılaştır.</li><li><strong>İzle:</strong> Çözümün işe yarayıp yaramadığını verilerle kontrol et.</li></ol>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🌳 Orman yangınları ve ormansızlaşma",
+          "bodyHtml": "<p>Orman yangınları orman ekosistemlerine, canlıların yaşam alanlarına, toprağa ve hava kalitesine zarar verebilir. Ormansızlaşma ise orman alanlarının kalıcı veya uzun süreli biçimde azalmasıdır. Yangınlar, arazi kullanımındaki değişimler ve plansız yapılaşma gibi etkenler orman alanlarını tehdit edebilir.</p><p>Ormanların korunması için yangın riskini artıran davranışlardan kaçınmak, orman alanlarını kirletmemek, erken bildirim sistemlerini desteklemek ve zarar gören alanların bilimsel planlamayla iyileştirilmesi önemlidir.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Etkili çözümün özellikleri",
+          "bodyHtml": "<ul><li>Çevre sorunu açık ve ölçülebilir biçimde tanımlanmalıdır.</li><li>Çözüm, sorunun nedenine yönelik olmalıdır.</li><li>Öneriler güvenilir bilgi ve verilere dayanmalıdır.</li><li>Çözümün uygulanabilirliği, maliyeti ve olası etkileri değerlendirilmelidir.</li><li>Uygulama sonrasında sonuçlar yeniden ölçülmelidir.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🤝 Okulda sosyal sorumluluk projesi",
+          "bodyHtml": "<p>Okulda su tasarrufu, atıkların ayrıştırılması, enerji tasarrufu veya çevre temizliği konularından biri seçilerek sosyal sorumluluk çalışması yapılabilir. Projenin başında ve sonunda ölçüm veya gözlem yaparak değişim takip edilebilir. Böylece yalnızca slogan üretmek yerine etkisi değerlendirilebilen bir çalışma ortaya çıkar.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Çevre kirliliği",
+          "definition": "Çevrenin canlılara ve doğal süreçlere zarar verebilecek biçimde kirlenmesi."
+        },
+        {
+          "term": "Ormansızlaşma",
+          "definition": "Orman alanlarının azalması veya başka arazi kullanımına dönüşmesi."
+        },
+        {
+          "term": "Sosyal sorumluluk projesi",
+          "definition": "Toplumsal veya çevresel bir ihtiyaca çözüm üretmeyi amaçlayan planlı çalışma."
+        },
+        {
+          "term": "Sürdürülebilirlik",
+          "definition": "Bugünün ihtiyaçlarını karşılarken gelecek kuşakların ihtiyaçlarını da gözetme yaklaşımı."
+        }
+      ],
+      "activity": {
+        "title": "Okulumuz için çevre çözüm projesi",
+        "materials": "Gözlem formu, okul krokisi, geri bildirim kâğıtları, poster veya sunum malzemeleri.",
+        "steps": "1) Okulda veya yakın çevrede gözlenebilir bir çevre sorunu seçin. 2) Sorunu gözlem ve kayıtlarla tanımlayın. 3) Olası nedenleri araştırın. 4) En az iki çözüm önerisi geliştirin. 5) Önerileri etki, maliyet ve uygulanabilirlik açısından karşılaştırın. 6) Seçilen öneri için görev ve zaman planı hazırlayın. 7) Uygulama öncesi ve sonrası verileri karşılaştırarak sonucu raporlayın.",
+        "safetyNotes": "Saha gözlemlerini öğretmen ve okul yönetimi bilgisi dâhilinde yapın. Trafik, su kenarı, atık alanları veya ormanlık alanlarda tek başınıza çalışma yapmayın; atıklara dokunmayın."
+      },
+      "quiz": [
+        {
+          "body": "Bir çevre sorununa çözüm geliştirmeden önce yapılması gereken ilk iş hangisidir?",
+          "options": [
+            "Sorunu ve nedenlerini belirlemek",
+            "Hemen poster basmak",
+            "Sonuçları ölçmeden başarı ilan etmek",
+            "Başka bir bölgenin çözümünü aynen uygulamak"
+          ],
+          "answer": 0,
+          "explanation": "Etkili çözüm için önce sorun, görüldüğü yer ve olası nedenleri belirlenmelidir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Okulda atık ayrıştırma projesinin etkisini değerlendirmek için hangi yöntem daha uygundur?",
+          "options": [
+            "Yalnızca proje adını değiştirmek",
+            "Proje öncesi ve sonrası ayrıştırılan atık miktarını karşılaştırmak",
+            "Sadece birkaç kişinin fikrini sormak",
+            "Hiç kayıt tutmamak"
+          ],
+          "answer": 1,
+          "explanation": "Öncesi ve sonrası verileri karşılaştırmak, uygulamanın etkisini değerlendirmeye yardımcı olur.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bir çevre çözümünün başarılı sayılabilmesi için hangisi önemlidir?",
+          "options": [
+            "Uygulanabilir ve ölçülebilir olması",
+            "Yalnızca dikkat çekici bir slogan içermesi",
+            "Maliyet ve etkilerinin hiç düşünülmemesi",
+            "Sorunun nedenini dikkate almaması"
+          ],
+          "answer": 0,
+          "explanation": "Çözüm önerisi uygulanabilir olmalı ve sonuçları gözlem ya da ölçümle değerlendirilebilmelidir.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    }
+  ]
+}
