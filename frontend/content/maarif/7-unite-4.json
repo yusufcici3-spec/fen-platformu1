@@ -1,0 +1,377 @@
+{
+  "classLevel": 7,
+  "code": "7.4",
+  "hours": 14,
+  "title": "Işığın Kırılması ve Mercekler",
+  "slug": "isigin-kirilmasi-ve-mercekler",
+  "description": "Işığın farklı saydam ortamlara geçerken izlediği yolu gözlemleyerek kırılma olayını açıklayalım. İnce ve kalın kenarlı merceklerin özelliklerini karşılaştıralım; merceklerin günlük hayattaki kullanım alanlarını örneklerle sınıflandıralım.",
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı, 7. sınıf 4. ünite: Işığın Kırılması ve Mercekler, 14 ders saati. FB.7.4.1–FB.7.4.3 öğrenme çıktıları esas alınarak anlatım, şemalar, etkinlikler ve sorular özgün hazırlanmıştır. Snell Yasası, matematiksel kırılma hesapları, sınır açısı, tam yansıma ve özel ışınlarla görüntü çizimi kapsam dışıdır.",
+  "topics": [
+    {
+      "slug": "isigin-kirilmasi",
+      "title": "Işığın Kırılması",
+      "summary": "Işığın farklı saydam ortamlara geçerken izlediği yolu gözlemleyelim ve kırılmayı açıklayalım.",
+      "outcome": {
+        "code": "FB.7.4.1",
+        "description": "Ortam değiştiren ışığın izlediği yolu gözlemleyerek kırılma olayına yönelik bilimsel çıkarım yapabilme.",
+        "details": [
+          "Işık ışınlarının kırılmasına yönelik nitelikleri tanımlar.",
+          "Farklı yoğunluklara sahip ortamlarda ışığın izlediği yolu gözlemleyerek veri kaydeder.",
+          "Az yoğun ve çok yoğun saydam ortamlarda ışığın izlediği yolları yorumlar."
+        ]
+      },
+      "skills": [
+        "Bilimsel gözlem",
+        "Veri toplama ve kaydetme",
+        "Bilimsel çıkarım",
+        "Görsel okuryazarlık"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🔦 Işığın kırılması nedir?",
+          "bodyHtml": "<p>Işık, saydam bir ortamdan farklı optik yoğunluğa sahip başka bir saydam ortama geçerken hızını değiştirir. Işığın ilerleme doğrultusunun değişmesine <strong>kırılma</strong> denir. Kırılma; hava, su ve cam gibi saydam ortamların sınırında gözlenebilir.</p><div style='background:#eff6ff;padding:16px;border-radius:14px;text-align:center;color:#1e3a8a'><div style='font-size:2.5rem'>🌬️ ➜ 💧</div><b>Hava ortamından su ortamına geçen ışık</b><p>Ortam değiştiğinde ışığın doğrultusu değişebilir.</p></div><p>Işık bir ortamdan diğerine yüzeye dik doğrultuda gelirse doğrultusunu değiştirmeden geçer; yani kırılma yön değiştirmesi gözlenmez.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📐 Kırılma olayındaki temel kavramlar",
+          "bodyHtml": "<p>İki saydam ortamı ayıran yüzeye ışığın ulaştığı noktadan, yüzeye dik olacak şekilde çizilen hayalî doğruya <strong>normal</strong> denir.</p><ul><li><strong>Gelen ışın:</strong> Ayırıcı yüzeye ulaşan ışın.</li><li><strong>Kırılan ışın:</strong> Diğer ortama geçtikten sonra ilerleyen ışın.</li><li><strong>Normal:</strong> Yüzeye dik çizilen referans doğrusu.</li><li><strong>Gelme açısı:</strong> Gelen ışın ile normal arasındaki açı.</li><li><strong>Kırılma açısı:</strong> Kırılan ışın ile normal arasındaki açı.</li></ul><div style='background:#f8fafc;padding:14px;border-radius:14px;text-align:center'><svg viewBox='0 0 320 190' width='100%' xmlns='http://www.w3.org/2000/svg'><rect x='8' y='96' width='304' height='84' rx='8' fill='#bfdbfe' opacity='.7'/><path d='M8 96H312' stroke='#2563eb' stroke-width='2'/><path d='M160 12V180' stroke='#64748b' stroke-dasharray='5 4' stroke-width='2'/><path d='M65 25L160 96L205 165' fill='none' stroke='#f59e0b' stroke-width='4'/><path d='M150 85L160 96L171 86' fill='none' stroke='#f59e0b' stroke-width='2'/><text x='18' y='20' font-size='11' fill='currentColor'>Gelen ışın</text><text x='190' y='174' font-size='11' fill='currentColor'>Kırılan ışın</text><text x='170' y='30' font-size='11' fill='currentColor'>Normal</text><text x='12' y='112' font-size='11' fill='#1d4ed8'>Çok yoğun saydam ortam</text><text x='12' y='88' font-size='11' fill='currentColor'>Az yoğun ortam</text></svg><b>Açıları yüzeyden değil, normalden ölçeriz.</b></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "↘️ Az yoğun ortamdan çok yoğun ortama geçiş",
+          "bodyHtml": "<p>Işık, optikçe az yoğun saydam ortamdan optikçe çok yoğun saydam ortama eğik olarak geçtiğinde <strong>normale yaklaşarak</strong> kırılır. Örneğin havadan suya veya havadan cama geçen ışığın doğrultusu bu şekilde değişebilir.</p><div style='background:#ecfdf5;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2rem'>↘️　│　↘️</div><b>Az yoğun ➜ Çok yoğun</b><p>Kırılan ışın normale yaklaşır.</p></div><p>Bu açıklama, ışığın ortam değiştirirken izlediği yolu nitel olarak yorumlamamızı sağlar.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "↗️ Çok yoğun ortamdan az yoğun ortama geçiş",
+          "bodyHtml": "<p>Işık, optikçe çok yoğun saydam ortamdan optikçe az yoğun saydam ortama eğik olarak geçtiğinde <strong>normalden uzaklaşarak</strong> kırılır. Örneğin sudan havaya çıkan ışık bu şekilde yön değiştirebilir.</p><div style='background:#fff7ed;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2rem'>↗️　│　↗️</div><b>Çok yoğun ➜ Az yoğun</b><p>Kırılan ışın normalden uzaklaşır.</p></div><p>Burada “yoğunluk” ifadesi optik yoğunluğu anlatır; günlük hayatta kullandığımız kütle yoğunluğu ile aynı anlamda değerlendirilmemelidir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🥤 Günlük yaşamda kırılma örnekleri",
+          "bodyHtml": "<div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px'><div style='background:#eff6ff;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2.3rem'>🥤</div><b>Bardaktaki kalem</b><p>Su içindeki kalem kırılmış gibi görünür.</p></div><div style='background:#ecfdf5;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2.3rem'>🐟</div><b>Sudaki balık</b><p>Balık bulunduğu konumdan farklı yerdeymiş gibi algılanabilir.</p></div><div style='background:#fef3c7;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2.3rem'>💧</div><b>Su damlası</b><p>Yazıyı veya küçük ayrıntıları daha büyük gösterebilir.</p></div><div style='background:#fce7f3;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2.3rem'>🌈</div><b>Prizma</b><p>Beyaz ışık renklerine ayrılabilir.</p></div></div><p>Bu olayların temelinde ışığın saydam ortamlarda kırılması bulunur.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Kırılma konusunda dikkat!",
+          "bodyHtml": "<ul><li>Işık farklı optik yoğunluktaki saydam ortama eğik geçerken yön değiştirebilir.</li><li>Az yoğun ortamdan çok yoğun ortama geçerken normale yaklaşır.</li><li>Çok yoğun ortamdan az yoğun ortama geçerken normalden uzaklaşır.</li><li>Yüzeye dik gelen ışık doğrultusunu değiştirmeden ilerler.</li><li>Gelme ve kırılma açıları normal doğrusu ile ışınlar arasında ölçülür.</li><li>Bu düzeyde Snell Yasası ve matematiksel kırılma hesaplamaları yapılmaz; sınır açısı ve tam yansıma da kapsam dışıdır.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🧪 Deney: Kalem neden kırık görünür?",
+          "bodyHtml": "<p>Şeffaf bir bardağa su koyun ve içine bir kalem yerleştirin. Kaleme farklı açılardan bakarak su yüzeyinin yakınındaki görüntüsünü gözlemleyin. Kalemin neden kırılmış veya yer değiştirmiş gibi göründüğünü ışığın kırılmasıyla açıklayın.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Kırılma",
+          "definition": "Işığın farklı optik yoğunluktaki saydam ortama geçerken doğrultusunun değişmesi."
+        },
+        {
+          "term": "Gelen ışın",
+          "definition": "Ayırıcı yüzeye ulaşan ışık ışını."
+        },
+        {
+          "term": "Kırılan ışın",
+          "definition": "Diğer ortama geçtikten sonra ilerleyen ışık ışını."
+        },
+        {
+          "term": "Normal",
+          "definition": "Işığın yüzeye ulaştığı noktadan yüzeye dik çizilen hayalî doğru."
+        },
+        {
+          "term": "Gelme açısı",
+          "definition": "Gelen ışın ile normal arasındaki açı."
+        },
+        {
+          "term": "Kırılma açısı",
+          "definition": "Kırılan ışın ile normal arasındaki açı."
+        }
+      ],
+      "activity": {
+        "title": "Kalemin kırık görünmesini gözlemle",
+        "materials": "Şeffaf bardak, su, kalem ve gözlem çizelgesi.",
+        "steps": "Bardağı önce boş hâlde inceleyin. Kalemi bardağa yerleştirip farklı açılardan gözlemleyin. Bardağa su ekleyin ve aynı gözlemleri tekrarlayın. Gözlemlerinizi çizerek kaydedin; ışığın hava ve su ortamlarında izlediği yol ile ilişkilendirin.",
+        "safetyNotes": "Cam bardak yerine plastik şeffaf kap kullanılabilir. Dökülen suyu hemen silin; deneyde elektrikli araç kullanmayın."
+      },
+      "quiz": [
+        {
+          "body": "Işığın bir saydam ortamdan farklı optik yoğunluktaki başka bir saydam ortama geçerken doğrultusunun değişmesine ne denir?",
+          "options": [
+            "Yansıma",
+            "Kırılma",
+            "Soğurulma",
+            "Gölge oluşumu"
+          ],
+          "answer": 1,
+          "explanation": "Işığın ortam değiştirirken doğrultusunun değişmesi kırılma olarak adlandırılır.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Işık optikçe az yoğun ortamdan çok yoğun ortama eğik olarak geçerse nasıl kırılır?",
+          "options": [
+            "Normalden uzaklaşır",
+            "Normale yaklaşır",
+            "Geri döner",
+            "Her zaman doğrultusunu korur"
+          ],
+          "answer": 1,
+          "explanation": "Az yoğun ortamdan çok yoğun ortama geçen ışık normale yaklaşır.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Kırılma açısı hangi iki doğrultu arasında ölçülür?",
+          "options": [
+            "Yüzey ile gelen ışın",
+            "Kırılan ışın ile normal",
+            "Yüzey ile normal",
+            "Gelen ışın ile yüzey"
+          ],
+          "answer": 1,
+          "explanation": "Kırılma açısı, kırılan ışın ile normal arasındaki açıdır.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "mercekler",
+      "title": "Mercekler",
+      "summary": "İnce ve kalın kenarlı merceklerin şekillerini, ışığı kırma özelliklerini ve odak noktalarını inceleyelim.",
+      "outcome": {
+        "code": "FB.7.4.2",
+        "description": "Mercek çeşitlerine yönelik bilimsel çıkarım yapabilme.",
+        "details": [
+          "Mercek çeşitlerinin niteliklerini deneyerek tanımlar.",
+          "Mercekleri kullanarak özelliklerine yönelik veri kaydeder.",
+          "Mercekleri ince ve kalın kenarlı olarak sınıflandırır."
+        ]
+      },
+      "skills": [
+        "Deney yapma",
+        "Sınıflandırma",
+        "Gözlem ve veri kaydı",
+        "Bilimsel çıkarım"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🔍 Mercek nedir?",
+          "bodyHtml": "<p><strong>Mercek</strong>, en az bir yüzeyi küresel olan saydam optik araçtır. Işık mercekten geçerken kırılır. Mercekler kenarlarının kalınlığına göre ince kenarlı ve kalın kenarlı olarak iki temel grupta incelenir.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px'><div style='background:#dbeafe;padding:14px;border-radius:14px;text-align:center'><svg viewBox='0 0 120 90' width='100%'><path d='M60 5 Q100 45 60 85 Q20 45 60 5Z' fill='#93c5fd' stroke='#2563eb' stroke-width='2'/></svg><b>İnce kenarlı</b><p>Orta kısmı kalındır.</p></div><div style='background:#fef3c7;padding:14px;border-radius:14px;text-align:center'><svg viewBox='0 0 120 90' width='100%'><path d='M15 5 Q45 45 15 85 L105 85 Q75 45 105 5Z' fill='#fcd34d' stroke='#d97706' stroke-width='2'/></svg><b>Kalın kenarlı</b><p>Orta kısmı incedir.</p></div></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🔎 İnce kenarlı mercek",
+          "bodyHtml": "<p>İnce kenarlı merceğin orta bölümü kenarlarına göre daha kalındır. Bu mercek, asal eksene paralel gelen ışınları kırdıktan sonra bir noktada toplamaya yöneltir. Bu noktaya <strong>odak noktası</strong> denir.</p><div style='background:#eff6ff;padding:14px;border-radius:14px;text-align:center'><svg viewBox='0 0 320 120' width='100%'><path d='M160 8 Q190 60 160 112 Q130 60 160 8Z' fill='#93c5fd' stroke='#2563eb' stroke-width='2'/><path d='M10 25H310 M10 60H310 M10 95H310' stroke='#64748b' stroke-dasharray='3 3'/><path d='M10 25L160 60L270 60 M10 60H160 M10 95L160 60L270 60' fill='none' stroke='#dc2626' stroke-width='2'/><circle cx='270' cy='60' r='4' fill='#dc2626'/><text x='274' y='52' font-size='10' fill='currentColor'>Odak</text></svg><b>Işınları toplamaya yöneltir.</b></div><p>Büyüteç, fotoğraf makinesi ve bazı teleskop sistemlerinde ince kenarlı merceklerden yararlanılır.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🕳️ Kalın kenarlı mercek",
+          "bodyHtml": "<p>Kalın kenarlı merceğin orta bölümü kenarlarına göre daha incedir. Asal eksene paralel gelen ışınları kırdıktan sonra dağıtır. Dağılan ışınların geriye uzantıları merceğin ön tarafındaki odak noktasında birleşiyormuş gibi görünür.</p><div style='background:#fff7ed;padding:14px;border-radius:14px;text-align:center'><svg viewBox='0 0 320 120' width='100%'><path d='M130 8 Q100 60 130 112 L190 112 Q220 60 190 8Z' fill='#fcd34d' stroke='#d97706' stroke-width='2'/><path d='M10 25H310 M10 60H310 M10 95H310' stroke='#64748b' stroke-dasharray='3 3'/><path d='M10 25L160 60L310 10 M10 60L160 60L310 60 M10 95L160 60L310 110' fill='none' stroke='#dc2626' stroke-width='2'/><path d='M160 60L35 25 M160 60L35 95' fill='none' stroke='#dc2626' stroke-dasharray='4 3'/><text x='8' y='15' font-size='10' fill='currentColor'>Sanal odak</text></svg><b>Işınları dağıtmaya yöneltir.</b></div><p>Kalın kenarlı mercekler bazı gözlüklerde ve optik sistemlerde kullanılır.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🎯 Odak noktası ve asal eksen",
+          "bodyHtml": "<p>Merceğin merkezinden geçen ve merceğin iki tarafında uzanan hayalî doğruya <strong>asal eksen</strong> denir. Asal eksene paralel gelen ışınların mercekten geçtikten sonra toplandığı veya dağılıyormuş gibi göründüğü nokta <strong>odak noktası</strong> olarak adlandırılır.</p><div style='background:#f8fafc;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2rem'>➖　🔍　➖</div><b>Asal eksen merceğin merkezinden geçer.</b><p>Odak noktası merceğin ışığı yönlendirme özelliğini anlamamıza yardımcı olur.</p></div><p>Bu ünitede özel ışınlarla görüntü çizimi ve mercek bağıntılarına yönelik matematiksel hesaplamalar yapılmaz.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ İki merceği karşılaştıralım",
+          "bodyHtml": "<div style='overflow-x:auto'><table><thead><tr><th>Özellik</th><th>İnce kenarlı</th><th>Kalın kenarlı</th></tr></thead><tbody><tr><td>Şekil</td><td>Orta kalın, kenarlar ince</td><td>Orta ince, kenarlar kalın</td></tr><tr><td>Işığa etkisi</td><td>Işınları toplamaya yöneltir</td><td>Işınları dağıtmaya yöneltir</td></tr><tr><td>Örnek kullanım</td><td>Büyüteç, kamera</td><td>Bazı gözlükler</td></tr></tbody></table></div><p>Her iki mercek de ışığı kırar; farklı şekilleri nedeniyle ışınları farklı biçimde yönlendirir.</p>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🧪 Mercekleri gözlemleyelim",
+          "bodyHtml": "<p>Öğretmeninizin sağladığı güvenli mercek örnekleriyle yazıların ve uzaktaki nesnelerin nasıl göründüğünü karşılaştırın. Merceğin orta ve kenar kalınlığını gözlemleyerek türünü belirleyin. Mercekleri doğrudan Güneş'e doğrultmayın.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Mercek",
+          "definition": "Işığı kırarak yönlendiren saydam optik araç."
+        },
+        {
+          "term": "İnce kenarlı mercek",
+          "definition": "Orta kısmı kalın, kenarları ince olan ve ışınları toplamaya yönelten mercek."
+        },
+        {
+          "term": "Kalın kenarlı mercek",
+          "definition": "Orta kısmı ince, kenarları kalın olan ve ışınları dağıtmaya yönelten mercek."
+        },
+        {
+          "term": "Odak noktası",
+          "definition": "Merceğin paralel ışınları topladığı veya dağılıyormuş gibi gösterdiği nokta."
+        },
+        {
+          "term": "Asal eksen",
+          "definition": "Merceğin merkezinden geçen referans doğrusu."
+        }
+      ],
+      "activity": {
+        "title": "Mercekleri sınıflandır",
+        "materials": "Öğretmen gözetiminde iki tür mercek, yazılı kartlar ve gözlem tablosu.",
+        "steps": "Merceklerin orta ve kenar kalınlıklarını inceleyin. Güvenli gözlem kartlarıyla cisim görüntülerindeki değişimi karşılaştırın. Işın çizim şemalarını inceleyerek ışınların toplanma veya dağılma eğilimini kaydedin. Sonuçları ince kenarlı ve kalın kenarlı olarak sınıflandırın.",
+        "safetyNotes": "Merceklerle Güneş'e veya çok parlak ışık kaynaklarına bakmayın; mercekleri Güneş ışığını bir noktada toplamak için kullanmayın. Cam mercekleri düşürmemeye dikkat edin."
+      },
+      "quiz": [
+        {
+          "body": "Orta kısmı kenarlarına göre daha kalın olan mercek hangisidir?",
+          "options": [
+            "Kalın kenarlı mercek",
+            "İnce kenarlı mercek",
+            "Düzlem ayna",
+            "Prizma"
+          ],
+          "answer": 1,
+          "explanation": "İnce kenarlı merceğin orta kısmı kalın, kenarları incedir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Asal eksene paralel gelen ışınları bir noktada toplamaya yönelten mercek hangisidir?",
+          "options": [
+            "Kalın kenarlı mercek",
+            "İnce kenarlı mercek",
+            "Düzlem ayna",
+            "Opak cisim"
+          ],
+          "answer": 1,
+          "explanation": "İnce kenarlı mercek paralel ışınları odak noktasında toplamaya yöneltir.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Kalın kenarlı mercek için aşağıdakilerden hangisi doğrudur?",
+          "options": [
+            "Orta kısmı kenarlardan kalındır",
+            "Işınları toplamaya yöneltir",
+            "Orta kısmı kenarlardan incedir ve ışınları dağıtır",
+            "Işığı hiç kırmaz"
+          ],
+          "answer": 2,
+          "explanation": "Kalın kenarlı mercek orta kısmı ince, kenarları kalın olan ve ışınları dağıtmaya yönelten mercektir.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "merceklerin-gunluk-hayatta-kullanimi",
+      "title": "Merceklerin Günlük Hayatta Kullanım Alanları",
+      "summary": "Merceklerin özelliklerinden yararlanan araçları tanıyalım ve kullanım alanlarına göre sınıflandıralım.",
+      "outcome": {
+        "code": "FB.7.4.3",
+        "description": "Merceklerin günlük hayatta kullanım alanlarını örneklerle sınıflandırabilme.",
+        "details": [
+          "Merceklerin kullanım alanlarını belirler.",
+          "Kullanım alanlarını merceklerin niteliklerine göre ayrıştırır.",
+          "Mercek kullanım örneklerini gruplandırır ve etiketler."
+        ]
+      },
+      "skills": [
+        "Sınıflandırma",
+        "Karşılaştırma",
+        "Araştırma",
+        "Bilimsel iletişim"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "👓 Gözlüklerde mercekler",
+          "bodyHtml": "<p>Gözlüklerde kullanılan mercekler, ışığın göze uygun biçimde yönlendirilmesine yardımcı olur. Bazı gözlüklerde ince kenarlı, bazılarında kalın kenarlı mercekler bulunur. Hangi merceğin kullanılacağı göz sağlığı uzmanının değerlendirmesiyle belirlenir.</p><div style='background:#eff6ff;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2.4rem'>👓</div><b>Gözlükler: Görüntünün netleşmesine yardımcı optik araçlar</b></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🔬 Mikroskop ve büyüteç",
+          "bodyHtml": "<p><strong>Büyüteç</strong>, çoğunlukla ince kenarlı mercek kullanarak yakındaki küçük ayrıntıların daha büyük görünmesini sağlar. <strong>Mikroskop</strong> ise birden fazla mercekten yararlanarak çıplak gözle seçilemeyen küçük yapıları incelememizi sağlar.</p><div style='display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px'><div style='background:#ecfdf5;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2.4rem'>🔎</div><b>Büyüteç</b><p>Küçük ayrıntıları büyük gösterir.</p></div><div style='background:#fef3c7;padding:12px;border-radius:12px;text-align:center'><div style='font-size:2.4rem'>🔬</div><b>Mikroskop</b><p>Çok küçük yapıları incelemeyi sağlar.</p></div></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "📷 Fotoğraf makinesi ve teleskop",
+          "bodyHtml": "<p>Fotoğraf makinelerinde merceklerden oluşan optik sistemler ışığı görüntü algılayıcısına yönlendirir. Teleskoplarda ise uzaktaki gök cisimlerinden gelen ışığın toplanması ve gözlenebilir görüntü elde edilmesi için mercek veya aynalardan yararlanılabilir.</p><div style='background:#f8fafc;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2.3rem'>📷　🔭</div><b>Kamera ve teleskoplar optik sistemlerden yararlanır.</b></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🛰️ Bilim ve teknolojide mercekler",
+          "bodyHtml": "<p>Mercek ve diğer optik bileşenler; gözlem cihazlarında, ölçüm sistemlerinde, tıbbi görüntüleme araçlarında ve uydu kameralarında kullanılabilir. Türkiye'de de optik sistemlerin geliştirilmesine yönelik araştırmalar yapılmaktadır. Bu araçlar ışığın kırılma özelliğinden yararlanır.</p><div style='background:#eff6ff;padding:14px;border-radius:14px;text-align:center'><div style='font-size:2.3rem'>🛰️ 🔭 🧪</div><b>Optik teknolojiler: Gözlem, görüntüleme ve ölçüm</b></div>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Kullanım alanlarına göre sınıflandırma",
+          "bodyHtml": "<div style='overflow-x:auto'><table><thead><tr><th>Araç</th><th>Mercek kullanımı</th><th>Amaç</th></tr></thead><tbody><tr><td>Büyüteç</td><td>İnce kenarlı</td><td>Küçük ayrıntıları büyük göstermek</td></tr><tr><td>Mikroskop</td><td>Mercek sistemi</td><td>Çok küçük yapıları incelemek</td></tr><tr><td>Fotoğraf makinesi</td><td>Mercek sistemi</td><td>Görüntüyü algılayıcıya odaklamak</td></tr><tr><td>Gözlük</td><td>İnce veya kalın kenarlı</td><td>Görmeyi düzeltmeye yardımcı olmak</td></tr><tr><td>Teleskop</td><td>Mercekli veya aynalı optik sistem</td><td>Uzak cisimleri gözlemek</td></tr></tbody></table></div><p>Bir araçta birden fazla mercek veya farklı optik bileşenler birlikte kullanılabilir.</p>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "♻️ Optik araçları ve çevreyi koruyalım",
+          "bodyHtml": "<p>Cam mercekler ve optik araçlar dikkatli kullanılmalıdır. Kırık camlar doğaya bırakılmamalı, uygun atık toplama noktalarına teslim edilmelidir. Özellikle ormanlık alanlarda bırakılan cam parçaları canlılar ve çevre için risk oluşturabilir.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Optik sistem",
+          "definition": "Işığı yönlendiren veya görüntü oluşturan optik bileşenlerin bütünü."
+        },
+        {
+          "term": "Büyüteç",
+          "definition": "Yakındaki küçük ayrıntıları daha büyük gösteren mercekli araç."
+        },
+        {
+          "term": "Mikroskop",
+          "definition": "Çok küçük yapıları incelemek için kullanılan optik araç."
+        },
+        {
+          "term": "Teleskop",
+          "definition": "Uzak gök cisimlerini gözlemlemeye yarayan araç."
+        },
+        {
+          "term": "Görüntü algılayıcı",
+          "definition": "Fotoğraf makinesinde ışığı algılayarak görüntü kaydeden bileşen."
+        }
+      ],
+      "activity": {
+        "title": "Mercek avı: Araçları etiketle",
+        "materials": "Gözlük, büyüteç, mikroskop, kamera ve teleskop görselleri; sınıflandırma tablosu.",
+        "steps": "Görsellerdeki araçları inceleyin. Hangi araçta mercek kullanıldığını belirleyin. Kullanım amaçlarını yazın ve ince kenarlı/kalın kenarlı merceklerin nerelerde kullanılabileceğine ilişkin sınıflandırma yapın. Bir optik aracın çalışma ilkesini sınıfa sunun.",
+        "safetyNotes": "Gerçek araçlar kullanılıyorsa öğretmen yönergelerine uyun. Merceklerle Güneş'e bakmayın ve mercekleri yoğun ışığı odaklamak için kullanmayın."
+      },
+      "quiz": [
+        {
+          "body": "Küçük ayrıntıları daha büyük görmemizi sağlayan basit optik araç hangisidir?",
+          "options": [
+            "Büyüteç",
+            "Düzlem ayna",
+            "Termometre",
+            "Pusula"
+          ],
+          "answer": 0,
+          "explanation": "Büyüteç, ince kenarlı mercek yardımıyla yakındaki küçük ayrıntıları büyük gösterir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Aşağıdaki araçlardan hangisi çok küçük yapıları incelemek için kullanılır?",
+          "options": [
+            "Teleskop",
+            "Mikroskop",
+            "Periskop aynası",
+            "Barometre"
+          ],
+          "answer": 1,
+          "explanation": "Mikroskop mercek sistemleriyle çok küçük yapıları incelememizi sağlar.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Bir fotoğraf makinesindeki mercek sisteminin temel görevlerinden biri hangisidir?",
+          "options": [
+            "Sesi yükseltmek",
+            "Işığı görüntü algılayıcısına yönlendirmek",
+            "Elektrik üretmek",
+            "Cisimlerin kütlesini ölçmek"
+          ],
+          "answer": 1,
+          "explanation": "Fotoğraf makinesinin optik sistemi ışığı görüntü algılayıcısına yönlendirerek görüntü oluşumuna yardımcı olur.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    }
+  ]
+}
