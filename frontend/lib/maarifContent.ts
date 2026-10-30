@@ -18,6 +18,8 @@ import unit73 from "@/content/maarif/7-unite-3.json";
 import unit74 from "@/content/maarif/7-unite-4.json";
 // 7. sinif 5. unite: Maddenin Dogasina Yolculuk
 import unit75 from "@/content/maarif/7-unite-5.json";
+import unit77 from "@/content/maarif/7-unite-7.json";
+import unit76 from "@/content/maarif/7-unite-6.json";
 
 export type StaticSection = {
   type: "EXPLANATION" | "IMPORTANT_INFO" | "DAILY_LIFE";
@@ -58,7 +60,7 @@ export type StaticUnit = {
 };
 
 /** Türkiye Yüzyılı Maarif Modeli'ne göre hazırlanmış, kodla yönetilen üniteler. */
-export const STATIC_UNITS: StaticUnit[] = [unit51 as StaticUnit, unit52 as unknown as StaticUnit, unit53 as StaticUnit, unit54 as StaticUnit, unit55 as StaticUnit, unit56 as StaticUnit, unit57 as StaticUnit, unit61 as StaticUnit, unit62 as StaticUnit, unit63 as StaticUnit, unit64 as StaticUnit, unit65 as StaticUnit, unit66 as StaticUnit, unit67 as StaticUnit, unit71 as StaticUnit, unit72 as StaticUnit, unit73 as StaticUnit, unit74 as StaticUnit, unit75 as StaticUnit];
+export const STATIC_UNITS: StaticUnit[] = [unit51 as StaticUnit, unit52 as unknown as StaticUnit, unit53 as StaticUnit, unit54 as StaticUnit, unit55 as StaticUnit, unit56 as StaticUnit, unit57 as StaticUnit, unit61 as StaticUnit, unit62 as StaticUnit, unit63 as StaticUnit, unit64 as StaticUnit, unit65 as StaticUnit, unit66 as StaticUnit, unit67 as StaticUnit, unit71 as StaticUnit, unit72 as StaticUnit, unit73 as StaticUnit, unit74 as StaticUnit, unit75 as StaticUnit, unit76 as StaticUnit, unit77 as StaticUnit];
 
 export function getStaticUnit(level: number, unitSlug: string): StaticUnit | undefined {
   return STATIC_UNITS.find((u) => u.classLevel === level && u.slug === unitSlug);
