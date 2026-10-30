@@ -1,0 +1,341 @@
+{
+  "classLevel": 6,
+  "code": "6.3",
+  "hours": 16,
+  "title": "Canlılarda Sistemler",
+  "slug": "canlilarda-sistemler",
+  "description": "Bitki ve hayvanlarda üreme, büyüme ve gelişmeyi; insan vücudundaki temel sistemleri ve bu sistemlerin sağlıklı çalışması için yapılması gerekenleri model, gözlem ve günlük yaşam örnekleriyle keşfedelim.",
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı (2024), 6. sınıf 3. ünite. İçerik, ilgili öğrenme çıktıları desteklenerek hazırlanmış özgün konu anlatımıdır.",
+  "topics": [
+    {
+      "slug": "bitki-ve-hayvanlarda-ureme-buyume-gelisme",
+      "title": "Bitki ve Hayvanlarda Üreme, Büyüme ve Gelişme",
+      "summary": "Canlıların nesillerini nasıl sürdürdüğünü, bitkilerde çimlenme ve büyümeyi, hayvanlarda yaşam döngülerini inceleyelim.",
+      "outcome": {
+        "code": "FB.6.3.1",
+        "description": "Bitki ve hayvanlarda üreme, büyüme ve gelişme süreçlerini gözlem ve modellerden yararlanarak açıklayabilme.",
+        "details": [
+          "Eşeyli ve eşeysiz üremeye örnekler verir.",
+          "Çiçekli bitkilerde üreme yapılarını ve tozlaşma-döllenme sürecini açıklar.",
+          "Tohumun çimlenmesi ve bitkinin büyümesi için gerekli koşulları belirler.",
+          "Hayvanlarda büyüme ve gelişme süreçlerini yaşam döngüsü örnekleriyle karşılaştırır."
+        ]
+      },
+      "skills": [
+        "Gözlem",
+        "Karşılaştırma",
+        "Model oluşturma",
+        "Veri kaydetme",
+        "Neden-sonuç ilişkisi kurma"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🌱 Canlılar neden ürer?",
+          "bodyHtml": "<p>Çevremizdeki canlılar doğar, büyür, gelişir ve yaşamlarını sürdürür. Canlıların kendilerine benzer yeni bireyler meydana getirmesine <strong>üreme</strong> denir. Üreme, türün devamlılığını sağlar. Bir canlının büyümesi ile üreme aynı şey değildir: büyüme bireyin boyut ve kütlesinin artması, gelişme ise yapı ve görev bakımından olgunlaşmasıdır.</p><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.7rem;margin:1rem 0\"><div style=\"background:#dcfce7;color:#14532d;padding:1rem;border-radius:14px;text-align:center\"><div style=\"font-size:2.3rem\">🌰</div><b>Tohum</b><p>Yeni bitkinin başlangıcı</p></div><div style=\"background:#dbeafe;color:#1e3a8a;padding:1rem;border-radius:14px;text-align:center\"><div style=\"font-size:2.3rem\">🌱</div><b>Fide</b><p>Genç bitki</p></div><div style=\"background:#fef3c7;color:#713f12;padding:1rem;border-radius:14px;text-align:center\"><div style=\"font-size:2.3rem\">🌳</div><b>Olgun bitki</b><p>Büyümüş ve gelişmiş</p></div></div><p>Üreme sayesinde canlı türleri nesiller boyunca varlığını sürdürebilir. Canlılar farklı üreme yolları kullanabilir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧬 Eşeyli ve eşeysiz üreme",
+          "bodyHtml": "<div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.8rem;margin:1rem 0\"><div style=\"border:2px solid #86b5ed;border-radius:16px;padding:1rem\"><div style=\"font-size:2rem;text-align:center\">🐝 🌼</div><h3 style=\"text-align:center\"><b>Eşeyli üreme</b></h3><p>Üreme hücrelerinin birleşmesiyle gerçekleşir. Yavrular kalıtsal özellikler bakımından anne ve babalarından özellikler taşır.</p><p><strong>Örnek:</strong> İnsan, kedi, kuş ve çiçekli bitkilerin çoğu.</p></div><div style=\"border:2px solid #86c9a2;border-radius:16px;padding:1rem\"><div style=\"font-size:2rem;text-align:center\">🦠 ➜ 🦠🦠</div><h3 style=\"text-align:center\"><b>Eşeysiz üreme</b></h3><p>Tek bir canlıdan, üreme hücreleri birleşmeden yeni canlı oluşur. Oluşan bireyler çoğunlukla ana canlıyla kalıtsal olarak çok benzerdir.</p><p><strong>Örnek:</strong> Bakterilerde bölünme, hidrada tomurcuklanma, çilekte sürünücü gövde.</p></div></div><p><strong>Karıştırma:</strong> Eşeyli üreme için mutlaka iki ayrı bireyin bir araya gelmesi gerekmez; önemli olan üreme hücrelerinin birleşmesidir. Eşeysiz üremede ise üreme hücrelerinin birleşmesi gerçekleşmez.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🌸 Çiçekli bitkilerde üreme",
+          "bodyHtml": "<p>Çiçekli bitkilerde çiçek, üreme yapısıdır. Çiçeğin temel bölümlerini tanıyalım:</p><div style=\"margin:1rem 0;padding:1rem;border-radius:16px;background:#f0fdf4;color:#14532d;text-align:center\"><div style=\"font-size:3.4rem\">🌼</div><b>Çiçek yapısı – temsili görsel</b><p style=\"font-size:.9rem\">Erkek organ: başçık ve sapçık · Dişi organ: tepecik, dişicik borusu ve yumurtalık</p></div><ul><li><strong>Erkek organ:</strong> Polenlerin üretildiği başçık ve onu taşıyan sapçıktan oluşur.</li><li><strong>Dişi organ:</strong> Tepecik, dişicik borusu ve yumurtalık bölümlerini içerir. Tohum taslakları yumurtalıkta bulunur.</li><li><strong>Çanak yaprak:</strong> Tomurcuk hâlindeki çiçeği korumaya yardımcı olur.</li><li><strong taç yaprak:</strong> Renk ve kokusuyla tozlaşmaya yardımcı canlıları çekebilir.</li></ul><p>Çiçeklerin şekil ve renkleri bitki türlerine göre değişebilir. Her çiçekte tüm yapılar aynı belirginlikte olmayabilir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🐝 Tozlaşma ve döllenme nasıl gerçekleşir?",
+          "bodyHtml": "<ol><li><strong>Tozlaşma:</strong> Polenlerin başçıktan dişi organın tepeciğine taşınmasıdır. Rüzgâr, böcekler ve bazı diğer hayvanlar bu taşınmaya yardımcı olabilir.</li><li><strong>Döllenme:</strong> Erkek üreme hücresinin yumurta hücresiyle birleşmesidir.</li><li><strong>Tohum ve meyve oluşumu:</strong> Döllenmeden sonra tohum taslağı tohuma, yumurtalık ise çoğu çiçekli bitkide meyveye dönüşür.</li><li><strong>Çimlenme:</strong> Uygun koşullarda tohumdan yeni bitki gelişmeye başlar.</li></ol><div style=\"display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;justify-content:center;margin:1rem 0;padding:1rem;background:#fff7ed;border-radius:14px;color:#7c2d12\"><b>🌼 Çiçek</b><span>→</span><b>🐝 Tozlaşma</b><span>→</span><b>✨ Döllenme</b><span>→</span><b>🍎 Meyve ve tohum</b><span>→</span><b>🌱 Yeni bitki</b></div><p><strong>Önemli:</strong> Tozlaşma ile döllenme aynı olay değildir. Tozlaşma polenin taşınması, döllenme ise üreme hücrelerinin birleşmesidir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "💧 Tohumun çimlenmesi için neler gerekir?",
+          "bodyHtml": "<p>Bir tohumun çimlenebilmesi için uygun koşullar gerekir. Genel olarak <strong>su, oksijen ve uygun sıcaklık</strong> gereklidir. Tohumun çimlenmesi için ışık her bitki türünde zorunlu değildir; ancak fide büyüyüp fotosentez yapmaya başladığında ışık önem kazanır.</p><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.7rem;margin:1rem 0\"><div style=\"padding:.9rem;background:#dbeafe;color:#1e3a8a;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">💧</div><b>Su</b><p>Tohumun etkinleşmesine yardım eder.</p></div><div style=\"padding:.9rem;background:#fef3c7;color:#713f12;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">🌡️</div><b>Uygun sıcaklık</b><p>Yaşamsal olayların gerçekleşmesini sağlar.</p></div><div style=\"padding:.9rem;background:#e0f2fe;color:#164e63;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">🌬️</div><b>Oksijen</b><p>Solunum için gereklidir.</p></div></div><p>Tohumun çimlenmesinde ışık gerekliliği bitki türüne göre değişebilir. Çimlenme deneyinde değişkenleri kontrol ederek bilimsel sonuç çıkarabiliriz.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🐣 Hayvanlarda büyüme ve gelişme",
+          "bodyHtml": "<p>Hayvanların yaşam döngüleri türlere göre farklılık gösterir. Bazı hayvanlarda yavru, yetişkin bireye benzer; bazılarında ise belirgin değişimler yaşanır.</p><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.7rem;margin:1rem 0\"><div style=\"background:#eff6ff;padding:.9rem;border-radius:14px;text-align:center;color:#1e3a8a\"><div style=\"font-size:2rem\">🥚</div><b>Kelebek</b><p>Yumurta → tırtıl → pupa → kelebek</p></div><div style=\"background:#f0fdf4;padding:.9rem;border-radius:14px;text-align:center;color:#14532d\"><div style=\"font-size:2rem\">🐸</div><b>Kurbağa</b><p>Yumurta → iribaş → genç kurbağa → ergin</p></div><div style=\"background:#fff7ed;padding:.9rem;border-radius:14px;text-align:center;color:#7c2d12\"><div style=\"font-size:2rem\">🐱</div><b>Kedi</b><p>Yavru → genç → yetişkin</p></div></div><p>Kelebek ve kurbağada başkalaşım görülür. Kedi ve insan gibi memelilerde yavrular doğduktan sonra büyüyüp gelişerek yetişkin olur; kelebekteki gibi başkalaşım gerçekleşmez.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Konunun püf noktaları",
+          "bodyHtml": "<ul><li>Üreme, türün devamlılığını sağlar; büyüme ve gelişme bireyin yaşam sürecidir.</li><li>Eşeyli üremede üreme hücreleri birleşir; eşeysiz üremede birleşme yoktur.</li><li>Tozlaşma, polenin dişi organ tepeciğine taşınmasıdır.</li><li>Döllenme, erkek ve dişi üreme hücrelerinin birleşmesidir.</li><li>Çimlenme için su, oksijen ve uygun sıcaklık gerekir; ışık her tohum için zorunlu değildir.</li><li>Kelebek ve kurbağa başkalaşım geçiren canlılara örnektir.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🌍 Yaşamla bağlantı: Tarım ve biyolojik çeşitlilik",
+          "bodyHtml": "<p>Arıların ve diğer tozlaştırıcı canlıların bitkilerin üremesine katkısı tarımsal üretim açısından önemlidir. Çiçekli bitkilerin tozlaşması, birçok meyve ve sebzenin oluşmasına yardımcı olur. Tohumların uygun koşullarda saklanması ve yerel bitki çeşitlerinin korunması biyolojik çeşitliliğin sürdürülmesine katkı sağlar.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Üreme",
+          "definition": "Canlıların kendilerine benzer yeni bireyler oluşturması."
+        },
+        {
+          "term": "Eşeyli üreme",
+          "definition": "Üreme hücrelerinin birleşmesiyle yeni birey oluşması."
+        },
+        {
+          "term": "Eşeysiz üreme",
+          "definition": "Üreme hücreleri birleşmeden yeni birey oluşması."
+        },
+        {
+          "term": "Tozlaşma",
+          "definition": "Polenlerin başçıktan dişi organın tepeciğine taşınması."
+        },
+        {
+          "term": "Döllenme",
+          "definition": "Erkek ve dişi üreme hücrelerinin birleşmesi."
+        },
+        {
+          "term": "Çimlenme",
+          "definition": "Tohumdan yeni bitkinin gelişmeye başlaması."
+        },
+        {
+          "term": "Başkalasım",
+          "definition": "Bazı hayvanlarda gelişim sırasında vücut yapısında belirgin değişikliklerin görülmesi."
+        }
+      ],
+      "activity": {
+        "title": "Çimlenme araştırması: Hangi koşul gerekli?",
+        "materials": "Aynı türden tohumlar, pamuk, şeffaf kaplar, su, etiket ve gözlem çizelgesi.",
+        "steps": "1) Üç kaba eşit sayıda aynı tür tohum koy. 2) Birinci kaba nemli pamuk ve hava alabilecek ortam hazırla; ikinci kabı susuz bırak; üçüncü kabı aşırı suyla tamamen doldurup oksijenin sınırlanmasını gözlemle. 3) Kapları uygun sıcaklıkta tut. 4) Bir hafta boyunca her gün gözlemle ve sonuçları kaydet. 5) Deneyde hangi değişkenin değiştirildiğini, hangilerinin sabit tutulduğunu yaz. 6) Sonuçlarını sınıf arkadaşlarınla karşılaştır.",
+        "safetyNotes": "Tohumları yemeyin; küflenme oluşursa kaba çıplak elle dokunmayın ve öğretmeninizden yardım isteyin. Deney kaplarını kapalı ve havasız bırakmayın."
+      },
+      "quiz": [
+        {
+          "body": "Canlıların kendilerine benzer yeni bireyler oluşturmasına ne denir?",
+          "options": [
+            "Solunum",
+            "Üreme",
+            "Boşaltım",
+            "Hareket"
+          ],
+          "answer": 1,
+          "explanation": "Üreme, türün devamlılığını sağlayan yeni bireylerin oluşmasıdır.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Polenlerin başçıktan dişi organın tepeciğine taşınması hangi olaydır?",
+          "options": [
+            "Döllenme",
+            "Çimlenme",
+            "Tozlaşma",
+            "Fotosentez"
+          ],
+          "answer": 2,
+          "explanation": "Polenlerin tepeciğe taşınması tozlaşmadır; döllenme üreme hücrelerinin birleşmesidir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Tohumun çimlenmesi için genel olarak gerekli koşullar hangileridir?",
+          "options": [
+            "Su, oksijen ve uygun sıcaklık",
+            "Yalnızca ışık",
+            "Toprak, gübre ve karanlık",
+            "Yalnızca yüksek sıcaklık"
+          ],
+          "answer": 0,
+          "explanation": "Çimlenme için su, oksijen ve uygun sıcaklık gerekir. Işık her tohum için zorunlu değildir.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Aşağıdaki canlılardan hangisi başkalaşım geçirir?",
+          "options": [
+            "Kedi",
+            "İnsan",
+            "Kelebek",
+            "Serçe"
+          ],
+          "answer": 2,
+          "explanation": "Kelebek yumurta, tırtıl, pupa ve ergin evrelerinden geçer.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Tozlaşma ve döllenme arasındaki farkı doğru açıklayan seçenek hangisidir?",
+          "options": [
+            "İkisi de tohumun su almasıdır",
+            "Tozlaşma polenin taşınması, döllenme üreme hücrelerinin birleşmesidir",
+            "Tozlaşma yalnızca hayvanlarda olur",
+            "Döllenme çimlenmeden önce suyun emilmesidir"
+          ],
+          "answer": 1,
+          "explanation": "Tozlaşma polenin dişi organ tepeciğine ulaşması; döllenme üreme hücrelerinin birleşmesidir.",
+          "difficulty": "HARD"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "insan-vucudundaki-sistemler",
+      "title": "İnsan Vücudundaki Sistemler",
+      "summary": "Destek ve hareket, sindirim, dolaşım, solunum ve boşaltım sistemlerinin temel görevlerini ve birlikte nasıl çalıştıklarını öğrenelim.",
+      "outcome": {
+        "code": "FB.6.3.2",
+        "description": "İnsan vücudundaki temel sistemlerin yapı ve görevlerini model ve görsellerden yararlanarak açıklayabilme.",
+        "details": [
+          "Destek ve hareket sisteminin temel yapılarını tanır.",
+          "Sindirim, dolaşım, solunum ve boşaltım sistemlerinin görevlerini açıklar.",
+          "Sistemlerin vücudun sağlıklı çalışması için birlikte görev yaptığını örneklerle açıklar."
+        ]
+      },
+      "skills": [
+        "Sistem düşüncesi",
+        "Model okuryazarlığı",
+        "Sınıflandırma",
+        "Karşılaştırma",
+        "Sağlık okuryazarlığı"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🧍 Vücudumuz birbiriyle bağlantılı sistemlerden oluşur",
+          "bodyHtml": "<p>İnsan vücudunda farklı görevleri yerine getiren organlar bir araya gelerek sistemleri oluşturur. Sistemler birbirinden bağımsız çalışmaz; yaşamımızı sürdürmek için sürekli iş birliği yapar.</p><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.7rem;margin:1rem 0\"><div style=\"background:#ffedd5;padding:.9rem;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">🦴</div><b>Destek-hareket</b><p>Destek ve hareket</p></div><div style=\"background:#fef3c7;padding:.9rem;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">🍎</div><b>Sindirim</b><p>Besinleri parçalama</p></div><div style=\"background:#fee2e2;padding:.9rem;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">❤️</div><b>Dolaşım</b><p>Madde taşıma</p></div><div style=\"background:#dbeafe;padding:.9rem;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">🫁</div><b>Solunum</b><p>Gaz alışverişi</p></div><div style=\"background:#ede9fe;padding:.9rem;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">💧</div><b>Boşaltım</b><p>Atıkların uzaklaştırılması</p></div></div><p>Bu ünitede sistemlerin temel görevlerine odaklanacağız. Organların ayrıntılı yapıları ve tüm fizyolojik süreçler daha ileri sınıf düzeylerinde ele alınabilir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🦴 Destek ve hareket sistemi",
+          "bodyHtml": "<p>Destek ve hareket sistemi; <strong>kemikler, eklemler ve kasların</strong> birlikte çalışmasıyla vücudumuza şekil verir, iç organlarımızı korur ve hareket etmemizi sağlar.</p><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.7rem;margin:1rem 0\"><div style=\"padding:1rem;background:#fef3c7;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">🦴</div><b>Kemikler</b><p>Vücuda destek olur, bazı organları korur.</p></div><div style=\"padding:1rem;background:#dbeafe;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">🔗</div><b>Eklemler</b><p>Kemiklerin birleştiği bölgelerde hareketi kolaylaştırır.</p></div><div style=\"padding:1rem;background:#fee2e2;border-radius:14px;text-align:center\"><div style=\"font-size:2rem\">💪</div><b>Kaslar</b><p>Kasılıp gevşeyerek hareketi sağlar.</p></div></div><p>Örneğin dirseğimizi bükerken kol kaslarımız ve kemiklerimiz eklem çevresinde birlikte çalışır. Kemikler tek başına hareket oluşturmaz; kasların çekme etkisiyle hareket eder.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🥪 Sindirim sistemi",
+          "bodyHtml": "<p>Yediğimiz besinler hücrelerimizin kullanabileceği kadar küçük parçalara ayrılmalıdır. Besinlerin mekanik ve kimyasal yollarla parçalanmasına <strong>sindirim</strong> denir.</p><div style=\"padding:1rem;border-radius:16px;background:#fff7ed;color:#7c2d12;text-align:center;margin:1rem 0\"><div style=\"font-size:2rem\">👄 → 🥣 → 🧪 → 🌀</div><b>Ağız → Yutak ve yemek borusu → Mide → İnce bağırsak</b><p style=\"font-size:.9rem\">Kalın bağırsak suyun emilmesine katkı sağlar; sindirilemeyen artıklar vücuttan uzaklaştırılır.</p></div><ul><li><strong>Ağız:</strong> Besinler dişlerle parçalanır, tükürükle karışır.</li><li><strong>Yemek borusu:</strong> Besinleri mideye taşır.</li><li><strong>Mide:</strong> Besinleri karıştırır ve sindirimin sürmesine katkı sağlar.</li><li><strong>İnce bağırsak:</strong> Sindirimin büyük bölümü tamamlanır ve besinlerin kana emilimi gerçekleşir.</li><li><strong>Kalın bağırsak:</strong> Su ve bazı minerallerin emilmesine yardımcı olur.</li></ul>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "❤️ Dolaşım sistemi",
+          "bodyHtml": "<p>Dolaşım sistemi; <strong>kalp, kan ve kan damarlarından</strong> oluşur. Vücudumuzdaki maddelerin taşınmasında görevlidir.</p><div style=\"padding:1rem;border-radius:16px;background:#fff1f2;color:#881337;text-align:center;margin:1rem 0\"><div style=\"font-size:3rem\">❤️</div><b>Kalp → Kan damarları → Vücut hücreleri</b><p>Oksijen ve besinler hücrelere taşınır; karbondioksit ve bazı atık maddeler ilgili organlara ulaştırılır.</p></div><ul><li><strong>Kalp:</strong> Kanı pompalar.</li><li><strong>Atardamar:</strong> Kanı kalpten uzaklaştırır.</li><li><strong>Toplardamar:</strong> Kanı kalbe getirir.</li><li><strong>Kılcal damar:</strong> Kan ile dokular arasında madde alışverişine olanak sağlar.</li></ul>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🫁 Solunum sistemi",
+          "bodyHtml": "<p>Solunum sistemi, vücudumuzun oksijen almasını ve karbondioksiti dışarı vermesini sağlar. Solunumda burun, yutak, gırtlak, soluk borusu, bronşlar ve akciğerler görev alır.</p><div style=\"padding:1rem;border-radius:16px;background:#eff6ff;color:#1e3a8a;text-align:center;margin:1rem 0\"><div style=\"font-size:3rem\">🫁</div><b>Hava yolu: Burun → Soluk borusu → Bronşlar → Akciğerler</b><p>Akciğerlerdeki alveollerde oksijen kana geçer; kandaki karbondioksit havaya geçerek dışarı atılır.</p></div><p>Solunum sistemi ile dolaşım sistemi birlikte çalışır: Akciğerlerde kana geçen oksijen, kan yoluyla hücrelere taşınır.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "💧 Boşaltım sistemi",
+          "bodyHtml": "<p>Hücrelerde yaşamsal faaliyetler sonucunda oluşan bazı atık maddelerin vücuttan uzaklaştırılması gerekir. Boşaltım sisteminin temel organları <strong>böbrekler, üreterler, idrar kesesi ve üretradır</strong>.</p><div style=\"padding:1rem;border-radius:16px;background:#ecfeff;color:#164e63;text-align:center;margin:1rem 0\"><div style=\"font-size:2.7rem\">🫘　🫘</div><b>Böbrekler → Üreterler → İdrar kesesi → Üretra</b><p>Kan böbreklerde süzülür; fazla su ve bazı atık maddeler idrarın oluşumuna katkı sağlar.</p></div><p><strong>Karıştırma:</strong> Boşaltım yalnızca idrar oluşumundan ibaret değildir. Akciğerler karbondioksiti, deri terleme yoluyla su ve bazı tuzları uzaklaştırmaya da katkı sağlar.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🔄 Sistemler nasıl birlikte çalışır?",
+          "bodyHtml": "<p>Koştuğumuzda kaslarımız daha fazla enerjiye ihtiyaç duyar. Sindirim sistemi besinleri parçalayarak kana geçebilecek maddeleri sağlar. Solunum sistemi oksijen alır. Dolaşım sistemi oksijen ve besinleri kaslara taşır. Hücrelerde oluşan karbondioksit kanla akciğerlere taşınır ve soluk verme ile dışarı atılır. Böbrekler de kandaki bazı atıkların uzaklaştırılmasına katkı sağlar.</p><div style=\"display:flex;flex-wrap:wrap;justify-content:center;gap:.45rem;align-items:center;margin:1rem 0;padding:1rem;background:#f8fafc;border-radius:16px\"><b>🍎 Sindirim</b><span>+</span><b>🫁 Solunum</b><span>→</span><b>❤️ Dolaşım</b><span>→</span><b>💪 Kas hücreleri</b><span>→</span><b>💧 Boşaltım</b></div><p>Vücudumuzdaki sistemler bir takım gibi çalışır. Bir sistemin görevini yerine getirmesi diğer sistemlerin çalışmasına bağlı olabilir.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Sistemlerin görevlerini hatırla",
+          "bodyHtml": "<ul><li><strong>Destek-hareket:</strong> Destek, koruma ve hareket.</li><li><strong>Sindirim:</strong> Besinleri küçük moleküllere parçalama ve emilim.</li><li><strong>Dolaşım:</strong> Kan yoluyla madde taşıma.</li><li><strong>Solunum:</strong> Oksijen alma ve karbondioksit verme.</li><li><strong>Boşaltım:</strong> Metabolik atıkların ve fazla maddelerin uzaklaştırılması.</li><li>Sistemler birlikte çalışır; vücudun sağlıklı işleyişi için her birinin görevi önemlidir.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🌿 Sağlıklı yaşam alışkanlıkları",
+          "bodyHtml": "<ul><li>Dengeli ve çeşitli beslenmek sindirim ve dolaşım sisteminin sağlıklı çalışmasını destekler.</li><li>Yeterli su içmek, böbreklerin normal işlevlerini sürdürmesine yardımcı olur.</li><li>Düzenli ve yaşa uygun hareket etmek kas ve kemik sağlığını destekler.</li><li>Sigara dumanından uzak durmak solunum sistemi sağlığı için önemlidir.</li><li>El hijyeni ve güvenli gıda tüketimi enfeksiyon riskini azaltmaya yardımcı olur.</li><li>Uyku ve dinlenme, büyüme ve gelişmenin sağlıklı sürmesine katkı sağlar.</li></ul><p>Sağlıkla ilgili sorunlarda güvenilir bilgi için aile, öğretmen ve sağlık uzmanlarından destek alınmalıdır.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Organ",
+          "definition": "Belirli bir görevi yerine getiren, farklı dokulardan oluşan vücut yapısı."
+        },
+        {
+          "term": "Sistem",
+          "definition": "Birlikte çalışan organların oluşturduğu yapı."
+        },
+        {
+          "term": "Sindirim",
+          "definition": "Besinlerin vücutta kullanılabilecek küçük parçalara ayrılması."
+        },
+        {
+          "term": "Emilim",
+          "definition": "Sindirilmiş besinlerin bağırsaktan kana geçmesi."
+        },
+        {
+          "term": "Dolaşım",
+          "definition": "Kan aracılığıyla maddelerin vücutta taşınması."
+        },
+        {
+          "term": "Alveol",
+          "definition": "Akciğerlerde gaz alışverişinin gerçekleştiği küçük hava kesecikleri."
+        },
+        {
+          "term": "Boşaltım",
+          "definition": "Metabolizma sonucu oluşan atıkların vücuttan uzaklaştırılması."
+        }
+      ],
+      "activity": {
+        "title": "Sistemler arası iş birliği haritası",
+        "materials": "Büyük kâğıt, renkli kalemler, organ ve sistem isim kartları.",
+        "steps": "1) Kâğıdın ortasına koşan bir insan çiz. 2) Sindirim, solunum, dolaşım, destek-hareket ve boşaltım sistemi kartlarını yerleştir. 3) Oksijenin akciğerlerden kana ve kaslara ulaşmasını oklarla göster. 4) Besinlerin sindirimden sonra kana geçişini çiz. 5) Karbondioksitin kaslardan akciğerlere taşınmasını göster. 6) Her okun yanına taşınan maddeyi ve görevli sistemi yaz.",
+        "safetyNotes": "Etkinlik çizim ve kartlarla yapılır. İnsan vücudu üzerinde deney veya müdahale yapılmaz."
+      },
+      "quiz": [
+        {
+          "body": "Vücudumuzda kanı pompalayan organ hangisidir?",
+          "options": [
+            "Akciğer",
+            "Kalp",
+            "Mide",
+            "Böbrek"
+          ],
+          "answer": 1,
+          "explanation": "Kalp, kanı damarlar aracılığıyla vücuda pompalayan organdır.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Besinlerin kana emiliminin büyük bölümü hangi organda gerçekleşir?",
+          "options": [
+            "Ağız",
+            "Mide",
+            "İnce bağırsak",
+            "Kalın bağırsak"
+          ],
+          "answer": 2,
+          "explanation": "Sindirilen besinlerin kana emiliminin büyük bölümü ince bağırsakta gerçekleşir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Akciğerlerde oksijen ve karbondioksit alışverişinin gerçekleştiği yapılar hangileridir?",
+          "options": [
+            "Alveoller",
+            "Üreterler",
+            "Kılcal kemikler",
+            "Mide bezleri"
+          ],
+          "answer": 0,
+          "explanation": "Alveoller, gaz alışverişinin gerçekleştiği küçük hava kesecikleridir.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Aşağıdaki organ-sistem eşleştirmelerinden hangisi doğrudur?",
+          "options": [
+            "Böbrek – Solunum",
+            "Kalp – Dolaşım",
+            "Mide – Boşaltım",
+            "Akciğer – Sindirim"
+          ],
+          "answer": 1,
+          "explanation": "Kalp dolaşım sisteminin temel organıdır.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Koşarken kaslara daha fazla oksijen taşınmasını sağlayan sistem hangisidir?",
+          "options": [
+            "Dolaşım sistemi",
+            "Yalnızca sindirim sistemi",
+            "Yalnızca destek sistemi",
+            "Deri sistemi"
+          ],
+          "answer": 0,
+          "explanation": "Oksijen akciğerlerden kana geçer; dolaşım sistemi kanı kaslara taşır.",
+          "difficulty": "HARD"
+        }
+      ],
+      "links": []
+    }
+  ]
+}
