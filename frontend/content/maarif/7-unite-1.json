@@ -1,0 +1,608 @@
+{
+  "classLevel": 7,
+  "code": "7.1",
+  "hours": 14,
+  "title": "Uzay Çağı",
+  "slug": "uzay-cagi",
+  "description": "Uzay araştırmalarında kullanılan teknolojileri karşılaştıralım, gözlem araçlarını modelleyelim, uzay çalışmalarının oluşturabileceği sorunlara çözümler geliştirelim; yıldızların yaşamını, galaksi ve evren kavramlarını keşfedelim.",
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı, 7. sınıf 1. ünite: Uzay Çağı. Öğrenme çıktıları FB.7.1.1–FB.7.1.5 esas alınarak anlatım ve etkinlikler özgün hazırlanmıştır.",
+  "topics": [
+    {
+      "slug": "uzay-arastirmalari-teknolojileri",
+      "title": "Uzay Araştırmaları İçin Geliştirilen Teknolojiler",
+      "summary": "Uzay roketi, uydu, uzay sondası, uzay istasyonu ve teleskopların görevlerini karşılaştıralım.",
+      "outcome": {
+        "code": "FB.7.1.1",
+        "description": "Uzay araştırmaları için geliştirilen teknolojileri karşılaştırabilme.",
+        "details": [
+          "Uzay araştırmaları teknolojilerinin özelliklerini belirler.",
+          "Teknolojilerin benzerliklerini listeler.",
+          "Teknolojilerin farklılıklarını listeler."
+        ]
+      },
+      "skills": [
+        "Karşılaştırma",
+        "Bilgi okuryazarlığı",
+        "Sınıflandırma",
+        "Görsel okuryazarlık"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🚀 Uzay araştırmaları neden yapılır?",
+          "bodyHtml": "<p>İnsanlar evreni tanımak, Dünya'yı gözlemlemek, iletişim kurmak, hava olaylarını takip etmek ve yeni bilimsel bilgiler elde etmek için uzay araştırmaları yapar. Bu çalışmalar için farklı görevleri olan araçlar geliştirilmiştir.</p><div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:10px;margin:12px 0'><div style='background:#dbeafe;padding:12px;border-radius:13px;text-align:center'><div style='font-size:2.3rem'>🚀</div><b>Roket</b><p>Uzay araçlarını taşır.</p></div><div style='background:#dcfce7;padding:12px;border-radius:13px;text-align:center'><div style='font-size:2.3rem'>🛰️</div><b>Yapay uydu</b><p>Yörüngede görev yapar.</p></div><div style='background:#fef3c7;padding:12px;border-radius:13px;text-align:center'><div style='font-size:2.3rem'>🔭</div><b>Teleskop</b><p>Gök cisimlerini gözlemler.</p></div></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🛰️ Yapay uydular ve görevleri",
+          "bodyHtml": "<p><strong>Yapay uydu</strong>, insanlar tarafından üretilip belirli bir yörüngeye yerleştirilen uzay aracıdır. Haberleşme, konum belirleme, meteoroloji, bilimsel araştırma ve Dünya gözlemi gibi amaçlarla kullanılır.</p><ul><li><strong>Haberleşme uyduları:</strong> Televizyon, telefon ve veri iletişimine katkı sağlar.</li><li><strong>Meteoroloji uyduları:</strong> Bulutları ve atmosfer olaylarını izleyerek hava tahminlerine veri sağlar.</li><li><strong>Gözlem uyduları:</strong> Yeryüzünü, tarım alanlarını, ormanları ve çevresel değişimleri izler.</li><li><strong navigasyon uyduları:</strong> Konum ve zaman bilgisi sağlar.</li></ul><div style='background:#eff6ff;padding:14px;border-radius:13px;text-align:center;color:#1e3a8a'><div style='font-size:2rem'>🌍　🛰️　📡</div><b>Uydu – Dünya – yer istasyonu</b><p>Uydu, görevine göre veri toplar veya iletişim sinyallerini iletir.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧑‍🚀 Uzay istasyonu, uzay sondası ve gezgin araç",
+          "bodyHtml": "<p><strong>Uzay istasyonu</strong>, astronotların uzayda belirli sürelerle yaşayıp bilimsel deneyler yapabildiği büyük yapıdır. <strong>Uzay sondaları</strong>, genellikle içinde insan bulunmadan uzayı ve gök cisimlerini incelemek için gönderilir. <strong>Gezgin araçlar</strong> ise başka gök cisimlerinin yüzeyinde hareket ederek görüntü ve ölçüm verileri toplar.</p><div style='display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;text-align:center'><div style='background:#f1f5f9;padding:10px;border-radius:12px'><div style='font-size:2rem'>🧑‍🚀</div><b>İstasyon</b><p>İnsanlı araştırma</p></div><div style='background:#f1f5f9;padding:10px;border-radius:12px'><div style='font-size:2rem'>📡</div><b>Sonda</b><p>Uzaktan inceleme</p></div><div style='background:#f1f5f9;padding:10px;border-radius:12px'><div style='font-size:2rem'>🤖</div><b>Gezgin</b><p>Yüzey araştırması</p></div></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🔭 Teleskoplar ve uzay teleskopları",
+          "bodyHtml": "<p><strong>Teleskoplar</strong>, uzaktaki gök cisimlerinden gelen ışığı veya diğer elektromanyetik ışınımları incelememizi sağlar. Yer tabanlı teleskoplar Dünya üzerindeki gözlemevlerinde bulunur. Uzay teleskopları ise atmosferin dışında gözlem yapar.</p><p><strong>Hubble Uzay Teleskobu</strong> ve <strong>James Webb Uzay Teleskobu</strong>, uzaydan gözlem yapan önemli teleskoplardır. Farklı dalga boylarında gözlem yaparak yıldızlar, galaksiler ve evren hakkında bilgi edinmemize yardımcı olurlar.</p><div style='background:#ede9fe;padding:14px;border-radius:13px;text-align:center;color:#4c1d95'><div style='font-size:2rem'>🌌 🔭 ✨</div><b>Uzay teleskopları</b><p>Atmosferin etkilerinden uzakta gözlem yapabilirler.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🇹🇷 Türkiye'nin uzay çalışmaları",
+          "bodyHtml": "<p>Türkiye, haberleşme ve gözlem uyduları ile uzay teknolojileri alanında çalışmalar yürütmektedir. Türksat uyduları haberleşme hizmetlerinde; Göktürk ve İMECE gibi gözlem uyduları ise Dünya'nın izlenmesinde görev alır. TÜBİTAK UZAY ve Türkiye Uzay Ajansı, ülkemizin uzay çalışmalarıyla ilişkili kurumlardandır.</p><p>Türkiye'nin ilk insanlı uzay misyonunda Alper Gezeravcı, 2024 yılında Uluslararası Uzay İstasyonu'nda bilimsel deneyler gerçekleştirmiştir.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Teknolojileri karşılaştıralım",
+          "bodyHtml": "<div style='overflow-x:auto'><table><thead><tr><th>Araç</th><th>Temel görevi</th><th>İnsanlı mı?</th></tr></thead><tbody><tr><td>Roket</td><td>Yükü uzaya taşımak</td><td>Tek başına görev aracı değildir</td></tr><tr><td>Yapay uydu</td><td>Yörüngede gözlem/iletişim</td><td>Hayır</td></tr><tr><td>Uzay istasyonu</td><td>Uzayda yaşam ve deney</td><td>Evet</td></tr><tr><td>Uzay sondası</td><td>Gök cisimlerini incelemek</td><td>Hayır</td></tr><tr><td>Teleskop</td><td>Gök cisimlerini gözlemek</td><td>Hayır</td></tr></tbody></table></div><ul><li>Aynı amaç için farklı teknolojiler birlikte kullanılabilir.</li><li>Yapay uyduların görevleri birbirinden farklı olabilir.</li><li>Uzay araçları veri toplama, taşıma, gözlem veya deney amacıyla geliştirilir.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "📱 Uzay teknolojileri günlük yaşamda",
+          "bodyHtml": "<p>Uydu teknolojileri navigasyon, televizyon yayınları, telefon görüşmeleri, afet yönetimi, tarımsal izleme ve hava tahminlerinde kullanılır. Uzay araştırmaları için geliştirilen bazı malzeme ve ölçüm teknolojileri zamanla günlük yaşamda da kullanılabilir.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Yapay uydu",
+          "definition": "İnsanlar tarafından üretilip yörüngeye yerleştirilen uzay aracı."
+        },
+        {
+          "term": "Uzay sondası",
+          "definition": "İnsan taşımadan uzay ve gök cisimleri hakkında veri toplayan araç."
+        },
+        {
+          "term": "Uzay istasyonu",
+          "definition": "Astronotların uzayda yaşayıp araştırma yapabildiği yapı."
+        },
+        {
+          "term": "Teleskop",
+          "definition": "Uzak gök cisimlerinden gelen ışınımı incelemeye yarayan araç."
+        },
+        {
+          "term": "Astronom",
+          "definition": "Gök cisimlerini ve evreni bilimsel yöntemlerle inceleyen bilim insanı."
+        },
+        {
+          "term": "Astronot",
+          "definition": "Uzay görevlerine katılmak üzere eğitim almış kişi."
+        }
+      ],
+      "activity": {
+        "title": "Uzay teknolojileri karşılaştırma kartları",
+        "materials": "Uydu, roket, teleskop, uzay istasyonu, sonda ve gezgin araç görselleri; karşılaştırma tablosu.",
+        "steps": "1) Her araca ait görseli ve kısa bilgi kartını inceleyin. 2) Araçların görevlerini yazın. 3) Benzer görevli araçları gruplayın. 4) İnsanlı/insansız ve Dünya yörüngesinde/uzak görev gibi özellikleri karşılaştırın. 5) Seçtiğiniz bir aracın günlük yaşama katkısını sunun.",
+        "safetyNotes": "Araştırmada güvenilir bilimsel ve resmî kaynakları kullanın; görsellerin kaynağını belirtin."
+      },
+      "quiz": [
+        {
+          "body": "Meteoroloji uydularının temel kullanım amaçlarından biri hangisidir?",
+          "options": [
+            "Yer altındaki madenleri çıkarmak",
+            "Atmosfer ve bulutları gözlemleyerek hava tahminlerine veri sağlamak",
+            "Astronotları Ay'a taşımak",
+            "Deniz suyunu arıtmak"
+          ],
+          "answer": 1,
+          "explanation": "Meteoroloji uyduları bulutları ve atmosfer olaylarını izleyerek hava tahminlerine katkı sağlar.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Bir gök cisminin yüzeyinde hareket ederek görüntü ve ölçüm toplayan araca ne ad verilir?",
+          "options": [
+            "Gezgin araç",
+            "Haberleşme uydusu",
+            "Roket",
+            "Yer istasyonu"
+          ],
+          "answer": 0,
+          "explanation": "Gezgin araçlar başka gök cisimlerinin yüzeyinde hareket ederek inceleme yapar.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Uzay istasyonunu uzay sondasından ayıran temel özellik hangisidir?",
+          "options": [
+            "Her ikisinin de yalnızca Dünya'yı gözlemesi",
+            "Uzay istasyonunda astronotların yaşayıp deney yapabilmesi",
+            "Uzay sondasının mutlaka insan taşıması",
+            "Uzay istasyonunun atmosfer içinde bulunması"
+          ],
+          "answer": 1,
+          "explanation": "Uzay istasyonları insanlı araştırmalar için kullanılır; sondalar genellikle insansız veri toplar.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "uzay-gozlem-araclari-ve-gozlemevleri",
+      "title": "Uzay Gözlem Araçları ve Gözlemevleri",
+      "summary": "Teleskop, dürbün ve gözlemevlerinin özelliklerini inceleyerek bilimsel gözlem modeli oluşturalım.",
+      "outcome": {
+        "code": "FB.7.1.2",
+        "description": "Uzay gözlem araçları ile ilgili bilimsel model oluşturabilme.",
+        "details": [
+          "Uzay gözlem araçlarıyla ilgili model önerir.",
+          "Hazırladığı modeli yeni kanıtlara göre geliştirir."
+        ]
+      },
+      "skills": [
+        "Bilimsel model oluşturma",
+        "Tasarım",
+        "Gözlem",
+        "Modeli geliştirme"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🔭 Gök cisimlerini nasıl gözlemleriz?",
+          "bodyHtml": "<p>Gök cisimlerini çıplak gözle, dürbünle ve teleskoplarla gözlemleyebiliriz. Teleskoplar uzaktaki cisimlerden gelen ışığı toplayarak daha ayrıntılı inceleme yapmamıza yardımcı olur. Teleskop türleri kullanım amaçlarına ve ışığı toplama yöntemlerine göre farklılaşır.</p><div style='display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;text-align:center'><div style='background:#e0f2fe;padding:10px;border-radius:12px'><div style='font-size:2rem'>👁️</div><b>Çıplak göz</b><p>Geniş alan</p></div><div style='background:#dcfce7;padding:10px;border-radius:12px'><div style='font-size:2rem'>🔭</div><b>Dürbün</b><p>Kolay taşınır</p></div><div style='background:#ede9fe;padding:10px;border-radius:12px'><div style='font-size:2rem'>🪐</div><b>Teleskop</b><p>Ayrıntılı gözlem</p></div></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🏔️ Gözlemevleri nerelere kurulur?",
+          "bodyHtml": "<p>Yer tabanlı gözlemevleri için ışık kirliliğinin az, havanın çoğunlukla açık ve atmosfer koşullarının gözleme elverişli olduğu yerler tercih edilir. Yüksek rakımlı, şehir ışıklarından uzak ve kuru bölgeler çoğu zaman avantaj sağlar.</p><p>Türkiye'de önemli gözlemevleri arasında TÜBİTAK Ulusal Gözlemevi (Antalya/Bakırlıtepe) ve Doğu Anadolu Gözlemevi (Erzurum) bulunur.</p><div style='background:#f0fdf4;padding:14px;border-radius:13px;text-align:center;color:#14532d'><div style='font-size:2rem'>⛰️ 🌌 🔭</div><b>Gözlemevi için uygun ortam</b><p>Az ışık kirliliği + elverişli atmosfer + açık gökyüzü</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "💡 Işık kirliliği gözlemi nasıl etkiler?",
+          "bodyHtml": "<p>Gereğinden fazla ve yanlış yönlendirilmiş yapay ışık, gökyüzünün parlak görünmesine neden olur. Böylece sönük yıldızları ve bazı gök cisimlerini görmek zorlaşır. Sokak aydınlatmalarının yalnızca gerekli alanı aydınlatacak şekilde tasarlanması ışık kirliliğini azaltmaya yardımcı olur.</p><p>Bulutluluk, nem, atmosferdeki toz ve hava hareketleri de yer tabanlı gözlemleri etkileyebilir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧩 Bilimsel model nasıl oluşturulur?",
+          "bodyHtml": "<p>Model, gerçek bir sistemi anlamak veya açıklamak için hazırlanan temsilidir. Bir gözlemevi modeli hazırlarken teleskop kubbesi, gözlem açıklığı, taşıyıcı yapı ve çevresel koşullar gösterilebilir. Model gerçek gözlemevinin her ayrıntısını içermek zorunda değildir; amacını doğru temsil etmelidir.</p><div style='background:#eff6ff;padding:14px;border-radius:13px;text-align:center;color:#1e3a8a'><div style='font-size:2rem'>🏠 + 🔭 + 🌌</div><b>Gözlemevi modelinin parçaları</b><p>Yapı, teleskop ve gözlem ortamı birlikte düşünülür.</p></div>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Gözlemevi için uygun koşullar",
+          "bodyHtml": "<ul><li>Işık kirliliği az olmalıdır.</li><li>Atmosfer koşulları mümkün olduğunca elverişli olmalıdır.</li><li>Bulutluluk ve nemin az olduğu yerler tercih edilir.</li><li>Yüksek rakım bazı atmosfer etkilerini azaltabilir.</li><li>Uzay teleskopları atmosferin dışında gözlem yapar.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🌃 Işık kirliliğini azaltabiliriz",
+          "bodyHtml": "<p>Gereksiz dış aydınlatmaları kapatmak, ışığı gökyüzüne değil yere yönlendirmek ve uygun aydınlatma armatürleri kullanmak hem enerji tasarrufu sağlar hem de gökyüzü gözlemini kolaylaştırır.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Gözlemevi",
+          "definition": "Gök cisimlerini ve uzayı incelemek için teleskop ve diğer araçların bulunduğu merkez."
+        },
+        {
+          "term": "Işık kirliliği",
+          "definition": "Yanlış yönlendirilmiş veya gereğinden fazla yapay ışığın gece gökyüzünü aydınlatması."
+        },
+        {
+          "term": "Model",
+          "definition": "Bir sistemi veya olayı anlamak için hazırlanan temsil."
+        }
+      ],
+      "activity": {
+        "title": "Kendi gözlemevini tasarla",
+        "materials": "Karton, kâğıt, yapıştırıcı, makas, pipet veya rulo karton, boya ve gözlem koşulları bilgi kartı.",
+        "steps": "1) Bir gözlemevi için uygun yerin özelliklerini belirleyin. 2) Teleskop kubbesi ve gözlem açıklığını içeren taslak çizin. 3) Güvenli sınıf malzemeleriyle model oluşturun. 4) Modelinizde ışık kirliliği ve atmosfer koşullarını gösterin. 5) Yeni öğrendiğiniz bilgiler ışığında modelinizi geliştirin ve sunun.",
+        "safetyNotes": "Makas ve kesici araçları öğretmen gözetiminde kullanın. Güneş'i teleskop veya dürbünle doğrudan gözlemlemeyin."
+      },
+      "quiz": [
+        {
+          "body": "Yer tabanlı gözlemevleri için aşağıdaki yerlerden hangisi daha uygundur?",
+          "options": [
+            "Yoğun ışıklandırılmış şehir merkezi",
+            "Sık bulutlu ve nemli bölge",
+            "Işık kirliliği az, atmosfer koşulları elverişli yüksek bölge",
+            "Fabrika bacalarının yanı"
+          ],
+          "answer": 2,
+          "explanation": "Işık kirliliğinin az ve atmosfer koşullarının elverişli olması gözlemi kolaylaştırır.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Işık kirliliğinin artması gökyüzü gözlemini nasıl etkiler?",
+          "options": [
+            "Sönük gök cisimlerini görmeyi zorlaştırır",
+            "Yıldız sayısını artırır",
+            "Atmosferi ortadan kaldırır",
+            "Teleskobun merceğini büyütür"
+          ],
+          "answer": 0,
+          "explanation": "Gökyüzünün yapay ışıkla parlaması sönük yıldızların görülmesini zorlaştırır.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bilimsel model hazırlamanın temel amacı nedir?",
+          "options": [
+            "Gerçeğin bütün ayrıntılarını birebir kopyalamak",
+            "Bir sistemi anlamayı ve açıklamayı kolaylaştırmak",
+            "Yalnızca süsleme yapmak",
+            "Deney ve gözlemi gereksiz kılmak"
+          ],
+          "answer": 1,
+          "explanation": "Model, gerçek sistemi anlamayı kolaylaştıran bilimsel bir temsildir.",
+          "difficulty": "EASY"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "uzay-arastirmalarinin-problemleri",
+      "title": "Uzay Araştırmalarının Yol Açabileceği Problemler",
+      "summary": "Uzay çöpleri, görev maliyetleri ve çevresel etkileri değerlendirerek kanıta dayalı çözüm önerileri geliştirelim.",
+      "outcome": {
+        "code": "FB.7.1.3",
+        "description": "Uzay araştırmalarının yol açabileceği problemleri çözebilme.",
+        "details": [
+          "Uzay araştırmalarının yol açabileceği problemleri yapılandırır ve özetler.",
+          "Veriye dayalı tahminlerde bulunur.",
+          "Çözüm önerileri üzerinden akıl yürütür ve değerlendirme yapar."
+        ]
+      },
+      "skills": [
+        "Problem çözme",
+        "Veri değerlendirme",
+        "Eleştirel düşünme",
+        "Sorumlu karar verme"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "🛰️ Uzay çöpleri nedir?",
+          "bodyHtml": "<p>Görevini tamamlamış yapay uydular, roketlerin bazı parçaları ve çarpışmalar sonucunda oluşan küçük parçalar Dünya çevresinde kalabilir. Bunlara genel olarak <strong>uzay çöpleri</strong> denir. Bu parçalar yörüngedeki çalışan uydular ve uzay araçları için çarpışma riski oluşturabilir.</p><div style='background:#f1f5f9;padding:14px;border-radius:13px;text-align:center'><div style='font-size:2rem'>🌍　🛰️　✦　🛰️</div><b>Dünya çevresinde yörüngedeki cisimler</b><p>Şematik gösterimdir; ölçekli değildir.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "⚠️ Uzay araştırmalarının oluşturabileceği sorunlar",
+          "bodyHtml": "<ul><li><strong>Çarpışma riski:</strong> Uzay çöpleri çalışan uydulara ve araçlara zarar verebilir.</li><li><strong>Radyo frekansı kalabalığı:</strong> Uydu sayısının artması uygun frekansların yönetimini zorlaştırabilir.</li><li><strong>Maliyet:</strong> Uzay görevleri yüksek bütçe, zaman ve uzmanlık gerektirebilir.</li><li><strong>Çevresel etkiler:</strong> Roket fırlatmaları atmosfer ve çevre üzerinde etkiler oluşturabilir.</li><li><strong>Yörünge ve görev güvenliği:</strong> Uyduların güvenli biçimde izlenmesi ve yönetilmesi gerekir.</li></ul>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🧠 Soruna veriye dayalı çözüm geliştirme",
+          "bodyHtml": "<p>Bir problemi çözmek için önce problemin ne olduğunu ve kimleri etkilediğini belirleriz. Ardından güvenilir veriler toplar, olası çözüm yolları geliştirir ve bunları uygulanabilirlik açısından karşılaştırırız.</p><div style='background:#eff6ff;padding:14px;border-radius:13px;color:#1e3a8a'><b>Problem çözme basamakları</b><p>🔎 Problemi tanımla → 📊 Veri topla → 💡 Çözüm öner → ⚖️ Karşılaştır → ✅ Değerlendir</p></div><p>Uzay çöplerini azaltmak için görev sonunda uyduların güvenli biçimde yörüngeden çıkarılması veya mezarlık yörüngesine taşınması gibi yöntemler planlanabilir. Yeni görevlerde daha az atık oluşmasını sağlayan tasarımlar da önemlidir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🌱 Uzay araştırmalarının yarar ve sorunlarını birlikte değerlendirelim",
+          "bodyHtml": "<p>Uzay çalışmaları haberleşme, meteoroloji, afet yönetimi, navigasyon ve bilimsel keşif açısından önemli yararlar sağlar. Bununla birlikte maliyet, yörünge güvenliği ve çevresel etkiler de dikkate alınmalıdır. Bilimsel değerlendirme, yalnızca yararları veya yalnızca sorunları değil, ikisini birlikte ele alır.</p>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Çözüm önerisi geliştirirken",
+          "bodyHtml": "<ul><li>Problemi açık biçimde tanımla.</li><li>Görüşünü güvenilir veriyle destekle.</li><li>Birden fazla çözüm seçeneği düşün.</li><li>Çözümün maliyetini, uygulanabilirliğini ve olası etkilerini değerlendir.</li><li>Uzay çöplerinin artmasını önlemek, oluşmuş çöpleri yönetmek kadar önemlidir.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "💬 Tartışma sorusu",
+          "bodyHtml": "<p>“Uzay araştırmaları sürdürülmeli mi, yoksa uzay çöpleri nedeniyle sınırlandırılmalı mı?” sorusunu tartışın. Haberleşme, hava tahmini, afet yönetimi, bilimsel bilgi, maliyet ve yörünge güvenliği gibi ölçütleri birlikte değerlendirin.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Uzay çöpü",
+          "definition": "Dünya çevresinde görevini tamamlamış veya parçalanmış insan yapımı cisim."
+        },
+        {
+          "term": "Yörünge",
+          "definition": "Bir gök cisminin veya uydunun başka bir cismin çevresinde izlediği yol."
+        },
+        {
+          "term": "Mezarlık yörüngesi",
+          "definition": "Görevini tamamlamış bazı uyduların aktif uydulardan uzak tutulması için taşındığı yörünge bölgesi."
+        }
+      ],
+      "activity": {
+        "title": "Uzay çöplerine çözüm tasarlayalım",
+        "materials": "Problem kartları, uzay çöpleri şeması, araştırma notları ve çözüm değerlendirme çizelgesi.",
+        "steps": "1) Uzay çöpleri problemini inceleyin. 2) Çalışan uydular açısından oluşturduğu riskleri yazın. 3) Güvenilir kaynaklardan çözüm yöntemleri araştırın. 4) En az iki öneriyi maliyet, uygulanabilirlik ve etki açısından karşılaştırın. 5) Kanıta dayalı bir çözüm raporu hazırlayın.",
+        "safetyNotes": "Araştırma ve modelleme sınıf ortamında yürütülür; gerçek uzay araçlarına veya ekipmanlarına müdahale edilmez."
+      },
+      "quiz": [
+        {
+          "body": "Uzay çöplerinin çalışan uydular için oluşturabileceği temel tehlike nedir?",
+          "options": [
+            "Çarpışma riski",
+            "Güneş ışığını tamamen kesmesi",
+            "Dünya'nın dönüşünü durdurması",
+            "Atmosferi yok etmesi"
+          ],
+          "answer": 0,
+          "explanation": "Yörüngedeki atık parçaları çalışan uydularla çarpışabilir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Uzay çöplerinin artmasını önlemeye yönelik uygun yaklaşım hangisidir?",
+          "options": [
+            "Görev bitiminde uyduyu kontrolsüz bırakmak",
+            "Görev sonu yörünge planlaması yapmak",
+            "Her uyduyu aynı yörüngeye yerleştirmek",
+            "Uyduları izlemeyi bırakmak"
+          ],
+          "answer": 1,
+          "explanation": "Görev sonu yörünge planlaması, yeni uzay çöpü oluşumunu ve çarpışma riskini azaltmaya yardımcı olur.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bir çözüm önerisini bilimsel açıdan değerlendirmek için hangisi gereklidir?",
+          "options": [
+            "Yalnızca kişisel beğeni",
+            "Kanıt, uygulanabilirlik ve olası etkileri incelemek",
+            "Çözümün maliyetini yok saymak",
+            "Alternatifleri değerlendirmemek"
+          ],
+          "answer": 1,
+          "explanation": "Bilimsel çözüm değerlendirmesi kanıtları ve uygulanabilirliği birlikte ele alır.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "yildizlarin-yasami",
+      "title": "Yıldızların Yaşamı",
+      "summary": "Yıldızların doğumundan yaşamlarının sonuna kadar geçirdiği evreleri kütlelerine göre modelleyelim.",
+      "outcome": {
+        "code": "FB.7.1.4",
+        "description": "Yıldızların yaşamını açıklayarak yapılandırabilme.",
+        "details": [
+          "Yıldızların yaşam evreleri arasındaki hiyerarşik ilişkileri ortaya koyar.",
+          "Yıldızların yaşamı ile ilgili unsurları uyumlu bir modelde birleştirir."
+        ]
+      },
+      "skills": [
+        "Model oluşturma",
+        "Sınıflandırma",
+        "Süreçleri yapılandırma",
+        "Bilimsel açıklama"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "☁️ Yıldızlar nasıl oluşur?",
+          "bodyHtml": "<p>Yıldızlar, uzaydaki gaz ve toz bulutları olan <strong>bulutsuların</strong> yoğun bölgelerinde oluşur. Kütle çekiminin etkisiyle gaz ve toz bir araya gelir; merkez bölge sıkışıp ısınır. Uygun koşullar oluştuğunda çekirdekte nükleer tepkimeler başlar ve yıldız ışık yaymaya başlar.</p><div style='background:#eff6ff;padding:14px;border-radius:13px;text-align:center;color:#1e3a8a'><div style='font-size:2rem'>☁️ ➜ 🌟</div><b>Bulutsu → Yıldız</b><p>Yıldız oluşumunun basitleştirilmiş modeli.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🌞 Güneş gibi küçük ve orta kütleli yıldızlar",
+          "bodyHtml": "<p>Güneş gibi küçük ve orta kütleli yıldızlar yaşamlarının büyük bölümünü ana kol evresinde geçirir. Çekirdeklerindeki hidrojenin helyuma dönüşmesi sırasında enerji açığa çıkar. Zamanla çekirdekteki hidrojen azalır ve yıldızın dış katmanları genişleyerek kırmızı dev evresine geçer.</p><div style='display:flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0'><div style='background:#e0f2fe;padding:12px;border-radius:12px;text-align:center'>☁️<br/><b>Bulutsu</b></div><div>➜</div><div style='background:#fef3c7;padding:12px;border-radius:12px;text-align:center'>🌟<br/><b>Yıldız</b></div><div>➜</div><div style='background:#ffedd5;padding:12px;border-radius:12px;text-align:center'>🔴<br/><b>Kırmızı dev</b></div></div><p>Dış katmanlarını uzaya bırakan yıldızın çevresinde gezegenimsi bulutsu oluşabilir. Merkezde kalan sıcak çekirdek zamanla beyaz cüceye dönüşür.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🔴 Büyük kütleli yıldızların yaşamı",
+          "bodyHtml": "<p>Büyük kütleli yıldızlar da bulutsularda oluşur ve ana kol evresinden sonra kırmızı üstdev aşamasına geçebilir. Yaşamlarının sonunda çekirdekleri çöker ve büyük bir yıldız patlaması olan <strong>süpernova</strong> gerçekleşebilir. Geriye kalan çekirdeğin kütlesine bağlı olarak nötron yıldızı veya kara delik oluşabilir.</p><div style='display:flex;align-items:center;justify-content:center;gap:5px;flex-wrap:wrap;margin:14px 0'><div style='background:#e0f2fe;padding:10px;border-radius:12px;text-align:center'>☁️<br/><b>Bulutsu</b></div><div>➜</div><div style='background:#fef3c7;padding:10px;border-radius:12px;text-align:center'>🌟<br/><b>Büyük yıldız</b></div><div>➜</div><div style='background:#fee2e2;padding:10px;border-radius:12px;text-align:center'>💥<br/><b>Süpernova</b></div></div><p>Süpernova sonrasında nötron yıldızı veya kara delik oluşabilir. Sonuç, yıldızın başlangıç kütlesi ve çekirdeğinin özellikleriyle ilişkilidir.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "⚖️ Yıldızların yaşamında kütlenin rolü",
+          "bodyHtml": "<p>Yıldızın başlangıç kütlesi, yaşam süresini ve yaşamının sonunda oluşabilecek gök cismini etkiler. Büyük kütleli yıldızlar yakıtlarını daha hızlı tükettiğinden genellikle daha kısa ömürlüdür. Küçük ve orta kütleli yıldızlar ise çok daha uzun süre yaşayabilir.</p><div style='background:#f8fafc;padding:14px;border-radius:13px'><b>İki temel yaşam yolu</b><p>☀️ Küçük/orta kütle: Bulutsu → Yıldız → Kırmızı dev → Gezegenimsi bulutsu → Beyaz cüce</p><p>⭐ Büyük kütle: Bulutsu → Büyük yıldız → Kırmızı üstdev → Süpernova → Nötron yıldızı veya kara delik</p></div>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Yıldız yaşamı – önemli noktalar",
+          "bodyHtml": "<ul><li>Yıldızlar bulutsulardaki gaz ve tozdan oluşur.</li><li>Yıldızın başlangıç kütlesi yaşam yolunu belirleyen önemli faktördür.</li><li>Güneş küçük/orta kütleli yıldızlara örnektir.</li><li>Küçük/orta kütleli yıldızların son evresinde beyaz cüce oluşabilir.</li><li>Büyük kütleli yıldızların sonrasında nötron yıldızı veya kara delik oluşabilir.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🌌 Yıldızlar neden önemlidir?",
+          "bodyHtml": "<p>Yıldızlar ışık ve ısı kaynağıdır. Yıldızların yaşamları sırasında ve özellikle bazı yıldızların son evrelerinde uzaya yayılan maddeler, yeni yıldız ve gezegen sistemlerinin oluşumunda kullanılabilir. Vücudumuzdaki birçok elementin kökeni de yıldızların geçmişindeki süreçlere dayanır.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Bulutsu",
+          "definition": "Uzayda gaz ve tozdan oluşan büyük bulut."
+        },
+        {
+          "term": "Ana kol",
+          "definition": "Yıldızın çekirdeğinde hidrojenin helyuma dönüştüğü, yaşamının uzun bölümünü geçirdiği evre."
+        },
+        {
+          "term": "Kırmızı dev",
+          "definition": "Küçük ve orta kütleli yıldızların yaşamlarının ileri döneminde genişleyip soğuyan dış katmanlarıyla aldığı evre."
+        },
+        {
+          "term": "Gezegenimsi bulutsu",
+          "definition": "Bazı yıldızların dış katmanlarını uzaya bırakmasıyla oluşan gaz bulutu."
+        },
+        {
+          "term": "Beyaz cüce",
+          "definition": "Küçük ve orta kütleli yıldızların evrimi sonunda kalan sıcak ve yoğun çekirdek."
+        },
+        {
+          "term": "Süpernova",
+          "definition": "Büyük kütleli bir yıldızın yaşamının sonunda gerçekleşebilen çok güçlü patlama."
+        },
+        {
+          "term": "Nötron yıldızı",
+          "definition": "Bazı büyük kütleli yıldızların çökmesi sonucunda oluşan çok yoğun yıldız kalıntısı."
+        },
+        {
+          "term": "Kara delik",
+          "definition": "Kütle çekiminin çok güçlü olduğu, ışığın bile kaçamadığı uzay bölgesi."
+        }
+      ],
+      "activity": {
+        "title": "Yıldızın yaşam döngüsü posteri",
+        "materials": "Yıldız yaşam evreleri bilgi kartları, kâğıt, boya kalemleri ve yapıştırıcı.",
+        "steps": "1) Küçük/orta ve büyük kütleli yıldızların evre kartlarını ayırın. 2) Her yol için evreleri doğru sıraya yerleştirin. 3) Oklarla geçişleri gösterin. 4) Kütlenin yaşam yoluna etkisini açıklayan kısa not ekleyin. 5) Posterleri karşılaştırıp eksik veya hatalı bölümleri düzeltin.",
+        "safetyNotes": "Etkinlik çizim ve kartlarla yapılır; görseller bilimsel kaynaklardan seçilir."
+      },
+      "quiz": [
+        {
+          "body": "Güneş gibi küçük ve orta kütleli bir yıldızın kırmızı dev evresinden sonra dış katmanlarını uzaya bırakmasıyla ne oluşabilir?",
+          "options": [
+            "Gezegenimsi bulutsu",
+            "Süpernova",
+            "Nötron yıldızı",
+            "Yeni bir gezegen"
+          ],
+          "answer": 0,
+          "explanation": "Küçük ve orta kütleli yıldızların dış katmanları gezegenimsi bulutsu oluşturabilir.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Büyük kütleli bir yıldızın yaşamının sonunda gerçekleşebilen patlamaya ne ad verilir?",
+          "options": [
+            "Buharlaşma",
+            "Süpernova",
+            "Yoğuşma",
+            "Tutulma"
+          ],
+          "answer": 1,
+          "explanation": "Büyük kütleli yıldızların son evresinde süpernova gerçekleşebilir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Yıldızın yaşam sürecini ve son evresini etkileyen önemli özellik hangisidir?",
+          "options": [
+            "Rengi tek başına",
+            "Başlangıç kütlesi",
+            "Dünya'ya uzaklığı",
+            "Gezegen sayısı"
+          ],
+          "answer": 1,
+          "explanation": "Yıldızın başlangıç kütlesi yaşam süresini ve son evresini etkiler.",
+          "difficulty": "MEDIUM"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "yildiz-galaksi-evren",
+      "title": "Yıldız, Galaksi ve Evren",
+      "summary": "Yıldız, takımyıldız, galaksi ve evren kavramlarını aralarındaki hiyerarşik ilişkiyle açıklayalım.",
+      "outcome": {
+        "code": "FB.7.1.5",
+        "description": "Yıldız, galaksi ve evren kavramlarını açıklayarak yapılandırabilme.",
+        "details": [
+          "Yıldız, galaksi ve evren kavramları arasındaki hiyerarşik ilişkileri ortaya koyar.",
+          "Kavramları uyumlu bir bütün hâlinde açıklar."
+        ]
+      },
+      "skills": [
+        "Kavramları yapılandırma",
+        "Sınıflandırma",
+        "Model okuryazarlığı",
+        "Bilimsel açıklama"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "⭐ Yıldız nedir?",
+          "bodyHtml": "<p><strong>Yıldız</strong>, kendi kütle çekimiyle bir arada duran, çekirdeğinde gerçekleşen nükleer tepkimeler sonucunda enerji üreten sıcak gaz küresidir. Güneş, Dünya'ya en yakın yıldızdır. Diğer yıldızlar çok uzakta oldukları için gökyüzünde küçük ışık noktaları gibi görünür.</p><div style='background:#fef3c7;padding:14px;border-radius:13px;text-align:center;color:#78350f'><div style='font-size:2.4rem'>☀️ ✨</div><b>Güneş de bir yıldızdır.</b><p>Güneş'in yakın olması onu diğer yıldızlardan farklı gösterir.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "✨ Takımyıldız nedir?",
+          "bodyHtml": "<p><strong>Takımyıldız</strong>, gökyüzünde belirli bir şekle benzetilen yıldız gruplarına verilen addır. Bu yıldızlar Dünya'dan bakıldığında aynı bölgede görünür; ancak gerçekte birbirlerinden çok farklı uzaklıklarda bulunabilir. Takımyıldız, yıldızların mutlaka fiziksel olarak birbirine yakın olduğu anlamına gelmez.</p>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🌌 Galaksi nedir?",
+          "bodyHtml": "<p><strong>Galaksi</strong>, kütle çekimiyle bir arada tutulan yıldızlar, yıldız sistemleri, gaz, toz ve karanlık madde gibi bileşenlerden oluşan büyük yapıdır. Güneş Sistemi, Samanyolu Galaksisi içinde yer alır. Samanyolu sarmal yapılı bir galaksidir.</p><div style='background:#ede9fe;padding:14px;border-radius:13px;text-align:center;color:#4c1d95'><div style='font-size:2.4rem'>🌌</div><b>Samanyolu Galaksisi</b><p>Güneş Sistemi bu galaksinin içindedir.</p></div>"
+        },
+        {
+          "type": "EXPLANATION",
+          "title": "🌠 Evren nedir?",
+          "bodyHtml": "<p><strong>Evren</strong>, uzay, zaman, madde ve enerjinin tamamını kapsar. Galaksiler evrenin içindeki büyük yapılardır. Gözlemleyebildiğimiz evrende çok sayıda galaksi bulunur. Evrenin tamamının sınırları ve yapısı üzerine bilimsel araştırmalar sürmektedir.</p><div style='background:#0f172a;color:#fff;padding:16px;border-radius:14px;text-align:center'><div style='font-size:2rem'>⭐ → 🌌 → 🌠</div><b>Yıldız → Galaksi → Evren</b><p>Basitleştirilmiş kavramsal ilişki</p></div>"
+        },
+        {
+          "type": "IMPORTANT_INFO",
+          "title": "⭐ Kavramlar arasındaki ilişki",
+          "bodyHtml": "<ul><li>Güneş bir yıldızdır.</li><li>Güneş Sistemi, Samanyolu Galaksisi içinde bulunur.</li><li>Galaksiler evrenin içindeki büyük yapılardır.</li><li>Takımyıldızlar, gökyüzünde görülen görünür yıldız desenleridir; yıldızların fiziksel olarak yakın olması gerekmez.</li><li>Evren, bütün galaksileri ve uzay-zamanı kapsar.</li></ul>"
+        },
+        {
+          "type": "DAILY_LIFE",
+          "title": "🔭 Gökyüzünü gözlemleyelim",
+          "bodyHtml": "<p>Açık ve ışık kirliliğinin az olduğu bir gecede gökyüzünü gözlemleyebilirsin. Gördüğün yıldız desenlerini bir gökyüzü haritasıyla karşılaştırabilir, hangi parlak noktanın gezegen veya yıldız olabileceğini araştırabilirsin. Gözlem sırasında Güneş'e veya çok parlak ışık kaynaklarına optik araçlarla bakma.</p>"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "Yıldız",
+          "definition": "Enerji üreten, sıcak gazlardan oluşan gök cismi."
+        },
+        {
+          "term": "Takımyıldız",
+          "definition": "Gökyüzünde belirli şekiller oluşturduğu düşünülen yıldız deseni."
+        },
+        {
+          "term": "Galaksi",
+          "definition": "Kütle çekimiyle bir arada tutulan yıldızlar ve diğer maddelerden oluşan büyük sistem."
+        },
+        {
+          "term": "Evren",
+          "definition": "Uzay, zaman, madde ve enerjinin bütünü."
+        },
+        {
+          "term": "Samanyolu",
+          "definition": "Güneş Sistemi'nin içinde bulunduğu sarmal galaksi."
+        }
+      ],
+      "activity": {
+        "title": "Evrenin adresini oluşturalım",
+        "materials": "Kavram kartları: Dünya, Güneş Sistemi, Güneş, Samanyolu, yıldız, galaksi, evren; büyük kâğıt ve oklar.",
+        "steps": "1) Kavram kartlarını inceleyin. 2) Dünya'nın Güneş Sistemi'ndeki yerini gösterin. 3) Güneş Sistemi'ni Samanyolu içinde konumlandırın. 4) Samanyolu'nun evren içindeki yerini ekleyin. 5) Takımyıldız kavramının bu hiyerarşide neden farklı olduğunu açıklayın.",
+        "safetyNotes": "Gözlem için Güneş'e doğrudan bakmayın; teleskop veya dürbünle Güneş gözlemi yapmayın."
+      },
+      "quiz": [
+        {
+          "body": "Güneş Sistemi hangi galakside bulunur?",
+          "options": [
+            "Andromeda",
+            "Samanyolu",
+            "Üçgen",
+            "Büyük Macellan Bulutu"
+          ],
+          "answer": 1,
+          "explanation": "Güneş Sistemi, Samanyolu Galaksisi içinde yer alır.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Takımyıldızlarla ilgili hangisi doğrudur?",
+          "options": [
+            "Yıldızları mutlaka birbirine yakındır.",
+            "Gökyüzünde belirli şekiller oluşturduğu düşünülen yıldız desenleridir.",
+            "Bir galaksinin diğer adıdır.",
+            "Yalnızca gezegenlerden oluşur."
+          ],
+          "answer": 1,
+          "explanation": "Takımyıldızlar gökyüzünde görülen görünür desenlerdir; yıldızlar gerçekte farklı uzaklıklarda olabilir.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Evren kavramını en doğru açıklayan ifade hangisidir?",
+          "options": [
+            "Yalnızca Güneş Sistemi",
+            "Yalnızca Samanyolu",
+            "Uzay, zaman, madde ve enerjinin bütünü",
+            "Yalnızca yıldızlar"
+          ],
+          "answer": 2,
+          "explanation": "Evren; uzay, zaman, madde ve enerjinin tamamını kapsar.",
+          "difficulty": "EASY"
+        }
+      ],
+      "links": []
+    }
+  ]
+}
