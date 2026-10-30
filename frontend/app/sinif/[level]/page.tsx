@@ -32,7 +32,14 @@ export default async function ClassLevelPage({ params }: { params: { level: stri
   }
 
   const staticUnits = getStaticUnitsForLevel(level);
-  const dbUnits = (classData?.units ?? []).filter((u) => !staticUnits.some((s) => s.slug === u.slug));
+  const dbUnits = (classData?.units ?? []).filter((u) => {
+    const isStaticDuplicate = staticUnits.some((s) => s.slug === u.slug);
+    const isLegacyPhysicalEventsUnit = level === 8 && (
+      u.code?.trim().toLowerCase() === "f.8.7" ||
+      u.title.toLocaleLowerCase("tr-TR").includes("fiziksel olaylar")
+    );
+    return !isStaticDuplicate && !isLegacyPhysicalEventsUnit;
+  });
 
   return (
     <>
