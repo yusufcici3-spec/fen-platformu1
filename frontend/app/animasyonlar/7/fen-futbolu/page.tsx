@@ -5,7 +5,7 @@ import styles from "./page.module.css";
 export const metadata = {
   title: "Fen Futbolu 7 | 7. Sınıf Fen Bilimleri",
   description:
-    "İki kişilik penaltı düellosu: Güneş Sistemi ve Ötesi ile Kuvvet, İş ve Enerji sorularını doğru bil, kaleciye şut çek, ilk 3 golü atan kazansın.",
+    "İki kişilik penaltı düellosu: Uzay Araştırmaları ile Kuvvet, İş ve Enerji sorularını doğru bil, kaleciye şut çek, ilk 3 golü atan kazansın.",
 };
 
 export default function FenFutbolu7Page() {
@@ -21,7 +21,7 @@ export default function FenFutbolu7Page() {
         </nav>
 
         <header className={styles.hero}>
-          <span className={styles.eyebrow}>7. SINIF · GÜNEŞ SİSTEMİ VE ÖTESİ · KUVVET, İŞ VE ENERJİ · OYUN</span>
+          <span className={styles.eyebrow}>7. SINIF · UZAY ARAŞTIRMALARI · KUVVET, İŞ VE ENERJİ · OYUN</span>
           <h1>Fen Futbolu 7</h1>
           <p>
             İki oyunculu penaltı düellosu. Sırayla gelen soruyu doğru bilen kaleciye şut çekme hakkı kazanır;

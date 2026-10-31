@@ -99,7 +99,7 @@ html.embedded .modal{max-height:none}
 <noscript>Bu oyun için JavaScript gereklidir.</noscript>
 <div class="app"><div class="wrap">
   <div><h1>⚽ Fen Futbolu · 7. Sınıf</h1>
-  <p class="sub">Güneş Sistemi ve Ötesi &nbsp;•&nbsp; Kuvvet, İş ve Enerji</p></div>
+  <p class="sub">Uzay Araştırmaları &nbsp;•&nbsp; Kuvvet, İş ve Enerji</p></div>
 
   <div class="board">
     <div class="pl" id="pl0"><div class="kit k1">7</div><div><div class="nm">RONALDO</div><div class="balls" id="balls0"><i>⚽</i><i>⚽</i><i>⚽</i></div></div></div>
@@ -158,48 +158,74 @@ html.embedded .modal{max-height:none}
   </div>
 </div>
 <script>
-// u: 1 = Güneş Sistemi ve Ötesi, 2 = Kuvvet, İş ve Enerji İlişkileri / Enerji Dönüşümleri
+// MEB 7. sınıf Fen Bilimleri kazanımlarına göre hazırlandı.
+// u: 1 = Uzay Araştırmaları (FB.7.1.1-5: uzay teknolojileri, gözlem araçları, uzay araştırmalarının sorunları,
+//        yıldızların yaşamı; yıldız, takımyıldız, galaksi, evren)
+//    2 = Kuvvet, İş ve Enerji İlişkisi / Enerji Dönüşümleri (FB.7.2.1-3: iş, kinetik ve potansiyel enerji,
+//        enerjinin korunumu; iş, enerji, joule, esneklik ve çekim potansiyel enerjisi, ısı)
 // o[0] her zaman doğru cevap; oyun seçenekleri karıştırarak gösterir.
-const UNITS = { 1: "1. Ünite · Güneş Sistemi ve Ötesi", 2: "2. Ünite · Kuvvet, İş ve Enerji" };
+const UNITS = { 1: "1. Ünite · Uzay Araştırmaları", 2: "2. Ünite · Kuvvet, İş ve Enerji" };
 
 const BANK = [
-  // ---------- 1. Ünite ----------
-  { u: 1, q: "Güneş'in ışık yayan, gözlemlediğimiz görünür yüzey tabakasına ne denir?", o: ["Fotosfer", "Korona", "Çekirdek", "Kromosfer"], n: "Güneş'in katmanları: çekirdek, fotosfer, kromosfer, korona." },
-  { u: 1, q: "Güneş atmosferinin en dış, taç gibi görünen katmanının adı nedir?", o: ["Korona", "Fotosfer", "Kromosfer", "Çekirdek"], n: "Korona en çok Güneş tutulması sırasında gözlenir." },
-  { u: 1, q: "Güneş'in merkezinde hidrojen atomlarının birleşerek helyuma dönüşmesi olayına ne denir?", o: ["Füzyon", "Fisyon", "Yanma", "Erime"], n: "Güneş'in enerjisi çekirdekteki füzyon tepkimelerinden gelir." },
-  { u: 1, q: "Bir gezegenin çevresinde dolanan doğal ya da yapay cisme ne denir?", o: ["Uydu", "Asteroit", "Kuyruklu yıldız", "Yıldız"], n: "Ay, Dünya'nın doğal uydusudur." },
-  { u: 1, q: "Mars ile Jüpiter arasındaki kuşakta Güneş etrafında dolanan küçük kayaç ve metal yapılı cisimlere ne denir?", o: ["Asteroit", "Meteor", "Cüce gezegen", "Nebula"], n: "Asteroitler Güneş sisteminin oluşumundan kalan parçalardır." },
-  { u: 1, q: "Dünya atmosferine girip sürtünmeyle yanarak ışık izi bırakan küçük uzay parçasına ne denir?", o: ["Meteor", "Asteroit", "Uydu", "Gezegen"], n: "Halk arasında \"yıldız kayması\" denir; gerçek bir yıldız değildir." },
-  { u: 1, q: "Işık yılı hangi büyüklüğün birimidir?", o: ["Uzaklık", "Zaman", "Hız", "Kütle"], n: "Işık yılı, ışığın bir yılda aldığı yoldur." },
-  { u: 1, q: "Milyarlarca yıldızın, gazın ve tozun kütle çekimiyle bir arada tutulduğu dev topluluğa ne denir?", o: ["Galaksi", "Takımyıldız", "Nebula", "Gezegen"], n: "Güneş Sistemi, Samanyolu galaksisinin içindedir." },
-  { u: 1, q: "Güneş Sistemimizin içinde bulunduğu galaksinin adı nedir?", o: ["Samanyolu", "Andromeda", "Büyük Macellan", "Orion"], n: "Samanyolu sarmal yapılı bir galaksidir." },
-  { u: 1, q: "Yıldızların doğduğu gaz ve toz bulutlarına ne denir?", o: ["Nebula (bulutsu)", "Kara delik", "Beyaz cüce", "Süpernova"], n: "Yıldızlar nebulalarda oluşur." },
-  { u: 1, q: "Kütlesi çok büyük bir yıldızın yaşamının sonunda gerçekleşen dev patlamaya ne denir?", o: ["Süpernova", "Nebula", "Beyaz cüce", "Meteor"], n: "Süpernova sonrası nötron yıldızı ya da kara delik kalabilir." },
-  { u: 1, q: "Kütle çekimi o kadar güçlü olan bir cisim ki ışık bile kaçamaz. Bu cisim hangisidir?", o: ["Kara delik", "Beyaz cüce", "Nebula", "Kuyruklu yıldız"], n: "Kara delikler çok büyük kütleli yıldızların sonunda oluşabilir." },
-  { u: 1, q: "Uzaktaki gök cisimlerini daha büyük ve parlak görmemizi sağlayan araç hangisidir?", o: ["Teleskop", "Mikroskop", "Dinamometre", "Termometre"], n: "Teleskoplar uzay araştırmalarının temel araçlarındandır." },
-  { u: 1, q: "Astronotların aylarca yaşayıp araştırma yaptığı, Dünya yörüngesindeki yapı hangisidir?", o: ["Uzay istasyonu", "Uzay sondası", "Hava uydusu", "Roket"], n: "Uluslararası Uzay İstasyonu yaklaşık 400 km yükseklikte döner." },
-  { u: 1, q: "Mars gibi bir gezegenin yüzeyinde gezip örnek toplayan uzay aracına ne denir?", o: ["Gezgin araç (rover)", "Roket", "Teleskop", "Yapay uydu"], n: "Perseverance ve Curiosity Mars'ta çalışan gezgin araçlardır." },
-  { u: 1, q: "Kullanım ömrünü tamamlamış uydu ve roket parçalarının yörüngede oluşturduğu birikime ne denir?", o: ["Uzay çöpü", "Asteroit kuşağı", "Meteor yağmuru", "Nebula"], n: "Uzay çöpleri çalışan uydular ve uzay araçları için tehlike oluşturur." },
-  { u: 1, q: "Güneş Sistemi'nin en büyük gezegeni hangisidir?", o: ["Jüpiter", "Satürn", "Dünya", "Neptün"], n: "Jüpiter gaz devi bir gezegendir." },
+  // ---------- 1. Ünite: Uzay Araştırmaları ----------
+  // Uzay teknolojileri ve gözlem araçları (FB.7.1.1, FB.7.1.2)
+  { u: 1, q: "Uzaktaki gök cisimlerinden gelen ışığı toplayarak onları daha büyük ve parlak görmemizi sağlayan uzay gözlem aracı hangisidir?", o: ["Teleskop", "Mikroskop", "Termometre", "Barometre"], n: "Teleskoplar uzay gözleminin temel araçlarındandır." },
+  { u: 1, q: "Dünya atmosferinin dışında, yörüngede çalışan (ör. Hubble) teleskopların atmosferdeki teleskoplara göre üstünlüğü nedir?", o: ["Atmosferin ışığı bozmasından etkilenmezler", "Daha ucuzdurlar", "Tamiri daha kolaydır", "Işığı toplamaları gerekmez"], n: "Atmosfer, ışığı bozar ve engeller; uzay teleskopları bu etkiden uzaktır." },
+  { u: 1, q: "Görünür ışık yerine uzaydan gelen radyo dalgalarını toplayarak gök cisimlerini inceleyen araç hangisidir?", o: ["Radyo teleskop", "Optik teleskop", "Uzay mekiği", "Roket"], n: "Radyo teleskoplar gece-gündüz ve bulutlu havada da gözlem yapabilir." },
+  { u: 1, q: "Bir gezegenin ya da Dünya'nın çevresinde dolanarak gözlem, haberleşme ve hava tahmini gibi görevler yapan insansız araca ne denir?", o: ["Yapay uydu", "Uzay istasyonu", "Roket", "Gezgin araç"], n: "Yapay uydular farklı görevlere göre tasarlanır." },
+  { u: 1, q: "Başka gök cisimlerine (gezegen, kuyruklu yıldız vb.) gönderilen, veri toplayan ve insansız olan uzay aracına ne denir?", o: ["Uzay sondası", "Uzay istasyonu", "Radyo teleskop", "Uzay mekiği"], n: "Uzay sondaları (ör. Voyager) uzaktaki cisimlerden veri gönderir." },
+  { u: 1, q: "Astronotların uzun süre kalıp deney yapabildiği, Dünya yörüngesindeki insanlı uzay laboratuvarına ne denir?", o: ["Uzay istasyonu", "Uzay sondası", "Radyo teleskop", "Hava uydusu"], n: "Uluslararası Uzay İstasyonu'nda astronotlar aylarca kalır." },
+  { u: 1, q: "Uzay araçlarını, uyduları ve astronotları Dünya'nın dışına taşıyan, yakıtla çalışan araç hangisidir?", o: ["Roket", "Teleskop", "Radyo teleskop", "Uzay sondası"], n: "Roketler, itiş gücüyle uzay araçlarını yörüngeye çıkarır." },
+  { u: 1, q: "Mars gibi bir gök cisminin yüzeyinde gezip toprak ve kaya örnekleri inceleyen araç hangisidir?", o: ["Gezgin araç (rover)", "Yapay uydu", "Optik teleskop", "Uzay mekiği"], n: "Perseverance ve Curiosity, Mars yüzeyinde çalışan gezgin araçlardır." },
+  { u: 1, q: "Türkiye'nin uzay çalışmalarını yürütmek üzere 2018'de kurulan kurum hangisidir?", o: ["Türkiye Uzay Ajansı (TUA)", "Türkiye Büyük Millet Meclisi", "Kızılay", "Türk Hava Kurumu"], n: "Türkiye Uzay Ajansı, ulusal uzay programından sorumludur." },
+  { u: 1, q: "Türkiye'nin uzaya giden ilk astronotu kimdir?", o: ["Alper Gezeravcı", "Neil Armstrong", "Yuri Gagarin", "Sally Ride"], n: "Alper Gezeravcı 2024'te Uluslararası Uzay İstasyonu'na gitti." },
 
-  // ---------- 2. Ünite ----------
-  { u: 2, q: "Kuvvetin SI birimi hangisidir?", o: ["Newton (N)", "Joule (J)", "Watt (W)", "Kilogram (kg)"], n: "Kuvvet dinamometreyle newton cinsinden ölçülür." },
-  { u: 2, q: "Enerjinin ve işin birimi hangisidir?", o: ["Joule (J)", "Newton (N)", "Watt (W)", "Metre (m)"], n: "1 J, 1 N'luk kuvvetin kuvvet yönünde 1 m yol almasıyla yapılan iştir." },
-  { u: 2, q: "Gücün SI birimi hangisidir?", o: ["Watt (W)", "Joule (J)", "Newton (N)", "Pascal (Pa)"], n: "Güç = iş / zaman; 1 W = 1 J/s." },
-  { u: 2, q: "Kuvvet yönünde 5 m yol alan bir cisme 10 N kuvvet uygulanıyor. Yapılan iş kaç J'dür?", o: ["50 J", "15 J", "2 J", "5 J"], n: "İş = kuvvet × yol = 10 × 5 = 50 J." },
-  { u: 2, q: "20 J'lük iş 4 saniyede yapılırsa güç kaç W olur?", o: ["5 W", "80 W", "16 W", "24 W"], n: "Güç = iş / zaman = 20 / 4 = 5 W." },
-  { u: 2, q: "Cisimlere uygulanan kuvveti ölçen alet hangisidir?", o: ["Dinamometre", "Termometre", "Barometre", "Eşit kollu terazi"], n: "Dinamometrenin içindeki yayın uzaması kuvvetle orantılıdır." },
-  { u: 2, q: "Hareket halindeki cisimlerin sahip olduğu enerjiye ne denir?", o: ["Kinetik enerji", "Potansiyel enerji", "Isı enerjisi", "Elektrik enerjisi"], n: "Kinetik enerji kütle ve hıza bağlıdır." },
-  { u: 2, q: "Bir cismin yerden yüksekte olması nedeniyle sahip olduğu depolanmış enerjiye ne denir?", o: ["Çekim potansiyel enerjisi", "Kinetik enerji", "Isı enerjisi", "Ses enerjisi"], n: "Yükseklik arttıkça çekim potansiyel enerjisi artar." },
-  { u: 2, q: "Güneş panelinde (fotovoltaik hücre) hangi enerji dönüşümü gerçekleşir?", o: ["Işık → elektrik", "Elektrik → ışık", "Isı → hareket", "Kimyasal → ısı"], n: "Güneş panelleri ışık enerjisini elektrik enerjisine çevirir." },
-  { u: 2, q: "Elektrik süpürgesinin motorunda temel olarak hangi enerji dönüşümü olur?", o: ["Elektrik → hareket", "Isı → elektrik", "Kimyasal → ışık", "Ses → ışık"], n: "Elektrik motorlarında elektrik enerjisi hareket enerjisine dönüşür." },
-  { u: 2, q: "Enerjinin korunumu ilkesine göre enerji için hangisi doğrudur?", o: ["Bir türden diğerine dönüşür, toplamı korunur", "Kullanıldıkça yok olur", "Yoktan var edilebilir", "Yalnızca ısıya dönüşebilir"], n: "Enerji yoktan var edilemez, vardan yok edilemez; dönüşür." },
-  { u: 2, q: "Bir makinenin verimi hakkında hangisi doğrudur?", o: ["%100'den büyük olamaz", "Her zaman %100'dür", "Sürtünmeyle artar", "Enerjiyle ilgisi yoktur"], n: "Enerjinin bir kısmı genellikle ısıya dönüştüğü için verim %100'ü geçemez." },
-  { u: 2, q: "Sürtünme kuvvetine karşı yapılan iş çoğunlukla hangi enerjiye dönüşür?", o: ["Isı enerjisi", "Elektrik enerjisi", "Kimyasal enerji", "Nükleer enerji"], n: "Ellerini birbirine sürtünce ısınmanın nedeni budur." },
-  { u: 2, q: "Aşağıdakilerden hangisi yenilenebilir bir enerji kaynağıdır?", o: ["Rüzgâr", "Kömür", "Doğalgaz", "Petrol"], n: "Rüzgâr, güneş ve su yenilenebilir enerji kaynaklarıdır." },
-  { u: 2, q: "Yediğimiz besinlerde depolanmış enerji hangi türdendir?", o: ["Kimyasal enerji", "Nükleer enerji", "Işık enerjisi", "Ses enerjisi"], n: "Vücudumuz kimyasal enerjiyi hareket ve ısı enerjisine dönüştürür." },
-  { u: 2, q: "Sürtünmesiz ortamda serbest düşen bir cismin mekanik enerjisi nasıl değişir?", o: ["Değişmez", "Artar", "Azalır", "Önce artar sonra azalır"], n: "Potansiyel enerji azalırken kinetik enerji aynı miktarda artar." },
-  { u: 2, q: "Aynı hızla giden iki araçtan kütlesi büyük olanın kinetik enerjisi için ne söylenir?", o: ["Daha büyüktür", "Daha küçüktür", "Eşittir", "Sıfırdır"], n: "Kinetik enerji kütleyle doğru orantılıdır." }
+  // Uzay araştırmalarının yol açabileceği problemler (FB.7.1.3)
+  { u: 1, q: "Kullanım ömrünü tamamlamış uyduların ve roket parçalarının yörüngede oluşturduğu birikime ne denir?", o: ["Uzay çöpü", "Takımyıldız", "Nebula", "Evren"], n: "Uzay çöpleri çalışan uydular ve uzay araçları için tehlikedir." },
+  { u: 1, q: "Uzay araştırmalarının doğuracağı sorunlardan hangisi astronotların sağlığıyla ilgilidir?", o: ["Uzun süre yer çekimsiz kalınca kas ve kemik kaybı", "Teleskopların pahalı olması", "Yıldızların uzak olması", "Işığın hızlı olması"], n: "Astronotlar kas ve kemik kaybını azaltmak için her gün egzersiz yapar." },
+  { u: 1, q: "Uzay araştırmaları ve teknolojilerin geliştirilmesi için hangi önemli sorun yaşanır?", o: ["Yüksek maliyet", "Yer çekiminin olmaması", "Dünya'nın dönmesi", "Ay'ın ışık vermesi"], n: "Uzay projeleri çok pahalıdır; ülkeler ortak projelerle maliyeti paylaşır." },
+
+  // Yıldızların yaşamı (FB.7.1.4)
+  { u: 1, q: "Yıldızların doğduğu gaz ve toz bulutuna ne denir?", o: ["Nebula (bulutsu)", "Kara delik", "Beyaz cüce", "Takımyıldız"], n: "Yıldızlar nebulada oluşur." },
+  { u: 1, q: "Güneş gibi orta kütleli bir yıldızın yaşamının sonunda geriye kalan küçük, sıcak ve yoğun çekirdeğe ne denir?", o: ["Beyaz cüce", "Süpernova", "Kara delik", "Nebula"], n: "Güneş de ömrünün sonunda bir beyaz cüce olacak." },
+  { u: 1, q: "Kütlesi çok büyük bir yıldızın yaşamının sonunda gerçekleşen dev patlamaya ne denir?", o: ["Süpernova", "Nebula", "Beyaz cüce", "Takımyıldız"], n: "Süpernova sonrasında nötron yıldızı ya da kara delik oluşabilir." },
+  { u: 1, q: "Yıldızların yaşam süresi kütleleriyle nasıl ilişkilidir?", o: ["Kütlesi büyük yıldızlar daha kısa yaşar", "Kütlesi büyük yıldızlar daha uzun yaşar", "Kütle ile ilgisi yoktur", "Hepsi aynı süre yaşar"], n: "Büyük kütleli yıldızlar yakıtlarını çok hızlı tüketir." },
+
+  // Yıldız, takımyıldız, galaksi, evren (FB.7.1.5)
+  { u: 1, q: "Gökyüzünde birbirine yakın görünen yıldızların hayali çizgilerle birleştirilmesiyle oluşan şekillere ne denir?", o: ["Takımyıldız", "Galaksi", "Evren", "Nebula"], n: "Büyükayı ve Orion bilinen takımyıldızlardır." },
+  { u: 1, q: "Milyarlarca yıldızın, gazın ve tozun kütle çekimiyle bir arada tutulduğu dev topluluğa ne denir?", o: ["Galaksi", "Takımyıldız", "Nebula", "Uydu"], n: "Güneş Sistemi, Samanyolu galaksisinin içindedir." },
+  { u: 1, q: "Tüm galaksileri, yıldızları, gezegenleri, gazı ve tozu kapsayan en büyük yapıya ne denir?", o: ["Evren", "Galaksi", "Güneş Sistemi", "Takımyıldız"], n: "Evren, bilinen her şeyi içine alır." },
+  { u: 1, q: "Küçükten büyüğe doğru hangi sıralama doğrudur?", o: ["Yıldız → galaksi → evren", "Galaksi → yıldız → evren", "Evren → galaksi → yıldız", "Yıldız → evren → galaksi"], n: "Yıldızlar galaksileri, galaksiler de evreni oluşturur." },
+  { u: 1, q: "Güneş Sistemi'nin içinde bulunduğu galaksinin adı nedir?", o: ["Samanyolu", "Andromeda", "Büyük Macellan", "Orion"], n: "Samanyolu sarmal yapılı bir galaksidir." },
+  { u: 1, q: "Gökyüzünde kendi ışığını yayan, Güneş gibi dev gaz küresine ne denir?", o: ["Yıldız", "Gezegen", "Uydu", "Kuyruklu yıldız"], n: "Yıldızlar çekirdeklerindeki tepkimelerle enerji üretir." },
+
+  // ---------- 2. Ünite: Kuvvet, İş ve Enerji İlişkisi / Enerji Dönüşümleri ----------
+  // İş (FB.7.2.1)
+  { u: 2, q: "Fiziksel anlamda iş yapılabilmesi için hangisi gerekir?", o: ["Kuvvet uygulanması ve cismin kuvvet yönünde yer değiştirmesi", "Yalnızca kuvvet uygulanması", "Cismin hareketsiz kalması", "Cismin kütlesinin artması"], n: "Fiziksel anlamda iş; kuvvet ve yer değiştirmeye bağlıdır." },
+  { u: 2, q: "Bir kişi duvarı var gücüyle itiyor, ancak duvar hiç yer değiştirmiyor. Fiziksel anlamda iş yapılmış mıdır?", o: ["Hayır, yer değiştirme olmadığı için", "Evet, kuvvet uygulandığı için", "Evet, kişi yorulduğu için", "Duvarın kütlesine bağlıdır"], n: "Yer değiştirme yoksa fiziksel anlamda iş de yoktur." },
+  { u: 2, q: "Kuvvet yönünde 5 m yol alan bir cisme 10 N'luk kuvvet uygulanıyor. Yapılan iş kaç J'dür?", o: ["50 J", "15 J", "2 J", "5 J"], n: "İş = kuvvet × yer değiştirme = 10 × 5 = 50 J." },
+  { u: 2, q: "Aynı yer değiştirme için uygulanan kuvvet 2 katına çıkarılırsa yapılan iş nasıl değişir?", o: ["2 katına çıkar", "Yarıya düşer", "Değişmez", "4 katına çıkar"], n: "İş, kuvvetle doğru orantılıdır." },
+  { u: 2, q: "İşin ve enerjinin birimi hangisidir?", o: ["Joule (J)", "Newton (N)", "Metre (m)", "Kilogram (kg)"], n: "İş ve enerji joule (J) ile ölçülür." },
+  { u: 2, q: "Bir cisim üzerinde iş yapıldığında cismin enerjisi için ne söylenebilir?", o: ["Enerjisi değişir (enerji aktarılır)", "Enerjisi hep aynı kalır", "Enerjisi yok olur", "Kütlesi artar"], n: "İş, enerji aktarımıdır." },
+
+  // Kinetik ve potansiyel enerji (FB.7.2.2)
+  { u: 2, q: "Hareket halindeki cisimlerin sahip olduğu enerjiye ne denir?", o: ["Kinetik enerji", "Çekim potansiyel enerjisi", "Esneklik potansiyel enerjisi", "Isı enerjisi"], n: "Kinetik enerji, hareketten dolayı sahip olunan enerjidir." },
+  { u: 2, q: "Kinetik enerji hangi iki büyüklüğe bağlıdır?", o: ["Kütle ve hız", "Kütle ve yükseklik", "Yükseklik ve hız", "Zaman ve sıcaklık"], n: "Kütle ve hız arttıkça kinetik enerji artar." },
+  { u: 2, q: "Aynı hızla giden iki araçtan kütlesi büyük olanın kinetik enerjisi için ne söylenir?", o: ["Daha büyüktür", "Daha küçüktür", "Eşittir", "Sıfırdır"], n: "Kinetik enerji kütleyle doğru orantılıdır." },
+  { u: 2, q: "Bir cismin yerden yüksekte olması nedeniyle sahip olduğu depolanmış enerjiye ne denir?", o: ["Çekim potansiyel enerjisi", "Kinetik enerji", "Esneklik potansiyel enerjisi", "Isı enerjisi"], n: "Çekim potansiyel enerjisi kütleye ve yüksekliğe bağlıdır." },
+  { u: 2, q: "Çekim potansiyel enerjisi hangi iki büyüklüğe bağlıdır?", o: ["Kütle ve yükseklik", "Kütle ve hız", "Hız ve zaman", "Hız ve yükseklik"], n: "Kütle ve yükseklik arttıkça çekim potansiyel enerjisi artar." },
+  { u: 2, q: "Gerilmiş bir yay, sıkıştırılmış bir yay ya da gerilmiş lastik hangi enerjiyi depolar?", o: ["Esneklik potansiyel enerjisi", "Kinetik enerji", "Çekim potansiyel enerjisi", "Isı enerjisi"], n: "Esnek cisimler şekilleri değiştirilince potansiyel enerji depolar." },
+  { u: 2, q: "Kinetik ve potansiyel enerjinin ortak özelliği hangisidir?", o: ["Her ikisi de iş yapabilme yeteneğidir, birimleri joule'dür", "Her ikisi de hareketten oluşur", "Her ikisi de yalnızca yüksekte bulunur", "İkisi de ısıdır"], n: "Her iki enerji de iş yapabilir ve joule ile ölçülür." },
+  { u: 2, q: "Kinetik enerji ile potansiyel enerji arasındaki temel fark nedir?", o: ["Kinetik hareketten, potansiyel konum ya da şekilden kaynaklanır", "Kinetik depolanır, potansiyel depolanmaz", "Potansiyel yalnızca ısıdır", "Aralarında fark yoktur"], n: "Kinetik: hareket enerjisi; potansiyel: konum veya şekil enerjisi." },
+
+  // Enerji dönüşümü ve enerjinin korunumu (FB.7.2.3)
+  { u: 2, q: "Yukarıdan serbest bırakılan bir cisim aşağı düşerken enerjisi nasıl değişir? (Sürtünme yok)", o: ["Potansiyel enerji azalır, kinetik enerji artar", "Potansiyel enerji artar, kinetik enerji azalır", "İkisi de artar", "İkisi de azalır"], n: "Potansiyel enerji kinetik enerjiye dönüşür." },
+  { u: 2, q: "Dik yukarı atılan bir topun en yüksek noktasında enerjisi için hangisi doğrudur?", o: ["Kinetik enerjisi sıfır, potansiyel enerjisi en büyüktür", "Kinetik enerjisi en büyüktür", "Potansiyel enerjisi sıfırdır", "İkisi de sıfırdır"], n: "En üst noktada hız sıfırdır; tüm enerji potansiyel enerjidir." },
+  { u: 2, q: "Gerilmiş bir yayın bırakılarak bir cismi fırlatmasında hangi enerji dönüşümü olur?", o: ["Esneklik potansiyel → kinetik", "Kinetik → esneklik potansiyel", "Çekim potansiyel → ısı", "Isı → kinetik"], n: "Yay serbest kalınca depolanan enerji hareket enerjisine dönüşür." },
+  { u: 2, q: "Sürtünmesiz bir ortamda cismin mekanik enerjisi (kinetik + potansiyel) için ne söylenir?", o: ["Korunur, değişmez", "Sürekli artar", "Sürekli azalır", "Sıfırlanır"], n: "Sürtünme yoksa kinetik ve potansiyel enerji toplamı sabit kalır." },
+  { u: 2, q: "Enerjinin korunumu ilkesine göre hangisi doğrudur?", o: ["Enerji yoktan var edilemez, vardan yok edilemez; dönüşür", "Enerji kullanıldıkça yok olur", "Enerji yoktan var edilebilir", "Enerji yalnızca ısıya dönüşür"], n: "Enerji bir türden diğerine dönüşür; toplamı korunur." },
+  { u: 2, q: "Fren yapan bir aracın tekerleklerinde hareket enerjisi (kinetik) çoğunlukla hangi enerjiye dönüşür?", o: ["Isı enerjisi", "Çekim potansiyel enerjisi", "Esneklik potansiyel enerjisi", "Elektrik enerjisi"], n: "Sürtünme nedeniyle mekanik enerjinin bir kısmı ısıya dönüşür." },
+  { u: 2, q: "Hız treninin (roller coaster) en yüksek noktasında enerji durumu hangisidir?", o: ["Potansiyel enerji en büyük, kinetik enerji en küçük", "Kinetik enerji en büyük", "Potansiyel enerji sıfır", "Enerji yoktur"], n: "En yüksek noktada hız küçüktür; aşağı inerken potansiyel enerji kinetik enerjiye dönüşür." }
 ];
 
 const $ = id => document.getElementById(id);
@@ -256,12 +282,12 @@ const sfx = {
 };
 
 // ---------- durum ----------
-let st, pool = [], pi = 0, unitMode = 0, roundTimer = null, particles = [], banner = null;
+let st, pool = [], pi = 0, unitMode = 0, roundTimer = null, shotTimer = null, particles = [], banner = null;
 const stats = () => [{ ok: 0, bad: 0 }, { ok: 0, bad: 0 }];
 let G;  // oyun durumu
 
 function resetMatch() {
-  clearTimeout(roundTimer);
+  clearTimeout(roundTimer); clearTimeout(shotTimer);
   G = { phase: "intro", goals: [0, 0], stats: stats(), cur: null, asker: 0, answerer: 0, stolen: false, wrong: [], deadline: 0, qTotal: 0,
         qCount: 0, aimStart: 0, shot: null, shooter: 0, lastAim: 0 };
   particles = []; banner = null;
@@ -361,6 +387,7 @@ function shoot() {
   G.shot = { start: now, x, h, col, outcome, shooter: G.shooter, done: false };
   G.phase = "shot"; $("shoot").classList.remove("show"); $("hint").textContent = "";
   sfx.kick();
+  const mine = G.shot; shotTimer = setTimeout(() => { if (G.shot === mine && !mine.done) resolveShot(); }, 1450);
 }
 function resolveShot() {
   const s = G.shot, p = s.shooter; s.done = true;
@@ -508,6 +535,7 @@ function drawShooter(P, kick) {
 }
 
 function drawBall(x, y, r, rot) {
+  r = Math.max(2, r || 2);
   ctx.fillStyle = "#0004"; ctx.beginPath(); ctx.ellipse(x, Math.max(y, 300) + r * .9, r * .9, r * .3, 0, 0, 7); ctx.fill();
   ctx.save(); ctx.translate(x, y); ctx.rotate(rot);
   ctx.fillStyle = "#fff"; ctx.beginPath(); ctx.arc(0, 0, r, 0, 7); ctx.fill();
@@ -535,13 +563,12 @@ function frame(now) {
       const e = tp;
       ball.x = lerp(SPOT.x, tx, e); ball.y = lerp(SPOT.y, ty, e) - 58 * Math.sin(Math.PI * e); ball.r = lerp(16, 9, e); ball.rot = tp * 14;
     } else if (tp > 1) {
-      const a = tp - 1; ball.rot = 14 + a * 6;
+      const a = Math.min(tp - 1, 1.6); ball.rot = 14 + a * 6;
       if (sh.outcome === "goal") { ball.x = tx + Math.sin(a * 6) * 3 * (1 - a); ball.y = ty + Math.min(a, .6) * 60; ball.r = 9; ripple = clamp(1 - a, 0, 1) * .9; }
       else if (sh.outcome === "save") { const sg = tx >= 480 ? 1 : -1; ball.x = tx + sg * 140 * a; ball.y = ty + 90 * a * a * 2 - 40 * a; ball.r = 9 + 2 * a; }
-      else { ball.x = tx + (tx >= 480 ? 1 : -1) * 120 * a; ball.y = ty - (sh.h < .5 ? 40 : -30) * a; ball.r = 9 - 2 * a; }
+      else { const aa = Math.min(a, 1.2); ball.x = tx + (tx >= 480 ? 1 : -1) * 120 * aa; ball.y = ty - (sh.h < .5 ? 40 : -30) * aa; ball.r = Math.max(4, 9 - 2 * aa); }
     }
     if (sh.outcome === "goal" && tp > 1) ripple = Math.max(ripple, 0);
-    if (!sh.done && tp >= 1.5) resolveShot();
   }
   // ---- çizim ----
   ctx.clearRect(0, 0, CW, CH);
@@ -583,10 +610,29 @@ function frame(now) {
   if (G.phase === "question") {
     const left = clamp((G.deadline - now) / G.total, 0, 1);
     $("bar").style.transform = "scaleX(" + left + ")";
-    if (now >= G.deadline) wrongAnswer(null, true);
   } else if (G.phase === "aim") $("bar").style.transform = "scaleX(1)";
-  requestAnimationFrame(frame);
 }
+// Çizim bir hata verse bile oyun durmasın
+function loop(now) {
+  requestAnimationFrame(loop);
+  try { frame(now); } catch (e) { console.error(e); }
+}
+// Mantık (süre) çizimden bağımsız çalışır
+setInterval(() => {
+  try { if (G.phase === "question" && performance.now() >= G.deadline) wrongAnswer(null, true); } catch (e) { console.error(e); }
+}, 200);
+// Sekme arka plana alınınca süreyi dondur
+let hiddenAt = 0;
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) { hiddenAt = performance.now(); return; }
+  if (!hiddenAt) return;
+  const d = performance.now() - hiddenAt; hiddenAt = 0;
+  if (G.deadline) G.deadline += d;
+  if (G.aimStart) G.aimStart += d;
+  if (banner) banner.t += d;
+  if (G.shot && !G.shot.done) G.shot.start += d;
+  lastFrame = performance.now();
+});
 
 // ---------- olaylar ----------
 function begin() {
@@ -608,7 +654,7 @@ document.addEventListener("keydown", e => {
 });
 
 // ilk durum
-resetMatch(); requestAnimationFrame(frame);
+resetMatch(); requestAnimationFrame(loop);
 
 // ---------- site içine gömülü kullanım (iframe) ----------
 (function () {

@@ -113,7 +113,7 @@ html.embedded .review{max-height:340px}
 <div class="app">
   <header>
     <h1>7. Sınıf Fen Bilimleri · Passafenola</h1>
-    <p>Güneş Sistemi ve Ötesi &nbsp;•&nbsp; Kuvvet, İş ve Enerji</p>
+    <p>Uzay Araştırmaları &nbsp;•&nbsp; Kuvvet, İş ve Enerji</p>
   </header>
 
   <main class="stage">
@@ -156,7 +156,7 @@ html.embedded .review{max-height:340px}
   <div class="modal">
     <h2>🎯 Passafenola'ya hoş geldin!</h2>
     <p>Her harf için bir soru gelir; cevap o harfle başlar. Doğru bilirsen harf yeşil, yanlışsa kırmızı olur. Pas geçtiğin sorular tur sonunda tekrar sorulur.</p>
-    <p><b>Konular:</b> Güneş Sistemi ve Ötesi, Kuvvet, İş ve Enerji</p>
+    <p><b>Konular:</b> Uzay Araştırmaları, Kuvvet, İş ve Enerji</p>
     <p style="margin-top:14px">Süreni seç:</p>
     <div class="opts" id="opts">
       <label><input type="radio" name="t" value="300"><span>5 dk</span></label>
@@ -182,73 +182,75 @@ html.embedded .review{max-height:340px}
   </div>
 </div>
 <script>
-// Ünite 1: Güneş Sistemi ve Ötesi  |  Ünite 2: Kuvvet, İş ve Enerji İlişkileri / Enerji Dönüşümleri
-const UNITS = { 1: "1. Ünite · Güneş Sistemi ve Ötesi", 2: "2. Ünite · Kuvvet, İş ve Enerji" };
+// MEB 7. sınıf Fen Bilimleri kazanımlarına göre:
+// Ünite 1: Uzay Araştırmaları (uzay teknolojileri, gözlem araçları, yıldızların yaşamı; yıldız, takımyıldız, galaksi, evren)
+// Ünite 2: Kuvvet, İş ve Enerji İlişkisi / Enerji Dönüşümleri (iş, kinetik ve potansiyel enerji, joule, ısı)
+const UNITS = { 1: "1. Ünite · Uzay Araştırmaları", 2: "2. Ünite · Kuvvet, İş ve Enerji" };
 
 const Q = [
-  { l: "A", unit: 1, a: "Asteroit", alt: ["Asteroid", "Asteroit kuşağı"],
-    q: "Mars ile Jüpiter arasındaki kuşakta Güneş etrafında dolanan, gezegenlerden çok daha küçük kayaç ve metal yapılı gök cisimlerine ne denir?",
-    note: "Asteroitler, Güneş sisteminin oluşumundan arta kalan parçalardır." },
+  { l: "A", unit: 1, a: "Astronot", alt: ["Astronotlar"],
+    q: "Uzay araçlarıyla uzaya giden, özel eğitim almış kişiye ne denir? Alper Gezeravcı, Türkiye'nin ilk ... olarak uzaya gitti.",
+    note: "Alper Gezeravcı 2024'te Uluslararası Uzay İstasyonu'na gitti." },
   { l: "B", unit: 1, a: "Beyaz cüce", alt: ["Beyaz cüce yıldız"],
-    q: "Güneş gibi orta kütleli yıldızların yaşamlarının sonunda geriye kalan, küçük, sıcak ve yoğun çekirdeğe ne denir? (İki kelime)",
-    note: "Güneş de milyarlarca yıl sonra bir beyaz cüceye dönüşecek." },
-  { l: "C", unit: 1, a: "Cüce gezegen", alt: ["Cüce"],
-    q: "Plüton gibi Güneş etrafında dolanan, yuvarlak ama yörüngesini temizleyememiş gök cisimlerine ne denir? (İki kelime)",
-    note: "Plüton, 2006'dan beri cüce gezegen sayılıyor." },
-  { l: "D", unit: 2, a: "Dinamometre", alt: [],
-    q: "Cisimlere uygulanan kuvveti, içindeki yayın uzamasından yararlanarak ölçen alete ne denir?",
-    note: "Dinamometre kuvveti newton (N) cinsinden ölçer." },
-  { l: "E", unit: 2, a: "Enerji", alt: [],
-    q: "İş yapabilme yeteneğine ne denir? Birimi joule (J)'dür.",
+    q: "Güneş gibi orta kütleli yıldızların yaşamlarının sonunda geriye kalan küçük, sıcak ve yoğun çekirdeğe ne denir? (İki kelime)",
+    note: "Güneş de ömrünün sonunda bir beyaz cüceye dönüşecek." },
+  { l: "C", unit: 2, a: "Cisim", alt: ["Cisimler"],
+    q: "Fiziksel anlamda iş yapılırken kuvvetin uygulandığı ve yer değiştiren varlığa ne denir? (Bir kutu, bir top ya da bir araba gibi)",
+    note: "İş yapılabilmesi için cismin kuvvet yönünde yer değiştirmesi gerekir." },
+  { l: "D", unit: 2, a: "Dönüşüm", alt: ["Enerji dönüşümü", "Dönüşüm"],
+    q: "Enerjinin bir türden başka bir türe geçmesine enerji ... denir. Boşluğu doldur.",
     note: "Enerji yoktan var edilemez, vardan yok edilemez; yalnızca dönüşür." },
-  { l: "F", unit: 1, a: "Fotosfer", alt: [],
-    q: "Güneş'in gözlemlediğimiz, ışık yayan görünür yüzey tabakasının adı nedir?",
-    note: "Güneş'in katmanları: çekirdek, fotosfer, kromosfer, korona." },
+  { l: "E", unit: 1, a: "Evren", alt: [],
+    q: "Tüm galaksileri, yıldızları, gezegenleri, gazı ve tozu kapsayan en büyük yapıya ne denir?",
+    note: "Yıldız → galaksi → evren şeklinde büyür." },
+  { l: "F", unit: 2, a: "Fren", alt: [],
+    q: "Hareket eden bir aracı durdurmak için kullanılan ve hareket enerjisini sürtünmeyle ısıya dönüştüren sistem hangisidir?",
+    note: "Fren yapınca hareket enerjisinin büyük kısmı ısı enerjisine dönüşür." },
   { l: "G", unit: 1, a: "Galaksi", alt: [],
-    q: "Milyarlarca yıldızın, gazın ve tozun kütle çekimiyle bir arada tutulduğu dev yıldız topluluğuna ne denir?",
-    note: "Evrende yüz milyarlarca galaksi olduğu tahmin edilir." },
+    q: "Milyarlarca yıldızın, gazın ve tozun kütle çekimiyle bir arada tutulduğu dev topluluğa ne denir?",
+    note: "Güneş Sistemi, Samanyolu galaksisinin içindedir." },
   { l: "H", unit: 2, a: "Hız", alt: ["Sürat"],
-    q: "Kinetik enerji, cismin kütlesine ve bir de hangi büyüklüğe bağlıdır? (Birim zamandaki yer değiştirme)",
-    note: "Kütlesi ve hızı arttıkça cismin kinetik enerjisi artar." },
-  { l: "İ", unit: 2, a: "İş", alt: [],
-    q: "Bir cisme uygulanan kuvvetin, cismi kuvvet doğrultusunda yer değiştirmesiyle yapılan fiziksel büyüklüğe ne denir? (İş = kuvvet × yol)",
-    note: "Fizikte iş yapılması için cismin kuvvet yönünde yol alması gerekir." },
-  { l: "K", unit: 1, a: "Kuyruklu yıldız", alt: ["Kuyruklu"],
-    q: "Buz, toz ve kayaçtan oluşan, Güneş'e yaklaştıkça uzun bir kuyruk geliştiren gök cismine ne denir? (İki kelime)",
-    note: "Kuyruk her zaman Güneş'ten uzağa doğru uzanır." },
-  { l: "L", unit: 2, a: "Lamba", alt: ["Ampul"],
-    q: "Elektrik enerjisini ışık ve ısı enerjisine dönüştüren ev aletine ne denir?",
-    note: "Lambada elektrik enerjisi → ışık + ısı enerjisine dönüşür." },
+    q: "Kinetik enerji, cismin kütlesinin yanı sıra hangi büyüklüğe de bağlıdır? (Birim zamandaki yer değiştirme)",
+    note: "Kütle ve hız arttıkça kinetik enerji artar." },
+  { l: "İ", unit: 2, a: "İş", alt: ["Fiziksel iş"],
+    q: "Bir cisme uygulanan kuvvet ile cismin kuvvet yönündeki yer değiştirmesine bağlı olan, birimi joule olan büyüklüğe ne denir?",
+    note: "İş = kuvvet × yer değiştirme; yer değiştirme yoksa fiziksel iş de yoktur." },
+  { l: "K", unit: 2, a: "Kinetik enerji", alt: ["Kinetik"],
+    q: "Hareket halindeki cisimlerin sahip olduğu enerjiye ne denir? (İki kelime)",
+    note: "Kinetik enerji hareket enerjisidir." },
+  { l: "L", unit: 2, a: "Lastik", alt: ["Lastik bant"],
+    q: "Bir sapanda gerilen ve bırakılınca taşı fırlatan esnek malzemeye ne denir? Gerildiğinde esneklik potansiyel enerjisi depolar.",
+    note: "Gerilmiş lastik esneklik potansiyel enerjisi depolar." },
   { l: "M", unit: 2, a: "Mekanik enerji", alt: ["Mekanik"],
     q: "Bir cismin kinetik ve potansiyel enerjilerinin toplamına ne denir? (İki kelime)",
     note: "Sürtünmesiz ortamda mekanik enerji korunur." },
   { l: "N", unit: 1, a: "Nebula", alt: ["Bulutsu"],
     q: "Yıldızların doğduğu, gaz ve tozdan oluşan dev bulutlara ne denir?",
     note: "Türkçesi \"bulutsu\"dur." },
-  { l: "O", unit: 2, a: "Otomobil", alt: ["Araba", "Araç"],
-    q: "Yakıttaki kimyasal enerjiyi hareket enerjisine dönüştüren, günlük hayatta sık kullanılan taşıt hangisidir?",
-    note: "Motorda kimyasal enerji → ısı → hareket enerjisine dönüşür." },
+  { l: "O", unit: 1, a: "Optik", alt: ["Optik teleskop"],
+    q: "Görünür ışığı toplayarak gök cisimlerini inceleyen teleskop türüne ... teleskop denir. Boşluğu doldur.",
+    note: "Optik teleskoplar ışığı mercek ya da aynayla toplar." },
   { l: "P", unit: 2, a: "Potansiyel enerji", alt: ["Potansiyel", "Çekim potansiyel enerjisi"],
-    q: "Bir cismin yerden yüksekliğinden dolayı sahip olduğu depolanmış enerjiye ne denir? (İki kelime)",
-    note: "Yükseklik arttıkça çekim potansiyel enerjisi artar." },
-  { l: "R", unit: 2, a: "Rüzgâr", alt: ["Rüzgar"],
-    q: "Türbin kanatlarını döndürerek elektrik üretiminde kullanılan, hareketli havaya ait yenilenebilir enerji kaynağı hangisidir?",
-    note: "Rüzgâr enerjisinde hareket enerjisi elektrik enerjisine dönüşür." },
-  { l: "S", unit: 1, a: "Samanyolu", alt: ["Samanyolu galaksisi"],
-    q: "Güneş sistemimizin içinde bulunduğu galaksinin adı nedir?",
-    note: "Samanyolu, sarmal yapılı bir galaksidir." },
-  { l: "T", unit: 1, a: "Teleskop", alt: [],
-    q: "Uzaktaki gök cisimlerini daha büyük ve parlak görmemizi sağlayan optik araca ne denir?",
-    note: "Teleskoplar uzay araştırmalarının temel araçlarındandır." },
-  { l: "U", unit: 1, a: "Uydu", alt: ["Yapay uydu", "Doğal uydu"],
-    q: "Bir gezegenin çevresinde dolanan doğal ya da yapay cisme ne denir? Ay, Dünya'nın doğal ... sidir.",
-    note: "Hava durumunu izleyen ve haberleşmeyi sağlayan yapay uydular vardır." },
-  { l: "V", unit: 2, a: "Verim", alt: [],
-    q: "Yararlı enerjinin harcanan toplam enerjiye oranına ne denir? Makineler için ne kadar iyi çalıştıklarının ölçüsüdür.",
-    note: "Hiçbir makinenin verimi %100 olamaz; bir kısım enerji ısıya dönüşür." },
-  { l: "Z", unit: 2, a: "Zaman", alt: [],
-    q: "Güç, yapılan işin hangi büyüklüğe bölünmesiyle bulunur? (İş / ...)",
-    note: "Aynı işi daha kısa sürede yapan makinenin gücü daha büyüktür." }
+    q: "Cismin yerden yüksekliğinden ya da şeklinden dolayı sahip olduğu depolanmış enerjiye ne denir? (İki kelime)",
+    note: "Çekim ve esneklik potansiyel enerjisi olmak üzere iki türü vardır." },
+  { l: "R", unit: 1, a: "Roket", alt: [],
+    q: "Uyduları, uzay araçlarını ve astronotları Dünya'nın dışına taşıyan, yakıtla çalışan araç hangisidir?",
+    note: "Roketler itiş gücüyle uzay araçlarını yörüngeye çıkarır." },
+  { l: "S", unit: 1, a: "Süpernova", alt: [],
+    q: "Kütlesi çok büyük bir yıldızın yaşamının sonunda gerçekleşen dev patlamaya ne denir?",
+    note: "Süpernova sonrası nötron yıldızı ya da kara delik oluşabilir." },
+  { l: "T", unit: 1, a: "Takımyıldız", alt: ["Takım yıldız"],
+    q: "Gökyüzünde birbirine yakın görünen yıldızların hayali çizgilerle birleştirilmesiyle oluşan şekillere ne denir?",
+    note: "Büyükayı ve Orion bilinen takımyıldızlardır." },
+  { l: "U", unit: 1, a: "Uydu", alt: ["Yapay uydu"],
+    q: "Dünya'nın çevresinde dolanarak haberleşme, hava tahmini ve gözlem gibi görevler yapan uzay aracına ne denir?",
+    note: "Türksat 6A, Türkiye'nin yerli haberleşme uydusudur." },
+  { l: "V", unit: 1, a: "Voyager", alt: ["Voyager 1", "Voyager 2"],
+    q: "NASA'nın 1977'de gönderdiği, Güneş Sistemi'nin dışına ulaşan ünlü insansız uzay sondasının adı nedir?",
+    note: "Uzay sondaları başka gök cisimlerine gönderilen insansız araçlardır." },
+  { l: "Z", unit: 2, a: "Zemin", alt: ["Yer"],
+    q: "Çekim potansiyel enerjisi hesaplanırken yüksekliğin ölçülmeye başlandığı düzey (yer) neresidir?",
+    note: "Cisim zeminden ne kadar yüksekteyse çekim potansiyel enerjisi o kadar büyüktür." }
 ];
 
 const $ = id => document.getElementById(id);

@@ -39,7 +39,7 @@ const STATIC_GAMES = [
     label: "7. Sınıf · İki Kişilik",
     title: "Fen Futbolu 7",
     description:
-      "Penaltı düellosu: soruyu doğru bilen kaleciye şut çeker, ilk 3 golü atan kazanır. Güneş Sistemi ve Ötesi ile Kuvvet, İş ve Enerji üniteleri.",
+      "Penaltı düellosu: soruyu doğru bilen kaleciye şut çeker, ilk 3 golü atan kazanır. Uzay Araştırmaları ile Kuvvet, İş ve Enerji üniteleri.",
   },
   {
     href: "/animasyonlar/7/passafenola7",
@@ -47,7 +47,7 @@ const STATIC_GAMES = [
     label: "7. Sınıf · Passaparola",
     title: "Passafenola 7",
     description:
-      "Güneş Sistemi ve Ötesi ile Kuvvet, İş ve Enerji ünitelerinden 21 harflik passaparola. Soruyu oku, cevabı yaz, süre bitmeden harfleri tamamla.",
+      "Uzay Araştırmaları ile Kuvvet, İş ve Enerji ünitelerinden 21 harflik passaparola. Soruyu oku, cevabı yaz, süre bitmeden harfleri tamamla.",
   },
   {
     href: "/animasyonlar/8/passafenola",
