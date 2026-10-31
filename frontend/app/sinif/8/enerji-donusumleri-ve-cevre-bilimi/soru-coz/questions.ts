@@ -600,17 +600,5 @@ export const foodQuestions: FoodQuestion[] = [
     "answer": 0,
     "explanation": "Balıkçıl kuşların azalması küçük balıklar üzerindeki av baskısını azaltabilir.",
     "visual": "pond"
-  },
-  {
-    "scenario": "Bir bilimsel ekip, bir ekosistemdeki tüm üreticilerin ortadan kalktığını varsayıyor. Uzun vadede en olası sonuç hangisidir?",
-    "options": [
-      "Besin ve enerji girişinin büyük ölçüde kesilmesi",
-      "Tüketicilerin üretici olması",
-      "Enerjinin sınırsız artması",
-      "Ayrıştırıcıların fotosentez yapması"
-    ],
-    "answer": 0,
-    "explanation": "Üreticiler çoğu ekosistemde enerji girişinin temel kapısıdır; yoklukları besin ağını çökertebilir.",
-    "visual": "web"
   }
 ];
