@@ -29,6 +29,7 @@ export default async function UnitPage({ params }: { params: { level: string; un
         <section className="mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
           <Link href={`/sinif/${level}`} className="text-sm font-semibold text-beaker hover:underline">← Tüm Ünitelere Dön</Link>
           {level === 5 && staticUnit.slug === "canlilarin-yapisina-yolculuk" && <Link href="/laboratuvar/destek-hareket" className="mt-5 block rounded-2xl border border-beaker/30 bg-beaker/5 p-5 transition hover:shadow-md"><span className="text-xs font-bold uppercase tracking-wide text-beaker">Etkileşimli Fen Laboratuvarı</span><h2 className="mt-2 text-xl font-bold">🦴 Destek ve Hareket Sistemi: Kemikleri Keşfet</h2><p className="mt-2 text-sm text-lab-inkMuted dark:text-lab-paper/65">İskelet modelinde kemikleri seç; görevlerini, türlerini ve vücuttaki yerlerini incele.</p><span className="mt-3 inline-flex text-sm font-semibold text-beaker">Animasyonu aç →</span></Link>}
+          {level === 8 && staticUnit.slug === "enerji-donusumleri-ve-cevre-bilimi" && <Link href={`/sinif/8/enerji-donusumleri-ve-cevre-bilimi/soru-coz`} className="mt-5 inline-flex items-center gap-2 rounded-full bg-beaker px-5 py-2.5 text-sm font-semibold text-white hover:bg-beaker-dark">📝 Bu Üniteden Soru Çöz · 50 Yeni Nesil Soru</Link>}
           <div className="mt-6 grid gap-4">
             {staticUnit.topics.map((topic, index) => (
               <Link key={topic.slug} href={`/sinif/${level}/${staticUnit.slug}/${topic.slug}`} className="group flex items-center gap-4 rounded-card border border-lab-paperLine bg-white p-5 transition hover:border-beaker hover:shadow-md dark:border-white/10 dark:bg-lab-inkSoft">
@@ -60,7 +61,8 @@ export default async function UnitPage({ params }: { params: { level: string; un
       <section className="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <Link href={`/sinif/${level}`} className="text-sm font-semibold text-beaker hover:underline">← Tüm Ünitelere Dön</Link>
-          {unit.topics.length > 0 && <Link href={`/pratik?unitId=${unit.id}&title=${encodeURIComponent(unit.title + " - Soru Çöz")}`} className="inline-flex items-center gap-2 rounded-full bg-beaker px-5 py-2.5 text-sm font-semibold text-white hover:bg-beaker-dark">📝 Bu Üniteden Soru Çöz</Link>}
+          {level === 8 && unit.slug === "enerji-donusumleri-ve-cevre-bilimi" && <Link href="/sinif/8/enerji-donusumleri-ve-cevre-bilimi/soru-coz" className="inline-flex items-center gap-2 rounded-full bg-beaker px-5 py-2.5 text-sm font-semibold text-white hover:bg-beaker-dark">📝 Bu Üniteden Soru Çöz · 50 Yeni Nesil Soru</Link>}
+          {unit.topics.length > 0 && <Link href={`/pratik?unitId=${unit.id}&title=${encodeURIComponent(unit.title + " - Soru Çöz")}`} className="inline-flex items-center gap-2 rounded-full border border-beaker px-5 py-2.5 text-sm font-semibold text-beaker">📝 Genel Soru Çöz</Link>}
         </div>
         {unit.topics.length === 0 ? <div className="mt-6"><EmptyPanelState title="Bu ünite için henüz konu eklenmedi" description="Konular yönetim panelinden eklendikçe burada listelenecek." /></div> : <div className="mt-6"><TopicListWithProgress topics={unit.topics} level={level} unitSlug={unit.slug} /></div>}
       </section>
