@@ -34,6 +34,14 @@ const TYPE_ICONS: Record<string, string> = {
 // Veritabanına bağlı olmayan, doğrudan sayfa olarak yayınlanan oyunlar.
 const STATIC_GAMES = [
   {
+    href: "/animasyonlar/7/fen-futbolu",
+    icon: "⚽",
+    label: "7. Sınıf · İki Kişilik",
+    title: "Fen Futbolu 7",
+    description:
+      "Penaltı düellosu: soruyu doğru bilen kaleciye şut çeker, ilk 3 golü atan kazanır. Güneş Sistemi ve Ötesi ile Kuvvet, İş ve Enerji üniteleri.",
+  },
+  {
     href: "/animasyonlar/7/passafenola7",
     icon: "🎯",
     label: "7. Sınıf · Passaparola",
