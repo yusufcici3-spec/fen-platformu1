@@ -43,6 +43,16 @@ export default function EighthGradeAnimationsPage() {
           </p>
         </aside>
 
+        <Link href="/animasyonlar/8/katı-basıncı" className={styles.relatedAnimation}>
+          <span className={styles.relatedIcon} aria-hidden="true">⚖️</span>
+          <span className={styles.relatedCopy}>
+            <span className={styles.relatedEyebrow}>3. ÜNİTE · BASINÇ</span>
+            <strong>Katı basıncını kendin değiştir</strong>
+            <span>Ağırlığı ve temas yüzey alanını değiştir; basıncın nasıl değiştiğini anında gözlemle.</span>
+          </span>
+          <span className={styles.relatedArrow} aria-hidden="true">→</span>
+        </Link>
+
         <Link href="/animasyonlar/8/kalitim" className={styles.relatedAnimation}>
           <span className={styles.relatedIcon} aria-hidden="true">🧬</span>
           <span className={styles.relatedCopy}>
