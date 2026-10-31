@@ -18,7 +18,7 @@ const grades: GradeCard[] = [
     description: "Ay’ın evrelerini keşfet; astronotla yüzeydeki kraterleri ve yer şekillerini incele.",
     className: styles.gradeFive,
     href: "/animasyonlar/5",
-    animationCount: 6,
+    animationCount: 5,
     secondaryLinks: [
       { href: "/animasyonlar/5/ay-yuzeyi", label: "Astronotla Ay yüzeyini keşfet" },
       { href: "/animasyonlar/5/dinamometre", label: "Dinamometreyle kuvveti ölç" },
@@ -44,7 +44,7 @@ const grades: GradeCard[] = [
     description: "Uzay teknolojilerini keşfet; yıldızların yaşam döngüsünü kütlelerine göre incele.",
     className: styles.gradeSeven,
     href: "/animasyonlar/7",
-    animationCount: 5,
+    animationCount: 6,
     secondaryLinks: [
       { href: "/animasyonlar/7/agirlik-enlem", label: "Ağırlık kutupta mı ekvatorda mı büyük?" },
       { href: "/animasyonlar/7/kinetik-potansiyel", label: "Kinetik ve potansiyel enerji" },
