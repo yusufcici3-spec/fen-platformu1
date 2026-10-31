@@ -57,7 +57,7 @@ canvas{display:block;width:100%;height:auto;aspect-ratio:16/9;border-radius:20px
 .fb{margin-top:10px;min-height:2.6em;border-radius:12px;padding:.55em .9em;font-size:.92rem;line-height:1.45;background:#0006;border-left:5px solid #35508f;color:#b9ccf0}
 .fb.ok{border-color:#2ecf62;color:#d4ffe0;background:#0b3a1d77}
 .fb.bad{border-color:#ff5a5a;color:#ffdcdc;background:#4a101877}
-.shootbtn{display:none;width:100%;margin-top:12px;font:inherit;font-weight:900;font-size:1.25rem;letter-spacing:.06em;color:#2b1700;border:0;border-radius:16px;padding:.9em;cursor:pointer;background:linear-gradient(#ffe14a,#e09b00);box-shadow:0 6px 0 #8a5a00,0 10px 24px #0007;animation:pulse .8s ease-in-out infinite alternate}
+.shootbtn{display:none;width:100%;margin:0;font:inherit;font-weight:900;font-size:1.25rem;letter-spacing:.06em;color:#2b1700;border:0;border-radius:16px;padding:.9em;cursor:pointer;background:linear-gradient(#ffe14a,#e09b00);box-shadow:0 6px 0 #8a5a00,0 10px 24px #0007;animation:pulse .8s ease-in-out infinite alternate}
 .shootbtn:active{transform:translateY(4px);box-shadow:0 2px 0 #8a5a00}
 .shootbtn.show{display:block}
 @keyframes pulse{to{filter:brightness(1.15);box-shadow:0 6px 0 #8a5a00,0 0 30px #ffd23f}}
@@ -108,15 +108,15 @@ html.embedded .modal{max-height:none}
   </div>
 
   <canvas id="cv" width="960" height="540" aria-label="Penaltı sahası animasyonu"></canvas>
+  <button class="shootbtn" id="shoot">⚽ ŞUT ÇEK!</button>
 
   <div class="panel">
     <div class="qhead"><span class="who w1" id="who">RONALDO</span><span class="chip" id="unit"></span><span class="steal" id="steal">🔁 Rakipten gelen soru</span></div>
     <p class="q" id="q" aria-live="polite"></p>
     <div class="opts" id="opts"></div>
     <div class="bar"><i id="bar"></i></div>
-    <button class="shootbtn" id="shoot">⚽ ŞUT ÇEK!</button>
     <div class="fb" id="fb" aria-live="polite">Soruyu doğru bilen oyuncu kaleciye şut çekme hakkı kazanır.</div>
-    <div class="hint" id="hint">Klavyeden 1-4 tuşlarıyla da cevaplayabilirsiniz. Şut için Boşluk tuşuna basın.</div>
+    <div class="hint" id="hint">Cevaplamak için seçeneğe dokunun (klavyede 1-4). Şut için ŞUT düğmesine ya da sahaya dokunun (klavyede Boşluk).</div>
   </div>
 
   <div class="tools"><button id="bSound">🔊 Ses açık</button><button id="bRestart">↺ Yeni maç</button></div>
@@ -229,6 +229,7 @@ const BANK = [
 ];
 
 const $ = id => document.getElementById(id);
+const TOUCH = window.matchMedia && matchMedia("(pointer: coarse)").matches;
 const cv = $("cv"), ctx = cv.getContext("2d");
 const CW = 960, CH = 540;
 const WIN_GOALS = 3, Q_TIME = 20000, STEAL_TIME = 15000;
@@ -334,7 +335,7 @@ function renderQuestion() {
     $("opts").appendChild(b);
   });
   $("shoot").classList.remove("show");
-  $("hint").textContent = "Klavyeden 1-4 tuşlarıyla da cevaplayabilirsiniz.";
+  $("hint").textContent = (TOUCH ? "Cevabı seçmek için seçeneğe dokunun." : "Klavyeden 1-4 tuşlarıyla da cevaplayabilirsiniz.");
   renderBoard();
 }
 function setFb(kind, html) { const f = $("fb"); f.className = "fb " + kind; f.innerHTML = html; }
@@ -373,7 +374,7 @@ function wrongAnswer(i, timeout) {
 function startAim(p) {
   G.phase = "aim"; G.shooter = p; G.aimStart = performance.now();
   $("shoot").classList.add("show");
-  $("hint").textContent = "Çubuk kale içindeyken Boşluk tuşuna ya da ŞUT düğmesine bas!";
+  $("hint").textContent = (TOUCH ? "Çubuk kale içindeyken ŞUT düğmesine ya da sahaya dokun!" : "Çubuk kale içindeyken Boşluk tuşuna ya da ŞUT düğmesine bas!");
   renderBoard();
 }
 const aimNow = now => 1.3 * Math.sin((now - G.aimStart) / 1000 * 2 * Math.PI / 1.5);
