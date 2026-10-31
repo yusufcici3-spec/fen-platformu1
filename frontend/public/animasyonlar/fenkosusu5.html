@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fen Koşusu 5 – 5. Sınıf Fen Bilimleri</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:#06122a;color:#eaf3ff}
+.app{min-height:100vh;padding:12px 12px 26px;display:flex;flex-direction:column;align-items:center;gap:10px;
+  background:radial-gradient(1000px 600px at 50% -10%,#16467a 0%,transparent 60%),radial-gradient(900px 600px at 100% 100%,#3a1a5c 0%,transparent 55%),#06122a}
+.wrap{width:100%;max-width:980px;display:flex;flex-direction:column;gap:10px}
+h1{margin:0;text-align:center;font-size:clamp(1.05rem,2.6vw,1.5rem)}
+.sub{margin:0;text-align:center;color:#a9c2e8;font-size:.85rem}
+
+/* skor tabelası */
+.board{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pl{padding:10px 14px;border-radius:16px;background:#0a1a33cc;border:2px solid #2a4570;transition:border-color .25s,box-shadow .25s,transform .25s}
+.pl.act{border-color:#ffd23f;box-shadow:0 0 0 3px #ffd23f33,0 0 26px #ffd23f55;transform:translateY(-2px)}
+.pl .top{display:flex;align-items:center;gap:10px}
+.dot{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-weight:900;color:#fff;border:3px solid #fff8;flex:none;text-shadow:0 0 3px #000}
+.d1{background:#2a8cff}.d2{background:#ff7a1a}
+.nm{font-weight:800;letter-spacing:.03em;font-size:1rem;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mt{font-variant-numeric:tabular-nums;font-weight:900;font-size:1.3rem}
+.mt small{font-size:.7rem;font-weight:700;opacity:.7;margin-left:2px}
+.track{height:9px;border-radius:99px;background:#050d1f;margin-top:8px;overflow:hidden}
+.track i{display:block;height:100%;width:0;border-radius:99px;transition:width .15s linear}
+.t1{background:linear-gradient(90deg,#1a5fb0,#5fb0ff)}.t2{background:linear-gradient(90deg,#b34d00,#ffb066)}
+
+canvas{display:block;width:100%;height:auto;aspect-ratio:16/9;border-radius:20px;background:#0a2a4a;border:2px solid #2a4570;box-shadow:0 10px 40px #0008}
+
+/* soru paneli */
+.panel{background:#081434d9;border:1px solid #5a96ff59;border-radius:20px;padding:16px 18px;box-shadow:0 10px 40px #0008}
+.qhead{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.who{font-weight:800;padding:.3em .9em;border-radius:99px;font-size:.9rem;color:#fff;max-width:100%}
+.who.w1{background:#2a6fd0}.who.w2{background:#e0680f}
+.chip{font-size:.78rem;padding:.3em .8em;border-radius:99px;border:1px solid #5a96ff88;color:#bcd6ff;background:#0b2a6a66}
+.chip.u2{border-color:#ffb81c99;color:#ffe3a3;background:#5a3a0a55}
+.steal{font-size:.78rem;padding:.3em .8em;border-radius:99px;background:#ff5a5a33;border:1px solid #ff8a8a;color:#ffd0d0;display:none}
+.steal.show{display:inline-block}
+.q{font-size:clamp(1.02rem,2.2vw,1.25rem);line-height:1.5;margin:0 0 10px;min-height:3em}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.opt{font:inherit;text-align:left;font-weight:650;color:#fff;border:2px solid #3b64a8;background:linear-gradient(#10306a,#0a2250);border-radius:14px;padding:.75em .9em;cursor:pointer;display:flex;gap:.7em;align-items:center;transition:transform .12s,filter .12s}
+.opt b{flex:none;width:1.9em;height:1.9em;border-radius:50%;display:grid;place-items:center;background:#ffd23f;color:#2b1700;font-size:.85rem}
+.opt:hover:not(:disabled){filter:brightness(1.15);transform:translateY(-1px)}
+.opt:disabled{cursor:default}
+.opt.ok{border-color:#2ecf62;background:linear-gradient(#17803d,#0e5a2a)}
+.opt.bad{border-color:#ff5a5a;background:linear-gradient(#9b1c28,#6a111a)}
+.opt.dim{opacity:.4}
+.bar{height:7px;border-radius:99px;background:#0a1a33;margin-top:12px;overflow:hidden}
+.bar i{display:block;height:100%;width:100%;background:linear-gradient(90deg,#2ecf62,#ffd23f 60%,#ff5a5a);transform-origin:left}
+.fb{margin-top:10px;min-height:2.6em;border-radius:12px;padding:.55em .9em;font-size:.92rem;line-height:1.45;background:#0006;border-left:5px solid #35508f;color:#b9ccf0}
+.fb.ok{border-color:#2ecf62;color:#d4ffe0;background:#0b3a1d77}
+.fb.bad{border-color:#ff5a5a;color:#ffdcdc;background:#4a101877}
+.hint{font-size:.8rem;color:#9db9e6;text-align:center;margin-top:6px}
+.tools{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.tools button{font:inherit;font-size:.85rem;font-weight:700;color:#fff;background:#0b2a6a99;border:1px solid #5a96ff66;border-radius:12px;padding:.5em 1em;cursor:pointer}
+
+/* pencereler */
+.overlay{position:fixed;inset:0;z-index:50;display:none;place-items:center;padding:14px;background:#02061ae6;backdrop-filter:blur(6px)}
+.overlay.show{display:grid}
+.modal{width:100%;max-width:700px;max-height:94vh;overflow:auto;background:linear-gradient(#0c2262,#061336);border:1px solid #5a96ff80;border-radius:26px;padding:26px;text-align:center;box-shadow:0 20px 80px #000a;animation:rise .5s ease-out}
+@keyframes rise{from{opacity:0;transform:translateY(24px) scale(.97)}}
+.modal h2{margin:0 0 8px;font-size:1.7rem}
+.modal p{color:#bcd0f2;line-height:1.55;margin:.4em 0}
+.names{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+.names label{display:flex;flex-direction:column;gap:6px;font-weight:700;font-size:.85rem;text-align:left}
+.names input{font:inherit;font-size:1rem;padding:.6em .8em;border-radius:12px;border:2px solid #4f86e6;background:#030c26;color:#fff;outline:none;width:100%}
+.names input:focus{border-color:#ffd23f}
+.rules{text-align:left;display:inline-block;color:#c8d9f5;font-size:.92rem;line-height:1.7;margin:4px 0 0}
+.opts2{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:14px 0}
+.opts2 label{cursor:pointer}
+.opts2 input{position:absolute;opacity:0}
+.opts2 span{display:block;padding:.5em 1.1em;border-radius:99px;border:2px solid #4f86e6;background:#030c26;font-size:.9rem}
+.opts2 input:checked+span{background:#ffd23f;color:#2b1700;border-color:#ffd23f;font-weight:700}
+.opts2 input:focus-visible+span{outline:3px solid #fff}
+.big{font:inherit;font-weight:800;font-size:1.15rem;color:#fff;border:0;border-radius:14px;padding:.8em 2.2em;cursor:pointer;background:linear-gradient(#2ecf62,#13873b)}
+.big:hover{filter:brightness(1.12)}
+.trophy{font-size:3.4rem;margin:.1em 0}
+.stats{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:10px 0}
+.stats span{background:#0006;border-radius:99px;padding:.3em .9em;font-weight:700;font-size:.9rem}
+.score{font-size:2.4rem;font-weight:900;font-variant-numeric:tabular-nums}
+.conf{position:fixed;top:-20px;width:10px;height:16px;z-index:60;animation:fall linear forwards;pointer-events:none}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}
+@media(max-width:640px){.opts{grid-template-columns:1fr}.names{grid-template-columns:1fr}.pl{padding:8px 10px}.nm{font-size:.85rem}.mt{font-size:1.1rem}.modal{padding:18px}}
+html.embedded .app{min-height:0}
+html.embedded .overlay{position:absolute;place-items:start center;padding-top:20px}
+html.embedded .modal{max-height:none}
+</style>
+</head>
+<body>
+<noscript>Bu oyun için JavaScript gereklidir.</noscript>
+<div class="app"><div class="wrap">
+  <div><h1>🏃 Fen Koşusu · 5. Sınıf</h1>
+  <p class="sub">Gökyüzündeki Komşularımız ve Biz &nbsp;•&nbsp; Kuvveti Tanıyalım</p></div>
+
+  <div class="board">
+    <div class="pl" id="pl0"><div class="top"><div class="dot d1">1</div><div class="nm" id="nm0">1. Oyuncu</div><div class="mt" id="mt0">0<small>m</small></div></div><div class="track"><i class="t1" id="tr0"></i></div></div>
+    <div class="pl" id="pl1"><div class="top"><div class="dot d2">2</div><div class="nm" id="nm1">2. Oyuncu</div><div class="mt" id="mt1">0<small>m</small></div></div><div class="track"><i class="t2" id="tr1"></i></div></div>
+  </div>
+
+  <canvas id="cv" width="960" height="540" aria-label="Koşu pisti animasyonu"></canvas>
+
+  <div class="panel">
+    <div class="qhead"><span class="who w1" id="who">1. Oyuncu</span><span class="chip" id="unit"></span><span class="steal" id="steal">🔁 Rakipten gelen soru</span></div>
+    <p class="q" id="q" aria-live="polite"></p>
+    <div class="opts" id="opts"></div>
+    <div class="bar"><i id="bar"></i></div>
+    <div class="fb" id="fb" aria-live="polite">Soruyu doğru bilen oyuncu 4 saniye koşma hakkı kazanır.</div>
+    <div class="hint" id="hint"></div>
+  </div>
+
+  <div class="tools"><button id="bSound">🔊 Ses açık</button><button id="bRestart">↺ Yeni yarış</button></div>
+</div></div>
+
+<div class="overlay show" id="ovStart">
+  <div class="modal">
+    <h2>🏃 Fen Koşusu'na hoş geldiniz!</h2>
+    <div class="names">
+      <label>🔵 1. Oyuncu<input id="in0" type="text" maxlength="14" value="1. Oyuncu" autocomplete="off"></label>
+      <label>🟠 2. Oyuncu<input id="in1" type="text" maxlength="14" value="2. Oyuncu" autocomplete="off"></label>
+    </div>
+    <div class="rules">
+      <b>Nasıl oynanır?</b><br>
+      1. Sırayla soru gelir; cevabı doğru bulan oyuncu <b>4 saniye koşma hakkı</b> kazanır.<br>
+      2. Yanlış cevap verirse soru <b>rakibe</b> geçer; o bilirse koşan o olur.<br>
+      3. Kimse bilemezse kimse koşmaz.<br>
+      4. <b>100 metrelik finiş çizgisine ilk ulaşan yarışı kazanır.</b>
+    </div>
+    <p style="margin-top:14px">Konular:</p>
+    <div class="opts2">
+      <label><input type="radio" name="u" value="0" checked><span>İki ünite birden</span></label>
+      <label><input type="radio" name="u" value="1"><span>1. Ünite</span></label>
+      <label><input type="radio" name="u" value="2"><span>2. Ünite</span></label>
+    </div>
+    <button class="big" id="bBegin">Yarışı başlat ▶</button>
+  </div>
+</div>
+
+<div class="overlay" id="ovEnd">
+  <div class="modal">
+    <div class="trophy">🏆</div>
+    <h2 id="endTitle"></h2>
+    <div class="score" id="endScore"></div>
+    <p id="endMsg"></p>
+    <div class="stats" id="endStats"></div>
+    <p style="margin-top:16px"><button class="big" id="bAgain">Rövanş ↺</button></p>
+  </div>
+</div>
+
+<script>
+// 5. sınıf Fen Bilimleri — sitedeki ünite içeriğine ve MEB kazanımlarına göre
+// u: 1 = Gökyüzündeki Komşularımız ve Biz (FB.5.1.1.1, 5.1.2.1, 5.1.2.2, 5.1.3.1: Güneş, Ay, Ay'ın evreleri, Güneş-Dünya-Ay modeli)
+//    2 = Kuvveti Tanıyalım (FB.5.2.1-4: kuvvet ve dinamometre, dinamometre modeli, kütle ve ağırlık, sürtünme kuvveti)
+// o[0] her zaman doğru cevap; oyun seçenekleri karıştırarak gösterir.
+const UNITS = { 1: "1. Ünite · Gökyüzündeki Komşularımız ve Biz", 2: "2. Ünite · Kuvveti Tanıyalım" };
+
+const BANK = [
+  // ---------- 1. Ünite: Güneş ----------
+  { u: 1, q: "Kendi ışığını ve ısısını üreten dev gaz küresi olan Güneş, aşağıdakilerden hangisidir?", o: ["Yıldız", "Gezegen", "Uydu", "Kuyruklu yıldız"], n: "Güneş, Dünya'ya en yakın yıldızdır." },
+  { u: 1, q: "Güneş çoğunlukla hangi gazlardan oluşur?", o: ["Hidrojen ve helyum", "Oksijen ve azot", "Karbondioksit ve su buharı", "Argon ve neon"], n: "Güneş'in katı bir yüzeyi yoktur; gazlardan oluşur." },
+  { u: 1, q: "Güneş'in enerjisi hangi katmanında üretilir?", o: ["Çekirdek", "Fotosfer", "Kromosfer", "Korona"], n: "Çekirdeğin sıcaklığı yaklaşık 15 milyon °C'dir." },
+  { u: 1, q: "Güneş'in görünen \"yüzeyi\" olan, ışığın büyük bölümünü yayan katmana ne denir?", o: ["Fotosfer", "Çekirdek", "Korona", "Taşınım bölgesi"], n: "Fotosferin sıcaklığı yaklaşık 5500 °C'dir." },
+  { u: 1, q: "Güneş'in en dış katmanı hangisidir? Güneş tutulmasında ince bir hâle gibi görülebilir.", o: ["Korona", "Fotosfer", "Çekirdek", "Kromosfer"], n: "Korona çok seyrek gazlardan oluşur." },
+  { u: 1, q: "Güneş lekeleri çevresinden daha koyu görünür. Bunun nedeni nedir?", o: ["Çevresinden daha soğuk olmaları", "Çevresinden daha sıcak olmaları", "Güneş'in gölgede kalması", "Ay'ın Güneş'i örtmesi"], n: "Güneş lekeleri yaklaşık 3500–4000 °C'dir." },
+  { u: 1, q: "Güneş lekelerinin günler içinde yer değiştirmesi bize neyi gösterir?", o: ["Güneş'in kendi ekseni etrafında döndüğünü", "Güneş'in Dünya etrafında dolandığını", "Güneş'in küçüldüğünü", "Güneş'in söndüğünü"], n: "Güneş, Dünya gibi batıdan doğuya doğru döner." },
+  { u: 1, q: "Güneş ışığı Dünya'ya yaklaşık ne kadar sürede ulaşır?", o: ["8 dakika 20 saniye", "1 saniye", "1 saat", "24 saat"], n: "Işık yaklaşık 150 milyon km'lik yolu 8 dk 20 sn'de alır." },
+  { u: 1, q: "Güneş'in çapı Dünya'nın çapının yaklaşık kaç katıdır?", o: ["109 katı", "10 katı", "4 katı", "1000 katı"], n: "Güneş'in içine yaklaşık 1,3 milyon Dünya sığabilir." },
+
+  // ---------- 1. Ünite: Ay ----------
+  { u: 1, q: "Dünya'nın tek doğal uydusu hangisidir?", o: ["Ay", "Güneş", "Mars", "Venüs"], n: "Uydu, bir gezegenin çevresinde dolanan gök cismidir." },
+  { u: 1, q: "Ay'ın parlak görünmesinin nedeni nedir?", o: ["Güneş'ten gelen ışığı yansıtması", "Kendi ışığını üretmesi", "Dünya'nın ışık vermesi", "Yıldızların ışığı"], n: "Ay'ın kendi ışığı yoktur." },
+  { u: 1, q: "Ay'da rüzgâr, bulut, yağmur ve ses neden yoktur?", o: ["Atmosferi olmadığı için", "Çok küçük olduğu için", "Çok sıcak olduğu için", "Dünya'dan uzak olduğu için"], n: "Atmosfer olmadığı için astronotların ayak izleri çok uzun süre bozulmaz." },
+  { u: 1, q: "Ay'ın çekim kuvveti Dünya'nın çekim kuvvetinin yaklaşık kaçta kaçıdır?", o: ["Altıda biri", "İki katı", "Yarısı", "Aynısı"], n: "Bu yüzden Ay'da zıplamak daha kolaydır." },
+  { u: 1, q: "Ay'daki kraterler nasıl oluşmuştur?", o: ["Göktaşlarının Ay'a çarpmasıyla", "Yağmur sularıyla", "Rüzgârın aşındırmasıyla", "Dalgalarla"], n: "Atmosfer olmadığı için kraterler yıllarca bozulmadan kalır." },
+  { u: 1, q: "Ay'ın yüzeyindeki koyu renkli, düz alanlara ne denir? Bunların içinde su yoktur.", o: ["Ay denizleri", "Kraterler", "Dağlar", "Okyanuslar"], n: "Ay denizleri, eskiden akan lavların donmasıyla oluşmuştur." },
+  { u: 1, q: "Ay'ın Dünya'dan hep aynı yüzünün görünmesinin nedeni nedir?", o: ["Dönme ve dolanma sürelerinin yaklaşık eşit olması", "Ay'ın hiç dönmemesi", "Ay'ın Güneş'e bakması", "Dünya'nın Ay'ı çekmesi"], n: "Her iki hareket de yaklaşık 27 gün sürer." },
+  { u: 1, q: "Ay, Dünya'nın çevresinde yaptığı bir tur hareketine ne denir?", o: ["Dolanma", "Dönme", "Yansıma", "Genleşme"], n: "Kendi ekseni etrafındaki hareketine ise dönme denir." },
+
+  // ---------- 1. Ünite: Ay'ın evreleri ve model ----------
+  { u: 1, q: "Ay'ın evreleri neden oluşur?", o: ["Ay'ın Güneş ve Dünya'ya göre konumunun değişmesinden", "Dünya'nın gölgesinden", "Ay'ın şeklinin değişmesinden", "Güneş'in ışığının azalmasından"], n: "Ay her zaman küredir ve yarısı Güneş tarafından aydınlatılır." },
+  { u: 1, q: "Ay Dünya ile Güneş'in arasında olduğunda Ay'ın aydınlık yüzü Dünya'ya dönük olmaz ve Ay görünmez. Bu evreye ne denir?", o: ["Yeni Ay", "Dolunay", "İlk dördün", "Hilal"], n: "Yeni Ay'da Ay görünmez." },
+  { u: 1, q: "Aydınlık yüzün tamamının Dünya'dan göründüğü evreye ne denir?", o: ["Dolunay", "Yeni Ay", "Son dördün", "Hilal"], n: "Dolunayda Dünya, Ay ile Güneş arasındadır." },
+  { u: 1, q: "Yeni Ay'dan sonra gelen ince ışık kıvrımı şeklindeki evre hangisidir?", o: ["Hilal", "Dolunay", "Son dördün", "İlk dördün"], n: "Sıra: Yeni Ay → Hilal → İlk dördün → Şişkin Ay → Dolunay..." },
+  { u: 1, q: "Ay'ın evrelerinin bir döngüsü yaklaşık kaç günde tamamlanır?", o: ["Yaklaşık 29,5 gün", "1 gün", "7 gün", "365 gün"], n: "Bu döngü sürekli tekrar eder." },
+  { u: 1, q: "Ay'ın şekli evrelere göre değişir mi?", o: ["Hayır, Ay her zaman bir küredir; değişen görünümüdür", "Evet, Ay küçülüp büyür", "Evet, Ay parçalanır", "Evet, Ay kaybolur"], n: "Dünya'dan baktığımızda aydınlık yüzün farklı bir bölümünü görürüz." },
+  { u: 1, q: "Dünya'nın kendi ekseni etrafında bir tam dönmesi yaklaşık ne kadar sürer ve neye yol açar?", o: ["24 saat, gece ve gündüze", "365 gün, mevsimlere", "27 gün, Ay'ın evrelerine", "1 saat, yıla"], n: "Dünya batıdan doğuya doğru döner." },
+  { u: 1, q: "Dünya'nın Güneş'in çevresinde bir tur dolanması yaklaşık ne kadar sürer?", o: ["365 gün 6 saat (1 yıl)", "24 saat", "27 gün", "30 gün"], n: "Bu hareketin sonucu bir yıldır." },
+  { u: 1, q: "Dünya'nın çapı Ay'ın çapının yaklaşık kaç katıdır?", o: ["4 katı", "1 katı", "109 katı", "50 katı"], n: "Dünya'nın içine yaklaşık 50 Ay sığar." },
+  { u: 1, q: "Güneş, Dünya ve Ay modeli hazırlarken model için hangisi doğrudur?", o: ["Model, gerçeği anlamamıza yardım eden basitleştirilmiş bir temsildir", "Model gerçeğin birebir aynısıdır", "Modeller asla geliştirilemez", "Modelin sınırlılığı yoktur"], n: "Bilim insanları modelleri gözlem ve verilerle geliştirir." },
+
+  // ---------- 2. Ünite: Kuvvet ve dinamometre ----------
+  { u: 2, q: "Bir cisme uygulanan itme ya da çekme etkisine ne denir?", o: ["Kuvvet", "Kütle", "Hız", "Sıcaklık"], n: "Kuvveti göremeyiz, etkisini görürüz." },
+  { u: 2, q: "Duran bir topa vurulup topun harekete geçmesi kuvvetin hangi etkisine örnektir?", o: ["Durgun cismi hareket ettirmesi", "Cismin şeklini değiştirmesi", "Hareketli cismi durdurması", "Cismin yönünü değiştirmesi"], n: "Kuvvet, durgun cismi hareket ettirebilir." },
+  { u: 2, q: "Hamuru ezmek ya da yayı germek kuvvetin hangi etkisine örnektir?", o: ["Cismin şeklini değiştirmesi", "Cismi durdurması", "Cismin hızını artırması", "Cismin yönünü değiştirmesi"], n: "Kuvvet cismin şeklini de değiştirebilir." },
+  { u: 2, q: "Kalecinin topu tutması kuvvetin hangi etkisine örnektir?", o: ["Hareketli cismi durdurması", "Durgun cismi hareket ettirmesi", "Cismin şeklini değiştirmesi", "Cismi ısıtması"], n: "Kuvvet hareketli cismi durdurabilir." },
+  { u: 2, q: "Bir kuvveti tam olarak tanımlamak için hangi nitelikleri bilmemiz gerekir?", o: ["Büyüklüğü, yönü ve uygulama noktası", "Rengi ve kokusu", "Yalnızca büyüklüğü", "Yalnızca zamanı"], n: "Kuvveti çizerken ok kullanırız." },
+  { u: 2, q: "Kuvveti ok ile gösterirken okun uzunluğu neyi gösterir?", o: ["Kuvvetin büyüklüğünü", "Kuvvetin yönünü", "Uygulama noktasını", "Cismin kütlesini"], n: "Okun yönü kuvvetin yönünü, başladığı yer uygulama noktasını gösterir." },
+  { u: 2, q: "Kuvvetin büyüklüğünü ölçen alete ne denir?", o: ["Dinamometre", "Termometre", "Eşit kollu terazi", "Cetvel"], n: "Dinamometrenin içinde bir yay bulunur." },
+  { u: 2, q: "Kuvvetin birimi hangisidir?", o: ["Newton (N)", "Kilogram (kg)", "Metre (m)", "Litre (L)"], n: "Birim adını Isaac Newton'dan alır." },
+  { u: 2, q: "Dinamometre ile doğru ölçüm yapmak için ilk olarak ne kontrol edilmelidir?", o: ["Göstergenin sıfırı gösterdiği", "Yayın rengi", "Dinamometrenin boyu", "Odanın sıcaklığı"], n: "Ayrıca göz hizasından bakılır ve ölçüm sınırı aşılmaz." },
+  { u: 2, q: "Yaklaşık 100 gram kütleli bir cismi dinamometreye astığımızda yaklaşık kaç N okuruz?", o: ["1 N", "10 N", "100 N", "0,1 N"], n: "Okul düzeyinde 100 g ≈ 1 N alınır." },
+  { u: 2, q: "0–5 N'luk dinamometrenin yayı, 0–10 N'luk dinamometrenin yayına göre nasıldır?", o: ["Daha incedir", "Daha kalındır", "Aynıdır", "Yayı yoktur"], n: "İnce yay küçük kuvvetleri ölçmeye uygundur." },
+
+  // ---------- 2. Ünite: Dinamometre modeli ----------
+  { u: 2, q: "Basit bir dinamometre modelinde kuvvetle uzayan esnek parça için hangisi kullanılabilir?", o: ["Lastik ya da yay", "Tahta çubuk", "Taş", "Cam"], n: "Model: askı noktası, esnek parça, gösterge ve ölçekten oluşur." },
+  { u: 2, q: "Dinamometre modelinin ölçeğini hazırlarken hiçbir şey asılı değilken göstergenin yeri ölçeğe kaç olarak işaretlenir?", o: ["0", "1 N", "5 N", "10 N"], n: "Sonra 100 g için 1 N, 200 g için 2 N işaretleri konur." },
+  { u: 2, q: "Modeldeki lastik çok uzayıp ölçeğin dışına çıkıyorsa ne yapılabilir?", o: ["Daha kalın (az uzayan) bir lastik kullanılabilir", "Lastik ince bırakılır", "Ölçek silinir", "Hiçbir şey yapılmaz"], n: "Modeli yeni kanıtlara göre güncellemek bilimsel çalışmanın parçasıdır." },
+
+  // ---------- 2. Ünite: Kütle ve ağırlık ----------
+  { u: 2, q: "Bir cismi oluşturan madde miktarına ne denir?", o: ["Kütle", "Ağırlık", "Kuvvet", "Sürtünme"], n: "Kütlenin birimi kilogram (kg) ve gramdır." },
+  { u: 2, q: "Kütle hangi aletle ölçülür?", o: ["Eşit kollu terazi", "Dinamometre", "Termometre", "Cetvel"], n: "Cisim, kütlesi bilinen cisimlerle karşılaştırılır." },
+  { u: 2, q: "Dünya'nın bir cismi merkezine doğru çekme kuvvetine ne denir?", o: ["Ağırlık", "Kütle", "Sürtünme", "Hız"], n: "Ağırlık bir kuvvettir; birimi Newton'dur ve dinamometreyle ölçülür." },
+  { u: 2, q: "60 kg kütleli bir öğrenci Ay'a gidince kütlesi ne olur?", o: ["Değişmez, 60 kg kalır", "10 kg olur", "360 kg olur", "Sıfır olur"], n: "Kütle bulunulan yere göre değişmez; ağırlık değişir." },
+  { u: 2, q: "Bir cismin Ay'daki ağırlığı Dünya'dakine göre nasıldır?", o: ["Yaklaşık altıda biri kadardır", "Altı katıdır", "Aynıdır", "Sıfırdır"], n: "Ay'ın çekim kuvveti Dünya'nınkinin yaklaşık altıda biridir." },
+  { u: 2, q: "Okul düzeyinde, Dünya'da 6 kg kütleli bir çantanın ağırlığı yaklaşık kaç N'dur?", o: ["60 N", "6 N", "600 N", "0,6 N"], n: "Dünya'da 1 kg kütleli cismin ağırlığı yaklaşık 10 N'dur." },
+  { u: 2, q: "Kütle ile ağırlık için hangisi doğrudur?", o: ["Kütle yere göre değişmez, ağırlık değişir", "İkisi de yere göre değişmez", "İkisinin birimi aynıdır", "Kütle bir kuvvettir"], n: "Kütle: kg, eşit kollu terazi; ağırlık: N, dinamometre." },
+
+  // ---------- 2. Ünite: Sürtünme ----------
+  { u: 2, q: "Birbirine temas eden iki yüzey arasında hareketi engelleyen kuvvete ne denir?", o: ["Sürtünme kuvveti", "Kütle çekim kuvveti", "Esneklik kuvveti", "Ağırlık"], n: "Sürtünme kuvveti hareketin yönüne zıt yöndedir." },
+  { u: 2, q: "Aşağıdaki yüzeylerden hangisinde sürtünme kuvveti en büyüktür?", o: ["Zımpara kâğıdı", "Buz", "Cam", "Cilalı mermer"], n: "Yüzey ne kadar pürüzlüyse sürtünme o kadar büyüktür." },
+  { u: 2, q: "Ellerimizi birbirine sürttüğümüzde ısınmasının nedeni nedir?", o: ["Sürtünmenin ısı oluşturması", "Havanın ısınması", "Işığın yansıması", "Kütlenin artması"], n: "Sürtünme ısı oluşturur." },
+  { u: 2, q: "Paraşüt, iniş hızını yavaşlatmak için neyi artırır?", o: ["Hava direncini", "Kütleyi", "Yerçekimini", "Su direncini"], n: "Paraşütün geniş yüzeyi hava direncini artırır." },
+  { u: 2, q: "Suda yürümek havada yürümekten neden daha zordur?", o: ["Su direnci daha büyük olduğu için", "Su sıcak olduğu için", "Yer çekimi arttığı için", "Hava olmadığı için"], n: "Sıvı ve gazlar da hareket eden cisme zıt yönde kuvvet uygular." },
+  { u: 2, q: "Aşağıdakilerden hangisi sürtünme kuvvetinin yararlı olduğu bir durumdur?", o: ["Yürürken ayağımızın kaymaması", "Makine parçalarının aşınması", "Mobilyaların sürüklenmesinin zorlaşması", "Araçların daha çok yakıt harcaması"], n: "Araç frenleri de sürtünmeyle çalışır." },
+  { u: 2, q: "Aşağıdakilerden hangisi sürtünmenin zararlı olduğu bir durumdur?", o: ["Makine parçalarının aşınıp ısınması", "Kalemin kâğıda iz bırakması", "Araç frenlerinin tekerleği durdurması", "Kibrit çakılması"], n: "Zararlı sürtünmeyi azaltmak için yağlama yapılır." },
+  { u: 2, q: "Sürtünme kuvvetini azaltmak için hangisi yapılabilir?", o: ["Yüzeyleri yağlamak", "Yüzeyleri zımparalamak", "Yüzeyleri pürüzlü yapmak", "Cismin ağırlığını artırmak"], n: "Yağlama, tekerlek ve rulman, cilalama sürtünmeyi azaltır." }
+];
+
+const $ = id => document.getElementById(id);
+const TOUCH = window.matchMedia && matchMedia("(pointer: coarse)").matches;
+const cv = $("cv"), ctx = cv.getContext("2d");
+const CW = 960, CH = 540;
+const TRACK = 100;          // metre
+const RUN_MS = 4000;        // koşma hakkı: 4 saniye
+const RUN_DIST = 22;        // 4 saniyede alınan yol (m)
+const DELAY_MS = 700;       // "Hazır!" bekleme
+const Q_TIME = 20000, STEAL_TIME = 15000, MAX_Q = 30;
+const X0 = 150, PX = 6.9;   // 0 m ve ölçek (100 m → x = 840)
+const LANE_Y = [300, 455];  // şeritlerin zemin çizgisi
+const PLAYERS = [
+  { name: "1. Oyuncu", col: "#2a8cff", dark: "#154f99", num: 1, cls: "w1", hair: "#3b2414" },
+  { name: "2. Oyuncu", col: "#ff7a1a", dark: "#a84500", num: 2, cls: "w2", hair: "#1d130c" }
+];
+
+// ---------- yardımcılar ----------
+const rnd = (a, b) => a + Math.random() * (b - a);
+const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+const lerp = (a, b, t) => a + (b - a) * t;
+const ease = t => { t = clamp(t, 0, 1); return t * t * (3 - 2 * t); };
+const esc = s => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+function shuffle(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+const meters = v => (Math.round(v * 10) / 10).toString().replace(".", ",");
+
+// ---------- ses ----------
+let sound = true, ac = null;
+function tone(f, d, type = "sine", v = .07, delay = 0, f2) {
+  if (!sound) return;
+  try {
+    ac = ac || new (window.AudioContext || window.webkitAudioContext)();
+    const o = ac.createOscillator(), g = ac.createGain(), t = ac.currentTime + delay;
+    o.type = type; o.frequency.setValueAtTime(f, t); if (f2) o.frequency.exponentialRampToValueAtTime(f2, t + d);
+    g.gain.setValueAtTime(v, t); g.gain.exponentialRampToValueAtTime(.0001, t + d);
+    o.connect(g); g.connect(ac.destination); o.start(t); o.stop(t + d);
+  } catch (e) {}
+}
+function noise(d, v = .08, delay = 0, lp = 1800) {
+  if (!sound) return;
+  try {
+    ac = ac || new (window.AudioContext || window.webkitAudioContext)();
+    const n = Math.floor(ac.sampleRate * d), buf = ac.createBuffer(1, n, ac.sampleRate), data = buf.getChannelData(0);
+    for (let i = 0; i < n; i++) data[i] = (Math.random() * 2 - 1) * Math.sin(Math.PI * i / n);
+    const s = ac.createBufferSource(), f = ac.createBiquadFilter(), g = ac.createGain(), t = ac.currentTime + delay;
+    s.buffer = buf; f.type = "lowpass"; f.frequency.value = lp; g.gain.value = v;
+    s.connect(f); f.connect(g); g.connect(ac.destination); s.start(t);
+  } catch (e) {}
+}
+const sfx = {
+  ok: () => { tone(660, .12); tone(880, .2, "sine", .07, .1); },
+  bad: () => tone(180, .35, "sawtooth", .05),
+  whistle: () => { tone(2200, .12, "sine", .05); tone(2400, .35, "sine", .05, .14); },
+  go: () => { tone(880, .18, "square", .05); },
+  step: () => noise(.05, .05, 0, 700),
+  win: () => { noise(1.6, .12, .05, 2600); tone(523, .15); tone(659, .15, "sine", .07, .15); tone(784, .3, "sine", .07, .3); }
+};
+
+// ---------- durum ----------
+let G, pool = [], pi = 0, unitMode = 0, roundTimer = null, runTimer = null, particles = [], banner = null;
+
+function resetMatch() {
+  clearTimeout(roundTimer); clearTimeout(runTimer);
+  G = { phase: "intro", pos: [0, 0], stats: [{ ok: 0, bad: 0 }, { ok: 0, bad: 0 }], cur: null, asker: 0, answerer: 0, stolen: false,
+        wrong: [], deadline: 0, total: Q_TIME, qCount: 0, run: null, winner: null, celeb: 0, runs: [0, 0] };
+  particles = []; banner = null;
+  const src = BANK.filter(q => unitMode === 0 || q.u === unitMode);
+  pool = shuffle(src); pi = 0;
+  renderBoard();
+}
+function pickQ() {
+  if (pi >= pool.length) { pool = shuffle(pool); pi = 0; }
+  const q = pool[pi++];
+  return { u: q.u, q: q.q, n: q.n, opts: shuffle(q.o.map((t, i) => ({ t, ok: i === 0 }))) };
+}
+
+// ---------- skor tabelası ----------
+function renderBoard() {
+  [0, 1].forEach(p => {
+    $("nm" + p).textContent = PLAYERS[p].name;
+    $("mt" + p).innerHTML = meters(G.pos[p]) + "<small>m</small>";
+    $("tr" + p).style.width = clamp(G.pos[p] / TRACK * 100, 0, 100) + "%";
+    $("pl" + p).classList.toggle("act", (G.phase === "question" || G.phase === "run") && G.answerer === p);
+  });
+}
+
+// ---------- soru akışı ----------
+function nextQuestion() {
+  if (G.qCount >= MAX_Q) { endMatch(true); return; }
+  G.cur = pickQ(); G.asker = G.qCount % 2; G.qCount++;
+  G.answerer = G.asker; G.stolen = false; G.wrong = [];
+  G.phase = "question"; G.deadline = performance.now() + Q_TIME; G.total = Q_TIME; G.run = null; banner = null;
+  sfx.whistle(); renderQuestion();
+  setFb("", "Soruyu doğru bilen oyuncu 4 saniye koşma hakkı kazanır.");
+}
+function renderQuestion() {
+  const p = PLAYERS[G.answerer];
+  const w = $("who"); w.textContent = p.name + " cevaplıyor"; w.className = "who " + p.cls;
+  const u = $("unit"); u.textContent = UNITS[G.cur.u]; u.className = "chip u" + G.cur.u;
+  $("steal").classList.toggle("show", G.stolen);
+  $("q").textContent = G.cur.q;
+  $("opts").innerHTML = "";
+  G.cur.opts.forEach((o, i) => {
+    const b = document.createElement("button");
+    b.className = "opt"; b.innerHTML = "<b>" + (i + 1) + "</b><span>" + esc(o.t) + "</span>";
+    if (G.wrong.includes(i)) { b.disabled = true; b.classList.add("bad", "dim"); }
+    b.onclick = () => answer(i);
+    $("opts").appendChild(b);
+  });
+  $("hint").textContent = TOUCH ? "Cevabı seçmek için seçeneğe dokunun." : "Klavyeden 1-4 tuşlarıyla da cevaplayabilirsiniz.";
+  renderBoard();
+}
+function setFb(kind, html) { const f = $("fb"); f.className = "fb " + kind; f.innerHTML = html; }
+function lockOptions(showCorrect) {
+  [...$("opts").children].forEach((b, i) => { b.disabled = true; if (showCorrect && G.cur.opts[i].ok) b.classList.add("ok"); });
+}
+
+function answer(i) {
+  if (G.phase !== "question" || G.wrong.includes(i)) return;
+  const o = G.cur.opts[i], p = G.answerer, btn = $("opts").children[i];
+  if (o.ok) {
+    G.stats[p].ok++; btn.classList.add("ok"); lockOptions(true); sfx.ok();
+    setFb("ok", "✔ <b>Doğru!</b> " + esc(PLAYERS[p].name) + " 4 saniye koşuyor! " + esc(G.cur.n));
+    startRun(p);
+  } else wrongAnswer(i, false);
+}
+function wrongAnswer(i, timeout) {
+  const p = G.answerer;
+  G.stats[p].bad++; sfx.bad();
+  if (i !== null) G.wrong.push(i);
+  if (!G.stolen) {
+    G.stolen = true; G.answerer = 1 - p; G.deadline = performance.now() + STEAL_TIME; G.total = STEAL_TIME;
+    renderQuestion();
+    setFb("bad", (timeout ? "⏰ <b>Süre doldu!</b> " : "✖ <b>Yanlış!</b> ") + "Soru rakibe geçti: <b>" + esc(PLAYERS[G.answerer].name) + "</b> bilirse koşma hakkı onun olur.");
+  } else {
+    G.phase = "result"; lockOptions(true); renderBoard();
+    setFb("bad", (timeout ? "⏰ Süre doldu. " : "✖ Yanlış. ") + "Kimse koşamadı! Doğru cevap yeşil olarak gösterildi. " + esc(G.cur.n));
+    roundTimer = setTimeout(nextQuestion, 3800);
+  }
+}
+
+// ---------- koşu ----------
+function startRun(p) {
+  const now = performance.now(), start = G.pos[p];
+  G.phase = "run"; G.runs[p]++;
+  G.run = { p, t0: now + DELAY_MS, startPos: start, endPos: Math.min(TRACK, start + RUN_DIST), tick: 0 };
+  banner = { t: now, text: "HAZIR...", color: "#ffd23f", dur: DELAY_MS / 1000 + .1 };
+  runTimer = setTimeout(() => sfx.go(), DELAY_MS);
+  runTimer = setTimeout(endRun, DELAY_MS + RUN_MS + 80);
+  renderBoard();
+}
+const runFrac = (now, r) => clamp((now - r.t0) / RUN_MS, 0, 1);
+const runPos = (r, u) => r.startPos + (r.endPos - r.startPos) * (0.5 * u + 0.5 * ease(u));
+function endRun() {
+  const r = G.run; if (!r) return;
+  G.pos[r.p] = r.endPos; renderBoard();
+  if (r.endPos >= TRACK) {
+    G.winner = r.p; G.phase = "result"; G.celeb = performance.now();
+    sfx.win(); banner = { t: performance.now(), text: "FİNİŞ!", color: "#ffd23f", dur: 2.6 };
+    burst(r.p);
+    setFb("ok", "🏁 <b>" + esc(PLAYERS[r.p].name) + " finiş çizgisine ulaştı!</b>");
+    roundTimer = setTimeout(() => endMatch(false), 2800);
+  } else {
+    G.phase = "result";
+    setFb("ok", "🏃 <b>" + esc(PLAYERS[r.p].name) + "</b> koştu: <b>" + meters(r.endPos) + " m</b> (finişe " + meters(TRACK - r.endPos) + " m kaldı)");
+    roundTimer = setTimeout(nextQuestion, 1500);
+  }
+}
+function burst(p) {
+  const x = X0 + TRACK * PX, y = LANE_Y[p] - 80;
+  const cols = [PLAYERS[p].col, "#ffd23f", "#fff", "#2ecf62"];
+  for (let i = 0; i < 100; i++) particles.push({ x, y, vx: rnd(-300, 160), vy: rnd(-460, -60), r: rnd(3, 7), c: cols[i % cols.length], life: rnd(1.2, 2.4) });
+}
+
+// ---------- yarış sonu ----------
+function endMatch(byLimit) {
+  G.phase = "end";
+  let w = G.winner;
+  if (w === null) w = G.pos[0] >= G.pos[1] ? 0 : 1;
+  const l = 1 - w;
+  $("endTitle").textContent = PLAYERS[w].name + (byLimit ? " önde bitirdi!" : " yarışı kazandı!");
+  $("endScore").textContent = meters(G.pos[0]) + " m  —  " + meters(G.pos[1]) + " m";
+  $("endMsg").textContent = G.stats[w].ok >= G.stats[l].ok ? "Bilgisiyle öne geçti: harika yarış! 🌟" : "Daha az doğruyla da hızlı koştu, tebrikler! 💪";
+  $("endStats").innerHTML = PLAYERS.map((p, i) => "<span>" + esc(p.name) + ": ✔ " + G.stats[i].ok + " doğru · ✖ " + G.stats[i].bad + " yanlış · 🏃 " + G.runs[i] + " koşu</span>").join("");
+  const cols = ["#ffd23f", "#2ecf62", "#3b95ff", "#ff5a5a", "#fff"];
+  for (let i = 0; i < 80; i++) {
+    const d = document.createElement("div"); d.className = "conf"; d.style.left = Math.random() * 100 + "vw";
+    d.style.background = cols[i % cols.length]; d.style.animationDuration = 2.5 + Math.random() * 2.5 + "s"; d.style.animationDelay = Math.random() * 1.2 + "s";
+    document.body.appendChild(d); setTimeout(() => d.remove(), 7000);
+  }
+  $("ovEnd").classList.add("show"); renderBoard();
+}
+
+// ======================= ÇİZİM =======================
+const crowd = Array.from({ length: 460 }, () => ({ x: rnd(0, CW), y: rnd(6, 150), c: ["#ff5a5a", "#74c0fc", "#fff", "#ffd23f", "#2ecf62", "#b388ff"][Math.floor(Math.random() * 6)], ph: rnd(0, 6.3) }));
+
+function drawBackground(t) {
+  const g = ctx.createLinearGradient(0, 0, 0, 190); g.addColorStop(0, "#0a1230"); g.addColorStop(1, "#1a2f5e");
+  ctx.fillStyle = g; ctx.fillRect(0, 0, CW, 190);
+  crowd.forEach(c => { const b = .5 + .5 * Math.sin(t * 3 + c.ph); ctx.globalAlpha = .35 + .45 * b; ctx.fillStyle = c.c; ctx.fillRect(c.x, c.y - (b > .85 ? 2 : 0), 5, 7); });
+  ctx.globalAlpha = 1;
+  // reklam panosu
+  ctx.fillStyle = "#16335f"; ctx.fillRect(0, 160, CW, 30);
+  ctx.fillStyle = "#cfe4ff"; ctx.font = "bold 13px system-ui"; ctx.textAlign = "left";
+  for (let x = 12; x < CW; x += 170) ctx.fillText("FEN BİLİMLERİ", x, 180);
+  // pist
+  const tr = ctx.createLinearGradient(0, 190, 0, 500); tr.addColorStop(0, "#c2512f"); tr.addColorStop(1, "#a8401f");
+  ctx.fillStyle = tr; ctx.fillRect(0, 190, CW, 310);
+  ctx.fillStyle = "#00000012"; for (let i = 0; i < CW; i += 40) ctx.fillRect(i, 190, 20, 310);
+  // şerit çizgileri
+  ctx.strokeStyle = "#ffffffd0"; ctx.lineWidth = 4;
+  [190, 345, 500].forEach(y => { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(CW, y); ctx.stroke(); });
+  // çim
+  ctx.fillStyle = "#1c7a3e"; ctx.fillRect(0, 502, CW, CH - 502);
+  // metre işaretleri
+  ctx.font = "bold 14px system-ui"; ctx.textAlign = "center";
+  for (let m = 0; m <= TRACK; m += 25) {
+    const x = X0 + m * PX;
+    ctx.fillStyle = "#ffffff30"; ctx.fillRect(x - 1, 190, 2, 310);
+    ctx.fillStyle = "#fff"; ctx.fillText(m + " m", x, 522);
+  }
+  // başlangıç çizgisi
+  ctx.fillStyle = "#fff"; ctx.fillRect(X0 - 5, 190, 6, 310);
+  ctx.font = "bold 12px system-ui"; ctx.fillStyle = "#ffffffcc"; ctx.fillText("START", X0 - 2, 206);
+}
+function drawFinish(t, celebrating) {
+  const x = X0 + TRACK * PX;
+  const s = 14;
+  for (let y = 190, r = 0; y < 500; y += s, r++) for (let c = 0; c < 2; c++) {
+    ctx.fillStyle = (r + c) % 2 ? "#111" : "#fff"; ctx.fillRect(x + c * s, y, s, Math.min(s, 500 - y));
+  }
+  // takı
+  ctx.fillStyle = "#e8e8e8"; ctx.fillRect(x - 8, 120, 10, 380); ctx.fillRect(x + 2 * s - 2, 120, 10, 380);
+  ctx.fillStyle = "#d71920"; ctx.fillRect(x - 8, 120, 2 * s + 18, 40);
+  ctx.fillStyle = "#fff"; ctx.font = "900 20px system-ui"; ctx.textAlign = "center"; ctx.fillText("FİNİŞ", x + s, 148);
+}
+
+function drawRunner(p, x, ph, mode, bob) {
+  // mode: "idle" | "run" | "win"
+  const P = PLAYERS[p], gy = LANE_Y[p], sc = 1.2;
+  ctx.save(); ctx.translate(x, gy); ctx.scale(sc, sc); ctx.lineCap = "round"; ctx.lineJoin = "round";
+  // gölge
+  ctx.fillStyle = "#0004"; ctx.beginPath(); ctx.ellipse(0, 2, 30, 6, 0, 0, 7); ctx.fill();
+  const L = 25;
+  const hipY = -52 + (mode === "run" ? Math.abs(Math.sin(ph)) * -3 : 0) + bob;
+  const hip = { x: 0, y: hipY };
+  function leg(phase, color, shoe) {
+    let t, bend;
+    if (mode === "run") { t = .85 * Math.sin(phase); bend = .15 + .95 * Math.max(0, Math.cos(phase)); }
+    else { t = .05 * Math.sin(phase); bend = .02; }
+    const s = t - bend;
+    const k = { x: hip.x + L * Math.sin(t), y: hip.y + L * Math.cos(t) };
+    const f = { x: k.x + L * Math.sin(s), y: k.y + L * Math.cos(s) };
+    ctx.strokeStyle = color; ctx.lineWidth = 10;
+    ctx.beginPath(); ctx.moveTo(hip.x, hip.y); ctx.lineTo(k.x, k.y); ctx.lineTo(f.x, f.y); ctx.stroke();
+    ctx.strokeStyle = shoe; ctx.lineWidth = 8; ctx.beginPath(); ctx.moveTo(f.x, f.y); ctx.lineTo(f.x + 9, f.y + 1); ctx.stroke();
+  }
+  const lean = mode === "run" ? .22 : mode === "win" ? -.05 : .05;
+  function arm(phase, color) {
+    const sh = { x: Math.sin(lean) * 38, y: hip.y - Math.cos(lean) * 38 + 4 };
+    let a, e;
+    if (mode === "win") { a = -2.6 + .15 * Math.sin(ph * 3); e = a - .15; }
+    else if (mode === "run") { a = -.95 * Math.sin(phase); e = a + 1.25 + .3 * Math.sin(phase); }
+    else { a = .1; e = .35; }
+    const el = { x: sh.x + 17 * Math.sin(a), y: sh.y + 17 * Math.cos(a) };
+    const ha = { x: el.x + 16 * Math.sin(e), y: el.y + 16 * Math.cos(e) };
+    ctx.strokeStyle = color; ctx.lineWidth = 8;
+    ctx.beginPath(); ctx.moveTo(sh.x, sh.y); ctx.lineTo(el.x, el.y); ctx.lineTo(ha.x, ha.y); ctx.stroke();
+    ctx.fillStyle = "#e0ac84"; ctx.beginPath(); ctx.arc(ha.x, ha.y, 4.5, 0, 7); ctx.fill();
+  }
+  const skin = "#e0ac84";
+  // arka kol ve bacak
+  arm(ph + Math.PI, "#c99870");
+  leg(ph + Math.PI, "#c99870", P.dark);
+  // gövde
+  ctx.save(); ctx.translate(hip.x, hip.y); ctx.rotate(lean);
+  ctx.fillStyle = P.dark; roundRect(-14, -14, 28, 18, 6); ctx.fill();         // şort
+  ctx.fillStyle = P.col; roundRect(-15, -52, 30, 42, 10); ctx.fill();          // atlet
+  ctx.fillStyle = "#fff"; ctx.font = "bold 18px system-ui"; ctx.textAlign = "center"; ctx.fillText(String(P.num), 0, -22);
+  ctx.restore();
+  // ön bacak ve kol
+  leg(ph, skin, P.dark);
+  arm(ph, skin);
+  // kafa
+  const hx = Math.sin(lean) * 46 + 3, hy = hip.y - Math.cos(lean) * 46 - 11;
+  ctx.fillStyle = skin; ctx.beginPath(); ctx.arc(hx, hy, 12, 0, 7); ctx.fill();
+  ctx.fillStyle = P.hair; ctx.beginPath(); ctx.arc(hx - 1, hy - 3, 12.5, Math.PI * .95, Math.PI * 2.05); ctx.fill();
+  ctx.fillStyle = P.col; ctx.fillRect(hx - 12, hy - 4, 24, 4);                  // saç bandı
+  ctx.fillStyle = "#222"; ctx.beginPath(); ctx.arc(hx + 5, hy + 1, 1.8, 0, 7); ctx.fill();
+  ctx.strokeStyle = "#222"; ctx.lineWidth = 1.5; ctx.beginPath();
+  if (mode === "win") ctx.arc(hx + 4, hy + 4, 4, .1, Math.PI - .1); else ctx.moveTo(hx + 3, hy + 6), ctx.lineTo(hx + 8, hy + 6);
+  ctx.stroke();
+  ctx.restore();
+}
+function roundRect(x, y, w, h, r) { ctx.beginPath(); ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r); ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath(); }
+
+function tag(text, x, y, color) {
+  ctx.font = "bold 14px system-ui"; ctx.textAlign = "center";
+  const w = ctx.measureText(text).width + 18;
+  ctx.fillStyle = "#06122acc"; roundRect(x - w / 2, y - 16, w, 24, 12); ctx.fill();
+  ctx.strokeStyle = color; ctx.lineWidth = 2; ctx.stroke();
+  ctx.fillStyle = "#fff"; ctx.fillText(text, x, y + 1);
+}
+
+let lastFrame = performance.now(), dust = [];
+function frame(now) {
+  const dt = Math.min(.05, (now - lastFrame) / 1000); lastFrame = now;
+  const t = now / 1000;
+  ctx.clearRect(0, 0, CW, CH);
+  drawBackground(t);
+  drawFinish(t);
+
+  // pozisyonlar
+  const pos = G.pos.slice(); let runningP = -1, u = 0;
+  if (G.phase === "run" && G.run) {
+    u = runFrac(now, G.run);
+    if (now >= G.run.t0) { pos[G.run.p] = runPos(G.run, u); runningP = G.run.p; }
+  }
+  [0, 1].forEach(p => {
+    const x = X0 + clamp(pos[p], 0, TRACK) * PX;
+    const isRun = p === runningP && u < 1, finished = G.winner === p;
+    const mode = finished ? "win" : isRun ? "run" : "idle";
+    const ph = pos[p] * 2.0;
+    const bob = mode === "idle" ? Math.sin(t * 2 + p) * 1.2 : 0;
+    // toz
+    if (isRun && Math.random() < .7) dust.push({ x: x - 8, y: LANE_Y[p] - 2, vx: rnd(-60, -20), vy: rnd(-40, -5), life: rnd(.3, .6), r: rnd(3, 6) });
+    drawRunner(p, x, ph, mode, bob);
+    // etiketler
+    const top = LANE_Y[p] - 165;
+    tag(PLAYERS[p].name, x, top, PLAYERS[p].col);
+    if (isRun) tag("⏱ " + Math.max(0, (RUN_MS * (1 - u) / 1000)).toFixed(1) + " sn", x, top - 30, "#ffd23f");
+  });
+  // toz parçacıkları
+  dust = dust.filter(d => d.life > 0);
+  dust.forEach(d => { d.x += d.vx * dt; d.y += d.vy * dt; d.life -= dt; ctx.globalAlpha = clamp(d.life * 1.6, 0, .6); ctx.fillStyle = "#e8c9a0"; ctx.beginPath(); ctx.arc(d.x, d.y, d.r, 0, 7); ctx.fill(); });
+  ctx.globalAlpha = 1;
+  // adım sesi
+  if (runningP >= 0 && u < 1 && now - (G.run.tick || 0) > 240) { G.run.tick = now; sfx.step(); }
+
+  // konfeti
+  particles = particles.filter(p => p.life > 0);
+  particles.forEach(p => { p.vy += 520 * dt; p.x += p.vx * dt; p.y += p.vy * dt; p.life -= dt; ctx.globalAlpha = clamp(p.life, 0, 1); ctx.fillStyle = p.c; ctx.fillRect(p.x, p.y, p.r, p.r * 1.6); });
+  ctx.globalAlpha = 1;
+  // afiş
+  if (banner) {
+    const a = (now - banner.t) / 1000, dur = banner.dur || 2;
+    if (a < dur) {
+      const sc = a < .25 ? lerp(.4, 1.1, ease(a / .25)) : lerp(1.1, 1, ease((a - .25) / .2));
+      ctx.save(); ctx.translate(480, 100); ctx.scale(sc, sc); ctx.globalAlpha = a > dur - .3 ? (dur - a) / .3 : 1;
+      ctx.font = "900 64px system-ui"; ctx.textAlign = "center"; ctx.lineWidth = 9; ctx.strokeStyle = "#0a1a33"; ctx.strokeText(banner.text, 0, 0);
+      ctx.fillStyle = banner.color; ctx.fillText(banner.text, 0, 0); ctx.restore();
+    }
+  }
+  // süre çubuğu
+  if (G.phase === "question") {
+    $("bar").style.transform = "scaleX(" + clamp((G.deadline - now) / G.total, 0, 1) + ")";
+  } else if (G.phase === "run" && G.run) {
+    $("bar").style.transform = "scaleX(" + (1 - u) + ")";
+    // sayaç ve ölçüler (sınırlı güncelleme)
+    $("mt" + G.run.p).innerHTML = meters(pos[G.run.p]) + "<small>m</small>";
+    $("tr" + G.run.p).style.width = clamp(pos[G.run.p] / TRACK * 100, 0, 100) + "%";
+  }
+}
+function loop(now) { requestAnimationFrame(loop); try { frame(now); } catch (e) { console.error(e); } }
+
+// Süre kontrolü çizimden bağımsız
+setInterval(() => {
+  try { if (G.phase === "question" && performance.now() >= G.deadline) wrongAnswer(null, true); } catch (e) { console.error(e); }
+}, 200);
+// Sekme arka plana alınınca süreleri dondur
+let hiddenAt = 0;
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) { hiddenAt = performance.now(); return; }
+  if (!hiddenAt) return;
+  const d = performance.now() - hiddenAt; hiddenAt = 0;
+  if (G.phase === "question") G.deadline += d;
+  if (banner) banner.t += d;
+  lastFrame = performance.now();
+});
+
+// ---------- olaylar ----------
+function begin() {
+  unitMode = parseInt(document.querySelector("input[name=u]:checked").value, 10);
+  const n0 = $("in0").value.trim() || "1. Oyuncu", n1 = $("in1").value.trim() || "2. Oyuncu";
+  PLAYERS[0].name = n0; PLAYERS[1].name = n1 === n0 ? n1 + " (2)" : n1;
+  resetMatch();
+  $("ovStart").classList.remove("show"); $("ovEnd").classList.remove("show");
+  nextQuestion();
+}
+$("bBegin").onclick = begin;
+$("bAgain").onclick = () => { $("ovEnd").classList.remove("show"); $("ovStart").classList.add("show"); };
+$("bRestart").onclick = () => { resetMatch(); $("ovEnd").classList.remove("show"); $("ovStart").classList.add("show"); $("opts").innerHTML = ""; $("q").textContent = ""; };
+$("bSound").onclick = () => { sound = !sound; $("bSound").textContent = sound ? "🔊 Ses açık" : "🔇 Ses kapalı"; };
+document.addEventListener("keydown", e => {
+  if (document.querySelector(".overlay.show")) return;
+  if (G.phase === "question" && /^[1-4]$/.test(e.key)) answer(parseInt(e.key, 10) - 1);
+});
+
+resetMatch(); requestAnimationFrame(loop);
+
+
+// ---------- site içine gömülü kullanım (iframe) ----------
+(function () {
+  if (window.parent === window) return;
+  document.documentElement.classList.add("embedded");
+  let interacted = false, lastH = 0, lastSig = "";
+  $("bBegin").addEventListener("click", () => { interacted = true; });
+  const post = m => { try { window.parent.postMessage(m, window.location.origin); } catch (e) {} };
+  function height() {
+    let h = document.body.getBoundingClientRect().height;
+    document.querySelectorAll(".overlay.show .modal").forEach(m => {
+      h = Math.max(h, m.getBoundingClientRect().bottom + window.scrollY + 24);
+    });
+    return Math.ceil(h);
+  }
+  function send() {
+    const v = height();
+    if (v !== lastH) { lastH = v; post({ type: "html-anim-height", height: v }); }
+  }
+  setInterval(send, 300); send(); post({ type: "html-anim-ready" });
+  new MutationObserver(() => {
+    const sig = [...document.querySelectorAll(".overlay.show")].map(o => o.id).join(",");
+    if (sig && sig !== lastSig && interacted) post({ type: "html-anim-scroll" });
+    lastSig = sig; send();
+  }).observe(document.body, { subtree: true, attributes: true, attributeFilter: ["class"] });
+})();
+
+</script>
+</body>
+</html>

@@ -34,6 +34,14 @@ const TYPE_ICONS: Record<string, string> = {
 // Veritabanına bağlı olmayan, doğrudan sayfa olarak yayınlanan oyunlar.
 const STATIC_GAMES = [
   {
+    href: "/animasyonlar/5/fen-kosusu5",
+    icon: "🏃",
+    label: "5. Sınıf · İki Kişilik",
+    title: "Fen Koşusu 5",
+    description:
+      "Koşu yarışı: soruyu doğru bilen 4 saniye koşar, finişe ilk ulaşan kazanır. Gökyüzündeki Komşularımız ve Biz ile Kuvveti Tanıyalım üniteleri.",
+  },
+  {
     href: "/animasyonlar/6/fen-futbolu6",
     icon: "⚽",
     label: "6. Sınıf · İki Kişilik",
