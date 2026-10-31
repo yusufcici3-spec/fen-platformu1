@@ -30,6 +30,7 @@ export default function SixthGradePlanetAnimationsPage() {
             <a href="#tutulma-laboratuvari">Tutulma simülatörüne git ↓</a>
             <Link href="/animasyonlar/6/bileske-kuvvet">Bileşke kuvvet simülatörü ↗</Link>
             <Link href="/animasyonlar/6/ip-cekme">İp çekme etkinliği ↗</Link>
+            <Link href="/animasyonlar/6/fen-futbolu6">Fen Futbolu 6 oyunu ⚽</Link>
           </div>
         </header>
 

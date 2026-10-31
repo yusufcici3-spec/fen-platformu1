@@ -32,10 +32,11 @@ const grades: GradeCard[] = [
     description: "Gezegenleri yakından incele; Güneş ve Ay tutulmalarını simüle et.",
     className: styles.gradeSix,
     href: "/animasyonlar/6",
-    animationCount: 4,
+    animationCount: 5,
     secondaryLinks: [
       { href: "/animasyonlar/6/bileske-kuvvet", label: "Bileşke kuvveti sen bul" },
       { href: "/animasyonlar/6/ip-cekme", label: "İp çekme etkinliği" },
+      { href: "/animasyonlar/6/fen-futbolu6", label: "Fen Futbolu 6 oyunu" },
     ],
   },
   {

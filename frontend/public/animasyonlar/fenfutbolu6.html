@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fen Futbolu 6 – 6. Sınıf Fen Bilimleri</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:#04101f;color:#eaf3ff}
+.app{min-height:100vh;padding:12px 12px 26px;display:flex;flex-direction:column;align-items:center;gap:10px;
+  background:radial-gradient(1000px 600px at 50% -10%,#0f3d2b 0%,transparent 60%),radial-gradient(900px 600px at 100% 100%,#0b2a5c 0%,transparent 55%),#04101f}
+.wrap{width:100%;max-width:980px;display:flex;flex-direction:column;gap:10px}
+h1{margin:0;text-align:center;font-size:clamp(1.05rem,2.6vw,1.5rem)}
+.sub{margin:0;text-align:center;color:#9fc2b4;font-size:.85rem}
+
+/* skor tabelası */
+.board{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:stretch}
+.pl{display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:16px;background:#0a1a33cc;border:2px solid #2a4570;transition:border-color .25s,box-shadow .25s,transform .25s}
+.pl.r{flex-direction:row-reverse;text-align:right}
+.pl.act{border-color:#ffd23f;box-shadow:0 0 0 3px #ffd23f33,0 0 26px #ffd23f55;transform:translateY(-2px)}
+.kit{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:1.25rem;color:#fff;border:3px solid #fff8;flex:none}
+.k1{background:repeating-linear-gradient(90deg,#7a1f3d 0 8px,#2a8cff 8px 16px);color:#fff;text-shadow:0 0 4px #000,0 0 2px #000}
+.k2{background:repeating-linear-gradient(90deg,#d71920 0 8px,#ffc400 8px 16px);color:#fff;text-shadow:0 0 4px #000,0 0 2px #000}
+.nm{font-weight:800;letter-spacing:.04em;font-size:1rem}
+.balls{display:flex;gap:4px;margin-top:3px;font-size:1.05rem}
+.r .balls{justify-content:flex-end}
+.balls i{font-style:normal;opacity:.22;filter:grayscale(1);transition:.3s}
+.balls i.on{opacity:1;filter:none}
+.mid{display:grid;place-items:center;padding:0 10px}
+.score{font-size:clamp(1.8rem,5vw,2.8rem);font-weight:900;font-variant-numeric:tabular-nums;line-height:1;text-shadow:0 0 18px #3ea3ff88}
+.score small{opacity:.5;margin:0 .25em}
+.mid span{font-size:.75rem;color:#9db9e6}
+
+canvas{display:block;width:100%;height:auto;aspect-ratio:16/9;border-radius:20px;background:#0a2a1a;border:2px solid #2a4570;box-shadow:0 10px 40px #0008}
+
+/* soru paneli */
+.panel{background:#081434d9;border:1px solid #5a96ff59;border-radius:20px;padding:16px 18px;box-shadow:0 10px 40px #0008}
+.qhead{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.who{font-weight:800;padding:.3em .9em;border-radius:99px;font-size:.9rem;color:#fff}
+.who.w1{background:linear-gradient(90deg,#7a1f3d,#2a6fd0)}.who.w2{background:linear-gradient(90deg,#d71920,#e0a800)}
+.chip{font-size:.78rem;padding:.3em .8em;border-radius:99px;border:1px solid #5a96ff88;color:#bcd6ff;background:#0b2a6a66}
+.chip.u2{border-color:#ffb81c99;color:#ffe3a3;background:#5a3a0a55}
+.steal{font-size:.78rem;padding:.3em .8em;border-radius:99px;background:#ff5a5a33;border:1px solid #ff8a8a;color:#ffd0d0;display:none}
+.steal.show{display:inline-block}
+.q{font-size:clamp(1.02rem,2.2vw,1.25rem);line-height:1.5;margin:0 0 10px;min-height:3em}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.opt{font:inherit;text-align:left;font-weight:650;color:#fff;border:2px solid #3b64a8;background:linear-gradient(#10306a,#0a2250);border-radius:14px;padding:.75em .9em;cursor:pointer;display:flex;gap:.7em;align-items:center;transition:transform .12s,filter .12s,border-color .12s}
+.opt b{flex:none;width:1.9em;height:1.9em;border-radius:50%;display:grid;place-items:center;background:#ffd23f;color:#2b1700;font-size:.85rem}
+.opt:hover:not(:disabled){filter:brightness(1.15);transform:translateY(-1px)}
+.opt:disabled{cursor:default}
+.opt.ok{border-color:#2ecf62;background:linear-gradient(#17803d,#0e5a2a)}
+.opt.bad{border-color:#ff5a5a;background:linear-gradient(#9b1c28,#6a111a)}
+.opt.dim{opacity:.4}
+.bar{height:7px;border-radius:99px;background:#0a1a33;margin-top:12px;overflow:hidden}
+.bar i{display:block;height:100%;width:100%;background:linear-gradient(90deg,#2ecf62,#ffd23f 60%,#ff5a5a);transform-origin:left;transition:none}
+.fb{margin-top:10px;min-height:2.6em;border-radius:12px;padding:.55em .9em;font-size:.92rem;line-height:1.45;background:#0006;border-left:5px solid #35508f;color:#b9ccf0}
+.fb.ok{border-color:#2ecf62;color:#d4ffe0;background:#0b3a1d77}
+.fb.bad{border-color:#ff5a5a;color:#ffdcdc;background:#4a101877}
+.shootbtn{display:none;width:100%;margin:0;font:inherit;font-weight:900;font-size:1.25rem;letter-spacing:.06em;color:#2b1700;border:0;border-radius:16px;padding:.9em;cursor:pointer;background:linear-gradient(#ffe14a,#e09b00);box-shadow:0 6px 0 #8a5a00,0 10px 24px #0007;animation:pulse .8s ease-in-out infinite alternate}
+.shootbtn:active{transform:translateY(4px);box-shadow:0 2px 0 #8a5a00}
+.shootbtn.show{display:block}
+@keyframes pulse{to{filter:brightness(1.15);box-shadow:0 6px 0 #8a5a00,0 0 30px #ffd23f}}
+.hint{font-size:.8rem;color:#9db9e6;text-align:center;margin-top:6px}
+.tools{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.tools button{font:inherit;font-size:.85rem;font-weight:700;color:#fff;background:#0b2a6a99;border:1px solid #5a96ff66;border-radius:12px;padding:.5em 1em;cursor:pointer}
+
+/* pencereler */
+.overlay{position:fixed;inset:0;z-index:50;display:none;place-items:center;padding:14px;background:#02061ae6;backdrop-filter:blur(6px)}
+.overlay.show{display:grid}
+.modal{width:100%;max-width:700px;max-height:94vh;overflow:auto;background:linear-gradient(#0c2262,#061336);border:1px solid #5a96ff80;border-radius:26px;padding:26px;text-align:center;box-shadow:0 20px 80px #000a;animation:rise .5s ease-out}
+@keyframes rise{from{opacity:0;transform:translateY(24px) scale(.97)}}
+.modal h2{margin:0 0 8px;font-size:1.7rem}
+.modal p{color:#bcd0f2;line-height:1.55;margin:.4em 0}
+.vs{display:flex;justify-content:center;align-items:center;gap:16px;margin:14px 0;font-weight:800}
+.vs .pl{border-color:#2a4570;padding:8px 14px}
+.rules{text-align:left;display:inline-block;color:#c8d9f5;font-size:.92rem;line-height:1.7;margin:4px 0 0}
+.opts2{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:14px 0}
+.opts2 label{cursor:pointer}
+.opts2 input{position:absolute;opacity:0}
+.opts2 span{display:block;padding:.5em 1.1em;border-radius:99px;border:2px solid #4f86e6;background:#030c26;font-size:.9rem}
+.opts2 input:checked+span{background:#ffd23f;color:#2b1700;border-color:#ffd23f;font-weight:700}
+.opts2 input:focus-visible+span{outline:3px solid #fff}
+.big{font:inherit;font-weight:800;font-size:1.15rem;color:#fff;border:0;border-radius:14px;padding:.8em 2.2em;cursor:pointer;background:linear-gradient(#2ecf62,#13873b)}
+.big:hover{filter:brightness(1.12)}
+.trophy{font-size:3.4rem;margin:.1em 0}
+.stats{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:10px 0}
+.stats span{background:#0006;border-radius:99px;padding:.3em .9em;font-weight:700;font-size:.9rem}
+.conf{position:fixed;top:-20px;width:10px;height:16px;z-index:60;animation:fall linear forwards;pointer-events:none}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}
+@media(max-width:640px){.opts{grid-template-columns:1fr}.pl{padding:8px 10px;gap:8px}.kit{width:36px;height:36px;font-size:1rem}.nm{font-size:.82rem}.mid{padding:0 2px}.modal{padding:18px}}
+@media(prefers-reduced-motion:reduce){.shootbtn{animation:none}}
+html.embedded .app{min-height:0}
+html.embedded .overlay{position:absolute;place-items:start center;padding-top:20px}
+html.embedded .modal{max-height:none}
+</style>
+</head>
+<body>
+<noscript>Bu oyun için JavaScript gereklidir.</noscript>
+<div class="app"><div class="wrap">
+  <div><h1>⚽ Fen Futbolu · 6. Sınıf</h1>
+  <p class="sub">Güneş Sistemi ve Tutulmalar &nbsp;•&nbsp; Kuvvet ve Hareket</p></div>
+
+  <div class="board">
+    <div class="pl" id="pl0"><div class="kit k1">11</div><div><div class="nm">SALAH</div><div class="balls" id="balls0"><i>⚽</i><i>⚽</i><i>⚽</i></div></div></div>
+    <div class="mid"><div class="score" id="score">0<small>-</small>0</div><span>3 golü atan kazanır</span></div>
+    <div class="pl r" id="pl1"><div class="kit k2">9</div><div><div class="nm">OSİMHEN</div><div class="balls" id="balls1"><i>⚽</i><i>⚽</i><i>⚽</i></div></div></div>
+  </div>
+
+  <canvas id="cv" width="960" height="540" aria-label="Penaltı sahası animasyonu"></canvas>
+  <button class="shootbtn" id="shoot">⚽ ŞUT ÇEK!</button>
+
+  <div class="panel">
+    <div class="qhead"><span class="who w1" id="who">SALAH</span><span class="chip" id="unit"></span><span class="steal" id="steal">🔁 Rakipten gelen soru</span></div>
+    <p class="q" id="q" aria-live="polite"></p>
+    <div class="opts" id="opts"></div>
+    <div class="bar"><i id="bar"></i></div>
+    <div class="fb" id="fb" aria-live="polite">Soruyu doğru bilen oyuncu kaleciye şut çekme hakkı kazanır.</div>
+    <div class="hint" id="hint">Cevaplamak için seçeneğe dokunun (klavyede 1-4). Şut için ŞUT düğmesine ya da sahaya dokunun (klavyede Boşluk).</div>
+  </div>
+
+  <div class="tools"><button id="bSound">🔊 Ses açık</button><button id="bRestart">↺ Yeni maç</button></div>
+</div></div>
+
+<div class="overlay show" id="ovStart">
+  <div class="modal">
+    <h2>⚽ Fen Futbolu'na hoş geldiniz!</h2>
+    <div class="vs">
+      <div class="pl"><div class="kit k1">11</div><div class="nm">SALAH</div></div>
+      <span>VS</span>
+      <div class="pl"><div class="kit k2">9</div><div class="nm">OSİMHEN</div></div>
+    </div>
+    <div class="rules">
+      <b>Nasıl oynanır?</b><br>
+      1. Sırayla soru gelir; cevabı doğru bulan oyuncu <b>penaltı</b> kazanır.<br>
+      2. Yanlış cevap verirse soru <b>rakibe</b> geçer; o bilirse şutu o çeker.<br>
+      3. Şutta hedef çubuğu gidip gelir. <b>Tam zamanında durdur!</b> Direğin dışına atarsan aut olur, kaleci de uçabilir.<br>
+      4. <b>İlk 3 golü atan maçı kazanır.</b>
+    </div>
+    <p style="margin-top:14px">Konular:</p>
+    <div class="opts2">
+      <label><input type="radio" name="u" value="0" checked><span>İki ünite birden</span></label>
+      <label><input type="radio" name="u" value="1"><span>1. Ünite</span></label>
+      <label><input type="radio" name="u" value="2"><span>2. Ünite</span></label>
+    </div>
+    <button class="big" id="bBegin">Maçı başlat ▶</button>
+  </div>
+</div>
+
+<div class="overlay" id="ovEnd">
+  <div class="modal">
+    <div class="trophy">🏆</div>
+    <h2 id="endTitle"></h2>
+    <div class="score" id="endScore"></div>
+    <p id="endMsg"></p>
+    <div class="stats" id="endStats"></div>
+    <p style="margin-top:16px"><button class="big" id="bAgain">Rövanş ↺</button></p>
+  </div>
+</div>
+<script>
+// MEB 6. sınıf Fen Bilimleri kazanımlarına göre hazırlandı.
+// u: 1 = Güneş Sistemi ve Tutulmalar (FB.6.1.1-4: gezegenleri sınıflandırma, Güneş Sistemi modeli,
+//        Güneş ve Ay tutulması; gezegen, asteroit, gök taşı, meteor, meteorit)
+//    2 = Kuvvet ve Hareket (FB.6.2.1-3: bileşke kuvvet, dengelenmiş/dengelenmemiş kuvvet,
+//        sürat ve hız; büyüklük, yön, doğrultu, uygulama noktası, alınan yol, yer değiştirme, zaman)
+// o[0] her zaman doğru cevap; oyun seçenekleri karıştırarak gösterir.
+const UNITS = { 1: "1. Ünite · Güneş Sistemi ve Tutulmalar", 2: "2. Ünite · Kuvvet ve Hareket" };
+
+const BANK = [
+  // ---------- 1. Ünite: Güneş Sistemi ve Tutulmalar ----------
+  // Gezegenleri niteliklerine göre sınıflandırma (FB.6.1.1)
+  { u: 1, q: "Güneş Sistemi'nde Güneş'in etrafında dolanan kaç gezegen vardır?", o: ["8", "7", "9", "10"], n: "Güneş Sistemi'nde 8 gezegen bulunur." },
+  { u: 1, q: "Güneş'e en yakın gezegen hangisidir?", o: ["Merkür", "Venüs", "Dünya", "Mars"], n: "Merkür hem Güneş'e en yakın hem de en küçük gezegendir." },
+  { u: 1, q: "Güneş Sistemi'nin en büyük gezegeni hangisidir?", o: ["Jüpiter", "Satürn", "Neptün", "Dünya"], n: "Jüpiter gaz devi bir gezegendir." },
+  { u: 1, q: "Halkalarıyla tanınan gezegen hangisidir?", o: ["Satürn", "Mars", "Venüs", "Merkür"], n: "Satürn'ün halkaları buz ve kaya parçalarından oluşur." },
+  { u: 1, q: "Yüzeyindeki demir oksit nedeniyle kızıl görünen gezegen hangisidir?", o: ["Mars", "Venüs", "Uranüs", "Merkür"], n: "Mars'a \"Kızıl Gezegen\" denir." },
+  { u: 1, q: "Aşağıdakilerden hangisi kayaç yapılı (iç) gezegenlerden biridir?", o: ["Mars", "Jüpiter", "Satürn", "Neptün"], n: "Merkür, Venüs, Dünya ve Mars kayaç yapılı gezegenlerdir." },
+  { u: 1, q: "Aşağıdakilerden hangisi gaz devi (dış) gezegenlerden biridir?", o: ["Satürn", "Merkür", "Venüs", "Dünya"], n: "Jüpiter, Satürn, Uranüs ve Neptün gaz devi gezegenlerdir." },
+  { u: 1, q: "Güneş'e en uzak gezegen hangisidir?", o: ["Neptün", "Uranüs", "Satürn", "Mars"], n: "Neptün Güneş'e en uzak gezegendir." },
+  { u: 1, q: "Mars ile Jüpiter arasındaki kuşakta Güneş etrafında dolanan küçük kayaç ve metal yapılı cisimlere ne denir?", o: ["Asteroit", "Meteor", "Uydu", "Yıldız"], n: "Bu bölgeye asteroit kuşağı denir." },
+  { u: 1, q: "Uzayda dolaşan, asteroitlerden daha küçük kayaç parçalarına ne denir?", o: ["Gök taşı", "Gezegen", "Yıldız", "Uydu"], n: "Gök taşları Güneş Sistemi'nde dolaşan küçük kayaç parçalarıdır." },
+  { u: 1, q: "Dünya atmosferine girip sürtünmeyle yanarak ışık izi bırakan gök taşına ne denir?", o: ["Meteor", "Meteorit", "Asteroit", "Gezegen"], n: "Halk arasında \"yıldız kayması\" denir; gerçek bir yıldız değildir." },
+  { u: 1, q: "Atmosferde tamamen yanmayıp Dünya yüzeyine ulaşan gök taşı parçasına ne denir?", o: ["Meteorit", "Meteor", "Asteroit", "Uydu"], n: "Meteorit, yeryüzüne düşen gök taşı parçasıdır." },
+
+  // Güneş Sistemi modeli (FB.6.1.2)
+  { u: 1, q: "Güneş Sistemi modelinde gezegenler Güneş etrafında hangi yolu izler?", o: ["Yörünge", "Eksen", "Doğrultu", "Yüzey"], n: "Gezegenler Güneş'in çevresinde yörüngelerinde dolanır." },
+  { u: 1, q: "Bir Güneş Sistemi modeli hazırlanırken gezegenlerin Güneş'e uzaklıkları nasıl gösterilmelidir?", o: ["Uzaklık sırasına göre dizilerek", "Rastgele dizilerek", "Hepsi aynı uzaklıkta", "Büyük olan Güneş'e yakın olacak şekilde"], n: "Model, sıralamayı ve göreli büyüklükleri yansıtmalıdır." },
+
+  // Güneş ve Ay tutulması (FB.6.1.3, FB.6.1.4)
+  { u: 1, q: "Güneş tutulması sırasında Güneş, Ay ve Dünya nasıl sıralanır?", o: ["Güneş – Ay – Dünya", "Güneş – Dünya – Ay", "Ay – Güneş – Dünya", "Dünya – Güneş – Ay"], n: "Ay, Güneş ile Dünya arasına girer." },
+  { u: 1, q: "Ay tutulması sırasında Güneş, Ay ve Dünya nasıl sıralanır?", o: ["Güneş – Dünya – Ay", "Güneş – Ay – Dünya", "Ay – Güneş – Dünya", "Dünya – Ay – Güneş"], n: "Dünya, Güneş ile Ay arasına girer ve Ay Dünya'nın gölgesine girer." },
+  { u: 1, q: "Güneş tutulması Ay'ın hangi evresinde gerçekleşir?", o: ["Yeni Ay", "Dolunay", "İlk dördün", "Son dördün"], n: "Güneş tutulması yalnızca Yeni Ay evresinde olur." },
+  { u: 1, q: "Ay tutulması Ay'ın hangi evresinde gerçekleşir?", o: ["Dolunay", "Yeni Ay", "İlk dördün", "Son dördün"], n: "Ay tutulması yalnızca Dolunay evresinde olur." },
+  { u: 1, q: "Ay tutulması sırasında Ay neyin gölgesine girer?", o: ["Dünya'nın", "Güneş'in", "Mars'ın", "Venüs'ün"], n: "Ay tutulması, Ay'ın Dünya'nın gölgesine girmesiyle olur." },
+  { u: 1, q: "Güneş tutulmasını korumasız gözle izlemek neden tehlikelidir?", o: ["Güneş ışınları gözü kalıcı olarak zedeleyebilir", "Ay çok parlak olur", "Dünya yavaşlar", "Gözler renk görmez"], n: "Tutulmayı özel filtreli gözlüklerle izlemek gerekir." },
+
+  // ---------- 2. Ünite: Kuvvet ve Hareket ----------
+  // Kuvvet, dinamometre (temel kabuller) ve bileşke kuvvet (FB.6.2.1)
+  { u: 2, q: "Kuvvet hangi aletle ölçülür?", o: ["Dinamometre", "Termometre", "Barometre", "Cetvel"], n: "Dinamometrenin içindeki yayın uzaması kuvvetle orantılıdır." },
+  { u: 2, q: "Kuvvetin birimi hangisidir?", o: ["Newton (N)", "Metre (m)", "Kilogram (kg)", "Saniye (s)"], n: "Kuvvet newton (N) ile ifade edilir." },
+  { u: 2, q: "Bir kuvvetin tam olarak belirtilebilmesi için hangisi gerekir?", o: ["Büyüklük, yön, doğrultu ve uygulama noktası", "Yalnızca büyüklük", "Yalnızca yön", "Yalnızca uygulama noktası"], n: "Kuvvet, bu dört özelliği ile gösterilir." },
+  { u: 2, q: "Bir cisme etki eden tüm kuvvetlerin yerine geçebilen tek kuvvete ne denir?", o: ["Bileşke kuvvet", "Dengeleyici kuvvet", "Sürtünme kuvveti", "Yer çekimi"], n: "Bileşke kuvvet, kuvvetlerin toplam etkisini gösterir." },
+  { u: 2, q: "Bir cisme aynı doğrultuda ve aynı yönde 30 N ile 20 N'luk kuvvetler uygulanıyor. Bileşke kuvvet kaç N'dur?", o: ["50 N", "10 N", "25 N", "600 N"], n: "Aynı yönlü kuvvetler toplanır: 30 + 20 = 50 N." },
+  { u: 2, q: "Bir cisme aynı doğrultuda ve zıt yönde 40 N ile 15 N'luk kuvvetler uygulanıyor. Bileşke kuvvet kaç N'dur ve yönü nedir?", o: ["25 N, büyük kuvvetin yönünde", "55 N, büyük kuvvetin yönünde", "25 N, küçük kuvvetin yönünde", "0 N"], n: "Zıt yönlü kuvvetlerde büyükten küçük çıkarılır; yön büyük kuvvettedir." },
+
+  // Dengelenmiş ve dengelenmemiş kuvvetler (FB.6.2.2)
+  { u: 2, q: "Bir cisme etki eden kuvvetlerin bileşkesi sıfır ise bu kuvvetlere ne denir?", o: ["Dengelenmiş kuvvetler", "Dengelenmemiş kuvvetler", "Sürtünme kuvvetleri", "Bileşke olmayan kuvvetler"], n: "Dengelenmiş kuvvetlerde cismin hareket durumu değişmez." },
+  { u: 2, q: "Dengelenmemiş kuvvetlerin etkisindeki bir cisim için hangisi doğrudur?", o: ["Hareket durumu (hızı ya da yönü) değişir", "Hareket durumu hiç değişmez", "Cisim her zaman durur", "Cismin kütlesi değişir"], n: "Dengelenmemiş kuvvet cismi hızlandırır, yavaşlatır ya da yönünü değiştirir." },
+  { u: 2, q: "İp çekme oyununda iki takım ipi eşit büyüklükte, zıt yönde çekiyor ve ip hareket etmiyor. Kuvvetler için ne söylenir?", o: ["Dengelenmiştir, bileşke kuvvet sıfırdır", "Dengelenmemiştir", "Bileşke kuvvet iki katıdır", "Kuvvet yoktur"], n: "Eşit ve zıt kuvvetlerin bileşkesi sıfırdır." },
+  { u: 2, q: "Bir cisme 20 N'luk bileşke kuvvet sağa doğru etki ediyor. Cismi dengelemek için hangi kuvvet uygulanmalıdır?", o: ["Sola doğru 20 N", "Sağa doğru 20 N", "Sola doğru 10 N", "Sağa doğru 40 N"], n: "Dengeleyici kuvvet bileşkeyle eşit büyüklükte ve zıt yönlüdür." },
+  { u: 2, q: "Aşağıdakilerden hangisi dengelenmemiş kuvvetin etkisine örnektir?", o: ["Duran bir topa tekme atılıp topun harekete geçmesi", "Masanın üstünde duran kitap", "Asılı duran avize", "Sabit hızla giden araç (kuvvetler dengede)"], n: "Hareketsiz cismin harekete geçmesi dengelenmemiş kuvvetin etkisidir." },
+
+  // Sürat ve hız (FB.6.2.3)
+  { u: 2, q: "Birim zamanda alınan yola ne denir?", o: ["Sürat", "Hız", "Kuvvet", "Yer değiştirme"], n: "Sürat = alınan yol / zaman." },
+  { u: 2, q: "Hız ile sürat arasındaki temel fark nedir?", o: ["Hız yön bilgisi de içerir", "Sürat yön bilgisi içerir", "İkisi de aynıdır", "Hızın birimi yoktur"], n: "Hız yönlü, sürat yönsüzdür; hız yer değiştirmeyle ilgilidir." },
+  { u: 2, q: "100 m'lik yolu 20 saniyede koşan bir öğrencinin ortalama sürati kaç m/s'dir?", o: ["5 m/s", "20 m/s", "2000 m/s", "0,2 m/s"], n: "Sürat = yol / zaman = 100 / 20 = 5 m/s." },
+  { u: 2, q: "Eşit zaman aralıklarında eşit yol alan cismin hareketine ne denir?", o: ["Sabit süratli hareket", "Hızlanan hareket", "Yavaşlayan hareket", "Duran cisim"], n: "Sabit süratli harekette sürat değişmez." },
+  { u: 2, q: "Bir öğrenci okul bahçesinde tur atıp başladığı noktaya dönüyor. Öğrencinin yer değiştirmesi için ne söylenir?", o: ["Sıfırdır", "Aldığı yola eşittir", "Turun yarısıdır", "Sonsuzdur"], n: "Yer değiştirme, ilk ve son konum arasındaki en kısa uzaklıktır; başladığı yere döndüyse sıfırdır." },
+  { u: 2, q: "Bir cismin hareketinde alınan yol ile yer değiştirme aynı olabilir mi?", o: ["Evet, düz bir yolda tek yönde giderse", "Hayır, hiçbir zaman", "Yalnızca duran cisimde", "Yalnızca daire yörüngede"], n: "Doğrusal ve tek yönlü harekette alınan yol yer değiştirmeye eşittir." },
+  { u: 2, q: "Hız bir cismin hangi bilgilerini birlikte verir?", o: ["Birim zamandaki yer değiştirmeyi ve yönünü", "Yalnızca kütlesini", "Yalnızca rengini", "Yalnızca zamanını"], n: "Hız, hem hızlı olup olmadığını hem de yönünü belirtir." }
+];
+
+const $ = id => document.getElementById(id);
+const TOUCH = window.matchMedia && matchMedia("(pointer: coarse)").matches;
+const cv = $("cv"), ctx = cv.getContext("2d");
+const CW = 960, CH = 540;
+const WIN_GOALS = 3, Q_TIME = 20000, STEAL_TIME = 15000;
+const PLAYERS = [
+  { name: "SALAH", num: 11, kit: "#7a1f3d", stripe: "#2a8cff", shorts: "#5a1230", socks: "#2a8cff", hair: "#1c120c", text: "#fff", cls: "w1" },
+  { name: "OSİMHEN", num: 9, kit: "#d71920", stripe: "#ffc400", shorts: "#b3141a", socks: "#ffc400", hair: "#1c120c", text: "#fff", cls: "w2" }
+];
+const SPOT = { x: 480, y: 452 };       // penaltı noktası (top)
+const GOAL = { l: 300, r: 660, top: 165, line: 305 };
+const gx = x => 480 + 180 * x;         // -1..1 → kale genişliği
+
+// ---------- yardımcılar ----------
+const rnd = (a, b) => a + Math.random() * (b - a);
+const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+const lerp = (a, b, t) => a + (b - a) * t;
+const ease = t => { t = clamp(t, 0, 1); return t * t * (3 - 2 * t); };
+const esc = s => s.replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+function shuffle(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+
+// ---------- ses ----------
+let sound = true, ac = null;
+function tone(f, d, type = "sine", v = .07, delay = 0, f2) {
+  if (!sound) return;
+  try {
+    ac = ac || new (window.AudioContext || window.webkitAudioContext)();
+    const o = ac.createOscillator(), g = ac.createGain(), t = ac.currentTime + delay;
+    o.type = type; o.frequency.setValueAtTime(f, t); if (f2) o.frequency.exponentialRampToValueAtTime(f2, t + d);
+    g.gain.setValueAtTime(v, t); g.gain.exponentialRampToValueAtTime(.0001, t + d);
+    o.connect(g); g.connect(ac.destination); o.start(t); o.stop(t + d);
+  } catch (e) {}
+}
+function noise(d, v = .08, delay = 0, lp = 1800) {
+  if (!sound) return;
+  try {
+    ac = ac || new (window.AudioContext || window.webkitAudioContext)();
+    const n = Math.floor(ac.sampleRate * d), buf = ac.createBuffer(1, n, ac.sampleRate), data = buf.getChannelData(0);
+    for (let i = 0; i < n; i++) data[i] = (Math.random() * 2 - 1) * Math.sin(Math.PI * i / n);
+    const s = ac.createBufferSource(), f = ac.createBiquadFilter(), g = ac.createGain(), t = ac.currentTime + delay;
+    s.buffer = buf; f.type = "lowpass"; f.frequency.value = lp; g.gain.value = v;
+    s.connect(f); f.connect(g); g.connect(ac.destination); s.start(t);
+  } catch (e) {}
+}
+const sfx = {
+  ok: () => { tone(660, .12); tone(880, .2, "sine", .07, .1); },
+  bad: () => tone(180, .35, "sawtooth", .05),
+  whistle: () => { tone(2200, .12, "sine", .05); tone(2400, .35, "sine", .05, .14); },
+  kick: () => { tone(120, .12, "sine", .15, 0, 50); noise(.08, .1, 0, 900); },
+  goal: () => { noise(1.6, .12, .05, 2600); tone(523, .15); tone(659, .15, "sine", .07, .15); tone(784, .3, "sine", .07, .3); },
+  save: () => { tone(200, .2, "square", .05, 0, 90); noise(.2, .08, 0, 1200); },
+  out: () => tone(330, .4, "triangle", .06, 0, 150)
+};
+
+// ---------- durum ----------
+let st, pool = [], pi = 0, unitMode = 0, roundTimer = null, shotTimer = null, particles = [], banner = null;
+const stats = () => [{ ok: 0, bad: 0 }, { ok: 0, bad: 0 }];
+let G;  // oyun durumu
+
+function resetMatch() {
+  clearTimeout(roundTimer); clearTimeout(shotTimer);
+  G = { phase: "intro", goals: [0, 0], stats: stats(), cur: null, asker: 0, answerer: 0, stolen: false, wrong: [], deadline: 0, qTotal: 0,
+        qCount: 0, aimStart: 0, shot: null, shooter: 0, lastAim: 0 };
+  particles = []; banner = null;
+  const src = BANK.filter(q => unitMode === 0 || q.u === unitMode);
+  pool = shuffle(src); pi = 0;
+  renderBoard();
+}
+function pickQ() {
+  if (pi >= pool.length) { pool = shuffle(pool); pi = 0; }
+  const q = pool[pi++];
+  return { u: q.u, q: q.q, n: q.n, opts: shuffle(q.o.map((t, i) => ({ t, ok: i === 0 }))) };
+}
+
+// ---------- skor tabelası ----------
+function renderBoard() {
+  $("score").innerHTML = G.goals[0] + "<small>-</small>" + G.goals[1];
+  [0, 1].forEach(p => {
+    [...$("balls" + p).children].forEach((el, i) => el.classList.toggle("on", i < G.goals[p]));
+    $("pl" + p).classList.toggle("act", (G.phase === "question" || G.phase === "aim") && G.answerer === p && G.phase !== "intro");
+  });
+}
+
+// ---------- soru akışı ----------
+function nextQuestion() {
+  G.cur = pickQ(); G.asker = G.qCount % 2; G.qCount++;
+  G.answerer = G.asker; G.stolen = false; G.wrong = [];
+  G.phase = "question"; G.deadline = performance.now() + Q_TIME; G.total = Q_TIME; G.shot = null; banner = null;
+  sfx.whistle();
+  renderQuestion();
+  setFb("", "Soruyu doğru bilen oyuncu kaleciye şut çekme hakkı kazanır.");
+}
+function renderQuestion() {
+  const p = PLAYERS[G.answerer];
+  const w = $("who"); w.textContent = p.name + " cevaplıyor"; w.className = "who " + p.cls;
+  const u = $("unit"); u.textContent = UNITS[G.cur.u]; u.className = "chip u" + G.cur.u;
+  $("steal").classList.toggle("show", G.stolen);
+  $("q").textContent = G.cur.q;
+  $("opts").innerHTML = "";
+  G.cur.opts.forEach((o, i) => {
+    const b = document.createElement("button");
+    b.className = "opt"; b.innerHTML = "<b>" + (i + 1) + "</b><span>" + esc(o.t) + "</span>";
+    if (G.wrong.includes(i)) { b.disabled = true; b.classList.add("bad", "dim"); }
+    b.onclick = () => answer(i);
+    $("opts").appendChild(b);
+  });
+  $("shoot").classList.remove("show");
+  $("hint").textContent = (TOUCH ? "Cevabı seçmek için seçeneğe dokunun." : "Klavyeden 1-4 tuşlarıyla da cevaplayabilirsiniz.");
+  renderBoard();
+}
+function setFb(kind, html) { const f = $("fb"); f.className = "fb " + kind; f.innerHTML = html; }
+function lockOptions(showCorrect) {
+  [...$("opts").children].forEach((b, i) => {
+    b.disabled = true;
+    if (showCorrect && G.cur.opts[i].ok) b.classList.add("ok");
+  });
+}
+
+function answer(i) {
+  if (G.phase !== "question" || G.wrong.includes(i)) return;
+  const o = G.cur.opts[i], p = G.answerer, btn = $("opts").children[i];
+  if (o.ok) {
+    G.stats[p].ok++; btn.classList.add("ok"); lockOptions(true); sfx.ok();
+    setFb("ok", "✔ <b>Doğru!</b> " + PLAYERS[p].name + " penaltı kazandı! " + esc(G.cur.n));
+    startAim(p);
+  } else wrongAnswer(i, false);
+}
+function wrongAnswer(i, timeout) {
+  const p = G.answerer;
+  G.stats[p].bad++; sfx.bad();
+  if (i !== null) { G.wrong.push(i); }
+  if (!G.stolen) {
+    G.stolen = true; G.answerer = 1 - p; G.deadline = performance.now() + STEAL_TIME; G.total = STEAL_TIME;
+    renderQuestion();
+    setFb("bad", (timeout ? "⏰ <b>Süre doldu!</b> " : "✖ <b>Yanlış!</b> ") + "Soru rakibe geçti: <b>" + PLAYERS[G.answerer].name + "</b> bilirse penaltıyı o kullanır.");
+  } else {
+    G.phase = "result"; lockOptions(true); renderBoard();
+    setFb("bad", (timeout ? "⏰ Süre doldu. " : "✖ Yanlış. ") + "Penaltı yok! Doğru cevap yeşil olarak gösterildi. " + esc(G.cur.n));
+    roundTimer = setTimeout(nextQuestion, 3800);
+  }
+}
+
+// ---------- nişan ve şut ----------
+function startAim(p) {
+  G.phase = "aim"; G.shooter = p; G.aimStart = performance.now();
+  $("shoot").classList.add("show");
+  $("hint").textContent = (TOUCH ? "Çubuk kale içindeyken ŞUT düğmesine ya da sahaya dokun!" : "Çubuk kale içindeyken Boşluk tuşuna ya da ŞUT düğmesine bas!");
+  renderBoard();
+}
+const aimNow = now => 1.3 * Math.sin((now - G.aimStart) / 1000 * 2 * Math.PI / 1.5);
+function colOf(x) { return x < -1 / 3 ? -1 : x > 1 / 3 ? 1 : 0; }
+function shoot() {
+  if (G.phase !== "aim") return;
+  const now = performance.now(), x = aimNow(now), col = [-1, 0, 1][Math.floor(Math.random() * 3)], h = Math.random();
+  let outcome;
+  if (Math.abs(x) > 1) outcome = "out";
+  else outcome = colOf(x) === col ? "save" : "goal";
+  G.shot = { start: now, x, h, col, outcome, shooter: G.shooter, done: false };
+  G.phase = "shot"; $("shoot").classList.remove("show"); $("hint").textContent = "";
+  sfx.kick();
+  const mine = G.shot; shotTimer = setTimeout(() => { if (G.shot === mine && !mine.done) resolveShot(); }, 1450);
+}
+function resolveShot() {
+  const s = G.shot, p = s.shooter; s.done = true;
+  if (s.outcome === "goal") {
+    G.goals[p]++; sfx.goal(); banner = { t: performance.now(), text: "GOOOL!", color: "#ffd23f" }; burst(p);
+    setFb("ok", "⚽ <b>GOOOL!</b> " + PLAYERS[p].name + " topu ağlara gönderdi!");
+  } else if (s.outcome === "save") {
+    sfx.save(); banner = { t: performance.now(), text: "KURTARDI!", color: "#7ed0ff" };
+    setFb("bad", "🧤 <b>Kaleci kurtardı!</b> Şut kalecinin uçtuğu bölgeye gitti.");
+  } else {
+    sfx.out(); banner = { t: performance.now(), text: s.h < .5 ? "DIŞARI! (üstten)" : "DIŞARI!", color: "#ff8a8a" };
+    setFb("bad", "❌ <b>Aut!</b> Şut kalenin dışına gitti. Çubuğu kale içindeyken durdur.");
+  }
+  renderBoard();
+  if (G.goals[p] >= WIN_GOALS) { G.phase = "result"; roundTimer = setTimeout(endMatch, 2300); }
+  else { G.phase = "result"; roundTimer = setTimeout(nextQuestion, 2600); }
+}
+function burst(p) {
+  const cols = p === 0 ? ["#7a1f3d", "#2a8cff", "#fff", "#ffd23f"] : ["#d71920", "#ffc400", "#fff", "#ff7a00"];
+  for (let i = 0; i < 90; i++) particles.push({ x: 480 + rnd(-40, 40), y: 250, vx: rnd(-260, 260), vy: rnd(-420, -80), r: rnd(3, 7), c: cols[i % cols.length], life: rnd(1.2, 2.2), a: 1 });
+}
+
+// ---------- maç sonu ----------
+function endMatch() {
+  G.phase = "end";
+  const w = G.goals[0] >= WIN_GOALS ? 0 : 1, l = 1 - w;
+  $("endTitle").textContent = PLAYERS[w].name + " maçı kazandı!";
+  $("endScore").textContent = G.goals[0] + " - " + G.goals[1];
+  $("endMsg").textContent = G.stats[w].ok >= G.stats[l].ok ? "Hem bilgi hem isabet: harika oyun! 🌟" : "Yanlış cevaplara rağmen şutlarda fark yarattı! 💪";
+  $("endStats").innerHTML = PLAYERS.map((p, i) => "<span>" + p.name + ": ✔ " + G.stats[i].ok + " doğru · ✖ " + G.stats[i].bad + " yanlış</span>").join("");
+  const cols = ["#ffd23f", "#2ecf62", "#3b95ff", "#ff5a5a", "#fff"];
+  for (let i = 0; i < 80; i++) {
+    const d = document.createElement("div"); d.className = "conf"; d.style.left = Math.random() * 100 + "vw";
+    d.style.background = cols[i % cols.length]; d.style.animationDuration = 2.5 + Math.random() * 2.5 + "s"; d.style.animationDelay = Math.random() * 1.2 + "s";
+    document.body.appendChild(d); setTimeout(() => d.remove(), 7000);
+  }
+  sfx.goal();
+  $("ovEnd").classList.add("show");
+  renderBoard();
+}
+
+// ======================= ÇİZİM =======================
+const crowd = Array.from({ length: 420 }, () => ({ x: rnd(0, CW), y: rnd(8, 150), c: ["#d71920", "#74c0fc", "#fff", "#ffd23f", "#2ecf62", "#8a63d2"][Math.floor(Math.random() * 6)], ph: rnd(0, 6.3) }));
+
+function drawBackground(t) {
+  // gökyüzü / tribün
+  const g = ctx.createLinearGradient(0, 0, 0, GOAL.line);
+  g.addColorStop(0, "#0a1230"); g.addColorStop(1, "#14305a"); ctx.fillStyle = g; ctx.fillRect(0, 0, CW, GOAL.line);
+  ctx.fillStyle = "#0c1a38"; ctx.fillRect(0, 0, CW, 160);
+  crowd.forEach(c => { const b = 0.5 + 0.5 * Math.sin(t * 3 + c.ph); ctx.globalAlpha = 0.35 + 0.45 * b; ctx.fillStyle = c.c; ctx.fillRect(c.x, c.y - (b > .8 ? 2 : 0), 5, 7); });
+  ctx.globalAlpha = 1;
+  // reklam panoları
+  ctx.fillStyle = "#16335f"; ctx.fillRect(0, 150, CW, 18);
+  ctx.fillStyle = "#cfe4ff"; ctx.font = "bold 11px system-ui"; ctx.textAlign = "left";
+  for (let x = 10; x < CW; x += 160) ctx.fillText("FEN BİLİMLERİ", x, 163);
+  // çim
+  const gr = ctx.createLinearGradient(0, GOAL.line - 140, 0, CH);
+  gr.addColorStop(0, "#1c7a3e"); gr.addColorStop(1, "#0e5a2a"); ctx.fillStyle = gr; ctx.fillRect(0, 168, CW, CH - 168);
+  for (let i = 0; i < 9; i++) { ctx.fillStyle = i % 2 ? "#ffffff08" : "#00000010"; ctx.fillRect(0, 168 + i * 42, CW, 42); }
+  // çizgiler
+  ctx.strokeStyle = "#ffffffcc"; ctx.lineWidth = 3;
+  ctx.beginPath(); ctx.moveTo(0, GOAL.line); ctx.lineTo(CW, GOAL.line); ctx.stroke();           // kale çizgisi
+  ctx.beginPath(); ctx.moveTo(190, GOAL.line); ctx.lineTo(90, CH); ctx.moveTo(770, GOAL.line); ctx.lineTo(870, CH); ctx.stroke(); // ceza sahası
+  ctx.beginPath(); ctx.moveTo(380, GOAL.line); ctx.lineTo(350, 380); ctx.lineTo(610, 380); ctx.lineTo(580, GOAL.line); ctx.stroke(); // altıpas
+  ctx.beginPath(); ctx.ellipse(SPOT.x, SPOT.y, 7, 3.5, 0, 0, 7); ctx.fillStyle = "#fff"; ctx.fill();
+}
+
+function drawGoal(netRipple) {
+  const { l, r, top, line } = GOAL;
+  // arka ağ
+  ctx.fillStyle = "#0a1d2f66"; ctx.fillRect(l + 12, top + 10, r - l - 24, line - top - 12);
+  ctx.strokeStyle = "#ffffff30"; ctx.lineWidth = 1;
+  const rip = netRipple;
+  for (let x = l + 12; x <= r - 12; x += 12) { ctx.beginPath(); ctx.moveTo(x, top + 10); ctx.lineTo(x + Math.sin(x * .1 + rip * 14) * rip * 6, line - 2); ctx.stroke(); }
+  for (let y = top + 10; y <= line - 2; y += 12) { ctx.beginPath(); ctx.moveTo(l + 12, y); ctx.lineTo(r - 12, y + Math.sin(y * .2 + rip * 14) * rip * 4); ctx.stroke(); }
+  // yan ve üst ağ (derinlik)
+  ctx.strokeStyle = "#ffffff22";
+  ctx.beginPath(); ctx.moveTo(l, top); ctx.lineTo(l + 12, top + 10); ctx.moveTo(r, top); ctx.lineTo(r - 12, top + 10);
+  ctx.moveTo(l, line); ctx.lineTo(l + 12, line - 2); ctx.moveTo(r, line); ctx.lineTo(r - 12, line - 2); ctx.stroke();
+}
+function drawPosts() {
+  const { l, r, top, line } = GOAL;
+  ctx.strokeStyle = "#f5f8ff"; ctx.lineWidth = 9; ctx.lineCap = "round";
+  ctx.beginPath(); ctx.moveTo(l, line); ctx.lineTo(l, top); ctx.lineTo(r, top); ctx.lineTo(r, line); ctx.stroke();
+  ctx.strokeStyle = "#9aa7c2"; ctx.lineWidth = 2;
+  ctx.beginPath(); ctx.moveTo(l + 3, line); ctx.lineTo(l + 3, top + 3); ctx.lineTo(r - 3, top + 3); ctx.lineTo(r - 3, line); ctx.stroke();
+  ctx.lineCap = "butt";
+}
+
+function drawKeeper(t, dive, dir) {
+  // dive 0..1; dir -1/0/1
+  const idle = Math.sin(t * 3) * 0.12;
+  const cx = lerp(480, 480 + dir * 135, ease(dive)), cy = GOAL.line - 6 - (dir === 0 ? ease(dive) * 24 : ease(dive) * 14);
+  ctx.save(); ctx.translate(cx, cy); ctx.rotate(dir * 1.15 * ease(dive));
+  const arm = dive > 0 ? 1 : 0.55 + idle;
+  // bacaklar
+  ctx.strokeStyle = "#111"; ctx.lineWidth = 12; ctx.lineCap = "round";
+  ctx.beginPath(); ctx.moveTo(-10, -42); ctx.lineTo(-16 - dive * 8, 0); ctx.moveTo(10, -42); ctx.lineTo(16 + dive * 8, 0); ctx.stroke();
+  ctx.strokeStyle = "#2ecf62"; ctx.lineWidth = 9;
+  ctx.beginPath(); ctx.moveTo(-16 - dive * 8, -8); ctx.lineTo(-16 - dive * 8, 0); ctx.moveTo(16 + dive * 8, -8); ctx.lineTo(16 + dive * 8, 0); ctx.stroke();
+  // gövde
+  ctx.fillStyle = "#ffd23f"; roundRect(-22, -104, 44, 66, 10); ctx.fill();
+  ctx.fillStyle = "#111"; roundRect(-22, -48, 44, 14, 4); ctx.fill();
+  // kollar (yukarı açık)
+  ctx.strokeStyle = "#ffd23f"; ctx.lineWidth = 9;
+  const ay = -96 - arm * 28, ax = 36 + arm * 22;
+  ctx.beginPath(); ctx.moveTo(-20, -96); ctx.lineTo(-ax, ay); ctx.moveTo(20, -96); ctx.lineTo(ax, ay); ctx.stroke();
+  ctx.fillStyle = "#2ecf62"; ctx.beginPath(); ctx.arc(-ax, ay, 9, 0, 7); ctx.arc(ax, ay, 9, 0, 7); ctx.fill();
+  // kafa
+  ctx.fillStyle = "#e0ac84"; ctx.beginPath(); ctx.arc(0, -118, 15, 0, 7); ctx.fill();
+  ctx.fillStyle = "#22160c"; ctx.beginPath(); ctx.arc(0, -123, 15, Math.PI, 0); ctx.fill();
+  ctx.fillStyle = "#222"; ctx.beginPath(); ctx.arc(-5, -117, 1.8, 0, 7); ctx.arc(5, -117, 1.8, 0, 7); ctx.fill();
+  ctx.strokeStyle = "#222"; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.arc(0, -112, 4, .1, Math.PI - .1); ctx.stroke();
+  ctx.restore();
+}
+
+function drawShooter(P, kick) {
+  const x = 410, y = 535, s = 1.25;
+  ctx.save(); ctx.translate(x, y); ctx.scale(s, s); ctx.lineCap = "round";
+  // gölge
+  ctx.fillStyle = "#0005"; ctx.beginPath(); ctx.ellipse(0, 2, 34, 8, 0, 0, 7); ctx.fill();
+  // bacaklar (arkadan görünüm)
+  const kl = 1 - 0.55 * kick;
+  ctx.lineWidth = 13;
+  ctx.strokeStyle = "#e0ac84"; ctx.beginPath(); ctx.moveTo(-12, -58); ctx.lineTo(-13, -22); ctx.moveTo(12, -58); ctx.lineTo(12 + 12 * kick, -58 + 36 * kl); ctx.stroke();
+  ctx.strokeStyle = P.socks; ctx.lineWidth = 12;
+  ctx.beginPath(); ctx.moveTo(-13, -26); ctx.lineTo(-13, -2); ctx.moveTo(12 + 12 * kick, -58 + 36 * kl - 6); ctx.lineTo(12 + 16 * kick, -58 + 46 * kl); ctx.stroke();
+  ctx.strokeStyle = "#111"; ctx.lineWidth = 10; ctx.beginPath(); ctx.moveTo(-14, -2); ctx.lineTo(-18, 0); ctx.moveTo(12 + 16 * kick, -58 + 46 * kl); ctx.lineTo(10 + 16 * kick, -58 + 48 * kl); ctx.stroke();
+  // şort
+  ctx.fillStyle = P.shorts; roundRect(-22, -76, 44, 24, 6); ctx.fill();
+  // forma
+  ctx.fillStyle = P.kit; roundRect(-24, -136, 48, 64, 12); ctx.fill();
+  if (P.stripe) { ctx.save(); roundRect(-24, -136, 48, 64, 12); ctx.clip(); ctx.fillStyle = P.stripe; for (let i = -24; i < 24; i += 16) ctx.fillRect(i + 8, -136, 8, 64); ctx.restore(); }
+  // kollar
+  ctx.strokeStyle = "#e0ac84"; ctx.lineWidth = 9;
+  ctx.beginPath(); ctx.moveTo(-24, -126); ctx.lineTo(-34, -86 + kick * 6); ctx.moveTo(24, -126); ctx.lineTo(34, -86 - kick * 10); ctx.stroke();
+  // kafa (arkadan: saç)
+  ctx.fillStyle = "#e0ac84"; ctx.beginPath(); ctx.arc(0, -150, 15, 0, 7); ctx.fill();
+  ctx.fillStyle = P.hair; ctx.beginPath(); ctx.arc(0, -152, 15.5, 0, 7); ctx.fill();
+  // sırt: isim ve numara
+  ctx.textAlign = "center"; ctx.lineJoin = "round"; ctx.strokeStyle = "#000c"; ctx.fillStyle = P.text || "#fff";
+  ctx.font = "bold 9px system-ui"; ctx.lineWidth = 3; ctx.strokeText(P.name, 0, -120); ctx.fillText(P.name, 0, -120);
+  ctx.font = "bold 30px system-ui"; ctx.lineWidth = 5; ctx.strokeText(String(P.num), 0, -92); ctx.fillText(String(P.num), 0, -92);
+  ctx.restore();
+}
+
+function drawBall(x, y, r, rot) {
+  r = Math.max(2, r || 2);
+  ctx.fillStyle = "#0004"; ctx.beginPath(); ctx.ellipse(x, Math.max(y, 300) + r * .9, r * .9, r * .3, 0, 0, 7); ctx.fill();
+  ctx.save(); ctx.translate(x, y); ctx.rotate(rot);
+  ctx.fillStyle = "#fff"; ctx.beginPath(); ctx.arc(0, 0, r, 0, 7); ctx.fill();
+  ctx.fillStyle = "#222"; ctx.beginPath(); for (let i = 0; i < 5; i++) { const a = i * 1.2566 - 1.57; ctx.lineTo(Math.cos(a) * r * .45, Math.sin(a) * r * .45); } ctx.fill();
+  for (let i = 0; i < 5; i++) { const a = i * 1.2566 - 1.57; ctx.beginPath(); ctx.arc(Math.cos(a) * r * .88, Math.sin(a) * r * .88, r * .22, 0, 7); ctx.fill(); }
+  ctx.strokeStyle = "#0003"; ctx.lineWidth = 1; ctx.beginPath(); ctx.arc(0, 0, r, 0, 7); ctx.stroke();
+  ctx.restore();
+}
+function roundRect(x, y, w, h, r) { ctx.beginPath(); ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r); ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath(); }
+
+let lastFrame = performance.now();
+function frame(now) {
+  const dt = Math.min(0.05, (now - lastFrame) / 1000); lastFrame = now;
+  const t = now / 1000;
+  const sh = G.shot;
+  // hesaplar
+  let ball = { x: SPOT.x, y: SPOT.y, r: 16, rot: 0 }, keeperDive = 0, keeperDir = 0, kick = 0, ripple = 0, tp = -1;
+  if (sh) {
+    const el = (now - sh.start) / 1000;
+    kick = clamp(Math.sin(clamp((el - .02) / .28, 0, 1) * Math.PI), 0, 1);
+    tp = (el - .18) / .62;
+    keeperDive = clamp((el - .22) / .42, 0, 1); keeperDir = sh.col;
+    const tx = gx(sh.x), ty = sh.outcome === "out" ? (sh.h < .5 ? 120 : 235) : 195 + sh.h * 85;
+    if (tp >= 0 && tp <= 1) {
+      const e = tp;
+      ball.x = lerp(SPOT.x, tx, e); ball.y = lerp(SPOT.y, ty, e) - 58 * Math.sin(Math.PI * e); ball.r = lerp(16, 9, e); ball.rot = tp * 14;
+    } else if (tp > 1) {
+      const a = Math.min(tp - 1, 1.6); ball.rot = 14 + a * 6;
+      if (sh.outcome === "goal") { ball.x = tx + Math.sin(a * 6) * 3 * (1 - a); ball.y = ty + Math.min(a, .6) * 60; ball.r = 9; ripple = clamp(1 - a, 0, 1) * .9; }
+      else if (sh.outcome === "save") { const sg = tx >= 480 ? 1 : -1; ball.x = tx + sg * 140 * a; ball.y = ty + 90 * a * a * 2 - 40 * a; ball.r = 9 + 2 * a; }
+      else { const aa = Math.min(a, 1.2); ball.x = tx + (tx >= 480 ? 1 : -1) * 120 * aa; ball.y = ty - (sh.h < .5 ? 40 : -30) * aa; ball.r = Math.max(4, 9 - 2 * aa); }
+    }
+    if (sh.outcome === "goal" && tp > 1) ripple = Math.max(ripple, 0);
+  }
+  // ---- çizim ----
+  ctx.clearRect(0, 0, CW, CH);
+  drawBackground(t);
+  drawGoal(ripple);
+  drawKeeper(t, keeperDive, keeperDir);
+  // gol sonrası top ağın içinde: önce top, sonra direkler
+  const behind = sh && sh.outcome === "goal" && tp > 0.9;
+  if (behind) drawBall(ball.x, ball.y, ball.r, ball.rot);
+  drawPosts();
+  if (!behind) drawBall(ball.x, ball.y, ball.r, ball.rot);
+  const shooterP = sh ? PLAYERS[sh.shooter] : (G.phase === "aim" ? PLAYERS[G.shooter] : PLAYERS[G.answerer || 0]);
+  if (G.phase !== "intro") drawShooter(shooterP, kick);
+  // nişan çubuğu
+  if (G.phase === "aim") {
+    const ax = aimNow(now), px = gx(ax), inside = Math.abs(ax) <= 1;
+    G.lastAim = ax;
+    ctx.save(); ctx.strokeStyle = inside ? "#ffd23f" : "#ff5a5a"; ctx.fillStyle = inside ? "#ffd23f" : "#ff5a5a"; ctx.lineWidth = 3; ctx.setLineDash([7, 6]);
+    ctx.beginPath(); ctx.moveTo(px, GOAL.top - 6); ctx.lineTo(px, GOAL.line); ctx.stroke(); ctx.setLineDash([]);
+    ctx.beginPath(); ctx.arc(px, 230, 15, 0, 7); ctx.stroke(); ctx.beginPath(); ctx.arc(px, 230, 3, 0, 7); ctx.fill();
+    ctx.restore();
+    ctx.fillStyle = "#fff"; ctx.font = "bold 15px system-ui"; ctx.textAlign = "center"; ctx.fillText(inside ? "Şimdi durdur!" : "Aut bölgesi!", 480, 142);
+  }
+  // konfeti
+  particles = particles.filter(p => p.life > 0);
+  particles.forEach(p => { p.vy += 520 * dt; p.x += p.vx * dt; p.y += p.vy * dt; p.life -= dt; ctx.globalAlpha = clamp(p.life, 0, 1); ctx.fillStyle = p.c; ctx.fillRect(p.x, p.y, p.r, p.r * 1.6); });
+  ctx.globalAlpha = 1;
+  // afiş
+  if (banner) {
+    const a = (now - banner.t) / 1000;
+    if (a < 2.2) {
+      const sc = a < .25 ? lerp(.4, 1.1, ease(a / .25)) : lerp(1.1, 1, ease((a - .25) / .2));
+      ctx.save(); ctx.translate(480, 330); ctx.scale(sc, sc); ctx.globalAlpha = a > 1.8 ? (2.2 - a) / .4 : 1;
+      ctx.font = "900 78px system-ui"; ctx.textAlign = "center"; ctx.lineWidth = 10; ctx.strokeStyle = "#0a1a33"; ctx.strokeText(banner.text, 0, 0);
+      ctx.fillStyle = banner.color; ctx.fillText(banner.text, 0, 0); ctx.restore();
+    }
+  }
+  // geri sayım çubuğu
+  if (G.phase === "question") {
+    const left = clamp((G.deadline - now) / G.total, 0, 1);
+    $("bar").style.transform = "scaleX(" + left + ")";
+  } else if (G.phase === "aim") $("bar").style.transform = "scaleX(1)";
+}
+// Çizim bir hata verse bile oyun durmasın
+function loop(now) {
+  requestAnimationFrame(loop);
+  try { frame(now); } catch (e) { console.error(e); }
+}
+// Mantık (süre) çizimden bağımsız çalışır
+setInterval(() => {
+  try { if (G.phase === "question" && performance.now() >= G.deadline) wrongAnswer(null, true); } catch (e) { console.error(e); }
+}, 200);
+// Sekme arka plana alınınca süreyi dondur
+let hiddenAt = 0;
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) { hiddenAt = performance.now(); return; }
+  if (!hiddenAt) return;
+  const d = performance.now() - hiddenAt; hiddenAt = 0;
+  if (G.deadline) G.deadline += d;
+  if (G.aimStart) G.aimStart += d;
+  if (banner) banner.t += d;
+  if (G.shot && !G.shot.done) G.shot.start += d;
+  lastFrame = performance.now();
+});
+
+// ---------- olaylar ----------
+function begin() {
+  unitMode = parseInt(document.querySelector("input[name=u]:checked").value, 10);
+  resetMatch();
+  $("ovStart").classList.remove("show"); $("ovEnd").classList.remove("show");
+  nextQuestion();
+}
+$("bBegin").onclick = begin;
+$("bAgain").onclick = () => { $("ovEnd").classList.remove("show"); $("ovStart").classList.add("show"); };
+$("bRestart").onclick = () => { resetMatch(); $("ovEnd").classList.remove("show"); $("ovStart").classList.add("show"); $("opts").innerHTML = ""; $("q").textContent = ""; };
+$("shoot").onclick = shoot;
+cv.addEventListener("pointerdown", () => { if (G.phase === "aim") shoot(); });
+$("bSound").onclick = () => { sound = !sound; $("bSound").textContent = sound ? "🔊 Ses açık" : "🔇 Ses kapalı"; };
+document.addEventListener("keydown", e => {
+  if (document.querySelector(".overlay.show")) return;
+  if (e.code === "Space" || e.key === " ") { if (G.phase === "aim") { e.preventDefault(); shoot(); } else if (G.phase === "question") e.preventDefault(); }
+  else if (G.phase === "question" && /^[1-4]$/.test(e.key)) answer(parseInt(e.key, 10) - 1);
+});
+
+// ilk durum
+resetMatch(); requestAnimationFrame(loop);
+
+// ---------- site içine gömülü kullanım (iframe) ----------
+(function () {
+  if (window.parent === window) return;
+  document.documentElement.classList.add("embedded");
+  let interacted = false, lastH = 0, lastSig = "";
+  $("bBegin").addEventListener("click", () => { interacted = true; });
+  const post = m => { try { window.parent.postMessage(m, window.location.origin); } catch (e) {} };
+  function height() {
+    let h = document.body.getBoundingClientRect().height;
+    document.querySelectorAll(".overlay.show .modal").forEach(m => {
+      h = Math.max(h, m.getBoundingClientRect().bottom + window.scrollY + 24);
+    });
+    return Math.ceil(h);
+  }
+  function send() {
+    const v = height();
+    if (v !== lastH) { lastH = v; post({ type: "html-anim-height", height: v }); }
+  }
+  setInterval(send, 300); send(); post({ type: "html-anim-ready" });
+  new MutationObserver(() => {
+    const sig = [...document.querySelectorAll(".overlay.show")].map(o => o.id).join(",");
+    if (sig && sig !== lastSig && interacted) post({ type: "html-anim-scroll" });
+    lastSig = sig; send();
+  }).observe(document.body, { subtree: true, attributes: true, attributeFilter: ["class"] });
+})();
+</script>
+</body>
+</html>
