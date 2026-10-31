@@ -61,7 +61,7 @@ export default async function UnitPage({ params }: { params: { level: string; un
       <section className="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <Link href={`/sinif/${level}`} className="text-sm font-semibold text-beaker hover:underline">← Tüm Ünitelere Dön</Link>
-          {level === 8 && unit.slug === "enerji-donusumleri-ve-cevre-bilimi" && <Link href="/sinif/8/enerji-donusumleri-ve-cevre-bilimi/soru-coz" className="inline-flex items-center gap-2 rounded-full bg-beaker px-5 py-2.5 text-sm font-semibold text-white hover:bg-beaker-dark">📝 Bu Üniteden Soru Çöz · 50 Yeni Nesil Soru</Link>}
+          
           {level === 8 && unit.slug === "enerji-donusumleri-ve-cevre-bilimi" ? <Link href="/sinif/8/enerji-donusumleri-ve-cevre-bilimi/soru-coz" className="inline-flex items-center gap-2 rounded-full bg-beaker px-5 py-2.5 text-sm font-semibold text-white hover:bg-beaker-dark">📝 Bu Üniteden 100 Soru Çöz</Link> : unit.topics.length > 0 && <Link href={`/pratik?unitId=${unit.id}&title=${encodeURIComponent(unit.title + " - Soru Çöz")}`} className="inline-flex items-center gap-2 rounded-full border border-beaker px-5 py-2.5 text-sm font-semibold text-beaker">📝 Genel Soru Çöz</Link>}
         </div>
         {unit.topics.length === 0 ? <div className="mt-6"><EmptyPanelState title="Bu ünite için henüz konu eklenmedi" description="Konular yönetim panelinden eklendikçe burada listelenecek." /></div> : <div className="mt-6"><TopicListWithProgress topics={unit.topics} level={level} unitSlug={unit.slug} /></div>}
