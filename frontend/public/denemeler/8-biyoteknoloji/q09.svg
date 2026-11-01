@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430">
+ <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#effcf9"/><stop offset="1" stop-color="#eef2ff"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="5" stdDeviation="6" flood-opacity=".12"/></filter></defs>
+ <rect width="900" height="430" rx="28" fill="url(#bg)"/><text x="40" y="55" font-family="Arial" font-size="24" font-weight="700" fill="#0f172a">GENETİK MÜHENDİSLİĞİ</text>
+ <g filter="url(#s)">
+ <rect x="45" y="95" width="240" height="245" rx="20" fill="white"/><rect x="330" y="95" width="240" height="245" rx="20" fill="white"/><rect x="615" y="95" width="240" height="245" rx="20" fill="white"/>
+ </g>
+ <g font-family="Arial" text-anchor="middle" fill="#0f172a">
+ <text x="165" y="130" font-size="19" font-weight="700">Yapay seçilim</text><text x="450" y="130" font-size="19" font-weight="700">Gen aktarımı</text><text x="735" y="130" font-size="19" font-weight="700">Özellik takibi</text>
+ </g>
+ <g stroke="#db2777" stroke-width="9" stroke-linecap="round" fill="none">
+ <path d="M165 175 C110 210 220 245 165 290 M450 170 C390 210 510 250 450 295 M735 175 C680 210 790 245 735 290"/>
+ <path d="M285 220 H325 M570 220 H610" stroke-width="6"/><path d="M312 207 L326 220 L312 233 M597 207 L611 220 L597 233" stroke-width="6"/>
+ </g>
+ <g fill="#db2777" opacity=".18"><circle cx="165" cy="220" r="42"/><circle cx="450" cy="220" r="42"/><circle cx="735" cy="220" r="42"/></g>
+ <g fill="#db2777" stroke="white" stroke-width="3"><circle cx="165" cy="220" r="24"/><circle cx="450" cy="220" r="24"/><circle cx="735" cy="220" r="24"/></g>
+ <g font-family="Arial" font-size="15" text-anchor="middle" fill="#334155"><text x="165" y="315">Örnek / başlangıç</text><text x="450" y="315">Yöntem / süreç</text><text x="735" y="315">Sonuç / izleme</text></g>
+ <rect x="45" y="365" width="810" height="38" rx="12" fill="#db2777" opacity=".12"/><text x="450" y="390" font-family="Arial" font-size="16" font-weight="700" text-anchor="middle" fill="#0f172a">FEN BİLİMLERİ • 8. SINIF • BİYOTEKNOLOJİ</text>
+ </svg>
