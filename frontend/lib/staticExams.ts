@@ -1,5 +1,6 @@
 import exam8 from "@/content/denemeler/8-sinif-yeni-nesil-1-2.json";
 import examMevsimDna from "@/content/denemeler/8-sinif-yeni-nesil-mevsim-dna.json";
+import examBiyoteknoloji from "@/content/denemeler/8-sinif-biyoteknoloji-lgs-20.json";
 
 export interface StaticExamQuestion {
   no: number;
@@ -30,6 +31,7 @@ export interface StaticExam {
 export const STATIC_EXAMS: StaticExam[] = [
   exam8 as unknown as StaticExam,
   examMevsimDna as unknown as StaticExam,
+  examBiyoteknoloji as unknown as StaticExam,
 ];
 
 export function getStaticExam(slug: string): StaticExam | undefined {
