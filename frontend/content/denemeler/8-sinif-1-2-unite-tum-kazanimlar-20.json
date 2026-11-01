@@ -1,0 +1,379 @@
+{
+  "id": "8-sinif-1-2-unite-tum-kazanimlar-20",
+  "slug": "8-sinif-1-2-unite-tum-kazanimlar-20",
+  "title": "8. Sınıf LGS Denemesi: 1. ve 2. Ünite Tüm Kazanımlar",
+  "description": "Mevsimler ve İklim ile DNA ve Genetik Kod ünitelerindeki tüm paylaşılan kazanımları kapsayan 20 özgün, uzun senaryolu yeni nesil soru.",
+  "classLevel": 8,
+  "durationMin": 40,
+  "units": [
+    "Mevsimler ve İklim",
+    "DNA ve Genetik Kod",
+    "Kalıtım",
+    "Mutasyon ve Modifikasyon",
+    "Adaptasyon",
+    "Biyoteknoloji"
+  ],
+  "source": "Kullanıcı tarafından sağlanan F.8.1.1.1, F.8.1.2.1–2, F.8.2.1.1–3, F.8.2.2.1–3, F.8.2.3.1–3, F.8.2.4.1 ve F.8.2.5.1–3 kazanımları.",
+  "questions": [
+    {
+      "no": 1,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "F.8.1.1.1",
+      "skill": "Veri yorumlama",
+      "scenario": "Bir okulun kardeş okulları 21 Haziran tarihinde farklı ülkelerdeki hava ve gölge gözlemlerini paylaşıyor. Ankara'da gündüz süresi yılın en uzun değerine yaklaşırken, Avustralya'nın Sidney kentinde gündüzler kısalıyor. Öğrenciler Dünya'nın Güneş çevresindeki dolanma hareketini ve dönme ekseninin eğikliğini gösteren bir model kuruyor. Modelde eksenin yıl boyunca aynı doğrultuya yakın yöneldiğini fark ediyorlar.",
+      "image": "/denemeler/8-genel-kazanımlar/q01.svg",
+      "imageAlt": "1. soruyu destekleyen fen bilimleri görseli",
+      "stem": "Bu gözlemlerin temel nedeni aşağıdakilerden hangisidir?",
+      "options": [
+        "Dünya'nın Güneş'e olan uzaklığının her iki yarım kürede aynı mevsimi oluşturması",
+        "Dünya'nın eksen eğikliği nedeniyle yarım kürelerin yıl içinde farklı miktarda ve açıyla ışık alması",
+        "Dünya'nın kendi ekseni etrafındaki dönüş hızının mevsimlere göre değişmesi",
+        "Güneş'in yıl içinde Dünya çevresinde dolanması"
+      ],
+      "answer": 1,
+      "explanation": "Eksen eğikliği ve dolanma hareketi nedeniyle yarım küreler farklı zamanlarda daha dik ışın alır. Bu yüzden mevsimler iki yarım kürede zıttır."
+    },
+    {
+      "no": 2,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "F.8.1.2.1",
+      "skill": "Çıkarım yapma",
+      "scenario": "Bir haber sitesinde aynı gün için iki bilgi yayımlanıyor: “Bursa'da yarın öğleden sonra kuvvetli sağanak bekleniyor.” ve “Karadeniz kıyılarında yıl boyunca nem ve yağış oranı genellikle yüksektir.” Fen öğretmeni, öğrencilerinden ifadelerin zaman aralığını ve anlattığı özelliği inceleyerek hava olayı mı iklim mi olduğunu belirlemelerini istiyor.",
+      "image": "/denemeler/8-genel-kazanımlar/q02.svg",
+      "imageAlt": "2. soruyu destekleyen fen bilimleri görseli",
+      "stem": "İfadelerin doğru sınıflandırılması hangisidir?",
+      "options": [
+        "İlk iklim, ikinci hava olayıdır.",
+        "İkisi de hava olayıdır.",
+        "İlk hava olayı, ikinci iklim bilgisidir.",
+        "İkisi de iklim bilgisidir."
+      ],
+      "answer": 2,
+      "explanation": "Yarın beklenen yağış kısa süreli hava olayıdır. Bir bölgenin uzun yıllar boyunca görülen genel özellikleri iklimi anlatır."
+    },
+    {
+      "no": 3,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "F.8.1.2.2",
+      "skill": "Karşılaştırma",
+      "scenario": "Bir üniversitede çalışan Dr. Ece, bir bölgenin son 40 yıllık sıcaklık ve yağış verilerini inceleyerek kuraklık eğilimlerini araştırıyor. Dr. Can ise uydu görüntüleri ve radar verileriyle ertesi gün beklenen yağışı tahmin ediyor. Öğrenciler iki uzmanın çalışma alanlarını karşılaştırıyor.",
+      "image": "/denemeler/8-genel-kazanımlar/q03.svg",
+      "imageAlt": "3. soruyu destekleyen fen bilimleri görseli",
+      "stem": "Dr. Ece ve Dr. Can'ın çalışma alanları sırasıyla hangisidir?",
+      "options": [
+        "Klimatoloji – meteoroloji",
+        "Meteoroloji – klimatoloji",
+        "Astronomi – jeoloji",
+        "Biyoloji – klimatoloji"
+      ],
+      "answer": 0,
+      "explanation": "Uzun yıllara ait iklim özelliklerini klimatoloji inceler; bu alandaki uzman iklim bilimcidir. Kısa süreli hava olayları meteorolojinin konusudur."
+    },
+    {
+      "no": 4,
+      "unit": "DNA ve Genetik Kod / Kalıtım / Mutasyon / Adaptasyon",
+      "outcome": "F.8.2.1.1",
+      "skill": "Bilimsel değerlendirme",
+      "scenario": "Bir hücre modeli hazırlayan öğrenciler, DNA'nın belirli bölümlerinin kalıtsal özelliklerle ilişkili bilgileri taşıdığını öğreniyor. DNA, proteinlerle birlikte kromozomları oluşturuyor. DNA'nın görev ve yapı bakımından anlamlı bölümlerine gen, DNA'nın yapı birimlerine ise nükleotid adı veriliyor. Öğretmen, kavramları küçükten büyüğe doğru sıralamalarını istiyor.",
+      "image": "/denemeler/8-genel-kazanımlar/q04.svg",
+      "imageAlt": "4. soruyu destekleyen fen bilimleri görseli",
+      "stem": "Kavramların yapı ilişkisini doğru gösteren sıralama hangisidir?",
+      "options": [
+        "Gen – nükleotid – kromozom – DNA",
+        "Nükleotid – gen – DNA – kromozom",
+        "DNA – kromozom – gen – nükleotid",
+        "Kromozom – DNA – nükleotid – gen"
+      ],
+      "answer": 1,
+      "explanation": "Nükleotidler DNA'yı oluşturur; DNA'nın belirli bölümleri genleri oluşturur. DNA proteinlerle birlikte kromozom yapısında bulunur."
+    },
+    {
+      "no": 5,
+      "unit": "DNA ve Genetik Kod / Kalıtım / Mutasyon / Adaptasyon",
+      "outcome": "F.8.2.1.2",
+      "skill": "Veri yorumlama",
+      "scenario": "Bir öğrenci DNA modelinde iki zinciri merdivenin yan kollarına, baz eşleşmelerini ise basamaklarına benzetiyor. Modelde adenin karşısında timin, guanin karşısında sitozin bulunuyor. Öğretmeni, modelin DNA'nın çift zincirli yapısını ve bazların belirli eşleşme kuralını göstermesi gerektiğini söylüyor.",
+      "image": "/denemeler/8-genel-kazanımlar/q05.svg",
+      "imageAlt": "5. soruyu destekleyen fen bilimleri görseli",
+      "stem": "Modelde hangi eşleşme doğru verilmiştir?",
+      "options": [
+        "Adenin – guanin ve timin – sitozin",
+        "Adenin – sitozin ve guanin – timin",
+        "Adenin – timin ve guanin – sitozin",
+        "Adenin – adenin ve guanin – guanin"
+      ],
+      "answer": 2,
+      "explanation": "DNA'da adenin timinle, guanin sitozinle eşleşir. Bu eşleşme çift zincirin tamamlayıcılığını sağlar."
+    },
+    {
+      "no": 6,
+      "unit": "DNA ve Genetik Kod / Kalıtım / Mutasyon / Adaptasyon",
+      "outcome": "F.8.2.1.3",
+      "skill": "Çıkarım yapma",
+      "scenario": "Bir hücre bölünmeden önce DNA miktarının arttığı gözleniyor. Öğrenciler, DNA'nın iki zincirinin birbirinden ayrıldığını ve her bir zincirin karşısına uygun nükleotidlerin geldiğini gösteren bir model hazırlıyor. Süreç sonunda birbirinin aynısı olması beklenen iki DNA molekülü oluşuyor.",
+      "image": "/denemeler/8-genel-kazanımlar/q06.svg",
+      "imageAlt": "6. soruyu destekleyen fen bilimleri görseli",
+      "stem": "Bu süreçte yeni DNA zincirlerinin oluşmasını sağlayan temel kural hangisidir?",
+      "options": [
+        "Bazların rastgele eşleşmesi",
+        "Adenin-timin, guanin-sitozin tamamlayıcılığı",
+        "DNA'nın yalnızca proteinlerden oluşması",
+        "Kromozom sayısının iki katına çıkması"
+      ],
+      "answer": 1,
+      "explanation": "DNA eşlenirken eski zincirler kalıp görevi görür ve tamamlayıcı nükleotidler eklenir. Böylece aynı genetik bilgiyi taşıyan iki DNA molekülü oluşur."
+    },
+    {
+      "no": 7,
+      "unit": "DNA ve Genetik Kod / Kalıtım / Mutasyon / Adaptasyon",
+      "outcome": "F.8.2.2.1",
+      "skill": "Karşılaştırma",
+      "scenario": "Bezelyelerde mor çiçek rengi beyaz çiçek rengine baskındır. Bir öğrenci, mor çiçekli bir bezelyenin genotipinin AA ya da Aa olabileceğini, beyaz çiçekli bezelyenin ise aa olması gerektiğini not ediyor. Öğretmeni, genotipin kalıtsal yapıyı, fenotipin ise gözlenebilen özelliği ifade ettiğini hatırlatıyor.",
+      "image": "/denemeler/8-genel-kazanımlar/q07.svg",
+      "imageAlt": "7. soruyu destekleyen fen bilimleri görseli",
+      "stem": "Aşağıdaki ifadelerden hangisi doğrudur?",
+      "options": [
+        "Fenotip, canlının gen dizilimidir.",
+        "Genotip yalnızca dış görünüşle belirlenir.",
+        "Baskın alel yalnızca homozigot olduğunda etkisini gösterir.",
+        "Mor çiçekli bezelyenin genotipi AA veya Aa olabilir."
+      ],
+      "answer": 3,
+      "explanation": "Mor renk baskın olduğundan AA ve Aa genotiplerinde görülür. Beyaz renk çekinik olduğundan aa genotipinde ortaya çıkar."
+    },
+    {
+      "no": 8,
+      "unit": "DNA ve Genetik Kod / Kalıtım / Mutasyon / Adaptasyon",
+      "outcome": "F.8.2.2.2",
+      "skill": "Bilimsel değerlendirme",
+      "scenario": "Mor çiçek rengi (M), beyaz çiçek rengine (m) baskındır. Heterozigot mor çiçekli iki bezelye çaprazlanıyor: Mm × Mm. Öğrenciler, her ebeveynin üreme hücrelerine M veya m alellerinden birini aktaracağını kullanarak çaprazlama tablosu hazırlıyor.",
+      "image": "/denemeler/8-genel-kazanımlar/q08.svg",
+      "imageAlt": "8. soruyu destekleyen fen bilimleri görseli",
+      "stem": "Oluşabilecek yavruların fenotip oranı hangisidir?",
+      "options": [
+        "3 mor : 1 beyaz",
+        "1 mor : 3 beyaz",
+        "2 mor : 2 beyaz",
+        "4 beyaz : 0 mor"
+      ],
+      "answer": 0,
+      "explanation": "Mm × Mm çaprazlamasında MM, Mm, Mm ve mm genotipleri oluşur. Üçü mor, biri beyaz fenotiplidir."
+    },
+    {
+      "no": 9,
+      "unit": "DNA ve Genetik Kod / Kalıtım / Mutasyon / Adaptasyon",
+      "outcome": "F.8.2.2.3",
+      "skill": "Veri yorumlama",
+      "scenario": "Bir ailede anne ve baba aynı çekinik kalıtsal hastalık alelini taşıyor ancak kendilerinde hastalık görülmüyor. Genetik danışman, her gebelikte çocuğun hastalığı gösterme olasılığının bulunabileceğini, bunun kesin sonuç anlamına gelmediğini açıklıyor. Aile, akraba evliliklerinde bazı kalıtsal hastalıkların görülme riskinin neden artabildiğini soruyor.",
+      "image": "/denemeler/8-genel-kazanımlar/q09.svg",
+      "imageAlt": "9. soruyu destekleyen fen bilimleri görseli",
+      "stem": "Genetik danışmanın açıklamasını en doğru tamamlayan ifade hangisidir?",
+      "options": [
+        "Akraba evliliği bütün çocuklarda kesin hastalık oluşturur.",
+        "Akrabalarda ortak çekinik alellerin bulunma olasılığı artabileceğinden risk yükselebilir; genetik danışmanlık önemlidir.",
+        "Akraba evliliği DNA'daki tüm genleri baskın hâle getirir.",
+        "Kalıtsal hastalıklar yalnızca çevresel koşullarla oluşur."
+      ],
+      "answer": 1,
+      "explanation": "Akraba bireylerin ortak atadan gelen aynı çekinik aleli taşıma olasılığı daha yüksek olabilir. Bu durum bazı çekinik hastalıkların ortaya çıkma riskini artırabilir; kesinlik ifade etmez."
+    },
+    {
+      "no": 10,
+      "unit": "DNA ve Genetik Kod / Kalıtım / Mutasyon / Adaptasyon",
+      "outcome": "F.8.2.3.1",
+      "skill": "Çıkarım yapma",
+      "scenario": "Bir araştırma merkezinde bitki hücreleri incelenirken DNA diziliminde kalıcı bir değişiklik saptanıyor. Değişimin, hücre bölünmesi sırasında oluşan bir hata nedeniyle meydana gelmiş olabileceği düşünülüyor. Araştırmacılar, bu değişimin hücre işlevini ve sonraki hücrelere aktarılma durumunu inceliyor.",
+      "image": "/denemeler/8-genel-kazanımlar/q10.svg",
+      "imageAlt": "10. soruyu destekleyen fen bilimleri görseli",
+      "stem": "Bu olay hangi kavramla açıklanır?",
+      "options": [
+        "Modifikasyon",
+        "Adaptasyon",
+        "Mutasyon",
+        "Aşılama"
+      ],
+      "answer": 2,
+      "explanation": "DNA'nın nükleotid diziliminde meydana gelen kalıcı değişiklik mutasyondur. Etkisi değişikliğin yerine ve türüne bağlıdır."
+    },
+    {
+      "no": 11,
+      "unit": "DNA ve Genetik Kod / Kalıtım / Mutasyon / Adaptasyon",
+      "outcome": "F.8.2.3.2",
+      "skill": "Karşılaştırma",
+      "scenario": "Aynı tür bitkilerden biri güneş ışığı alan ortamda, diğeri az ışık alan ortamda yetiştiriliyor. Bir süre sonra ışık alan bitkinin yaprakları daha koyu yeşil, diğerinin yaprakları daha açık yeşil görünüyor. Bitkiler aynı genetik özelliklere sahip ve farklılık çevre koşuluyla ortaya çıkıyor.",
+      "image": "/denemeler/8-genel-kazanımlar/q11.svg",
+      "imageAlt": "11. soruyu destekleyen fen bilimleri görseli",
+      "stem": "Bu farklılığın modifikasyon olarak değerlendirilmesinin nedeni hangisidir?",
+      "options": [
+        "Çevre etkisiyle fenotipte değişim oluşması, DNA diziliminin değişmesinin zorunlu olmaması",
+        "DNA'da mutlaka kalıcı değişim oluşması",
+        "Değişimin her zaman yavru bireylere aktarılması",
+        "Yeni bir türün ortaya çıkması"
+      ],
+      "answer": 0,
+      "explanation": "Modifikasyon çevre etkisiyle fenotipte oluşan değişimdir. DNA dizilimi değişmez ve genellikle kalıtsal değildir."
+    },
+    {
+      "no": 12,
+      "unit": "DNA ve Genetik Kod / Kalıtım / Mutasyon / Adaptasyon",
+      "outcome": "F.8.2.3.3",
+      "skill": "Bilimsel değerlendirme",
+      "scenario": "Bir laboratuvarda UV ışınlarına maruz kalan bazı mikroorganizmalarda DNA değişiklikleri gözleniyor. Başka bir deneyde, aynı bitki türünün farklı ışık koşullarında yetişen bireylerinin yaprak renklerinin değiştiği ancak DNA dizilimlerinin aynı kaldığı belirleniyor. Öğrenciler iki olayın farkını açıklıyor.",
+      "image": "/denemeler/8-genel-kazanımlar/q12.svg",
+      "imageAlt": "12. soruyu destekleyen fen bilimleri görseli",
+      "stem": "İki olayın doğru karşılaştırması hangisidir?",
+      "options": [
+        "İkisi de mutlaka kalıtsaldır.",
+        "İlk olay modifikasyon, ikinci olay mutasyondur.",
+        "İkisi de yalnızca çevresel görünüş değişimidir.",
+        "İlk olay mutasyon, ikinci olay modifikasyondur."
+      ],
+      "answer": 3,
+      "explanation": "UV ışınları DNA'da değişime yol açmışsa mutasyon; ışık koşullarının DNA'yı değiştirmeden görünüşü etkilemesi modifikasyondur."
+    },
+    {
+      "no": 13,
+      "unit": "DNA ve Genetik Kod / Kalıtım / Mutasyon / Adaptasyon",
+      "outcome": "F.8.2.4.1",
+      "skill": "Veri yorumlama",
+      "scenario": "Kutup bölgelerinde yaşayan bir memeli türünün kalın yağ tabakası ve sık kürkü, soğuk koşullarda ısı kaybını azaltır. Aynı türün daha ılıman bölgelerde yaşayan yakın popülasyonlarında kürk yoğunluğu farklılık gösterebilir. Öğrenciler canlıların yaşadıkları çevreye uyum sağlayan kalıtsal özelliklerini gözlemleyerek not ediyor.",
+      "image": "/denemeler/8-genel-kazanımlar/q13.svg",
+      "imageAlt": "13. soruyu destekleyen fen bilimleri görseli",
+      "stem": "Bu özelliklerin canlıya sağladığı temel yarar hangisidir?",
+      "options": [
+        "Kutup bölgesinde daha fazla güneş ışığı üretmek",
+        "Soğuk ortamda ısı kaybını azaltarak yaşama ve üreme şansını artırmak",
+        "Canlının yaşamı boyunca DNA'sını isteğine göre değiştirmek",
+        "Tüm çevresel değişimleri ortadan kaldırmak"
+      ],
+      "answer": 1,
+      "explanation": "Kalın yağ tabakası ve sık kürk soğukta ısı kaybını azaltan adaptasyon örnekleridir. Adaptasyonlar nesiller boyunca doğal seçilimle yaygınlaşabilir."
+    },
+    {
+      "no": 14,
+      "unit": "Biyoteknoloji",
+      "outcome": "F.8.2.5.1",
+      "skill": "Çıkarım yapma",
+      "scenario": "Bir tarım laboratuvarında kuraklığa dayanıklı bitkiler geliştirmek için iki yöntem karşılaştırılıyor. Birinde dayanıklı bireylerin tohumları seçilip çoğaltılıyor. Diğerinde dayanıklılıkla ilişkili genin bitki hücresine aktarılması araştırılıyor.",
+      "image": "/denemeler/8-genel-kazanımlar/q14.svg",
+      "imageAlt": "14. soruyu destekleyen fen bilimleri görseli",
+      "stem": "İkinci yöntemi genetik mühendisliği yapan işlem hangisidir?",
+      "options": [
+        "Dayanıklı bitkilerin seçilmesi",
+        "Tohumların saklanması",
+        "Genin başka canlıdan alınıp bitkiye aktarılması",
+        "Bitkinin sulama miktarının azaltılması"
+      ],
+      "answer": 2,
+      "explanation": "Gen aktarımı DNA üzerinde doğrudan işlem gerektiren genetik mühendisliği uygulamasıdır."
+    },
+    {
+      "no": 15,
+      "unit": "Biyoteknoloji",
+      "outcome": "F.8.2.5.1",
+      "skill": "Karşılaştırma",
+      "scenario": "Bir hastanede, belirli bir proteini üreten insan geni bakterilere aktarılıyor. Bakteriler kontrollü ortamda çoğaltıldığında bu proteini üretiyor ve protein ilaç üretiminde kullanılmak üzere saflaştırılıyor.",
+      "image": "/denemeler/8-genel-kazanımlar/q15.svg",
+      "imageAlt": "15. soruyu destekleyen fen bilimleri görseli",
+      "stem": "Bu biyoteknolojik çalışmanın insanlık için olası yararı hangisidir?",
+      "options": [
+        "İlaç üretiminde gerekli proteinin kontrollü ve yüksek miktarda elde edilmesi",
+        "Bütün bakterilerin hastalık yapıcı hâle getirilmesi",
+        "İnsan DNA'sının tamamen ortadan kaldırılması",
+        "Her hastalığın tek bir yöntemle tedavi edilmesi"
+      ],
+      "answer": 0,
+      "explanation": "Gen aktarımıyla bakterilerden tıbbi amaçlı proteinler üretilebilir. Bu, biyoteknolojinin sağlık alanındaki uygulamalarındandır."
+    },
+    {
+      "no": 16,
+      "unit": "Biyoteknoloji",
+      "outcome": "F.8.2.5.2",
+      "skill": "Bilimsel değerlendirme",
+      "scenario": "Bir şirket, zararlı böceklere dayanıklı bir tarım bitkisini geniş alanlarda yetiştirmek istiyor. İlk denemelerde böcek ilacı kullanımının azaldığı görülüyor. Çevre uzmanları ise hedef dışı canlıların etkilenmesi, zararlıların direnç kazanması ve biyolojik çeşitliliğin değişmesi olasılıklarının uzun süre izlenmesini öneriyor.",
+      "image": "/denemeler/8-genel-kazanımlar/q16.svg",
+      "imageAlt": "16. soruyu destekleyen fen bilimleri görseli",
+      "stem": "Karar verilirken hangi yaklaşım en bilimsel ve dengelidir?",
+      "options": [
+        "Ürün verimi arttığı için hiçbir risk değerlendirmesi yapmamak",
+        "Teknoloji yeni olduğu için tüm uygulamaları kesin zararlı saymak",
+        "Yalnızca üretici firmanın açıklamasını dikkate almak",
+        "Yararları ve olası riskleri bilimsel verilerle izleyip çevresel denetim yapmak"
+      ],
+      "answer": 3,
+      "explanation": "Biyoteknolojik uygulamalar yararları kadar olası ekolojik etkileri ve uzun dönemli riskleriyle birlikte değerlendirilmelidir."
+    },
+    {
+      "no": 17,
+      "unit": "Biyoteknoloji",
+      "outcome": "F.8.2.5.3",
+      "skill": "Veri yorumlama",
+      "scenario": "Bir araştırma ekibi gelecekte kişiye özel doku üretimi, kirliliği parçalayan mikroorganizmalar ve kuraklığa dayanıklı tarım bitkileri üzerine çalışılabileceğini öngörüyor. Ekip, bu teknolojilerin sağlık, çevre ve tarım sorunlarına katkı sunabileceğini ancak güvenlik ve etik ilkelerin de gözetilmesi gerektiğini belirtiyor.",
+      "image": "/denemeler/8-genel-kazanımlar/q17.svg",
+      "imageAlt": "17. soruyu destekleyen fen bilimleri görseli",
+      "stem": "Bu tahminleri değerlendiren en uygun ifade hangisidir?",
+      "options": [
+        "Biyoteknoloji yalnızca sağlık alanında kullanılabilir.",
+        "Bu uygulamalar farklı alanlarda yarar sağlayabilir; güvenlik, çevresel etki ve etik yönleri incelenmelidir.",
+        "Gelecekteki tüm biyoteknolojik uygulamalar kesinlikle risksiz olacaktır.",
+        "Bilimsel tahminlerde olası sınırlılıklar dikkate alınmamalıdır."
+      ],
+      "answer": 1,
+      "explanation": "Biyoteknoloji sağlık, çevre ve tarımda gelecekte çözümler sunabilir. Uygulamaların yararları ve riskleri birlikte değerlendirilmelidir."
+    },
+    {
+      "no": 18,
+      "unit": "Biyoteknoloji",
+      "outcome": "F.8.2.1.2 / F.8.2.1.3",
+      "skill": "Çıkarım yapma",
+      "scenario": "Bir öğrenci DNA'nın bir bölümünde A-T-G-C dizilimini model üzerinde gösteriyor. Eşlenme sırasında karşı zincir oluşturulurken her bazın tamamlayıcı eşini kullanıyor. Öğrenci, eşlenme sonunda oluşan moleküllerin başlangıçtaki DNA ile aynı genetik bilgiyi taşımasını bekliyor.",
+      "image": "/denemeler/8-genel-kazanımlar/q18.svg",
+      "imageAlt": "18. soruyu destekleyen fen bilimleri görseli",
+      "stem": "Verilen zincirin karşısına sırasıyla hangi bazlar gelir?",
+      "options": [
+        "A-T-G-C",
+        "T-A-C-G",
+        "G-C-A-T",
+        "C-G-T-A"
+      ],
+      "answer": 1,
+      "explanation": "Adenin timinle, timin adeninle; guanin sitozinle, sitozin guaninle eşleşir. Bu nedenle tamamlayıcı sıra T-A-C-G olur."
+    },
+    {
+      "no": 19,
+      "unit": "Biyoteknoloji",
+      "outcome": "F.8.2.2.2",
+      "skill": "Karşılaştırma",
+      "scenario": "Bezelyelerde uzun boy (U), kısa boya (u) baskındır. Heterozigot uzun boylu bir bezelye ile kısa boylu bir bezelye çaprazlanıyor: Uu × uu. Öğrenci, her ebeveynin oluşturabileceği üreme hücrelerini kullanarak olası yavruları belirliyor.",
+      "image": "/denemeler/8-genel-kazanımlar/q19.svg",
+      "imageAlt": "19. soruyu destekleyen fen bilimleri görseli",
+      "stem": "Yavruların fenotip dağılımı nasıl olur?",
+      "options": [
+        "Tamamı uzun boylu",
+        "3 uzun : 1 kısa",
+        "1 uzun : 1 kısa",
+        "Tamamı kısa boylu"
+      ],
+      "answer": 2,
+      "explanation": "Uu ebeveyni U veya u; uu ebeveyni yalnızca u gameti oluşturur. Yavruların yarısı Uu uzun, yarısı uu kısa olur."
+    },
+    {
+      "no": 20,
+      "unit": "Biyoteknoloji",
+      "outcome": "F.8.1.1.1 / F.8.1.2.1",
+      "skill": "Bilimsel değerlendirme",
+      "scenario": "Bir öğrenci 21 Aralık tarihinde Türkiye'de gündüzlerin kısa, Güney Yarım Küre'de ise uzun olduğunu öğreniyor. Aynı gün Dünya'nın Güneş'e uzaklığının mevsimlerin temel nedeni olmadığını, eksen eğikliğinin ışınların geliş açısını ve gündüz süresini değiştirdiğini açıklayan bir model inceliyor.",
+      "image": "/denemeler/8-genel-kazanımlar/q20.svg",
+      "imageAlt": "20. soruyu destekleyen fen bilimleri görseli",
+      "stem": "Bu modelden çıkarılabilecek doğru sonuç hangisidir?",
+      "options": [
+        "Mevsimler yalnızca Dünya'nın Güneş'e yaklaşmasıyla oluşur.",
+        "21 Aralık'ta her iki yarım kürede yaz yaşanır.",
+        "Dünya'nın eksen eğikliği mevsimlerin oluşumunda etkilidir ve yarım kürelerde mevsimler zıttır.",
+        "Hava olayları ve iklim aynı zaman aralığını açıklar."
+      ],
+      "answer": 2,
+      "explanation": "Eksen eğikliği ve dolanma nedeniyle 21 Aralık'ta Kuzey Yarım Küre kış, Güney Yarım Küre yaz yaşar. Mevsimlerin temel nedeni uzaklık değildir."
+    }
+  ]
+}
