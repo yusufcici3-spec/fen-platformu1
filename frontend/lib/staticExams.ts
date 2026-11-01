@@ -28,6 +28,7 @@ export interface StaticExam {
   questions: StaticExamQuestion[];
 }
 
+// Hazır yeni nesil denemeler: kapsamlı 1. ve 2. ünite denemesi de bu listede yayınlanır.
 export const STATIC_EXAMS: StaticExam[] = [
   exam8 as unknown as StaticExam,
   examMevsimDna as unknown as StaticExam,
