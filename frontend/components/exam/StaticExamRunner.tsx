@@ -153,7 +153,7 @@ export function StaticExamRunner({ exam }: { exam: StaticExam }) {
                 <span className="rounded-full bg-beaker/10 px-2.5 py-1 font-semibold text-beaker-dark dark:text-beaker-light">{q.unit}</span>
                 <span className="font-mono text-lab-inkMuted dark:text-lab-paper/50">{q.outcome}</span>
               </div>
-              <p className="mt-3 text-sm leading-relaxed">{q.scenario}</p>
+              <p className="mt-3 whitespace-pre-line text-sm leading-relaxed">{q.scenario}</p>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={q.image + (q.image.includes("?") ? "&" : "?") + "v=20261102"} alt={q.imageAlt} loading="lazy" decoding="async" className="mx-auto my-4 h-auto w-full max-w-xl rounded-xl" />
               <p className="font-semibold">{q.stem}</p>
