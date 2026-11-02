@@ -1,5 +1,5 @@
 /// <reference types="next" />
 /// <reference types="next/image-types/global" />
 
-// NOT: Bu dosya normalde "next dev" veya "next build" ilk çalıştırıldığında
-// otomatik olarak oluşturulur/güncellenir. Elle düzenlemeyin.
+// NOTE: This file should not be edited
+// see https://nextjs.org/docs/basic-features/typescript for more information.

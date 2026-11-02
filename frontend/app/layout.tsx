@@ -5,6 +5,7 @@ import { Providers } from "./providers";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { AIAssistantWidget } from "@/components/assistant/AIAssistantWidget";
+import { Analytics } from '@vercel/analytics/next';
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -52,6 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Footer />
           <AIAssistantWidget />
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
