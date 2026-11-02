@@ -155,7 +155,7 @@ export function StaticExamRunner({ exam }: { exam: StaticExam }) {
               </div>
               <p className="mt-3 text-sm leading-relaxed">{q.scenario}</p>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={q.image} alt={q.imageAlt} loading="lazy" className="mx-auto my-4 h-auto w-full max-w-xl rounded-xl" />
+              <img src={q.image + (q.image.includes("?") ? "&" : "?") + "v=20261102"} alt={q.imageAlt} loading="lazy" decoding="async" className="mx-auto my-4 h-auto w-full max-w-xl rounded-xl" />
               <p className="font-semibold">{q.stem}</p>
               <div className="mt-3 space-y-2" role="radiogroup" aria-label={`Soru ${q.no} seçenekleri`}>
                 {q.options.map((opt, i) => {
