@@ -603,6 +603,287 @@
         }
       ],
       "links": []
+    },
+    {
+      "slug": "uzay-cagi-yeni-nesil-soru-coz",
+      "title": "Soru Çöz: Uzay Çağı (20 Yeni Nesil Soru)",
+      "summary": "Uzay teknolojileri, gözlem araçları, uzay çalışmalarının olası etkileri, yıldızların yaşamı, galaksi ve evren konularını senaryolu sorularla pekiştirelim.",
+      "outcome": {
+        "code": "FB.7.1.1–FB.7.1.5",
+        "description": "Uzay Çağı ünitesindeki öğrenme çıktılarını senaryolar üzerinden ilişkilendirir, verileri yorumlar ve bilimsel çıkarım yapar.",
+        "details": [
+          "Uzay araştırmaları teknolojilerini görevlerine göre karşılaştırır.",
+          "Gözlem araçları ve gözlemevlerinin özelliklerini değerlendirir.",
+          "Uzay araştırmalarının oluşturabileceği sorunlara çözüm önerileri geliştirir.",
+          "Yıldızların yaşam evrelerini açıklar.",
+          "Yıldız, galaksi ve evren kavramları arasındaki ilişkiyi kurar."
+        ]
+      },
+      "skills": [
+        "Senaryo analizi",
+        "Veri yorumlama",
+        "Karşılaştırma",
+        "Bilimsel çıkarım",
+        "Problem çözme",
+        "Kavramsal ilişkilendirme"
+      ],
+      "sections": [
+        {
+          "type": "EXPLANATION",
+          "title": "📝 Test hakkında",
+          "bodyHtml": "<p>Bu bölümde Uzay Çağı ünitesinin tüm ana başlıklarını kapsayan <strong>20 özgün, senaryolu ve dört seçenekli</strong> soru bulunmaktadır. Her soruyu çözerken verilen durumu, kanıtları ve görev tanımlarını birlikte değerlendir. Test sonunda cevaplarını ve açıklamaları inceleyebilirsin.</p><p><strong>Kapsam:</strong> Uzay teknolojileri, gözlem araçları ve gözlemevleri, uzay araştırmalarının olası sorunları, yıldızların yaşamı, yıldız-galaksi-evren ilişkisi.</p>"
+        }
+      ],
+      "glossary": [],
+      "activity": {
+        "title": "Kendi çözüm stratejini belirle",
+        "materials": "Test ekranı ve not kâğıdı",
+        "steps": "Her senaryoda önce verilen bilgileri belirle, ardından sorunun istediği çıkarımı yap. Yanlış cevaplarını açıklamalarıyla inceleyerek ilgili konuya geri dön.",
+        "safetyNotes": "Bu bölüm dijital ölçme ve değerlendirme etkinliğidir; ek malzeme gerektirmez."
+      },
+      "quiz": [
+        {
+          "body": "Bir okul, uzay araştırmalarında kullanılan araçları tanıtan bir sergi hazırlıyor. İlk bölümde roketlerin yükleri uzaya taşıdığı, ikinci bölümde yapay uyduların Dünya çevresindeki yörüngelerinde haberleşme ve gözlem yaptığı, üçüncü bölümde uzay sondalarının uzak gök cisimlerinden veri topladığı anlatılıyor. Sergi ekibi, araçların görevlerini birbirine karıştırmadan sınıflandırmak istiyor. Buna göre aşağıdaki eşleştirmelerden hangisi doğrudur?",
+          "options": [
+            "Roket – Dünya'nın yörüngesinde sürekli haberleşme yapmak",
+            "Yapay uydu – uzay araçlarını fırlatmak",
+            "Uzay sondası – gök cisimleri hakkında uzaktan veri toplamak",
+            "Uzay istasyonu – yalnızca gökyüzünün fotoğrafını çekmek"
+          ],
+          "answer": 2,
+          "explanation": "Uzay sondaları genellikle insansız olarak uzay ve gök cisimleri hakkında veri toplar. Roketler taşıma/fırlatma, uydular yörüngede görev yapma, istasyonlar ise insanlı araştırma amacı taşır.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bir haberleşme şirketi, kıtalar arasında televizyon ve veri aktarımını kesintisiz sağlamak için bir uzay aracı tasarlıyor. Projede aracın Dünya çevresinde belirli bir yörüngede dolanması ve sinyalleri yer istasyonları arasında iletmesi planlanıyor. Bu görev için hangi teknoloji öncelikle seçilmelidir?",
+          "options": [
+            "Gezgin araç",
+            "Haberleşme uydusu",
+            "Uzay teleskobu",
+            "Uzay sondası"
+          ],
+          "answer": 1,
+          "explanation": "Haberleşme uyduları Dünya çevresindeki yörüngelerinde sinyalleri ileterek iletişime katkı sağlar.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Bir araştırma ekibi Mars'ın yüzeyindeki kayaçları incelemek istiyor. Araçta astronot bulunmayacak; araç yüzeye indikten sonra hareket ederek fotoğraf ve ölçüm verileri gönderecek. Ekip, uzay aracı seçerken görev amacını temel alıyor. Bu görev için en uygun araç hangisidir?",
+          "options": [
+            "Uzay istasyonu",
+            "Meteoroloji uydusu",
+            "Gezgin araç",
+            "Roket"
+          ],
+          "answer": 2,
+          "explanation": "Gezgin araçlar başka gök cisimlerinin yüzeyinde hareket ederek görüntü ve ölçüm toplar.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Öğrenciler, Uluslararası Uzay İstasyonu ile uzay sondasını karşılaştıran bir tablo hazırlıyor. Tabloda bir aracın astronotların belirli süre yaşayıp deney yapmasına olanak sağladığı, diğerinin ise insan taşımadan uzaktan veri topladığı belirtiliyor. Tabloda sırasıyla hangi araçlar anlatılmıştır?",
+          "options": [
+            "Uzay istasyonu – uzay sondası",
+            "Uzay sondası – uzay istasyonu",
+            "Roket – yapay uydu",
+            "Teleskop – gezgin araç"
+          ],
+          "answer": 0,
+          "explanation": "Uzay istasyonları astronotların yaşayıp deney yapabildiği yapılardır; sondalar insansız veri toplar.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bir öğrenci, okul gözlemevinde Ay'ı ve gezegenleri daha ayrıntılı incelemek istiyor. Öğretmeni, gözlem aracının gök cisimlerinden gelen ışığı toplama ve ayrıntıları incelemeye yardımcı olma özelliğine dikkat çekiyor. Öğrencinin kullanması gereken araç hangisidir?",
+          "options": [
+            "Roket",
+            "Teleskop",
+            "Haberleşme uydusu",
+            "Uzay istasyonu"
+          ],
+          "answer": 1,
+          "explanation": "Teleskoplar uzak gök cisimlerinden gelen ışığı veya diğer elektromanyetik ışınımları incelemeyi sağlar.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "İki okul aynı gök cismini gözlemlemek için farklı yerler seçiyor. A okulunun gözlem alanı şehir merkezinde, yoğun aydınlatmaların yanında ve sık bulutlu bir bölgede. B okulunun alanı ise şehir ışıklarından uzakta, yüksek rakımlı ve çoğunlukla açık havaya sahip. Öğrenciler hangi alanın yer tabanlı gözlem için daha uygun olduğunu tartışıyor. En doğru çıkarım hangisidir?",
+          "options": [
+            "A alanı uygundur; şehir ışıkları yıldızları daha görünür yapar.",
+            "B alanı uygundur; ışık kirliliği ve atmosfer etkileri daha az olabilir.",
+            "İki alan da eşit uygundur; gözlem koşulları önemli değildir.",
+            "A alanı uygundur; bulutlar teleskop görüntüsünü netleştirir."
+          ],
+          "answer": 1,
+          "explanation": "Az ışık kirliliği, elverişli atmosfer ve açık gökyüzü yer tabanlı gözlemleri kolaylaştırır.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bir bilim insanı, Dünya atmosferinin bazı ışınımları soğurması ve görüntülerde bulanıklık oluşturması nedeniyle uzay teleskobu kullanmayı öneriyor. Öğrenciler uzay teleskobunun yer tabanlı teleskoba göre avantajını açıklıyor. Hangi açıklama bilimsel olarak uygundur?",
+          "options": [
+            "Uzay teleskobu Dünya'nın yer çekiminden tamamen etkilenmez.",
+            "Atmosferin dışında bulunduğu için atmosfer kaynaklı bazı engellerden etkilenmeden gözlem yapabilir.",
+            "Uzay teleskobu yalnızca gündüzleri çalışır.",
+            "Uzay teleskobu gök cisimlerine fiziksel olarak dokunarak ölçüm yapar."
+          ],
+          "answer": 1,
+          "explanation": "Uzay teleskopları atmosferin dışında gözlem yaptığı için atmosferin soğurma ve bulanıklaştırma gibi etkilerinden daha az etkilenir.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bir tasarım ekibi, okul için gözlemevi maketi hazırlıyor. İlk modelde teleskop, kubbe ve gözlem açıklığı bulunuyor. Ancak ekip, gözlemevinin şehir merkezinde ve parlak reklam panolarının yanında gösterildiğini fark ediyor. Öğretmen, modelin bilimsel açıdan geliştirilmesini istiyor. Hangi değişiklik modelin amacına daha uygundur?",
+          "options": [
+            "Gözlemevini yoğun ışıklı merkeze taşımak",
+            "Işık kirliliğinin az olduğu, açık ve uygun atmosfer koşullarına sahip bir bölgeyi modelde göstermek",
+            "Teleskopu kaldırıp yerine roket eklemek",
+            "Gözlem açıklığını tamamen kapatmak"
+          ],
+          "answer": 1,
+          "explanation": "Gözlemevleri az ışık kirliliği ve elverişli atmosfer koşullarına sahip yerlerde daha verimli gözlem yapar. Model yeni kanıtlarla geliştirilebilir.",
+          "difficulty": "HARD"
+        },
+        {
+          "body": "Bir kentte yeni bir spor kompleksi yapılırken projektörler gece boyunca gökyüzüne doğru yönlendiriliyor. Yakındaki gözlemevinde çalışan bilim insanları sönük yıldızları gözlemlemenin zorlaştığını bildiriyor. Belediye, hem güvenliği korumak hem ışık kirliliğini azaltmak istiyor. En uygun çözüm hangisidir?",
+          "options": [
+            "Projektör sayısını artırmak",
+            "Işıkları gökyüzüne doğru daha güçlü yönlendirmek",
+            "Aydınlatmaları yalnızca gerekli alanı aydınlatacak ve aşağı yönlenecek şekilde düzenlemek",
+            "Tüm gözlem araçlarını gündüz kullanmak"
+          ],
+          "answer": 2,
+          "explanation": "Işığın gerekli alana yönlendirilmesi ve gereksiz aydınlatmanın azaltılması ışık kirliliğini düşürür.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bir uzay araştırma merkezinin bütçesi sınırlıdır. Ekip, uzun süreli insanlı deneyler yapmak, astronotların uzayda yaşamasını sağlamak ve aynı zamanda Mars yüzeyinden kayaç örneklerine ait veriler toplamak istiyor. İki farklı görevi tek araçla yürütmenin uygun olmadığını fark ediyor. Hangi plan görevlerin özelliklerine uygundur?",
+          "options": [
+            "İnsanlı deneyler için uzay istasyonu, Mars yüzeyi incelemesi için gezgin araç kullanmak",
+            "İki görev için de yalnızca roket kullanmak",
+            "İnsanlı deneyler için uzay sondası, Mars yüzeyi için haberleşme uydusu kullanmak",
+            "İki görev için de yer tabanlı teleskop kullanmak"
+          ],
+          "answer": 0,
+          "explanation": "Uzay istasyonu insanlı deneyler için; gezgin araç ise başka gök cisimlerinin yüzeyinde araştırma için uygundur.",
+          "difficulty": "HARD"
+        },
+        {
+          "body": "Bir yıldızın yaşamını inceleyen ekip, yıldızın başlangıçta gaz ve toz bulutundan oluştuğunu, zamanla merkezinde enerji üretiminin başladığını belirtiyor. Öğrenciler bu sürecin ilk evrelerini model üzerinde sıralıyor. Yıldız oluşumunun başlangıcında rol alan yapı hangisidir?",
+          "options": [
+            "Bulutsu (nebula)",
+            "Kara delik",
+            "Gezegen",
+            "Takımyıldız"
+          ],
+          "answer": 0,
+          "explanation": "Yıldızlar, uzaydaki gaz ve toz bulutlarının kütle çekimiyle yoğunlaşıp büzülmesi sonucunda oluşur. Bu bulutlara bulutsu denir.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bir yıldızın yaşam döngüsüyle ilgili gözlem verilerinde, yıldızın merkezindeki hidrojenin zamanla azaldığı ve dış katmanlarının genişlediği belirtiliyor. Bilim insanları yıldızın yaşamının ilerleyen evrelerinden birine geçtiğini düşünüyor. Güneş benzeri bir yıldız için bu evre hangisidir?",
+          "options": [
+            "Bulutsu",
+            "Kırmızı dev",
+            "Nötron yıldızı",
+            "Ana kol öncesi gaz bulutu"
+          ],
+          "answer": 1,
+          "explanation": "Güneş benzeri yıldızlar çekirdeklerindeki hidrojen azaldığında dış katmanları genişleyerek kırmızı dev evresine geçebilir.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bir bilim dergisinde, kütlesi Güneş'ten çok daha büyük olan yıldızların yaşamlarının sonunda çok güçlü olaylar yaşayabildiği anlatılıyor. Öğrenciler, büyük kütleli yıldızların son evrelerini küçük ve orta kütleli yıldızlarla karşılaştırıyor. Büyük kütleli bir yıldızın yaşamının sonunda gerçekleşebilecek olay hangisidir?",
+          "options": [
+            "Yalnızca Dünya'ya dönüşmesi",
+            "Süpernova patlaması ve geride nötron yıldızı ya da kara delik kalabilmesi",
+            "Bir gezegene dönüşmesi",
+            "Hiç değişmeden sonsuza kadar aynı kalması"
+          ],
+          "answer": 1,
+          "explanation": "Büyük kütleli yıldızlar yaşamlarının sonunda süpernova patlaması yaşayabilir; geride nötron yıldızı veya kara delik kalabilir.",
+          "difficulty": "HARD"
+        },
+        {
+          "body": "Bir öğrenci, Güneş'in de bir yıldız olduğunu ve yıldızların enerji ürettiğini öğreniyor. Güneş'in geleceğiyle ilgili bir modelde, Güneş'in kırmızı dev evresinden sonra dış katmanlarını uzaya bırakacağı ve geride yoğun bir çekirdek kalacağı gösteriliyor. Bu çekirdeğin adı hangisidir?",
+          "options": [
+            "Beyaz cüce",
+            "Süpernova",
+            "Bulutsu",
+            "Galaksi"
+          ],
+          "answer": 0,
+          "explanation": "Güneş gibi düşük ve orta kütleli yıldızlar dış katmanlarını bıraktıktan sonra beyaz cüce hâline gelebilir.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bir gözlemevi, farklı yıldızların renklerini ve parlaklıklarını karşılaştırıyor. Öğrenciler, yıldızların renklerinin yüzey sıcaklıkları hakkında bilgi verdiğini öğreniyor. Buna göre mavi-beyaz görünen bir yıldız için hangi yorum yapılabilir?",
+          "options": [
+            "Kırmızı yıldızlardan genellikle daha sıcak olabilir.",
+            "Kesinlikle daha küçük ve daha soğuktur.",
+            "Yıldız değildir, gezegendir.",
+            "Rengi yalnızca Dünya atmosferinden kaynaklanır."
+          ],
+          "answer": 0,
+          "explanation": "Yıldızların rengi yüzey sıcaklığıyla ilişkilidir; mavi tonlu yıldızlar genellikle kırmızı tonlu yıldızlardan daha sıcaktır.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bir uzay ajansı, Samanyolu'nun şeklini tanıtan bir eğitim modeli hazırlıyor. Modelde milyarlarca yıldız, gaz ve toz bulutları bir arada gösteriliyor. Güneş Sistemi'nin de bu büyük yapının bir parçası olduğu belirtiliyor. Bu yapının adı nedir?",
+          "options": [
+            "Takımyıldız",
+            "Galaksi",
+            "Gezegen sistemi",
+            "Bulutsu"
+          ],
+          "answer": 1,
+          "explanation": "Galaksiler; yıldızlar, gaz, toz ve diğer gök cisimlerinden oluşan büyük sistemlerdir. Güneş Sistemi Samanyolu Galaksisi'nde bulunur.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Bir öğrenci gece gökyüzünde kepçeye benzeyen bir yıldız deseni görüyor. Öğretmeni, bu deseni oluşturan yıldızların Dünya'dan bakıldığında aynı bölgede görünse de gerçekte birbirlerinden çok farklı uzaklıklarda olabileceğini söylüyor. Öğretmenin sözünü ettiği kavram hangisidir?",
+          "options": [
+            "Galaksi",
+            "Takımyıldız",
+            "Güneş Sistemi",
+            "Evren"
+          ],
+          "answer": 1,
+          "explanation": "Takımyıldızlar, Dünya'dan bakıldığında belirli şekiller oluşturuyormuş gibi görünen yıldız desenleridir; yıldızlar gerçekte farklı uzaklıklarda olabilir.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bir bilim şenliğinde öğrenciler, evrendeki yapıların küçükten büyüğe doğru sıralandığı bir model hazırlıyor. Modelde Dünya, Güneş Sistemi, Samanyolu ve evren kavramları bulunuyor. Aşağıdaki sıralamalardan hangisi küçükten büyüğe doğru doğrudur?",
+          "options": [
+            "Evren – Samanyolu – Güneş Sistemi – Dünya",
+            "Dünya – Güneş Sistemi – Samanyolu – Evren",
+            "Samanyolu – Dünya – Evren – Güneş Sistemi",
+            "Güneş Sistemi – Dünya – Samanyolu – Evren"
+          ],
+          "answer": 1,
+          "explanation": "Dünya, Güneş Sistemi'nin; Güneş Sistemi, Samanyolu'nun; Samanyolu ise evrenin bir parçasıdır.",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "body": "Bir haber programında, farklı galaksilerde çok sayıda yıldız sistemi bulunduğu ve gözlemlenebilen evrenin çok büyük olduğu anlatılıyor. Sunucu, evrenin yalnızca Samanyolu'ndan ibaret olmadığını vurguluyor. Bu bilgiye göre hangi ifade doğrudur?",
+          "options": [
+            "Samanyolu evrenin tamamıdır.",
+            "Evren yalnızca Güneş Sistemi'nden oluşur.",
+            "Samanyolu, evrendeki galaksilerden yalnızca biridir.",
+            "Galaksiler yalnızca gezegenlerden oluşur."
+          ],
+          "answer": 2,
+          "explanation": "Samanyolu, evrende bulunan çok sayıdaki galaksiden biridir; evren bundan çok daha geniştir.",
+          "difficulty": "EASY"
+        },
+        {
+          "body": "Bir okul kulübü, yıldız, galaksi ve evren kavramlarını karıştıran bir bilgi panosunu düzeltmek istiyor. Panoda yıldızların tek başına galaksi olduğu, galaksilerin yalnızca gezegenlerden oluştuğu yazıyor. Öğrenciler hangi düzeltmeyi yapmalıdır?",
+          "options": [
+            "Yıldızlar kendi ışığını üreten gök cisimleridir; galaksiler çok sayıda yıldız ve gaz-toz bulutlarını içerir; evren tüm bu yapıları kapsar.",
+            "Galaksiler tek bir yıldızdan oluşur; evren yalnızca galaksidir.",
+            "Yıldızlar gezegenlerin uydusudur; galaksiler atmosfer tabakasıdır.",
+            "Evren yalnızca Dünya'nın çevresindeki uzay boşluğudur."
+          ],
+          "answer": 0,
+          "explanation": "Yıldızlar kendi enerjisini üreten gök cisimleridir. Galaksiler çok sayıda yıldız ve gaz-toz bulutları içerir; evren bütün bu yapıları kapsar.",
+          "difficulty": "HARD"
+        }
+      ],
+      "links": []
     }
   ]
 }
