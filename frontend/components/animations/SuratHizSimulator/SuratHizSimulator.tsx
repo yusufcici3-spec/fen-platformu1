@@ -19,6 +19,7 @@ export default function SuratHizSimulator(){
  const signedPosition=scenario==="return"?(progress<=0.5?progress*200:200-progress*200):data.displacement*progress;
  const carX=scenario==="return"?(progress<=0.5?70+progress*1000:70+(1-(progress-0.5)*2)*500):(scenario==="east"?70+progress*500:570-progress*500);
  const speed=data.distance/data.duration;
+ const velocity=data.displacement/data.duration;
  const currentSpeed=elapsed>0?travelled/elapsed:speed;
  const currentVelocity=elapsed>0?signedPosition/elapsed:velocity;
  useEffect(()=>{
