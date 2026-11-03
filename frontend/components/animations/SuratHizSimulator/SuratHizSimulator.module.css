@@ -21,3 +21,13 @@
 :global(.dark) .takeaway strong{color:#f4ce7a}
 @media(max-width:720px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.top{flex-direction:column}.live{align-self:flex-start}}
 @media(max-width:430px){.simulator{padding:13px;border-radius:17px}.scenarios button{flex:1;padding:9px 7px;font-size:10px}.metrics article{padding:10px}.metrics article strong{font-size:16px}.definitions{grid-template-columns:1fr}.scene{padding:10px}}
+
+.speedControl{margin:12px 0;padding:13px 15px;border:1px solid #dce6f2;border-radius:14px;background:#edf5ff}
+.speedControl label{display:flex;justify-content:space-between;gap:10px;color:#344d6d;font-size:13px;font-weight:750}
+.speedControl label strong{color:#1d75b6;font-size:15px}
+.speedControl input{display:block;width:100%;margin:12px 0 7px;accent-color:#258cbd}
+.speedControl div{display:flex;justify-content:space-between;color:#7b8da6;font-size:10px}
+:global(.dark) .speedControl{border-color:#354963;background:#1d2d45}
+:global(.dark) .speedControl label{color:#e4edfa}
+:global(.dark) .speedControl label strong{color:#8dc9ff}
+:global(.dark) .speedControl div{color:#aab9ce}
