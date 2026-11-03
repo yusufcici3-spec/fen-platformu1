@@ -3,7 +3,7 @@ import SolarSystemSimulator from "@/components/animations/SolarSystemSimulator/S
 import styles from "./page.module.css";
 
 export const metadata = {
-  title: "6. Sınıf Animasyonları | Gezegenler ve Tutulmalar",
+  title: "6. Sınıf Animasyonları | Fen Bilimleri",
   description:
     "Gezegenleri yakından incele; Güneş ve Ay tutulmalarını etkileşimli simülatörle keşfet.",
 };
@@ -29,6 +29,7 @@ export default function SixthGradePlanetAnimationsPage() {
             <span><i className={styles.miniDot} /> Kontroller sende · dokunmatik uyumlu</span>
             <a href="#tutulma-laboratuvari">Tutulma simülatörüne git ↓</a>
             <Link href="/animasyonlar/6/bileske-kuvvet">Bileşke kuvvet simülatörü ↗</Link>
+            <Link href="/animasyonlar/6/surat-ve-hiz">Sürat ve hız animasyonu ↗</Link>
             <Link href="/animasyonlar/6/ip-cekme">İp çekme etkinliği ↗</Link>
             <Link href="/animasyonlar/6/fen-futbolu6">Fen Futbolu 6 oyunu ⚽</Link>
           </div>
