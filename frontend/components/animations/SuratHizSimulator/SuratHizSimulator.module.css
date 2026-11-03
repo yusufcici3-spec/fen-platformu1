@@ -1,0 +1,23 @@
+.simulator{margin:22px 0;padding:clamp(16px,3vw,28px);border:1px solid #dce6f2;border-radius:24px;background:linear-gradient(145deg,#fff,#f4f8ff);color:#1c2d48;box-shadow:0 14px 40px rgba(30,55,90,.08)}
+.top{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}.kicker{font-size:10px;font-weight:900;letter-spacing:.15em;color:#4c83aa}.top h2{margin:7px 0 0;font-size:clamp(23px,3vw,31px);font-weight:900;letter-spacing:-.04em}.top p{margin:7px 0 0;color:#6b7b93;font-size:13px;line-height:1.6}.live{flex-shrink:0;padding:7px 10px;border-radius:999px;background:#e4f8f1;color:#218466;font-size:10px;font-weight:800}
+.scenarios{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 12px}.scenarios button,.controls button{padding:10px 14px;border:1px solid #d8e2ef;border-radius:12px;background:#fff;color:#50627d;font-size:12px;font-weight:800;cursor:pointer}.scenarios button.active{border-color:#347fbd;background:#eaf4ff;color:#225f97}
+.scene{padding:13px 14px 15px;border-radius:18px;background:#101e34;color:white}.sceneLabel{display:flex;justify-content:space-between;padding:0 7%;color:#a9bed9;font-size:10px;font-weight:900;letter-spacing:.12em}.scene svg{display:block;width:100%;height:auto;max-height:220px}.progressRow{display:flex;align-items:center;gap:12px;color:#c5d4e7;font-size:11px}.progressRow input{flex:1;accent-color:#4dd0ad;min-width:0}
+.controls{display:flex;flex-wrap:wrap;gap:8px;margin-top:13px}.controls button{border-color:#435675;background:#1d304c;color:#e5eefb}.controls .primary{border-color:#43b99a;background:#2a9d80;color:white}
+.scenarioText{margin:13px 2px;color:#536680;font-size:13px;line-height:1.6}.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:14px}.metrics article{min-width:0;padding:13px;border:1px solid #e0e8f2;border-radius:14px;background:#fff}.metrics article span,.metrics article small{display:block;color:#74839a;font-size:10px}.metrics article strong{display:block;margin:8px 0 5px;color:#243d5d;font-size:clamp(16px,2vw,22px);overflow-wrap:anywhere}.metrics .speedCard{border-color:#c7e6dc;background:#f2fbf7}.metrics .speedCard strong{color:#168363}.metrics .velocityCard{border-color:#cbdcf5;background:#f3f7ff}.metrics .velocityCard strong{color:#346db0}
+.takeaway{margin-top:14px;padding:14px 16px;border-left:4px solid #e6ad49;border-radius:10px;background:#fff8e9}.takeaway strong{color:#815c17;font-size:13px}.takeaway p{margin:6px 0 0;color:#6f5d3c;font-size:12px;line-height:1.65}
+.definitions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:13px}.definitions div{padding:13px;border:1px solid #e0e8f2;border-radius:13px;background:#fff}.definitions b{color:#3675ad;font-size:12px;letter-spacing:.1em}.definitions p{margin:5px 0 0;color:#65758e;font-size:12px;line-height:1.55}.note{margin:12px 0 0;color:#8995a7;font-size:10px;line-height:1.5}
+:global(.dark) .simulator{border-color:#2d405d;background:linear-gradient(145deg,#18263d,#142137);color:#eff5ff}
+:global(.dark) .top p,:global(.dark) .scenarioText{color:#aab9ce}
+:global(.dark) .metrics article{border-color:#354963;background:#1d2d45}
+:global(.dark) .metrics article strong{color:#edf4ff}
+:global(.dark) .metrics .speedCard{background:#17372f;border-color:#28634f}
+:global(.dark) .metrics .speedCard strong{color:#75dfba}
+:global(.dark) .metrics .velocityCard{background:#1c304d;border-color:#3b5e89}
+:global(.dark) .metrics .velocityCard strong{color:#a8caff}
+:global(.dark) .definitions div{border-color:#354963;background:#1d2d45}
+:global(.dark) .definitions p,:global(.dark) .metrics article span,:global(.dark) .metrics article small,:global(.dark) .note{color:#aab9ce}
+:global(.dark) .takeaway{border-color:#c18b32;background:#382f20}
+:global(.dark) .takeaway p{color:#ead7ae}
+:global(.dark) .takeaway strong{color:#f4ce7a}
+@media(max-width:720px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.top{flex-direction:column}.live{align-self:flex-start}}
+@media(max-width:430px){.simulator{padding:13px;border-radius:17px}.scenarios button{flex:1;padding:9px 7px;font-size:10px}.metrics article{padding:10px}.metrics article strong{font-size:16px}.definitions{grid-template-columns:1fr}.scene{padding:10px}}
