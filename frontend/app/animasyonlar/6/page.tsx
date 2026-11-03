@@ -35,6 +35,17 @@ export default function SixthGradePlanetAnimationsPage() {
           </div>
         </header>
 
+        <section className="mb-7 rounded-2xl border border-sky-200 bg-gradient-to-r from-sky-50 to-white p-5 shadow-sm dark:border-sky-900 dark:from-slate-800 dark:to-slate-900">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <span className="text-xs font-extrabold tracking-wider text-sky-700 dark:text-sky-300">6. SINIF · HAREKET VE ÖLÇME</span>
+              <h2 className="mt-1 text-xl font-bold text-slate-900 dark:text-white">🚗 Sürat ve Hız: Aracı Kendin Hareket Ettir</h2>
+              <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">Aracın süratini ayarla; doğuya, batıya gitmesini veya geri dönmesini sağla. Alınan yol ve yer değiştirme farkını keşfet.</p>
+            </div>
+            <Link href="/animasyonlar/6/surat-ve-hiz" className="inline-flex shrink-0 items-center justify-center rounded-xl bg-sky-700 px-5 py-3 text-sm font-bold text-white transition hover:bg-sky-800">Animasyonu Aç →</Link>
+          </div>
+        </section>
+
         <SolarSystemSimulator />
 
         <aside className={styles.lessonNote} aria-label="Ölçek bilgisi">
