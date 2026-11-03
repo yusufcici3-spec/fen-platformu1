@@ -8,13 +8,6 @@ export const metadata = {
 
 const videos = [
   {
-    id: "6-sinif-1-unite",
-    grade: "6. SINIF · 1. ÜNİTE",
-    title: "Güneş Sistemi ve Tutulmalar",
-    description: "Gezegenler, Güneş sistemi, Güneş ve Ay tutulmalarını konu anlatımı ve soru çözümüyle tekrar et.",
-    youtubeId: "_8QGzJQYVfg",
-  },
-  {
     id: "biyoteknoloji",
     grade: "8. SINIF",
     title: "Biyoteknoloji nedir?",
@@ -53,22 +46,10 @@ export default function VideosPage() {
         <div className={styles.grid}>
           {videos.map((v) => (
             <article key={v.id} className={styles.card}>
-              {v.youtubeId ? (
-                <iframe
-                  className={styles.video}
-                  src={`https://www.youtube-nocookie.com/embed/${v.youtubeId}`}
-                  title={v.title}
-                  loading="lazy"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                />
-              ) : (
-                <video className={styles.video} controls preload="none" poster={v.poster} playsInline>
-                  <source src={v.src} type="video/mp4" />
-                  Tarayıcın video oynatmayı desteklemiyor.
-                </video>
-              )}
+              <video className={styles.video} controls preload="none" poster={v.poster} playsInline>
+                <source src={v.src} type="video/mp4" />
+                Tarayıcın video oynatmayı desteklemiyor.
+              </video>
               <div className={styles.body}>
                 <span className={styles.grade}>{v.grade}</span>
                 <h2>{v.title}</h2>
