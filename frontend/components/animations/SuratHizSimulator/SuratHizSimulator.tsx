@@ -19,12 +19,14 @@ export default function SuratHizSimulator(){
  const signedPosition=scenario==="return"?(progress<=0.5?progress*200:200-progress*200):data.displacement*progress;
  const carX=scenario==="return"?(progress<=0.5?70+progress*1000:70+(1-(progress-0.5)*2)*500):(scenario==="east"?70+progress*500:570-progress*500);
  const speed=data.distance/data.duration;
- const velocity=data.displacement/data.duration;
+ const currentSpeed=elapsed>0?travelled/elapsed:speed;
+ const currentVelocity=elapsed>0?signedPosition/elapsed:velocity;
  useEffect(()=>{
   if(!playing)return;
-  const timer=window.setInterval(()=>setProgress(p=>{if(p>=1){window.clearInterval(timer);setPlaying(false);return 1;}return Math.min(1,p+0.01);}),data.duration*10);
+  const timer=window.setInterval(()=>setProgress(p=>{if(p>=1)return 1;return Math.min(1,p+0.01);}),data.duration*10);
   return()=>window.clearInterval(timer);
  },[playing,data.duration]);
+ useEffect(()=>{if(progress>=1)setPlaying(false);},[progress]);
  const selectScenario=(next:Scenario)=>{setScenario(next);setProgress(0);setPlaying(false);};
  return <section className={styles.simulator} aria-label="Sürat ve hız etkileşimli animasyonu">
   <div className={styles.top}><div><span className={styles.kicker}>ETKİLEŞİMLİ HAREKET LABORATUVARI</span><h2>Sürat mi, hız mı?</h2><p>Senaryoyu seç, aracı hareket ettir ve iki kavramın nasıl farklılaştığını gözlemle.</p></div><span className={styles.live}>● Kontrol sende</span></div>
@@ -50,8 +52,8 @@ export default function SuratHizSimulator(){
   <div className={styles.metrics}>
    <article><span>Alınan yol</span><strong>{Math.round(travelled)} m</strong><small>Toplam gidilen mesafe</small></article>
    <article><span>Yer değiştirme</span><strong>{Math.round(signedPosition)} m</strong><small>Başlangıca göre yönlü konum</small></article>
-   <article className={styles.speedCard}><span>Ortalama sürat</span><strong>{speed.toFixed(1)} m/s</strong><small>Toplam yol ÷ toplam zaman</small></article>
-   <article className={styles.velocityCard}><span>Ortalama hız</span><strong>{velocity===0?"0 m/s":Math.abs(velocity).toFixed(1)+" m/s "+(velocity>0?"Doğu":"Batı")}</strong><small>Yer değiştirme ÷ zaman</small></article>
+   <article className={styles.speedCard}><span>Ortalama sürat</span><strong>{currentSpeed.toFixed(1)} m/s</strong><small>Toplam yol ÷ toplam zaman</small></article>
+   <article className={styles.velocityCard}><span>Ortalama hız</span><strong>{Math.abs(currentVelocity)<0.05?"0 m/s":Math.abs(currentVelocity).toFixed(1)+" m/s "+(currentVelocity>0?"Doğu":"Batı")}</strong><small>Yer değiştirme ÷ zaman</small></article>
   </div>
   <div className={styles.takeaway}><strong>💡 Ne fark ettin?</strong><p>{scenario==="return"?"Araç 200 m yol aldı ama başladığı noktaya döndüğü için yer değiştirmesi 0 m oldu. Bu nedenle ortalama sürati 5 m/s iken ortalama hızı 0 m/s çıktı.":"Sürat alınan yol ve geçen zamanı dikkate alır. Hız ise yer değiştirmeyi ve yönü de dikkate alır. Doğu ve batı senaryolarında sürat aynı, hızın yönü farklıdır."}</p></div>
   <div className={styles.definitions}><div><b>SÜRAT</b><p>Bir cismin birim zamanda aldığı yol. Yön belirtmez.</p></div><div><b>HIZ</b><p>Bir cismin birim zamandaki yer değiştirmesi. Yön belirtir.</p></div></div>
