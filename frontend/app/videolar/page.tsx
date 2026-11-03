@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 
 export const metadata = {
   title: "Fen Videoları | Fen ve Bilim Kulübü",
-  description: "Biyoteknoloji ve yerçekimi konularını anlatan kısa fen videoları.",
+  description: "Biyoteknoloji, yerçekimi ve 7. sınıf 1. ünite konularını anlatan fen videoları.",
 };
 
 const videos = [
@@ -23,6 +23,14 @@ const videos = [
     src: "/videolar/yercekimi-kaybolsaydi.mp4",
     poster: "/videolar/yercekimi-kaybolsaydi.jpg",
     link: { href: "/animasyonlar/7/agirlik-enlem", label: "Ağırlık ve enlem animasyonunu aç" },
+  },
+  {
+    id: "7-sinif-1-unite",
+    grade: "7. SINIF · 1. ÜNİTE",
+    title: "Uzay Araştırmaları ve Yıldızların Dünyası",
+    description: "7. sınıf 1. ünite (FB.7.1.1–5): uzay teknolojileri, gözlem, yıldızların yaşamı, galaksiler ve kısa bir soru turu.",
+    src: "/videolar/7-sinif-1-unite-uzay.mp4",
+    poster: "/videolar/7-sinif-1-unite-uzay.jpg",
   },
 ];
 
