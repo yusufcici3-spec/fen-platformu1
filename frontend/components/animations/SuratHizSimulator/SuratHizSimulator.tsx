@@ -4,29 +4,30 @@ import styles from "./SuratHizSimulator.module.css";
 
 type Scenario = "east" | "west" | "return";
 const scenarios: Record<Scenario, {title:string; description:string; distance:number; displacement:number; duration:number; direction:string}> = {
- east:{title:"Doğuya doğru yolculuk",description:"Araç 100 metre doğuya 20 saniyede ilerliyor.",distance:100,displacement:100,duration:20,direction:"Doğu"},
- west:{title:"Batıya doğru yolculuk",description:"Araç 100 metre batıya 20 saniyede ilerliyor.",distance:100,displacement:-100,duration:20,direction:"Batı"},
- return:{title:"Gidip başlangıç noktasına dönme",description:"Araç 100 metre doğuya, ardından 100 metre batıya dönerek toplam 40 saniyede başlangıç noktasına geliyor.",distance:200,displacement:0,duration:40,direction:""}
+ east:{title:"Doğuya doğru yolculuk",description:"Araç 100 metre doğuya ilerliyor. Süre, seçtiğin sürate göre değişir.",distance:100,displacement:100,duration:20,direction:"Doğu"},
+ west:{title:"Batıya doğru yolculuk",description:"Araç 100 metre batıya ilerliyor. Süre, seçtiğin sürate göre değişir.",distance:100,displacement:-100,duration:20,direction:"Batı"},
+ return:{title:"Gidip başlangıç noktasına dönme",description:"Araç 100 metre doğuya, ardından 100 metre batıya dönerek seçtiğin sürate göre değişen bir sürede başlangıç noktasına geliyor.",distance:200,displacement:0,duration:40,direction:""}
 };
 
 export default function SuratHizSimulator(){
  const [scenario,setScenario]=useState<Scenario>("east");
  const [progress,setProgress]=useState(0);
  const [playing,setPlaying]=useState(false);
+ const [vehicleSpeed,setVehicleSpeed]=useState(5);
  const data=scenarios[scenario];
  const elapsed=data.duration*progress;
  const travelled=data.distance*progress;
  const signedPosition=scenario==="return"?(progress<=0.5?progress*200:200-progress*200):data.displacement*progress;
  const carX=scenario==="return"?(progress<=0.5?70+progress*1000:70+(1-(progress-0.5)*2)*500):(scenario==="east"?70+progress*500:570-progress*500);
- const speed=data.distance/data.duration;
+ const speed=vehicleSpeed;
  const velocity=data.displacement/data.duration;
  const currentSpeed=elapsed>0?travelled/elapsed:speed;
  const currentVelocity=elapsed>0?signedPosition/elapsed:velocity;
  useEffect(()=>{
   if(!playing)return;
-  const timer=window.setInterval(()=>setProgress(p=>{if(p>=1)return 1;return Math.min(1,p+0.01);}),data.duration*10);
+  const timer=window.setInterval(()=>setProgress(p=>Math.min(1,p+(vehicleSpeed*0.1)/data.distance)),100);
   return()=>window.clearInterval(timer);
- },[playing,data.duration]);
+ },[playing,data.duration,vehicleSpeed,data.distance]);
  useEffect(()=>{if(progress>=1)setPlaying(false);},[progress]);
  const selectScenario=(next:Scenario)=>{setScenario(next);setProgress(0);setPlaying(false);};
  return <section className={styles.simulator} aria-label="Sürat ve hız etkileşimli animasyonu">
@@ -35,6 +36,11 @@ export default function SuratHizSimulator(){
    <button className={scenario==="east"?styles.active:""} onClick={()=>selectScenario("east")}>→ Doğuya git</button>
    <button className={scenario==="west"?styles.active:""} onClick={()=>selectScenario("west")}>← Batıya git</button>
    <button className={scenario==="return"?styles.active:""} onClick={()=>selectScenario("return")}>↔ Geri dön</button>
+  </div>
+  <div className={styles.speedControl}>
+   <label htmlFor="vehicle-speed">🚗 Aracın sürati: <strong>{vehicleSpeed.toFixed(1)} m/s</strong></label>
+   <input id="vehicle-speed" type="range" min="1" max="10" step="0.5" value={vehicleSpeed} onChange={e=>{setPlaying(false);setVehicleSpeed(Number(e.target.value));}}/>
+   <div><span>Yavaş · 1 m/s</span><span>Hızlı · 10 m/s</span></div>
   </div>
   <div className={styles.scene}>
    <div className={styles.sceneLabel}><span>BATI</span><span>DOĞU</span></div>
