@@ -32,6 +32,15 @@ const videos = [
     src: "/videolar/7-sinif-1-unite-uzay.mp4",
     poster: "/videolar/7-sinif-1-unite-uzay.jpg",
   },
+  {
+    id: "6-sinif-1-unite",
+    grade: "6. SINIF · 1. ÜNİTE",
+    title: "Güneş Sistemi ve Tutulmalar",
+    description: "6. sınıf 1. ünite (FB.6.1.1–4): gezegenler, asteroit-meteor-meteorit, Güneş ve Ay tutulması ve kısa bir soru turu.",
+    src: "/videolar/6-sinif-1-unite-gunes-sistemi.mp4",
+    poster: "/videolar/6-sinif-1-unite-gunes-sistemi.jpg",
+    link: { href: "/sinif/6/gunes-sistemi-ve-tutulmalar", label: "Konu anlatımını aç" },
+  },
 ];
 
 export default function VideosPage() {
