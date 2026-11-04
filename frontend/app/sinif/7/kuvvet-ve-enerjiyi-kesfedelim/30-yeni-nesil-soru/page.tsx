@@ -43,7 +43,7 @@ export default function Grade7Unit2Quiz() {
  const [answers,setAnswers]=useState<(number|null)[]>(Array(questions.length).fill(null));
  const [finished,setFinished]=useState(false);
  const q=questions[index];
- const score=answers.reduce((n,a,i)=>n+(a===questions[i].answer?1:0),0);
+ const score=answers.reduce<number>((n,a,i)=>n+(a===questions[i].answer?1:0),0);
  function choose(n:number){if(selected!==null)return;setSelected(n);setAnswers(old=>old.map((v,i)=>i===index?n:v));}
  function next(){if(index===questions.length-1){setFinished(true);return;}setIndex(index+1);setSelected(answers[index+1]);}
  function restart(){setIndex(0);setSelected(null);setAnswers(Array(questions.length).fill(null));setFinished(false);}
