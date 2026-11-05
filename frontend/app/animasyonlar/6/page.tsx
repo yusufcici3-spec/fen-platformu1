@@ -31,6 +31,7 @@ export default function SixthGradePlanetAnimationsPage() {
             <Link href="/animasyonlar/6/bileske-kuvvet">Bileşke kuvvet simülatörü ↗</Link>
             <Link href="/animasyonlar/6/surat-ve-hiz">Sürat ve hız animasyonu ↗</Link>
             <Link href="/animasyonlar/6/ip-cekme">İp çekme etkinliği ↗</Link>
+            <Link href="/animasyonlar/6/cicekli-bitkiler-yasam-dongusu">Çiçekli bitkilerin yaşam döngüsü 🌼</Link>
             <Link href="/animasyonlar/6/fen-futbolu6">Fen Futbolu 6 oyunu ⚽</Link>
           </div>
         </header>
