@@ -18,7 +18,7 @@ const grades: GradeCard[] = [
     description: "Ay’ın evrelerini keşfet; astronotla yüzeydeki kraterleri ve yer şekillerini incele.",
     className: styles.gradeFive,
     href: "/animasyonlar/5",
-    animationCount: 7,
+    animationCount: 8,
     secondaryLinks: [
       { href: "/animasyonlar/5/ay-yuzeyi", label: "Astronotla Ay yüzeyini keşfet" },
       { href: "/animasyonlar/5/dinamometre", label: "Dinamometreyle kuvveti ölç" },
