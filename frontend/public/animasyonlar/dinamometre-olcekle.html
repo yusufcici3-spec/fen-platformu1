@@ -40,6 +40,7 @@ th{color:var(--muted);font:600 12px var(--f-d)}
 </style></head><body>
 <main class="wrap">
  <section class="card">
+  <div class="sec"><h3>Yay seç</h3><div class="btns" id="springBtns" role="group" aria-label="Yay türü"></div><p class="note" id="springNote" style="margin-top:6px"></p></div>
   <div class="tabs" role="group" aria-label="Aşama"><button id="tCal" aria-pressed="true">1 · Ölçeklendir</button><button id="tMeas" aria-pressed="false">2 · Gizemli cisimleri ölç</button></div>
   <div class="layout">
    <div><canvas id="cv" role="img" aria-label="Üzerine ağırlık asılan dinamometre ve işaretlenmiş ölçek"></canvas><p class="msg" id="msg" aria-live="polite"></p></div>
@@ -69,7 +70,8 @@ th{color:var(--muted);font:600 12px var(--f-d)}
 <script>
 (function(){
 var $=function(i){return document.getElementById(i)};
-var KCM=0.8, CAP=12, MASSES=[100,200,300,500], MAXN=6, SCALEPX=26;
+var SPRINGS=[{n:'Normal yay',k:0.8,lw:3,amp:16,coils:14,t:'Normal yay: her 1 N kuvvet yayı 0,8 cm uzatır.'},{n:'Esnek yay',k:1.2,lw:2,amp:14,coils:18,t:'Esnek (ince) yay: aynı kuvvette daha çok uzar. Ölçekte işaretler daha seyrek olur, küçük kuvvetleri ayırt etmek kolaylaşır.'},{n:'Kalın yay',k:0.45,lw:6,amp:18,coils:9,t:'Kalın (sert) yay: aynı kuvvette az uzar. İşaretler birbirine yakın olur, büyük kuvvetleri ölçmeye uygundur.'}];
+var SP=SPRINGS[0], KCM=SP.k, CAP=12, MASSES=[100,200,300,500], MAXN=6, SCALEPX=20;
 var OBJS=[{n:'Defter',g:250},{n:'Elma',g:180},{n:'Su şişesi',g:500},{n:'Okul çantası',g:720},{n:'Makas',g:90}];
 var W=0,H=0,dpr=1,cv=$('cv'),cx=cv.getContext('2d'),dirty=true,last=0;
 var mode='cal',weights=[],marks=[],obj=0,ext=0,vel=0,done={};
@@ -106,8 +108,8 @@ function draw(){
  // yay (zigzag)
  var yTop=top+4,yBot=zeroY-16+ext*SCALEPX+16; // ucu = zeroY + ext*SCALEPX
  var tipY=zeroY+ext*SCALEPX-14;
- var coils=14,amp=16;
- cx.strokeStyle=spring;cx.lineWidth=3;cx.lineJoin='round';cx.beginPath();cx.moveTo(sx,yTop);
+ var coils=SP.coils,amp=SP.amp;
+ cx.strokeStyle=spring;cx.lineWidth=SP.lw;cx.lineJoin='round';cx.beginPath();cx.moveTo(sx,yTop);
  for(var i=1;i<=coils*2;i++){var yy=yTop+(tipY-yTop)*i/(coils*2);cx.lineTo(sx+(i%2?amp:-amp)*(i===coils*2?0:1),yy)}
  cx.stroke();
  // gösterge ucu + kanca
@@ -159,6 +161,11 @@ $('checkBtn').addEventListener('click',function(){
 });
 $('guide').addEventListener('change',function(){dirty=true});
 function setMode(m){mode=m;$('tCal').setAttribute('aria-pressed',String(m==='cal'));$('tMeas').setAttribute('aria-pressed',String(m==='meas'));$('calPane').classList.toggle('hide',m!=='cal');$('measPane').classList.toggle('hide',m!=='meas');if(m==='meas')measNote();refreshAll()}
+SPRINGS.forEach(function(sp,i){var b=document.createElement('button');b.className='b';b.textContent=sp.n;b.setAttribute('aria-pressed',String(i===0));b.addEventListener('click',function(){
+  if(SP===sp)return;SP=sp;KCM=sp.k;marks=[];done={};$('fb').textContent='';$('fb').className='fb';
+  [].forEach.call(document.querySelectorAll('#springBtns button'),function(x,j){x.setAttribute('aria-pressed',String(j===i))});
+  $('springNote').textContent=sp.t;refreshAll();if(mode==='meas')measNote();$('msg').textContent=sp.n+' seçildi. Ölçeğini bu yay için yeniden işaretle.'});$('springBtns').appendChild(b)});
+$('springNote').textContent=SP.t;
 $('tCal').addEventListener('click',function(){setMode('cal')});
 $('tMeas').addEventListener('click',function(){setMode('meas')});
 function frame(now){
