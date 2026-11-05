@@ -40,7 +40,7 @@ export default function SixthGradePlanetAnimationsPage() {
         <section className="mb-7 overflow-hidden rounded-2xl border-2 border-emerald-300 bg-gradient-to-r from-emerald-50 to-white p-5 shadow-md dark:border-emerald-800 dark:from-emerald-950 dark:to-slate-900">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <span className="text-xs font-black tracking-wider text-emerald-700 dark:text-emerald-300">YENİ · 6. SINIF FEN BİLİMLERİ</span>
+              <span className="text-xs font-black tracking-wider text-emerald-700 dark:text-emerald-300">YENİ ETKİLEŞİMLİ ETKİNLİK · 6. SINIF FEN BİLİMLERİ</span>
               <h2 className="mt-1 text-2xl font-black text-emerald-950 dark:text-white">🌺 Çiçeğin Kısımları ve Görevleri</h2>
               <p className="mt-1 text-sm text-emerald-800 dark:text-emerald-200">Çiçeğin üzerindeki bölümlere dokun, adlarını ve görevlerini etkileşimli olarak keşfet.</p>
             </div>
