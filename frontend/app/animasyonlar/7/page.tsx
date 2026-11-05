@@ -58,6 +58,9 @@ export default function SeventhGradeSpaceTechnologyPage() {
               <Link className={`${styles.heroAction} ${styles.heroActionSecondary}`} href="/animasyonlar/7/solunum-sistemi">
                 Solunum sistemi animasyonu <span aria-hidden="true">🫁</span>
               </Link>
+              <Link className={`${styles.heroAction} ${styles.heroActionSecondary}`} href="/animasyonlar/7/bosaltim-sistemi">
+                Boşaltım sistemi animasyonu <span aria-hidden="true">🫘</span>
+              </Link>
             </div>
           </div>
           <div className={styles.heroOrbit} aria-hidden="true">
