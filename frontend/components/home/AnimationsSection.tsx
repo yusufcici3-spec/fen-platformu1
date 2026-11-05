@@ -24,6 +24,7 @@ const grades: GradeCard[] = [
       { href: "/animasyonlar/5/dinamometre", label: "Dinamometreyle kuvveti ölç" },
       { href: "/animasyonlar/5/dinamometre-olcekle", label: "Dinamometreni ölçeklendir" },
       { href: "/animasyonlar/5/mikroskop", label: "Mikroskop masasında preparat incele" },
+      { href: "/laboratuvar/destek-hareket", label: "İskelet sistemi: kemikleri keşfet" },
       { href: "/animasyonlar/5/fen-kosusu5", label: "Fen Koşusu 5 oyunu" },
       { href: "/animasyonlar/5/fen-yarisi5", label: "Fen Yarışı 5 araba oyunu" },
     ],

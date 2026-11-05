@@ -45,6 +45,9 @@ export default function FifthGradeMoonPhasesPage() {
               <Link className={styles.heroAction} href="/animasyonlar/5/mikroskop">
                 Mikroskop masası <span aria-hidden="true">🔬</span>
               </Link>
+              <Link className={`${styles.heroAction} ${styles.heroActionSecondary}`} href="/laboratuvar/destek-hareket">
+                İskelet sistemi animasyonu <span aria-hidden="true">🦴</span>
+              </Link>
               <Link className={`${styles.heroAction} ${styles.heroActionSecondary}`} href="/animasyonlar/5/fen-kosusu5">
                 Fen Koşusu 5 oyunu <span aria-hidden="true">🏃</span>
               </Link>
