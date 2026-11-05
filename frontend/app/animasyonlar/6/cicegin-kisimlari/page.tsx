@@ -57,7 +57,7 @@ export default function CiceginKisimlariPage() {
   const [active,setActive] = useState("tepe");
   const selected = parts.find(p=>p.id===active) || parts[0];
   return (
-    <main className="flower-page">
+    <main className="flower-page" data-animation="cicegin-kisimlari">
       <div className="flower-wrap">
         <nav className="flower-crumb"><Link href="/#animasyonlar">Animasyonlar</Link><span>/</span><Link href="/animasyonlar/6">6. Sınıf</Link><span>/</span><span>Çiçeğin kısımları</span></nav>
         <header className="flower-hero"><span>6. SINIF FEN BİLİMLERİ · BİTKİLERDE ÜREME</span><h1>Çiçeğin Kısımları ve Görevleri</h1><p>Çizimdeki renkli işaretlere veya aşağıdaki bölüm adlarına dokun. Seçtiğin kısmın görevini öğren!</p></header>
