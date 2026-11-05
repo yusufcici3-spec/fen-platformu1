@@ -50,7 +50,7 @@ const stages = [
 
 function PlantScene({ stage }: { stage: number }) {
   return (
-    <svg viewBox="0 0 640 360" role="img" aria-label={stages[stage].title + " aşamasını gösteren bitki yaşam döngüsü çizimi"} className="scene-svg">
+    <svg viewBox="0 0 640 360" role="img" aria-label={stages[stage].title + " aşamasını gösteren bitki yaşam döngüsü çizimi"} className="scene-svg" style={{ width: "100%", height: "auto", maxHeight: 360, display: "block" }}>
       <defs>
         <linearGradient id="leaf" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stopColor="#8bdc62"/><stop offset="1" stopColor="#248b43"/></linearGradient>
         <linearGradient id="petal" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stopColor="#ffd0df"/><stop offset="1" stopColor="#f2769d"/></linearGradient>
