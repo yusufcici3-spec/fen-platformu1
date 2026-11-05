@@ -44,7 +44,7 @@ function FlowerDiagram({ active, onSelect }: { active:string; onSelect:(id:strin
       {pin("tepe",320,43,"Dişicik tepesi","#84b91c")}
       {pin("boru",320,145,"Dişicik borusu","#84b91c")}
       {pin("yumurtalik",320,278,"Yumurtalık","#84b91c")}
-      {pin("basick",395,109,"Başçık","#e6ae22")}
+      {pin("bascik",395,109,"Başçık","#e6ae22")}
       {pin("sapcik",405,193,"Sapçık","#e6ae22")}
       {pin("tac",535,95,"Taç yaprak","#d64b9b")}
       {pin("canak",190,220,"Çanak yaprak","#31934d")}
