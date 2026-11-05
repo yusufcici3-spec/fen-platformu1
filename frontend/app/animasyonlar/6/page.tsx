@@ -37,6 +37,17 @@ export default function SixthGradePlanetAnimationsPage() {
           </div>
         </header>
 
+        <section className="mb-7 overflow-hidden rounded-2xl border-2 border-emerald-300 bg-gradient-to-r from-emerald-50 to-white p-5 shadow-md dark:border-emerald-800 dark:from-emerald-950 dark:to-slate-900">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <span className="text-xs font-black tracking-wider text-emerald-700 dark:text-emerald-300">YENİ · 6. SINIF FEN BİLİMLERİ</span>
+              <h2 className="mt-1 text-2xl font-black text-emerald-950 dark:text-white">🌺 Çiçeğin Kısımları ve Görevleri</h2>
+              <p className="mt-1 text-sm text-emerald-800 dark:text-emerald-200">Çiçeğin üzerindeki bölümlere dokun, adlarını ve görevlerini etkileşimli olarak keşfet.</p>
+            </div>
+            <Link href="/animasyonlar/6/cicegin-kisimlari" className="inline-flex shrink-0 items-center justify-center rounded-xl bg-emerald-700 px-6 py-3 text-sm font-extrabold text-white shadow hover:bg-emerald-800">Animasyonu Aç →</Link>
+          </div>
+        </section>
+
         <section className="mb-7 rounded-2xl border border-sky-200 bg-gradient-to-r from-sky-50 to-white p-5 shadow-sm dark:border-sky-900 dark:from-slate-800 dark:to-slate-900">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div>
