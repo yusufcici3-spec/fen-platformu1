@@ -57,7 +57,7 @@ const grades: GradeCard[] = [
       { href: "/animasyonlar/7/fen-futbolu", label: "Fen Futbolu 7 oyunu" },
       { href: "/animasyonlar/7/sindirim-sistemi", label: "Sindirim sistemi animasyonu" },
       { href: "/animasyonlar/7/dolasim-sistemi", label: "Dolaşım sistemi animasyonu" },
-      { href: "/animasyonlar/7/milyoner", label: "Milyonerden oyunu" },
+      { href: "/animasyonlar/7/milyoner", label: "MilyonerFen oyunu" },
     ],
   },
   {
