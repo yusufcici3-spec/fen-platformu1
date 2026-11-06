@@ -56,7 +56,7 @@ export default function SeventhGradeSpaceTechnologyPage() {
                 Dolaşım sistemi animasyonu <span aria-hidden="true">❤️</span>
               </Link>
               <Link className={`${styles.heroAction} ${styles.heroActionSecondary}`} href="/animasyonlar/7/milyoner">
-                Milyonerden oyunu <span aria-hidden="true">💰</span>
+                MilyonerFen oyunu <span aria-hidden="true">💰</span>
               </Link>
               <Link className={`${styles.heroAction} ${styles.heroActionSecondary}`} href="/animasyonlar/7/solunum-sistemi">
                 Solunum sistemi animasyonu <span aria-hidden="true">🫁</span>

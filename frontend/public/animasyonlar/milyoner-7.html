@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Milyonerden: 7. Sınıf Fen Bilimleri</title>
+<title>MilyonerFen: 7. Sınıf Fen Bilimleri</title>
 <style>
 :root{--ink:#eef2ff;--muted:#a9b4d6;--gold:#fbbf24;--blue:#1e3a8a;--deep:#0a1030;--panel:#101a4a;--line:#3b4f9e;--ok:#16a34a;--bad:#dc2626}
 *{box-sizing:border-box}
@@ -102,7 +102,7 @@ function render(){
  var m=$('main');var h='';
  if(st.over){
   var won=st.final;
-  h='<div class="center"><div class="tag">OYUN BİTTİ</div><div class="big">'+tl(won)+'</div><p>'+(won>=1000000?'Tebrikler, <b>7. sınıf fen milyoneri</b> oldun! 🏆':(won>0?'Harika! Bu parayı kazandın.':'Bir dahaki sefere daha iyi olacak!'))+'</p><p class="muted" style="color:var(--muted)">'+st.correct+' soruyu doğru bildin.</p><button class="btn gold" id="again">Yeniden oyna</button></div>';
+  h='<div class="center"><div class="tag">MİLYONERFEN · OYUN BİTTİ</div><div class="big">'+tl(won)+'</div><p>'+(won>=1000000?'Tebrikler, <b>7. sınıf fen milyoneri</b> oldun! 🏆':(won>0?'Harika! Bu parayı kazandın.':'Bir dahaki sefere daha iyi olacak!'))+'</p><p class="muted" style="color:var(--muted)">'+st.correct+' soruyu doğru bildin.</p><button class="btn gold" id="again">Yeniden oyna</button></div>';
   m.innerHTML=h;$('again').onclick=newGame;ladder();post();return;
  }
  var q=Q[st.i];
