@@ -49,7 +49,7 @@ const grades: GradeCard[] = [
     description: "Uzay teknolojilerini keşfet; yıldızların yaşam döngüsünü kütlelerine göre incele.",
     className: styles.gradeSeven,
     href: "/animasyonlar/7",
-    animationCount: 8,
+    animationCount: 9,
     secondaryLinks: [
       { href: "/animasyonlar/7/agirlik-enlem", label: "Ağırlık kutupta mı ekvatorda mı büyük?" },
       { href: "/animasyonlar/7/kinetik-potansiyel", label: "Kinetik ve potansiyel enerji" },
@@ -57,6 +57,7 @@ const grades: GradeCard[] = [
       { href: "/animasyonlar/7/fen-futbolu", label: "Fen Futbolu 7 oyunu" },
       { href: "/animasyonlar/7/sindirim-sistemi", label: "Sindirim sistemi animasyonu" },
       { href: "/animasyonlar/7/dolasim-sistemi", label: "Dolaşım sistemi animasyonu" },
+      { href: "/animasyonlar/7/milyoner", label: "Milyonerden oyunu" },
     ],
   },
   {
