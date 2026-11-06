@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import type { ReactNode } from "react";
 import Link from "next/link";
 
 type Q = { outcome:string; scenario:string; question:string; options:string[]; answer:number; explanation:string; visual:string };
@@ -51,7 +52,7 @@ function Diagram({kind}:{kind:string}) {
  const base="rounded-2xl border border-sky-100 bg-gradient-to-br from-sky-50 to-indigo-50 p-4";
  const pill="rounded-xl border border-white bg-white/90 px-3 py-3 text-center text-sm font-bold text-slate-700 shadow-sm";
  const item=(label:string,color:string)=> <div className={pill} style={{borderColor:color}}>{label}</div>;
- let nodes:React.ReactNode[]=[];
+ let nodes:ReactNode[]=[];
  let caption="Şematik gösterim";
  if(["spark","storm"].includes(kind)){nodes=[item("− − −  Bulut","#93c5fd"),<span className="text-2xl">⚡</span>,item("＋  Yeryüzü","#fca5a5")];caption="Elektrik yükleri arasındaki boşalma"; }
  else if(["filter","copier"].includes(kind)){nodes=[item("Yüklü parçacıklar","#93c5fd"),<span className="text-2xl">→</span>,item("Zıt yüklü yüzey","#86efac")];caption="Elektriksel çekimden yararlanan teknoloji";}
