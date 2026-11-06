@@ -1,6 +1,7 @@
 import { Hero } from "@/components/home/Hero";
 import { DailyQuestion } from "@/components/home/DailyQuestion";
 import { DailyFact } from "@/components/home/DailyFact";
+import { DailyInspiration } from "@/components/home/DailyInspiration";
 import { ClassesSection } from "@/components/home/ClassesSection";
 import AnimationsSection from "@/components/home/AnimationsSection";
 import { YazililarSection } from "@/components/home/YazililarSection";
@@ -17,6 +18,7 @@ export default function HomePage() {
         <DailyQuestion />
         <DailyFact />
       </section>
+      <DailyInspiration />
 
       <ClassesSection />
       <AnimationsSection />
