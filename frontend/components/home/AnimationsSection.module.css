@@ -142,3 +142,60 @@
 @media (prefers-reduced-motion: reduce) {
   .card, .openLink { transition: none; }
 }
+
+/* Sınıf kapağı kartları */
+.posterGrid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.poster {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 600 / 1066;
+  border-radius: 22px;
+  border: 2px solid color-mix(in srgb, var(--poster-accent) 45%, #1e2a5a);
+  background: #0b1450;
+  box-shadow: 0 10px 28px rgba(15, 25, 70, .28);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  text-decoration: none;
+}
+.poster img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
+.poster:hover, .poster:focus-visible { transform: translateY(-5px); border-color: var(--poster-accent); box-shadow: 0 18px 38px rgba(15, 25, 70, .4); }
+.poster:hover img { transform: scale(1.04); }
+.poster:focus-visible { outline: 3px solid var(--poster-accent); outline-offset: 3px; }
+.posterBadge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: rgba(10, 16, 48, .78);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  backdrop-filter: blur(4px);
+}
+.posterFoot {
+  position: absolute;
+  inset: auto 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 44px 14px 14px;
+  background: linear-gradient(180deg, transparent 0%, rgba(6, 10, 38, .86) 55%, rgba(6, 10, 38, .95) 100%);
+}
+.posterText { color: #dbe4ff; font-size: 12px; line-height: 1.4; font-weight: 600; }
+.posterCta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 9px 10px;
+  border-radius: 12px;
+  background: var(--poster-accent);
+  color: #0b1030;
+  font-size: 13px;
+  font-weight: 850;
+  text-align: center;
+}
+@media (max-width: 980px) { .posterGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 420px) { .posterGrid { gap: 10px; } .posterText { display: none; } .posterCta { font-size: 12px; } }
+@media (prefers-reduced-motion: reduce) { .poster, .poster img { transition: none; } .poster:hover { transform: none; } .poster:hover img { transform: none; } }
