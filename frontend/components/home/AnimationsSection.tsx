@@ -1,79 +1,20 @@
 import Link from "next/link";
 import styles from "./AnimationsSection.module.css";
 
-type GradeCard = {
+type GradeCover = {
   grade: string;
   title: string;
-  description: string;
-  className: string;
-  href?: string;
-  animationCount?: number;
-  secondaryLinks?: Array<{ href: string; label: string }>;
+  count: number;
+  image: string;
+  accent: string;
 };
 
-const grades: GradeCard[] = [
-  {
-    grade: "5",
-    title: "Ay’ın Evreleri ve Yüzeyi",
-    description: "Ay’ın evrelerini keşfet; astronotla yüzeydeki kraterleri ve yer şekillerini incele.",
-    className: styles.gradeFive,
-    href: "/animasyonlar/5",
-    animationCount: 8,
-    secondaryLinks: [
-      { href: "/animasyonlar/5/ay-yuzeyi", label: "Astronotla Ay yüzeyini keşfet" },
-      { href: "/animasyonlar/5/dinamometre", label: "Dinamometreyle kuvveti ölç" },
-      { href: "/animasyonlar/5/dinamometre-olcekle", label: "Dinamometreni ölçeklendir" },
-      { href: "/animasyonlar/5/mikroskop", label: "Mikroskop masasında preparat incele" },
-      { href: "/laboratuvar/destek-hareket", label: "İskelet sistemi: kemikleri keşfet" },
-      { href: "/animasyonlar/5/fen-kosusu5", label: "Fen Koşusu 5 oyunu" },
-      { href: "/animasyonlar/5/fen-yarisi5", label: "Fen Yarışı 5 araba oyunu" },
-    ],
-  },
-  {
-    grade: "6",
-    title: "Gezegenler ve Tutulmalar",
-    description: "Gezegenleri yakından incele; Güneş ve Ay tutulmalarını simüle et.",
-    className: styles.gradeSix,
-    href: "/animasyonlar/6",
-    animationCount: 6,
-    secondaryLinks: [
-      { href: "/animasyonlar/6/surat-ve-hiz", label: "Sürat ve hız: aracın süratini değiştir" },
-      { href: "/animasyonlar/6/bileske-kuvvet", label: "Bileşke kuvveti sen bul" },
-      { href: "/animasyonlar/6/ip-cekme", label: "İp çekme etkinliği" },
-      { href: "/animasyonlar/6/fen-futbolu6", label: "Fen Futbolu 6 oyunu" },
-    ],
-  },
-  {
-    grade: "7",
-    title: "Uzay ve Yıldızlar",
-    description: "Uzay teknolojilerini keşfet; yıldızların yaşam döngüsünü kütlelerine göre incele.",
-    className: styles.gradeSeven,
-    href: "/animasyonlar/7",
-    animationCount: 9,
-    secondaryLinks: [
-      { href: "/animasyonlar/7/agirlik-enlem", label: "Ağırlık kutupta mı ekvatorda mı büyük?" },
-      { href: "/animasyonlar/7/kinetik-potansiyel", label: "Kinetik ve potansiyel enerji" },
-      { href: "/animasyonlar/7/passafenola7", label: "Passafenola 7 oyunu" },
-      { href: "/animasyonlar/7/fen-futbolu", label: "Fen Futbolu 7 oyunu" },
-      { href: "/animasyonlar/7/sindirim-sistemi", label: "Sindirim sistemi animasyonu" },
-      { href: "/animasyonlar/7/dolasim-sistemi", label: "Dolaşım sistemi animasyonu" },
-      { href: "/animasyonlar/7/milyoner", label: "MilyonerFen oyunu" },
-    ],
-  },
-  {
-    grade: "8",
-    title: "Güneş açısı ve mevsimler",
-    description: "Güneş açısını, bezelyelerde kalıtımı ve DNA baz eşleşmelerini etkileşimli keşfet.",
-    className: styles.gradeEight,
-    href: "/animasyonlar/8",
-    animationCount: 5,
-    secondaryLinks: [
-      { href: "/animasyonlar/8/katı-basıncı", label: "Katı basıncı deneyi" },
-      { href: "/animasyonlar/8/kalitim", label: "Kalıtım çaprazlamaları" },
-      { href: "/animasyonlar/8/dna-eslesmesi", label: "DNA baz eşleşmeleri" },
-      { href: "/animasyonlar/8/passafenola", label: "Passafenola oyunu" },
-    ],
-  },
+// Her sınıfın kapağı; tıklayınca o sınıfın animasyon sayfası açılır.
+const covers: GradeCover[] = [
+  { grade: "5", title: "Ay'ın evreleri, kuvvet, mikroskop, iskelet sistemi ve oyunlar", count: 8, image: "/animasyonlar/kapak/5-sinif.jpg", accent: "#66a9de" },
+  { grade: "6", title: "Gezegenler, tutulmalar, sürat, bileşke kuvvet ve oyunlar", count: 6, image: "/animasyonlar/kapak/6-sinif.jpg", accent: "#4eb9a1" },
+  { grade: "7", title: "Uzay, enerji, sindirim ve dolaşım sistemi, MilyonerFen ve oyunlar", count: 9, image: "/animasyonlar/kapak/7-sinif.jpg", accent: "#e49a58" },
+  { grade: "8", title: "Mevsimler, kalıtım, DNA, basınç ve oyunlar", count: 5, image: "/animasyonlar/kapak/8-sinif.jpg", accent: "#9a89ec" },
 ];
 
 export default function AnimationsSection() {
@@ -85,50 +26,29 @@ export default function AnimationsSection() {
             <span className={styles.eyebrow}><span aria-hidden="true">✦</span> KEŞFET · DENE · ÖĞREN</span>
             <h2 id="animations-title" className={styles.title}>Animasyonlar</h2>
             <p className={styles.description}>
-              Sınıfını seç, fen bilimlerini hareketli ve etkileşimli deneyimlerle öğren.
+              Sınıfını seç; o sınıfın hareketli ve etkileşimli animasyonları, oyunları ve deneyleri seni bekliyor.
             </p>
           </div>
           <span className={styles.headerNote}><span aria-hidden="true">◉</span> 5–8. sınıflara özel</span>
         </header>
 
-        <div className={styles.grid}>
-          {grades.map((item) => item.href ? (
-            <article key={item.grade} className={`${styles.card} ${item.className} ${styles.featuredCard}`}>
-              <div className={styles.cardTop}>
-                <span className={styles.gradeNumber}>{item.grade}</span>
-                <span className={styles.activeStatus}>
-                  <span aria-hidden="true" /> {item.animationCount} animasyon
-                </span>
-              </div>
-              <div>
-                <p className={styles.gradeLabel}>{item.grade}. SINIF</p>
-                <h3>{item.title}</h3>
-                <p className={styles.cardDescription}>{item.description}</p>
-              </div>
-              <div className={styles.openLinks}>
-                <Link className={styles.openLink} href={item.href}>
-                  {item.grade}. sınıf animasyonlarını aç <span aria-hidden="true">→</span>
-                </Link>
-                {item.secondaryLinks?.map((link) => (
-                  <Link key={link.href} className={styles.secondaryLink} href={link.href}>
-                    {link.label} <span aria-hidden="true">→</span>
-                  </Link>
-                ))}
-              </div>
-            </article>
-          ) : (
-            <article key={item.grade} className={`${styles.card} ${item.className}`} aria-label={`${item.grade}. sınıf animasyonları yakında`}>
-              <div className={styles.cardTop}>
-                <span className={styles.gradeNumber}>{item.grade}</span>
-                <span className={styles.status}>Yakında</span>
-              </div>
-              <div>
-                <p className={styles.gradeLabel}>{item.grade}. SINIF</p>
-                <h3>{item.title}</h3>
-                <p className={styles.cardDescription}>{item.description}</p>
-              </div>
-              <span className={styles.cardFoot}>Yeni animasyonlar hazırlanıyor</span>
-            </article>
+        <div className={styles.posterGrid}>
+          {covers.map((c) => (
+            <Link
+              key={c.grade}
+              href={`/animasyonlar/${c.grade}`}
+              className={styles.poster}
+              style={{ ["--poster-accent" as string]: c.accent }}
+              aria-label={`${c.grade}. sınıf animasyonlarını aç (${c.count} animasyon)`}
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={c.image} alt={`${c.grade}. sınıf animasyonları kapağı`} width={600} height={1066} loading="lazy" decoding="async" />
+              <span className={styles.posterBadge}>{c.count} animasyon</span>
+              <span className={styles.posterFoot}>
+                <span className={styles.posterText}>{c.title}</span>
+                <span className={styles.posterCta}>Animasyonları aç <span aria-hidden="true">→</span></span>
+              </span>
+            </Link>
           ))}
         </div>
       </div>
