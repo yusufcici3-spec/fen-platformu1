@@ -84,8 +84,9 @@ export default function MikroskopAnimasyonuPage() {
             <div className={`${styles.specimen} ${styles[sampleId]}`} style={{ transform: `scale(${0.78 + zoom * 0.25})`, filter: `blur(${Math.max(0, Math.abs(focus - 55) / 14)}px)` }}>
               {shapes.map((shape, i) => <span key={`${sampleId}-${i}`} className={`${styles.particle} ${running ? styles.moving : ''}`} style={{ left: `${shape.x}%`, top: `${shape.y}%`, width: `${shape.size * (0.65 + zoom * 0.24)}px`, height: `${shape.size * (0.65 + zoom * 0.24)}px`, transform: `rotate(${shape.rotate}deg)`, animationDelay: `${shape.delay}s` }} />)}
               {sampleId === 'onion' && Array.from({ length: 20 }, (_, i) => <span key={`cell-${i}`} className={styles.plantCell} style={{ left: `${(i % 5) * 19 + 4}%`, top: `${Math.floor(i / 5) * 23 + 4}%` }}><i /></span>)}
+              {sampleId === 'cheek' && Array.from({ length: 16 }, (_, i) => <span key={`cheek-${i}`} className={styles.cheekCell} style={{ left: `${(i * 29) % 82 + 5}%`, top: `${(i * 43) % 82 + 5}%`, transform: `rotate(${i * 23}deg)` }}><i /></span>)}
               {sampleId === 'mold' && Array.from({ length: 7 }, (_, i) => <span key={`mold-${i}`} className={styles.hypha} style={{ left: `${8 + i * 13}%`, top: `${20 + (i % 3) * 22}%`, transform: `rotate(${i * 27}deg)` }}><i /></span>)}
-              {sampleId === 'leaf' && Array.from({ length: 7 }, (_, i) => <span key={`stoma-${i}`} className={styles.stoma} style={{ left: `${12 + (i % 3) * 29}%`, top: `${12 + Math.floor(i / 3) * 34}%`, transform: `rotate(${i * 21}deg)` }} />)}
+              {sampleId === 'leaf' && Array.from({ length: 9 }, (_, i) => <span key={`stoma-${i}`} className={styles.stomaPair} style={{ left: `${8 + (i % 3) * 30}%`, top: `${8 + Math.floor(i / 3) * 31}%`, transform: `rotate(${i * 17}deg)` }}><i /><b /></span>)}
               {sampleId === 'salt' && Array.from({ length: 14 }, (_, i) => <span key={`salt-${i}`} className={styles.crystal} style={{ left: `${(i * 31) % 88 + 4}%`, top: `${(i * 43) % 88 + 4}%`, transform: `rotate(${i * 17}deg)` }} />)}
             </div>
             <div className={styles.viewVignette} />
