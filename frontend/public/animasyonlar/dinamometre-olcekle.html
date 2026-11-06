@@ -40,7 +40,7 @@ th{color:var(--muted);font:600 12px var(--f-d)}
 </style></head><body>
 <main class="wrap">
  <section class="card">
-  <div class="sec"><h3>Yay seç</h3><div class="btns" id="springBtns" role="group" aria-label="Yay türü"></div><p class="note" id="springNote" style="margin-top:6px"></p></div>
+  <div class="sec"><h3>Yay kalınlığı</h3><div class="btns" id="springBtns" role="group" aria-label="Yay kalınlığı"></div><h3 style="margin-top:10px">Yay cinsi (malzeme)</h3><div class="btns" id="matBtns" role="group" aria-label="Yay cinsi"></div><p class="note" id="springNote" style="margin-top:6px"></p></div>
   <div class="tabs" role="group" aria-label="Aşama"><button id="tCal" aria-pressed="true">1 · Ölçeklendir</button><button id="tMeas" aria-pressed="false">2 · Gizemli cisimleri ölç</button></div>
   <div class="layout">
    <div><canvas id="cv" role="img" aria-label="Üzerine ağırlık asılan dinamometre ve işaretlenmiş ölçek"></canvas><p class="msg" id="msg" aria-live="polite"></p></div>
@@ -70,8 +70,9 @@ th{color:var(--muted);font:600 12px var(--f-d)}
 <script>
 (function(){
 var $=function(i){return document.getElementById(i)};
-var SPRINGS=[{n:'Normal yay',k:0.8,lw:3,amp:16,coils:14,t:'Normal yay: her 1 N kuvvet yayı 0,8 cm uzatır.'},{n:'Esnek yay',k:1.2,lw:2,amp:14,coils:18,t:'Esnek (ince) yay: aynı kuvvette daha çok uzar. Ölçekte işaretler daha seyrek olur, küçük kuvvetleri ayırt etmek kolaylaşır.'},{n:'Kalın yay',k:0.45,lw:6,amp:18,coils:9,t:'Kalın (sert) yay: aynı kuvvette az uzar. İşaretler birbirine yakın olur, büyük kuvvetleri ölçmeye uygundur.'}];
-var SP=SPRINGS[0], KCM=SP.k, CAP=12, MASSES=[100,200,300,500], MAXN=6, SCALEPX=20;
+var THICK=[{n:'Normal',t:1,lw:3,amp:16,coils:14,d:'Normal kalınlıktaki yay.'},{n:'İnce',t:1.5,lw:2,amp:14,coils:18,d:'İnce yay daha kolay uzar: aynı kuvvette daha çok uzar, işaretler seyrek olur.'},{n:'Kalın',t:0.56,lw:6,amp:18,coils:9,d:'Kalın yay zor uzar: aynı kuvvette az uzar, işaretler birbirine yakın olur.'}];
+var MATS=[{n:'Çelik',m:1,col:'#8a97a8',d:'Çelik sert bir malzemedir; yay az uzar.'},{n:'Bakır',m:1.5,col:'#c26a2d',d:'Bakır çeliğe göre daha yumuşaktır; yay daha çok uzar.'},{n:'Alüminyum',m:2,col:'#c3ccd6',d:'Alüminyum hafif ve yumuşaktır; yay çok uzar.'},{n:'Plastik',m:3,col:'#d946a8',d:'Plastik en yumuşak malzemedir; yay en çok uzar.'}];
+var TH=THICK[0], MAT=MATS[0], SP=TH, KCM=0.8, CAP=12, MASSES=[100,200,300,500], MAXN=6, SCALEPX=20;
 var OBJS=[{n:'Defter',g:250},{n:'Elma',g:180},{n:'Su şişesi',g:500},{n:'Okul çantası',g:720},{n:'Makas',g:90}];
 var W=0,H=0,dpr=1,cv=$('cv'),cx=cv.getContext('2d'),dirty=true,last=0;
 var mode='cal',weights=[],marks=[],obj=0,ext=0,vel=0,done={};
@@ -109,7 +110,7 @@ function draw(){
  var yTop=top+4,yBot=zeroY-16+ext*SCALEPX+16; // ucu = zeroY + ext*SCALEPX
  var tipY=zeroY+ext*SCALEPX-14;
  var coils=SP.coils,amp=SP.amp;
- cx.strokeStyle=spring;cx.lineWidth=SP.lw;cx.lineJoin='round';cx.beginPath();cx.moveTo(sx,yTop);
+ cx.strokeStyle=MAT.col;cx.lineWidth=SP.lw;cx.lineJoin='round';cx.beginPath();cx.moveTo(sx,yTop);
  for(var i=1;i<=coils*2;i++){var yy=yTop+(tipY-yTop)*i/(coils*2);cx.lineTo(sx+(i%2?amp:-amp)*(i===coils*2?0:1),yy)}
  cx.stroke();
  // gösterge ucu + kanca
@@ -161,11 +162,18 @@ $('checkBtn').addEventListener('click',function(){
 });
 $('guide').addEventListener('change',function(){dirty=true});
 function setMode(m){mode=m;$('tCal').setAttribute('aria-pressed',String(m==='cal'));$('tMeas').setAttribute('aria-pressed',String(m==='meas'));$('calPane').classList.toggle('hide',m!=='cal');$('measPane').classList.toggle('hide',m!=='meas');if(m==='meas')measNote();refreshAll()}
-SPRINGS.forEach(function(sp,i){var b=document.createElement('button');b.className='b';b.textContent=sp.n;b.setAttribute('aria-pressed',String(i===0));b.addEventListener('click',function(){
-  if(SP===sp)return;SP=sp;KCM=sp.k;marks=[];done={};$('fb').textContent='';$('fb').className='fb';
-  [].forEach.call(document.querySelectorAll('#springBtns button'),function(x,j){x.setAttribute('aria-pressed',String(j===i))});
-  $('springNote').textContent=sp.t;refreshAll();if(mode==='meas')measNote();$('msg').textContent=sp.n+' seçildi. Ölçeğini bu yay için yeniden işaretle.'});$('springBtns').appendChild(b)});
-$('springNote').textContent=SP.t;
+function applySpring(announce){
+  SP=TH;KCM=0.8*TH.t*MAT.m;CAP=Math.min(12,Math.max(2,Math.floor(14/KCM*2)/2));
+  marks=[];done={};$('fb').textContent='';$('fb').className='fb';
+  [].forEach.call(document.querySelectorAll('#springBtns button'),function(x,j){x.setAttribute('aria-pressed',String(THICK[j]===TH))});
+  [].forEach.call(document.querySelectorAll('#matBtns button'),function(x,j){x.setAttribute('aria-pressed',String(MATS[j]===MAT))});
+  $('springNote').textContent=MAT.n+' '+TH.n.toLocaleLowerCase('tr')+' yay: 1 N kuvvet yayı '+fmt(KCM,2)+' cm uzatır; en fazla '+fmt(CAP,CAP%1?1:0)+' N ölçer. '+TH.d+' '+MAT.d;
+  refreshAll();if(mode==='meas')measNote();
+  if(announce)$('msg').textContent=MAT.n+' '+TH.n.toLocaleLowerCase('tr')+' yay seçildi. Ölçeğini bu yay için yeniden işaretle.';
+}
+THICK.forEach(function(th,i){var b=document.createElement('button');b.className='b';b.textContent=th.n+' yay';b.setAttribute('aria-pressed',String(i===0));b.addEventListener('click',function(){if(TH===th)return;TH=th;applySpring(true)});$('springBtns').appendChild(b)});
+MATS.forEach(function(m,i){var b=document.createElement('button');b.className='b';b.textContent=m.n;b.setAttribute('aria-pressed',String(i===0));b.addEventListener('click',function(){if(MAT===m)return;MAT=m;applySpring(true)});$('matBtns').appendChild(b)});
+$('springNote').textContent=MAT.n+' '+TH.n.toLocaleLowerCase('tr')+' yay: 1 N kuvvet yayı '+fmt(KCM,2)+' cm uzatır; en fazla 12 N ölçer. '+TH.d+' '+MAT.d;
 $('tCal').addEventListener('click',function(){setMode('cal')});
 $('tMeas').addEventListener('click',function(){setMode('meas')});
 function frame(now){
