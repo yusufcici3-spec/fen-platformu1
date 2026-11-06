@@ -54,36 +54,53 @@ svg{display:block;width:100%;height:auto;background:var(--stage);border:1px soli
 </section>
 <div class="grid">
  <section class="panel">
- <svg id="svg" viewBox="0 0 640 575" role="img" aria-label="Kalp, akciğerler, vücut ve kan damarlarını gösteren dolaşım sistemi şeması">
-  <!-- akciğerler -->
-  <g class="hot" id="g-lung" data-key="lung" tabindex="0" role="button" aria-label="Akciğerler">
-   <rect x="165" y="30" width="270" height="108" rx="54" fill="#fbcfe8" stroke="#db2777" stroke-width="3"/>
-   <text x="300" y="52" text-anchor="middle" font-size="14" font-weight="800" fill="#831843">Akciğerler</text>
-   <text x="228" y="88" text-anchor="middle" font-size="11" font-weight="700" fill="#831843">O₂ alınır</text>
-   <text x="228" y="106" text-anchor="middle" font-size="11" font-weight="700" fill="#831843">CO₂ verilir</text>
-  </g>
+ <svg id="svg" viewBox="0 0 640 748" role="img" aria-label="İnsan vücudu şeması: kalp, akciğerler, baş, bacaklar ve kan damarları">
   <!-- vücut -->
-  <g class="hot" id="g-body" data-key="body" tabindex="0" role="button" aria-label="Vücut kılcal damarları">
-   <rect x="100" y="455" width="330" height="78" rx="14" fill="#fef3c7" stroke="#d97706" stroke-width="3"/>
-   <text x="265" y="552" text-anchor="middle" font-size="13" font-weight="800" fill="var(--ink)">Vücut hücreleri (kılcal damarlar)</text>
-   <g stroke="#c084fc" stroke-width="2" fill="none" opacity=".8"><path d="M372 466 V505 M330 478 V512 M290 478 V505 M250 478 V512 M210 478 V505 M170 478 V512 M130 478 V505"/></g>
+  <g id="body" stroke-linecap="round" stroke-linejoin="round" fill="none">
+   <g stroke="#b9805a" stroke-width="42"><path d="M205 150 L168 300 L152 392"/><path d="M435 150 L472 300 L488 392"/></g>
+   <g stroke="#b9805a" stroke-width="58"><path d="M298 400 L276 470 L276 688"/><path d="M342 400 L368 470 L368 688"/></g>
+   <g stroke="#fde7d3" stroke-width="36"><path d="M205 150 L168 300 L152 392"/><path d="M435 150 L472 300 L488 392"/></g>
+   <g stroke="#fde7d3" stroke-width="52"><path d="M298 400 L276 470 L276 688"/><path d="M342 400 L368 470 L368 688"/></g>
+   <rect x="304" y="96" width="32" height="36" fill="#fde7d3" stroke="#b9805a" stroke-width="3"/>
+   <path d="M205 135 Q260 116 305 124 L335 124 Q380 116 435 135 Q454 230 441 330 Q436 400 405 434 L235 434 Q204 400 199 330 Q186 230 205 135Z" fill="#fde7d3" stroke="#b9805a" stroke-width="3"/>
+   <circle cx="320" cy="62" r="42" fill="#fde7d3" stroke="#b9805a" stroke-width="3"/>
+   <circle cx="305" cy="58" r="3" fill="#7c5a44" stroke="none"/><circle cx="335" cy="58" r="3" fill="#7c5a44" stroke="none"/>
+   <path d="M306 78 Q320 88 334 78" stroke="#a0674a" stroke-width="2.5" fill="none"/>
   </g>
-  <!-- damarlar (çizim) -->
+  <!-- akciğerler -->
+  <g class="hot" data-key="lung" tabindex="0" role="button" aria-label="Akciğerler">
+   <path d="M290 148 C246 138 212 186 216 250 C219 302 262 318 292 302 Z" fill="#fbcfe8" stroke="#db2777" stroke-width="3"/>
+   <path d="M350 148 C394 138 440 186 436 250 C433 302 390 318 350 302 Z" fill="#fbcfe8" stroke="#db2777" stroke-width="3"/>
+   <g fill="none" stroke="#db2777" stroke-width="1.5" opacity=".5"><path d="M262 190 L248 214 M262 190 L276 214 M248 214 L240 236 M276 214 L282 236"/><path d="M412 190 L398 214 M412 190 L426 214 M398 214 L390 236 M426 214 L432 236"/></g>
+  </g>
+  <!-- damarlar -->
   <g id="vessels" fill="none" stroke-linecap="round" stroke-linejoin="round"></g>
   <!-- kalp -->
   <g id="heart">
-   <g class="hot" data-key="ra" tabindex="0" role="button" aria-label="Sağ kulakçık"><rect x="235" y="200" width="52" height="55" rx="12" fill="#93c5fd" stroke="#1d4ed8" stroke-width="3"/><text x="261" y="224" text-anchor="middle" font-size="10" font-weight="800" fill="#1e3a8a">Sağ</text><text x="261" y="237" text-anchor="middle" font-size="10" font-weight="800" fill="#1e3a8a">kulakçık</text></g>
-   <g class="hot" data-key="rv" tabindex="0" role="button" aria-label="Sağ karıncık"><rect x="268" y="262" width="62" height="76" rx="14" fill="#60a5fa" stroke="#1d4ed8" stroke-width="3"/><text x="299" y="320" text-anchor="middle" font-size="10" font-weight="800" fill="#172554">Sağ</text><text x="299" y="333" text-anchor="middle" font-size="10" font-weight="800" fill="#172554">karıncık</text></g>
-   <g class="hot" data-key="la" tabindex="0" role="button" aria-label="Sol kulakçık"><rect x="346" y="200" width="52" height="55" rx="12" fill="#fca5a5" stroke="#b91c1c" stroke-width="3"/><text x="372" y="224" text-anchor="middle" font-size="10" font-weight="800" fill="#7f1d1d">Sol</text><text x="372" y="237" text-anchor="middle" font-size="10" font-weight="800" fill="#7f1d1d">kulakçık</text></g>
-   <g class="hot" data-key="lv" tabindex="0" role="button" aria-label="Sol karıncık"><rect x="336" y="262" width="68" height="76" rx="14" fill="#f87171" stroke="#b91c1c" stroke-width="4"/><text x="370" y="320" text-anchor="middle" font-size="10" font-weight="800" fill="#450a0a">Sol</text><text x="370" y="333" text-anchor="middle" font-size="10" font-weight="800" fill="#450a0a">karıncık</text></g>
+   <path d="M262 236 Q258 196 300 192 L392 192 Q418 196 416 248 Q414 300 366 318 Q324 326 296 316 Q264 296 262 236Z" fill="#fee2e2" stroke="#ef4444" stroke-width="2" opacity=".75"/>
+   <g class="hot" data-key="ra" tabindex="0" role="button" aria-label="Sağ kulakçık"><rect x="268" y="200" width="42" height="46" rx="12" fill="#93c5fd" stroke="#1d4ed8" stroke-width="3"/></g>
+   <g class="hot" data-key="rv" tabindex="0" role="button" aria-label="Sağ karıncık"><rect x="294" y="250" width="52" height="62" rx="14" fill="#60a5fa" stroke="#1d4ed8" stroke-width="3"/></g>
+   <g class="hot" data-key="la" tabindex="0" role="button" aria-label="Sol kulakçık"><rect x="336" y="200" width="42" height="46" rx="12" fill="#fca5a5" stroke="#b91c1c" stroke-width="3"/></g>
+   <g class="hot" data-key="lv" tabindex="0" role="button" aria-label="Sol karıncık"><rect x="350" y="250" width="56" height="62" rx="14" fill="#f87171" stroke="#b91c1c" stroke-width="4"/></g>
+   <text x="289" y="219" text-anchor="middle" font-size="8.5" font-weight="800" fill="#1e3a8a">Sağ</text><text x="289" y="230" text-anchor="middle" font-size="8.5" font-weight="800" fill="#1e3a8a">kulakçık</text>
+   <text x="320" y="285" text-anchor="middle" font-size="8.5" font-weight="800" fill="#172554">Sağ</text><text x="320" y="296" text-anchor="middle" font-size="8.5" font-weight="800" fill="#172554">karıncık</text>
+   <text x="357" y="219" text-anchor="middle" font-size="8.5" font-weight="800" fill="#7f1d1d">Sol</text><text x="357" y="230" text-anchor="middle" font-size="8.5" font-weight="800" fill="#7f1d1d">kulakçık</text>
+   <text x="378" y="285" text-anchor="middle" font-size="8.5" font-weight="800" fill="#450a0a">Sol</text><text x="378" y="296" text-anchor="middle" font-size="8.5" font-weight="800" fill="#450a0a">karıncık</text>
   </g>
   <g id="cells"></g>
-  <!-- etiketler -->
-  <g font-size="12" font-weight="800" fill="var(--ink)">
-   <text x="284" y="168" text-anchor="end" fill="#1d4ed8">Akciğer</text><text x="284" y="181" text-anchor="end" fill="#1d4ed8">atardamarı</text>
-   <text x="416" y="168" fill="#b91c1c">Akciğer</text><text x="416" y="181" fill="#b91c1c">toplardamarı</text>
-   <text x="388" y="410" fill="#b91c1c">Aort</text><text x="388" y="423" fill="#b91c1c">(ana atardamar)</text>
-   <text x="20" y="350" fill="#1d4ed8">Ana</text><text x="20" y="363" fill="#1d4ed8">toplardamar</text>
+  <g id="labels" font-size="12" font-weight="800" pointer-events="none">
+   <text x="112" y="150" text-anchor="middle" fill="#9d174d">Sağ akciğer</text>
+   <text x="528" y="150" text-anchor="middle" fill="#9d174d">Sol akciğer</text>
+   <text x="322" y="352" text-anchor="middle" fill="#b91c1c">KALP</text>
+   <text x="110" y="205" text-anchor="middle" fill="#1d4ed8">Üst ana</text><text x="110" y="219" text-anchor="middle" fill="#1d4ed8">toplardamar</text>
+   <path d="M150 212 L286 200" stroke="#1d4ed8" stroke-width="1" stroke-dasharray="3 3" fill="none"/>
+   <text x="530" y="80" text-anchor="middle" fill="#b91c1c">Aort</text><text x="530" y="94" text-anchor="middle" fill="#b91c1c">(ana atardamar)</text>
+   <path d="M492 90 L386 180" stroke="#b91c1c" stroke-width="1" stroke-dasharray="3 3" fill="none"/>
+   <text x="520" y="520" text-anchor="middle" fill="#1d4ed8">Alt ana</text><text x="520" y="534" text-anchor="middle" fill="#1d4ed8">toplardamar</text>
+   <path d="M478 528 L330 410" stroke="#1d4ed8" stroke-width="1" stroke-dasharray="3 3" fill="none"/>
+   <text x="108" y="30" text-anchor="middle" fill="#7c3aed">Baş</text><text x="108" y="44" text-anchor="middle" fill="#7c3aed">kılcal damarları</text>
+   <path d="M150 38 L270 40" stroke="#7c3aed" stroke-width="1" stroke-dasharray="3 3" fill="none"/>
+   <text x="320" y="740" text-anchor="middle" fill="#7c3aed">Bacak kılcal damarları</text>
   </g>
  </svg>
  <div class="legend"><span><i class="dot" style="background:#dc2626"></i>Oksijence zengin kan</span><span><i class="dot" style="background:#2563eb"></i>Oksijence fakir kan</span><span><i class="dot" style="background:#7c3aed"></i>Gaz/madde alışverişi (kılcal damar)</span></div>
@@ -107,49 +124,69 @@ var BLUE=[37,99,235],RED=[220,38,38];
 function mix(t){t=Math.max(0,Math.min(1,t));return 'rgb('+BLUE.map(function(b,i){return Math.round(b+(RED[i]-b)*t)}).join(',')+')'}
 // akış parçaları: d, oksijen başlangıç/bitiş, döngü (k: küçük, b: büyük), kılcal mı
 var SEG=[
- {d:'M298 300 V135',o:[0,0],loop:'k',key:'pa',w:12},
- {d:'M298 135 C298 66 400 66 400 135',o:[0,1],loop:'k',key:'lung',w:4,cap:1},
- {d:'M400 135 V165 L372 200 V250',o:[1,1],loop:'k',key:'pv',w:12},
- {d:'M372 250 V455',o:[1,1],loop:'b',key:'aorta',w:14},
- {d:'M372 455 V478 H110',o:[1,0],loop:'b',key:'body',w:4,cap:1},
- {d:'M110 478 V228 H238',o:[0,0],loop:'b',key:'vena',w:12},
- {d:'M238 228 H262 V250 L298 300',o:[0,0],loop:'k',key:'ra',w:12}
+ {id:'raTop',d:'M288 204 V238 L316 262',o:[0,0],loop:'k',key:'ra',w:8,hide:1},
+ {id:'raBot',d:'M288 238 L316 262',o:[0,0],loop:'k',key:'ra',w:8,hide:1},
+ {id:'trunk',d:'M322 262 V176',o:[0,0],loop:'k',key:'pa',w:10},
+ {id:'paL',d:'M322 176 C300 166 285 168 268 180',o:[0,0],loop:'k',key:'pa',w:10},
+ {id:'paR',d:'M322 176 C345 166 385 168 398 182',o:[0,0],loop:'k',key:'pa',w:10},
+ {id:'capL',d:'M268 180 C222 198 222 238 268 252',o:[0,1],loop:'k',key:'lung',w:4,cap:1},
+ {id:'capR',d:'M398 182 C440 198 440 238 398 250',o:[0,1],loop:'k',key:'lung',w:4,cap:1},
+ {id:'pvL',d:'M268 252 L352 236 V224',o:[1,1],loop:'k',key:'pv',w:10,behind:1},
+ {id:'pvR',d:'M398 250 H386 L368 226',o:[1,1],loop:'k',key:'pv',w:10},
+ {id:'laLv',d:'M356 224 V256 L380 272',o:[1,1],loop:'k',key:'la',w:8,hide:1},
+ {id:'aUp',d:'M380 272 V150 C380 128 342 124 338 102',o:[1,1],loop:'b',key:'aorta',w:12},
+ {id:'headCap',d:'M338 102 C372 74 362 26 320 26 C278 26 270 74 304 102',o:[1,0],loop:'b',key:'head',w:4,cap:1},
+ {id:'svc',d:'M304 102 V150 C304 178 288 186 288 204',o:[0,0],loop:'b',key:'vena',w:10},
+ {id:'aDown',d:'M380 272 V388 L322 430',o:[1,1],loop:'b',key:'aorta',w:12},
+ {id:'legRArt',d:'M322 430 L368 470 V628',o:[1,1],loop:'b',key:'aorta',w:10},
+ {id:'legRCap',d:'M368 628 C368 662 340 662 340 628',o:[1,0],loop:'b',key:'leg',w:4,cap:1},
+ {id:'legRVein',d:'M340 628 V478 L322 452',o:[0,0],loop:'b',key:'vena',w:10},
+ {id:'legLArt',d:'M322 430 L276 470 V628',o:[1,1],loop:'b',key:'aorta',w:10},
+ {id:'legLCap',d:'M276 628 C276 662 304 662 304 628',o:[1,0],loop:'b',key:'leg',w:4,cap:1},
+ {id:'legLVein',d:'M304 628 V478 L322 452',o:[0,0],loop:'b',key:'vena',w:10},
+ {id:'ivc',d:'M322 452 C310 410 288 380 288 242',o:[0,0],loop:'b',key:'vena',w:10}
 ];
+var ROUTES=[];
+['paL:capL:pvL','paR:capR:pvR'].forEach(function(l){var L=l.split(':');
+ [['aUp','headCap','svc','raTop'],['aDown','legRArt','legRCap','legRVein','ivc','raBot'],['aDown','legLArt','legLCap','legLVein','ivc','raBot']].forEach(function(b){
+  var first=b[b.length-1];ROUTES.push([first,'trunk',L[0],L[1],L[2],'laLv'].concat(b.slice(0,-1)));});});
 var vessels=$('vessels'),cellsG=$('cells');
-var paths=[],lens=[],total=0;
+var paths=[],lens=[],total=0,idx={};
 SEG.forEach(function(s,i){
  var col=s.cap?'#c084fc':(s.o[1]>0.5?'#fca5a5':'#93c5fd');
  var stroke=s.cap?'#a855f7':(s.o[1]>0.5?'#dc2626':'#2563eb');
- var wrap=mk('g',{'class':'hot','data-key':s.key,tabindex:0,role:'button','aria-label':({pa:'Akciğer atardamarı',lung:'Akciğer kılcal damarları',pv:'Akciğer toplardamarı',aorta:'Aort',body:'Vücut kılcal damarları',vena:'Ana toplardamar',ra:'Kalbe giriş'})[s.key],'data-loop':s.loop});
+ var wrap=mk('g',{'class':'hot','data-key':s.key,tabindex:0,role:'button','aria-label':({pa:'Akciğer atardamarı',lung:'Akciğer kılcal damarları',pv:'Akciğer toplardamarı',aorta:'Aort',head:'Baş kılcal damarları',leg:'Bacak kılcal damarları',vena:'Ana toplardamar',ra:'Kalbe giriş'})[s.key],'data-loop':s.loop});
  var outline=mk('path',{d:s.d,stroke:'#fff',opacity:'.55','stroke-width':s.w+5,fill:'none'});
  var p=mk('path',{d:s.d,stroke:stroke,opacity:s.cap?'.9':'.4','stroke-width':s.w,fill:'none'});
  var hit=mk('path',{d:s.d,stroke:'transparent','stroke-width':24,fill:'none'});
- wrap.appendChild(outline);wrap.appendChild(p);wrap.appendChild(hit);vessels.appendChild(wrap);
+ if(s.hide){wrap.setAttribute('pointer-events','none');outline.setAttribute('opacity','0');p.setAttribute('opacity','0');wrap.appendChild(p);vessels.appendChild(wrap);}else{wrap.appendChild(outline);wrap.appendChild(p);wrap.appendChild(hit);vessels.appendChild(wrap);}
+ idx[s.id]=i;
  paths.push(p);var L=p.getTotalLength();lens.push(L);total+=L;
 });
 // hücreler
 var lab=mk('g',{'pointer-events':'none'});
 [].forEach.call(document.querySelectorAll('#heart text'),function(t){lab.appendChild(t)});
-var N=30,cells=[];
-for(var i=0;i<N;i++){var c=mk('circle',{r:5,stroke:'#0f172a','stroke-width':1.2,cx:0,cy:0});cellsG.appendChild(c);cells.push({s:total*i/N,el:c})}
+var RT=ROUTES.map(function(r){var ids=r.map(function(n){return idx[n]});var L=ids.reduce(function(a,i){return a+lens[i]},0);return {ids:ids,L:L}});
+var N=36,cells=[];
+for(var i=0;i<N;i++){var c=mk('circle',{r:4.5,stroke:'#0f172a','stroke-width':1.2,cx:0,cy:0});cellsG.appendChild(c);var r=i%RT.length;cells.push({r:r,s:RT[r].L*Math.floor(i/RT.length)/Math.ceil(N/RT.length),el:c})}
 $('svg').appendChild(lab);
 var mode='all',playing=true,speed=1,exer=false,selKey=null,last=0,beatT=0;
-function locate(s){s=((s%total)+total)%total;for(var i=0;i<SEG.length;i++){if(s<lens[i])return {i:i,t:s/lens[i],pt:paths[i].getPointAtLength(s)};s-=lens[i]}return {i:0,t:0,pt:paths[0].getPointAtLength(0)}}
+function locate(c){var R=RT[c.r],s=((c.s%R.L)+R.L)%R.L;for(var k=0;k<R.ids.length;k++){var i=R.ids[k];if(s<lens[i])return {i:i,t:s/lens[i],pt:paths[i].getPointAtLength(s)};s-=lens[i]}var i0=R.ids[0];return {i:i0,t:0,pt:paths[i0].getPointAtLength(0)}}
 function visible(loop){return mode==='all'||mode===loop}
 function applyMode(){
  [].forEach.call(vessels.children,function(g){g.style.opacity=visible(g.getAttribute('data-loop'))?'1':'.2'});
  $('mAll').setAttribute('aria-pressed',String(mode==='all'));$('mK').setAttribute('aria-pressed',String(mode==='k'));$('mB').setAttribute('aria-pressed',String(mode==='b'));
 }
 function draw(){
- cells.forEach(function(c){var r=locate(c.s),sg=SEG[r.i];var ox=sg.o[0]+(sg.o[1]-sg.o[0])*r.t;
-  c.el.setAttribute('cx',r.pt.x);c.el.setAttribute('cy',r.pt.y);c.el.setAttribute('fill',mix(ox));c.el.setAttribute('opacity',visible(sg.loop)?'1':'.15')});
+ cells.forEach(function(c){var r=locate(c),sg=SEG[r.i];var ox=sg.o[0]+(sg.o[1]-sg.o[0])*r.t;
+  c.el.setAttribute('cx',r.pt.x);c.el.setAttribute('cy',r.pt.y);c.el.setAttribute('fill',mix(ox));var hid=sg.behind&&r.pt.x>266&&r.pt.x<408&&r.pt.y>196&&r.pt.y<316;c.el.setAttribute('opacity',hid?'0':(visible(sg.loop)?'1':'.15'))});
 }
 function bpm(){return exer?120:72}
 function heartScale(){var period=60/bpm();var ph=(beatT%period)/period;var k=ph<0.18?Math.sin(ph/0.18*Math.PI):0;return 1+0.06*k}
 function frame(now){
  var dt=Math.min((now-last)/1000,0.05);last=now;
  if(playing){var v=70*speed*(exer?1.7:1);cells.forEach(function(c){c.s+=v*dt});beatT+=dt*speed}
- var sc=playing?heartScale():1;$('heart').setAttribute('transform','translate(320 270) scale('+sc+') translate(-320 -270)');
+ var sc=playing?heartScale():1;$('heart').setAttribute('transform','translate(337 256) scale('+sc+') translate(-337 -256)');
  draw();requestAnimationFrame(frame);
 }
 $('beat').textContent='Nabız: yaklaşık 72 atım/dk (dinlenme)';
@@ -164,9 +201,10 @@ var INFO={
  aorta:['Aort (ana atardamar)','r','Oksijence zengin','Sol karıncıktan çıkan oksijence zengin kanı vücuda dağıtır. Atardamarlar kanı kalpten uzaklaştırır ve basınca dayanıklı, kalın, esnek duvarlıdır.','Dallanarak bütün organlara kan götürür.'],
  vena:['Ana toplardamar','b','Oksijence fakir','Vücuttan karbondioksit ve atık madde alan kanı kalbe (sağ kulakçık) getirir. Toplardamarlar kanı kalbe getirir.','Duvarları atardamara göre daha ince ve esnektir; içlerinde kanın geri kaçmasını önleyen kapakçıklar bulunur.'],
  lung:['Akciğerlerdeki kılcal damarlar','m','Gaz alışverişi','Akciğerlerde kılcal damarlar ince duvarlıdır. Kan burada karbondioksiti verir, oksijeni alır. Böylece oksijence fakir kan oksijence zengin hâle gelir.','Kan hücresinin renginin maviden kırmızıya dönüşmesini izle.'],
- body:['Vücut kılcal damarları','m','Madde alışverişi','Kılcal damarlar çok ince duvarlı ve çok dar damarlardır. Kan burada hücrelere oksijen ve besin bırakır, hücrelerden karbondioksit ve atıkları alır.','Kan hücresinin renginin kırmızıdan maviye dönüşmesini izle. Kılcal damarlar atardamar ile toplardamarı birbirine bağlar.']
+ head:['Baş kılcal damarları','m','Madde alışverişi','Aort kolu kanı başa taşır. Beyin ve diğer baş dokularındaki kılcal damarlar çok ince duvarlıdır; kan burada hücrelere oksijen ve besin bırakır, karbondioksit ve atıkları alır. Sonra üst ana toplardamarla kalbe döner.','Kan hücresinin renginin kırmızıdan maviye dönüşmesini izle. Kılcal damarlar atardamar ile toplardamarı birbirine bağlar.'],
+ leg:['Bacak kılcal damarları','m','Madde alışverişi','Aortun alt dalı kanı gövdeye ve bacaklara taşır. Kas hücrelerinin çevresindeki kılcal damarlarda oksijen ve besin hücrelere geçer, karbondioksit ve atıklar kana karışır. Kan alt ana toplardamarla kalbe döner.','Egzersiz yaparken kaslar daha çok oksijen ister; bu yüzden kalp daha hızlı atar.']
 };
-var ORDER=['ra','rv','pa','lung','pv','la','lv','aorta','body','vena'];
+var ORDER=['ra','rv','pa','lung','pv','la','lv','aorta','head','leg','vena'];
 function show(k){
  selKey=k;var d=INFO[k];if(!d)return;
  $('title').textContent=d[0];$('tag').textContent=d[2];$('tag').className='tag '+d[1];$('text').textContent=d[3];$('hint').textContent=d[4];
