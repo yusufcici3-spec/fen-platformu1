@@ -4,3 +4,33 @@
 
 .stage3d{position:relative;width:100%;aspect-ratio:5/4;border-radius:20px;overflow:hidden;background:#3a2a1d;border:1px solid #dce6ee;box-shadow:0 8px 24px #172b4222}.sceneLoading{position:absolute;inset:0;display:grid;place-items:center;color:#f3e6d3;font-weight:700}.sceneHint{position:absolute;left:10px;right:10px;bottom:10px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;padding:8px 10px;border-radius:12px;background:#172b42d9;color:#fff;font-size:.78rem;font-weight:700;pointer-events:none}.sceneHint button{pointer-events:auto;padding:7px 11px;font-size:.78rem}.eyeOverlay{position:absolute;inset:0;display:grid;place-items:center;background:#030507;opacity:0;pointer-events:none;transition:opacity .7s ease}.eyeOn{opacity:1;pointer-events:auto}.eyeWrap{height:94%;aspect-ratio:1;max-width:96%}.eyeWrap .microscopeView{height:100%}.backButton{position:absolute;right:10px;top:10px;border:1px solid #ffffff55;background:#172b42d9;color:#fff;border-radius:10px;padding:8px 12px;font-weight:800;cursor:pointer}
 @media(max-width:680px){.stage3d{aspect-ratio:1/1}}
+
+
+/* Preparat hazırlama masası */
+.prepCard{margin:0 0 16px;padding:15px;border:1px solid #dce8ef;border-radius:16px;background:linear-gradient(145deg,#fbfdff,#f0f7fb)}
+.prepHeading{display:flex;align-items:center;justify-content:space-between;gap:8px;color:#24445a;font-size:.9rem}
+.prepHeading small{color:#648196;font-size:.72rem;font-weight:750}
+.prepVisual{min-height:118px;display:flex;align-items:center;justify-content:center;position:relative;padding:14px 8px 4px}
+.prepSlide{position:relative;width:min(78%,330px);height:34px;border:2px solid #9eb9c9;border-radius:5px;background:linear-gradient(100deg,#e7f8ffb8,#ffffffd9,#cce7f2b8);box-shadow:0 7px 13px #27465a18;transform:perspective(220px) rotateX(12deg)}
+.prepSlide:before{content:"";position:absolute;inset:4px 10px;border:1px solid #b9d4e2;border-radius:3px}
+.prepSample{position:absolute;z-index:2;left:43%;top:7px;width:28px;height:17px;border-radius:50%;background:radial-gradient(ellipse,#6c9d5d 0 25%,#b9d99c 50%,#729d67 75%);box-shadow:0 0 7px #598b5b88;transition:opacity .35s}
+.prepWater{position:absolute;z-index:3;left:44%;top:-8px;width:26px;height:25px;border-radius:60% 45% 60% 45%;background:radial-gradient(circle at 30% 25%,#ffffff,#a9e6fa 55%,#5aa9d1);opacity:.82;transform:rotate(45deg);transition:opacity .35s}
+.prepCover{position:absolute;z-index:4;left:29%;top:-7px;width:43%;height:29px;border:1px solid #9bc4d8;background:linear-gradient(120deg,#ffffffa8,#bce8f580,#ffffffa8);box-shadow:0 2px 5px #4d819c33;transform:rotate(-3deg);transition:opacity .45s}
+.prepLabels{display:flex;justify-content:space-between;gap:8px;width:100%;max-width:360px;position:absolute;bottom:0;color:#688194;font-size:.65rem;font-weight:700}
+.prepProgress{height:6px;background:#e0eaf0;border-radius:9px;overflow:hidden;margin-top:8px}
+.prepProgress span{display:block;height:100%;background:linear-gradient(90deg,#168bb8,#4fc3a1);border-radius:9px;transition:width .3s ease}
+.prepDetail{min-height:34px;margin:9px 0;color:#5b7182;font-size:.78rem;line-height:1.5}
+.prepButton{width:100%;padding:10px 12px;border:0;border-radius:11px;background:#087ca8;color:white;font-weight:850;cursor:pointer;box-shadow:0 4px 12px #087ca82b}
+.prepButton:disabled{background:#268b78;cursor:default}
+.plantCell{width:16%;height:21%;border:2px solid #719b70;border-radius:3px 7px 3px 7px;background:linear-gradient(135deg,#d8efc8bb,#a9d79b99);box-shadow:inset 0 0 8px #548e4b33;display:grid;place-items:center}
+.plantCell i{width:19%;height:19%;border-radius:50%;background:#755b8b;box-shadow:0 0 0 3px #a78abb55}
+.stoma{width:9%;height:18%;border:0;border-radius:0;background:transparent;box-shadow:none}
+.stomaPair{position:absolute;width:12%;height:20%;display:flex;align-items:center;justify-content:center;gap:1px}
+.stomaPair i,.stomaPair b{display:block;width:42%;height:100%;border:2px solid #39784c;background:linear-gradient(90deg,#a5d88c,#e2f5c9);border-radius:65% 35% 35% 65%;box-shadow:inset 0 0 5px #477b3b55}
+.stomaPair b{transform:scaleX(-1)}
+.cheekCell{position:absolute;width:19%;height:15%;border:1.5px solid #a85f72;border-radius:47% 53% 60% 40%;background:radial-gradient(ellipse at 45% 45%,#f4c3c7aa,#df8e9b55 70%,#bd7181aa);box-shadow:inset 0 0 10px #fff8;display:grid;place-items:center}
+.cheekCell i{width:24%;height:27%;border-radius:50%;background:radial-gradient(circle at 35% 35%,#8b648e,#59416e);box-shadow:0 0 0 4px #8c679055}
+.spore{position:absolute;width:7px;height:7px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#e4efc0,#708b4b 70%);box-shadow:0 0 0 2px #a8c47a44}
+.protozoa{position:absolute;width:8%;height:4%;border:2px solid #328c94;border-radius:65% 35% 58% 42%;background:linear-gradient(120deg,#c7f1e8,#54b8b2);box-shadow:0 0 8px #2b9a9388;animation:drift 4s ease-in-out infinite alternate}
+.protozoa i{position:absolute;width:22%;height:34%;left:40%;top:30%;border-radius:50%;background:#276d7d}
+@media(max-width:680px){.prepCard{padding:12px}.prepVisual{min-height:104px}.prepSlide{width:78%}.prepLabels{font-size:.58rem}}
