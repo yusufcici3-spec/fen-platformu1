@@ -41,6 +41,15 @@ const videos = [
     poster: "/videolar/6-sinif-1-unite-gunes-sistemi.jpg",
     link: { href: "/sinif/6/gunes-sistemi-ve-tutulmalar", label: "Konu anlatımını aç" },
   },
+  {
+    id: "7-sinif-2-unite",
+    grade: "7. SINIF · 2. ÜNİTE",
+    title: "Kuvvet ve Enerjiyi Keşfedelim",
+    description: "7. sınıf 2. ünite (FB.7.2.1–3): fiziksel anlamda iş, kinetik ve potansiyel enerji, enerji dönüşümü ve korunumu, kısa bir soru turu.",
+    src: "/videolar/7-sinif-2-unite-kuvvet-enerji.mp4",
+    poster: "/videolar/7-sinif-2-unite-kuvvet-enerji.jpg",
+    link: { href: "/sinif/7/kuvvet-ve-enerjiyi-kesfedelim", label: "Konu anlatımını aç" },
+  },
 ];
 
 export default function VideosPage() {
