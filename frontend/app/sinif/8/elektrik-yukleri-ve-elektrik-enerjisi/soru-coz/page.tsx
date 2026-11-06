@@ -54,26 +54,26 @@ function Diagram({kind}:{kind:string}) {
  const item=(label:string,color:string)=> <div className={pill} style={{borderColor:color}}>{label}</div>;
  let nodes:ReactNode[]=[];
  let caption="Şematik gösterim";
- if(["spark","storm"].includes(kind)){nodes=[item("− − −  Bulut","#93c5fd"),<span className="text-2xl">⚡</span>,item("＋  Yeryüzü","#fca5a5")];caption="Elektrik yükleri arasındaki boşalma"; }
- else if(["filter","copier"].includes(kind)){nodes=[item("Yüklü parçacıklar","#93c5fd"),<span className="text-2xl">→</span>,item("Zıt yüklü yüzey","#86efac")];caption="Elektriksel çekimden yararlanan teknoloji";}
- else if(["balloon","balloons"].includes(kind)){nodes=[item("🧶 Sürtünme","#fcd34d"),<span className="text-2xl">→</span>,item("🎈 Yüklenen balon","#93c5fd"),<span className="text-2xl">→</span>,item("Kâğıt parçaları","#86efac")];caption="Sürtünme ile elektriklenme modeli";}
- else if(kind==="charges"){nodes=[item("＋ ＋","#fca5a5"),<span className="text-2xl">↔</span>,item("＋ ＋","#fca5a5")];caption="Aynı cins yükler iter; zıt cins yükler çeker";}
- else if(kind==="induction"){nodes=[item("Yüklü çubuk","#93c5fd"),<span className="text-2xl">⋯</span>,item("− − | ＋ ＋","#c4b5fd")];caption="Temas olmadan yük dağılımı değişir";}
- else if(kind==="contact"){nodes=[item("Yüklü küre","#93c5fd"),<span className="text-2xl">●</span>,item("Nötr küre","#86efac")];caption="Temasla yük aktarımı";}
- else if(kind==="electroscope"){nodes=[item("Metal topuz","#fcd34d"),<span className="text-2xl">│</span>,item("Açılan yapraklar","#fca5a5")];caption="Elektroskop yapraklarının ayrılması";}
+ if(["spark","storm"].includes(kind)){nodes=[item("− − −  Bulut","#93c5fd"),<span key="diagram-node-1" className="text-2xl">⚡</span>,item("＋  Yeryüzü","#fca5a5")];caption="Elektrik yükleri arasındaki boşalma"; }
+ else if(["filter","copier"].includes(kind)){nodes=[item("Yüklü parçacıklar","#93c5fd"),<span key="diagram-node-2" className="text-2xl">→</span>,item("Zıt yüklü yüzey","#86efac")];caption="Elektriksel çekimden yararlanan teknoloji";}
+ else if(["balloon","balloons"].includes(kind)){nodes=[item("🧶 Sürtünme","#fcd34d"),<span key="diagram-node-3" className="text-2xl">→</span>,item("🎈 Yüklenen balon","#93c5fd"),<span key="diagram-node-4" className="text-2xl">→</span>,item("Kâğıt parçaları","#86efac")];caption="Sürtünme ile elektriklenme modeli";}
+ else if(kind==="charges"){nodes=[item("＋ ＋","#fca5a5"),<span key="diagram-node-5" className="text-2xl">↔</span>,item("＋ ＋","#fca5a5")];caption="Aynı cins yükler iter; zıt cins yükler çeker";}
+ else if(kind==="induction"){nodes=[item("Yüklü çubuk","#93c5fd"),<span key="diagram-node-6" className="text-2xl">⋯</span>,item("− − | ＋ ＋","#c4b5fd")];caption="Temas olmadan yük dağılımı değişir";}
+ else if(kind==="contact"){nodes=[item("Yüklü küre","#93c5fd"),<span key="diagram-node-7" className="text-2xl">●</span>,item("Nötr küre","#86efac")];caption="Temasla yük aktarımı";}
+ else if(kind==="electroscope"){nodes=[item("Metal topuz","#fcd34d"),<span key="diagram-node-8" className="text-2xl">│</span>,item("Açılan yapraklar","#fca5a5")];caption="Elektroskop yapraklarının ayrılması";}
  else if(kind==="three"){nodes=[item("Sürtünme","#fcd34d"),item("Dokunma","#93c5fd"),item("Etki","#c4b5fd")];caption="Elektriklenme çeşitleri";}
  else if(kind==="electron"||kind==="atom"){nodes=[item("Proton  ＋","#fca5a5"),item("Elektron  −","#93c5fd"),item("Nötron  0","#cbd5e1")];caption="Atomdaki temel parçacıklar";}
  else if(kind==="table"){nodes=[item("K: 12p / 12e","#86efac"),item("L: 9p / 7e","#fca5a5"),item("M: 6p / 8e","#93c5fd")];caption="Proton ve elektron sayıları";}
- else if(["ground","safety"].includes(kind)){nodes=[item("Elektrikli cihaz","#93c5fd"),<span className="text-2xl">→</span>,item("Topraklama hattı","#86efac"),<span className="text-2xl">→</span>,item("Dünya","#a7f3d0")];caption="Koruyucu topraklama şeması";}
- else if(["iron","kettle"].includes(kind)){nodes=[item("Elektrik ⚡","#93c5fd"),<span className="text-2xl">→</span>,item("Isı 🔥","#fca5a5")];caption="Elektrik enerjisi → Isı enerjisi";}
- else if(kind==="bulb"){nodes=[item("Elektrik ⚡","#93c5fd"),<span className="text-2xl">→</span>,item("Işık 💡 + Isı","#fcd34d")];caption="Elektrik enerjisi → Işık ve bir miktar ısı";}
- else if(["fan","motor"].includes(kind)){nodes=[item("Elektrik ⚡","#93c5fd"),<span className="text-2xl">→</span>,item("Hareket 🌀","#86efac")];caption="Elektrik enerjisi → Hareket enerjisi";}
- else if(kind==="bell"){nodes=[item("Elektrik ⚡","#93c5fd"),<span className="text-2xl">→</span>,item("Ses 🔔","#c4b5fd")];caption="Elektrik enerjisi → Ses enerjisi";}
- else if(["dynamo","hydro","wind","thermal","geo"].includes(kind)){nodes=[item("Enerji kaynağı","#fcd34d"),<span className="text-2xl">→</span>,item("Türbin / Dinamo","#93c5fd"),<span className="text-2xl">→</span>,item("Jeneratör ⚡","#86efac")];caption="Hareket enerjisi → Elektrik enerjisi";}
- else if(kind==="solar"){nodes=[item("Güneş ışığı ☀️","#fcd34d"),<span className="text-2xl">→</span>,item("Panel","#93c5fd"),<span className="text-2xl">→</span>,item("Elektrik ⚡","#86efac")];caption="Işık enerjisi doğrudan elektrik enerjisine dönüşür";}
- else if(kind==="proscons"){nodes=[item("Avantajlar","#86efac"),<span className="text-2xl">⚖️</span>,item("Sınırlılıklar","#fca5a5")];caption="Santralleri çok yönlü değerlendirme";}
- else if(kind==="street"||kind==="home"){nodes=[item("Gereksiz kullanım","#fca5a5"),<span className="text-2xl">→</span>,item("Tasarruf önerisi","#86efac")];caption="Bilinçli enerji kullanımı";}
- else {nodes=[item("Önce","#93c5fd"),<span className="text-2xl">→</span>,item("Sonra","#86efac")];caption="Veri karşılaştırması";}
+ else if(["ground","safety"].includes(kind)){nodes=[item("Elektrikli cihaz","#93c5fd"),<span key="diagram-node-9" className="text-2xl">→</span>,item("Topraklama hattı","#86efac"),<span key="diagram-node-10" className="text-2xl">→</span>,item("Dünya","#a7f3d0")];caption="Koruyucu topraklama şeması";}
+ else if(["iron","kettle"].includes(kind)){nodes=[item("Elektrik ⚡","#93c5fd"),<span key="diagram-node-11" className="text-2xl">→</span>,item("Isı 🔥","#fca5a5")];caption="Elektrik enerjisi → Isı enerjisi";}
+ else if(kind==="bulb"){nodes=[item("Elektrik ⚡","#93c5fd"),<span key="diagram-node-12" className="text-2xl">→</span>,item("Işık 💡 + Isı","#fcd34d")];caption="Elektrik enerjisi → Işık ve bir miktar ısı";}
+ else if(["fan","motor"].includes(kind)){nodes=[item("Elektrik ⚡","#93c5fd"),<span key="diagram-node-13" className="text-2xl">→</span>,item("Hareket 🌀","#86efac")];caption="Elektrik enerjisi → Hareket enerjisi";}
+ else if(kind==="bell"){nodes=[item("Elektrik ⚡","#93c5fd"),<span key="diagram-node-14" className="text-2xl">→</span>,item("Ses 🔔","#c4b5fd")];caption="Elektrik enerjisi → Ses enerjisi";}
+ else if(["dynamo","hydro","wind","thermal","geo"].includes(kind)){nodes=[item("Enerji kaynağı","#fcd34d"),<span key="diagram-node-15" className="text-2xl">→</span>,item("Türbin / Dinamo","#93c5fd"),<span key="diagram-node-16" className="text-2xl">→</span>,item("Jeneratör ⚡","#86efac")];caption="Hareket enerjisi → Elektrik enerjisi";}
+ else if(kind==="solar"){nodes=[item("Güneş ışığı ☀️","#fcd34d"),<span key="diagram-node-17" className="text-2xl">→</span>,item("Panel","#93c5fd"),<span key="diagram-node-18" className="text-2xl">→</span>,item("Elektrik ⚡","#86efac")];caption="Işık enerjisi doğrudan elektrik enerjisine dönüşür";}
+ else if(kind==="proscons"){nodes=[item("Avantajlar","#86efac"),<span key="diagram-node-19" className="text-2xl">⚖️</span>,item("Sınırlılıklar","#fca5a5")];caption="Santralleri çok yönlü değerlendirme";}
+ else if(kind==="street"||kind==="home"){nodes=[item("Gereksiz kullanım","#fca5a5"),<span key="diagram-node-20" className="text-2xl">→</span>,item("Tasarruf önerisi","#86efac")];caption="Bilinçli enerji kullanımı";}
+ else {nodes=[item("Önce","#93c5fd"),<span key="diagram-node-21" className="text-2xl">→</span>,item("Sonra","#86efac")];caption="Veri karşılaştırması";}
  return <div className={base}><div className="flex flex-wrap items-center justify-center gap-2">{nodes.map((n,i)=><div key={i}>{n}</div>)}</div><p className="mt-3 text-center text-xs font-medium text-slate-500">{caption} · {kind==="chart"?"Örnek veri görselleştirmesi":"Görsel model"}</p>{kind==="chart"&&<div className="mt-3 flex h-24 items-end justify-center gap-8"><div className="w-12 rounded-t-lg bg-sky-500" style={{height:"90%"}}/><div className="w-12 rounded-t-lg bg-emerald-500" style={{height:"72%"}}/><div className="text-xs text-slate-500">900 → 720 kWh</div></div>}</div>;
 }
 
