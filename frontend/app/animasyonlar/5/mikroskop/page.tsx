@@ -29,7 +29,11 @@ export default function MikroskopAnimasyonuPage() {
   const [showLabels, setShowLabels] = useState(true);
   const [looking, setLooking] = useState(false);
   const [arrived, setArrived] = useState(false);
+  const [prepStep, setPrepStep] = useState(0);
   const stepBack = () => { setArrived(false); setLooking(false); };
+  const chooseSample = (id: string) => { setSampleId(id); setPrepStep(0); setLooking(false); setArrived(false); };
+  const prepLabels = ['Lamı yerleştir', 'Örneği lam üzerine koy', 'Bir damla su ekle', 'Lameli yavaşça kapat', 'Preparatı mikroskop tablasına yerleştir'];
+  const prepDetails = ['Temiz lamı çalışma alanına yatay şekilde koy.', 'İncelemek istediğin örneği lamın ortasına yerleştir.', 'Örneğin üzerine damlalıkla küçük bir su damlası bırak.', 'Lameli bir kenarından yavaşça indirerek örneğin üzerini kapat.', 'Hazırladığın preparatı mikroskop tablasına yerleştir.'];
   const sample = samples.find((s) => s.id === sampleId) ?? samples[0];
   const shapes = useMemo(() => Array.from({ length: 46 }, (_, i) => ({
     x: (i * 37 + 11) % 94 + 3,
@@ -54,7 +58,7 @@ export default function MikroskopAnimasyonuPage() {
           <p className={styles.muted}>İncelemek istediğin örneğe dokun.</p>
           <div className={styles.samples}>
             {samples.map((s) => (
-              <button key={s.id} type="button" onClick={() => setSampleId(s.id)} className={`${styles.sampleButton} ${sampleId === s.id ? styles.selected : ''}`} aria-pressed={sampleId === s.id}>
+              <button key={s.id} type="button" onClick={() => chooseSample(s.id)} className={`${styles.sampleButton} ${sampleId === s.id ? styles.selected : ''}`} aria-pressed={sampleId === s.id}>
                 <span className={styles.sampleEmoji}>{s.emoji}</span><span>{s.name}</span><span className={styles.sampleArrow}>{sampleId === s.id ? '✓' : '›'}</span>
               </button>
             ))}
@@ -64,12 +68,13 @@ export default function MikroskopAnimasyonuPage() {
 
         <section className={styles.scopePanel} aria-label="Mikroskop görüntüsü ve kontrolleri">
           <div className={styles.scopeTop}><div><span className={styles.liveDot} /> CANLI GÖRÜNTÜ MODELİ</div><button className={styles.smallButton} onClick={() => { setZoom(2); setFocus(55); setLight(65); setRunning(true); }}>↺ Sıfırla</button></div>
+          <section className={styles.prepCard} aria-label="Preparat hazırlama aşamaları"><div className={styles.prepHeading}><strong>2. Preparatını kendin hazırla</strong><small>Aşama {prepStep} / 5</small></div><div className={styles.prepVisual}><div className={styles.prepSlide}><span className={styles.prepSample} style={{ opacity: prepStep >= 2 ? 1 : 0 }} /><span className={styles.prepWater} style={{ opacity: prepStep >= 3 ? 1 : 0 }} /><span className={styles.prepCover} style={{ opacity: prepStep >= 4 ? 1 : 0 }} /></div><div className={styles.prepLabels}><span>Lam</span><span>Örnek</span><span>Su damlası</span><span>Lamel</span></div></div><div className={styles.prepProgress}><span style={{ width: (prepStep * 20) + "%" }} /></div><p className={styles.prepDetail}>{prepStep === 0 ? "Önce temiz lamı masaya yerleştir." : prepStep === 5 ? "Preparat hazır! Artık mikroskopta inceleyebilirsin." : prepDetails[prepStep - 1]}</p><button type="button" className={styles.prepButton} onClick={() => setPrepStep((v) => Math.min(5, v + 1))} disabled={prepStep === 5}>{prepStep === 5 ? "✓ Preparat hazır" : prepLabels[prepStep]}</button></section>
           <div className={styles.stage3d}>
-            <MicroscopeScene sampleColor={sample.color} looking={looking} onPick={() => setLooking(true)} onArrived={() => setArrived(true)} />
+            <MicroscopeScene sampleColor={sample.color} looking={looking} onPick={() => { if (prepStep === 5) setLooking(true); }} onArrived={() => setArrived(true)} />
             {!looking && (
               <div className={styles.sceneHint}>
                 <span>🖱️ Sürükleyerek döndür · mikroskopa dokun, okülerden bak</span>
-                <button type="button" className={styles.primary} onClick={() => setLooking(true)}>👁 Okülerden bak</button>
+                <button type="button" className={styles.primary} disabled={prepStep < 5} onClick={() => setLooking(true)}>👁 Okülerden bak</button>
               </div>
             )}
             {looking && !arrived && <div className={styles.sceneHint}><span>Okülere yaklaşılıyor…</span></div>}
