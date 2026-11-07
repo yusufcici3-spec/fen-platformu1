@@ -14,11 +14,15 @@ export default function HomePage() {
     <>
       <Hero />
 
-      <section className="mx-auto grid max-w-7xl gap-5 px-4 py-12 sm:px-6 md:grid-cols-2 lg:px-8">
-        <DailyQuestion />
-        <DailyFact />
+      <section id="gunun-icerikleri" className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <div className="grid gap-5 md:grid-cols-2">
+          <DailyQuestion />
+          <DailyFact />
+        </div>
+        <div className="mt-5">
+          <DailyInspiration />
+        </div>
       </section>
-      <DailyInspiration />
 
       <ClassesSection />
       <AnimationsSection />
