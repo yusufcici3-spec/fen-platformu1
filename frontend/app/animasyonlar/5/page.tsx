@@ -54,6 +54,9 @@ export default function FifthGradeMoonPhasesPage() {
               <Link className={styles.heroAction} href="/animasyonlar/5/fen-yarisi5">
                 Fen Yarışı 5 araba oyunu <span aria-hidden="true">🏎️</span>
               </Link>
+              <Link className={`${styles.heroAction} ${styles.heroActionSecondary}`} href="/animasyonlar/5/milyoner">
+                MilyonerFen oyunu <span aria-hidden="true">💰</span>
+              </Link>
             </div>
           </div>
           <div className={styles.heroOrbit} aria-hidden="true">
