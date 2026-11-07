@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MilyonerFen: 5. Sınıf Fen Bilimleri</title>
+<style>
+:root{--ink:#eef2ff;--muted:#a9b4d6;--gold:#fbbf24;--blue:#1e3a8a;--deep:#0a1030;--panel:#101a4a;--line:#3b4f9e;--ok:#16a34a;--bad:#dc2626}
+*{box-sizing:border-box}
+body{margin:0;background:transparent;color:var(--ink);font:16px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}
+.app{max-width:1050px;margin:auto;padding:12px}
+.game{background:radial-gradient(120% 90% at 50% 0%,#1d2d7a 0%,var(--deep) 60%);border:2px solid var(--line);border-radius:20px;padding:16px;display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:16px}
+@media(max-width:820px){.game{grid-template-columns:1fr}.ladder{order:-1;display:flex;flex-wrap:wrap;gap:4px}.ladder li{flex:1 1 60px}}
+.top{display:flex;flex-wrap:wrap;align-items:center;gap:10px;justify-content:space-between}
+.chip{background:#0b1450;border:1px solid var(--line);border-radius:99px;padding:4px 12px;font-weight:800;font-size:14px}
+.chip b{color:var(--gold)}
+.timer{height:14px;background:#0b1450;border:1px solid var(--line);border-radius:99px;overflow:hidden;margin:10px 0}
+.timer i{display:block;height:100%;width:100%;background:linear-gradient(90deg,#22c55e,#fbbf24);transition:width .25s linear}
+.timer.low i{background:#ef4444}
+.q{background:linear-gradient(180deg,#14236b,#0b1450);border:2px solid var(--line);border-radius:14px;padding:16px 18px;font-size:20px;font-weight:700;min-height:92px;display:flex;align-items:center;justify-content:center;text-align:center}
+.tag{font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--muted);margin:8px 2px 0}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+@media(max-width:560px){.opts{grid-template-columns:1fr}.q{font-size:18px}}
+.opt{position:relative;text-align:left;border:2px solid var(--line);background:linear-gradient(180deg,#14236b,#0b1450);color:var(--ink);border-radius:999px;padding:11px 18px;font:700 16px system-ui,sans-serif;cursor:pointer;min-height:52px;display:flex;gap:10px;align-items:center}
+.opt:hover:not(:disabled){border-color:var(--gold)}
+.opt .l{color:var(--gold);font-weight:900}
+.opt.sel{background:linear-gradient(180deg,#b45309,#78350f);border-color:var(--gold)}
+.opt.ok{background:linear-gradient(180deg,#16a34a,#14532d);border-color:#86efac;animation:blink .5s 3}
+.opt.bad{background:linear-gradient(180deg,#dc2626,#7f1d1d);border-color:#fca5a5}
+.opt.gone{visibility:hidden}
+.opt:disabled{cursor:default}
+.opt .poll{position:absolute;left:18px;right:18px;bottom:3px;height:4px;border-radius:4px;background:#ffffff22;overflow:hidden}
+.opt .poll i{display:block;height:100%;background:var(--gold)}
+.opt .pc{margin-left:auto;font-size:13px;color:var(--gold)}
+@keyframes blink{50%{filter:brightness(1.6)}}
+.btn{border:2px solid var(--line);background:#0b1450;color:var(--ink);border-radius:12px;padding:9px 14px;font:700 15px system-ui,sans-serif;cursor:pointer;min-height:42px}
+.btn:hover:not(:disabled){border-color:var(--gold)}
+.btn:disabled{opacity:.4;cursor:default}
+.btn.gold{background:var(--gold);color:#1f1300;border-color:var(--gold)}
+.btn:focus-visible,.opt:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.jok{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;align-items:center}
+.msg{margin-top:12px;background:#0b1450;border:1px solid var(--line);border-radius:12px;padding:10px 14px;min-height:46px}
+.msg b{color:var(--gold)}
+.ladder{list-style:none;margin:0;padding:0;display:flex;flex-direction:column-reverse;gap:3px}
+.ladder li{display:flex;justify-content:space-between;gap:8px;padding:4px 10px;border-radius:8px;font-weight:800;font-size:14px;color:var(--muted)}
+.ladder li.safe{color:#fff}
+.ladder li.cur{background:var(--gold);color:#1f1300}
+.ladder li.done{color:#86efac}
+.center{text-align:center;padding:24px 8px}
+.big{font-size:42px;font-weight:900;color:var(--gold);margin:8px 0}
+.note{font-size:13px;color:var(--muted);margin:12px 4px 0}
+@media (prefers-reduced-motion:reduce){.opt.ok{animation:none}.timer i{transition:none}}
+</style></head><body>
+<main class="app">
+<div class="game">
+ <section aria-live="polite" id="main"></section>
+ <aside aria-label="Ödül merdiveni"><ol class="ladder" id="ladder"></ol></aside>
+</div>
+<p class="note">Sorular 5. sınıf Fen Bilimleri 1. ünite (Gökyüzündeki Komşularımız: Güneş, Ay, Dünya) ve 2. ünite (Kuvvet ve Kuvvetin Ölçülmesi) kazanımlarından hazırlanmıştır. Ödüller oyun parasıdır. Klavyeden A, B, C, D tuşlarıyla seçip Enter ile kilitleyebilirsin.</p>
+</main>
+<script>
+(function(){
+var PRIZES=[100,200,300,500,1000,2000,4000,8000,16000,32000,64000,125000,250000,500000,1000000];
+var SAFE=[4,9];
+function tl(n){return n.toLocaleString('tr-TR')+' ₺'}
+function time(i){return i<5?30:(i<10?45:60)}
+// [kazanım, soru, [doğru, yanlış, yanlış, yanlış], açıklama]
+var Q=[
+['FB.5.1.1','Güneş nedir?',['Bir yıldız','Bir gezegen','Dünya\'nın uydusu','Bir kuyruklu yıldız'],'Güneş, kendi ışığını yayan dev bir gaz küresidir; yani bir yıldızdır.'],
+['FB.5.2.1','Kuvvetin birimi aşağıdakilerden hangisidir?',['Newton (N)','Kilogram (kg)','Metre (m)','Litre (L)'],'Kuvvet Newton (N) birimiyle ifade edilir.'],
+['FB.5.1.2','Dünya\'nın doğal uydusu hangisidir?',['Ay','Güneş','Mars','Venüs'],'Ay, Dünya\'nın etrafında dolanan doğal uydusudur.'],
+['FB.5.2.1','Kuvvetin büyüklüğünü ölçmek için hangi alet kullanılır?',['Dinamometre','Termometre','Barometre','Cetvel'],'Kuvvet dinamometre ile ölçülür.'],
+['FB.5.2.4','Pürüzlü bir yüzeyde sürtünme kuvveti, düz ve kaygan yüzeye göre nasıldır?',['Daha büyüktür','Daha küçüktür','Aynıdır','Sıfırdır'],'Yüzey ne kadar pürüzlüyse sürtünme kuvveti o kadar büyük olur.'],
+['FB.5.1.3','Ay\'ın Dünya\'dan bakıldığında tamamen aydınlık görüldüğü evre hangisidir?',['Dolunay','Yeni Ay','İlk dördün','Hilal'],'Dolunayda Ay\'ın Dünya\'ya bakan yüzü tamamen aydınlıktır.'],
+['FB.5.2.3','Kütle ile ilgili aşağıdakilerden hangisi doğrudur?',['Bulunduğu yere göre değişmez','Newton ile ölçülür','Dinamometre ile ölçülür','Ay\'da azalır'],'Kütle madde miktarıdır; yer değiştirince değişmez. Kilogram (kg) ile ifade edilir ve terazi ile ölçülür.'],
+['FB.5.1.2','Ay\'ın yüzeyinde aşağıdakilerden hangisi görülür?',['Kraterler','Okyanuslar','Kalın bir atmosfer','Ormanlar'],'Ay\'ın yüzeyi çarpma çukurları olan kraterlerle kaplıdır; atmosferi ve suyu yoktur.'],
+['FB.5.1.4','Güneş, Dünya ve Ay büyükten küçüğe doğru nasıl sıralanır?',['Güneş – Dünya – Ay','Dünya – Güneş – Ay','Ay – Dünya – Güneş','Güneş – Ay – Dünya'],'Güneş en büyük, Dünya ondan çok küçük, Ay ise Dünya\'dan da küçüktür.'],
+['FB.5.2.2','Yay ve cetvelle yapılan basit bir dinamometre modelinde asılan ağırlık artarsa yay ne olur?',['Daha çok uzar','Kısalır','Değişmez','Kopar'],'Yaya uygulanan kuvvet arttıkça yayın uzaması da artar. Dinamometre bu ilkeye göre çalışır.'],
+['FB.5.1.3','Ay\'ın evreleri yaklaşık kaç günde bir tekrar eder?',['Yaklaşık 29-30 gün','7 gün','365 gün','1 gün'],'Ay\'ın evreleri yaklaşık bir ayda (29,5 gün) tamamlanır ve tekrar eder.'],
+['FB.5.2.3','Dünya\'da ağırlığı 60 N olan bir cismin kütlesi yaklaşık kaç kilogramdır? (1 kg\'lık kütle yaklaşık 10 N ağırlığındadır.)',['6 kg','60 kg','600 kg','0,6 kg'],'60 N ÷ 10 N/kg = 6 kg.'],
+['FB.5.1.1','Güneş yüzeyindeki lekelerin gün gün yer değiştirmesi, Güneş\'in hangi hareketini gösterir?',['Kendi ekseni etrafında dönmesini','Ay etrafında dolanmasını','Dünya etrafında dolanmasını','Hareketsiz olduğunu'],'Güneş lekelerinin yer değiştirmesi, Güneş\'in kendi ekseni etrafında döndüğünü gösterir.'],
+['FB.5.1.2','Dünya\'dan Ay\'ın hep aynı yüzünün görülmesinin nedeni nedir?',['Ay\'ın dönme ve dolanma sürelerinin eşit olması','Ay\'ın kendi etrafında dönmemesi','Ay\'ın çok hızlı dolanması','Ay\'ın Güneş etrafında dönmesi'],'Ay kendi etrafında bir kez dönerken Dünya etrafında da bir tur atar. Bu yüzden hep aynı yüzü Dünya\'ya bakar.'],
+['FB.5.2.4','Buzlu yola kum serpilmesinin amacı nedir?',['Sürtünmeyi artırmak','Sürtünmeyi azaltmak','Yolu ısıtmak','Araçların ağırlığını artırmak'],'Kum yüzeyi pürüzlü yapar; sürtünme artar ve araçlar ile yayalar kaymaz.']
+];
+
+var st;
+function $(i){return document.getElementById(i)}
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}
+function safeWon(i){var w=0;SAFE.forEach(function(s){if(i>s)w=PRIZES[s]});return w}
+function newGame(){st={i:0,jok:{f:true,a:true,p:true},sel:-1,locked:false,over:false,timer:null,left:0,gone:[],msg:'',opts:[],correct:0,answered:0};startQ()}
+function startQ(){
+ var q=Q[st.i];var idx=shuffle([0,1,2,3]);st.opts=idx;st.correctPos=idx.indexOf(0);
+ st.sel=-1;st.locked=false;st.gone=[];st.poll=null;st.msg='';st.reveal=false;st.left=time(st.i);
+ clearInterval(st.timer);st.timer=setInterval(tick,250);st.t0=Date.now();
+ render();
+}
+function tick(){
+ if(st.locked||st.over)return;
+ st.left=Math.max(0,time(st.i)-(Date.now()-st.t0)/1000);
+ var bar=document.querySelector('.timer i'),tm=document.querySelector('.timer');
+ if(bar){bar.style.width=(st.left/time(st.i)*100)+'%';tm.classList.toggle('low',st.left<=10)}
+ var tv=$('tv');if(tv)tv.textContent=Math.ceil(st.left)+' sn';
+ if(st.left<=0){clearInterval(st.timer);st.locked=true;st.timeout=true;st.reveal=true;st.msg='<b>Süre doldu!</b> '+Q[st.i][3];render()}
+}
+function render(){
+ var m=$('main');var h='';
+ if(st.over){
+  var won=st.final;
+  h='<div class="center"><div class="tag">MİLYONERFEN · OYUN BİTTİ</div><div class="big">'+tl(won)+'</div><p>'+(won>=1000000?'Tebrikler, <b>5. sınıf fen milyoneri</b> oldun! 🏆':(won>0?'Harika! Bu parayı kazandın.':'Bir dahaki sefere daha iyi olacak!'))+'</p><p class="muted" style="color:var(--muted)">'+st.correct+' soruyu doğru bildin.</p><button class="btn gold" id="again">Yeniden oyna</button></div>';
+  m.innerHTML=h;$('again').onclick=newGame;ladder();post();return;
+ }
+ var q=Q[st.i];
+ h+='<div class="top"><span class="chip">Soru <b>'+(st.i+1)+' / 15</b></span><span class="chip">Ödül: <b>'+tl(PRIZES[st.i])+'</b></span><span class="chip">Kazandığın: <b>'+tl(st.i>0?PRIZES[st.i-1]:0)+'</b></span><span class="chip">Süre: <b id="tv">'+Math.ceil(st.left)+' sn</b></span></div>';
+ h+='<div class="timer'+(st.left<=10?' low':'')+'"><i style="width:'+(st.left/time(st.i)*100)+'%"></i></div>';
+ h+='<div class="tag">'+q[0]+(SAFE.indexOf(st.i)>=0?' · GÜVENLİ BASAMAK':'')+'</div>';
+ h+='<div class="q">'+q[1]+'</div><div class="opts">';
+ st.opts.forEach(function(oi,p){
+  var cls='opt';if(st.gone.indexOf(p)>=0)cls+=' gone';
+  if(st.reveal){if(p===st.correctPos)cls+=' ok';else if(p===st.sel)cls+=' bad'}else if(p===st.sel)cls+=' sel';
+  var poll=st.poll&&st.poll[p]!=null?'<span class="pc">%'+st.poll[p]+'</span><span class="poll"><i style="width:'+st.poll[p]+'%"></i></span>':'';
+  h+='<button class="'+cls+'" data-p="'+p+'"'+(st.locked?' disabled':'')+'><span class="l">'+'ABCD'[p]+':</span><span>'+q[2][oi]+'</span>'+poll+'</button>';
+ });
+ h+='</div>';
+ if(!st.locked&&st.sel>=0)h+='<div class="jok"><span>Son kararın mı?</span><button class="btn gold" id="lock">Evet, kilitle</button><button class="btn" id="cancel">Vazgeç</button></div>';
+ if(!st.locked){
+  h+='<div class="jok" role="group" aria-label="Jokerler"><button class="btn" id="jf"'+(st.jok.f?'':' disabled')+'>½ Yarı yarıya</button><button class="btn" id="ja"'+(st.jok.a?'':' disabled')+'>👥 Seyirciye sor</button><button class="btn" id="jp"'+(st.jok.p?'':' disabled')+'>📞 Telefon</button><button class="btn" id="quit"'+(st.i>0?'':' disabled')+'>Çekil ('+tl(st.i>0?PRIZES[st.i-1]:0)+')</button></div>';
+ }
+ if(st.msg)h+='<div class="msg">'+st.msg+'</div>';
+ if(st.locked&&!st.over){
+  var okAns=st.sel===st.correctPos;
+  h+='<div class="jok">'+(st.timeout||!okAns?'<button class="btn gold" id="end">Sonucu gör</button>':(st.i===14?'<button class="btn gold" id="end">Ödülü al 🏆</button>':'<button class="btn gold" id="next">Sonraki soru →</button>'))+'</div>';
+ }
+ m.innerHTML=h;ladder();bind();post();
+}
+function ladder(){
+ var l=$('ladder');l.innerHTML='';
+ for(var i=0;i<15;i++){var li=document.createElement('li');var c='';if(SAFE.indexOf(i)>=0)c+=' safe';if(!st.over&&i===st.i)c+=' cur';else if(st.over?i<st.won:i<st.i)c+=' done';li.className=c.trim();li.innerHTML='<span>'+(i+1)+'</span><span>'+tl(PRIZES[i])+'</span>';l.appendChild(li)}
+}
+function bind(){
+ [].forEach.call(document.querySelectorAll('.opt'),function(b){b.onclick=function(){if(st.locked)return;st.sel=parseInt(b.getAttribute('data-p'));render()}});
+ var e;
+ if(e=$('lock'))e.onclick=lock;if(e=$('cancel'))e.onclick=function(){st.sel=-1;render()};
+ if(e=$('jf'))e.onclick=j5050;if(e=$('ja'))e.onclick=jAud;if(e=$('jp'))e.onclick=jTel;
+ if(e=$('quit'))e.onclick=function(){finish(st.i>0?PRIZES[st.i-1]:0,st.i)};
+ if(e=$('next'))e.onclick=function(){st.i++;startQ()};
+ if(e=$('end'))e.onclick=function(){if(st.sel===st.correctPos&&!st.timeout)finish(PRIZES[st.i],15);else finish(safeWon(st.i),st.i)};
+}
+function lock(){
+ clearInterval(st.timer);st.locked=true;st.reveal=true;st.answered++;
+ var ok=st.sel===st.correctPos;if(ok)st.correct++;
+ st.msg=(ok?'<b>Doğru!</b> ':'<b>Yanlış.</b> Doğru cevap: <b>'+'ABCD'[st.correctPos]+'</b>. ')+Q[st.i][3];
+ render();
+}
+function finish(won,upTo){clearInterval(st.timer);st.over=true;st.final=won;st.won=upTo;try{var b=parseInt(localStorage.getItem('milyoner5')||'0');if(won>b)localStorage.setItem('milyoner5',String(won))}catch(e){}render()}
+function wrongPositions(){var r=[];for(var p=0;p<4;p++)if(p!==st.correctPos&&st.gone.indexOf(p)<0)r.push(p);return r}
+function j5050(){st.jok.f=false;var w=shuffle(wrongPositions()).slice(0,2);st.gone=st.gone.concat(w);if(st.gone.indexOf(st.sel)>=0)st.sel=-1;st.msg='<b>Yarı yarıya:</b> iki yanlış şık elendi.';render()}
+function jAud(){
+ st.jok.a=false;var alive=[0,1,2,3].filter(function(p){return st.gone.indexOf(p)<0});
+ var base=Math.max(38,88-st.i*4)+Math.floor(Math.random()*8-4);
+ var rest=100-base,res={};var others=alive.filter(function(p){return p!==st.correctPos});
+ var w=others.map(function(){return Math.random()+.2}),sum=w.reduce(function(a,b){return a+b},0),used=0;
+ others.forEach(function(p,k){var v=k===others.length-1?rest-used:Math.round(rest*w[k]/sum);res[p]=v;used+=v});
+ res[st.correctPos]=base;st.poll=res;st.msg='<b>Seyirci oyu:</b> yüzdeler şıkların yanında gösteriliyor. Seyirci her zaman haklı değildir!';render();
+}
+function jTel(){
+ st.jok.p=false;var sure=Math.random()<Math.max(.45,.95-st.i*.035);var alive=[0,1,2,3].filter(function(p){return st.gone.indexOf(p)<0});
+ var pick=sure?st.correctPos:shuffle(alive.filter(function(p){return p!==st.correctPos}))[0];
+ var conf=sure?(st.i<8?'Eminim':'Büyük ihtimalle'):'Pek emin değilim ama';
+ st.msg='<b>📞 Arkadaşın:</b> "'+conf+', cevap <b>'+'ABCD'[pick]+'</b> olmalı."';render();
+}
+document.addEventListener('keydown',function(e){
+ if(!st||st.over)return;var k=e.key.toUpperCase();var p='ABCD'.indexOf(k);
+ if(p>=0&&!st.locked&&st.gone.indexOf(p)<0){st.sel=p;render()}
+ else if(e.key==='Enter'){if(!st.locked&&st.sel>=0)lock();else if(st.locked){var b=$('next')||$('end');if(b)b.click()}}
+});
+function post(){try{parent.postMessage({type:'html-anim-height',height:document.documentElement.scrollHeight},'*')}catch(e){}}
+window.addEventListener('load',post);window.addEventListener('resize',post);
+if(window.ResizeObserver)new ResizeObserver(post).observe(document.body);
+try{parent.postMessage({type:'html-anim-ready'},'*')}catch(e){}
+newGame();
+})();
+</script>
+</body></html>
