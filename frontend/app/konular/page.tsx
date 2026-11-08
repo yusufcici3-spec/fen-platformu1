@@ -1,12 +1,35 @@
 import Link from "next/link";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { getStaticUnitsForLevel } from "@/lib/maarifContent";
+import { apiFetch } from "@/lib/api";
+import { UnitSummary, TopicSummary } from "@/types/curriculum";
+
+type DbUnit = UnitSummary & { topics: TopicSummary[] };
 
 export const metadata = { title: "Tüm Konular" };
 
 const LEVELS = [5, 6, 7, 8];
 
-export default function KonularPage() {
+async function loadDbUnits(level: number): Promise<DbUnit[]> {
+  try {
+    const res = await apiFetch<{ units: DbUnit[] }>(`/siniflar/${level}-sinif`);
+    const staticUnits = getStaticUnitsForLevel(level);
+    return (res.data?.units ?? []).filter((u) => {
+      const dup = staticUnits.some((s) => s.slug === u.slug);
+      const legacy = level === 8 && (
+        u.code?.trim().toLowerCase() === "f.8.7" ||
+        u.title.toLocaleLowerCase("tr-TR").includes("fiziksel olaylar")
+      );
+      return !dup && !legacy;
+    });
+  } catch {
+    return [];
+  }
+}
+
+export default async function KonularPage() {
+  const dbByLevel: Record<number, DbUnit[]> = {};
+  for (const l of LEVELS) dbByLevel[l] = await loadDbUnits(l);
   return (
     <>
       <PageHeader
@@ -24,6 +47,7 @@ export default function KonularPage() {
         </nav>
         {LEVELS.map((level) => {
           const units = getStaticUnitsForLevel(level);
+          const dbUnits = dbByLevel[level];
           return (
             <div key={level} id={`sinif-${level}`} className="mb-14 scroll-mt-24">
               <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
@@ -32,7 +56,7 @@ export default function KonularPage() {
                   {level}. sınıfın tüm üniteleri →
                 </Link>
               </div>
-              {units.length === 0 ? (
+              {units.length === 0 && dbUnits.length === 0 ? (
                 <Link href={`/sinif/${level}`} className="text-sm text-lab-inkMuted underline">
                   {level}. sınıf ünitelerini görüntüle
                 </Link>
@@ -52,6 +76,29 @@ export default function KonularPage() {
                       </div>
                       <h3 className="mt-2 font-display text-lg font-semibold">{unit.title}</h3>
                       <p className="mt-2 line-clamp-3 text-sm text-lab-inkMuted dark:text-lab-paper/60">{unit.description}</p>
+                      <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-beaker">
+                        Konuları görüntüle <span className="transition group-hover:translate-x-1">→</span>
+                      </span>
+                    </Link>
+                  ))}
+                  {dbUnits.map((unit) => (
+                    <Link
+                      key={unit.id}
+                      href={`/sinif/${level}/${unit.slug}`}
+                      className="group rounded-card border border-lab-paperLine bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-white/10 dark:bg-lab-inkSoft"
+                    >
+                      <div className="flex items-center justify-between">
+                        {unit.code ? (
+                          <span className="font-mono text-xs font-semibold text-beaker-dark dark:text-beaker-light">Ünite {unit.code}</span>
+                        ) : <span />}
+                        <span className="rounded-full bg-lab-paperLine/60 px-2.5 py-1 text-xs font-medium text-lab-inkMuted dark:bg-white/10 dark:text-lab-paper/60">
+                          {unit.topics.length} konu
+                        </span>
+                      </div>
+                      <h3 className="mt-2 font-display text-lg font-semibold">{unit.title}</h3>
+                      {unit.description && (
+                        <p className="mt-2 line-clamp-2 text-sm text-lab-inkMuted dark:text-lab-paper/60">{unit.description}</p>
+                      )}
                       <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-beaker">
                         Konuları görüntüle <span className="transition group-hover:translate-x-1">→</span>
                       </span>
