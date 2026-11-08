@@ -24,7 +24,7 @@ export function Hero() {
               Ücretsiz Başla
             </Link>
             <Link
-              href="/sinif/5"
+              href="/konular"
               className="rounded-full border border-lab-ink/15 px-6 py-3 text-sm font-semibold transition hover:bg-lab-paperLine/60 dark:border-white/20 dark:hover:bg-white/5"
             >
               Konulara Göz At
