@@ -9,7 +9,7 @@ type GradeCover = {
   accent: string;
 };
 
-// Her sınıfın kapağı; tıklayınca o sınıfın animasyon sayfası açılır.
+// Sınıf kapağı, ilgili sınıfın animasyon listesini açar.
 const covers: GradeCover[] = [
   { grade: "5", title: "Ay'ın evreleri, kuvvet, mikroskop, iskelet sistemi, MilyonerFen ve oyunlar", count: 9, image: "/animasyonlar/kapak/5-sinif.jpg", accent: "#66a9de" },
   { grade: "6", title: "Gezegenler, tutulmalar, sürat, bileşke kuvvet ve oyunlar", count: 6, image: "/animasyonlar/kapak/6-sinif.jpg", accent: "#4eb9a1" },
@@ -36,7 +36,7 @@ export default function AnimationsSection() {
           {covers.map((c) => (
             <Link
               key={c.grade}
-              href={`/animasyonlar/${c.grade}`}
+              href={`/animasyonlar#sinif-${c.grade}`}
               className={styles.poster}
               style={{ ["--poster-accent" as string]: c.accent }}
               aria-label={`${c.grade}. sınıf animasyonlarını aç (${c.count} animasyon)`}
