@@ -42,6 +42,15 @@ const videos = [
     link: { href: "/sinif/6/gunes-sistemi-ve-tutulmalar", label: "Konu anlatımını aç" },
   },
   {
+    id: "6-sinif-3-unite",
+    grade: "6. SINIF · 3. ÜNİTE",
+    title: "Canlılarda Sistemler",
+    description: "6. sınıf 3. ünite (FB.6.3.1–9): eşeyli ve eşeysiz üreme, bitki ve hayvanlarda gelişme, insanda üreme, sinir sistemi, iç salgı bezleri, ergenlik ve sistemlerin sağlığı.",
+    src: "/videolar/6-sinif-3-unite-canlilarda-sistemler.mp4",
+    poster: "/videolar/6-sinif-3-unite-canlilarda-sistemler.jpg",
+    link: { href: "/sinif/6/canlilarda-sistemler", label: "Konu anlatımını aç" },
+  },
+  {
     id: "7-sinif-2-unite",
     grade: "7. SINIF · 2. ÜNİTE",
     title: "Kuvvet ve Enerjiyi Keşfedelim",
