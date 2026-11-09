@@ -33,6 +33,7 @@ export default function SixthGradePlanetAnimationsPage() {
             <Link href="/animasyonlar/6/ip-cekme">İp çekme etkinliği ↗</Link>
             <Link href="/animasyonlar/6/cicekli-bitkiler-yasam-dongusu">Çiçekli bitkilerin yaşam döngüsü 🌼</Link>
             <Link href="/animasyonlar/6/cicegin-kisimlari">🌺 Çiçeğin Kısımları – Etkileşimli Animasyon</Link>
+            <Link href="/animasyonlar/6/esesiz-ureme">Eşeysiz üreme çeşitleri 🧫</Link>
             <Link href="/animasyonlar/6/fen-futbolu6">Fen Futbolu 6 oyunu ⚽</Link>
           </div>
         </header>
