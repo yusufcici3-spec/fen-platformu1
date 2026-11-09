@@ -12,7 +12,7 @@ type GradeCover = {
 // Her sınıfın kapağı; tıklayınca o sınıfın animasyon sayfası açılır.
 const covers: GradeCover[] = [
   { grade: "5", title: "Ay'ın evreleri, kuvvet, mikroskop, iskelet sistemi, MilyonerFen ve oyunlar", count: 9, image: "/animasyonlar/kapak/5-sinif.jpg", accent: "#66a9de" },
-  { grade: "6", title: "Gezegenler, tutulmalar, sürat, bileşke kuvvet ve oyunlar", count: 6, image: "/animasyonlar/kapak/6-sinif.jpg", accent: "#4eb9a1" },
+  { grade: "6", title: "Gezegenler, tutulmalar, sürat, bileşke kuvvet, eşeysiz üreme ve oyunlar", count: 7, image: "/animasyonlar/kapak/6-sinif.jpg", accent: "#4eb9a1" },
   { grade: "7", title: "Uzay, enerji, sindirim ve dolaşım sistemi, MilyonerFen ve oyunlar", count: 9, image: "/animasyonlar/kapak/7-sinif.jpg", accent: "#e49a58" },
   { grade: "8", title: "Mevsimler, kalıtım, DNA, basınç ve oyunlar", count: 5, image: "/animasyonlar/kapak/8-sinif.jpg", accent: "#9a89ec" },
 ];

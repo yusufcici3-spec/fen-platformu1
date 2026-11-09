@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eşeysiz Üreme Çeşitleri Etkileşimli Animasyonu</title>
+<style>
+:root{--bg:#f4f8fc;--panel:#fff;--ink:#172554;--muted:#52627a;--line:#dbe5f0;--acc:#0f766e;--stage:#f8fbff}
+:root[data-theme="dark"]{--bg:#0d1620;--panel:#142231;--ink:#e7eef6;--muted:#9db0c4;--line:#274058;--acc:#2dd4bf;--stage:#0f1b27}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+.app{max-width:1050px;margin:auto;padding:14px;display:grid;gap:12px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px;min-width:0}
+h1{margin:0;font-size:22px}h2{margin:4px 0 6px;font-size:19px}
+.muted{color:var(--muted)}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.08em;color:var(--muted)}
+.tabs,.controls,.opts{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.tabs{margin-top:10px}.controls{margin-top:10px}.opts{margin:8px 0 0}
+.btn{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:10px;padding:8px 12px;font:600 14px system-ui,sans-serif;cursor:pointer;min-height:40px}
+.btn:hover{border-color:var(--ink)}
+.btn.main{background:var(--acc);color:#fff;border-color:var(--acc)}
+.btn[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn:focus-visible,input:focus-visible,.hot:focus-visible{outline:3px solid #f59e0b;outline-offset:2px}
+.sp{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--muted)}
+.sp input{accent-color:var(--acc);width:130px}
+.grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:12px;align-items:start}
+@media (max-width:820px){.grid{grid-template-columns:1fr}}
+svg{display:block;width:100%;height:auto;background:var(--stage);border:1px solid var(--line);border-radius:12px}
+.info p{margin:6px 0}
+.tag{display:inline-block;padding:3px 10px;border-radius:99px;font-size:12px;font-weight:800;color:#fff;background:#0f766e}
+.stat{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+.stat span{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:5px 10px;font-size:13px;font-weight:700}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+th{background:var(--bg)}
+.q .row{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.fb{margin-top:8px;font-weight:700;min-height:22px}
+.hot{cursor:pointer}
+.note{font-size:13px;color:var(--muted);margin:6px 0 0}
+</style></head><body>
+<main class="app">
+<section class="panel">
+ <div class="eyebrow">6. SINIF FEN BİLİMLERİ · FB.6.3.1</div>
+ <h1>Eşeysiz Üreme Çeşitleri</h1>
+ <p class="muted" style="margin:4px 0 0">Bir çeşit seç, canlıyı seç; ilerleme çubuğunu sürükle ya da Oynat'a bas. Tek canlıdan, gamet birleşmeden yeni canlı oluşur.</p>
+ <div class="tabs" id="tabs" role="tablist"></div>
+</section>
+<section class="grid">
+ <div class="panel">
+  <svg id="svg" viewBox="0 0 640 400" role="img" aria-label="Eşeysiz üreme animasyonu"></svg>
+  <div class="opts" id="opts"></div>
+  <div class="controls">
+   <button class="btn main" id="play">▶ Oynat</button>
+   <button class="btn" id="reset">↺ Sıfırla</button>
+   <label class="sp">İlerleme <input type="range" id="prog" min="0" max="100" value="0" aria-label="İlerleme"></label>
+   <label class="sp">Hız <input type="range" id="spd" min="1" max="4" value="2" aria-label="Hız"></label>
+  </div>
+  <p class="note" id="hint"></p>
+ </div>
+ <div class="panel info" id="info"></div>
+</section>
+<section class="panel">
+ <h2>Karşılaştır</h2>
+ <div style="overflow:auto"><table>
+  <tr><th>Çeşit</th><th>Nasıl olur?</th><th>Örnek canlılar</th></tr>
+  <tr><td><b>Bölünme</b></td><td>Canlı ikiye bölünür, iki yeni canlı oluşur.</td><td>Bakteri, amip, paramesyum</td></tr>
+  <tr><td><b>Tomurcuklanma</b></td><td>Vücutta çıkan tomurcuk büyür, ayrılarak yeni canlı olur.</td><td>Hidra, maya mantarı</td></tr>
+  <tr><td><b>Rejenerasyon</b></td><td>Kopan parça kendini yeniler; bazılarında parçadan yeni canlı oluşur.</td><td>Deniz yıldızı, planarya</td></tr>
+  <tr><td><b>Vejetatif üreme</b></td><td>Bitkinin kök, gövde veya yaprağından yeni bitki oluşur.</td><td>Patates, çilek, gül (çelik)</td></tr>
+ </table></div>
+</section>
+<section class="panel q">
+ <h2>Kendini dene</h2>
+ <div id="qtext" style="font-weight:700"></div>
+ <div class="row" id="qbtn"></div>
+ <div class="fb" id="qfb" aria-live="polite"></div>
+</section>
+</main>
+<script>
+var NS='http://www.w3.org/2000/svg',svg=document.getElementById('svg');
+function el(t,a,k){var e='<'+t;for(var i in a)e+=' '+i+'="'+a[i]+'"';return e+(k===undefined?'/>':'>'+k+'</'+t+'>')}
+function cl(x,a,b){return Math.max(a,Math.min(b,x))}
+function sm(x){x=cl(x,0,1);return x*x*(3-2*x)}
+function seg(p,a,b){return cl((p-a)/(b-a),0,1)}
+var MODES=[
+ {id:'bol',name:'Bölünme',opts:['Bakteri','Amip'],
+  info:function(o){return '<span class="tag">Bölünme</span><h2>'+o+' ikiye bölünür</h2><p>Önce kalıtım maddesi (çekirdek) eşlenir, sonra hücre uzar, ortadan boğumlanır ve iki yeni hücre oluşur.</p><p><b>Örnekler:</b> bakteri, amip, paramesyum.</p><p>Yavrular ebeveynle <b>aynı özelliklere</b> sahiptir.</p>'}},
+ {id:'tom',name:'Tomurcuklanma',opts:['Hidra','Maya mantarı'],
+  info:function(o){return '<span class="tag">Tomurcuklanma</span><h2>'+o+' tomurcuk verir</h2><p>Vücutta bir çıkıntı (tomurcuk) oluşur, büyür; yeterince gelişince ana canlıdan ayrılarak bağımsız yeni canlı olur.</p><p><b>Örnekler:</b> hidra, maya mantarı.</p>'}},
+ {id:'rej',name:'Rejenerasyon',opts:['Deniz yıldızı','Planarya'],
+  info:function(o){return '<span class="tag">Rejenerasyon</span><h2>'+(o=='Planarya'?'Planarya parçalarından yeni canlı oluşur':'Deniz yıldızı kolunu yeniler')+'</h2><p>Canlının kopan ya da kesilen kısmı yeniden oluşur. Bazı canlılarda (planarya) kopan parçadan <b>tam bir canlı</b> gelişir.</p><p><b>Örnekler:</b> deniz yıldızı, planarya, kertenkele kuyruğu (yenileme).</p>'}},
+ {id:'vej',name:'Vejetatif üreme',opts:['Patates','Çilek','Gül çeliği'],
+  info:function(o){var t={'Patates':'Patatesin <b>gövde (yumru)</b> üzerindeki gözlerden yeni bitkiler çıkar.','Çilek':'Çilek, <b>koşucu gövde</b> (stolon) ile yayılır; boğumlarda yeni bitkiler oluşur.','Gül çeliği':'Kesilen <b>gövde parçası (çelik)</b> toprağa dikilince kök ve yaprak oluşturur.'};return '<span class="tag">Vejetatif üreme</span><h2>'+o+'</h2><p>'+t[o]+'</p><p>Tohum ve çiçek olmadan, bitkinin <b>vejetatif organlarından</b> (kök, gövde, yaprak) yeni bitki oluşur.</p>'}}
+];
+var mode=0,opt=[0,0,0,0],P=0,playing=false,cut=-1,last=0;
+var G='#2f9e5a',GD='#1f7a42',Y='#f5c542',BR='#8a5a2b',PK='#f38ba8',BL='#5aa0f0',SOIL='#8b6b4a';
+function cell(cx,cy,rx,ry,col,nuc){return el('ellipse',{cx:cx,cy:cy,rx:rx,ry:ry,fill:col,stroke:'#0003','stroke-width':2})}
+function drawBol(p,o){
+ var s='',base=o==0?{rx:78,ry:40,c:'#7bd389',n:'#ffd86b'}:{rx:62,ry:52,c:'#9ad0f5',n:'#ffb86b'};
+ var d=sm(seg(p,.35,1))*(base.rx*2.15); var n=sm(seg(p,0,.35))*(o==0?26:30);
+ var cx=320,cy=190;
+ var rx=base.rx*(1-.25*sm(seg(p,.3,1)))+0; 
+ if(o==1){ // amip: düzensiz kenar
+  s+=el('ellipse',{cx:cx-d/2,cy:cy,rx:rx,ry:base.ry,fill:base.c,stroke:'#0003','stroke-width':2});
+  s+=el('ellipse',{cx:cx+d/2,cy:cy,rx:rx,ry:base.ry,fill:base.c,stroke:'#0003','stroke-width':2});
+ }else{
+  s+=el('rect',{x:cx-d/2-rx,y:cy-base.ry,width:rx*2,height:base.ry*2,rx:base.ry,fill:base.c,stroke:'#0003','stroke-width':2});
+  s+=el('rect',{x:cx+d/2-rx,y:cy-base.ry,width:rx*2,height:base.ry*2,rx:base.ry,fill:base.c,stroke:'#0003','stroke-width':2});
+  // iç dolgu: birleşim yerini kapat (boğumlanma görünümü)
+  var fill=1-sm(seg(p,.6,.85));
+  if(d<rx*2) s+=el('rect',{x:cx-d/2,y:cy-base.ry*(.55+.45*fill),width:d,height:base.ry*2*(.55+.45*fill),fill:base.c});
+ }
+ var nr=o==0?10:16;
+ if(p<.35){ s+=el('circle',{cx:cx-n,cy:cy,r:nr,fill:base.n,stroke:'#0004'})+el('circle',{cx:cx+n,cy:cy,r:nr,fill:base.n,stroke:'#0004'}); if(p<.05)s=s.replace(/<circle[^>]*\/><circle[^>]*\/>$/,el('circle',{cx:cx,cy:cy,r:nr+3,fill:base.n,stroke:'#0004'}));}
+ else{ s+=el('circle',{cx:cx-d/2,cy:cy,r:nr,fill:base.n,stroke:'#0004'})+el('circle',{cx:cx+d/2,cy:cy,r:nr,fill:base.n,stroke:'#0004'});}
+ var cnt=p<.8?1:2;
+ s+=el('text',{x:320,y:50,'text-anchor':'middle','font-size':20,'font-weight':800,fill:'currentColor'},p<.35?'1. Çekirdek (kalıtım maddesi) eşlenir':p<.8?'2. Hücre uzar ve boğumlanır':'3. İki yeni hücre oluştu');
+ s+=el('text',{x:320,y:340,'text-anchor':'middle','font-size':18,fill:'currentColor'},'Hücre sayısı: '+cnt);
+ return s}
+function drawTom(p,o){
+ var s='';
+ if(o==0){
+  var bx=320,by=330,top=120;
+  var body=function(x,y,h,w,sc){var r='';r+=el('rect',{x:x-w/2,y:y-h,width:w,height:h,rx:w/2,fill:'#e89cb0',stroke:'#0003','stroke-width':2});r+=el('ellipse',{cx:x,cy:y+2,rx:w*.8,ry:7,fill:'#c9778f'});
+   for(var i=0;i<5;i++){var a=-Math.PI/2+(i-2)*.42;r+=el('line',{x1:x,y1:y-h,x2:x+Math.sin((i-2)*.42)*55*sc,y2:y-h-Math.cos((i-2)*.42)*45*sc,stroke:'#e89cb0','stroke-width':6*sc,'stroke-linecap':'round'})}
+   r+=el('circle',{cx:x,cy:y-h+10,r:4*sc,fill:'#7a2f4a'});return r};
+  s+=body(bx,by,190,56,1);
+  var g=sm(seg(p,0,.7)),det=sm(seg(p,.8,1));
+  var len=70*g,w=10+22*g,ox=det*120,oy=-det*0;
+  var sx=bx+28,sy=240;
+  if(g>0.02){
+   var x2=sx+len+ox,y2=sy-len*.35+oy;
+   s+=el('line',{x1:sx+ox,y1:sy+(det?-det*0:0),x2:x2,y2:y2,stroke:'#e89cb0','stroke-width':w,'stroke-linecap':'round'});
+   if(g>.5){for(var i=0;i<3;i++){s+=el('line',{x1:x2,y1:y2,x2:x2+(i-1)*14*sm(seg(p,.55,.8)),y2:y2-16*sm(seg(p,.55,.8)),stroke:'#e89cb0','stroke-width':4,'stroke-linecap':'round'})}}
+  }
+  s+=el('text',{x:320,y:50,'text-anchor':'middle','font-size':20,'font-weight':800,fill:'currentColor'},p<.7?(p<.03?'Hidra':'Tomurcuk büyüyor'):p<.8?'Tomurcuk tentakül çıkardı':'Tomurcuk ayrıldı: yeni hidra');
+ }else{
+  var cx=290,cy=210,r=54,g2=sm(seg(p,0,.7)),det=sm(seg(p,.8,1));
+  s+=el('circle',{cx:cx,cy:cy,r:r,fill:'#f2d06b',stroke:'#0003','stroke-width':2})+el('circle',{cx:cx-8,cy:cy+6,r:16,fill:'#d59a2b'});
+  var br=4+22*g2,bx2=cx+r*.8+ (br*.6)+det*90,by2=cy-r*.6-(br*.4)-det*10;
+  s+=el('circle',{cx:bx2,cy:by2,r:br,fill:'#f2d06b',stroke:'#0003','stroke-width':2});
+  if(g2>.5) s+=el('circle',{cx:bx2,cy:by2,r:br*.4,fill:'#d59a2b'});
+  s+=el('text',{x:320,y:50,'text-anchor':'middle','font-size':20,'font-weight':800,fill:'currentColor'},p<.03?'Maya hücresi':p<.8?'Tomurcuk büyüyor, çekirdek paylaşılıyor':'Tomurcuk ayrıldı: yeni maya hücresi');
+ }
+ return s}
+function star(cx,cy,arms,cutI,regrow){
+ var s='';
+ for(var i=0;i<5;i++){
+  var a=-Math.PI/2+i*2*Math.PI/5,L=100;
+  if(i==cutI){L=22+78*regrow}
+  var ex=cx+Math.cos(a)*L,ey=cy+Math.sin(a)*L;
+  s+=el('line',{x1:cx,y1:cy,x2:ex,y2:ey,stroke:'#f0803c','stroke-width':34,'stroke-linecap':'round',opacity:i==cutI&&regrow<1?.9:1});
+  s+=el('line',{x1:cx,y1:cy,x2:ex,y2:ey,stroke:'#ffb27a','stroke-width':10,'stroke-linecap':'round',opacity:.7});
+ }
+ s+=el('circle',{cx:cx,cy:cy,r:30,fill:'#f0803c'});
+ for(var i=0;i<5;i++){var a=-Math.PI/2+i*2*Math.PI/5;s+=el('circle',{cx:cx+Math.cos(a)*92,cy:cy+Math.sin(a)*92,r:20,fill:'transparent',class:'hot','data-arm':i,'tabindex':0,'role':'button','aria-label':(i+1)+'. kolu kes',style:'pointer-events:all'})}
+ return s}
+function drawRej(p,o){
+ var s='';
+ if(o==0){
+  var cx=320,cy=210;
+  if(cut<0){s+=star(cx,cy,5,-1,1);s+=el('text',{x:320,y:50,'text-anchor':'middle','font-size':20,'font-weight':800,fill:'currentColor'},'Bir kola dokun ve kes ✂');}
+  else{
+   var a=-Math.PI/2+cut*2*Math.PI/5;
+   var lost=p<.99?1:0;
+   if(p<.12){var k=sm(p/.12);var lx=cx+Math.cos(a)*(100+70*k),ly=cy+Math.sin(a)*(100+70*k);
+    s+=el('line',{x1:cx+Math.cos(a)*110,y1:cy+Math.sin(a)*110,x2:lx+Math.cos(a)*60,y2:ly+Math.sin(a)*60,stroke:'#f0803c','stroke-width':34,'stroke-linecap':'round',opacity:1-k*.9});}
+   s+=star(cx,cy,5,cut,sm(seg(p,.1,1)));
+   s+=el('text',{x:320,y:50,'text-anchor':'middle','font-size':20,'font-weight':800,fill:'currentColor'},p<.1?'Kol koptu!':p<.99?'Kol yeniden oluşuyor (rejenerasyon)':'Kol tamamen yenilendi');
+  }
+ }else{
+  var L0=120,H=34;
+  var pl=function(x,y,len,dir,eyes){var r=el('rect',{x:dir>0?x:x-len,y:y-H/2,width:len,height:H,rx:H/2,fill:'#b58aa0',stroke:'#0003','stroke-width':2});
+   if(eyes){var hx=dir>0?x:x;r+=el('circle',{cx:(dir>0?x+16:x-16),cy:y-6,r:5,fill:'#fff'})+el('circle',{cx:(dir>0?x+16:x-16),cy:y+6,r:5,fill:'#fff'})+el('circle',{cx:(dir>0?x+17:x-17),cy:y-6,r:2,fill:'#111'})+el('circle',{cx:(dir>0?x+17:x-17),cy:y+6,r:2,fill:'#111'})}return r};
+  if(cut<0){
+   s+=pl(180,190,280,1,true);
+   s+=el('line',{x1:320,y1:150,x2:320,y2:230,stroke:'#ef4444','stroke-width':3,'stroke-dasharray':'6 5'})+el('rect',{x:296,y:140,width:48,height:100,fill:'transparent',class:'hot','data-cut':1,tabindex:0,role:'button','aria-label':'Planaryayı ikiye kes',style:'pointer-events:all'});
+   s+=el('text',{x:320,y:50,'text-anchor':'middle','font-size':20,'font-weight':800,fill:'currentColor'},'Planarya: kırmızı çizgiye dokun ve ikiye kes ✂');
+   s+=el('text',{x:320,y:260,'text-anchor':'middle','font-size':14,fill:'#ef4444'},'(kesme çizgisi)');
+  }else{
+   var g=sm(seg(p,.1,1)),gap=sm(seg(p,0,.1))*50;
+   var la=L0+90*g; // baş parçası kuyruk uzatır
+   s+=pl(150,140-gap*.4,la,1,true);
+   s+=pl(490,260+gap*.4,L0+90*g,-1,g>.55);
+   s+=el('text',{x:320,y:50,'text-anchor':'middle','font-size':20,'font-weight':800,fill:'currentColor'},p<.1?'Kesildi: iki parça':p<.99?'Her parça eksik kısmını yeniliyor':'İki yeni planarya oluştu');
+  }
+ }
+ return s}
+function sprout(x,y,g,ang){ // bitki filizi
+ var s='',h=110*g,tx=x+Math.sin(ang)*h*.3,ty=y-h;
+ s+=el('line',{x1:x,y1:y,x2:tx,y2:ty,stroke:G,'stroke-width':6,'stroke-linecap':'round'});
+ if(g>.4){var k=sm(seg(g,.4,1));s+=el('ellipse',{cx:tx-14*k,cy:ty+8,rx:14*k,ry:6*k,fill:G,transform:'rotate(-25 '+tx+' '+ty+')'})+el('ellipse',{cx:tx+14*k,cy:ty+4,rx:14*k,ry:6*k,fill:GD,transform:'rotate(25 '+tx+' '+ty+')'})}
+ return s}
+function drawVej(p,o){
+ var s='',gy=270;
+ s+=el('rect',{x:0,y:gy,width:640,height:130,fill:SOIL,opacity:.55});
+ s+=el('line',{x1:0,y1:gy,x2:640,y2:gy,stroke:'#6b4e32','stroke-width':3});
+ var g=sm(seg(p,.1,1));
+ if(o==0){
+  s+=el('ellipse',{cx:320,cy:gy+48,rx:120,ry:56,fill:'#c8a165',stroke:'#0003','stroke-width':2});
+  var eyes=[[250,gy+30,-.4],[320,gy+22,0],[390,gy+34,.4]];
+  eyes.forEach(function(e,i){var gg=sm(seg(p,.05+i*.1,.85));s+=el('circle',{cx:e[0],cy:e[1],r:5,fill:'#6b4e32'});if(gg>0)s+=sprout(e[0],e[1],gg,e[2]);if(gg>.3)s+=el('line',{x1:e[0],y1:e[1],x2:e[0]-8,y2:e[1]+50*gg,stroke:'#e6d7b6','stroke-width':3})});
+  s+=el('text',{x:320,y:50,'text-anchor':'middle','font-size':20,'font-weight':800,fill:'currentColor'},p<.05?'Patates yumrusu ve gözleri':'Gözlerden yeni bitkiler çıkıyor');
+ }else if(o==1){
+  var px=140; s+=sprout(px,gy,1,0)+sprout(px-30,gy,.8,-.5)+el('line',{x1:px,y1:gy+4,x2:px,y2:gy+30,stroke:'#e6d7b6','stroke-width':3});
+  var k=sm(seg(p,0,.45));
+  var pts=[[330,gy-30],[520,gy-18]];
+  // koşucu gövde (stolon)
+  var x2=px+(pts[1][0]-px+20)*k;
+  s+=el('path',{d:'M'+px+' '+(gy-70)+' Q 260 '+(gy-190)+' '+(px+ (pts[0][0]-px)*k)+' '+(gy-4),stroke:'#c0392b','stroke-width':4,fill:'none','stroke-linecap':'round'});
+  if(k>.99){s+=el('path',{d:'M'+pts[0][0]+' '+(gy-4)+' Q 430 '+(gy-110)+' '+(pts[0][0]+(pts[1][0]-pts[0][0])*sm(seg(p,.45,.7)))+' '+(gy-4),stroke:'#c0392b','stroke-width':4,fill:'none','stroke-linecap':'round'})}
+  pts.forEach(function(q,i){var gg=sm(seg(p,.35+i*.25,.95));if(gg>0){s+=el('line',{x1:q[0],y1:gy-4,x2:q[0]-6,y2:gy+34*gg,stroke:'#e6d7b6','stroke-width':3})+el('line',{x1:q[0],y1:gy-4,x2:q[0]+8,y2:gy+28*gg,stroke:'#e6d7b6','stroke-width':3});s+=sprout(q[0],gy-4,gg*.8,i?.2:-.2)}});
+  s+=el('text',{x:320,y:50,'text-anchor':'middle','font-size':20,'font-weight':800,fill:'currentColor'},p<.05?'Çilek bitkisi':p<.5?'Koşucu gövde (stolon) uzuyor':'Boğumlarda yeni çilek bitkileri oluşuyor');
+ }else{
+  var cutp=sm(seg(p,0,.2));
+  // ana bitki
+  s+=sprout(150,gy,1,0)+sprout(120,gy,.7,-.5)+sprout(180,gy,.75,.5);
+  s+=el('text',{x:150,y:gy+30,'text-anchor':'middle','font-size':13,fill:'#fff'},'ana bitki');
+  // çelik: kesilen gövde
+  var stx=430,sty=gy-60+cutp*0; 
+  var cy2=(gy-140)+cutp*110; // dikilir
+  s+=el('line',{x1:stx,y1:cy2,x2:stx,y2:cy2+110,stroke:'#7a4f2a','stroke-width':7,'stroke-linecap':'round'});
+  var gr=sm(seg(p,.3,1));
+  if(cutp>.9&&gr>0){s+=el('line',{x1:stx,y1:gy+104-110,x2:stx-30*gr,y2:gy+30+60*gr,stroke:'#e6d7b6','stroke-width':3})+el('line',{x1:stx,y1:gy+104-110,x2:stx+30*gr,y2:gy+30+60*gr,stroke:'#e6d7b6','stroke-width':3});
+   s+=el('ellipse',{cx:stx-18*gr,cy:cy2+10,rx:20*gr,ry:8*gr,fill:G,transform:'rotate(-25 '+stx+' '+cy2+')'})+el('ellipse',{cx:stx+18*gr,cy:cy2+4,rx:20*gr,ry:8*gr,fill:GD,transform:'rotate(25 '+stx+' '+cy2+')'})}
+  s+=el('text',{x:320,y:50,'text-anchor':'middle','font-size':20,'font-weight':800,fill:'currentColor'},p<.2?'Gül dalından çelik kesiliyor ve toprağa dikiliyor':p<.99?'Çelikten kök ve yaprak çıkıyor':'Yeni gül fidanı oluştu');
+ }
+ return s}
+function render(){
+ var o=opt[mode],id=MODES[mode].id,s='';
+ s=id=='bol'?drawBol(P,o):id=='tom'?drawTom(P,o):id=='rej'?drawRej(P,o):drawVej(P,o);
+ svg.innerHTML=s;svg.style.color=getComputedStyle(document.body).color;
+ document.getElementById('prog').value=Math.round(P*100);
+ document.getElementById('play').textContent=playing?'⏸ Duraklat':'▶ Oynat';
+ post();
+}
+function buildUI(){
+ var t=document.getElementById('tabs');t.innerHTML='';
+ MODES.forEach(function(m,i){var b=document.createElement('button');b.className='btn';b.textContent=m.name;b.setAttribute('role','tab');b.setAttribute('aria-pressed',i==mode);b.onclick=function(){mode=i;cut=-1;P=0;playing=false;buildUI();render()};t.appendChild(b)});
+ var op=document.getElementById('opts');op.innerHTML='';
+ MODES[mode].opts.forEach(function(n,i){var b=document.createElement('button');b.className='btn';b.textContent=n;b.setAttribute('aria-pressed',i==opt[mode]);b.onclick=function(){opt[mode]=i;cut=-1;P=0;playing=false;buildUI();render()};op.appendChild(b)});
+ var o=MODES[mode].opts[opt[mode]];
+ document.getElementById('info').innerHTML=MODES[mode].info(o)+'<div class="stat"><span>Ebeveyn sayısı: 1</span><span>Gamet birleşmesi: yok</span><span>Yavru: ebeveynle aynı özellikte</span></div>';
+ document.getElementById('hint').textContent=mode==2?(opt[2]==0?'Önce yıldızın bir koluna dokun (kes), sonra Oynat’a bas.':'Önce kırmızı kesme çizgisine dokun, sonra Oynat’a bas.'):'Sürgüyü elle de oynatabilirsin.';
+}
+svg.addEventListener('click',function(e){var t=e.target;if(t.getAttribute){if(t.getAttribute('data-arm')!==null&&cut<0){cut=+t.getAttribute('data-arm');P=0;render()}else if(t.getAttribute('data-cut')&&cut<0){cut=1;P=0;render()}}});
+svg.addEventListener('keydown',function(e){if((e.key=='Enter'||e.key==' ')&&e.target.getAttribute&&cut<0){var a=e.target.getAttribute('data-arm');if(a!==null){e.preventDefault();cut=+a;P=0;render()}else if(e.target.getAttribute('data-cut')){e.preventDefault();cut=1;P=0;render()}}});
+function needCut(){return mode==2&&cut<0}
+document.getElementById('play').onclick=function(){if(needCut()){document.getElementById('hint').textContent='Önce kesme işlemini yap (yıldızda kola, planaryada çizgiye dokun).';return}if(P>=1)P=0;playing=!playing;last=performance.now();if(playing)requestAnimationFrame(loop);render()};
+document.getElementById('reset').onclick=function(){P=0;playing=false;cut=-1;render()};
+document.getElementById('prog').oninput=function(){if(needCut()){this.value=0;return}P=this.value/100;playing=false;render()};
+function loop(now){if(!playing)return;var sp=+document.getElementById('spd').value;P=Math.min(1,P+(now-last)/1000/(14/sp));last=now;if(P>=1)playing=false;render();if(playing)requestAnimationFrame(loop)}
+// Kendini dene
+var QS=[['Bakteri ikiye ayrılıyor','Bölünme'],['Hidranın vücudunda tomurcuk çıkıyor','Tomurcuklanma'],['Deniz yıldızı kopan kolunu yeniliyor','Rejenerasyon'],['Patatesin gözlerinden yeni bitki çıkıyor','Vejetatif üreme'],['Amip ortadan boğumlanıp ikiye ayrılıyor','Bölünme'],['Maya mantarında küçük bir çıkıntı büyüyüp ayrılıyor','Tomurcuklanma'],['Planarya kesilince her parçadan yeni canlı oluşuyor','Rejenerasyon'],['Çilekte koşucu gövdeden yeni bitkiler çıkıyor','Vejetatif üreme'],['Gül dalından kesilen çelik toprakta köklenip fidan oluyor','Vejetatif üreme']];
+var qi=-1,qd=false;
+function nextQ(){var n;do{n=Math.floor(Math.random()*QS.length)}while(n==qi);qi=n;qd=false;document.getElementById('qtext').textContent=QS[qi][0]+' — hangi eşeysiz üreme çeşidi?';document.getElementById('qfb').textContent='';var r=document.getElementById('qbtn');r.innerHTML='';['Bölünme','Tomurcuklanma','Rejenerasyon','Vejetatif üreme'].forEach(function(a){var b=document.createElement('button');b.className='btn';b.textContent=a;b.onclick=function(){if(qd)return;qd=true;var ok=a==QS[qi][1];document.getElementById('qfb').innerHTML=ok?'✔ Doğru! <button class="btn" id="nq">Sonraki soru</button>':'✗ Doğru cevap: '+QS[qi][1]+' <button class="btn" id="nq">Sonraki soru</button>';document.getElementById('qfb').style.color=ok?'#16a34a':'#dc2626';document.getElementById('nq').onclick=nextQ;post()};r.appendChild(b)});post()}
+window.addEventListener('message',function(e){var d=e.data;if(d&&d.type==='html-anim-theme'){document.documentElement.setAttribute('data-theme',d.theme==='dark'?'dark':'light');render()}});
+function post(){try{parent.postMessage({type:'html-anim-height',height:document.documentElement.scrollHeight},'*')}catch(e){}}
+buildUI();render();nextQ();
+try{new ResizeObserver(post).observe(document.body)}catch(e){}
+try{parent.postMessage({type:'html-anim-ready'},'*')}catch(e){}
+</script></body></html>
