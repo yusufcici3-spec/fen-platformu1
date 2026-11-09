@@ -60,6 +60,8 @@ canvas{display:block;width:100%;height:auto;aspect-ratio:16/9;border-radius:20px
 .shootbtn{display:none;width:100%;margin:0;font:inherit;font-weight:900;font-size:1.25rem;letter-spacing:.06em;color:#2b1700;border:0;border-radius:16px;padding:.9em;cursor:pointer;background:linear-gradient(#ffe14a,#e09b00);box-shadow:0 6px 0 #8a5a00,0 10px 24px #0007;animation:pulse .8s ease-in-out infinite alternate}
 .shootbtn:active{transform:translateY(4px);box-shadow:0 2px 0 #8a5a00}
 .shootbtn.show{display:block}
+.freezeBtn{display:none;width:100%;margin-top:8px;font:inherit;font-weight:850;color:#dff8ff;border:1px solid #7dd3fc;border-radius:14px;padding:.75em 1em;cursor:pointer;background:linear-gradient(135deg,#075985,#164e63);box-shadow:0 5px 18px #0ea5e944}
+.freezeBtn.show{display:block}.freezeBtn:disabled{opacity:.55;cursor:default}
 @keyframes pulse{to{filter:brightness(1.15);box-shadow:0 6px 0 #8a5a00,0 0 30px #ffd23f}}
 .hint{font-size:.8rem;color:#9db9e6;text-align:center;margin-top:6px}
 .tools{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
@@ -109,6 +111,7 @@ html.embedded .modal{max-height:none}
 
   <canvas id="cv" width="960" height="540" aria-label="Penaltı sahası animasyonu"></canvas>
   <button class="shootbtn" id="shoot">⚽ ŞUT ÇEK!</button>
+  <button class="freezeBtn" id="freezeBtn">🧊 Kaleciyi Dondur · Özel Hak</button>
 
   <div class="panel">
     <div class="qhead"><span class="who w1" id="who">RONALDO</span><span class="chip" id="unit"></span><span class="steal" id="steal">🔁 Rakipten gelen soru</span></div>
@@ -135,7 +138,8 @@ html.embedded .modal{max-height:none}
       1. Sırayla soru gelir; cevabı doğru bulan oyuncu <b>penaltı</b> kazanır.<br>
       2. Yanlış cevap verirse soru <b>rakibe</b> geçer; o bilirse şutu o çeker.<br>
       3. Şutta hedef çubuğu gidip gelir. <b>Tam zamanında durdur!</b> Direğin dışına atarsan aut olur, kaleci de uçabilir.<br>
-      4. <b>İlk 3 golü atan maçı kazanır.</b>
+      4. Aynı oyuncu kendi cevapladığı iki soruyu üst üste doğru bilirse <b>kaleciyi dondurma</b> hakkı kazanır. Şut öncesi buz düğmesine basarak kullanabilir.<br>
+      5. <b>İlk 3 golü atan maçı kazanır.</b>
     </div>
     <p style="margin-top:14px">Konular:</p>
     <div class="opts2">
@@ -250,7 +254,16 @@ const esc = s => s.replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&g
 function shuffle(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 
 // ---------- ses ----------
-let sound = true, ac = null;
+let sound = true, ac = null, crowdSource = null, crowdGain = null, crowdLfo = null;
+function setCrowd(active) {
+  if (!sound || !active) { if (crowdGain && ac) { try { crowdGain.gain.setTargetAtTime(0, ac.currentTime, .18); } catch(e) {} } if (crowdSource) { const old=crowdSource; crowdSource=null; setTimeout(()=>{try{old.stop()}catch(e){}},800); } if (crowdLfo) { try{crowdLfo.stop()}catch(e){} crowdLfo=null; } return; }
+  try { ac=ac || new (window.AudioContext || window.webkitAudioContext)(); if(ac.state==="suspended") ac.resume(); if(crowdSource){crowdGain.gain.setTargetAtTime(.045,ac.currentTime,.35);return;}
+    const length=ac.sampleRate*3, buffer=ac.createBuffer(1,length,ac.sampleRate), data=buffer.getChannelData(0);
+    for(let i=0;i<length;i++) data[i]=(Math.random()*2-1)*(.45+.25*Math.sin(i/ac.sampleRate*2*Math.PI*.7));
+    const src=ac.createBufferSource(), band=ac.createBiquadFilter(), low=ac.createBiquadFilter(), gain=ac.createGain(); src.buffer=buffer;src.loop=true;band.type="bandpass";band.frequency.value=680;band.Q.value=.65;low.type="lowpass";low.frequency.value=1500;gain.gain.value=0;src.connect(band);band.connect(low);low.connect(gain);gain.connect(ac.destination);src.start();
+    const lfo=ac.createOscillator(),lg=ac.createGain();lfo.frequency.value=.22;lg.gain.value=.012;lfo.connect(lg);lg.connect(gain.gain);lfo.start();crowdSource=src;crowdGain=gain;crowdLfo=lfo;gain.gain.setTargetAtTime(.045,ac.currentTime,.5);
+  } catch(e) {}
+}
 function tone(f, d, type = "sine", v = .07, delay = 0, f2) {
   if (!sound) return;
   try {
@@ -290,7 +303,8 @@ let G;  // oyun durumu
 function resetMatch() {
   clearTimeout(roundTimer); clearTimeout(shotTimer);
   G = { phase: "intro", goals: [0, 0], stats: stats(), cur: null, asker: 0, answerer: 0, stolen: false, wrong: [], deadline: 0, qTotal: 0,
-        qCount: 0, aimStart: 0, shot: null, shooter: 0, lastAim: 0 };
+        qCount: 0, aimStart: 0, shot: null, shooter: 0, lastAim: 0, streak: [0,0], freezeTokens: [0,0], freezeActive: false };
+  setCrowd(false); updateFreezeButton();
   particles = []; banner = null;
   const src = BANK.filter(q => unitMode === 0 || q.u === unitMode);
   pool = shuffle(src); pi = 0;
@@ -313,10 +327,11 @@ function renderBoard() {
 
 // ---------- soru akışı ----------
 function nextQuestion() {
+  G.freezeActive = false; updateFreezeButton();
   G.cur = pickQ(); G.asker = G.qCount % 2; G.qCount++;
   G.answerer = G.asker; G.stolen = false; G.wrong = [];
   G.phase = "question"; G.deadline = performance.now() + Q_TIME; G.total = Q_TIME; G.shot = null; banner = null;
-  sfx.whistle();
+  sfx.whistle(); setCrowd(true);
   renderQuestion();
   setFb("", "Soruyu doğru bilen oyuncu kaleciye şut çekme hakkı kazanır.");
 }
@@ -339,6 +354,8 @@ function renderQuestion() {
   renderBoard();
 }
 function setFb(kind, html) { const f = $("fb"); f.className = "fb " + kind; f.innerHTML = html; }
+function updateFreezeButton() { const b=$("freezeBtn"); if(!b||!G)return; const p=G.shooter; b.classList.toggle("show",G.phase==="aim"&&G.freezeTokens[p]>0&&!G.freezeActive); b.textContent=G.freezeActive?"🧊 Kaleci dondu!":"🧊 Kaleciyi Dondur · "+(G.freezeTokens[p]||0)+" hak"; b.disabled=G.freezeActive; }
+function useFreeze() { if(G.phase!=="aim"||G.freezeTokens[G.shooter]<1||G.freezeActive)return; G.freezeTokens[G.shooter]--;G.freezeActive=true;updateFreezeButton();$("hint").textContent="🧊 Kaleci dondu! Şutunu çek.";setFb("ok","🧊 <b>Özel güç kullanıldı!</b> Rakip kaleci dondu; şimdi penaltını kullan."); }
 function lockOptions(showCorrect) {
   [...$("opts").children].forEach((b, i) => {
     b.disabled = true;
@@ -350,18 +367,20 @@ function answer(i) {
   if (G.phase !== "question" || G.wrong.includes(i)) return;
   const o = G.cur.opts[i], p = G.answerer, btn = $("opts").children[i];
   if (o.ok) {
-    G.stats[p].ok++; btn.classList.add("ok"); lockOptions(true); sfx.ok();
-    setFb("ok", "✔ <b>Doğru!</b> " + PLAYERS[p].name + " penaltı kazandı! " + esc(G.cur.n));
+    G.stats[p].ok++; G.streak[p]++;
+    let reward=""; if(G.streak[p]>=2){G.freezeTokens[p]++;G.streak[p]=0;reward=" 🧊 <b>Arka arkaya 2 doğru! Kaleciyi dondurma hakkı kazandın.</b>";}
+    btn.classList.add("ok"); lockOptions(true); sfx.ok();
+    setFb("ok", "✔ <b>Doğru!</b> " + PLAYERS[p].name + " penaltı kazandı! " + esc(G.cur.n) + reward);
     startAim(p);
   } else wrongAnswer(i, false);
 }
 function wrongAnswer(i, timeout) {
   const p = G.answerer;
-  G.stats[p].bad++; sfx.bad();
+  G.stats[p].bad++; G.streak[p]=0; sfx.bad();
   if (i !== null) { G.wrong.push(i); }
   if (!G.stolen) {
     G.stolen = true; G.answerer = 1 - p; G.deadline = performance.now() + STEAL_TIME; G.total = STEAL_TIME;
-    renderQuestion();
+    setCrowd(true); renderQuestion();
     setFb("bad", (timeout ? "⏰ <b>Süre doldu!</b> " : "✖ <b>Yanlış!</b> ") + "Soru rakibe geçti: <b>" + PLAYERS[G.answerer].name + "</b> bilirse penaltıyı o kullanır.");
   } else {
     G.phase = "result"; lockOptions(true); renderBoard();
@@ -372,8 +391,8 @@ function wrongAnswer(i, timeout) {
 
 // ---------- nişan ve şut ----------
 function startAim(p) {
-  G.phase = "aim"; G.shooter = p; G.aimStart = performance.now();
-  $("shoot").classList.add("show");
+  setCrowd(false); G.phase = "aim"; G.shooter = p; G.aimStart = performance.now();
+  $("shoot").classList.add("show"); updateFreezeButton();
   $("hint").textContent = (TOUCH ? "Çubuk kale içindeyken ŞUT düğmesine ya da sahaya dokun!" : "Çubuk kale içindeyken Boşluk tuşuna ya da ŞUT düğmesine bas!");
   renderBoard();
 }
@@ -384,9 +403,10 @@ function shoot() {
   const now = performance.now(), x = aimNow(now), col = [-1, 0, 1][Math.floor(Math.random() * 3)], h = Math.random();
   let outcome;
   if (Math.abs(x) > 1) outcome = "out";
+  else if (G.freezeActive) outcome = "goal";
   else outcome = colOf(x) === col ? "save" : "goal";
   G.shot = { start: now, x, h, col, outcome, shooter: G.shooter, done: false };
-  G.phase = "shot"; $("shoot").classList.remove("show"); $("hint").textContent = "";
+  G.phase = "shot"; $("shoot").classList.remove("show"); $("freezeBtn").classList.remove("show"); $("hint").textContent = "";
   sfx.kick();
   const mine = G.shot; shotTimer = setTimeout(() => { if (G.shot === mine && !mine.done) resolveShot(); }, 1450);
 }
@@ -413,7 +433,7 @@ function burst(p) {
 
 // ---------- maç sonu ----------
 function endMatch() {
-  G.phase = "end";
+  setCrowd(false); G.phase = "end";
   const w = G.goals[0] >= WIN_GOALS ? 0 : 1, l = 1 - w;
   $("endTitle").textContent = PLAYERS[w].name + " maçı kazandı!";
   $("endScore").textContent = G.goals[0] + " - " + G.goals[1];
@@ -503,6 +523,7 @@ function drawKeeper(t, dive, dir) {
   ctx.fillStyle = "#222"; ctx.beginPath(); ctx.arc(-5, -117, 1.8, 0, 7); ctx.arc(5, -117, 1.8, 0, 7); ctx.fill();
   ctx.strokeStyle = "#222"; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.arc(0, -112, 4, .1, Math.PI - .1); ctx.stroke();
   ctx.restore();
+  if (G && G.freezeActive && G.phase === "shot") { ctx.save();ctx.strokeStyle="#9be7ff";ctx.lineWidth=4;ctx.shadowColor="#38bdf8";ctx.shadowBlur=18;ctx.beginPath();ctx.arc(480,GOAL.line-72,47,0,Math.PI*2);ctx.stroke();ctx.font="bold 17px system-ui";ctx.textAlign="center";ctx.fillStyle="#dff8ff";ctx.fillText("❄ DONDU",480,GOAL.line-150);ctx.restore(); }
 }
 
 function drawShooter(P, kick) {
@@ -558,7 +579,7 @@ function frame(now) {
     const el = (now - sh.start) / 1000;
     kick = clamp(Math.sin(clamp((el - .02) / .28, 0, 1) * Math.PI), 0, 1);
     tp = (el - .18) / .62;
-    keeperDive = clamp((el - .22) / .42, 0, 1); keeperDir = sh.col;
+    keeperDive = G.freezeActive ? 0 : clamp((el - .22) / .42, 0, 1); keeperDir = sh.col;
     const tx = gx(sh.x), ty = sh.outcome === "out" ? (sh.h < .5 ? 120 : 235) : 195 + sh.h * 85;
     if (tp >= 0 && tp <= 1) {
       const e = tp;
@@ -637,6 +658,7 @@ document.addEventListener("visibilitychange", () => {
 
 // ---------- olaylar ----------
 function begin() {
+  try{ac=ac||new (window.AudioContext||window.webkitAudioContext)();if(ac.state==="suspended")ac.resume();}catch(e){}
   unitMode = parseInt(document.querySelector("input[name=u]:checked").value, 10);
   resetMatch();
   $("ovStart").classList.remove("show"); $("ovEnd").classList.remove("show");
@@ -647,7 +669,8 @@ $("bAgain").onclick = () => { $("ovEnd").classList.remove("show"); $("ovStart").
 $("bRestart").onclick = () => { resetMatch(); $("ovEnd").classList.remove("show"); $("ovStart").classList.add("show"); $("opts").innerHTML = ""; $("q").textContent = ""; };
 $("shoot").onclick = shoot;
 cv.addEventListener("pointerdown", () => { if (G.phase === "aim") shoot(); });
-$("bSound").onclick = () => { sound = !sound; $("bSound").textContent = sound ? "🔊 Ses açık" : "🔇 Ses kapalı"; };
+$("bSound").onclick = () => { sound=!sound;$("bSound").textContent=sound?"🔊 Ses açık":"🔇 Ses kapalı";if(sound){try{ac=ac||new (window.AudioContext||window.webkitAudioContext)();if(ac.state==="suspended")ac.resume();}catch(e){}setCrowd(G.phase==="question");}else setCrowd(false);};
+$("freezeBtn").onclick = useFreeze;
 document.addEventListener("keydown", e => {
   if (document.querySelector(".overlay.show")) return;
   if (e.code === "Space" || e.key === " ") { if (G.phase === "aim") { e.preventDefault(); shoot(); } else if (G.phase === "question") e.preventDefault(); }
