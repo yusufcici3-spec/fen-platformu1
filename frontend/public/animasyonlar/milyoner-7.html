@@ -62,7 +62,7 @@ var SAFE=[4,9];
 function tl(n){return n.toLocaleString('tr-TR')+' ₺'}
 function time(i){return i<5?30:(i<10?45:60)}
 // [kazanım, soru, [doğru, yanlış, yanlış, yanlış], açıklama]
-var Q=[
+var BANK=[
 ['FB.7.2.1','Aşağıdakilerden hangisinde fiziksel anlamda iş yapılır?',['Yerdeki kutuyu iterek yerini değiştirmek','Duvarı itmek, ama duvar hiç kımıldamıyor','Elinde çanta tutarak ayakta beklemek','Sırada oturup ders çalışmak'],'Fiziksel anlamda iş yapılabilmesi için cisme kuvvet uygulanmalı ve cisim kuvvet doğrultusunda yer değiştirmelidir.'],
 ['FB.7.1.5','Güneş\'in içinde bulunduğu galaksinin adı nedir?',['Samanyolu','Andromeda','Büyükayı','Kuyruklu Yıldız'],'Güneş Sistemi, Samanyolu Galaksisi\'nde yer alır.'],
 ['FB.7.2.2','Hareket hâlindeki bir bisikletin sahip olduğu enerji türü hangisidir?',['Kinetik enerji','Esneklik potansiyel enerjisi','Çekim potansiyel enerjisi','Nükleer enerji'],'Hareket enerjisine kinetik enerji denir. Hareket eden her cismin kinetik enerjisi vardır.'],
@@ -78,12 +78,45 @@ var Q=[
 ['FB.7.1.4','Güneş\'ten çok daha büyük kütleli bir yıldız süpernova olarak patladıktan sonra çekirdeği ne olabilir?',['Nötron yıldızı veya kara delik','Beyaz cüce','Kızıl dev','Bulutsu'],'Çok büyük kütleli yıldızların çekirdeği süpernovadan sonra nötron yıldızına veya kara deliğe dönüşür.'],
 ['FB.7.2.3','Enerjinin korunumu ilkesi aşağıdakilerden hangisidir?',['Enerji yoktan var edilemez, yok edilemez; bir türden diğerine dönüşür','Enerji sürtünmeyle tamamen yok olur','Kinetik enerji hiçbir zaman potansiyel enerjiye dönüşmez','Enerji yalnızca ısıdan oluşur'],'Enerji yoktan var edilemez ve yok edilemez; bir türden diğerine dönüşür. Toplam enerji korunur.'],
 ['FB.7.2.3','Sürtünmesiz ortamda yukarıdan serbest bırakılan cismin ilk çekim potansiyel enerjisi 40 J ise yere çarpmadan hemen önceki kinetik enerjisi kaç joule\'dür?',['40 J','20 J','80 J','0 J'],'Sürtünme yoksa potansiyel enerjinin tamamı kinetik enerjiye dönüşür; toplam enerji korunur.']
+];var NEWE=[
+['FB.7.1.1','Ay\'a ayak basan ilk insanları götüren uzay görevi hangisidir?',['Apollo 11','Voyager 1','Hubble','Sputnik'],'Ay\'a ilk insanlı iniş 1969\'da Apollo 11 görevi ile gerçekleşti.'],
+['FB.7.1.2','Uzaydaki gök cisimlerini uzaktan incelemek için hangi alet kullanılır?',['Teleskop','Mikroskop','Termometre','Barometre'],'Teleskoplar uzak gök cisimlerini büyüterek gözlemlememizi sağlar.'],
+['FB.7.1.1','Dünya etrafında dolanan insan yapımı cisimlere ne denir?',['Yapay uydu','Uzay sondası','Asteroit','Meteor'],'Dünya çevresinde dolanan insan yapımı cisimler yapay uydulardır.'],
+['FB.7.1.5','Güneş Sistemi\'nin merkezinde ne bulunur?',['Güneş','Dünya','Ay','Jüpiter'],'Güneş Sistemi\'nin merkezinde, sistemin en büyük cismi olan Güneş yer alır.'],
+['FB.7.2.2','Çekim potansiyel enerjisi hangi büyüklüklere bağlıdır?',['Kütle ve yükseklik','Hız ve kütle','Hacim ve sıcaklık','Renk ve şekil'],'Çekim potansiyel enerjisi cismin kütlesine ve yerden yüksekliğine bağlıdır.'],
+['FB.7.2.1','İşin birimi aşağıdakilerden hangisidir?',['Joule (J)','Newton (N)','Watt (W)','Kilogram (kg)'],'İş ve enerji joule (J) birimiyle ifade edilir.'],
+['FB.7.2.2','Gerilmiş bir yayın sahip olduğu enerji türü hangisidir?',['Esneklik potansiyel enerjisi','Kinetik enerji','Çekim potansiyel enerjisi','Nükleer enerji'],'Sıkıştırılmış veya gerilmiş yayların sahip olduğu enerji esneklik potansiyel enerjisidir.'],
+['FB.7.2.3','Güneş enerjisiyle çalışan hesap makinesinde hangi enerji dönüşümü olur?',['Işık enerjisi → elektrik enerjisi','Elektrik enerjisi → ışık enerjisi','Isı enerjisi → hareket enerjisi','Kimyasal enerji → ışık enerjisi'],'Güneş pilleri ışık enerjisini elektrik enerjisine dönüştürür.']
 ];
+var NEWM=[
+['FB.7.1.1','Astronotların uzun süre yaşayıp araştırma yaptığı, Dünya çevresinde dolanan yapıya ne denir?',['Uzay istasyonu','Uzay sondası','Teleskop','Roket'],'Uzay istasyonları astronotların haftalarca, aylarca kaldığı ve deneyler yaptığı yapılardır.'],
+['FB.7.1.3','Aşağıdakilerden hangisi uzay araştırmalarının günlük yaşama katkısıdır?',['Konum belirleme (GPS) ve hava durumu tahminleri','Gece ve gündüzün oluşması','Mevsimlerin değişmesi','Ay\'ın evreleri'],'Uydular GPS, haberleşme ve hava durumu tahmini gibi birçok alanda hayatımızı kolaylaştırır.'],
+['FB.7.1.4','Yıldızların renkleri en çok hangi özelliklerine bağlıdır?',['Yüzey sıcaklıkları','Dünya\'ya uzaklıkları','Dönme yönleri','Sahip oldukları uydular'],'Yıldızların rengi yüzey sıcaklığıyla ilgilidir; çok sıcak yıldızlar mavi, daha soğuk olanlar kırmızı görünür.'],
+['FB.7.1.5','Işık yılı hangi büyüklüğün birimidir?',['Uzaklık','Zaman','Hız','Kütle'],'Işık yılı, ışığın bir yılda aldığı yoldur; bir uzaklık birimidir.'],
+['FB.7.2.1','20 N\'luk kuvvet bir cismi kuvvet yönünde 3 m yer değiştiriyor. Yapılan iş kaç joule\'dür?',['60 J','23 J','17 J','6,7 J'],'İş = kuvvet × yer değiştirme = 20 N × 3 m = 60 J.'],
+['FB.7.2.2','Kütleleri aynı iki cisimden hızı büyük olanın kinetik enerjisi için ne söylenebilir?',['Daha büyüktür','Daha küçüktür','Eşittir','Sıfırdır'],'Kinetik enerji hızla ilişkilidir; hız arttıkça kinetik enerji artar.'],
+['FB.7.2.3','Serbest bırakılan bir cismin yere doğru düşerken enerji dönüşümü nasıldır?',['Çekim potansiyel enerjisi kinetik enerjiye dönüşür','Kinetik enerji potansiyel enerjiye dönüşür','Enerji yok olur','Isı enerjisi ışığa dönüşür'],'Düşerken yükseklik azaldığı için potansiyel enerji azalır, hız arttığı için kinetik enerji artar.'],
+['FB.7.2.3','Hidroelektrik santralde enerji dönüşümü hangi sırayla gerçekleşir?',['Çekim potansiyel → kinetik → elektrik enerjisi','Isı → ışık → elektrik enerjisi','Elektrik → kinetik → ısı enerjisi','Kimyasal → ışık → kinetik enerji'],'Barajdaki suyun potansiyel enerjisi akarken kinetik enerjiye, türbin ve jeneratörde elektrik enerjisine dönüşür.']
+];
+var NEWH=[
+['FB.7.2.1','Bir kuvvet cisme 50 J iş yapıyor. Kuvvet 10 N ise cisim kuvvet yönünde kaç m yer değiştirmiştir?',['5 m','500 m','0,2 m','60 m'],'İş = kuvvet × yer değiştirme, yani yer değiştirme = 50 J ÷ 10 N = 5 m.'],
+['FB.7.2.2','Kütlesi 2 kg olan cisim yerden 5 m yüksekte. g = 10 N/kg alınırsa çekim potansiyel enerjisi kaç J\'dür?',['100 J','10 J','50 J','7 J'],'Ep = m·g·h = 2 × 10 × 5 = 100 J.'],
+['FB.7.2.2','Aynı hızla giden bir otobüs ve bir bisikletten hangisinin kinetik enerjisi daha büyüktür?',['Otobüsün','Bisikletin','İkisinin de aynıdır','İkisinin de sıfırdır'],'Hız aynıysa kütlesi büyük olanın kinetik enerjisi daha büyüktür.'],
+['FB.7.2.3','Sürtünmeli ortamda sallanan bir sarkacın yüksekliği zamanla azalır. Bunun nedeni nedir?',['Enerjinin bir kısmının ısıya dönüşmesi','Enerjinin yok olması','Sarkacın kütlesinin artması','Yerçekiminin azalması'],'Sürtünme nedeniyle mekanik enerjinin bir kısmı ısıya dönüşür; enerji yok olmaz.'],
+['FB.7.1.4','Güneş benzeri bir yıldızın yaşam sürecinin son evresi hangisidir?',['Beyaz cüce','Süpernova','Kara delik','Nötron yıldızı'],'Güneş gibi orta kütleli yıldızlar dış katmanlarını atıp beyaz cüceye dönüşür.'],
+['FB.7.1.3','Uzayda uzun süre kalan astronotlarda ağırlıksızlık nedeniyle hangi sorun görülür?',['Kas ve kemik kaybı','Boyun kısalması','Gözlerin renginin değişmesi','Saç rengi kaybı'],'Ağırlıksız ortamda kaslar ve kemikler az çalıştığı için zayıflar; astronotlar bu nedenle düzenli egzersiz yapar.'],
+['FB.7.2.1','Aynı yol boyunca uygulanan kuvvet iki katına çıkarılırsa yapılan iş nasıl değişir?',['İki katına çıkar','Yarıya iner','Değişmez','Dört katına çıkar'],'İş = kuvvet × yer değiştirme; yer değiştirme sabitken kuvvet iki katına çıkarsa iş de iki katına çıkar.'],
+['FB.7.1.5','Güneş\'in içinde bulunduğu Samanyolu Galaksisi şekil olarak hangi türdendir?',['Sarmal (spiral)','Küresel','Düzensiz','Halka'],'Samanyolu, kolları olan sarmal bir galaksidir.']
+];
+var TIERS=[BANK.slice(0,5).concat(NEWE),BANK.slice(5,10).concat(NEWM),BANK.slice(10,15).concat(NEWH)];
+var Q=[];
+function buildQ(){Q=[];TIERS.forEach(function(t){Q=Q.concat(shuffle(t).slice(0,5))})}
+
 var st;
 function $(i){return document.getElementById(i)}
 function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}
 function safeWon(i){var w=0;SAFE.forEach(function(s){if(i>s)w=PRIZES[s]});return w}
-function newGame(){st={i:0,jok:{f:true,a:true,p:true},sel:-1,locked:false,over:false,timer:null,left:0,gone:[],msg:'',opts:[],correct:0,answered:0};startQ()}
+function newGame(){buildQ();st={i:0,jok:{f:true,a:true,p:true},sel:-1,locked:false,over:false,timer:null,left:0,gone:[],msg:'',opts:[],correct:0,answered:0};startQ()}
 function startQ(){
  var q=Q[st.i];var idx=shuffle([0,1,2,3]);st.opts=idx;st.correctPos=idx.indexOf(0);
  st.sel=-1;st.locked=false;st.gone=[];st.poll=null;st.msg='';st.reveal=false;st.left=time(st.i);
