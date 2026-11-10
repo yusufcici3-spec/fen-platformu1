@@ -38,7 +38,14 @@ canvas{display:block;width:100%;height:auto;aspect-ratio:16/9;border-radius:20px
 .panel{background:#081434d9;border:1px solid #5a96ff59;border-radius:20px;padding:16px 18px;box-shadow:0 10px 40px #0008}
 .qhead{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
 .who{font-weight:800;padding:.3em .9em;border-radius:99px;font-size:.9rem;color:#fff}
-.who.w1{background:linear-gradient(90deg,#7a1f3d,#2a6fd0)}.who.w2{background:linear-gradient(90deg,#d71920,#e0a800)}
+.who.w1{background:linear-gradient(90deg,#7a1f3d,#2a6fd0)}.who.w2{background:linear-gradient(90deg,#d71920,#e0a800)}.who.w3{background:linear-gradient(90deg,#111,#777)}.who.w4{background:linear-gradient(90deg,#f7d117,#0b1f5c)}
+.pickrow{margin:12px 0;text-align:left}.pickrow>b{display:block;margin-bottom:6px;color:#ffd23f}
+.pickbtns{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.pk{display:flex;flex-direction:column;align-items:center;gap:5px;padding:8px 4px;border-radius:14px;border:2px solid #2a4570;background:#0a1a33cc;color:#fff;font:800 .78rem system-ui,sans-serif;letter-spacing:.03em;cursor:pointer}
+.pk .kit{width:38px;height:38px;font-size:1rem}
+.pk[aria-pressed=true]{border-color:#ffd23f;box-shadow:0 0 0 3px #ffd23f33;background:#12306a}
+.pk:focus-visible{outline:3px solid #ffd23f;outline-offset:2px}
+@media(max-width:640px){.pk{font-size:.68rem}}
 .chip{font-size:.78rem;padding:.3em .8em;border-radius:99px;border:1px solid #5a96ff88;color:#bcd6ff;background:#0b2a6a66}
 .chip.u2{border-color:#ffb81c99;color:#ffe3a3;background:#5a3a0a55}
 .steal{font-size:.78rem;padding:.3em .8em;border-radius:99px;background:#ff5a5a33;border:1px solid #ff8a8a;color:#ffd0d0;display:none}
@@ -125,11 +132,9 @@ html.embedded .modal{max-height:none}
 <div class="overlay show" id="ovStart">
   <div class="modal">
     <h2>⚽ Fen Futbolu'na hoş geldiniz!</h2>
-    <div class="vs">
-      <div class="pl"><div class="kit k1">11</div><div class="nm">SALAH</div></div>
-      <span>VS</span>
-      <div class="pl"><div class="kit k2">9</div><div class="nm">OSİMHEN</div></div>
-    </div>
+    <p style="margin:6px 0 0">Oynayacak iki oyuncuyu seç:</p>
+    <div class="pickrow"><b>1. oyuncu</b><div class="pickbtns" id="pick0"></div></div>
+    <div class="pickrow"><b>2. oyuncu</b><div class="pickbtns" id="pick1"></div></div>
     <div class="rules">
       <b>Nasıl oynanır?</b><br>
       1. Sırayla soru gelir; cevabı doğru bulan oyuncu <b>penaltı</b> kazanır.<br>
@@ -225,10 +230,41 @@ const TOUCH = window.matchMedia && matchMedia("(pointer: coarse)").matches;
 const cv = $("cv"), ctx = cv.getContext("2d");
 const CW = 960, CH = 540;
 const WIN_GOALS = 3, Q_TIME = 20000, STEAL_TIME = 15000;
-const PLAYERS = [
+const ROSTER = [
   { name: "SALAH", num: 11, kit: "#7a1f3d", stripe: "#2a8cff", shorts: "#5a1230", socks: "#2a8cff", hair: "#1c120c", text: "#fff", cls: "w1" },
-  { name: "OSİMHEN", num: 9, kit: "#d71920", stripe: "#ffc400", shorts: "#b3141a", socks: "#ffc400", hair: "#1c120c", text: "#fff", cls: "w2" }
+  { name: "OSİMHEN", num: 9, kit: "#d71920", stripe: "#ffc400", shorts: "#b3141a", socks: "#ffc400", hair: "#1c120c", text: "#fff", cls: "w2" },
+  { name: "TROSSARD", num: 17, kit: "#111111", stripe: "#ffffff", shorts: "#111111", socks: "#ffffff", hair: "#3a2a1c", text: "#fff", cls: "w3" },
+  { name: "GREENWOOD", num: 10, kit: "#f7d117", stripe: "#0b1f5c", shorts: "#0b1f5c", socks: "#f7d117", hair: "#1c120c", text: "#fff", cls: "w4" }
 ];
+const PLAYERS = [ROSTER[0], ROSTER[1]];
+const kitBg = p => "repeating-linear-gradient(90deg," + p.kit + " 0 8px," + p.stripe + " 8px 16px)";
+let sel = [0, 1];
+function applyPlayers() {
+  PLAYERS[0] = ROSTER[sel[0]]; PLAYERS[1] = ROSTER[sel[1]];
+  [0, 1].forEach(i => {
+    const p = PLAYERS[i], box = $("pl" + i);
+    const k = box.querySelector(".kit"); k.textContent = p.num; k.style.background = kitBg(p);
+    box.querySelector(".nm").textContent = p.name;
+  });
+  const w = $("who"); if (w) w.className = "who " + PLAYERS[0].cls;
+  if (G && G.phase !== "intro") return;
+}
+function buildPicker() {
+  [0, 1].forEach(row => {
+    const box = $("pick" + row); box.innerHTML = "";
+    ROSTER.forEach((p, i) => {
+      const b = document.createElement("button"); b.type = "button"; b.className = "pk";
+      b.setAttribute("aria-pressed", sel[row] === i);
+      b.innerHTML = '<span class="kit" style="background:' + kitBg(p) + '">' + p.num + "</span><span>" + p.name + "</span>";
+      b.onclick = () => {
+        if (sel[1 - row] === i) sel[1 - row] = sel[row];  // aynı oyuncu iki yerde olmasın: yer değiştir
+        sel[row] = i; buildPicker(); applyPlayers();
+      };
+      box.appendChild(b);
+    });
+  });
+}
+
 const SPOT = { x: 480, y: 452 };       // penaltı noktası (top)
 const GOAL = { l: 300, r: 660, top: 165, line: 305 };
 const gx = x => 480 + 180 * x;         // -1..1 → kale genişliği
@@ -629,12 +665,14 @@ document.addEventListener("visibilitychange", () => {
 
 // ---------- olaylar ----------
 function begin() {
+  applyPlayers();
   unitMode = parseInt(document.querySelector("input[name=u]:checked").value, 10);
   resetMatch();
   $("ovStart").classList.remove("show"); $("ovEnd").classList.remove("show");
   nextQuestion();
 }
 $("bBegin").onclick = begin;
+buildPicker(); applyPlayers();
 $("bAgain").onclick = () => { $("ovEnd").classList.remove("show"); $("ovStart").classList.add("show"); };
 $("bRestart").onclick = () => { resetMatch(); $("ovEnd").classList.remove("show"); $("ovStart").classList.add("show"); $("opts").innerHTML = ""; $("q").textContent = ""; };
 $("shoot").onclick = shoot;
