@@ -62,7 +62,7 @@ var SAFE=[4,9];
 function tl(n){return n.toLocaleString('tr-TR')+' ₺'}
 function time(i){return i<5?30:(i<10?45:60)}
 // [kazanım, soru, [doğru, yanlış, yanlış, yanlış], açıklama]
-var Q=[
+var BANK=[
 ['FB.5.1.1','Güneş nedir?',['Bir yıldız','Bir gezegen','Dünya\'nın uydusu','Bir kuyruklu yıldız'],'Güneş, kendi ışığını yayan dev bir gaz küresidir; yani bir yıldızdır.'],
 ['FB.5.2.1','Kuvvetin birimi aşağıdakilerden hangisidir?',['Newton (N)','Kilogram (kg)','Metre (m)','Litre (L)'],'Kuvvet Newton (N) birimiyle ifade edilir.'],
 ['FB.5.1.2','Dünya\'nın doğal uydusu hangisidir?',['Ay','Güneş','Mars','Venüs'],'Ay, Dünya\'nın etrafında dolanan doğal uydusudur.'],
@@ -78,13 +78,46 @@ var Q=[
 ['FB.5.1.1','Güneş yüzeyindeki lekelerin gün gün yer değiştirmesi, Güneş\'in hangi hareketini gösterir?',['Kendi ekseni etrafında dönmesini','Ay etrafında dolanmasını','Dünya etrafında dolanmasını','Hareketsiz olduğunu'],'Güneş lekelerinin yer değiştirmesi, Güneş\'in kendi ekseni etrafında döndüğünü gösterir.'],
 ['FB.5.1.2','Dünya\'dan Ay\'ın hep aynı yüzünün görülmesinin nedeni nedir?',['Ay\'ın dönme ve dolanma sürelerinin eşit olması','Ay\'ın kendi etrafında dönmemesi','Ay\'ın çok hızlı dolanması','Ay\'ın Güneş etrafında dönmesi'],'Ay kendi etrafında bir kez dönerken Dünya etrafında da bir tur atar. Bu yüzden hep aynı yüzü Dünya\'ya bakar.'],
 ['FB.5.2.4','Buzlu yola kum serpilmesinin amacı nedir?',['Sürtünmeyi artırmak','Sürtünmeyi azaltmak','Yolu ısıtmak','Araçların ağırlığını artırmak'],'Kum yüzeyi pürüzlü yapar; sürtünme artar ve araçlar ile yayalar kaymaz.']
+];var NEWE=[
+['FB.5.1.1','Güneş, Dünya\'ya hangi iki şeyi verir?',['Işık ve ısı','Su ve hava','Ses ve ışık','Ses ve ısı'],'Güneş, Dünya\'daki yaşam için gerekli olan ışık ve ısı kaynağıdır.'],
+['FB.5.1.3','Ay\'ın kendi ışığı var mıdır?',['Yoktur, Güneş\'ten gelen ışığı yansıtır','Vardır, kendi ışığını yayar','Sadece dolunayda vardır','Sadece gece vardır'],'Ay ışık kaynağı değildir; Güneş\'ten aldığı ışığı yansıttığı için parlak görünür.'],
+['FB.5.2.1','Kuvvet bir cisme uygulandığında aşağıdakilerden hangisini yapabilir?',['Hareket durumunu veya şeklini değiştirebilir','Kütlesini sıfırlayabilir','Rengini değiştirir','Sadece sesini değiştirir'],'Kuvvet; cismi hareket ettirir, durdurur, yönünü veya şeklini değiştirebilir.'],
+['FB.5.1.2','Ay, Dünya\'nın neyidir?',['Doğal uydusu','Yapay uydusu','Yıldızı','Gezegeni'],'Ay, Dünya etrafında dolanan doğal bir uydudur.'],
+['FB.5.2.4','Sürtünme kuvveti hareket yönüne göre nasıl etki eder?',['Harekete zıt yönde','Hareketle aynı yönde','Hareketi hızlandırır','Hiçbir yönde etki etmez'],'Sürtünme kuvveti, hareketi engellemeye çalışır; harekete zıt yönde etki eder.'],
+['FB.5.1.1','Güneş\'i oluşturan başlıca gazlar hangileridir?',['Hidrojen ve helyum','Oksijen ve azot','Karbondioksit ve su buharı','Neon ve argon'],'Güneş, büyük bölümü hidrojen ve helyum gazlarından oluşan sıcak bir gaz küresidir.'],
+['FB.5.2.1','Dinamometre hangi büyüklüğü ölçer?',['Kuvveti','Kütleyi','Hacmi','Sıcaklığı'],'Dinamometre kuvvet ölçme aletidir; birimi Newton\'dur.'],
+['FB.5.1.3','Ay\'ın Dünya\'dan hiç görünmediği evre hangisidir?',['Yeni Ay','Dolunay','İlk dördün','Son dördün'],'Yeni Ay evresinde Ay\'ın Dünya\'ya bakan yüzü aydınlanmaz ve Ay görünmez.']
 ];
+var NEWM=[
+['FB.5.1.3','Ay\'ın evrelerinin oluşmasının nedeni nedir?',['Ay\'ın Dünya etrafında dolanırken aydınlık yüzünün farklı görünmesi','Dünya\'nın gölgesinin Ay\'ı örtmesi','Ay\'ın şeklinin değişmesi','Güneş\'in ışığının değişmesi'],'Ay, Dünya etrafında dolanırken Güneş tarafından aydınlatılan yüzünün Dünya\'dan görünen kısmı değişir; bu yüzden evreler oluşur.'],
+['FB.5.2.3','Ağırlık hangi birimle ifade edilir?',['Newton (N)','Kilogram (kg)','Litre (L)','Metre (m)'],'Ağırlık bir kuvvettir ve Newton ile ifade edilir; kütle ise kilogramla.'],
+['FB.5.1.2','Ay\'da atmosfer olmaması sonucunda hangisi gerçekleşir?',['Göktaşları yanmadan yüzeye çarpar','Ay\'da bulutlar oluşur','Ay\'da rüzgâr eser','Ay\'da yağmur yağar'],'Atmosfer olmadığı için göktaşları yanmadan çarpar ve Ay yüzeyi kraterlerle kaplı kalır.'],
+['FB.5.2.4','Sürtünmeyi azaltmak için hangisi yapılır?',['Yüzeyi yağlamak','Yüzeyi pürüzlü yapmak','Cismin ağırlığını artırmak','Yüzeye kum dökmek'],'Yağlama, yüzeyleri kaygan yaparak sürtünme kuvvetini azaltır.'],
+['FB.5.2.2','Bir dinamometreye 2 N yerine 4 N\'luk ağırlık asılırsa yayın uzaması nasıl değişir?',['İki katına çıkar','Yarıya iner','Değişmez','Dört katına çıkar'],'Yayın uzaması uygulanan kuvvetle orantılıdır; kuvvet iki katına çıkınca uzama da iki katına çıkar.'],
+['FB.5.1.4','Güneş, Dünya\'dan çok büyük olduğu hâlde gökyüzünde Ay ile yaklaşık aynı büyüklükte görünür. Bunun nedeni nedir?',['Güneş\'in Dünya\'ya çok uzak olması','Güneş\'in Ay\'dan küçük olması','Ay\'ın Güneş\'ten büyük olması','Dünya\'nın hareket etmemesi'],'Güneş Ay\'dan çok daha büyüktür ama Dünya\'dan çok daha uzaktır; bu yüzden benzer büyüklükte görünürler.'],
+['FB.5.2.3','Kütlesi 5 kg olan bir cismin Dünya\'daki ağırlığı yaklaşık kaç N\'dur? (1 kg yaklaşık 10 N)',['50 N','5 N','15 N','500 N'],'5 kg × 10 N/kg = 50 N.'],
+['FB.5.1.1','Güneş yüzeyinde daha soğuk olduğu için koyu görünen bölgelere ne ad verilir?',['Güneş lekeleri','Kraterler','Güneş tutulmaları','Kuyruklu yıldızlar'],'Çevresine göre daha soğuk ve koyu görünen bölgelere Güneş lekeleri denir.']
+];
+var NEWH=[
+['FB.5.1.3','Yeni Ay\'dan Dolunay\'a doğru Ay\'ın aydınlık kısmı Dünya\'dan nasıl görünür?',['Giderek büyür','Giderek küçülür','Değişmez','Önce küçülür sonra kaybolur'],'Yeni Ay\'dan Dolunay\'a doğru Ay\'ın Dünya\'dan görünen aydınlık yüzü giderek büyür.'],
+['FB.5.2.4','Aynı kutu buz, halı ve beton zeminde sürükleniyor. Hangisinde en büyük kuvvet gerekir?',['Halı','Buz','Beton','Üçünde de aynı'],'Yüzey ne kadar pürüzlüyse sürtünme o kadar büyük olur. Halı bu üçü arasında en pürüzlü olanıdır.'],
+['FB.5.2.3','Kütlesi 60 kg olan bir astronotun Ay\'daki kütlesi kaç kg\'dır?',['60 kg','10 kg','360 kg','0 kg'],'Kütle madde miktarıdır; bulunduğu yere göre değişmez. Ay\'da ağırlığı azalır ama kütlesi 60 kg kalır.'],
+['FB.5.2.2','Bir yay 2 N\'luk kuvvetle 4 cm uzuyor. Aynı yaya 6 N uygulanırsa kaç cm uzar?',['12 cm','8 cm','6 cm','24 cm'],'Uzama kuvvetle orantılıdır: 2 N → 4 cm ise 6 N → 12 cm.'],
+['FB.5.1.2','Ay\'ın yüzeyinde gündüz ile gece arasındaki sıcaklık farkı çok büyüktür. Bunun nedeni nedir?',['Atmosferin olmaması','Ay\'ın çok küçük olması','Ay\'da suyun bulunması','Güneş\'in Ay\'a çok yakın olması'],'Ay\'da ısıyı tutacak atmosfer yoktur; gündüz çok ısınır, gece çok soğur.'],
+['FB.5.2.4','Aşağıdakilerden hangisinde sürtünme kuvveti yararlıdır?',['Arabanın frenle durması','Makine parçalarının aşınması','Buzda kayarak ilerlemek','Yağlı zeminde dengeyi kaybetmek'],'Frenle durmak, yürümek ve tutmak sürtünme sayesinde olur; bu durumlarda sürtünme yararlıdır.'],
+['FB.5.2.3','Kütle ve ağırlık için hangisi doğrudur?',['Kütle her yerde aynıdır, ağırlık bulunduğu gök cismine göre değişir','Ağırlık her yerde aynıdır, kütle değişir','İkisi de her yerde aynıdır','İkisi de her yerde değişir'],'Kütle değişmez; ağırlık ise yerçekimine bağlı olduğundan Dünya, Ay gibi yerlerde farklıdır.'],
+['FB.5.1.4','Güneş, Dünya ve Ay\'ın hareketleri için hangisi doğrudur?',['Dünya Güneş\'in, Ay ise Dünya\'nın etrafında dolanır','Güneş Dünya\'nın etrafında dolanır','Ay Güneş\'in etrafında yalnızca dolanır, Dünya\'nın etrafında dolanmaz','Dünya sabittir, Ay ve Güneş dolanır'],'Dünya Güneş etrafında dolanırken Ay da Dünya\'nın etrafında dolanır.']
+];
+var TIERS=[BANK.slice(0,5).concat(NEWE),BANK.slice(5,10).concat(NEWM),BANK.slice(10,15).concat(NEWH)];
+var Q=[];
+function buildQ(){Q=[];TIERS.forEach(function(t){Q=Q.concat(shuffle(t).slice(0,5))})}
+
 
 var st;
 function $(i){return document.getElementById(i)}
 function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}
 function safeWon(i){var w=0;SAFE.forEach(function(s){if(i>s)w=PRIZES[s]});return w}
-function newGame(){st={i:0,jok:{f:true,a:true,p:true},sel:-1,locked:false,over:false,timer:null,left:0,gone:[],msg:'',opts:[],correct:0,answered:0};startQ()}
+function newGame(){buildQ();st={i:0,jok:{f:true,a:true,p:true},sel:-1,locked:false,over:false,timer:null,left:0,gone:[],msg:'',opts:[],correct:0,answered:0};startQ()}
 function startQ(){
  var q=Q[st.i];var idx=shuffle([0,1,2,3]);st.opts=idx;st.correctPos=idx.indexOf(0);
  st.sel=-1;st.locked=false;st.gone=[];st.poll=null;st.msg='';st.reveal=false;st.left=time(st.i);
