@@ -36,8 +36,20 @@ export default function SixthGradePlanetAnimationsPage() {
             <Link href="/animasyonlar/6/esesiz-ureme">Eşeysiz üreme çeşitleri 🧫</Link>
             <Link href="/animasyonlar/6/milyoner">MilyonerFen oyunu 💰</Link>
             <Link href="/animasyonlar/6/fen-futbolu6">Fen Futbolu 6 oyunu ⚽</Link>
+            <Link href="/animasyonlar/6/merkezi-sinir-sistemi">🧠 Merkezi Sinir Sistemi animasyonu</Link>
           </div>
         </header>
+
+        <section className="mb-7 overflow-hidden rounded-2xl border-2 border-violet-300 bg-gradient-to-r from-violet-50 to-white p-5 shadow-md dark:border-violet-800 dark:from-violet-950 dark:to-slate-900">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <span className="text-xs font-black tracking-wider text-violet-700 dark:text-violet-300">YENİ ETKİLEŞİMLİ ANİMASYON · 6. SINIF</span>
+              <h2 className="mt-1 text-2xl font-black text-violet-950 dark:text-white">🧠 Merkezi Sinir Sistemini Keşfet</h2>
+              <p className="mt-1 text-sm text-violet-800 dark:text-violet-200">Beyin, beyincik, omurilik soğanı ve omuriliği seç; refleks ve istemli hareket deneylerini kendin yönet.</p>
+            </div>
+            <Link href="/animasyonlar/6/merkezi-sinir-sistemi" className="inline-flex shrink-0 items-center justify-center rounded-xl bg-violet-700 px-6 py-3 text-sm font-extrabold text-white shadow hover:bg-violet-800">Animasyonu Aç →</Link>
+          </div>
+        </section>
 
         <section className="mb-7 overflow-hidden rounded-2xl border-2 border-emerald-300 bg-gradient-to-r from-emerald-50 to-white p-5 shadow-md dark:border-emerald-800 dark:from-emerald-950 dark:to-slate-900">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
