@@ -1,115 +1,19 @@
-import Link from "next/link";
-import MoonPhasesSimulator from "@/components/animations/MoonPhasesSimulator/MoonPhasesSimulator";
-import styles from "./page.module.css";
+import AnimationDirectory from "@/components/animations/AnimationDirectory";
 
-export const metadata = {
-  title: "5. Sınıf Animasyonları | Fen Bilimleri",
-  description:
-    "5. sınıf fen bilimleri için etkileşimli animasyonlar ve Işığın Dünyası 4. ünite konu anlatımı.",
-};
+export const metadata = { title: "5. Sınıf Animasyonları | Fen Bilimleri" };
 
-export default function FifthGradeMoonPhasesPage() {
-  return (
-    <main className={styles.page}>
-      <div className={styles.container}>
-        <nav className={styles.breadcrumbs} aria-label="Sayfa yolu">
-          <Link href="/#animasyonlar">Animasyonlar</Link>
-          <span aria-hidden="true">/</span>
-          <span aria-current="page">5. Sınıf · Ay’ın Evreleri</span>
-        </nav>
+const items = [
+  { title: "Ay'ın Evreleri Simülatörü", href: "/animasyonlar/5/ay-evreleri", icon: "🌙", description: "Ay'ın evrelerini hareketli simülasyonla incele.", category: "GÖKYÜZÜ" },
+  { title: "Ay Yüzeyini Keşfet", href: "/animasyonlar/5/ay-yuzeyi", icon: "🚀", description: "Astronotla Ay yüzeyini ve kraterleri keşfet.", category: "UZAY" },
+  { title: "Dinamometre Simülatörü", href: "/animasyonlar/5/dinamometre", icon: "⚖️", description: "Kuvveti dinamometre ile ölçmeyi dene.", category: "KUVVET" },
+  { title: "Dinamometreni Ölçeklendir", href: "/animasyonlar/5/dinamometre-olcekle", icon: "📏", description: "Dinamometre ölçeğini oluştur ve ölçüm yap.", category: "KUVVET" },
+  { title: "Mikroskop Masası", href: "/animasyonlar/5/mikroskop", icon: "🔬", description: "Mikroskop parçalarını ve örnek incelemeyi keşfet.", category: "CANLILAR" },
+  { title: "İskelet Sistemi Animasyonu", href: "/laboratuvar/destek-hareket", icon: "🦴", description: "Destek ve hareket sistemini incele.", category: "VÜCUDUMUZ" },
+  { title: "Fen Koşusu 5", href: "/animasyonlar/5/fen-kosusu5", icon: "🏃", description: "Fen sorularını çözerek parkuru tamamla.", category: "EĞİTİCİ OYUN" },
+  { title: "Fen Yarışı 5", href: "/animasyonlar/5/fen-yarisi5", icon: "🏎️", description: "Soruları yanıtla ve yarışta ilerle.", category: "EĞİTİCİ OYUN" },
+  { title: "MilyonerFen 5", href: "/animasyonlar/5/milyoner", icon: "🏆", description: "Fen bilgini çoktan seçmeli sorularla dene.", category: "EĞİTİCİ OYUN" },
+];
 
-        <header className={styles.hero}>
-          <div className={styles.heroCopy}>
-            <span className={styles.eyebrow}>5. SINIF · GÖKYÜZÜNÜ KEŞFET</span>
-            <h1>Ay’ın evrelerini kendi gözünle keşfet</h1>
-            <p>
-              Güneş ışığı, Dünya ve Ay’ın hareketlerini takip et. Ay’ın biçimi değişmeden,
-              bize görünen aydınlık bölümün nasıl büyüyüp küçüldüğünü adım adım incele.
-            </p>
-            <div className={styles.heroActions}>
-              <a className={styles.heroAction} href="#moon-simulator">
-                Simülatörü başlat <span aria-hidden="true">↓</span>
-              </a>
-              <a className={`${styles.heroAction} ${styles.heroActionSecondary}`} href="#moon-learning">
-                Evrelerin sırasını öğren <span aria-hidden="true">✦</span>
-              </a>
-              <Link className={styles.heroAction} href="/animasyonlar/5/ay-yuzeyi">
-                Astronotla Ay yüzeyini keşfet <span aria-hidden="true">→</span>
-              </Link>
-              <Link className={`${styles.heroAction} ${styles.heroActionSecondary}`} href="/animasyonlar/5/dinamometre">
-                Dinamometre simülatörü <span aria-hidden="true">↗</span>
-              </Link>
-              <Link className={`${styles.heroAction} ${styles.heroActionSecondary}`} href="/animasyonlar/5/dinamometre-olcekle">
-                Dinamometreni ölçeklendir <span aria-hidden="true">↗</span>
-              </Link>
-              <Link className={styles.heroAction} href="/animasyonlar/5/mikroskop">
-                Mikroskop masası <span aria-hidden="true">🔬</span>
-              </Link>
-              <Link className={`${styles.heroAction} ${styles.heroActionSecondary}`} href="/laboratuvar/destek-hareket">
-                İskelet sistemi animasyonu <span aria-hidden="true">🦴</span>
-              </Link>
-              <Link className={`${styles.heroAction} ${styles.heroActionSecondary}`} href="/animasyonlar/5/fen-kosusu5">
-                Fen Koşusu 5 oyunu <span aria-hidden="true">🏃</span>
-              </Link>
-              <Link className={styles.heroAction} href="/animasyonlar/5/fen-yarisi5">
-                Fen Yarışı 5 araba oyunu <span aria-hidden="true">🏎️</span>
-              </Link>
-              <Link className={`${styles.heroAction} ${styles.heroActionSecondary}`} href="/animasyonlar/5/milyoner">
-                MilyonerFen oyunu <span aria-hidden="true">💰</span>
-              </Link>
-            </div>
-          </div>
-          <div className={styles.heroOrbit} aria-hidden="true">
-            <span className={styles.heroOrbitRing} />
-            <span className={styles.heroEarth} />
-            <span className={styles.heroMoon} />
-            <span className={styles.heroSun} />
-            <span className={styles.heroStar}>✦</span>
-          </div>
-        </header>
-
-        <section id="moon-simulator" className={styles.simulatorSection} aria-labelledby="moon-simulator-title">
-          <div className={styles.sectionIntro}>
-            <div>
-              <span className={styles.sectionEyebrow}>KONTROLLER SENDE</span>
-              <h2 id="moon-simulator-title">Ay’ın bir aylık yolculuğunu canlandır</h2>
-            </div>
-            <p>Oynat · durdur · kaydır · evre seç</p>
-          </div>
-          <MoonPhasesSimulator />
-        </section>
-
-        <section id="moon-learning" className={styles.learningSection} aria-labelledby="moon-learning-title">
-          <div className={styles.learningHeading}>
-            <span className={styles.sectionEyebrow}>AKLINDA KALSIN</span>
-            <h2 id="moon-learning-title">Sekiz evre, tek bir döngü</h2>
-            <p>
-              Evreler yaklaşık 29,5 günde bir aynı sırayla tekrar eder. “Büyüyen” evrelerde
-              görünen aydınlık bölüm artar; “küçülen” evrelerde azalır.
-            </p>
-          </div>
-          <div className={styles.phaseSequence} aria-label="Ay’ın evreleri sırasıyla">
-            <span>Yeni Ay</span><i aria-hidden="true">→</i>
-            <span>Büyüyen Hilal</span><i aria-hidden="true">→</i>
-            <span>İlk Dördün</span><i aria-hidden="true">→</i>
-            <span>Büyüyen Şişkin Ay</span><i aria-hidden="true">→</i>
-            <span>Dolunay</span><i aria-hidden="true">→</i>
-            <span>Küçülen Şişkin Ay</span><i aria-hidden="true">→</i>
-            <span>Son Dördün</span><i aria-hidden="true">→</i>
-            <span>Küçülen Hilal</span>
-          </div>
-          <p className={styles.sourceLine}>
-            Kaynaklar: <a href="https://spaceplace.nasa.gov/moon-phases/" target="_blank" rel="noreferrer">NASA Space Place · Ay’ın evreleri</a>
-            {" · "}
-            <a href="https://science.nasa.gov/moon/moon-phases/" target="_blank" rel="noreferrer">NASA Science · Moon Phases</a>
-          </p>
-        </section>
-
-        <div className={styles.bottomNav}>
-          <Link href="/#animasyonlar">← Diğer sınıf animasyonları</Link>
-          <span>Gözle, karşılaştır ve keşfet.</span>
-        </div>
-      </div>
-    </main>
-  );
+export default function FifthGradeAnimationsPage() {
+  return <AnimationDirectory grade={5} items={items} />;
 }
