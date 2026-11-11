@@ -17,12 +17,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Aşağıdakilerden hangisi doğal kaynağa örnektir",
         "su",
         "telefon",
+        "Aşağıdakilerden hangisi doğal kaynağa örnektir",
         "pil"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Su, toprak, hava ve ormanlar doğal kaynaklardır."
     },
     {
@@ -37,12 +37,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Sürdürülebilir yaşamın amacı nedir",
         "gelecek kuşakları gözetmek",
+        "Sürdürülebilir yaşamın amacı nedir",
         "atığı artırmak",
         "israf"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Kaynakları verimli kullanmak gelecek kuşakların ihtiyaçlarını da gözetir."
     },
     {
@@ -77,12 +77,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Atık oluşumunu önlemede ilk tercih genellikle hangisidir",
         "azaltmak",
         "çöpe atmak",
-        "yakmak"
+        "yakmak",
+        "Atık oluşumunu önlemede ilk tercih genellikle hangisidir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Azaltma, yeniden kullanma ve geri dönüştürme atık yönetiminin temel adımlarıdır."
     },
     {
@@ -97,12 +97,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Kullanılmış temiz defter kâğıdı hangi atık grubunda toplanır",
         "kâğıt-karton",
         "metal",
+        "Kullanılmış temiz defter kâğıdı hangi atık grubunda toplanır",
         "organik"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Kâğıt-karton atıkları uygun toplama sisteminde ayrı biriktirilir."
     },
     {
@@ -117,12 +117,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Boş cam kavanoz hangi atık türüdür",
         "Plastik",
+        "Boş cam kavanoz hangi atık türüdür",
         "metal",
         "kâğıt"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Cam ambalajlar cam toplama sistemine ayrılır."
     },
     {
@@ -157,12 +157,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Kavanozu kalemlik yapmak hangi uygulamadır",
         "yeniden kullanım",
         "yakma",
-        "kompost"
+        "kompost",
+        "Kavanozu kalemlik yapmak hangi uygulamadır"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Yeniden kullanımda ürün başka amaçla tekrar kullanılır; geri dönüşümde malzeme işlenir."
     },
     {
@@ -177,12 +177,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Kullanılmış pil için doğru davranış hangisidir",
         "normal çöpe atmak",
         "pil toplama noktasına bırakmak",
+        "Kullanılmış pil için doğru davranış hangisidir",
         "yakmak"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Atık piller özel toplama noktalarına bırakılmalıdır."
     },
     {
@@ -197,12 +197,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Atıkların gelişigüzel bırakılması hangi sonuca yol açabilir",
         "kaynak artışı",
+        "Atıkların gelişigüzel bırakılması hangi sonuca yol açabilir",
         "hava temizliği",
         "su tasarrufu"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Atıkların doğaya bırakılması toprak ve su kirliliğine neden olabilir."
     },
     {
@@ -237,12 +237,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Sürdürülebilir yaşamın amacı nedir",
         "gelecek kuşakları gözetmek",
         "atığı artırmak",
-        "israf"
+        "israf",
+        "Sürdürülebilir yaşamın amacı nedir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Kaynakları verimli kullanmak gelecek kuşakların ihtiyaçlarını da gözetir."
     },
     {
@@ -257,12 +257,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Boş sınıftaki ışıkları kapatmak hangi yararı sağlar",
         "suyu kirletir",
         "atığı artırır",
+        "Boş sınıftaki ışıkları kapatmak hangi yararı sağlar",
         "kaynakları tüketir"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Kullanılmayan ışıkları kapatmak enerji tasarrufu sağlar."
     },
     {
@@ -277,12 +277,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Atık oluşumunu önlemede ilk tercih genellikle hangisidir",
         "azaltmak",
+        "Atık oluşumunu önlemede ilk tercih genellikle hangisidir",
         "çöpe atmak",
         "yakmak"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Azaltma, yeniden kullanma ve geri dönüştürme atık yönetiminin temel adımlarıdır."
     },
     {
@@ -317,12 +317,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Boş cam kavanoz hangi atık türüdür",
         "Plastik",
         "metal",
-        "kâğıt"
+        "kâğıt",
+        "Boş cam kavanoz hangi atık türüdür"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Cam ambalajlar cam toplama sistemine ayrılır."
     },
     {
@@ -337,12 +337,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "İçecek metal kutusu hangi grupta değerlendirilir",
         "Cam",
         "kâğıt",
+        "İçecek metal kutusu hangi grupta değerlendirilir",
         "organik"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Metal kutular uygun metal geri dönüşüm akışına ayrılır."
     },
     {
@@ -357,12 +357,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Kavanozu kalemlik yapmak hangi uygulamadır",
         "yeniden kullanım",
+        "Kavanozu kalemlik yapmak hangi uygulamadır",
         "yakma",
         "kompost"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Yeniden kullanımda ürün başka amaçla tekrar kullanılır; geri dönüşümde malzeme işlenir."
     },
     {
@@ -397,12 +397,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Atıkların gelişigüzel bırakılması hangi sonuca yol açabilir",
         "kaynak artışı",
         "hava temizliği",
-        "su tasarrufu"
+        "su tasarrufu",
+        "Atıkların gelişigüzel bırakılması hangi sonuca yol açabilir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Atıkların doğaya bırakılması toprak ve su kirliliğine neden olabilir."
     },
     {
@@ -417,12 +417,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Aşağıdakilerden hangisi doğal kaynağa örnektir",
         "su",
         "telefon",
+        "Aşağıdakilerden hangisi doğal kaynağa örnektir",
         "pil"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Su, toprak, hava ve ormanlar doğal kaynaklardır."
     },
     {
@@ -437,12 +437,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Sürdürülebilir yaşamın amacı nedir",
         "gelecek kuşakları gözetmek",
+        "Sürdürülebilir yaşamın amacı nedir",
         "atığı artırmak",
         "israf"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Kaynakları verimli kullanmak gelecek kuşakların ihtiyaçlarını da gözetir."
     },
     {
@@ -477,12 +477,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Atık oluşumunu önlemede ilk tercih genellikle hangisidir",
         "azaltmak",
         "çöpe atmak",
-        "yakmak"
+        "yakmak",
+        "Atık oluşumunu önlemede ilk tercih genellikle hangisidir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Azaltma, yeniden kullanma ve geri dönüştürme atık yönetiminin temel adımlarıdır."
     },
     {
@@ -497,12 +497,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Kullanılmış temiz defter kâğıdı hangi atık grubunda toplanır",
         "kâğıt-karton",
         "metal",
+        "Kullanılmış temiz defter kâğıdı hangi atık grubunda toplanır",
         "organik"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Kâğıt-karton atıkları uygun toplama sisteminde ayrı biriktirilir."
     },
     {
@@ -517,12 +517,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Boş cam kavanoz hangi atık türüdür",
         "Plastik",
+        "Boş cam kavanoz hangi atık türüdür",
         "metal",
         "kâğıt"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Cam ambalajlar cam toplama sistemine ayrılır."
     },
     {
@@ -557,12 +557,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Kavanozu kalemlik yapmak hangi uygulamadır",
         "yeniden kullanım",
         "yakma",
-        "kompost"
+        "kompost",
+        "Kavanozu kalemlik yapmak hangi uygulamadır"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Yeniden kullanımda ürün başka amaçla tekrar kullanılır; geri dönüşümde malzeme işlenir."
     },
     {
@@ -577,12 +577,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Kullanılmış pil için doğru davranış hangisidir",
         "normal çöpe atmak",
         "pil toplama noktasına bırakmak",
+        "Kullanılmış pil için doğru davranış hangisidir",
         "yakmak"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Atık piller özel toplama noktalarına bırakılmalıdır."
     },
     {
@@ -597,12 +597,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Atıkların gelişigüzel bırakılması hangi sonuca yol açabilir",
         "kaynak artışı",
+        "Atıkların gelişigüzel bırakılması hangi sonuca yol açabilir",
         "hava temizliği",
         "su tasarrufu"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Atıkların doğaya bırakılması toprak ve su kirliliğine neden olabilir."
     }
   ]
