@@ -17,12 +17,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Basit elektrik devresinde enerji kaynağı hangi elemandır",
         "anahtar",
+        "Basit elektrik devresinde enerji kaynağı hangi elemandır",
         "pil",
         "kablo"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Pil devreye enerji sağlar."
     },
     {
@@ -57,12 +57,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Devre elemanlarını birbirine bağlayarak elektriksel yol oluşturan eleman hangisidir",
         "ampul",
         "kablo",
-        "anahtar"
+        "anahtar",
+        "Devre elemanlarını birbirine bağlayarak elektriksel yol oluşturan eleman hangisidir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Bağlantı kabloları devre elemanları arasında iletken yol oluşturur."
     },
     {
@@ -77,12 +77,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Devrede elektrik akışını kontrol etmek için hangi eleman kullanılır",
         "anahtar",
         "ampul",
+        "Devrede elektrik akışını kontrol etmek için hangi eleman kullanılır",
         "duy"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Anahtar devreyi açıp kapatır."
     },
     {
@@ -97,12 +97,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Ampulün yanabilmesi için devrenin hangi durumda olması gerekir",
         "kopuk",
+        "Ampulün yanabilmesi için devrenin hangi durumda olması gerekir",
         "kapalı",
         "eksik"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Kapalı devrede iletken yol tamamlanır ve ampul yanabilir."
     },
     {
@@ -137,12 +137,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Devre şemasının temel amacı nedir",
         "bağlantı biçimini göstermek",
         "marka yazmak",
-        "maliyet ölçmek"
+        "maliyet ölçmek",
+        "Devre şemasının temel amacı nedir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Devre şemaları sembollerle bağlantı biçimini gösterir."
     },
     {
@@ -157,12 +157,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Aynı ampul ve bağlantılarla pil sayısı artırıldığında ampul parlaklığı genellikle nasıl değişir",
         "daima azalır",
         "değişmez",
+        "Aynı ampul ve bağlantılarla pil sayısı artırıldığında ampul parlaklığı genellikle nasıl değişir",
         "ampul söner"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Seri devrede pil sayısı değişirse ampul parlaklığı etkilenebilir."
     },
     {
@@ -177,12 +177,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Özdeş ampuller seri bağlandığında ampul sayısı artırılırsa parlaklık genellikle nasıl etkilenir",
         "azalır",
+        "Özdeş ampuller seri bağlandığında ampul sayısı artırılırsa parlaklık genellikle nasıl etkilenir",
         "sınırsız artar",
         "renk değiştirir"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Aynı devrede ampul sayısı artırılırsa ampullerin parlaklığı azalabilir."
     },
     {
@@ -217,12 +217,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Basit elektrik devresinde enerji kaynağı hangi elemandır",
         "anahtar",
         "pil",
-        "kablo"
+        "kablo",
+        "Basit elektrik devresinde enerji kaynağı hangi elemandır"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Pil devreye enerji sağlar."
     },
     {
@@ -237,12 +237,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Elektrik devresindeki ampulün temel görevi nedir",
         "ışık vermek",
         "akımı kesmek",
+        "Elektrik devresindeki ampulün temel görevi nedir",
         "enerji depolamak"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Ampul elektrik enerjisini ışık enerjisine dönüştürür."
     },
     {
@@ -257,12 +257,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Devre elemanlarını birbirine bağlayarak elektriksel yol oluşturan eleman hangisidir",
         "ampul",
+        "Devre elemanlarını birbirine bağlayarak elektriksel yol oluşturan eleman hangisidir",
         "kablo",
         "anahtar"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Bağlantı kabloları devre elemanları arasında iletken yol oluşturur."
     },
     {
@@ -297,12 +297,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Ampulün yanabilmesi için devrenin hangi durumda olması gerekir",
         "kopuk",
         "kapalı",
-        "eksik"
+        "eksik",
+        "Ampulün yanabilmesi için devrenin hangi durumda olması gerekir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Kapalı devrede iletken yol tamamlanır ve ampul yanabilir."
     },
     {
@@ -317,12 +317,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Anahtar açık olduğunda ampulün yanmamasının nedeni nedir",
         "pil büyür",
         "kablo ışık verir",
+        "Anahtar açık olduğunda ampulün yanmamasının nedeni nedir",
         "ampul enerji üretir"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Açık anahtar devre yolunu keser."
     },
     {
@@ -337,12 +337,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Devre şemasının temel amacı nedir",
         "bağlantı biçimini göstermek",
+        "Devre şemasının temel amacı nedir",
         "marka yazmak",
         "maliyet ölçmek"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Devre şemaları sembollerle bağlantı biçimini gösterir."
     },
     {
@@ -377,12 +377,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Özdeş ampuller seri bağlandığında ampul sayısı artırılırsa parlaklık genellikle nasıl etkilenir",
         "azalır",
         "sınırsız artar",
-        "renk değiştirir"
+        "renk değiştirir",
+        "Özdeş ampuller seri bağlandığında ampul sayısı artırılırsa parlaklık genellikle nasıl etkilenir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Aynı devrede ampul sayısı artırılırsa ampullerin parlaklığı azalabilir."
     },
     {
@@ -397,12 +397,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Bir deneyde tek değişkeni değiştirmek neden önemlidir",
         "tüm sonuçları eşitlemek",
         "deneyi uzatmak",
+        "Bir deneyde tek değişkeni değiştirmek neden önemlidir",
         "ölçümü engellemek"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Bilimsel karşılaştırmada yalnızca bir değişken değiştirilir."
     },
     {
@@ -417,12 +417,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Basit elektrik devresinde enerji kaynağı hangi elemandır",
         "anahtar",
+        "Basit elektrik devresinde enerji kaynağı hangi elemandır",
         "pil",
         "kablo"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Pil devreye enerji sağlar."
     },
     {
@@ -457,12 +457,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Devre elemanlarını birbirine bağlayarak elektriksel yol oluşturan eleman hangisidir",
         "ampul",
         "kablo",
-        "anahtar"
+        "anahtar",
+        "Devre elemanlarını birbirine bağlayarak elektriksel yol oluşturan eleman hangisidir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Bağlantı kabloları devre elemanları arasında iletken yol oluşturur."
     },
     {
@@ -477,12 +477,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Devrede elektrik akışını kontrol etmek için hangi eleman kullanılır",
         "anahtar",
         "ampul",
+        "Devrede elektrik akışını kontrol etmek için hangi eleman kullanılır",
         "duy"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Anahtar devreyi açıp kapatır."
     },
     {
@@ -497,12 +497,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Ampulün yanabilmesi için devrenin hangi durumda olması gerekir",
         "kopuk",
+        "Ampulün yanabilmesi için devrenin hangi durumda olması gerekir",
         "kapalı",
         "eksik"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Kapalı devrede iletken yol tamamlanır ve ampul yanabilir."
     },
     {
@@ -537,12 +537,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Devre şemasının temel amacı nedir",
         "bağlantı biçimini göstermek",
         "marka yazmak",
-        "maliyet ölçmek"
+        "maliyet ölçmek",
+        "Devre şemasının temel amacı nedir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Devre şemaları sembollerle bağlantı biçimini gösterir."
     },
     {
@@ -557,12 +557,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Aynı ampul ve bağlantılarla pil sayısı artırıldığında ampul parlaklığı genellikle nasıl değişir",
         "daima azalır",
         "değişmez",
+        "Aynı ampul ve bağlantılarla pil sayısı artırıldığında ampul parlaklığı genellikle nasıl değişir",
         "ampul söner"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Seri devrede pil sayısı değişirse ampul parlaklığı etkilenebilir."
     },
     {
@@ -577,12 +577,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Özdeş ampuller seri bağlandığında ampul sayısı artırılırsa parlaklık genellikle nasıl etkilenir",
         "azalır",
+        "Özdeş ampuller seri bağlandığında ampul sayısı artırılırsa parlaklık genellikle nasıl etkilenir",
         "sınırsız artar",
         "renk değiştirir"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Aynı devrede ampul sayısı artırılırsa ampullerin parlaklığı azalabilir."
     },
     {
