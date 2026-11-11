@@ -1,0 +1,554 @@
+{
+  "id": "6-sinif-7-unite-yeni-nesil-30",
+  "slug": "6-sinif-7-unite-yeni-nesil-30",
+  "title": "6. Sınıf 7. Ünite Sürdürülebilir Yaşam ve Etkileşim Yeni Nesil Deneme",
+  "description": "Sürdürülebilir Yaşam ve Etkileşim ünitesinden 30 özgün, senaryolu ve yorumlama odaklı soru. Türkiye Yüzyılı Maarif Modeli ile uyumludur.",
+  "classLevel": 6,
+  "durationMin": 60,
+  "units": [
+    "Sürdürülebilir Yaşam ve Etkileşim"
+  ],
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı, 6. sınıf. Sorular özgün olarak hazırlanmıştır.",
+  "questions": [
+    {
+      "no": 1,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.1",
+      "skill": "Ekosistem yorumu",
+      "scenario": "Bir gölde yapılan gözlemde balık, su bitkisi, böcek ve kuş türlerinin birlikte yaşadığı belirleniyor. Su kirliliği arttığında bazı türlerin sayısı azalıyor.",
+      "stem": "Bu durum biyoçeşitliliğin hangi özelliğini gösterir?",
+      "options": [
+        "Türlerin birbirinden tamamen bağımsız olduğunu",
+        "Ekosistemdeki canlıların birbirleriyle etkileştiğini",
+        "Cansız çevrenin önemsiz olduğunu",
+        "Bütün canlıların aynı besinle beslendiğini"
+      ],
+      "answer": 1,
+      "explanation": "Ekosistemdeki türler besin ve yaşam alanı ilişkileriyle birbirini etkiler.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 2,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.1",
+      "skill": "Kavram bilgisi",
+      "scenario": "Bir bölgede yalnızca o bölgeye özgü bir bitki türü yetişiyor.",
+      "stem": "Bu bitki hangi kavramla tanımlanır?",
+      "options": [
+        "Göçmen",
+        "Endemik",
+        "Evcil",
+        "Ayrıştırıcı"
+      ],
+      "answer": 1,
+      "explanation": "Endemik türlerin doğal yayılışı belirli bir bölgeyle sınırlıdır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 3,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.1",
+      "skill": "Neden-sonuç",
+      "scenario": "Bir ormanda arıların azalmasıyla bazı bitkilerin tohum ve meyve oluşturma oranı da düşüyor.",
+      "stem": "Bu gözlem biyoçeşitliliğin önemini nasıl açıklar?",
+      "options": [
+        "Canlıların ekosistem hizmetlerine katkı sağladığını",
+        "Bütün bitkilerin kendi kendine tozlaştığını",
+        "Arıların cansız varlık olduğunu",
+        "Tür sayısının çevreyi etkilemediğini"
+      ],
+      "answer": 0,
+      "explanation": "Arılar tozlaşmaya katkı sağlar; bir türdeki azalma diğer canlıları etkileyebilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 4,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.2",
+      "skill": "Veri yorumlama",
+      "scenario": "Bir orman alanının bir bölümü yol ve yapılaşma nedeniyle parçalanıyor. Bölgede yaşayan bazı hayvanların besin ve eş bulmak için hareketi zorlaşıyor.",
+      "stem": "Bu çevre sorunu hangisidir?",
+      "options": [
+        "Habitat parçalanması",
+        "Doğal seçilim",
+        "Fotosentez",
+        "Yoğunlaşma"
+      ],
+      "answer": 0,
+      "explanation": "Yaşam alanlarının bölünmesi habitat parçalanmasıdır ve canlıların hareketini kısıtlayabilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 5,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.2",
+      "skill": "Kanıta dayalı tahmin",
+      "scenario": "Bir akarsuda atık miktarı arttıktan sonra su canlılarının sayısında azalma gözleniyor.",
+      "stem": "Bu veriye dayalı en uygun tahmin hangisidir?",
+      "options": [
+        "Kirlilik su canlılarının yaşamını olumsuz etkilemiş olabilir",
+        "Akarsudaki bütün canlılar çoğalmıştır",
+        "Atıkların canlılara etkisi yoktur",
+        "Su kirliliği biyoçeşitliliği daima artırır"
+      ],
+      "answer": 0,
+      "explanation": "Gözlem, kirliliğin canlılar üzerinde olumsuz etkisi olabileceğini düşündürür; daha fazla veriyle desteklenmelidir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 6,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.3",
+      "skill": "Veri değerlendirme",
+      "scenario": "Bir mahallede kışın ısınmak için kalitesiz yakıt kullanımı arttığında hava ölçümlerinde partikül madde değerleri yükseliyor.",
+      "stem": "Bu durum hangi sonucu destekler?",
+      "options": [
+        "Yakıt türü hava kalitesini etkileyebilir",
+        "Yakıt kullanımı havayı temizler",
+        "Partiküller yalnız suda oluşur",
+        "Hava kirliliği ölçülemez"
+      ],
+      "answer": 0,
+      "explanation": "Yakıtın türü ve yanma koşulları hava kirleticilerinin miktarını etkileyebilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 7,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.3",
+      "skill": "Çözüm değerlendirme",
+      "scenario": "Bir apartman yönetimi ısınmada enerji kaybını azaltmak için yalıtım yaptırmayı ve verimli sistem kullanmayı planlıyor.",
+      "stem": "Bu uygulamaların çevresel katkısı hangisidir?",
+      "options": [
+        "Daha fazla yakıt tüketmek",
+        "Aynı ısınma için daha az enerji kullanmak ve emisyonları azaltmaya yardımcı olmak",
+        "Atıkları artırmak",
+        "Hava kirliliğini zorunlu olarak artırmak"
+      ],
+      "answer": 1,
+      "explanation": "Enerji verimliliği yakıt tüketimini ve buna bağlı emisyonları azaltabilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 8,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.4",
+      "skill": "Çözüm önerisi",
+      "scenario": "Bir okul bahçesinde tek kullanımlık plastikler nedeniyle atık birikiyor. Öğrenciler yeniden kullanılabilir matara ve ayrıştırma kutuları öneriyor.",
+      "stem": "Önerilerin ortak amacı nedir?",
+      "options": [
+        "Atık miktarını ve çevresel etkiyi azaltmak",
+        "Plastik kullanımını artırmak",
+        "Atıkları karışık toplamak",
+        "Doğal kaynak tüketimini artırmak"
+      ],
+      "answer": 0,
+      "explanation": "Yeniden kullanım ve atık ayrıştırma kaynak tüketimini ve çevreye bırakılan atığı azaltabilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 9,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.4",
+      "skill": "İş birliği",
+      "scenario": "Bir ilçede dere kıyısındaki doğal alanın korunması için yerel halk, belediye ve bilim insanları ortak çalışma yapıyor.",
+      "stem": "Bu yaklaşım neden etkilidir?",
+      "options": [
+        "Sorunun farklı yönlerini ve paydaşları birlikte değerlendirdiği için",
+        "Yalnızca tek kişinin görüşünü aldığı için",
+        "Veri toplamayı gereksiz gördüğü için",
+        "Sorunu ertelediği için"
+      ],
+      "answer": 0,
+      "explanation": "Çevre sorunları farklı paydaşların iş birliği ve kanıta dayalı planlamayla daha etkili çözülebilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 10,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.2",
+      "skill": "Veri okuryazarlığı",
+      "scenario": "Bir araştırmada iki orman alanından birinde tür sayısı 24, diğerinde 9 olarak belirleniyor. İkinci alanda yapılaşma ve kirlilik daha yoğun.",
+      "stem": "Verilerden çıkarılabilecek en temkinli sonuç hangisidir?",
+      "options": [
+        "Yapılaşma ve kirlilik biyoçeşitliliğin azalmasıyla ilişkili olabilir",
+        "Tür sayısını yalnızca alanın adı belirler",
+        "İkinci alanda hiç canlı yoktur",
+        "İki alanın ekolojik koşulları kesinlikle aynıdır"
+      ],
+      "answer": 0,
+      "explanation": "Veriler ilişki düşündürür; kesin neden-sonuç için başka değişkenler de incelenmelidir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 11,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.3",
+      "skill": "Eleştirel düşünme",
+      "scenario": "Bir bölgede kömür yerine daha verimli ve daha düşük emisyonlu ısınma seçeneklerine geçiş değerlendiriliyor.",
+      "stem": "Karar verilirken hangi ölçüt birlikte ele alınmalıdır?",
+      "options": [
+        "Yalnız yakıtın rengi",
+        "Maliyet, enerji verimliliği, emisyon ve erişilebilirlik",
+        "Yalnız reklamı",
+        "Sadece ambalaj büyüklüğü"
+      ],
+      "answer": 1,
+      "explanation": "Sürdürülebilir çözümde çevresel, ekonomik ve toplumsal ölçütler birlikte değerlendirilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 12,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.4",
+      "skill": "Mantıksal değerlendirme",
+      "scenario": "Bir öğrenci, “Geri dönüşüm tek başına bütün çevre sorunlarını çözer.” diyor.",
+      "stem": "Bu görüşteki eksiklik hangisidir?",
+      "options": [
+        "Geri dönüşümün yararlı ama tek başına yeterli olmadığını göz ardı etmesi",
+        "Atıkların ayrıştırılmasını savunması",
+        "Kaynak kullanımını azaltmayı önermesi",
+        "Veri toplamayı istemesi"
+      ],
+      "answer": 0,
+      "explanation": "Geri dönüşüm önemlidir; ancak tüketimi azaltma, yeniden kullanım ve kirliliği önleme de gerekir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 13,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.2",
+      "skill": "Tahmin",
+      "scenario": "Bir sulak alanın kurumasıyla kuşların beslenme ve üreme alanları azalıyor.",
+      "stem": "Bu değişimin olası sonucu hangisidir?",
+      "options": [
+        "Bölgedeki bazı türlerin sayısının azalması",
+        "Bütün türlerin aynı anda çoğalması",
+        "Habitatın genişlemesi",
+        "Biyoçeşitliliğin kesinlikle artması"
+      ],
+      "answer": 0,
+      "explanation": "Sulak alan kaybı bu alana bağlı canlıların yaşamını olumsuz etkileyebilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 14,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.4",
+      "skill": "Veri temelli çözüm",
+      "scenario": "Bir okul, enerji tasarrufu ve atık azaltma hedefleri için aylık tüketim verilerini izliyor.",
+      "stem": "Uygulamaların etkili olup olmadığını anlamak için ne yapılmalıdır?",
+      "options": [
+        "Önceki ve sonraki tüketim verileri karşılaştırılmalı",
+        "Yalnızca afiş sayısı sayılmalı",
+        "Veriler saklanmalı ve incelenmemeli",
+        "Hedefler ölçülemez kabul edilmeli"
+      ],
+      "answer": 0,
+      "explanation": "Ölçülebilir veriler, uygulama öncesi ve sonrası karşılaştırılarak etkiyi değerlendirmeyi sağlar.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 15,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.3",
+      "skill": "Sistem düşüncesi",
+      "scenario": "Bir mahallede kışın hava kirliliği artıyor. Uzmanlar yakıt kalitesi, bina yalıtımı ve toplu taşıma kullanımını birlikte ele alıyor.",
+      "stem": "Bu yaklaşım hangi düşünme biçimine örnektir?",
+      "options": [
+        "Sorunu tek nedene indirgemek",
+        "Birden fazla nedeni ve çözüm yolunu birlikte değerlendirmek",
+        "Kanıtları göz ardı etmek",
+        "Çözüm üretmekten kaçınmak"
+      ],
+      "answer": 1,
+      "explanation": "Çevre sorunları çoğu zaman birden fazla etkene bağlıdır; bütüncül değerlendirme gerekir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 16,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.1",
+      "skill": "Ekosistem yorumu",
+      "scenario": "Bir gölde yapılan gözlemde balık, su bitkisi, böcek ve kuş türlerinin birlikte yaşadığı belirleniyor. Su kirliliği arttığında bazı türlerin sayısı azalıyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Bu durum biyoçeşitliliğin hangi özelliğini gösterir?",
+      "options": [
+        "Türlerin birbirinden tamamen bağımsız olduğunu",
+        "Ekosistemdeki canlıların birbirleriyle etkileştiğini",
+        "Cansız çevrenin önemsiz olduğunu",
+        "Bütün canlıların aynı besinle beslendiğini"
+      ],
+      "answer": 1,
+      "explanation": "Ekosistemdeki türler besin ve yaşam alanı ilişkileriyle birbirini etkiler.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 17,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.1",
+      "skill": "Kavram bilgisi",
+      "scenario": "Bir bölgede yalnızca o bölgeye özgü bir bitki türü yetişiyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Bu bitki hangi kavramla tanımlanır?",
+      "options": [
+        "Göçmen",
+        "Endemik",
+        "Evcil",
+        "Ayrıştırıcı"
+      ],
+      "answer": 1,
+      "explanation": "Endemik türlerin doğal yayılışı belirli bir bölgeyle sınırlıdır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 18,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.1",
+      "skill": "Neden-sonuç",
+      "scenario": "Bir ormanda arıların azalmasıyla bazı bitkilerin tohum ve meyve oluşturma oranı da düşüyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Bu gözlem biyoçeşitliliğin önemini nasıl açıklar?",
+      "options": [
+        "Canlıların ekosistem hizmetlerine katkı sağladığını",
+        "Bütün bitkilerin kendi kendine tozlaştığını",
+        "Arıların cansız varlık olduğunu",
+        "Tür sayısının çevreyi etkilemediğini"
+      ],
+      "answer": 0,
+      "explanation": "Arılar tozlaşmaya katkı sağlar; bir türdeki azalma diğer canlıları etkileyebilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 19,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.2",
+      "skill": "Veri yorumlama",
+      "scenario": "Bir orman alanının bir bölümü yol ve yapılaşma nedeniyle parçalanıyor. Bölgede yaşayan bazı hayvanların besin ve eş bulmak için hareketi zorlaşıyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Bu çevre sorunu hangisidir?",
+      "options": [
+        "Habitat parçalanması",
+        "Doğal seçilim",
+        "Fotosentez",
+        "Yoğunlaşma"
+      ],
+      "answer": 0,
+      "explanation": "Yaşam alanlarının bölünmesi habitat parçalanmasıdır ve canlıların hareketini kısıtlayabilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 20,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.2",
+      "skill": "Kanıta dayalı tahmin",
+      "scenario": "Bir akarsuda atık miktarı arttıktan sonra su canlılarının sayısında azalma gözleniyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Bu veriye dayalı en uygun tahmin hangisidir?",
+      "options": [
+        "Kirlilik su canlılarının yaşamını olumsuz etkilemiş olabilir",
+        "Akarsudaki bütün canlılar çoğalmıştır",
+        "Atıkların canlılara etkisi yoktur",
+        "Su kirliliği biyoçeşitliliği daima artırır"
+      ],
+      "answer": 0,
+      "explanation": "Gözlem, kirliliğin canlılar üzerinde olumsuz etkisi olabileceğini düşündürür; daha fazla veriyle desteklenmelidir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 21,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.3",
+      "skill": "Veri değerlendirme",
+      "scenario": "Bir mahallede kışın ısınmak için kalitesiz yakıt kullanımı arttığında hava ölçümlerinde partikül madde değerleri yükseliyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Bu durum hangi sonucu destekler?",
+      "options": [
+        "Yakıt türü hava kalitesini etkileyebilir",
+        "Yakıt kullanımı havayı temizler",
+        "Partiküller yalnız suda oluşur",
+        "Hava kirliliği ölçülemez"
+      ],
+      "answer": 0,
+      "explanation": "Yakıtın türü ve yanma koşulları hava kirleticilerinin miktarını etkileyebilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 22,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.3",
+      "skill": "Çözüm değerlendirme",
+      "scenario": "Bir apartman yönetimi ısınmada enerji kaybını azaltmak için yalıtım yaptırmayı ve verimli sistem kullanmayı planlıyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Bu uygulamaların çevresel katkısı hangisidir?",
+      "options": [
+        "Daha fazla yakıt tüketmek",
+        "Aynı ısınma için daha az enerji kullanmak ve emisyonları azaltmaya yardımcı olmak",
+        "Atıkları artırmak",
+        "Hava kirliliğini zorunlu olarak artırmak"
+      ],
+      "answer": 1,
+      "explanation": "Enerji verimliliği yakıt tüketimini ve buna bağlı emisyonları azaltabilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 23,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.4",
+      "skill": "Çözüm önerisi",
+      "scenario": "Bir okul bahçesinde tek kullanımlık plastikler nedeniyle atık birikiyor. Öğrenciler yeniden kullanılabilir matara ve ayrıştırma kutuları öneriyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Önerilerin ortak amacı nedir?",
+      "options": [
+        "Atık miktarını ve çevresel etkiyi azaltmak",
+        "Plastik kullanımını artırmak",
+        "Atıkları karışık toplamak",
+        "Doğal kaynak tüketimini artırmak"
+      ],
+      "answer": 0,
+      "explanation": "Yeniden kullanım ve atık ayrıştırma kaynak tüketimini ve çevreye bırakılan atığı azaltabilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 24,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.4",
+      "skill": "İş birliği",
+      "scenario": "Bir ilçede dere kıyısındaki doğal alanın korunması için yerel halk, belediye ve bilim insanları ortak çalışma yapıyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Bu yaklaşım neden etkilidir?",
+      "options": [
+        "Sorunun farklı yönlerini ve paydaşları birlikte değerlendirdiği için",
+        "Yalnızca tek kişinin görüşünü aldığı için",
+        "Veri toplamayı gereksiz gördüğü için",
+        "Sorunu ertelediği için"
+      ],
+      "answer": 0,
+      "explanation": "Çevre sorunları farklı paydaşların iş birliği ve kanıta dayalı planlamayla daha etkili çözülebilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 25,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.2",
+      "skill": "Veri okuryazarlığı",
+      "scenario": "Bir araştırmada iki orman alanından birinde tür sayısı 24, diğerinde 9 olarak belirleniyor. İkinci alanda yapılaşma ve kirlilik daha yoğun. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Verilerden çıkarılabilecek en temkinli sonuç hangisidir?",
+      "options": [
+        "Yapılaşma ve kirlilik biyoçeşitliliğin azalmasıyla ilişkili olabilir",
+        "Tür sayısını yalnızca alanın adı belirler",
+        "İkinci alanda hiç canlı yoktur",
+        "İki alanın ekolojik koşulları kesinlikle aynıdır"
+      ],
+      "answer": 0,
+      "explanation": "Veriler ilişki düşündürür; kesin neden-sonuç için başka değişkenler de incelenmelidir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 26,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.3",
+      "skill": "Eleştirel düşünme",
+      "scenario": "Bir bölgede kömür yerine daha verimli ve daha düşük emisyonlu ısınma seçeneklerine geçiş değerlendiriliyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Karar verilirken hangi ölçüt birlikte ele alınmalıdır?",
+      "options": [
+        "Yalnız yakıtın rengi",
+        "Maliyet, enerji verimliliği, emisyon ve erişilebilirlik",
+        "Yalnız reklamı",
+        "Sadece ambalaj büyüklüğü"
+      ],
+      "answer": 1,
+      "explanation": "Sürdürülebilir çözümde çevresel, ekonomik ve toplumsal ölçütler birlikte değerlendirilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 27,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.4",
+      "skill": "Mantıksal değerlendirme",
+      "scenario": "Bir öğrenci, “Geri dönüşüm tek başına bütün çevre sorunlarını çözer.” diyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Bu görüşteki eksiklik hangisidir?",
+      "options": [
+        "Geri dönüşümün yararlı ama tek başına yeterli olmadığını göz ardı etmesi",
+        "Atıkların ayrıştırılmasını savunması",
+        "Kaynak kullanımını azaltmayı önermesi",
+        "Veri toplamayı istemesi"
+      ],
+      "answer": 0,
+      "explanation": "Geri dönüşüm önemlidir; ancak tüketimi azaltma, yeniden kullanım ve kirliliği önleme de gerekir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 28,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.2",
+      "skill": "Tahmin",
+      "scenario": "Bir sulak alanın kurumasıyla kuşların beslenme ve üreme alanları azalıyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Bu değişimin olası sonucu hangisidir?",
+      "options": [
+        "Bölgedeki bazı türlerin sayısının azalması",
+        "Bütün türlerin aynı anda çoğalması",
+        "Habitatın genişlemesi",
+        "Biyoçeşitliliğin kesinlikle artması"
+      ],
+      "answer": 0,
+      "explanation": "Sulak alan kaybı bu alana bağlı canlıların yaşamını olumsuz etkileyebilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 29,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.4",
+      "skill": "Veri temelli çözüm",
+      "scenario": "Bir okul, enerji tasarrufu ve atık azaltma hedefleri için aylık tüketim verilerini izliyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Uygulamaların etkili olup olmadığını anlamak için ne yapılmalıdır?",
+      "options": [
+        "Önceki ve sonraki tüketim verileri karşılaştırılmalı",
+        "Yalnızca afiş sayısı sayılmalı",
+        "Veriler saklanmalı ve incelenmemeli",
+        "Hedefler ölçülemez kabul edilmeli"
+      ],
+      "answer": 0,
+      "explanation": "Ölçülebilir veriler, uygulama öncesi ve sonrası karşılaştırılarak etkiyi değerlendirmeyi sağlar.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 30,
+      "unit": "Sürdürülebilir Yaşam ve Etkileşim",
+      "outcome": "FB.6.7.3",
+      "skill": "Sistem düşüncesi",
+      "scenario": "Bir mahallede kışın hava kirliliği artıyor. Uzmanlar yakıt kalitesi, bina yalıtımı ve toplu taşıma kullanımını birlikte ele alıyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Bu yaklaşım hangi düşünme biçimine örnektir?",
+      "options": [
+        "Sorunu tek nedene indirgemek",
+        "Birden fazla nedeni ve çözüm yolunu birlikte değerlendirmek",
+        "Kanıtları göz ardı etmek",
+        "Çözüm üretmekten kaçınmak"
+      ],
+      "answer": 1,
+      "explanation": "Çevre sorunları çoğu zaman birden fazla etkene bağlıdır; bütüncül değerlendirme gerekir.",
+      "image": "",
+      "imageAlt": ""
+    }
+  ]
+}
