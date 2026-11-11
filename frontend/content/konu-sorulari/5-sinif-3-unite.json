@@ -1,0 +1,609 @@
+{
+  "grade": 5,
+  "unit": 3,
+  "title": "Canlıların Yapısına Yolculuk",
+  "slug": "canlilarin-yapisina-yolculuk",
+  "description": "Maarif Modeli kazanımlarına göre hazırlanmış 30 senaryo temelli soru.",
+  "questions": [
+    {
+      "id": 1,
+      "code": "FB.5.3",
+      "topic": "Hücrenin tanımı",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Hücrenin tanımı",
+        "content": "Hücre canlıların yapı ve görev birimidir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Canlıların yapı ve görev birimi hücredir",
+        "Doku",
+        "organ",
+        "sistem"
+      ],
+      "answer": 0,
+      "explanation": "Hücre canlıların yapı ve görev birimidir."
+    },
+    {
+      "id": 2,
+      "code": "FB.5.3",
+      "topic": "Hücre zarının görevi",
+      "scenario": "Bilim merkezindeki etkinlikte öğrenciler bir model üzerinde ölçüm yapıp sonuçlarını not ediyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Hücre zarının görevi",
+        "content": "Hücre zarı madde giriş çıkışını kontrol eder."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Hücreye giren ve çıkan maddeleri kontrol eden yapı hücre zarıdır",
+        "Çekirdek",
+        "sitoplazma",
+        "hücre duvarı"
+      ],
+      "answer": 0,
+      "explanation": "Hücre zarı madde giriş çıkışını kontrol eder."
+    },
+    {
+      "id": 3,
+      "code": "FB.5.3",
+      "topic": "Çekirdeğin görevi",
+      "scenario": "Bir öğrenci günlük yaşamdan bir örnek veriyor; sınıf arkadaşları bu örneği fen bilgisiyle açıklıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Çekirdeğin görevi",
+        "content": "Çekirdek hücrenin yönetim merkezidir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Hücrenin yönetim ve kalıtsal bilgiyi taşıma görevinde temel yapı çekirdektir",
+        "Mitokondri",
+        "koful",
+        "zar"
+      ],
+      "answer": 0,
+      "explanation": "Çekirdek hücrenin yönetim merkezidir."
+    },
+    {
+      "id": 4,
+      "code": "FB.5.3",
+      "topic": "Mitokondri",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Mitokondri",
+        "content": "Mitokondri hücre için enerji sağlar."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Hücrenin enerji ihtiyacının karşılanmasında görevli organel mitokondridir",
+        "Kloroplast",
+        "çekirdek",
+        "hücre duvarı"
+      ],
+      "answer": 0,
+      "explanation": "Mitokondri hücre için enerji sağlar."
+    },
+    {
+      "id": 5,
+      "code": "FB.5.3",
+      "topic": "Kloroplast",
+      "scenario": "Bilim merkezindeki etkinlikte öğrenciler bir model üzerinde ölçüm yapıp sonuçlarını not ediyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kloroplast",
+        "content": "Kloroplast bitki hücresinde fotosentez yapılmasını sağlar."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Güneş ışığı kullanılarak besin üretiminde görev alan yapı kloroplasttır",
+        "Mitokondri",
+        "çekirdek",
+        "koful"
+      ],
+      "answer": 0,
+      "explanation": "Kloroplast bitki hücresinde fotosentez yapılmasını sağlar."
+    },
+    {
+      "id": 6,
+      "code": "FB.5.3",
+      "topic": "Hücrelerin farklılıkları",
+      "scenario": "Bir öğrenci günlük yaşamdan bir örnek veriyor; sınıf arkadaşları bu örneği fen bilgisiyle açıklıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Hücrelerin farklılıkları",
+        "content": "Bitki hücresinde hücre duvarı ve kloroplast bulunabilir; hayvan hücresinde bulunmaz."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Hücre duvarı ve kloroplast bitki hücresini hayvan hücresinden ayıran yapılardandır",
+        "yalnız hayvanda kloroplast",
+        "bitkide hücre duvarı",
+        "hayvanda hücre duvarı"
+      ],
+      "answer": 0,
+      "explanation": "Bitki hücresinde hücre duvarı ve kloroplast bulunabilir; hayvan hücresinde bulunmaz."
+    },
+    {
+      "id": 7,
+      "code": "FB.5.3",
+      "topic": "Yapı basamakları",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Yapı basamakları",
+        "content": "Benzer hücreler dokuları, farklı dokular organları oluşturur."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Canlılarda küçükten büyüğe sıralama hücre, doku, organ, sistem, organizmadır",
+        "hücre",
+        "doku",
+        "sistem"
+      ],
+      "answer": 0,
+      "explanation": "Benzer hücreler dokuları, farklı dokular organları oluşturur."
+    },
+    {
+      "id": 8,
+      "code": "FB.5.3",
+      "topic": "Organ ve sistem",
+      "scenario": "Bilim merkezindeki etkinlikte öğrenciler bir model üzerinde ölçüm yapıp sonuçlarını not ediyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Organ ve sistem",
+        "content": "Kalp bir organdır; dolaşım sistemi birden çok organın birlikte çalışmasıyla oluşur."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Kalp farklı dokulardan oluşan bir organdır",
+        "Hücre",
+        "organ",
+        "organizma"
+      ],
+      "answer": 0,
+      "explanation": "Kalp bir organdır; dolaşım sistemi birden çok organın birlikte çalışmasıyla oluşur."
+    },
+    {
+      "id": 9,
+      "code": "FB.5.3",
+      "topic": "Kemiklerin görevi",
+      "scenario": "Bir öğrenci günlük yaşamdan bir örnek veriyor; sınıf arkadaşları bu örneği fen bilgisiyle açıklıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kemiklerin görevi",
+        "content": "Kemikler vücuda destek verir ve bazı organları korur."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Kafatası ve kaburga gibi kemikler bazı organları korumaya yardımcı olur",
+        "koruma ve destek",
+        "ışık üretmek",
+        "sindirim"
+      ],
+      "answer": 0,
+      "explanation": "Kemikler vücuda destek verir ve bazı organları korur."
+    },
+    {
+      "id": 10,
+      "code": "FB.5.3",
+      "topic": "Kas ve eklem",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kas ve eklem",
+        "content": "Kaslar kasılıp gevşeyerek hareketi sağlar; eklemler kemikleri birleştirir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Kemiklerin birleşme noktaları eklemlerdir; kaslar hareketi sağlar",
+        "eklem birleştirme",
+        "hücre enerji",
+        "doku koruma"
+      ],
+      "answer": 0,
+      "explanation": "Kaslar kasılıp gevşeyerek hareketi sağlar; eklemler kemikleri birleştirir."
+    },
+    {
+      "id": 11,
+      "code": "FB.5.3",
+      "topic": "Hücrenin tanımı",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Hücrenin tanımı",
+        "content": "Hücre canlıların yapı ve görev birimidir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Canlıların yapı ve görev birimi hücredir",
+        "Doku",
+        "organ",
+        "sistem"
+      ],
+      "answer": 0,
+      "explanation": "Hücre canlıların yapı ve görev birimidir."
+    },
+    {
+      "id": 12,
+      "code": "FB.5.3",
+      "topic": "Hücre zarının görevi",
+      "scenario": "Okul sergisinde ziyaretçiler bir düzenek inceliyor ve öğrencilerden bilimsel çıkarım yapmaları isteniyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Hücre zarının görevi",
+        "content": "Hücre zarı madde giriş çıkışını kontrol eder."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Hücreye giren ve çıkan maddeleri kontrol eden yapı hücre zarıdır",
+        "Çekirdek",
+        "sitoplazma",
+        "hücre duvarı"
+      ],
+      "answer": 0,
+      "explanation": "Hücre zarı madde giriş çıkışını kontrol eder."
+    },
+    {
+      "id": 13,
+      "code": "FB.5.3",
+      "topic": "Çekirdeğin görevi",
+      "scenario": "Bir grup öğrenci proje raporunda bu kavramı yanlış yorumluyor. Öğretmenleri, kanıta dayanarak doğru açıklamayı bulmalarını istiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Çekirdeğin görevi",
+        "content": "Çekirdek hücrenin yönetim merkezidir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Hücrenin yönetim ve kalıtsal bilgiyi taşıma görevinde temel yapı çekirdektir",
+        "Mitokondri",
+        "koful",
+        "zar"
+      ],
+      "answer": 0,
+      "explanation": "Çekirdek hücrenin yönetim merkezidir."
+    },
+    {
+      "id": 14,
+      "code": "FB.5.3",
+      "topic": "Mitokondri",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Mitokondri",
+        "content": "Mitokondri hücre için enerji sağlar."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Hücrenin enerji ihtiyacının karşılanmasında görevli organel mitokondridir",
+        "Kloroplast",
+        "çekirdek",
+        "hücre duvarı"
+      ],
+      "answer": 0,
+      "explanation": "Mitokondri hücre için enerji sağlar."
+    },
+    {
+      "id": 15,
+      "code": "FB.5.3",
+      "topic": "Kloroplast",
+      "scenario": "Okul sergisinde ziyaretçiler bir düzenek inceliyor ve öğrencilerden bilimsel çıkarım yapmaları isteniyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kloroplast",
+        "content": "Kloroplast bitki hücresinde fotosentez yapılmasını sağlar."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Güneş ışığı kullanılarak besin üretiminde görev alan yapı kloroplasttır",
+        "Mitokondri",
+        "çekirdek",
+        "koful"
+      ],
+      "answer": 0,
+      "explanation": "Kloroplast bitki hücresinde fotosentez yapılmasını sağlar."
+    },
+    {
+      "id": 16,
+      "code": "FB.5.3",
+      "topic": "Hücrelerin farklılıkları",
+      "scenario": "Bir grup öğrenci proje raporunda bu kavramı yanlış yorumluyor. Öğretmenleri, kanıta dayanarak doğru açıklamayı bulmalarını istiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Hücrelerin farklılıkları",
+        "content": "Bitki hücresinde hücre duvarı ve kloroplast bulunabilir; hayvan hücresinde bulunmaz."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Hücre duvarı ve kloroplast bitki hücresini hayvan hücresinden ayıran yapılardandır",
+        "yalnız hayvanda kloroplast",
+        "bitkide hücre duvarı",
+        "hayvanda hücre duvarı"
+      ],
+      "answer": 0,
+      "explanation": "Bitki hücresinde hücre duvarı ve kloroplast bulunabilir; hayvan hücresinde bulunmaz."
+    },
+    {
+      "id": 17,
+      "code": "FB.5.3",
+      "topic": "Yapı basamakları",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Yapı basamakları",
+        "content": "Benzer hücreler dokuları, farklı dokular organları oluşturur."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Canlılarda küçükten büyüğe sıralama hücre, doku, organ, sistem, organizmadır",
+        "hücre",
+        "doku",
+        "sistem"
+      ],
+      "answer": 0,
+      "explanation": "Benzer hücreler dokuları, farklı dokular organları oluşturur."
+    },
+    {
+      "id": 18,
+      "code": "FB.5.3",
+      "topic": "Organ ve sistem",
+      "scenario": "Okul sergisinde ziyaretçiler bir düzenek inceliyor ve öğrencilerden bilimsel çıkarım yapmaları isteniyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Organ ve sistem",
+        "content": "Kalp bir organdır; dolaşım sistemi birden çok organın birlikte çalışmasıyla oluşur."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Kalp farklı dokulardan oluşan bir organdır",
+        "Hücre",
+        "organ",
+        "organizma"
+      ],
+      "answer": 0,
+      "explanation": "Kalp bir organdır; dolaşım sistemi birden çok organın birlikte çalışmasıyla oluşur."
+    },
+    {
+      "id": 19,
+      "code": "FB.5.3",
+      "topic": "Kemiklerin görevi",
+      "scenario": "Bir grup öğrenci proje raporunda bu kavramı yanlış yorumluyor. Öğretmenleri, kanıta dayanarak doğru açıklamayı bulmalarını istiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kemiklerin görevi",
+        "content": "Kemikler vücuda destek verir ve bazı organları korur."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Kafatası ve kaburga gibi kemikler bazı organları korumaya yardımcı olur",
+        "koruma ve destek",
+        "ışık üretmek",
+        "sindirim"
+      ],
+      "answer": 0,
+      "explanation": "Kemikler vücuda destek verir ve bazı organları korur."
+    },
+    {
+      "id": 20,
+      "code": "FB.5.3",
+      "topic": "Kas ve eklem",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kas ve eklem",
+        "content": "Kaslar kasılıp gevşeyerek hareketi sağlar; eklemler kemikleri birleştirir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Kemiklerin birleşme noktaları eklemlerdir; kaslar hareketi sağlar",
+        "eklem birleştirme",
+        "hücre enerji",
+        "doku koruma"
+      ],
+      "answer": 0,
+      "explanation": "Kaslar kasılıp gevşeyerek hareketi sağlar; eklemler kemikleri birleştirir."
+    },
+    {
+      "id": 21,
+      "code": "FB.5.3",
+      "topic": "Hücrenin tanımı",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Hücrenin tanımı",
+        "content": "Hücre canlıların yapı ve görev birimidir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Canlıların yapı ve görev birimi hücredir",
+        "Doku",
+        "organ",
+        "sistem"
+      ],
+      "answer": 0,
+      "explanation": "Hücre canlıların yapı ve görev birimidir."
+    },
+    {
+      "id": 22,
+      "code": "FB.5.3",
+      "topic": "Hücre zarının görevi",
+      "scenario": "Bir belediye/okul etkinliğinde bu konuya ilişkin karar veriliyor. Öğrenciler doğru seçeneği gerekçelendirmeye çalışıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Hücre zarının görevi",
+        "content": "Hücre zarı madde giriş çıkışını kontrol eder."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Hücreye giren ve çıkan maddeleri kontrol eden yapı hücre zarıdır",
+        "Çekirdek",
+        "sitoplazma",
+        "hücre duvarı"
+      ],
+      "answer": 0,
+      "explanation": "Hücre zarı madde giriş çıkışını kontrol eder."
+    },
+    {
+      "id": 23,
+      "code": "FB.5.3",
+      "topic": "Çekirdeğin görevi",
+      "scenario": "Bir gözlem günlüğünde kaydedilen veriler sınıfta tartışılıyor. Öğrenciler hangi açıklamanın verilerle uyumlu olduğunu seçiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Çekirdeğin görevi",
+        "content": "Çekirdek hücrenin yönetim merkezidir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Hücrenin yönetim ve kalıtsal bilgiyi taşıma görevinde temel yapı çekirdektir",
+        "Mitokondri",
+        "koful",
+        "zar"
+      ],
+      "answer": 0,
+      "explanation": "Çekirdek hücrenin yönetim merkezidir."
+    },
+    {
+      "id": 24,
+      "code": "FB.5.3",
+      "topic": "Mitokondri",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Mitokondri",
+        "content": "Mitokondri hücre için enerji sağlar."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Hücrenin enerji ihtiyacının karşılanmasında görevli organel mitokondridir",
+        "Kloroplast",
+        "çekirdek",
+        "hücre duvarı"
+      ],
+      "answer": 0,
+      "explanation": "Mitokondri hücre için enerji sağlar."
+    },
+    {
+      "id": 25,
+      "code": "FB.5.3",
+      "topic": "Kloroplast",
+      "scenario": "Bir belediye/okul etkinliğinde bu konuya ilişkin karar veriliyor. Öğrenciler doğru seçeneği gerekçelendirmeye çalışıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kloroplast",
+        "content": "Kloroplast bitki hücresinde fotosentez yapılmasını sağlar."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Güneş ışığı kullanılarak besin üretiminde görev alan yapı kloroplasttır",
+        "Mitokondri",
+        "çekirdek",
+        "koful"
+      ],
+      "answer": 0,
+      "explanation": "Kloroplast bitki hücresinde fotosentez yapılmasını sağlar."
+    },
+    {
+      "id": 26,
+      "code": "FB.5.3",
+      "topic": "Hücrelerin farklılıkları",
+      "scenario": "Bir gözlem günlüğünde kaydedilen veriler sınıfta tartışılıyor. Öğrenciler hangi açıklamanın verilerle uyumlu olduğunu seçiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Hücrelerin farklılıkları",
+        "content": "Bitki hücresinde hücre duvarı ve kloroplast bulunabilir; hayvan hücresinde bulunmaz."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Hücre duvarı ve kloroplast bitki hücresini hayvan hücresinden ayıran yapılardandır",
+        "yalnız hayvanda kloroplast",
+        "bitkide hücre duvarı",
+        "hayvanda hücre duvarı"
+      ],
+      "answer": 0,
+      "explanation": "Bitki hücresinde hücre duvarı ve kloroplast bulunabilir; hayvan hücresinde bulunmaz."
+    },
+    {
+      "id": 27,
+      "code": "FB.5.3",
+      "topic": "Yapı basamakları",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Yapı basamakları",
+        "content": "Benzer hücreler dokuları, farklı dokular organları oluşturur."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Canlılarda küçükten büyüğe sıralama hücre, doku, organ, sistem, organizmadır",
+        "hücre",
+        "doku",
+        "sistem"
+      ],
+      "answer": 0,
+      "explanation": "Benzer hücreler dokuları, farklı dokular organları oluşturur."
+    },
+    {
+      "id": 28,
+      "code": "FB.5.3",
+      "topic": "Organ ve sistem",
+      "scenario": "Bir belediye/okul etkinliğinde bu konuya ilişkin karar veriliyor. Öğrenciler doğru seçeneği gerekçelendirmeye çalışıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Organ ve sistem",
+        "content": "Kalp bir organdır; dolaşım sistemi birden çok organın birlikte çalışmasıyla oluşur."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Kalp farklı dokulardan oluşan bir organdır",
+        "Hücre",
+        "organ",
+        "organizma"
+      ],
+      "answer": 0,
+      "explanation": "Kalp bir organdır; dolaşım sistemi birden çok organın birlikte çalışmasıyla oluşur."
+    },
+    {
+      "id": 29,
+      "code": "FB.5.3",
+      "topic": "Kemiklerin görevi",
+      "scenario": "Bir gözlem günlüğünde kaydedilen veriler sınıfta tartışılıyor. Öğrenciler hangi açıklamanın verilerle uyumlu olduğunu seçiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kemiklerin görevi",
+        "content": "Kemikler vücuda destek verir ve bazı organları korur."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Kafatası ve kaburga gibi kemikler bazı organları korumaya yardımcı olur",
+        "koruma ve destek",
+        "ışık üretmek",
+        "sindirim"
+      ],
+      "answer": 0,
+      "explanation": "Kemikler vücuda destek verir ve bazı organları korur."
+    },
+    {
+      "id": 30,
+      "code": "FB.5.3",
+      "topic": "Kas ve eklem",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kas ve eklem",
+        "content": "Kaslar kasılıp gevşeyerek hareketi sağlar; eklemler kemikleri birleştirir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Kemiklerin birleşme noktaları eklemlerdir; kaslar hareketi sağlar",
+        "eklem birleştirme",
+        "hücre enerji",
+        "doku koruma"
+      ],
+      "answer": 0,
+      "explanation": "Kaslar kasılıp gevşeyerek hareketi sağlar; eklemler kemikleri birleştirir."
+    }
+  ]
+}
