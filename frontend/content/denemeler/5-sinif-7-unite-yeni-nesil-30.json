@@ -1,0 +1,554 @@
+{
+  "id": "5-sinif-7-unite-yeni-nesil-30",
+  "slug": "5-sinif-7-unite-yeni-nesil-30",
+  "title": "5. Sınıf 7. Ünite Sürdürülebilir Yaşam ve Geri Dönüşüm Yeni Nesil Deneme",
+  "description": "Sürdürülebilir Yaşam ve Geri Dönüşüm ünitesinden 30 özgün, senaryolu ve yorumlama odaklı soru. Türkiye Yüzyılı Maarif Modeli ile uyumludur.",
+  "classLevel": 5,
+  "durationMin": 60,
+  "units": [
+    "Sürdürülebilir Yaşam ve Geri Dönüşüm"
+  ],
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı, 5. sınıf. Sorular özgün olarak hazırlanmıştır.",
+  "questions": [
+    {
+      "no": 1,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Çevresel değerlendirme",
+      "scenario": "Okulda kâğıt atıkları ayrı toplanıp geri dönüşüm tesisine gönderiliyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Doğal kaynak ve atık miktarını azaltmak",
+        "Çöp miktarını artırmak",
+        "Ağaç kesimini artırmak",
+        "Atıkları doğaya bırakmak"
+      ],
+      "answer": 0,
+      "explanation": "Kâğıt geri dönüşümü ham madde ihtiyacını ve atığı azaltabilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 2,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Günlük yaşam",
+      "scenario": "Aile alışverişte tek kullanımlık poşet yerine bez çanta kullanıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Atığı kaynağında azaltmayı",
+        "Gereksiz tüketimi artırmayı",
+        "Atıkları karıştırmayı",
+        "Geri dönüşümü engellemeyi"
+      ],
+      "answer": 0,
+      "explanation": "Tekrar kullanılabilen çanta tek kullanımlık ürün ihtiyacını azaltır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 3,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Sınıflandırma",
+      "scenario": "Öğrenciler cam, kâğıt, plastik ve metal atıkları farklı kutulara ayırıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Geri kazanımı kolaylaştırmak",
+        "Atıkları aynı hâle getirmek",
+        "Atık miktarını artırmak",
+        "Kaynakları tüketmek"
+      ],
+      "answer": 0,
+      "explanation": "Atık türlerinin ayrılması geri dönüşüm sürecini kolaylaştırır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 4,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Kavram",
+      "scenario": "Kullanılabilir kitaplar çöpe atılmak yerine başka sınıflara veriliyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Yeniden kullanım",
+        "Yakma",
+        "Depolama",
+        "Karışık atık"
+      ],
+      "answer": 0,
+      "explanation": "Bir ürünün yeniden değerlendirilmesi yeniden kullanımdır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 5,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Uygulama",
+      "scenario": "Eski kavanoz temizlenerek kalemlik olarak kullanılıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Yeniden kullanım",
+        "Yoğuşma",
+        "Süzme",
+        "Yakıt tüketimi"
+      ],
+      "answer": 0,
+      "explanation": "Bir ürünün farklı amaçla tekrar kullanılması yeniden kullanımdır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 6,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Atık türü",
+      "scenario": "Meyve-sebze kabukları kompost kutusunda biriktiriliyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Organik atık",
+        "Cam",
+        "Metal",
+        "Atık pil"
+      ],
+      "answer": 0,
+      "explanation": "Meyve ve sebze kabukları gibi organik atıklar kompost yapılabilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 7,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Güvenli atık yönetimi",
+      "scenario": "Atık piller normal çöpe değil özel toplama kutusuna bırakılıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Çevreye zarar verebilecek maddeler içerebilmesi",
+        "Kâğıda dönüşmesi",
+        "Her koşulda zararsız olması",
+        "Yiyecek olarak kullanılması"
+      ],
+      "answer": 0,
+      "explanation": "Atık piller uygun toplama noktalarına teslim edilmelidir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 8,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Kaynak yönetimi",
+      "scenario": "Okulda musluklara tasarruf aparatı takılıyor ve öğrenciler suyu gereksiz akıtmıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Doğal kaynakları verimli kullanmayı",
+        "Su israfını artırmayı",
+        "Atıkları karıştırmayı",
+        "Enerji tüketimini artırmayı"
+      ],
+      "answer": 0,
+      "explanation": "Su tasarrufu kaynakların gelecek nesiller için korunmasına katkı sağlar.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 9,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Enerji verimliliği",
+      "scenario": "Kullanılmayan sınıf ışıkları kapatılıyor ve gün ışığından yararlanılıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Enerji kaynaklarını verimli kullanmak",
+        "Elektrik tüketimini artırmak",
+        "Atık üretmek",
+        "Su kaynaklarını kirletmek"
+      ],
+      "answer": 0,
+      "explanation": "Gereksiz enerji tüketimini önlemek çevresel etkileri azaltır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 10,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Tüketim bilinci",
+      "scenario": "Bir aile alışverişe çıkmadan ihtiyaç listesi hazırlıyor ve gereksiz ürün almıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Gereksiz tüketim ve atık oluşumunu",
+        "Ürünlerin kullanım ömrünü",
+        "Kaynakların korunmasını",
+        "Geri dönüşüm oranını"
+      ],
+      "answer": 0,
+      "explanation": "İhtiyaç kadar tüketmek gereksiz ambalaj ve ürün atığını azaltır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 11,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Çevresel değerlendirme",
+      "scenario": "Okulda kâğıt atıkları ayrı toplanıp geri dönüşüm tesisine gönderiliyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Doğal kaynak ve atık miktarını azaltmak",
+        "Çöp miktarını artırmak",
+        "Ağaç kesimini artırmak",
+        "Atıkları doğaya bırakmak"
+      ],
+      "answer": 0,
+      "explanation": "Kâğıt geri dönüşümü ham madde ihtiyacını ve atığı azaltabilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 12,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Günlük yaşam",
+      "scenario": "Aile alışverişte tek kullanımlık poşet yerine bez çanta kullanıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Atığı kaynağında azaltmayı",
+        "Gereksiz tüketimi artırmayı",
+        "Atıkları karıştırmayı",
+        "Geri dönüşümü engellemeyi"
+      ],
+      "answer": 0,
+      "explanation": "Tekrar kullanılabilen çanta tek kullanımlık ürün ihtiyacını azaltır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 13,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Sınıflandırma",
+      "scenario": "Öğrenciler cam, kâğıt, plastik ve metal atıkları farklı kutulara ayırıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Geri kazanımı kolaylaştırmak",
+        "Atıkları aynı hâle getirmek",
+        "Atık miktarını artırmak",
+        "Kaynakları tüketmek"
+      ],
+      "answer": 0,
+      "explanation": "Atık türlerinin ayrılması geri dönüşüm sürecini kolaylaştırır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 14,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Kavram",
+      "scenario": "Kullanılabilir kitaplar çöpe atılmak yerine başka sınıflara veriliyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Yeniden kullanım",
+        "Yakma",
+        "Depolama",
+        "Karışık atık"
+      ],
+      "answer": 0,
+      "explanation": "Bir ürünün yeniden değerlendirilmesi yeniden kullanımdır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 15,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Uygulama",
+      "scenario": "Eski kavanoz temizlenerek kalemlik olarak kullanılıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Yeniden kullanım",
+        "Yoğuşma",
+        "Süzme",
+        "Yakıt tüketimi"
+      ],
+      "answer": 0,
+      "explanation": "Bir ürünün farklı amaçla tekrar kullanılması yeniden kullanımdır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 16,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Atık türü",
+      "scenario": "Meyve-sebze kabukları kompost kutusunda biriktiriliyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Organik atık",
+        "Cam",
+        "Metal",
+        "Atık pil"
+      ],
+      "answer": 0,
+      "explanation": "Meyve ve sebze kabukları gibi organik atıklar kompost yapılabilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 17,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Güvenli atık yönetimi",
+      "scenario": "Atık piller normal çöpe değil özel toplama kutusuna bırakılıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Çevreye zarar verebilecek maddeler içerebilmesi",
+        "Kâğıda dönüşmesi",
+        "Her koşulda zararsız olması",
+        "Yiyecek olarak kullanılması"
+      ],
+      "answer": 0,
+      "explanation": "Atık piller uygun toplama noktalarına teslim edilmelidir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 18,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Kaynak yönetimi",
+      "scenario": "Okulda musluklara tasarruf aparatı takılıyor ve öğrenciler suyu gereksiz akıtmıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Doğal kaynakları verimli kullanmayı",
+        "Su israfını artırmayı",
+        "Atıkları karıştırmayı",
+        "Enerji tüketimini artırmayı"
+      ],
+      "answer": 0,
+      "explanation": "Su tasarrufu kaynakların gelecek nesiller için korunmasına katkı sağlar.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 19,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Enerji verimliliği",
+      "scenario": "Kullanılmayan sınıf ışıkları kapatılıyor ve gün ışığından yararlanılıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Enerji kaynaklarını verimli kullanmak",
+        "Elektrik tüketimini artırmak",
+        "Atık üretmek",
+        "Su kaynaklarını kirletmek"
+      ],
+      "answer": 0,
+      "explanation": "Gereksiz enerji tüketimini önlemek çevresel etkileri azaltır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 20,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Tüketim bilinci",
+      "scenario": "Bir aile alışverişe çıkmadan ihtiyaç listesi hazırlıyor ve gereksiz ürün almıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Gereksiz tüketim ve atık oluşumunu",
+        "Ürünlerin kullanım ömrünü",
+        "Kaynakların korunmasını",
+        "Geri dönüşüm oranını"
+      ],
+      "answer": 0,
+      "explanation": "İhtiyaç kadar tüketmek gereksiz ambalaj ve ürün atığını azaltır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 21,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Çevresel değerlendirme",
+      "scenario": "Okulda kâğıt atıkları ayrı toplanıp geri dönüşüm tesisine gönderiliyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Doğal kaynak ve atık miktarını azaltmak",
+        "Çöp miktarını artırmak",
+        "Ağaç kesimini artırmak",
+        "Atıkları doğaya bırakmak"
+      ],
+      "answer": 0,
+      "explanation": "Kâğıt geri dönüşümü ham madde ihtiyacını ve atığı azaltabilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 22,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Günlük yaşam",
+      "scenario": "Aile alışverişte tek kullanımlık poşet yerine bez çanta kullanıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Atığı kaynağında azaltmayı",
+        "Gereksiz tüketimi artırmayı",
+        "Atıkları karıştırmayı",
+        "Geri dönüşümü engellemeyi"
+      ],
+      "answer": 0,
+      "explanation": "Tekrar kullanılabilen çanta tek kullanımlık ürün ihtiyacını azaltır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 23,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Sınıflandırma",
+      "scenario": "Öğrenciler cam, kâğıt, plastik ve metal atıkları farklı kutulara ayırıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Geri kazanımı kolaylaştırmak",
+        "Atıkları aynı hâle getirmek",
+        "Atık miktarını artırmak",
+        "Kaynakları tüketmek"
+      ],
+      "answer": 0,
+      "explanation": "Atık türlerinin ayrılması geri dönüşüm sürecini kolaylaştırır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 24,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Kavram",
+      "scenario": "Kullanılabilir kitaplar çöpe atılmak yerine başka sınıflara veriliyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Yeniden kullanım",
+        "Yakma",
+        "Depolama",
+        "Karışık atık"
+      ],
+      "answer": 0,
+      "explanation": "Bir ürünün yeniden değerlendirilmesi yeniden kullanımdır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 25,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Uygulama",
+      "scenario": "Eski kavanoz temizlenerek kalemlik olarak kullanılıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Yeniden kullanım",
+        "Yoğuşma",
+        "Süzme",
+        "Yakıt tüketimi"
+      ],
+      "answer": 0,
+      "explanation": "Bir ürünün farklı amaçla tekrar kullanılması yeniden kullanımdır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 26,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Atık türü",
+      "scenario": "Meyve-sebze kabukları kompost kutusunda biriktiriliyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Organik atık",
+        "Cam",
+        "Metal",
+        "Atık pil"
+      ],
+      "answer": 0,
+      "explanation": "Meyve ve sebze kabukları gibi organik atıklar kompost yapılabilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 27,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Güvenli atık yönetimi",
+      "scenario": "Atık piller normal çöpe değil özel toplama kutusuna bırakılıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Çevreye zarar verebilecek maddeler içerebilmesi",
+        "Kâğıda dönüşmesi",
+        "Her koşulda zararsız olması",
+        "Yiyecek olarak kullanılması"
+      ],
+      "answer": 0,
+      "explanation": "Atık piller uygun toplama noktalarına teslim edilmelidir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 28,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Kaynak yönetimi",
+      "scenario": "Okulda musluklara tasarruf aparatı takılıyor ve öğrenciler suyu gereksiz akıtmıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Doğal kaynakları verimli kullanmayı",
+        "Su israfını artırmayı",
+        "Atıkları karıştırmayı",
+        "Enerji tüketimini artırmayı"
+      ],
+      "answer": 0,
+      "explanation": "Su tasarrufu kaynakların gelecek nesiller için korunmasına katkı sağlar.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 29,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Enerji verimliliği",
+      "scenario": "Kullanılmayan sınıf ışıkları kapatılıyor ve gün ışığından yararlanılıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Enerji kaynaklarını verimli kullanmak",
+        "Elektrik tüketimini artırmak",
+        "Atık üretmek",
+        "Su kaynaklarını kirletmek"
+      ],
+      "answer": 0,
+      "explanation": "Gereksiz enerji tüketimini önlemek çevresel etkileri azaltır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 30,
+      "unit": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+      "outcome": "FB.5.7.1",
+      "skill": "Tüketim bilinci",
+      "scenario": "Bir aile alışverişe çıkmadan ihtiyaç listesi hazırlıyor ve gereksiz ürün almıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Gereksiz tüketim ve atık oluşumunu",
+        "Ürünlerin kullanım ömrünü",
+        "Kaynakların korunmasını",
+        "Geri dönüşüm oranını"
+      ],
+      "answer": 0,
+      "explanation": "İhtiyaç kadar tüketmek gereksiz ambalaj ve ürün atığını azaltır.",
+      "image": "",
+      "imageAlt": ""
+    }
+  ]
+}
