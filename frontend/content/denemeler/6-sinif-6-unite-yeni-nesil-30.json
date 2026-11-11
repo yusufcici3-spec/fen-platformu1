@@ -1,0 +1,554 @@
+{
+  "id": "6-sinif-6-unite-yeni-nesil-30",
+  "slug": "6-sinif-6-unite-yeni-nesil-30",
+  "title": "6. Sınıf 6. Ünite Elektriğin İletimi ve Direnç Yeni Nesil Deneme",
+  "description": "Elektriğin İletimi ve Direnç ünitesinden 30 özgün, senaryolu ve yorumlama odaklı soru. Türkiye Yüzyılı Maarif Modeli ile uyumludur.",
+  "classLevel": 6,
+  "durationMin": 60,
+  "units": [
+    "Elektriğin İletimi ve Direnç"
+  ],
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı, 6. sınıf. Sorular özgün olarak hazırlanmıştır.",
+  "questions": [
+    {
+      "no": 1,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.1",
+      "skill": "Deney sonucu",
+      "scenario": "Bir öğrenci basit devrede bakır tel yerine plastik çubuk kullandığında ampulün yanmadığını gözlemliyor.",
+      "stem": "Plastiğin bu davranışı hangi özelliğiyle açıklanır?",
+      "options": [
+        "İyi iletken olması",
+        "Yalıtkan olması",
+        "Manyetik olması",
+        "Saydam olması"
+      ],
+      "answer": 1,
+      "explanation": "Plastik elektriği iyi iletmez; yalıtkan maddelere örnektir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 2,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.1",
+      "skill": "Değişken kontrolü",
+      "scenario": "Bir deneyde bakır, alüminyum, tahta ve plastik örnekleri aynı pil-ampul devresinde deneniyor.",
+      "stem": "Adil karşılaştırma için hangisi sabit tutulmalıdır?",
+      "options": [
+        "Test edilen madde",
+        "Pil ve ampul gibi devre elemanları",
+        "Deneyin sonucu",
+        "Maddenin adı"
+      ],
+      "answer": 1,
+      "explanation": "Yalnızca test edilen madde değişmeli, devrenin diğer koşulları aynı kalmalıdır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 3,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.1",
+      "skill": "Günlük yaşam",
+      "scenario": "Elektrik kablolarının iç kısmında bakır, dış kaplamasında plastik kullanılıyor.",
+      "stem": "Bu iki malzemenin seçilme nedeni hangisidir?",
+      "options": [
+        "İkisi de yalıtkandır",
+        "Bakır iletken, plastik yalıtkandır",
+        "Bakır yalıtkan, plastik iletkendir",
+        "İkisi de elektriği üretir"
+      ],
+      "answer": 1,
+      "explanation": "Bakır akımı taşır; plastik dış kaplama elektrik temasını önlemeye yardımcı olur.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 4,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.2",
+      "skill": "Veri yorumlama",
+      "scenario": "Aynı cins ve kalınlıktaki iki telden biri 20 cm, diğeri 80 cm uzunluğundadır. Devrede uzun tel kullanıldığında ampul daha sönük yanıyor.",
+      "stem": "Bu gözlem hangi ilişkiyi destekler?",
+      "options": [
+        "Tel uzadıkça direnç azalır",
+        "Tel uzadıkça direnç artabilir",
+        "Tel uzunluğu direnci etkilemez",
+        "Tel uzadıkça ampul sayısı artar"
+      ],
+      "answer": 1,
+      "explanation": "Aynı cins ve kesit alanındaki iletkende uzunluk arttıkça direnç artar.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 5,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.2",
+      "skill": "Karşılaştırma",
+      "scenario": "Aynı uzunluk ve cinsteki iki telden kalın olanı devrede kullanıldığında ampul daha parlak yanıyor.",
+      "stem": "Kalın telin direnci için hangi yorum yapılır?",
+      "options": [
+        "Daha büyüktür",
+        "Daha küçüktür",
+        "Sonsuzdur",
+        "Telin kalınlığı dirençle ilişkili değildir"
+      ],
+      "answer": 1,
+      "explanation": "Kesit alanı büyük olan telin direnci daha küçüktür.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 6,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.2",
+      "skill": "Deney tasarımı",
+      "scenario": "Bir öğrenci eşit uzunluk ve kalınlıktaki bakır ve nikel telleri devreye bağlıyor; parlaklıkları farklı oluyor.",
+      "stem": "Bu farkın olası nedeni hangisidir?",
+      "options": [
+        "İletkenlerin cinslerinin farklı olması",
+        "Pillerin aynı olması",
+        "Tellerin uzunluklarının eşit olması",
+        "Ampulün devrede bulunması"
+      ],
+      "answer": 0,
+      "explanation": "Maddenin cinsi elektriksel direnci etkiler.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 7,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.3",
+      "skill": "Araç-gereç işlevi",
+      "scenario": "Bir devreye reosta seri bağlanıyor. Sürgü hareket ettirildiğinde devredeki direnç değişiyor.",
+      "stem": "Reostanın temel görevi nedir?",
+      "options": [
+        "Devreyi renklendirmek",
+        "Direnci ayarlayarak akımı ve ampul parlaklığını değiştirmek",
+        "Pil üretmek",
+        "Elektriği depolamak"
+      ],
+      "answer": 1,
+      "explanation": "Reosta ayarlanabilir dirençtir; devre akımını ve ampul parlaklığını etkiler.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 8,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.3",
+      "skill": "Neden-sonuç",
+      "scenario": "Bir devrede reostanın devreye katılan tel uzunluğu artırılıyor ve ampulün parlaklığı azalıyor.",
+      "stem": "Bu değişimin nedeni hangisidir?",
+      "options": [
+        "Direnç artıp akımın azalması",
+        "Direncin sıfırlanması",
+        "Pil sayısının artması",
+        "Ampulün ışık üretmeyi öğrenmesi"
+      ],
+      "answer": 0,
+      "explanation": "Reostanın devreye katılan direnç teli uzadığında direnç artar; aynı koşullarda akım ve parlaklık azalabilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 9,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.1",
+      "skill": "Bilimsel sorgulama",
+      "scenario": "Bir öğrenci iletkenlik deneyinde ampul yanmadığında maddenin kesinlikle yalıtkan olduğunu söylüyor. Ancak bağlantı kablolarından biri gevşek olabilir.",
+      "stem": "Sonucun güvenilir olması için önce ne yapılmalıdır?",
+      "options": [
+        "Devre bağlantıları kontrol edilip deney tekrarlanmalı",
+        "Pil çıkarılmalı",
+        "Ampul kırılmalı",
+        "Maddenin rengi değiştirilmeli"
+      ],
+      "answer": 0,
+      "explanation": "Bağlantı hatası sonucu etkileyebilir; deney düzeneği kontrol edilerek tekrar edilmelidir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 10,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.3",
+      "skill": "Çıkarım",
+      "scenario": "Aynı devrede reosta sürgüsü bir konumdan diğerine getirildiğinde ampul parlaklığı artıyor.",
+      "stem": "Buna göre devrenin toplam direnci nasıl değişmiştir?",
+      "options": [
+        "Artmıştır",
+        "Azalmıştır",
+        "Değişmemiştir",
+        "Pil tükenmiştir"
+      ],
+      "answer": 1,
+      "explanation": "Aynı pil ve ampulde parlaklığın artması, reostayla ayarlanan direncin azaldığını düşündürür.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 11,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.2",
+      "skill": "Deney tasarımı",
+      "scenario": "Bir öğrenci telin uzunluğunun dirence etkisini araştırıyor.",
+      "stem": "Deneyde hangi iki tel karşılaştırılmalıdır?",
+      "options": [
+        "Farklı uzunlukta, aynı cins ve kalınlıkta teller",
+        "Aynı uzunlukta farklı cins ve kalınlıkta teller",
+        "Farklı pil ve ampullerle kurulan devreler",
+        "Farklı renkli, ölçüsüz teller"
+      ],
+      "answer": 0,
+      "explanation": "Yalnız uzunluğun etkisini görebilmek için telin cinsi ve kesit alanı aynı tutulmalıdır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 12,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.1",
+      "skill": "Güvenli yaşam",
+      "scenario": "Bir elektrikli cihazın kablosunda yalıtkan kaplamanın çatladığı fark ediliyor.",
+      "stem": "En doğru güvenlik davranışı hangisidir?",
+      "options": [
+        "Kabloyu kullanmaya devam etmek",
+        "Cihaza dokunmadan yetişkine haber verip kullanımı durdurmak",
+        "Kabloyu ıslatmak",
+        "Çatlağı metal parçayla kapatmak"
+      ],
+      "answer": 1,
+      "explanation": "Hasarlı kablo elektrik çarpması ve kısa devre riski oluşturabilir; cihaz kullanılmamalı ve yetişkine bildirilmelidir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 13,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.2",
+      "skill": "Değişken belirleme",
+      "scenario": "Bir devrede telin cinsi değiştirilirken pil, ampul, tel uzunluğu ve kalınlığı sabit tutuluyor.",
+      "stem": "Bu deneyde araştırılan değişken hangisidir?",
+      "options": [
+        "Telin cinsi",
+        "Pil sayısı",
+        "Tel uzunluğu",
+        "Tel kesit alanı"
+      ],
+      "answer": 0,
+      "explanation": "Diğer değişkenler sabit tutularak iletkenin cinsinin etkisi araştırılır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 14,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.3",
+      "skill": "Tahmin",
+      "scenario": "Bir reostada sürgü, direnç telinin daha büyük bölümünü devreye katacak şekilde hareket ettiriliyor.",
+      "stem": "Ampul parlaklığında genellikle nasıl bir değişim beklenir?",
+      "options": [
+        "Artar",
+        "Azalır",
+        "Önce kesinlikle patlar",
+        "Değişmez; reosta etkisizdir"
+      ],
+      "answer": 1,
+      "explanation": "Devreye katılan direnç teli arttıkça direnç artar; ampul parlaklığı azalabilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 15,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.1",
+      "skill": "Sınıflandırma",
+      "scenario": "Öğrenciler demir, bakır, cam ve lastik örneklerini iletkenliklerine göre gruplandırıyor.",
+      "stem": "Hangi gruplandırma doğrudur?",
+      "options": [
+        "Demir ve bakır iletken; cam ve lastik yalıtkan",
+        "Demir ve cam iletken; bakır ve lastik yalıtkan",
+        "Hepsi iletken",
+        "Hepsi yalıtkan"
+      ],
+      "answer": 0,
+      "explanation": "Metaller genellikle iletken, cam ve lastik ise yalıtkan maddelerdir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 16,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.1",
+      "skill": "Deney sonucu",
+      "scenario": "Bir öğrenci basit devrede bakır tel yerine plastik çubuk kullandığında ampulün yanmadığını gözlemliyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Plastiğin bu davranışı hangi özelliğiyle açıklanır?",
+      "options": [
+        "İyi iletken olması",
+        "Yalıtkan olması",
+        "Manyetik olması",
+        "Saydam olması"
+      ],
+      "answer": 1,
+      "explanation": "Plastik elektriği iyi iletmez; yalıtkan maddelere örnektir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 17,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.1",
+      "skill": "Değişken kontrolü",
+      "scenario": "Bir deneyde bakır, alüminyum, tahta ve plastik örnekleri aynı pil-ampul devresinde deneniyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Adil karşılaştırma için hangisi sabit tutulmalıdır?",
+      "options": [
+        "Test edilen madde",
+        "Pil ve ampul gibi devre elemanları",
+        "Deneyin sonucu",
+        "Maddenin adı"
+      ],
+      "answer": 1,
+      "explanation": "Yalnızca test edilen madde değişmeli, devrenin diğer koşulları aynı kalmalıdır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 18,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.1",
+      "skill": "Günlük yaşam",
+      "scenario": "Elektrik kablolarının iç kısmında bakır, dış kaplamasında plastik kullanılıyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Bu iki malzemenin seçilme nedeni hangisidir?",
+      "options": [
+        "İkisi de yalıtkandır",
+        "Bakır iletken, plastik yalıtkandır",
+        "Bakır yalıtkan, plastik iletkendir",
+        "İkisi de elektriği üretir"
+      ],
+      "answer": 1,
+      "explanation": "Bakır akımı taşır; plastik dış kaplama elektrik temasını önlemeye yardımcı olur.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 19,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.2",
+      "skill": "Veri yorumlama",
+      "scenario": "Aynı cins ve kalınlıktaki iki telden biri 20 cm, diğeri 80 cm uzunluğundadır. Devrede uzun tel kullanıldığında ampul daha sönük yanıyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Bu gözlem hangi ilişkiyi destekler?",
+      "options": [
+        "Tel uzadıkça direnç azalır",
+        "Tel uzadıkça direnç artabilir",
+        "Tel uzunluğu direnci etkilemez",
+        "Tel uzadıkça ampul sayısı artar"
+      ],
+      "answer": 1,
+      "explanation": "Aynı cins ve kesit alanındaki iletkende uzunluk arttıkça direnç artar.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 20,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.2",
+      "skill": "Karşılaştırma",
+      "scenario": "Aynı uzunluk ve cinsteki iki telden kalın olanı devrede kullanıldığında ampul daha parlak yanıyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Kalın telin direnci için hangi yorum yapılır?",
+      "options": [
+        "Daha büyüktür",
+        "Daha küçüktür",
+        "Sonsuzdur",
+        "Telin kalınlığı dirençle ilişkili değildir"
+      ],
+      "answer": 1,
+      "explanation": "Kesit alanı büyük olan telin direnci daha küçüktür.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 21,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.2",
+      "skill": "Deney tasarımı",
+      "scenario": "Bir öğrenci eşit uzunluk ve kalınlıktaki bakır ve nikel telleri devreye bağlıyor; parlaklıkları farklı oluyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Bu farkın olası nedeni hangisidir?",
+      "options": [
+        "İletkenlerin cinslerinin farklı olması",
+        "Pillerin aynı olması",
+        "Tellerin uzunluklarının eşit olması",
+        "Ampulün devrede bulunması"
+      ],
+      "answer": 0,
+      "explanation": "Maddenin cinsi elektriksel direnci etkiler.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 22,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.3",
+      "skill": "Araç-gereç işlevi",
+      "scenario": "Bir devreye reosta seri bağlanıyor. Sürgü hareket ettirildiğinde devredeki direnç değişiyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Reostanın temel görevi nedir?",
+      "options": [
+        "Devreyi renklendirmek",
+        "Direnci ayarlayarak akımı ve ampul parlaklığını değiştirmek",
+        "Pil üretmek",
+        "Elektriği depolamak"
+      ],
+      "answer": 1,
+      "explanation": "Reosta ayarlanabilir dirençtir; devre akımını ve ampul parlaklığını etkiler.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 23,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.3",
+      "skill": "Neden-sonuç",
+      "scenario": "Bir devrede reostanın devreye katılan tel uzunluğu artırılıyor ve ampulün parlaklığı azalıyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Bu değişimin nedeni hangisidir?",
+      "options": [
+        "Direnç artıp akımın azalması",
+        "Direncin sıfırlanması",
+        "Pil sayısının artması",
+        "Ampulün ışık üretmeyi öğrenmesi"
+      ],
+      "answer": 0,
+      "explanation": "Reostanın devreye katılan direnç teli uzadığında direnç artar; aynı koşullarda akım ve parlaklık azalabilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 24,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.1",
+      "skill": "Bilimsel sorgulama",
+      "scenario": "Bir öğrenci iletkenlik deneyinde ampul yanmadığında maddenin kesinlikle yalıtkan olduğunu söylüyor. Ancak bağlantı kablolarından biri gevşek olabilir. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Sonucun güvenilir olması için önce ne yapılmalıdır?",
+      "options": [
+        "Devre bağlantıları kontrol edilip deney tekrarlanmalı",
+        "Pil çıkarılmalı",
+        "Ampul kırılmalı",
+        "Maddenin rengi değiştirilmeli"
+      ],
+      "answer": 0,
+      "explanation": "Bağlantı hatası sonucu etkileyebilir; deney düzeneği kontrol edilerek tekrar edilmelidir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 25,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.3",
+      "skill": "Çıkarım",
+      "scenario": "Aynı devrede reosta sürgüsü bir konumdan diğerine getirildiğinde ampul parlaklığı artıyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Buna göre devrenin toplam direnci nasıl değişmiştir?",
+      "options": [
+        "Artmıştır",
+        "Azalmıştır",
+        "Değişmemiştir",
+        "Pil tükenmiştir"
+      ],
+      "answer": 1,
+      "explanation": "Aynı pil ve ampulde parlaklığın artması, reostayla ayarlanan direncin azaldığını düşündürür.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 26,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.2",
+      "skill": "Deney tasarımı",
+      "scenario": "Bir öğrenci telin uzunluğunun dirence etkisini araştırıyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Deneyde hangi iki tel karşılaştırılmalıdır?",
+      "options": [
+        "Farklı uzunlukta, aynı cins ve kalınlıkta teller",
+        "Aynı uzunlukta farklı cins ve kalınlıkta teller",
+        "Farklı pil ve ampullerle kurulan devreler",
+        "Farklı renkli, ölçüsüz teller"
+      ],
+      "answer": 0,
+      "explanation": "Yalnız uzunluğun etkisini görebilmek için telin cinsi ve kesit alanı aynı tutulmalıdır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 27,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.1",
+      "skill": "Güvenli yaşam",
+      "scenario": "Bir elektrikli cihazın kablosunda yalıtkan kaplamanın çatladığı fark ediliyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "En doğru güvenlik davranışı hangisidir?",
+      "options": [
+        "Kabloyu kullanmaya devam etmek",
+        "Cihaza dokunmadan yetişkine haber verip kullanımı durdurmak",
+        "Kabloyu ıslatmak",
+        "Çatlağı metal parçayla kapatmak"
+      ],
+      "answer": 1,
+      "explanation": "Hasarlı kablo elektrik çarpması ve kısa devre riski oluşturabilir; cihaz kullanılmamalı ve yetişkine bildirilmelidir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 28,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.2",
+      "skill": "Değişken belirleme",
+      "scenario": "Bir devrede telin cinsi değiştirilirken pil, ampul, tel uzunluğu ve kalınlığı sabit tutuluyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Bu deneyde araştırılan değişken hangisidir?",
+      "options": [
+        "Telin cinsi",
+        "Pil sayısı",
+        "Tel uzunluğu",
+        "Tel kesit alanı"
+      ],
+      "answer": 0,
+      "explanation": "Diğer değişkenler sabit tutularak iletkenin cinsinin etkisi araştırılır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 29,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.3",
+      "skill": "Tahmin",
+      "scenario": "Bir reostada sürgü, direnç telinin daha büyük bölümünü devreye katacak şekilde hareket ettiriliyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Ampul parlaklığında genellikle nasıl bir değişim beklenir?",
+      "options": [
+        "Artar",
+        "Azalır",
+        "Önce kesinlikle patlar",
+        "Değişmez; reosta etkisizdir"
+      ],
+      "answer": 1,
+      "explanation": "Devreye katılan direnç teli arttıkça direnç artar; ampul parlaklığı azalabilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 30,
+      "unit": "Elektriğin İletimi ve Direnç",
+      "outcome": "FB.6.6.1",
+      "skill": "Sınıflandırma",
+      "scenario": "Öğrenciler demir, bakır, cam ve lastik örneklerini iletkenliklerine göre gruplandırıyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor.",
+      "stem": "Hangi gruplandırma doğrudur?",
+      "options": [
+        "Demir ve bakır iletken; cam ve lastik yalıtkan",
+        "Demir ve cam iletken; bakır ve lastik yalıtkan",
+        "Hepsi iletken",
+        "Hepsi yalıtkan"
+      ],
+      "answer": 0,
+      "explanation": "Metaller genellikle iletken, cam ve lastik ise yalıtkan maddelerdir.",
+      "image": "",
+      "imageAlt": ""
+    }
+  ]
+}
