@@ -37,12 +37,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Katı maddelerde tanecikler birbirine yakın olup bulundukları yerde titreşir",
         "Çok uzak",
         "serbestçe akar",
-        "hiç hareket etmez"
+        "hiç hareket etmez",
+        "Katı maddelerde tanecikler birbirine yakın olup bulundukları yerde titreşir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Katılarda tanecikler yakın ve düzenli konumlarda titreşim hareketi yapar."
     },
     {
@@ -57,12 +57,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Sıvılar akabilir; tanecikleri birbirinin üzerinden kayarak yer değiştirebilir",
         "Sabit konum",
         "hiç hareket etmez",
+        "Sıvılar akabilir; tanecikleri birbirinin üzerinden kayarak yer değiştirebilir",
         "yok olur"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Sıvılarda tanecikler birbirine yakın olup yer değiştirebilir."
     },
     {
@@ -77,12 +77,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Gazların bulundukları kabı doldurmasının nedeni taneciklerinin serbest hareket etmesidir",
         "Sabit şekil",
+        "Gazların bulundukları kabı doldurmasının nedeni taneciklerinin serbest hareket etmesidir",
         "tanecik yokluğu",
         "yalnız titreşim"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Gazlarda tanecikler arasındaki boşluk fazladır ve tanecikler serbestçe hareket eder."
     },
     {
@@ -117,12 +117,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Sıcaklığı ölçmek için kullanılan araç termometredir",
         "Dinamometre",
         "terazi",
-        "kronometre"
+        "kronometre",
+        "Sıcaklığı ölçmek için kullanılan araç termometredir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Sıcaklık termometre ile ölçülür."
     },
     {
@@ -137,12 +137,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Buzun suya dönüşmesi hangi hâl değişimidir",
         "erime",
         "yoğuşma",
+        "Buzun suya dönüşmesi hangi hâl değişimidir",
         "süblimleşme"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Erime katıdan sıvıya geçiştir."
     },
     {
@@ -157,12 +157,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Suyun soğuyarak buza dönüşmesi hangi hâl değişimidir",
         "erime",
+        "Suyun soğuyarak buza dönüşmesi hangi hâl değişimidir",
         "donma",
         "yoğuşma"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Donma sıvıdan katıya geçiştir."
     },
     {
@@ -197,12 +197,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Binalarda yalıtım malzemeleri kullanmanın temel amacı ısı alışverişini azaltmaktır",
         "Isı aktarımını artırmak",
         "ışık üretmek",
-        "kütleyi değiştirmek"
+        "kütleyi değiştirmek",
+        "Binalarda yalıtım malzemeleri kullanmanın temel amacı ısı alışverişini azaltmaktır"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Isı yalıtımı ısı alışverişini azaltır."
     },
     {
@@ -217,12 +217,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Maddenin temel yapısının taneciklerden oluştuğunu gösteren model hangisidir",
         "tanecikli model",
         "yalnız boşluk",
+        "Maddenin temel yapısının taneciklerden oluştuğunu gösteren model hangisidir",
         "ışın"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Maddeler taneciklerden oluşur."
     },
     {
@@ -237,12 +237,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Katı maddelerde tanecikler birbirine yakın olup bulundukları yerde titreşir",
         "Çok uzak",
+        "Katı maddelerde tanecikler birbirine yakın olup bulundukları yerde titreşir",
         "serbestçe akar",
         "hiç hareket etmez"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Katılarda tanecikler yakın ve düzenli konumlarda titreşim hareketi yapar."
     },
     {
@@ -277,12 +277,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Gazların bulundukları kabı doldurmasının nedeni taneciklerinin serbest hareket etmesidir",
         "Sabit şekil",
         "tanecik yokluğu",
-        "yalnız titreşim"
+        "yalnız titreşim",
+        "Gazların bulundukları kabı doldurmasının nedeni taneciklerinin serbest hareket etmesidir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Gazlarda tanecikler arasındaki boşluk fazladır ve tanecikler serbestçe hareket eder."
     },
     {
@@ -297,12 +297,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Sıcaklığı farklı iki madde temas ettiğinde enerji sıcak olandan soğuk olana aktarılır",
         "ısı aktarımı",
         "kütle aktarımı",
+        "Sıcaklığı farklı iki madde temas ettiğinde enerji sıcak olandan soğuk olana aktarılır",
         "ışık aktarımı"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Isı sıcaklık farkı nedeniyle aktarılan enerjidir."
     },
     {
@@ -317,12 +317,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Sıcaklığı ölçmek için kullanılan araç termometredir",
         "Dinamometre",
+        "Sıcaklığı ölçmek için kullanılan araç termometredir",
         "terazi",
         "kronometre"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Sıcaklık termometre ile ölçülür."
     },
     {
@@ -357,12 +357,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Suyun soğuyarak buza dönüşmesi hangi hâl değişimidir",
         "erime",
         "donma",
-        "yoğuşma"
+        "yoğuşma",
+        "Suyun soğuyarak buza dönüşmesi hangi hâl değişimidir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Donma sıvıdan katıya geçiştir."
     },
     {
@@ -377,12 +377,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Islak çamaşırın kuruması suyun hangi hâl değişimine örnektir",
         "erime",
         "buharlaşma",
+        "Islak çamaşırın kuruması suyun hangi hâl değişimine örnektir",
         "yoğuşma"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Buharlaşma sıvının gaz hâline geçmesidir ve yüzeyde gerçekleşebilir."
     },
     {
@@ -397,12 +397,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Binalarda yalıtım malzemeleri kullanmanın temel amacı ısı alışverişini azaltmaktır",
         "Isı aktarımını artırmak",
+        "Binalarda yalıtım malzemeleri kullanmanın temel amacı ısı alışverişini azaltmaktır",
         "ışık üretmek",
         "kütleyi değiştirmek"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Isı yalıtımı ısı alışverişini azaltır."
     },
     {
@@ -437,12 +437,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Katı maddelerde tanecikler birbirine yakın olup bulundukları yerde titreşir",
         "Çok uzak",
         "serbestçe akar",
-        "hiç hareket etmez"
+        "hiç hareket etmez",
+        "Katı maddelerde tanecikler birbirine yakın olup bulundukları yerde titreşir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Katılarda tanecikler yakın ve düzenli konumlarda titreşim hareketi yapar."
     },
     {
@@ -457,12 +457,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Sıvılar akabilir; tanecikleri birbirinin üzerinden kayarak yer değiştirebilir",
         "Sabit konum",
         "hiç hareket etmez",
+        "Sıvılar akabilir; tanecikleri birbirinin üzerinden kayarak yer değiştirebilir",
         "yok olur"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Sıvılarda tanecikler birbirine yakın olup yer değiştirebilir."
     },
     {
@@ -477,12 +477,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Gazların bulundukları kabı doldurmasının nedeni taneciklerinin serbest hareket etmesidir",
         "Sabit şekil",
+        "Gazların bulundukları kabı doldurmasının nedeni taneciklerinin serbest hareket etmesidir",
         "tanecik yokluğu",
         "yalnız titreşim"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Gazlarda tanecikler arasındaki boşluk fazladır ve tanecikler serbestçe hareket eder."
     },
     {
@@ -517,12 +517,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Sıcaklığı ölçmek için kullanılan araç termometredir",
         "Dinamometre",
         "terazi",
-        "kronometre"
+        "kronometre",
+        "Sıcaklığı ölçmek için kullanılan araç termometredir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Sıcaklık termometre ile ölçülür."
     },
     {
@@ -537,12 +537,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Buzun suya dönüşmesi hangi hâl değişimidir",
         "erime",
         "yoğuşma",
+        "Buzun suya dönüşmesi hangi hâl değişimidir",
         "süblimleşme"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Erime katıdan sıvıya geçiştir."
     },
     {
@@ -557,12 +557,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Suyun soğuyarak buza dönüşmesi hangi hâl değişimidir",
         "erime",
+        "Suyun soğuyarak buza dönüşmesi hangi hâl değişimidir",
         "donma",
         "yoğuşma"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Donma sıvıdan katıya geçiştir."
     },
     {
@@ -597,12 +597,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Binalarda yalıtım malzemeleri kullanmanın temel amacı ısı alışverişini azaltmaktır",
         "Isı aktarımını artırmak",
         "ışık üretmek",
-        "kütleyi değiştirmek"
+        "kütleyi değiştirmek",
+        "Binalarda yalıtım malzemeleri kullanmanın temel amacı ısı alışverişini azaltmaktır"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Isı yalıtımı ısı alışverişini azaltır."
     }
   ]
