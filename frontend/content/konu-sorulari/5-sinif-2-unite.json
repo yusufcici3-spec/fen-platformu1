@@ -1,0 +1,609 @@
+{
+  "grade": 5,
+  "unit": 2,
+  "title": "Kuvveti Tanıyalım",
+  "slug": "kuvveti-taniyalim",
+  "description": "Maarif Modeli kazanımlarına göre hazırlanmış 30 senaryo temelli soru.",
+  "questions": [
+    {
+      "id": 1,
+      "code": "FB.5.2",
+      "topic": "Kuvvetin etkileri",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kuvvetin etkileri",
+        "content": "Kuvvet cisimlerin hareketini, hızını, yönünü veya şeklini değiştirebilir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Kuvvet bir cismin hareket durumunu veya şeklini değiştirebilir",
+        "Renk",
+        "koku",
+        "sıcaklık"
+      ],
+      "answer": 0,
+      "explanation": "Kuvvet cisimlerin hareketini, hızını, yönünü veya şeklini değiştirebilir."
+    },
+    {
+      "id": 2,
+      "code": "FB.5.2",
+      "topic": "Kuvvetin ölçülmesi",
+      "scenario": "Bilim merkezindeki etkinlikte öğrenciler bir model üzerinde ölçüm yapıp sonuçlarını not ediyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kuvvetin ölçülmesi",
+        "content": "Kuvvet dinamometre ile ölçülür."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Kuvveti ölçmek için dinamometre kullanılır",
+        "Terazi",
+        "cetvel",
+        "termometre"
+      ],
+      "answer": 0,
+      "explanation": "Kuvvet dinamometre ile ölçülür."
+    },
+    {
+      "id": 3,
+      "code": "FB.5.2",
+      "topic": "Newton birimi",
+      "scenario": "Bir öğrenci günlük yaşamdan bir örnek veriyor; sınıf arkadaşları bu örneği fen bilgisiyle açıklıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Newton birimi",
+        "content": "Kuvvetin birimi Newton’dır ve N ile gösterilir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Kuvvetin SI birimi Newton olup N harfiyle gösterilir",
+        "kg",
+        "°C",
+        "N"
+      ],
+      "answer": 0,
+      "explanation": "Kuvvetin birimi Newton’dır ve N ile gösterilir."
+    },
+    {
+      "id": 4,
+      "code": "FB.5.2",
+      "topic": "Dinamometrenin çalışma ilkesi",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Dinamometrenin çalışma ilkesi",
+        "content": "Dinamometrede yay uzaması uygulanan kuvvetle ilişkilidir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Dinamometrede kuvvet arttıkça uygun sınırlar içinde yay uzaması artar",
+        "uzama artar",
+        "renk değişir",
+        "kütle yok olur"
+      ],
+      "answer": 0,
+      "explanation": "Dinamometrede yay uzaması uygulanan kuvvetle ilişkilidir."
+    },
+    {
+      "id": 5,
+      "code": "FB.5.2",
+      "topic": "Ölçüm aralığı",
+      "scenario": "Bilim merkezindeki etkinlikte öğrenciler bir model üzerinde ölçüm yapıp sonuçlarını not ediyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ölçüm aralığı",
+        "content": "Dinamometrenin ölçüm aralığı aşılırsa doğru ölçüm yapılamaz ve yay zarar görebilir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Bir dinamometre kapasitesinden büyük kuvvetle zorlanmamalıdır",
+        "kapasite artar",
+        "zarar görebilir",
+        "kütle azalır"
+      ],
+      "answer": 0,
+      "explanation": "Dinamometrenin ölçüm aralığı aşılırsa doğru ölçüm yapılamaz ve yay zarar görebilir."
+    },
+    {
+      "id": 6,
+      "code": "FB.5.2",
+      "topic": "Kütle",
+      "scenario": "Bir öğrenci günlük yaşamdan bir örnek veriyor; sınıf arkadaşları bu örneği fen bilgisiyle açıklıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kütle",
+        "content": "Kütle madde miktarıdır ve eşit kollu teraziyle ölçülür."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Kütle madde miktarını belirtir ve teraziyle ölçülür",
+        "kuvvet",
+        "sıcaklık",
+        "hacim"
+      ],
+      "answer": 0,
+      "explanation": "Kütle madde miktarıdır ve eşit kollu teraziyle ölçülür."
+    },
+    {
+      "id": 7,
+      "code": "FB.5.2",
+      "topic": "Ağırlık",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ağırlık",
+        "content": "Ağırlık yer çekiminin cisme uyguladığı kuvvettir ve dinamometreyle ölçülür."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Ağırlık bir kuvvettir; dinamometreyle ölçülür ve Newton ile ifade edilir",
+        "Kütle",
+        "hacim",
+        "uzunluk"
+      ],
+      "answer": 0,
+      "explanation": "Ağırlık yer çekiminin cisme uyguladığı kuvvettir ve dinamometreyle ölçülür."
+    },
+    {
+      "id": 8,
+      "code": "FB.5.2",
+      "topic": "Kütle-ağırlık karşılaştırması",
+      "scenario": "Bilim merkezindeki etkinlikte öğrenciler bir model üzerinde ölçüm yapıp sonuçlarını not ediyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kütle-ağırlık karşılaştırması",
+        "content": "Kütle konuma göre değişmez; ağırlık yer çekimine göre değişebilir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Aynı cismin kütlesi farklı gök cisimlerinde aynı kalırken ağırlığı değişebilir",
+        "kütle sabit",
+        "ağırlık sabit",
+        "ikisi sıfır"
+      ],
+      "answer": 0,
+      "explanation": "Kütle konuma göre değişmez; ağırlık yer çekimine göre değişebilir."
+    },
+    {
+      "id": 9,
+      "code": "FB.5.2",
+      "topic": "Sürtünmenin yönü",
+      "scenario": "Bir öğrenci günlük yaşamdan bir örnek veriyor; sınıf arkadaşları bu örneği fen bilgisiyle açıklıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Sürtünmenin yönü",
+        "content": "Sürtünme kuvveti hareket yönüne zıt yönde etki eder."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Sürtünme kuvveti temas eden yüzeyler arasındaki harekete karşı koyar",
+        "zıt",
+        "daima yukarı",
+        "daima aşağı"
+      ],
+      "answer": 0,
+      "explanation": "Sürtünme kuvveti hareket yönüne zıt yönde etki eder."
+    },
+    {
+      "id": 10,
+      "code": "FB.5.2",
+      "topic": "Yüzey ve sürtünme",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Yüzey ve sürtünme",
+        "content": "Pürüzlü yüzeylerde sürtünme genellikle daha fazladır."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Pürüzlü yüzeylerde sürtünme genellikle düzgün yüzeylere göre daha büyüktür",
+        "daha fazla",
+        "sıfır",
+        "değişmez"
+      ],
+      "answer": 0,
+      "explanation": "Pürüzlü yüzeylerde sürtünme genellikle daha fazladır."
+    },
+    {
+      "id": 11,
+      "code": "FB.5.2",
+      "topic": "Kuvvetin etkileri",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kuvvetin etkileri",
+        "content": "Kuvvet cisimlerin hareketini, hızını, yönünü veya şeklini değiştirebilir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Kuvvet bir cismin hareket durumunu veya şeklini değiştirebilir",
+        "Renk",
+        "koku",
+        "sıcaklık"
+      ],
+      "answer": 0,
+      "explanation": "Kuvvet cisimlerin hareketini, hızını, yönünü veya şeklini değiştirebilir."
+    },
+    {
+      "id": 12,
+      "code": "FB.5.2",
+      "topic": "Kuvvetin ölçülmesi",
+      "scenario": "Okul sergisinde ziyaretçiler bir düzenek inceliyor ve öğrencilerden bilimsel çıkarım yapmaları isteniyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kuvvetin ölçülmesi",
+        "content": "Kuvvet dinamometre ile ölçülür."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Kuvveti ölçmek için dinamometre kullanılır",
+        "Terazi",
+        "cetvel",
+        "termometre"
+      ],
+      "answer": 0,
+      "explanation": "Kuvvet dinamometre ile ölçülür."
+    },
+    {
+      "id": 13,
+      "code": "FB.5.2",
+      "topic": "Newton birimi",
+      "scenario": "Bir grup öğrenci proje raporunda bu kavramı yanlış yorumluyor. Öğretmenleri, kanıta dayanarak doğru açıklamayı bulmalarını istiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Newton birimi",
+        "content": "Kuvvetin birimi Newton’dır ve N ile gösterilir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Kuvvetin SI birimi Newton olup N harfiyle gösterilir",
+        "kg",
+        "°C",
+        "N"
+      ],
+      "answer": 0,
+      "explanation": "Kuvvetin birimi Newton’dır ve N ile gösterilir."
+    },
+    {
+      "id": 14,
+      "code": "FB.5.2",
+      "topic": "Dinamometrenin çalışma ilkesi",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Dinamometrenin çalışma ilkesi",
+        "content": "Dinamometrede yay uzaması uygulanan kuvvetle ilişkilidir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Dinamometrede kuvvet arttıkça uygun sınırlar içinde yay uzaması artar",
+        "uzama artar",
+        "renk değişir",
+        "kütle yok olur"
+      ],
+      "answer": 0,
+      "explanation": "Dinamometrede yay uzaması uygulanan kuvvetle ilişkilidir."
+    },
+    {
+      "id": 15,
+      "code": "FB.5.2",
+      "topic": "Ölçüm aralığı",
+      "scenario": "Okul sergisinde ziyaretçiler bir düzenek inceliyor ve öğrencilerden bilimsel çıkarım yapmaları isteniyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ölçüm aralığı",
+        "content": "Dinamometrenin ölçüm aralığı aşılırsa doğru ölçüm yapılamaz ve yay zarar görebilir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Bir dinamometre kapasitesinden büyük kuvvetle zorlanmamalıdır",
+        "kapasite artar",
+        "zarar görebilir",
+        "kütle azalır"
+      ],
+      "answer": 0,
+      "explanation": "Dinamometrenin ölçüm aralığı aşılırsa doğru ölçüm yapılamaz ve yay zarar görebilir."
+    },
+    {
+      "id": 16,
+      "code": "FB.5.2",
+      "topic": "Kütle",
+      "scenario": "Bir grup öğrenci proje raporunda bu kavramı yanlış yorumluyor. Öğretmenleri, kanıta dayanarak doğru açıklamayı bulmalarını istiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kütle",
+        "content": "Kütle madde miktarıdır ve eşit kollu teraziyle ölçülür."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Kütle madde miktarını belirtir ve teraziyle ölçülür",
+        "kuvvet",
+        "sıcaklık",
+        "hacim"
+      ],
+      "answer": 0,
+      "explanation": "Kütle madde miktarıdır ve eşit kollu teraziyle ölçülür."
+    },
+    {
+      "id": 17,
+      "code": "FB.5.2",
+      "topic": "Ağırlık",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ağırlık",
+        "content": "Ağırlık yer çekiminin cisme uyguladığı kuvvettir ve dinamometreyle ölçülür."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Ağırlık bir kuvvettir; dinamometreyle ölçülür ve Newton ile ifade edilir",
+        "Kütle",
+        "hacim",
+        "uzunluk"
+      ],
+      "answer": 0,
+      "explanation": "Ağırlık yer çekiminin cisme uyguladığı kuvvettir ve dinamometreyle ölçülür."
+    },
+    {
+      "id": 18,
+      "code": "FB.5.2",
+      "topic": "Kütle-ağırlık karşılaştırması",
+      "scenario": "Okul sergisinde ziyaretçiler bir düzenek inceliyor ve öğrencilerden bilimsel çıkarım yapmaları isteniyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kütle-ağırlık karşılaştırması",
+        "content": "Kütle konuma göre değişmez; ağırlık yer çekimine göre değişebilir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Aynı cismin kütlesi farklı gök cisimlerinde aynı kalırken ağırlığı değişebilir",
+        "kütle sabit",
+        "ağırlık sabit",
+        "ikisi sıfır"
+      ],
+      "answer": 0,
+      "explanation": "Kütle konuma göre değişmez; ağırlık yer çekimine göre değişebilir."
+    },
+    {
+      "id": 19,
+      "code": "FB.5.2",
+      "topic": "Sürtünmenin yönü",
+      "scenario": "Bir grup öğrenci proje raporunda bu kavramı yanlış yorumluyor. Öğretmenleri, kanıta dayanarak doğru açıklamayı bulmalarını istiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Sürtünmenin yönü",
+        "content": "Sürtünme kuvveti hareket yönüne zıt yönde etki eder."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Sürtünme kuvveti temas eden yüzeyler arasındaki harekete karşı koyar",
+        "zıt",
+        "daima yukarı",
+        "daima aşağı"
+      ],
+      "answer": 0,
+      "explanation": "Sürtünme kuvveti hareket yönüne zıt yönde etki eder."
+    },
+    {
+      "id": 20,
+      "code": "FB.5.2",
+      "topic": "Yüzey ve sürtünme",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Yüzey ve sürtünme",
+        "content": "Pürüzlü yüzeylerde sürtünme genellikle daha fazladır."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Pürüzlü yüzeylerde sürtünme genellikle düzgün yüzeylere göre daha büyüktür",
+        "daha fazla",
+        "sıfır",
+        "değişmez"
+      ],
+      "answer": 0,
+      "explanation": "Pürüzlü yüzeylerde sürtünme genellikle daha fazladır."
+    },
+    {
+      "id": 21,
+      "code": "FB.5.2",
+      "topic": "Kuvvetin etkileri",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kuvvetin etkileri",
+        "content": "Kuvvet cisimlerin hareketini, hızını, yönünü veya şeklini değiştirebilir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Kuvvet bir cismin hareket durumunu veya şeklini değiştirebilir",
+        "Renk",
+        "koku",
+        "sıcaklık"
+      ],
+      "answer": 0,
+      "explanation": "Kuvvet cisimlerin hareketini, hızını, yönünü veya şeklini değiştirebilir."
+    },
+    {
+      "id": 22,
+      "code": "FB.5.2",
+      "topic": "Kuvvetin ölçülmesi",
+      "scenario": "Bir belediye/okul etkinliğinde bu konuya ilişkin karar veriliyor. Öğrenciler doğru seçeneği gerekçelendirmeye çalışıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kuvvetin ölçülmesi",
+        "content": "Kuvvet dinamometre ile ölçülür."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Kuvveti ölçmek için dinamometre kullanılır",
+        "Terazi",
+        "cetvel",
+        "termometre"
+      ],
+      "answer": 0,
+      "explanation": "Kuvvet dinamometre ile ölçülür."
+    },
+    {
+      "id": 23,
+      "code": "FB.5.2",
+      "topic": "Newton birimi",
+      "scenario": "Bir gözlem günlüğünde kaydedilen veriler sınıfta tartışılıyor. Öğrenciler hangi açıklamanın verilerle uyumlu olduğunu seçiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Newton birimi",
+        "content": "Kuvvetin birimi Newton’dır ve N ile gösterilir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Kuvvetin SI birimi Newton olup N harfiyle gösterilir",
+        "kg",
+        "°C",
+        "N"
+      ],
+      "answer": 0,
+      "explanation": "Kuvvetin birimi Newton’dır ve N ile gösterilir."
+    },
+    {
+      "id": 24,
+      "code": "FB.5.2",
+      "topic": "Dinamometrenin çalışma ilkesi",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Dinamometrenin çalışma ilkesi",
+        "content": "Dinamometrede yay uzaması uygulanan kuvvetle ilişkilidir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Dinamometrede kuvvet arttıkça uygun sınırlar içinde yay uzaması artar",
+        "uzama artar",
+        "renk değişir",
+        "kütle yok olur"
+      ],
+      "answer": 0,
+      "explanation": "Dinamometrede yay uzaması uygulanan kuvvetle ilişkilidir."
+    },
+    {
+      "id": 25,
+      "code": "FB.5.2",
+      "topic": "Ölçüm aralığı",
+      "scenario": "Bir belediye/okul etkinliğinde bu konuya ilişkin karar veriliyor. Öğrenciler doğru seçeneği gerekçelendirmeye çalışıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ölçüm aralığı",
+        "content": "Dinamometrenin ölçüm aralığı aşılırsa doğru ölçüm yapılamaz ve yay zarar görebilir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Bir dinamometre kapasitesinden büyük kuvvetle zorlanmamalıdır",
+        "kapasite artar",
+        "zarar görebilir",
+        "kütle azalır"
+      ],
+      "answer": 0,
+      "explanation": "Dinamometrenin ölçüm aralığı aşılırsa doğru ölçüm yapılamaz ve yay zarar görebilir."
+    },
+    {
+      "id": 26,
+      "code": "FB.5.2",
+      "topic": "Kütle",
+      "scenario": "Bir gözlem günlüğünde kaydedilen veriler sınıfta tartışılıyor. Öğrenciler hangi açıklamanın verilerle uyumlu olduğunu seçiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kütle",
+        "content": "Kütle madde miktarıdır ve eşit kollu teraziyle ölçülür."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Kütle madde miktarını belirtir ve teraziyle ölçülür",
+        "kuvvet",
+        "sıcaklık",
+        "hacim"
+      ],
+      "answer": 0,
+      "explanation": "Kütle madde miktarıdır ve eşit kollu teraziyle ölçülür."
+    },
+    {
+      "id": 27,
+      "code": "FB.5.2",
+      "topic": "Ağırlık",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ağırlık",
+        "content": "Ağırlık yer çekiminin cisme uyguladığı kuvvettir ve dinamometreyle ölçülür."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Ağırlık bir kuvvettir; dinamometreyle ölçülür ve Newton ile ifade edilir",
+        "Kütle",
+        "hacim",
+        "uzunluk"
+      ],
+      "answer": 0,
+      "explanation": "Ağırlık yer çekiminin cisme uyguladığı kuvvettir ve dinamometreyle ölçülür."
+    },
+    {
+      "id": 28,
+      "code": "FB.5.2",
+      "topic": "Kütle-ağırlık karşılaştırması",
+      "scenario": "Bir belediye/okul etkinliğinde bu konuya ilişkin karar veriliyor. Öğrenciler doğru seçeneği gerekçelendirmeye çalışıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kütle-ağırlık karşılaştırması",
+        "content": "Kütle konuma göre değişmez; ağırlık yer çekimine göre değişebilir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Aynı cismin kütlesi farklı gök cisimlerinde aynı kalırken ağırlığı değişebilir",
+        "kütle sabit",
+        "ağırlık sabit",
+        "ikisi sıfır"
+      ],
+      "answer": 0,
+      "explanation": "Kütle konuma göre değişmez; ağırlık yer çekimine göre değişebilir."
+    },
+    {
+      "id": 29,
+      "code": "FB.5.2",
+      "topic": "Sürtünmenin yönü",
+      "scenario": "Bir gözlem günlüğünde kaydedilen veriler sınıfta tartışılıyor. Öğrenciler hangi açıklamanın verilerle uyumlu olduğunu seçiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Sürtünmenin yönü",
+        "content": "Sürtünme kuvveti hareket yönüne zıt yönde etki eder."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Sürtünme kuvveti temas eden yüzeyler arasındaki harekete karşı koyar",
+        "zıt",
+        "daima yukarı",
+        "daima aşağı"
+      ],
+      "answer": 0,
+      "explanation": "Sürtünme kuvveti hareket yönüne zıt yönde etki eder."
+    },
+    {
+      "id": 30,
+      "code": "FB.5.2",
+      "topic": "Yüzey ve sürtünme",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Yüzey ve sürtünme",
+        "content": "Pürüzlü yüzeylerde sürtünme genellikle daha fazladır."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Pürüzlü yüzeylerde sürtünme genellikle düzgün yüzeylere göre daha büyüktür",
+        "daha fazla",
+        "sıfır",
+        "değişmez"
+      ],
+      "answer": 0,
+      "explanation": "Pürüzlü yüzeylerde sürtünme genellikle daha fazladır."
+    }
+  ]
+}
