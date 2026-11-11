@@ -1,0 +1,609 @@
+{
+  "grade": 5,
+  "unit": 6,
+  "title": "Yaşamımızdaki Elektrik",
+  "slug": "yasamimizdaki-elektrik",
+  "description": "Maarif Modeli kazanımlarına göre hazırlanmış 30 senaryo temelli soru.",
+  "questions": [
+    {
+      "id": 1,
+      "code": "FB.5.6",
+      "topic": "Pil",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Pil",
+        "content": "Pil devreye enerji sağlar."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Basit elektrik devresinde enerji kaynağı hangi elemandır",
+        "anahtar",
+        "pil",
+        "kablo"
+      ],
+      "answer": 0,
+      "explanation": "Pil devreye enerji sağlar."
+    },
+    {
+      "id": 2,
+      "code": "FB.5.6",
+      "topic": "Ampul",
+      "scenario": "Bilim merkezindeki etkinlikte öğrenciler bir model üzerinde ölçüm yapıp sonuçlarını not ediyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ampul",
+        "content": "Ampul elektrik enerjisini ışık enerjisine dönüştürür."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Elektrik devresindeki ampulün temel görevi nedir",
+        "ışık vermek",
+        "akımı kesmek",
+        "enerji depolamak"
+      ],
+      "answer": 0,
+      "explanation": "Ampul elektrik enerjisini ışık enerjisine dönüştürür."
+    },
+    {
+      "id": 3,
+      "code": "FB.5.6",
+      "topic": "Kablo",
+      "scenario": "Bir öğrenci günlük yaşamdan bir örnek veriyor; sınıf arkadaşları bu örneği fen bilgisiyle açıklıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kablo",
+        "content": "Bağlantı kabloları devre elemanları arasında iletken yol oluşturur."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Devre elemanlarını birbirine bağlayarak elektriksel yol oluşturan eleman hangisidir",
+        "ampul",
+        "kablo",
+        "anahtar"
+      ],
+      "answer": 0,
+      "explanation": "Bağlantı kabloları devre elemanları arasında iletken yol oluşturur."
+    },
+    {
+      "id": 4,
+      "code": "FB.5.6",
+      "topic": "Anahtar",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Anahtar",
+        "content": "Anahtar devreyi açıp kapatır."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Devrede elektrik akışını kontrol etmek için hangi eleman kullanılır",
+        "anahtar",
+        "ampul",
+        "duy"
+      ],
+      "answer": 0,
+      "explanation": "Anahtar devreyi açıp kapatır."
+    },
+    {
+      "id": 5,
+      "code": "FB.5.6",
+      "topic": "Kapalı devre",
+      "scenario": "Bilim merkezindeki etkinlikte öğrenciler bir model üzerinde ölçüm yapıp sonuçlarını not ediyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kapalı devre",
+        "content": "Kapalı devrede iletken yol tamamlanır ve ampul yanabilir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Ampulün yanabilmesi için devrenin hangi durumda olması gerekir",
+        "kopuk",
+        "kapalı",
+        "eksik"
+      ],
+      "answer": 0,
+      "explanation": "Kapalı devrede iletken yol tamamlanır ve ampul yanabilir."
+    },
+    {
+      "id": 6,
+      "code": "FB.5.6",
+      "topic": "Açık anahtar",
+      "scenario": "Bir öğrenci günlük yaşamdan bir örnek veriyor; sınıf arkadaşları bu örneği fen bilgisiyle açıklıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Açık anahtar",
+        "content": "Açık anahtar devre yolunu keser."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Anahtar açık olduğunda ampulün yanmamasının nedeni nedir",
+        "pil büyür",
+        "kablo ışık verir",
+        "ampul enerji üretir"
+      ],
+      "answer": 0,
+      "explanation": "Açık anahtar devre yolunu keser."
+    },
+    {
+      "id": 7,
+      "code": "FB.5.6",
+      "topic": "Devre şeması",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Devre şeması",
+        "content": "Devre şemaları sembollerle bağlantı biçimini gösterir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Devre şemasının temel amacı nedir",
+        "bağlantı biçimini göstermek",
+        "marka yazmak",
+        "maliyet ölçmek"
+      ],
+      "answer": 0,
+      "explanation": "Devre şemaları sembollerle bağlantı biçimini gösterir."
+    },
+    {
+      "id": 8,
+      "code": "FB.5.6",
+      "topic": "Pil sayısı",
+      "scenario": "Bilim merkezindeki etkinlikte öğrenciler bir model üzerinde ölçüm yapıp sonuçlarını not ediyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Pil sayısı",
+        "content": "Seri devrede pil sayısı değişirse ampul parlaklığı etkilenebilir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Aynı ampul ve bağlantılarla pil sayısı artırıldığında ampul parlaklığı genellikle nasıl değişir",
+        "daima azalır",
+        "değişmez",
+        "ampul söner"
+      ],
+      "answer": 0,
+      "explanation": "Seri devrede pil sayısı değişirse ampul parlaklığı etkilenebilir."
+    },
+    {
+      "id": 9,
+      "code": "FB.5.6",
+      "topic": "Ampul sayısı",
+      "scenario": "Bir öğrenci günlük yaşamdan bir örnek veriyor; sınıf arkadaşları bu örneği fen bilgisiyle açıklıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ampul sayısı",
+        "content": "Aynı devrede ampul sayısı artırılırsa ampullerin parlaklığı azalabilir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Özdeş ampuller seri bağlandığında ampul sayısı artırılırsa parlaklık genellikle nasıl etkilenir",
+        "azalır",
+        "sınırsız artar",
+        "renk değiştirir"
+      ],
+      "answer": 0,
+      "explanation": "Aynı devrede ampul sayısı artırılırsa ampullerin parlaklığı azalabilir."
+    },
+    {
+      "id": 10,
+      "code": "FB.5.6",
+      "topic": "Kontrollü deney",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kontrollü deney",
+        "content": "Bilimsel karşılaştırmada yalnızca bir değişken değiştirilir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Bir deneyde tek değişkeni değiştirmek neden önemlidir",
+        "tüm sonuçları eşitlemek",
+        "deneyi uzatmak",
+        "ölçümü engellemek"
+      ],
+      "answer": 0,
+      "explanation": "Bilimsel karşılaştırmada yalnızca bir değişken değiştirilir."
+    },
+    {
+      "id": 11,
+      "code": "FB.5.6",
+      "topic": "Pil",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Pil",
+        "content": "Pil devreye enerji sağlar."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Basit elektrik devresinde enerji kaynağı hangi elemandır",
+        "anahtar",
+        "pil",
+        "kablo"
+      ],
+      "answer": 0,
+      "explanation": "Pil devreye enerji sağlar."
+    },
+    {
+      "id": 12,
+      "code": "FB.5.6",
+      "topic": "Ampul",
+      "scenario": "Okul sergisinde ziyaretçiler bir düzenek inceliyor ve öğrencilerden bilimsel çıkarım yapmaları isteniyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ampul",
+        "content": "Ampul elektrik enerjisini ışık enerjisine dönüştürür."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Elektrik devresindeki ampulün temel görevi nedir",
+        "ışık vermek",
+        "akımı kesmek",
+        "enerji depolamak"
+      ],
+      "answer": 0,
+      "explanation": "Ampul elektrik enerjisini ışık enerjisine dönüştürür."
+    },
+    {
+      "id": 13,
+      "code": "FB.5.6",
+      "topic": "Kablo",
+      "scenario": "Bir grup öğrenci proje raporunda bu kavramı yanlış yorumluyor. Öğretmenleri, kanıta dayanarak doğru açıklamayı bulmalarını istiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kablo",
+        "content": "Bağlantı kabloları devre elemanları arasında iletken yol oluşturur."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Devre elemanlarını birbirine bağlayarak elektriksel yol oluşturan eleman hangisidir",
+        "ampul",
+        "kablo",
+        "anahtar"
+      ],
+      "answer": 0,
+      "explanation": "Bağlantı kabloları devre elemanları arasında iletken yol oluşturur."
+    },
+    {
+      "id": 14,
+      "code": "FB.5.6",
+      "topic": "Anahtar",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Anahtar",
+        "content": "Anahtar devreyi açıp kapatır."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Devrede elektrik akışını kontrol etmek için hangi eleman kullanılır",
+        "anahtar",
+        "ampul",
+        "duy"
+      ],
+      "answer": 0,
+      "explanation": "Anahtar devreyi açıp kapatır."
+    },
+    {
+      "id": 15,
+      "code": "FB.5.6",
+      "topic": "Kapalı devre",
+      "scenario": "Okul sergisinde ziyaretçiler bir düzenek inceliyor ve öğrencilerden bilimsel çıkarım yapmaları isteniyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kapalı devre",
+        "content": "Kapalı devrede iletken yol tamamlanır ve ampul yanabilir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Ampulün yanabilmesi için devrenin hangi durumda olması gerekir",
+        "kopuk",
+        "kapalı",
+        "eksik"
+      ],
+      "answer": 0,
+      "explanation": "Kapalı devrede iletken yol tamamlanır ve ampul yanabilir."
+    },
+    {
+      "id": 16,
+      "code": "FB.5.6",
+      "topic": "Açık anahtar",
+      "scenario": "Bir grup öğrenci proje raporunda bu kavramı yanlış yorumluyor. Öğretmenleri, kanıta dayanarak doğru açıklamayı bulmalarını istiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Açık anahtar",
+        "content": "Açık anahtar devre yolunu keser."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Anahtar açık olduğunda ampulün yanmamasının nedeni nedir",
+        "pil büyür",
+        "kablo ışık verir",
+        "ampul enerji üretir"
+      ],
+      "answer": 0,
+      "explanation": "Açık anahtar devre yolunu keser."
+    },
+    {
+      "id": 17,
+      "code": "FB.5.6",
+      "topic": "Devre şeması",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Devre şeması",
+        "content": "Devre şemaları sembollerle bağlantı biçimini gösterir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Devre şemasının temel amacı nedir",
+        "bağlantı biçimini göstermek",
+        "marka yazmak",
+        "maliyet ölçmek"
+      ],
+      "answer": 0,
+      "explanation": "Devre şemaları sembollerle bağlantı biçimini gösterir."
+    },
+    {
+      "id": 18,
+      "code": "FB.5.6",
+      "topic": "Pil sayısı",
+      "scenario": "Okul sergisinde ziyaretçiler bir düzenek inceliyor ve öğrencilerden bilimsel çıkarım yapmaları isteniyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Pil sayısı",
+        "content": "Seri devrede pil sayısı değişirse ampul parlaklığı etkilenebilir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Aynı ampul ve bağlantılarla pil sayısı artırıldığında ampul parlaklığı genellikle nasıl değişir",
+        "daima azalır",
+        "değişmez",
+        "ampul söner"
+      ],
+      "answer": 0,
+      "explanation": "Seri devrede pil sayısı değişirse ampul parlaklığı etkilenebilir."
+    },
+    {
+      "id": 19,
+      "code": "FB.5.6",
+      "topic": "Ampul sayısı",
+      "scenario": "Bir grup öğrenci proje raporunda bu kavramı yanlış yorumluyor. Öğretmenleri, kanıta dayanarak doğru açıklamayı bulmalarını istiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ampul sayısı",
+        "content": "Aynı devrede ampul sayısı artırılırsa ampullerin parlaklığı azalabilir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Özdeş ampuller seri bağlandığında ampul sayısı artırılırsa parlaklık genellikle nasıl etkilenir",
+        "azalır",
+        "sınırsız artar",
+        "renk değiştirir"
+      ],
+      "answer": 0,
+      "explanation": "Aynı devrede ampul sayısı artırılırsa ampullerin parlaklığı azalabilir."
+    },
+    {
+      "id": 20,
+      "code": "FB.5.6",
+      "topic": "Kontrollü deney",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kontrollü deney",
+        "content": "Bilimsel karşılaştırmada yalnızca bir değişken değiştirilir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Bir deneyde tek değişkeni değiştirmek neden önemlidir",
+        "tüm sonuçları eşitlemek",
+        "deneyi uzatmak",
+        "ölçümü engellemek"
+      ],
+      "answer": 0,
+      "explanation": "Bilimsel karşılaştırmada yalnızca bir değişken değiştirilir."
+    },
+    {
+      "id": 21,
+      "code": "FB.5.6",
+      "topic": "Pil",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Pil",
+        "content": "Pil devreye enerji sağlar."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Basit elektrik devresinde enerji kaynağı hangi elemandır",
+        "anahtar",
+        "pil",
+        "kablo"
+      ],
+      "answer": 0,
+      "explanation": "Pil devreye enerji sağlar."
+    },
+    {
+      "id": 22,
+      "code": "FB.5.6",
+      "topic": "Ampul",
+      "scenario": "Bir belediye/okul etkinliğinde bu konuya ilişkin karar veriliyor. Öğrenciler doğru seçeneği gerekçelendirmeye çalışıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ampul",
+        "content": "Ampul elektrik enerjisini ışık enerjisine dönüştürür."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Elektrik devresindeki ampulün temel görevi nedir",
+        "ışık vermek",
+        "akımı kesmek",
+        "enerji depolamak"
+      ],
+      "answer": 0,
+      "explanation": "Ampul elektrik enerjisini ışık enerjisine dönüştürür."
+    },
+    {
+      "id": 23,
+      "code": "FB.5.6",
+      "topic": "Kablo",
+      "scenario": "Bir gözlem günlüğünde kaydedilen veriler sınıfta tartışılıyor. Öğrenciler hangi açıklamanın verilerle uyumlu olduğunu seçiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kablo",
+        "content": "Bağlantı kabloları devre elemanları arasında iletken yol oluşturur."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Devre elemanlarını birbirine bağlayarak elektriksel yol oluşturan eleman hangisidir",
+        "ampul",
+        "kablo",
+        "anahtar"
+      ],
+      "answer": 0,
+      "explanation": "Bağlantı kabloları devre elemanları arasında iletken yol oluşturur."
+    },
+    {
+      "id": 24,
+      "code": "FB.5.6",
+      "topic": "Anahtar",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Anahtar",
+        "content": "Anahtar devreyi açıp kapatır."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Devrede elektrik akışını kontrol etmek için hangi eleman kullanılır",
+        "anahtar",
+        "ampul",
+        "duy"
+      ],
+      "answer": 0,
+      "explanation": "Anahtar devreyi açıp kapatır."
+    },
+    {
+      "id": 25,
+      "code": "FB.5.6",
+      "topic": "Kapalı devre",
+      "scenario": "Bir belediye/okul etkinliğinde bu konuya ilişkin karar veriliyor. Öğrenciler doğru seçeneği gerekçelendirmeye çalışıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kapalı devre",
+        "content": "Kapalı devrede iletken yol tamamlanır ve ampul yanabilir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Ampulün yanabilmesi için devrenin hangi durumda olması gerekir",
+        "kopuk",
+        "kapalı",
+        "eksik"
+      ],
+      "answer": 0,
+      "explanation": "Kapalı devrede iletken yol tamamlanır ve ampul yanabilir."
+    },
+    {
+      "id": 26,
+      "code": "FB.5.6",
+      "topic": "Açık anahtar",
+      "scenario": "Bir gözlem günlüğünde kaydedilen veriler sınıfta tartışılıyor. Öğrenciler hangi açıklamanın verilerle uyumlu olduğunu seçiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Açık anahtar",
+        "content": "Açık anahtar devre yolunu keser."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Anahtar açık olduğunda ampulün yanmamasının nedeni nedir",
+        "pil büyür",
+        "kablo ışık verir",
+        "ampul enerji üretir"
+      ],
+      "answer": 0,
+      "explanation": "Açık anahtar devre yolunu keser."
+    },
+    {
+      "id": 27,
+      "code": "FB.5.6",
+      "topic": "Devre şeması",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Devre şeması",
+        "content": "Devre şemaları sembollerle bağlantı biçimini gösterir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Devre şemasının temel amacı nedir",
+        "bağlantı biçimini göstermek",
+        "marka yazmak",
+        "maliyet ölçmek"
+      ],
+      "answer": 0,
+      "explanation": "Devre şemaları sembollerle bağlantı biçimini gösterir."
+    },
+    {
+      "id": 28,
+      "code": "FB.5.6",
+      "topic": "Pil sayısı",
+      "scenario": "Bir belediye/okul etkinliğinde bu konuya ilişkin karar veriliyor. Öğrenciler doğru seçeneği gerekçelendirmeye çalışıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Pil sayısı",
+        "content": "Seri devrede pil sayısı değişirse ampul parlaklığı etkilenebilir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Aynı ampul ve bağlantılarla pil sayısı artırıldığında ampul parlaklığı genellikle nasıl değişir",
+        "daima azalır",
+        "değişmez",
+        "ampul söner"
+      ],
+      "answer": 0,
+      "explanation": "Seri devrede pil sayısı değişirse ampul parlaklığı etkilenebilir."
+    },
+    {
+      "id": 29,
+      "code": "FB.5.6",
+      "topic": "Ampul sayısı",
+      "scenario": "Bir gözlem günlüğünde kaydedilen veriler sınıfta tartışılıyor. Öğrenciler hangi açıklamanın verilerle uyumlu olduğunu seçiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ampul sayısı",
+        "content": "Aynı devrede ampul sayısı artırılırsa ampullerin parlaklığı azalabilir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Özdeş ampuller seri bağlandığında ampul sayısı artırılırsa parlaklık genellikle nasıl etkilenir",
+        "azalır",
+        "sınırsız artar",
+        "renk değiştirir"
+      ],
+      "answer": 0,
+      "explanation": "Aynı devrede ampul sayısı artırılırsa ampullerin parlaklığı azalabilir."
+    },
+    {
+      "id": 30,
+      "code": "FB.5.6",
+      "topic": "Kontrollü deney",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kontrollü deney",
+        "content": "Bilimsel karşılaştırmada yalnızca bir değişken değiştirilir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Bir deneyde tek değişkeni değiştirmek neden önemlidir",
+        "tüm sonuçları eşitlemek",
+        "deneyi uzatmak",
+        "ölçümü engellemek"
+      ],
+      "answer": 0,
+      "explanation": "Bilimsel karşılaştırmada yalnızca bir değişken değiştirilir."
+    }
+  ]
+}
