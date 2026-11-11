@@ -1,0 +1,376 @@
+{
+  "id": "8-sinif-ilk-3-unite-genel-deneme",
+  "slug": "8-sinif-ilk-3-unite-genel-deneme",
+  "title": "8. Sınıf İlk 3 Ünite Genel Deneme – 20 Yeni Nesil Soru",
+  "description": "Mevsimler ve İklim, DNA ve Genetik Kod ile Basınç ünitelerinin tüm kazanımlarını kapsayan; uzun senaryolu, görselli ve çözümlü 20 özgün yeni nesil soru.",
+  "classLevel": 8,
+  "durationMin": 40,
+  "units": [
+    "Mevsimler ve İklim",
+    "DNA ve Genetik Kod",
+    "Basınç"
+  ],
+  "source": "F.8.1.1.1, F.8.1.2.1–2, F.8.2.1.1–3, F.8.2.2.1–3, F.8.2.3.1–3, F.8.2.4.1, F.8.2.5.1–3 ve F.8.3.1.1–3 kazanımları.",
+  "questions": [
+    {
+      "no": 1,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "F.8.1.1.1",
+      "skill": "Tahmin yürütme",
+      "scenario": "Fen kulübü öğrencileri mevsimlerin oluşumunu inceleyen bir model hazırlıyor. Birinci modelde Dünya, Güneş çevresinde dolanırken dönme ekseni yörünge düzlemine göre 23,5° eğik kalıyor. İkinci modelde ise öğrenciler Dünya'nın dönme eksenini yörünge düzlemine dik duracak şekilde değiştiriyor; Dünya'nın hem kendi çevresindeki dönmesi hem de Güneş çevresindeki dolanması aynen sürüyor. Öğretmen, ikinci modelde yıl boyunca gözlenecek durumu tahmin etmelerini istiyor.",
+      "image": "/denemeler/8-genel-deneme-3-unite/q01.svg",
+      "imageAlt": "Eğik ve dik eksenli iki Dünya modelinin Güneş ışınlarını aldığını gösteren şema",
+      "stem": "Bu ikinci modele göre aşağıdaki tahminlerden hangisi en uygundur?",
+      "options": [
+        "Kuzey Yarım Küre'de yıl boyunca yaz, Güney Yarım Küre'de yıl boyunca kış yaşanır.",
+        "Bir bölgede yıl boyunca Güneş ışınlarının geliş açısı ve gündüz süresi yaklaşık aynı kalacağı için belirgin mevsim farkları oluşmaz.",
+        "Mevsimler yine oluşur, çünkü mevsimleri Dünya ile Güneş arasındaki uzaklık belirler.",
+        "Dünya'nın günlük dönmesi de duracağı için gece ve gündüz oluşmaz."
+      ],
+      "answer": 1,
+      "explanation": "Mevsimler, Dünya'nın eksen eğikliği ve Güneş çevresindeki dolanması birlikte gerçekleştiği için oluşur. Eksen eğik olmasaydı bir bölgeye gelen ışınların açısı ve gündüz süresi yıl boyunca neredeyse değişmez, belirgin mevsim farkları görülmezdi. Dünya'nın kendi çevresindeki dönmesi sürdüğü için gece–gündüz yine oluşurdu."
+    },
+    {
+      "no": 2,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "F.8.1.2.1",
+      "skill": "Sınıflandırma",
+      "scenario": "Bir okulun meteoroloji köşesinde öğrenciler, haber bültenlerinden ve atlas kaynaklarından topladıkları dört ifadeyi kartlara yazıyor. Öğretmen, kartlardan bir kısmının belirli bir gün ya da kısa süre içinde yaşanan atmosfer olaylarını, bir kısmının ise bir yerin uzun yıllar boyunca görülen ortalama atmosfer özelliklerini anlattığını söylüyor. Öğrenciler kartları bu ölçüte göre iki gruba ayıracaktır.",
+      "image": "/denemeler/8-genel-deneme-3-unite/q02.svg",
+      "imageAlt": "Dört hava ve iklim ifadesinin yazılı olduğu kartlar",
+      "stem": "Numaralandırılmış kartlardan hangileri hava olayına örnektir?",
+      "options": [
+        "I ve II",
+        "II ve IV",
+        "I ve III",
+        "III ve IV"
+      ],
+      "answer": 2,
+      "explanation": "Hava olayı, belirli bir yerde kısa süre içinde görülen atmosfer durumudur (I ve III). İklim ise bir yerde uzun yıllar boyunca gözlenen hava olaylarının ortalamasıdır (II ve IV)."
+    },
+    {
+      "no": 3,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "F.8.1.2.2",
+      "skill": "Bilimsel terim bilgisi",
+      "scenario": "Dr. Selin Aksoy, bir üniversitenin araştırma merkezinde çalışmaktadır. Selin Hanım, bir şehre ait yıllarca tutulmuş sıcaklık ve yağış kayıtlarını inceleyerek bölgenin iklim özelliklerini belirliyor ve bu özelliklerdeki değişimleri yorumluyor. Günlük hava tahmini yapmayan Selin Hanım, yalnızca uzun süreli verilerle çalışmaktadır. Aşağıdaki grafik, incelediği verilerden biridir.",
+      "image": "/denemeler/8-genel-deneme-3-unite/q03.svg",
+      "imageAlt": "Bir şehrin 1991–2021 yıllarındaki ortalama sıcaklığının arttığını gösteren çizgi grafiği",
+      "stem": "Selin Aksoy'un çalıştığı bilim dalı ve bu alandaki uzmanlara verilen ad aşağıdakilerden hangisinde doğru verilmiştir?",
+      "options": [
+        "Meteoroloji – Meteorolog",
+        "Ekoloji – Ekolog",
+        "Jeoloji – Jeolog",
+        "Klimatoloji – İklim bilimci (klimatolog)"
+      ],
+      "answer": 3,
+      "explanation": "İklimi ve iklimdeki değişimleri uzun yıllık verilerle inceleyen bilim dalı klimatolojidir. Bu alanda çalışan uzmanlara iklim bilimci (klimatolog) denir."
+    },
+    {
+      "no": 4,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "F.8.2.1.1",
+      "skill": "İlişki kurma",
+      "scenario": "Biyoloji laboratuvarında çalışan Elif, hücre çekirdeğindeki kalıtım maddesiyle ilgili dört yapıyı gösteren bir poster hazırlıyor. Posterdeki yapılar, aralarındaki ilişki kurulmadan karışık sırayla yerleştirilmiş durumdadır. Elif'in öğretmeni, bir yapının diğerini içerecek biçimde bu yapıları büyükten küçüğe doğru sıralamasını istiyor.",
+      "image": "/denemeler/8-genel-deneme-3-unite/q04.svg",
+      "imageAlt": "Gen, kromozom, nükleotit ve DNA yapılarının çizimleri",
+      "stem": "Doğru sıralama aşağıdakilerden hangisidir?",
+      "options": [
+        "II – IV – I – III",
+        "I – II – III – IV",
+        "IV – II – I – III",
+        "II – I – IV – III"
+      ],
+      "answer": 0,
+      "explanation": "Kromozom, DNA'dan oluşur; DNA üzerinde çok sayıda gen bulunur; gen ise nükleotitlerin dizilişinden oluşur. Büyükten küçüğe sıralama: kromozom (II) – DNA (IV) – gen (I) – nükleotit (III)."
+    },
+    {
+      "no": 5,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "F.8.2.1.2",
+      "skill": "Model inceleme",
+      "scenario": "Bir grup öğrenci, DNA'nın yapısını renkli boncuklarla modelliyor. Modelde her boncuk bir organik bazı, iki uzun şerit ise şeker–fosfat omurgasını temsil ediyor. Öğretmen modeli kontrol ederken bazı baz çiftlerinin eşleşme kuralına uymadığını fark ediyor ve yalnızca bir baz çiftinin hatalı eşleştiğini söylüyor. Baz eşleşmelerinde adenin yalnızca timinle, guanin ise yalnızca sitozinle eşleşir.",
+      "image": "/denemeler/8-genel-deneme-3-unite/q05.svg",
+      "imageAlt": "Altı baz çiftinden oluşan DNA merdiveni modeli",
+      "stem": "Modelde hatalı eşleşmiş olan baz çifti kaç numaralıdır?",
+      "options": [
+        "1 numaralı",
+        "3 numaralı",
+        "4 numaralı",
+        "6 numaralı"
+      ],
+      "answer": 2,
+      "explanation": "DNA'da A–T ve G–C eşleşir. Şekilde 4 numaralı baz çifti G–T olarak eşleştirilmiştir; bu eşleşme kurala uymaz. Diğer baz çiftleri doğru eşleşmiştir."
+    },
+    {
+      "no": 6,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "F.8.2.1.3",
+      "skill": "Süreç yorumlama",
+      "scenario": "Bir bakteri hücresi bölünmeye hazırlanırken DNA'sı kendini eşler. Öğrenciler bu olayı model üzerinde inceleyerek ana DNA'nın iki zincirinin ayrıldığını ve her zincire uygun yeni bir zincirin yapıldığını gösteriyor. Şekilde ana DNA'nın bir bölümü ile eşlenme sonunda oluşan iki DNA molekülü verilmiştir; yeni zincirlerdeki bazlar soru işaretiyle gösterilmiştir.",
+      "image": "/denemeler/8-genel-deneme-3-unite/q06.svg",
+      "imageAlt": "Ana DNA ve eşlenme sonucu oluşan iki DNA molekülünün baz dizileri",
+      "stem": "Buna göre DNA-1'in yeni zincirindeki bazların sırası ve oluşan DNA'ların özelliği aşağıdakilerden hangisinde doğru verilmiştir?",
+      "options": [
+        "T–A–G–C–C–A–T; her DNA bir eski, bir yeni zincirden oluşur.",
+        "A–T–C–G–G–T–A; her DNA bir eski, bir yeni zincirden oluşur.",
+        "A–T–C–G–G–T–A; DNA-1 tamamen yeni, DNA-2 tamamen eski zincirden oluşur.",
+        "T–A–G–C–C–A–T; iki DNA'nın tüm zincirleri yenidir."
+      ],
+      "answer": 1,
+      "explanation": "Yeni zincir, eski zincire baz eşleşme kuralına göre (A–T, G–C) tamamlayıcı olarak yapılır: T–A–G–C–C–A–T eski zincirine karşılık A–T–C–G–G–T–A gelir. Eşlenmede oluşan her DNA molekülü bir eski, bir yeni zincir taşır."
+    },
+    {
+      "no": 7,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "F.8.2.2.1",
+      "skill": "Kavram bilgisi",
+      "scenario": "Mendel'in bezelyelerle yaptığı çalışmaları inceleyen bir öğrenci, kalıtımla ilgili kavramları örnekleriyle bir tabloya yazıyor. Bezelyede yuvarlak tohum şekli geni (Y) baskın, buruşuk tohum şekli geni (y) çekiniktir. Öğrencinin hazırladığı tabloda yalnızca bir kavramın tanımı yanlış yazılmıştır.",
+      "image": "/denemeler/8-genel-deneme-3-unite/q07.svg",
+      "imageAlt": "Alel gen, baskın gen, heterozigot ve fenotip kavramlarının tanımlarını içeren tablo",
+      "stem": "Tablodaki hangi satırda yanlış tanım yazılmıştır?",
+      "options": [
+        "I",
+        "II",
+        "III",
+        "IV"
+      ],
+      "answer": 3,
+      "explanation": "Fenotip, genotipin dış görünüşe yansımasıdır (ör. yuvarlak tohum). Bireyin sahip olduğu gen çifti (Yy) ise genotiptir. Bu nedenle IV numaralı satırdaki tanım yanlıştır."
+    },
+    {
+      "no": 8,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "F.8.2.2.2",
+      "skill": "Çaprazlama problemi",
+      "scenario": "Bir tarım okulunda öğrenciler, tohum rengi için sarı geni (S) baskın, yeşil geni (s) çekinik olan bezelyelerle çaprazlama yapıyor. Her ikisi de heterozigot ve sarı tohumlu (Ss) iki bezelye bitkisi çaprazlanıyor ve bu çaprazlamadan 80 tohum elde ediliyor. Öğrenciler tohumların renklerini Punnett karesi kullanarak tahmin edecektir.",
+      "image": "/denemeler/8-genel-deneme-3-unite/q08.svg",
+      "imageAlt": "Ss × Ss çaprazlaması için boş bırakılmış Punnett karesi",
+      "stem": "Elde edilen 80 tohumun kaç tanesinin yeşil renkli olması beklenir?",
+      "options": [
+        "20",
+        "10",
+        "40",
+        "60"
+      ],
+      "answer": 0,
+      "explanation": "Ss × Ss çaprazlamasında yavruların genotipleri SS, Ss, Ss, ss olur. Dörtte biri (ss) yeşildir. 80 × 1/4 = 20 tohumun yeşil olması beklenir."
+    },
+    {
+      "no": 9,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "F.8.2.2.2",
+      "skill": "Soy ağacı yorumlama",
+      "scenario": "Bir ailede kulak memesinin serbest ya da yapışık olması tek gen çiftiyle belirlenmektedir. Soy ağacında, kulak memesi serbest olan anne ve baba ile üç çocukları gösterilmiştir. Çocuklardan yalnızca biri yapışık kulak memesine sahiptir (koyu renkli sembol). Serbest kulak memesi geni (E) baskın, yapışık kulak memesi geni (e) çekiniktir.",
+      "image": "/denemeler/8-genel-deneme-3-unite/q09.svg",
+      "imageAlt": "Anne, baba ve üç çocuğun gösterildiği soy ağacı",
+      "stem": "Bu soy ağacına göre aşağıdaki yargılardan hangisi kesinlikle doğrudur?",
+      "options": [
+        "Anne ve babanın genotipleri homozigot baskındır (EE).",
+        "Anne ve babanın genotipleri heterozigottur (Ee).",
+        "II-1 bireyinin genotipi mutlaka EE'dir.",
+        "Yapışık kulak memesi geni baskın gendir."
+      ],
+      "answer": 1,
+      "explanation": "Çekinik özelliği taşıyan II-2 bireyi ee genotipindedir ve her bir e alelini bir ebeveyninden almıştır. Anne ve baba serbest kulak memeli (baskın fenotip) olduğuna göre ikisi de Ee'dir. II-1 ve II-3 bireyleri EE ya da Ee olabilir."
+    },
+    {
+      "no": 10,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "F.8.2.2.3",
+      "skill": "Tartışma ve gerekçelendirme",
+      "scenario": "Genetik danışmanlık merkezini ziyaret eden öğrenciler, akraba evliliklerinin genetik hastalık riskini nasıl etkilediğini araştırıyor. Şekilde, ortak büyükbabası çekinik bir hastalık geni (a) taşıyan iki kuzenin evliliği ile birbiriyle akraba olmayan iki kişinin evliliği karşılaştırılıyor. Grupta bir öğrenci 'Akraba evliliği DNA'da yeni hatalar oluşturur.' derken bir başka öğrenci 'Eşlerin ortak atadan gelen aynı çekinik geni taşıma ihtimali artar.' diyor.",
+      "image": "/denemeler/8-genel-deneme-3-unite/q10.svg",
+      "imageAlt": "Akraba olan ve olmayan iki evliliğin soy ağacı karşılaştırması",
+      "stem": "Akraba evliliklerinde çekinik genetik hastalıkların görülme riskinin artmasının nedeni aşağıdakilerden hangisidir?",
+      "options": [
+        "Akraba evliliğinde DNA'da yeni hataların oluşması",
+        "Çekinik genlerin eş değerinde baskın gene dönüşmesi",
+        "Hastalıkların eşten eşe bulaşarak çocuklara geçmesi",
+        "Eşlerin ortak atadan aynı çekinik geni alma ihtimalinin yüksek olması"
+      ],
+      "answer": 3,
+      "explanation": "Akraba bireyler ortak atalardan gelen aynı çekinik geni taşıyor olabilir. İki eşin de aynı çekinik geni taşıması hâlinde çocukların bu geni çift hâlde (aa) alma ihtimali artar ve hastalık görülebilir. Akraba evliliği DNA'da yeni mutasyon oluşturmaz, hastalık bulaşıcı değildir."
+    },
+    {
+      "no": 11,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "F.8.2.3.1",
+      "skill": "Örnekten kavrama ulaşma",
+      "scenario": "Bir bahçıvan, normalde yeşil yapraklı olan bir bitkinin yeni çıkan bir dalının yapraklarının beyaz renkli olduğunu fark ediyor. Araştırmacılar, bu dalın hücrelerinde yeşil pigment yapımını sağlayan genin bir bazının değiştiğini belirliyor. Beyaz yapraklı daldan alınan tohumlardan yetişen bitkilerin de yapraklarının beyaz olduğu gözleniyor. Bitki, kimyasal maddelerin yoğun kullanıldığı bir alanda yetişmektedir.",
+      "image": "/denemeler/8-genel-deneme-3-unite/q11.svg",
+      "imageAlt": "Normal ve değişen gen dizileri ile yeşil ve beyaz yapraklı bitkiler",
+      "stem": "Bu durumla ilgili aşağıdaki yargılardan hangisi doğrudur?",
+      "options": [
+        "Mutasyondur; çünkü DNA'daki baz dizisi değişmiştir ve değişim yavrulara aktarılmıştır.",
+        "Modifikasyondur; çünkü değişim çevredeki kimyasal maddenin etkisiyle oluşmuştur.",
+        "Mutasyon değildir; çünkü yalnızca yaprak rengi değişmiştir.",
+        "Modifikasyondur; çünkü yeni özellik tohumlarla aktarılmıştır."
+      ],
+      "answer": 0,
+      "explanation": "Mutasyon, DNA'daki baz dizisinde meydana gelen ani ve kalıcı değişimdir. Bu değişim üreme hücreleri ya da tohumlar yoluyla yavrulara aktarılabilir. Verilen örnekte baz dizisi değiştiği ve değişim yavrulara geçtiği için olay mutasyondur."
+    },
+    {
+      "no": 12,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "F.8.2.3.2",
+      "skill": "Veri yorumlama",
+      "scenario": "Bir öğrenci, aynı bitkiden aldığı iki çeliği (aynı genotip) farklı koşullarda yetiştiriyor. P bitkisi bol ışıklı ve gübreli bir ortamda, R bitkisi ise gölgede ve az gübreli bir toprakta büyütülüyor. Sekiz hafta sonunda yapılan ölçümlerde P bitkisinin boyu 40 cm, R bitkisinin boyu 22 cm bulunuyor.",
+      "image": "/denemeler/8-genel-deneme-3-unite/q12.svg",
+      "imageAlt": "Bol ışık ve gölgede yetişen iki bitkinin boylarının karşılaştırıldığı şekil",
+      "stem": "Bu deney sonuçlarıyla ilgili aşağıdaki çıkarımlardan hangisi doğrudur?",
+      "options": [
+        "Boy farkı bir mutasyondur; çünkü iki bitkinin genleri artık farklıdır.",
+        "Gölgedeki bitkinin tohumları da her ortamda kısa boylu bitkiler verecektir.",
+        "Boy farkı çevre koşullarından kaynaklanan bir modifikasyondur; genler değişmediği için kalıtsal değildir.",
+        "Boy farkı, iki bitkinin farklı genotipe sahip olduğunu gösterir."
+      ],
+      "answer": 2,
+      "explanation": "Çelikler aynı bitkiden alındığı için genotipleri aynıdır. Boy farkı ışık ve gübre gibi çevre koşullarından kaynaklanır; bu tür değişimler modifikasyondur, genleri değiştirmez ve yavrulara aktarılmaz."
+    },
+    {
+      "no": 13,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "F.8.2.3.3",
+      "skill": "Karşılaştırma ve çıkarım",
+      "scenario": "Bir fen kulübü öğrencileri, canlılarda görülen dört değişimi inceleyerek her birinin yavrulara geçip geçmediğini ve ortam koşulları değiştiğinde özelliğin kalıp kalmadığını araştırıyor. Elde ettikleri bilgiler tabloda verilmiştir. Öğrenciler mutasyon ile modifikasyon arasındaki farklardan yararlanarak tabloyu yorumlayacaktır.",
+      "image": "/denemeler/8-genel-deneme-3-unite/q13.svg",
+      "imageAlt": "Dört değişimin yavruya geçme ve ortam değişince kalma durumunu gösteren tablo",
+      "stem": "Tablodaki hangi değişimler mutasyona örnektir?",
+      "options": [
+        "I ve III",
+        "II ve IV",
+        "I ve IV",
+        "II ve III"
+      ],
+      "answer": 1,
+      "explanation": "Mutasyon DNA'daki kalıcı değişimdir; yavrulara geçer ve ortam değişse de kalır (II ve IV). Modifikasyon ise çevre koşullarının etkisiyle oluşur, yavrulara geçmez ve ortam değişince kaybolabilir (I ve III)."
+    },
+    {
+      "no": 14,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "F.8.2.4.1",
+      "skill": "Gözlemden çıkarım",
+      "scenario": "Bir araştırmacı, farklı iklim bölgelerinde yaşayan üç tilki türünün kulak uzunluklarını ve yaşadıkları bölgelerin ortalama sıcaklıklarını karşılaştırıyor. Tilkilerin kulaklarının kan damarlarından zengin olduğunu ve vücut ısısının önemli bir kısmının kulaklardan çevreye verildiğini biliyor. Elde ettiği verileri grafikle gösteriyor.",
+      "image": "/denemeler/8-genel-deneme-3-unite/q14.svg",
+      "imageAlt": "Üç tilki türünün kulak uzunluklarını ve ortalama sıcaklıklarını gösteren sütun grafiği",
+      "stem": "Grafikteki veriler ve verilen bilgi birlikte değerlendirildiğinde aşağıdaki çıkarımlardan hangisi yapılabilir?",
+      "options": [
+        "Kutup tilkisinin küçük kulakları ısı kaybını artırarak soğukta hayatta kalmasını sağlar.",
+        "Kulak uzunluğu, tilkilerin yaşadığı ortamın sıcaklığından bağımsızdır.",
+        "Kızıl tilkinin kulakları, kutup tilkisine göre ısı kaybını azaltacak şekilde daha uzundur.",
+        "Çöl tilkisinin büyük kulakları fazla ısıyı çevreye vererek vücudunu serin tutar; bu, yaşadığı sıcak ortama uyumunu gösterir."
+      ],
+      "answer": 3,
+      "explanation": "Sıcak bölgede yaşayan çöl tilkisinin kulakları büyüktür; büyük yüzey ısının çevreye verilmesini kolaylaştırır. Soğuk bölgedeki kutup tilkisinin küçük kulakları ısı kaybını azaltır. Bu özellikler canlıların yaşadıkları çevreye uyumuna (adaptasyon) örnektir."
+    },
+    {
+      "no": 15,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "F.8.2.5.1",
+      "skill": "İlişkilendirme",
+      "scenario": "Diyabet hastaları için gerekli olan insülin hormonu, günümüzde büyük ölçüde bakteriler kullanılarak üretilmektedir. Bilim insanları, insan hücrelerinden insülin yapımını sağlayan geni ayırıyor ve bu geni bakterinin DNA'sına yerleştiriyor. Bu bakteriler çoğaldıkça insülin üretimi de artıyor. Şekilde işlemin basamakları gösterilmiştir.",
+      "image": "/denemeler/8-genel-deneme-3-unite/q15.svg",
+      "imageAlt": "İnsülin geninin bakteriye aktarılarak insülin üretilmesinin dört basamağı",
+      "stem": "Bu uygulamayla ilgili aşağıdaki ifadelerden hangisi genetik mühendisliği ile biyoteknoloji arasındaki ilişkiyi doğru açıklar?",
+      "options": [
+        "İnsülin geninin bakteriye aktarılması genetik mühendisliği yöntemidir; bu yöntemle insülin üretilmesi ise biyoteknolojik bir uygulamadır.",
+        "İnsülin üretimi biyoteknolojik bir uygulama değildir; çünkü canlıdan yararlanılmamıştır.",
+        "İnsülin geninin bakteriye aktarılması biyoteknolojidir; genetik mühendisliği ise yalnızca bitkilerde kullanılır.",
+        "Bakterinin insülin üretmesi, bakterinin kendi genlerinde meydana gelen mutasyonun sonucudur."
+      ],
+      "answer": 0,
+      "explanation": "Biyoteknoloji, canlıların veya canlı yapılarının insanın yararına ürün elde etmek için kullanılmasıdır. Genetik mühendisliği ise genlerin ayrılıp başka bir canlıya aktarılması gibi gen düzeyinde yapılan müdahalelerdir. İnsülin üretiminde genetik mühendisliği yöntemleri biyoteknolojik üretimde kullanılmıştır."
+    },
+    {
+      "no": 16,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "F.8.2.5.2",
+      "skill": "Yarar–zarar değerlendirmesi",
+      "scenario": "Bir okulda 'Genetiği değiştirilmiş (GDO'lu) mısır' konusunda tartışma düzenleniyor. Öğrenciler, geleneksel mısır ile böceklere dayanıklı GDO'lu mısırın verim, ilaçlama sayısı ve tohum maliyetini karşılaştıran grafikleri inceliyor. Ardından tartışmada öne sürülen dört görüşü kartlara yazıyorlar. Öğretmen, kartlardan bazılarının uygulamanın yararlı, bazılarının ise zararlı ya da riskli yönlerini anlattığını belirtiyor.",
+      "image": "/denemeler/8-genel-deneme-3-unite/q16.svg",
+      "imageAlt": "Geleneksel ve GDO'lu mısırın verim, ilaçlama ve tohum maliyetini karşılaştıran grafikler ile dört görüş kartı",
+      "stem": "Numaralandırılmış kartlardan hangileri bu uygulamanın yararlı yönlerine örnektir?",
+      "options": [
+        "I ve II",
+        "II ve III",
+        "I ve IV",
+        "III ve IV"
+      ],
+      "answer": 2,
+      "explanation": "Verimin artması, ilaç kullanımının azalması ve besin değeri yüksek ürünler yararlı yönlerdir (I ve IV). Uzun vadeli etkilerin bilinmemesi ve tohum maliyetinin artarak firmalara bağımlılık oluşturması ise riskli ya da zararlı yönlerdir (II ve III)."
+    },
+    {
+      "no": 17,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "F.8.2.5.3",
+      "skill": "Gelecek tahmini",
+      "scenario": "Bir araştırma kuruluşu, dünya nüfusunun ve kişi başına düşen tarım alanının yıllara göre nasıl değiştiğini gösteren örnek verilerle bir rapor hazırlıyor. Raporda nüfusun artmaya, tarım için ayrılabilecek alanın ise azalmaya devam edeceği öngörülüyor. Rapor hazırlayıcıları, bu eğilimler sürerse gelecekte genetik mühendisliği ve biyoteknoloji uygulamalarının hangi yönde gelişebileceğini tahmin etmeye çalışıyor.",
+      "image": "/denemeler/8-genel-deneme-3-unite/q17.svg",
+      "imageAlt": "Dünya nüfusunun arttığını, kişi başına tarım alanının azaldığını gösteren iki çizgi grafiği",
+      "stem": "Grafiklerdeki eğilimler dikkate alındığında bu alandaki en olası gelişme aşağıdakilerden hangisidir?",
+      "options": [
+        "Birim alandan daha fazla ürün veren, kuraklığa ve hastalıklara dayanıklı bitki çeşitlerini geliştirmeye yönelik çalışmaların artması",
+        "Biyoteknolojik uygulamaların tamamen bırakılıp yalnızca doğal seçilime güvenilmesi",
+        "Nüfus arttığı için canlılarda mutasyon sayısının kendiliğinden azalması",
+        "Genetik mühendisliğinin yalnızca insan sağlığı alanında kullanılmasının zorunlu hâle gelmesi"
+      ],
+      "answer": 0,
+      "explanation": "Nüfus arttıkça besin ihtiyacı da artar; tarım alanı ise azalmaktadır. Bu durumda daha az alandan daha fazla ürün elde etmek için genetik mühendisliğiyle verimi yüksek, kuraklığa ve hastalıklara dayanıklı bitki çeşitlerinin geliştirilmesi beklenir."
+    },
+    {
+      "no": 18,
+      "unit": "Basınç",
+      "outcome": "F.8.3.1.1",
+      "skill": "Deney tasarlama",
+      "scenario": "Bir öğrenci, katı basıncını etkileyen değişkenleri keşfetmek için dört farklı kutunun ağırlığını ve zemine temas eden yüzey alanını ölçüp şekilde gösteriyor. Kutular aynı kum havuzunun üzerine sırayla bırakılacaktır. Öğrenci, bir seferde yalnızca bir değişkeni değiştirerek kumdaki çökme miktarını karşılaştırmak istiyor.",
+      "image": "/denemeler/8-genel-deneme-3-unite/q18.svg",
+      "imageAlt": "Ağırlıkları ve taban alanları farklı dört kutunun çizimi",
+      "stem": "Öğrenci, katı basıncının yalnızca temas yüzey alanına bağlı olarak değiştiğini göstermek için hangi iki kutuyu kullanmalıdır ve bu iki kutudan hangisi kumda daha fazla çökme oluşturur?",
+      "options": [
+        "K ve N; N'nin kumda oluşturduğu çökme daha fazladır.",
+        "K ve L; K'nin kumda oluşturduğu çökme daha fazladır.",
+        "L ve M; M'nin kumda oluşturduğu çökme daha fazladır.",
+        "K ve M; K'nin kumda oluşturduğu çökme daha fazladır."
+      ],
+      "answer": 1,
+      "explanation": "Yüzey alanının etkisi için ağırlıkları eşit olan K ve L karşılaştırılmalıdır. Basınç = Ağırlık / Yüzey alanı olduğundan P(K) = 40/10 = 4 N/cm², P(L) = 40/20 = 2 N/cm² bulunur. Basıncı daha büyük olan K, kumda daha fazla çökme oluşturur."
+    },
+    {
+      "no": 19,
+      "unit": "Basınç",
+      "outcome": "F.8.3.1.2",
+      "skill": "Tahmini test etme",
+      "scenario": "Bir öğrenci 'Bir kaptaki sıvının miktarı arttıkça kabın tabanındaki sıvı basıncı da artar.' tahmininde bulunuyor. Tahminini test etmek için şekildeki dört kapta sıvı basıncını manometreyle ölçüyor. Kaplarda aynı cins su ya da tuzlu su bulunuyor; kapların şekilleri, sıvı derinlikleri ve sıvı miktarları farklıdır. Manometre değerleri kapların altında gösterilmiştir.",
+      "image": "/denemeler/8-genel-deneme-3-unite/q19.svg",
+      "imageAlt": "Dört farklı kapta derinlik, sıvı cinsi ve manometre değerleri",
+      "stem": "Verilere göre öğrencinin tahmini ile ilgili aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        "Doğrudur; A, B ve D kaplarında sıvı miktarı arttıkça basınç artmaktadır.",
+        "Doğrudur; B kabında sıvı miktarı C kabından fazla olduğu için basınç daha büyüktür.",
+        "Doğru değildir; B ve C kaplarında sıvı miktarı farklı olduğu hâlde basınç aynıdır. Basınç sıvının derinliğine ve yoğunluğuna bağlıdır.",
+        "Doğru değildir; sıvı basıncı yalnızca kabın genişliğine bağlıdır."
+      ],
+      "answer": 2,
+      "explanation": "B ve C kaplarında sıvı derinliği 20 cm ve sıvı aynı olduğu için tabandaki basınç eşittir (2,0 kPa); B'deki sıvı miktarı daha fazladır. Demek ki miktar basıncı belirlemez. A ile B arasındaki fark derinlikten, B ile D arasındaki fark yoğunluktan kaynaklanır."
+    },
+    {
+      "no": 20,
+      "unit": "Basınç",
+      "outcome": "F.8.3.1.3",
+      "skill": "Uygulamaları ilişkilendirme",
+      "scenario": "Bir mühendislik fuarına katılan öğrenciler, günlük yaşam ve teknolojide karşılaştıkları dört uygulamayı, dayandıkları basınç özelliğiyle eşleştirerek bir panoya yazıyor. Öğretmen, katı, sıvı ve gaz basıncının özelliklerini hatırlatarak panodaki eşleştirmelerden yalnızca birinin yanlış olduğunu söylüyor.",
+      "image": "/denemeler/8-genel-deneme-3-unite/q20.svg",
+      "imageAlt": "Dört uygulama ile dayandıkları basınç özelliklerini gösteren tablo",
+      "stem": "Panodaki hangi satırdaki eşleştirme yanlıştır?",
+      "options": [
+        "I",
+        "II",
+        "III",
+        "IV"
+      ],
+      "answer": 3,
+      "explanation": "Vantuzun düz yüzeye yapışması açık hava basıncıyla açıklanır; vantuz ile yüzey arasındaki hava dışarı çıkınca dış hava basıncı vantuzu yüzeye bastırır. Sıvı basıncının derinlikle artması bu olayı açıklamaz. Diğer satırlardaki eşleştirmeler doğrudur."
+    }
+  ]
+}
