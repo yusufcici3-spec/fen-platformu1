@@ -1,0 +1,555 @@
+{
+  "id": "5-sinif-2-3-unite-yeni-nesil-30",
+  "slug": "5-sinif-2-3-unite-yeni-nesil-30",
+  "title": "5. Sınıf 2. ve 3. Ünite Yeni Nesil Deneme",
+  "description": "Kuvveti Tanıyalım ve Canlıların Yapısına Yolculuk ünitelerinden 30 özgün, senaryolu ve yorumlama odaklı soru. Türkiye Yüzyılı Maarif Modeli ile uyumludur.",
+  "classLevel": 5,
+  "durationMin": 60,
+  "units": [
+    "Kuvveti Tanıyalım",
+    "Canlıların Yapısına Yolculuk"
+  ],
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı, 5. sınıf 2. ve 3. üniteler. Sorular özgün olarak hazırlanmıştır.",
+  "questions": [
+    {
+      "no": 1,
+      "unit": "Kuvveti Tanıyalım",
+      "outcome": "FB.5.2.1",
+      "skill": "Veri yorumlama",
+      "scenario": "Bir öğrenci laboratuvarda dinamometreyle farklı cisimleri ölçüyor. İlk cisim dinamometrede 2 N, ikinci cisim 5 N, üçüncü cisim 8 N değerini gösteriyor. Öğrenci ölçüm sonuçlarını defterine kaydedip cisimlere etki eden kuvvetleri karşılaştırıyor.",
+      "stem": "Ölçüm sonuçlarına göre hangi cisme etki eden kuvvet en büyüktür?",
+      "options": [
+        "Birinci cisim",
+        "İkinci cisim",
+        "Üçüncü cisim",
+        "Üç cismin kuvveti eşittir"
+      ],
+      "answer": 2,
+      "explanation": "Dinamometrede ölçülen değer büyüdükçe kuvvet büyüklüğü artar. 8 N en büyük değerdir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 2,
+      "unit": "Kuvveti Tanıyalım",
+      "outcome": "FB.5.2.1",
+      "skill": "Araç seçimi",
+      "scenario": "Fen öğretmeni, öğrencilerinden bir çantayı çekmek için uygulanan kuvvetin büyüklüğünü ölçmelerini istiyor. Masaya farklı ölçüm araçları yerleştiriliyor: termometre, eşit kollu terazi, dinamometre ve kronometre. Öğrencilerin doğru aracı seçmesi gerekiyor.",
+      "stem": "Çantaya uygulanan kuvveti ölçmek için hangi araç kullanılmalıdır?",
+      "options": [
+        "Termometre",
+        "Eşit kollu terazi",
+        "Dinamometre",
+        "Kronometre"
+      ],
+      "answer": 2,
+      "explanation": "Kuvvetin büyüklüğü dinamometre ile ölçülür. Diğer araçlar sıcaklık, kütle ve zaman ölçer.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 3,
+      "unit": "Kuvveti Tanıyalım",
+      "outcome": "FB.5.2.1",
+      "skill": "Ölçüm aralığı değerlendirme",
+      "scenario": "Bir laboratuvarda üç dinamometre bulunuyor. Kırmızı dinamometre en fazla 5 N, mavi dinamometre en fazla 10 N, yeşil dinamometre ise en fazla 20 N kuvvet ölçebiliyor. Öğrenciler yaklaşık 8 N olduğu tahmin edilen bir kuvveti ölçecek.",
+      "stem": "Ölçüm için en uygun dinamometre hangisidir?",
+      "options": [
+        "Yalnız kırmızı",
+        "Yalnız mavi",
+        "Yalnız yeşil",
+        "Kırmızı ve mavi"
+      ],
+      "answer": 1,
+      "explanation": "8 N, 5 N sınırını aşar ancak 10 N sınırının altındadır. En uygun seçenek mavi dinamometredir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 4,
+      "unit": "Kuvveti Tanıyalım",
+      "outcome": "FB.5.2.1",
+      "skill": "Model yorumlama",
+      "scenario": "Ece, dinamometrenin içine bir yay yerleştirildiğini ve kuvvet uygulandığında yayın uzadığını gözlemliyor. Önce yaya küçük bir kuvvet uyguluyor, sonra kuvveti artırıyor. İkinci durumda yayın daha fazla uzadığını görüyor.",
+      "stem": "Bu gözleme göre dinamometrenin çalışma ilkesi hangisidir?",
+      "options": [
+        "Yayın kuvvet etkisiyle şekil değiştirmesi",
+        "Cismin renginin değişmesi",
+        "Sıcaklığın artması",
+        "Cismin kütlesinin yok olması"
+      ],
+      "answer": 0,
+      "explanation": "Dinamometre içindeki esnek yay, uygulanan kuvvetle uzar. Uzama miktarı kuvvetin büyüklüğünü gösterir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 5,
+      "unit": "Kuvveti Tanıyalım",
+      "outcome": "FB.5.2.1",
+      "skill": "Hata analizi",
+      "scenario": "Bir öğrenci, ölçebileceği en fazla 5 N olan dinamometreye 9 N büyüklüğünde kuvvet uyguluyor. Yayın sınırından fazla uzadığını fark ediyor. Öğretmeni, ölçüm aracının kapasitesinin aşılmasının doğru sonuç vermeyeceğini açıklıyor.",
+      "stem": "Öğrencinin yaptığı temel hata hangisidir?",
+      "options": [
+        "Dinamometreyi yatay tutması",
+        "Ölçüm sınırını aşan kuvvet uygulaması",
+        "Kuvveti Newton ile ifade etmesi",
+        "Yaylı ölçüm aracı kullanması"
+      ],
+      "answer": 1,
+      "explanation": "Dinamometreler belirli bir en büyük kuvvete kadar ölçüm yapar. Kapasite aşılırsa araç zarar görebilir ve doğru ölçüm yapılamaz.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 6,
+      "unit": "Kuvveti Tanıyalım",
+      "outcome": "FB.5.2.1",
+      "skill": "Birim bilgisi",
+      "scenario": "Okulun bilim panosunda kuvvet ölçümlerinin birimleri tanıtılıyor. Panoda Newton biriminin N harfiyle gösterildiği, kütle biriminin ise kilogram olduğu yazıyor. Bir öğrenci, dinamometrede 4 N değerini görünce bu değeri 4 kilogram olarak defterine geçiriyor.",
+      "stem": "Öğrencinin notundaki yanlışlık nasıl düzeltilmelidir?",
+      "options": [
+        "4 N, 4 metre olarak yazılmalıdır.",
+        "4 N, 4 saniye olarak yazılmalıdır.",
+        "4 N, kuvvetin Newton cinsinden değeridir; kilogram kütle birimidir.",
+        "Newton ve kilogram aynı büyüklüğün birimleridir."
+      ],
+      "answer": 2,
+      "explanation": "Newton kuvvet birimidir. Kilogram ise kütle birimidir; birbirlerinin yerine kullanılamaz.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 7,
+      "unit": "Kuvveti Tanıyalım",
+      "outcome": "FB.5.2.1",
+      "skill": "Karşılaştırma",
+      "scenario": "Aynı özellikteki iki dinamometreden birincisinin yayı daha kalın, ikincisinin yayı daha ince yapılmıştır. Öğrenciler dinamometrelerin hangi tür kuvvetleri ölçmede kullanılabileceğini tartışıyor. Öğretmen, yayların esneklik özelliklerinin ölçüm aralığını etkileyebileceğini belirtiyor.",
+      "stem": "Genel olarak daha kalın ve sert yay kullanılan dinamometre için hangi yorum yapılabilir?",
+      "options": [
+        "Her zaman daha küçük kuvvetleri ölçer.",
+        "Daha büyük kuvvetleri ölçmeye uygun tasarlanabilir.",
+        "Kuvvet ölçemez.",
+        "Yalnızca sıcaklık ölçer."
+      ],
+      "answer": 1,
+      "explanation": "Yayın özellikleri dinamometrenin ölçüm aralığını etkiler. Daha sert yaylı dinamometreler uygun tasarımla daha büyük kuvvetleri ölçebilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 8,
+      "unit": "Kuvveti Tanıyalım",
+      "outcome": "FB.5.2.2",
+      "skill": "Kütle-ağırlık ayrımı",
+      "scenario": "Bir öğrenci, Dünya’da kütlesi 3 kg olan bir cismin Ay’a götürüldüğünde de 3 kg kütleye sahip olduğunu öğreniyor. Ancak cismin ağırlığının Ay’da daha küçük olacağını okuyor. Öğrenci iki kavramı karşılaştıran bir açıklama yazıyor.",
+      "stem": "Aşağıdaki açıklamalardan hangisi doğrudur?",
+      "options": [
+        "Kütle bulunduğu yere göre değişir, ağırlık değişmez.",
+        "Kütle değişmez; ağırlık çekim kuvvetine bağlı olarak değişebilir.",
+        "Kütle ve ağırlık aynı kavramdır.",
+        "Ay’da cismin hem kütlesi hem ağırlığı sıfır olur."
+      ],
+      "answer": 1,
+      "explanation": "Kütle madde miktarıdır ve konuma göre değişmez. Ağırlık, yer çekimine bağlı kuvvettir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 9,
+      "unit": "Kuvveti Tanıyalım",
+      "outcome": "FB.5.2.2",
+      "skill": "Günlük yaşamla ilişkilendirme",
+      "scenario": "Bir market çalışanı, dolu alışveriş arabasını boş arabaya göre itmekte daha çok zorlanıyor. Arabaların tekerlekleri aynı, zemin aynı ve itme yönü aynıdır. Çalışan, dolu arabanın hareket ettirilmesi için daha büyük kuvvet gerektiğini fark ediyor.",
+      "stem": "Bu durumun temel nedeni hangisidir?",
+      "options": [
+        "Dolu arabanın kütlesinin daha fazla olması",
+        "Dolu arabanın renginin farklı olması",
+        "Boş arabanın yer çekiminden etkilenmemesi",
+        "Dolu arabanın zamanının daha kısa olması"
+      ],
+      "answer": 0,
+      "explanation": "Kütlesi daha büyük olan cismi hareket ettirmek veya hareketini değiştirmek için genellikle daha büyük kuvvet gerekir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 10,
+      "unit": "Kuvveti Tanıyalım",
+      "outcome": "FB.5.2.3",
+      "skill": "Sürtünme kuvvetini yorumlama",
+      "scenario": "Aynı oyuncak araba önce pürüzsüz fayans zeminde, sonra halı üzerinde aynı noktadan ve aynı şekilde serbest bırakılıyor. Fayans üzerinde daha uzun mesafe giden araba halıda daha kısa mesafede duruyor. Öğrenciler iki yüzeyi karşılaştırıyor.",
+      "stem": "Arabanın halıda daha kısa mesafe gitmesinin en uygun açıklaması hangisidir?",
+      "options": [
+        "Halıda sürtünme kuvvetinin daha büyük olması",
+        "Halıda yer çekiminin ortadan kalkması",
+        "Fayansın arabaya enerji vermesi",
+        "Arabanın kütlesinin halıda artması"
+      ],
+      "answer": 0,
+      "explanation": "Halı daha pürüzlü olduğundan araba ile zemin arasındaki sürtünme genellikle daha büyüktür. Araba daha çabuk yavaşlar.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 11,
+      "unit": "Kuvveti Tanıyalım",
+      "outcome": "FB.5.2.3",
+      "skill": "Deney tasarlama",
+      "scenario": "Öğrenciler sürtünmenin yüzey türüne bağlı olup olmadığını araştırmak istiyor. Aynı oyuncak arabayı aynı yükle, aynı rampadan bırakacaklar. Deneyde yalnızca arabanın ilerlediği zemin değiştirilecek: tahta, kumaş ve zımpara kâğıdı.",
+      "stem": "Adil bir deney yapmak için öğrencilerin sabit tutması gereken değişkenlerden biri hangisidir?",
+      "options": [
+        "Zemin türü",
+        "Arabanın bırakıldığı yükseklik",
+        "Ölçülen durma mesafesi",
+        "Zeminin pürüzlülüğü"
+      ],
+      "answer": 1,
+      "explanation": "Yalnızca zemin türü değiştirilmelidir. Rampanın yüksekliği ve araba gibi diğer koşullar aynı tutulmalıdır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 12,
+      "unit": "Kuvveti Tanıyalım",
+      "outcome": "FB.5.2.3",
+      "skill": "Yarar-zarar değerlendirme",
+      "scenario": "Kışın buzlu yollarda yürümek zorlaşır. Belediye ekipleri bazı kaldırımlara kum döküyor. Kum, ayakkabı ile zemin arasındaki tutunmayı artırarak kayma riskini azaltıyor. Öğrenciler sürtünmenin günlük yaşamdaki etkilerini tartışıyor.",
+      "stem": "Bu uygulamada sürtünme kuvvetinin hangi etkisinden yararlanılır?",
+      "options": [
+        "Hareketi her zaman hızlandırmasından",
+        "Yüzeylerin birbirine tutunmasını artırmasından",
+        "Cisimlerin kütlesini azaltmasından",
+        "Yer çekimini yok etmesinden"
+      ],
+      "answer": 1,
+      "explanation": "Kum yüzeyi daha tutunabilir hâle getirerek ayakkabı ile zemin arasındaki sürtünmeyi artırır ve kaymayı azaltır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 13,
+      "unit": "Kuvveti Tanıyalım",
+      "outcome": "FB.5.2.3",
+      "skill": "Uygulama değerlendirme",
+      "scenario": "Bisiklet tamircisi, tekerleklerin dönmesini sağlayan bazı hareketli parçaların arasına yağ sürüyor. Yağlama sonrasında parçaların daha rahat hareket ettiğini gözlemliyor. Tamirci, sürtünmenin bazı durumlarda azaltılmasının yararlı olduğunu açıklıyor.",
+      "stem": "Yağlama işleminin temel amacı hangisidir?",
+      "options": [
+        "Sürtünmeyi azaltarak hareketi kolaylaştırmak",
+        "Sürtünmeyi artırarak parçaları durdurmak",
+        "Cisimlerin kütlesini artırmak",
+        "Yer çekimini artırmak"
+      ],
+      "answer": 0,
+      "explanation": "Yağlayıcılar temas eden yüzeyler arasındaki sürtünmeyi azaltır ve hareketi kolaylaştırır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 14,
+      "unit": "Kuvveti Tanıyalım",
+      "outcome": "FB.5.2.3",
+      "skill": "Günlük yaşamda sürtünme",
+      "scenario": "Bir futbolcu, kramponlarının tabanındaki çıkıntıların çim zeminde daha iyi tutunmasını sağladığını söylüyor. Salon ayakkabılarının tabanı ise farklı yüzeylere uygun biçimde tasarlanıyor. Sporcular, ayakkabı seçerken zeminin özelliklerini dikkate alıyor.",
+      "stem": "Krampon tabanındaki çıkıntıların temel işlevi hangisidir?",
+      "options": [
+        "Sürtünmeyi azaltıp kaymayı artırmak",
+        "Zeminle tutunmayı artırarak kaymayı azaltmak",
+        "Ayakkabının kütlesini sıfırlamak",
+        "Yer çekimini değiştirmek"
+      ],
+      "answer": 1,
+      "explanation": "Krampon çıkıntıları zeminle tutunmayı artırır. Böylece sporcu daha az kayar.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 15,
+      "unit": "Kuvveti Tanıyalım",
+      "outcome": "FB.5.2.3",
+      "skill": "Bütünleştirilmiş çıkarım",
+      "scenario": "Bir öğrenci, aynı oyuncak arabayı üç farklı yüzeyde deniyor. Arabayı her seferinde aynı noktadan ve aynı biçimde bırakıyor. Camda 180 cm, tahta zeminde 120 cm, halıda 45 cm ilerleyerek duruyor. Öğrenci sonuçları tabloya kaydediyor.",
+      "stem": "Bu deneyden hangi sonuca ulaşılabilir?",
+      "options": [
+        "Camda sürtünme en büyüktür.",
+        "Halıda sürtünme en küçüktür.",
+        "Yüzey değiştikçe sürtünme etkisi değişebilir; halıda hareket daha çabuk durmuştur.",
+        "Arabanın kütlesi her zeminde değişmiştir."
+      ],
+      "answer": 2,
+      "explanation": "Aynı koşullarda en kısa mesafenin halıda alınması, halıda sürtünmenin daha fazla olduğunu düşündürür.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 16,
+      "unit": "Canlıların Yapısına Yolculuk",
+      "outcome": "FB.5.3.1",
+      "skill": "Hücreyi tanıma",
+      "scenario": "Bir öğrenci, mikroskopta soğan zarı örneğini inceliyor. Görüntüde yan yana dizilmiş çok sayıda küçük bölme fark ediyor. Öğretmeni, canlıların temel yapı ve görev biriminin bu bölmeler olduğunu açıklıyor.",
+      "stem": "Öğrencinin mikroskopta gözlemlediği temel yapı birimi hangisidir?",
+      "options": [
+        "Organ",
+        "Hücre",
+        "Sistem",
+        "Organizma"
+      ],
+      "answer": 1,
+      "explanation": "Hücre, canlıların yapı ve görev bakımından en küçük temel birimidir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 17,
+      "unit": "Canlıların Yapısına Yolculuk",
+      "outcome": "FB.5.3.1",
+      "skill": "Hücre kısımlarını eşleştirme",
+      "scenario": "Mikroskop görüntüsünü inceleyen Deniz, hücrenin dış sınırını, içini dolduran sıvımsı bölgeyi ve yönetim merkezini gösteren üç farklı yapıyı etiketliyor. Öğretmeni, bu yapıların hücrenin temel kısımları olduğunu söylüyor.",
+      "stem": "Hücrenin yönetim ve denetim merkezi olarak görev yapan yapı hangisidir?",
+      "options": [
+        "Hücre zarı",
+        "Sitoplazma",
+        "Çekirdek",
+        "Hücre duvarı"
+      ],
+      "answer": 2,
+      "explanation": "Çekirdek, hücrenin yönetim ve denetim merkezidir. Hücre faaliyetlerini kontrol eder.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 18,
+      "unit": "Canlıların Yapısına Yolculuk",
+      "outcome": "FB.5.3.1",
+      "skill": "Yapı-görev ilişkisi",
+      "scenario": "Bir hücre modeli hazırlayan grup, hücre zarını ince ve esnek bir sınırla gösteriyor. Öğrenciler bu yapının hücreyi çevrelediğini ve hücreye giren-çıkan maddelerin kontrolünde görev aldığını öğreniyor.",
+      "stem": "Hücre zarının görevini en doğru açıklayan ifade hangisidir?",
+      "options": [
+        "Hücreye şekil vermek ve madde alışverişini düzenlemek",
+        "Hücrenin bütün enerjisini tek başına üretmek",
+        "Kalıtsal bilgiyi taşımak",
+        "Hücrenin içini dolduran sıvıyı oluşturmak"
+      ],
+      "answer": 0,
+      "explanation": "Hücre zarı hücreyi çevreler, korur ve madde alışverişini düzenler.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 19,
+      "unit": "Canlıların Yapısına Yolculuk",
+      "outcome": "FB.5.3.1",
+      "skill": "Hücre kısımlarını ayırt etme",
+      "scenario": "Bir hücre modelinde çekirdek renkli bir küreyle, sitoplazma jel kıvamında bir maddeyle, hücre zarı ise ince bir örtüyle gösteriliyor. Öğrenciler, hücre içindeki yaşamsal olayların gerçekleştiği bölgeyi belirlemeye çalışıyor.",
+      "stem": "Hücrede yaşamsal olayların büyük bölümünün gerçekleştiği kısım hangisidir?",
+      "options": [
+        "Hücre zarı",
+        "Sitoplazma",
+        "Çekirdek",
+        "Hücre duvarı"
+      ],
+      "answer": 1,
+      "explanation": "Sitoplazma, hücre zarı ile çekirdek arasını doldurur ve birçok yaşamsal faaliyet burada gerçekleşir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 20,
+      "unit": "Canlıların Yapısına Yolculuk",
+      "outcome": "FB.5.3.2",
+      "skill": "Bitki-hayvan hücresi karşılaştırma",
+      "scenario": "İki hücre görüntüsü inceleniyor. A hücresi köşeli bir şekle sahip ve çevresinde hücre duvarı görülüyor. B hücresi ise daha yuvarlak ve esnek bir sınıra sahip. Öğretmen, bu görüntülerin bitki ve hayvan hücrelerine ait olduğunu söylüyor.",
+      "stem": "A hücresi ve B hücresi sırasıyla hangileridir?",
+      "options": [
+        "Hayvan hücresi – bitki hücresi",
+        "Bitki hücresi – hayvan hücresi",
+        "İkisi de hayvan hücresi",
+        "İkisi de bitki hücresi"
+      ],
+      "answer": 1,
+      "explanation": "Bitki hücresinde hücre duvarı bulunur ve şekli genellikle daha köşelidir. Hayvan hücresi hücre duvarı taşımaz.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 21,
+      "unit": "Canlıların Yapısına Yolculuk",
+      "outcome": "FB.5.3.2",
+      "skill": "Hücre organellerini karşılaştırma",
+      "scenario": "Bir öğrenci bitki hücresi modelinde yeşil renkli yapılar olduğunu fark ediyor. Öğretmeni, bu yapıların ışık enerjisinin kullanıldığı fotosentez olayında görev aldığını açıklıyor. Öğrenci aynı yapıların hayvan hücresinde bulunmadığını öğreniyor.",
+      "stem": "Öğrencinin tanıdığı yapı hangisidir?",
+      "options": [
+        "Kloroplast",
+        "Çekirdek",
+        "Hücre zarı",
+        "Sitoplazma"
+      ],
+      "answer": 0,
+      "explanation": "Kloroplast bitki hücrelerinde bulunur ve fotosentezde görev alır. Hayvan hücrelerinde bulunmaz.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 22,
+      "unit": "Canlıların Yapısına Yolculuk",
+      "outcome": "FB.5.3.2",
+      "skill": "Ortak özellikleri belirleme",
+      "scenario": "Sınıfta bitki ve hayvan hücrelerinin modelleri yan yana sergileniyor. Öğrenciler iki hücrede de hücre zarı, sitoplazma ve çekirdek bulunduğunu fark ediyor. Daha sonra yalnızca bitki hücresinde hücre duvarı ve kloroplast gibi yapıların bulunduğu konuşuluyor.",
+      "stem": "Aşağıdakilerden hangisi bitki ve hayvan hücresinde ortak olarak bulunur?",
+      "options": [
+        "Kloroplast",
+        "Hücre duvarı",
+        "Hücre zarı",
+        "Yalnız büyük koful"
+      ],
+      "answer": 2,
+      "explanation": "Hücre zarı, sitoplazma ve çekirdek bitki ve hayvan hücrelerinde ortak bulunan temel yapılardır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 23,
+      "unit": "Canlıların Yapısına Yolculuk",
+      "outcome": "FB.5.3.3",
+      "skill": "Organizasyon basamakları",
+      "scenario": "Bir öğrenci, insan vücudundaki yapıları küçükten büyüğe sıralamak için kartlar hazırlıyor: hücre, doku, organ, sistem ve organizma. Öğretmeni, her basamağın bir üst basamağın oluşumuna katkı sağladığını belirtiyor.",
+      "stem": "Bu yapıların küçükten büyüğe doğru sıralaması hangisidir?",
+      "options": [
+        "Hücre – doku – organ – sistem – organizma",
+        "Doku – hücre – sistem – organ – organizma",
+        "Organ – hücre – doku – organizma – sistem",
+        "Hücre – organ – doku – sistem – organizma"
+      ],
+      "answer": 0,
+      "explanation": "Benzer hücreler dokuları, dokular organları, organlar sistemleri, sistemler organizmayı oluşturur.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 24,
+      "unit": "Canlıların Yapısına Yolculuk",
+      "outcome": "FB.5.3.3",
+      "skill": "Örnekleri sınıflandırma",
+      "scenario": "Bir öğrenci, kalp, kas dokusu, dolaşım sistemi, kas hücresi ve insan örneklerini beş farklı başlık altında topluyor. Öğretmeni, her örneğin hücreden organizmaya uzanan yapı basamaklarından birini temsil ettiğini söylüyor.",
+      "stem": "Kas dokusu hangi yapı basamağına örnektir?",
+      "options": [
+        "Hücre",
+        "Doku",
+        "Organ",
+        "Sistem"
+      ],
+      "answer": 1,
+      "explanation": "Benzer görev yapan hücrelerin bir araya gelmesiyle doku oluşur. Kas dokusu bu basamağa örnektir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 25,
+      "unit": "Canlıların Yapısına Yolculuk",
+      "outcome": "FB.5.3.3",
+      "skill": "Yapı-görev ilişkisi",
+      "scenario": "Bir okul gezisinde öğrenciler kalbin vücuda kan pompaladığını, damarların kanı taşıdığını ve bu yapıların birlikte dolaşım sistemini oluşturduğunu öğreniyor. Öğrenciler kalbin vücuttaki organizasyon basamağını belirlemek istiyor.",
+      "stem": "Kalp, canlıların yapısal organizasyonunda hangi basamakta yer alır?",
+      "options": [
+        "Hücre",
+        "Doku",
+        "Organ",
+        "Organizma"
+      ],
+      "answer": 2,
+      "explanation": "Kalp farklı dokulardan oluşan ve belirli bir görevi bulunan bir organdır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 26,
+      "unit": "Canlıların Yapısına Yolculuk",
+      "outcome": "FB.5.3.3",
+      "skill": "Sistem-organ ilişkisi",
+      "scenario": "Bir öğrenci, sindirim sisteminin ağız, yemek borusu, mide ve bağırsak gibi organlardan oluştuğunu araştırıyor. Araştırma sonunda organların birlikte çalışarak besinlerin parçalanması ve emilmesini sağladığını öğreniyor.",
+      "stem": "Bu örnekte mide için hangi ifade doğrudur?",
+      "options": [
+        "Bir hücredir.",
+        "Bir dokudur.",
+        "Bir organdır ve sindirim sisteminde görev alır.",
+        "Tek başına bir organizmadır."
+      ],
+      "answer": 2,
+      "explanation": "Mide farklı dokulardan oluşan bir organdır ve sindirim sisteminin parçasıdır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 27,
+      "unit": "Canlıların Yapısına Yolculuk",
+      "outcome": "FB.5.3.1",
+      "skill": "Mikroskop gözlemi",
+      "scenario": "Fen laboratuvarında öğrenciler mikroskop kullanarak hücre örneklerini inceliyor. Öğretmen, preparatın mikroskop tablasına yerleştirilmesini, ışığın ayarlanmasını ve görüntünün netleştirilmesini gösteriyor. Öğrenciler gözlemlerini çizimle kaydediyor.",
+      "stem": "Mikroskopla gözlem yaparken görüntüyü netleştirmek için hangi işlem yapılmalıdır?",
+      "options": [
+        "Mikroskobu sallamak",
+        "Uygun netlik ayarını yapmak",
+        "Preparatı mikroskop dışına çıkarmak",
+        "Işık kaynağını tamamen kapatmak"
+      ],
+      "answer": 1,
+      "explanation": "Mikroskopta net görüntü elde etmek için uygun odaklama ve netlik ayarı yapılmalıdır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 28,
+      "unit": "Canlıların Yapısına Yolculuk",
+      "outcome": "FB.5.3.2",
+      "skill": "Bilimsel çıkarım",
+      "scenario": "Bir öğrenci, güneş alan pencere önündeki bir bitkinin yapraklarının yeşil olduğunu, bitkinin ışıkta besin üretebildiğini öğreniyor. Hayvan hücrelerinde kloroplast bulunmadığı için aynı şekilde fotosentez yapamadığını not ediyor.",
+      "stem": "Bu bilgilerden hangi sonuca ulaşılır?",
+      "options": [
+        "Bütün hücrelerde kloroplast bulunur.",
+        "Kloroplast, bitki hücresinin fotosentez yapmasında görev alır.",
+        "Hayvan hücreleri bitki hücresinden daha büyüktür.",
+        "Hücre zarı yalnızca bitki hücresinde bulunur."
+      ],
+      "answer": 1,
+      "explanation": "Kloroplast bitki hücrelerinde fotosentezde görev alır. Hayvan hücrelerinde kloroplast bulunmaz.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 29,
+      "unit": "Canlıların Yapısına Yolculuk",
+      "outcome": "FB.5.3.3",
+      "skill": "Analojiyi değerlendirme",
+      "scenario": "Öğretmen, bir okulu canlı organizmaya benzetiyor. Okuldaki sınıfları dokulara, okulun farklı bölümlerini organlara, bölümlerin birlikte çalışmasını sistemlere benzetiyor. Öğrenciler bu benzetmenin hücreden organizmaya uzanan düzeni anlamaya yardımcı olduğunu söylüyor.",
+      "stem": "Bu benzetmede tek tek hücrelerin oluşturduğu yapı hangi örnekle temsil edilmelidir?",
+      "options": [
+        "Bir sınıftaki öğrencilerden oluşan benzer görevli grup",
+        "Okulun tamamı",
+        "Birden fazla okulun bulunduğu şehir",
+        "Yalnızca okulun bahçesi"
+      ],
+      "answer": 0,
+      "explanation": "Benzer görev yapan hücreler bir araya gelerek doku oluşturur. Benzetmede bu, aynı sınıftaki benzer görevli grup ile açıklanabilir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 30,
+      "unit": "Canlıların Yapısına Yolculuk",
+      "outcome": "FB.5.3.3",
+      "skill": "Bütünleştirilmiş çıkarım",
+      "scenario": "Bir öğrenci, insan vücudunun yapı basamaklarını araştırırken kas hücrelerinin bir araya gelerek kas dokusunu, kas dokularının bir araya gelerek kası, kasların da hareket sisteminde görev aldığını öğreniyor. Öğrenci bu bilgileri küçükten büyüğe doğru sıralıyor.",
+      "stem": "Bu örnekte doğru sıralama hangisidir?",
+      "options": [
+        "Kas – kas hücresi – kas dokusu – hareket sistemi",
+        "Kas hücresi – kas dokusu – kas – hareket sistemi",
+        "Hareket sistemi – kas – kas dokusu – kas hücresi",
+        "Kas dokusu – kas – kas hücresi – hareket sistemi"
+      ],
+      "answer": 1,
+      "explanation": "Hücreler dokuları, dokular organları, organlar da sistemleri oluşturur. Doğru sıra kas hücresi, kas dokusu, kas ve hareket sistemidir.",
+      "image": "",
+      "imageAlt": ""
+    }
+  ]
+}
