@@ -5,6 +5,10 @@ import examTumKazanımlar from "@/content/denemeler/8-sinif-1-2-unite-tum-kazani
 import examIlkUcUnite from "@/content/denemeler/8-sinif-ilk-3-unite-genel-deneme-20.json";
 import exam5Unit1 from "@/content/denemeler/5-sinif-1-unite-yeni-nesil-30.json";
 import exam5Units23 from "@/content/denemeler/5-sinif-2-3-unite-yeni-nesil-30.json";
+import exam5Unit4 from "@/content/denemeler/5-sinif-4-unite-yeni-nesil-30.json";
+import exam5Unit5 from "@/content/denemeler/5-sinif-5-unite-yeni-nesil-30.json";
+import exam5Unit6 from "@/content/denemeler/5-sinif-6-unite-yeni-nesil-30.json";
+import exam5Unit7 from "@/content/denemeler/5-sinif-7-unite-yeni-nesil-30.json";
 
 export interface StaticExamQuestion {
   no: number;
@@ -32,7 +36,7 @@ export interface StaticExam {
   questions: StaticExamQuestion[];
 }
 
-// Hazır yeni nesil denemeler: kapsamlı 1. ve 2. ünite denemeleri de bu listede yayınlanır.
+// Hazır yeni nesil denemeler
 export const STATIC_EXAMS: StaticExam[] = [
   exam8 as unknown as StaticExam,
   examMevsimDna as unknown as StaticExam,
@@ -41,6 +45,10 @@ export const STATIC_EXAMS: StaticExam[] = [
   examLgs2 as unknown as StaticExam,
   exam5Unit1 as unknown as StaticExam,
   exam5Units23 as unknown as StaticExam,
+  exam5Unit4 as unknown as StaticExam,
+  exam5Unit5 as unknown as StaticExam,
+  exam5Unit6 as unknown as StaticExam,
+  exam5Unit7 as unknown as StaticExam,
 ];
 
 export function getStaticExam(slug: string): StaticExam | undefined {
