@@ -17,12 +17,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Canlıların yapı ve görev birimi hücredir",
         "Doku",
         "organ",
+        "Canlıların yapı ve görev birimi hücredir",
         "sistem"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Hücre canlıların yapı ve görev birimidir."
     },
     {
@@ -37,12 +37,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Hücreye giren ve çıkan maddeleri kontrol eden yapı hücre zarıdır",
         "Çekirdek",
+        "Hücreye giren ve çıkan maddeleri kontrol eden yapı hücre zarıdır",
         "sitoplazma",
         "hücre duvarı"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Hücre zarı madde giriş çıkışını kontrol eder."
     },
     {
@@ -77,12 +77,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Hücrenin enerji ihtiyacının karşılanmasında görevli organel mitokondridir",
         "Kloroplast",
         "çekirdek",
-        "hücre duvarı"
+        "hücre duvarı",
+        "Hücrenin enerji ihtiyacının karşılanmasında görevli organel mitokondridir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Mitokondri hücre için enerji sağlar."
     },
     {
@@ -97,12 +97,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Güneş ışığı kullanılarak besin üretiminde görev alan yapı kloroplasttır",
         "Mitokondri",
         "çekirdek",
+        "Güneş ışığı kullanılarak besin üretiminde görev alan yapı kloroplasttır",
         "koful"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Kloroplast bitki hücresinde fotosentez yapılmasını sağlar."
     },
     {
@@ -117,12 +117,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Hücre duvarı ve kloroplast bitki hücresini hayvan hücresinden ayıran yapılardandır",
         "yalnız hayvanda kloroplast",
+        "Hücre duvarı ve kloroplast bitki hücresini hayvan hücresinden ayıran yapılardandır",
         "bitkide hücre duvarı",
         "hayvanda hücre duvarı"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Bitki hücresinde hücre duvarı ve kloroplast bulunabilir; hayvan hücresinde bulunmaz."
     },
     {
@@ -157,12 +157,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Kalp farklı dokulardan oluşan bir organdır",
         "Hücre",
         "organ",
-        "organizma"
+        "organizma",
+        "Kalp farklı dokulardan oluşan bir organdır"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Kalp bir organdır; dolaşım sistemi birden çok organın birlikte çalışmasıyla oluşur."
     },
     {
@@ -177,12 +177,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Kafatası ve kaburga gibi kemikler bazı organları korumaya yardımcı olur",
         "koruma ve destek",
         "ışık üretmek",
+        "Kafatası ve kaburga gibi kemikler bazı organları korumaya yardımcı olur",
         "sindirim"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Kemikler vücuda destek verir ve bazı organları korur."
     },
     {
@@ -197,12 +197,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Kemiklerin birleşme noktaları eklemlerdir; kaslar hareketi sağlar",
         "eklem birleştirme",
+        "Kemiklerin birleşme noktaları eklemlerdir; kaslar hareketi sağlar",
         "hücre enerji",
         "doku koruma"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Kaslar kasılıp gevşeyerek hareketi sağlar; eklemler kemikleri birleştirir."
     },
     {
@@ -237,12 +237,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Hücreye giren ve çıkan maddeleri kontrol eden yapı hücre zarıdır",
         "Çekirdek",
         "sitoplazma",
-        "hücre duvarı"
+        "hücre duvarı",
+        "Hücreye giren ve çıkan maddeleri kontrol eden yapı hücre zarıdır"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Hücre zarı madde giriş çıkışını kontrol eder."
     },
     {
@@ -257,12 +257,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Hücrenin yönetim ve kalıtsal bilgiyi taşıma görevinde temel yapı çekirdektir",
         "Mitokondri",
         "koful",
+        "Hücrenin yönetim ve kalıtsal bilgiyi taşıma görevinde temel yapı çekirdektir",
         "zar"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Çekirdek hücrenin yönetim merkezidir."
     },
     {
@@ -277,12 +277,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Hücrenin enerji ihtiyacının karşılanmasında görevli organel mitokondridir",
         "Kloroplast",
+        "Hücrenin enerji ihtiyacının karşılanmasında görevli organel mitokondridir",
         "çekirdek",
         "hücre duvarı"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Mitokondri hücre için enerji sağlar."
     },
     {
@@ -317,12 +317,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Hücre duvarı ve kloroplast bitki hücresini hayvan hücresinden ayıran yapılardandır",
         "yalnız hayvanda kloroplast",
         "bitkide hücre duvarı",
-        "hayvanda hücre duvarı"
+        "hayvanda hücre duvarı",
+        "Hücre duvarı ve kloroplast bitki hücresini hayvan hücresinden ayıran yapılardandır"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Bitki hücresinde hücre duvarı ve kloroplast bulunabilir; hayvan hücresinde bulunmaz."
     },
     {
@@ -337,12 +337,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Canlılarda küçükten büyüğe sıralama hücre, doku, organ, sistem, organizmadır",
         "hücre",
         "doku",
+        "Canlılarda küçükten büyüğe sıralama hücre, doku, organ, sistem, organizmadır",
         "sistem"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Benzer hücreler dokuları, farklı dokular organları oluşturur."
     },
     {
@@ -357,12 +357,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Kalp farklı dokulardan oluşan bir organdır",
         "Hücre",
+        "Kalp farklı dokulardan oluşan bir organdır",
         "organ",
         "organizma"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Kalp bir organdır; dolaşım sistemi birden çok organın birlikte çalışmasıyla oluşur."
     },
     {
@@ -397,12 +397,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Kemiklerin birleşme noktaları eklemlerdir; kaslar hareketi sağlar",
         "eklem birleştirme",
         "hücre enerji",
-        "doku koruma"
+        "doku koruma",
+        "Kemiklerin birleşme noktaları eklemlerdir; kaslar hareketi sağlar"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Kaslar kasılıp gevşeyerek hareketi sağlar; eklemler kemikleri birleştirir."
     },
     {
@@ -417,12 +417,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Canlıların yapı ve görev birimi hücredir",
         "Doku",
         "organ",
+        "Canlıların yapı ve görev birimi hücredir",
         "sistem"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Hücre canlıların yapı ve görev birimidir."
     },
     {
@@ -437,12 +437,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Hücreye giren ve çıkan maddeleri kontrol eden yapı hücre zarıdır",
         "Çekirdek",
+        "Hücreye giren ve çıkan maddeleri kontrol eden yapı hücre zarıdır",
         "sitoplazma",
         "hücre duvarı"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Hücre zarı madde giriş çıkışını kontrol eder."
     },
     {
@@ -477,12 +477,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Hücrenin enerji ihtiyacının karşılanmasında görevli organel mitokondridir",
         "Kloroplast",
         "çekirdek",
-        "hücre duvarı"
+        "hücre duvarı",
+        "Hücrenin enerji ihtiyacının karşılanmasında görevli organel mitokondridir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Mitokondri hücre için enerji sağlar."
     },
     {
@@ -497,12 +497,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Güneş ışığı kullanılarak besin üretiminde görev alan yapı kloroplasttır",
         "Mitokondri",
         "çekirdek",
+        "Güneş ışığı kullanılarak besin üretiminde görev alan yapı kloroplasttır",
         "koful"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Kloroplast bitki hücresinde fotosentez yapılmasını sağlar."
     },
     {
@@ -517,12 +517,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Hücre duvarı ve kloroplast bitki hücresini hayvan hücresinden ayıran yapılardandır",
         "yalnız hayvanda kloroplast",
+        "Hücre duvarı ve kloroplast bitki hücresini hayvan hücresinden ayıran yapılardandır",
         "bitkide hücre duvarı",
         "hayvanda hücre duvarı"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Bitki hücresinde hücre duvarı ve kloroplast bulunabilir; hayvan hücresinde bulunmaz."
     },
     {
@@ -557,12 +557,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Kalp farklı dokulardan oluşan bir organdır",
         "Hücre",
         "organ",
-        "organizma"
+        "organizma",
+        "Kalp farklı dokulardan oluşan bir organdır"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Kalp bir organdır; dolaşım sistemi birden çok organın birlikte çalışmasıyla oluşur."
     },
     {
@@ -577,12 +577,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Kafatası ve kaburga gibi kemikler bazı organları korumaya yardımcı olur",
         "koruma ve destek",
         "ışık üretmek",
+        "Kafatası ve kaburga gibi kemikler bazı organları korumaya yardımcı olur",
         "sindirim"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Kemikler vücuda destek verir ve bazı organları korur."
     },
     {
@@ -597,12 +597,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Kemiklerin birleşme noktaları eklemlerdir; kaslar hareketi sağlar",
         "eklem birleştirme",
+        "Kemiklerin birleşme noktaları eklemlerdir; kaslar hareketi sağlar",
         "hücre enerji",
         "doku koruma"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Kaslar kasılıp gevşeyerek hareketi sağlar; eklemler kemikleri birleştirir."
     }
   ]
