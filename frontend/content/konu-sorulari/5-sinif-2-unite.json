@@ -17,12 +17,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Kuvvet bir cismin hareket durumunu veya şeklini değiştirebilir",
         "Renk",
+        "Kuvvet bir cismin hareket durumunu veya şeklini değiştirebilir",
         "koku",
         "sıcaklık"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Kuvvet cisimlerin hareketini, hızını, yönünü veya şeklini değiştirebilir."
     },
     {
@@ -57,12 +57,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Kuvvetin SI birimi Newton olup N harfiyle gösterilir",
         "kg",
         "°C",
-        "N"
+        "N",
+        "Kuvvetin SI birimi Newton olup N harfiyle gösterilir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Kuvvetin birimi Newton’dır ve N ile gösterilir."
     },
     {
@@ -77,12 +77,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Dinamometrede kuvvet arttıkça uygun sınırlar içinde yay uzaması artar",
         "uzama artar",
         "renk değişir",
+        "Dinamometrede kuvvet arttıkça uygun sınırlar içinde yay uzaması artar",
         "kütle yok olur"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Dinamometrede yay uzaması uygulanan kuvvetle ilişkilidir."
     },
     {
@@ -97,12 +97,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Bir dinamometre kapasitesinden büyük kuvvetle zorlanmamalıdır",
         "kapasite artar",
+        "Bir dinamometre kapasitesinden büyük kuvvetle zorlanmamalıdır",
         "zarar görebilir",
         "kütle azalır"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Dinamometrenin ölçüm aralığı aşılırsa doğru ölçüm yapılamaz ve yay zarar görebilir."
     },
     {
@@ -137,12 +137,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Ağırlık bir kuvvettir; dinamometreyle ölçülür ve Newton ile ifade edilir",
         "Kütle",
         "hacim",
-        "uzunluk"
+        "uzunluk",
+        "Ağırlık bir kuvvettir; dinamometreyle ölçülür ve Newton ile ifade edilir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Ağırlık yer çekiminin cisme uyguladığı kuvvettir ve dinamometreyle ölçülür."
     },
     {
@@ -157,12 +157,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Aynı cismin kütlesi farklı gök cisimlerinde aynı kalırken ağırlığı değişebilir",
         "kütle sabit",
         "ağırlık sabit",
+        "Aynı cismin kütlesi farklı gök cisimlerinde aynı kalırken ağırlığı değişebilir",
         "ikisi sıfır"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Kütle konuma göre değişmez; ağırlık yer çekimine göre değişebilir."
     },
     {
@@ -177,12 +177,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Sürtünme kuvveti temas eden yüzeyler arasındaki harekete karşı koyar",
         "zıt",
+        "Sürtünme kuvveti temas eden yüzeyler arasındaki harekete karşı koyar",
         "daima yukarı",
         "daima aşağı"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Sürtünme kuvveti hareket yönüne zıt yönde etki eder."
     },
     {
@@ -217,12 +217,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Kuvvet bir cismin hareket durumunu veya şeklini değiştirebilir",
         "Renk",
         "koku",
-        "sıcaklık"
+        "sıcaklık",
+        "Kuvvet bir cismin hareket durumunu veya şeklini değiştirebilir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Kuvvet cisimlerin hareketini, hızını, yönünü veya şeklini değiştirebilir."
     },
     {
@@ -237,12 +237,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Kuvveti ölçmek için dinamometre kullanılır",
         "Terazi",
         "cetvel",
+        "Kuvveti ölçmek için dinamometre kullanılır",
         "termometre"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Kuvvet dinamometre ile ölçülür."
     },
     {
@@ -257,12 +257,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Kuvvetin SI birimi Newton olup N harfiyle gösterilir",
         "kg",
+        "Kuvvetin SI birimi Newton olup N harfiyle gösterilir",
         "°C",
         "N"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Kuvvetin birimi Newton’dır ve N ile gösterilir."
     },
     {
@@ -297,12 +297,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Bir dinamometre kapasitesinden büyük kuvvetle zorlanmamalıdır",
         "kapasite artar",
         "zarar görebilir",
-        "kütle azalır"
+        "kütle azalır",
+        "Bir dinamometre kapasitesinden büyük kuvvetle zorlanmamalıdır"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Dinamometrenin ölçüm aralığı aşılırsa doğru ölçüm yapılamaz ve yay zarar görebilir."
     },
     {
@@ -317,12 +317,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Kütle madde miktarını belirtir ve teraziyle ölçülür",
         "kuvvet",
         "sıcaklık",
+        "Kütle madde miktarını belirtir ve teraziyle ölçülür",
         "hacim"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Kütle madde miktarıdır ve eşit kollu teraziyle ölçülür."
     },
     {
@@ -337,12 +337,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Ağırlık bir kuvvettir; dinamometreyle ölçülür ve Newton ile ifade edilir",
         "Kütle",
+        "Ağırlık bir kuvvettir; dinamometreyle ölçülür ve Newton ile ifade edilir",
         "hacim",
         "uzunluk"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Ağırlık yer çekiminin cisme uyguladığı kuvvettir ve dinamometreyle ölçülür."
     },
     {
@@ -377,12 +377,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Sürtünme kuvveti temas eden yüzeyler arasındaki harekete karşı koyar",
         "zıt",
         "daima yukarı",
-        "daima aşağı"
+        "daima aşağı",
+        "Sürtünme kuvveti temas eden yüzeyler arasındaki harekete karşı koyar"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Sürtünme kuvveti hareket yönüne zıt yönde etki eder."
     },
     {
@@ -397,12 +397,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Pürüzlü yüzeylerde sürtünme genellikle düzgün yüzeylere göre daha büyüktür",
         "daha fazla",
         "sıfır",
+        "Pürüzlü yüzeylerde sürtünme genellikle düzgün yüzeylere göre daha büyüktür",
         "değişmez"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Pürüzlü yüzeylerde sürtünme genellikle daha fazladır."
     },
     {
@@ -417,12 +417,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Kuvvet bir cismin hareket durumunu veya şeklini değiştirebilir",
         "Renk",
+        "Kuvvet bir cismin hareket durumunu veya şeklini değiştirebilir",
         "koku",
         "sıcaklık"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Kuvvet cisimlerin hareketini, hızını, yönünü veya şeklini değiştirebilir."
     },
     {
@@ -457,12 +457,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Kuvvetin SI birimi Newton olup N harfiyle gösterilir",
         "kg",
         "°C",
-        "N"
+        "N",
+        "Kuvvetin SI birimi Newton olup N harfiyle gösterilir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Kuvvetin birimi Newton’dır ve N ile gösterilir."
     },
     {
@@ -477,12 +477,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Dinamometrede kuvvet arttıkça uygun sınırlar içinde yay uzaması artar",
         "uzama artar",
         "renk değişir",
+        "Dinamometrede kuvvet arttıkça uygun sınırlar içinde yay uzaması artar",
         "kütle yok olur"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Dinamometrede yay uzaması uygulanan kuvvetle ilişkilidir."
     },
     {
@@ -497,12 +497,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Bir dinamometre kapasitesinden büyük kuvvetle zorlanmamalıdır",
         "kapasite artar",
+        "Bir dinamometre kapasitesinden büyük kuvvetle zorlanmamalıdır",
         "zarar görebilir",
         "kütle azalır"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Dinamometrenin ölçüm aralığı aşılırsa doğru ölçüm yapılamaz ve yay zarar görebilir."
     },
     {
@@ -537,12 +537,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Ağırlık bir kuvvettir; dinamometreyle ölçülür ve Newton ile ifade edilir",
         "Kütle",
         "hacim",
-        "uzunluk"
+        "uzunluk",
+        "Ağırlık bir kuvvettir; dinamometreyle ölçülür ve Newton ile ifade edilir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Ağırlık yer çekiminin cisme uyguladığı kuvvettir ve dinamometreyle ölçülür."
     },
     {
@@ -557,12 +557,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Aynı cismin kütlesi farklı gök cisimlerinde aynı kalırken ağırlığı değişebilir",
         "kütle sabit",
         "ağırlık sabit",
+        "Aynı cismin kütlesi farklı gök cisimlerinde aynı kalırken ağırlığı değişebilir",
         "ikisi sıfır"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Kütle konuma göre değişmez; ağırlık yer çekimine göre değişebilir."
     },
     {
@@ -577,12 +577,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Sürtünme kuvveti temas eden yüzeyler arasındaki harekete karşı koyar",
         "zıt",
+        "Sürtünme kuvveti temas eden yüzeyler arasındaki harekete karşı koyar",
         "daima yukarı",
         "daima aşağı"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Sürtünme kuvveti hareket yönüne zıt yönde etki eder."
     },
     {
