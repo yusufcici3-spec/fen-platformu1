@@ -1,0 +1,609 @@
+{
+  "grade": 5,
+  "unit": 7,
+  "title": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+  "slug": "surdurulebilir-yasam-ve-geri-donusum",
+  "description": "Maarif Modeli kazanımlarına göre hazırlanmış 30 senaryo temelli soru.",
+  "questions": [
+    {
+      "id": 1,
+      "code": "FB.5.7",
+      "topic": "Doğal kaynak",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Doğal kaynak",
+        "content": "Su, toprak, hava ve ormanlar doğal kaynaklardır."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Aşağıdakilerden hangisi doğal kaynağa örnektir",
+        "su",
+        "telefon",
+        "pil"
+      ],
+      "answer": 0,
+      "explanation": "Su, toprak, hava ve ormanlar doğal kaynaklardır."
+    },
+    {
+      "id": 2,
+      "code": "FB.5.7",
+      "topic": "Sürdürülebilirlik",
+      "scenario": "Bilim merkezindeki etkinlikte öğrenciler bir model üzerinde ölçüm yapıp sonuçlarını not ediyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Sürdürülebilirlik",
+        "content": "Kaynakları verimli kullanmak gelecek kuşakların ihtiyaçlarını da gözetir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Sürdürülebilir yaşamın amacı nedir",
+        "gelecek kuşakları gözetmek",
+        "atığı artırmak",
+        "israf"
+      ],
+      "answer": 0,
+      "explanation": "Kaynakları verimli kullanmak gelecek kuşakların ihtiyaçlarını da gözetir."
+    },
+    {
+      "id": 3,
+      "code": "FB.5.7",
+      "topic": "Enerji tasarrufu",
+      "scenario": "Bir öğrenci günlük yaşamdan bir örnek veriyor; sınıf arkadaşları bu örneği fen bilgisiyle açıklıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Enerji tasarrufu",
+        "content": "Kullanılmayan ışıkları kapatmak enerji tasarrufu sağlar."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Boş sınıftaki ışıkları kapatmak hangi yararı sağlar",
+        "suyu kirletir",
+        "atığı artırır",
+        "kaynakları tüketir"
+      ],
+      "answer": 0,
+      "explanation": "Kullanılmayan ışıkları kapatmak enerji tasarrufu sağlar."
+    },
+    {
+      "id": 4,
+      "code": "FB.5.7",
+      "topic": "Atık yönetimi",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Atık yönetimi",
+        "content": "Azaltma, yeniden kullanma ve geri dönüştürme atık yönetiminin temel adımlarıdır."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Atık oluşumunu önlemede ilk tercih genellikle hangisidir",
+        "azaltmak",
+        "çöpe atmak",
+        "yakmak"
+      ],
+      "answer": 0,
+      "explanation": "Azaltma, yeniden kullanma ve geri dönüştürme atık yönetiminin temel adımlarıdır."
+    },
+    {
+      "id": 5,
+      "code": "FB.5.7",
+      "topic": "Kâğıt atık",
+      "scenario": "Bilim merkezindeki etkinlikte öğrenciler bir model üzerinde ölçüm yapıp sonuçlarını not ediyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kâğıt atık",
+        "content": "Kâğıt-karton atıkları uygun toplama sisteminde ayrı biriktirilir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Kullanılmış temiz defter kâğıdı hangi atık grubunda toplanır",
+        "kâğıt-karton",
+        "metal",
+        "organik"
+      ],
+      "answer": 0,
+      "explanation": "Kâğıt-karton atıkları uygun toplama sisteminde ayrı biriktirilir."
+    },
+    {
+      "id": 6,
+      "code": "FB.5.7",
+      "topic": "Cam atık",
+      "scenario": "Bir öğrenci günlük yaşamdan bir örnek veriyor; sınıf arkadaşları bu örneği fen bilgisiyle açıklıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Cam atık",
+        "content": "Cam ambalajlar cam toplama sistemine ayrılır."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Boş cam kavanoz hangi atık türüdür",
+        "Plastik",
+        "metal",
+        "kâğıt"
+      ],
+      "answer": 0,
+      "explanation": "Cam ambalajlar cam toplama sistemine ayrılır."
+    },
+    {
+      "id": 7,
+      "code": "FB.5.7",
+      "topic": "Metal atık",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Metal atık",
+        "content": "Metal kutular uygun metal geri dönüşüm akışına ayrılır."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "İçecek metal kutusu hangi grupta değerlendirilir",
+        "Cam",
+        "kâğıt",
+        "organik"
+      ],
+      "answer": 0,
+      "explanation": "Metal kutular uygun metal geri dönüşüm akışına ayrılır."
+    },
+    {
+      "id": 8,
+      "code": "FB.5.7",
+      "topic": "Yeniden kullanım ve geri dönüşüm",
+      "scenario": "Bilim merkezindeki etkinlikte öğrenciler bir model üzerinde ölçüm yapıp sonuçlarını not ediyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Yeniden kullanım ve geri dönüşüm",
+        "content": "Yeniden kullanımda ürün başka amaçla tekrar kullanılır; geri dönüşümde malzeme işlenir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Kavanozu kalemlik yapmak hangi uygulamadır",
+        "yeniden kullanım",
+        "yakma",
+        "kompost"
+      ],
+      "answer": 0,
+      "explanation": "Yeniden kullanımda ürün başka amaçla tekrar kullanılır; geri dönüşümde malzeme işlenir."
+    },
+    {
+      "id": 9,
+      "code": "FB.5.7",
+      "topic": "Atık pil",
+      "scenario": "Bir öğrenci günlük yaşamdan bir örnek veriyor; sınıf arkadaşları bu örneği fen bilgisiyle açıklıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Atık pil",
+        "content": "Atık piller özel toplama noktalarına bırakılmalıdır."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Kullanılmış pil için doğru davranış hangisidir",
+        "normal çöpe atmak",
+        "pil toplama noktasına bırakmak",
+        "yakmak"
+      ],
+      "answer": 0,
+      "explanation": "Atık piller özel toplama noktalarına bırakılmalıdır."
+    },
+    {
+      "id": 10,
+      "code": "FB.5.7",
+      "topic": "Atıkların çevresel etkisi",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Atıkların çevresel etkisi",
+        "content": "Atıkların doğaya bırakılması toprak ve su kirliliğine neden olabilir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Atıkların gelişigüzel bırakılması hangi sonuca yol açabilir",
+        "kaynak artışı",
+        "hava temizliği",
+        "su tasarrufu"
+      ],
+      "answer": 0,
+      "explanation": "Atıkların doğaya bırakılması toprak ve su kirliliğine neden olabilir."
+    },
+    {
+      "id": 11,
+      "code": "FB.5.7",
+      "topic": "Doğal kaynak",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Doğal kaynak",
+        "content": "Su, toprak, hava ve ormanlar doğal kaynaklardır."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Aşağıdakilerden hangisi doğal kaynağa örnektir",
+        "su",
+        "telefon",
+        "pil"
+      ],
+      "answer": 0,
+      "explanation": "Su, toprak, hava ve ormanlar doğal kaynaklardır."
+    },
+    {
+      "id": 12,
+      "code": "FB.5.7",
+      "topic": "Sürdürülebilirlik",
+      "scenario": "Okul sergisinde ziyaretçiler bir düzenek inceliyor ve öğrencilerden bilimsel çıkarım yapmaları isteniyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Sürdürülebilirlik",
+        "content": "Kaynakları verimli kullanmak gelecek kuşakların ihtiyaçlarını da gözetir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Sürdürülebilir yaşamın amacı nedir",
+        "gelecek kuşakları gözetmek",
+        "atığı artırmak",
+        "israf"
+      ],
+      "answer": 0,
+      "explanation": "Kaynakları verimli kullanmak gelecek kuşakların ihtiyaçlarını da gözetir."
+    },
+    {
+      "id": 13,
+      "code": "FB.5.7",
+      "topic": "Enerji tasarrufu",
+      "scenario": "Bir grup öğrenci proje raporunda bu kavramı yanlış yorumluyor. Öğretmenleri, kanıta dayanarak doğru açıklamayı bulmalarını istiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Enerji tasarrufu",
+        "content": "Kullanılmayan ışıkları kapatmak enerji tasarrufu sağlar."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Boş sınıftaki ışıkları kapatmak hangi yararı sağlar",
+        "suyu kirletir",
+        "atığı artırır",
+        "kaynakları tüketir"
+      ],
+      "answer": 0,
+      "explanation": "Kullanılmayan ışıkları kapatmak enerji tasarrufu sağlar."
+    },
+    {
+      "id": 14,
+      "code": "FB.5.7",
+      "topic": "Atık yönetimi",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Atık yönetimi",
+        "content": "Azaltma, yeniden kullanma ve geri dönüştürme atık yönetiminin temel adımlarıdır."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Atık oluşumunu önlemede ilk tercih genellikle hangisidir",
+        "azaltmak",
+        "çöpe atmak",
+        "yakmak"
+      ],
+      "answer": 0,
+      "explanation": "Azaltma, yeniden kullanma ve geri dönüştürme atık yönetiminin temel adımlarıdır."
+    },
+    {
+      "id": 15,
+      "code": "FB.5.7",
+      "topic": "Kâğıt atık",
+      "scenario": "Okul sergisinde ziyaretçiler bir düzenek inceliyor ve öğrencilerden bilimsel çıkarım yapmaları isteniyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kâğıt atık",
+        "content": "Kâğıt-karton atıkları uygun toplama sisteminde ayrı biriktirilir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Kullanılmış temiz defter kâğıdı hangi atık grubunda toplanır",
+        "kâğıt-karton",
+        "metal",
+        "organik"
+      ],
+      "answer": 0,
+      "explanation": "Kâğıt-karton atıkları uygun toplama sisteminde ayrı biriktirilir."
+    },
+    {
+      "id": 16,
+      "code": "FB.5.7",
+      "topic": "Cam atık",
+      "scenario": "Bir grup öğrenci proje raporunda bu kavramı yanlış yorumluyor. Öğretmenleri, kanıta dayanarak doğru açıklamayı bulmalarını istiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Cam atık",
+        "content": "Cam ambalajlar cam toplama sistemine ayrılır."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Boş cam kavanoz hangi atık türüdür",
+        "Plastik",
+        "metal",
+        "kâğıt"
+      ],
+      "answer": 0,
+      "explanation": "Cam ambalajlar cam toplama sistemine ayrılır."
+    },
+    {
+      "id": 17,
+      "code": "FB.5.7",
+      "topic": "Metal atık",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Metal atık",
+        "content": "Metal kutular uygun metal geri dönüşüm akışına ayrılır."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "İçecek metal kutusu hangi grupta değerlendirilir",
+        "Cam",
+        "kâğıt",
+        "organik"
+      ],
+      "answer": 0,
+      "explanation": "Metal kutular uygun metal geri dönüşüm akışına ayrılır."
+    },
+    {
+      "id": 18,
+      "code": "FB.5.7",
+      "topic": "Yeniden kullanım ve geri dönüşüm",
+      "scenario": "Okul sergisinde ziyaretçiler bir düzenek inceliyor ve öğrencilerden bilimsel çıkarım yapmaları isteniyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Yeniden kullanım ve geri dönüşüm",
+        "content": "Yeniden kullanımda ürün başka amaçla tekrar kullanılır; geri dönüşümde malzeme işlenir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Kavanozu kalemlik yapmak hangi uygulamadır",
+        "yeniden kullanım",
+        "yakma",
+        "kompost"
+      ],
+      "answer": 0,
+      "explanation": "Yeniden kullanımda ürün başka amaçla tekrar kullanılır; geri dönüşümde malzeme işlenir."
+    },
+    {
+      "id": 19,
+      "code": "FB.5.7",
+      "topic": "Atık pil",
+      "scenario": "Bir grup öğrenci proje raporunda bu kavramı yanlış yorumluyor. Öğretmenleri, kanıta dayanarak doğru açıklamayı bulmalarını istiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Atık pil",
+        "content": "Atık piller özel toplama noktalarına bırakılmalıdır."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Kullanılmış pil için doğru davranış hangisidir",
+        "normal çöpe atmak",
+        "pil toplama noktasına bırakmak",
+        "yakmak"
+      ],
+      "answer": 0,
+      "explanation": "Atık piller özel toplama noktalarına bırakılmalıdır."
+    },
+    {
+      "id": 20,
+      "code": "FB.5.7",
+      "topic": "Atıkların çevresel etkisi",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Atıkların çevresel etkisi",
+        "content": "Atıkların doğaya bırakılması toprak ve su kirliliğine neden olabilir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Atıkların gelişigüzel bırakılması hangi sonuca yol açabilir",
+        "kaynak artışı",
+        "hava temizliği",
+        "su tasarrufu"
+      ],
+      "answer": 0,
+      "explanation": "Atıkların doğaya bırakılması toprak ve su kirliliğine neden olabilir."
+    },
+    {
+      "id": 21,
+      "code": "FB.5.7",
+      "topic": "Doğal kaynak",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Doğal kaynak",
+        "content": "Su, toprak, hava ve ormanlar doğal kaynaklardır."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Aşağıdakilerden hangisi doğal kaynağa örnektir",
+        "su",
+        "telefon",
+        "pil"
+      ],
+      "answer": 0,
+      "explanation": "Su, toprak, hava ve ormanlar doğal kaynaklardır."
+    },
+    {
+      "id": 22,
+      "code": "FB.5.7",
+      "topic": "Sürdürülebilirlik",
+      "scenario": "Bir belediye/okul etkinliğinde bu konuya ilişkin karar veriliyor. Öğrenciler doğru seçeneği gerekçelendirmeye çalışıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Sürdürülebilirlik",
+        "content": "Kaynakları verimli kullanmak gelecek kuşakların ihtiyaçlarını da gözetir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Sürdürülebilir yaşamın amacı nedir",
+        "gelecek kuşakları gözetmek",
+        "atığı artırmak",
+        "israf"
+      ],
+      "answer": 0,
+      "explanation": "Kaynakları verimli kullanmak gelecek kuşakların ihtiyaçlarını da gözetir."
+    },
+    {
+      "id": 23,
+      "code": "FB.5.7",
+      "topic": "Enerji tasarrufu",
+      "scenario": "Bir gözlem günlüğünde kaydedilen veriler sınıfta tartışılıyor. Öğrenciler hangi açıklamanın verilerle uyumlu olduğunu seçiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Enerji tasarrufu",
+        "content": "Kullanılmayan ışıkları kapatmak enerji tasarrufu sağlar."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Boş sınıftaki ışıkları kapatmak hangi yararı sağlar",
+        "suyu kirletir",
+        "atığı artırır",
+        "kaynakları tüketir"
+      ],
+      "answer": 0,
+      "explanation": "Kullanılmayan ışıkları kapatmak enerji tasarrufu sağlar."
+    },
+    {
+      "id": 24,
+      "code": "FB.5.7",
+      "topic": "Atık yönetimi",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Atık yönetimi",
+        "content": "Azaltma, yeniden kullanma ve geri dönüştürme atık yönetiminin temel adımlarıdır."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Atık oluşumunu önlemede ilk tercih genellikle hangisidir",
+        "azaltmak",
+        "çöpe atmak",
+        "yakmak"
+      ],
+      "answer": 0,
+      "explanation": "Azaltma, yeniden kullanma ve geri dönüştürme atık yönetiminin temel adımlarıdır."
+    },
+    {
+      "id": 25,
+      "code": "FB.5.7",
+      "topic": "Kâğıt atık",
+      "scenario": "Bir belediye/okul etkinliğinde bu konuya ilişkin karar veriliyor. Öğrenciler doğru seçeneği gerekçelendirmeye çalışıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Kâğıt atık",
+        "content": "Kâğıt-karton atıkları uygun toplama sisteminde ayrı biriktirilir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Kullanılmış temiz defter kâğıdı hangi atık grubunda toplanır",
+        "kâğıt-karton",
+        "metal",
+        "organik"
+      ],
+      "answer": 0,
+      "explanation": "Kâğıt-karton atıkları uygun toplama sisteminde ayrı biriktirilir."
+    },
+    {
+      "id": 26,
+      "code": "FB.5.7",
+      "topic": "Cam atık",
+      "scenario": "Bir gözlem günlüğünde kaydedilen veriler sınıfta tartışılıyor. Öğrenciler hangi açıklamanın verilerle uyumlu olduğunu seçiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Cam atık",
+        "content": "Cam ambalajlar cam toplama sistemine ayrılır."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Boş cam kavanoz hangi atık türüdür",
+        "Plastik",
+        "metal",
+        "kâğıt"
+      ],
+      "answer": 0,
+      "explanation": "Cam ambalajlar cam toplama sistemine ayrılır."
+    },
+    {
+      "id": 27,
+      "code": "FB.5.7",
+      "topic": "Metal atık",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Metal atık",
+        "content": "Metal kutular uygun metal geri dönüşüm akışına ayrılır."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "İçecek metal kutusu hangi grupta değerlendirilir",
+        "Cam",
+        "kâğıt",
+        "organik"
+      ],
+      "answer": 0,
+      "explanation": "Metal kutular uygun metal geri dönüşüm akışına ayrılır."
+    },
+    {
+      "id": 28,
+      "code": "FB.5.7",
+      "topic": "Yeniden kullanım ve geri dönüşüm",
+      "scenario": "Bir belediye/okul etkinliğinde bu konuya ilişkin karar veriliyor. Öğrenciler doğru seçeneği gerekçelendirmeye çalışıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Yeniden kullanım ve geri dönüşüm",
+        "content": "Yeniden kullanımda ürün başka amaçla tekrar kullanılır; geri dönüşümde malzeme işlenir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Kavanozu kalemlik yapmak hangi uygulamadır",
+        "yeniden kullanım",
+        "yakma",
+        "kompost"
+      ],
+      "answer": 0,
+      "explanation": "Yeniden kullanımda ürün başka amaçla tekrar kullanılır; geri dönüşümde malzeme işlenir."
+    },
+    {
+      "id": 29,
+      "code": "FB.5.7",
+      "topic": "Atık pil",
+      "scenario": "Bir gözlem günlüğünde kaydedilen veriler sınıfta tartışılıyor. Öğrenciler hangi açıklamanın verilerle uyumlu olduğunu seçiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Atık pil",
+        "content": "Atık piller özel toplama noktalarına bırakılmalıdır."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Kullanılmış pil için doğru davranış hangisidir",
+        "normal çöpe atmak",
+        "pil toplama noktasına bırakmak",
+        "yakmak"
+      ],
+      "answer": 0,
+      "explanation": "Atık piller özel toplama noktalarına bırakılmalıdır."
+    },
+    {
+      "id": 30,
+      "code": "FB.5.7",
+      "topic": "Atıkların çevresel etkisi",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Atıkların çevresel etkisi",
+        "content": "Atıkların doğaya bırakılması toprak ve su kirliliğine neden olabilir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Atıkların gelişigüzel bırakılması hangi sonuca yol açabilir",
+        "kaynak artışı",
+        "hava temizliği",
+        "su tasarrufu"
+      ],
+      "answer": 0,
+      "explanation": "Atıkların doğaya bırakılması toprak ve su kirliliğine neden olabilir."
+    }
+  ]
+}
