@@ -1,3 +1,7 @@
+import exam6Unit4 from "@/content/denemeler/6-sinif-4-unite-yeni-nesil-30.json";
+import exam6Unit5 from "@/content/denemeler/6-sinif-5-unite-yeni-nesil-30.json";
+import exam6Unit6 from "@/content/denemeler/6-sinif-6-unite-yeni-nesil-30.json";
+import exam6Unit7 from "@/content/denemeler/6-sinif-7-unite-yeni-nesil-30.json";
 import exam8 from "@/content/denemeler/8-sinif-yeni-nesil-1-2.json";
 import examMevsimDna from "@/content/denemeler/8-sinif-yeni-nesil-mevsim-dna.json";
 import examLgs2 from "@/content/denemeler/8-sinif-lgs-denemesi-2.json";
@@ -49,6 +53,10 @@ export const STATIC_EXAMS: StaticExam[] = [
   exam5Unit5 as unknown as StaticExam,
   exam5Unit6 as unknown as StaticExam,
   exam5Unit7 as unknown as StaticExam,
+  exam6Unit4 as unknown as StaticExam,
+  exam6Unit5 as unknown as StaticExam,
+  exam6Unit6 as unknown as StaticExam,
+  exam6Unit7 as unknown as StaticExam,
 ];
 
 export function getStaticExam(slug: string): StaticExam | undefined {
