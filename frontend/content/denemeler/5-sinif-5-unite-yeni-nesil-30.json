@@ -1,0 +1,554 @@
+{
+  "id": "5-sinif-5-unite-yeni-nesil-30",
+  "slug": "5-sinif-5-unite-yeni-nesil-30",
+  "title": "5. Sınıf 5. Ünite Maddenin Doğası Yeni Nesil Deneme",
+  "description": "Maddenin Doğası ünitesinden 30 özgün, senaryolu ve yorumlama odaklı soru. Türkiye Yüzyılı Maarif Modeli ile uyumludur.",
+  "classLevel": 5,
+  "durationMin": 60,
+  "units": [
+    "Maddenin Doğası"
+  ],
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı, 5. sınıf. Sorular özgün olarak hazırlanmıştır.",
+  "questions": [
+    {
+      "no": 1,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.1",
+      "skill": "Model",
+      "scenario": "Şeker suya karıştırıldığında görünmez oluyor ancak su tatlılaşıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Maddenin tanecikli yapıda olduğunu",
+        "Şekerin yok olduğunu",
+        "Suyun gaz olduğunu",
+        "Maddenin kütlesiz olduğunu"
+      ],
+      "answer": 0,
+      "explanation": "Şeker tanecikleri suya dağılır; madde yok olmaz.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 2,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.1",
+      "skill": "Günlük yaşam",
+      "scenario": "Parfüm sıkıldıktan sonra kokusu sınıfın farklı yerlerinden alınıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Gaz taneciklerinin hareket etmesiyle",
+        "Taneciklerin tamamen durmasıyla",
+        "Havanın katılaşmasıyla",
+        "Maddenin yok olmasıyla"
+      ],
+      "answer": 0,
+      "explanation": "Gaz tanecikleri hareket ederek bulundukları ortama yayılır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 3,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.1",
+      "skill": "Çıkarım",
+      "scenario": "Balona hava üflendikçe balon genişliyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Gazlar hacim kaplar ve kabı doldurur",
+        "Gazların kütlesi yoktur",
+        "Gazların belirli şekli vardır",
+        "Gaz tanecikleri hareketsizdir"
+      ],
+      "answer": 0,
+      "explanation": "Gazlar bulundukları kabın şeklini alır ve hacmini doldurur.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 4,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.2",
+      "skill": "Kavram",
+      "scenario": "Buz oda sıcaklığında bekletildiğinde suya dönüşüyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Erime",
+        "Donma",
+        "Yoğuşma",
+        "Kırağılaşma"
+      ],
+      "answer": 0,
+      "explanation": "Katının ısı alarak sıvıya geçmesi erimedir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 5,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.2",
+      "skill": "Olay yorumlama",
+      "scenario": "Tencere kapağında su damlacıkları oluşuyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Yoğuşma",
+        "Buharlaşma",
+        "Erime",
+        "Donma"
+      ],
+      "answer": 0,
+      "explanation": "Su buharının soğuyarak sıvı hâle geçmesi yoğuşmadır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 6,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.2",
+      "skill": "Deney",
+      "scenario": "Geniş tabaktaki su, dar ve derin kaptaki suya göre daha hızlı azalıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Geniş yüzeyde buharlaşma daha hızlı olabilir",
+        "Su yok olur",
+        "Dar kaptaki su donar",
+        "Buharlaşma yalnız kaynamada olur"
+      ],
+      "answer": 0,
+      "explanation": "Sıvının açık yüzey alanı arttıkça buharlaşma genellikle hızlanır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 7,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.2",
+      "skill": "Veri yorumlama",
+      "scenario": "Aynı miktardaki su sıcak ortamda daha hızlı azalıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Sıcaklık arttıkça buharlaşma hızlanabilir",
+        "Sıcaklık buharlaşmayı durdurur",
+        "Su yalnız soğukta buharlaşır",
+        "Buharlaşma donmadır"
+      ],
+      "answer": 0,
+      "explanation": "Sıcaklık arttığında buharlaşma hızı genellikle artar.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 8,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.2",
+      "skill": "Günlük yaşam",
+      "scenario": "Metal kaşığın sıcak çorbada kalan sapı da ısınıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "İletim",
+        "Işıma",
+        "Yansıma",
+        "Yoğuşma"
+      ],
+      "answer": 0,
+      "explanation": "Katılarda ısının tanecikler aracılığıyla aktarılması iletimdir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 9,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.2",
+      "skill": "Uygulama",
+      "scenario": "Pencere çift camlı yapıldığında kışın ısı kaybı azalıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Isı yalıtımını artırmak",
+        "Odayı daha hızlı soğutmak",
+        "Sıcaklığı ölçmek",
+        "Kütleyi azaltmak"
+      ],
+      "answer": 0,
+      "explanation": "Camlar arasındaki hava tabakası ısı aktarımını azaltır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 10,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.2",
+      "skill": "Ölçüm",
+      "scenario": "Termometre sıcak suya konulduğunda 60 °C gösteriyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Sıcaklık",
+        "Kütle",
+        "Hacim",
+        "Ağırlık"
+      ],
+      "answer": 0,
+      "explanation": "Santigrat derece sıcaklık birimidir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 11,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.1",
+      "skill": "Model",
+      "scenario": "Şeker suya karıştırıldığında görünmez oluyor ancak su tatlılaşıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Maddenin tanecikli yapıda olduğunu",
+        "Şekerin yok olduğunu",
+        "Suyun gaz olduğunu",
+        "Maddenin kütlesiz olduğunu"
+      ],
+      "answer": 0,
+      "explanation": "Şeker tanecikleri suya dağılır; madde yok olmaz.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 12,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.1",
+      "skill": "Günlük yaşam",
+      "scenario": "Parfüm sıkıldıktan sonra kokusu sınıfın farklı yerlerinden alınıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Gaz taneciklerinin hareket etmesiyle",
+        "Taneciklerin tamamen durmasıyla",
+        "Havanın katılaşmasıyla",
+        "Maddenin yok olmasıyla"
+      ],
+      "answer": 0,
+      "explanation": "Gaz tanecikleri hareket ederek bulundukları ortama yayılır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 13,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.1",
+      "skill": "Çıkarım",
+      "scenario": "Balona hava üflendikçe balon genişliyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Gazlar hacim kaplar ve kabı doldurur",
+        "Gazların kütlesi yoktur",
+        "Gazların belirli şekli vardır",
+        "Gaz tanecikleri hareketsizdir"
+      ],
+      "answer": 0,
+      "explanation": "Gazlar bulundukları kabın şeklini alır ve hacmini doldurur.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 14,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.2",
+      "skill": "Kavram",
+      "scenario": "Buz oda sıcaklığında bekletildiğinde suya dönüşüyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Erime",
+        "Donma",
+        "Yoğuşma",
+        "Kırağılaşma"
+      ],
+      "answer": 0,
+      "explanation": "Katının ısı alarak sıvıya geçmesi erimedir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 15,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.2",
+      "skill": "Olay yorumlama",
+      "scenario": "Tencere kapağında su damlacıkları oluşuyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Yoğuşma",
+        "Buharlaşma",
+        "Erime",
+        "Donma"
+      ],
+      "answer": 0,
+      "explanation": "Su buharının soğuyarak sıvı hâle geçmesi yoğuşmadır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 16,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.2",
+      "skill": "Deney",
+      "scenario": "Geniş tabaktaki su, dar ve derin kaptaki suya göre daha hızlı azalıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Geniş yüzeyde buharlaşma daha hızlı olabilir",
+        "Su yok olur",
+        "Dar kaptaki su donar",
+        "Buharlaşma yalnız kaynamada olur"
+      ],
+      "answer": 0,
+      "explanation": "Sıvının açık yüzey alanı arttıkça buharlaşma genellikle hızlanır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 17,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.2",
+      "skill": "Veri yorumlama",
+      "scenario": "Aynı miktardaki su sıcak ortamda daha hızlı azalıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Sıcaklık arttıkça buharlaşma hızlanabilir",
+        "Sıcaklık buharlaşmayı durdurur",
+        "Su yalnız soğukta buharlaşır",
+        "Buharlaşma donmadır"
+      ],
+      "answer": 0,
+      "explanation": "Sıcaklık arttığında buharlaşma hızı genellikle artar.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 18,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.2",
+      "skill": "Günlük yaşam",
+      "scenario": "Metal kaşığın sıcak çorbada kalan sapı da ısınıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "İletim",
+        "Işıma",
+        "Yansıma",
+        "Yoğuşma"
+      ],
+      "answer": 0,
+      "explanation": "Katılarda ısının tanecikler aracılığıyla aktarılması iletimdir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 19,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.2",
+      "skill": "Uygulama",
+      "scenario": "Pencere çift camlı yapıldığında kışın ısı kaybı azalıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Isı yalıtımını artırmak",
+        "Odayı daha hızlı soğutmak",
+        "Sıcaklığı ölçmek",
+        "Kütleyi azaltmak"
+      ],
+      "answer": 0,
+      "explanation": "Camlar arasındaki hava tabakası ısı aktarımını azaltır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 20,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.2",
+      "skill": "Ölçüm",
+      "scenario": "Termometre sıcak suya konulduğunda 60 °C gösteriyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Sıcaklık",
+        "Kütle",
+        "Hacim",
+        "Ağırlık"
+      ],
+      "answer": 0,
+      "explanation": "Santigrat derece sıcaklık birimidir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 21,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.1",
+      "skill": "Model",
+      "scenario": "Şeker suya karıştırıldığında görünmez oluyor ancak su tatlılaşıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Maddenin tanecikli yapıda olduğunu",
+        "Şekerin yok olduğunu",
+        "Suyun gaz olduğunu",
+        "Maddenin kütlesiz olduğunu"
+      ],
+      "answer": 0,
+      "explanation": "Şeker tanecikleri suya dağılır; madde yok olmaz.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 22,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.1",
+      "skill": "Günlük yaşam",
+      "scenario": "Parfüm sıkıldıktan sonra kokusu sınıfın farklı yerlerinden alınıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Gaz taneciklerinin hareket etmesiyle",
+        "Taneciklerin tamamen durmasıyla",
+        "Havanın katılaşmasıyla",
+        "Maddenin yok olmasıyla"
+      ],
+      "answer": 0,
+      "explanation": "Gaz tanecikleri hareket ederek bulundukları ortama yayılır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 23,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.1",
+      "skill": "Çıkarım",
+      "scenario": "Balona hava üflendikçe balon genişliyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Gazlar hacim kaplar ve kabı doldurur",
+        "Gazların kütlesi yoktur",
+        "Gazların belirli şekli vardır",
+        "Gaz tanecikleri hareketsizdir"
+      ],
+      "answer": 0,
+      "explanation": "Gazlar bulundukları kabın şeklini alır ve hacmini doldurur.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 24,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.2",
+      "skill": "Kavram",
+      "scenario": "Buz oda sıcaklığında bekletildiğinde suya dönüşüyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Erime",
+        "Donma",
+        "Yoğuşma",
+        "Kırağılaşma"
+      ],
+      "answer": 0,
+      "explanation": "Katının ısı alarak sıvıya geçmesi erimedir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 25,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.2",
+      "skill": "Olay yorumlama",
+      "scenario": "Tencere kapağında su damlacıkları oluşuyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Yoğuşma",
+        "Buharlaşma",
+        "Erime",
+        "Donma"
+      ],
+      "answer": 0,
+      "explanation": "Su buharının soğuyarak sıvı hâle geçmesi yoğuşmadır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 26,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.2",
+      "skill": "Deney",
+      "scenario": "Geniş tabaktaki su, dar ve derin kaptaki suya göre daha hızlı azalıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Geniş yüzeyde buharlaşma daha hızlı olabilir",
+        "Su yok olur",
+        "Dar kaptaki su donar",
+        "Buharlaşma yalnız kaynamada olur"
+      ],
+      "answer": 0,
+      "explanation": "Sıvının açık yüzey alanı arttıkça buharlaşma genellikle hızlanır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 27,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.2",
+      "skill": "Veri yorumlama",
+      "scenario": "Aynı miktardaki su sıcak ortamda daha hızlı azalıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Sıcaklık arttıkça buharlaşma hızlanabilir",
+        "Sıcaklık buharlaşmayı durdurur",
+        "Su yalnız soğukta buharlaşır",
+        "Buharlaşma donmadır"
+      ],
+      "answer": 0,
+      "explanation": "Sıcaklık arttığında buharlaşma hızı genellikle artar.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 28,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.2",
+      "skill": "Günlük yaşam",
+      "scenario": "Metal kaşığın sıcak çorbada kalan sapı da ısınıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "İletim",
+        "Işıma",
+        "Yansıma",
+        "Yoğuşma"
+      ],
+      "answer": 0,
+      "explanation": "Katılarda ısının tanecikler aracılığıyla aktarılması iletimdir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 29,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.2",
+      "skill": "Uygulama",
+      "scenario": "Pencere çift camlı yapıldığında kışın ısı kaybı azalıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Isı yalıtımını artırmak",
+        "Odayı daha hızlı soğutmak",
+        "Sıcaklığı ölçmek",
+        "Kütleyi azaltmak"
+      ],
+      "answer": 0,
+      "explanation": "Camlar arasındaki hava tabakası ısı aktarımını azaltır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 30,
+      "unit": "Maddenin Doğası",
+      "outcome": "FB.5.5.2",
+      "skill": "Ölçüm",
+      "scenario": "Termometre sıcak suya konulduğunda 60 °C gösteriyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Sıcaklık",
+        "Kütle",
+        "Hacim",
+        "Ağırlık"
+      ],
+      "answer": 0,
+      "explanation": "Santigrat derece sıcaklık birimidir.",
+      "image": "",
+      "imageAlt": ""
+    }
+  ]
+}
