@@ -1,0 +1,609 @@
+{
+  "grade": 5,
+  "unit": 5,
+  "title": "Maddenin Doğası",
+  "slug": "maddenin-dogasi",
+  "description": "Maarif Modeli kazanımlarına göre hazırlanmış 30 senaryo temelli soru.",
+  "questions": [
+    {
+      "id": 1,
+      "code": "FB.5.5",
+      "topic": "Tanecikli yapı",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Tanecikli yapı",
+        "content": "Maddeler taneciklerden oluşur."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Maddenin temel yapısının taneciklerden oluştuğunu gösteren model hangisidir",
+        "tanecikli model",
+        "yalnız boşluk",
+        "ışın"
+      ],
+      "answer": 0,
+      "explanation": "Maddeler taneciklerden oluşur."
+    },
+    {
+      "id": 2,
+      "code": "FB.5.5",
+      "topic": "Katıların tanecikleri",
+      "scenario": "Bilim merkezindeki etkinlikte öğrenciler bir model üzerinde ölçüm yapıp sonuçlarını not ediyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Katıların tanecikleri",
+        "content": "Katılarda tanecikler yakın ve düzenli konumlarda titreşim hareketi yapar."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Katı maddelerde tanecikler birbirine yakın olup bulundukları yerde titreşir",
+        "Çok uzak",
+        "serbestçe akar",
+        "hiç hareket etmez"
+      ],
+      "answer": 0,
+      "explanation": "Katılarda tanecikler yakın ve düzenli konumlarda titreşim hareketi yapar."
+    },
+    {
+      "id": 3,
+      "code": "FB.5.5",
+      "topic": "Sıvıların tanecikleri",
+      "scenario": "Bir öğrenci günlük yaşamdan bir örnek veriyor; sınıf arkadaşları bu örneği fen bilgisiyle açıklıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Sıvıların tanecikleri",
+        "content": "Sıvılarda tanecikler birbirine yakın olup yer değiştirebilir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Sıvılar akabilir; tanecikleri birbirinin üzerinden kayarak yer değiştirebilir",
+        "Sabit konum",
+        "hiç hareket etmez",
+        "yok olur"
+      ],
+      "answer": 0,
+      "explanation": "Sıvılarda tanecikler birbirine yakın olup yer değiştirebilir."
+    },
+    {
+      "id": 4,
+      "code": "FB.5.5",
+      "topic": "Gazların tanecikleri",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Gazların tanecikleri",
+        "content": "Gazlarda tanecikler arasındaki boşluk fazladır ve tanecikler serbestçe hareket eder."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Gazların bulundukları kabı doldurmasının nedeni taneciklerinin serbest hareket etmesidir",
+        "Sabit şekil",
+        "tanecik yokluğu",
+        "yalnız titreşim"
+      ],
+      "answer": 0,
+      "explanation": "Gazlarda tanecikler arasındaki boşluk fazladır ve tanecikler serbestçe hareket eder."
+    },
+    {
+      "id": 5,
+      "code": "FB.5.5",
+      "topic": "Isı ve sıcaklık",
+      "scenario": "Bilim merkezindeki etkinlikte öğrenciler bir model üzerinde ölçüm yapıp sonuçlarını not ediyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Isı ve sıcaklık",
+        "content": "Isı sıcaklık farkı nedeniyle aktarılan enerjidir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Sıcaklığı farklı iki madde temas ettiğinde enerji sıcak olandan soğuk olana aktarılır",
+        "ısı aktarımı",
+        "kütle aktarımı",
+        "ışık aktarımı"
+      ],
+      "answer": 0,
+      "explanation": "Isı sıcaklık farkı nedeniyle aktarılan enerjidir."
+    },
+    {
+      "id": 6,
+      "code": "FB.5.5",
+      "topic": "Sıcaklığın ölçülmesi",
+      "scenario": "Bir öğrenci günlük yaşamdan bir örnek veriyor; sınıf arkadaşları bu örneği fen bilgisiyle açıklıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Sıcaklığın ölçülmesi",
+        "content": "Sıcaklık termometre ile ölçülür."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Sıcaklığı ölçmek için kullanılan araç termometredir",
+        "Dinamometre",
+        "terazi",
+        "kronometre"
+      ],
+      "answer": 0,
+      "explanation": "Sıcaklık termometre ile ölçülür."
+    },
+    {
+      "id": 7,
+      "code": "FB.5.5",
+      "topic": "Erime",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Erime",
+        "content": "Erime katıdan sıvıya geçiştir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Buzun suya dönüşmesi hangi hâl değişimidir",
+        "erime",
+        "yoğuşma",
+        "süblimleşme"
+      ],
+      "answer": 0,
+      "explanation": "Erime katıdan sıvıya geçiştir."
+    },
+    {
+      "id": 8,
+      "code": "FB.5.5",
+      "topic": "Donma",
+      "scenario": "Bilim merkezindeki etkinlikte öğrenciler bir model üzerinde ölçüm yapıp sonuçlarını not ediyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Donma",
+        "content": "Donma sıvıdan katıya geçiştir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Suyun soğuyarak buza dönüşmesi hangi hâl değişimidir",
+        "erime",
+        "donma",
+        "yoğuşma"
+      ],
+      "answer": 0,
+      "explanation": "Donma sıvıdan katıya geçiştir."
+    },
+    {
+      "id": 9,
+      "code": "FB.5.5",
+      "topic": "Buharlaşma",
+      "scenario": "Bir öğrenci günlük yaşamdan bir örnek veriyor; sınıf arkadaşları bu örneği fen bilgisiyle açıklıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Buharlaşma",
+        "content": "Buharlaşma sıvının gaz hâline geçmesidir ve yüzeyde gerçekleşebilir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Islak çamaşırın kuruması suyun hangi hâl değişimine örnektir",
+        "erime",
+        "buharlaşma",
+        "yoğuşma"
+      ],
+      "answer": 0,
+      "explanation": "Buharlaşma sıvının gaz hâline geçmesidir ve yüzeyde gerçekleşebilir."
+    },
+    {
+      "id": 10,
+      "code": "FB.5.5",
+      "topic": "Isı yalıtımı",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Isı yalıtımı",
+        "content": "Isı yalıtımı ısı alışverişini azaltır."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Binalarda yalıtım malzemeleri kullanmanın temel amacı ısı alışverişini azaltmaktır",
+        "Isı aktarımını artırmak",
+        "ışık üretmek",
+        "kütleyi değiştirmek"
+      ],
+      "answer": 0,
+      "explanation": "Isı yalıtımı ısı alışverişini azaltır."
+    },
+    {
+      "id": 11,
+      "code": "FB.5.5",
+      "topic": "Tanecikli yapı",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Tanecikli yapı",
+        "content": "Maddeler taneciklerden oluşur."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Maddenin temel yapısının taneciklerden oluştuğunu gösteren model hangisidir",
+        "tanecikli model",
+        "yalnız boşluk",
+        "ışın"
+      ],
+      "answer": 0,
+      "explanation": "Maddeler taneciklerden oluşur."
+    },
+    {
+      "id": 12,
+      "code": "FB.5.5",
+      "topic": "Katıların tanecikleri",
+      "scenario": "Okul sergisinde ziyaretçiler bir düzenek inceliyor ve öğrencilerden bilimsel çıkarım yapmaları isteniyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Katıların tanecikleri",
+        "content": "Katılarda tanecikler yakın ve düzenli konumlarda titreşim hareketi yapar."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Katı maddelerde tanecikler birbirine yakın olup bulundukları yerde titreşir",
+        "Çok uzak",
+        "serbestçe akar",
+        "hiç hareket etmez"
+      ],
+      "answer": 0,
+      "explanation": "Katılarda tanecikler yakın ve düzenli konumlarda titreşim hareketi yapar."
+    },
+    {
+      "id": 13,
+      "code": "FB.5.5",
+      "topic": "Sıvıların tanecikleri",
+      "scenario": "Bir grup öğrenci proje raporunda bu kavramı yanlış yorumluyor. Öğretmenleri, kanıta dayanarak doğru açıklamayı bulmalarını istiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Sıvıların tanecikleri",
+        "content": "Sıvılarda tanecikler birbirine yakın olup yer değiştirebilir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Sıvılar akabilir; tanecikleri birbirinin üzerinden kayarak yer değiştirebilir",
+        "Sabit konum",
+        "hiç hareket etmez",
+        "yok olur"
+      ],
+      "answer": 0,
+      "explanation": "Sıvılarda tanecikler birbirine yakın olup yer değiştirebilir."
+    },
+    {
+      "id": 14,
+      "code": "FB.5.5",
+      "topic": "Gazların tanecikleri",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Gazların tanecikleri",
+        "content": "Gazlarda tanecikler arasındaki boşluk fazladır ve tanecikler serbestçe hareket eder."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Gazların bulundukları kabı doldurmasının nedeni taneciklerinin serbest hareket etmesidir",
+        "Sabit şekil",
+        "tanecik yokluğu",
+        "yalnız titreşim"
+      ],
+      "answer": 0,
+      "explanation": "Gazlarda tanecikler arasındaki boşluk fazladır ve tanecikler serbestçe hareket eder."
+    },
+    {
+      "id": 15,
+      "code": "FB.5.5",
+      "topic": "Isı ve sıcaklık",
+      "scenario": "Okul sergisinde ziyaretçiler bir düzenek inceliyor ve öğrencilerden bilimsel çıkarım yapmaları isteniyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Isı ve sıcaklık",
+        "content": "Isı sıcaklık farkı nedeniyle aktarılan enerjidir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Sıcaklığı farklı iki madde temas ettiğinde enerji sıcak olandan soğuk olana aktarılır",
+        "ısı aktarımı",
+        "kütle aktarımı",
+        "ışık aktarımı"
+      ],
+      "answer": 0,
+      "explanation": "Isı sıcaklık farkı nedeniyle aktarılan enerjidir."
+    },
+    {
+      "id": 16,
+      "code": "FB.5.5",
+      "topic": "Sıcaklığın ölçülmesi",
+      "scenario": "Bir grup öğrenci proje raporunda bu kavramı yanlış yorumluyor. Öğretmenleri, kanıta dayanarak doğru açıklamayı bulmalarını istiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Sıcaklığın ölçülmesi",
+        "content": "Sıcaklık termometre ile ölçülür."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Sıcaklığı ölçmek için kullanılan araç termometredir",
+        "Dinamometre",
+        "terazi",
+        "kronometre"
+      ],
+      "answer": 0,
+      "explanation": "Sıcaklık termometre ile ölçülür."
+    },
+    {
+      "id": 17,
+      "code": "FB.5.5",
+      "topic": "Erime",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Erime",
+        "content": "Erime katıdan sıvıya geçiştir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Buzun suya dönüşmesi hangi hâl değişimidir",
+        "erime",
+        "yoğuşma",
+        "süblimleşme"
+      ],
+      "answer": 0,
+      "explanation": "Erime katıdan sıvıya geçiştir."
+    },
+    {
+      "id": 18,
+      "code": "FB.5.5",
+      "topic": "Donma",
+      "scenario": "Okul sergisinde ziyaretçiler bir düzenek inceliyor ve öğrencilerden bilimsel çıkarım yapmaları isteniyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Donma",
+        "content": "Donma sıvıdan katıya geçiştir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Suyun soğuyarak buza dönüşmesi hangi hâl değişimidir",
+        "erime",
+        "donma",
+        "yoğuşma"
+      ],
+      "answer": 0,
+      "explanation": "Donma sıvıdan katıya geçiştir."
+    },
+    {
+      "id": 19,
+      "code": "FB.5.5",
+      "topic": "Buharlaşma",
+      "scenario": "Bir grup öğrenci proje raporunda bu kavramı yanlış yorumluyor. Öğretmenleri, kanıta dayanarak doğru açıklamayı bulmalarını istiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Buharlaşma",
+        "content": "Buharlaşma sıvının gaz hâline geçmesidir ve yüzeyde gerçekleşebilir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Islak çamaşırın kuruması suyun hangi hâl değişimine örnektir",
+        "erime",
+        "buharlaşma",
+        "yoğuşma"
+      ],
+      "answer": 0,
+      "explanation": "Buharlaşma sıvının gaz hâline geçmesidir ve yüzeyde gerçekleşebilir."
+    },
+    {
+      "id": 20,
+      "code": "FB.5.5",
+      "topic": "Isı yalıtımı",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Isı yalıtımı",
+        "content": "Isı yalıtımı ısı alışverişini azaltır."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Binalarda yalıtım malzemeleri kullanmanın temel amacı ısı alışverişini azaltmaktır",
+        "Isı aktarımını artırmak",
+        "ışık üretmek",
+        "kütleyi değiştirmek"
+      ],
+      "answer": 0,
+      "explanation": "Isı yalıtımı ısı alışverişini azaltır."
+    },
+    {
+      "id": 21,
+      "code": "FB.5.5",
+      "topic": "Tanecikli yapı",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Tanecikli yapı",
+        "content": "Maddeler taneciklerden oluşur."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Maddenin temel yapısının taneciklerden oluştuğunu gösteren model hangisidir",
+        "tanecikli model",
+        "yalnız boşluk",
+        "ışın"
+      ],
+      "answer": 0,
+      "explanation": "Maddeler taneciklerden oluşur."
+    },
+    {
+      "id": 22,
+      "code": "FB.5.5",
+      "topic": "Katıların tanecikleri",
+      "scenario": "Bir belediye/okul etkinliğinde bu konuya ilişkin karar veriliyor. Öğrenciler doğru seçeneği gerekçelendirmeye çalışıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Katıların tanecikleri",
+        "content": "Katılarda tanecikler yakın ve düzenli konumlarda titreşim hareketi yapar."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Katı maddelerde tanecikler birbirine yakın olup bulundukları yerde titreşir",
+        "Çok uzak",
+        "serbestçe akar",
+        "hiç hareket etmez"
+      ],
+      "answer": 0,
+      "explanation": "Katılarda tanecikler yakın ve düzenli konumlarda titreşim hareketi yapar."
+    },
+    {
+      "id": 23,
+      "code": "FB.5.5",
+      "topic": "Sıvıların tanecikleri",
+      "scenario": "Bir gözlem günlüğünde kaydedilen veriler sınıfta tartışılıyor. Öğrenciler hangi açıklamanın verilerle uyumlu olduğunu seçiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Sıvıların tanecikleri",
+        "content": "Sıvılarda tanecikler birbirine yakın olup yer değiştirebilir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Sıvılar akabilir; tanecikleri birbirinin üzerinden kayarak yer değiştirebilir",
+        "Sabit konum",
+        "hiç hareket etmez",
+        "yok olur"
+      ],
+      "answer": 0,
+      "explanation": "Sıvılarda tanecikler birbirine yakın olup yer değiştirebilir."
+    },
+    {
+      "id": 24,
+      "code": "FB.5.5",
+      "topic": "Gazların tanecikleri",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Gazların tanecikleri",
+        "content": "Gazlarda tanecikler arasındaki boşluk fazladır ve tanecikler serbestçe hareket eder."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Gazların bulundukları kabı doldurmasının nedeni taneciklerinin serbest hareket etmesidir",
+        "Sabit şekil",
+        "tanecik yokluğu",
+        "yalnız titreşim"
+      ],
+      "answer": 0,
+      "explanation": "Gazlarda tanecikler arasındaki boşluk fazladır ve tanecikler serbestçe hareket eder."
+    },
+    {
+      "id": 25,
+      "code": "FB.5.5",
+      "topic": "Isı ve sıcaklık",
+      "scenario": "Bir belediye/okul etkinliğinde bu konuya ilişkin karar veriliyor. Öğrenciler doğru seçeneği gerekçelendirmeye çalışıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Isı ve sıcaklık",
+        "content": "Isı sıcaklık farkı nedeniyle aktarılan enerjidir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Sıcaklığı farklı iki madde temas ettiğinde enerji sıcak olandan soğuk olana aktarılır",
+        "ısı aktarımı",
+        "kütle aktarımı",
+        "ışık aktarımı"
+      ],
+      "answer": 0,
+      "explanation": "Isı sıcaklık farkı nedeniyle aktarılan enerjidir."
+    },
+    {
+      "id": 26,
+      "code": "FB.5.5",
+      "topic": "Sıcaklığın ölçülmesi",
+      "scenario": "Bir gözlem günlüğünde kaydedilen veriler sınıfta tartışılıyor. Öğrenciler hangi açıklamanın verilerle uyumlu olduğunu seçiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Sıcaklığın ölçülmesi",
+        "content": "Sıcaklık termometre ile ölçülür."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Sıcaklığı ölçmek için kullanılan araç termometredir",
+        "Dinamometre",
+        "terazi",
+        "kronometre"
+      ],
+      "answer": 0,
+      "explanation": "Sıcaklık termometre ile ölçülür."
+    },
+    {
+      "id": 27,
+      "code": "FB.5.5",
+      "topic": "Erime",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Erime",
+        "content": "Erime katıdan sıvıya geçiştir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Buzun suya dönüşmesi hangi hâl değişimidir",
+        "erime",
+        "yoğuşma",
+        "süblimleşme"
+      ],
+      "answer": 0,
+      "explanation": "Erime katıdan sıvıya geçiştir."
+    },
+    {
+      "id": 28,
+      "code": "FB.5.5",
+      "topic": "Donma",
+      "scenario": "Bir belediye/okul etkinliğinde bu konuya ilişkin karar veriliyor. Öğrenciler doğru seçeneği gerekçelendirmeye çalışıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Donma",
+        "content": "Donma sıvıdan katıya geçiştir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Suyun soğuyarak buza dönüşmesi hangi hâl değişimidir",
+        "erime",
+        "donma",
+        "yoğuşma"
+      ],
+      "answer": 0,
+      "explanation": "Donma sıvıdan katıya geçiştir."
+    },
+    {
+      "id": 29,
+      "code": "FB.5.5",
+      "topic": "Buharlaşma",
+      "scenario": "Bir gözlem günlüğünde kaydedilen veriler sınıfta tartışılıyor. Öğrenciler hangi açıklamanın verilerle uyumlu olduğunu seçiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Buharlaşma",
+        "content": "Buharlaşma sıvının gaz hâline geçmesidir ve yüzeyde gerçekleşebilir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Islak çamaşırın kuruması suyun hangi hâl değişimine örnektir",
+        "erime",
+        "buharlaşma",
+        "yoğuşma"
+      ],
+      "answer": 0,
+      "explanation": "Buharlaşma sıvının gaz hâline geçmesidir ve yüzeyde gerçekleşebilir."
+    },
+    {
+      "id": 30,
+      "code": "FB.5.5",
+      "topic": "Isı yalıtımı",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Isı yalıtımı",
+        "content": "Isı yalıtımı ısı alışverişini azaltır."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Binalarda yalıtım malzemeleri kullanmanın temel amacı ısı alışverişini azaltmaktır",
+        "Isı aktarımını artırmak",
+        "ışık üretmek",
+        "kütleyi değiştirmek"
+      ],
+      "answer": 0,
+      "explanation": "Isı yalıtımı ısı alışverişini azaltır."
+    }
+  ]
+}
