@@ -27,6 +27,7 @@ export default async function UnitPage({ params }: { params: { level: string; un
       <>
         <PageHeader eyebrow={`${level}. Sınıf · Ünite ${staticUnit.code}`} title={staticUnit.title} description={staticUnit.description} />
         <section className="mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
+          {level === 5 && <div className="mb-8 rounded-3xl border-2 border-beaker/40 bg-beaker/10 p-6 shadow-lg"><p className="text-sm font-bold uppercase tracking-wider text-beaker">5. Sınıf • Ünite soru bankası</p><h2 className="mt-2 text-2xl font-extrabold text-lab-ink dark:text-lab-paper">Bu üniteden 30 soru çöz</h2><p className="mt-2 text-sm text-lab-inkMuted dark:text-lab-paper/70">Maarif Modeli kazanımlarına uygun 30 soruyla öğrendiklerini pekiştir.</p><Link href={`/sinif/5/${staticUnit.slug}/soru-coz`} className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-beaker px-6 py-4 text-base font-extrabold text-white shadow-md transition hover:bg-beaker-dark sm:w-auto">📝 30 Yeni Nesil Soruya Başla <span aria-hidden="true">→</span></Link></div>}
           <div className="flex flex-wrap items-center justify-between gap-3">
             <Link href={`/sinif/${level}`} className="text-sm font-semibold text-beaker hover:underline">← Tüm Ünitelere Dön</Link>
             {level === 5 && <Link href={`/sinif/5/${staticUnit.slug}/soru-coz`} className="inline-flex items-center gap-2 rounded-full bg-beaker px-5 py-2.5 text-sm font-bold text-white shadow-sm transition hover:bg-beaker-dark">📝 30 Yeni Nesil Soru Çöz</Link>}
