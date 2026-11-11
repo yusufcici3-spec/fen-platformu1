@@ -36,12 +36,12 @@
       "scenario": "Aile alışverişte tek kullanımlık poşet yerine bez çanta kullanıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
-        "Atığı kaynağında azaltmayı",
         "Gereksiz tüketimi artırmayı",
         "Atıkları karıştırmayı",
-        "Geri dönüşümü engellemeyi"
+        "Geri dönüşümü engellemeyi",
+        "Atığı kaynağında azaltmayı"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Tekrar kullanılabilen çanta tek kullanımlık ürün ihtiyacını azaltır.",
       "image": "",
       "imageAlt": ""
@@ -54,12 +54,12 @@
       "scenario": "Öğrenciler cam, kâğıt, plastik ve metal atıkları farklı kutulara ayırıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
-        "Geri kazanımı kolaylaştırmak",
-        "Atıkları aynı hâle getirmek",
         "Atık miktarını artırmak",
-        "Kaynakları tüketmek"
+        "Kaynakları tüketmek",
+        "Geri kazanımı kolaylaştırmak",
+        "Atıkları aynı hâle getirmek"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Atık türlerinin ayrılması geri dönüşüm sürecini kolaylaştırır.",
       "image": "",
       "imageAlt": ""
@@ -72,12 +72,12 @@
       "scenario": "Kullanılabilir kitaplar çöpe atılmak yerine başka sınıflara veriliyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
+        "Karışık atık",
         "Yeniden kullanım",
         "Yakma",
-        "Depolama",
-        "Karışık atık"
+        "Depolama"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Bir ürünün yeniden değerlendirilmesi yeniden kullanımdır.",
       "image": "",
       "imageAlt": ""
@@ -108,12 +108,12 @@
       "scenario": "Meyve-sebze kabukları kompost kutusunda biriktiriliyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
-        "Organik atık",
         "Cam",
         "Metal",
-        "Atık pil"
+        "Atık pil",
+        "Organik atık"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Meyve ve sebze kabukları gibi organik atıklar kompost yapılabilir.",
       "image": "",
       "imageAlt": ""
@@ -126,12 +126,12 @@
       "scenario": "Atık piller normal çöpe değil özel toplama kutusuna bırakılıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
-        "Çevreye zarar verebilecek maddeler içerebilmesi",
-        "Kâğıda dönüşmesi",
         "Her koşulda zararsız olması",
-        "Yiyecek olarak kullanılması"
+        "Yiyecek olarak kullanılması",
+        "Çevreye zarar verebilecek maddeler içerebilmesi",
+        "Kâğıda dönüşmesi"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Atık piller uygun toplama noktalarına teslim edilmelidir.",
       "image": "",
       "imageAlt": ""
@@ -144,12 +144,12 @@
       "scenario": "Okulda musluklara tasarruf aparatı takılıyor ve öğrenciler suyu gereksiz akıtmıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
+        "Enerji tüketimini artırmayı",
         "Doğal kaynakları verimli kullanmayı",
         "Su israfını artırmayı",
-        "Atıkları karıştırmayı",
-        "Enerji tüketimini artırmayı"
+        "Atıkları karıştırmayı"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Su tasarrufu kaynakların gelecek nesiller için korunmasına katkı sağlar.",
       "image": "",
       "imageAlt": ""
@@ -180,12 +180,12 @@
       "scenario": "Bir aile alışverişe çıkmadan ihtiyaç listesi hazırlıyor ve gereksiz ürün almıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
-        "Gereksiz tüketim ve atık oluşumunu",
         "Ürünlerin kullanım ömrünü",
         "Kaynakların korunmasını",
-        "Geri dönüşüm oranını"
+        "Geri dönüşüm oranını",
+        "Gereksiz tüketim ve atık oluşumunu"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "İhtiyaç kadar tüketmek gereksiz ambalaj ve ürün atığını azaltır.",
       "image": "",
       "imageAlt": ""
@@ -198,12 +198,12 @@
       "scenario": "Okulda kâğıt atıkları ayrı toplanıp geri dönüşüm tesisine gönderiliyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
-        "Doğal kaynak ve atık miktarını azaltmak",
-        "Çöp miktarını artırmak",
         "Ağaç kesimini artırmak",
-        "Atıkları doğaya bırakmak"
+        "Atıkları doğaya bırakmak",
+        "Doğal kaynak ve atık miktarını azaltmak",
+        "Çöp miktarını artırmak"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Kâğıt geri dönüşümü ham madde ihtiyacını ve atığı azaltabilir.",
       "image": "",
       "imageAlt": ""
@@ -216,12 +216,12 @@
       "scenario": "Aile alışverişte tek kullanımlık poşet yerine bez çanta kullanıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
+        "Geri dönüşümü engellemeyi",
         "Atığı kaynağında azaltmayı",
         "Gereksiz tüketimi artırmayı",
-        "Atıkları karıştırmayı",
-        "Geri dönüşümü engellemeyi"
+        "Atıkları karıştırmayı"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Tekrar kullanılabilen çanta tek kullanımlık ürün ihtiyacını azaltır.",
       "image": "",
       "imageAlt": ""
@@ -252,12 +252,12 @@
       "scenario": "Kullanılabilir kitaplar çöpe atılmak yerine başka sınıflara veriliyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
-        "Yeniden kullanım",
         "Yakma",
         "Depolama",
-        "Karışık atık"
+        "Karışık atık",
+        "Yeniden kullanım"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Bir ürünün yeniden değerlendirilmesi yeniden kullanımdır.",
       "image": "",
       "imageAlt": ""
@@ -270,12 +270,12 @@
       "scenario": "Eski kavanoz temizlenerek kalemlik olarak kullanılıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
-        "Yeniden kullanım",
-        "Yoğuşma",
         "Süzme",
-        "Yakıt tüketimi"
+        "Yakıt tüketimi",
+        "Yeniden kullanım",
+        "Yoğuşma"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Bir ürünün farklı amaçla tekrar kullanılması yeniden kullanımdır.",
       "image": "",
       "imageAlt": ""
@@ -288,12 +288,12 @@
       "scenario": "Meyve-sebze kabukları kompost kutusunda biriktiriliyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
+        "Atık pil",
         "Organik atık",
         "Cam",
-        "Metal",
-        "Atık pil"
+        "Metal"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Meyve ve sebze kabukları gibi organik atıklar kompost yapılabilir.",
       "image": "",
       "imageAlt": ""
@@ -324,12 +324,12 @@
       "scenario": "Okulda musluklara tasarruf aparatı takılıyor ve öğrenciler suyu gereksiz akıtmıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
-        "Doğal kaynakları verimli kullanmayı",
         "Su israfını artırmayı",
         "Atıkları karıştırmayı",
-        "Enerji tüketimini artırmayı"
+        "Enerji tüketimini artırmayı",
+        "Doğal kaynakları verimli kullanmayı"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Su tasarrufu kaynakların gelecek nesiller için korunmasına katkı sağlar.",
       "image": "",
       "imageAlt": ""
@@ -342,12 +342,12 @@
       "scenario": "Kullanılmayan sınıf ışıkları kapatılıyor ve gün ışığından yararlanılıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
-        "Enerji kaynaklarını verimli kullanmak",
-        "Elektrik tüketimini artırmak",
         "Atık üretmek",
-        "Su kaynaklarını kirletmek"
+        "Su kaynaklarını kirletmek",
+        "Enerji kaynaklarını verimli kullanmak",
+        "Elektrik tüketimini artırmak"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Gereksiz enerji tüketimini önlemek çevresel etkileri azaltır.",
       "image": "",
       "imageAlt": ""
@@ -360,12 +360,12 @@
       "scenario": "Bir aile alışverişe çıkmadan ihtiyaç listesi hazırlıyor ve gereksiz ürün almıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
+        "Geri dönüşüm oranını",
         "Gereksiz tüketim ve atık oluşumunu",
         "Ürünlerin kullanım ömrünü",
-        "Kaynakların korunmasını",
-        "Geri dönüşüm oranını"
+        "Kaynakların korunmasını"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "İhtiyaç kadar tüketmek gereksiz ambalaj ve ürün atığını azaltır.",
       "image": "",
       "imageAlt": ""
@@ -396,12 +396,12 @@
       "scenario": "Aile alışverişte tek kullanımlık poşet yerine bez çanta kullanıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
-        "Atığı kaynağında azaltmayı",
         "Gereksiz tüketimi artırmayı",
         "Atıkları karıştırmayı",
-        "Geri dönüşümü engellemeyi"
+        "Geri dönüşümü engellemeyi",
+        "Atığı kaynağında azaltmayı"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Tekrar kullanılabilen çanta tek kullanımlık ürün ihtiyacını azaltır.",
       "image": "",
       "imageAlt": ""
@@ -414,12 +414,12 @@
       "scenario": "Öğrenciler cam, kâğıt, plastik ve metal atıkları farklı kutulara ayırıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
-        "Geri kazanımı kolaylaştırmak",
-        "Atıkları aynı hâle getirmek",
         "Atık miktarını artırmak",
-        "Kaynakları tüketmek"
+        "Kaynakları tüketmek",
+        "Geri kazanımı kolaylaştırmak",
+        "Atıkları aynı hâle getirmek"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Atık türlerinin ayrılması geri dönüşüm sürecini kolaylaştırır.",
       "image": "",
       "imageAlt": ""
@@ -432,12 +432,12 @@
       "scenario": "Kullanılabilir kitaplar çöpe atılmak yerine başka sınıflara veriliyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
+        "Karışık atık",
         "Yeniden kullanım",
         "Yakma",
-        "Depolama",
-        "Karışık atık"
+        "Depolama"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Bir ürünün yeniden değerlendirilmesi yeniden kullanımdır.",
       "image": "",
       "imageAlt": ""
@@ -468,12 +468,12 @@
       "scenario": "Meyve-sebze kabukları kompost kutusunda biriktiriliyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
-        "Organik atık",
         "Cam",
         "Metal",
-        "Atık pil"
+        "Atık pil",
+        "Organik atık"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Meyve ve sebze kabukları gibi organik atıklar kompost yapılabilir.",
       "image": "",
       "imageAlt": ""
@@ -486,12 +486,12 @@
       "scenario": "Atık piller normal çöpe değil özel toplama kutusuna bırakılıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
-        "Çevreye zarar verebilecek maddeler içerebilmesi",
-        "Kâğıda dönüşmesi",
         "Her koşulda zararsız olması",
-        "Yiyecek olarak kullanılması"
+        "Yiyecek olarak kullanılması",
+        "Çevreye zarar verebilecek maddeler içerebilmesi",
+        "Kâğıda dönüşmesi"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Atık piller uygun toplama noktalarına teslim edilmelidir.",
       "image": "",
       "imageAlt": ""
@@ -504,12 +504,12 @@
       "scenario": "Okulda musluklara tasarruf aparatı takılıyor ve öğrenciler suyu gereksiz akıtmıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
+        "Enerji tüketimini artırmayı",
         "Doğal kaynakları verimli kullanmayı",
         "Su israfını artırmayı",
-        "Atıkları karıştırmayı",
-        "Enerji tüketimini artırmayı"
+        "Atıkları karıştırmayı"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Su tasarrufu kaynakların gelecek nesiller için korunmasına katkı sağlar.",
       "image": "",
       "imageAlt": ""
@@ -540,12 +540,12 @@
       "scenario": "Bir aile alışverişe çıkmadan ihtiyaç listesi hazırlıyor ve gereksiz ürün almıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
-        "Gereksiz tüketim ve atık oluşumunu",
         "Ürünlerin kullanım ömrünü",
         "Kaynakların korunmasını",
-        "Geri dönüşüm oranını"
+        "Geri dönüşüm oranını",
+        "Gereksiz tüketim ve atık oluşumunu"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "İhtiyaç kadar tüketmek gereksiz ambalaj ve ürün atığını azaltır.",
       "image": "",
       "imageAlt": ""
