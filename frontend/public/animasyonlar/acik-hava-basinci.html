@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Açık Hava Basıncı Laboratuvarı</title>
+<style>
+:root{--bg:#eef5fb;--panel:#fff;--ink:#172b46;--muted:#5d738a;--line:#d8e5f1;--acc:#087c9d;--accSoft:#e3f2fa;--accInk:#155078;--warn:#ea580c;--warnSoft:#ffedd5;--noteBg:#fff8e9;--noteLine:#f4dfb2;--noteInk:#674b19;--result:#102a50;--resultMuted:#b6d9ec;--fact:#f0f7fb;color-scheme:light;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0D1620;--panel:#142231;--ink:#E7EEF6;--muted:#9DB0C4;--line:#274058;--acc:#5BC0DE;--accSoft:#1d3447;--accInk:#BFE3F5;--warn:#F08A5D;--warnSoft:#3a2a22;--noteBg:#2a2616;--noteLine:#4d4424;--noteInk:#e8d9a8;--result:#0a1b33;--resultMuted:#9CC4DA;--fact:#1b2d40;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0D1620;--panel:#142231;--ink:#E7EEF6;--muted:#9DB0C4;--line:#274058;--acc:#5BC0DE;--accSoft:#1d3447;--accInk:#BFE3F5;--warn:#F08A5D;--warnSoft:#3a2a22;--noteBg:#2a2616;--noteLine:#4d4424;--noteInk:#e8d9a8;--result:#0a1b33;--resultMuted:#9CC4DA;--fact:#1b2d40;color-scheme:dark}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink)}
+.lab{max-width:1100px;margin:auto;padding:18px}
+.top{padding:22px;border-radius:22px;background:linear-gradient(130deg,#102a50,#176a91);color:#fff}
+.eyebrow{font-size:11px;letter-spacing:.16em;font-weight:800;color:#9ee7f5}
+.top h1{margin:8px 0;font-size:clamp(25px,4vw,36px)}
+.top p{margin:0;color:#d8eafa;line-height:1.6;font-size:14px}
+.layout{display:grid;grid-template-columns:1.35fr .65fr;gap:16px;margin-top:16px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:0 8px 24px #23476b0c}
+.panel h2{font-size:17px;margin:0 0 14px}
+.stage{border-radius:16px;overflow:hidden;border:1px solid var(--line)}
+canvas{display:block;width:100%;height:auto;touch-action:pan-y}
+.controls{display:grid;gap:16px}
+.control label.lbl{display:flex;justify-content:space-between;gap:10px;font-size:13px;font-weight:750;margin-bottom:8px}
+.control output{color:var(--acc);font-variant-numeric:tabular-nums}
+.control input[type=range]{width:100%;accent-color:var(--acc)}
+.buttons{display:flex;flex-wrap:wrap;gap:8px}
+.btn{border:0;border-radius:12px;padding:10px 12px;font-weight:800;font-size:13px;cursor:pointer;background:var(--accSoft);color:var(--accInk);font-family:inherit}
+.btn.active{background:var(--warnSoft);color:var(--warn);outline:2px solid var(--warn)}
+.btn.primary{background:var(--acc);color:#fff}
+.btn:focus-visible,input:focus-visible{outline:3px solid var(--warn);outline-offset:2px}
+.check{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:650}
+.check input{accent-color:var(--acc);width:18px;height:18px}
+.result{border-radius:16px;padding:16px;background:var(--result);color:#fff}
+.result small{color:var(--resultMuted);font-weight:800;letter-spacing:.1em}
+.value{font-size:34px;font-weight:900;margin:4px 0;font-variant-numeric:tabular-nums}
+.result p{font-size:12px;color:#d5e8f4;margin:0;line-height:1.55}
+.state{font-size:13px;font-weight:700;color:var(--acc);line-height:1.5;min-height:60px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.fact{padding:12px;border-radius:13px;background:var(--fact)}
+.fact b{display:block;font-size:17px;color:var(--accInk);font-variant-numeric:tabular-nums}
+.fact span{font-size:11px;color:var(--muted)}
+.explain{margin-top:14px;padding:16px;border-radius:16px;background:var(--noteBg);border:1px solid var(--noteLine);color:var(--noteInk);font-size:13px;line-height:1.7}
+.formula{font-weight:900;font-size:20px;display:block;margin:5px 0}
+.hint{font-size:11px;color:var(--muted);margin-top:10px;line-height:1.55}
+.footer{font-size:11px;color:var(--muted);text-align:center;padding:18px}
+@media(max-width:820px){.layout{grid-template-columns:1fr}.panel{padding:14px}.lab{padding:12px}}
+</style></head><body><main class="lab">
+<header class="top"><div class="eyebrow">8. SINIF FEN BİLİMLERİ · BASINÇ</div><h1>🌬️ Açık Hava Basıncı Laboratuvarı</h1><p>Torricelli deneyini sanal olarak yap. Rakımı değiştirerek açık hava basıncının nasıl azaldığını gör; tüpü eğ, kalınlığını değiştir ve sıvı sütununun yüksekliğini nelerin belirlediğini keşfet.</p></header>
+
+<div class="layout">
+<section class="panel"><h2>🧪 Torricelli deney düzeneği</h2>
+<div class="stage"><canvas id="cv" width="720" height="560" role="img" aria-label="Torricelli deneyi: sıvı dolu bir tüp, sıvı kabına ters çevrilmiş; hava molekülleri kabın yüzeyine çarpıyor"></canvas></div>
+<div class="hint">Şema öğretim amaçlıdır. Tüpün ucu kaptaki sıvının içindedir; sıvı sütununun üstünde hava yoktur (boşluk). Cıva zehirlidir; bu deney gerçekte yalnızca güvenlik önlemleriyle yapılır, burada sanal olarak inceliyorsun.</div>
+<div class="facts" style="margin-top:12px">
+<div class="fact"><b id="fH">76,0 cm</b><span>Dikey sıvı yüksekliği (h)</span></div>
+<div class="fact"><b id="fL">76,0 cm</b><span>Tüpteki sıvı boyu (L)</span></div>
+<div class="fact"><b id="fK">101,3 kPa</b><span>Açık hava basıncı</span></div>
+</div>
+</section>
+
+<section class="panel"><h2>🎛️ Deney kontrolleri</h2><div class="controls">
+<div class="control"><label class="lbl" for="alt">Rakım (deniz seviyesinden yükseklik) <output id="altOut">0 m</output></label><input id="alt" type="range" min="0" max="8849" step="1" value="0">
+<div class="buttons" style="margin-top:8px"><button class="btn" data-alt="0">Deniz seviyesi</button><button class="btn" data-alt="900">Ankara ≈ 900 m</button><button class="btn" data-alt="3917">Erciyes 3917 m</button><button class="btn" data-alt="8849">Everest 8849 m</button></div>
+<div class="buttons" style="margin-top:8px"><button class="btn primary" id="auto">▶ Otomatik tırman</button></div></div>
+<div class="control"><label class="lbl">Sıvı türü</label><div class="buttons"><button class="btn active" data-liq="hg">Cıva (13,6 g/cm³)</button><button class="btn" data-liq="su">Su (1 g/cm³)</button></div></div>
+<div class="control"><label class="lbl" for="tilt">Tüpün eğimi <output id="tiltOut">0°</output></label><input id="tilt" type="range" min="0" max="55" step="1" value="0"></div>
+<div class="control"><label class="lbl" for="wid">Tüpün kalınlığı (kesit alanı) <output id="widOut">Orta</output></label><input id="wid" type="range" min="16" max="52" step="1" value="30"></div>
+<div class="control"><label class="check"><input type="checkbox" id="showMol" checked> Hava moleküllerini göster</label><label class="check" style="margin-top:8px"><input type="checkbox" id="showArr" checked> Basınç oklarını göster</label></div>
+<div class="control"><label class="lbl">Gözlem</label><div class="state" id="state" aria-live="polite">Deniz seviyesinde cıva sütunu 76 cm yükselir.</div></div>
+<div class="result"><small>AÇIK HAVA BASINCI</small><div class="value" id="pVal">76,0 cmHg</div><p id="pText">≈ 1013 hPa · 101,3 kPa · 1,00 atm</p></div>
+</div></section>
+</div>
+
+<section class="panel" style="margin-top:16px"><h2>📘 Neyi keşfettin?</h2>
+<div class="explain"><strong>Bilimsel sonuç:</strong> Açık hava basıncı, atmosferdeki hava moleküllerinin ağırlığından ve çarpmalarından oluşur; her yöne etki eder. Torricelli deneyinde deniz seviyesinde cıva sütunu yaklaşık 76 cm yükselir: <strong>76 cmHg ≈ 1 atm ≈ 101 325 Pa</strong>. Kaptaki sıvının yüzeyine etki eden açık hava basıncı, tüpteki sıvı sütununun basıncına eşittir (A ve B aynı seviyededir).
+<span class="formula">P₀ = h × d × g</span>
+<strong>Unutma:</strong> Yükseldikçe hava seyrekleşir, açık hava basıncı azalır ve sütun kısalır. Sütunun dikey yüksekliği (h) tüpün eğimine, kalınlığına ve şekline bağlı değildir; yalnızca açık hava basıncına ve sıvının yoğunluğuna bağlıdır. Yoğunluğu küçük bir sıvıda (su) aynı basınç çok daha yüksek bir sütunu dengeler.</div></section>
+<div class="footer">Fen ve Bilim Kulübü · Yusuf Cici · Etkileşimli öğrenme modeli</div>
+</main>
+<script>
+(function(){
+"use strict";
+var $=function(id){return document.getElementById(id)};
+var cv=$("cv"),ctx=cv.getContext("2d");
+var W=720,H=560,SURF=400,DX=330,DW=290,DBOT=478,BX=410,BY=450,LPX=340,IMM=BY-SURF;
+var G=9.80665;
+var LIQ={hg:{name:"Cıva",rho:13595,tubeCm:100,unit:"cm",tick:10,mx:"cm"},su:{name:"Su",rho:1000,tubeCm:1200,unit:"m",tick:100,mx:"m"}};
+var S={liq:"hg",auto:false,dir:1,last:"alt"};
+var dpr=Math.min(window.devicePixelRatio||1,2);
+cv.width=W*dpr;cv.height=H*dpr;
+function fmt(n,d){d=d==null?1:d;return n.toLocaleString("tr-TR",{minimumFractionDigits:d,maximumFractionDigits:d})}
+function pAt(alt){return 101325*Math.pow(1-2.25577e-5*alt,5.25588)}
+function isDark(){var t=document.documentElement.getAttribute("data-theme");if(t)return t==="dark";return window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches}
+function pal(){return isDark()?{skyA:"#0b1a2c",skyB:"#16304a",mount:"#43586f",snow:"#dbe7f2",ground:"#1f3b2f",table:"#6c4e35",glass:"#a9cde6",vac:"#0a1626",text:"#e7eef6",pill:"rgba(10,22,38,.82)",mol:"#7fb4e6",mol2:"#ff7f8a"}
+:{skyA:"#bfe3fb",skyB:"#eef8ff",mount:"#7f93a8",snow:"#ffffff",ground:"#a5cf9f",table:"#b98b5e",glass:"#35566f",vac:"#dfeaf3",text:"#172b46",pill:"rgba(255,255,255,.86)",mol:"#3b7fc4",mol2:"#e0475b"}}
+var mols=[];
+function rnd(a,b){return a+Math.random()*(b-a)}
+function spawn(){var a=rnd(0,6.283),v=rnd(70,130);mols.push({x:rnd(170,W-10),y:rnd(20,SURF-8),vx:Math.cos(a)*v,vy:Math.sin(a)*v,k:Math.random()<.21?1:0})}
+var flashes=[];
+var M={};
+function update(){
+ var alt=+$("alt").value,tiltDeg=+$("tilt").value,w=+$("wid").value,liq=LIQ[S.liq];
+ var P=pAt(alt),hm=P/(liq.rho*G),hcm=hm*100,pxcm=LPX/liq.tubeCm,hpx=hcm*pxcm,th=tiltDeg*Math.PI/180,c=Math.cos(th);
+ var sTop=(IMM+hpx)/c,full=sTop>=LPX-1;
+ if(full)sTop=LPX;
+ var colCm=(sTop-IMM/c)/pxcm,hShownCm=colCm*c;
+ M={alt:alt,P:P,th:th,w:w,sTop:sTop,full:full,hpx:hpx,hShownPx:hShownCm*pxcm,pxcm:pxcm,liq:liq};
+ var u=liq.unit==="m"?100:1,dec=liq.unit==="m"?2:1;
+ $("altOut").textContent=alt.toLocaleString("tr-TR")+" m";
+ $("tiltOut").textContent=tiltDeg+"°";
+ $("widOut").textContent=w<24?"İnce":w<38?"Orta":"Kalın";
+ $("fH").textContent=fmt(hShownCm/u,dec)+" "+liq.unit;
+ $("fL").textContent=fmt(colCm/u,dec)+" "+liq.unit;
+ $("fK").textContent=fmt(P/1000,1)+" kPa";
+ $("pVal").textContent=fmt(P/(13595*G)*100,1)+" cmHg";
+ $("pText").textContent="≈ "+fmt(P/100,0)+" hPa · "+fmt(P/1000,1)+" kPa · "+fmt(P/101325,2)+" atm";
+ var msg;
+ if(full)msg="Tüp sıvıyla tamamen doldu: bu eğimde tüpün dikey yüksekliği, açık hava basıncının tutabileceği sütundan kısa. Tüpü dikleştirirsen boşluk yeniden oluşur.";
+ else if(S.last==="tilt")msg=tiltDeg===0?"Tüp dik: sıvı boyu (L) dikey yüksekliğe (h) eşit.":"Tüp eğildi: sıvı boyu (L) uzadı ama dikey yükseklik (h) değişmedi.";
+ else if(S.last==="wid")msg="Tüpün kalınlığı değişti; dikey yükseklik (h) aynı kaldı. Sütun yüksekliği kesit alanına bağlı değildir.";
+ else if(S.last==="liq")msg=S.liq==="su"?"Su, cıvadan yaklaşık 13,6 kat daha az yoğundur; aynı basınç yaklaşık 13,6 kat daha yüksek sütunu dengeler (deniz seviyesinde ≈ 10,3 m).":"Cıva yoğun olduğu için sütun kısadır: deniz seviyesinde yaklaşık 76 cm.";
+ else msg=alt===0?"Deniz seviyesinde açık hava basıncı en yüksek düzeydedir (≈ 76 cmHg).":"Yükseldikçe hava seyrekleşir: açık hava basıncı azalır ve sütun kısalır.";
+ $("state").textContent=msg;
+ document.querySelectorAll("[data-alt]").forEach(function(b){b.classList.toggle("active",+b.dataset.alt===alt)});
+ document.querySelectorAll("[data-liq]").forEach(function(b){b.classList.toggle("active",b.dataset.liq===S.liq)});
+ sendH();
+}
+function rr(x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath()}
+function pill(x,y,w,h,col){ctx.fillStyle=col;rr(x,y,w,h,8);ctx.fill()}
+function arrowDown(x,y1,y2,col){ctx.strokeStyle=col;ctx.fillStyle=col;ctx.lineWidth=4;ctx.beginPath();ctx.moveTo(x,y1);ctx.lineTo(x,y2-9);ctx.stroke();ctx.beginPath();ctx.moveTo(x,y2);ctx.lineTo(x-8,y2-13);ctx.lineTo(x+8,y2-13);ctx.closePath();ctx.fill()}
+function txt(t,x,y,size,col,al,wt){ctx.font=(wt||"700")+" "+size+"px Inter,system-ui,sans-serif";ctx.fillStyle=col;ctx.textAlign=al||"left";ctx.textBaseline="alphabetic";ctx.fillText(t,x,y)}
+var tPrev=0,time=0;
+function frame(ts){
+ var dt=Math.min(.05,(ts-tPrev)/1000||0);tPrev=ts;time+=dt;
+ if(S.auto){var a=+$("alt").value+S.dir*650*dt;if(a>=8849){a=8849;S.dir=-1}if(a<=0){a=0;S.dir=1}$("alt").value=a;S.last="alt";update()}
+ step(dt);draw();requestAnimationFrame(frame)
+}
+function step(dt){
+ var show=$("showMol").checked;
+ var target=show?Math.round(210*M.P/101325):0;
+ for(var i=0;i<3;i++){if(mols.length<target)spawn();else if(mols.length>target)mols.pop()}
+ for(var j=0;j<mols.length;j++){var m=mols[j];m.x+=m.vx*dt;m.y+=m.vy*dt;
+  if(m.x<168){m.x=168;m.vx=Math.abs(m.vx)}if(m.x>W-6){m.x=W-6;m.vx=-Math.abs(m.vx)}
+  if(m.y<14){m.y=14;m.vy=Math.abs(m.vy)}
+  var inDish=m.x>DX&&m.x<DX+DW;
+  if(inDish&&m.y>SURF-3){m.y=SURF-3;m.vy=-Math.abs(m.vy);if(flashes.length<26)flashes.push({x:m.x,t:time})}
+  else if(!inDish&&m.y>DBOT-4){m.y=DBOT-4;m.vy=-Math.abs(m.vy)}
+  if(!inDish&&m.y>SURF&&m.x>DX-8&&m.x<=DX+4){m.x=DX-8;m.vx=-Math.abs(m.vx)}
+ }
+ while(flashes.length&&time-flashes[0].t>.25)flashes.shift();
+}
+function draw(){
+ var p=pal(),liq=M.liq,hg=S.liq==="hg";
+ ctx.setTransform(dpr,0,0,dpr,0,0);
+ var g=ctx.createLinearGradient(0,0,0,H);g.addColorStop(0,p.skyA);g.addColorStop(1,p.skyB);ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+ // ground
+ ctx.fillStyle=p.ground;ctx.fillRect(0,500,W,60);
+ // mountain
+ ctx.fillStyle=p.mount;ctx.beginPath();ctx.moveTo(22,500);ctx.lineTo(88,70);ctx.lineTo(154,500);ctx.closePath();ctx.fill();
+ ctx.fillStyle=p.snow;ctx.beginPath();ctx.moveTo(88,70);ctx.lineTo(74,152);ctx.lineTo(88,138);ctx.lineTo(103,156);ctx.closePath();ctx.fill();
+ txt("8849 m",88,52,16,p.text,"center","800");
+ var f=M.alt/8849,hx=22+66*f,hy=500-430*f;
+ ctx.fillStyle="#f97316";ctx.strokeStyle="#fff";ctx.lineWidth=3;ctx.beginPath();ctx.arc(hx,hy,8,0,6.283);ctx.fill();ctx.stroke();
+ var lab=M.alt.toLocaleString("tr-TR")+" m";
+ ctx.font="800 16px Inter,system-ui,sans-serif";var lw=ctx.measureText(lab).width+14;
+ var lx=hx+16;if(lx+lw>158)lx=Math.max(4,hx-lw-16);pill(lx,hy-17,lw,26,p.pill);txt(lab,lx+7,hy+2,16,p.text,"left","800");
+ txt("Deniz seviyesi",88,524,15,p.text,"center","700");
+ // table
+ ctx.fillStyle=p.table;ctx.fillRect(300,DBOT,W-300-10,22);
+ // molecules (behind apparatus)
+ for(var i=0;i<mols.length;i++){var m=mols[i];ctx.fillStyle=m.k?p.mol2:p.mol;ctx.globalAlpha=.85;ctx.beginPath();ctx.arc(m.x,m.y,m.k?4.2:3.6,0,6.283);ctx.fill()}
+ ctx.globalAlpha=1;
+ // dish liquid
+ var lg=ctx.createLinearGradient(0,SURF,0,DBOT);
+ if(hg){lg.addColorStop(0,"#cfd6dd");lg.addColorStop(1,"#8a95a1")}else{lg.addColorStop(0,"#6cc3ee");lg.addColorStop(1,"#2a96cc")}
+ ctx.fillStyle=lg;ctx.beginPath();ctx.moveTo(DX,SURF);ctx.lineTo(DX+DW,SURF);ctx.lineTo(DX+DW,DBOT-18);ctx.quadraticCurveTo(DX+DW,DBOT,DX+DW-18,DBOT);ctx.lineTo(DX+18,DBOT);ctx.quadraticCurveTo(DX,DBOT,DX,DBOT-18);ctx.closePath();ctx.fill();
+ ctx.strokeStyle=p.glass;ctx.lineWidth=3.5;ctx.beginPath();ctx.moveTo(DX,SURF-24);ctx.lineTo(DX,DBOT-18);ctx.quadraticCurveTo(DX,DBOT,DX+18,DBOT);ctx.lineTo(DX+DW-18,DBOT);ctx.quadraticCurveTo(DX+DW,DBOT,DX+DW,DBOT-18);ctx.lineTo(DX+DW,SURF-24);ctx.stroke();
+ ctx.strokeStyle="rgba(255,255,255,.7)";ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(DX+2,SURF);ctx.lineTo(DX+DW-2,SURF);ctx.stroke();
+ // pressure arrows & flashes
+ var c=Math.cos(M.th),xA=BX+IMM*Math.tan(M.th),hw=M.w/(2*c)+12;
+ if($("showArr").checked){
+  var n=Math.max(1,Math.round(8*M.P/101325)),x0=DX+22,x1=DX+DW-18,k=0;
+  for(var q=0;q<n;q++){var ax=n===1?(x0+x1)/2:x0+(x1-x0)*q/(n-1);if(Math.abs(ax-xA)<hw)continue;var dy=5*Math.sin(time*4+q);arrowDown(ax,SURF-52+dy,SURF-8+dy,"#e11d48");k++}
+ }
+ for(var z=0;z<flashes.length;z++){var fl=flashes[z],a=1-(time-fl.t)/.25;ctx.strokeStyle="rgba(225,29,72,"+Math.max(0,a)+")";ctx.lineWidth=2;ctx.beginPath();ctx.arc(fl.x,SURF,4+10*(1-a),Math.PI,2*Math.PI);ctx.stroke()}
+ // tube
+ var w=M.w;ctx.save();ctx.translate(BX,BY);ctx.rotate(M.th);
+ ctx.fillStyle=p.vac;ctx.beginPath();ctx.moveTo(-w/2,0);ctx.lineTo(-w/2,-LPX+w/2);ctx.arc(0,-LPX+w/2,w/2,Math.PI,2*Math.PI);ctx.lineTo(w/2,0);ctx.closePath();ctx.fill();
+ var tg=ctx.createLinearGradient(-w/2,0,w/2,0);
+ if(hg){tg.addColorStop(0,"#e3e8ed");tg.addColorStop(.5,"#b6c0ca");tg.addColorStop(1,"#8794a1")}else{tg.addColorStop(0,"#79cdf3");tg.addColorStop(1,"#2b9bd2")}
+ ctx.fillStyle=tg;
+ if(M.full){ctx.beginPath();ctx.moveTo(-w/2,0);ctx.lineTo(-w/2,-LPX+w/2);ctx.arc(0,-LPX+w/2,w/2,Math.PI,2*Math.PI);ctx.lineTo(w/2,0);ctx.closePath();ctx.fill()}
+ else ctx.fillRect(-w/2,-M.sTop,w,M.sTop);
+ ctx.strokeStyle=p.glass;ctx.lineWidth=3.5;ctx.lineJoin="round";ctx.beginPath();ctx.moveTo(-w/2,0);ctx.lineTo(-w/2,-LPX+w/2);ctx.arc(0,-LPX+w/2,w/2,Math.PI,2*Math.PI);ctx.lineTo(w/2,0);ctx.stroke();
+ ctx.strokeStyle="rgba(255,255,255,.55)";ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(-w/2+5,-6);ctx.lineTo(-w/2+5,-Math.min(M.sTop,LPX-w/2));ctx.stroke();
+ ctx.restore();
+ // column-top level line + h label
+ var topY=SURF-M.hShownPx,topX=BX+(IMM+M.hShownPx)*Math.tan(M.th);
+ ctx.setLineDash([7,5]);ctx.strokeStyle="#f97316";ctx.lineWidth=2.5;ctx.beginPath();ctx.moveTo(300,topY);ctx.lineTo(topX,topY);ctx.stroke();
+ ctx.setLineDash([]);
+ ctx.strokeStyle="#f97316";ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(322,SURF);ctx.lineTo(322,topY);ctx.stroke();
+ ctx.fillStyle="#f97316";ctx.beginPath();ctx.moveTo(322,topY);ctx.lineTo(316,topY+12);ctx.lineTo(328,topY+12);ctx.closePath();ctx.fill();
+ ctx.beginPath();ctx.moveTo(322,SURF);ctx.lineTo(316,SURF-12);ctx.lineTo(328,SURF-12);ctx.closePath();ctx.fill();
+ var hv=M.hShownPx/M.pxcm/(liq.unit==="m"?100:1),hl="h = "+fmt(hv,liq.unit==="m"?2:1)+" "+liq.unit;
+ ctx.font="800 19px Inter,system-ui,sans-serif";var hwid=ctx.measureText(hl).width+16;
+ var hlx=334,hly=Math.max(70,(topY+SURF)/2)-4;if(hly>SURF-60)hly=SURF-60;
+ pill(hlx,hly-22,hwid,30,p.pill);txt(hl,hlx+8,hly,19,"#ea580c","left","800");
+ // ruler
+ pill(250,48,52,SURF-48+12,p.pill);
+ ctx.strokeStyle=p.text;ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(296,SURF);ctx.lineTo(296,SURF-LPX);ctx.stroke();
+ var nt=liq.tubeCm/liq.tick;
+ for(var t=0;t<=nt;t++){var yy=SURF-t*liq.tick*M.pxcm;ctx.beginPath();ctx.moveTo(296,yy);ctx.lineTo(288,yy);ctx.stroke();if(nt<=10||t%2===0)txt(String(t*(liq.unit==="m"?1:liq.tick)),284,yy+5,14,p.text,"right","600")}
+ txt(liq.unit,276,64,16,p.text,"center","800");
+ // vacuum label
+ var vacPx=LPX-M.sTop;
+ if(!M.full&&vacPx>46){var mid=M.sTop+vacPx/2,vx=BX+mid*Math.sin(M.th)+M.w/2+12,vy=BY-mid*Math.cos(M.th);pill(vx,vy-16,128,28,p.pill);txt("Boşluk (vakum)",vx+8,vy+3,16,p.text,"left","700")}
+ // A and B
+ ctx.fillStyle="#7c3aed";ctx.strokeStyle="#fff";ctx.lineWidth=2.5;
+ ctx.beginPath();ctx.arc(xA,SURF,7,0,6.283);ctx.fill();ctx.stroke();
+ var bxp=DX+DW-34;ctx.beginPath();ctx.arc(bxp,SURF,7,0,6.283);ctx.fill();ctx.stroke();
+ txt("A",xA-18,SURF+24,19,"#fff","center","800");txt("B",bxp,SURF+27,19,"#fff","center","800");
+ // legends
+ pill(345,10,236,56,p.pill);
+ ctx.fillStyle=p.mol;ctx.beginPath();ctx.arc(359,28,5,0,6.283);ctx.fill();ctx.fillStyle=p.mol2;ctx.beginPath();ctx.arc(373,28,5,0,6.283);ctx.fill();
+ txt("Hava molekülleri",385,33,15,p.text,"left","700");
+ arrowDown(363,40,60,"#e11d48");txt("Açık hava basıncı",385,54,15,p.text,"left","700");
+ txt("Sıvı: "+liq.name,W-12,28,19,p.text,"right","800");
+ txt("A ve B aynı seviyede → P(A) = P(B) = açık hava basıncı",DX+DW/2+10,534,16,p.text,"center","700");
+ txt("Kaptaki sıvı yüzeyine açık hava basıncı etki eder.",DX+DW/2+10,553,15,p.text,"center","600");
+}
+function sendH(){try{parent.postMessage({type:"html-anim-height",height:document.documentElement.scrollHeight},"*")}catch(e){}}
+window.addEventListener("message",function(e){var d=e.data;if(d&&d.type==="html-anim-theme"){document.documentElement.setAttribute("data-theme",d.theme==="dark"?"dark":"light")}});
+$("alt").addEventListener("input",function(){S.auto=false;$("auto").textContent="▶ Otomatik tırman";S.last="alt";update()});
+$("tilt").addEventListener("input",function(){S.last="tilt";update()});
+$("wid").addEventListener("input",function(){S.last="wid";update()});
+document.querySelectorAll("[data-alt]").forEach(function(b){b.addEventListener("click",function(){S.auto=false;$("auto").textContent="▶ Otomatik tırman";$("alt").value=b.dataset.alt;S.last="alt";update()})});
+document.querySelectorAll("[data-liq]").forEach(function(b){b.addEventListener("click",function(){S.liq=b.dataset.liq;S.last="liq";update()})});
+$("auto").addEventListener("click",function(){S.auto=!S.auto;if(S.auto&&+$("alt").value>=8849)S.dir=-1;else if(S.auto)S.dir=1;$("auto").textContent=S.auto?"⏸ Durdur":"▶ Otomatik tırman"});
+$("showMol").addEventListener("change",function(){if(!$("showMol").checked)mols.length=0});
+window.addEventListener("resize",sendH);
+if(window.ResizeObserver)new ResizeObserver(sendH).observe(document.body);
+update();
+for(var i=0;i<Math.round(210*M.P/101325);i++)spawn();
+try{parent.postMessage({type:"html-anim-ready"},"*")}catch(e){}
+requestAnimationFrame(frame);
+})();
+</script></body></html>

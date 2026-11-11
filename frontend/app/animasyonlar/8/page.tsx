@@ -5,6 +5,7 @@ export const metadata = { title: "8. Sınıf Animasyonları | Fen Bilimleri" };
 const items = [
   { title: "Mevsimler ve İklim Simülatörü", href: "/animasyonlar/8/mevsimler", icon: "🌎", description: "Güneş ışınlarının geliş açısını ve mevsimleri keşfet.", category: "MEVSİMLER VE İKLİM" },
   { title: "Sıvı Basıncı Laboratuvarı", href: "/animasyonlar/8/sivi-basinci", icon: "💧", description: "Derinliği, yoğunluğu ve kabın şeklini değiştirerek basıncı gözlemle.", category: "BASINÇ" },
+  { title: "Açık Hava Basıncı Laboratuvarı", href: "/animasyonlar/8/acik-hava-basinci", icon: "🌬️", description: "Torricelli deneyinde rakımı, tüp eğimini ve sıvıyı değiştirerek açık hava basıncını gözlemle.", category: "BASINÇ" },
   { title: "Katı Basıncı Simülatörü", href: "/animasyonlar/8/katı-basıncı", icon: "⚖️", description: "Ağırlık ve temas yüzey alanını değiştir.", category: "BASINÇ" },
   { title: "Bezelyelerde Kalıtım", href: "/animasyonlar/8/kalitim", icon: "🌱", description: "Çaprazlamaları yap ve yavru özelliklerini incele.", category: "DNA VE GENETİK KOD" },
   { title: "DNA Baz Eşleşmeleri", href: "/animasyonlar/8/dna-eslesmesi", icon: "🧬", description: "DNA zincirini tamamlayarak baz eşleşmelerini öğren.", category: "DNA VE GENETİK KOD" },
