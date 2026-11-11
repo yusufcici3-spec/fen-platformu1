@@ -1,0 +1,554 @@
+{
+  "id": "5-sinif-1-unite-yeni-nesil-30",
+  "slug": "5-sinif-1-unite-yeni-nesil-30",
+  "title": "5. Sınıf 1. Ünite Yeni Nesil Deneme",
+  "description": "Gökyüzündeki Komşularımız ve Biz ünitesinden 30 özgün, senaryolu ve yorumlama odaklı soru. Türkiye Yüzyılı Maarif Modeli ile uyumludur.",
+  "classLevel": 5,
+  "durationMin": 60,
+  "units": [
+    "Gökyüzündeki Komşularımız ve Biz"
+  ],
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı (2024), 5. sınıf 1. ünite. Sorular özgün olarak hazırlanmıştır.",
+  "questions": [
+    {
+      "no": 1,
+      "unit": "Güneş: Yıldızımızı Tanıyalım",
+      "outcome": "FB.5.1.1.1",
+      "skill": "Veri yorumlama",
+      "scenario": "Bilim kulübündeki öğrenciler, Güneş’in bir gezegen mi yoksa yıldız mı olduğunu araştırıyor. Öğretmenleri üç bilgi kartı hazırlıyor: I. Güneş kendi ışığını üretir. II. Dünya, Güneş’ten gelen ışığı yansıtır. III. Güneş, Dünya’ya en yakın yıldızdır. Öğrencilerden yıldızların ortak özelliğini belirleyerek sonuca ulaşmaları isteniyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Bu bilgilere göre Güneş’in yıldız olarak sınıflandırılmasının temel nedeni hangisidir?",
+      "options": [
+        "Dünya’ya diğer yıldızlardan daha yakın olması",
+        "Kendi ışığını ve ısısını üretmesi",
+        "Dünya’nın çevresinde dolanması",
+        "Gökyüzünde büyük görünmesi"
+      ],
+      "answer": 1,
+      "explanation": "Yıldızlar kendi ışığını ve ısısını üretir. Güneş de kendi enerjisini ürettiği için yıldızdır."
+    },
+    {
+      "no": 2,
+      "unit": "Güneş: Yıldızımızı Tanıyalım",
+      "outcome": "FB.5.1.1.1",
+      "skill": "Model yorumlama",
+      "scenario": "Bir öğrenci, Güneş’in katmanlarını göstermek için iç içe geçmiş renkli kürelerden oluşan bir model hazırlıyor. Modelde merkezden dışa doğru sırasıyla A, B, C, D, E ve F katmanlarını kullanıyor. Öğretmeni, enerjinin üretildiği katmanın modelin tam merkezinde bulunması gerektiğini söylüyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Modelde A katmanı Güneş’in merkezini gösterdiğine göre A katmanının adı hangisidir?",
+      "options": [
+        "Korona",
+        "Fotosfer",
+        "Çekirdek",
+        "Kromosfer"
+      ],
+      "answer": 2,
+      "explanation": "Güneş’in enerjisi çekirdeğinde üretilir. Çekirdek, Güneş’in merkezinde bulunan katmandır."
+    },
+    {
+      "no": 3,
+      "unit": "Güneş: Yıldızımızı Tanıyalım",
+      "outcome": "FB.5.1.1.1",
+      "skill": "Gözlem verisi yorumlama",
+      "scenario": "Bir uzay gözlemevi, Güneş’in yüzeyindeki koyu renkli bir lekeyi beş gün boyunca aynı saatte görüntülüyor. İlk gün leke Güneş diskinin sol tarafında, sonraki günlerde ise giderek sağ tarafa yakın konumlarda görülüyor. Gözlem sırasında lekenin Güneş’in yüzeyinde bulunduğu biliniyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Bu gözlem Güneş’in hangi hareketini kanıtlamak için kullanılabilir?",
+      "options": [
+        "Dünya çevresinde dolanmasını",
+        "Kendi ekseni etrafında dönmesini",
+        "Ay çevresinde dolanmasını",
+        "Dünya ile birlikte hareket etmesini"
+      ],
+      "answer": 1,
+      "explanation": "Güneş lekelerinin günler içinde Güneş diski üzerinde yer değiştirmesi, Güneş’in kendi ekseni etrafında döndüğünü gösterir."
+    },
+    {
+      "no": 4,
+      "unit": "Güneş: Yıldızımızı Tanıyalım",
+      "outcome": "FB.5.1.1.1",
+      "skill": "Bilimsel çıkarım",
+      "scenario": "Ece, Güneş’in katmanlarını araştırırken fotosferin Güneş’in görünen yüzeyi olduğunu, koronanın ise en dış katman olduğunu öğreniyor. Bir görselde Güneş tutulması sırasında Güneş’in çevresinde parlak bir hale fark ediyor. Ece bu halkanın hangi katmana ait olduğunu merak ediyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Ece’nin gördüğü parlak hale aşağıdaki katmanlardan hangisidir?",
+      "options": [
+        "Çekirdek",
+        "Işınım bölgesi",
+        "Taşınım bölgesi",
+        "Korona"
+      ],
+      "answer": 3,
+      "explanation": "Korona, Güneş’in en dış katmanıdır. Tam Güneş tutulması sırasında parlak bir hale gibi görülebilir."
+    },
+    {
+      "no": 5,
+      "unit": "Güneş: Yıldızımızı Tanıyalım",
+      "outcome": "FB.5.1.1.1",
+      "skill": "Güvenli gözlem",
+      "scenario": "Fen öğretmeni, öğrencilerinden Güneş lekeleri hakkında bilgi toplamalarını istiyor. Öğrencilerden biri evde dürbünle Güneş’i inceleyebileceğini söylüyor. Bir diğeri ise öğretmenlerinin hazırladığı güvenilir gözlem görsellerini kullanmayı öneriyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Öğrencilerin araştırma sırasında tercih etmesi gereken güvenli yöntem hangisidir?",
+      "options": [
+        "Güneş’e dürbünle kısa süre bakmak",
+        "Güneş’e güneş gözlüğüyle bakmak",
+        "Öğretmenin sağladığı güvenli gözlem görsellerini incelemek",
+        "Güneş’e çıplak gözle birkaç saniye bakmak"
+      ],
+      "answer": 2,
+      "explanation": "Güneş’e doğrudan bakmak gözlere kalıcı zarar verebilir. Hazır gözlem görselleri güvenli bir araştırma yoludur."
+    },
+    {
+      "no": 6,
+      "unit": "Güneş: Yıldızımızı Tanıyalım",
+      "outcome": "FB.5.1.1.1",
+      "skill": "Karşılaştırma",
+      "scenario": "Bir bilim dergisinde Güneş ve gece gökyüzünde görülen yıldızlarla ilgili şu açıklama yer alıyor: “Güneş, Dünya’ya en yakın yıldızdır. Diğer yıldızlar da kendi ışıklarını üretir ancak çok uzakta oldukları için gökyüzünde küçük noktalar gibi görünür.” Deniz bu açıklamayı okuyarak yıldızların görünüşleriyle ilgili bir çıkarım yapıyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Deniz’in aşağıdaki çıkarımlardan hangisini yapması doğrudur?",
+      "options": [
+        "Diğer yıldızlar Güneş’ten daha küçük olduğu için nokta gibi görünür.",
+        "Yıldızların ışık üretme özellikleri birbirinden tamamen farklıdır.",
+        "Güneş ışık üretirken diğer yıldızlar ışığı yansıtır.",
+        "Diğer yıldızların uzakta olması küçük görünmelerine neden olur."
+      ],
+      "answer": 3,
+      "explanation": "Yıldızların küçük nokta gibi görünmesinin temel nedeni Dünya’dan çok uzakta olmalarıdır; bu, gerçek büyüklüklerinin küçük olduğu anlamına gelmez."
+    },
+    {
+      "no": 7,
+      "unit": "Güneş: Yıldızımızı Tanıyalım",
+      "outcome": "FB.5.1.1.1",
+      "skill": "Sıralama",
+      "scenario": "Bir öğrenci, Güneş’in katmanlarını anlatan bir sunum hazırlıyor. Katman adlarını karışık kartlara yazıyor: Korona, Çekirdek, Fotosfer, Kromosfer, Işınım bölgesi ve Taşınım bölgesi. Sunumunda katmanları merkezden dışarıya doğru sıralaması gerekiyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Aşağıdaki sıralamalardan hangisi merkezden dışarıya doğru doğrudur?",
+      "options": [
+        "Çekirdek – Işınım bölgesi – Taşınım bölgesi – Fotosfer – Kromosfer – Korona",
+        "Korona – Kromosfer – Fotosfer – Çekirdek – Işınım bölgesi – Taşınım bölgesi",
+        "Çekirdek – Fotosfer – Işınım bölgesi – Korona – Taşınım bölgesi – Kromosfer",
+        "Fotosfer – Çekirdek – Korona – Kromosfer – Işınım bölgesi – Taşınım bölgesi"
+      ],
+      "answer": 0,
+      "explanation": "Güneş’in katmanları merkezden dışarıya doğru çekirdek, ışınım bölgesi, taşınım bölgesi, fotosfer, kromosfer ve koronadır."
+    },
+    {
+      "no": 8,
+      "unit": "Güneş: Yıldızımızı Tanıyalım",
+      "outcome": "FB.5.1.1.1",
+      "skill": "Veri analizi",
+      "scenario": "Bir öğrenci, Güneş’in farklı bölgelerinin sıcaklıklarını araştırıyor. Araştırmasında çekirdeğin yaklaşık 15 milyon °C, fotosferin ise yaklaşık 5500 °C olduğunu öğreniyor. Öğrenci, Güneş’in enerji üretiminin hangi bölgede gerçekleştiğini de notlarına eklemek istiyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Öğrencinin notlarına yazması gereken doğru bilgi hangisidir?",
+      "options": [
+        "Enerji fotosferde üretilir; çekirdek yalnızca ışığı yansıtır.",
+        "Enerji koronada üretilir; çekirdek en soğuk bölgedir.",
+        "Enerji çekirdekte üretilir; fotosfer Güneş’in görünen yüzeyidir.",
+        "Enerji kromosferde üretilir; fotosfer en dış katmandır."
+      ],
+      "answer": 2,
+      "explanation": "Güneş’in enerjisi çekirdekte üretilir. Fotosfer ise Güneş’in görünen yüzeyi olarak kabul edilir."
+    },
+    {
+      "no": 9,
+      "unit": "Ay’ın Özellikleri ve Hareketleri",
+      "outcome": "FB.5.1.2.1",
+      "skill": "Bilimsel çıkarım",
+      "scenario": "Bir astronot, Ay yüzeyinde yürürken çevresinde rüzgârın estiğini veya bulutların hareket ettiğini gözlemlemiyor. Dünya’ya döndüğünde Ay yüzeyindeki ayak izlerinin uzun süre bozulmadan kalabildiğini anlatıyor. Öğrenciler bu durumun nedenini tartışıyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Ay yüzeyindeki izlerin uzun süre korunmasının temel nedeni hangisidir?",
+      "options": [
+        "Ay’ın kendi ışığını üretmesi",
+        "Ay’da atmosferin bulunmaması",
+        "Ay’ın Dünya’dan küçük olması",
+        "Ay’ın kendi ekseninde dönmemesi"
+      ],
+      "answer": 1,
+      "explanation": "Ay’da atmosfer bulunmadığı için rüzgâr ve yağış gibi izleri değiştirecek hava olayları yaşanmaz."
+    },
+    {
+      "no": 10,
+      "unit": "Ay’ın Özellikleri ve Hareketleri",
+      "outcome": "FB.5.1.2.1",
+      "skill": "Neden-sonuç ilişkisi",
+      "scenario": "Bir araştırma ekibi, Ay yüzeyinin fotoğraflarını inceliyor. Fotoğraflarda çok sayıda yuvarlak çukur görülüyor. Ekip, bu çukurların bazı gök cisimlerinin Ay yüzeyine çarpması sonucunda oluştuğunu belirtiyor. Ay’da atmosferin bulunmaması da bu şekillerin uzun süre korunmasını sağlıyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Fotoğraflarda görülen çukurların adı ve oluşum nedeni hangisinde doğru verilmiştir?",
+      "options": [
+        "Krater – gök cisimlerinin çarpması",
+        "Ay denizi – yağmur sularının birikmesi",
+        "Dağ – rüzgârların aşındırması",
+        "Vadi – akarsuların aşındırması"
+      ],
+      "answer": 0,
+      "explanation": "Ay yüzeyindeki kraterler, gök cisimlerinin çarpmasıyla oluşur. Atmosfer ve yağış olmadığından uzun süre korunabilir."
+    },
+    {
+      "no": 11,
+      "unit": "Ay’ın Özellikleri ve Hareketleri",
+      "outcome": "FB.5.1.2.1",
+      "skill": "Model yorumlama",
+      "scenario": "Mina, Dünya ve Ay’ı temsil eden iki top kullanarak bir model hazırlıyor. Büyük topu Dünya, küçük topu Ay olarak belirliyor. Küçük topu Dünya’nın çevresinde hareket ettirirken aynı zamanda kendi ekseni çevresinde de döndürüyor. Öğretmeni, bu iki hareketin süreleri arasındaki ilişkiyi incelemesini istiyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Ay’ın Dünya’dan sürekli aynı yüzünün görülmesini sağlayan durum hangisidir?",
+      "options": [
+        "Ay’ın hiç dönmemesi",
+        "Ay’ın Güneş etrafında dolanmaması",
+        "Ay’ın dönme ve Dünya çevresinde dolanma sürelerinin yaklaşık eşit olması",
+        "Ay’ın Dünya’dan daha küçük olması"
+      ],
+      "answer": 2,
+      "explanation": "Ay’ın kendi ekseni etrafındaki dönme süresi ile Dünya çevresindeki dolanma süresi yaklaşık eşittir. Bu nedenle hep aynı yüzü Dünya’ya dönüktür."
+    },
+    {
+      "no": 12,
+      "unit": "Ay’ın Özellikleri ve Hareketleri",
+      "outcome": "FB.5.1.2.1",
+      "skill": "Karşılaştırma",
+      "scenario": "Bir öğrenci, Dünya ve Ay’da aynı cismin ağırlığının nasıl değiştiğini araştırıyor. Öğretmeni, Ay’ın çekim kuvvetinin Dünya’nın çekim kuvvetinden daha küçük olduğunu söylüyor. Öğrenci, bir cismin kütlesi ile ağırlığını birbirinden ayırarak sonuç yazıyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Bu araştırmaya göre aşağıdaki ifadelerden hangisi doğrudur?",
+      "options": [
+        "Cismin kütlesi Ay’da azalır, ağırlığı değişmez.",
+        "Cismin kütlesi değişmez, Ay’daki ağırlığı Dünya’dakinden daha az olur.",
+        "Cismin hem kütlesi hem ağırlığı Ay’da artar.",
+        "Cismin kütlesi ve ağırlığı her gök cisminde aynıdır."
+      ],
+      "answer": 1,
+      "explanation": "Kütle madde miktarıdır ve konuma göre değişmez. Ağırlık çekim kuvvetine bağlıdır; Ay’da daha küçüktür."
+    },
+    {
+      "no": 13,
+      "unit": "Ay’ın Özellikleri ve Hareketleri",
+      "outcome": "FB.5.1.2.1",
+      "skill": "Çıkarım yapma",
+      "scenario": "Bir uzay araştırmacısı, Ay yüzeyinde sesin yayılıp yayılamayacağını merak ediyor. Dünya’da sesin yayılması için maddesel bir ortama ihtiyaç olduğunu biliyor. Ay’da ise atmosfer bulunmadığı için sesin yayılabileceği hava ortamı yoktur.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Araştırmacının Ay yüzeyiyle ilgili ulaşması gereken sonuç hangisidir?",
+      "options": [
+        "Ses, Ay’da Dünya’dakinden daha hızlı yayılır.",
+        "Ay’da ses yalnızca gündüz yayılır.",
+        "Ay’da sesin yayılması için atmosfer gerekmez.",
+        "Ay’da ses, hava ortamı bulunmadığından yayılamaz."
+      ],
+      "answer": 3,
+      "explanation": "Sesin yayılabilmesi için maddesel ortam gerekir. Ay’da atmosfer bulunmadığından ses hava yoluyla yayılamaz."
+    },
+    {
+      "no": 14,
+      "unit": "Ay’ın Özellikleri ve Hareketleri",
+      "outcome": "FB.5.1.2.1",
+      "skill": "Veri yorumlama",
+      "scenario": "Bir öğrenci, Ay ve Dünya’nın çaplarını karşılaştıran bir bilgi kartı hazırlıyor. Kartta Ay’ın çapının Dünya’nın çapının yaklaşık dörtte biri olduğu yazıyor. Öğrenci, bu bilgiyi kullanarak iki gök cismini büyüklüklerine göre sıralıyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Buna göre Ay ve Dünya’nın çapları nasıl karşılaştırılır?",
+      "options": [
+        "Dünya’nın çapı Ay’ın çapından yaklaşık dört kat büyüktür.",
+        "Ay’ın çapı Dünya’nın çapından yaklaşık dört kat büyüktür.",
+        "Ay ve Dünya’nın çapları eşittir.",
+        "Dünya’nın çapı Ay’ın çapından yaklaşık iki kat büyüktür."
+      ],
+      "answer": 0,
+      "explanation": "Ay’ın çapı Dünya’nın çapının yaklaşık dörtte biridir. Bu nedenle Dünya’nın çapı yaklaşık dört kat daha büyüktür."
+    },
+    {
+      "no": 15,
+      "unit": "Ay’ın Özellikleri ve Hareketleri",
+      "outcome": "FB.5.1.2.1",
+      "skill": "Sınıflandırma",
+      "scenario": "Fen laboratuvarında Ay yüzey şekillerini gösteren fotoğraflar inceleniyor. Öğrenciler bir fotoğrafta koyu renkli ve geniş düzlükler, başka bir fotoğrafta ise gök taşı çarpmasıyla oluşmuş çukurlar görüyor. Öğretmen, koyu renkli düz alanların adının Ay denizleri olduğunu açıklıyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Ay denizleri ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+      "options": [
+        "İçleri Dünya’daki okyanuslar gibi suyla doludur.",
+        "Gök taşlarının oluşturduğu derin çukurlardır.",
+        "Geçmişte akan lavların donmasıyla oluşmuş koyu renkli düz alanlardır.",
+        "Ay’ın atmosferinde oluşan bulutlardır."
+      ],
+      "answer": 2,
+      "explanation": "Ay denizleri su içermez. Geçmişte Ay yüzeyinde akan lavların donmasıyla oluşmuş koyu renkli düzlüklerdir."
+    },
+    {
+      "no": 16,
+      "unit": "Ay’ın Özellikleri ve Hareketleri",
+      "outcome": "FB.5.1.2.1",
+      "skill": "Hareketleri ayırt etme",
+      "scenario": "Bir öğrenci, Ay’ın hareketlerini iki ayrı cümleyle anlatıyor: “Ay kendi ekseni çevresinde hareket eder.” ve “Ay, Dünya’nın çevresinde dolanır.” Öğretmeni, öğrencinin ilk cümlede dönme, ikinci cümlede dolanma hareketini anlattığını belirtiyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Bu açıklamalara göre hangi eşleştirme doğrudur?",
+      "options": [
+        "Dönme: Dünya çevresinde; dolanma: kendi ekseninde",
+        "Dönme: kendi ekseninde; dolanma: Dünya çevresinde",
+        "Dönme: Güneş çevresinde; dolanma: kendi ekseninde",
+        "Dönme: Ay’ın evreleri; dolanma: gece-gündüz"
+      ],
+      "answer": 1,
+      "explanation": "Bir gök cisminin kendi ekseni etrafındaki hareketi dönme, başka bir gök cisminin çevresindeki hareketi dolanmadır."
+    },
+    {
+      "no": 17,
+      "unit": "Ay’ın Evreleri",
+      "outcome": "FB.5.1.2.2",
+      "skill": "Neden-sonuç ilişkisi",
+      "scenario": "Elif, bir ay boyunca her hafta aynı saatte Ay’ın fotoğrafını çekiyor. Fotoğraflarda Ay’ın bazen ince bir yay, bazen yarım daire, bazen de tam daire gibi göründüğünü fark ediyor. Elif, Ay’ın gerçekten şekil değiştirip değiştirmediğini araştırıyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Ay’ın farklı şekillerde görünmesinin temel nedeni hangisidir?",
+      "options": [
+        "Ay’ın küresel şeklinin zamanla değişmesi",
+        "Dünya’nın Ay’ı bazen örtmesi",
+        "Ay’ın Güneş çevresinde şekil değiştirmesi",
+        "Ay’ın Dünya çevresinde dolanırken aydınlık kısmının farklı görünmesi"
+      ],
+      "answer": 3,
+      "explanation": "Ay’ın şekli değişmez. Dünya’dan görülen aydınlık kısmı, Ay’ın Dünya çevresindeki konumuna göre değişir."
+    },
+    {
+      "no": 18,
+      "unit": "Ay’ın Evreleri",
+      "outcome": "FB.5.1.2.2",
+      "skill": "Sıralama",
+      "scenario": "Bir gözlem kulübü, Ay’ın ana evrelerini takvim üzerinde işaretliyor. Takvimde ilk olarak Yeni Ay, ardından İlk dördün, daha sonra Dolunay ve son olarak Son dördün evreleri yer alıyor. Öğrenciler bu döngünün tekrarlandığını belirtiyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Ana evrelerin doğru sıralaması hangisidir?",
+      "options": [
+        "Yeni Ay – İlk dördün – Dolunay – Son dördün",
+        "Yeni Ay – Dolunay – İlk dördün – Son dördün",
+        "Dolunay – Yeni Ay – Son dördün – İlk dördün",
+        "İlk dördün – Yeni Ay – Son dördün – Dolunay"
+      ],
+      "answer": 0,
+      "explanation": "Ay’ın ana evreleri Yeni Ay, İlk dördün, Dolunay ve Son dördün sırasıyla gerçekleşir."
+    },
+    {
+      "no": 19,
+      "unit": "Ay’ın Evreleri",
+      "outcome": "FB.5.1.2.2",
+      "skill": "Model yorumlama",
+      "scenario": "Bir öğrenci, karanlık bir odada el fenerini Güneş, kendi bulunduğu yeri Dünya ve elindeki topu Ay olarak kabul ediyor. Topun her zaman yarısının aydınlandığını, ancak kendisine görünen aydınlık bölümün topun konumuna göre değiştiğini gözlemliyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Bu model Ay’ın evreleri hakkında hangi bilgiyi destekler?",
+      "options": [
+        "Ay’ın yalnızca Dolunay’da aydınlandığını",
+        "Ay’ın her zaman yarısının Güneş tarafından aydınlatıldığını",
+        "Ay’ın kendi ışığını ürettiğini",
+        "Ay’ın evrelerinin Dünya’nın gölgesiyle oluştuğunu"
+      ],
+      "answer": 1,
+      "explanation": "Ay’ın yarısı her zaman Güneş ışığı alır. Dünya’dan görünen aydınlık bölümün değişmesi evreleri oluşturur."
+    },
+    {
+      "no": 20,
+      "unit": "Ay’ın Evreleri",
+      "outcome": "FB.5.1.2.2",
+      "skill": "Kavram yanılgısını belirleme",
+      "scenario": "Sınıfta Ay’ın evreleri tartışılırken Arda, “Dolunaydan birkaç gün sonra Ay küçülmeye başlıyor, demek ki Ay’ın büyüklüğü değişiyor.” diyor. Zeynep ise Ay’ın gerçek şeklinin değişmediğini, yalnızca aydınlık kısmının farklı göründüğünü söylüyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Bilimsel olarak doğru açıklamayı yapan öğrenci hangisidir?",
+      "options": [
+        "Arda, çünkü Ay’ın çapı her hafta değişir.",
+        "İkisi de doğru, çünkü Ay bazen küre bazen yarım küredir.",
+        "Zeynep, çünkü Ay’ın şekli değişmez; görünen aydınlık bölümü değişir.",
+        "Arda, çünkü Dünya’nın gölgesi Ay’ı her ay küçültür."
+      ],
+      "answer": 2,
+      "explanation": "Ay’ın fiziksel şekli ve büyüklüğü değişmez. Evreler, Dünya’dan görülen aydınlık kısmın değişmesinden kaynaklanır."
+    },
+    {
+      "no": 21,
+      "unit": "Ay’ın Evreleri",
+      "outcome": "FB.5.1.2.2",
+      "skill": "Takvim ve zaman verisi",
+      "scenario": "Bir öğrenci, Ay’ın evrelerini takip ederek bir döngünün yaklaşık 29,5 günde tamamlandığını öğreniyor. Öğretmeni, bu sürenin yaklaşık bir ay olduğunu ve evrelerin benzer sırayla tekrarlandığını açıklıyor. Öğrenci, bir sonraki döngünün ne zaman başlayacağını tahmin ediyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Öğrencinin Ay’ın evreleriyle ilgili yapacağı doğru tahmin hangisidir?",
+      "options": [
+        "Evreler yaklaşık her 29,5 günde bir aynı döngüye girer.",
+        "Ay’ın evreleri her 24 saatte bir başa döner.",
+        "Evreler yılda yalnızca bir kez tekrar eder.",
+        "Ay’ın evreleri rastgele oluştuğundan tahmin edilemez."
+      ],
+      "answer": 0,
+      "explanation": "Ay’ın evre döngüsü yaklaşık 29,5 gün sürer ve benzer sırayla tekrar eder."
+    },
+    {
+      "no": 22,
+      "unit": "Ay’ın Evreleri",
+      "outcome": "FB.5.1.2.2",
+      "skill": "Konum-evre ilişkisi",
+      "scenario": "Bir modelde Güneş solda, Dünya ortada ve Ay sağda olacak şekilde aynı doğrultuda yerleştiriliyor. Dünya’dan bakan gözlemci, Ay’ın Güneş tarafından aydınlatılan yüzünün tamamını görebiliyor. Öğretmen, bu konumun hangi ana evreyi temsil ettiğini soruyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Modelde gözlemcinin gördüğü ana evre hangisidir?",
+      "options": [
+        "Yeni Ay",
+        "İlk dördün",
+        "Son dördün",
+        "Dolunay"
+      ],
+      "answer": 3,
+      "explanation": "Dünya, Güneş ile Ay arasında olduğunda Ay’ın aydınlık yüzü Dünya’ya dönük olur. Bu görünüm Dolunay evresidir."
+    },
+    {
+      "no": 23,
+      "unit": "Ay’ın Evreleri",
+      "outcome": "FB.5.1.2.2",
+      "skill": "Karşılaştırma",
+      "scenario": "Bir öğrenci, Yeni Ay ve Dolunay evrelerini karşılaştıran bir tablo hazırlıyor. Tabloda Yeni Ay’da Ay’ın aydınlık yüzünün Dünya’ya dönük olmadığı, Dolunay’da ise aydınlık yüzün Dünya’dan tamamen görülebildiği belirtiliyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Tabloya göre hangi ifade doğrudur?",
+      "options": [
+        "Yeni Ay’da Ay tamamen yok olur.",
+        "Dolunay’da Ay kendi ışığını üretmeye başlar.",
+        "Yeni Ay’da Ay’ın aydınlık yüzü Dünya’ya dönük değildir.",
+        "Dolunay’da Ay’ın yarısı karanlık görünür."
+      ],
+      "answer": 2,
+      "explanation": "Yeni Ay’da Ay’ın aydınlık yüzü Dünya’ya dönük olmadığı için Ay genellikle görülmez. Ay yok olmaz; yalnızca görünümü değişir."
+    },
+    {
+      "no": 24,
+      "unit": "Ay’ın Evreleri",
+      "outcome": "FB.5.1.2.2",
+      "skill": "Bilimsel model değerlendirme",
+      "scenario": "Öğrenciler, Ay’ın evrelerini anlatmak için bir lamba ve top kullanıyor. Modelde lamba Güneş’i, top Ay’ı, öğrencinin bulunduğu yer ise Dünya’yı temsil ediyor. Öğrenciler topu farklı konumlara getirerek görünen aydınlık kısmı çiziyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Bu modelin bilimsel açıdan en önemli sınırlılığı hangisidir?",
+      "options": [
+        "Ay’ın evrelerini göstermeye hiç uygun olmaması",
+        "Gerçek Güneş, Dünya ve Ay’ın boyut ve uzaklıklarını tam ölçekte yansıtmaması",
+        "Topun küre şeklinde olması",
+        "Lambanın ışık yayması"
+      ],
+      "answer": 1,
+      "explanation": "Model evrelerin oluşumunu anlamaya yardımcı olur ancak gök cisimlerinin gerçek boyut ve uzaklıklarını tam ölçekte göstermez."
+    },
+    {
+      "no": 25,
+      "unit": "Güneş, Dünya ve Ay Modeli",
+      "outcome": "FB.5.1.3.1",
+      "skill": "Büyüklükleri karşılaştırma",
+      "scenario": "Bir bilim şenliğinde öğrenciler Güneş, Dünya ve Ay’ı temsil eden üç küre seçiyor. Kürelerin boyutları gerçek gök cisimlerinin büyüklüklerine uygun olacak şekilde belirleniyor. Öğrenciler modellerini büyükten küçüğe sıralıyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Gök cisimlerinin gerçek çaplarına göre doğru sıralama hangisidir?",
+      "options": [
+        "Dünya – Güneş – Ay",
+        "Ay – Dünya – Güneş",
+        "Güneş – Dünya – Ay",
+        "Güneş – Ay – Dünya"
+      ],
+      "answer": 2,
+      "explanation": "Güneş en büyük, Dünya ondan küçük, Ay ise Dünya’dan daha küçüktür."
+    },
+    {
+      "no": 26,
+      "unit": "Güneş, Dünya ve Ay Modeli",
+      "outcome": "FB.5.1.3.1",
+      "skill": "Hareketleri ilişkilendirme",
+      "scenario": "Bir öğrenci, Dünya’nın kendi ekseni çevresinde döndüğünü ve aynı zamanda Güneş çevresinde dolandığını gösteren bir model kuruyor. Öğretmeni, bu iki hareketin sürelerini ve sonuçlarını karşılaştırmasını istiyor. Öğrenci, bir günlük zaman dilimi ile bir yıllık zaman dilimini ilişkilendiriyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Dünya’nın dönme ve dolanma hareketleriyle ilgili doğru eşleştirme hangisidir?",
+      "options": [
+        "Dönme – yaklaşık 24 saat – gece ve gündüz; Dolanma – yaklaşık 365 gün 6 saat – bir yıl",
+        "Dönme – yaklaşık 365 gün – gece ve gündüz; Dolanma – 24 saat – bir yıl",
+        "Dönme – yaklaşık 29,5 gün – Ay’ın evreleri; Dolanma – 24 saat – gece ve gündüz",
+        "Dönme – yaklaşık 12 saat – bir yıl; Dolanma – 27 gün – gece ve gündüz"
+      ],
+      "answer": 0,
+      "explanation": "Dünya kendi ekseni etrafında yaklaşık 24 saatte döner ve gece-gündüz oluşur. Güneş çevresindeki dolanımı yaklaşık 365 gün 6 saat sürer ve bir yılı oluşturur."
+    },
+    {
+      "no": 27,
+      "unit": "Güneş, Dünya ve Ay Modeli",
+      "outcome": "FB.5.1.3.1",
+      "skill": "Model oluşturma",
+      "scenario": "Bir öğretmen, öğrencilerinden Güneş, Dünya ve Ay’ın hareketlerini bir maketle göstermelerini istiyor. Öğrenciler Güneş’i sabit bir konuma yerleştiriyor, Dünya’yı Güneş’in çevresinde; Ay’ı ise Dünya’nın çevresinde hareket ettirecek şekilde düzenek hazırlıyor. Ayrıca Dünya ve Ay’ın kendi eksenleri etrafındaki dönüşlerini de göstermek istiyorlar.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Bu modelde Ay’ın hareketlerini doğru göstermek için hangi iki hareket birlikte yer almalıdır?",
+      "options": [
+        "Yalnızca Güneş çevresinde dolanma",
+        "Yalnızca kendi ekseni etrafında dönme",
+        "Dünya’nın kendi ekseninde dönmesi ve Güneş çevresinde dolanması",
+        "Kendi ekseninde dönme ve Dünya çevresinde dolanma"
+      ],
+      "answer": 3,
+      "explanation": "Ay hem kendi ekseni etrafında döner hem de Dünya’nın çevresinde dolanır."
+    },
+    {
+      "no": 28,
+      "unit": "Güneş, Dünya ve Ay Modeli",
+      "outcome": "FB.5.1.3.1",
+      "skill": "Ölçekli model yorumlama",
+      "scenario": "Bir öğrenci, Dünya’yı 1 cm çapında bir boncukla gösterdiği modelde Ay’ı da yaklaşık 3 mm çapında küçük bir boncukla temsil ediyor. Öğrenci, bu seçiminde Ay’ın çapının Dünya’nın çapının yaklaşık dörtte biri olduğu bilgisinden yararlanıyor. Modelin boyut oranını koruduğunu düşünüyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Öğrencinin modelindeki Ay boncuğu seçimi için hangisi söylenebilir?",
+      "options": [
+        "Uygundur; çünkü 1 cm’nin yaklaşık dörtte biri 2,5–3 mm’dir.",
+        "Uygun değildir; Ay Dünya’dan daha büyüktür.",
+        "Uygun değildir; Ay ve Dünya eşit çaplıdır.",
+        "Uygundur; çünkü Ay’ın çapı Dünya’nın çapının yaklaşık on katıdır."
+      ],
+      "answer": 0,
+      "explanation": "Dünya 1 cm ise Ay yaklaşık 0,25 cm, yani 2,5 mm civarında gösterilmelidir. 3 mm yaklaşık bir model değeridir."
+    },
+    {
+      "no": 29,
+      "unit": "Güneş, Dünya ve Ay Modeli",
+      "outcome": "FB.5.1.3.1",
+      "skill": "Modelin sınırlılıklarını değerlendirme",
+      "scenario": "Bir okul bahçesinde Güneş, Dünya ve Ay’ın hareketlerini anlatan bir maket hazırlanıyor. Makette gök cisimleri birbirine yakın yerleştiriliyor ve boyutları kolayca görülebilmesi için büyütülüyor. Öğretmen, maketin hareketleri anlatmada yararlı olduğunu ancak gerçek uzay uzaklıklarını göstermediğini belirtiyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Öğretmenin açıklaması bilimsel modellerle ilgili hangi düşünceyi destekler?",
+      "options": [
+        "Modeller gerçek varlıkların her özelliğini eksiksiz gösterir.",
+        "Modelin bazı özellikleri açıklamada yararlı, bazı özellikleri göstermede yetersiz olabilir.",
+        "Bir modelde uzaklıklar yanlışsa model hiçbir amaçla kullanılamaz.",
+        "Modeller yalnızca süsleme amacıyla hazırlanır."
+      ],
+      "answer": 1,
+      "explanation": "Bilimsel modeller gerçek sistemi basitleştirir. Bazı özellikleri iyi gösterirken boyut ve uzaklık gibi özelliklerde sınırlı olabilir."
+    },
+    {
+      "no": 30,
+      "unit": "Güneş, Dünya ve Ay Modeli",
+      "outcome": "FB.5.1.3.1",
+      "skill": "Bütünleştirilmiş çıkarım",
+      "scenario": "Bir öğrenci, Güneş-Dünya-Ay sistemini anlatan sunumunda üç bilgi veriyor: Güneş kendi ışığını üretir; Dünya kendi ekseni çevresinde döner; Ay Dünya’nın çevresinde dolanırken kendi ekseni etrafında da döner. Öğretmeni, öğrenciden bu bilgileri kullanarak doğru bir bilimsel açıklama oluşturmasını istiyor.",
+      "image": "",
+      "imageAlt": "",
+      "stem": "Aşağıdaki açıklamalardan hangisi öğrencinin sunduğu bilgilerle uyumludur?",
+      "options": [
+        "Güneş Dünya’nın çevresinde dolanır ve Ay kendi ışığını üretir.",
+        "Dünya’nın dönmesi bir yılı, Ay’ın dolanması gece ve gündüzü oluşturur.",
+        "Ay’ın dönme ve dolanma süreleri yaklaşık eşit olduğu için Dünya’dan hep aynı yüzü görülür.",
+        "Güneş’in ışığı yalnızca Dolunay evresinde Dünya’ya ulaşır."
+      ],
+      "answer": 2,
+      "explanation": "Ay’ın kendi eksenindeki dönme süresi ile Dünya çevresindeki dolanma süresi yaklaşık eşit olduğundan Dünya’dan hep aynı yüzü görülür."
+    }
+  ]
+}
