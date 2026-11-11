@@ -17,12 +17,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Işık kaynağından çıkan ışık ışınları saydam ve homojen ortamda doğrusal yayılır",
         "Eğri",
         "dairesel",
-        "zikzak"
+        "zikzak",
+        "Işık kaynağından çıkan ışık ışınları saydam ve homojen ortamda doğrusal yayılır"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Işık doğrusal yolla yayılır."
     },
     {
@@ -37,12 +37,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Güneş ve yanan ampul ışık kaynağıdır",
         "kitap",
         "masa",
+        "Güneş ve yanan ampul ışık kaynağıdır",
         "taş"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Işık kaynağı kendi ışığını üreten veya yayan cisimdir."
     },
     {
@@ -57,12 +57,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Cam gibi saydam maddeler ışığın büyük bölümünü geçirir",
         "metal",
+        "Cam gibi saydam maddeler ışığın büyük bölümünü geçirir",
         "buzlu cam",
         "temiz cam"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Saydam maddeler ışığı büyük ölçüde geçirir."
     },
     {
@@ -97,12 +97,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Karton gibi opak maddeler ışığın geçişini engeller",
         "Temiz cam",
         "hava",
-        "su"
+        "su",
+        "Karton gibi opak maddeler ışığın geçişini engeller"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Opak maddeler ışığı geçirmez."
     },
     {
@@ -117,12 +117,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Işık yolu opak cisimle kesildiğinde cismin arkasında gölge oluşabilir",
         "ses",
         "ısı",
+        "Işık yolu opak cisimle kesildiğinde cismin arkasında gölge oluşabilir",
         "buharlaşma"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Gölge ışığın opak cisim tarafından engellenmesiyle oluşur."
     },
     {
@@ -137,12 +137,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Noktasal ışık kaynağına yaklaşan opak cismin ekrandaki gölgesi büyür",
         "Küçülür",
+        "Noktasal ışık kaynağına yaklaşan opak cismin ekrandaki gölgesi büyür",
         "yok olur",
         "rengi değişir"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Cisim ışık kaynağına yaklaştıkça ekrandaki gölgesi genellikle büyür."
     },
     {
@@ -177,12 +177,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Güneş gökyüzünde yükseldikçe öğle saatlerinde gölge genellikle kısalır",
         "hiç oluşmaz",
         "renk değiştirir",
-        "daima sabit"
+        "daima sabit",
+        "Güneş gökyüzünde yükseldikçe öğle saatlerinde gölge genellikle kısalır"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Güneş ışınlarının geliş açısı gölge boyunu etkiler."
     },
     {
@@ -197,12 +197,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Işık yoluna opak cisim konulduğunda cismin arkasında aydınlanmayan bölge oluşur",
         "ses çıkarır",
         "gölge oluşabilir",
+        "Işık yoluna opak cisim konulduğunda cismin arkasında aydınlanmayan bölge oluşur",
         "ışık kaynağı söner"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Işığın önüne opak engel konulursa ışık doğrusal yolunda ilerleyemez."
     },
     {
@@ -217,12 +217,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Işık kaynağından çıkan ışık ışınları saydam ve homojen ortamda doğrusal yayılır",
         "Eğri",
+        "Işık kaynağından çıkan ışık ışınları saydam ve homojen ortamda doğrusal yayılır",
         "dairesel",
         "zikzak"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Işık doğrusal yolla yayılır."
     },
     {
@@ -257,12 +257,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Cam gibi saydam maddeler ışığın büyük bölümünü geçirir",
         "metal",
         "buzlu cam",
-        "temiz cam"
+        "temiz cam",
+        "Cam gibi saydam maddeler ışığın büyük bölümünü geçirir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Saydam maddeler ışığı büyük ölçüde geçirir."
     },
     {
@@ -277,12 +277,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Buzlu cam ışığı kısmen geçirir ve arkasındaki görüntüyü net göstermez",
         "Ayna",
         "tahta",
+        "Buzlu cam ışığı kısmen geçirir ve arkasındaki görüntüyü net göstermez",
         "metal"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Yarı saydam maddeler ışığı kısmen geçirir."
     },
     {
@@ -297,12 +297,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Karton gibi opak maddeler ışığın geçişini engeller",
         "Temiz cam",
+        "Karton gibi opak maddeler ışığın geçişini engeller",
         "hava",
         "su"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Opak maddeler ışığı geçirmez."
     },
     {
@@ -337,12 +337,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Noktasal ışık kaynağına yaklaşan opak cismin ekrandaki gölgesi büyür",
         "Küçülür",
         "yok olur",
-        "rengi değişir"
+        "rengi değişir",
+        "Noktasal ışık kaynağına yaklaşan opak cismin ekrandaki gölgesi büyür"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Cisim ışık kaynağına yaklaştıkça ekrandaki gölgesi genellikle büyür."
     },
     {
@@ -357,12 +357,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Gölge boyutu ve konumu ışık kaynağı, cisim ve ekran arasındaki uzaklıklara bağlıdır",
         "Yalnız cismin rengi",
         "yalnız koku",
+        "Gölge boyutu ve konumu ışık kaynağı, cisim ve ekran arasındaki uzaklıklara bağlıdır",
         "ses"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Işık kaynağı, cisim ve ekranın konumu gölgeyi etkiler."
     },
     {
@@ -377,12 +377,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Güneş gökyüzünde yükseldikçe öğle saatlerinde gölge genellikle kısalır",
         "hiç oluşmaz",
+        "Güneş gökyüzünde yükseldikçe öğle saatlerinde gölge genellikle kısalır",
         "renk değiştirir",
         "daima sabit"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Güneş ışınlarının geliş açısı gölge boyunu etkiler."
     },
     {
@@ -417,12 +417,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Işık kaynağından çıkan ışık ışınları saydam ve homojen ortamda doğrusal yayılır",
         "Eğri",
         "dairesel",
-        "zikzak"
+        "zikzak",
+        "Işık kaynağından çıkan ışık ışınları saydam ve homojen ortamda doğrusal yayılır"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Işık doğrusal yolla yayılır."
     },
     {
@@ -437,12 +437,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Güneş ve yanan ampul ışık kaynağıdır",
         "kitap",
         "masa",
+        "Güneş ve yanan ampul ışık kaynağıdır",
         "taş"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Işık kaynağı kendi ışığını üreten veya yayan cisimdir."
     },
     {
@@ -457,12 +457,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Cam gibi saydam maddeler ışığın büyük bölümünü geçirir",
         "metal",
+        "Cam gibi saydam maddeler ışığın büyük bölümünü geçirir",
         "buzlu cam",
         "temiz cam"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Saydam maddeler ışığı büyük ölçüde geçirir."
     },
     {
@@ -497,12 +497,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Karton gibi opak maddeler ışığın geçişini engeller",
         "Temiz cam",
         "hava",
-        "su"
+        "su",
+        "Karton gibi opak maddeler ışığın geçişini engeller"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Opak maddeler ışığı geçirmez."
     },
     {
@@ -517,12 +517,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Işık yolu opak cisimle kesildiğinde cismin arkasında gölge oluşabilir",
         "ses",
         "ısı",
+        "Işık yolu opak cisimle kesildiğinde cismin arkasında gölge oluşabilir",
         "buharlaşma"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Gölge ışığın opak cisim tarafından engellenmesiyle oluşur."
     },
     {
@@ -537,12 +537,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Noktasal ışık kaynağına yaklaşan opak cismin ekrandaki gölgesi büyür",
         "Küçülür",
+        "Noktasal ışık kaynağına yaklaşan opak cismin ekrandaki gölgesi büyür",
         "yok olur",
         "rengi değişir"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Cisim ışık kaynağına yaklaştıkça ekrandaki gölgesi genellikle büyür."
     },
     {
@@ -577,12 +577,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Güneş gökyüzünde yükseldikçe öğle saatlerinde gölge genellikle kısalır",
         "hiç oluşmaz",
         "renk değiştirir",
-        "daima sabit"
+        "daima sabit",
+        "Güneş gökyüzünde yükseldikçe öğle saatlerinde gölge genellikle kısalır"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Güneş ışınlarının geliş açısı gölge boyunu etkiler."
     },
     {
@@ -597,12 +597,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Işık yoluna opak cisim konulduğunda cismin arkasında aydınlanmayan bölge oluşur",
         "ses çıkarır",
         "gölge oluşabilir",
+        "Işık yoluna opak cisim konulduğunda cismin arkasında aydınlanmayan bölge oluşur",
         "ışık kaynağı söner"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Işığın önüne opak engel konulursa ışık doğrusal yolunda ilerleyemez."
     }
   ]
