@@ -1,0 +1,554 @@
+{
+  "id": "5-sinif-4-unite-yeni-nesil-30",
+  "slug": "5-sinif-4-unite-yeni-nesil-30",
+  "title": "5. Sınıf 4. Ünite Işığın Dünyası Yeni Nesil Deneme",
+  "description": "Işığın Dünyası ünitesinden 30 özgün, senaryolu ve yorumlama odaklı soru. Türkiye Yüzyılı Maarif Modeli ile uyumludur.",
+  "classLevel": 5,
+  "durationMin": 60,
+  "units": [
+    "Işığın Dünyası"
+  ],
+  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı, 5. sınıf. Sorular özgün olarak hazırlanmıştır.",
+  "questions": [
+    {
+      "no": 1,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.1",
+      "skill": "Gözlem",
+      "scenario": "Işık kaynağından çıkan ışığın düz bir yol izlediği gözleniyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Doğrusal yayılması",
+        "Yalnız sıvılarda yayılması",
+        "Kendi kendine yok olması",
+        "Her maddeden geçmesi"
+      ],
+      "answer": 0,
+      "explanation": "Işık, saydam ve homojen ortamlarda doğrusal yayılır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 2,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.1",
+      "skill": "Sınıflandırma",
+      "scenario": "Pencere camından dışarıdaki ağaç net, buzlu camdan bulanık görülüyor; tahta kapıdan hiç görülmüyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Saydam-yarı saydam-opak",
+        "Opak-saydam-yarı saydam",
+        "Yarı saydam-opak-saydam",
+        "Saydam-opak-yarı saydam"
+      ],
+      "answer": 0,
+      "explanation": "Saydam net, yarı saydam bulanık görüntü verir; opak ışığı geçirmez.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 3,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.2",
+      "skill": "Neden-sonuç",
+      "scenario": "El feneri ile duvar arasına kitap konulduğunda duvarda karanlık bir bölge oluşuyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Kitabın ışığı engellemesi",
+        "Kitabın ışık üretmesi",
+        "Duvarın saydam olması",
+        "Işığın ses dalgası olması"
+      ],
+      "answer": 0,
+      "explanation": "Opak cisim ışığı engellediğinde arkasında gölge oluşur.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 4,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.2",
+      "skill": "Model",
+      "scenario": "Işık kaynağı, opak cisim ve beyaz ekranla gölge deneyi yapılıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Işık kaynağı-opak cisim-ekran",
+        "Ayna-saydam cisim-su",
+        "Ses kaynağı-opak cisim-ekran",
+        "Pil-ampul-kablo"
+      ],
+      "answer": 0,
+      "explanation": "Gölge için ışık kaynağı, opak cisim ve gölgenin düştüğü ekran gerekir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 5,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.2",
+      "skill": "Değişken",
+      "scenario": "Aynı cisim ışık kaynağına yaklaştırıldığında ekrandaki gölgesi büyüyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Cismin ışık kaynağına uzaklığı",
+        "Cismin adı",
+        "Ekranın rengi",
+        "Ortamın sesi"
+      ],
+      "answer": 0,
+      "explanation": "Cisim ile ışık kaynağı arasındaki uzaklık gölge boyutunu etkiler.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 6,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.2",
+      "skill": "Veri yorumlama",
+      "scenario": "Güneşli bir günde direğin gölgesi sabah uzun, öğlen kısa ölçülüyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Güneş ışığının geliş yönünün değişmesi",
+        "Direğin kütlesinin değişmesi",
+        "Yerin ışık üretmesi",
+        "Direğin saydamlaşması"
+      ],
+      "answer": 0,
+      "explanation": "Güneş'in gökyüzündeki görünür konumu değiştikçe gölge uzunluğu değişir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 7,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.2",
+      "skill": "Deney tasarımı",
+      "scenario": "Işık kaynağı ile ekran arasındaki mesafe sabit tutulup kartonun büyüklüğü değiştiriliyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Kartonun büyüklüğü",
+        "Gölge alanı",
+        "Ekranın rengi",
+        "Işığın varlığı"
+      ],
+      "answer": 0,
+      "explanation": "Araştırmacının değiştirdiği kartonun büyüklüğüdür.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 8,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.1",
+      "skill": "Deney sonucu",
+      "scenario": "Cam, yağlı kâğıt ve metal levhaya el feneri tutuluyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Metal levha",
+        "Yağlı kâğıt",
+        "Cam",
+        "Hiçbiri"
+      ],
+      "answer": 1,
+      "explanation": "Yağlı kâğıt ışığı kısmen geçirdiği için yarı saydamdır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 9,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.2",
+      "skill": "Çıkarım",
+      "scenario": "Kukla ile perde arasındaki uzaklık azaltıldığında perdedeki gölge küçülüyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Cisim ekrana yaklaştıkça gölge küçülebilir",
+        "Gölge yalnızca cismin rengine bağlıdır",
+        "Opak cisim gölge oluşturamaz",
+        "Işık eğri yayılır"
+      ],
+      "answer": 0,
+      "explanation": "Cisim ekrana yaklaştırıldığında gölge genellikle küçülür.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 10,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.1",
+      "skill": "Model yorumlama",
+      "scenario": "Üç delikli karton aynı hizadayken mum görülüyor, kartonlardan biri kaydırılınca mum görünmüyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
+      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
+      "options": [
+        "Işığın doğrusal yayıldığını",
+        "Işığın yalnız suda yayıldığını",
+        "Işığın kütlesi olduğunu",
+        "Işığın ses ürettiğini"
+      ],
+      "answer": 0,
+      "explanation": "Delikler aynı doğrultudayken ışığın görülmesi doğrusal yayılmayı gösterir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 11,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.1",
+      "skill": "Gözlem",
+      "scenario": "Işık kaynağından çıkan ışığın düz bir yol izlediği gözleniyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Doğrusal yayılması",
+        "Yalnız sıvılarda yayılması",
+        "Kendi kendine yok olması",
+        "Her maddeden geçmesi"
+      ],
+      "answer": 0,
+      "explanation": "Işık, saydam ve homojen ortamlarda doğrusal yayılır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 12,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.1",
+      "skill": "Sınıflandırma",
+      "scenario": "Pencere camından dışarıdaki ağaç net, buzlu camdan bulanık görülüyor; tahta kapıdan hiç görülmüyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Saydam-yarı saydam-opak",
+        "Opak-saydam-yarı saydam",
+        "Yarı saydam-opak-saydam",
+        "Saydam-opak-yarı saydam"
+      ],
+      "answer": 0,
+      "explanation": "Saydam net, yarı saydam bulanık görüntü verir; opak ışığı geçirmez.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 13,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.2",
+      "skill": "Neden-sonuç",
+      "scenario": "El feneri ile duvar arasına kitap konulduğunda duvarda karanlık bir bölge oluşuyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Kitabın ışığı engellemesi",
+        "Kitabın ışık üretmesi",
+        "Duvarın saydam olması",
+        "Işığın ses dalgası olması"
+      ],
+      "answer": 0,
+      "explanation": "Opak cisim ışığı engellediğinde arkasında gölge oluşur.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 14,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.2",
+      "skill": "Model",
+      "scenario": "Işık kaynağı, opak cisim ve beyaz ekranla gölge deneyi yapılıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Işık kaynağı-opak cisim-ekran",
+        "Ayna-saydam cisim-su",
+        "Ses kaynağı-opak cisim-ekran",
+        "Pil-ampul-kablo"
+      ],
+      "answer": 0,
+      "explanation": "Gölge için ışık kaynağı, opak cisim ve gölgenin düştüğü ekran gerekir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 15,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.2",
+      "skill": "Değişken",
+      "scenario": "Aynı cisim ışık kaynağına yaklaştırıldığında ekrandaki gölgesi büyüyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Cismin ışık kaynağına uzaklığı",
+        "Cismin adı",
+        "Ekranın rengi",
+        "Ortamın sesi"
+      ],
+      "answer": 0,
+      "explanation": "Cisim ile ışık kaynağı arasındaki uzaklık gölge boyutunu etkiler.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 16,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.2",
+      "skill": "Veri yorumlama",
+      "scenario": "Güneşli bir günde direğin gölgesi sabah uzun, öğlen kısa ölçülüyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Güneş ışığının geliş yönünün değişmesi",
+        "Direğin kütlesinin değişmesi",
+        "Yerin ışık üretmesi",
+        "Direğin saydamlaşması"
+      ],
+      "answer": 0,
+      "explanation": "Güneş'in gökyüzündeki görünür konumu değiştikçe gölge uzunluğu değişir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 17,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.2",
+      "skill": "Deney tasarımı",
+      "scenario": "Işık kaynağı ile ekran arasındaki mesafe sabit tutulup kartonun büyüklüğü değiştiriliyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Kartonun büyüklüğü",
+        "Gölge alanı",
+        "Ekranın rengi",
+        "Işığın varlığı"
+      ],
+      "answer": 0,
+      "explanation": "Araştırmacının değiştirdiği kartonun büyüklüğüdür.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 18,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.1",
+      "skill": "Deney sonucu",
+      "scenario": "Cam, yağlı kâğıt ve metal levhaya el feneri tutuluyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Metal levha",
+        "Yağlı kâğıt",
+        "Cam",
+        "Hiçbiri"
+      ],
+      "answer": 1,
+      "explanation": "Yağlı kâğıt ışığı kısmen geçirdiği için yarı saydamdır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 19,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.2",
+      "skill": "Çıkarım",
+      "scenario": "Kukla ile perde arasındaki uzaklık azaltıldığında perdedeki gölge küçülüyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Cisim ekrana yaklaştıkça gölge küçülebilir",
+        "Gölge yalnızca cismin rengine bağlıdır",
+        "Opak cisim gölge oluşturamaz",
+        "Işık eğri yayılır"
+      ],
+      "answer": 0,
+      "explanation": "Cisim ekrana yaklaştırıldığında gölge genellikle küçülür.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 20,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.1",
+      "skill": "Model yorumlama",
+      "scenario": "Üç delikli karton aynı hizadayken mum görülüyor, kartonlardan biri kaydırılınca mum görünmüyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
+      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
+      "options": [
+        "Işığın doğrusal yayıldığını",
+        "Işığın yalnız suda yayıldığını",
+        "Işığın kütlesi olduğunu",
+        "Işığın ses ürettiğini"
+      ],
+      "answer": 0,
+      "explanation": "Delikler aynı doğrultudayken ışığın görülmesi doğrusal yayılmayı gösterir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 21,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.1",
+      "skill": "Gözlem",
+      "scenario": "Işık kaynağından çıkan ışığın düz bir yol izlediği gözleniyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Doğrusal yayılması",
+        "Yalnız sıvılarda yayılması",
+        "Kendi kendine yok olması",
+        "Her maddeden geçmesi"
+      ],
+      "answer": 0,
+      "explanation": "Işık, saydam ve homojen ortamlarda doğrusal yayılır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 22,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.1",
+      "skill": "Sınıflandırma",
+      "scenario": "Pencere camından dışarıdaki ağaç net, buzlu camdan bulanık görülüyor; tahta kapıdan hiç görülmüyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Saydam-yarı saydam-opak",
+        "Opak-saydam-yarı saydam",
+        "Yarı saydam-opak-saydam",
+        "Saydam-opak-yarı saydam"
+      ],
+      "answer": 0,
+      "explanation": "Saydam net, yarı saydam bulanık görüntü verir; opak ışığı geçirmez.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 23,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.2",
+      "skill": "Neden-sonuç",
+      "scenario": "El feneri ile duvar arasına kitap konulduğunda duvarda karanlık bir bölge oluşuyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Kitabın ışığı engellemesi",
+        "Kitabın ışık üretmesi",
+        "Duvarın saydam olması",
+        "Işığın ses dalgası olması"
+      ],
+      "answer": 0,
+      "explanation": "Opak cisim ışığı engellediğinde arkasında gölge oluşur.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 24,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.2",
+      "skill": "Model",
+      "scenario": "Işık kaynağı, opak cisim ve beyaz ekranla gölge deneyi yapılıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Işık kaynağı-opak cisim-ekran",
+        "Ayna-saydam cisim-su",
+        "Ses kaynağı-opak cisim-ekran",
+        "Pil-ampul-kablo"
+      ],
+      "answer": 0,
+      "explanation": "Gölge için ışık kaynağı, opak cisim ve gölgenin düştüğü ekran gerekir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 25,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.2",
+      "skill": "Değişken",
+      "scenario": "Aynı cisim ışık kaynağına yaklaştırıldığında ekrandaki gölgesi büyüyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Cismin ışık kaynağına uzaklığı",
+        "Cismin adı",
+        "Ekranın rengi",
+        "Ortamın sesi"
+      ],
+      "answer": 0,
+      "explanation": "Cisim ile ışık kaynağı arasındaki uzaklık gölge boyutunu etkiler.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 26,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.2",
+      "skill": "Veri yorumlama",
+      "scenario": "Güneşli bir günde direğin gölgesi sabah uzun, öğlen kısa ölçülüyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Güneş ışığının geliş yönünün değişmesi",
+        "Direğin kütlesinin değişmesi",
+        "Yerin ışık üretmesi",
+        "Direğin saydamlaşması"
+      ],
+      "answer": 0,
+      "explanation": "Güneş'in gökyüzündeki görünür konumu değiştikçe gölge uzunluğu değişir.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 27,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.2",
+      "skill": "Deney tasarımı",
+      "scenario": "Işık kaynağı ile ekran arasındaki mesafe sabit tutulup kartonun büyüklüğü değiştiriliyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Kartonun büyüklüğü",
+        "Gölge alanı",
+        "Ekranın rengi",
+        "Işığın varlığı"
+      ],
+      "answer": 0,
+      "explanation": "Araştırmacının değiştirdiği kartonun büyüklüğüdür.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 28,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.1",
+      "skill": "Deney sonucu",
+      "scenario": "Cam, yağlı kâğıt ve metal levhaya el feneri tutuluyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Metal levha",
+        "Yağlı kâğıt",
+        "Cam",
+        "Hiçbiri"
+      ],
+      "answer": 1,
+      "explanation": "Yağlı kâğıt ışığı kısmen geçirdiği için yarı saydamdır.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 29,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.2",
+      "skill": "Çıkarım",
+      "scenario": "Kukla ile perde arasındaki uzaklık azaltıldığında perdedeki gölge küçülüyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Cisim ekrana yaklaştıkça gölge küçülebilir",
+        "Gölge yalnızca cismin rengine bağlıdır",
+        "Opak cisim gölge oluşturamaz",
+        "Işık eğri yayılır"
+      ],
+      "answer": 0,
+      "explanation": "Cisim ekrana yaklaştırıldığında gölge genellikle küçülür.",
+      "image": "",
+      "imageAlt": ""
+    },
+    {
+      "no": 30,
+      "unit": "Işığın Dünyası",
+      "outcome": "FB.5.4.1",
+      "skill": "Model yorumlama",
+      "scenario": "Üç delikli karton aynı hizadayken mum görülüyor, kartonlardan biri kaydırılınca mum görünmüyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
+      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
+      "options": [
+        "Işığın doğrusal yayıldığını",
+        "Işığın yalnız suda yayıldığını",
+        "Işığın kütlesi olduğunu",
+        "Işığın ses ürettiğini"
+      ],
+      "answer": 0,
+      "explanation": "Delikler aynı doğrultudayken ışığın görülmesi doğrusal yayılmayı gösterir.",
+      "image": "",
+      "imageAlt": ""
+    }
+  ]
+}
