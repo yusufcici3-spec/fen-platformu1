@@ -16,361 +16,343 @@
       "no": 1,
       "unit": "Mevsimler ve İklim",
       "outcome": "F.8.1.1.1",
-      "skill": "Veri yorumlama",
-      "scenario": "Bir okulun kardeş okulları 21 Haziran tarihinde farklı ülkelerdeki hava ve gölge gözlemlerini paylaşıyor. Ankara'da gündüz süresi yılın en uzun değerine yaklaşırken, Avustralya'nın Sidney kentinde gündüzler kısalıyor. Öğrenciler Dünya'nın Güneş çevresindeki dolanma hareketini ve dönme ekseninin eğikliğini gösteren bir model kuruyor. Modelde eksenin yıl boyunca aynı doğrultuya yakın yöneldiğini fark ediyorlar.",
+      "skill": "Model yorumlama",
+      "scenario": "Bir okulun bilim şenliği için hazırladığı modelde Dünya, Güneş çevresinde dolanırken dönme ekseninin eğik konumunu koruyor. Öğrenciler 21 Haziran tarihinde Kuzey Yarım Küre'de gündüzlerin uzadığını, Güney Yarım Küre'de ise kısaldığını gösteren iki gözlem kartı hazırlıyor. Aynı tarihte iki şehirde ölçülen öğle vakti gölge uzunlukları da birbirinden farklı bulunuyor. Öğretmen, öğrencilerden mevsimlerin oluşumunda etkili olan olayları model üzerinden açıklamalarını istiyor.",
       "image": "/denemeler/8-genel-kazanimlar/q01.svg",
-      "imageAlt": "1. soruyu destekleyen fen bilimleri görseli",
-      "stem": "Bu gözlemlerin temel nedeni aşağıdakilerden hangisidir?",
+      "imageAlt": "Mevsimler ve İklim konusuna ait bilimsel şema",
+      "stem": "Bu gözlemleri birlikte açıklayan bilimsel yorum hangisidir?",
       "options": [
-        "Dünya'nın Güneş'e olan uzaklığının her iki yarım kürede aynı mevsimi oluşturması",
-        "Dünya'nın eksen eğikliği nedeniyle yarım kürelerin yıl içinde farklı miktarda ve açıyla ışık alması",
-        "Dünya'nın kendi ekseni etrafındaki dönüş hızının mevsimlere göre değişmesi",
-        "Güneş'in yıl içinde Dünya çevresinde dolanması"
+        "Mevsimler yalnızca Dünya ile Güneş arasındaki uzaklığın değişmesiyle oluşur.",
+        "Dünya'nın eksen eğikliği ve dolanma hareketi, yarım kürelerin Güneş ışınlarını farklı açılarla almasına neden olur.",
+        "Dünya'nın günlük dönme hareketi mevsimleri oluşturur.",
+        "Güneş'in sıcaklığı yıl içinde değiştiği için yarım kürelerde farklı mevsimler yaşanır."
       ],
       "answer": 1,
-      "explanation": "Eksen eğikliği ve dolanma hareketi nedeniyle yarım küreler farklı zamanlarda daha dik ışın alır. Bu yüzden mevsimler iki yarım kürede zıttır."
+      "explanation": "Mevsimlerin temel nedeni Dünya'nın eksen eğikliği ve Güneş çevresindeki dolanma hareketidir. Yarım küreler yıl boyunca farklı ışın açıları ve gündüz süreleri yaşar."
     },
     {
       "no": 2,
       "unit": "Mevsimler ve İklim",
       "outcome": "F.8.1.2.1",
-      "skill": "Çıkarım yapma",
-      "scenario": "Bir haber sitesinde aynı gün için iki bilgi yayımlanıyor: “Bursa'da yarın öğleden sonra kuvvetli sağanak bekleniyor.” ve “Karadeniz kıyılarında yıl boyunca nem ve yağış oranı genellikle yüksektir.” Fen öğretmeni, öğrencilerinden ifadelerin zaman aralığını ve anlattığı özelliği inceleyerek hava olayı mı iklim mi olduğunu belirlemelerini istiyor.",
+      "skill": "Bilgiyi sınıflandırma",
+      "scenario": "Bir belediyenin çevre birimi, şehir ekranlarına iki farklı bilgi asıyor. İlk ekranda 'Bugün öğleden sonra kısa süreli kuvvetli rüzgâr bekleniyor.' yazıyor. İkinci ekranda ise 'Bölgede yazlar sıcak ve kurak, kışlar ılık ve yağışlı geçer.' ifadesi yer alıyor. Bir grup öğrenci ilk ifadenin birkaç saatlik tahmine, ikinci ifadenin ise uzun yıllar boyunca gözlenen genel koşullara dayandığını fark ediyor.",
       "image": "/denemeler/8-genel-kazanimlar/q02.svg",
-      "imageAlt": "2. soruyu destekleyen fen bilimleri görseli",
-      "stem": "İfadelerin doğru sınıflandırılması hangisidir?",
+      "imageAlt": "Mevsimler ve İklim konusuna ait bilimsel şema",
+      "stem": "İki bilginin doğru sınıflandırılması hangisidir?",
       "options": [
         "İlk iklim, ikinci hava olayıdır.",
-        "İkisi de hava olayıdır.",
+        "Her ikisi de iklim bilgisidir.",
         "İlk hava olayı, ikinci iklim bilgisidir.",
-        "İkisi de iklim bilgisidir."
+        "Her ikisi de günlük hava olayıdır."
       ],
       "answer": 2,
-      "explanation": "Yarın beklenen yağış kısa süreli hava olayıdır. Bir bölgenin uzun yıllar boyunca görülen genel özellikleri iklimi anlatır."
+      "explanation": "Kısa süreli atmosfer koşulları hava olaylarıdır. Bir bölgenin uzun yıllar boyunca görülen ortalama koşulları iklimi tanımlar."
     },
     {
       "no": 3,
       "unit": "Mevsimler ve İklim",
       "outcome": "F.8.1.2.2",
-      "skill": "Karşılaştırma",
-      "scenario": "Bir üniversitede çalışan Dr. Ece, bir bölgenin son 40 yıllık sıcaklık ve yağış verilerini inceleyerek kuraklık eğilimlerini araştırıyor. Dr. Can ise uydu görüntüleri ve radar verileriyle ertesi gün beklenen yağışı tahmin ediyor. Öğrenciler iki uzmanın çalışma alanlarını karşılaştırıyor.",
+      "skill": "Bilim dallarını ilişkilendirme",
+      "scenario": "Bir araştırma merkezinde iki ekip görev yapıyor. A ekibi, son 50 yılın sıcaklık ve yağış kayıtlarını inceleyerek bölgedeki kuraklık eğilimini belirliyor. B ekibi ise radar ve uydu verilerini kullanarak önümüzdeki 24 saatte beklenen yağışın yerini tahmin ediyor. Okul gezisinde öğrenciler bu ekiplerin hangi bilim alanlarında çalıştığını ve uzmanlarının nasıl adlandırıldığını öğreniyor.",
       "image": "/denemeler/8-genel-kazanimlar/q03.svg",
-      "imageAlt": "3. soruyu destekleyen fen bilimleri görseli",
-      "stem": "Dr. Ece ve Dr. Can'ın çalışma alanları sırasıyla hangisidir?",
+      "imageAlt": "Mevsimler ve İklim konusuna ait bilimsel şema",
+      "stem": "A ve B ekiplerinin çalışma alanları sırasıyla hangisidir?",
       "options": [
         "Klimatoloji – meteoroloji",
         "Meteoroloji – klimatoloji",
-        "Astronomi – jeoloji",
+        "Jeoloji – astronomi",
         "Biyoloji – klimatoloji"
       ],
       "answer": 0,
-      "explanation": "Uzun yıllara ait iklim özelliklerini klimatoloji inceler; bu alandaki uzman iklim bilimcidir. Kısa süreli hava olayları meteorolojinin konusudur."
+      "explanation": "Klimatoloji iklimi ve uzun yıllara ait verileri inceler; bu alanda çalışan uzmana iklim bilimci denir. Meteoroloji kısa süreli hava olaylarıyla ilgilenir."
     },
     {
       "no": 4,
-      "unit": "DNA ve Genetik Kod / Kalıtım / Mutasyon / Adaptasyon",
+      "unit": "DNA ve Genetik Kod",
       "outcome": "F.8.2.1.1",
-      "skill": "Bilimsel değerlendirme",
-      "scenario": "Bir hücre modeli hazırlayan öğrenciler, DNA'nın belirli bölümlerinin kalıtsal özelliklerle ilişkili bilgileri taşıdığını öğreniyor. DNA, proteinlerle birlikte kromozomları oluşturuyor. DNA'nın görev ve yapı bakımından anlamlı bölümlerine gen, DNA'nın yapı birimlerine ise nükleotid adı veriliyor. Öğretmen, kavramları küçükten büyüğe doğru sıralamalarını istiyor.",
+      "skill": "Kavramlar arasında ilişki kurma",
+      "scenario": "Bir müze etkinliğinde öğrenciler kalıtsal bilgiyi temsil eden katmanlı bir model hazırlıyor. Modelin en küçük parçaları nükleotidleri, belirli nükleotid dizilerinden oluşan bölümler genleri, uzun çift zincirli yapıyı DNA'yı temsil ediyor. DNA'nın proteinlerle paketlenmiş hâli ise kromozom olarak gösteriliyor. Öğretmen, öğrencilerden bu yapıları küçükten büyüğe doğru sıralamalarını istiyor.",
       "image": "/denemeler/8-genel-kazanimlar/q04.svg",
-      "imageAlt": "4. soruyu destekleyen fen bilimleri görseli",
-      "stem": "Kavramların yapı ilişkisini doğru gösteren sıralama hangisidir?",
+      "imageAlt": "DNA ve Genetik Kod konusuna ait bilimsel şema",
+      "stem": "Modeldeki yapıların doğru sıralaması hangisidir?",
       "options": [
-        "Gen – nükleotid – kromozom – DNA",
-        "Nükleotid – gen – DNA – kromozom",
-        "DNA – kromozom – gen – nükleotid",
-        "Kromozom – DNA – nükleotid – gen"
+        "Gen → nükleotid → DNA → kromozom",
+        "Nükleotid → gen → DNA → kromozom",
+        "Kromozom → DNA → gen → nükleotid",
+        "DNA → nükleotid → kromozom → gen"
       ],
       "answer": 1,
-      "explanation": "Nükleotidler DNA'yı oluşturur; DNA'nın belirli bölümleri genleri oluşturur. DNA proteinlerle birlikte kromozom yapısında bulunur."
+      "explanation": "Nükleotidler DNA'nın yapı birimleridir. DNA üzerindeki anlamlı bölümler genleri oluşturur; DNA proteinlerle birlikte kromozom hâlinde paketlenir."
     },
     {
       "no": 5,
-      "unit": "DNA ve Genetik Kod / Kalıtım / Mutasyon / Adaptasyon",
+      "unit": "DNA ve Genetik Kod",
       "outcome": "F.8.2.1.2",
-      "skill": "Veri yorumlama",
-      "scenario": "Bir öğrenci DNA modelinde iki zinciri merdivenin yan kollarına, baz eşleşmelerini ise basamaklarına benzetiyor. Modelde adenin karşısında timin, guanin karşısında sitozin bulunuyor. Öğretmeni, modelin DNA'nın çift zincirli yapısını ve bazların belirli eşleşme kuralını göstermesi gerektiğini söylüyor.",
+      "skill": "Model okuma",
+      "scenario": "Bir öğrenci DNA modeli tasarlarken merdivenin iki yan kolunu şeker ve fosfat birimlerinden, basamaklarını ise organik baz eşleşmelerinden oluşturuyor. Modelde dört farklı renkle adenin, timin, guanin ve sitozin gösteriliyor. Öğretmen, modelin yalnızca çift zincirli yapıyı değil, bazlar arasındaki eşleşme kuralını da doğru yansıtması gerektiğini belirtiyor.",
       "image": "/denemeler/8-genel-kazanimlar/q05.svg",
-      "imageAlt": "5. soruyu destekleyen fen bilimleri görseli",
-      "stem": "Modelde hangi eşleşme doğru verilmiştir?",
+      "imageAlt": "DNA ve Genetik Kod konusuna ait bilimsel şema",
+      "stem": "Modelde hangi baz eşleşmeleri kullanılmalıdır?",
       "options": [
-        "Adenin – guanin ve timin – sitozin",
-        "Adenin – sitozin ve guanin – timin",
-        "Adenin – timin ve guanin – sitozin",
-        "Adenin – adenin ve guanin – guanin"
+        "Adenin–guanin ve timin–sitozin",
+        "Adenin–sitozin ve guanin–timin",
+        "Adenin–timin ve guanin–sitozin",
+        "Adenin–adenin ve guanin–guanin"
       ],
       "answer": 2,
-      "explanation": "DNA'da adenin timinle, guanin sitozinle eşleşir. Bu eşleşme çift zincirin tamamlayıcılığını sağlar."
+      "explanation": "DNA'da adenin timinle, guanin sitozinle eşleşir. Bu tamamlayıcılık DNA'nın iki zincirinin birbirini tamamlamasını sağlar."
     },
     {
       "no": 6,
-      "unit": "DNA ve Genetik Kod / Kalıtım / Mutasyon / Adaptasyon",
+      "unit": "DNA ve Genetik Kod",
       "outcome": "F.8.2.1.3",
-      "skill": "Çıkarım yapma",
-      "scenario": "Bir hücre bölünmeden önce DNA miktarının arttığı gözleniyor. Öğrenciler, DNA'nın iki zincirinin birbirinden ayrıldığını ve her bir zincirin karşısına uygun nükleotidlerin geldiğini gösteren bir model hazırlıyor. Süreç sonunda birbirinin aynısı olması beklenen iki DNA molekülü oluşuyor.",
+      "skill": "Süreç basamaklarını yorumlama",
+      "scenario": "Bir hücre bölünmeye hazırlanmadan önce DNA miktarının iki katına çıktığı ölçülüyor. Laboratuvar çiziminde önce DNA'nın iki zincirinin birbirinden ayrıldığı, daha sonra hücrede serbest bulunan nükleotidlerin açıkta kalan bazlarla uygun şekilde eşleştiği görülüyor. İşlem tamamlandığında birbirinin aynısı iki DNA molekülü oluşuyor. Öğrenciler bu olayın hücre bölünmesinden önce gerçekleştiğini not ediyor.",
       "image": "/denemeler/8-genel-kazanimlar/q06.svg",
-      "imageAlt": "6. soruyu destekleyen fen bilimleri görseli",
-      "stem": "Bu süreçte yeni DNA zincirlerinin oluşmasını sağlayan temel kural hangisidir?",
+      "imageAlt": "DNA ve Genetik Kod konusuna ait bilimsel şema",
+      "stem": "Bu olayın doğru açıklaması hangisidir?",
       "options": [
-        "Bazların rastgele eşleşmesi",
-        "Adenin-timin, guanin-sitozin tamamlayıcılığı",
-        "DNA'nın yalnızca proteinlerden oluşması",
-        "Kromozom sayısının iki katına çıkması"
+        "DNA, proteinlerden ayrılarak iki kromozoma dönüşür.",
+        "Her eski zincir kalıp görevi görür ve karşısına tamamlayıcı yeni zincir sentezlenir.",
+        "DNA'nın yalnızca bir zinciri kopyalanır, diğeri yok olur.",
+        "Nükleotidler eşleşme kuralı olmadan rastgele dizilir."
       ],
       "answer": 1,
-      "explanation": "DNA eşlenirken eski zincirler kalıp görevi görür ve tamamlayıcı nükleotidler eklenir. Böylece aynı genetik bilgiyi taşıyan iki DNA molekülü oluşur."
+      "explanation": "DNA eşlenirken zincirler ayrılır. Her bir zincir kalıp olur ve uygun nükleotidlerle tamamlayıcı yeni zincirler oluşturulur."
     },
     {
       "no": 7,
-      "unit": "DNA ve Genetik Kod / Kalıtım / Mutasyon / Adaptasyon",
+      "unit": "Kalıtım",
       "outcome": "F.8.2.2.1",
-      "skill": "Karşılaştırma",
-      "scenario": "Bezelyelerde mor çiçek rengi beyaz çiçek rengine baskındır. Bir öğrenci, mor çiçekli bir bezelyenin genotipinin AA ya da Aa olabileceğini, beyaz çiçekli bezelyenin ise aa olması gerektiğini not ediyor. Öğretmeni, genotipin kalıtsal yapıyı, fenotipin ise gözlenebilen özelliği ifade ettiğini hatırlatıyor.",
+      "skill": "Kalıtım kavramlarını kullanma",
+      "scenario": "Bir bitki araştırmasında mor çiçek rengi aleli baskın, beyaz çiçek rengi aleli çekinik olarak kabul ediliyor. Araştırmacı, mor çiçekli bir bitkinin genotipinin saf döl de olabileceğini melez döl de olabileceğini belirtiyor. Beyaz çiçekli bitkilerin ise çekinik özelliği gösterebilmesi için iki çekinik aleli taşıması gerektiğini açıklıyor.",
       "image": "/denemeler/8-genel-kazanimlar/q07.svg",
-      "imageAlt": "7. soruyu destekleyen fen bilimleri görseli",
-      "stem": "Aşağıdaki ifadelerden hangisi doğrudur?",
+      "imageAlt": "Kalıtım konusuna ait bilimsel şema",
+      "stem": "Beyaz çiçekli bir bitkinin genotipi aşağıdakilerden hangisi olabilir?",
       "options": [
-        "Fenotip, canlının gen dizilimidir.",
-        "Genotip yalnızca dış görünüşle belirlenir.",
-        "Baskın alel yalnızca homozigot olduğunda etkisini gösterir.",
-        "Mor çiçekli bezelyenin genotipi AA veya Aa olabilir."
+        "AA",
+        "Aa",
+        "aA",
+        "aa"
       ],
       "answer": 3,
-      "explanation": "Mor renk baskın olduğundan AA ve Aa genotiplerinde görülür. Beyaz renk çekinik olduğundan aa genotipinde ortaya çıkar."
+      "explanation": "Çekinik fenotipin ortaya çıkması için bireyin iki çekinik aleli taşıması gerekir. Bu nedenle genotip aa olur."
     },
     {
       "no": 8,
-      "unit": "DNA ve Genetik Kod / Kalıtım / Mutasyon / Adaptasyon",
+      "unit": "Kalıtım",
       "outcome": "F.8.2.2.2",
-      "skill": "Bilimsel değerlendirme",
-      "scenario": "Mor çiçek rengi (M), beyaz çiçek rengine (m) baskındır. Heterozigot mor çiçekli iki bezelye çaprazlanıyor: Mm × Mm. Öğrenciler, her ebeveynin üreme hücrelerine M veya m alellerinden birini aktaracağını kullanarak çaprazlama tablosu hazırlıyor.",
+      "skill": "Çaprazlama ve olasılık",
+      "scenario": "Bir üretici, bezelyelerde uzun boy alelinin (T) kısa boy aleline (t) baskın olduğunu biliyor. Genotipi Tt olan iki bezelyeyi çaprazlayarak oluşacak tohumları inceliyor. Öğrencilerden her ebeveynden gelebilecek alelleri Punnett karesine yerleştirmeleri ve yavruların genotip ile fenotip oranlarını hesaplamaları isteniyor.",
       "image": "/denemeler/8-genel-kazanimlar/q08.svg",
-      "imageAlt": "8. soruyu destekleyen fen bilimleri görseli",
-      "stem": "Oluşabilecek yavruların fenotip oranı hangisidir?",
+      "imageAlt": "Kalıtım konusuna ait bilimsel şema",
+      "stem": "Tt × Tt çaprazlamasında kısa boylu yavru oluşma olasılığı kaçtır?",
       "options": [
-        "3 mor : 1 beyaz",
-        "1 mor : 3 beyaz",
-        "2 mor : 2 beyaz",
-        "4 beyaz : 0 mor"
+        "%0",
+        "%25",
+        "%50",
+        "%75"
       ],
-      "answer": 0,
-      "explanation": "Mm × Mm çaprazlamasında MM, Mm, Mm ve mm genotipleri oluşur. Üçü mor, biri beyaz fenotiplidir."
+      "answer": 1,
+      "explanation": "Çaprazlama sonucunda TT, Tt, Tt ve tt genotipleri oluşur. Kısa boylu yalnızca tt olduğundan olasılık 1/4 yani %25'tir."
     },
     {
       "no": 9,
-      "unit": "DNA ve Genetik Kod / Kalıtım / Mutasyon / Adaptasyon",
+      "unit": "Kalıtım",
       "outcome": "F.8.2.2.3",
-      "skill": "Veri yorumlama",
-      "scenario": "Bir ailede anne ve baba aynı çekinik kalıtsal hastalık alelini taşıyor ancak kendilerinde hastalık görülmüyor. Genetik danışman, her gebelikte çocuğun hastalığı gösterme olasılığının bulunabileceğini, bunun kesin sonuç anlamına gelmediğini açıklıyor. Aile, akraba evliliklerinde bazı kalıtsal hastalıkların görülme riskinin neden artabildiğini soruyor.",
+      "skill": "Bilimsel ve etik değerlendirme",
+      "scenario": "Bir sağlık kuruluşu, evlilik öncesi danışmanlık kapsamında ailelerin kalıtsal hastalıklar hakkında bilgi edinmesini sağlıyor. Danışman, akraba bireylerin aynı atadan gelen çekinik hastalık alelini taşıma olasılığının daha yüksek olabileceğini anlatıyor. Bunun her akraba evliliğinde kesinlikle hasta çocuk doğacağı anlamına gelmediğini, riskin ailedeki genetik özelliklere bağlı olduğunu vurguluyor.",
       "image": "/denemeler/8-genel-kazanimlar/q09.svg",
-      "imageAlt": "9. soruyu destekleyen fen bilimleri görseli",
-      "stem": "Genetik danışmanın açıklamasını en doğru tamamlayan ifade hangisidir?",
+      "imageAlt": "Kalıtım konusuna ait bilimsel şema",
+      "stem": "Bu bilgilere göre aşağıdaki yargılardan hangisi bilimsel açıdan doğrudur?",
       "options": [
-        "Akraba evliliği bütün çocuklarda kesin hastalık oluşturur.",
-        "Akrabalarda ortak çekinik alellerin bulunma olasılığı artabileceğinden risk yükselebilir; genetik danışmanlık önemlidir.",
-        "Akraba evliliği DNA'daki tüm genleri baskın hâle getirir.",
-        "Kalıtsal hastalıklar yalnızca çevresel koşullarla oluşur."
+        "Akraba evliliklerinde tüm çocuklar kesinlikle kalıtsal hastalık taşır.",
+        "Akrabalık, ortak çekinik alellerin bir araya gelme olasılığını artırabilir; genetik danışmanlık riskin değerlendirilmesine yardımcı olur.",
+        "Kalıtsal hastalıklar yalnızca çevresel koşullarla oluşur.",
+        "Akraba evliliği genlerin yapısını her durumda değiştirir."
       ],
       "answer": 1,
-      "explanation": "Akraba bireylerin ortak atadan gelen aynı çekinik aleli taşıma olasılığı daha yüksek olabilir. Bu durum bazı çekinik hastalıkların ortaya çıkma riskini artırabilir; kesinlik ifade etmez."
+      "explanation": "Akraba bireylerin ortak atadan gelen aynı çekinik aleli taşıma olasılığı artabilir. Bu durum riski artırabilir ancak kesin hastalık anlamına gelmez."
     },
     {
       "no": 10,
-      "unit": "DNA ve Genetik Kod / Kalıtım / Mutasyon / Adaptasyon",
+      "unit": "Mutasyon ve Modifikasyon",
       "outcome": "F.8.2.3.1",
-      "skill": "Çıkarım yapma",
-      "scenario": "Bir araştırma merkezinde bitki hücreleri incelenirken DNA diziliminde kalıcı bir değişiklik saptanıyor. Değişimin, hücre bölünmesi sırasında oluşan bir hata nedeniyle meydana gelmiş olabileceği düşünülüyor. Araştırmacılar, bu değişimin hücre işlevini ve sonraki hücrelere aktarılma durumunu inceliyor.",
+      "skill": "Örnekten çıkarım yapma",
+      "scenario": "Bir araştırma ekibi, bir bitkinin DNA'sında belirli bir gen bölgesindeki nükleotid diziliminin değiştiğini tespit ediyor. Değişiklik bitkinin hücrelerinde gözleniyor ve bazı durumlarda üreme hücrelerine aktarılabiliyor. Aynı serada yetişen başka bitkilerde ise DNA dizilimi değişmeden yalnızca ışık miktarına bağlı yaprak büyüklüğü farklılıkları oluşuyor.",
       "image": "/denemeler/8-genel-kazanimlar/q10.svg",
-      "imageAlt": "10. soruyu destekleyen fen bilimleri görseli",
-      "stem": "Bu olay hangi kavramla açıklanır?",
+      "imageAlt": "Mutasyon ve Modifikasyon konusuna ait bilimsel şema",
+      "stem": "DNA dizilimindeki değişiklikle ilgili hangi ifade doğrudur?",
       "options": [
-        "Modifikasyon",
-        "Adaptasyon",
-        "Mutasyon",
-        "Aşılama"
+        "Bu değişim modifikasyondur ve kalıtsal bilgiyi etkilemez.",
+        "Bu değişim mutasyondur; üreme hücrelerinde gerçekleşirse kalıtsal olabilir.",
+        "Bu değişim adaptasyondur ve her zaman yararlıdır.",
+        "Bu değişim yalnızca geçici çevresel etkidir."
       ],
-      "answer": 2,
-      "explanation": "DNA'nın nükleotid diziliminde meydana gelen kalıcı değişiklik mutasyondur. Etkisi değişikliğin yerine ve türüne bağlıdır."
+      "answer": 1,
+      "explanation": "DNA'nın nükleotid diziliminde meydana gelen değişim mutasyondur. Üreme hücrelerinde oluşan mutasyonlar sonraki nesillere aktarılabilir."
     },
     {
       "no": 11,
-      "unit": "DNA ve Genetik Kod / Kalıtım / Mutasyon / Adaptasyon",
+      "unit": "Mutasyon ve Modifikasyon",
       "outcome": "F.8.2.3.2",
-      "skill": "Karşılaştırma",
-      "scenario": "Aynı tür bitkilerden biri güneş ışığı alan ortamda, diğeri az ışık alan ortamda yetiştiriliyor. Bir süre sonra ışık alan bitkinin yaprakları daha koyu yeşil, diğerinin yaprakları daha açık yeşil görünüyor. Bitkiler aynı genetik özelliklere sahip ve farklılık çevre koşuluyla ortaya çıkıyor.",
+      "skill": "Çevresel etkiyi değerlendirme",
+      "scenario": "Aynı genetik özelliklere sahip iki grup ortanca bitkisi farklı ışık koşullarında yetiştiriliyor. Birinci gruba daha az, ikinci gruba daha fazla ışık veriliyor. Çiçek renklerinde gözlenen farklılığın ışık koşullarına bağlı olduğu, bitkilerin DNA diziliminde bir değişim gerçekleşmediği belirleniyor. Koşullar eşitlendiğinde yeni açan çiçeklerde renk farkı ortadan kalkıyor.",
       "image": "/denemeler/8-genel-kazanimlar/q11.svg",
-      "imageAlt": "11. soruyu destekleyen fen bilimleri görseli",
-      "stem": "Bu farklılığın modifikasyon olarak değerlendirilmesinin nedeni hangisidir?",
+      "imageAlt": "Mutasyon ve Modifikasyon konusuna ait bilimsel şema",
+      "stem": "Bu olay aşağıdaki kavramlardan hangisiyle açıklanır?",
       "options": [
-        "Çevre etkisiyle fenotipte değişim oluşması, DNA diziliminin değişmesinin zorunlu olmaması",
-        "DNA'da mutlaka kalıcı değişim oluşması",
-        "Değişimin her zaman yavru bireylere aktarılması",
-        "Yeni bir türün ortaya çıkması"
+        "Mutasyon",
+        "Modifikasyon",
+        "Doğal seçilim",
+        "Kromozom sayısının değişmesi"
       ],
-      "answer": 0,
-      "explanation": "Modifikasyon çevre etkisiyle fenotipte oluşan değişimdir. DNA dizilimi değişmez ve genellikle kalıtsal değildir."
+      "answer": 1,
+      "explanation": "Çevre şartlarının etkisiyle canlının dış görünüşünde oluşan, DNA dizilimini değiştirmeyen ve kalıtsal olmayan değişimler modifikasyondur."
     },
     {
       "no": 12,
-      "unit": "DNA ve Genetik Kod / Kalıtım / Mutasyon / Adaptasyon",
+      "unit": "Mutasyon ve Modifikasyon",
       "outcome": "F.8.2.3.3",
-      "skill": "Bilimsel değerlendirme",
-      "scenario": "Bir laboratuvarda UV ışınlarına maruz kalan bazı mikroorganizmalarda DNA değişiklikleri gözleniyor. Başka bir deneyde, aynı bitki türünün farklı ışık koşullarında yetişen bireylerinin yaprak renklerinin değiştiği ancak DNA dizilimlerinin aynı kaldığı belirleniyor. Öğrenciler iki olayın farkını açıklıyor.",
+      "skill": "Karşılaştırma",
+      "scenario": "Bir sınıfta üç örnek inceleniyor: X canlısında DNA'daki baz dizilimi değişiyor; Y bitkisinin güneş alan ve almayan yaprakları farklı büyüklükte oluyor; Z canlısında ise üreme hücresinde meydana gelen gen değişimi yavru bireyde de görülüyor. Öğrenciler mutasyon ve modifikasyonun nedenlerini ve kalıtsallık durumlarını karşılaştırıyor.",
       "image": "/denemeler/8-genel-kazanimlar/q12.svg",
-      "imageAlt": "12. soruyu destekleyen fen bilimleri görseli",
-      "stem": "İki olayın doğru karşılaştırması hangisidir?",
+      "imageAlt": "Mutasyon ve Modifikasyon konusuna ait bilimsel şema",
+      "stem": "Örneklerle ilgili doğru çıkarım hangisidir?",
       "options": [
-        "İkisi de mutlaka kalıtsaldır.",
-        "İlk olay modifikasyon, ikinci olay mutasyondur.",
-        "İkisi de yalnızca çevresel görünüş değişimidir.",
-        "İlk olay mutasyon, ikinci olay modifikasyondur."
+        "X ve Z mutasyon örneğidir; Y modifikasyondur.",
+        "Üç örneğin tamamı modifikasyondur.",
+        "X modifikasyon, Y mutasyon, Z adaptasyondur.",
+        "Mutasyon ve modifikasyonun ikisi de her zaman kalıtsaldır."
       ],
-      "answer": 3,
-      "explanation": "UV ışınları DNA'da değişime yol açmışsa mutasyon; ışık koşullarının DNA'yı değiştirmeden görünüşü etkilemesi modifikasyondur."
+      "answer": 0,
+      "explanation": "DNA diziliminin değişmesi mutasyondur; üreme hücresindeki mutasyon kalıtsal olabilir. Çevresel koşullara bağlı, DNA'yı değiştirmeyen değişim modifikasyondur."
     },
     {
       "no": 13,
-      "unit": "DNA ve Genetik Kod / Kalıtım / Mutasyon / Adaptasyon",
+      "unit": "Adaptasyon",
       "outcome": "F.8.2.4.1",
-      "skill": "Veri yorumlama",
-      "scenario": "Kutup bölgelerinde yaşayan bir memeli türünün kalın yağ tabakası ve sık kürkü, soğuk koşullarda ısı kaybını azaltır. Aynı türün daha ılıman bölgelerde yaşayan yakın popülasyonlarında kürk yoğunluğu farklılık gösterebilir. Öğrenciler canlıların yaşadıkları çevreye uyum sağlayan kalıtsal özelliklerini gözlemleyerek not ediyor.",
+      "skill": "Çevre-canlı ilişkisi",
+      "scenario": "Bir doğa gözleminde kutup tilkilerinin kışın beyaz, yazın kahverengiye yakın kürke sahip olduğu; çöl tilkilerinin ise geniş kulakları sayesinde vücut ısılarını çevreye daha kolay aktarabildiği anlatılıyor. Öğrenciler bu özelliklerin bireyin yaşamı boyunca bilinçli olarak kazanılmadığını, yaşanılan çevrede hayatta kalma ve üreme başarısını artırabilen kalıtsal özellikler olduğunu öğreniyor.",
       "image": "/denemeler/8-genel-kazanimlar/q13.svg",
-      "imageAlt": "13. soruyu destekleyen fen bilimleri görseli",
-      "stem": "Bu özelliklerin canlıya sağladığı temel yarar hangisidir?",
+      "imageAlt": "Adaptasyon konusuna ait bilimsel şema",
+      "stem": "Bu özellikler hangi kavramla açıklanır?",
       "options": [
-        "Kutup bölgesinde daha fazla güneş ışığı üretmek",
-        "Soğuk ortamda ısı kaybını azaltarak yaşama ve üreme şansını artırmak",
-        "Canlının yaşamı boyunca DNA'sını isteğine göre değiştirmek",
-        "Tüm çevresel değişimleri ortadan kaldırmak"
+        "Modifikasyon",
+        "Adaptasyon",
+        "Geçici davranış",
+        "DNA eşlenmesi"
       ],
       "answer": 1,
-      "explanation": "Kalın yağ tabakası ve sık kürk soğukta ısı kaybını azaltan adaptasyon örnekleridir. Adaptasyonlar nesiller boyunca doğal seçilimle yaygınlaşabilir."
+      "explanation": "Canlıların yaşadıkları çevrede yaşama ve üreme şansını artıran kalıtsal uyum özellikleri adaptasyondur."
     },
     {
       "no": 14,
       "unit": "Biyoteknoloji",
       "outcome": "F.8.2.5.1",
-      "skill": "Çıkarım yapma",
-      "scenario": "Bir tarım laboratuvarında kuraklığa dayanıklı bitkiler geliştirmek için iki yöntem karşılaştırılıyor. Birinde dayanıklı bireylerin tohumları seçilip çoğaltılıyor. Diğerinde dayanıklılıkla ilişkili genin bitki hücresine aktarılması araştırılıyor.",
+      "skill": "Bilimsel uygulamaları ilişkilendirme",
+      "scenario": "Bir laboratuvarda bakterilere insanda bulunan bir proteinin üretiminden sorumlu gen aktarılıyor. Genetik mühendisleri DNA üzerinde gerekli düzenlemeleri yapıyor; biyoteknoloji uzmanları ise bu bakterileri kontrollü koşullarda çoğaltarak proteinin üretimini sağlıyor. Öğrenciler, bir uygulamada genetik mühendisliği tekniklerinin kullanıldığını ve biyoteknolojinin bu tekniklerden yararlanarak ürün elde ettiğini fark ediyor.",
       "image": "/denemeler/8-genel-kazanimlar/q14.svg",
-      "imageAlt": "14. soruyu destekleyen fen bilimleri görseli",
-      "stem": "İkinci yöntemi genetik mühendisliği yapan işlem hangisidir?",
+      "imageAlt": "Biyoteknoloji konusuna ait bilimsel şema",
+      "stem": "Bu uygulamayla ilgili doğru ifade hangisidir?",
       "options": [
-        "Dayanıklı bitkilerin seçilmesi",
-        "Tohumların saklanması",
-        "Genin başka canlıdan alınıp bitkiye aktarılması",
-        "Bitkinin sulama miktarının azaltılması"
+        "Genetik mühendisliği ve biyoteknoloji birbirinden tamamen bağımsızdır.",
+        "Genetik mühendisliği DNA üzerinde çalışır; biyoteknoloji bu bilgi ve tekniklerden yararlanarak ürün veya süreç geliştirir.",
+        "Biyoteknoloji yalnızca bitkilerin sulanmasıyla ilgilenir.",
+        "Gen aktarımı canlıların kalıtsal materyaliyle ilişkili değildir."
       ],
-      "answer": 2,
-      "explanation": "Gen aktarımı DNA üzerinde doğrudan işlem gerektiren genetik mühendisliği uygulamasıdır."
+      "answer": 1,
+      "explanation": "Genetik mühendisliği gen ve DNA üzerinde doğrudan çalışmalar yapar. Biyoteknoloji, bu teknikleri kullanarak sağlık, tarım ve sanayi gibi alanlarda uygulamalar geliştirir."
     },
     {
       "no": 15,
       "unit": "Biyoteknoloji",
-      "outcome": "F.8.2.5.1",
-      "skill": "Karşılaştırma",
-      "scenario": "Bir hastanede, belirli bir proteini üreten insan geni bakterilere aktarılıyor. Bakteriler kontrollü ortamda çoğaltıldığında bu proteini üretiyor ve protein ilaç üretiminde kullanılmak üzere saflaştırılıyor.",
+      "outcome": "F.8.2.5.2",
+      "skill": "Yarar-zarar değerlendirmesi",
+      "scenario": "Bir tarım araştırma kurumu, zararlı böceklere karşı dayanıklı bir bitki çeşidi geliştirmek için genetik yöntemlerden yararlanıyor. Bu sayede bazı bölgelerde ilaç kullanımının azaltılabileceği düşünülüyor. Ancak araştırmacılar, ürünün ekosistem üzerindeki uzun vadeli etkilerinin izlenmesi, biyolojik çeşitliliğin korunması ve tüketicilerin doğru bilgilendirilmesi gerektiğini de belirtiyor.",
       "image": "/denemeler/8-genel-kazanimlar/q15.svg",
-      "imageAlt": "15. soruyu destekleyen fen bilimleri görseli",
-      "stem": "Bu biyoteknolojik çalışmanın insanlık için olası yararı hangisidir?",
+      "imageAlt": "Biyoteknoloji konusuna ait bilimsel şema",
+      "stem": "Bu uygulamanın değerlendirilmesinde hangi yaklaşım bilimsel ve dengelidir?",
       "options": [
-        "İlaç üretiminde gerekli proteinin kontrollü ve yüksek miktarda elde edilmesi",
-        "Bütün bakterilerin hastalık yapıcı hâle getirilmesi",
-        "İnsan DNA'sının tamamen ortadan kaldırılması",
-        "Her hastalığın tek bir yöntemle tedavi edilmesi"
+        "Teknoloji yararlı olduğu için olası tüm riskler göz ardı edilmelidir.",
+        "Her biyoteknolojik uygulama kesinlikle zararlıdır ve araştırılmamalıdır.",
+        "Olası yararlar ve riskler bilimsel verilerle değerlendirilmeli, çevresel ve etik etkiler izlenmelidir.",
+        "Uygulamanın yalnızca ekonomik kazancı dikkate alınmalıdır."
       ],
-      "answer": 0,
-      "explanation": "Gen aktarımıyla bakterilerden tıbbi amaçlı proteinler üretilebilir. Bu, biyoteknolojinin sağlık alanındaki uygulamalarındandır."
+      "answer": 2,
+      "explanation": "Biyoteknolojik uygulamalar yarar ve riskleriyle birlikte değerlendirilmelidir. Bilimsel izleme, etik ilkeler ve çevresel etkiler karar sürecinin parçasıdır."
     },
     {
       "no": 16,
       "unit": "Biyoteknoloji",
-      "outcome": "F.8.2.5.2",
-      "skill": "Bilimsel değerlendirme",
-      "scenario": "Bir şirket, zararlı böceklere dayanıklı bir tarım bitkisini geniş alanlarda yetiştirmek istiyor. İlk denemelerde böcek ilacı kullanımının azaldığı görülüyor. Çevre uzmanları ise hedef dışı canlıların etkilenmesi, zararlıların direnç kazanması ve biyolojik çeşitliliğin değişmesi olasılıklarının uzun süre izlenmesini öneriyor.",
+      "outcome": "F.8.2.5.3",
+      "skill": "Geleceğe yönelik tahmin",
+      "scenario": "Bir bilim kurulu, gelecekte kişiye özel ilaçların geliştirilmesi, kuraklığa dayanıklı bitkilerin üretilmesi, mikroorganizmalarla çevre kirliliğinin azaltılması ve hastalıkların erken tanısında genetik verilerden yararlanılması gibi olasılıkları tartışıyor. Kurul, bu teknolojilerin gelişmesinin yanında veri güvenliği, erişilebilirlik ve etik kuralların da önem kazanacağını belirtiyor.",
       "image": "/denemeler/8-genel-kazanimlar/q16.svg",
-      "imageAlt": "16. soruyu destekleyen fen bilimleri görseli",
-      "stem": "Karar verilirken hangi yaklaşım en bilimsel ve dengelidir?",
+      "imageAlt": "Biyoteknoloji konusuna ait bilimsel şema",
+      "stem": "Bu gelişmelerle ilgili en tutarlı tahmin hangisidir?",
       "options": [
-        "Ürün verimi arttığı için hiçbir risk değerlendirmesi yapmamak",
-        "Teknoloji yeni olduğu için tüm uygulamaları kesin zararlı saymak",
-        "Yalnızca üretici firmanın açıklamasını dikkate almak",
-        "Yararları ve olası riskleri bilimsel verilerle izleyip çevresel denetim yapmak"
+        "Biyoteknoloji yalnızca geçmişte kullanılan yöntemlerle sınırlı kalacaktır.",
+        "Genetik mühendisliği sağlık, tarım ve çevre alanlarında yeni çözümler sunabilir; uygulamalar etik ve güvenlik ilkeleriyle yürütülmelidir.",
+        "Gelecekte tüm hastalıklar kesin olarak ortadan kalkacaktır.",
+        "Biyoteknolojik gelişmelerin toplumsal veya çevresel etkisi olmayacaktır."
       ],
-      "answer": 3,
-      "explanation": "Biyoteknolojik uygulamalar yararları kadar olası ekolojik etkileri ve uzun dönemli riskleriyle birlikte değerlendirilmelidir."
+      "answer": 1,
+      "explanation": "Gelecekte biyoteknoloji farklı alanlarda yeni çözümler geliştirebilir. Ancak güvenlik, etik, veri gizliliği ve adil erişim gibi konular önemini korur."
     },
     {
       "no": 17,
-      "unit": "Biyoteknoloji",
-      "outcome": "F.8.2.5.3",
-      "skill": "Veri yorumlama",
-      "scenario": "Bir araştırma ekibi gelecekte kişiye özel doku üretimi, kirliliği parçalayan mikroorganizmalar ve kuraklığa dayanıklı tarım bitkileri üzerine çalışılabileceğini öngörüyor. Ekip, bu teknolojilerin sağlık, çevre ve tarım sorunlarına katkı sunabileceğini ancak güvenlik ve etik ilkelerin de gözetilmesi gerektiğini belirtiyor.",
-      "image": "/denemeler/8-genel-kazanimlar/q17.svg",
-      "imageAlt": "17. soruyu destekleyen fen bilimleri görseli",
-      "stem": "Bu tahminleri değerlendiren en uygun ifade hangisidir?",
+      "unit": "Basınç",
+      "outcome": "F.8.3.1.1",
+      "skill": "Deney değişkenlerini yorumlama",
+      "scenario": "Bir öğrenci, özdeş tuğlaları sünger üzerine farklı yüzeyleri temas edecek şekilde yerleştiriyor. Aynı sayıda tuğla kullanıldığında dar yüzey üzerinde daha derin iz oluştuğunu gözlüyor. İkinci deneyde temas alanını sabit tutup tuğla sayısını artırıyor ve süngerdeki izin derinliğinin arttığını görüyor. Öğrenci, her deneyde yalnızca bir değişkeni değiştirdiği için sonuçları karşılaştırabiliyor.",
+      "image": "/denemeler/8-ilk-3-unite/q18.svg",
+      "imageAlt": "Katı basıncı temas alanı ve kuvvet deney düzeneği",
+      "stem": "Deney sonuçlarına göre katı basıncıyla ilgili hangi ifade doğrudur?",
       "options": [
-        "Biyoteknoloji yalnızca sağlık alanında kullanılabilir.",
-        "Bu uygulamalar farklı alanlarda yarar sağlayabilir; güvenlik, çevresel etki ve etik yönleri incelenmelidir.",
-        "Gelecekteki tüm biyoteknolojik uygulamalar kesinlikle risksiz olacaktır.",
-        "Bilimsel tahminlerde olası sınırlılıklar dikkate alınmamalıdır."
+        "Basınç temas alanı arttıkça artar.",
+        "Basınç uygulanan kuvvet arttıkça azalır.",
+        "Basınç kuvvetle doğru, temas alanıyla ters orantılıdır.",
+        "Basınç yalnızca cismin hacmine bağlıdır."
       ],
-      "answer": 1,
-      "explanation": "Biyoteknoloji sağlık, çevre ve tarımda gelecekte çözümler sunabilir. Uygulamaların yararları ve riskleri birlikte değerlendirilmelidir."
+      "answer": 2,
+      "explanation": "Katı basıncı uygulanan dik kuvvet arttıkça artar; temas alanı arttıkça azalır."
     },
     {
       "no": 18,
       "unit": "Basınç",
-      "outcome": "F.8.3.1.1",
-      "skill": "Deney tasarlama ve değişkenleri yorumlama",
-      "scenario": "Bir teknoloji tasarım kulübü, aynı ağırlıktaki üç özdeş tuğlayı sünger zemin üzerine farklı yüzeyleri üzerinde yerleştiriyor. Tuğlaların zeminde oluşturduğu izlerin derinlikleri ölçülüyor. Daha sonra tuğlaların üst üste konulmasıyla zemine uygulanan kuvvet artırılıyor. Öğrenciler, temas alanı ve uygulanan kuvvetin katı basıncına etkisini ayrı ayrı incelemek için deney düzeneklerini karşılaştırıyor. Görselde A, B ve C düzeneklerinin temas alanları ve tuğla sayıları gösterilmiştir.",
-      "image": "/denemeler/8-ilk-3-unite/q18.svg",
-      "imageAlt": "Katı basıncında temas alanı ve kuvvet düzenekleri",
-      "stem": "Bu deneylerden elde edilecek sonuçlarla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+      "outcome": "F.8.3.1.2",
+      "skill": "Deney ve veri yorumlama",
+      "scenario": "Bir laboratuvarda aynı sıvıyla dolu silindirik kaba farklı derinliklerde üç basınç sensörü yerleştiriliyor. Sensörler yüzeyden 5 cm, 15 cm ve 25 cm derinliklerde ölçüm yapıyor. Daha sonra 15 cm derinlikteki sensör, yoğunluğu daha büyük başka bir sıvıyla deneniyor. Son olarak aynı sıvı ve derinlik korunarak kabın biçimi değiştiriliyor. Öğrenciler ölçüm sonuçlarını karşılaştırıyor.",
+      "image": "/denemeler/8-ilk-3-unite/q19.svg",
+      "imageAlt": "Sıvı basıncında derinlik ve yoğunluk sensörleri",
+      "stem": "Bu deneylerin sonuçları hangi çıkarımı destekler?",
       "options": [
-        "Temas alanı arttıkça basınç artar; kuvvet değişimi basıncı etkilemez.",
-        "Aynı kuvvette temas alanı küçüldükçe basınç artar; aynı temas alanında kuvvet arttıkça basınç artar.",
-        "Katı basıncı yalnızca cismin şekline bağlıdır.",
-        "Temas alanı ve kuvvet birlikte artsa bile basınç kesinlikle azalır."
+        "Sıvı basıncı derinlik ve yoğunluk arttıkça artar; kabın şekline bağlı değildir.",
+        "Sıvı basıncı yalnızca kabın taban alanına bağlıdır.",
+        "Derinlik arttıkça sıvı basıncı azalır.",
+        "Aynı derinlikte yoğunluğu büyük sıvı daha az basınç uygular."
       ],
-      "answer": 1,
-      "explanation": "Katı basıncı uygulanan dik kuvvetle doğru, temas yüzey alanıyla ters orantılıdır. Değişkenlerin etkisini ayrı ayrı incelemek için diğer değişken sabit tutulmalıdır."
+      "answer": 0,
+      "explanation": "Sıvı basıncı derinliğe ve sıvının yoğunluğuna bağlıdır. Aynı sıvı ve derinlikte kabın şekli basıncı değiştirmez."
     },
     {
       "no": 19,
       "unit": "Basınç",
-      "outcome": "F.8.3.1.2",
-      "skill": "Grafik ve deney verilerini yorumlama",
-      "scenario": "Bir araştırma grubundaki öğrenciler, aynı sıvıyla doldurulmuş şeffaf bir kabın farklı derinliklerine basınç sensörleri yerleştiriyor. Sensörler yüzeyden 10 cm, 20 cm ve 30 cm derinliklerde ölçüm yapıyor. Ardından aynı derinlikteki sensörlerle yoğunlukları farklı iki sıvı deneniyor. Son aşamada kap şeklinin değiştirilmesine rağmen sıvı yüksekliği ve sıvı türü aynı tutuluyor. Öğrenciler, sıvı basıncının hangi değişkenlere bağlı olduğunu belirlemek istiyor.",
-      "image": "/denemeler/8-ilk-3-unite/q19.svg",
-      "imageAlt": "Sıvı basıncının derinlik ve yoğunlukla değişimini gösteren kap modeli",
-      "stem": "Deney sonuçlarına göre hangi çıkarıma ulaşılması beklenir?",
-      "options": [
-        "Sıvı basıncı derinlik ve sıvı yoğunluğu arttıkça artar; kabın şekline bağlı değildir.",
-        "Sıvı basıncı yalnızca kabın taban alanına bağlıdır.",
-        "Aynı sıvıda derinlik arttıkça basınç azalır.",
-        "Sıvı basıncı sıvının rengine ve kabın biçimine bağlıdır."
-      ],
-      "answer": 0,
-      "explanation": "Sıvı basıncı sıvının derinliğine ve yoğunluğuna bağlıdır. Aynı derinlik ve aynı sıvı için kabın şekli sıvı basıncını değiştirmez."
-    },
-    {
-      "no": 20,
-      "unit": "Basınç",
       "outcome": "F.8.3.1.3",
-      "skill": "Günlük yaşam ve teknolojiyle ilişkilendirme",
-      "scenario": "Bir bilim merkezindeki sergide dört düzenek tanıtılıyor: Kar ayakkabılarının geniş tabanlarıyla kişinin kara batmasını azaltması, su depolarında alt kısımdaki kapakların daha sağlam yapılması, pipetle içecek içilmesi ve araç lastiklerinin hava basıncıyla çalışması. Rehber, bu örneklerin katı, sıvı ve gaz basıncıyla ilişkili olduğunu açıklıyor. Öğrenciler her düzeneğin hangi basınç özelliğinden yararlandığını sınıflandırıyor.",
+      "skill": "Günlük yaşamla ilişkilendirme",
+      "scenario": "Bir bilim merkezinde dört düzenek sergileniyor: kar üzerinde yürümeyi kolaylaştıran geniş tabanlı kar ayakkabısı, su deposunun alt bölümünde daha kalın tasarlanan duvar, pipetle içecek içilmesi ve araç lastiğinin içindeki sıkıştırılmış hava. Rehber, bu örneklerin katı, sıvı ve gaz basıncının günlük yaşam ve teknolojideki kullanımını gösterdiğini açıklıyor.",
       "image": "/denemeler/8-ilk-3-unite/q20.svg",
-      "imageAlt": "Katı, sıvı ve gaz basıncının günlük yaşam uygulamaları",
-      "stem": "Aşağıdaki eşleştirmelerden hangisi doğrudur?",
+      "imageAlt": "Katı, sıvı ve gaz basıncının günlük yaşam örnekleri",
+      "stem": "Örneklerin doğru eşleştirilmesi hangisidir?",
       "options": [
-        "Kar ayakkabısı–sıvı basıncı; depo kapağı–gaz basıncı; pipet–katı basıncı",
-        "Kar ayakkabısı–katı basıncı; depo kapağı–sıvı basıncı; pipet ve araç lastiği–gaz basıncı",
-        "Kar ayakkabısı–gaz basıncı; depo kapağı–katı basıncı; pipet–sıvı basıncı",
-        "Verilen örneklerin tümü yalnızca katı basıncıyla açıklanır."
+        "Kar ayakkabısı–sıvı; depo duvarı–gaz; pipet–katı basıncı",
+        "Kar ayakkabısı–katı; depo duvarı–sıvı; pipet ve lastik–gaz basıncı",
+        "Kar ayakkabısı–gaz; depo duvarı–katı; pipet–sıvı basıncı",
+        "Dört örneğin tamamı katı basıncıyla açıklanır."
       ],
       "answer": 1,
-      "explanation": "Geniş taban temas alanını artırarak katı basıncını azaltır. Sıvı basıncı derinlikle artar. Pipette atmosfer basıncı etkili olur; araç lastiğinde sıkıştırılmış gaz basıncı kullanılır."
+      "explanation": "Geniş taban katı basıncını azaltır. Sıvı basıncı derinlikle arttığından deponun alt kısmı daha dayanıklı yapılır. Pipette atmosfer basıncı, lastikte ise sıkıştırılmış gaz basıncı etkilidir."
     }
   ]
 }
