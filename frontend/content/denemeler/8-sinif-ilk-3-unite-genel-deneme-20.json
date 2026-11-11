@@ -324,7 +324,7 @@
       "outcome": "F.8.3.1.1",
       "skill": "Deney tasarlama ve değişkenleri yorumlama",
       "scenario": "Bir teknoloji tasarım kulübü, aynı ağırlıktaki üç özdeş tuğlayı sünger zemin üzerine farklı yüzeyleri üzerinde yerleştiriyor. Tuğlaların zeminde oluşturduğu izlerin derinlikleri ölçülüyor. Daha sonra tuğlaların üst üste konulmasıyla zemine uygulanan kuvvet artırılıyor. Öğrenciler, temas alanı ve uygulanan kuvvetin katı basıncına etkisini ayrı ayrı incelemek için deney düzeneklerini karşılaştırıyor. Görselde A, B ve C düzeneklerinin temas alanları ve tuğla sayıları gösterilmiştir.",
-      "image": "/denemeler/8-genel-kazanimlar/q18.svg",
+      "image": "/denemeler/8-ilk-3-unite/q18.svg",
       "imageAlt": "Katı basıncında temas alanı ve kuvvet düzenekleri",
       "stem": "Bu deneylerden elde edilecek sonuçlarla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
       "options": [
@@ -342,7 +342,7 @@
       "outcome": "F.8.3.1.2",
       "skill": "Grafik ve deney verilerini yorumlama",
       "scenario": "Bir araştırma grubundaki öğrenciler, aynı sıvıyla doldurulmuş şeffaf bir kabın farklı derinliklerine basınç sensörleri yerleştiriyor. Sensörler yüzeyden 10 cm, 20 cm ve 30 cm derinliklerde ölçüm yapıyor. Ardından aynı derinlikteki sensörlerle yoğunlukları farklı iki sıvı deneniyor. Son aşamada kap şeklinin değiştirilmesine rağmen sıvı yüksekliği ve sıvı türü aynı tutuluyor. Öğrenciler, sıvı basıncının hangi değişkenlere bağlı olduğunu belirlemek istiyor.",
-      "image": "/denemeler/8-genel-kazanimlar/q19.svg",
+      "image": "/denemeler/8-ilk-3-unite/q19.svg",
       "imageAlt": "Sıvı basıncının derinlik ve yoğunlukla değişimini gösteren kap modeli",
       "stem": "Deney sonuçlarına göre hangi çıkarıma ulaşılması beklenir?",
       "options": [
@@ -360,7 +360,7 @@
       "outcome": "F.8.3.1.3",
       "skill": "Günlük yaşam ve teknolojiyle ilişkilendirme",
       "scenario": "Bir bilim merkezindeki sergide dört düzenek tanıtılıyor: Kar ayakkabılarının geniş tabanlarıyla kişinin kara batmasını azaltması, su depolarında alt kısımdaki kapakların daha sağlam yapılması, pipetle içecek içilmesi ve araç lastiklerinin hava basıncıyla çalışması. Rehber, bu örneklerin katı, sıvı ve gaz basıncıyla ilişkili olduğunu açıklıyor. Öğrenciler her düzeneğin hangi basınç özelliğinden yararlandığını sınıflandırıyor.",
-      "image": "/denemeler/8-genel-kazanimlar/q20.svg",
+      "image": "/denemeler/8-ilk-3-unite/q20.svg",
       "imageAlt": "Katı, sıvı ve gaz basıncının günlük yaşam uygulamaları",
       "stem": "Aşağıdaki eşleştirmelerden hangisi doğrudur?",
       "options": [
