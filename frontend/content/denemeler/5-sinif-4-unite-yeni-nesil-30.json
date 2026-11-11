@@ -36,12 +36,12 @@
       "scenario": "Pencere camından dışarıdaki ağaç net, buzlu camdan bulanık görülüyor; tahta kapıdan hiç görülmüyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
-        "Saydam-yarı saydam-opak",
         "Opak-saydam-yarı saydam",
         "Yarı saydam-opak-saydam",
-        "Saydam-opak-yarı saydam"
+        "Saydam-opak-yarı saydam",
+        "Saydam-yarı saydam-opak"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Saydam net, yarı saydam bulanık görüntü verir; opak ışığı geçirmez.",
       "image": "",
       "imageAlt": ""
@@ -54,12 +54,12 @@
       "scenario": "El feneri ile duvar arasına kitap konulduğunda duvarda karanlık bir bölge oluşuyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
-        "Kitabın ışığı engellemesi",
-        "Kitabın ışık üretmesi",
         "Duvarın saydam olması",
-        "Işığın ses dalgası olması"
+        "Işığın ses dalgası olması",
+        "Kitabın ışığı engellemesi",
+        "Kitabın ışık üretmesi"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Opak cisim ışığı engellediğinde arkasında gölge oluşur.",
       "image": "",
       "imageAlt": ""
@@ -72,12 +72,12 @@
       "scenario": "Işık kaynağı, opak cisim ve beyaz ekranla gölge deneyi yapılıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
+        "Pil-ampul-kablo",
         "Işık kaynağı-opak cisim-ekran",
         "Ayna-saydam cisim-su",
-        "Ses kaynağı-opak cisim-ekran",
-        "Pil-ampul-kablo"
+        "Ses kaynağı-opak cisim-ekran"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Gölge için ışık kaynağı, opak cisim ve gölgenin düştüğü ekran gerekir.",
       "image": "",
       "imageAlt": ""
@@ -108,12 +108,12 @@
       "scenario": "Güneşli bir günde direğin gölgesi sabah uzun, öğlen kısa ölçülüyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
-        "Güneş ışığının geliş yönünün değişmesi",
         "Direğin kütlesinin değişmesi",
         "Yerin ışık üretmesi",
-        "Direğin saydamlaşması"
+        "Direğin saydamlaşması",
+        "Güneş ışığının geliş yönünün değişmesi"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Güneş'in gökyüzündeki görünür konumu değiştikçe gölge uzunluğu değişir.",
       "image": "",
       "imageAlt": ""
@@ -126,12 +126,12 @@
       "scenario": "Işık kaynağı ile ekran arasındaki mesafe sabit tutulup kartonun büyüklüğü değiştiriliyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
-        "Kartonun büyüklüğü",
-        "Gölge alanı",
         "Ekranın rengi",
-        "Işığın varlığı"
+        "Işığın varlığı",
+        "Kartonun büyüklüğü",
+        "Gölge alanı"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Araştırmacının değiştirdiği kartonun büyüklüğüdür.",
       "image": "",
       "imageAlt": ""
@@ -144,12 +144,12 @@
       "scenario": "Cam, yağlı kâğıt ve metal levhaya el feneri tutuluyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
+        "Hiçbiri",
         "Metal levha",
         "Yağlı kâğıt",
-        "Cam",
-        "Hiçbiri"
+        "Cam"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Yağlı kâğıt ışığı kısmen geçirdiği için yarı saydamdır.",
       "image": "",
       "imageAlt": ""
@@ -180,12 +180,12 @@
       "scenario": "Üç delikli karton aynı hizadayken mum görülüyor, kartonlardan biri kaydırılınca mum görünmüyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
-        "Işığın doğrusal yayıldığını",
         "Işığın yalnız suda yayıldığını",
         "Işığın kütlesi olduğunu",
-        "Işığın ses ürettiğini"
+        "Işığın ses ürettiğini",
+        "Işığın doğrusal yayıldığını"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Delikler aynı doğrultudayken ışığın görülmesi doğrusal yayılmayı gösterir.",
       "image": "",
       "imageAlt": ""
@@ -198,12 +198,12 @@
       "scenario": "Işık kaynağından çıkan ışığın düz bir yol izlediği gözleniyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
-        "Doğrusal yayılması",
-        "Yalnız sıvılarda yayılması",
         "Kendi kendine yok olması",
-        "Her maddeden geçmesi"
+        "Her maddeden geçmesi",
+        "Doğrusal yayılması",
+        "Yalnız sıvılarda yayılması"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Işık, saydam ve homojen ortamlarda doğrusal yayılır.",
       "image": "",
       "imageAlt": ""
@@ -216,12 +216,12 @@
       "scenario": "Pencere camından dışarıdaki ağaç net, buzlu camdan bulanık görülüyor; tahta kapıdan hiç görülmüyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
+        "Saydam-opak-yarı saydam",
         "Saydam-yarı saydam-opak",
         "Opak-saydam-yarı saydam",
-        "Yarı saydam-opak-saydam",
-        "Saydam-opak-yarı saydam"
+        "Yarı saydam-opak-saydam"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Saydam net, yarı saydam bulanık görüntü verir; opak ışığı geçirmez.",
       "image": "",
       "imageAlt": ""
@@ -252,12 +252,12 @@
       "scenario": "Işık kaynağı, opak cisim ve beyaz ekranla gölge deneyi yapılıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
-        "Işık kaynağı-opak cisim-ekran",
         "Ayna-saydam cisim-su",
         "Ses kaynağı-opak cisim-ekran",
-        "Pil-ampul-kablo"
+        "Pil-ampul-kablo",
+        "Işık kaynağı-opak cisim-ekran"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Gölge için ışık kaynağı, opak cisim ve gölgenin düştüğü ekran gerekir.",
       "image": "",
       "imageAlt": ""
@@ -270,12 +270,12 @@
       "scenario": "Aynı cisim ışık kaynağına yaklaştırıldığında ekrandaki gölgesi büyüyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
-        "Cismin ışık kaynağına uzaklığı",
-        "Cismin adı",
         "Ekranın rengi",
-        "Ortamın sesi"
+        "Ortamın sesi",
+        "Cismin ışık kaynağına uzaklığı",
+        "Cismin adı"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Cisim ile ışık kaynağı arasındaki uzaklık gölge boyutunu etkiler.",
       "image": "",
       "imageAlt": ""
@@ -288,12 +288,12 @@
       "scenario": "Güneşli bir günde direğin gölgesi sabah uzun, öğlen kısa ölçülüyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
+        "Direğin saydamlaşması",
         "Güneş ışığının geliş yönünün değişmesi",
         "Direğin kütlesinin değişmesi",
-        "Yerin ışık üretmesi",
-        "Direğin saydamlaşması"
+        "Yerin ışık üretmesi"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Güneş'in gökyüzündeki görünür konumu değiştikçe gölge uzunluğu değişir.",
       "image": "",
       "imageAlt": ""
@@ -324,12 +324,12 @@
       "scenario": "Cam, yağlı kâğıt ve metal levhaya el feneri tutuluyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
-        "Metal levha",
         "Yağlı kâğıt",
         "Cam",
-        "Hiçbiri"
+        "Hiçbiri",
+        "Metal levha"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Yağlı kâğıt ışığı kısmen geçirdiği için yarı saydamdır.",
       "image": "",
       "imageAlt": ""
@@ -342,12 +342,12 @@
       "scenario": "Kukla ile perde arasındaki uzaklık azaltıldığında perdedeki gölge küçülüyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
-        "Cisim ekrana yaklaştıkça gölge küçülebilir",
-        "Gölge yalnızca cismin rengine bağlıdır",
         "Opak cisim gölge oluşturamaz",
-        "Işık eğri yayılır"
+        "Işık eğri yayılır",
+        "Cisim ekrana yaklaştıkça gölge küçülebilir",
+        "Gölge yalnızca cismin rengine bağlıdır"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Cisim ekrana yaklaştırıldığında gölge genellikle küçülür.",
       "image": "",
       "imageAlt": ""
@@ -360,12 +360,12 @@
       "scenario": "Üç delikli karton aynı hizadayken mum görülüyor, kartonlardan biri kaydırılınca mum görünmüyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
+        "Işığın ses ürettiğini",
         "Işığın doğrusal yayıldığını",
         "Işığın yalnız suda yayıldığını",
-        "Işığın kütlesi olduğunu",
-        "Işığın ses ürettiğini"
+        "Işığın kütlesi olduğunu"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Delikler aynı doğrultudayken ışığın görülmesi doğrusal yayılmayı gösterir.",
       "image": "",
       "imageAlt": ""
@@ -396,12 +396,12 @@
       "scenario": "Pencere camından dışarıdaki ağaç net, buzlu camdan bulanık görülüyor; tahta kapıdan hiç görülmüyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
-        "Saydam-yarı saydam-opak",
         "Opak-saydam-yarı saydam",
         "Yarı saydam-opak-saydam",
-        "Saydam-opak-yarı saydam"
+        "Saydam-opak-yarı saydam",
+        "Saydam-yarı saydam-opak"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Saydam net, yarı saydam bulanık görüntü verir; opak ışığı geçirmez.",
       "image": "",
       "imageAlt": ""
@@ -414,12 +414,12 @@
       "scenario": "El feneri ile duvar arasına kitap konulduğunda duvarda karanlık bir bölge oluşuyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
-        "Kitabın ışığı engellemesi",
-        "Kitabın ışık üretmesi",
         "Duvarın saydam olması",
-        "Işığın ses dalgası olması"
+        "Işığın ses dalgası olması",
+        "Kitabın ışığı engellemesi",
+        "Kitabın ışık üretmesi"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Opak cisim ışığı engellediğinde arkasında gölge oluşur.",
       "image": "",
       "imageAlt": ""
@@ -432,12 +432,12 @@
       "scenario": "Işık kaynağı, opak cisim ve beyaz ekranla gölge deneyi yapılıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
+        "Pil-ampul-kablo",
         "Işık kaynağı-opak cisim-ekran",
         "Ayna-saydam cisim-su",
-        "Ses kaynağı-opak cisim-ekran",
-        "Pil-ampul-kablo"
+        "Ses kaynağı-opak cisim-ekran"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Gölge için ışık kaynağı, opak cisim ve gölgenin düştüğü ekran gerekir.",
       "image": "",
       "imageAlt": ""
@@ -468,12 +468,12 @@
       "scenario": "Güneşli bir günde direğin gölgesi sabah uzun, öğlen kısa ölçülüyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
-        "Güneş ışığının geliş yönünün değişmesi",
         "Direğin kütlesinin değişmesi",
         "Yerin ışık üretmesi",
-        "Direğin saydamlaşması"
+        "Direğin saydamlaşması",
+        "Güneş ışığının geliş yönünün değişmesi"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Güneş'in gökyüzündeki görünür konumu değiştikçe gölge uzunluğu değişir.",
       "image": "",
       "imageAlt": ""
@@ -486,12 +486,12 @@
       "scenario": "Işık kaynağı ile ekran arasındaki mesafe sabit tutulup kartonun büyüklüğü değiştiriliyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
-        "Kartonun büyüklüğü",
-        "Gölge alanı",
         "Ekranın rengi",
-        "Işığın varlığı"
+        "Işığın varlığı",
+        "Kartonun büyüklüğü",
+        "Gölge alanı"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Araştırmacının değiştirdiği kartonun büyüklüğüdür.",
       "image": "",
       "imageAlt": ""
@@ -504,12 +504,12 @@
       "scenario": "Cam, yağlı kâğıt ve metal levhaya el feneri tutuluyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
+        "Hiçbiri",
         "Metal levha",
         "Yağlı kâğıt",
-        "Cam",
-        "Hiçbiri"
+        "Cam"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Yağlı kâğıt ışığı kısmen geçirdiği için yarı saydamdır.",
       "image": "",
       "imageAlt": ""
@@ -540,12 +540,12 @@
       "scenario": "Üç delikli karton aynı hizadayken mum görülüyor, kartonlardan biri kaydırılınca mum görünmüyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
-        "Işığın doğrusal yayıldığını",
         "Işığın yalnız suda yayıldığını",
         "Işığın kütlesi olduğunu",
-        "Işığın ses ürettiğini"
+        "Işığın ses ürettiğini",
+        "Işığın doğrusal yayıldığını"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Delikler aynı doğrultudayken ışığın görülmesi doğrusal yayılmayı gösterir.",
       "image": "",
       "imageAlt": ""
