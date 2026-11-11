@@ -37,12 +37,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Güneş’in enerjisi çekirdeğinde gerçekleşen süreçlerle üretilir",
         "fotosfer",
         "çekirdek",
-        "kromosfer"
+        "kromosfer",
+        "Güneş’in enerjisi çekirdeğinde gerçekleşen süreçlerle üretilir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Güneş’in merkezinde çekirdek bulunur; enerji burada üretilir."
     },
     {
@@ -57,12 +57,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Güneş lekelerinin zamanla yer değiştirmesi kendi ekseni etrafında dönmesine kanıttır",
         "dolanma",
         "tutulma",
+        "Güneş lekelerinin zamanla yer değiştirmesi kendi ekseni etrafında dönmesine kanıttır",
         "evre"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Güneş lekelerinin konumunun değişmesi Güneş’in döndüğünü gösterir."
     },
     {
@@ -77,12 +77,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Ay’ın parlak görünmesinin nedeni Güneş ışığını yansıtmasıdır",
         "yansıma",
+        "Ay’ın parlak görünmesinin nedeni Güneş ışığını yansıtmasıdır",
         "ısı",
         "elektrik"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Ay kendi ışığını üretmez; Güneş ışığını yansıtır."
     },
     {
@@ -117,12 +117,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Ay’da Dünya’daki gibi rüzgâr ve yağmur görülmemesinin temel nedeni belirgin atmosferinin olmamasıdır",
         "okyanus",
         "bitki",
-        "bulut"
+        "bulut",
+        "Ay’da Dünya’daki gibi rüzgâr ve yağmur görülmemesinin temel nedeni belirgin atmosferinin olmamasıdır"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Ay’ın belirgin atmosferi yoktur; bu nedenle hava olayları görülmez."
     },
     {
@@ -137,12 +137,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Ay’ın kendi ekseni çevresindeki dönme süresi ile Dünya çevresindeki dolanma süresi yaklaşık eşittir",
         "eşit süreler",
         "ışık",
+        "Ay’ın kendi ekseni çevresindeki dönme süresi ile Dünya çevresindeki dolanma süresi yaklaşık eşittir",
         "gölge"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Ay’ın dönme ve dolanma süreleri yaklaşık eşit olduğundan aynı yüzü görülür."
     },
     {
@@ -157,12 +157,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Ay’ın şekli değişmez; görülen aydınlık bölüm değişir",
         "Dünya gölgesi",
+        "Ay’ın şekli değişmez; görülen aydınlık bölüm değişir",
         "görülen aydınlık kısım",
         "bulut"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Ay’ın evreleri, Güneş’in aydınlattığı bölümün Dünya’dan farklı görünmesiyle oluşur."
     },
     {
@@ -197,12 +197,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Dünya’nın Güneş çevresindeki bir tam dolanımı yaklaşık 365 gün 6 saat sürer",
         "bir hafta",
         "bir ay",
-        "bir yıl"
+        "bir yıl",
+        "Dünya’nın Güneş çevresindeki bir tam dolanımı yaklaşık 365 gün 6 saat sürer"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Dünya’nın Güneş çevresinde dolanması yaklaşık bir yıl sürer."
     },
     {
@@ -217,12 +217,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Güneş kendi ışığını üretir; gezegen değildir",
         "Ay",
         "yıldız",
+        "Güneş kendi ışığını üretir; gezegen değildir",
         "gezegen"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Güneş bir yıldızdır ve kendi ışık ve ısısını üretir."
     },
     {
@@ -237,12 +237,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Güneş’in enerjisi çekirdeğinde gerçekleşen süreçlerle üretilir",
         "fotosfer",
+        "Güneş’in enerjisi çekirdeğinde gerçekleşen süreçlerle üretilir",
         "çekirdek",
         "kromosfer"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Güneş’in merkezinde çekirdek bulunur; enerji burada üretilir."
     },
     {
@@ -277,12 +277,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Ay’ın parlak görünmesinin nedeni Güneş ışığını yansıtmasıdır",
         "yansıma",
         "ısı",
-        "elektrik"
+        "elektrik",
+        "Ay’ın parlak görünmesinin nedeni Güneş ışığını yansıtmasıdır"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Ay kendi ışığını üretmez; Güneş ışığını yansıtır."
     },
     {
@@ -297,12 +297,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Ay, Dünya’nın doğal uydusu olarak onun çevresinde dolanır",
         "Yıldız",
         "gezegen",
+        "Ay, Dünya’nın doğal uydusu olarak onun çevresinde dolanır",
         "gök taşı"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Ay Dünya’nın doğal uydusudur ve Dünya çevresinde dolanır."
     },
     {
@@ -317,12 +317,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Ay’da Dünya’daki gibi rüzgâr ve yağmur görülmemesinin temel nedeni belirgin atmosferinin olmamasıdır",
         "okyanus",
+        "Ay’da Dünya’daki gibi rüzgâr ve yağmur görülmemesinin temel nedeni belirgin atmosferinin olmamasıdır",
         "bitki",
         "bulut"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Ay’ın belirgin atmosferi yoktur; bu nedenle hava olayları görülmez."
     },
     {
@@ -357,12 +357,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Ay’ın şekli değişmez; görülen aydınlık bölüm değişir",
         "Dünya gölgesi",
         "görülen aydınlık kısım",
-        "bulut"
+        "bulut",
+        "Ay’ın şekli değişmez; görülen aydınlık bölüm değişir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Ay’ın evreleri, Güneş’in aydınlattığı bölümün Dünya’dan farklı görünmesiyle oluşur."
     },
     {
@@ -377,12 +377,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Dünya’nın kendi ekseni etrafında dönmesi gece ve gündüzün oluşmasını sağlar",
         "Dolanma",
         "Ay evresi",
+        "Dünya’nın kendi ekseni etrafında dönmesi gece ve gündüzün oluşmasını sağlar",
         "mevsim"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Dünya’nın kendi ekseni etrafında dönmesi gece ve gündüzü oluşturur."
     },
     {
@@ -397,12 +397,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Dünya’nın Güneş çevresindeki bir tam dolanımı yaklaşık 365 gün 6 saat sürer",
         "bir hafta",
+        "Dünya’nın Güneş çevresindeki bir tam dolanımı yaklaşık 365 gün 6 saat sürer",
         "bir ay",
         "bir yıl"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Dünya’nın Güneş çevresinde dolanması yaklaşık bir yıl sürer."
     },
     {
@@ -437,12 +437,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Güneş’in enerjisi çekirdeğinde gerçekleşen süreçlerle üretilir",
         "fotosfer",
         "çekirdek",
-        "kromosfer"
+        "kromosfer",
+        "Güneş’in enerjisi çekirdeğinde gerçekleşen süreçlerle üretilir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Güneş’in merkezinde çekirdek bulunur; enerji burada üretilir."
     },
     {
@@ -457,12 +457,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Güneş lekelerinin zamanla yer değiştirmesi kendi ekseni etrafında dönmesine kanıttır",
         "dolanma",
         "tutulma",
+        "Güneş lekelerinin zamanla yer değiştirmesi kendi ekseni etrafında dönmesine kanıttır",
         "evre"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Güneş lekelerinin konumunun değişmesi Güneş’in döndüğünü gösterir."
     },
     {
@@ -477,12 +477,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Ay’ın parlak görünmesinin nedeni Güneş ışığını yansıtmasıdır",
         "yansıma",
+        "Ay’ın parlak görünmesinin nedeni Güneş ışığını yansıtmasıdır",
         "ısı",
         "elektrik"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Ay kendi ışığını üretmez; Güneş ışığını yansıtır."
     },
     {
@@ -517,12 +517,12 @@
       },
       "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
       "options": [
-        "Ay’da Dünya’daki gibi rüzgâr ve yağmur görülmemesinin temel nedeni belirgin atmosferinin olmamasıdır",
         "okyanus",
         "bitki",
-        "bulut"
+        "bulut",
+        "Ay’da Dünya’daki gibi rüzgâr ve yağmur görülmemesinin temel nedeni belirgin atmosferinin olmamasıdır"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Ay’ın belirgin atmosferi yoktur; bu nedenle hava olayları görülmez."
     },
     {
@@ -537,12 +537,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Ay’ın kendi ekseni çevresindeki dönme süresi ile Dünya çevresindeki dolanma süresi yaklaşık eşittir",
         "eşit süreler",
         "ışık",
+        "Ay’ın kendi ekseni çevresindeki dönme süresi ile Dünya çevresindeki dolanma süresi yaklaşık eşittir",
         "gölge"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Ay’ın dönme ve dolanma süreleri yaklaşık eşit olduğundan aynı yüzü görülür."
     },
     {
@@ -557,12 +557,12 @@
       },
       "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
       "options": [
-        "Ay’ın şekli değişmez; görülen aydınlık bölüm değişir",
         "Dünya gölgesi",
+        "Ay’ın şekli değişmez; görülen aydınlık bölüm değişir",
         "görülen aydınlık kısım",
         "bulut"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Ay’ın evreleri, Güneş’in aydınlattığı bölümün Dünya’dan farklı görünmesiyle oluşur."
     },
     {
@@ -597,12 +597,12 @@
       },
       "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
       "options": [
-        "Dünya’nın Güneş çevresindeki bir tam dolanımı yaklaşık 365 gün 6 saat sürer",
         "bir hafta",
         "bir ay",
-        "bir yıl"
+        "bir yıl",
+        "Dünya’nın Güneş çevresindeki bir tam dolanımı yaklaşık 365 gün 6 saat sürer"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Dünya’nın Güneş çevresinde dolanması yaklaşık bir yıl sürer."
     }
   ]
