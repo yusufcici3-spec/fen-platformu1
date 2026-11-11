@@ -36,12 +36,12 @@
       "scenario": "Parfüm sıkıldıktan sonra kokusu sınıfın farklı yerlerinden alınıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
-        "Gaz taneciklerinin hareket etmesiyle",
         "Taneciklerin tamamen durmasıyla",
         "Havanın katılaşmasıyla",
-        "Maddenin yok olmasıyla"
+        "Maddenin yok olmasıyla",
+        "Gaz taneciklerinin hareket etmesiyle"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Gaz tanecikleri hareket ederek bulundukları ortama yayılır.",
       "image": "",
       "imageAlt": ""
@@ -54,12 +54,12 @@
       "scenario": "Balona hava üflendikçe balon genişliyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
-        "Gazlar hacim kaplar ve kabı doldurur",
-        "Gazların kütlesi yoktur",
         "Gazların belirli şekli vardır",
-        "Gaz tanecikleri hareketsizdir"
+        "Gaz tanecikleri hareketsizdir",
+        "Gazlar hacim kaplar ve kabı doldurur",
+        "Gazların kütlesi yoktur"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Gazlar bulundukları kabın şeklini alır ve hacmini doldurur.",
       "image": "",
       "imageAlt": ""
@@ -72,12 +72,12 @@
       "scenario": "Buz oda sıcaklığında bekletildiğinde suya dönüşüyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
+        "Kırağılaşma",
         "Erime",
         "Donma",
-        "Yoğuşma",
-        "Kırağılaşma"
+        "Yoğuşma"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Katının ısı alarak sıvıya geçmesi erimedir.",
       "image": "",
       "imageAlt": ""
@@ -108,12 +108,12 @@
       "scenario": "Geniş tabaktaki su, dar ve derin kaptaki suya göre daha hızlı azalıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
-        "Geniş yüzeyde buharlaşma daha hızlı olabilir",
         "Su yok olur",
         "Dar kaptaki su donar",
-        "Buharlaşma yalnız kaynamada olur"
+        "Buharlaşma yalnız kaynamada olur",
+        "Geniş yüzeyde buharlaşma daha hızlı olabilir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Sıvının açık yüzey alanı arttıkça buharlaşma genellikle hızlanır.",
       "image": "",
       "imageAlt": ""
@@ -126,12 +126,12 @@
       "scenario": "Aynı miktardaki su sıcak ortamda daha hızlı azalıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
-        "Sıcaklık arttıkça buharlaşma hızlanabilir",
-        "Sıcaklık buharlaşmayı durdurur",
         "Su yalnız soğukta buharlaşır",
-        "Buharlaşma donmadır"
+        "Buharlaşma donmadır",
+        "Sıcaklık arttıkça buharlaşma hızlanabilir",
+        "Sıcaklık buharlaşmayı durdurur"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Sıcaklık arttığında buharlaşma hızı genellikle artar.",
       "image": "",
       "imageAlt": ""
@@ -144,12 +144,12 @@
       "scenario": "Metal kaşığın sıcak çorbada kalan sapı da ısınıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
+        "Yoğuşma",
         "İletim",
         "Işıma",
-        "Yansıma",
-        "Yoğuşma"
+        "Yansıma"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Katılarda ısının tanecikler aracılığıyla aktarılması iletimdir.",
       "image": "",
       "imageAlt": ""
@@ -180,12 +180,12 @@
       "scenario": "Termometre sıcak suya konulduğunda 60 °C gösteriyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
-        "Sıcaklık",
         "Kütle",
         "Hacim",
-        "Ağırlık"
+        "Ağırlık",
+        "Sıcaklık"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Santigrat derece sıcaklık birimidir.",
       "image": "",
       "imageAlt": ""
@@ -198,12 +198,12 @@
       "scenario": "Şeker suya karıştırıldığında görünmez oluyor ancak su tatlılaşıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
-        "Maddenin tanecikli yapıda olduğunu",
-        "Şekerin yok olduğunu",
         "Suyun gaz olduğunu",
-        "Maddenin kütlesiz olduğunu"
+        "Maddenin kütlesiz olduğunu",
+        "Maddenin tanecikli yapıda olduğunu",
+        "Şekerin yok olduğunu"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Şeker tanecikleri suya dağılır; madde yok olmaz.",
       "image": "",
       "imageAlt": ""
@@ -216,12 +216,12 @@
       "scenario": "Parfüm sıkıldıktan sonra kokusu sınıfın farklı yerlerinden alınıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
+        "Maddenin yok olmasıyla",
         "Gaz taneciklerinin hareket etmesiyle",
         "Taneciklerin tamamen durmasıyla",
-        "Havanın katılaşmasıyla",
-        "Maddenin yok olmasıyla"
+        "Havanın katılaşmasıyla"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Gaz tanecikleri hareket ederek bulundukları ortama yayılır.",
       "image": "",
       "imageAlt": ""
@@ -252,12 +252,12 @@
       "scenario": "Buz oda sıcaklığında bekletildiğinde suya dönüşüyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
-        "Erime",
         "Donma",
         "Yoğuşma",
-        "Kırağılaşma"
+        "Kırağılaşma",
+        "Erime"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Katının ısı alarak sıvıya geçmesi erimedir.",
       "image": "",
       "imageAlt": ""
@@ -270,12 +270,12 @@
       "scenario": "Tencere kapağında su damlacıkları oluşuyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
-        "Yoğuşma",
-        "Buharlaşma",
         "Erime",
-        "Donma"
+        "Donma",
+        "Yoğuşma",
+        "Buharlaşma"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Su buharının soğuyarak sıvı hâle geçmesi yoğuşmadır.",
       "image": "",
       "imageAlt": ""
@@ -288,12 +288,12 @@
       "scenario": "Geniş tabaktaki su, dar ve derin kaptaki suya göre daha hızlı azalıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
+        "Buharlaşma yalnız kaynamada olur",
         "Geniş yüzeyde buharlaşma daha hızlı olabilir",
         "Su yok olur",
-        "Dar kaptaki su donar",
-        "Buharlaşma yalnız kaynamada olur"
+        "Dar kaptaki su donar"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Sıvının açık yüzey alanı arttıkça buharlaşma genellikle hızlanır.",
       "image": "",
       "imageAlt": ""
@@ -324,12 +324,12 @@
       "scenario": "Metal kaşığın sıcak çorbada kalan sapı da ısınıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
-        "İletim",
         "Işıma",
         "Yansıma",
-        "Yoğuşma"
+        "Yoğuşma",
+        "İletim"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Katılarda ısının tanecikler aracılığıyla aktarılması iletimdir.",
       "image": "",
       "imageAlt": ""
@@ -342,12 +342,12 @@
       "scenario": "Pencere çift camlı yapıldığında kışın ısı kaybı azalıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
-        "Isı yalıtımını artırmak",
-        "Odayı daha hızlı soğutmak",
         "Sıcaklığı ölçmek",
-        "Kütleyi azaltmak"
+        "Kütleyi azaltmak",
+        "Isı yalıtımını artırmak",
+        "Odayı daha hızlı soğutmak"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Camlar arasındaki hava tabakası ısı aktarımını azaltır.",
       "image": "",
       "imageAlt": ""
@@ -360,12 +360,12 @@
       "scenario": "Termometre sıcak suya konulduğunda 60 °C gösteriyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
+        "Ağırlık",
         "Sıcaklık",
         "Kütle",
-        "Hacim",
-        "Ağırlık"
+        "Hacim"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Santigrat derece sıcaklık birimidir.",
       "image": "",
       "imageAlt": ""
@@ -396,12 +396,12 @@
       "scenario": "Parfüm sıkıldıktan sonra kokusu sınıfın farklı yerlerinden alınıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
-        "Gaz taneciklerinin hareket etmesiyle",
         "Taneciklerin tamamen durmasıyla",
         "Havanın katılaşmasıyla",
-        "Maddenin yok olmasıyla"
+        "Maddenin yok olmasıyla",
+        "Gaz taneciklerinin hareket etmesiyle"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Gaz tanecikleri hareket ederek bulundukları ortama yayılır.",
       "image": "",
       "imageAlt": ""
@@ -414,12 +414,12 @@
       "scenario": "Balona hava üflendikçe balon genişliyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
-        "Gazlar hacim kaplar ve kabı doldurur",
-        "Gazların kütlesi yoktur",
         "Gazların belirli şekli vardır",
-        "Gaz tanecikleri hareketsizdir"
+        "Gaz tanecikleri hareketsizdir",
+        "Gazlar hacim kaplar ve kabı doldurur",
+        "Gazların kütlesi yoktur"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Gazlar bulundukları kabın şeklini alır ve hacmini doldurur.",
       "image": "",
       "imageAlt": ""
@@ -432,12 +432,12 @@
       "scenario": "Buz oda sıcaklığında bekletildiğinde suya dönüşüyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
+        "Kırağılaşma",
         "Erime",
         "Donma",
-        "Yoğuşma",
-        "Kırağılaşma"
+        "Yoğuşma"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Katının ısı alarak sıvıya geçmesi erimedir.",
       "image": "",
       "imageAlt": ""
@@ -468,12 +468,12 @@
       "scenario": "Geniş tabaktaki su, dar ve derin kaptaki suya göre daha hızlı azalıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
-        "Geniş yüzeyde buharlaşma daha hızlı olabilir",
         "Su yok olur",
         "Dar kaptaki su donar",
-        "Buharlaşma yalnız kaynamada olur"
+        "Buharlaşma yalnız kaynamada olur",
+        "Geniş yüzeyde buharlaşma daha hızlı olabilir"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Sıvının açık yüzey alanı arttıkça buharlaşma genellikle hızlanır.",
       "image": "",
       "imageAlt": ""
@@ -486,12 +486,12 @@
       "scenario": "Aynı miktardaki su sıcak ortamda daha hızlı azalıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
-        "Sıcaklık arttıkça buharlaşma hızlanabilir",
-        "Sıcaklık buharlaşmayı durdurur",
         "Su yalnız soğukta buharlaşır",
-        "Buharlaşma donmadır"
+        "Buharlaşma donmadır",
+        "Sıcaklık arttıkça buharlaşma hızlanabilir",
+        "Sıcaklık buharlaşmayı durdurur"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Sıcaklık arttığında buharlaşma hızı genellikle artar.",
       "image": "",
       "imageAlt": ""
@@ -504,12 +504,12 @@
       "scenario": "Metal kaşığın sıcak çorbada kalan sapı da ısınıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
+        "Yoğuşma",
         "İletim",
         "Işıma",
-        "Yansıma",
-        "Yoğuşma"
+        "Yansıma"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Katılarda ısının tanecikler aracılığıyla aktarılması iletimdir.",
       "image": "",
       "imageAlt": ""
@@ -540,12 +540,12 @@
       "scenario": "Termometre sıcak suya konulduğunda 60 °C gösteriyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
-        "Sıcaklık",
         "Kütle",
         "Hacim",
-        "Ağırlık"
+        "Ağırlık",
+        "Sıcaklık"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Santigrat derece sıcaklık birimidir.",
       "image": "",
       "imageAlt": ""
