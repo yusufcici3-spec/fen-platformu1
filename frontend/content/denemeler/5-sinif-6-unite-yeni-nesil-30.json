@@ -36,12 +36,12 @@
       "scenario": "Öğrenciler pil, ampul ve anahtarı standart sembollerle çiziyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
-        "Devreyi ortak sembollerle göstermek",
         "Elektrik tüketimini artırmak",
         "Pilin boyutunu büyütmek",
-        "Ampul rengini değiştirmek"
+        "Ampul rengini değiştirmek",
+        "Devreyi ortak sembollerle göstermek"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Şemalar devre elemanlarını ve bağlantıları anlaşılır biçimde gösterir.",
       "image": "",
       "imageAlt": ""
@@ -54,12 +54,12 @@
       "scenario": "Anahtar açıldığında ampul sönüyor, kapatıldığında yanıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
-        "Devreyi açıp kapatmak",
-        "Pil üretmek",
         "Kabloyu ölçmek",
-        "Ampulü korumak"
+        "Ampulü korumak",
+        "Devreyi açıp kapatmak",
+        "Pil üretmek"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Anahtar akımın geçişini kontrol eder.",
       "image": "",
       "imageAlt": ""
@@ -72,12 +72,12 @@
       "scenario": "Bir devrede pil, ampul ve anahtar bulunuyor ancak ampul ışık vermiyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
+        "Ampulü zorlamak",
         "Pil, ampul ve bağlantıları sırayla kontrol etmek",
         "Rastgele pil eklemek",
-        "Kabloları kesmek",
-        "Ampulü zorlamak"
+        "Kabloları kesmek"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Sistemli kontrol bağlantı veya eleman arızasını belirlemeyi sağlar.",
       "image": "",
       "imageAlt": ""
@@ -85,24 +85,34 @@
     {
       "no": 5,
       "unit": "Yaşamımızdaki Elektrik",
-      "outcome": "Eleman tanıma",
-      "scenario": "Basit devrede elektrik enerjisini sağlayan eleman hangisidir? Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
-      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
-      "options": 0,
-      "answer": "Pil devrenin enerji kaynağıdır.",
-      "explanation": "FB.5.6.1",
+      "outcome": "FB.5.6.1",
+      "scenario": "Bir öğrenci, pilin devrede enerji sağlayan eleman olduğunu öğreniyor. Basit bir devrede pil, ampul ve kablolar kullanılıyor.",
+      "stem": "Devrede enerji kaynağı görevini hangi eleman üstlenir?",
+      "options": [
+        "Anahtar",
+        "Pil",
+        "Bağlantı kablosu",
+        "Ampul"
+      ],
+      "answer": 1,
+      "explanation": "Pil, basit elektrik devresinde enerji sağlayan elemandır.",
       "image": "",
       "imageAlt": ""
     },
     {
       "no": 6,
       "unit": "Yaşamımızdaki Elektrik",
-      "outcome": "Enerji dönüşümü",
-      "scenario": "Ampul elektrik enerjisini hangi enerji türüne dönüştürür? Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
-      "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
-      "options": 0,
-      "answer": "Ampul elektrik enerjisini ışık enerjisine dönüştürür; bir miktar ısı da oluşabilir.",
-      "explanation": "FB.5.6.1",
+      "outcome": "FB.5.6.1",
+      "scenario": "Bir ampul, kurulan basit elektrik devresinde ışık veriyor. Öğrenciler ampulün enerji dönüşümünü tartışıyor.",
+      "stem": "Ampul, elektrik enerjisini öncelikle hangi enerji türüne dönüştürür?",
+      "options": [
+        "Hareket enerjisine",
+        "Işık enerjisine",
+        "Kimyasal enerjiye",
+        "Ses enerjisine"
+      ],
+      "answer": 1,
+      "explanation": "Ampul elektrik enerjisini ışık enerjisine dönüştürür; bir miktar ısı da açığa çıkar.",
       "image": "",
       "imageAlt": ""
     },
@@ -114,12 +124,12 @@
       "scenario": "Aynı ampul ve bağlantılarla bir pil yerine iki pil kullanıldığında parlaklık artıyor. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
-        "Pil sayısı",
-        "Ampul türü",
         "Kablo rengi",
-        "Masa yüzeyi"
+        "Masa yüzeyi",
+        "Pil sayısı",
+        "Ampul türü"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Diğer koşullar sabitken pil sayısı değiştirilmiştir.",
       "image": "",
       "imageAlt": ""
@@ -132,12 +142,12 @@
       "scenario": "İki devrede pil sayısı aynı; birinde bir, diğerinde iki özdeş ampul var. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
+        "Anahtarın kütlesini",
         "Ampul sayısının parlaklığa etkisini",
         "Pil renginin etkisini",
-        "Kablo uzunluğunun sesini",
-        "Anahtarın kütlesini"
+        "Kablo uzunluğunun sesini"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Ampul sayısı değiştirilerek parlaklık üzerindeki etkisi incelenir.",
       "image": "",
       "imageAlt": ""
@@ -168,12 +178,12 @@
       "scenario": "Bir devrede anahtar açık konumda çizilmiş. Bir okul laboratuvarında yapılan etkinlikte öğrenciler bu durumu gözlemliyor.",
       "stem": "Verilen bilgilere göre doğru değerlendirme hangisidir?",
       "options": [
-        "Yanmaz",
         "Normal yanar",
         "Daha parlak yanar",
-        "Pil ışık verir"
+        "Pil ışık verir",
+        "Yanmaz"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Açık anahtar devreyi keser; akım geçmediği için ampul yanmaz.",
       "image": "",
       "imageAlt": ""
@@ -186,12 +196,12 @@
       "scenario": "Pil, ampul ve kablolarla kurulan devrede bir kablo bağlantısı kopuk olduğunda ampul yanmıyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
-        "Kapalı ve kesintisiz yol",
-        "Kopuk bağlantı",
         "Pilsiz bağlantı",
-        "Yalnız açık anahtar"
+        "Yalnız açık anahtar",
+        "Kapalı ve kesintisiz yol",
+        "Kopuk bağlantı"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Elektrik akımının dolaşabilmesi için devre kapalı olmalıdır.",
       "image": "",
       "imageAlt": ""
@@ -204,12 +214,12 @@
       "scenario": "Öğrenciler pil, ampul ve anahtarı standart sembollerle çiziyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
+        "Ampul rengini değiştirmek",
         "Devreyi ortak sembollerle göstermek",
         "Elektrik tüketimini artırmak",
-        "Pilin boyutunu büyütmek",
-        "Ampul rengini değiştirmek"
+        "Pilin boyutunu büyütmek"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Şemalar devre elemanlarını ve bağlantıları anlaşılır biçimde gösterir.",
       "image": "",
       "imageAlt": ""
@@ -240,12 +250,12 @@
       "scenario": "Bir devrede pil, ampul ve anahtar bulunuyor ancak ampul ışık vermiyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
-        "Pil, ampul ve bağlantıları sırayla kontrol etmek",
         "Rastgele pil eklemek",
         "Kabloları kesmek",
-        "Ampulü zorlamak"
+        "Ampulü zorlamak",
+        "Pil, ampul ve bağlantıları sırayla kontrol etmek"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Sistemli kontrol bağlantı veya eleman arızasını belirlemeyi sağlar.",
       "image": "",
       "imageAlt": ""
@@ -253,24 +263,34 @@
     {
       "no": 15,
       "unit": "Yaşamımızdaki Elektrik",
-      "outcome": "Eleman tanıma",
-      "scenario": "Basit devrede elektrik enerjisini sağlayan eleman hangisidir? Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
-      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
-      "options": 0,
-      "answer": "Pil devrenin enerji kaynağıdır.",
-      "explanation": "FB.5.6.1",
+      "outcome": "FB.5.6.1",
+      "scenario": "Bir öğrenci, pilin devrede enerji sağlayan eleman olduğunu öğreniyor. Basit bir devrede pil, ampul ve kablolar kullanılıyor.",
+      "stem": "Devrede enerji kaynağı görevini hangi eleman üstlenir?",
+      "options": [
+        "Bağlantı kablosu",
+        "Ampul",
+        "Anahtar",
+        "Pil"
+      ],
+      "answer": 3,
+      "explanation": "Pil, basit elektrik devresinde enerji sağlayan elemandır.",
       "image": "",
       "imageAlt": ""
     },
     {
       "no": 16,
       "unit": "Yaşamımızdaki Elektrik",
-      "outcome": "Enerji dönüşümü",
-      "scenario": "Ampul elektrik enerjisini hangi enerji türüne dönüştürür? Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
-      "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
-      "options": 0,
-      "answer": "Ampul elektrik enerjisini ışık enerjisine dönüştürür; bir miktar ısı da oluşabilir.",
-      "explanation": "FB.5.6.1",
+      "outcome": "FB.5.6.1",
+      "scenario": "Bir ampul, kurulan basit elektrik devresinde ışık veriyor. Öğrenciler ampulün enerji dönüşümünü tartışıyor.",
+      "stem": "Ampul, elektrik enerjisini öncelikle hangi enerji türüne dönüştürür?",
+      "options": [
+        "Kimyasal enerjiye",
+        "Ses enerjisine",
+        "Hareket enerjisine",
+        "Işık enerjisine"
+      ],
+      "answer": 3,
+      "explanation": "Ampul elektrik enerjisini ışık enerjisine dönüştürür; bir miktar ısı da açığa çıkar.",
       "image": "",
       "imageAlt": ""
     },
@@ -300,12 +320,12 @@
       "scenario": "İki devrede pil sayısı aynı; birinde bir, diğerinde iki özdeş ampul var. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
-        "Ampul sayısının parlaklığa etkisini",
         "Pil renginin etkisini",
         "Kablo uzunluğunun sesini",
-        "Anahtarın kütlesini"
+        "Anahtarın kütlesini",
+        "Ampul sayısının parlaklığa etkisini"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Ampul sayısı değiştirilerek parlaklık üzerindeki etkisi incelenir.",
       "image": "",
       "imageAlt": ""
@@ -318,12 +338,12 @@
       "scenario": "Pil uçları doğrudan tel ile birleştirildiğinde pil ısınabiliyor. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
-        "Kısa devre ve aşırı ısınma riski oluşturur",
-        "Pil ömrünü uzatır",
         "Ampulü korur",
-        "Elektrik tüketimini sıfırlar"
+        "Elektrik tüketimini sıfırlar",
+        "Kısa devre ve aşırı ısınma riski oluşturur",
+        "Pil ömrünü uzatır"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Doğrudan bağlantı kısa devreye ve ısınmaya neden olabilir; yapılmamalıdır.",
       "image": "",
       "imageAlt": ""
@@ -336,12 +356,12 @@
       "scenario": "Bir devrede anahtar açık konumda çizilmiş. Bir aile günlük yaşamında benzer bir durumla karşılaşıp çözüm arıyor.",
       "stem": "Bu senaryodan çıkarılması gereken en uygun sonuç hangisidir?",
       "options": [
+        "Pil ışık verir",
         "Yanmaz",
         "Normal yanar",
-        "Daha parlak yanar",
-        "Pil ışık verir"
+        "Daha parlak yanar"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Açık anahtar devreyi keser; akım geçmediği için ampul yanmaz.",
       "image": "",
       "imageAlt": ""
@@ -372,12 +392,12 @@
       "scenario": "Öğrenciler pil, ampul ve anahtarı standart sembollerle çiziyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
-        "Devreyi ortak sembollerle göstermek",
         "Elektrik tüketimini artırmak",
         "Pilin boyutunu büyütmek",
-        "Ampul rengini değiştirmek"
+        "Ampul rengini değiştirmek",
+        "Devreyi ortak sembollerle göstermek"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Şemalar devre elemanlarını ve bağlantıları anlaşılır biçimde gösterir.",
       "image": "",
       "imageAlt": ""
@@ -390,12 +410,12 @@
       "scenario": "Anahtar açıldığında ampul sönüyor, kapatıldığında yanıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
-        "Devreyi açıp kapatmak",
-        "Pil üretmek",
         "Kabloyu ölçmek",
-        "Ampulü korumak"
+        "Ampulü korumak",
+        "Devreyi açıp kapatmak",
+        "Pil üretmek"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Anahtar akımın geçişini kontrol eder.",
       "image": "",
       "imageAlt": ""
@@ -408,12 +428,12 @@
       "scenario": "Bir devrede pil, ampul ve anahtar bulunuyor ancak ampul ışık vermiyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
+        "Ampulü zorlamak",
         "Pil, ampul ve bağlantıları sırayla kontrol etmek",
         "Rastgele pil eklemek",
-        "Kabloları kesmek",
-        "Ampulü zorlamak"
+        "Kabloları kesmek"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Sistemli kontrol bağlantı veya eleman arızasını belirlemeyi sağlar.",
       "image": "",
       "imageAlt": ""
@@ -421,24 +441,34 @@
     {
       "no": 25,
       "unit": "Yaşamımızdaki Elektrik",
-      "outcome": "Eleman tanıma",
-      "scenario": "Basit devrede elektrik enerjisini sağlayan eleman hangisidir? Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
-      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
-      "options": 0,
-      "answer": "Pil devrenin enerji kaynağıdır.",
-      "explanation": "FB.5.6.1",
+      "outcome": "FB.5.6.1",
+      "scenario": "Bir öğrenci, pilin devrede enerji sağlayan eleman olduğunu öğreniyor. Basit bir devrede pil, ampul ve kablolar kullanılıyor.",
+      "stem": "Devrede enerji kaynağı görevini hangi eleman üstlenir?",
+      "options": [
+        "Anahtar",
+        "Pil",
+        "Bağlantı kablosu",
+        "Ampul"
+      ],
+      "answer": 1,
+      "explanation": "Pil, basit elektrik devresinde enerji sağlayan elemandır.",
       "image": "",
       "imageAlt": ""
     },
     {
       "no": 26,
       "unit": "Yaşamımızdaki Elektrik",
-      "outcome": "Enerji dönüşümü",
-      "scenario": "Ampul elektrik enerjisini hangi enerji türüne dönüştürür? Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
-      "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
-      "options": 0,
-      "answer": "Ampul elektrik enerjisini ışık enerjisine dönüştürür; bir miktar ısı da oluşabilir.",
-      "explanation": "FB.5.6.1",
+      "outcome": "FB.5.6.1",
+      "scenario": "Bir ampul, kurulan basit elektrik devresinde ışık veriyor. Öğrenciler ampulün enerji dönüşümünü tartışıyor.",
+      "stem": "Ampul, elektrik enerjisini öncelikle hangi enerji türüne dönüştürür?",
+      "options": [
+        "Hareket enerjisine",
+        "Işık enerjisine",
+        "Kimyasal enerjiye",
+        "Ses enerjisine"
+      ],
+      "answer": 1,
+      "explanation": "Ampul elektrik enerjisini ışık enerjisine dönüştürür; bir miktar ısı da açığa çıkar.",
       "image": "",
       "imageAlt": ""
     },
@@ -450,12 +480,12 @@
       "scenario": "Aynı ampul ve bağlantılarla bir pil yerine iki pil kullanıldığında parlaklık artıyor. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
-        "Pil sayısı",
-        "Ampul türü",
         "Kablo rengi",
-        "Masa yüzeyi"
+        "Masa yüzeyi",
+        "Pil sayısı",
+        "Ampul türü"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Diğer koşullar sabitken pil sayısı değiştirilmiştir.",
       "image": "",
       "imageAlt": ""
@@ -468,12 +498,12 @@
       "scenario": "İki devrede pil sayısı aynı; birinde bir, diğerinde iki özdeş ampul var. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
+        "Anahtarın kütlesini",
         "Ampul sayısının parlaklığa etkisini",
         "Pil renginin etkisini",
-        "Kablo uzunluğunun sesini",
-        "Anahtarın kütlesini"
+        "Kablo uzunluğunun sesini"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Ampul sayısı değiştirilerek parlaklık üzerindeki etkisi incelenir.",
       "image": "",
       "imageAlt": ""
@@ -504,12 +534,12 @@
       "scenario": "Bir devrede anahtar açık konumda çizilmiş. Bir bilim kulübü proje hazırlarken bu olayı inceleyip sonuçlarını raporluyor.",
       "stem": "Öğrencinin ulaştığı bilimsel açıklama hangi seçenekte verilmiştir?",
       "options": [
-        "Yanmaz",
         "Normal yanar",
         "Daha parlak yanar",
-        "Pil ışık verir"
+        "Pil ışık verir",
+        "Yanmaz"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Açık anahtar devreyi keser; akım geçmediği için ampul yanmaz.",
       "image": "",
       "imageAlt": ""
