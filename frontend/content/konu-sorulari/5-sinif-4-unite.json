@@ -1,0 +1,609 @@
+{
+  "grade": 5,
+  "unit": 4,
+  "title": "Işığın Dünyası",
+  "slug": "isigin-dunyasi",
+  "description": "Maarif Modeli kazanımlarına göre hazırlanmış 30 senaryo temelli soru.",
+  "questions": [
+    {
+      "id": 1,
+      "code": "FB.5.4",
+      "topic": "Işığın yayılması",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Işığın yayılması",
+        "content": "Işık doğrusal yolla yayılır."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Işık kaynağından çıkan ışık ışınları saydam ve homojen ortamda doğrusal yayılır",
+        "Eğri",
+        "dairesel",
+        "zikzak"
+      ],
+      "answer": 0,
+      "explanation": "Işık doğrusal yolla yayılır."
+    },
+    {
+      "id": 2,
+      "code": "FB.5.4",
+      "topic": "Işık kaynağı",
+      "scenario": "Bilim merkezindeki etkinlikte öğrenciler bir model üzerinde ölçüm yapıp sonuçlarını not ediyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Işık kaynağı",
+        "content": "Işık kaynağı kendi ışığını üreten veya yayan cisimdir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Güneş ve yanan ampul ışık kaynağıdır",
+        "kitap",
+        "masa",
+        "taş"
+      ],
+      "answer": 0,
+      "explanation": "Işık kaynağı kendi ışığını üreten veya yayan cisimdir."
+    },
+    {
+      "id": 3,
+      "code": "FB.5.4",
+      "topic": "Saydam maddeler",
+      "scenario": "Bir öğrenci günlük yaşamdan bir örnek veriyor; sınıf arkadaşları bu örneği fen bilgisiyle açıklıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Saydam maddeler",
+        "content": "Saydam maddeler ışığı büyük ölçüde geçirir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Cam gibi saydam maddeler ışığın büyük bölümünü geçirir",
+        "metal",
+        "buzlu cam",
+        "temiz cam"
+      ],
+      "answer": 0,
+      "explanation": "Saydam maddeler ışığı büyük ölçüde geçirir."
+    },
+    {
+      "id": 4,
+      "code": "FB.5.4",
+      "topic": "Yarı saydam maddeler",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Yarı saydam maddeler",
+        "content": "Yarı saydam maddeler ışığı kısmen geçirir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Buzlu cam ışığı kısmen geçirir ve arkasındaki görüntüyü net göstermez",
+        "Ayna",
+        "tahta",
+        "metal"
+      ],
+      "answer": 0,
+      "explanation": "Yarı saydam maddeler ışığı kısmen geçirir."
+    },
+    {
+      "id": 5,
+      "code": "FB.5.4",
+      "topic": "Opak maddeler",
+      "scenario": "Bilim merkezindeki etkinlikte öğrenciler bir model üzerinde ölçüm yapıp sonuçlarını not ediyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Opak maddeler",
+        "content": "Opak maddeler ışığı geçirmez."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Karton gibi opak maddeler ışığın geçişini engeller",
+        "Temiz cam",
+        "hava",
+        "su"
+      ],
+      "answer": 0,
+      "explanation": "Opak maddeler ışığı geçirmez."
+    },
+    {
+      "id": 6,
+      "code": "FB.5.4",
+      "topic": "Gölgenin oluşumu",
+      "scenario": "Bir öğrenci günlük yaşamdan bir örnek veriyor; sınıf arkadaşları bu örneği fen bilgisiyle açıklıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Gölgenin oluşumu",
+        "content": "Gölge ışığın opak cisim tarafından engellenmesiyle oluşur."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Işık yolu opak cisimle kesildiğinde cismin arkasında gölge oluşabilir",
+        "ses",
+        "ısı",
+        "buharlaşma"
+      ],
+      "answer": 0,
+      "explanation": "Gölge ışığın opak cisim tarafından engellenmesiyle oluşur."
+    },
+    {
+      "id": 7,
+      "code": "FB.5.4",
+      "topic": "Gölge büyüklüğü",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Gölge büyüklüğü",
+        "content": "Cisim ışık kaynağına yaklaştıkça ekrandaki gölgesi genellikle büyür."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Noktasal ışık kaynağına yaklaşan opak cismin ekrandaki gölgesi büyür",
+        "Küçülür",
+        "yok olur",
+        "rengi değişir"
+      ],
+      "answer": 0,
+      "explanation": "Cisim ışık kaynağına yaklaştıkça ekrandaki gölgesi genellikle büyür."
+    },
+    {
+      "id": 8,
+      "code": "FB.5.4",
+      "topic": "Gölgeyi etkileyenler",
+      "scenario": "Bilim merkezindeki etkinlikte öğrenciler bir model üzerinde ölçüm yapıp sonuçlarını not ediyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Gölgeyi etkileyenler",
+        "content": "Işık kaynağı, cisim ve ekranın konumu gölgeyi etkiler."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Gölge boyutu ve konumu ışık kaynağı, cisim ve ekran arasındaki uzaklıklara bağlıdır",
+        "Yalnız cismin rengi",
+        "yalnız koku",
+        "ses"
+      ],
+      "answer": 0,
+      "explanation": "Işık kaynağı, cisim ve ekranın konumu gölgeyi etkiler."
+    },
+    {
+      "id": 9,
+      "code": "FB.5.4",
+      "topic": "Gün içinde gölge",
+      "scenario": "Bir öğrenci günlük yaşamdan bir örnek veriyor; sınıf arkadaşları bu örneği fen bilgisiyle açıklıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Gün içinde gölge",
+        "content": "Güneş ışınlarının geliş açısı gölge boyunu etkiler."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Güneş gökyüzünde yükseldikçe öğle saatlerinde gölge genellikle kısalır",
+        "hiç oluşmaz",
+        "renk değiştirir",
+        "daima sabit"
+      ],
+      "answer": 0,
+      "explanation": "Güneş ışınlarının geliş açısı gölge boyunu etkiler."
+    },
+    {
+      "id": 10,
+      "code": "FB.5.4",
+      "topic": "Işık engeli",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Işık engeli",
+        "content": "Işığın önüne opak engel konulursa ışık doğrusal yolunda ilerleyemez."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Işık yoluna opak cisim konulduğunda cismin arkasında aydınlanmayan bölge oluşur",
+        "ses çıkarır",
+        "gölge oluşabilir",
+        "ışık kaynağı söner"
+      ],
+      "answer": 0,
+      "explanation": "Işığın önüne opak engel konulursa ışık doğrusal yolunda ilerleyemez."
+    },
+    {
+      "id": 11,
+      "code": "FB.5.4",
+      "topic": "Işığın yayılması",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Işığın yayılması",
+        "content": "Işık doğrusal yolla yayılır."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Işık kaynağından çıkan ışık ışınları saydam ve homojen ortamda doğrusal yayılır",
+        "Eğri",
+        "dairesel",
+        "zikzak"
+      ],
+      "answer": 0,
+      "explanation": "Işık doğrusal yolla yayılır."
+    },
+    {
+      "id": 12,
+      "code": "FB.5.4",
+      "topic": "Işık kaynağı",
+      "scenario": "Okul sergisinde ziyaretçiler bir düzenek inceliyor ve öğrencilerden bilimsel çıkarım yapmaları isteniyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Işık kaynağı",
+        "content": "Işık kaynağı kendi ışığını üreten veya yayan cisimdir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Güneş ve yanan ampul ışık kaynağıdır",
+        "kitap",
+        "masa",
+        "taş"
+      ],
+      "answer": 0,
+      "explanation": "Işık kaynağı kendi ışığını üreten veya yayan cisimdir."
+    },
+    {
+      "id": 13,
+      "code": "FB.5.4",
+      "topic": "Saydam maddeler",
+      "scenario": "Bir grup öğrenci proje raporunda bu kavramı yanlış yorumluyor. Öğretmenleri, kanıta dayanarak doğru açıklamayı bulmalarını istiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Saydam maddeler",
+        "content": "Saydam maddeler ışığı büyük ölçüde geçirir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Cam gibi saydam maddeler ışığın büyük bölümünü geçirir",
+        "metal",
+        "buzlu cam",
+        "temiz cam"
+      ],
+      "answer": 0,
+      "explanation": "Saydam maddeler ışığı büyük ölçüde geçirir."
+    },
+    {
+      "id": 14,
+      "code": "FB.5.4",
+      "topic": "Yarı saydam maddeler",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Yarı saydam maddeler",
+        "content": "Yarı saydam maddeler ışığı kısmen geçirir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Buzlu cam ışığı kısmen geçirir ve arkasındaki görüntüyü net göstermez",
+        "Ayna",
+        "tahta",
+        "metal"
+      ],
+      "answer": 0,
+      "explanation": "Yarı saydam maddeler ışığı kısmen geçirir."
+    },
+    {
+      "id": 15,
+      "code": "FB.5.4",
+      "topic": "Opak maddeler",
+      "scenario": "Okul sergisinde ziyaretçiler bir düzenek inceliyor ve öğrencilerden bilimsel çıkarım yapmaları isteniyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Opak maddeler",
+        "content": "Opak maddeler ışığı geçirmez."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Karton gibi opak maddeler ışığın geçişini engeller",
+        "Temiz cam",
+        "hava",
+        "su"
+      ],
+      "answer": 0,
+      "explanation": "Opak maddeler ışığı geçirmez."
+    },
+    {
+      "id": 16,
+      "code": "FB.5.4",
+      "topic": "Gölgenin oluşumu",
+      "scenario": "Bir grup öğrenci proje raporunda bu kavramı yanlış yorumluyor. Öğretmenleri, kanıta dayanarak doğru açıklamayı bulmalarını istiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Gölgenin oluşumu",
+        "content": "Gölge ışığın opak cisim tarafından engellenmesiyle oluşur."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Işık yolu opak cisimle kesildiğinde cismin arkasında gölge oluşabilir",
+        "ses",
+        "ısı",
+        "buharlaşma"
+      ],
+      "answer": 0,
+      "explanation": "Gölge ışığın opak cisim tarafından engellenmesiyle oluşur."
+    },
+    {
+      "id": 17,
+      "code": "FB.5.4",
+      "topic": "Gölge büyüklüğü",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Gölge büyüklüğü",
+        "content": "Cisim ışık kaynağına yaklaştıkça ekrandaki gölgesi genellikle büyür."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Noktasal ışık kaynağına yaklaşan opak cismin ekrandaki gölgesi büyür",
+        "Küçülür",
+        "yok olur",
+        "rengi değişir"
+      ],
+      "answer": 0,
+      "explanation": "Cisim ışık kaynağına yaklaştıkça ekrandaki gölgesi genellikle büyür."
+    },
+    {
+      "id": 18,
+      "code": "FB.5.4",
+      "topic": "Gölgeyi etkileyenler",
+      "scenario": "Okul sergisinde ziyaretçiler bir düzenek inceliyor ve öğrencilerden bilimsel çıkarım yapmaları isteniyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Gölgeyi etkileyenler",
+        "content": "Işık kaynağı, cisim ve ekranın konumu gölgeyi etkiler."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Gölge boyutu ve konumu ışık kaynağı, cisim ve ekran arasındaki uzaklıklara bağlıdır",
+        "Yalnız cismin rengi",
+        "yalnız koku",
+        "ses"
+      ],
+      "answer": 0,
+      "explanation": "Işık kaynağı, cisim ve ekranın konumu gölgeyi etkiler."
+    },
+    {
+      "id": 19,
+      "code": "FB.5.4",
+      "topic": "Gün içinde gölge",
+      "scenario": "Bir grup öğrenci proje raporunda bu kavramı yanlış yorumluyor. Öğretmenleri, kanıta dayanarak doğru açıklamayı bulmalarını istiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Gün içinde gölge",
+        "content": "Güneş ışınlarının geliş açısı gölge boyunu etkiler."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Güneş gökyüzünde yükseldikçe öğle saatlerinde gölge genellikle kısalır",
+        "hiç oluşmaz",
+        "renk değiştirir",
+        "daima sabit"
+      ],
+      "answer": 0,
+      "explanation": "Güneş ışınlarının geliş açısı gölge boyunu etkiler."
+    },
+    {
+      "id": 20,
+      "code": "FB.5.4",
+      "topic": "Işık engeli",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Işık engeli",
+        "content": "Işığın önüne opak engel konulursa ışık doğrusal yolunda ilerleyemez."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Işık yoluna opak cisim konulduğunda cismin arkasında aydınlanmayan bölge oluşur",
+        "ses çıkarır",
+        "gölge oluşabilir",
+        "ışık kaynağı söner"
+      ],
+      "answer": 0,
+      "explanation": "Işığın önüne opak engel konulursa ışık doğrusal yolunda ilerleyemez."
+    },
+    {
+      "id": 21,
+      "code": "FB.5.4",
+      "topic": "Işığın yayılması",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Işığın yayılması",
+        "content": "Işık doğrusal yolla yayılır."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Işık kaynağından çıkan ışık ışınları saydam ve homojen ortamda doğrusal yayılır",
+        "Eğri",
+        "dairesel",
+        "zikzak"
+      ],
+      "answer": 0,
+      "explanation": "Işık doğrusal yolla yayılır."
+    },
+    {
+      "id": 22,
+      "code": "FB.5.4",
+      "topic": "Işık kaynağı",
+      "scenario": "Bir belediye/okul etkinliğinde bu konuya ilişkin karar veriliyor. Öğrenciler doğru seçeneği gerekçelendirmeye çalışıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Işık kaynağı",
+        "content": "Işık kaynağı kendi ışığını üreten veya yayan cisimdir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Güneş ve yanan ampul ışık kaynağıdır",
+        "kitap",
+        "masa",
+        "taş"
+      ],
+      "answer": 0,
+      "explanation": "Işık kaynağı kendi ışığını üreten veya yayan cisimdir."
+    },
+    {
+      "id": 23,
+      "code": "FB.5.4",
+      "topic": "Saydam maddeler",
+      "scenario": "Bir gözlem günlüğünde kaydedilen veriler sınıfta tartışılıyor. Öğrenciler hangi açıklamanın verilerle uyumlu olduğunu seçiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Saydam maddeler",
+        "content": "Saydam maddeler ışığı büyük ölçüde geçirir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Cam gibi saydam maddeler ışığın büyük bölümünü geçirir",
+        "metal",
+        "buzlu cam",
+        "temiz cam"
+      ],
+      "answer": 0,
+      "explanation": "Saydam maddeler ışığı büyük ölçüde geçirir."
+    },
+    {
+      "id": 24,
+      "code": "FB.5.4",
+      "topic": "Yarı saydam maddeler",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Yarı saydam maddeler",
+        "content": "Yarı saydam maddeler ışığı kısmen geçirir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Buzlu cam ışığı kısmen geçirir ve arkasındaki görüntüyü net göstermez",
+        "Ayna",
+        "tahta",
+        "metal"
+      ],
+      "answer": 0,
+      "explanation": "Yarı saydam maddeler ışığı kısmen geçirir."
+    },
+    {
+      "id": 25,
+      "code": "FB.5.4",
+      "topic": "Opak maddeler",
+      "scenario": "Bir belediye/okul etkinliğinde bu konuya ilişkin karar veriliyor. Öğrenciler doğru seçeneği gerekçelendirmeye çalışıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Opak maddeler",
+        "content": "Opak maddeler ışığı geçirmez."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Karton gibi opak maddeler ışığın geçişini engeller",
+        "Temiz cam",
+        "hava",
+        "su"
+      ],
+      "answer": 0,
+      "explanation": "Opak maddeler ışığı geçirmez."
+    },
+    {
+      "id": 26,
+      "code": "FB.5.4",
+      "topic": "Gölgenin oluşumu",
+      "scenario": "Bir gözlem günlüğünde kaydedilen veriler sınıfta tartışılıyor. Öğrenciler hangi açıklamanın verilerle uyumlu olduğunu seçiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Gölgenin oluşumu",
+        "content": "Gölge ışığın opak cisim tarafından engellenmesiyle oluşur."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Işık yolu opak cisimle kesildiğinde cismin arkasında gölge oluşabilir",
+        "ses",
+        "ısı",
+        "buharlaşma"
+      ],
+      "answer": 0,
+      "explanation": "Gölge ışığın opak cisim tarafından engellenmesiyle oluşur."
+    },
+    {
+      "id": 27,
+      "code": "FB.5.4",
+      "topic": "Gölge büyüklüğü",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Gölge büyüklüğü",
+        "content": "Cisim ışık kaynağına yaklaştıkça ekrandaki gölgesi genellikle büyür."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Noktasal ışık kaynağına yaklaşan opak cismin ekrandaki gölgesi büyür",
+        "Küçülür",
+        "yok olur",
+        "rengi değişir"
+      ],
+      "answer": 0,
+      "explanation": "Cisim ışık kaynağına yaklaştıkça ekrandaki gölgesi genellikle büyür."
+    },
+    {
+      "id": 28,
+      "code": "FB.5.4",
+      "topic": "Gölgeyi etkileyenler",
+      "scenario": "Bir belediye/okul etkinliğinde bu konuya ilişkin karar veriliyor. Öğrenciler doğru seçeneği gerekçelendirmeye çalışıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Gölgeyi etkileyenler",
+        "content": "Işık kaynağı, cisim ve ekranın konumu gölgeyi etkiler."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Gölge boyutu ve konumu ışık kaynağı, cisim ve ekran arasındaki uzaklıklara bağlıdır",
+        "Yalnız cismin rengi",
+        "yalnız koku",
+        "ses"
+      ],
+      "answer": 0,
+      "explanation": "Işık kaynağı, cisim ve ekranın konumu gölgeyi etkiler."
+    },
+    {
+      "id": 29,
+      "code": "FB.5.4",
+      "topic": "Gün içinde gölge",
+      "scenario": "Bir gözlem günlüğünde kaydedilen veriler sınıfta tartışılıyor. Öğrenciler hangi açıklamanın verilerle uyumlu olduğunu seçiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Gün içinde gölge",
+        "content": "Güneş ışınlarının geliş açısı gölge boyunu etkiler."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Güneş gökyüzünde yükseldikçe öğle saatlerinde gölge genellikle kısalır",
+        "hiç oluşmaz",
+        "renk değiştirir",
+        "daima sabit"
+      ],
+      "answer": 0,
+      "explanation": "Güneş ışınlarının geliş açısı gölge boyunu etkiler."
+    },
+    {
+      "id": 30,
+      "code": "FB.5.4",
+      "topic": "Işık engeli",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Işık engeli",
+        "content": "Işığın önüne opak engel konulursa ışık doğrusal yolunda ilerleyemez."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Işık yoluna opak cisim konulduğunda cismin arkasında aydınlanmayan bölge oluşur",
+        "ses çıkarır",
+        "gölge oluşabilir",
+        "ışık kaynağı söner"
+      ],
+      "answer": 0,
+      "explanation": "Işığın önüne opak engel konulursa ışık doğrusal yolunda ilerleyemez."
+    }
+  ]
+}
