@@ -42,6 +42,15 @@ const videos = [
     link: { href: "/sinif/6/gunes-sistemi-ve-tutulmalar", label: "Konu anlatımını aç" },
   },
   {
+    id: "6-sinif-2-unite",
+    grade: "6. SINIF · 2. ÜNİTE",
+    title: "Kuvvetin Etkisinde Hareket",
+    description: "6. sınıf 2. ünite (FB.6.2.1–2): kuvvet ve bileşke kuvvet, dengelenmiş ve dengelenmemiş kuvvetler ve kısa bir soru turu.",
+    src: "/videolar/6-sinif-2-unite-kuvvet.mp4",
+    poster: "/videolar/6-sinif-2-unite-kuvvet.jpg",
+    link: { href: "/sinif/6/kuvvetin-etkisinde-hareket", label: "Konu anlatımını aç" },
+  },
+  {
     id: "6-sinif-3-unite",
     grade: "6. SINIF · 3. ÜNİTE",
     title: "Canlılarda Sistemler",
