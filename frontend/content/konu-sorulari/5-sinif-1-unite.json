@@ -1,0 +1,609 @@
+{
+  "grade": 5,
+  "unit": 1,
+  "title": "Gökyüzündeki Komşularımız ve Biz",
+  "slug": "gokyuzundeki-komsularimiz-ve-biz",
+  "description": "Maarif Modeli kazanımlarına göre hazırlanmış 30 senaryo temelli soru.",
+  "questions": [
+    {
+      "id": 1,
+      "code": "FB.5.1",
+      "topic": "Güneş’in yıldız olması",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Güneş’in yıldız olması",
+        "content": "Güneş bir yıldızdır ve kendi ışık ve ısısını üretir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Güneş kendi ışığını üretir; gezegen değildir",
+        "Ay",
+        "yıldız",
+        "gezegen"
+      ],
+      "answer": 0,
+      "explanation": "Güneş bir yıldızdır ve kendi ışık ve ısısını üretir."
+    },
+    {
+      "id": 2,
+      "code": "FB.5.1",
+      "topic": "Güneş’in enerji kaynağı",
+      "scenario": "Bilim merkezindeki etkinlikte öğrenciler bir model üzerinde ölçüm yapıp sonuçlarını not ediyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Güneş’in enerji kaynağı",
+        "content": "Güneş’in merkezinde çekirdek bulunur; enerji burada üretilir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Güneş’in enerjisi çekirdeğinde gerçekleşen süreçlerle üretilir",
+        "fotosfer",
+        "çekirdek",
+        "kromosfer"
+      ],
+      "answer": 0,
+      "explanation": "Güneş’in merkezinde çekirdek bulunur; enerji burada üretilir."
+    },
+    {
+      "id": 3,
+      "code": "FB.5.1",
+      "topic": "Güneş’in dönme hareketi",
+      "scenario": "Bir öğrenci günlük yaşamdan bir örnek veriyor; sınıf arkadaşları bu örneği fen bilgisiyle açıklıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Güneş’in dönme hareketi",
+        "content": "Güneş lekelerinin konumunun değişmesi Güneş’in döndüğünü gösterir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Güneş lekelerinin zamanla yer değiştirmesi kendi ekseni etrafında dönmesine kanıttır",
+        "dolanma",
+        "tutulma",
+        "evre"
+      ],
+      "answer": 0,
+      "explanation": "Güneş lekelerinin konumunun değişmesi Güneş’in döndüğünü gösterir."
+    },
+    {
+      "id": 4,
+      "code": "FB.5.1",
+      "topic": "Ay’ın ışığı",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ay’ın ışığı",
+        "content": "Ay kendi ışığını üretmez; Güneş ışığını yansıtır."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Ay’ın parlak görünmesinin nedeni Güneş ışığını yansıtmasıdır",
+        "yansıma",
+        "ısı",
+        "elektrik"
+      ],
+      "answer": 0,
+      "explanation": "Ay kendi ışığını üretmez; Güneş ışığını yansıtır."
+    },
+    {
+      "id": 5,
+      "code": "FB.5.1",
+      "topic": "Ay’ın konumu",
+      "scenario": "Bilim merkezindeki etkinlikte öğrenciler bir model üzerinde ölçüm yapıp sonuçlarını not ediyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ay’ın konumu",
+        "content": "Ay Dünya’nın doğal uydusudur ve Dünya çevresinde dolanır."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Ay, Dünya’nın doğal uydusu olarak onun çevresinde dolanır",
+        "Yıldız",
+        "gezegen",
+        "gök taşı"
+      ],
+      "answer": 0,
+      "explanation": "Ay Dünya’nın doğal uydusudur ve Dünya çevresinde dolanır."
+    },
+    {
+      "id": 6,
+      "code": "FB.5.1",
+      "topic": "Ay’da hava olayları",
+      "scenario": "Bir öğrenci günlük yaşamdan bir örnek veriyor; sınıf arkadaşları bu örneği fen bilgisiyle açıklıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ay’da hava olayları",
+        "content": "Ay’ın belirgin atmosferi yoktur; bu nedenle hava olayları görülmez."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Ay’da Dünya’daki gibi rüzgâr ve yağmur görülmemesinin temel nedeni belirgin atmosferinin olmamasıdır",
+        "okyanus",
+        "bitki",
+        "bulut"
+      ],
+      "answer": 0,
+      "explanation": "Ay’ın belirgin atmosferi yoktur; bu nedenle hava olayları görülmez."
+    },
+    {
+      "id": 7,
+      "code": "FB.5.1",
+      "topic": "Ay’ın aynı yüzü",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ay’ın aynı yüzü",
+        "content": "Ay’ın dönme ve dolanma süreleri yaklaşık eşit olduğundan aynı yüzü görülür."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Ay’ın kendi ekseni çevresindeki dönme süresi ile Dünya çevresindeki dolanma süresi yaklaşık eşittir",
+        "eşit süreler",
+        "ışık",
+        "gölge"
+      ],
+      "answer": 0,
+      "explanation": "Ay’ın dönme ve dolanma süreleri yaklaşık eşit olduğundan aynı yüzü görülür."
+    },
+    {
+      "id": 8,
+      "code": "FB.5.1",
+      "topic": "Ay’ın evreleri",
+      "scenario": "Bilim merkezindeki etkinlikte öğrenciler bir model üzerinde ölçüm yapıp sonuçlarını not ediyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ay’ın evreleri",
+        "content": "Ay’ın evreleri, Güneş’in aydınlattığı bölümün Dünya’dan farklı görünmesiyle oluşur."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Ay’ın şekli değişmez; görülen aydınlık bölüm değişir",
+        "Dünya gölgesi",
+        "görülen aydınlık kısım",
+        "bulut"
+      ],
+      "answer": 0,
+      "explanation": "Ay’ın evreleri, Güneş’in aydınlattığı bölümün Dünya’dan farklı görünmesiyle oluşur."
+    },
+    {
+      "id": 9,
+      "code": "FB.5.1",
+      "topic": "Gece ve gündüz",
+      "scenario": "Bir öğrenci günlük yaşamdan bir örnek veriyor; sınıf arkadaşları bu örneği fen bilgisiyle açıklıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Gece ve gündüz",
+        "content": "Dünya’nın kendi ekseni etrafında dönmesi gece ve gündüzü oluşturur."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Dünya’nın kendi ekseni etrafında dönmesi gece ve gündüzün oluşmasını sağlar",
+        "Dolanma",
+        "Ay evresi",
+        "mevsim"
+      ],
+      "answer": 0,
+      "explanation": "Dünya’nın kendi ekseni etrafında dönmesi gece ve gündüzü oluşturur."
+    },
+    {
+      "id": 10,
+      "code": "FB.5.1",
+      "topic": "Bir yılın oluşumu",
+      "scenario": "Okulun fen kulübü bir bilgilendirme panosu hazırlıyor. Öğrenciler, gözlem ve kaynaklardan topladıkları bilgileri karşılaştırıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Bir yılın oluşumu",
+        "content": "Dünya’nın Güneş çevresinde dolanması yaklaşık bir yıl sürer."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Dünya’nın Güneş çevresindeki bir tam dolanımı yaklaşık 365 gün 6 saat sürer",
+        "bir hafta",
+        "bir ay",
+        "bir yıl"
+      ],
+      "answer": 0,
+      "explanation": "Dünya’nın Güneş çevresinde dolanması yaklaşık bir yıl sürer."
+    },
+    {
+      "id": 11,
+      "code": "FB.5.1",
+      "topic": "Güneş’in yıldız olması",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Güneş’in yıldız olması",
+        "content": "Güneş bir yıldızdır ve kendi ışık ve ısısını üretir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Güneş kendi ışığını üretir; gezegen değildir",
+        "Ay",
+        "yıldız",
+        "gezegen"
+      ],
+      "answer": 0,
+      "explanation": "Güneş bir yıldızdır ve kendi ışık ve ısısını üretir."
+    },
+    {
+      "id": 12,
+      "code": "FB.5.1",
+      "topic": "Güneş’in enerji kaynağı",
+      "scenario": "Okul sergisinde ziyaretçiler bir düzenek inceliyor ve öğrencilerden bilimsel çıkarım yapmaları isteniyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Güneş’in enerji kaynağı",
+        "content": "Güneş’in merkezinde çekirdek bulunur; enerji burada üretilir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Güneş’in enerjisi çekirdeğinde gerçekleşen süreçlerle üretilir",
+        "fotosfer",
+        "çekirdek",
+        "kromosfer"
+      ],
+      "answer": 0,
+      "explanation": "Güneş’in merkezinde çekirdek bulunur; enerji burada üretilir."
+    },
+    {
+      "id": 13,
+      "code": "FB.5.1",
+      "topic": "Güneş’in dönme hareketi",
+      "scenario": "Bir grup öğrenci proje raporunda bu kavramı yanlış yorumluyor. Öğretmenleri, kanıta dayanarak doğru açıklamayı bulmalarını istiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Güneş’in dönme hareketi",
+        "content": "Güneş lekelerinin konumunun değişmesi Güneş’in döndüğünü gösterir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Güneş lekelerinin zamanla yer değiştirmesi kendi ekseni etrafında dönmesine kanıttır",
+        "dolanma",
+        "tutulma",
+        "evre"
+      ],
+      "answer": 0,
+      "explanation": "Güneş lekelerinin konumunun değişmesi Güneş’in döndüğünü gösterir."
+    },
+    {
+      "id": 14,
+      "code": "FB.5.1",
+      "topic": "Ay’ın ışığı",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ay’ın ışığı",
+        "content": "Ay kendi ışığını üretmez; Güneş ışığını yansıtır."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Ay’ın parlak görünmesinin nedeni Güneş ışığını yansıtmasıdır",
+        "yansıma",
+        "ısı",
+        "elektrik"
+      ],
+      "answer": 0,
+      "explanation": "Ay kendi ışığını üretmez; Güneş ışığını yansıtır."
+    },
+    {
+      "id": 15,
+      "code": "FB.5.1",
+      "topic": "Ay’ın konumu",
+      "scenario": "Okul sergisinde ziyaretçiler bir düzenek inceliyor ve öğrencilerden bilimsel çıkarım yapmaları isteniyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ay’ın konumu",
+        "content": "Ay Dünya’nın doğal uydusudur ve Dünya çevresinde dolanır."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Ay, Dünya’nın doğal uydusu olarak onun çevresinde dolanır",
+        "Yıldız",
+        "gezegen",
+        "gök taşı"
+      ],
+      "answer": 0,
+      "explanation": "Ay Dünya’nın doğal uydusudur ve Dünya çevresinde dolanır."
+    },
+    {
+      "id": 16,
+      "code": "FB.5.1",
+      "topic": "Ay’da hava olayları",
+      "scenario": "Bir grup öğrenci proje raporunda bu kavramı yanlış yorumluyor. Öğretmenleri, kanıta dayanarak doğru açıklamayı bulmalarını istiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ay’da hava olayları",
+        "content": "Ay’ın belirgin atmosferi yoktur; bu nedenle hava olayları görülmez."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Ay’da Dünya’daki gibi rüzgâr ve yağmur görülmemesinin temel nedeni belirgin atmosferinin olmamasıdır",
+        "okyanus",
+        "bitki",
+        "bulut"
+      ],
+      "answer": 0,
+      "explanation": "Ay’ın belirgin atmosferi yoktur; bu nedenle hava olayları görülmez."
+    },
+    {
+      "id": 17,
+      "code": "FB.5.1",
+      "topic": "Ay’ın aynı yüzü",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ay’ın aynı yüzü",
+        "content": "Ay’ın dönme ve dolanma süreleri yaklaşık eşit olduğundan aynı yüzü görülür."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Ay’ın kendi ekseni çevresindeki dönme süresi ile Dünya çevresindeki dolanma süresi yaklaşık eşittir",
+        "eşit süreler",
+        "ışık",
+        "gölge"
+      ],
+      "answer": 0,
+      "explanation": "Ay’ın dönme ve dolanma süreleri yaklaşık eşit olduğundan aynı yüzü görülür."
+    },
+    {
+      "id": 18,
+      "code": "FB.5.1",
+      "topic": "Ay’ın evreleri",
+      "scenario": "Okul sergisinde ziyaretçiler bir düzenek inceliyor ve öğrencilerden bilimsel çıkarım yapmaları isteniyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ay’ın evreleri",
+        "content": "Ay’ın evreleri, Güneş’in aydınlattığı bölümün Dünya’dan farklı görünmesiyle oluşur."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Ay’ın şekli değişmez; görülen aydınlık bölüm değişir",
+        "Dünya gölgesi",
+        "görülen aydınlık kısım",
+        "bulut"
+      ],
+      "answer": 0,
+      "explanation": "Ay’ın evreleri, Güneş’in aydınlattığı bölümün Dünya’dan farklı görünmesiyle oluşur."
+    },
+    {
+      "id": 19,
+      "code": "FB.5.1",
+      "topic": "Gece ve gündüz",
+      "scenario": "Bir grup öğrenci proje raporunda bu kavramı yanlış yorumluyor. Öğretmenleri, kanıta dayanarak doğru açıklamayı bulmalarını istiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Gece ve gündüz",
+        "content": "Dünya’nın kendi ekseni etrafında dönmesi gece ve gündüzü oluşturur."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Dünya’nın kendi ekseni etrafında dönmesi gece ve gündüzün oluşmasını sağlar",
+        "Dolanma",
+        "Ay evresi",
+        "mevsim"
+      ],
+      "answer": 0,
+      "explanation": "Dünya’nın kendi ekseni etrafında dönmesi gece ve gündüzü oluşturur."
+    },
+    {
+      "id": 20,
+      "code": "FB.5.1",
+      "topic": "Bir yılın oluşumu",
+      "scenario": "Sınıfta kurulan istasyonda öğrenciler farklı durumları karşılaştırıp ortak sonucu belirliyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Bir yılın oluşumu",
+        "content": "Dünya’nın Güneş çevresinde dolanması yaklaşık bir yıl sürer."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Dünya’nın Güneş çevresindeki bir tam dolanımı yaklaşık 365 gün 6 saat sürer",
+        "bir hafta",
+        "bir ay",
+        "bir yıl"
+      ],
+      "answer": 0,
+      "explanation": "Dünya’nın Güneş çevresinde dolanması yaklaşık bir yıl sürer."
+    },
+    {
+      "id": 21,
+      "code": "FB.5.1",
+      "topic": "Güneş’in yıldız olması",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Güneş’in yıldız olması",
+        "content": "Güneş bir yıldızdır ve kendi ışık ve ısısını üretir."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Güneş kendi ışığını üretir; gezegen değildir",
+        "Ay",
+        "yıldız",
+        "gezegen"
+      ],
+      "answer": 0,
+      "explanation": "Güneş bir yıldızdır ve kendi ışık ve ısısını üretir."
+    },
+    {
+      "id": 22,
+      "code": "FB.5.1",
+      "topic": "Güneş’in enerji kaynağı",
+      "scenario": "Bir belediye/okul etkinliğinde bu konuya ilişkin karar veriliyor. Öğrenciler doğru seçeneği gerekçelendirmeye çalışıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Güneş’in enerji kaynağı",
+        "content": "Güneş’in merkezinde çekirdek bulunur; enerji burada üretilir."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Güneş’in enerjisi çekirdeğinde gerçekleşen süreçlerle üretilir",
+        "fotosfer",
+        "çekirdek",
+        "kromosfer"
+      ],
+      "answer": 0,
+      "explanation": "Güneş’in merkezinde çekirdek bulunur; enerji burada üretilir."
+    },
+    {
+      "id": 23,
+      "code": "FB.5.1",
+      "topic": "Güneş’in dönme hareketi",
+      "scenario": "Bir gözlem günlüğünde kaydedilen veriler sınıfta tartışılıyor. Öğrenciler hangi açıklamanın verilerle uyumlu olduğunu seçiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Güneş’in dönme hareketi",
+        "content": "Güneş lekelerinin konumunun değişmesi Güneş’in döndüğünü gösterir."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Güneş lekelerinin zamanla yer değiştirmesi kendi ekseni etrafında dönmesine kanıttır",
+        "dolanma",
+        "tutulma",
+        "evre"
+      ],
+      "answer": 0,
+      "explanation": "Güneş lekelerinin konumunun değişmesi Güneş’in döndüğünü gösterir."
+    },
+    {
+      "id": 24,
+      "code": "FB.5.1",
+      "topic": "Ay’ın ışığı",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ay’ın ışığı",
+        "content": "Ay kendi ışığını üretmez; Güneş ışığını yansıtır."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Ay’ın parlak görünmesinin nedeni Güneş ışığını yansıtmasıdır",
+        "yansıma",
+        "ısı",
+        "elektrik"
+      ],
+      "answer": 0,
+      "explanation": "Ay kendi ışığını üretmez; Güneş ışığını yansıtır."
+    },
+    {
+      "id": 25,
+      "code": "FB.5.1",
+      "topic": "Ay’ın konumu",
+      "scenario": "Bir belediye/okul etkinliğinde bu konuya ilişkin karar veriliyor. Öğrenciler doğru seçeneği gerekçelendirmeye çalışıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ay’ın konumu",
+        "content": "Ay Dünya’nın doğal uydusudur ve Dünya çevresinde dolanır."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Ay, Dünya’nın doğal uydusu olarak onun çevresinde dolanır",
+        "Yıldız",
+        "gezegen",
+        "gök taşı"
+      ],
+      "answer": 0,
+      "explanation": "Ay Dünya’nın doğal uydusudur ve Dünya çevresinde dolanır."
+    },
+    {
+      "id": 26,
+      "code": "FB.5.1",
+      "topic": "Ay’da hava olayları",
+      "scenario": "Bir gözlem günlüğünde kaydedilen veriler sınıfta tartışılıyor. Öğrenciler hangi açıklamanın verilerle uyumlu olduğunu seçiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ay’da hava olayları",
+        "content": "Ay’ın belirgin atmosferi yoktur; bu nedenle hava olayları görülmez."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Ay’da Dünya’daki gibi rüzgâr ve yağmur görülmemesinin temel nedeni belirgin atmosferinin olmamasıdır",
+        "okyanus",
+        "bitki",
+        "bulut"
+      ],
+      "answer": 0,
+      "explanation": "Ay’ın belirgin atmosferi yoktur; bu nedenle hava olayları görülmez."
+    },
+    {
+      "id": 27,
+      "code": "FB.5.1",
+      "topic": "Ay’ın aynı yüzü",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ay’ın aynı yüzü",
+        "content": "Ay’ın dönme ve dolanma süreleri yaklaşık eşit olduğundan aynı yüzü görülür."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Ay’ın kendi ekseni çevresindeki dönme süresi ile Dünya çevresindeki dolanma süresi yaklaşık eşittir",
+        "eşit süreler",
+        "ışık",
+        "gölge"
+      ],
+      "answer": 0,
+      "explanation": "Ay’ın dönme ve dolanma süreleri yaklaşık eşit olduğundan aynı yüzü görülür."
+    },
+    {
+      "id": 28,
+      "code": "FB.5.1",
+      "topic": "Ay’ın evreleri",
+      "scenario": "Bir belediye/okul etkinliğinde bu konuya ilişkin karar veriliyor. Öğrenciler doğru seçeneği gerekçelendirmeye çalışıyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Ay’ın evreleri",
+        "content": "Ay’ın evreleri, Güneş’in aydınlattığı bölümün Dünya’dan farklı görünmesiyle oluşur."
+      },
+      "stem": "Bu bilgiyi dikkate alan öğrencinin hangi sonuca ulaşması gerekir?",
+      "options": [
+        "Ay’ın şekli değişmez; görülen aydınlık bölüm değişir",
+        "Dünya gölgesi",
+        "görülen aydınlık kısım",
+        "bulut"
+      ],
+      "answer": 0,
+      "explanation": "Ay’ın evreleri, Güneş’in aydınlattığı bölümün Dünya’dan farklı görünmesiyle oluşur."
+    },
+    {
+      "id": 29,
+      "code": "FB.5.1",
+      "topic": "Gece ve gündüz",
+      "scenario": "Bir gözlem günlüğünde kaydedilen veriler sınıfta tartışılıyor. Öğrenciler hangi açıklamanın verilerle uyumlu olduğunu seçiyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Gece ve gündüz",
+        "content": "Dünya’nın kendi ekseni etrafında dönmesi gece ve gündüzü oluşturur."
+      },
+      "stem": "Verilen durumu en doğru açıklayan seçenek hangisidir?",
+      "options": [
+        "Dünya’nın kendi ekseni etrafında dönmesi gece ve gündüzün oluşmasını sağlar",
+        "Dolanma",
+        "Ay evresi",
+        "mevsim"
+      ],
+      "answer": 0,
+      "explanation": "Dünya’nın kendi ekseni etrafında dönmesi gece ve gündüzü oluşturur."
+    },
+    {
+      "id": 30,
+      "code": "FB.5.1",
+      "topic": "Bir yılın oluşumu",
+      "scenario": "Bir öğrenci evde karşılaştığı olayı sınıfta anlatıyor. Öğretmeni olayın bilimsel nedenini sorguluyor.",
+      "visual": {
+        "type": "concept-card",
+        "label": "Bir yılın oluşumu",
+        "content": "Dünya’nın Güneş çevresinde dolanması yaklaşık bir yıl sürer."
+      },
+      "stem": "Öğrencilerin raporuna yazması gereken bilimsel ifade hangisidir?",
+      "options": [
+        "Dünya’nın Güneş çevresindeki bir tam dolanımı yaklaşık 365 gün 6 saat sürer",
+        "bir hafta",
+        "bir ay",
+        "bir yıl"
+      ],
+      "answer": 0,
+      "explanation": "Dünya’nın Güneş çevresinde dolanması yaklaşık bir yıl sürer."
+    }
+  ]
+}
