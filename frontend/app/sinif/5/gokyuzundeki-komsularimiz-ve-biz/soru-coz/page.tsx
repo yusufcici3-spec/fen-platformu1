@@ -1,3 +1,7 @@
 "use client";
 
-export { default } from "../../[unitSlug]/soru-coz/page";
+import { UnitQuestionPage } from "../../[unitSlug]/soru-coz/page";
+
+export default function FirstUnitQuestionPage() {
+  return <UnitQuestionPage unitSlugOverride="gokyuzundeki-komsularimiz-ve-biz" />;
+}
