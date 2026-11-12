@@ -1,7 +1,5 @@
-"use client";
-
-import { UnitQuestionPage } from "../../[unitSlug]/soru-coz/page";
+import UnitQuestionPage from "@/components/questions/UnitQuestionPage";
 
 export default function FirstUnitQuestionPage() {
-  return <UnitQuestionPage unitSlugOverride="gokyuzundeki-komsularimiz-ve-biz" />;
+  return <UnitQuestionPage unitSlug="gokyuzundeki-komsularimiz-ve-biz" />;
 }
