@@ -9,8 +9,9 @@ import bank5 from "@/content/konu-sorulari/5-sinif-5-unite.json";
 import bank6 from "@/content/konu-sorulari/5-sinif-6-unite.json";
 import bank7 from "@/content/konu-sorulari/5-sinif-7-unite.json";
 const banks=[bank1,bank2,bank3,bank4,bank5,bank6,bank7] as const;
-export default function UnitQuestionPage({params}:{params:{unitSlug:string}}){
- const bank=banks.find(x=>x.slug===params.unitSlug);
+export function UnitQuestionPage({params,unitSlugOverride}:{params?:{unitSlug:string};unitSlugOverride?:string}){
+ const unitSlug=unitSlugOverride ?? params?.unitSlug;
+ const bank=banks.find(x=>x.slug===unitSlug);
  const [index,setIndex]=useState(0),[selected,setSelected]=useState<number|null>(null),[checked,setChecked]=useState(false),[answers,setAnswers]=useState<Record<number,number>>({}),[done,setDone]=useState(false);
  if(!bank)return <main className="p-10">Soru seti bulunamadı.</main>;
  const questions=bank.questions, q=questions[index], score=questions.reduce((n,item,i)=>n+(answers[i]===item.answer?1:0),0);
