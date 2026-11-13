@@ -68,6 +68,15 @@ const videos = [
     poster: "/videolar/7-sinif-2-unite-kuvvet-enerji.jpg",
     link: { href: "/sinif/7/kuvvet-ve-enerjiyi-kesfedelim", label: "Konu anlatımını aç" },
   },
+  {
+    id: "7-sinif-3-unite",
+    grade: "7. SINIF · 3. ÜNİTE",
+    title: "Vücudumuzdaki Sistemler",
+    description: "7. sınıf 3. ünite: sindirim, dolaşım, solunum ve boşaltım sistemleri; sistem sağlığı, kan ve organ bağışı, bağımlılıkla mücadele; kısa bir soru turu.",
+    src: "/videolar/7-sinif-3-unite-vucudumuzdaki-sistemler.mp4",
+    poster: "/videolar/7-sinif-3-unite-vucudumuzdaki-sistemler.jpg",
+    link: { href: "/sinif/7/vucudumuzdaki-sistemler", label: "Konu anlatımını aç" },
+  },
 ];
 
 export default function VideosPage() {
