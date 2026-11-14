@@ -1,0 +1,459 @@
+{
+  "grade": 7,
+  "unit": 4,
+  "title": "Işığın Kırılması ve Mercekler",
+  "slug": "isigin-kirilmasi-ve-mercekler",
+  "description": "Türkiye Yüzyılı Maarif Modeli öğrenme çıktılarıyla eşleştirilmiş 30 senaryolu ve görsel destekli özgün soru.",
+  "questions": [
+    {
+      "id": 1,
+      "visual": "🔦 🥛",
+      "scenario": "Havuzun tabanındaki taş, suyun dışından bakıldığında olduğundan daha yakında görünür.",
+      "question": "Bu gözlemin temel nedeni nedir?",
+      "options": [
+        "Işığın soğurulması",
+        "Işığın kırılması",
+        "Işığın yansıması",
+        "Işığın doğrusal yayılması"
+      ],
+      "answer": 1,
+      "explanation": "Işık sudan havaya geçerken yön değiştirir; taşın görünen konumu değişir.",
+      "outcome": "FB.7.4.1"
+    },
+    {
+      "id": 2,
+      "visual": "🥤 🥛",
+      "scenario": "Bardağa konan pipet, su yüzeyinde kırılmış gibi görünür.",
+      "question": "Pipetin bu şekilde görünmesini hangi olay açıklar?",
+      "options": [
+        "Yansıma",
+        "Kırılma",
+        "Gölge oluşumu",
+        "Soğurulma"
+      ],
+      "answer": 1,
+      "explanation": "Işık su ve hava sınırında yön değiştirdiği için pipet kırık görünür.",
+      "outcome": "FB.7.4.1"
+    },
+    {
+      "id": 3,
+      "visual": "💧 ➡️",
+      "scenario": "Işık ışını havadan suya geçerken normale yaklaşarak kırılıyor.",
+      "question": "Buna göre ışığın hızı hangi ortamda daha büyüktür?",
+      "options": [
+        "Suda",
+        "Havada",
+        "İki ortamda eşit",
+        "Hız değişmez"
+      ],
+      "answer": 1,
+      "explanation": "Işık optikçe daha yoğun ortam olan suda daha yavaş ilerler.",
+      "outcome": "FB.7.4.1"
+    },
+    {
+      "id": 4,
+      "visual": "💎 🌈",
+      "scenario": "Elmasın ışığı farklı yönlere ayırarak parıltılı görünmesi gözleniyor.",
+      "question": "Bu olayın temelinde hangi özellik bulunur?",
+      "options": [
+        "Işığın kırılması",
+        "Sesin yansıması",
+        "Elektriklenme",
+        "Isı iletimi"
+      ],
+      "answer": 0,
+      "explanation": "Elmas içinde ışık farklı doğrultularda kırılarak parlak görünüm oluşturabilir.",
+      "outcome": "FB.7.4.1"
+    },
+    {
+      "id": 5,
+      "visual": "🪙 🥣",
+      "scenario": "Boş bir kâseye bakan öğrenci, kâsenin tabanındaki madeni parayı göremiyor. Kâseye su eklenince para görünür oluyor.",
+      "question": "Paranın görünür hâle gelmesini ne sağlar?",
+      "options": [
+        "Suyun ışık üretmesi",
+        "Işığın kırılarak göze ulaşması",
+        "Paranın yükselmesi",
+        "Işığın tamamen soğurulması"
+      ],
+      "answer": 1,
+      "explanation": "Su-hava sınırında kırılan ışın göze ulaşır ve para görünür olur.",
+      "outcome": "FB.7.4.1"
+    },
+    {
+      "id": 6,
+      "visual": "📐 💧",
+      "scenario": "Bir ışık ışını havadan cama geçerken doğrultu değiştiriyor.",
+      "question": "Işığın doğrultu değiştirmesinin nedeni hangisidir?",
+      "options": [
+        "Ortamların yoğunluklarının farklı olması",
+        "Işığın kütlesinin artması",
+        "Camın ışık üretmesi",
+        "Işığın ses dalgasına dönüşmesi"
+      ],
+      "answer": 0,
+      "explanation": "Farklı optik yoğunluktaki ortamlarda ışığın hızı değişir ve ışık kırılır.",
+      "outcome": "FB.7.4.1"
+    },
+    {
+      "id": 7,
+      "visual": "🔍 📄",
+      "scenario": "Bir öğrenci büyüteci yazının üzerine yaklaştırdığında harfleri daha büyük görüyor.",
+      "question": "Büyüteçte hangi mercek kullanılır?",
+      "options": [
+        "Kalın kenarlı",
+        "İnce kenarlı",
+        "Düzlem ayna",
+        "Tümsek ayna"
+      ],
+      "answer": 1,
+      "explanation": "İnce kenarlı mercek uygun uzaklıkta cisimlerin büyük ve düz görüntüsünü oluşturur.",
+      "outcome": "FB.7.4.2"
+    },
+    {
+      "id": 8,
+      "visual": "👓",
+      "scenario": "Uzağı net göremeyen bir kişinin göz kusurunu düzeltmek için kalın kenarlı mercek kullanılıyor.",
+      "question": "Bu merceğin temel etkisi nedir?",
+      "options": [
+        "Işınları dağıtmak",
+        "Işınları toplamak",
+        "Işığı tamamen durdurmak",
+        "Işığı renklere ayırmak"
+      ],
+      "answer": 0,
+      "explanation": "Kalın kenarlı mercek ışınları dağıtarak uzağı görememe kusurunun düzeltilmesine yardımcı olur.",
+      "outcome": "FB.7.4.2"
+    },
+    {
+      "id": 9,
+      "visual": "🔭 🌌",
+      "scenario": "Teleskopta uzaktaki gök cisimlerinden gelen ışığı toplamak için mercek kullanılıyor.",
+      "question": "Işınları bir noktada toplayan mercek hangisidir?",
+      "options": [
+        "Kalın kenarlı",
+        "İnce kenarlı",
+        "Düz ayna",
+        "Tümsek ayna"
+      ],
+      "answer": 1,
+      "explanation": "İnce kenarlı mercek paralel ışınları odakta toplar.",
+      "outcome": "FB.7.4.2"
+    },
+    {
+      "id": 10,
+      "visual": "📷",
+      "scenario": "Fotoğraf makinesinde mercek, cisimden gelen ışığı görüntü algılayıcısı üzerinde topluyor.",
+      "question": "Kullanılan merceğin özelliği hangisidir?",
+      "options": [
+        "Işınları dağıtması",
+        "Işınları toplaması",
+        "Işığı engellemesi",
+        "Sadece ses iletmesi"
+      ],
+      "answer": 1,
+      "explanation": "Fotoğraf makinesi objektifinde ince kenarlı mercek sistemi kullanılır.",
+      "outcome": "FB.7.4.2"
+    },
+    {
+      "id": 11,
+      "visual": "🕵️ 🔍",
+      "scenario": "Kâğıt üzerindeki küçük yazıları inceleyen araştırmacı büyüteç kullanıyor.",
+      "question": "Büyütecin görüntüyü büyütmesi hangi mercekle açıklanır?",
+      "options": [
+        "İnce kenarlı",
+        "Kalın kenarlı",
+        "Düzlem",
+        "Tümsek"
+      ],
+      "answer": 0,
+      "explanation": "İnce kenarlı mercek, cisim odak uzaklığı içinde olduğunda büyütülmüş görüntü verir.",
+      "outcome": "FB.7.4.2"
+    },
+    {
+      "id": 12,
+      "visual": "👓 📚",
+      "scenario": "Yakını net göremeyen bir kişi gözlük kullanmaya başlıyor. Gözlük camı ışığı dağıtıyor.",
+      "question": "Bu gözlükte hangi mercek bulunur?",
+      "options": [
+        "İnce kenarlı",
+        "Kalın kenarlı",
+        "Silindirik ayna",
+        "Düzlem ayna"
+      ],
+      "answer": 1,
+      "explanation": "Yakını görememe (hipermetropi) kalın kenarlı değil, ince kenarlı mercekle düzeltilir.",
+      "outcome": "FB.7.4.2"
+    },
+    {
+      "id": 13,
+      "visual": "🔬 🧫",
+      "scenario": "Mikroskopta küçük canlı örnekleri büyütülerek inceleniyor.",
+      "question": "Mikroskopta görüntüyü büyütmede hangi optik araç kullanılır?",
+      "options": [
+        "Mercekler",
+        "Düzlem aynalar",
+        "Prizmalar yalnızca",
+        "Opak levhalar"
+      ],
+      "answer": 0,
+      "explanation": "Mikroskopta objektif ve oküler mercekler büyütme sağlar.",
+      "outcome": "FB.7.4.3"
+    },
+    {
+      "id": 14,
+      "visual": "🚦 🔍",
+      "scenario": "Trafik ışıklarının arkasındaki optik düzenek ışığı belirli bir alana yönlendiriyor.",
+      "question": "Merceklerin günlük hayattaki kullanımına örnek hangisidir?",
+      "options": [
+        "Gözlük",
+        "Tahta sıra",
+        "Metal kaşık",
+        "Pamuklu kumaş"
+      ],
+      "answer": 0,
+      "explanation": "Gözlük camları merceklerden oluşur ve görüntünün retinaya doğru odaklanmasına yardım eder.",
+      "outcome": "FB.7.4.3"
+    },
+    {
+      "id": 15,
+      "visual": "📽️ 🎞️",
+      "scenario": "Projeksiyon cihazı ekrandaki görüntüyü büyüterek sınıf duvarına yansıtıyor.",
+      "question": "Bu cihazda merceklerin görevi nedir?",
+      "options": [
+        "Görüntüyü odaklayıp büyütmek",
+        "Sesi yükseltmek",
+        "Elektrik üretmek",
+        "Rengi yok etmek"
+      ],
+      "answer": 0,
+      "explanation": "Projeksiyon sisteminde mercekler ışığı yönlendirerek büyük görüntü oluşturur.",
+      "outcome": "FB.7.4.3"
+    },
+    {
+      "id": 16,
+      "visual": "🚑 🔎",
+      "scenario": "Doktor, küçük ayrıntıları incelemek için büyüteç benzeri optik araç kullanıyor.",
+      "question": "Bu aracın çalışma ilkesi hangisidir?",
+      "options": [
+        "Işığın mercekte kırılması",
+        "Sesin yansıması",
+        "Isının iletilmesi",
+        "Elektrik akımı"
+      ],
+      "answer": 0,
+      "explanation": "Mercekler ışığı kırarak görüntünün büyüklüğünü ve konumunu değiştirir.",
+      "outcome": "FB.7.4.3"
+    },
+    {
+      "id": 17,
+      "visual": "🛰️ 🔭",
+      "scenario": "Uzay teleskobuyla çok uzaktaki gök cisimleri gözlemleniyor.",
+      "question": "Teleskopların temel amacı nedir?",
+      "options": [
+        "Uzak cisimlerden gelen ışığı toplayıp görüntü oluşturmak",
+        "Cisimlerin sesini büyütmek",
+        "Gök cisimlerini yaklaştırmak",
+        "Işığı tamamen soğurmak"
+      ],
+      "answer": 0,
+      "explanation": "Teleskop optik sistemleri uzak cisimlerden gelen ışığı toplayarak görüntü oluşturur.",
+      "outcome": "FB.7.4.3"
+    },
+    {
+      "id": 18,
+      "visual": "🧑‍🔬 🔬",
+      "scenario": "Laboratuvarda hücre örneği mikroskop altında inceleniyor.",
+      "question": "Mikroskop kullanılmasının nedeni nedir?",
+      "options": [
+        "Çok küçük ayrıntıları büyütmek",
+        "Örneğin kütlesini artırmak",
+        "Örneği ısıtmak",
+        "Işığı yok etmek"
+      ],
+      "answer": 0,
+      "explanation": "Mikroskop mercekleri çıplak gözle seçilemeyen küçük yapıları büyütür.",
+      "outcome": "FB.7.4.3"
+    },
+    {
+      "id": 19,
+      "visual": "🪟 🌞",
+      "scenario": "Bir sınıfta mercekli düzenekle güneş ışığı ekrana odaklanıyor.",
+      "question": "Işığı bir noktada toplayan mercek çeşidi hangisidir?",
+      "options": [
+        "İnce kenarlı",
+        "Kalın kenarlı",
+        "Düzlem ayna",
+        "Tümsek ayna"
+      ],
+      "answer": 0,
+      "explanation": "İnce kenarlı mercek yakınsak mercektir; ışınları odakta toplar.",
+      "outcome": "FB.7.4.2"
+    },
+    {
+      "id": 20,
+      "visual": "🧪 💡",
+      "scenario": "Işık, camdan havaya geçerken normalden uzaklaşarak kırılıyor.",
+      "question": "Işık hangi ortamda daha hızlı ilerler?",
+      "options": [
+        "Camda",
+        "Havada",
+        "İki ortamda aynı",
+        "Hızı sıfır olur"
+      ],
+      "answer": 1,
+      "explanation": "Cam optikçe havadan yoğundur; ışık havada daha hızlı yayılır.",
+      "outcome": "FB.7.4.1"
+    },
+    {
+      "id": 21,
+      "visual": "🌊 📏",
+      "scenario": "Bir ışık ışını suya dik gönderiliyor.",
+      "question": "Işık suya geçerken doğrultusunu değiştirir mi?",
+      "options": [
+        "Evet, her zaman",
+        "Hayır, doğrultu değişmez",
+        "Işık geri döner",
+        "Işık kaybolur"
+      ],
+      "answer": 1,
+      "explanation": "Işık ara yüzeye dik gelirse doğrultu değiştirmeden ilerler; hızı değişebilir.",
+      "outcome": "FB.7.4.1"
+    },
+    {
+      "id": 22,
+      "visual": "🧊 🔦",
+      "scenario": "Cam prizmaya gönderilen beyaz ışık farklı renklere ayrılıyor.",
+      "question": "Bu olay hangi kavramla ilişkilidir?",
+      "options": [
+        "Işığın kırılması ve renklerine ayrılması",
+        "Elektriklenme",
+        "Sesin soğurulması",
+        "Manyetizma"
+      ],
+      "answer": 0,
+      "explanation": "Prizmada farklı renkler farklı miktarda kırılarak ayrışabilir.",
+      "outcome": "FB.7.4.1"
+    },
+    {
+      "id": 23,
+      "visual": "👓 🧒",
+      "scenario": "Bir öğrenci gözlük camının ortasının kenarlarından daha ince olduğunu fark ediyor.",
+      "question": "Bu mercek çeşidi hangisidir?",
+      "options": [
+        "İnce kenarlı",
+        "Kalın kenarlı",
+        "Düzlem",
+        "Tümsek"
+      ],
+      "answer": 0,
+      "explanation": "İnce kenarlı merceğin orta kısmı kenarlarından kalındır.",
+      "outcome": "FB.7.4.2"
+    },
+    {
+      "id": 24,
+      "visual": "👓 🧑",
+      "scenario": "Bir merceğin ortası kenarlarından daha ince ölçülüyor.",
+      "question": "Bu mercek ışınlar üzerinde nasıl etki yapar?",
+      "options": [
+        "Dağıtır",
+        "Toplar",
+        "Yansıtıp geri gönderir",
+        "Işığı tamamen soğurur"
+      ],
+      "answer": 0,
+      "explanation": "Kalın kenarlı mercek ıraksak mercektir ve ışınları dağıtır.",
+      "outcome": "FB.7.4.2"
+    },
+    {
+      "id": 25,
+      "visual": "🔍 📏",
+      "scenario": "Aynı büyüteçle cisim merceğe yaklaştırıldığında görüntü boyutu değişiyor.",
+      "question": "Bu durum hangi değişkenin görüntüyü etkilediğini gösterir?",
+      "options": [
+        "Cisim-mercek uzaklığı",
+        "Cismin rengi",
+        "Ortamın sesi",
+        "Cismin kokusu"
+      ],
+      "answer": 0,
+      "explanation": "Mercek ile cisim arasındaki uzaklık görüntünün boyutunu ve özelliklerini etkiler.",
+      "outcome": "FB.7.4.2"
+    },
+    {
+      "id": 26,
+      "visual": "📷 🏞️",
+      "scenario": "Fotoğrafçı objektifin netliğini ayarlayarak görüntüyü belirginleştiriyor.",
+      "question": "Net görüntü elde etmek için hangi işlem yapılır?",
+      "options": [
+        "Mercek-görüntü uzaklığını ayarlamak",
+        "Fotoğraf makinesini sallamak",
+        "Işığı tamamen kapatmak",
+        "Objektifi çıkarmak"
+      ],
+      "answer": 0,
+      "explanation": "Mercek sisteminde net görüntü için odaklama yapılır.",
+      "outcome": "FB.7.4.3"
+    },
+    {
+      "id": 27,
+      "visual": "🧭 🔭",
+      "scenario": "Gözlem kulübü Ay'ın yüzey ayrıntılarını teleskopla inceliyor.",
+      "question": "Teleskopta merceklerin sağladığı temel kolaylık nedir?",
+      "options": [
+        "Uzak cisimlerin görüntüsünü oluşturmak",
+        "Cisimleri fiziksel olarak yaklaştırmak",
+        "Ay'dan ışık üretmek",
+        "Ses dalgalarını toplamak"
+      ],
+      "answer": 0,
+      "explanation": "Teleskop mercekleri uzak cisimlerden gelen ışığı toplayıp gözlenebilir görüntü oluşturur.",
+      "outcome": "FB.7.4.3"
+    },
+    {
+      "id": 28,
+      "visual": "💧 🪨",
+      "scenario": "Suyun içindeki düz bir çubuk dışarıdan bakıldığında farklı konumda algılanıyor.",
+      "question": "Bu durum ışığın hangi özelliğini kanıtlar?",
+      "options": [
+        "Ortam değiştirirken kırılmasını",
+        "Her zaman yansımasını",
+        "Karanlıkta yayılmamasını",
+        "Kütlesinin değişmesini"
+      ],
+      "answer": 0,
+      "explanation": "Çubuk görüntüsünün konum değiştirmesi kırılma ile açıklanır.",
+      "outcome": "FB.7.4.1"
+    },
+    {
+      "id": 29,
+      "visual": "🔬 📚",
+      "scenario": "Öğrenci mikroskopta merceklerin yerini değiştirerek görüntünün değiştiğini gözlemliyor.",
+      "question": "Bu deneyden hangi çıkarım yapılabilir?",
+      "options": [
+        "Merceklerin konumu görüntüyü etkiler",
+        "Mercekler ışığı üretir",
+        "Mercekler sesi değiştirir",
+        "Görüntü uzaklıktan etkilenmez"
+      ],
+      "answer": 0,
+      "explanation": "Merceklerin türü ve konumu görüntünün oluşumunu etkiler.",
+      "outcome": "FB.7.4.3"
+    },
+    {
+      "id": 30,
+      "visual": "👁️ 📖",
+      "scenario": "Yakını göremeyen bir öğrenci kitap okurken yazıları netleştirmek için gözlük kullanıyor.",
+      "question": "Gözlük merceğinin temel görevi nedir?",
+      "options": [
+        "Işınları uygun biçimde kırarak görüntüyü retinaya odaklamak",
+        "Göz bebeğini kapatmak",
+        "Işığı tamamen yansıtmak",
+        "Gözün rengini değiştirmek"
+      ],
+      "answer": 0,
+      "explanation": "Gözlük merceği ışığın kırılmasını düzenleyerek net görüntü oluşmasına yardımcı olur.",
+      "outcome": "FB.7.4.3"
+    }
+  ]
+}
