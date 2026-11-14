@@ -68,30 +68,32 @@
     {
       "id": 5,
       "visual": "➕ ⚛️",
-      "scenario": "Bir cisim elektron kaybettiğinde hangi yükle yüklenir?",
-      "question": [
+      "scenario": "Bir cisim sürtünme sonucunda elektron kaybediyor.",
+      "question": "Elektron kaybeden cisim hangi yükle yüklenir?",
+      "options": [
         "Pozitif",
         "Negatif",
         "Nötr",
         "Yüksüz kalır"
       ],
-      "options": 0,
-      "answer": "Elektron kaybeden cisimde proton sayısı elektron sayısından fazla olur; pozitif yüklenir.",
-      "explanation": "FB.7.6.1.1"
+      "answer": 0,
+      "explanation": "Elektron kaybeden cisimde proton sayısı elektron sayısından fazla olur; pozitif yüklenir.",
+      "outcome": "FB.7.6.1.1"
     },
     {
       "id": 6,
       "visual": "➖ ⚛️",
-      "scenario": "Bir cisim dışarıdan elektron aldığında yük durumu nasıl değişir?",
-      "question": [
+      "scenario": "Bir cisim başka bir cisimden elektron alıyor.",
+      "question": "Elektron alan cismin yükü nasıl değişir?",
+      "options": [
         "Pozitif",
         "Negatif",
         "Nötr",
         "Yükü değişmez"
       ],
-      "options": 1,
-      "answer": "Elektron alan cismin negatif yük miktarı artar.",
-      "explanation": "FB.7.6.1.1"
+      "answer": 1,
+      "explanation": "Elektron alan cismin negatif yük miktarı artar.",
+      "outcome": "FB.7.6.1.1"
     },
     {
       "id": 7,
