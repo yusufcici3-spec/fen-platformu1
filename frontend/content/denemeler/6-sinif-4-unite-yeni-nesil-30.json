@@ -1,554 +1,554 @@
 {
   "id": "6-sinif-4-unite-yeni-nesil-30",
   "slug": "6-sinif-4-unite-yeni-nesil-30",
-  "title": "6. Sınıf 4. Ünite Işığın Yansıması ve Renkler Yeni Nesil Deneme",
-  "description": "Işığın Yansıması ve Renkler ünitesinden 30 özgün, senaryolu ve yorumlama odaklı soru. Türkiye Yüzyılı Maarif Modeli ile uyumludur.",
+  "title": "6. Sınıf 4. Ünite Işığın Yansıması ve Renkler – 30 Yeni Nesil Soru",
+  "description": "Işığın Yansıması ve Renkler ünitesinin kazanımlarına uygun; uzun senaryolu, görselli ve çözümlü 30 özgün yeni nesil soru.",
   "classLevel": 6,
-  "durationMin": 60,
+  "durationMin": 50,
   "units": [
     "Işığın Yansıması ve Renkler"
   ],
-  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı, 6. sınıf. Sorular özgün olarak hazırlanmıştır.",
+  "source": "Türkiye Yüzyılı Maarif Modeli Fen Bilimleri 6. sınıf 4. ünite kazanımları (FB.6.4.x). Sorular özgün olarak hazırlanmıştır.",
   "questions": [
     {
       "no": 1,
       "unit": "Işığın Yansıması ve Renkler",
       "outcome": "FB.6.4.1",
-      "skill": "Gözlem ve çıkarım",
-      "scenario": "Bir öğrenci aynı el fenerini önce düz aynaya, sonra buruşturulmuş alüminyum folyoya tutuyor. Aynada ışık belirli yönde, folyoda farklı yönlere dağılıyor.",
-      "stem": "Bu gözlem hangi sonucu destekler?",
+      "skill": "Model yorumlama",
+      "scenario": "Fen kulübü öğrencileri, banyo aynası ile mat boyalı odanın duvarına aynı el fenerinden paralel ışık demetleri gönderiyor. Şekilde iki yüzeyde ışınların izlediği yollar gösterilmiştir. Öğrenciler aynada kendilerini net görürken duvarda görüntülerini göremiyor; ancak duvarı odanın her yerinden görebiliyorlar.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q01.svg",
+      "imageAlt": "Düzgün yüzeyde paralel, pürüzlü yüzeyde dağınık yansıyan ışınları gösteren şema",
+      "stem": "Şekle göre bu gözlemlerin açıklaması aşağıdakilerden hangisidir?",
       "options": [
-        "Her yüzey ışığı aynı biçimde yansıtır",
-        "Düzgün yüzey düzgün, pürüzlü yüzey dağınık yansıma oluşturur",
-        "Pürüzlü yüzey ışığı tamamen soğurur",
-        "Yansıma yalnız aynalarda gerçekleşir"
+        "Duvar ışığı tamamen soğurduğu için hiç ışık yansımaz, duvar yine de görülebilir.",
+        "Aynada yansıma olurken duvarda yansıma hiç gerçekleşmez, ışık duvarın içinden geçer.",
+        "Duvarda yansıyan ışınlar daha düzenli olduğu için duvar daha net görüntü verir.",
+        "Aynada ışınlar düzenli yansıdığı için net görüntü oluşur; duvarda ışınlar farklı yönlere dağıldığı için görüntü oluşmaz ama duvar her yerden görülür."
       ],
-      "answer": 1,
-      "explanation": "Düz yüzeyde yansıma düzenli, pürüzlü yüzeyde farklı yönlere dağılmıştır.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 3,
+      "explanation": "Düzgün yüzeyde (ayna) paralel gelen ışınlar paralel yansır ve net görüntü oluşur. Pürüzlü yüzeyde ışınlar farklı yönlere dağılır (dağınık yansıma); bu yüzden görüntü oluşmaz, fakat yüzey her yönden görülebilir."
     },
     {
       "no": 2,
       "unit": "Işığın Yansıması ve Renkler",
-      "outcome": "FB.6.4.2",
+      "outcome": "FB.6.4.1",
       "skill": "Veri yorumlama",
-      "scenario": "Fen laboratuvarında ışınların düz aynaya farklı açılarla gönderildiği deneyde gelme açısı 25° ölçülüyor.",
-      "stem": "Yansıma açısının kaç derece olması beklenir?",
+      "scenario": "Bir öğrenci evde dört farklı yüzeyi el feneri ışığıyla inceliyor. Her yüzeyde yansıyan ışınların düzenli olup olmadığını gözlemliyor ve net görüntü oluşup oluşmadığını not alarak tabloyu dolduruyor. Öğretmeni tabloda bir satırın hatalı doldurulduğunu söylüyor.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q02.svg",
+      "imageAlt": "Dört yüzeyde yansıma türünü gösteren tablo; durgun su satırı hatalıdır",
+      "stem": "Tablodaki hatalı satırı ve doğrusunu gösteren seçenek hangisidir?",
       "options": [
-        "15°",
-        "25°",
-        "50°",
-        "65°"
+        "Mat karton: yansıyan ışınlar düzenli, net görüntü var.",
+        "Durgun su yüzeyi: yansıyan ışınlar düzenli, net görüntü var.",
+        "Temiz ayna: yansıyan ışınlar dağınık, net görüntü yok.",
+        "Cilalı metal levha: yansıyan ışınlar dağınık, net görüntü yok."
       ],
       "answer": 1,
-      "explanation": "Yansıma açısı, normale göre ölçülen gelme açısına eşittir.",
-      "image": "",
-      "imageAlt": ""
+      "explanation": "Durgun su yüzeyi düzgün bir yüzeydir; ışık düzenli yansır ve net görüntü oluşur. Mat karton pürüzlü olduğu için dağınık yansıma yapar."
     },
     {
       "no": 3,
       "unit": "Işığın Yansıması ve Renkler",
-      "outcome": "FB.6.4.3",
-      "skill": "Günlük yaşam bağlantısı",
-      "scenario": "Bir mağaza sahibi dar koridorun daha geniş görünmesi ve daha geniş alanın izlenmesi için farklı aynaları karşılaştırıyor.",
-      "stem": "Koridorun daha geniş bir alanını göstermek için hangi ayna uygundur?",
+      "outcome": "FB.6.4.1",
+      "skill": "Neden-sonuç",
+      "scenario": "Bir sınıfta öğretmen projeksiyon cihazıyla beyaz perdeye bir fen videosu yansıtıyor. Kerem, Defne ve Eda sınıfın farklı yerlerinde oturuyor ve üçü de perdedeki görüntüyü rahatça görebiliyor. Öğretmen, perdenin yüzeyinin bilerek aynadan farklı bir yapıda seçildiğini söylüyor.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q03.svg",
+      "imageAlt": "Projeksiyon ışığının perdeden üç öğrenciye farklı yönlerde yansıdığını gösteren şema",
+      "stem": "Perdenin üç öğrenciye de görünür olmasını sağlayan olay ve perdenin yüzey özelliği hangisidir?",
       "options": [
-        "Düz ayna",
-        "Çukur ayna",
-        "Tümsek ayna",
-        "Bütün aynalar aynı görüntüyü verir"
+        "Düzgün yansıma; perde yüzeyi çok parlaktır ve ışığı tek bir yöne yansıtır.",
+        "Dağınık yansıma; perde yüzeyi pürüzlüdür ve ışığı birçok yöne yansıtır.",
+        "Soğurulma; perde ışığın tamamını soğurur ve gözlerimize ulaştırır.",
+        "Düzgün yansıma; perde ayna gibi düzgün olduğu için herkes kendi görüntüsünü görür."
       ],
-      "answer": 2,
-      "explanation": "Tümsek aynalar geniş görüş alanı sağlar; görüntü düz ve küçüktür.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 1,
+      "explanation": "Perde pürüzlü bir yüzeydir. Işık birçok yöne dağınık yansıdığı için farklı konumlardaki herkes perdeyi görebilir."
     },
     {
       "no": 4,
       "unit": "Işığın Yansıması ve Renkler",
-      "outcome": "FB.6.4.4",
-      "skill": "Deney sonucu",
-      "scenario": "Aynı büyüklükte iki metal levhadan siyah olanı ve beyaz olanı Güneş altında bekletiliyor. Bir süre sonra siyah levhanın sıcaklığı daha fazla artıyor.",
-      "stem": "Bu durumun temel nedeni nedir?",
+      "outcome": "FB.6.4.1",
+      "skill": "Çıkarım yapma",
+      "scenario": "Yağmurlu bir gecede araç kullanan Mert, ıslak asfaltın kuru asfalta göre çok daha parlak göründüğünü ve karşıdan gelen araçların farları ıslak yolda uzun parlama çizgileri oluşturduğunu fark ediyor. Yoldaki yağmur suyu, asfaltın küçük çukurluklarını doldurarak yüzeyi daha düzgün hâle getiriyor.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q04.svg",
+      "imageAlt": "Kuru ve ıslak yolda araç farının yansımasını karşılaştıran şema",
+      "stem": "Şekle ve senaryoya göre ıslak yolda bu parlamanın nedeni aşağıdakilerden hangisidir?",
       "options": [
-        "Siyah yüzey ışığı daha fazla soğurur",
-        "Beyaz yüzey ışık üretir",
-        "Siyah yüzey ışığı tamamen geçirir",
-        "Renk sıcaklığı etkilemez"
+        "Su tabakası yüzeyi daha düzgün yaptığı için ışık daha düzenli (düzgün) yansır.",
+        "Su, ışığın tamamını soğurduğu için yol daha parlak görünür.",
+        "Islak asfaltta ışık yansımadığı için ışıklar doğrudan gözümüze ulaşır.",
+        "Kuru asfaltta ışık yansımaz, yalnızca ıslak asfaltta yansıma olur."
       ],
       "answer": 0,
-      "explanation": "Koyu renkli yüzeyler ışık enerjisinin daha büyük bölümünü soğurabilir.",
-      "image": "",
-      "imageAlt": ""
+      "explanation": "Kuru asfalt pürüzlü olduğundan ışığı dağınık yansıtır. Yağmur suyu yüzeyi düzleştirince yansıma daha düzgün hâle gelir ve ışık belirli yönlerde yoğun yansıyarak parlama oluşturur."
     },
     {
       "no": 5,
       "unit": "Işığın Yansıması ve Renkler",
-      "outcome": "FB.6.4.5–FB.6.4.6",
+      "outcome": "FB.6.4.2",
       "skill": "Model yorumlama",
-      "scenario": "Bir öğrenci cam prizmadan geçirilen beyaz ışığın ekranda farklı renklerden oluşan bir şerit oluşturduğunu gözlemliyor.",
-      "stem": "Bu deney hangi çıkarımı destekler?",
+      "scenario": "Ece, fen laboratuvarında ışık kutusuyla düz aynaya ince bir ışık demeti gönderiyor. Işının aynaya geliş yönünü ve yüzeye dik olan çizgiyi (normal) şekildeki gibi işaretliyor. Gelen ışın normalle 35° açı yapıyor.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q05.svg",
+      "imageAlt": "Düz aynaya 35° ile gelen ışın ve normal şeması; yansıma açısı soru işareti ile verilmiş",
+      "stem": "Yansıyan ışının normalle yaptığı açı (yansıma açısı) kaç derecedir?",
       "options": [
-        "Beyaz ışık yalnızca sarıdır",
-        "Beyaz ışık farklı renklerin birleşiminden oluşur",
-        "Prizma ışık üretir",
-        "Renkler yalnız karanlıkta oluşur"
+        "55°",
+        "35°",
+        "70°",
+        "145°"
       ],
       "answer": 1,
-      "explanation": "Prizma beyaz ışığı bileşen renklerine ayırabilir.",
-      "image": "",
-      "imageAlt": ""
+      "explanation": "Gelme açısı ile yansıma açısı her zaman eşittir ve açılar normale göre ölçülür. Gelme açısı 35° ise yansıma açısı da 35°'dir."
     },
     {
       "no": 6,
       "unit": "Işığın Yansıması ve Renkler",
-      "outcome": "FB.6.4.5–FB.6.4.6",
-      "skill": "Neden-sonuç",
-      "scenario": "Kırmızı bir elma beyaz ışık altında kırmızı görünürken yeşil ışık altında koyu görünmektedir.",
-      "stem": "Elmanın beyaz ışıkta kırmızı görünmesinin nedeni nedir?",
+      "outcome": "FB.6.4.2",
+      "skill": "Model yorumlama",
+      "scenario": "Bir öğrenci düz aynaya gelen ışının doğrultusunu çiziyor ve açıyı aynanın yüzeyiyle ölçüyor. Gelen ışın ile ayna yüzeyi arasındaki açı 50° bulunuyor. Öğretmeni açıların normale göre ölçülmesi gerektiğini hatırlatıyor.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q06.svg",
+      "imageAlt": "Gelen ışın ile ayna yüzeyi arasındaki 50°'lik açının gösterildiği şema",
+      "stem": "Buna göre gelme açısı ve yansıma açısı sırasıyla kaç derecedir?",
       "options": [
-        "Bütün renkleri eşit yansıtması",
-        "Kırmızı ışığı yansıtıp diğer renklerin çoğunu soğurması",
-        "Kendi ışığını üretmesi",
-        "Işığı tamamen geçirmesi"
+        "50° ve 50°",
+        "50° ve 40°",
+        "40° ve 40°",
+        "130° ve 130°"
       ],
-      "answer": 1,
-      "explanation": "Cisimler yansıttıkları ışığın rengine göre görünür; diğer renkleri soğurabilir.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 2,
+      "explanation": "Normal, yüzeyle 90° yapar. Gelen ışın yüzeyle 50° yaptığına göre normalle 90° − 50° = 40° yapar. Gelme açısı 40° olduğundan yansıma açısı da 40°'dir."
     },
     {
       "no": 7,
       "unit": "Işığın Yansıması ve Renkler",
-      "outcome": "FB.6.4.7",
-      "skill": "Teknoloji okuryazarlığı",
-      "scenario": "Bir okul çatısına güneş paneli kurulması planlanıyor. Okul yönetimi elektrik tüketimini ve panelin gün ışığı alma süresini inceliyor.",
-      "stem": "Güneş panelinin temel işlevi hangisidir?",
+      "outcome": "FB.6.4.2",
+      "skill": "Model yorumlama",
+      "scenario": "Bir öğrenci lazer işaretçisini düz aynaya tam dik tutarak gönderiyor. Işık aynaya normal doğrultusunda çarpıyor. Öğrenci yansıyan ışının hangi yolu izlediğini merak ediyor ve şekildeki durumu inceliyor.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q07.svg",
+      "imageAlt": "Ayna yüzeyine dik gelen ve aynı yoldan geri dönen ışın",
+      "stem": "Bu durumda gelme açısı ve yansıyan ışının yolu için aşağıdakilerden hangisi doğrudur?",
       "options": [
-        "Isı enerjisini sese dönüştürmek",
-        "Güneş ışığını elektrik enerjisine dönüştürmek",
-        "Elektriği ışığa dönüştürüp depolamak",
-        "Rüzgâr enerjisi üretmek"
+        "Gelme açısı 90°'dir; ışın aynaya paralel ilerler.",
+        "Gelme açısı 0°'dir; ışın aynanın içinden geçip devam eder.",
+        "Gelme açısı 90°'dir; ışın 90° saparak yana yansır.",
+        "Gelme açısı 0°'dir; ışın geldiği yolu izleyerek geri döner."
       ],
-      "answer": 1,
-      "explanation": "Fotovoltaik paneller güneş ışığını elektrik enerjisine dönüştürür.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 3,
+      "explanation": "Işık normal doğrultusunda gelirse gelen ışın ile normal arasındaki açı 0°'dir. Yansıma açısı da 0° olacağından ışın geldiği yoldan geri döner."
     },
     {
       "no": 8,
       "unit": "Işığın Yansıması ve Renkler",
-      "outcome": "FB.6.4.3",
-      "skill": "Uygulama",
-      "scenario": "Bir oto tamircisi aracın alt bölümünü görebilmek için geniş alanı gösteren bir ayna kullanıyor.",
-      "stem": "Kullanılan aynanın türü hangisi olabilir?",
+      "outcome": "FB.6.4.2",
+      "skill": "Veri yorumlama",
+      "scenario": "Bir grup öğrenci düz aynaya ışık demetini farklı açılarla göndererek gelme ve yansıma açılarını açıölçerle ölçüyor. Ölçümleri tabloya kaydediyorlar; son deneyde yansıma açısını ölçmeyi unutuyorlar. Öğretmen, ilk üç deneyden çıkarım yaparak eksik değeri bulmalarını istiyor.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q08.svg",
+      "imageAlt": "Gelme ve yansıma açıları tablosu; dördüncü satırdaki yansıma açısı bilinmiyor",
+      "stem": "Tablodaki verilere göre çıkarım ve 4. deneyin yansıma açısı aşağıdakilerden hangisidir?",
       "options": [
-        "Tümsek ayna",
-        "Düz ayna",
-        "Çukur ayna",
-        "Saydam levha"
+        "Gelme açısı yansıma açısına eşittir; 4. deneyde yansıma açısı 70°'dir.",
+        "Yansıma açısı gelme açısından her zaman büyüktür; 4. deneyde yaklaşık 90°'dir.",
+        "Yansıma açısı gelme açısından 20° küçüktür; 4. deneyde 50°'dir.",
+        "Yansıma açısı gelme açısıyla ilgisizdir; 4. deneyde herhangi bir değer olabilir."
       ],
       "answer": 0,
-      "explanation": "Tümsek ayna geniş alanı gösterir ve güvenlikte kullanılır.",
-      "image": "",
-      "imageAlt": ""
+      "explanation": "Tablodaki ilk üç satırda gelme ve yansıma açıları eşittir. Bu ilişki her açı için geçerli olduğundan 70° gelme açısında yansıma açısı da 70°'dir."
     },
     {
       "no": 9,
       "unit": "Işığın Yansıması ve Renkler",
       "outcome": "FB.6.4.2",
-      "skill": "Açı ilişkisi",
-      "scenario": "Bir deneyde ışın aynaya normale 40° açı yapacak biçimde gönderiliyor.",
-      "stem": "Işın ile ayna yüzeyi arasındaki açı kaç derecedir?",
+      "skill": "Model yorumlama",
+      "scenario": "Hazal, sınıfta periskop modeli yapıyor. Modelde iki düz ayna, ışık yatay gelirken aşağı, sonra tekrar yatay yönde gönderecek biçimde 45° eğimle yerleştirilmiş. Bir ışık demeti Ayna 1'e normalle 45° yaparak geliyor ve şekildeki yolu izliyor.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q09.svg",
+      "imageAlt": "İki düz aynalı periskop modelinde ışığın izlediği yol",
+      "stem": "Işık demetinin yolu için aşağıdaki ifadelerden hangisi doğrudur?",
       "options": [
-        "40°",
-        "50°",
-        "80°",
-        "90°"
+        "Işık yalnızca Ayna 1'de yansır; Ayna 2'de gelme açısı 0°'dir.",
+        "Işık iki düz aynada da yansır; her yansımada gelme açısı yansıma açısına eşittir.",
+        "Işık aynalarda yansırken gelme açısı yansıma açısından büyük olur.",
+        "Işık aynaların içinden geçerek doğru bir çizgide gözlemciye ulaşır."
       ],
       "answer": 1,
-      "explanation": "Normal yüzeye diktir; ışın-normal açısı 40° ise ışın-yüzey açısı 50° olur.",
-      "image": "",
-      "imageAlt": ""
+      "explanation": "Periskopta ışık, iki düz aynadan ardışık yansıyarak yön değiştirir. Her aynada yansıma kanunu geçerlidir: gelme açısı yansıma açısına eşittir."
     },
     {
       "no": 10,
       "unit": "Işığın Yansıması ve Renkler",
-      "outcome": "FB.6.4.4",
-      "skill": "Günlük yaşam",
-      "scenario": "Bir öğrenci yazın koyu renk tişört giydiğinde açık renk tişörte göre daha fazla ısındığını gözlemliyor.",
-      "stem": "Bu gözlemin bilimsel açıklaması hangisidir?",
+      "outcome": "FB.6.4.2",
+      "skill": "Model yorumlama",
+      "scenario": "Bir öğrenci, aynaya gelen ışın ile yansıyan ışın arasındaki açıyı ölçüyor ve 80° buluyor. Daha sonra normali çizip gelen ve yansıyan ışınların normalin iki yanında simetrik olduğunu fark ediyor.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q10.svg",
+      "imageAlt": "Gelen ve yansıyan ışın arasındaki açının 80° olduğu şema",
+      "stem": "Bu durumda gelme açısı kaç derecedir?",
       "options": [
-        "Koyu renkler ışığı daha çok soğurabilir",
-        "Açık renkler ışığı tamamen yok eder",
-        "Koyu renkler ışığı her zaman geçirir",
-        "Tişörtün rengi sıcaklığı etkilemez"
+        "80°",
+        "20°",
+        "40°",
+        "100°"
       ],
-      "answer": 0,
-      "explanation": "Koyu yüzeyler gelen ışığın daha büyük bölümünü soğurarak ısınabilir.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 2,
+      "explanation": "Gelme açısı ile yansıma açısı eşittir ve toplamları gelen ve yansıyan ışın arasındaki açıya eşittir. 80° ÷ 2 = 40°."
     },
     {
       "no": 11,
       "unit": "Işığın Yansıması ve Renkler",
       "outcome": "FB.6.4.3",
-      "skill": "Görüntü özellikleri",
-      "scenario": "Bir lunapark aynasında kişinin görüntüsü düz ve olduğundan büyük görülüyor.",
-      "stem": "Bu görüntüyü oluşturabilecek ayna hangisidir?",
+      "skill": "Veri yorumlama",
+      "scenario": "Bir otomobil üreticisi, aracın yan dikiz aynası için üç ayna modelini deniyor. Mühendisler, aynı uzaklıktaki aynı cismin üç aynadaki görüntüsünün boyunu ölçüyor ve sonuçları şekle işliyor. Yan aynada sürücünün arkadaki geniş alanı görmesi isteniyor.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q11.svg",
+      "imageAlt": "Düz, çukur ve tümsek ayna ile görüntü boylarını gösteren şema",
+      "stem": "Şekle göre yan dikiz aynası için en uygun ayna ve gerekçesi hangisidir?",
       "options": [
-        "Tümsek ayna",
-        "Çukur ayna",
-        "Düz ayna",
-        "Pürüzlü metal"
+        "II numaralı ayna; içe kıvrık (çukur) olduğu için görüntü büyük oluşur ve daha geniş alan görülür.",
+        "III numaralı ayna; dışa bombeli (tümsek) olduğu için görüntü küçük ve düz oluşur, geniş görüş alanı sağlar.",
+        "I numaralı ayna; düz ayna görüntüyü küçülttüğü için geniş alan görülür.",
+        "II numaralı ayna; çukur ayna her zaman cisimden küçük görüntü verir."
       ],
       "answer": 1,
-      "explanation": "Çukur aynalar uygun uzaklıklarda büyük ve düz görüntü oluşturabilir.",
-      "image": "",
-      "imageAlt": ""
+      "explanation": "Tümsek aynada görüntü her zaman düz ve cisimden küçüktür; bu nedenle daha geniş bir alan görülür. Araç yan aynalarında bu yüzden tümsek ayna kullanılır."
     },
     {
       "no": 12,
       "unit": "Işığın Yansıması ve Renkler",
-      "outcome": "FB.6.4.2",
-      "skill": "Kanıt kullanma",
-      "scenario": "Bir öğrenci düz aynaya gönderdiği ışının yansıdıktan sonra normale göre aynı açıyı yaptığını ölçüyor.",
-      "stem": "Bu durum hangi kuralı doğrular?",
+      "outcome": "FB.6.4.3",
+      "skill": "Çıkarım yapma",
+      "scenario": "Bir alışveriş merkezinin kapalı otoparkında keskin bir viraj bulunuyor. Yönetim, sürücülerin virajın ardından gelen araçları görebilmesi için köşeye büyük bir ayna asıyor. Şekilde düz bir aynanın ve seçilen köşe aynasının sürücüye sağladığı görüş alanları karşılaştırılmıştır.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q12.svg",
+      "imageAlt": "Düz ayna ve tümsek köşe aynasının görüş alanlarının karşılaştırılması",
+      "stem": "Seçilen köşe aynası için aşağıdakilerden hangisi söylenebilir?",
       "options": [
-        "Işık her zaman dik yansır",
-        "Gelme açısı yansıma açısına eşittir",
-        "Yansıma açısı daima 90°'dir",
-        "Işık yansırken hızlanır"
+        "Çukur aynadır; görüntüleri daima büyük oluşturur ve görüş alanını genişletir.",
+        "Düz aynadır; görüntüleri cisimle aynı boyda oluşturduğu için en geniş alanı sağlar.",
+        "Tümsek aynadır; görüntüleri küçük ve düz oluşturur, geniş alanı görmeyi sağlar.",
+        "Tümsek aynadır; görüntüleri daima ters oluşturur."
       ],
-      "answer": 1,
-      "explanation": "Yansıma yasasına göre gelme ve yansıma açıları eşittir.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 2,
+      "explanation": "Köşe ve güvenlik aynalarında tümsek ayna kullanılır. Görüntü düz ve küçüktür, bu sayede daha geniş bir alan tek aynada görülebilir."
     },
     {
       "no": 13,
       "unit": "Işığın Yansıması ve Renkler",
-      "outcome": "FB.6.4.7",
-      "skill": "Eleştirel düşünme",
-      "scenario": "Bir serada gündüz güneş ışığı kullanılıyor; gece ise bitkiler için yapay aydınlatma gerekiyor.",
-      "stem": "Güneş enerjisinin kullanımındaki temel sınırlılıklardan biri hangisidir?",
+      "outcome": "FB.6.4.3",
+      "skill": "Neden-sonuç",
+      "scenario": "Diş hekimi muayenede küçük, saplı bir ayna kullanıyor. Hasta, aynayı dişin çok yakınına tuttuğunda dişin görüntüsünün dişten daha büyük ve düz göründüğünü fark ediyor. Şekilde dişin gerçek boyu ve aynadaki görüntü boyu verilmiştir.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q13.svg",
+      "imageAlt": "Çukur dişçi aynasında diş ve büyümüş görüntüsü",
+      "stem": "Diş hekiminin kullandığı ayna için aşağıdaki ifadelerden hangisi doğrudur?",
       "options": [
-        "Güneş ışığının yenilenemez olması",
-        "Üretimin hava ve gün ışığı koşullarından etkilenmesi",
-        "Güneş panellerinin ışığı soğurmaması",
-        "Elektrik üretiminin yalnız geceleri gerçekleşmesi"
+        "Çukur aynadır; cisim aynaya yakınken görüntü büyük ve düz olabilir.",
+        "Tümsek aynadır; tümsek ayna her zaman görüntüyü büyütür.",
+        "Düz aynadır; düz aynada görüntü cisimden büyük oluşur.",
+        "Tümsek aynadır; görüntü bu yüzden küçük ve düz oluşur."
       ],
-      "answer": 1,
-      "explanation": "Güneş enerjisi üretimi ışınım miktarına ve hava koşullarına bağlı olarak değişebilir.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 0,
+      "explanation": "Çukur aynada cisim aynaya yakınsa görüntü büyük ve düz olabilir; bu özellik diş hekimlerinin dişleri büyütülmüş görmesini sağlar. Düz aynada boy değişmez, tümsek aynada görüntü küçülür."
     },
     {
       "no": 14,
       "unit": "Işığın Yansıması ve Renkler",
-      "outcome": "FB.6.4.5–FB.6.4.6",
-      "skill": "Renk yorumu",
-      "scenario": "Bir beyaz kâğıt kırmızı ışık altında aydınlatılıyor.",
-      "stem": "Kâğıdın kırmızı görünmesinin en uygun açıklaması hangisidir?",
+      "outcome": "FB.6.4.3",
+      "skill": "Sınıflandırma",
+      "scenario": "Bir fen öğretmeni, günlük hayatta kullanılan aynaları sınıflandırmaları için öğrencilere kartlar dağıtıyor. Öğrenciler kartları kullanım alanı ve ayna türü olarak eşleştirip tabloyu oluşturuyor. Öğretmen, tablodaki eşleştirmelerden birinin yanlış olduğunu söylüyor.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q14.svg",
+      "imageAlt": "Dört kullanım alanı ve ayna türü eşleştirmesi tablosu",
+      "stem": "Tablodaki yanlış eşleştirme hangisidir?",
       "options": [
-        "Kırmızı ışığı yansıtması",
-        "Bütün ışığı soğurması",
-        "Kırmızı ışığı üretmesi",
-        "Işığı yalnız maviye çevirmesi"
+        "I",
+        "II",
+        "IV",
+        "III"
       ],
-      "answer": 0,
-      "explanation": "Beyaz cisim üzerine düşen ışığın renk bileşenlerini büyük ölçüde yansıtır; kırmızı ışık altında kırmızı görünür.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 3,
+      "explanation": "Market ve otopark güvenlik aynalarında geniş görüş alanı için tümsek ayna kullanılır. III numaralı satırdaki çukur ayna eşleştirmesi yanlıştır."
     },
     {
       "no": 15,
       "unit": "Işığın Yansıması ve Renkler",
-      "outcome": "FB.6.4.1",
-      "skill": "Karşılaştırma",
-      "scenario": "Bir sınıfta duvarın mat boyalı, aynanın ise parlak olduğu fark ediliyor. Her ikisi de ışığı yansıttığı hâlde yalnız aynada net görüntü oluşuyor.",
-      "stem": "Bunun nedeni hangisidir?",
+      "outcome": "FB.6.4.3",
+      "skill": "Neden-sonuç",
+      "scenario": "Bir el fenerinin yansıtıcı bölümü ampulün arkasında yer alır ve içe doğru kıvrık, parlak bir yüzeydir. Şekilde ampulden çıkıp bu yüzeye çarpan ışınların yansıdıktan sonra birbirine paralel ilerlediği gösterilmiştir. Fener bu sayede uzaktaki bir noktayı güçlü biçimde aydınlatabilmektedir.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q15.svg",
+      "imageAlt": "Çukur yansıtıcıdan çıkan paralel ışık demeti",
+      "stem": "El fenerinin yansıtıcı yüzeyi hangi ayna türüne benzer ve ışığı nasıl etkiler?",
       "options": [
-        "Duvar ışığı hiç yansıtmaz",
-        "Aynanın yüzeyi düzgün yansıma oluşturur",
-        "Duvar saydamdır",
-        "Ayna ışığı tamamen soğurur"
+        "Tümsek ayna; ışınları dağıtarak daha geniş alanı aydınlatır.",
+        "Çukur ayna; ışınları toplayarak güçlü ve düzenli bir ışık demeti oluşturur.",
+        "Düz ayna; ışınları aynı boyda görüntü oluşturacak şekilde geri gönderir.",
+        "Tümsek ayna; ışığı soğurarak ısı enerjisine dönüştürür."
       ],
       "answer": 1,
-      "explanation": "Mat duvar dağınık, ayna düzgün yansıma oluşturduğu için aynada net görüntü oluşur.",
-      "image": "",
-      "imageAlt": ""
+      "explanation": "İçe kıvrık yüzey çukur aynadır. Çukur aynalar ışığı belirli bir yönde toplayabilir; bu nedenle fener, far ve benzeri araçlarda güçlü ve düzenli ışık demeti elde etmek için kullanılır."
     },
     {
       "no": 16,
       "unit": "Işığın Yansıması ve Renkler",
-      "outcome": "FB.6.4.1",
+      "outcome": "FB.6.4.3",
       "skill": "Veri yorumlama",
-      "scenario": "Bir öğrenci aynı el fenerini önce düz aynaya, sonra buruşturulmuş alüminyum folyoya tutuyor. Aynada ışık belirli yönde, folyoda farklı yönlere dağılıyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Bu araştırmanın bulgularına göre hangi açıklama bilimsel olarak desteklenir? Bu gözlem hangi sonucu destekler?",
+      "scenario": "Bir öğrenci, boyu 8 cm olan bir oyuncağı aynı uzaklıkta K, L ve M aynalarının önüne koyuyor. Görüntülerin boyunu ve durumunu ölçerek tabloya yazıyor. Aynalardan biri düz, biri çukur, biri tümsek aynadır.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q16.svg",
+      "imageAlt": "Üç aynanın cisim ve görüntü boylarını gösteren tablo",
+      "stem": "Tablodaki verilere göre K, L ve M aynalarının türleri sırasıyla hangisidir?",
       "options": [
-        "Her yüzey ışığı aynı biçimde yansıtır",
-        "Düzgün yüzey düzgün, pürüzlü yüzey dağınık yansıma oluşturur",
-        "Pürüzlü yüzey ışığı tamamen soğurur",
-        "Yansıma yalnız aynalarda gerçekleşir"
+        "K: tümsek, L: düz, M: çukur",
+        "K: çukur, L: düz, M: tümsek",
+        "K: düz, L: tümsek, M: çukur",
+        "K: düz, L: çukur, M: tümsek"
       ],
-      "answer": 1,
-      "explanation": "Düz yüzeyde yansıma düzenli, pürüzlü yüzeyde farklı yönlere dağılmıştır.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 2,
+      "explanation": "Düz aynada görüntü cisimle aynı boydadır (K). Tümsek aynada görüntü daima küçüktür (L). Çukur aynada cisim yakınken görüntü büyük ve düz olabilir (M)."
     },
     {
       "no": 17,
       "unit": "Işığın Yansıması ve Renkler",
-      "outcome": "FB.6.4.2",
-      "skill": "Kanıta dayalı çıkarım",
-      "scenario": "Fen laboratuvarında ışınların düz aynaya farklı açılarla gönderildiği deneyde gelme açısı 25° ölçülüyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Verilen gözlem ve ölçümler dikkate alındığında hangi sonuç çıkarılmalıdır? Yansıma açısının kaç derece olması beklenir?",
+      "outcome": "FB.6.4.4",
+      "skill": "Grafik okuma",
+      "scenario": "Yiğit, aynı büyüklükteki iki kaba eşit miktarda ve aynı sıcaklıkta su koyuyor. Birini siyah, diğerini beyaz kâğıtla kaplıyor ve ikisini aynı lambanın altında, lambadan aynı uzaklıkta bekletiyor. Her 5 dakikada bir sıcaklıkları ölçüp grafiğe işliyor.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q17.svg",
+      "imageAlt": "Siyah ve beyaz kâğıtlı kapların sıcaklık-zaman grafiği",
+      "stem": "Grafiğe göre aşağıdaki çıkarımlardan hangisi yapılabilir?",
       "options": [
-        "15°",
-        "25°",
-        "50°",
-        "65°"
+        "Beyaz yüzey ışığın daha büyük bölümünü soğurduğu için su daha çok ısınmıştır.",
+        "Siyah ve beyaz yüzeyler ışığı aynı oranda soğurduğundan sıcaklık artışı aynıdır.",
+        "Siyah yüzey ışığın daha büyük bölümünü soğurduğu için su daha çok ısınmıştır.",
+        "Beyaz yüzey ışığı hiç yansıtmadığı için sıcaklık yükselmemiştir."
       ],
-      "answer": 1,
-      "explanation": "Yansıma açısı, normale göre ölçülen gelme açısına eşittir.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 2,
+      "explanation": "Koyu renkli yüzeyler gelen ışığın daha büyük kısmını soğurur; soğurulan enerji sıcaklığı artırır. Grafikte siyah kaplı kabın sıcaklığı daha hızlı artmıştır."
     },
     {
       "no": 18,
       "unit": "Işığın Yansıması ve Renkler",
-      "outcome": "FB.6.4.3",
-      "skill": "Bilimsel açıklama",
-      "scenario": "Bir mağaza sahibi dar koridorun daha geniş görünmesi ve daha geniş alanın izlenmesi için farklı aynaları karşılaştırıyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Bu durumun nedenini açıklayan en uygun bilimsel ifade hangisidir? Koridorun daha geniş bir alanını göstermek için hangi ayna uygundur?",
+      "outcome": "FB.6.4.4",
+      "skill": "Veri yorumlama",
+      "scenario": "Bir öğrenci, aynı boyutta dört özdeş bardağı siyah, kırmızı, sarı ve beyaz kâğıtla kaplıyor. Bardaklara 20 °C'de eşit miktarda su koyup güneşli bir pencere önünde 30 dakika bekletiyor. Sonrasında sudaki sıcaklıkları ölçüp sütun grafiğiyle gösteriyor.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q18.svg",
+      "imageAlt": "Dört renkli bardaktaki suyun son sıcaklığını gösteren sütun grafiği",
+      "stem": "Grafiğe göre ışığı en çok ve en az soğuran bardaklar sırasıyla hangileridir?",
       "options": [
-        "Düz ayna",
-        "Çukur ayna",
-        "Tümsek ayna",
-        "Bütün aynalar aynı görüntüyü verir"
+        "Beyaz ve siyah",
+        "Kırmızı ve sarı",
+        "Sarı ve kırmızı",
+        "Siyah ve beyaz"
       ],
-      "answer": 2,
-      "explanation": "Tümsek aynalar geniş görüş alanı sağlar; görüntü düz ve küçüktür.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 3,
+      "explanation": "Sıcaklık artışı en fazla olan siyah bardak ışığı en çok soğurmuştur. Sıcaklığı en az artan beyaz bardak ise ışığı en çok yansıttığı için en az soğurmuştur."
     },
     {
       "no": 19,
       "unit": "Işığın Yansıması ve Renkler",
       "outcome": "FB.6.4.4",
-      "skill": "Karşılaştırma",
-      "scenario": "Aynı büyüklükte iki metal levhadan siyah olanı ve beyaz olanı Güneş altında bekletiliyor. Bir süre sonra siyah levhanın sıcaklığı daha fazla artıyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Öğrencilerin ulaştığı sonucu hangi seçenek doğru açıklar? Bu durumun temel nedeni nedir?",
+      "skill": "Deney tasarlama",
+      "scenario": "Zeynep, kap rengine bağlı olarak suyun ışığı ne kadar soğurup ısındığını araştırmak istiyor. Dört düzenek hazırlıyor ve düzeneklerin özelliklerini tabloya yazıyor. Tüm kaplar özdeş, suların başlangıç sıcaklığı aynı ve lambalar özdeştir. Zeynep yalnızca iki düzeneği karşılaştıracak.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q19.svg",
+      "imageAlt": "Dört deney düzeneğinin kap rengi, su miktarı ve lambaya uzaklığını gösteren tablo",
+      "stem": "Zeynep'in amacına uygun, adil bir karşılaştırma yapabilmesi için hangi iki düzeneği kullanmalıdır?",
       "options": [
-        "Siyah yüzey ışığı daha fazla soğurur",
-        "Beyaz yüzey ışık üretir",
-        "Siyah yüzey ışığı tamamen geçirir",
-        "Renk sıcaklığı etkilemez"
+        "1 ve 2",
+        "1 ve 3",
+        "2 ve 4",
+        "3 ve 4"
       ],
       "answer": 0,
-      "explanation": "Koyu renkli yüzeyler ışık enerjisinin daha büyük bölümünü soğurabilir.",
-      "image": "",
-      "imageAlt": ""
+      "explanation": "Kap rengi dışındaki tüm değişkenler sabit tutulmalıdır. Yalnızca 1 ve 2 numaralı düzeneklerde su miktarı ve lambaya uzaklık aynıdır; fark yalnızca kap rengidir."
     },
     {
       "no": 20,
       "unit": "Işığın Yansıması ve Renkler",
-      "outcome": "FB.6.4.5–FB.6.4.6",
-      "skill": "Problem çözme",
-      "scenario": "Bir öğrenci cam prizmadan geçirilen beyaz ışığın ekranda farklı renklerden oluşan bir şerit oluşturduğunu gözlemliyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Kanıtlara dayalı değerlendirme yapıldığında hangi yargıya ulaşılır? Bu deney hangi çıkarımı destekler?",
+      "outcome": "FB.6.4.4",
+      "skill": "Neden-sonuç",
+      "scenario": "Bir evin çatısındaki güneş kolektörü, güneş ışığıyla kullanım suyunu ısıtıyor. Kolektörün içindeki borular ve levha siyah renge boyanmıştır. Mühendis, aynı sistemde boruların beyaza boyanması hâlinde suyun daha az ısınacağını söylüyor.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q20.svg",
+      "imageAlt": "Siyah borulu güneş kolektörü ve sıcak su deposu",
+      "stem": "Boruların siyah boyanmasının amacı aşağıdakilerden hangisidir?",
       "options": [
-        "Beyaz ışık yalnızca sarıdır",
-        "Beyaz ışık farklı renklerin birleşiminden oluşur",
-        "Prizma ışık üretir",
-        "Renkler yalnız karanlıkta oluşur"
+        "Siyah yüzey güneş ışığını daha çok yansıtır; bu da suyun daha çok ısınmasını sağlar.",
+        "Siyah yüzey ışığı soğurmaz; boruların sıcaklığı yalnızca havadan etkilenir.",
+        "Siyah yüzey güneş ışığının daha büyük bölümünü soğurur; bu da suyun daha çok ısınmasını sağlar.",
+        "Siyah renk ışığın soğurulmasını azaltarak suyu soğuk tutar."
       ],
-      "answer": 1,
-      "explanation": "Prizma beyaz ışığı bileşen renklerine ayırabilir.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 2,
+      "explanation": "Koyu renkli yüzeyler ışığı daha çok soğurur. Soğurulan ışık enerjisi sıcaklığı artırdığı için güneş kolektörlerinde siyah yüzeyler kullanılır."
     },
     {
       "no": 21,
       "unit": "Işığın Yansıması ve Renkler",
-      "outcome": "FB.6.4.5–FB.6.4.6",
-      "skill": "Veri yorumlama",
-      "scenario": "Kırmızı bir elma beyaz ışık altında kırmızı görünürken yeşil ışık altında koyu görünmektedir. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Bu araştırmanın bulgularına göre hangi açıklama bilimsel olarak desteklenir? Elmanın beyaz ışıkta kırmızı görünmesinin nedeni nedir?",
+      "outcome": "FB.6.4.5",
+      "skill": "Model yorumlama",
+      "scenario": "Bir fen etkinliğinde öğrenciler, beyaz ışık demetini cam prizmaya gönderiyor ve arkasına yerleştirdikleri perdede renkli bir şerit görüyorlar. Öğrenciler görsel bir model olarak prizmadan çıkan ışığın perdedeki renk sırasını çiziyor. Gökkuşağının da benzer bir olayla oluştuğunu öğreniyorlar.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q21.svg",
+      "imageAlt": "Beyaz ışığın prizmada renklerine ayrılması",
+      "stem": "Bu etkinlikten hangi sonuç çıkarılır?",
       "options": [
-        "Bütün renkleri eşit yansıtması",
-        "Kırmızı ışığı yansıtıp diğer renklerin çoğunu soğurması",
-        "Kendi ışığını üretmesi",
-        "Işığı tamamen geçirmesi"
+        "Prizma ışığa renk ekler; beyaz ışığın içinde renk yoktur.",
+        "Beyaz ışık yalnızca kırmızı ışıktan oluşur.",
+        "Renkler perdede boyandığı için oluşur, ışıkla ilgisi yoktur.",
+        "Beyaz ışık tek renk değildir; birçok renkli ışığın birleşiminden oluşur."
       ],
-      "answer": 1,
-      "explanation": "Cisimler yansıttıkları ışığın rengine göre görünür; diğer renkleri soğurabilir.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 3,
+      "explanation": "Beyaz ışığın prizmadan geçince renklere ayrılması, beyaz ışığın birçok renkli ışıktan oluştuğunu gösterir. Gökkuşağı da bu olayın doğadaki örneğidir."
     },
     {
       "no": 22,
       "unit": "Işığın Yansıması ve Renkler",
-      "outcome": "FB.6.4.7",
-      "skill": "Kanıta dayalı çıkarım",
-      "scenario": "Bir okul çatısına güneş paneli kurulması planlanıyor. Okul yönetimi elektrik tüketimini ve panelin gün ışığı alma süresini inceliyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Verilen gözlem ve ölçümler dikkate alındığında hangi sonuç çıkarılmalıdır? Güneş panelinin temel işlevi hangisidir?",
+      "outcome": "FB.6.4.5",
+      "skill": "Çıkarım yapma",
+      "scenario": "Ahmet, kartondan yedi eşit bölmeli bir disk yapıp bölmeleri gökkuşağındaki ışık renkleriyle boyuyor. Diski bir matkabın ucuna takarak çok hızlı döndürüyor. Durgun hâlde renkli görünen disk, hızlı dönerken gözlerimizde farklı bir görünüm oluşturuyor.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q22.svg",
+      "imageAlt": "Yedi renkli durgun disk ve hızlı döndürüldüğünde görünümü",
+      "stem": "Hızlı dönen diskin görünümü ve bu etkinlikten çıkarılacak sonuç aşağıdakilerden hangisidir?",
       "options": [
-        "Isı enerjisini sese dönüştürmek",
-        "Güneş ışığını elektrik enerjisine dönüştürmek",
-        "Elektriği ışığa dönüştürüp depolamak",
-        "Rüzgâr enerjisi üretmek"
+        "Disk siyah görünür; renklerin birbirini yok ettiği anlaşılır.",
+        "Disk tek bir renkte, kırmızı görünür; en çok kırmızı ışık vardır.",
+        "Disk hiç renk değiştirmez; hızın görünüme etkisi yoktur.",
+        "Disk beyaza yakın görünür; beyaz ışığın renklerin birleşiminden oluştuğu desteklenir."
       ],
-      "answer": 1,
-      "explanation": "Fotovoltaik paneller güneş ışığını elektrik enerjisine dönüştürür.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 3,
+      "explanation": "Renkler hızlı dönüşte gözümüzde birleşir ve disk beyaza yakın görünür. Bu da beyaz ışığın farklı renklerin birleşimi olduğu çıkarımını destekler."
     },
     {
       "no": 23,
       "unit": "Işığın Yansıması ve Renkler",
-      "outcome": "FB.6.4.3",
-      "skill": "Bilimsel açıklama",
-      "scenario": "Bir oto tamircisi aracın alt bölümünü görebilmek için geniş alanı gösteren bir ayna kullanıyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Bu durumun nedenini açıklayan en uygun bilimsel ifade hangisidir? Kullanılan aynanın türü hangisi olabilir?",
+      "outcome": "FB.6.4.6",
+      "skill": "Model yorumlama",
+      "scenario": "Bir sınıfta öğretmen, beyaz ışıkla aydınlatılan kırmızı elmayı gözlemleyen öğrencilerden elmanın neden kırmızı göründüğünü açıklamalarını istiyor. Şekilde elmaya gelen beyaz ışık ve elmadan gözlemciye ulaşan ışık gösterilmiştir.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q23.svg",
+      "imageAlt": "Beyaz ışıkta kırmızı elmanın yansıttığı ve soğurduğu ışıklar",
+      "stem": "Elmanın kırmızı görünmesinin nedeni aşağıdakilerden hangisidir?",
       "options": [
-        "Tümsek ayna",
-        "Düz ayna",
-        "Çukur ayna",
-        "Saydam levha"
+        "Elma kırmızı ışığı yansıtır, diğer renklerin büyük bölümünü soğurur.",
+        "Elma tüm renkleri yansıttığı için kırmızı görünür.",
+        "Elma kırmızı ışığı soğurur, diğer renkleri yansıtır.",
+        "Elma kendi ışığını üretir ve bu ışık kırmızıdır."
       ],
       "answer": 0,
-      "explanation": "Tümsek ayna geniş alanı gösterir ve güvenlikte kullanılır.",
-      "image": "",
-      "imageAlt": ""
+      "explanation": "Cisimlerin rengi yansıttıkları ışığın rengine bağlıdır. Kırmızı elma beyaz ışıktaki kırmızıyı yansıtır, diğer renkleri büyük ölçüde soğurur."
     },
     {
       "no": 24,
       "unit": "Işığın Yansıması ve Renkler",
-      "outcome": "FB.6.4.2",
-      "skill": "Karşılaştırma",
-      "scenario": "Bir deneyde ışın aynaya normale 40° açı yapacak biçimde gönderiliyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Öğrencilerin ulaştığı sonucu hangi seçenek doğru açıklar? Işın ile ayna yüzeyi arasındaki açı kaç derecedir?",
+      "outcome": "FB.6.4.6",
+      "skill": "Veri yorumlama",
+      "scenario": "Bir tiyatro sahnesinde yalnızca kırmızı ışık veren bir spot kullanılacak. Kostüm tasarımcısı, farklı renkli cisimlerin beyaz ışıkta ve kırmızı ışıkta nasıl görüneceğini tabloya yazıyor. Yeşil yaprak ve mavi tişört için kırmızı ışıktaki görünümleri henüz yazılmamıştır.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q24.svg",
+      "imageAlt": "Cisimlerin beyaz ve kırmızı ışıkta görünen renklerini gösteren tablo",
+      "stem": "Tablodaki I ve II ile gösterilen görünümler sırasıyla aşağıdakilerden hangisidir?",
       "options": [
-        "40°",
-        "50°",
-        "80°",
-        "90°"
+        "Yeşil – mavi",
+        "Kırmızı – kırmızı",
+        "Koyu (siyaha yakın) – koyu (siyaha yakın)",
+        "Beyaz – beyaz"
       ],
-      "answer": 1,
-      "explanation": "Normal yüzeye diktir; ışın-normal açısı 40° ise ışın-yüzey açısı 50° olur.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 2,
+      "explanation": "Yeşil yaprak yalnızca yeşil ışığı, mavi tişört yalnızca mavi ışığı yansıtır. Üzerlerine yalnızca kırmızı ışık düştüğünde yansıtacak ışık olmadığı için ikisi de koyu görünür."
     },
     {
       "no": 25,
       "unit": "Işığın Yansıması ve Renkler",
-      "outcome": "FB.6.4.4",
-      "skill": "Problem çözme",
-      "scenario": "Bir öğrenci yazın koyu renk tişört giydiğinde açık renk tişörte göre daha fazla ısındığını gözlemliyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Kanıtlara dayalı değerlendirme yapıldığında hangi yargıya ulaşılır? Bu gözlemin bilimsel açıklaması hangisidir?",
+      "outcome": "FB.6.4.6",
+      "skill": "Tahmin yürütme",
+      "scenario": "Karanlık bir odada yalnızca yeşil ışık veren bir spot, kırmızı, mavi ve yeşil üç topu aydınlatıyor. Toplar beyaz ışık altında kendi renklerinde görünüyor. Öğrenciler yeşil ışıkta topların nasıl görüneceğini tahmin etmeye çalışıyor.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q25.svg",
+      "imageAlt": "Yeşil ışıklı spotun kırmızı, mavi ve yeşil topları aydınlatması",
+      "stem": "Aşağıdaki tahminlerden hangisi doğrudur?",
       "options": [
-        "Koyu renkler ışığı daha çok soğurabilir",
-        "Açık renkler ışığı tamamen yok eder",
-        "Koyu renkler ışığı her zaman geçirir",
-        "Tişörtün rengi sıcaklığı etkilemez"
+        "Yeşil top yeşil görünür; kırmızı ve mavi toplar koyu (siyaha yakın) görünür.",
+        "Üç top da kendi renklerinde görünür.",
+        "Kırmızı top kırmızı, yeşil top koyu görünür.",
+        "Üç top da yeşil görünür."
       ],
       "answer": 0,
-      "explanation": "Koyu yüzeyler gelen ışığın daha büyük bölümünü soğurarak ısınabilir.",
-      "image": "",
-      "imageAlt": ""
+      "explanation": "Bir cisim yalnızca kendi rengindeki ışığı yansıtır. Yeşil ışıkta yalnızca yeşil top yansıtacak ışık bulur; kırmızı ve mavi toplar ışığı soğurduğu için koyu görünür."
     },
     {
       "no": 26,
       "unit": "Işığın Yansıması ve Renkler",
-      "outcome": "FB.6.4.3",
-      "skill": "Veri yorumlama",
-      "scenario": "Bir lunapark aynasında kişinin görüntüsü düz ve olduğundan büyük görülüyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Bu araştırmanın bulgularına göre hangi açıklama bilimsel olarak desteklenir? Bu görüntüyü oluşturabilecek ayna hangisidir?",
+      "outcome": "FB.6.4.6",
+      "skill": "Neden-sonuç",
+      "scenario": "Elif ve Mert aynı gün güneşli havada dışarıda bekliyorlar. Elif beyaz, Mert siyah tişört giymiş. Bir süre sonra Mert tişörtünün çok ısındığını söylüyor; Elif'in tişörtü ise belirgin biçimde daha serin kalıyor. Öğretmen olayı şekildeki modelle açıklıyor.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q26.svg",
+      "imageAlt": "Beyaz ve siyah kumaşta ışığın yansıması ve soğurulması",
+      "stem": "Bu durum ve cisimlerin renkli görünmesi için aşağıdakilerden hangisi doğrudur?",
       "options": [
-        "Tümsek ayna",
-        "Çukur ayna",
-        "Düz ayna",
-        "Pürüzlü metal"
+        "Siyah cisim ışığın büyük bölümünü yansıtır, beyaz cisim soğurur.",
+        "Beyaz cisim ışığın büyük bölümünü yansıtır, siyah cisim büyük bölümünü soğurur.",
+        "İki cisim de ışığı aynı oranda soğurur; ısınma farkı yalnızca terden kaynaklanır.",
+        "Beyaz cisim ışığın hiçbirini yansıtmaz, siyah cisim ışığın hepsini yansıtır."
       ],
       "answer": 1,
-      "explanation": "Çukur aynalar uygun uzaklıklarda büyük ve düz görüntü oluşturabilir.",
-      "image": "",
-      "imageAlt": ""
+      "explanation": "Beyaz yüzey gelen ışığın büyük bölümünü yansıttığı için daha az ısınır. Siyah yüzey ışığın büyük bölümünü soğurduğu için daha çok ısınır ve gözümüze çok az ışık ulaştırır."
     },
     {
       "no": 27,
       "unit": "Işığın Yansıması ve Renkler",
-      "outcome": "FB.6.4.2",
-      "skill": "Kanıta dayalı çıkarım",
-      "scenario": "Bir öğrenci düz aynaya gönderdiği ışının yansıdıktan sonra normale göre aynı açıyı yaptığını ölçüyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Verilen gözlem ve ölçümler dikkate alındığında hangi sonuç çıkarılmalıdır? Bu durum hangi kuralı doğrular?",
+      "outcome": "FB.6.4.7",
+      "skill": "Çıkarım yapma",
+      "scenario": "Bir okulun çatısında iki farklı güneş enerjisi cihazı bulunuyor. A cihazı okulun lambalarını ve bilgisayarlarını çalıştıran elektriği üretiyor, B cihazı ise okul lavabolarında kullanılan suyu ısıtıyor. Okul müdürü hangi cihazın hangi amaca hizmet ettiğini öğrencilere soruyor.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q27.svg",
+      "imageAlt": "Çatıdaki elektrik üreten güneş paneli ve su ısıtan kolektör",
+      "stem": "A ve B cihazları sırasıyla aşağıdakilerden hangisidir?",
       "options": [
-        "Işık her zaman dik yansır",
-        "Gelme açısı yansıma açısına eşittir",
-        "Yansıma açısı daima 90°'dir",
-        "Işık yansırken hızlanır"
+        "A: güneş kolektörü, B: güneş paneli",
+        "A: güneş paneli, B: güneş paneli",
+        "A: güneş kolektörü, B: güneş kolektörü",
+        "A: güneş paneli, B: güneş kolektörü"
       ],
-      "answer": 1,
-      "explanation": "Yansıma yasasına göre gelme ve yansıma açıları eşittir.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 3,
+      "explanation": "Güneş panelleri ışık enerjisini elektrik enerjisine dönüştürür. Güneş kolektörleri ise suyu veya başka bir akışkanı ısıtmak için kullanılır."
     },
     {
       "no": 28,
       "unit": "Işığın Yansıması ve Renkler",
       "outcome": "FB.6.4.7",
-      "skill": "Bilimsel açıklama",
-      "scenario": "Bir serada gündüz güneş ışığı kullanılıyor; gece ise bitkiler için yapay aydınlatma gerekiyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Bu durumun nedenini açıklayan en uygun bilimsel ifade hangisidir? Güneş enerjisinin kullanımındaki temel sınırlılıklardan biri hangisidir?",
+      "skill": "Grafik okuma",
+      "scenario": "Bir ailenin evindeki çatı güneş paneli, yıl boyunca her ay ürettiği elektriği kaydediyor. Aile, yıllık veriyi sütun grafiğiyle gösteriyor. Aile, Ocak–Aralık aylarındaki üretimi karşılaştırarak güneş enerjisinin kullanımına ilişkin bir değerlendirme yapacak.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q28.svg",
+      "imageAlt": "Güneş panelinin aylık elektrik üretimini gösteren sütun grafiği",
+      "stem": "Grafiğe göre güneş enerjisi için aşağıdaki yargılardan hangisi doğru bir yorumdur?",
       "options": [
-        "Güneş ışığının yenilenemez olması",
-        "Üretimin hava ve gün ışığı koşullarından etkilenmesi",
-        "Güneş panellerinin ışığı soğurmaması",
-        "Elektrik üretiminin yalnız geceleri gerçekleşmesi"
+        "Üretim mevsime göre değişir; yaz aylarında kış aylarına göre daha fazladır.",
+        "Üretim her ay aynıdır; mevsimlerin etkisi yoktur.",
+        "En yüksek üretim kış aylarındadır.",
+        "Güneş paneli yalnızca Temmuz ayında elektrik üretir."
       ],
-      "answer": 1,
-      "explanation": "Güneş enerjisi üretimi ışınım miktarına ve hava koşullarına bağlı olarak değişebilir.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 0,
+      "explanation": "Grafikte üretim kış aylarında düşük, yaz aylarında yüksektir. Güneş enerjisi üretimi gün uzunluğu, ışığın geliş durumu ve hava koşullarına bağlı olarak mevsime göre değişir."
     },
     {
       "no": 29,
       "unit": "Işığın Yansıması ve Renkler",
-      "outcome": "FB.6.4.5–FB.6.4.6",
-      "skill": "Karşılaştırma",
-      "scenario": "Bir beyaz kâğıt kırmızı ışık altında aydınlatılıyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Öğrencilerin ulaştığı sonucu hangi seçenek doğru açıklar? Kâğıdın kırmızı görünmesinin en uygun açıklaması hangisidir?",
+      "outcome": "FB.6.4.7",
+      "skill": "Eleştirel düşünme",
+      "scenario": "Bir belediye, sokak aydınlatmasını güneş panelleriyle yapmayı planlıyor. Mühendisler, aynı panelin açık ve bulutlu iki günde saatlere göre ürettiği gücü ölçüp grafiğe dönüştürüyor. Belediye, projeyi gece de çalışacak şekilde planlamak istiyor.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q29.svg",
+      "imageAlt": "Açık ve bulutlu günde güç üretimini saatlere göre gösteren grafik",
+      "stem": "Grafikten yararlanarak belediyenin projeyi başarılı kılmak için dikkate alması gereken en uygun çözüm aşağıdakilerden hangisidir?",
       "options": [
-        "Kırmızı ışığı yansıtması",
-        "Bütün ışığı soğurması",
-        "Kırmızı ışığı üretmesi",
-        "Işığı yalnız maviye çevirmesi"
+        "Panelleri geceleri de aynı güçle çalışacağı için ek bir sisteme gerek duymamak.",
+        "Gündüz üretilen enerjiyi depolayıp geceleri kullanmak için bir enerji depolama sistemi kurmak.",
+        "Bulutlu havada panellerin üretiminin daha yüksek olacağını varsaymak.",
+        "Panellerin yalnızca öğle saatlerinde çalıştığını varsayarak aydınlatmayı yalnızca o saatlere ayarlamak."
       ],
-      "answer": 0,
-      "explanation": "Beyaz cisim üzerine düşen ışığın renk bileşenlerini büyük ölçüde yansıtır; kırmızı ışık altında kırmızı görünür.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 1,
+      "explanation": "Grafik, gece güneş enerjisinin üretilmediğini ve bulutlu havada üretimin düştüğünü gösterir. Gece aydınlatma için gündüz üretilen enerji depolanmalıdır."
     },
     {
       "no": 30,
       "unit": "Işığın Yansıması ve Renkler",
-      "outcome": "FB.6.4.1",
-      "skill": "Problem çözme",
-      "scenario": "Bir sınıfta duvarın mat boyalı, aynanın ise parlak olduğu fark ediliyor. Her ikisi de ışığı yansıttığı hâlde yalnız aynada net görüntü oluşuyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Kanıtlara dayalı değerlendirme yapıldığında hangi yargıya ulaşılır? Bunun nedeni hangisidir?",
+      "outcome": "FB.6.4.7",
+      "skill": "Eleştirel düşünme",
+      "scenario": "Bir okul, kantin binasının çatısına güneş paneli kurmayı tartışıyor. Fen kulübü öğrencileri, panelli sistemin yararlarını, sınırlılıklarını ve dikkat edilecek noktalarını tabloya yazıyor. Okul yönetimi, kararı vermeden önce öğrencilerden bilimsel bir değerlendirme bekliyor.",
+      "image": "/denemeler/6-4-unite-yeni-nesil/q30.svg",
+      "imageAlt": "Güneş paneli sisteminin yararları, sınırlılıkları ve dikkat edilecekleri tablosu",
+      "stem": "Aşağıdaki değerlendirmelerden hangisi tablodaki bilgilerle en uyumludur?",
       "options": [
-        "Duvar ışığı hiç yansıtmaz",
-        "Aynanın yüzeyi düzgün yansıma oluşturur",
-        "Duvar saydamdır",
-        "Ayna ışığı tamamen soğurur"
+        "Güneş paneli yararlıdır ancak üretim koşullara bağlıdır; depolama, maliyet ve geri dönüşüm de birlikte değerlendirilmelidir.",
+        "Güneş paneli her koşulda sürekli ve sınırsız enerji üretir; başka hiçbir noktaya bakmaya gerek yoktur.",
+        "Güneş paneli gece de gündüzle aynı verimle çalıştığı için depolamaya gerek duymaz.",
+        "Güneş enerjisi yalnızca zararlıdır; hiçbir yararı yoktur."
       ],
-      "answer": 1,
-      "explanation": "Mat duvar dağınık, ayna düzgün yansıma oluşturduğu için aynada net görüntü oluşur.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 0,
+      "explanation": "Bir teknolojiyi değerlendirirken yararları kadar sınırlılıkları, maliyeti ve çevresel etkileri de dikkate almak gerekir. Güneş paneli yenilenebilirdir ama üretim koşullara bağlıdır ve depolama gerektirebilir."
     }
   ]
 }

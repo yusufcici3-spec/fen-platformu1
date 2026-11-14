@@ -16,6 +16,13 @@ interface ClassDetail {
   units: (UnitSummary & { topics: TopicSummary[] })[];
 }
 
+const GRADE6_EXAMS: Record<string, string> = {
+  "isigin-yansimasi-ve-renkler": "6-sinif-4-unite-yeni-nesil-30",
+  "maddenin-ayirt-edici-ozellikleri": "6-sinif-5-unite-yeni-nesil-30",
+  "elektrigin-iletimi-ve-direnc": "6-sinif-6-unite-yeni-nesil-30",
+  "surdurulebilir-yasam-ve-etkilesim": "6-sinif-7-unite-yeni-nesil-30",
+};
+
 export async function generateMetadata({ params }: { params: { level: string; unitSlug: string } }) {
   return { title: `${params.level}. Sınıf Ünite İçeriği` };
 }
@@ -29,6 +36,7 @@ export default async function UnitPage({ params }: { params: { level: string; un
       <>
         <PageHeader eyebrow={`${level}. Sınıf · Ünite ${staticUnit.code}`} title={staticUnit.title} description={staticUnit.description} />
         <section className="mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
+          {level === 6 && GRADE6_EXAMS[staticUnit.slug] && <div className="mb-8 rounded-3xl border-2 border-beaker/40 bg-beaker/10 p-6 shadow-lg"><p className="text-sm font-bold uppercase tracking-wider text-beaker">6. Sınıf • Ünite soru bankası</p><h2 className="mt-2 text-2xl font-extrabold text-lab-ink dark:text-lab-paper">Bu üniteden 30 görselli soru çöz</h2><p className="mt-2 text-sm text-lab-inkMuted dark:text-lab-paper/70">Uzun senaryolu, görselli yeni nesil sorularla öğrendiklerini pekiştir.</p><Link href={`/denemeler/yeni-nesil/${GRADE6_EXAMS[staticUnit.slug]}`} className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-beaker px-6 py-4 text-base font-extrabold text-white shadow-md transition hover:bg-beaker-dark sm:w-auto">📝 30 Yeni Nesil Soruya Başla <span aria-hidden="true">→</span></Link></div>}
           {level === 5 && <div className="mb-8 rounded-3xl border-2 border-beaker/40 bg-beaker/10 p-6 shadow-lg"><p className="text-sm font-bold uppercase tracking-wider text-beaker">5. Sınıf • Ünite soru bankası</p><h2 className="mt-2 text-2xl font-extrabold text-lab-ink dark:text-lab-paper">Bu üniteden 30 soru çöz</h2><p className="mt-2 text-sm text-lab-inkMuted dark:text-lab-paper/70">Maarif Modeli kazanımlarına uygun 30 soruyla öğrendiklerini pekiştir.</p><Link href={`/sinif/5/${staticUnit.slug}/soru-coz`} className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-beaker px-6 py-4 text-base font-extrabold text-white shadow-md transition hover:bg-beaker-dark sm:w-auto">📝 30 Yeni Nesil Soruya Başla <span aria-hidden="true">→</span></Link></div>}
           {level===6&&["isigin-yansimasi-ve-renkler","maddenin-ayirt-edici-ozellikleri","elektrigin-iletimi-ve-direnc","surdurulebilir-yasam-ve-etkilesim"].includes(staticUnit.slug)&&<div className="mb-6 rounded-3xl border-2 border-beaker/40 bg-beaker/10 p-6 shadow-lg"><p className="text-sm font-bold uppercase tracking-wider text-beaker">6. Sınıf • Ünite soru bankası</p><h2 className="mt-2 text-2xl font-extrabold text-lab-ink dark:text-lab-paper">Bu üniteden 30 soru çöz</h2><p className="mt-2 text-sm text-lab-inkMuted dark:text-lab-paper/70">Maarif Modeli kazanımlarına uygun görsel destekli yeni nesil sorular.</p><Link href={`/sinif/6/${staticUnit.slug}/soru-coz`} className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-beaker px-6 py-4 text-base font-extrabold text-white shadow-md transition hover:bg-beaker-dark sm:w-auto">📝 30 Yeni Nesil Soruya Başla →</Link></div>}
           {level===7&&["isigin-kirilmasi-ve-mercekler","maddenin-dogasina-yolculuk","elektriklenme","surdurulebilir-yasam-ve-geri-donusum"].includes(staticUnit.slug)&&<div className="mb-6 rounded-3xl border-2 border-beaker/40 bg-beaker/10 p-6 shadow-lg"><p className="text-sm font-bold uppercase tracking-wider text-beaker">7. Sınıf • Ünite soru bankası</p><h2 className="mt-2 text-2xl font-extrabold text-lab-ink dark:text-lab-paper">Bu üniteden 30 soru çöz</h2><p className="mt-2 text-sm text-lab-inkMuted dark:text-lab-paper/70">Maarif Modeli kazanımlarına uygun, senaryolu ve görsel destekli yeni nesil sorular.</p><Link href={`/sinif/7/${staticUnit.slug}/soru-coz`} className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-beaker px-6 py-4 text-base font-extrabold text-white shadow-md transition hover:bg-beaker-dark sm:w-auto">📝 30 Yeni Nesil Soruya Başla →</Link></div>}
