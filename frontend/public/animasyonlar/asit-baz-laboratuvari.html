@@ -2,7 +2,30 @@
 <html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Asit-Baz Ayraç Laboratuvarı</title>
 <style>
 *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:#f4f7fb;color:#17243d}.app{max-width:1100px;margin:auto;padding:18px}.top{padding:22px;border-radius:22px;background:linear-gradient(120deg,#172554,#2563a6);color:white}.top small{font-weight:800;letter-spacing:.12em;color:#b8d8ff}.top h1{margin:8px 0;font-size:clamp(24px,4vw,36px)}.top p{margin:0;color:#d7e8ff;line-height:1.55}.layout{display:grid;grid-template-columns: minmax(250px,.8fr) minmax(300px,1.2fr);gap:16px;margin-top:16px}.card{background:white;border:1px solid #dce5f0;border-radius:18px;padding:18px;box-shadow:0 8px 24px #1b35500b}.card h2{font-size:18px;margin:0 0 14px}.field{display:grid;gap:7px;margin:12px 0}.field label{font-size:13px;font-weight:800;color:#53627a}select,button{font:inherit}select{width:100%;padding:12px;border:1px solid #cbd6e5;border-radius:12px;background:#fff;color:#18243b;font-size:15px}.sample{display:flex;gap:12px;align-items:center;padding:12px;border-radius:14px;background:#f4f8fd;margin-top:12px}.bottle{width:44px;height:58px;border:3px solid #91a7c4;border-radius:9px 9px 12px 12px;position:relative;background:linear-gradient(to top,#b8e5ff 60%,transparent 60%);flex:none}.bottle:before{content:"";position:absolute;width:20px;height:8px;background:#91a7c4;top:-10px;left:9px;border-radius:4px}.sample strong{display:block}.sample small{color:#697a93}.action{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}button{border:0;border-radius:12px;padding:12px 16px;font-weight:800;cursor:pointer}.primary{background:#2563eb;color:white}.secondary{background:#e9eff8;color:#34445e}.primary:disabled{opacity:.45;cursor:not-allowed}.lab{min-height:380px;background:linear-gradient(180deg,#f7fbff,#edf4fc);border:1px solid #dce7f4;border-radius:16px;padding:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden}.bench{width:100%;display:flex;justify-content:center;align-items:end;gap:26px;min-height:235px}.tube{width:78px;height:190px;border:5px solid #9bb2ca;border-top:0;border-radius:0 0 26px 26px;position:relative;background:#ffffffaa;overflow:hidden;box-shadow:inset 0 -5px 10px #c4d8e9}.liquid{position:absolute;bottom:0;left:0;right:0;height:48%;background:#c4e8ff;transition:background .7s,height .5s}.tube:before{content:"";position:absolute;top:0;left:-5px;right:-5px;height:7px;border-radius:5px;background:#9bb2ca}.dropper{width:24px;height:105px;border-radius:12px 12px 5px 5px;background:linear-gradient(90deg,#64748b,#dbeafe,#64748b);transform:rotate(24deg);position:relative;transition:transform .4s}.dropper:after{content:"";position:absolute;bottom:-10px;left:8px;border-left:4px solid transparent;border-right:4px solid transparent;border-top:12px solid #64748b}.drop{width:10px;height:14px;border-radius:50% 50% 50% 0;background:#8b5cf6;transform:rotate(-45deg);position:absolute;bottom:-28px;left:7px;opacity:0}.dropper.active{transform:rotate(0) translateY(22px)}.dropper.active .drop{animation:fall .65s .25s forwards}@keyframes fall{0%{opacity:0;transform:translateY(-8px) rotate(-45deg)}30%{opacity:1}100%{opacity:0;transform:translateY(95px) rotate(-45deg)}}.paper{height:150px;width:44px;border-radius:5px;background:#f4f1d5;border:1px solid #d8d1ae;transform:rotate(-8deg);box-shadow:0 4px 9px #23364a22;display:none;align-items:end;justify-content:center;overflow:hidden}.paper span{width:100%;height:55%;background:#dbeafe;transition:background .6s}.paper.show{display:flex}.tube.hide{display:none}.lab-caption{font-size:13px;color:#63758f;text-align:center;margin-top:10px}.result{width:100%;padding:14px;border-radius:14px;background:white;border:1px solid #dce5f0;margin-top:14px;display:none}.result.show{display:block}.result strong{font-size:18px}.pill{display:inline-block;padding:5px 10px;border-radius:99px;font-size:12px;font-weight:900;background:#e9eff8;color:#334155}.guess{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}.guess button{background:#eef3fa;color:#334155;border:2px solid transparent}.guess button.selected{border-color:#2563eb;background:#e4efff;color:#1d4ed8}.feedback{margin-top:12px;padding:12px;border-radius:12px;display:none;line-height:1.5}.feedback.show{display:block}.feedback.ok{background:#e8f8ee;color:#166534}.feedback.no{background:#fff1e9;color:#9a3412}.hint{font-size:12px;color:#718198;line-height:1.5;margin-top:10px}.swatches{display:flex;gap:7px;align-items:center;margin-top:9px}.swatch{width:22px;height:22px;border-radius:50%;border:1px solid #64748b55}.footer{font-size:11px;color:#718198;text-align:center;margin:18px 0 4px}
-@media(max-width:720px){.app{padding:12px}.layout{grid-template-columns:1fr}.bench{min-height:205px}.lab{min-height:320px}.tube{height:160px;width:68px}.dropper{height:90px}.card{padding:15px}}
+
+/* Daha gerçekçi deney düzeneği */
+.lab{background:radial-gradient(ellipse at 50% 90%,#dceaf8 0,transparent 58%),linear-gradient(180deg,#f8fcff,#eaf2fb)}
+.bench{min-height:255px;align-items:end;gap:22px;position:relative;padding:12px 8px 5px}
+.beaker-wrap{height:225px;width:174px;position:relative;display:flex;align-items:end;justify-content:center}
+.beaker{width:142px;height:190px;position:relative;border:4px solid #9bb5ca;border-top:0;border-radius:5px 5px 25px 25px;background:linear-gradient(90deg,#ffffffa8,#dff3ff35 18%,#ffffff80 48%,#c9e4f455 80%,#ffffffa8);box-shadow:inset 8px 0 12px #fff9,inset -8px 0 12px #8eb2d033,0 12px 18px #42608020;overflow:hidden}
+.beaker:before{content:"";position:absolute;z-index:3;top:0;left:-5px;right:-5px;height:9px;border:3px solid #9bb5ca;border-radius:5px;background:#eaf7ff}
+.beaker:after{content:"";position:absolute;z-index:2;top:11px;left:12px;width:8px;height:145px;border-radius:8px;background:#fff9}
+.beaker-liquid{position:absolute;bottom:0;left:0;right:0;height:58%;background:#f5e8a8;transition:background .8s,height .5s;opacity:.86}
+.beaker-liquid:before{content:"";position:absolute;top:-5px;left:-5%;width:110%;height:12px;border-radius:50%;background:#ffffff88;border-top:2px solid #ffffffaa}
+.beaker-mark{position:absolute;z-index:3;right:10px;top:44px;width:20px;height:2px;background:#8ba7bf88;box-shadow:0 30px #8ba7bf88,0 60px #8ba7bf88,0 90px #8ba7bf88}
+.beaker-label{position:absolute;bottom:-19px;font-size:11px;font-weight:800;color:#647b94;white-space:nowrap}
+.paper{height:145px;width:23px;border-radius:3px;background:#f7f1d4;border:1px solid #d8d1ae;transform:rotate(-9deg);box-shadow:0 4px 9px #23364a22;display:none;align-items:end;justify-content:center;overflow:hidden;position:absolute;z-index:5;right:3px;top:10px}
+.paper span{width:100%;height:42%;background:#367bd6;transition:background .7s}
+.paper.show{display:flex}
+.paper.dipping{animation:dip 1.2s ease-in-out forwards}
+@keyframes dip{0%{transform:translateY(-2px) rotate(-9deg)}45%{transform:translate(-20px,70px) rotate(-2deg)}70%{transform:translate(-20px,70px) rotate(-2deg)}100%{transform:translateY(-2px) rotate(-9deg)}}
+.dropper{z-index:6}
+.dropper.active{transform:translate(24px,45px) rotate(0)}
+.dropper.active .drop{animation:fall .65s .25s forwards}
+.sample-icon{font-size:28px;filter:drop-shadow(0 3px 3px #52677a22)}
+.sample{background:linear-gradient(110deg,#f1f7fc,#eaf2fb)}
+@media(max-width:720px){.app{padding:12px}.layout{grid-template-columns:1fr}.bench{min-height:220px;gap:12px}.lab{min-height:330px}.beaker-wrap{transform:scale(.9);transform-origin:bottom center}.dropper{height:90px}.card{padding:15px}}
+
 </style></head><body><main class="app">
 <header class="top"><small>FEN VE BİLİM KULÜBÜ · 8. SINIF</small><h1>🧪 Asit–Baz Ayraç Laboratuvarı</h1><p>Maddeyi seç, indikatörünü belirle, deneyi gerçekleştir ve gözlemine göre maddenin asit mi baz mı olduğunu bul!</p></header>
 <div class="layout">
@@ -14,7 +37,7 @@
 <p class="hint">İpucu: Her ayıraç aynı renk değişimini göstermez. Seçtiğin indikatörün özelliğini hatırla.</p>
 </section>
 <section class="card"><h2>⚗️ Gözlem alanı</h2>
-<div class="lab"><div class="bench"><div class="dropper" id="dropper"><i class="drop"></i></div><div class="tube" id="tube"><div class="liquid" id="liquid"></div></div><div class="paper" id="paper"><span id="paperColor"></span></div></div><div class="lab-caption" id="caption">Ayıracı seçtikten sonra “Ayıracı uygula” düğmesine bas.</div>
+<div class="lab"><div class="bench"><div class="dropper" id="dropper"><i class="drop"></i></div><div class="beaker-wrap"><div class="beaker" id="beaker"><div class="beaker-liquid" id="liquid"></div><i class="beaker-mark"></i></div><div class="beaker-label" id="beakerLabel">Limon suyu · Numune</div><div class="paper" id="paper"><span id="paperColor"></span></div></div></div><div class="lab-caption" id="caption">Ayıracı seçtikten sonra “Ayıracı uygula” düğmesine bas.</div>
 <div class="result" id="result"><span class="pill" id="indicatorName">Gözlem</span><p id="observation" style="margin:8px 0 0;line-height:1.5"></p><div class="swatches" id="swatches"></div></div></div>
 <div style="margin-top:15px"><strong style="font-size:14px">🔎 Sence bu madde…?</strong><div class="guess"><button data-guess="acid">Asit</button><button data-guess="neutral">Nötr</button><button data-guess="base">Baz</button></div><div class="action"><button class="primary" id="check" disabled>Cevabımı kontrol et ✓</button></div><div class="feedback" id="feedback" aria-live="polite"></div></div>
 </section></div>
@@ -22,14 +45,14 @@
 </main>
 <script>
 const substances={
- lemon:{name:"Limon suyu",kind:"acid",ph:2,detail:"Limon suyunda sitrik asit bulunur."},
- vinegar:{name:"Sirke",kind:"acid",ph:3,detail:"Sirkenin asidik özelliği asetik asitten kaynaklanır."},
- soda:{name:"Maden suyu",kind:"acid",ph:5,detail:"Karbon dioksitin suda çözünmesi zayıf asidik özellik oluşturabilir."},
- milk:{name:"Süt",kind:"acid",ph:6,detail:"Süt genellikle hafif asidiktir."},
- water:{name:"Saf su",kind:"neutral",ph:7,detail:"Saf su, 25 °C'de nötr kabul edilir."},
- salt:{name:"Tuzlu su",kind:"neutral",ph:7,detail:"Sofra tuzunun saf sudaki çözeltisi yaklaşık nötrdür."},
- baking:{name:"Karbonatlı su",kind:"base",ph:8,detail:"Karbonatlı su zayıf bazik özellik gösterir."},
- soap:{name:"Sabunlu su",kind:"base",ph:10,detail:"Sabunlu su genellikle bazik özellik gösterir."}
+ lemon:{name:"Limon suyu",kind:"acid",ph:2,liquid:"#f4dc75",detail:"Limon suyunda sitrik asit bulunur."},
+ vinegar:{name:"Sirke",kind:"acid",ph:3,liquid:"#f5e8bd",detail:"Sirkenin asidik özelliği asetik asitten kaynaklanır."},
+ soda:{name:"Maden suyu",kind:"acid",ph:5,liquid:"#d8eff2",detail:"Karbon dioksitin suda çözünmesi zayıf asidik özellik oluşturabilir."},
+ milk:{name:"Süt",kind:"acid",ph:6,liquid:"#fffdf0",detail:"Süt genellikle hafif asidiktir."},
+ water:{name:"Saf su",kind:"neutral",ph:7,liquid:"#d9f1fa",detail:"Saf su, 25 °C'de nötr kabul edilir."},
+ salt:{name:"Tuzlu su",kind:"neutral",ph:7,liquid:"#d9f1fa",detail:"Sofra tuzunun saf sudaki çözeltisi yaklaşık nötrdür."},
+ baking:{name:"Karbonatlı su",kind:"base",ph:8,liquid:"#d9f1fa",detail:"Karbonatlı su zayıf bazik özellik gösterir."},
+ soap:{name:"Sabunlu su",kind:"base",ph:10,liquid:"#d8f3ef",detail:"Sabunlu su genellikle bazik özellik gösterir."}
 };
 const indicators={
  blue:{name:"Mavi turnusol",type:"paper",acid:"Kırmızıya döner",neutral:"Mavi kalır",base:"Mavi kalır",colors:{acid:"#e34b54",neutral:"#367bd6",base:"#367bd6"}},
@@ -41,7 +64,7 @@ const indicators={
 };
 let revealed=false,guess=null;
 const $=id=>document.getElementById(id);
-function reset(){revealed=false;guess=null;$("result").classList.remove("show");$("feedback").className="feedback";$("feedback").textContent="";$("check").disabled=true;document.querySelectorAll(".guess button").forEach(b=>b.classList.remove("selected"));$("dropper").classList.remove("active");$("tube").classList.remove("hide");$("paper").classList.remove("show");$("liquid").style.background="#c4e8ff";$("liquid").style.height="48%";$("caption").textContent="Ayıracı seçtikten sonra “Ayıracı uygula” düğmesine bas."}
+function reset(){revealed=false;guess=null;$("paper").classList.remove("dipping");$("result").classList.remove("show");$("feedback").className="feedback";$("feedback").textContent="";$("check").disabled=true;document.querySelectorAll(".guess button").forEach(b=>b.classList.remove("selected"));$("dropper").classList.remove("active");$("tube").classList.remove("hide");$("paper").classList.remove("show");$("liquid").style.background=substances[$("substance").value].liquid;$("liquid").style.height="58%";$("beakerLabel").textContent=substances[$("substance").value].name+" · Numune";$("caption").textContent="Ayıracı seçtikten sonra “Ayıracı uygula” düğmesine bas."}
 $("substance").addEventListener("change",()=>{$("sampleName").textContent=substances[$("substance").value].name;reset()});
 $("indicator").addEventListener("change",reset);
 $("test").addEventListener("click",()=>{
