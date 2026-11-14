@@ -1,0 +1,459 @@
+{
+  "grade": 6,
+  "unit": 6,
+  "title": "Elektriğin İletimi ve Direnç",
+  "slug": "elektrigin-iletimi-ve-direnc",
+  "description": "Maarif Modeli öğrenme çıktılarıyla eşleştirilmiş 30 özgün senaryolu ve görsel destekli soru.",
+  "questions": [
+    {
+      "id": 1,
+      "outcome": "FB.6.6.1",
+      "visual": "🔋💡 🧪",
+      "scenario": "Metal para ve plastik düğme devrede test ediliyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Hangi sonuç beklenir?",
+      "options": [
+        "İkisi iletken",
+        "Metal iletken, plastik yalıtkan",
+        "Plastik iletken",
+        "İkisi yalıtkan"
+      ],
+      "answer": 1,
+      "explanation": "Metaller iletken, plastik yalıtkandır."
+    },
+    {
+      "id": 2,
+      "outcome": "FB.6.6.1",
+      "visual": "🔋💡 📋",
+      "scenario": "Metal para ve plastik düğme devrede test ediliyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Hangi sonuç beklenir?",
+      "options": [
+        "İkisi iletken",
+        "Metal iletken, plastik yalıtkan",
+        "Plastik iletken",
+        "İkisi yalıtkan"
+      ],
+      "answer": 1,
+      "explanation": "Metaller iletken, plastik yalıtkandır."
+    },
+    {
+      "id": 3,
+      "outcome": "FB.6.6.1",
+      "visual": "🔋💡 🏠",
+      "scenario": "Metal para ve plastik düğme devrede test ediliyor. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Hangi sonuç beklenir?",
+      "options": [
+        "İkisi iletken",
+        "Metal iletken, plastik yalıtkan",
+        "Plastik iletken",
+        "İkisi yalıtkan"
+      ],
+      "answer": 1,
+      "explanation": "Metaller iletken, plastik yalıtkandır."
+    },
+    {
+      "id": 4,
+      "outcome": "FB.6.6.1",
+      "visual": "🔌 🧪",
+      "scenario": "Bakır tel yerine cam çubuk bağlanınca ampul yanmıyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Cam nasıl sınıflandırılır?",
+      "options": [
+        "İletken",
+        "Yalıtkan",
+        "Pil",
+        "Ampul"
+      ],
+      "answer": 1,
+      "explanation": "Cam elektriği iyi iletmez."
+    },
+    {
+      "id": 5,
+      "outcome": "FB.6.6.1",
+      "visual": "🔌 📋",
+      "scenario": "Bakır tel yerine cam çubuk bağlanınca ampul yanmıyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Cam nasıl sınıflandırılır?",
+      "options": [
+        "İletken",
+        "Yalıtkan",
+        "Pil",
+        "Ampul"
+      ],
+      "answer": 1,
+      "explanation": "Cam elektriği iyi iletmez."
+    },
+    {
+      "id": 6,
+      "outcome": "FB.6.6.1",
+      "visual": "🔌 🏠",
+      "scenario": "Bakır tel yerine cam çubuk bağlanınca ampul yanmıyor. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Cam nasıl sınıflandırılır?",
+      "options": [
+        "İletken",
+        "Yalıtkan",
+        "Pil",
+        "Ampul"
+      ],
+      "answer": 1,
+      "explanation": "Cam elektriği iyi iletmez."
+    },
+    {
+      "id": 7,
+      "outcome": "FB.6.6.1",
+      "visual": "🥄 🧪",
+      "scenario": "Metal kaşık devreye bağlanınca ampul yanıyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Hangi çıkarım yapılır?",
+      "options": [
+        "Kaşık elektriği iletir",
+        "Kaşık yalıtkandır",
+        "Ampul pilsiz yanar",
+        "Metal elektrik üretir"
+      ],
+      "answer": 0,
+      "explanation": "Ampulün yanması iletkenliği gösterir."
+    },
+    {
+      "id": 8,
+      "outcome": "FB.6.6.1",
+      "visual": "🥄 📋",
+      "scenario": "Metal kaşık devreye bağlanınca ampul yanıyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Hangi çıkarım yapılır?",
+      "options": [
+        "Kaşık elektriği iletir",
+        "Kaşık yalıtkandır",
+        "Ampul pilsiz yanar",
+        "Metal elektrik üretir"
+      ],
+      "answer": 0,
+      "explanation": "Ampulün yanması iletkenliği gösterir."
+    },
+    {
+      "id": 9,
+      "outcome": "FB.6.6.1",
+      "visual": "🥄 🏠",
+      "scenario": "Metal kaşık devreye bağlanınca ampul yanıyor. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Hangi çıkarım yapılır?",
+      "options": [
+        "Kaşık elektriği iletir",
+        "Kaşık yalıtkandır",
+        "Ampul pilsiz yanar",
+        "Metal elektrik üretir"
+      ],
+      "answer": 0,
+      "explanation": "Ampulün yanması iletkenliği gösterir."
+    },
+    {
+      "id": 10,
+      "outcome": "FB.6.6.2",
+      "visual": "💡📏 🧪",
+      "scenario": "Aynı cins ve kalınlıktaki tel uzatılınca ampul sönükleşiyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Hangi ilişki doğrudur?",
+      "options": [
+        "Tel uzadıkça direnç artar",
+        "Tel uzadıkça direnç azalır",
+        "Uzunluk etkisizdir",
+        "Tel pil olur"
+      ],
+      "answer": 0,
+      "explanation": "Uzunluk arttıkça direnç artar."
+    },
+    {
+      "id": 11,
+      "outcome": "FB.6.6.2",
+      "visual": "💡📏 📋",
+      "scenario": "Aynı cins ve kalınlıktaki tel uzatılınca ampul sönükleşiyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Hangi ilişki doğrudur?",
+      "options": [
+        "Tel uzadıkça direnç artar",
+        "Tel uzadıkça direnç azalır",
+        "Uzunluk etkisizdir",
+        "Tel pil olur"
+      ],
+      "answer": 0,
+      "explanation": "Uzunluk arttıkça direnç artar."
+    },
+    {
+      "id": 12,
+      "outcome": "FB.6.6.2",
+      "visual": "💡📏 🏠",
+      "scenario": "Aynı cins ve kalınlıktaki tel uzatılınca ampul sönükleşiyor. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Hangi ilişki doğrudur?",
+      "options": [
+        "Tel uzadıkça direnç artar",
+        "Tel uzadıkça direnç azalır",
+        "Uzunluk etkisizdir",
+        "Tel pil olur"
+      ],
+      "answer": 0,
+      "explanation": "Uzunluk arttıkça direnç artar."
+    },
+    {
+      "id": 13,
+      "outcome": "FB.6.6.2",
+      "visual": "🧵 🧪",
+      "scenario": "Aynı maddeden ve uzunluktaki iki telden biri daha kalın. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Kalın telin direnci nasıldır?",
+      "options": [
+        "Daha büyük",
+        "Daha küçük",
+        "Sonsuz",
+        "Sıfır"
+      ],
+      "answer": 1,
+      "explanation": "Kesit alanı arttıkça direnç azalır."
+    },
+    {
+      "id": 14,
+      "outcome": "FB.6.6.2",
+      "visual": "🧵 📋",
+      "scenario": "Aynı maddeden ve uzunluktaki iki telden biri daha kalın. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Kalın telin direnci nasıldır?",
+      "options": [
+        "Daha büyük",
+        "Daha küçük",
+        "Sonsuz",
+        "Sıfır"
+      ],
+      "answer": 1,
+      "explanation": "Kesit alanı arttıkça direnç azalır."
+    },
+    {
+      "id": 15,
+      "outcome": "FB.6.6.2",
+      "visual": "🧵 🏠",
+      "scenario": "Aynı maddeden ve uzunluktaki iki telden biri daha kalın. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Kalın telin direnci nasıldır?",
+      "options": [
+        "Daha büyük",
+        "Daha küçük",
+        "Sonsuz",
+        "Sıfır"
+      ],
+      "answer": 1,
+      "explanation": "Kesit alanı arttıkça direnç azalır."
+    },
+    {
+      "id": 16,
+      "outcome": "FB.6.6.2",
+      "visual": "📋 🧪",
+      "scenario": "Tel uzunluğunun parlaklığa etkisi araştırılıyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Neler sabit tutulmalıdır?",
+      "options": [
+        "Tel cinsi ve kesit alanı",
+        "Tel uzunluğu",
+        "Parlaklık",
+        "Sonuç"
+      ],
+      "answer": 0,
+      "explanation": "Diğer değişkenler sabit tutulmalıdır."
+    },
+    {
+      "id": 17,
+      "outcome": "FB.6.6.2",
+      "visual": "📋 📋",
+      "scenario": "Tel uzunluğunun parlaklığa etkisi araştırılıyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Neler sabit tutulmalıdır?",
+      "options": [
+        "Tel cinsi ve kesit alanı",
+        "Tel uzunluğu",
+        "Parlaklık",
+        "Sonuç"
+      ],
+      "answer": 0,
+      "explanation": "Diğer değişkenler sabit tutulmalıdır."
+    },
+    {
+      "id": 18,
+      "outcome": "FB.6.6.2",
+      "visual": "📋 🏠",
+      "scenario": "Tel uzunluğunun parlaklığa etkisi araştırılıyor. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Neler sabit tutulmalıdır?",
+      "options": [
+        "Tel cinsi ve kesit alanı",
+        "Tel uzunluğu",
+        "Parlaklık",
+        "Sonuç"
+      ],
+      "answer": 0,
+      "explanation": "Diğer değişkenler sabit tutulmalıdır."
+    },
+    {
+      "id": 19,
+      "outcome": "FB.6.6.3",
+      "visual": "🎚️ 🧪",
+      "scenario": "Reostaya daha uzun direnç teli dâhil ediliyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Direnç ve parlaklık nasıl değişir?",
+      "options": [
+        "Direnç artar, parlaklık azalabilir",
+        "Direnç azalır, parlaklık artar",
+        "İkisi artar",
+        "Değişmez"
+      ],
+      "answer": 0,
+      "explanation": "Tel uzunluğu arttıkça direnç artar."
+    },
+    {
+      "id": 20,
+      "outcome": "FB.6.6.3",
+      "visual": "🎚️ 📋",
+      "scenario": "Reostaya daha uzun direnç teli dâhil ediliyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Direnç ve parlaklık nasıl değişir?",
+      "options": [
+        "Direnç artar, parlaklık azalabilir",
+        "Direnç azalır, parlaklık artar",
+        "İkisi artar",
+        "Değişmez"
+      ],
+      "answer": 0,
+      "explanation": "Tel uzunluğu arttıkça direnç artar."
+    },
+    {
+      "id": 21,
+      "outcome": "FB.6.6.3",
+      "visual": "🎚️ 🏠",
+      "scenario": "Reostaya daha uzun direnç teli dâhil ediliyor. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Direnç ve parlaklık nasıl değişir?",
+      "options": [
+        "Direnç artar, parlaklık azalabilir",
+        "Direnç azalır, parlaklık artar",
+        "İkisi artar",
+        "Değişmez"
+      ],
+      "answer": 0,
+      "explanation": "Tel uzunluğu arttıkça direnç artar."
+    },
+    {
+      "id": 22,
+      "outcome": "FB.6.6.3",
+      "visual": "🎚️ 🧪",
+      "scenario": "Reostaya daha kısa tel dâhil ediliyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Ne beklenir?",
+      "options": [
+        "Direnç azalır, parlaklık artabilir",
+        "Direnç artar, ampul söner",
+        "Pil sayısı artar",
+        "Akım yok olur"
+      ],
+      "answer": 0,
+      "explanation": "Devreye giren tel kısaldığında direnç azalır."
+    },
+    {
+      "id": 23,
+      "outcome": "FB.6.6.3",
+      "visual": "🎚️ 📋",
+      "scenario": "Reostaya daha kısa tel dâhil ediliyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Ne beklenir?",
+      "options": [
+        "Direnç azalır, parlaklık artabilir",
+        "Direnç artar, ampul söner",
+        "Pil sayısı artar",
+        "Akım yok olur"
+      ],
+      "answer": 0,
+      "explanation": "Devreye giren tel kısaldığında direnç azalır."
+    },
+    {
+      "id": 24,
+      "outcome": "FB.6.6.3",
+      "visual": "🎚️ 🏠",
+      "scenario": "Reostaya daha kısa tel dâhil ediliyor. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Ne beklenir?",
+      "options": [
+        "Direnç azalır, parlaklık artabilir",
+        "Direnç artar, ampul söner",
+        "Pil sayısı artar",
+        "Akım yok olur"
+      ],
+      "answer": 0,
+      "explanation": "Devreye giren tel kısaldığında direnç azalır."
+    },
+    {
+      "id": 25,
+      "outcome": "FB.6.6.3",
+      "visual": "🎛️ 🧪",
+      "scenario": "Bir devrede reosta kullanılıyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Reostanın görevi nedir?",
+      "options": [
+        "Devre direncini ayarlamak",
+        "Elektrik üretmek",
+        "Ampul rengini değiştirmek",
+        "Pili doldurmak"
+      ],
+      "answer": 0,
+      "explanation": "Reosta ayarlanabilir dirençtir."
+    },
+    {
+      "id": 26,
+      "outcome": "FB.6.6.3",
+      "visual": "🎛️ 📋",
+      "scenario": "Bir devrede reosta kullanılıyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Reostanın görevi nedir?",
+      "options": [
+        "Devre direncini ayarlamak",
+        "Elektrik üretmek",
+        "Ampul rengini değiştirmek",
+        "Pili doldurmak"
+      ],
+      "answer": 0,
+      "explanation": "Reosta ayarlanabilir dirençtir."
+    },
+    {
+      "id": 27,
+      "outcome": "FB.6.6.3",
+      "visual": "🎛️ 🏠",
+      "scenario": "Bir devrede reosta kullanılıyor. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Reostanın görevi nedir?",
+      "options": [
+        "Devre direncini ayarlamak",
+        "Elektrik üretmek",
+        "Ampul rengini değiştirmek",
+        "Pili doldurmak"
+      ],
+      "answer": 0,
+      "explanation": "Reosta ayarlanabilir dirençtir."
+    },
+    {
+      "id": 28,
+      "outcome": "FB.6.6.3",
+      "visual": "📊 🧪",
+      "scenario": "Reosta direnci 2 Ω iken ampul parlak, 6 Ω iken sönük. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Hangi sonuç çıkarılır?",
+      "options": [
+        "Direnç artınca parlaklık azalabilir",
+        "Direnç artınca parlaklık artar",
+        "İlişki yoktur",
+        "Reosta ışık üretir"
+      ],
+      "answer": 0,
+      "explanation": "Direnç artışı akımı ve parlaklığı azaltabilir."
+    },
+    {
+      "id": 29,
+      "outcome": "FB.6.6.3",
+      "visual": "📊 📋",
+      "scenario": "Reosta direnci 2 Ω iken ampul parlak, 6 Ω iken sönük. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Hangi sonuç çıkarılır?",
+      "options": [
+        "Direnç artınca parlaklık azalabilir",
+        "Direnç artınca parlaklık artar",
+        "İlişki yoktur",
+        "Reosta ışık üretir"
+      ],
+      "answer": 0,
+      "explanation": "Direnç artışı akımı ve parlaklığı azaltabilir."
+    },
+    {
+      "id": 30,
+      "outcome": "FB.6.6.3",
+      "visual": "📊 🏠",
+      "scenario": "Reosta direnci 2 Ω iken ampul parlak, 6 Ω iken sönük. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Hangi sonuç çıkarılır?",
+      "options": [
+        "Direnç artınca parlaklık azalabilir",
+        "Direnç artınca parlaklık artar",
+        "İlişki yoktur",
+        "Reosta ışık üretir"
+      ],
+      "answer": 0,
+      "explanation": "Direnç artışı akımı ve parlaklığı azaltabilir."
+    }
+  ]
+}
