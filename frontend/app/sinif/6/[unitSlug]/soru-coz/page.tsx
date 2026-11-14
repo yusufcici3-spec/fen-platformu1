@@ -22,7 +22,7 @@ export default function Grade6UnitQuizPage({params}:{params:{unitSlug:string}}) 
  const [finished,setFinished]=useState(false);
  const current=bank?.questions[index];
  const selected=answers[index];
- const score=useMemo(()=>answers.reduce((sum,a,i)=>sum+(a===bank?.questions[i]?.answer?1:0),0),[answers,bank]);
+ const score=useMemo(()=>answers.reduce<number>((sum,a,i)=>sum+(a===bank?.questions[i]?.answer?1:0),0),[answers,bank]);
  if(!bank) return <main className="mx-auto max-w-3xl p-8"><h1 className="text-2xl font-bold">Soru bankası bulunamadı</h1><Link className="mt-4 inline-block text-beaker" href="/sinif/6">6. sınıf ünitelerine dön</Link></main>;
  const choose=(choice:number)=>{if(selected!==null)return;setAnswers(old=>old.map((v,i)=>i===index?choice:v));};
  const next=()=>{if(index===bank.questions.length-1)setFinished(true);else setIndex(v=>v+1);};
