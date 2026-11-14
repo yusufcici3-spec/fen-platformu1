@@ -1,0 +1,459 @@
+{
+  "grade": 6,
+  "unit": 4,
+  "title": "Işığın Yansıması ve Renkler",
+  "slug": "isigin-yansimasi-ve-renkler",
+  "description": "Maarif Modeli öğrenme çıktılarıyla eşleştirilmiş 30 özgün senaryolu ve görsel destekli soru.",
+  "questions": [
+    {
+      "id": 1,
+      "outcome": "FB.6.4.1",
+      "visual": "🪞 🧪",
+      "scenario": "Ayna ve buruşturulmuş folyo. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Hangi yüzey düzgün yansıma oluşturur?",
+      "options": [
+        "Ayna",
+        "Buruşturulmuş folyo",
+        "Duvar",
+        "Kumaş"
+      ],
+      "answer": 0,
+      "explanation": "Düzgün yüzeyler düzgün yansıma oluşturur."
+    },
+    {
+      "id": 2,
+      "outcome": "FB.6.4.1",
+      "visual": "🪞 📋",
+      "scenario": "Ayna ve buruşturulmuş folyo. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Hangi yüzey düzgün yansıma oluşturur?",
+      "options": [
+        "Ayna",
+        "Buruşturulmuş folyo",
+        "Duvar",
+        "Kumaş"
+      ],
+      "answer": 0,
+      "explanation": "Düzgün yüzeyler düzgün yansıma oluşturur."
+    },
+    {
+      "id": 3,
+      "outcome": "FB.6.4.1",
+      "visual": "🪞 🏠",
+      "scenario": "Ayna ve buruşturulmuş folyo. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Hangi yüzey düzgün yansıma oluşturur?",
+      "options": [
+        "Ayna",
+        "Buruşturulmuş folyo",
+        "Duvar",
+        "Kumaş"
+      ],
+      "answer": 0,
+      "explanation": "Düzgün yüzeyler düzgün yansıma oluşturur."
+    },
+    {
+      "id": 4,
+      "outcome": "FB.6.4.1",
+      "visual": "🌊 🧪",
+      "scenario": "Durgun ve dalgalı göl. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Net görüntünün durgun suda oluşmasının nedeni nedir?",
+      "options": [
+        "Yüzeyin daha düzgün olması",
+        "Suyun ışık üretmesi",
+        "Işığın soğurulmaması",
+        "Gölün derinliği"
+      ],
+      "answer": 0,
+      "explanation": "Durgun su düzgün yansıma yapabilir."
+    },
+    {
+      "id": 5,
+      "outcome": "FB.6.4.1",
+      "visual": "🌊 📋",
+      "scenario": "Durgun ve dalgalı göl. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Net görüntünün durgun suda oluşmasının nedeni nedir?",
+      "options": [
+        "Yüzeyin daha düzgün olması",
+        "Suyun ışık üretmesi",
+        "Işığın soğurulmaması",
+        "Gölün derinliği"
+      ],
+      "answer": 0,
+      "explanation": "Durgun su düzgün yansıma yapabilir."
+    },
+    {
+      "id": 6,
+      "outcome": "FB.6.4.1",
+      "visual": "🌊 🏠",
+      "scenario": "Durgun ve dalgalı göl. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Net görüntünün durgun suda oluşmasının nedeni nedir?",
+      "options": [
+        "Yüzeyin daha düzgün olması",
+        "Suyun ışık üretmesi",
+        "Işığın soğurulmaması",
+        "Gölün derinliği"
+      ],
+      "answer": 0,
+      "explanation": "Durgun su düzgün yansıma yapabilir."
+    },
+    {
+      "id": 7,
+      "outcome": "FB.6.4.2",
+      "visual": "📐 🧪",
+      "scenario": "Düz aynaya normalle 35° açıyla gelen ışın. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Yansıma açısı kaç derecedir?",
+      "options": [
+        "35°",
+        "55°",
+        "70°",
+        "90°"
+      ],
+      "answer": 0,
+      "explanation": "Gelme ve yansıma açıları eşittir."
+    },
+    {
+      "id": 8,
+      "outcome": "FB.6.4.2",
+      "visual": "📐 📋",
+      "scenario": "Düz aynaya normalle 35° açıyla gelen ışın. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Yansıma açısı kaç derecedir?",
+      "options": [
+        "35°",
+        "55°",
+        "70°",
+        "90°"
+      ],
+      "answer": 0,
+      "explanation": "Gelme ve yansıma açıları eşittir."
+    },
+    {
+      "id": 9,
+      "outcome": "FB.6.4.2",
+      "visual": "📐 🏠",
+      "scenario": "Düz aynaya normalle 35° açıyla gelen ışın. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Yansıma açısı kaç derecedir?",
+      "options": [
+        "35°",
+        "55°",
+        "70°",
+        "90°"
+      ],
+      "answer": 0,
+      "explanation": "Gelme ve yansıma açıları eşittir."
+    },
+    {
+      "id": 10,
+      "outcome": "FB.6.4.2",
+      "visual": "📐 🧪",
+      "scenario": "Işının ayna yüzeyiyle yaptığı açı 20°. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Gelme açısı kaç derecedir?",
+      "options": [
+        "20°",
+        "40°",
+        "70°",
+        "90°"
+      ],
+      "answer": 2,
+      "explanation": "Normal yüzeye dik olduğundan 90−20=70°."
+    },
+    {
+      "id": 11,
+      "outcome": "FB.6.4.2",
+      "visual": "📐 📋",
+      "scenario": "Işının ayna yüzeyiyle yaptığı açı 20°. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Gelme açısı kaç derecedir?",
+      "options": [
+        "20°",
+        "40°",
+        "70°",
+        "90°"
+      ],
+      "answer": 2,
+      "explanation": "Normal yüzeye dik olduğundan 90−20=70°."
+    },
+    {
+      "id": 12,
+      "outcome": "FB.6.4.2",
+      "visual": "📐 🏠",
+      "scenario": "Işının ayna yüzeyiyle yaptığı açı 20°. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Gelme açısı kaç derecedir?",
+      "options": [
+        "20°",
+        "40°",
+        "70°",
+        "90°"
+      ],
+      "answer": 2,
+      "explanation": "Normal yüzeye dik olduğundan 90−20=70°."
+    },
+    {
+      "id": 13,
+      "outcome": "FB.6.4.3",
+      "visual": "🚗 🧪",
+      "scenario": "Otomobil yan aynası geniş alanı küçük gösteriyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Hangi ayna kullanılır?",
+      "options": [
+        "Düz",
+        "Çukur",
+        "Tümsek",
+        "Saydam"
+      ],
+      "answer": 2,
+      "explanation": "Tümsek aynalar geniş görüş alanı sağlar."
+    },
+    {
+      "id": 14,
+      "outcome": "FB.6.4.3",
+      "visual": "🚗 📋",
+      "scenario": "Otomobil yan aynası geniş alanı küçük gösteriyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Hangi ayna kullanılır?",
+      "options": [
+        "Düz",
+        "Çukur",
+        "Tümsek",
+        "Saydam"
+      ],
+      "answer": 2,
+      "explanation": "Tümsek aynalar geniş görüş alanı sağlar."
+    },
+    {
+      "id": 15,
+      "outcome": "FB.6.4.3",
+      "visual": "🚗 🏠",
+      "scenario": "Otomobil yan aynası geniş alanı küçük gösteriyor. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Hangi ayna kullanılır?",
+      "options": [
+        "Düz",
+        "Çukur",
+        "Tümsek",
+        "Saydam"
+      ],
+      "answer": 2,
+      "explanation": "Tümsek aynalar geniş görüş alanı sağlar."
+    },
+    {
+      "id": 16,
+      "outcome": "FB.6.4.3",
+      "visual": "🪒 🧪",
+      "scenario": "Tıraş aynasında yüz yakından büyük görünüyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Hangi ayna kullanılmış olabilir?",
+      "options": [
+        "Tümsek",
+        "Çukur",
+        "Düz",
+        "Mat"
+      ],
+      "answer": 1,
+      "explanation": "Çukur ayna uygun uzaklıkta büyük görüntü verebilir."
+    },
+    {
+      "id": 17,
+      "outcome": "FB.6.4.3",
+      "visual": "🪒 📋",
+      "scenario": "Tıraş aynasında yüz yakından büyük görünüyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Hangi ayna kullanılmış olabilir?",
+      "options": [
+        "Tümsek",
+        "Çukur",
+        "Düz",
+        "Mat"
+      ],
+      "answer": 1,
+      "explanation": "Çukur ayna uygun uzaklıkta büyük görüntü verebilir."
+    },
+    {
+      "id": 18,
+      "outcome": "FB.6.4.3",
+      "visual": "🪒 🏠",
+      "scenario": "Tıraş aynasında yüz yakından büyük görünüyor. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Hangi ayna kullanılmış olabilir?",
+      "options": [
+        "Tümsek",
+        "Çukur",
+        "Düz",
+        "Mat"
+      ],
+      "answer": 1,
+      "explanation": "Çukur ayna uygun uzaklıkta büyük görüntü verebilir."
+    },
+    {
+      "id": 19,
+      "outcome": "FB.6.4.4",
+      "visual": "⚫🌡️ 🧪",
+      "scenario": "Güneşte siyah ve beyaz kartonların sıcaklığı ölçülüyor; siyah daha çok ısınıyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Nedeni nedir?",
+      "options": [
+        "Siyah daha fazla ışık soğurur",
+        "Beyaz ışık üretir",
+        "Siyah ışığı geçirir",
+        "Renk etkisizdir"
+      ],
+      "answer": 0,
+      "explanation": "Koyu renkli yüzeyler ışığı daha çok soğurabilir."
+    },
+    {
+      "id": 20,
+      "outcome": "FB.6.4.4",
+      "visual": "⚫🌡️ 📋",
+      "scenario": "Güneşte siyah ve beyaz kartonların sıcaklığı ölçülüyor; siyah daha çok ısınıyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Nedeni nedir?",
+      "options": [
+        "Siyah daha fazla ışık soğurur",
+        "Beyaz ışık üretir",
+        "Siyah ışığı geçirir",
+        "Renk etkisizdir"
+      ],
+      "answer": 0,
+      "explanation": "Koyu renkli yüzeyler ışığı daha çok soğurabilir."
+    },
+    {
+      "id": 21,
+      "outcome": "FB.6.4.4",
+      "visual": "⚫🌡️ 🏠",
+      "scenario": "Güneşte siyah ve beyaz kartonların sıcaklığı ölçülüyor; siyah daha çok ısınıyor. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Nedeni nedir?",
+      "options": [
+        "Siyah daha fazla ışık soğurur",
+        "Beyaz ışık üretir",
+        "Siyah ışığı geçirir",
+        "Renk etkisizdir"
+      ],
+      "answer": 0,
+      "explanation": "Koyu renkli yüzeyler ışığı daha çok soğurabilir."
+    },
+    {
+      "id": 22,
+      "outcome": "FB.6.4.5–FB.6.4.6",
+      "visual": "🌈 🧪",
+      "scenario": "Beyaz ışık prizmadan geçince renklere ayrılıyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Hangi sonuç çıkarılır?",
+      "options": [
+        "Beyaz ışık renklerin bileşimidir",
+        "Beyaz ışık tek renktir",
+        "Prizma ışık üretir",
+        "Renkler karanlıkta oluşur"
+      ],
+      "answer": 0,
+      "explanation": "Beyaz ışık farklı renklerin birleşiminden oluşur."
+    },
+    {
+      "id": 23,
+      "outcome": "FB.6.4.5–FB.6.4.6",
+      "visual": "🌈 📋",
+      "scenario": "Beyaz ışık prizmadan geçince renklere ayrılıyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Hangi sonuç çıkarılır?",
+      "options": [
+        "Beyaz ışık renklerin bileşimidir",
+        "Beyaz ışık tek renktir",
+        "Prizma ışık üretir",
+        "Renkler karanlıkta oluşur"
+      ],
+      "answer": 0,
+      "explanation": "Beyaz ışık farklı renklerin birleşiminden oluşur."
+    },
+    {
+      "id": 24,
+      "outcome": "FB.6.4.5–FB.6.4.6",
+      "visual": "🌈 🏠",
+      "scenario": "Beyaz ışık prizmadan geçince renklere ayrılıyor. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Hangi sonuç çıkarılır?",
+      "options": [
+        "Beyaz ışık renklerin bileşimidir",
+        "Beyaz ışık tek renktir",
+        "Prizma ışık üretir",
+        "Renkler karanlıkta oluşur"
+      ],
+      "answer": 0,
+      "explanation": "Beyaz ışık farklı renklerin birleşiminden oluşur."
+    },
+    {
+      "id": 25,
+      "outcome": "FB.6.4.5–FB.6.4.6",
+      "visual": "🍎 🧪",
+      "scenario": "Beyaz ışık altındaki elma kırmızı görünüyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Elmanın kırmızı görünme nedeni nedir?",
+      "options": [
+        "Kırmızı ışığı yansıtması",
+        "Tüm renkleri soğurması",
+        "Kendi ışığını üretmesi",
+        "Mavi ışığı yansıtması"
+      ],
+      "answer": 0,
+      "explanation": "Cisimler yansıttıkları ışığın rengiyle görülür."
+    },
+    {
+      "id": 26,
+      "outcome": "FB.6.4.5–FB.6.4.6",
+      "visual": "🍎 📋",
+      "scenario": "Beyaz ışık altındaki elma kırmızı görünüyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Elmanın kırmızı görünme nedeni nedir?",
+      "options": [
+        "Kırmızı ışığı yansıtması",
+        "Tüm renkleri soğurması",
+        "Kendi ışığını üretmesi",
+        "Mavi ışığı yansıtması"
+      ],
+      "answer": 0,
+      "explanation": "Cisimler yansıttıkları ışığın rengiyle görülür."
+    },
+    {
+      "id": 27,
+      "outcome": "FB.6.4.5–FB.6.4.6",
+      "visual": "🍎 🏠",
+      "scenario": "Beyaz ışık altındaki elma kırmızı görünüyor. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Elmanın kırmızı görünme nedeni nedir?",
+      "options": [
+        "Kırmızı ışığı yansıtması",
+        "Tüm renkleri soğurması",
+        "Kendi ışığını üretmesi",
+        "Mavi ışığı yansıtması"
+      ],
+      "answer": 0,
+      "explanation": "Cisimler yansıttıkları ışığın rengiyle görülür."
+    },
+    {
+      "id": 28,
+      "outcome": "FB.6.4.7",
+      "visual": "☀️🔋 🧪",
+      "scenario": "Okul çatısındaki güneş paneli elektrik üretiyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Enerji dönüşümü hangisidir?",
+      "options": [
+        "Güneş→elektrik",
+        "Elektrik→güneş",
+        "Ses→ısı",
+        "Hareket→kimyasal"
+      ],
+      "answer": 0,
+      "explanation": "Güneş panelleri ışınımı elektrik enerjisine dönüştürür."
+    },
+    {
+      "id": 29,
+      "outcome": "FB.6.4.7",
+      "visual": "☀️🔋 📋",
+      "scenario": "Okul çatısındaki güneş paneli elektrik üretiyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Enerji dönüşümü hangisidir?",
+      "options": [
+        "Güneş→elektrik",
+        "Elektrik→güneş",
+        "Ses→ısı",
+        "Hareket→kimyasal"
+      ],
+      "answer": 0,
+      "explanation": "Güneş panelleri ışınımı elektrik enerjisine dönüştürür."
+    },
+    {
+      "id": 30,
+      "outcome": "FB.6.4.7",
+      "visual": "☀️🔋 🏠",
+      "scenario": "Okul çatısındaki güneş paneli elektrik üretiyor. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Enerji dönüşümü hangisidir?",
+      "options": [
+        "Güneş→elektrik",
+        "Elektrik→güneş",
+        "Ses→ısı",
+        "Hareket→kimyasal"
+      ],
+      "answer": 0,
+      "explanation": "Güneş panelleri ışınımı elektrik enerjisine dönüştürür."
+    }
+  ]
+}
