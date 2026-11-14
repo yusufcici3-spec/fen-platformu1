@@ -64,16 +64,50 @@ const indicators={
 };
 let revealed=false,guess=null;
 const $=id=>document.getElementById(id);
-function reset(){revealed=false;guess=null;$("paper").classList.remove("dipping");$("result").classList.remove("show");$("feedback").className="feedback";$("feedback").textContent="";$("check").disabled=true;document.querySelectorAll(".guess button").forEach(b=>b.classList.remove("selected"));$("dropper").classList.remove("active");$("tube").classList.remove("hide");$("paper").classList.remove("show");$("liquid").style.background=substances[$("substance").value].liquid;$("liquid").style.height="58%";$("beakerLabel").textContent=substances[$("substance").value].name+" · Numune";$("caption").textContent="Ayıracı seçtikten sonra “Ayıracı uygula” düğmesine bas."}
+function reset(){revealed=false;guess=null;$("paper").classList.remove("dipping","dragging");$("paper").style.transform="rotate(-9deg)";$("paper").style.left="";$("paper").style.top="";$("paper").style.right="3px";$("result").classList.remove("show");$("feedback").className="feedback";$("feedback").textContent="";$("check").disabled=true;document.querySelectorAll(".guess button").forEach(b=>b.classList.remove("selected"));$("dropper").classList.remove("active");$("paper").classList.remove("show");$("liquid").style.background=substances[$("substance").value].liquid;$("liquid").style.height="58%";$("beakerLabel").textContent=substances[$("substance").value].name+" · Numune";$("caption").textContent="Ayıracı seçtikten sonra “Ayıracı uygula” düğmesine bas."}
 $("substance").addEventListener("change",()=>{$("sampleName").textContent=substances[$("substance").value].name;reset()});
 $("indicator").addEventListener("change",reset);
 $("test").addEventListener("click",()=>{
  reset();const s=substances[$("substance").value],i=indicators[$("indicator").value],color=i.colors[s.kind];
  revealed=true;$("indicatorName").textContent=i.name;$("observation").textContent=i[s.kind];$("swatches").innerHTML='<span class="swatch" style="background:'+color+'"></span><small style="color:#66758d">Gözlenen renk</small>';$("result").classList.add("show");
- if(i.type==="paper"){$("tube").classList.add("hide");$("paper").classList.add("show");$("paperColor").style.background=color;$("caption").textContent="Turnusol kâğıdı numuneye batırıldı."}
- else{$("paper").classList.remove("show");$("tube").classList.remove("hide");$("dropper").classList.add("active");$("liquid").style.background=color;$("liquid").style.height="62%";$("caption").textContent="Ayıraç damlatıldı; çözeltinin rengi değişti."}
+ if(i.type==="paper"){$("paper").classList.add("show");$("paperColor").style.background=$("indicator").value==="blue"?"#367bd6":"#e34b54";$("caption").textContent="Turnusol şeridini fareyle veya parmağınla tutup beherin içine sürükle."}
+ else{$("paper").classList.remove("show");$("dropper").classList.add("active");$("liquid").style.background=color;$("liquid").style.height="62%";$("caption").textContent="Ayıraç damlatıldı; çözeltinin rengi değişti."}
  $("check").disabled=false;
 });
+
+/* Turnusol kâğıdını dokunarak/fareyle sürükleyip beherin içine batırma */
+let paperDrag=null;
+$("paper").addEventListener("pointerdown",e=>{
+ if(!$("paper").classList.contains("show"))return;
+ e.preventDefault();paperDrag={x:e.clientX,y:e.clientY,moved:false};
+ $("paper").setPointerCapture(e.pointerId);$("paper").classList.add("dragging");
+ const r=$("paper").getBoundingClientRect();$("paper").style.left=(r.left-$("beaker").getBoundingClientRect().left+0)+"px";
+ $("paper").style.right="auto";$("paper").style.top=(r.top-$("beaker").getBoundingClientRect().top)+"px";
+});
+$("paper").addEventListener("pointermove",e=>{
+ if(!paperDrag)return;paperDrag.moved=true;
+ const b=$("beaker").getBoundingClientRect(),w=$("paper").offsetWidth,h=$("paper").offsetHeight;
+ $("paper").style.left=(e.clientX-b.left-w/2)+"px";$("paper").style.top=(e.clientY-b.top-h/2)+"px";
+});
+function finishPaperDrag(e){
+ if(!paperDrag)return;paperDrag=null;$("paper").classList.remove("dragging");
+ const p=$("paper").getBoundingClientRect(),b=$("beaker").getBoundingClientRect();
+ const overlap=p.left<b.right&&p.right>b.left&&p.top<b.bottom&&p.bottom>b.top;
+ if(overlap){
+  const s=substances[$("substance").value],i=indicators[$("indicator").value],color=i.colors[s.kind];
+  $("paperColor").style.background=color;$("paper").classList.add("dipping");
+  $("indicatorName").textContent=i.name;$("observation").textContent=i[s.kind];
+  $("swatches").innerHTML='<span class="swatch" style="background:'+color+'"></span><small style="color:#66758d">Gözlenen renk</small>';
+  $("result").classList.add("show");$("check").disabled=false;revealed=true;
+  $("caption").textContent="Turnusol kâğıdı sıvıya batırıldı; renk değişimi gözlemlendi.";
+ }else{
+  $("paper").style.left="";$("paper").style.top="";$("paper").style.right="3px";
+  $("caption").textContent="Şeridi beherin içine bırakmalısın. Tekrar sürükleyebilirsin.";
+ }
+}
+$("paper").addEventListener("pointerup",finishPaperDrag);
+$("paper").addEventListener("pointercancel",finishPaperDrag);
+
 document.querySelectorAll(".guess button").forEach(b=>b.addEventListener("click",()=>{guess=b.dataset.guess;document.querySelectorAll(".guess button").forEach(x=>x.classList.toggle("selected",x===b));}));
 $("check").addEventListener("click",()=>{if(!revealed||!guess){$("feedback").className="feedback show no";$("feedback").textContent="Önce gözlemine göre Asit, Nötr veya Baz seçeneklerinden birini işaretle.";return}
  const s=substances[$("substance").value],i=indicators[$("indicator").value],ok=guess===s.kind;
@@ -82,5 +116,5 @@ $("check").addEventListener("click",()=>{if(!revealed||!guess){$("feedback").cla
  $("feedback").innerHTML=(ok?"🎉 Harika! Doğru tahmin. ":"💡 Tekrar düşün! ")+"Bu madde <b>"+label+"</b> özelliktedir. "+s.detail+"<br><small>"+i.name+" ile gözlem: "+i[s.kind]+".</small>";
 });
 $("reset").addEventListener("click",reset);
-window.addEventListener("load",()=>{document.documentElement.classList.add("embedded");parent.postMessage({type:"html-anim-ready"},"*");const send=()=>parent.postMessage({type:"html-anim-height",height:document.documentElement.scrollHeight},"*");send();new ResizeObserver(send).observe(document.body)});
+window.addEventListener("load",()=>{reset();$("sampleName").textContent=substances[$("substance").value].name;document.documentElement.classList.add("embedded");parent.postMessage({type:"html-anim-ready"},"*");const send=()=>parent.postMessage({type:"html-anim-height",height:document.documentElement.scrollHeight},"*");send();new ResizeObserver(send).observe(document.body)});
 </script></body></html>
