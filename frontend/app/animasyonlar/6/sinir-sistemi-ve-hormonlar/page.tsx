@@ -5,11 +5,11 @@ import { useMemo, useState } from "react";
 
 type Part = { id:string; name:string; group:"Sinir sistemi"|"İç salgı bezleri"; x:number; y:number; color:string; role:string; hormone?:string };
 const parts:Part[] = [
- {id:"beyin",name:"Beyin",group:"Sinir sistemi",x:164,y:32,color:"#4f8edb",role:"Duyu organlarından gelen bilgileri değerlendirir; düşünme, öğrenme, hafıza ve istemli hareketleri yönetir."},
- {id:"beyincik",name:"Beyincik",group:"Sinir sistemi",x:181,y:60,color:"#4f8edb",role:"Kasların uyumlu çalışmasını sağlar. Denge ve hareketlerin koordinasyonunda görevlidir."},
- {id:"omurilik-sogani",name:"Omurilik soğanı",group:"Sinir sistemi",x:165,y:86,color:"#4f8edb",role:"Solunum, dolaşım ve sindirim gibi yaşamsal faaliyetleri düzenler."},
- {id:"omurilik",name:"Omurilik",group:"Sinir sistemi",x:165,y:198,color:"#4f8edb",role:"Beyin ile vücut arasındaki sinirsel iletimi sağlar ve reflekslerin yönetiminde görevlidir."},
- {id:"sinirler",name:"Çevresel sinirler",group:"Sinir sistemi",x:91,y:277,color:"#4f8edb",role:"Merkezi sinir sistemi ile organlar arasında bilgi taşır. Uyarıları merkeze, cevapları ilgili yapılara iletir."},
+ {id:"beyin",name:"Beyin",group:"Sinir sistemi",x:160,y:75,color:"#4f8edb",role:"Duyu organlarından gelen bilgileri değerlendirir; düşünme, öğrenme, hafıza ve istemli hareketleri yönetir."},
+ {id:"beyincik",name:"Beyincik",group:"Sinir sistemi",x:205,y:112,color:"#4f8edb",role:"Kasların uyumlu çalışmasını sağlar. Denge ve hareketlerin koordinasyonunda görevlidir."},
+ {id:"omurilik-sogani",name:"Omurilik soğanı",group:"Sinir sistemi",x:172,y:139,color:"#4f8edb",role:"Solunum, dolaşım ve sindirim gibi yaşamsal faaliyetleri düzenler."},
+ {id:"omurilik",name:"Omurilik",group:"Sinir sistemi",x:166,y:220,color:"#4f8edb",role:"Beyin ile vücut arasındaki sinirsel iletimi sağlar ve reflekslerin yönetiminde görevlidir."},
+ {id:"sinirler",name:"Çevresel sinirler",group:"Sinir sistemi",x:94,y:310,color:"#4f8edb",role:"Merkezi sinir sistemi ile organlar arasında bilgi taşır. Uyarıları merkeze, cevapları ilgili yapılara iletir."},
  {id:"hipofiz",name:"Hipofiz bezi",group:"İç salgı bezleri",x:160,y:91,color:"#db72a8",role:"Büyüme başta olmak üzere başka iç salgı bezlerinin çalışmasını düzenleyen hormonlar salgılar.",hormone:"Büyüme hormonu"},
  {id:"tiroit",name:"Tiroit bezi",group:"İç salgı bezleri",x:165,y:165,color:"#db72a8",role:"Vücudun enerji kullanımını ve metabolizma hızını düzenlemeye yardımcı olur.",hormone:"Tiroksin"},
  {id:"bobrek-ustu",name:"Böbrek üstü bezleri",group:"İç salgı bezleri",x:245,y:265,color:"#db72a8",role:"Heyecan ve korku gibi durumlarda vücudun hızlı tepki vermesine yardımcı olur.",hormone:"Adrenalin"},
@@ -28,66 +28,32 @@ const questions = [
 
 function BodyMap({items,active,onPick}:{items:Part[];active:string;onPick:(id:string)=>void}) {
  const isN=items[0]?.group==="Sinir sistemi";
- return <svg viewBox="0 0 330 455" className="body-svg" role="img" aria-label="İnsan vücudunda beyin, beyincik, omurilik soğanı, omurilik ve çevresel sinirlerin ayrıntılı şeması">
-  <defs>
-   <linearGradient id="skinReal" x1="0" x2="1" y1="0" y2="1"><stop stopColor="#f8dfcf"/><stop offset=".48" stopColor="#e9bda7"/><stop offset="1" stopColor="#c98f7c"/></linearGradient>
-   <linearGradient id="brainReal" x1="0" x2="1" y1="0" y2="1"><stop stopColor="#ffb3b0"/><stop offset=".55" stopColor="#f27682"/><stop offset="1" stopColor="#bd536c"/></linearGradient>
-   <linearGradient id="nerveReal" x1="0" x2="1"><stop stopColor="#fff29a"/><stop offset=".5" stopColor="#f5c842"/><stop offset="1" stopColor="#d68a16"/></linearGradient>
-   <radialGradient id="bodyGlow"><stop stopColor="#d9efff" stopOpacity=".55"/><stop offset="1" stopColor="#8bbbe8" stopOpacity="0"/></radialGradient>
-   <filter id="softGlow"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-  </defs>
-  <ellipse cx="165" cy="235" rx="145" ry="205" fill="url(#bodyGlow)"/>
+ return <svg viewBox="0 0 330 455" className="body-svg" role="img" aria-label="Seçilebilir sinir sistemi ve iç salgı bezleri şeması">
+  <defs><linearGradient id="bodySkin" x2="0" y2="1"><stop stopColor="#f6d9c4"/><stop offset="1" stopColor="#e8bfa7"/></linearGradient></defs>
+  <circle cx="165" cy="53" r="36" fill="url(#bodySkin)" stroke="#bd9b88" strokeWidth="2"/>
+  <path d="M140 91 Q165 82 190 91 L214 112 L204 220 L195 282 L210 420 L177 420 L165 292 L153 420 L120 420 L135 282 L126 220 L116 112Z" fill="url(#bodySkin)" stroke="#bd9b88" strokeWidth="2"/>
+  <path d="M120 111 L82 130 L52 230 L66 238 L105 158 L128 145 M210 111 L248 130 L278 230 L264 238 L225 158 L202 145" fill="none" stroke="#e8bfa7" strokeWidth="17" strokeLinecap="round"/>
   {isN ? <>
-   {/* İnsan vücudu: önden görünüm */}
-   <path d="M143 88 Q127 91 111 102 L88 113 Q73 120 68 140 L43 224 Q39 238 51 243 Q62 247 68 234 L99 161 L116 151 L108 224 Q104 245 111 270 L105 318 L91 416 Q89 430 103 432 L119 432 L139 319 L151 276 L165 284 L179 276 L191 319 L211 432 L228 432 Q241 430 238 416 L225 318 L219 270 Q226 245 222 224 L214 151 L231 161 L262 234 Q268 247 279 243 Q291 238 287 224 L262 140 Q257 120 242 113 L219 102 Q203 91 187 88Z" fill="url(#skinReal)" stroke="#bd8e7e" strokeWidth="2.2"/>
-   <path d="M143 86 Q165 78 187 86 L191 103 Q181 116 165 116 Q149 116 139 103Z" fill="url(#skinReal)" stroke="#bd8e7e" strokeWidth="1.5"/>
-   <path d="M145 104 Q165 116 185 104 L202 124 L195 218 Q165 235 135 218 L128 124Z" fill="#e9bda7" opacity=".42"/>
-   <path d="M165 117 L165 272" stroke="#a86e65" strokeWidth="1.5" opacity=".35"/>
-   {/* Boyun ve beyin */}
-   <path d="M145 24 Q147 8 165 8 Q183 8 185 24 L183 61 Q179 76 165 77 Q151 76 147 61Z" fill="url(#skinReal)" stroke="#bd8e7e" strokeWidth="2"/>
-   <path d="M147 32 Q143 15 160 13 Q177 9 184 25 Q190 39 179 52 Q169 61 151 51 Q143 45 147 32Z" fill="url(#brainReal)" stroke="#a94d64" strokeWidth="1.6" filter="url(#softGlow)"/>
-   <path d="M153 21 Q158 15 161 24 Q166 31 158 35 M169 17 Q178 20 173 28 Q168 34 177 39 M149 39 Q158 34 162 43 Q165 50 157 52 M168 42 Q177 35 181 45" fill="none" stroke="#a94761" strokeWidth="2" strokeLinecap="round"/>
-   <path d="M174 49 Q188 47 188 59 Q185 70 174 68 Q164 65 166 57Z" fill="#d9657a" stroke="#9f425a" strokeWidth="1.5"/>
-   <path d="M163 60 Q159 68 163 81 L167 92" fill="none" stroke="#d98b43" strokeWidth="8" strokeLinecap="round"/>
-   {/* Omurilik ve sinir ağı */}
-   <g fill="none" stroke="url(#nerveReal)" strokeLinecap="round" strokeLinejoin="round" filter="url(#softGlow)">
-    <path d="M165 83 C162 112 168 137 165 164 S166 218 165 268" strokeWidth="7"/>
-    <path d="M163 113 C145 125 132 139 117 155 S91 177 78 199 M167 113 C185 125 198 139 213 155 S239 177 252 199" strokeWidth="3.5"/>
-    <path d="M164 142 C143 150 128 168 111 184 S88 214 76 245 M166 142 C187 150 202 168 219 184 S242 214 254 245" strokeWidth="3"/>
-    <path d="M164 171 C145 178 132 194 119 212 S99 245 91 277 M166 171 C185 178 198 194 211 212 S231 245 239 277" strokeWidth="3"/>
-    <path d="M164 198 C145 209 135 228 125 249 S111 278 108 310 M166 198 C185 209 195 228 205 249 S219 278 222 310" strokeWidth="3"/>
-    <path d="M163 226 C145 239 137 257 131 280 S123 318 119 350 M167 226 C185 239 193 257 199 280 S207 318 211 350" strokeWidth="2.8"/>
-    <path d="M163 252 C151 268 146 288 144 310 L137 359 M167 252 C179 268 184 288 186 310 L193 359" strokeWidth="2.8"/>
-    <path d="M111 184 L96 171 L83 164 M219 184 L234 171 L247 164 M91 277 L72 292 L59 317 M239 277 L258 292 L271 317" strokeWidth="2.2"/>
-    <path d="M119 350 L112 379 L104 405 M211 350 L218 379 L226 405 M137 359 L132 390 L127 414 M193 359 L198 390 L203 414" strokeWidth="2.2"/>
-    <path d="M78 199 L66 214 L60 230 M252 199 L264 214 L270 230 M108 310 L95 328 L88 348 M222 310 L235 328 L242 348" strokeWidth="2"/>
-   </g>
-   {/* Kollar ve bacaklarda sinir uçları */}
-   <g fill="none" stroke="#f7d96a" strokeWidth="1.8" strokeLinecap="round">
-    <path d="M77 202 L65 225 L57 241 M83 210 L73 236 L69 254 M253 202 L265 225 L273 241 M247 210 L257 236 L261 254"/>
-    <path d="M107 310 L101 346 L98 378 L104 411 M116 318 L111 356 L110 390 M223 310 L229 346 L232 378 L226 411 M214 318 L219 356 L220 390"/>
-   </g>
-   {/* İç hatlarla kas ve gövde derinliği */}
-   <path d="M132 130 Q165 146 198 130 M126 178 Q165 195 204 178 M121 220 Q165 238 209 220 M119 266 Q165 280 211 266" fill="none" stroke="#c58f7d" strokeWidth="1.2" opacity=".45"/>
+   <path d="M165 82 L165 274" stroke="#3b82c9" strokeWidth="9" strokeLinecap="round" opacity=".8"/>
+   <path d="M165 190 L125 252 L95 309 M165 190 L205 252 L235 309 M165 270 L135 345 M165 270 L195 345" stroke="#3b82c9" strokeWidth="4" fill="none" strokeLinecap="round"/>
+   <path d="M139 47 Q145 23 169 26 Q192 31 190 53 Q185 69 165 66 Q145 67 139 47Z" fill="#78a9eb" stroke="#376eae" strokeWidth="2"/>
+   <ellipse cx="188" cy="69" rx="15" ry="12" fill="#78a9eb" stroke="#376eae" strokeWidth="2"/>
+   <path d="M162 72 L162 90" stroke="#376eae" strokeWidth="7" strokeLinecap="round"/>
   </> : <>
-   <path d="M143 88 Q127 91 111 102 L88 113 Q73 120 68 140 L43 224 Q39 238 51 243 Q62 247 68 234 L99 161 L116 151 L108 224 Q104 245 111 270 L105 318 L91 416 Q89 430 103 432 L119 432 L139 319 L151 276 L165 284 L179 276 L191 319 L211 432 L228 432 Q241 430 238 416 L225 318 L219 270 Q226 245 222 224 L214 151 L231 161 L262 234 Q268 247 279 243 Q291 238 287 224 L262 140 Q257 120 242 113 L219 102 Q203 91 187 88Z" fill="url(#skinReal)" stroke="#bd8e7e" strokeWidth="2"/>
-   <path d="M145 104 Q165 116 185 104 L202 124 L195 218 Q165 235 135 218 L128 124Z" fill="#e9bda7" opacity=".42"/>
-   <path d="M145 24 Q147 8 165 8 Q183 8 185 24 L183 61 Q179 76 165 77 Q151 76 147 61Z" fill="url(#skinReal)" stroke="#bd8e7e" strokeWidth="2"/>
-   <g fill="#d96fa5" stroke="#a8487c" strokeWidth="1.8">
-    <path d="M158 64 Q165 56 172 64 L176 88 Q165 96 154 88Z"/>
-    <path d="M151 125 Q165 116 179 125 L185 146 Q165 157 145 146Z"/>
-    <path d="M127 241 Q111 230 105 248 Q111 269 132 266 M203 241 Q219 230 225 248 Q219 269 198 266Z"/>
-    <path d="M143 296 Q165 281 187 296 Q184 316 165 320 Q146 316 143 296Z"/>
-    <ellipse cx="165" cy="380" rx="22" ry="10"/>
-   </g>
+   <path d="M164 90 L164 120" stroke="#d76da4" strokeWidth="7" strokeLinecap="round"/>
+   <path d="M151 144 Q165 136 179 144 L180 164 Q165 172 150 164Z" fill="#d76da4" stroke="#a8497d" strokeWidth="2"/>
+   <path d="M145 250 Q130 235 119 255 Q128 275 145 270 M185 250 Q200 235 211 255 Q202 275 185 270" fill="#d76da4" stroke="#a8497d" strokeWidth="2"/>
+   <path d="M143 300 Q165 286 187 300 Q182 320 165 322 Q148 320 143 300Z" fill="#e69a60" stroke="#b76b3c" strokeWidth="2"/>
+   <ellipse cx="165" cy="380" rx="20" ry="9" fill="#d76da4" stroke="#a8497d" strokeWidth="2"/>
   </>}
   {items.map(p=><g key={p.id} onClick={()=>onPick(p.id)} role="button" tabIndex={0} aria-label={p.name+" seç"} onKeyDown={e=>{if(e.key==="Enter"||e.key===" ")onPick(p.id)}} style={{cursor:"pointer"}}>
-    <circle cx={p.x} cy={p.y} r={active===p.id?12:8} fill={p.color} stroke={active===p.id?"#172554":"white"} strokeWidth={active===p.id?3.5:2}/>
-    <circle cx={p.x} cy={p.y} r="2.5" fill="white"/>
+    <circle cx={p.x} cy={p.y} r={active===p.id?13:9} fill={p.color} stroke={active===p.id?"#172554":"white"} strokeWidth={active===p.id?4:2}/>
+    <circle cx={p.x} cy={p.y} r="3" fill="white"/>
    </g>)}
-  <text x="165" y="449" textAnchor="middle" fontSize="10" fill="#64748b">{isN?"SİNİR SİSTEMİ":"İÇ SALGI BEZLERİ"}</text>
+  <text x="165" y="447" textAnchor="middle" fontSize="10" fill="#64748b">{isN?"SİNİR SİSTEMİ":"İÇ SALGI BEZLERİ"}</text>
  </svg>
 }
+
 export default function SinirVeHormonPage(){
  const [tab,setTab]=useState<"nervous"|"hormone">("nervous");
  const [active,setActive]=useState("beyin");
@@ -113,4 +79,14 @@ export default function SinirVeHormonPage(){
      <div className="detail-top"><span>{selected.group}</span><small>{list.findIndex(p=>p.id===selected.id)+1} / {list.length}</small></div>
      {mode==="kesfet"?<><h2>{selected.name}</h2><p>{selected.role}</p>{selected.hormone&&<div className="hormone"><b>Örnek hormonlar</b><span>{selected.hormone}</span></div>}<div className="tip">💡 <b>İpucu:</b> Şemadaki farklı noktalara dokunarak diğer yapıları da inceleyebilirsin.</div></>:
      <><h2>Bu yapının adı ne?</h2><p>Şemada seçili olan yapının adını aşağıya yaz.</p><input value={typed} onChange={e=>{setTyped(e.target.value);setRevealed(false)}} placeholder="Yapının adını yaz..." onKeyDown={e=>{if(e.key==="Enter")setRevealed(true)}}/><button className="primary" onClick={()=>setRevealed(true)}>Cevabı kontrol et</button>{revealed&&<div className="answer"><b>{typed.trim().toLocaleLowerCase("tr")===selected.name.toLocaleLowerCase("tr")?"Tebrikler, doğru!":"Doğru cevap: "+selected.name}</b><p>{selected.role}</p>{selected.hormone&&<small>Hormon: {selected.hormone}</small>}</div>}</>}
-     <div className="nav-buttons"><button onClick={()=>{const i=list.findIndex(p=>p.id===active);setActive(list[(i+list.length-1)%list.length].id);setRevealed(false);setTyped("")}}>← Önceki</button><button onClick={()=>{const i=list.findIndex(p=>p.id===active);setActive(list[(i+1)%list.length].id);se
+     <div className="nav-buttons"><button onClick={()=>{const i=list.findIndex(p=>p.id===active);setActive(list[(i+list.length-1)%list.length].id);setRevealed(false);setTyped("")}}>← Önceki</button><button onClick={()=>{const i=list.findIndex(p=>p.id===active);setActive(list[(i+1)%list.length].id);setRevealed(false);setTyped("")}}>Sonraki →</button></div>
+    </article>
+   </section>}
+   {mode!=="test"&&<section className="structure-list"><h3>Yapıları seç</h3><div>{list.map(p=><button key={p.id} className={active===p.id?"active":""} onClick={()=>{setActive(p.id);setRevealed(false);setTyped("")}}><i style={{background:p.color}}/>{p.name}</button>)}</div></section>}
+   <aside className="note"><b>Unutma:</b> Sinir sistemi uyarılara hızlı yanıt verilmesini sağlar. İç salgı bezleri ise hormonları kana salgılayarak büyüme, gelişme ve vücudun düzenlenmesinde görev alır.</aside>
+   <footer><Link href="/animasyonlar/6">← 6. sınıf animasyonlarına dön</Link><button onClick={()=>{changeTab("nervous");setAnswers({});setChecked(false)}}>↻ Baştan başla</button></footer>
+  </div>
+  <style jsx>{`
+  .lesson{min-height:100vh;background:linear-gradient(180deg,#edf5ff,#f8fafc 360px);padding:22px 14px 55px;color:#172b45}.wrap{max-width:1050px;margin:auto}.crumb{font-size:13px;color:#718096;margin-bottom:18px}.crumb a{color:#2563a5;font-weight:800;text-decoration:none}.hero{text-align:center;padding:15px 5px 25px}.hero>span{font-size:11px;letter-spacing:.13em;font-weight:950;color:#3475b7}.hero h1{font-size:clamp(27px,5vw,42px);font-weight:950;color:#173b63;margin:10px 0}.hero p{color:#62748a;line-height:1.6;margin:0}.tabs,.modes{display:flex;gap:9px;justify-content:center;flex-wrap:wrap}.tabs button,.modes button{border:1px solid #d6e2ef;border-radius:13px;padding:12px 17px;font-weight:850;background:white;color:#47627d;cursor:pointer}.tabs button.on{background:#1f5e9c;color:white;border-color:#1f5e9c}.modes{margin:15px 0 17px}.modes button{padding:9px 15px;font-size:13px}.modes button.chosen{background:#dcecff;color:#174f85;border-color:#8dbbe8}.work{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.85fr);gap:16px}.map-card,.detail,.structure-list,.quiz{background:white;border:1px solid #dce6f0;border-radius:21px;box-shadow:0 10px 30px #193b5b0b}.map-card{padding:15px;background:linear-gradient(180deg,#f8fcff,#edf5fc)}.map-title{display:flex;justify-content:space-between;gap:8px;align-items:center}.map-title span{font-size:10px;letter-spacing:.12em;font-weight:950;color:#3573ad}.map-title small{font-size:11px;color:#8393a5}.body-svg{width:100%;height:auto;max-height:470px;display:block;margin:5px auto}.key{display:flex;align-items:center;justify-content:center;gap:7px;color:#64748b;font-size:11px}.key span{width:9px;height:9px;border-radius:50%;display:inline-block;margin-left:8px}.blue{background:#4f8edb}.pink{background:#db72a8}.detail{padding:24px;display:flex;flex-direction:column;justify-content:center}.detail-top{display:flex;justify-content:space-between;align-items:center}.detail-top span{background:#e9f3ff;color:#28639b;border-radius:30px;padding:7px 12px;font-size:11px;font-weight:900}.detail-top small{color:#96a5b5}.detail h2{font-size:27px;font-weight:950;color:#194d7b;margin:20px 0 10px}.detail>p{font-size:15px;line-height:1.75;color:#586b7e}.hormone,.answer{background:#f1f8ff;border:1px solid #d9eafa;border-radius:13px;padding:14px;margin-top:14px}.hormone b{display:block;font-size:12px;color:#53718d}.hormone span{display:block;font-weight:900;color:#245f94;margin-top:5px}.tip{background:#fff8e8;border-radius:12px;padding:13px;margin-top:18px;font-size:12px;line-height:1.6;color:#78602b}.detail input{border:1px solid #cbd9e7;border-radius:12px;padding:13px;margin:9px 0 12px;font:inherit;outline-color:#428bd0}.primary{background:#2166a5;color:white;border:0;border-radius:11px;padding:12px 17px;font-weight:900;cursor:pointer}.answer b{color:#245f94}.answer p{font-size:13px;line-height:1.6;color:#526b82}.answer small{font-weight:800;color:#28669f}.nav-buttons{display:flex;gap:9px;margin-top:22px}.nav-buttons button{border:0;border-radius:10px;padding:11px 14px;background:#e8f1fa;color:#245d91;font-weight:850;cursor:pointer}.nav-buttons button:last-child{background:#2166a5;color:white;flex:1}.structure-list{padding:18px;margin-top:16px}.structure-list h3{margin:0 0 12px;font-size:16px;font-weight:950;color:#214e78}.structure-list>div{display:flex;gap:8px;flex-wrap:wrap}.structure-list button{display:flex;align-items:center;gap:7px;border:1px solid #e1e9f1;border-radius:10px;padding:9px 11px;background:#fbfdff;color:#47627a;font-size:12px;font-weight:800;cursor:pointer}.structure-list button.active{border-color:#4b91cf;background:#edf6ff;color:#1c5a92}.structure-list i{width:8px;height:8px;border-radius:50%}.note{margin-top:16px;background:#fff8e8;border:1px solid #f0e3bf;border-radius:13px;padding:14px 17px;font-size:13px;line-height:1.7;color:#6d5b31}.quiz{padding:22px}.quiz-head{display:flex;justify-content:space-between;align-items:center;gap:10px}.quiz-head small{font-size:10px;letter-spacing:.15em;color:#4280b8;font-weight:950}.quiz-head h2{margin:5px 0 15px;font-size:25px;color:#194d7b}.quiz-head>span{font-size:12px;color:#71869a}.question{padding:15px 0;border-top:1px solid #e8eef4}.question>b{font-size:14px;line-height:1.6}.options{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.options button{border:1px solid #dce6f0;border-radius:10px;background:#fbfdff;padding:9px 12px;color:#49637c;font-size:12px;font-weight:750;cursor:pointer}.options button.selected{background:#e5f1ff;border-color:#6da4d8;color:#1c5d97}.correct{color:#16804b;font-size:12px;font-weight:850}.wrong{color:#b45353;font-size:12px;font-weight:850}.score{display:inline-block;margin:12px;color:#1d6d47}.reset{margin:10px;border:0;background:transparent;color:#53718d;font-weight:800;cursor:pointer}footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:20px}footer a{color:#28669f;text-decoration:none;font-weight:850;font-size:13px}footer button{border:0;background:#e5eff9;color:#245d91;border-radius:10px;padding:10px 14px;font-weight:850;cursor:pointer}@media(max-width:720px){.work{grid-template-columns:1fr}.body-svg{max-height:390px}.detail{padding:20px}.hero p{font-size:14px}.quiz{padding:16px}}`}</style>
+ </main>
+}
