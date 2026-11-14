@@ -1,0 +1,459 @@
+{
+  "grade": 6,
+  "unit": 5,
+  "title": "Maddenin Ayırt Edici Özellikleri",
+  "slug": "maddenin-ayirt-edici-ozellikleri",
+  "description": "Maarif Modeli öğrenme çıktılarıyla eşleştirilmiş 30 özgün senaryolu ve görsel destekli soru.",
+  "questions": [
+    {
+      "id": 1,
+      "outcome": "FB.6.5.1",
+      "visual": "🚆 🧪",
+      "scenario": "Demir rayların uçları arasında yazın boşluk bırakılıyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Nedeni nedir?",
+      "options": [
+        "Isınınca genleşmeleri",
+        "Işık üretmeleri",
+        "Kütle kaybetmeleri",
+        "Soğukta genleşmeleri"
+      ],
+      "answer": 0,
+      "explanation": "Isınan demir genleşir."
+    },
+    {
+      "id": 2,
+      "outcome": "FB.6.5.1",
+      "visual": "🚆 📋",
+      "scenario": "Demir rayların uçları arasında yazın boşluk bırakılıyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Nedeni nedir?",
+      "options": [
+        "Isınınca genleşmeleri",
+        "Işık üretmeleri",
+        "Kütle kaybetmeleri",
+        "Soğukta genleşmeleri"
+      ],
+      "answer": 0,
+      "explanation": "Isınan demir genleşir."
+    },
+    {
+      "id": 3,
+      "outcome": "FB.6.5.1",
+      "visual": "🚆 🏠",
+      "scenario": "Demir rayların uçları arasında yazın boşluk bırakılıyor. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Nedeni nedir?",
+      "options": [
+        "Isınınca genleşmeleri",
+        "Işık üretmeleri",
+        "Kütle kaybetmeleri",
+        "Soğukta genleşmeleri"
+      ],
+      "answer": 0,
+      "explanation": "Isınan demir genleşir."
+    },
+    {
+      "id": 4,
+      "outcome": "FB.6.5.1",
+      "visual": "🫙 🧪",
+      "scenario": "Metal kavanoz kapağı ılık su altında tutulunca kolay açılıyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Bu olay nedir?",
+      "options": [
+        "Büzülme",
+        "Genleşme",
+        "Donma",
+        "Yoğunlaşma"
+      ],
+      "answer": 1,
+      "explanation": "Isınan metal kapak genleşir."
+    },
+    {
+      "id": 5,
+      "outcome": "FB.6.5.1",
+      "visual": "🫙 📋",
+      "scenario": "Metal kavanoz kapağı ılık su altında tutulunca kolay açılıyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Bu olay nedir?",
+      "options": [
+        "Büzülme",
+        "Genleşme",
+        "Donma",
+        "Yoğunlaşma"
+      ],
+      "answer": 1,
+      "explanation": "Isınan metal kapak genleşir."
+    },
+    {
+      "id": 6,
+      "outcome": "FB.6.5.1",
+      "visual": "🫙 🏠",
+      "scenario": "Metal kavanoz kapağı ılık su altında tutulunca kolay açılıyor. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Bu olay nedir?",
+      "options": [
+        "Büzülme",
+        "Genleşme",
+        "Donma",
+        "Yoğunlaşma"
+      ],
+      "answer": 1,
+      "explanation": "Isınan metal kapak genleşir."
+    },
+    {
+      "id": 7,
+      "outcome": "FB.6.5.1",
+      "visual": "🎈 🧪",
+      "scenario": "Balon ılık ortamda bekletildiğinde hacmi artıyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Bu gözlem neyi gösterir?",
+      "options": [
+        "Gazların ısı ile genleşmesini",
+        "Gazların kütlesiz olmasını",
+        "Balonun yok olmasını",
+        "Gazların yalnız soğukta genişlemesini"
+      ],
+      "answer": 0,
+      "explanation": "Isınan gaz genleşebilir."
+    },
+    {
+      "id": 8,
+      "outcome": "FB.6.5.1",
+      "visual": "🎈 📋",
+      "scenario": "Balon ılık ortamda bekletildiğinde hacmi artıyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Bu gözlem neyi gösterir?",
+      "options": [
+        "Gazların ısı ile genleşmesini",
+        "Gazların kütlesiz olmasını",
+        "Balonun yok olmasını",
+        "Gazların yalnız soğukta genişlemesini"
+      ],
+      "answer": 0,
+      "explanation": "Isınan gaz genleşebilir."
+    },
+    {
+      "id": 9,
+      "outcome": "FB.6.5.1",
+      "visual": "🎈 🏠",
+      "scenario": "Balon ılık ortamda bekletildiğinde hacmi artıyor. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Bu gözlem neyi gösterir?",
+      "options": [
+        "Gazların ısı ile genleşmesini",
+        "Gazların kütlesiz olmasını",
+        "Balonun yok olmasını",
+        "Gazların yalnız soğukta genişlemesini"
+      ],
+      "answer": 0,
+      "explanation": "Isınan gaz genleşebilir."
+    },
+    {
+      "id": 10,
+      "outcome": "FB.6.5.2",
+      "visual": "🧊 🧪",
+      "scenario": "Saf su normal koşullarda 0 °C civarında katılaşıyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Bu sıcaklık hangi noktadır?",
+      "options": [
+        "Erime",
+        "Donma",
+        "Kaynama",
+        "Yoğunlaşma"
+      ],
+      "answer": 1,
+      "explanation": "Saf su yaklaşık 0 °C'de donar."
+    },
+    {
+      "id": 11,
+      "outcome": "FB.6.5.2",
+      "visual": "🧊 📋",
+      "scenario": "Saf su normal koşullarda 0 °C civarında katılaşıyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Bu sıcaklık hangi noktadır?",
+      "options": [
+        "Erime",
+        "Donma",
+        "Kaynama",
+        "Yoğunlaşma"
+      ],
+      "answer": 1,
+      "explanation": "Saf su yaklaşık 0 °C'de donar."
+    },
+    {
+      "id": 12,
+      "outcome": "FB.6.5.2",
+      "visual": "🧊 🏠",
+      "scenario": "Saf su normal koşullarda 0 °C civarında katılaşıyor. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Bu sıcaklık hangi noktadır?",
+      "options": [
+        "Erime",
+        "Donma",
+        "Kaynama",
+        "Yoğunlaşma"
+      ],
+      "answer": 1,
+      "explanation": "Saf su yaklaşık 0 °C'de donar."
+    },
+    {
+      "id": 13,
+      "outcome": "FB.6.5.2",
+      "visual": "🧈 🧪",
+      "scenario": "Saf katı ısıtılırken sıcaklığı sabit kalıyor ve sıvı oluşuyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Olay hangisidir?",
+      "options": [
+        "Erime",
+        "Kaynama",
+        "Yoğunlaşma",
+        "Büzülme"
+      ],
+      "answer": 0,
+      "explanation": "Erime sırasında sıcaklık sabit kalabilir."
+    },
+    {
+      "id": 14,
+      "outcome": "FB.6.5.2",
+      "visual": "🧈 📋",
+      "scenario": "Saf katı ısıtılırken sıcaklığı sabit kalıyor ve sıvı oluşuyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Olay hangisidir?",
+      "options": [
+        "Erime",
+        "Kaynama",
+        "Yoğunlaşma",
+        "Büzülme"
+      ],
+      "answer": 0,
+      "explanation": "Erime sırasında sıcaklık sabit kalabilir."
+    },
+    {
+      "id": 15,
+      "outcome": "FB.6.5.2",
+      "visual": "🧈 🏠",
+      "scenario": "Saf katı ısıtılırken sıcaklığı sabit kalıyor ve sıvı oluşuyor. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Olay hangisidir?",
+      "options": [
+        "Erime",
+        "Kaynama",
+        "Yoğunlaşma",
+        "Büzülme"
+      ],
+      "answer": 0,
+      "explanation": "Erime sırasında sıcaklık sabit kalabilir."
+    },
+    {
+      "id": 16,
+      "outcome": "FB.6.5.2",
+      "visual": "💧 🧪",
+      "scenario": "Saf su normal basınçta 100 °C'de kaynıyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "100 °C hangi özelliktir?",
+      "options": [
+        "Donma noktası",
+        "Kaynama noktası",
+        "Yoğunluk",
+        "Kütle"
+      ],
+      "answer": 1,
+      "explanation": "Saf suyun normal basınçtaki kaynama noktası 100 °C'dir."
+    },
+    {
+      "id": 17,
+      "outcome": "FB.6.5.2",
+      "visual": "💧 📋",
+      "scenario": "Saf su normal basınçta 100 °C'de kaynıyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "100 °C hangi özelliktir?",
+      "options": [
+        "Donma noktası",
+        "Kaynama noktası",
+        "Yoğunluk",
+        "Kütle"
+      ],
+      "answer": 1,
+      "explanation": "Saf suyun normal basınçtaki kaynama noktası 100 °C'dir."
+    },
+    {
+      "id": 18,
+      "outcome": "FB.6.5.2",
+      "visual": "💧 🏠",
+      "scenario": "Saf su normal basınçta 100 °C'de kaynıyor. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "100 °C hangi özelliktir?",
+      "options": [
+        "Donma noktası",
+        "Kaynama noktası",
+        "Yoğunluk",
+        "Kütle"
+      ],
+      "answer": 1,
+      "explanation": "Saf suyun normal basınçtaki kaynama noktası 100 °C'dir."
+    },
+    {
+      "id": 19,
+      "outcome": "FB.6.5.2",
+      "visual": "📈 🧪",
+      "scenario": "Isıtma grafiğinde madde katı-sıvı karışımıyken sıcaklık sabit. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Hangi olay gerçekleşir?",
+      "options": [
+        "Kaynama",
+        "Erime",
+        "Donma",
+        "Yoğunlaşma"
+      ],
+      "answer": 1,
+      "explanation": "Katı-sıvı karışımı erimeyi gösterir."
+    },
+    {
+      "id": 20,
+      "outcome": "FB.6.5.2",
+      "visual": "📈 📋",
+      "scenario": "Isıtma grafiğinde madde katı-sıvı karışımıyken sıcaklık sabit. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Hangi olay gerçekleşir?",
+      "options": [
+        "Kaynama",
+        "Erime",
+        "Donma",
+        "Yoğunlaşma"
+      ],
+      "answer": 1,
+      "explanation": "Katı-sıvı karışımı erimeyi gösterir."
+    },
+    {
+      "id": 21,
+      "outcome": "FB.6.5.2",
+      "visual": "📈 🏠",
+      "scenario": "Isıtma grafiğinde madde katı-sıvı karışımıyken sıcaklık sabit. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Hangi olay gerçekleşir?",
+      "options": [
+        "Kaynama",
+        "Erime",
+        "Donma",
+        "Yoğunlaşma"
+      ],
+      "answer": 1,
+      "explanation": "Katı-sıvı karışımı erimeyi gösterir."
+    },
+    {
+      "id": 22,
+      "outcome": "FB.6.5.3–FB.6.5.4–FB.6.5.6",
+      "visual": "⚖️ 🧪",
+      "scenario": "Kütle 120 g, hacim 40 cm³. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Yoğunluk kaç g/cm³ olur?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "4800"
+      ],
+      "answer": 1,
+      "explanation": "120/40=3 g/cm³."
+    },
+    {
+      "id": 23,
+      "outcome": "FB.6.5.3–FB.6.5.4–FB.6.5.6",
+      "visual": "⚖️ 📋",
+      "scenario": "Kütle 120 g, hacim 40 cm³. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Yoğunluk kaç g/cm³ olur?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "4800"
+      ],
+      "answer": 1,
+      "explanation": "120/40=3 g/cm³."
+    },
+    {
+      "id": 24,
+      "outcome": "FB.6.5.3–FB.6.5.4–FB.6.5.6",
+      "visual": "⚖️ 🏠",
+      "scenario": "Kütle 120 g, hacim 40 cm³. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Yoğunluk kaç g/cm³ olur?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "4800"
+      ],
+      "answer": 1,
+      "explanation": "120/40=3 g/cm³."
+    },
+    {
+      "id": 25,
+      "outcome": "FB.6.5.3–FB.6.5.4–FB.6.5.6",
+      "visual": "🥛 🧪",
+      "scenario": "200 mL sıvının kütlesi 160 g. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Yoğunluk kaç g/mL'dir?",
+      "options": [
+        "0,8",
+        "1,25",
+        "40",
+        "360"
+      ],
+      "answer": 0,
+      "explanation": "160/200=0,8 g/mL."
+    },
+    {
+      "id": 26,
+      "outcome": "FB.6.5.3–FB.6.5.4–FB.6.5.6",
+      "visual": "🥛 📋",
+      "scenario": "200 mL sıvının kütlesi 160 g. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Yoğunluk kaç g/mL'dir?",
+      "options": [
+        "0,8",
+        "1,25",
+        "40",
+        "360"
+      ],
+      "answer": 0,
+      "explanation": "160/200=0,8 g/mL."
+    },
+    {
+      "id": 27,
+      "outcome": "FB.6.5.3–FB.6.5.4–FB.6.5.6",
+      "visual": "🥛 🏠",
+      "scenario": "200 mL sıvının kütlesi 160 g. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Yoğunluk kaç g/mL'dir?",
+      "options": [
+        "0,8",
+        "1,25",
+        "40",
+        "360"
+      ],
+      "answer": 0,
+      "explanation": "160/200=0,8 g/mL."
+    },
+    {
+      "id": 28,
+      "outcome": "FB.6.5.3–FB.6.5.4–FB.6.5.6",
+      "visual": "🪨 🧪",
+      "scenario": "Taş atılınca dereceli silindirde su 50 mL'den 70 mL'ye çıkıyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Taşın hacmi kaç cm³?",
+      "options": [
+        "20",
+        "50",
+        "70",
+        "120"
+      ],
+      "answer": 0,
+      "explanation": "Hacim artışı 20 cm³'tür."
+    },
+    {
+      "id": 29,
+      "outcome": "FB.6.5.3–FB.6.5.4–FB.6.5.6",
+      "visual": "🪨 📋",
+      "scenario": "Taş atılınca dereceli silindirde su 50 mL'den 70 mL'ye çıkıyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Taşın hacmi kaç cm³?",
+      "options": [
+        "20",
+        "50",
+        "70",
+        "120"
+      ],
+      "answer": 0,
+      "explanation": "Hacim artışı 20 cm³'tür."
+    },
+    {
+      "id": 30,
+      "outcome": "FB.6.5.3–FB.6.5.4–FB.6.5.6",
+      "visual": "🪨 🏠",
+      "scenario": "Taş atılınca dereceli silindirde su 50 mL'den 70 mL'ye çıkıyor. Bir aile bu bilgiyi günlük yaşamda karşılaştığı bir sorunu açıklamak için kullanıyor.",
+      "question": "Taşın hacmi kaç cm³?",
+      "options": [
+        "20",
+        "50",
+        "70",
+        "120"
+      ],
+      "answer": 0,
+      "explanation": "Hacim artışı 20 cm³'tür."
+    }
+  ]
+}
