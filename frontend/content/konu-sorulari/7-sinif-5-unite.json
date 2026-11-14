@@ -143,58 +143,62 @@
     {
       "id": 10,
       "visual": "🔤",
-      "scenario": "Periyodik tabloda H sembolüyle gösterilen element hangisidir?",
-      "question": [
+      "scenario": "Periyodik tabloda H sembolüyle gösterilen element soruluyor.",
+      "question": "H sembolü hangi elemente aittir?",
+      "options": [
         "Helyum",
         "Hidrojen",
         "Hafniyum",
         "Cıva"
       ],
-      "options": 1,
-      "answer": "H, hidrojenin sembolüdür.",
-      "explanation": "FB.7.5.5"
+      "answer": 1,
+      "explanation": "H, hidrojenin sembolüdür.",
+      "outcome": "FB.7.5.5"
     },
     {
       "id": 11,
       "visual": "🔤",
-      "scenario": "Na sembolü hangi elemente aittir?",
-      "question": [
+      "scenario": "Kimya laboratuvarında sodyum elementinin sembolü kullanılıyor.",
+      "question": "Na sembolü hangi elemente aittir?",
+      "options": [
         "Azot",
         "Sodyum",
         "Neon",
         "Nikel"
       ],
-      "options": 1,
-      "answer": "Na, sodyum elementinin sembolüdür.",
-      "explanation": "FB.7.5.5"
+      "answer": 1,
+      "explanation": "Na, sodyum elementinin sembolüdür.",
+      "outcome": "FB.7.5.5"
     },
     {
       "id": 12,
       "visual": "📊",
-      "scenario": "Periyodik tabloda yatay sıralara ne ad verilir?",
-      "question": [
+      "scenario": "Bir öğrenci periyodik tablonun yatay sıralarını inceliyor.",
+      "question": "Periyodik tabloda yatay sıralara ne ad verilir?",
+      "options": [
         "Grup",
         "Periyot",
         "Aile",
         "Katman"
       ],
-      "options": 1,
-      "answer": "Periyodik tablonun yatay sıraları periyot olarak adlandırılır.",
-      "explanation": "FB.7.5.6"
+      "answer": 1,
+      "explanation": "Periyodik tablonun yatay sıraları periyot olarak adlandırılır.",
+      "outcome": "FB.7.5.6"
     },
     {
       "id": 13,
       "visual": "📊",
-      "scenario": "Periyodik tabloda dikey sütunlar nasıl adlandırılır?",
-      "question": [
+      "scenario": "Bir öğrenci periyodik tablodaki dikey sütunları karşılaştırıyor.",
+      "question": "Dikey sütunlar nasıl adlandırılır?",
+      "options": [
         "Periyot",
         "Grup",
         "Yörünge",
         "Çekirdek"
       ],
-      "options": 1,
-      "answer": "Dikey sütunlar grupları oluşturur.",
-      "explanation": "FB.7.5.6"
+      "answer": 1,
+      "explanation": "Dikey sütunlar grupları oluşturur.",
+      "outcome": "FB.7.5.6"
     },
     {
       "id": 14,
@@ -214,16 +218,17 @@
     {
       "id": 15,
       "visual": "🧂 NaCl",
-      "scenario": "NaCl formülüyle gösterilen bileşikte hangi elementler vardır?",
-      "question": [
+      "scenario": "NaCl formülüyle gösterilen bileşik inceleniyor.",
+      "question": "NaCl bileşiğinde hangi elementler vardır?",
+      "options": [
         "Sodyum ve klor",
         "Sodyum ve kalsiyum",
         "Azot ve karbon",
         "Hidrojen ve klor"
       ],
-      "options": 0,
-      "answer": "Na sodyumu, Cl kloru temsil eder.",
-      "explanation": "FB.7.5.7"
+      "answer": 0,
+      "explanation": "Na sodyumu, Cl kloru temsil eder.",
+      "outcome": "FB.7.5.7"
     },
     {
       "id": 16,
