@@ -1,554 +1,554 @@
 {
   "id": "6-sinif-5-unite-yeni-nesil-30",
   "slug": "6-sinif-5-unite-yeni-nesil-30",
-  "title": "6. Sınıf 5. Ünite Maddenin Ayırt Edici Özellikleri Yeni Nesil Deneme",
-  "description": "Maddenin Ayırt Edici Özellikleri ünitesinden 30 özgün, senaryolu ve yorumlama odaklı soru. Türkiye Yüzyılı Maarif Modeli ile uyumludur.",
+  "title": "6. Sınıf 5. Ünite Maddenin Ayırt Edici Özellikleri – 30 Yeni Nesil Soru",
+  "description": "Maddenin Ayırt Edici Özellikleri ünitesinin kazanımlarına uygun; uzun senaryolu, görselli ve çözümlü 30 özgün yeni nesil soru.",
   "classLevel": 6,
-  "durationMin": 60,
+  "durationMin": 50,
   "units": [
     "Maddenin Ayırt Edici Özellikleri"
   ],
-  "source": "T.C. Millî Eğitim Bakanlığı, Türkiye Yüzyılı Maarif Modeli Fen Bilimleri Dersi Öğretim Programı, 6. sınıf. Sorular özgün olarak hazırlanmıştır.",
+  "source": "Türkiye Yüzyılı Maarif Modeli Fen Bilimleri 6. sınıf 5. ünite kazanımları (FB.6.5.x). Sorular özgün olarak hazırlanmıştır.",
   "questions": [
     {
       "no": 1,
       "unit": "Maddenin Ayırt Edici Özellikleri",
       "outcome": "FB.6.5.1",
-      "skill": "Günlük yaşam",
-      "scenario": "Bir köprüde sıcak yaz günlerinde metal parçaların uzaması için bağlantı noktalarında boşluk bırakıldığı görülüyor.",
-      "stem": "Bu tasarımın temel nedeni nedir?",
+      "skill": "Deney yorumlama",
+      "scenario": "Fen laboratuvarında oda sıcaklığındaki metal bilye, metal halkadan rahatça geçiyor. Bilye bir süre alkol lambasının alevinde tutulduktan sonra halkadan geçmiyor. Bilye buzlu suda bekletilince yeniden halkadan geçebiliyor. Halka bu işlemler sırasında ısıtılmamıştır.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q01.svg",
+      "imageAlt": "Soğuk, ısıtılmış ve yeniden soğutulmuş bilyenin halkadan geçişini gösteren üç şema",
+      "stem": "Bu deneyin sonuçlarına göre aşağıdakilerden hangisi söylenebilir?",
       "options": [
-        "Metalin ısı alınca genleşmesi",
-        "Metalin ısı alınca kütlesinin artması",
-        "Metalin soğuyunca erimesi",
-        "Metalin ışık üretmesi"
+        "Metal bilye ısı alınca büzülür, ısı verince genleşir.",
+        "Isıtılan bilyenin kütlesi artmış, bu yüzden halkadan geçememiştir.",
+        "Bilye ısıtılınca halkanın iç çapı küçülmüştür.",
+        "Metal bilye ısı alınca genleşir, ısı verince büzülür."
       ],
-      "answer": 0,
-      "explanation": "Metaller ısı aldığında genleşebilir; boşluklar bu boyut değişimine pay bırakır.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 3,
+      "explanation": "Isı alan bilyenin tanecikleri arasındaki ortalama uzaklık artar, bilye genleşir ve halkadan geçemez. Soğutulunca bilye büzülerek eski boyutlarına yaklaşır."
     },
     {
       "no": 2,
       "unit": "Maddenin Ayırt Edici Özellikleri",
       "outcome": "FB.6.5.1",
-      "skill": "Gözlem",
-      "scenario": "Soğuk bir sabah elektrik tellerinin daha gergin, sıcak bir öğleden sonra daha sarkık olduğu gözleniyor.",
-      "stem": "Bu değişim hangi olayla açıklanır?",
+      "skill": "Tahmin yürütme",
+      "scenario": "Bir demiryolu bakım ekibi, ray eklerindeki boşluğu mevsimlere göre ölçüyor. Ekibin tabloya işlediği ölçümlere göre hava soğudukça raylar arasındaki boşluk büyüyor. Temmuz ayına ait ölçüm henüz yapılmamıştır.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q02.svg",
+      "imageAlt": "Aylara göre hava sıcaklığı ve raylar arası boşluğu gösteren tablo",
+      "stem": "Tabloya ve genleşme bilgisine göre Temmuz ayındaki boşluk için en uygun tahmin hangisidir?",
       "options": [
-        "Donma",
-        "Genleşme ve büzülme",
-        "Yoğunlaşma",
-        "Süblimleşme"
+        "8 mm'den daha büyüktür; çünkü raylar ısınınca büzülür.",
+        "12 mm'den daha büyüktür; çünkü raylar ısınınca büzülür.",
+        "8 mm'den daha küçüktür; çünkü raylar ısınınca genleşir.",
+        "8 mm'dir; çünkü sıcaklık raylar arasındaki boşluğu etkilemez."
       ],
-      "answer": 1,
-      "explanation": "Sıcaklık artınca teller genleşir, sıcaklık azalınca büzülür.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 2,
+      "explanation": "Hava ısındıkça raylar genleşir ve uzar, aralarındaki boşluk küçülür. Bu nedenle 35 °C'de boşluk 15 °C'deki 8 mm'den küçük olur."
     },
     {
       "no": 3,
       "unit": "Maddenin Ayırt Edici Özellikleri",
-      "outcome": "FB.6.5.2",
-      "skill": "Grafik yorumlama",
-      "scenario": "Bir öğrenci saf suyu ısıtırken sıcaklığı belirli bir süre 100 °C civarında sabit kalıyor ve kabarcıklar oluşuyor.",
-      "stem": "Bu sırada gerçekleşen olay hangisidir?",
+      "outcome": "FB.6.5.1",
+      "skill": "Neden-sonuç",
+      "scenario": "Elektrik dağıtım şirketinin teknisyeni, aynı iki direk arasındaki bakır telin yazın kışa göre daha fazla sarktığını fotoğraflarla belgeliyor. Tellerin direklere bağlandığı noktalar iki mevsimde de aynıdır. Teknisyen, telin uzunluğunun değiştiğini söylüyor.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q03.svg",
+      "imageAlt": "Yaz ve kış aylarında elektrik telinin sarkma durumu",
+      "stem": "Telin yazın daha çok sarkmasının nedeni aşağıdakilerden hangisidir?",
       "options": [
-        "Erime",
-        "Donma",
-        "Kaynama",
-        "Yoğuşma"
+        "Sıcak havada tel ısı alarak büzülür ve kısalır.",
+        "Sıcak havada tel soğuk havaya göre daha ağır olur.",
+        "Soğuk havada tel genleşir, sıcak havada ise uzunluğu değişmez.",
+        "Sıcak havada tel ısı alarak genleşir ve uzar."
       ],
-      "answer": 2,
-      "explanation": "Saf su normal atmosfer basıncında yaklaşık 100 °C'de kaynar; kaynama sırasında sıcaklık sabit kalır.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 3,
+      "explanation": "Yazın hava sıcaklığı yüksek olduğu için tel ısı alır, genleşerek uzar ve direkler arasında daha çok sarkar. Kışın soğuyan tel büzülür ve gergin kalır."
     },
     {
       "no": 4,
       "unit": "Maddenin Ayırt Edici Özellikleri",
-      "outcome": "FB.6.5.2",
-      "skill": "Kavram ilişkisi",
-      "scenario": "Aynı saf madde soğutulurken sıvı hâlden katı hâle geçiyor.",
-      "stem": "Bu maddenin donma noktası ile erime noktası arasındaki ilişki nasıldır?",
+      "outcome": "FB.6.5.1",
+      "skill": "Veri yorumlama",
+      "scenario": "Ayşe, bir termometreyi sırasıyla soğuk su, ılık su ve sıcak suya daldırıyor ve içindeki renkli sıvının seviyesini inceliyor. Üç ölçümde sıvı sütununun yükseklikleri şekilde gösterilmiştir. Ayşe termometrenin çalışma ilkesini merak ediyor.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q04.svg",
+      "imageAlt": "Farklı sıcaklıklarda termometre sıvısının yükselmesi",
+      "stem": "Termometrenin çalışma ilkesi ve gözlem için hangisi doğrudur?",
       "options": [
-        "Donma noktası her zaman daha yüksektir",
-        "Aynı basınçta eşittir",
-        "Birbirinden bağımsızdır",
-        "Erime noktası daima sıfırdır"
+        "Sıvı ısındıkça büzülür ve tüpte yükselir; soğudukça genleşir.",
+        "Sıvı ısındıkça genleşir ve tüpte yükselir; soğudukça büzülür ve alçalır.",
+        "Sıvının kütlesi ısındıkça artar ve tüpte yükselir.",
+        "Sıvının seviyesi sıcaklıktan değil, tüpün rengi değişir."
       ],
       "answer": 1,
-      "explanation": "Saf maddelerde aynı basınçta erime ve donma noktaları aynıdır.",
-      "image": "",
-      "imageAlt": ""
+      "explanation": "Termometredeki sıvı ısındığında genleşir ve tüp boyunca yükselir. Soğuyunca büzülür ve seviyesi düşer. Sıcaklık bu seviyeden okunur."
     },
     {
       "no": 5,
       "unit": "Maddenin Ayırt Edici Özellikleri",
-      "outcome": "FB.6.5.3",
-      "skill": "Hesaplama",
-      "scenario": "Kütlesi 120 g, hacmi 40 cm³ olan bir cismin yoğunluğu hesaplanıyor.",
-      "stem": "Cismin yoğunluğu kaç g/cm³ olur?",
+      "outcome": "FB.6.5.1",
+      "skill": "Günlük yaşam yorumu",
+      "scenario": "Selin'in annesi, kavanozun metal kapağını açamayınca kapağı birkaç dakika ılık suyun içine tutuyor. Kapak ısındıktan sonra kolayca açılıyor. Cam kavanozun gövdesi bu sırada suya değmiyor.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q05.svg",
+      "imageAlt": "Soğuk kavanoz ile ılık suda gevşeyen kapağı gösteren şema",
+      "stem": "Kapağın ılık su sayesinde kolay açılmasının bilimsel gerekçesi nedir?",
       "options": [
-        "2",
-        "3",
-        "4",
-        "4,8"
+        "Metal kapak ısı alarak büzülür ve kavanozdan ayrılır.",
+        "Metal kapak ısı alarak genleşir ve kavanoza daha gevşek oturur.",
+        "Su kapağın kütlesini azalttığı için kapak hafifler.",
+        "Isınan kapak kavanozun gövdesini daha çok sıkıştırır."
       ],
       "answer": 1,
-      "explanation": "Yoğunluk = kütle / hacim = 120 / 40 = 3 g/cm³.",
-      "image": "",
-      "imageAlt": ""
+      "explanation": "Isınan metal kapak genleşir, çapı büyür ve cam kavanoza daha gevşek oturur. Bu nedenle kapak daha kolay açılır."
     },
     {
       "no": 6,
       "unit": "Maddenin Ayırt Edici Özellikleri",
-      "outcome": "FB.6.5.3",
-      "skill": "Veri karşılaştırma",
-      "scenario": "Eşit hacimli iki sıvıdan A'nın kütlesi 80 g, B'nin kütlesi 100 g ölçülüyor.",
-      "stem": "Hangi sıvının yoğunluğu daha büyüktür?",
+      "outcome": "FB.6.5.1",
+      "skill": "Veri yorumlama",
+      "scenario": "Bir öğrenci, boyları ve sıcaklık artışı aynı olan K, L ve M metal çubuklarını ısıtıyor ve uzama miktarlarını tabloya yazıyor. Çubukların yalnızca yapıldığı madde farklıdır. Öğrenci hangi maddenin ısı alınca en çok genleştiğini bulmak istiyor.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q06.svg",
+      "imageAlt": "K, L ve M çubuklarının uzama miktarlarını gösteren tablo",
+      "stem": "Tablodaki verilere göre en çok ve en az genleşen çubuklar sırasıyla hangileridir?",
       "options": [
-        "A",
-        "B",
-        "İkisi eşit",
-        "Yalnız hacim bilinirse karşılaştırılamaz"
+        "L ve K",
+        "K ve L",
+        "M ve K",
+        "L ve M"
       ],
-      "answer": 1,
-      "explanation": "Hacimler eşit olduğunda kütlesi büyük olan sıvının yoğunluğu daha büyüktür.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 0,
+      "explanation": "Başlangıç boyu ve sıcaklık artışı aynı olduğundan uzama miktarı karşılaştırılabilir. En çok uzayan L, en az uzayan K'dir."
     },
     {
       "no": 7,
       "unit": "Maddenin Ayırt Edici Özellikleri",
-      "outcome": "FB.6.5.3–FB.6.5.4",
-      "skill": "Modelleme",
-      "scenario": "Bir öğrenci aynı maddeden yapılmış iki küreden birinin diğerinden büyük olduğunu görüyor. Büyük kürenin kütlesi de daha fazla ölçülüyor.",
-      "stem": "Bu iki kürenin yoğunlukları için hangi yorum yapılır?",
+      "outcome": "FB.6.5.1",
+      "skill": "Deney yorumlama",
+      "scenario": "Deniz, boş görünen bir cam şişenin ağzına bir balon geçiriyor. Şişeyi önce soğuk suya, sonra sıcak suya daldırıyor. Sıcak suda balonun şişmeye başladığını görüyor. Şişenin içinde yalnızca hava vardır.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q07.svg",
+      "imageAlt": "Soğuk ve sıcak suya daldırılmış şişenin ağzındaki balon",
+      "stem": "Bu gözlemin nedeni aşağıdakilerden hangisidir?",
       "options": [
-        "Büyük kürenin yoğunluğu daha fazladır",
-        "Küçük kürenin yoğunluğu daha fazladır",
-        "Aynı madde oldukları için yoğunlukları aynıdır",
-        "Yoğunluk yalnız şekle bağlıdır"
+        "Şişedeki hava ısı alınca büzülür ve balona dışarıdan hava girer.",
+        "Sıcak su şişenin içine geçerek balonu şişirir.",
+        "Şişedeki hava ısı alınca genleşir ve balonu şişirir.",
+        "Havanın kütlesi ısınınca artar."
       ],
       "answer": 2,
-      "explanation": "Aynı koşullarda aynı saf maddenin yoğunluğu madde miktarına ve şekline bağlı değildir.",
-      "image": "",
-      "imageAlt": ""
+      "explanation": "Gazlar da ısı alınca genleşir. Şişedeki hava ısındıkça hacmi artar ve balonu şişirir."
     },
     {
       "no": 8,
       "unit": "Maddenin Ayırt Edici Özellikleri",
-      "outcome": "FB.6.5.4",
-      "skill": "Deney verisi",
-      "scenario": "Bir tahta parçası suya bırakıldığında yüzüyor; metal bilye ise batıyor.",
-      "stem": "Bu gözlem hangi çıkarımı destekler?",
+      "outcome": "FB.6.5.1",
+      "skill": "Veri yorumlama",
+      "scenario": "Bir mühendis, katı, sıvı ve gaz hâldeki üç maddenin aynı başlangıç hacminden 50 °C ısıtıldığında hacimlerinin ne kadar arttığını ölçüyor ve tabloya yazıyor. Ölçümleri yorumlayarak malzeme seçimi yapacak.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q08.svg",
+      "imageAlt": "Katı, sıvı ve gazın ısınınca hacim artışlarını gösteren tablo",
+      "stem": "Tablodaki verilere göre aşağıdaki yorumlardan hangisi doğrudur?",
       "options": [
-        "Tahtanın yoğunluğu sudan küçüktür, metalinki sudan büyüktür",
-        "Tahtanın kütlesi yoktur",
-        "Metal suda çözünür",
-        "Suyun yoğunluğu sıfırdır"
+        "Aynı koşullarda katılar sıvılara, sıvılar da gazlara göre daha çok genleşir.",
+        "Yalnızca gazlar genleşir; katı ve sıvılar genleşmez.",
+        "Tüm maddeler ısı alınca aynı oranda genleşir.",
+        "Aynı koşullarda gazlar sıvılara, sıvılar da katılara göre daha çok genleşir."
       ],
-      "answer": 0,
-      "explanation": "Bir cismin yoğunluğu sıvıdan küçükse yüzebilir; büyükse batabilir.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 3,
+      "explanation": "Tabloda hacim artışı katıda en küçük, gazda en büyüktür. Katı, sıvı ve gaz hâldeki maddelerin hepsi genleşir ancak genleşme miktarı maddeye göre değişir."
     },
     {
       "no": 9,
       "unit": "Maddenin Ayırt Edici Özellikleri",
-      "outcome": "FB.6.5.3",
-      "skill": "Araştırma tasarımı",
-      "scenario": "Bir öğrenci yoğunluğu araştırırken kütleyi ölçüyor ancak hacmi ölçmeden yalnızca cismin rengine bakıyor.",
-      "stem": "Bu araştırmadaki temel eksiklik nedir?",
+      "outcome": "FB.6.5.1",
+      "skill": "Günlük yaşam yorumu",
+      "scenario": "Bir köprünün tabliyeleri arasında genleşme derzi denilen boşluklar bırakılmıştır. Köprü kış günü ölçüldüğünde derz aralığı 40 mm bulunmuştur. Yaz günü aynı derzin aralığı da ölçülecektir. Mühendis derzlerin köprüyü hasardan koruduğunu belirtiyor.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q09.svg",
+      "imageAlt": "Kış ve yaz aylarında köprü derzi aralığı",
+      "stem": "Yaz günü derz aralığı ve derzlerin bırakılma nedeni için aşağıdakilerden hangisi doğrudur?",
       "options": [
-        "Kütle ölçülmemeli",
-        "Yoğunluğu hesaplamak için hacim verisi de gerekir",
-        "Renk ölçülmeli",
-        "Sıcaklık her zaman sıfır olmalı"
+        "Derz aralığı 40 mm'den küçüktür; tabliyeler ısınınca genleşir ve boşluğu kullanır.",
+        "Derz aralığı 40 mm'den büyüktür; tabliyeler ısınınca büzülür.",
+        "Derz aralığı 40 mm'dir; sıcaklık tabliyelerin boyunu etkilemez.",
+        "Derz aralığı 40 mm'den büyüktür; tabliyeler ısınınca kütle kaybeder."
       ],
-      "answer": 1,
-      "explanation": "Yoğunluk kütle ve hacim ilişkisiyle belirlenir; iki ölçüm de gereklidir.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 0,
+      "explanation": "Tabliyeler yazın ısınıp genleşince aralarındaki boşluk küçülür. Derzler, genleşme sırasında köprünün çatlamasını veya bükülmesini önlemek için bırakılır."
     },
     {
       "no": 10,
       "unit": "Maddenin Ayırt Edici Özellikleri",
-      "outcome": "FB.6.5.3",
+      "outcome": "FB.6.5.1",
       "skill": "Neden-sonuç",
-      "scenario": "Bir sıvının sıcaklığı artırıldığında belirli koşullarda hacmi artıyor.",
-      "stem": "Sıvının kütlesi değişmiyorsa yoğunluğu nasıl değişir?",
+      "scenario": "Doruk, ağzına kadar suyla doldurduğu kapalı cam şişeyi bir gece buzluğa koyuyor. Ertesi sabah şişenin çatladığını ve içindeki suyun donduğunu görüyor. Doruk, çoğu maddenin donarken büzüldüğünü bildiği hâlde bu durumu şaşkınlıkla karşılıyor.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q10.svg",
+      "imageAlt": "Su dolu şişenin buzlukta donup çatlaması",
+      "stem": "Şişenin çatlamasının nedeni aşağıdakilerden hangisidir?",
       "options": [
-        "Artar",
-        "Azalır",
-        "Kesinlikle sıfır olur",
-        "Değişmeden kalır"
+        "Su donarken genleşir; hacmi artan buz şişenin içinde yer bulamaz.",
+        "Su donarken büzülür; şişe içe doğru çöker.",
+        "Su donarken kütlesi artar; şişe bu yükü taşıyamaz.",
+        "Cam, soğuyunca suyu emerek genleşir."
       ],
-      "answer": 1,
-      "explanation": "Kütle sabitken hacim artarsa kütle/hacim oranı olan yoğunluk azalır.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 0,
+      "explanation": "Su, birçok maddenin aksine donarken genleşir. Aynı kütlede buz, sıvı sudan daha fazla hacim kaplar; bu yüzden kapalı kap çatlayabilir."
     },
     {
       "no": 11,
       "unit": "Maddenin Ayırt Edici Özellikleri",
       "outcome": "FB.6.5.2",
-      "skill": "Bilimsel çıkarım",
-      "scenario": "Bir laboratuvarda farklı maddelerin erime noktaları ölçülerek tanımlama yapılmak isteniyor.",
-      "stem": "Hangi özellik maddeleri ayırt etmede daha kullanışlıdır?",
+      "skill": "Grafik okuma",
+      "scenario": "Bir öğrenci, saf bir katı maddeyi sabit bir ısıtıcıyla ısıtıyor ve sıcaklığını her dakika ölçüyor. Ölçümlerden elde ettiği sıcaklık-zaman grafiğinde bir süre sıcaklığın değişmediği görülüyor. Öğrenci grafikteki sabit sıcaklıktan yararlanıp maddenin bir özelliğini belirlemek istiyor.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q11.svg",
+      "imageAlt": "Katı maddenin ısıtılırken sıcaklık-zaman grafiği; 60 °C'de yatay bölüm vardır",
+      "stem": "Grafiğe göre bu maddenin erime noktası kaç °C'dir?",
       "options": [
-        "Maddenin miktarı",
-        "Kabın şekli",
-        "Erime noktası",
-        "Numunenin rengi her zaman"
+        "60 °C",
+        "20 °C",
+        "40 °C",
+        "100 °C"
       ],
-      "answer": 2,
-      "explanation": "Erime noktası saf maddeler için ayırt edici bir özelliktir.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 0,
+      "explanation": "Saf maddeler erirken sıcaklıkları sabit kalır. Grafikte 60 °C'de yatay bölüm olduğundan erime noktası 60 °C'dir."
     },
     {
       "no": 12,
       "unit": "Maddenin Ayırt Edici Özellikleri",
-      "outcome": "FB.6.5.1",
-      "skill": "Uygulama",
-      "scenario": "Kışın kavanozun ağzına sıkışan metal kapağın ılık suyla temas ettirilince daha kolay açıldığı görülüyor.",
-      "stem": "Bunun açıklaması hangisidir?",
+      "outcome": "FB.6.5.2",
+      "skill": "Grafik okuma",
+      "scenario": "Sıvı hâldeki saf bir madde soğutuluyor ve sıcaklığı her dakika kaydediliyor. Elde edilen grafikte madde belirli bir sıcaklıkta bir süre sabit kalıyor. Öğrenci, bu sıcaklıkta maddenin hâlinin değiştiğini fark ediyor.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q12.svg",
+      "imageAlt": "Sıvı bir maddenin soğurken sıcaklık-zaman grafiği; 40 °C'de yatay bölüm vardır",
+      "stem": "Bu grafikte hangi olay gerçekleşmiştir ve bu olayın gerçekleştiği sıcaklık kaçtır?",
       "options": [
-        "Metal kapak ısı alıp genleşir",
-        "Cam kapak erir",
-        "Metal kapak büzülür",
-        "Suyun kütlesi azalır"
+        "Erime; 40 °C",
+        "Kaynama; 20 °C",
+        "Donma; 40 °C",
+        "Donma; 80 °C"
       ],
-      "answer": 0,
-      "explanation": "Metal kapak ısınınca genleşerek kavanoz ağzından daha kolay ayrılabilir.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 2,
+      "explanation": "Sıvının ısı vererek katıya dönüşmesi donmadır. Grafikte sıcaklığın sabit kaldığı değer 40 °C'dir; saf maddelerde donma noktası, erime noktasıyla aynıdır."
     },
     {
       "no": 13,
       "unit": "Maddenin Ayırt Edici Özellikleri",
       "outcome": "FB.6.5.2",
-      "skill": "Grafik yorumlama",
-      "scenario": "Bir maddenin erime sıcaklığı ölçülürken ısıtma boyunca sıcaklık-zaman grafiğinde yatay bölüm oluşuyor.",
-      "stem": "Yatay bölüm neyi gösterir?",
+      "skill": "Veri yorumlama",
+      "scenario": "Bir laboratuvarda dört saf maddenin erime ve kaynama noktaları ölçülerek tabloya kaydedilmiştir. Laboratuvar sıcaklığı 25 °C'dir ve ortam basıncı normal atmosfer basıncıdır. Öğretmen, öğrencilerden maddelerin oda sıcaklığındaki hâllerini tahmin etmelerini istiyor.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q13.svg",
+      "imageAlt": "X, Y, Z ve T maddelerinin erime ve kaynama noktalarını gösteren tablo",
+      "stem": "Tablodaki verilere göre laboratuvar ortamında hangi madde katı hâldedir?",
       "options": [
-        "Maddenin kütlesinin kaybolduğunu",
-        "Hâl değişimi sırasında sıcaklığın sabit kaldığını",
-        "Isı alışverişinin durduğunu",
-        "Maddenin yoğunluğunun sıfırlandığını"
+        "X",
+        "T",
+        "Y",
+        "Z"
       ],
       "answer": 1,
-      "explanation": "Saf maddelerde hâl değişimi sırasında alınan ısı hâl değişimine harcanırken sıcaklık sabit kalır.",
-      "image": "",
-      "imageAlt": ""
+      "explanation": "Bir maddenin erime noktası ortam sıcaklığından yüksekse madde katıdır. Yalnızca T'nin erime noktası (801 °C) 25 °C'den büyüktür; diğerleri sıvıdır."
     },
     {
       "no": 14,
       "unit": "Maddenin Ayırt Edici Özellikleri",
-      "outcome": "FB.6.5.3",
-      "skill": "Hesaplama",
-      "scenario": "Kütlesi 90 g ve hacmi 30 cm³ olan X maddesi ile yoğunluğu 2 g/cm³ olan Y maddesi karşılaştırılıyor.",
-      "stem": "Yoğunluğu daha büyük olan hangisidir?",
+      "outcome": "FB.6.5.2",
+      "skill": "Grafik yorumlama",
+      "scenario": "İki ayrı saf sıvı (K ve L), özdeş kaplarda aynı ısıtıcıyla ısıtılıyor ve sıcaklıkları zamana göre ölçülüyor. Grafikte iki sıvının sıcaklığı kaynama sırasında sabit kalıyor. Öğrenciler kaynama noktalarını karşılaştırıyor.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q14.svg",
+      "imageAlt": "K ve L sıvılarının sıcaklık-zaman grafikleri",
+      "stem": "Grafiğe göre aşağıdakilerden hangisi doğrudur?",
       "options": [
-        "X",
-        "Y",
-        "Eşittir",
-        "Bilgi yetersiz"
+        "K'nin kaynama noktası L'nin kaynama noktasından yüksektir.",
+        "K ve L'nin kaynama noktaları aynıdır.",
+        "L'nin kaynama noktası K'nin kaynama noktasından yüksektir.",
+        "Kaynama sırasında iki sıvının da sıcaklığı sürekli artmaktadır."
       ],
-      "answer": 0,
-      "explanation": "X'in yoğunluğu 90/30 = 3 g/cm³'tür; Y'ninki 2 g/cm³'tür.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 2,
+      "explanation": "Kaynama sırasında sıcaklık sabit kalır. K'de 80 °C'de, L'de 100 °C'de yatay bölüm vardır; L'nin kaynama noktası daha yüksektir."
     },
     {
       "no": 15,
       "unit": "Maddenin Ayırt Edici Özellikleri",
-      "outcome": "FB.6.5.4",
-      "skill": "Değişken kontrolü",
-      "scenario": "Bir öğrenci eşit hacimli sıvıları dereceli silindire koyup kütlelerini ölçerek yoğunluklarını karşılaştırıyor.",
-      "stem": "Bu deneyde bağımsız değişken olarak ne seçilmiştir?",
+      "outcome": "FB.6.5.2",
+      "skill": "Veri yorumlama",
+      "scenario": "Dağcılık kulübü, farklı yüksekliklerde saf suyun kaynadığı sıcaklığı ölçüyor ve sonuçları tabloya yazıyor. Aynı tür ısıtıcı ve saf su kullanılıyor. Kulüp, yemek pişirme sürelerini planlamak için bu verilere ihtiyaç duyuyor.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q15.svg",
+      "imageAlt": "Farklı yüksekliklerde suyun kaynama noktasını gösteren tablo",
+      "stem": "Tablodaki verilere göre hangi çıkarım doğrudur?",
       "options": [
-        "Sıvının türü",
-        "Ölçüm kabının rengi",
-        "Terazinin yeri",
-        "Sonuç tablosu"
+        "Yükseklik arttıkça suyun kaynama noktası yükselir.",
+        "Suyun kaynama noktası her yükseklikte 100 °C'dir.",
+        "Yükseklik arttıkça dış basınç azaldığı için suyun kaynama noktası düşer.",
+        "Yükseklik arttıkça suyun donma noktası 100 °C'ye çıkar."
       ],
-      "answer": 0,
-      "explanation": "Sıvı türü değiştirilerek yoğunluk üzerindeki etkisi karşılaştırılır; hacim eşit tutulur.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 2,
+      "explanation": "Yüksek yerlerde atmosfer basıncı daha düşüktür. Kaynama noktası dış basınca bağlı olduğundan, yükseklik arttıkça suyun kaynama noktası düşer."
     },
     {
       "no": 16,
       "unit": "Maddenin Ayırt Edici Özellikleri",
-      "outcome": "FB.6.5.1",
+      "outcome": "FB.6.5.2",
       "skill": "Veri yorumlama",
-      "scenario": "Bir köprüde sıcak yaz günlerinde metal parçaların uzaması için bağlantı noktalarında boşluk bırakıldığı görülüyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Bu araştırmanın bulgularına göre hangi açıklama bilimsel olarak desteklenir? Bu tasarımın temel nedeni nedir?",
+      "scenario": "Bir öğrenci, buz parçalarını bir kaba koyup sabit bir ısıtıcıyla ısıtıyor ve kaptaki sıcaklığı düzenli aralıklarla ölçüyor. Karıştırarak ısıttığı kapta 4. ve 12. dakikalar arasında hem buz hem su görüyor ve sıcaklık sürekli ısıtılmasına rağmen değişmiyor.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q16.svg",
+      "imageAlt": "Buzun ısıtılması sırasında zaman, sıcaklık ve kaptaki durum tablosu",
+      "stem": "Bu aralıkta sıcaklığın sabit kalmasının nedeni aşağıdakilerden hangisidir?",
       "options": [
-        "Metalin ısı alınca genleşmesi",
-        "Metalin ısı alınca kütlesinin artması",
-        "Metalin soğuyunca erimesi",
-        "Metalin ışık üretmesi"
+        "Isıtıcı bu aralıkta çalışmayı bırakmıştır.",
+        "Verilen ısı, buzun erimesi (hâl değişimi) sırasında kullanılır; saf maddenin sıcaklığı hâl değişimi boyunca sabit kalır.",
+        "Buz ısı almaz, yalnızca su ısı alır.",
+        "Sıcaklığın sabit kalması, buzun erime noktasının 0 °C'den yüksek olduğunu gösterir."
       ],
-      "answer": 0,
-      "explanation": "Metaller ısı aldığında genleşebilir; boşluklar bu boyut değişimine pay bırakır.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 1,
+      "explanation": "Saf bir madde hâl değiştirirken sıcaklığı sabit kalır. Verilen ısı, tanecikler arası etkileşimi değiştirmede kullanıldığından erime bitene kadar sıcaklık yükselmez."
     },
     {
       "no": 17,
       "unit": "Maddenin Ayırt Edici Özellikleri",
-      "outcome": "FB.6.5.1",
-      "skill": "Kanıta dayalı çıkarım",
-      "scenario": "Soğuk bir sabah elektrik tellerinin daha gergin, sıcak bir öğleden sonra daha sarkık olduğu gözleniyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Verilen gözlem ve ölçümler dikkate alındığında hangi sonuç çıkarılmalıdır? Bu değişim hangi olayla açıklanır?",
+      "outcome": "FB.6.5.2",
+      "skill": "Sınıflandırma",
+      "scenario": "Bir öğrenci, günlük hayattan dört olayı hâl değişimi ve ısı alışverişi bakımından sınıflandırarak tabloyu dolduruyor. Öğretmeni tablonun bir satırında ısı alışverişinin yanlış yazıldığını söylüyor.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q17.svg",
+      "imageAlt": "Dört günlük yaşam olayının hâl değişimi ve ısı alışverişi tablosu",
+      "stem": "Tablodaki hatalı satır hangisidir?",
       "options": [
-        "Donma",
-        "Genleşme ve büzülme",
-        "Yoğunlaşma",
-        "Süblimleşme"
+        "Dondurmanın erimesi",
+        "Tencerede suyun kaynaması",
+        "Buzlukta suyun donması",
+        "Mumun katılaşması"
       ],
       "answer": 1,
-      "explanation": "Sıcaklık artınca teller genleşir, sıcaklık azalınca büzülür.",
-      "image": "",
-      "imageAlt": ""
+      "explanation": "Kaynama, sıvının ısı alarak gaz hâline geçmesidir. Bu satırdaki \"ısı verir\" ifadesi yanlıştır; doğru ifade \"ısı alır\"dır."
     },
     {
       "no": 18,
       "unit": "Maddenin Ayırt Edici Özellikleri",
       "outcome": "FB.6.5.2",
-      "skill": "Bilimsel açıklama",
-      "scenario": "Bir öğrenci saf suyu ısıtırken sıcaklığı belirli bir süre 100 °C civarında sabit kalıyor ve kabarcıklar oluşuyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Bu durumun nedenini açıklayan en uygun bilimsel ifade hangisidir? Bu sırada gerçekleşen olay hangisidir?",
+      "skill": "Deney tasarlama",
+      "scenario": "Fen kulübü öğrencileri saf suyun kaynama noktasını belirlemek için şekildeki düzeneği kuruyor. Su ısıtılırken sıcaklığı düzenli aralıklarla ölçülecek ve elde edilen veriler grafiğe aktarılacak. Öğrenciler, sıcaklığın zamanla nasıl değiştiğini inceleyecek.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q18.svg",
+      "imageAlt": "Isıtıcı, kap, termometre ve kronometreden oluşan deney düzeneği",
+      "stem": "Kaynama noktasını belirlemek için aşağıdaki işlemlerden hangisi uygundur?",
       "options": [
-        "Erime",
-        "Donma",
-        "Kaynama",
-        "Yoğuşma"
+        "Suyun hacmini her dakika ölçüp en büyük değeri kaynama noktası olarak almak.",
+        "Sıcaklığı yalnızca deney başlamadan önce ölçüp o değeri kaynama noktası olarak almak.",
+        "Termometreyi suyun içine koymadan kabın dış yüzeyini dokunarak değerlendirmek.",
+        "Sıcaklığı her dakika ölçüp, sıcaklığın artmayıp sabit kaldığı değeri bulmak."
       ],
-      "answer": 2,
-      "explanation": "Saf su normal atmosfer basıncında yaklaşık 100 °C'de kaynar; kaynama sırasında sıcaklık sabit kalır.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 3,
+      "explanation": "Kaynama sırasında saf maddenin sıcaklığı sabit kalır. Zamana bağlı ölçümlerle sıcaklık-zaman grafiği çizildiğinde yatay bölümün değeri kaynama noktasını verir."
     },
     {
       "no": 19,
       "unit": "Maddenin Ayırt Edici Özellikleri",
       "outcome": "FB.6.5.2",
       "skill": "Karşılaştırma",
-      "scenario": "Aynı saf madde soğutulurken sıvı hâlden katı hâle geçiyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Öğrencilerin ulaştığı sonucu hangi seçenek doğru açıklar? Bu maddenin donma noktası ile erime noktası arasındaki ilişki nasıldır?",
+      "scenario": "Aylin, mutfakta iki kabı inceliyor. Ocaktaki kabın içindeki suyun her yerinde kabarcıklar oluşuyor. Pencere kenarındaki açık kapta bekleyen suyun ise günler içinde yavaşça azaldığını fark ediyor. Her iki durumda da sıvı su gaz hâline geçmektedir.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q19.svg",
+      "imageAlt": "Kaynayan su ile yüzeyden buharlaşan suyun karşılaştırması",
+      "stem": "Bu iki olay için aşağıdakilerden hangisi doğrudur?",
       "options": [
-        "Donma noktası her zaman daha yüksektir",
-        "Aynı basınçta eşittir",
-        "Birbirinden bağımsızdır",
-        "Erime noktası daima sıfırdır"
+        "Ocaktaki olay kaynamadır, belirli bir sıcaklıkta sıvının her yerinde olur; diğeri buharlaşmadır, yüzeyde ve her sıcaklıkta gerçekleşebilir.",
+        "Her iki olay da kaynamadır ve yalnızca 100 °C'de gerçekleşir.",
+        "Ocaktaki olay buharlaşma, açık kaptaki olay kaynamadır.",
+        "Açık kaptaki su azalmaz; yalnızca ocaktaki su gaz hâline geçer."
       ],
-      "answer": 1,
-      "explanation": "Saf maddelerde aynı basınçta erime ve donma noktaları aynıdır.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 0,
+      "explanation": "Kaynama, belirli sıcaklıkta sıvının her yerinde gaz kabarcıklarının oluşmasıdır. Buharlaşma ise her sıcaklıkta sıvının yüzeyinde gerçekleşebilir."
     },
     {
       "no": 20,
       "unit": "Maddenin Ayırt Edici Özellikleri",
-      "outcome": "FB.6.5.3",
-      "skill": "Problem çözme",
-      "scenario": "Kütlesi 120 g, hacmi 40 cm³ olan bir cismin yoğunluğu hesaplanıyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Kanıtlara dayalı değerlendirme yapıldığında hangi yargıya ulaşılır? Cismin yoğunluğu kaç g/cm³ olur?",
+      "outcome": "FB.6.5.2",
+      "skill": "Grafik yorumlama",
+      "scenario": "Saf bir madde sıvı hâlde 90 °C'den başlayarak soğutuluyor ve sıcaklığı zamana göre kaydediliyor. Grafikte sıcaklığın bir süre 54 °C'de sabit kaldığı görülüyor. Öğrenciler aynı maddeyi katı hâlden ısıtmaya başlıyor.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q20.svg",
+      "imageAlt": "Sıvı bir maddenin soğurken 54 °C'de sabit kaldığı sıcaklık-zaman grafiği",
+      "stem": "Aynı basınçta bu katı madde ısıtılırken hangi sıcaklıkta erimeye başlar?",
       "options": [
-        "2",
-        "3",
-        "4",
-        "4,8"
+        "54 °C",
+        "90 °C",
+        "0 °C",
+        "36 °C"
       ],
-      "answer": 1,
-      "explanation": "Yoğunluk = kütle / hacim = 120 / 40 = 3 g/cm³.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 0,
+      "explanation": "Saf maddelerde donma noktası, aynı basınçta erime noktasına eşittir. Grafikteki sabit sıcaklık 54 °C olduğundan madde 54 °C'de erir."
     },
     {
       "no": 21,
       "unit": "Maddenin Ayırt Edici Özellikleri",
       "outcome": "FB.6.5.3",
-      "skill": "Veri yorumlama",
-      "scenario": "Eşit hacimli iki sıvıdan A'nın kütlesi 80 g, B'nin kütlesi 100 g ölçülüyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Bu araştırmanın bulgularına göre hangi açıklama bilimsel olarak desteklenir? Hangi sıvının yoğunluğu daha büyüktür?",
+      "skill": "Hesaplama",
+      "scenario": "Bir öğrenci, düzensiz şekilli bir taşın yoğunluğunu bulmak istiyor. Taşın kütlesini terazide 60 g ölçüyor. Hacmini bulmak için dereceli silindire 50 mL su koyuyor ve taşı suya bırakıyor; su seviyesi şekildeki gibi yükseliyor.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q21.svg",
+      "imageAlt": "Dereceli silindirde taş batmadan önce 50 mL, sonra 70 mL su seviyesi ve taşın kütlesi 60 g",
+      "stem": "Buna göre taşın yoğunluğu kaç g/cm³'tür? (1 mL = 1 cm³)",
       "options": [
-        "A",
-        "B",
-        "İkisi eşit",
-        "Yalnız hacim bilinirse karşılaştırılamaz"
+        "0,33",
+        "1,2",
+        "3",
+        "30"
       ],
-      "answer": 1,
-      "explanation": "Hacimler eşit olduğunda kütlesi büyük olan sıvının yoğunluğu daha büyüktür.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 2,
+      "explanation": "Taşın hacmi 70 − 50 = 20 mL = 20 cm³'tür. Yoğunluk d = m / V = 60 / 20 = 3 g/cm³'tür."
     },
     {
       "no": 22,
       "unit": "Maddenin Ayırt Edici Özellikleri",
-      "outcome": "FB.6.5.3–FB.6.5.4",
-      "skill": "Kanıta dayalı çıkarım",
-      "scenario": "Bir öğrenci aynı maddeden yapılmış iki küreden birinin diğerinden büyük olduğunu görüyor. Büyük kürenin kütlesi de daha fazla ölçülüyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Verilen gözlem ve ölçümler dikkate alındığında hangi sonuç çıkarılmalıdır? Bu iki kürenin yoğunlukları için hangi yorum yapılır?",
+      "outcome": "FB.6.5.3",
+      "skill": "Veri yorumlama",
+      "scenario": "Bir malzeme laboratuvarında dört cismin kütlesi ve hacmi ölçülerek tabloya yazılıyor. Cisimlerden hangisinin yoğunluğunun en büyük olduğu merak ediliyor. Yoğunluğun bir maddeyi ayırt etmede kullanılabileceği hatırlatılıyor.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q22.svg",
+      "imageAlt": "Dört cismin kütle ve hacim değerlerini gösteren tablo",
+      "stem": "Tablodaki verilere göre yoğunluğu en büyük olan cisim hangisidir?",
       "options": [
-        "Büyük kürenin yoğunluğu daha fazladır",
-        "Küçük kürenin yoğunluğu daha fazladır",
-        "Aynı madde oldukları için yoğunlukları aynıdır",
-        "Yoğunluk yalnız şekle bağlıdır"
+        "A",
+        "C",
+        "B",
+        "D"
       ],
-      "answer": 2,
-      "explanation": "Aynı koşullarda aynı saf maddenin yoğunluğu madde miktarına ve şekline bağlı değildir.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 1,
+      "explanation": "Yoğunluk d = m / V'dir. A: 2, B: 1,5, C: 3, D: 1 g/cm³'tür. En büyük yoğunluk C'dedir."
     },
     {
       "no": 23,
       "unit": "Maddenin Ayırt Edici Özellikleri",
-      "outcome": "FB.6.5.4",
-      "skill": "Bilimsel açıklama",
-      "scenario": "Bir tahta parçası suya bırakıldığında yüzüyor; metal bilye ise batıyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Bu durumun nedenini açıklayan en uygun bilimsel ifade hangisidir? Bu gözlem hangi çıkarımı destekler?",
+      "outcome": "FB.6.5.3",
+      "skill": "Model yorumlama",
+      "scenario": "Eşit kollu bir terazinin kefelerine hacimleri eşit iki küp konuluyor. K küpü bir kefede, L küpü diğer kefede duruyor ve terazi şekildeki gibi L küpü tarafına eğiliyor. Küplerin ikisi de dolu ve tek bir maddeden yapılmıştır.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q23.svg",
+      "imageAlt": "Eşit kollu terazide hacimleri eşit K ve L küpleri; terazi L tarafına eğik",
+      "stem": "Bu duruma göre aşağıdakilerden hangisi kesinlikle doğrudur?",
       "options": [
-        "Tahtanın yoğunluğu sudan küçüktür, metalinki sudan büyüktür",
-        "Tahtanın kütlesi yoktur",
-        "Metal suda çözünür",
-        "Suyun yoğunluğu sıfırdır"
+        "K küpünün yoğunluğu L küpünün yoğunluğundan büyüktür.",
+        "L küpünün yoğunluğu K küpünün yoğunluğundan büyüktür.",
+        "İki küpün yoğunlukları eşittir.",
+        "K küpünün kütlesi L küpünün kütlesinden büyüktür."
       ],
-      "answer": 0,
-      "explanation": "Bir cismin yoğunluğu sıvıdan küçükse yüzebilir; büyükse batabilir.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 1,
+      "explanation": "Hacimler eşit olduğundan kütlesi büyük olanın yoğunluğu da büyüktür. Terazi L tarafına eğildiğine göre L'nin kütlesi ve yoğunluğu daha büyüktür."
     },
     {
       "no": 24,
       "unit": "Maddenin Ayırt Edici Özellikleri",
       "outcome": "FB.6.5.3",
-      "skill": "Karşılaştırma",
-      "scenario": "Bir öğrenci yoğunluğu araştırırken kütleyi ölçüyor ancak hacmi ölçmeden yalnızca cismin rengine bakıyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Öğrencilerin ulaştığı sonucu hangi seçenek doğru açıklar? Bu araştırmadaki temel eksiklik nedir?",
+      "skill": "Neden-sonuç",
+      "scenario": "Bir bardak suya atılan buz parçasının suyun üstünde yüzdüğü ve büyük bölümünün suyun altında kaldığı gözleniyor. Kutuplarda yüzen buzdağlarında da benzer bir durum görülüyor. Öğrenciler bu durumu yoğunlukla ilişkilendirmeye çalışıyor.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q24.svg",
+      "imageAlt": "Su dolu kapta yüzen buz parçası",
+      "stem": "Buzun suyun üzerinde yüzmesinin nedeni aşağıdakilerden hangisidir?",
       "options": [
-        "Kütle ölçülmemeli",
-        "Yoğunluğu hesaplamak için hacim verisi de gerekir",
-        "Renk ölçülmeli",
-        "Sıcaklık her zaman sıfır olmalı"
+        "Buzun yoğunluğu sıvı suyun yoğunluğundan küçüktür.",
+        "Buzun yoğunluğu sıvı suyun yoğunluğundan büyüktür.",
+        "Buzun kütlesi sudan her zaman küçüktür.",
+        "Buz donarken büzüldüğü için hacmi küçülür."
       ],
-      "answer": 1,
-      "explanation": "Yoğunluk kütle ve hacim ilişkisiyle belirlenir; iki ölçüm de gereklidir.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 0,
+      "explanation": "Su donarken genleşir; kütle aynı kalırken hacim arttığı için buzun yoğunluğu sıvı suyunkinden küçüktür. Bu nedenle buz suda yüzer."
     },
     {
       "no": 25,
       "unit": "Maddenin Ayırt Edici Özellikleri",
       "outcome": "FB.6.5.3",
-      "skill": "Problem çözme",
-      "scenario": "Bir sıvının sıcaklığı artırıldığında belirli koşullarda hacmi artıyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Kanıtlara dayalı değerlendirme yapıldığında hangi yargıya ulaşılır? Sıvının kütlesi değişmiyorsa yoğunluğu nasıl değişir?",
+      "skill": "Model yorumlama",
+      "scenario": "Bir öğrenci, birbirine karışmayan üç sıvıyı (zeytinyağı, su ve gliserin) bir mezüre dikkatlice döküyor ve sıvılar şekildeki gibi üç katman oluşturuyor. Katmanlar X, Y ve Z ile adlandırılıyor. Sıvıların yoğunlukları tabloda verilmiştir.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q25.svg",
+      "imageAlt": "Üç katmanlı mezür ve sıvıların yoğunluk tablosu",
+      "stem": "X, Y ve Z katmanlarındaki sıvılar sırasıyla hangisidir?",
       "options": [
-        "Artar",
-        "Azalır",
-        "Kesinlikle sıfır olur",
-        "Değişmeden kalır"
+        "Zeytinyağı, su, gliserin",
+        "Gliserin, su, zeytinyağı",
+        "Su, zeytinyağı, gliserin",
+        "Zeytinyağı, gliserin, su"
       ],
-      "answer": 1,
-      "explanation": "Kütle sabitken hacim artarsa kütle/hacim oranı olan yoğunluk azalır.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 0,
+      "explanation": "Karışmayan sıvılarda yoğunluğu en küçük olan üstte, en büyük olan altta toplanır. Yoğunluk sırası zeytinyağı < su < gliserindir."
     },
     {
       "no": 26,
       "unit": "Maddenin Ayırt Edici Özellikleri",
-      "outcome": "FB.6.5.2",
-      "skill": "Veri yorumlama",
-      "scenario": "Bir laboratuvarda farklı maddelerin erime noktaları ölçülerek tanımlama yapılmak isteniyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Bu araştırmanın bulgularına göre hangi açıklama bilimsel olarak desteklenir? Hangi özellik maddeleri ayırt etmede daha kullanışlıdır?",
+      "outcome": "FB.6.5.3",
+      "skill": "Grafik yorumlama",
+      "scenario": "İki farklı saf maddeden yapılmış A ve B katılarının kütle-hacim değişimleri grafikte gösterilmiştir. Öğrenci, aynı hacimdeki A ve B parçalarının kütlelerini karşılaştırarak maddeleri ayırt etmeye çalışıyor.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q26.svg",
+      "imageAlt": "A ve B maddeleri için kütle-hacim grafiği",
+      "stem": "Grafiğe göre aşağıdakilerden hangisi doğrudur?",
       "options": [
-        "Maddenin miktarı",
-        "Kabın şekli",
-        "Erime noktası",
-        "Numunenin rengi her zaman"
+        "B'nin yoğunluğu A'nın yoğunluğundan büyüktür.",
+        "A ve B'nin yoğunlukları eşittir.",
+        "Hacim arttıkça iki maddenin de yoğunluğu artar.",
+        "A'nın yoğunluğu B'nin yoğunluğundan büyüktür."
       ],
-      "answer": 2,
-      "explanation": "Erime noktası saf maddeler için ayırt edici bir özelliktir.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 3,
+      "explanation": "Aynı hacimde A'nın kütlesi B'den büyüktür. Bu nedenle d = m / V oranı A için daha büyüktür. Aynı maddenin yoğunluğu hacim değişse de sabit kalır."
     },
     {
       "no": 27,
       "unit": "Maddenin Ayırt Edici Özellikleri",
-      "outcome": "FB.6.5.1",
-      "skill": "Kanıta dayalı çıkarım",
-      "scenario": "Kışın kavanozun ağzına sıkışan metal kapağın ılık suyla temas ettirilince daha kolay açıldığı görülüyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Verilen gözlem ve ölçümler dikkate alındığında hangi sonuç çıkarılmalıdır? Bunun açıklaması hangisidir?",
+      "outcome": "FB.6.5.3",
+      "skill": "Hipotez kurma",
+      "scenario": "Bir öğrenci aynı yumurtayı önce tatlı suya, sonra aynı kaptaki suya bol miktarda tuz ekleyip karıştırdıktan sonra tuzlu suya bırakıyor. Yumurta tatlı suda dibe batıyor, tuzlu suda ise yüzüyor. Öğrenci bu gözlemi bir hipotezle açıklamak istiyor.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q27.svg",
+      "imageAlt": "Tatlı suda batan, tuzlu suda yüzen yumurta",
+      "stem": "Aşağıdaki hipotezlerden hangisi bu gözlemi en doğru açıklar?",
       "options": [
-        "Metal kapak ısı alıp genleşir",
-        "Cam kapak erir",
-        "Metal kapak büzülür",
-        "Suyun kütlesi azalır"
+        "Tuz eklenince yumurtanın yoğunluğu azalmıştır; bu yüzden yumurta yüzer.",
+        "Tuz eklenince suyun yoğunluğu azalmıştır; bu yüzden yumurta yüzer.",
+        "Tuz yumurtanın kütlesini azaltmıştır; bu yüzden yumurta yüzer.",
+        "Tuz eklenince suyun yoğunluğu artmıştır; tuzlu suyun yoğunluğu yumurtanınkinden büyük olduğu için yumurta yüzer."
       ],
-      "answer": 0,
-      "explanation": "Metal kapak ısınınca genleşerek kavanoz ağzından daha kolay ayrılabilir.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 3,
+      "explanation": "Tuz eklenince çözeltinin yoğunluğu artar. Yoğunluğu yumurtanınkinden büyük olan tuzlu suda yumurta yüzer; tatlı suda yoğunluğu suyunkinden büyük olduğu için batar."
     },
     {
       "no": 28,
       "unit": "Maddenin Ayırt Edici Özellikleri",
-      "outcome": "FB.6.5.2",
-      "skill": "Bilimsel açıklama",
-      "scenario": "Bir maddenin erime sıcaklığı ölçülürken ısıtma boyunca sıcaklık-zaman grafiğinde yatay bölüm oluşuyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Bu durumun nedenini açıklayan en uygun bilimsel ifade hangisidir? Yatay bölüm neyi gösterir?",
+      "outcome": "FB.6.5.4",
+      "skill": "Çıkarım yapma",
+      "scenario": "Bir öğrenci, aynı metalden yapılmış bir bloğu iki ve dört parçaya bölüyor ve her parçanın kütlesini ve hacmini ölçüp tabloya yazıyor. Öğrenci, parçalanan bir maddenin yoğunluğunun değişip değişmediğini merak ediyor.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q28.svg",
+      "imageAlt": "Metal bloğun bütün ve parça hâlindeki kütle ve hacim değerleri",
+      "stem": "Tablodaki verilere göre aşağıdaki çıkarımlardan hangisi doğrudur?",
       "options": [
-        "Maddenin kütlesinin kaybolduğunu",
-        "Hâl değişimi sırasında sıcaklığın sabit kaldığını",
-        "Isı alışverişinin durduğunu",
-        "Maddenin yoğunluğunun sıfırlandığını"
+        "Parçalar küçüldükçe yoğunluk da küçülür.",
+        "Parçalar küçüldükçe yoğunluk büyür.",
+        "Yoğunluk yalnızca bütün blokta 3 g/cm³'tür; parçalarda başka değerler alır.",
+        "Parçalar küçüldükçe kütle ve hacim azalır ama yoğunluk 3 g/cm³ olarak aynı kalır."
       ],
-      "answer": 1,
-      "explanation": "Saf maddelerde hâl değişimi sırasında alınan ısı hâl değişimine harcanırken sıcaklık sabit kalır.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 3,
+      "explanation": "Aynı maddenin miktarı değişse de aynı sıcaklık ve basınçta yoğunluğu değişmez. Her parçada 60/20 = 30/10 = 3 g/cm³ bulunur."
     },
     {
       "no": 29,
       "unit": "Maddenin Ayırt Edici Özellikleri",
       "outcome": "FB.6.5.3",
-      "skill": "Karşılaştırma",
-      "scenario": "Kütlesi 90 g ve hacmi 30 cm³ olan X maddesi ile yoğunluğu 2 g/cm³ olan Y maddesi karşılaştırılıyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Öğrencilerin ulaştığı sonucu hangi seçenek doğru açıklar? Yoğunluğu daha büyük olan hangisidir?",
+      "skill": "Hesaplama",
+      "scenario": "Bir kuyumcu, kenar uzunluğu 3 cm olan düzgün bir metal küpün hangi maddeden yapıldığını anlamak istiyor. Küpün kütlesini terazide 54 g ölçüyor ve yoğunluk tablosundan yararlanacak. Küpün hacmi kenar uzunluğunun kendisiyle üç kez çarpımına eşittir.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q29.svg",
+      "imageAlt": "Kenar uzunluğu 3 cm ve kütlesi 54 g olan küp",
+      "stem": "Küpün yoğunluğu kaç g/cm³'tür?",
       "options": [
-        "X",
-        "Y",
-        "Eşittir",
-        "Bilgi yetersiz"
+        "6",
+        "2",
+        "18",
+        "0,5"
       ],
-      "answer": 0,
-      "explanation": "X'in yoğunluğu 90/30 = 3 g/cm³'tür; Y'ninki 2 g/cm³'tür.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 1,
+      "explanation": "Küpün hacmi 3 × 3 × 3 = 27 cm³'tür. Yoğunluk d = m / V = 54 / 27 = 2 g/cm³'tür."
     },
     {
       "no": 30,
       "unit": "Maddenin Ayırt Edici Özellikleri",
-      "outcome": "FB.6.5.4",
-      "skill": "Problem çözme",
-      "scenario": "Bir öğrenci eşit hacimli sıvıları dereceli silindire koyup kütlelerini ölçerek yoğunluklarını karşılaştırıyor. Bir okul laboratuvarında öğrenciler bu durumu gözlemleyip sonuçlarını kayıt altına alıyor. Öğrenciler önceki ölçümlerle karşılaştırma yaparak kararlarını gerekçelendiriyor.",
-      "stem": "Kanıtlara dayalı değerlendirme yapıldığında hangi yargıya ulaşılır? Bu deneyde bağımsız değişken olarak ne seçilmiştir?",
+      "outcome": "FB.6.5.6",
+      "skill": "Hipotez ve model yorumlama",
+      "scenario": "Bir öğrenci, aynı kaba bırakılan X, Y ve Z cisimlerinin suda nasıl davrandığını gözlemleyerek yoğunluklarını karşılaştırmak istiyor. X suyun yüzeyinde duruyor, Y suyun içinde askıda kalıyor, Z ise kabın dibine batıyor. Suyun yoğunluğu 1 g/cm³'tür.",
+      "image": "/denemeler/6-5-unite-yeni-nesil/q30.svg",
+      "imageAlt": "Suda yüzen X, askıda duran Y ve batan Z cisimleri",
+      "stem": "Bu gözlemlere dayanarak cisimlerin yoğunluklarının sıralaması aşağıdakilerden hangisidir?",
       "options": [
-        "Sıvının türü",
-        "Ölçüm kabının rengi",
-        "Terazinin yeri",
-        "Sonuç tablosu"
+        "X > Y > Z",
+        "Y > Z > X",
+        "Z > Y > X",
+        "Z > X > Y"
       ],
-      "answer": 0,
-      "explanation": "Sıvı türü değiştirilerek yoğunluk üzerindeki etkisi karşılaştırılır; hacim eşit tutulur.",
-      "image": "",
-      "imageAlt": ""
+      "answer": 2,
+      "explanation": "Yüzen cismin yoğunluğu suyunkinden küçüktür (X < 1), askıda kalanınki yaklaşık suyunkine eşittir (Y ≈ 1), batanınki ise suyunkinden büyüktür (Z > 1). Sıralama Z > Y > X'tir."
     }
   ]
 }
