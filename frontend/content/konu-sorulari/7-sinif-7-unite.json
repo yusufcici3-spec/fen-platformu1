@@ -1,0 +1,459 @@
+{
+  "grade": 7,
+  "unit": 7,
+  "title": "Sürdürülebilir Yaşam ve Geri Dönüşüm",
+  "slug": "surdurulebilir-yasam-ve-geri-donusum",
+  "description": "Türkiye Yüzyılı Maarif Modeli öğrenme çıktılarıyla eşleştirilmiş 30 senaryolu ve görsel destekli özgün soru.",
+  "questions": [
+    {
+      "id": 1,
+      "visual": "🌿 🐛 🐦",
+      "scenario": "Bir çayır ekosisteminde ot, çekirge ve kurbağa arasında beslenme ilişkisi kuruluyor.",
+      "question": "Besin zincirinde üretici olan canlı hangisidir?",
+      "options": [
+        "Ot",
+        "Çekirge",
+        "Kurbağa",
+        "Yılan"
+      ],
+      "answer": 0,
+      "explanation": "Bitkiler fotosentezle kendi besinini ürettiği için üreticidir.",
+      "outcome": "FB.7.7.1.1"
+    },
+    {
+      "id": 2,
+      "visual": "🌱 ➡️ 🐇",
+      "scenario": "Çayırdaki tavşanlar bitkilerle besleniyor.",
+      "question": "Bu besin zincirinde tavşanın görevi nedir?",
+      "options": [
+        "Üretici",
+        "Birincil tüketici",
+        "Ayrıştırıcı",
+        "İkincil tüketici"
+      ],
+      "answer": 1,
+      "explanation": "Otçul tavşan üreticiyle beslendiği için birincil tüketicidir.",
+      "outcome": "FB.7.7.1.1"
+    },
+    {
+      "id": 3,
+      "visual": "🌿 🦗 🐸 🐍",
+      "scenario": "Bir besin zincirinde çekirge sayısı belirgin biçimde azalıyor.",
+      "question": "Çekirgeyle beslenen kurbağa sayısı ilk etapta nasıl etkilenebilir?",
+      "options": [
+        "Azalabilir",
+        "Kesinlikle artar",
+        "Değişmeden kalır",
+        "Üreticiye dönüşür"
+      ],
+      "answer": 0,
+      "explanation": "Besin kaynağı azalan tüketicilerin sayısı zamanla azalabilir.",
+      "outcome": "FB.7.7.1.1"
+    },
+    {
+      "id": 4,
+      "visual": "☀️ 🌳",
+      "scenario": "Bir orman ekosisteminde enerji akışının başlangıç kaynağı çoğunlukla Güneş'tir.",
+      "question": "Bitkiler Güneş enerjisini hangi enerjiye dönüştürür?",
+      "options": [
+        "Kimyasal enerji",
+        "Ses enerjisi",
+        "Nükleer enerji",
+        "Manyetik enerji"
+      ],
+      "answer": 0,
+      "explanation": "Fotosentezle ışık enerjisi organik besinlerde kimyasal enerjiye dönüşür.",
+      "outcome": "FB.7.7.1.1"
+    },
+    {
+      "id": 5,
+      "visual": "🍃 🐛 🐦",
+      "scenario": "Bir besin zincirinde bitki → tırtıl → kuş sıralaması veriliyor.",
+      "question": "Kuşun doğrudan besin kaynağı hangisidir?",
+      "options": [
+        "Bitki",
+        "Tırtıl",
+        "Güneş",
+        "Toprak"
+      ],
+      "answer": 1,
+      "explanation": "Kuş zincirde tırtılla beslenen tüketicidir.",
+      "outcome": "FB.7.7.1.1"
+    },
+    {
+      "id": 6,
+      "visual": "🍄 🪵",
+      "scenario": "Ormanda mantarlar ölü yaprak ve canlı kalıntılarını parçalar.",
+      "question": "Mantarların ekosistemdeki görevi nedir?",
+      "options": [
+        "Üretici",
+        "Ayrıştırıcı",
+        "Birincil tüketici",
+        "Avcı"
+      ],
+      "answer": 1,
+      "explanation": "Ayrıştırıcılar organik maddeleri parçalayarak maddelerin doğaya dönmesine katkı sağlar.",
+      "outcome": "FB.7.7.1.1"
+    },
+    {
+      "id": 7,
+      "visual": "🦅 🐭",
+      "scenario": "Bir ekosistemde fare sayısı artıyor; farelerle beslenen baykuşlar için besin miktarı artıyor.",
+      "question": "Baykuş sayısında zamanla ne beklenebilir?",
+      "options": [
+        "Artış olabilir",
+        "Kesinlikle yok olur",
+        "Üretici olur",
+        "Besin ihtiyacı kalmaz"
+      ],
+      "answer": 0,
+      "explanation": "Av miktarının artması avcı popülasyonunu destekleyebilir.",
+      "outcome": "FB.7.7.1.1"
+    },
+    {
+      "id": 8,
+      "visual": "🌾 🐭 🦉",
+      "scenario": "Bir besin zincirinde üreticilerden üst basamaklara çıkıldıkça aktarılan enerji azalır.",
+      "question": "Bunun temel nedeni hangisidir?",
+      "options": [
+        "Enerjinin bir kısmının yaşamsal faaliyetlerde kullanılıp ısı olarak yayılması",
+        "Enerjinin yoktan oluşması",
+        "Üreticilerin enerji almaması",
+        "Tüketicilerin fotosentez yapması"
+      ],
+      "answer": 0,
+      "explanation": "Enerjinin önemli bir kısmı her basamakta canlıların yaşamsal faaliyetlerinde kullanılır.",
+      "outcome": "FB.7.7.1.1"
+    },
+    {
+      "id": 9,
+      "visual": "🌊 🐟 🦈",
+      "scenario": "Deniz ekosisteminde küçük balıklar büyük balıklara besin olur.",
+      "question": "Besin zincirinde büyük balık hangi grupta yer alır?",
+      "options": [
+        "Üretici",
+        "Tüketici",
+        "Ayrıştırıcı",
+        "Fotosentetik canlı"
+      ],
+      "answer": 1,
+      "explanation": "Hayvanlar besinlerini dışarıdan aldığı için tüketicidir.",
+      "outcome": "FB.7.7.1.1"
+    },
+    {
+      "id": 10,
+      "visual": "🌳 🐛 🐦 🦅",
+      "scenario": "Bir besin ağı birden fazla besin zincirinin kesişmesiyle oluşur.",
+      "question": "Besin ağı neyi gösterir?",
+      "options": [
+        "Canlılar arasındaki çok yönlü beslenme ilişkilerini",
+        "Yalnızca bitkilerin büyümesini",
+        "Sadece su döngüsünü",
+        "Havanın sıcaklığını"
+      ],
+      "answer": 0,
+      "explanation": "Besin ağları ekosistemdeki karmaşık beslenme ilişkilerini gösterir.",
+      "outcome": "FB.7.7.1.1"
+    },
+    {
+      "id": 11,
+      "visual": "♻️ 🧴",
+      "scenario": "Okulda plastik şişeler ayrı bir geri dönüşüm kutusunda toplanıyor.",
+      "question": "Bu uygulamanın temel amacı nedir?",
+      "options": [
+        "Atıkları yeniden ham madde olarak değerlendirmek",
+        "Atık miktarını artırmak",
+        "Enerji tüketimini artırmak",
+        "Doğal kaynakları daha hızlı tüketmek"
+      ],
+      "answer": 0,
+      "explanation": "Geri dönüşüm atıkları yeniden üretim sürecine kazandırır.",
+      "outcome": "FB.7.7.2.1"
+    },
+    {
+      "id": 12,
+      "visual": "🚰 💧",
+      "scenario": "Bir öğrenci diş fırçalarken musluğu gereksiz yere açık bırakmıyor.",
+      "question": "Bu davranış hangi sürdürülebilirlik ilkesine uygundur?",
+      "options": [
+        "Su tasarrufu",
+        "Enerji israfı",
+        "Atık artırma",
+        "Kaynak tüketimini hızlandırma"
+      ],
+      "answer": 0,
+      "explanation": "Suyun gereksiz akıtılmaması doğal kaynakların korunmasını sağlar.",
+      "outcome": "FB.7.7.2.1"
+    },
+    {
+      "id": 13,
+      "visual": "💡",
+      "scenario": "Sınıftan çıkarken lambalar kapatılıyor.",
+      "question": "Bu davranışın çevresel katkısı hangisidir?",
+      "options": [
+        "Enerji tüketimini azaltmak",
+        "Elektrik ihtiyacını artırmak",
+        "Atık su üretmek",
+        "Hava kirliliğini artırmak"
+      ],
+      "answer": 0,
+      "explanation": "Gereksiz aydınlatmayı kapatmak enerji tasarrufu sağlar.",
+      "outcome": "FB.7.7.2.1"
+    },
+    {
+      "id": 14,
+      "visual": "🛍️ 👜",
+      "scenario": "Bir aile tek kullanımlık poşet yerine uzun süre kullanılabilen bez çanta tercih ediyor.",
+      "question": "Bu seçim hangi atık yönetimi yaklaşımını destekler?",
+      "options": [
+        "Yeniden kullanma",
+        "Atığı artırma",
+        "Doğaya bırakma",
+        "Yakma"
+      ],
+      "answer": 0,
+      "explanation": "Tekrar kullanılabilen ürünler tek kullanımlık atık oluşumunu azaltır.",
+      "outcome": "FB.7.7.2.1"
+    },
+    {
+      "id": 15,
+      "visual": "📄 🌳",
+      "scenario": "Okulda kâğıtların iki yüzü de kullanılıyor.",
+      "question": "Bu uygulama hangi kaynağın korunmasına katkı sağlar?",
+      "options": [
+        "Orman ve ağaç kaynakları",
+        "Petrol yatakları",
+        "Metal madenleri",
+        "Deniz tuzu"
+      ],
+      "answer": 0,
+      "explanation": "Kâğıt tüketiminin azaltılması ağaç ve orman kaynakları üzerindeki baskıyı düşürür.",
+      "outcome": "FB.7.7.2.1"
+    },
+    {
+      "id": 16,
+      "visual": "🔋 ♻️",
+      "scenario": "Kullanılmış piller evsel çöpe değil, atık pil kutusuna bırakılıyor.",
+      "question": "Bu davranış neden önemlidir?",
+      "options": [
+        "Zararlı maddelerin çevreye karışmasını önlemeye yardımcı olur",
+        "Pilleri doğada daha hızlı parçalar",
+        "Pilleri içme suyuna dönüştürür",
+        "Enerji üretimini sonsuz yapar"
+      ],
+      "answer": 0,
+      "explanation": "Atık piller uygun toplama noktalarına verilerek çevre kirliliği riski azaltılır.",
+      "outcome": "FB.7.7.2.1"
+    },
+    {
+      "id": 17,
+      "visual": "🍂 🪱",
+      "scenario": "Bahçedeki bitkisel atıklar kompost yapımında kullanılıyor.",
+      "question": "Kompost hangi yararı sağlar?",
+      "options": [
+        "Organik atıkları değerlendirip toprağı zenginleştirebilir",
+        "Plastik üretimini artırır",
+        "Su kaynaklarını tüketir",
+        "Metalleri ayrıştırır"
+      ],
+      "answer": 0,
+      "explanation": "Kompost organik atıkları toprağa yararlı madde kazandıran ürüne dönüştürür.",
+      "outcome": "FB.7.7.2.1"
+    },
+    {
+      "id": 18,
+      "visual": "🚲 🚌",
+      "scenario": "Bir öğrenci kısa mesafede otomobil yerine bisiklet kullanıyor.",
+      "question": "Bu tercih hangi çevresel sonucu destekler?",
+      "options": [
+        "Fosil yakıt tüketimini ve egzoz salımını azaltmayı",
+        "Yakıt tüketimini artırmayı",
+        "Gürültüyü zorunlu olarak artırmayı",
+        "Atık miktarını artırmayı"
+      ],
+      "answer": 0,
+      "explanation": "Bisiklet kullanımı fosil yakıtlı ulaşım ihtiyacını azaltabilir.",
+      "outcome": "FB.7.7.2.1"
+    },
+    {
+      "id": 19,
+      "visual": "☀️ 🔋",
+      "scenario": "Bir okul çatısında güneş panelleri elektrik üretiyor.",
+      "question": "Güneş enerjisi hangi enerji kaynağı grubundadır?",
+      "options": [
+        "Yenilenebilir",
+        "Yenilenemez",
+        "Nükleer yakıt",
+        "Fosil yakıt"
+      ],
+      "answer": 0,
+      "explanation": "Güneş enerjisi doğal süreçlerle sürekli yenilenen kaynaklardandır.",
+      "outcome": "FB.7.7.2.1"
+    },
+    {
+      "id": 20,
+      "visual": "🛢️ ⛽",
+      "scenario": "Kömür ve petrol kullanımı sonucunda atmosfere sera gazları salınabiliyor.",
+      "question": "Bu kaynaklar nasıl sınıflandırılır?",
+      "options": [
+        "Yenilenemez enerji kaynakları",
+        "Yenilenebilir enerji kaynakları",
+        "Sınırsız kaynaklar",
+        "Canlı üreticiler"
+      ],
+      "answer": 0,
+      "explanation": "Fosil yakıtlar oluşumları çok uzun sürdüğü için yenilenemez kaynaklardır.",
+      "outcome": "FB.7.7.2.1"
+    },
+    {
+      "id": 21,
+      "visual": "🌡️ 🌍",
+      "scenario": "Atmosferde sera gazlarının artması küresel ortalama sıcaklığın yükselmesine katkıda bulunuyor.",
+      "question": "Bu durum hangi kavramla ilişkilidir?",
+      "options": [
+        "Küresel iklim değişikliği",
+        "Ay tutulması",
+        "Ses yalıtımı",
+        "Elektriklenme"
+      ],
+      "answer": 0,
+      "explanation": "Sera gazlarının artışı küresel ısınmayı ve iklim değişikliğini etkiler.",
+      "outcome": "FB.7.7.2.1"
+    },
+    {
+      "id": 22,
+      "visual": "🌲 🔥",
+      "scenario": "Orman yangınları çok sayıda canlının yaşam alanını yok edebiliyor.",
+      "question": "Yangınların ekosisteme etkilerinden biri hangisidir?",
+      "options": [
+        "Habitat kaybı ve biyolojik çeşitliliğin azalması",
+        "Besin ağlarının güçlenmesi",
+        "Toprak oluşumunun anında tamamlanması",
+        "Tüm canlıların üretici olması"
+      ],
+      "answer": 0,
+      "explanation": "Yangınlar yaşam alanlarını ve ekosistem dengesini olumsuz etkileyebilir.",
+      "outcome": "FB.7.7.1.1"
+    },
+    {
+      "id": 23,
+      "visual": "🦋 🌼",
+      "scenario": "Bir bölgede tozlaşmayı sağlayan böceklerin sayısı azalıyor.",
+      "question": "Bitkiler üzerinde hangi etki görülebilir?",
+      "options": [
+        "Tozlaşma ve üreme başarısı azalabilir",
+        "Fotosentez tümüyle durur",
+        "Bitkiler hayvana dönüşür",
+        "Toprakta su artar"
+      ],
+      "answer": 0,
+      "explanation": "Tozlaştırıcı canlıların azalması bazı bitkilerin üreme sürecini olumsuz etkiler.",
+      "outcome": "FB.7.7.1.1"
+    },
+    {
+      "id": 24,
+      "visual": "🌱 🧪",
+      "scenario": "Tarımsal ilaçların aşırı kullanımı besin zinciri yoluyla canlılara ulaşabiliyor.",
+      "question": "Bu durum hangi riski artırır?",
+      "options": [
+        "Zararlı maddelerin besin ağına taşınmasını",
+        "Üretici sayısının kesin artmasını",
+        "Suyun saflaşmasını",
+        "Enerji akışının durmasını"
+      ],
+      "answer": 0,
+      "explanation": "Bazı kirleticiler besin zincirinde canlılara aktarılabilir ve birikebilir.",
+      "outcome": "FB.7.7.1.1"
+    },
+    {
+      "id": 25,
+      "visual": "🗑️ 🌊",
+      "scenario": "Plastik atıkların dereye bırakılması su canlılarını olumsuz etkiliyor.",
+      "question": "Bu soruna yönelik en uygun çözüm hangisidir?",
+      "options": [
+        "Atıkları kaynağında azaltmak ve uygun şekilde toplamak",
+        "Atıkları akıntıya bırakmak",
+        "Daha fazla plastik kullanmak",
+        "Atıkları toprağa gömmek"
+      ],
+      "answer": 0,
+      "explanation": "Atığı azaltmak, yeniden kullanmak ve geri dönüştürmek kirliliği önlemeye yardımcı olur.",
+      "outcome": "FB.7.7.2.1"
+    },
+    {
+      "id": 26,
+      "visual": "🥫 ♻️",
+      "scenario": "Metal içecek kutuları ayrı toplanarak geri dönüşüme gönderiliyor.",
+      "question": "Geri dönüşümün doğal kaynaklara katkısı nedir?",
+      "options": [
+        "Yeni ham madde çıkarma ihtiyacını azaltabilir",
+        "Maden tüketimini artırır",
+        "Atık oluşumunu zorunlu artırır",
+        "Enerji kullanımını daima sıfırlar"
+      ],
+      "answer": 0,
+      "explanation": "Geri dönüşüm ham madde ihtiyacını ve kaynak kullanımını azaltabilir.",
+      "outcome": "FB.7.7.2.1"
+    },
+    {
+      "id": 27,
+      "visual": "🐝 🌻",
+      "scenario": "Bir ekosistemde arılar azalınca bazı çiçekli bitkilerin tohum oluşturması da azalıyor.",
+      "question": "Bu durum canlılar arasında hangi ilişkiyi gösterir?",
+      "options": [
+        "Karşılıklı ekolojik bağımlılık",
+        "Canlıların birbirinden bağımsızlığı",
+        "Enerji üretiminin durması",
+        "Maddelerin yok olması"
+      ],
+      "answer": 0,
+      "explanation": "Arılar tozlaşmaya katkı sağlayarak bitkilerin üremesini destekler.",
+      "outcome": "FB.7.7.1.1"
+    },
+    {
+      "id": 28,
+      "visual": "📊 💧",
+      "scenario": "Okulun aylık su tüketimi önce 120 ton, tasarruf çalışmasından sonra 90 ton ölçülüyor.",
+      "question": "Tasarruf miktarı kaç tondur?",
+      "options": [
+        "20",
+        "30",
+        "90",
+        "210"
+      ],
+      "answer": 1,
+      "explanation": "120−90=30 ton su tasarrufu sağlanmıştır.",
+      "outcome": "FB.7.7.2.1"
+    },
+    {
+      "id": 29,
+      "visual": "📊 ⚡",
+      "scenario": "Bir okulun elektrik tüketimi 800 kWh'den 680 kWh'ye düşüyor.",
+      "question": "Tüketimdeki azalma kaç kWh'dir?",
+      "options": [
+        "80",
+        "100",
+        "120",
+        "1480"
+      ],
+      "answer": 2,
+      "explanation": "800−680=120 kWh azalma vardır.",
+      "outcome": "FB.7.7.2.1"
+    },
+    {
+      "id": 30,
+      "visual": "🌍 🤝",
+      "scenario": "Bir öğrenci sürdürülebilir yaşam için hem bireysel hem toplumsal çözümler öneriyor.",
+      "question": "Aşağıdakilerden hangisi kanıta dayalı ve uygulanabilir bir öneridir?",
+      "options": [
+        "Atık miktarını ölçüp azaltma hedefi belirlemek",
+        "Tüm tüketimi ölçmeden artırmak",
+        "Atıkları doğaya bırakmak",
+        "Kaynakların sınırsız olduğunu varsaymak"
+      ],
+      "answer": 0,
+      "explanation": "Ölçüm yapıp hedef belirlemek, sonuçları izlemeyi ve iyileştirmeyi sağlar.",
+      "outcome": "FB.7.7.2.1"
+    }
+  ]
+}
