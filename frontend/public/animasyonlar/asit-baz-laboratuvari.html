@@ -69,10 +69,9 @@ $("substance").addEventListener("change",()=>{$("sampleName").textContent=substa
 $("indicator").addEventListener("change",reset);
 $("test").addEventListener("click",()=>{
  reset();const s=substances[$("substance").value],i=indicators[$("indicator").value],color=i.colors[s.kind];
- revealed=true;$("indicatorName").textContent=i.name;$("observation").textContent=i[s.kind];$("swatches").innerHTML='<span class="swatch" style="background:'+color+'"></span><small style="color:#66758d">Gözlenen renk</small>';$("result").classList.add("show");
- if(i.type==="paper"){$("paper").classList.add("show");$("paperColor").style.background=$("indicator").value==="blue"?"#367bd6":"#e34b54";$("caption").textContent="Turnusol şeridini fareyle veya parmağınla tutup beherin içine sürükle."}
- else{$("paper").classList.remove("show");$("dropper").classList.add("active");$("liquid").style.background=color;$("liquid").style.height="62%";$("caption").textContent="Ayıraç damlatıldı; çözeltinin rengi değişti."}
- $("check").disabled=false;
+ revealed=i.type!=="paper";$("indicatorName").textContent=i.name;$("observation").textContent=i[s.kind];$("swatches").innerHTML='<span class="swatch" style="background:'+color+'"></span><small style="color:#66758d">Gözlenen renk</small>';
+ if(i.type==="paper"){$("paper").classList.add("show");$("paperColor").style.background=$("indicator").value==="blue"?"#367bd6":"#e34b54";$("caption").textContent="Turnusol şeridini fareyle veya parmağınla tutup beherin içine sürükle."; $("check").disabled=true}
+ else{$("result").classList.add("show");$("paper").classList.remove("show");$("dropper").classList.add("active");$("liquid").style.background=color;$("liquid").style.height="62%";$("caption").textContent="Ayıraç damlatıldı; çözeltinin rengi değişti.";$("check").disabled=false}
 });
 
 /* Turnusol kâğıdını dokunarak/fareyle sürükleyip beherin içine batırma */
@@ -81,17 +80,16 @@ $("paper").addEventListener("pointerdown",e=>{
  if(!$("paper").classList.contains("show"))return;
  e.preventDefault();paperDrag={x:e.clientX,y:e.clientY,moved:false};
  $("paper").setPointerCapture(e.pointerId);$("paper").classList.add("dragging");
- const r=$("paper").getBoundingClientRect();$("paper").style.left=(r.left-$("beaker").getBoundingClientRect().left+0)+"px";
- $("paper").style.right="auto";$("paper").style.top=(r.top-$("beaker").getBoundingClientRect().top)+"px";
+ $("paper").style.position="fixed";$("paper").style.left=(e.clientX-$("paper").offsetWidth/2)+"px";$("paper").style.top=(e.clientY-$("paper").offsetHeight/2)+"px";$("paper").style.right="auto";
 });
 $("paper").addEventListener("pointermove",e=>{
  if(!paperDrag)return;paperDrag.moved=true;
- const b=$("beaker").getBoundingClientRect(),w=$("paper").offsetWidth,h=$("paper").offsetHeight;
- $("paper").style.left=(e.clientX-b.left-w/2)+"px";$("paper").style.top=(e.clientY-b.top-h/2)+"px";
+ const w=$("paper").offsetWidth,h=$("paper").offsetHeight;
+ $("paper").style.left=(e.clientX-w/2)+"px";$("paper").style.top=(e.clientY-h/2)+"px";
 });
 function finishPaperDrag(e){
  if(!paperDrag)return;paperDrag=null;$("paper").classList.remove("dragging");
- const p=$("paper").getBoundingClientRect(),b=$("beaker").getBoundingClientRect();
+ const p=$("paper").getBoundingClientRect(),b=$("beaker").getBoundingClientRect();$("paper").style.position="absolute";$("paper").style.left="";$("paper").style.top="10px";$("paper").style.right="3px";
  const overlap=p.left<b.right&&p.right>b.left&&p.top<b.bottom&&p.bottom>b.top;
  if(overlap){
   const s=substances[$("substance").value],i=indicators[$("indicator").value],color=i.colors[s.kind];
