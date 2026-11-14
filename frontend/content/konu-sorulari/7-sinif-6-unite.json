@@ -1,0 +1,457 @@
+{
+  "grade": 7,
+  "unit": 6,
+  "title": "Elektriklenme",
+  "slug": "elektriklenme",
+  "description": "Türkiye Yüzyılı Maarif Modeli öğrenme çıktılarıyla eşleştirilmiş 30 senaryolu ve görsel destekli özgün soru.",
+  "questions": [
+    {
+      "id": 1,
+      "visual": "🎈 🧶",
+      "scenario": "Balon yün kumaşa sürtüldükten sonra küçük kâğıt parçalarını çekiyor.",
+      "question": "Bu olay nasıl adlandırılır?",
+      "options": [
+        "Elektriklenme",
+        "Mıknatıslanma",
+        "Yanma",
+        "Erime"
+      ],
+      "answer": 0,
+      "explanation": "Sürtünme sonucunda cisimler elektrik yükü kazanabilir.",
+      "outcome": "FB.7.6.1.1"
+    },
+    {
+      "id": 2,
+      "visual": "🪮 📄",
+      "scenario": "Plastik tarak kuru saçta gezdirildikten sonra kâğıt parçalarını çekiyor.",
+      "question": "Tarağın kâğıtları çekmesi hangi etkileşime örnektir?",
+      "options": [
+        "Elektriksel çekim",
+        "Kütle çekimi",
+        "Manyetik itme",
+        "Isı alışverişi"
+      ],
+      "answer": 0,
+      "explanation": "Yüklenmiş tarak, nötr kâğıtta yük dağılımını etkileyerek çekim oluşturabilir.",
+      "outcome": "FB.7.6.1.1"
+    },
+    {
+      "id": 3,
+      "visual": "⚡ 🧥",
+      "scenario": "Kışın kazak çıkarılırken çıtırtı duyuluyor ve küçük kıvılcımlar görülebiliyor.",
+      "question": "Bu durumun nedeni nedir?",
+      "options": [
+        "Elektrik yüklerinin birikmesi ve boşalması",
+        "Maddenin donması",
+        "Sesin ışığa dönüşmesi",
+        "Mıknatıs oluşması"
+      ],
+      "answer": 0,
+      "explanation": "Sürtünme ile yük birikmesi ve yüklerin ani boşalması çıtırtı oluşturabilir.",
+      "outcome": "FB.7.6.1.1"
+    },
+    {
+      "id": 4,
+      "visual": "🧪",
+      "scenario": "İki cisim birbirine sürtüldüğünde elektron alışverişi gerçekleşiyor.",
+      "question": "Elektriklenmede hareket eden parçacık hangisidir?",
+      "options": [
+        "Proton",
+        "Elektron",
+        "Nötron",
+        "Atom çekirdeği"
+      ],
+      "answer": 1,
+      "explanation": "Katı cisimlerde elektriklenme sırasında elektronlar yer değiştirebilir.",
+      "outcome": "FB.7.6.1.1"
+    },
+    {
+      "id": 5,
+      "visual": "➕ ⚛️",
+      "scenario": "Bir cisim elektron kaybettiğinde hangi yükle yüklenir?",
+      "question": [
+        "Pozitif",
+        "Negatif",
+        "Nötr",
+        "Yüksüz kalır"
+      ],
+      "options": 0,
+      "answer": "Elektron kaybeden cisimde proton sayısı elektron sayısından fazla olur; pozitif yüklenir.",
+      "explanation": "FB.7.6.1.1"
+    },
+    {
+      "id": 6,
+      "visual": "➖ ⚛️",
+      "scenario": "Bir cisim dışarıdan elektron aldığında yük durumu nasıl değişir?",
+      "question": [
+        "Pozitif",
+        "Negatif",
+        "Nötr",
+        "Yükü değişmez"
+      ],
+      "options": 1,
+      "answer": "Elektron alan cismin negatif yük miktarı artar.",
+      "explanation": "FB.7.6.1.1"
+    },
+    {
+      "id": 7,
+      "visual": "⚖️",
+      "scenario": "Bir atomda proton ve elektron sayıları eşit.",
+      "question": "Atomun toplam elektrik yükü nasıldır?",
+      "options": [
+        "Pozitif",
+        "Negatif",
+        "Nötr",
+        "Değişken"
+      ],
+      "answer": 2,
+      "explanation": "Pozitif ve negatif yükler eşit olduğunda atom nötrdür.",
+      "outcome": "FB.7.6.1.3"
+    },
+    {
+      "id": 8,
+      "visual": "🧲",
+      "scenario": "Yüklü iki cisim birbirine yaklaştırılıyor ve birbirini itiyor.",
+      "question": "Bu iki cismin yükleri için ne söylenebilir?",
+      "options": [
+        "Zıt işaretlidir",
+        "Aynı işaretlidir",
+        "Biri kesinlikle nötrdür",
+        "Yükleri yoktur"
+      ],
+      "answer": 1,
+      "explanation": "Aynı cins elektrik yükleri birbirini iter.",
+      "outcome": "FB.7.6.1.3"
+    },
+    {
+      "id": 9,
+      "visual": "➕ ➖",
+      "scenario": "Pozitif yüklü cisim ile negatif yüklü cisim birbirine yaklaştırılıyor.",
+      "question": "Aralarında hangi etkileşim gerçekleşir?",
+      "options": [
+        "İtme",
+        "Çekme",
+        "Etkileşim yok",
+        "Yalnızca ısınma"
+      ],
+      "answer": 1,
+      "explanation": "Zıt cins elektrik yükleri birbirini çeker.",
+      "outcome": "FB.7.6.1.3"
+    },
+    {
+      "id": 10,
+      "visual": "⚡ ⚡",
+      "scenario": "İki negatif yüklü balon birbirine yaklaştırıldığında uzaklaşıyor.",
+      "question": "Bu gözlem hangi kuralı destekler?",
+      "options": [
+        "Zıt yükler iter",
+        "Aynı yükler iter",
+        "Nötr cisimler iter",
+        "Yükler birbirini etkilemez"
+      ],
+      "answer": 1,
+      "explanation": "İki negatif yük aynı cinstir ve birbirini iter.",
+      "outcome": "FB.7.6.1.3"
+    },
+    {
+      "id": 11,
+      "visual": "🧪",
+      "scenario": "Nötr elektroskobun topuzuna yüklü bir cisim dokunduruluyor; yapraklar açılıyor.",
+      "question": "Yaprakların açılması neyi gösterir?",
+      "options": [
+        "Elektroskobun yüklendiğini",
+        "Elektroskobun eridiğini",
+        "Cismin nötrleştiğini kesin olarak",
+        "Elektrik akımının sürekli aktığını"
+      ],
+      "answer": 0,
+      "explanation": "Elektroskop yapraklarının açılması elektrik yükü bulunduğunu gösterir.",
+      "outcome": "FB.7.6.1.3"
+    },
+    {
+      "id": 12,
+      "visual": "📏 ⚡",
+      "scenario": "Elektroskop yapraklarının açılma miktarı artıyor.",
+      "question": "Bu durum genellikle neyi ifade eder?",
+      "options": [
+        "Elektroskobun yük miktarının arttığını",
+        "Yükün yok olduğunu",
+        "Cismin kütlesinin azaldığını",
+        "Sıcaklığın düştüğünü"
+      ],
+      "answer": 0,
+      "explanation": "Aynı koşullarda yaprakların daha fazla açılması daha fazla yük bulunduğuna işaret eder.",
+      "outcome": "FB.7.6.1.3"
+    },
+    {
+      "id": 13,
+      "visual": "🧤",
+      "scenario": "Elektriklenme deneyinde yalıtkan eldiven kullanılıyor.",
+      "question": "Yalıtkanın temel özelliği nedir?",
+      "options": [
+        "Elektrik yüklerinin kolayca hareket etmesini sağlamak",
+        "Yüklerin hareketini zorlaştırmak",
+        "Elektrik üretmek",
+        "Yükleri yok etmek"
+      ],
+      "answer": 1,
+      "explanation": "Yalıtkan maddelerde elektrik yükleri kolay hareket edemez.",
+      "outcome": "FB.7.6.1.2"
+    },
+    {
+      "id": 14,
+      "visual": "🔩",
+      "scenario": "Metal kaşık elektrik yüklerinin hareketini kolaylaştırıyor.",
+      "question": "Metal kaşık hangi madde sınıfına örnektir?",
+      "options": [
+        "Yalıtkan",
+        "İletken",
+        "Saydam",
+        "Esnek"
+      ],
+      "answer": 1,
+      "explanation": "Metaller elektrik yüklerini iletebilir.",
+      "outcome": "FB.7.6.1.2"
+    },
+    {
+      "id": 15,
+      "visual": "🧪",
+      "scenario": "Öğrenci plastik çubuk ve metal çubukla aynı elektriklenme deneyini yapıyor.",
+      "question": "Hangisinde yükler daha kolay hareket eder?",
+      "options": [
+        "Plastik çubukta",
+        "Metal çubukta",
+        "İkisinde de hiç hareket etmez",
+        "Her zaman plastikten metale"
+      ],
+      "answer": 1,
+      "explanation": "Metaller iletken, plastik çoğunlukla yalıtkandır.",
+      "outcome": "FB.7.6.1.2"
+    },
+    {
+      "id": 16,
+      "visual": "🧶 🎈",
+      "scenario": "Balon saça sürtülüyor ve balon duvara bir süre yapışıyor.",
+      "question": "Bu olayın açıklaması hangisidir?",
+      "options": [
+        "Elektriksel etkileşim",
+        "Kimyasal sindirim",
+        "Işığın kırılması",
+        "Sesin yayılması"
+      ],
+      "answer": 0,
+      "explanation": "Yüklenmiş balon duvardaki yük dağılımını etkileyerek elektrostatik çekim oluşturur.",
+      "outcome": "FB.7.6.1.2"
+    },
+    {
+      "id": 17,
+      "visual": "🧪",
+      "scenario": "Bir deneyde iki farklı cisim sürtülüyor; biri elektron alırken diğeri elektron veriyor.",
+      "question": "Deney sonunda cisimlerin yükleri nasıl olur?",
+      "options": [
+        "İkisi de pozitif",
+        "İkisi de negatif",
+        "Zıt işaretli",
+        "İkisi de nötr"
+      ],
+      "answer": 2,
+      "explanation": "Elektron veren pozitif, elektron alan negatif yüklenir.",
+      "outcome": "FB.7.6.1.2"
+    },
+    {
+      "id": 18,
+      "visual": "🪙",
+      "scenario": "Nötr metal küre yüklü çubuğa dokundurulmadan yaklaştırılıyor; kürede yükler ayrışıyor.",
+      "question": "Bu elektriklenme çeşidi hangisidir?",
+      "options": [
+        "Sürtünme ile",
+        "Dokunma ile",
+        "Etki ile",
+        "Isı ile"
+      ],
+      "answer": 2,
+      "explanation": "Yüklü cisim yaklaştırıldığında temas olmadan yüklerin ayrışması etki ile elektriklenmedir.",
+      "outcome": "FB.7.6.1.2"
+    },
+    {
+      "id": 19,
+      "visual": "🤝",
+      "scenario": "Yüklü bir cisim nötr metal küreye dokunduruluyor.",
+      "question": "Bu elektriklenme çeşidi hangisidir?",
+      "options": [
+        "Dokunma ile",
+        "Etki ile",
+        "Sürtünme ile",
+        "Manyetik etkiyle"
+      ],
+      "answer": 0,
+      "explanation": "Yüklü cisim temas ederek yük aktarırsa dokunma ile elektriklenme olur.",
+      "outcome": "FB.7.6.1.2"
+    },
+    {
+      "id": 20,
+      "visual": "🧣",
+      "scenario": "Cam çubuk ipek kumaşa sürtülüyor.",
+      "question": "Bu düzenekte elektriklenme hangi yolla gerçekleşir?",
+      "options": [
+        "Sürtünme ile",
+        "Dokunma ile",
+        "Etki ile",
+        "Isı ile"
+      ],
+      "answer": 0,
+      "explanation": "İki cismin sürtünmesi elektron aktarımına neden olabilir.",
+      "outcome": "FB.7.6.1.2"
+    },
+    {
+      "id": 21,
+      "visual": "⚡ 🌍",
+      "scenario": "Yüklü bir cisim toprağa iletken telle bağlanıyor ve yük fazlası toprağa aktarılıyor.",
+      "question": "Bu işlem nasıl adlandırılır?",
+      "options": [
+        "Topraklama",
+        "Yalıtma",
+        "Kırılma",
+        "Yansıma"
+      ],
+      "answer": 0,
+      "explanation": "Topraklama, fazla elektrik yükünün güvenli biçimde toprağa aktarılmasıdır.",
+      "outcome": "FB.7.6.1.2"
+    },
+    {
+      "id": 22,
+      "visual": "🏠 ⚡",
+      "scenario": "Yüksek yapılarda yıldırımın etkisini azaltmak için metal iletken çubuk kullanılıyor.",
+      "question": "Bu sistem hangi amaçla yapılır?",
+      "options": [
+        "Yükleri toprağa iletmek",
+        "Yıldırımı üretmek",
+        "Binayı yalıtmak",
+        "Işığı kırmak"
+      ],
+      "answer": 0,
+      "explanation": "Paratoner yıldırım yükünü iletken yol üzerinden toprağa aktarır.",
+      "outcome": "FB.7.6.1.2"
+    },
+    {
+      "id": 23,
+      "visual": "🌩️",
+      "scenario": "Fırtınalı havada açık alanda bulunan bir kişi güvenli kapalı bir yapıya geçiyor.",
+      "question": "Bu davranışın temel nedeni nedir?",
+      "options": [
+        "Yıldırım riskinden korunmak",
+        "Elektriklenmeyi artırmak",
+        "Havayı ısıtmak",
+        "Mıknatıs etkisini azaltmak"
+      ],
+      "answer": 0,
+      "explanation": "Yıldırım tehlikesinde kapalı ve güvenli bir yapıya geçmek gerekir.",
+      "outcome": "FB.7.6.1.2"
+    },
+    {
+      "id": 24,
+      "visual": "🧪",
+      "scenario": "Nötr elektroskobun yaprakları kapalıdır. Negatif yüklü cisim topuza dokunduruluyor.",
+      "question": "Elektroskopta yük aktarımı gerçekleşirse yapraklar ne yapar?",
+      "options": [
+        "Açılabilir",
+        "Kesinlikle erir",
+        "Renk değiştirir",
+        "Kütlesi yok olur"
+      ],
+      "answer": 0,
+      "explanation": "Dokunma ile yük aktarımı elektroskobu yükler ve yapraklar açılır.",
+      "outcome": "FB.7.6.1.3"
+    },
+    {
+      "id": 25,
+      "visual": "⚖️",
+      "scenario": "Bir cisimde 15 proton ve 12 elektron bulunuyor.",
+      "question": "Cismin net yükü hangi yöndedir?",
+      "options": [
+        "3 birim pozitif",
+        "3 birim negatif",
+        "27 birim pozitif",
+        "Nötr"
+      ],
+      "answer": 0,
+      "explanation": "Proton sayısı elektron sayısından 3 fazla olduğundan net yük 3 birim pozitiftir.",
+      "outcome": "FB.7.6.1.3"
+    },
+    {
+      "id": 26,
+      "visual": "⚖️",
+      "scenario": "Bir cisimde 9 proton ve 13 elektron bulunuyor.",
+      "question": "Cismin net yükü nedir?",
+      "options": [
+        "4 birim pozitif",
+        "4 birim negatif",
+        "22 birim negatif",
+        "Nötr"
+      ],
+      "answer": 1,
+      "explanation": "Elektron sayısı 4 fazla olduğu için cisim net negatif yüklüdür.",
+      "outcome": "FB.7.6.1.3"
+    },
+    {
+      "id": 27,
+      "visual": "🔍",
+      "scenario": "Öğrenci elektroskobun yaprakları açıldığında cismin kesinlikle pozitif olduğunu söylüyor.",
+      "question": "Bu yorum doğru mudur?",
+      "options": [
+        "Evet, yaprak açılması pozitifliği kanıtlar",
+        "Hayır, yalnızca yüklü olduğunu gösterir",
+        "Evet, her zaman nötrdür",
+        "Hayır, elektroskop yük algılamaz"
+      ],
+      "answer": 1,
+      "explanation": "Yaprakların açılması yük bulunduğunu gösterir; yükün işareti tek başına belirlenemez.",
+      "outcome": "FB.7.6.1.3"
+    },
+    {
+      "id": 28,
+      "visual": "🧪 📋",
+      "scenario": "Bir araştırmacı sürtünme, dokunma ve etki ile elektriklenmeyi karşılaştıran deney tasarlıyor.",
+      "question": "Bilimsel deneyde hangi değişkenlerin kontrol edilmesi önemlidir?",
+      "options": [
+        "Cisim türü ve deney koşulları",
+        "Sadece deney başlığı",
+        "Gözlemcinin yaşı",
+        "Sınıfın rengi"
+      ],
+      "answer": 0,
+      "explanation": "Adil karşılaştırma için kullanılan cisimler ve deney koşulları kontrol edilmelidir.",
+      "outcome": "FB.7.6.1.2"
+    },
+    {
+      "id": 29,
+      "visual": "⚡",
+      "scenario": "Bir cisim elektron alıp negatif yükleniyor. Daha sonra aynı miktarda elektron kaybediyor.",
+      "question": "Son durumda yükü nasıl olur?",
+      "options": [
+        "Başlangıçtaki nötr hâline döner",
+        "Daha negatif olur",
+        "Pozitif olur",
+        "Yükü sonsuz artar"
+      ],
+      "answer": 0,
+      "explanation": "Aldığı elektronları geri verirse net yük değişimi sıfırlanır.",
+      "outcome": "FB.7.6.1.1"
+    },
+    {
+      "id": 30,
+      "visual": "🔬",
+      "scenario": "Bir öğrenci elektriklenme deneyinde gözlem, sonuç ve çıkarımlarını tabloya kaydediyor.",
+      "question": "Bu uygulama bilimsel süreçlerden hangisine örnektir?",
+      "options": [
+        "Verileri kaydetme ve analiz etme",
+        "Tahminleri kanıt sayma",
+        "Sonucu gizleme",
+        "Kontrolsüz değişken artırma"
+      ],
+      "answer": 0,
+      "explanation": "Gözlem verilerini kaydetmek ve analiz etmek bilimsel araştırmanın temel adımlarındandır.",
+      "outcome": "FB.7.6.1.1"
+    }
+  ]
+}
