@@ -1,0 +1,459 @@
+{
+  "grade": 6,
+  "unit": 7,
+  "title": "Sürdürülebilir Yaşam ve Etkileşim",
+  "slug": "surdurulebilir-yasam-ve-etkilesim",
+  "description": "Maarif Modeli öğrenme çıktılarıyla eşleştirilmiş 30 özgün senaryolu ve görsel destekli soru.",
+  "questions": [
+    {
+      "id": 1,
+      "outcome": "FB.6.7.1",
+      "visual": "🌳🐦 🧪",
+      "scenario": "Ormanda farklı ağaç, kuş ve böcek türleri yaşıyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Bu çeşitlilik nedir?",
+      "options": [
+        "Biyoçeşitlilik",
+        "Yoğunluk",
+        "Genleşme",
+        "Yansıma"
+      ],
+      "answer": 0,
+      "explanation": "Biyoçeşitlilik canlıların çeşitliliğidir."
+    },
+    {
+      "id": 2,
+      "outcome": "FB.6.7.1",
+      "visual": "🌳🐦 📋",
+      "scenario": "Ormanda farklı ağaç, kuş ve böcek türleri yaşıyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Bu çeşitlilik nedir?",
+      "options": [
+        "Biyoçeşitlilik",
+        "Yoğunluk",
+        "Genleşme",
+        "Yansıma"
+      ],
+      "answer": 0,
+      "explanation": "Biyoçeşitlilik canlıların çeşitliliğidir."
+    },
+    {
+      "id": 3,
+      "outcome": "FB.6.7.1",
+      "visual": "🏞️🐟 🧪",
+      "scenario": "Gölde canlılar su, ışık ve sıcaklıkla etkileşim hâlinde. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Bu bütün nedir?",
+      "options": [
+        "Habitat",
+        "Ekosistem",
+        "Popülasyon",
+        "Saf madde"
+      ],
+      "answer": 1,
+      "explanation": "Ekosistem canlı ve cansız çevrenin etkileşimidir."
+    },
+    {
+      "id": 4,
+      "outcome": "FB.6.7.1",
+      "visual": "🏞️🐟 📋",
+      "scenario": "Gölde canlılar su, ışık ve sıcaklıkla etkileşim hâlinde. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Bu bütün nedir?",
+      "options": [
+        "Habitat",
+        "Ekosistem",
+        "Popülasyon",
+        "Saf madde"
+      ],
+      "answer": 1,
+      "explanation": "Ekosistem canlı ve cansız çevrenin etkileşimidir."
+    },
+    {
+      "id": 5,
+      "outcome": "FB.6.7.1",
+      "visual": "🌷 🧪",
+      "scenario": "Bir bitki doğal olarak yalnızca belirli bölgede yetişiyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Bu tür nasıl adlandırılır?",
+      "options": [
+        "Göçmen",
+        "Endemik",
+        "Evcil",
+        "İstilacı"
+      ],
+      "answer": 1,
+      "explanation": "Endemik türün doğal yayılışı belirli bölgeyle sınırlıdır."
+    },
+    {
+      "id": 6,
+      "outcome": "FB.6.7.1",
+      "visual": "🌷 📋",
+      "scenario": "Bir bitki doğal olarak yalnızca belirli bölgede yetişiyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Bu tür nasıl adlandırılır?",
+      "options": [
+        "Göçmen",
+        "Endemik",
+        "Evcil",
+        "İstilacı"
+      ],
+      "answer": 1,
+      "explanation": "Endemik türün doğal yayılışı belirli bölgeyle sınırlıdır."
+    },
+    {
+      "id": 7,
+      "outcome": "FB.6.7.1",
+      "visual": "🐝🌼 🧪",
+      "scenario": "Arıların polen taşıması bitkilerin çoğalmasına yardım ediyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Bu örnek neyi gösterir?",
+      "options": [
+        "Canlı etkileşimlerinin ekosistemi desteklemesini",
+        "Bütün canlıların aynı besini yemesini",
+        "Cansız çevrenin yok olmasını",
+        "Türlerin etkilenmemesini"
+      ],
+      "answer": 0,
+      "explanation": "Tozlaşma bitkilerin çoğalmasına katkı sağlar."
+    },
+    {
+      "id": 8,
+      "outcome": "FB.6.7.1",
+      "visual": "🐝🌼 📋",
+      "scenario": "Arıların polen taşıması bitkilerin çoğalmasına yardım ediyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Bu örnek neyi gösterir?",
+      "options": [
+        "Canlı etkileşimlerinin ekosistemi desteklemesini",
+        "Bütün canlıların aynı besini yemesini",
+        "Cansız çevrenin yok olmasını",
+        "Türlerin etkilenmemesini"
+      ],
+      "answer": 0,
+      "explanation": "Tozlaşma bitkilerin çoğalmasına katkı sağlar."
+    },
+    {
+      "id": 9,
+      "outcome": "FB.6.7.2",
+      "visual": "🏗️🌳 🧪",
+      "scenario": "Yapılaşma sonrası ormandaki yaşam alanı küçülüyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Bu tehdit nedir?",
+      "options": [
+        "Habitat kaybı",
+        "Tozlaşma",
+        "Ayrıştırma",
+        "Yenilenme"
+      ],
+      "answer": 0,
+      "explanation": "Yaşam alanlarının daralması habitat kaybıdır."
+    },
+    {
+      "id": 10,
+      "outcome": "FB.6.7.2",
+      "visual": "🏗️🌳 📋",
+      "scenario": "Yapılaşma sonrası ormandaki yaşam alanı küçülüyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Bu tehdit nedir?",
+      "options": [
+        "Habitat kaybı",
+        "Tozlaşma",
+        "Ayrıştırma",
+        "Yenilenme"
+      ],
+      "answer": 0,
+      "explanation": "Yaşam alanlarının daralması habitat kaybıdır."
+    },
+    {
+      "id": 11,
+      "outcome": "FB.6.7.2",
+      "visual": "🗑️🌊 🧪",
+      "scenario": "Gölde atık artarken su kalitesi ve balık sayısı azalıyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Uygun tahmin hangisidir?",
+      "options": [
+        "Kirlilik sürerse balıklar olumsuz etkilenebilir",
+        "Bütün balıklar aynı gün yok olur",
+        "Kirlilik etkilemez",
+        "Bütün türler artar"
+      ],
+      "answer": 0,
+      "explanation": "Veriler kirliliğin canlıları etkileyebileceğini düşündürür."
+    },
+    {
+      "id": 12,
+      "outcome": "FB.6.7.2",
+      "visual": "🗑️🌊 📋",
+      "scenario": "Gölde atık artarken su kalitesi ve balık sayısı azalıyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Uygun tahmin hangisidir?",
+      "options": [
+        "Kirlilik sürerse balıklar olumsuz etkilenebilir",
+        "Bütün balıklar aynı gün yok olur",
+        "Kirlilik etkilemez",
+        "Bütün türler artar"
+      ],
+      "answer": 0,
+      "explanation": "Veriler kirliliğin canlıları etkileyebileceğini düşündürür."
+    },
+    {
+      "id": 13,
+      "outcome": "FB.6.7.2",
+      "visual": "🌡️🐾 🧪",
+      "scenario": "Uzun süreli sıcaklık artışı bazı türlerin yaşam alanını daraltıyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Bu tehdit hangisidir?",
+      "options": [
+        "İklim değişikliği",
+        "Tozlaşma",
+        "Genleşme",
+        "Yansıma"
+      ],
+      "answer": 0,
+      "explanation": "İklim koşullarındaki değişimler habitatları etkiler."
+    },
+    {
+      "id": 14,
+      "outcome": "FB.6.7.2",
+      "visual": "🌡️🐾 📋",
+      "scenario": "Uzun süreli sıcaklık artışı bazı türlerin yaşam alanını daraltıyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Bu tehdit hangisidir?",
+      "options": [
+        "İklim değişikliği",
+        "Tozlaşma",
+        "Genleşme",
+        "Yansıma"
+      ],
+      "answer": 0,
+      "explanation": "İklim koşullarındaki değişimler habitatları etkiler."
+    },
+    {
+      "id": 15,
+      "outcome": "FB.6.7.2",
+      "visual": "🦋🌱 🧪",
+      "scenario": "Dışarıdan gelen bir tür hızla çoğalıp yerel türlerle rekabet ediyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Bu tür nasıl adlandırılır?",
+      "options": [
+        "Endemik",
+        "İstilacı",
+        "Ayrıştırıcı",
+        "Üretici"
+      ],
+      "answer": 1,
+      "explanation": "İstilacı türler yerel türler üzerinde baskı oluşturabilir."
+    },
+    {
+      "id": 16,
+      "outcome": "FB.6.7.2",
+      "visual": "🦋🌱 📋",
+      "scenario": "Dışarıdan gelen bir tür hızla çoğalıp yerel türlerle rekabet ediyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Bu tür nasıl adlandırılır?",
+      "options": [
+        "Endemik",
+        "İstilacı",
+        "Ayrıştırıcı",
+        "Üretici"
+      ],
+      "answer": 1,
+      "explanation": "İstilacı türler yerel türler üzerinde baskı oluşturabilir."
+    },
+    {
+      "id": 17,
+      "outcome": "FB.6.7.3",
+      "visual": "🏭🌫️ 🧪",
+      "scenario": "Kışın yoğun yakıt kullanılan mahallede hava kalitesi kötüleşiyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "İnsan sağlığı nasıl etkilenebilir?",
+      "options": [
+        "Solunum yolları olumsuz etkilenebilir",
+        "Göz rengi değişir",
+        "Kemik yoğunluğu artar",
+        "Biyoçeşitlilik artar"
+      ],
+      "answer": 0,
+      "explanation": "Yanma kirleticileri solunum sağlığını etkileyebilir."
+    },
+    {
+      "id": 18,
+      "outcome": "FB.6.7.3",
+      "visual": "🏭🌫️ 📋",
+      "scenario": "Kışın yoğun yakıt kullanılan mahallede hava kalitesi kötüleşiyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "İnsan sağlığı nasıl etkilenebilir?",
+      "options": [
+        "Solunum yolları olumsuz etkilenebilir",
+        "Göz rengi değişir",
+        "Kemik yoğunluğu artar",
+        "Biyoçeşitlilik artar"
+      ],
+      "answer": 0,
+      "explanation": "Yanma kirleticileri solunum sağlığını etkileyebilir."
+    },
+    {
+      "id": 19,
+      "outcome": "FB.6.7.3",
+      "visual": "🏡🌲 🧪",
+      "scenario": "Evde yalıtım ve verimli ısıtma öneriliyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Neden yararlı olabilir?",
+      "options": [
+        "Daha az yakıt ve emisyon",
+        "Yakıt tüketimini artırma",
+        "Kirliliği kesin sıfırlama",
+        "Enerjiyi sınırsız yapma"
+      ],
+      "answer": 0,
+      "explanation": "Verimlilik yakıt ihtiyacını azaltabilir."
+    },
+    {
+      "id": 20,
+      "outcome": "FB.6.7.3",
+      "visual": "🏡🌲 📋",
+      "scenario": "Evde yalıtım ve verimli ısıtma öneriliyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Neden yararlı olabilir?",
+      "options": [
+        "Daha az yakıt ve emisyon",
+        "Yakıt tüketimini artırma",
+        "Kirliliği kesin sıfırlama",
+        "Enerjiyi sınırsız yapma"
+      ],
+      "answer": 0,
+      "explanation": "Verimlilik yakıt ihtiyacını azaltabilir."
+    },
+    {
+      "id": 21,
+      "outcome": "FB.6.7.4",
+      "visual": "🗑️🏞️ 🧪",
+      "scenario": "Okul yakınındaki dereye plastik atıklar bırakılıyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Çözümden önce ne yapılmalı?",
+      "options": [
+        "Kaynak ve atık miktarı belirlenmeli",
+        "Veri toplamadan karar verilmeli",
+        "Atıklar dereye itilmeli",
+        "Sorun görmezden gelinmeli"
+      ],
+      "answer": 0,
+      "explanation": "Sorun ve nedenleri verilerle tanımlanmalıdır."
+    },
+    {
+      "id": 22,
+      "outcome": "FB.6.7.4",
+      "visual": "🗑️🏞️ 📋",
+      "scenario": "Okul yakınındaki dereye plastik atıklar bırakılıyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Çözümden önce ne yapılmalı?",
+      "options": [
+        "Kaynak ve atık miktarı belirlenmeli",
+        "Veri toplamadan karar verilmeli",
+        "Atıklar dereye itilmeli",
+        "Sorun görmezden gelinmeli"
+      ],
+      "answer": 0,
+      "explanation": "Sorun ve nedenleri verilerle tanımlanmalıdır."
+    },
+    {
+      "id": 23,
+      "outcome": "FB.6.7.4",
+      "visual": "♻️🏫 🧪",
+      "scenario": "Okulda kâğıt ve plastik ayrı kutularda toplanacak. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Etki hangi veriyle izlenebilir?",
+      "options": [
+        "Toplanan atık miktarı",
+        "Ayakkabı numarası",
+        "Kapı rengi",
+        "Ders saati"
+      ],
+      "answer": 0,
+      "explanation": "Atık miktarını izlemek uygulama başarısını gösterir."
+    },
+    {
+      "id": 24,
+      "outcome": "FB.6.7.4",
+      "visual": "♻️🏫 📋",
+      "scenario": "Okulda kâğıt ve plastik ayrı kutularda toplanacak. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Etki hangi veriyle izlenebilir?",
+      "options": [
+        "Toplanan atık miktarı",
+        "Ayakkabı numarası",
+        "Kapı rengi",
+        "Ders saati"
+      ],
+      "answer": 0,
+      "explanation": "Atık miktarını izlemek uygulama başarısını gösterir."
+    },
+    {
+      "id": 25,
+      "outcome": "FB.6.7.4",
+      "visual": "💧🚰 🧪",
+      "scenario": "Okulda muslukların açık kalması su tüketimini artırıyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Uygun çözüm hangisidir?",
+      "options": [
+        "Tasarruf aparatı ve tüketim ölçümü",
+        "Muslukları açık bırakmak",
+        "Veri kaydetmemek",
+        "Kaynağı kapatmak"
+      ],
+      "answer": 0,
+      "explanation": "Tasarruf ve ölçüm su tüketimini azaltabilir."
+    },
+    {
+      "id": 26,
+      "outcome": "FB.6.7.4",
+      "visual": "💧🚰 📋",
+      "scenario": "Okulda muslukların açık kalması su tüketimini artırıyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Uygun çözüm hangisidir?",
+      "options": [
+        "Tasarruf aparatı ve tüketim ölçümü",
+        "Muslukları açık bırakmak",
+        "Veri kaydetmemek",
+        "Kaynağı kapatmak"
+      ],
+      "answer": 0,
+      "explanation": "Tasarruf ve ölçüm su tüketimini azaltabilir."
+    },
+    {
+      "id": 27,
+      "outcome": "FB.6.7.4",
+      "visual": "🌳🏙️ 🧪",
+      "scenario": "Mahallede yeşil alanlar azalmış; yerel türlerle alan oluşturulacak. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Amaç nedir?",
+      "options": [
+        "Habitatları desteklemek",
+        "Atığı artırmak",
+        "Ağaçları kaldırmak",
+        "Su israfı"
+      ],
+      "answer": 0,
+      "explanation": "Yerel bitkiler yaşam alanlarını destekler."
+    },
+    {
+      "id": 28,
+      "outcome": "FB.6.7.4",
+      "visual": "🌳🏙️ 📋",
+      "scenario": "Mahallede yeşil alanlar azalmış; yerel türlerle alan oluşturulacak. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Amaç nedir?",
+      "options": [
+        "Habitatları desteklemek",
+        "Atığı artırmak",
+        "Ağaçları kaldırmak",
+        "Su israfı"
+      ],
+      "answer": 0,
+      "explanation": "Yerel bitkiler yaşam alanlarını destekler."
+    },
+    {
+      "id": 29,
+      "outcome": "FB.6.7.4",
+      "visual": "📊♻️ 🧪",
+      "scenario": "Atık azaltma kampanyası öncesi 40 kg, sonrası 25 kg atık ölçülüyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
+      "question": "Hangi çıkarım yapılır?",
+      "options": [
+        "Atık 15 kg azalmıştır",
+        "Atık 25 kg artmıştır",
+        "Değişmemiştir",
+        "Ölçülemez"
+      ],
+      "answer": 0,
+      "explanation": "40−25=15 kg azalma vardır."
+    },
+    {
+      "id": 30,
+      "outcome": "FB.6.7.4",
+      "visual": "📊♻️ 📋",
+      "scenario": "Atık azaltma kampanyası öncesi 40 kg, sonrası 25 kg atık ölçülüyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
+      "question": "Hangi çıkarım yapılır?",
+      "options": [
+        "Atık 15 kg azalmıştır",
+        "Atık 25 kg artmıştır",
+        "Değişmemiştir",
+        "Ölçülemez"
+      ],
+      "answer": 0,
+      "explanation": "40−25=15 kg azalma vardır."
+    }
+  ]
+}
