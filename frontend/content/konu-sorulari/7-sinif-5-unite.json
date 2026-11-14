@@ -1,0 +1,454 @@
+{
+  "grade": 7,
+  "unit": 5,
+  "title": "Maddenin Doğasına Yolculuk",
+  "slug": "maddenin-dogasina-yolculuk",
+  "description": "Türkiye Yüzyılı Maarif Modeli öğrenme çıktılarıyla eşleştirilmiş 30 senaryolu ve görsel destekli özgün soru.",
+  "questions": [
+    {
+      "id": 1,
+      "visual": "⚛️",
+      "scenario": "Bir atom modeli proton, nötron ve elektronlardan oluşuyor.",
+      "question": "Proton ve nötron atomun hangi bölümünde bulunur?",
+      "options": [
+        "Çekirdek",
+        "Katmanlar",
+        "Elektron bulutu dışında",
+        "Molekül bağı"
+      ],
+      "answer": 0,
+      "explanation": "Proton ve nötron çekirdekte bulunur.",
+      "outcome": "FB.7.5.1"
+    },
+    {
+      "id": 2,
+      "visual": "➕ ⚛️",
+      "scenario": "Bir atomun proton sayısı 8 olarak belirleniyor.",
+      "question": "Bu atomun atom numarası kaçtır?",
+      "options": [
+        "4",
+        "8",
+        "16",
+        "18"
+      ],
+      "answer": 1,
+      "explanation": "Atom numarası proton sayısına eşittir.",
+      "outcome": "FB.7.5.1"
+    },
+    {
+      "id": 3,
+      "visual": "⚛️ ➖",
+      "scenario": "Nötr bir atomda 11 proton bulunuyor.",
+      "question": "Elektron sayısı kaçtır?",
+      "options": [
+        "10",
+        "11",
+        "12",
+        "22"
+      ],
+      "answer": 1,
+      "explanation": "Nötr atomda proton sayısı elektron sayısına eşittir.",
+      "outcome": "FB.7.5.1"
+    },
+    {
+      "id": 4,
+      "visual": "🔬 📜",
+      "scenario": "Bilim insanları atomu farklı dönemlerde farklı modellerle açıklamıştır.",
+      "question": "Atom modellerinin zamanla değişmesi neyi gösterir?",
+      "options": [
+        "Bilimsel bilginin yeni kanıtlarla gelişebildiğini",
+        "Bilimin değişmediğini",
+        "Atomun gözle görülebildiğini",
+        "Modellerin gereksiz olduğunu"
+      ],
+      "answer": 0,
+      "explanation": "Yeni deney ve kanıtlar bilimsel modellerin geliştirilmesini sağlar.",
+      "outcome": "FB.7.5.2"
+    },
+    {
+      "id": 5,
+      "visual": "🍬 ⚛️",
+      "scenario": "Bir öğrenci atomu bilyelerle gösteren bir model hazırlıyor.",
+      "question": "Bilimsel modelin temel amacı nedir?",
+      "options": [
+        "Gözlenemeyen yapıları anlamayı kolaylaştırmak",
+        "Gerçeğin tüm özelliklerini birebir kopyalamak",
+        "Deney yapmayı engellemek",
+        "Maddeleri yok etmek"
+      ],
+      "answer": 0,
+      "explanation": "Modeller karmaşık veya doğrudan gözlenemeyen yapıları temsil eder.",
+      "outcome": "FB.7.5.2"
+    },
+    {
+      "id": 6,
+      "visual": "💧",
+      "scenario": "Su molekülü iki hidrojen ve bir oksijen atomundan oluşur.",
+      "question": "Su hangi tür saf maddedir?",
+      "options": [
+        "Element",
+        "Bileşik",
+        "Karışım",
+        "Alaşım"
+      ],
+      "answer": 1,
+      "explanation": "Farklı tür atomlar belirli oranlarda birleştiği için su bileşiktir.",
+      "outcome": "FB.7.5.3"
+    },
+    {
+      "id": 7,
+      "visual": "🫧 O₂",
+      "scenario": "Oksijen gazı molekülü iki oksijen atomundan oluşur.",
+      "question": "Oksijen hangi sınıfa girer?",
+      "options": [
+        "Element",
+        "Bileşik",
+        "Homojen karışım",
+        "Heterojen karışım"
+      ],
+      "answer": 0,
+      "explanation": "Tek tür atomdan oluşan saf maddeler elementtir.",
+      "outcome": "FB.7.5.3"
+    },
+    {
+      "id": 8,
+      "visual": "🧂",
+      "scenario": "Sofra tuzu sodyum ve klor atomlarının birleşmesiyle oluşur.",
+      "question": "Sofra tuzu hangi sınıftadır?",
+      "options": [
+        "Element",
+        "Bileşik",
+        "Heterojen karışım",
+        "Alaşım"
+      ],
+      "answer": 1,
+      "explanation": "Sodyum ve klor farklı elementlerdir; kimyasal bağla bileşik oluştururlar.",
+      "outcome": "FB.7.5.4"
+    },
+    {
+      "id": 9,
+      "visual": "🧪",
+      "scenario": "Öğrenci demir tozu ile kükürtü karıştırıyor; iki madde kendi özelliklerini koruyor.",
+      "question": "Bu sistem başlangıçta nedir?",
+      "options": [
+        "Karışım",
+        "Bileşik",
+        "Element",
+        "Tek atom"
+      ],
+      "answer": 0,
+      "explanation": "Fiziksel olarak bir araya gelen ve özelliklerini koruyan maddeler karışım oluşturur.",
+      "outcome": "FB.7.5.4"
+    },
+    {
+      "id": 10,
+      "visual": "🔤",
+      "scenario": "Periyodik tabloda H sembolüyle gösterilen element hangisidir?",
+      "question": [
+        "Helyum",
+        "Hidrojen",
+        "Hafniyum",
+        "Cıva"
+      ],
+      "options": 1,
+      "answer": "H, hidrojenin sembolüdür.",
+      "explanation": "FB.7.5.5"
+    },
+    {
+      "id": 11,
+      "visual": "🔤",
+      "scenario": "Na sembolü hangi elemente aittir?",
+      "question": [
+        "Azot",
+        "Sodyum",
+        "Neon",
+        "Nikel"
+      ],
+      "options": 1,
+      "answer": "Na, sodyum elementinin sembolüdür.",
+      "explanation": "FB.7.5.5"
+    },
+    {
+      "id": 12,
+      "visual": "📊",
+      "scenario": "Periyodik tabloda yatay sıralara ne ad verilir?",
+      "question": [
+        "Grup",
+        "Periyot",
+        "Aile",
+        "Katman"
+      ],
+      "options": 1,
+      "answer": "Periyodik tablonun yatay sıraları periyot olarak adlandırılır.",
+      "explanation": "FB.7.5.6"
+    },
+    {
+      "id": 13,
+      "visual": "📊",
+      "scenario": "Periyodik tabloda dikey sütunlar nasıl adlandırılır?",
+      "question": [
+        "Periyot",
+        "Grup",
+        "Yörünge",
+        "Çekirdek"
+      ],
+      "options": 1,
+      "answer": "Dikey sütunlar grupları oluşturur.",
+      "explanation": "FB.7.5.6"
+    },
+    {
+      "id": 14,
+      "visual": "🧪 H₂O",
+      "scenario": "Bir bileşik formülünde H₂O yazıyor.",
+      "question": "Bir su molekülünde kaç hidrojen atomu bulunur?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "O"
+      ],
+      "answer": 1,
+      "explanation": "Formüldeki H'nin altındaki 2 sayısı iki hidrojen atomunu gösterir.",
+      "outcome": "FB.7.5.7"
+    },
+    {
+      "id": 15,
+      "visual": "🧂 NaCl",
+      "scenario": "NaCl formülüyle gösterilen bileşikte hangi elementler vardır?",
+      "question": [
+        "Sodyum ve klor",
+        "Sodyum ve kalsiyum",
+        "Azot ve karbon",
+        "Hidrojen ve klor"
+      ],
+      "options": 0,
+      "answer": "Na sodyumu, Cl kloru temsil eder.",
+      "explanation": "FB.7.5.7"
+    },
+    {
+      "id": 16,
+      "visual": "🥛 ☕",
+      "scenario": "Süt, gözle tek fazlı gibi görünse de farklı bileşenler içerir.",
+      "question": "Bu tür karışım için en uygun sınıflandırma hangisidir?",
+      "options": [
+        "Homojen çözelti",
+        "Heterojen karışım (kolloid)",
+        "Element",
+        "Bileşik"
+      ],
+      "answer": 1,
+      "explanation": "Süt kolloit yapıda heterojen karışımdır.",
+      "outcome": "FB.7.5.8"
+    },
+    {
+      "id": 17,
+      "visual": "🧂 💧",
+      "scenario": "Tuz su içinde çözündüğünde her noktada benzer özellik gösteren bir karışım oluşur.",
+      "question": "Bu karışım türü hangisidir?",
+      "options": [
+        "Homojen",
+        "Heterojen",
+        "Saf element",
+        "Bileşik"
+      ],
+      "answer": 0,
+      "explanation": "Tuzlu su çözeltisi homojen karışımdır.",
+      "outcome": "FB.7.5.8"
+    },
+    {
+      "id": 18,
+      "visual": "🥗",
+      "scenario": "Salata içinde domates, salatalık ve yeşillikler ayrı ayrı görülebiliyor.",
+      "question": "Salata nasıl bir karışımdır?",
+      "options": [
+        "Homojen",
+        "Heterojen",
+        "Element",
+        "Bileşik"
+      ],
+      "answer": 1,
+      "explanation": "Bileşenleri gözle ayırt edilebilen karışımlar heterojendir.",
+      "outcome": "FB.7.5.8"
+    },
+    {
+      "id": 19,
+      "visual": "🧃",
+      "scenario": "Şekerli içecek hazırlanırken şeker suya karıştırılıyor.",
+      "question": "Şekerin çözünmesiyle oluşan karışım hangisidir?",
+      "options": [
+        "Çözelti",
+        "Element",
+        "Saf madde",
+        "Alaşım"
+      ],
+      "answer": 0,
+      "explanation": "Şeker su içinde dağılıp çözündüğünde çözelti oluşur.",
+      "outcome": "FB.7.5.8"
+    },
+    {
+      "id": 20,
+      "visual": "🥄 🧊",
+      "scenario": "Aynı miktarda şeker, sıcak ve soğuk suya ekleniyor. Sıcak suda daha kısa sürede çözünüyor.",
+      "question": "Bu deney hangi değişkenin çözünme hızını etkilediğini gösterir?",
+      "options": [
+        "Sıcaklık",
+        "Kabın rengi",
+        "Şekerin kokusu",
+        "Suyun bulunduğu yer"
+      ],
+      "answer": 0,
+      "explanation": "Sıcaklığın artması birçok katının sudaki çözünme hızını artırır.",
+      "outcome": "FB.7.5.9"
+    },
+    {
+      "id": 21,
+      "visual": "🥄",
+      "scenario": "Şeker küpü ile toz şeker aynı sıcaklıktaki suya atılıyor. Toz şeker daha hızlı çözünüyor.",
+      "question": "Bunun nedeni nedir?",
+      "options": [
+        "Temas yüzeyinin daha büyük olması",
+        "Kütlesinin yok olması",
+        "Suyun soğuması",
+        "Şekerin element olması"
+      ],
+      "answer": 0,
+      "explanation": "Tanecik boyutu küçüldükçe toplam temas yüzeyi artar ve çözünme hızlanır.",
+      "outcome": "FB.7.5.9"
+    },
+    {
+      "id": 22,
+      "visual": "🌀",
+      "scenario": "Bir öğrenci şekerli suyu karıştırdığında şeker daha hızlı çözünüyor.",
+      "question": "Karıştırma çözünme hızını nasıl etkiler?",
+      "options": [
+        "Genellikle artırır",
+        "Her zaman durdurur",
+        "Şekeri elemente dönüştürür",
+        "Suyu yok eder"
+      ],
+      "answer": 0,
+      "explanation": "Karıştırma çözünen ve çözücü temasını artırarak çözünmeyi hızlandırır.",
+      "outcome": "FB.7.5.9"
+    },
+    {
+      "id": 23,
+      "visual": "🧲",
+      "scenario": "Kum ve demir tozu karışımına mıknatıs yaklaştırılıyor.",
+      "question": "Karışımı ayırmak için hangi yöntem kullanılır?",
+      "options": [
+        "Mıknatısla ayırma",
+        "Damıtma",
+        "Buharlaştırma",
+        "Süzme"
+      ],
+      "answer": 0,
+      "explanation": "Demir mıknatıs tarafından çekilir, kum çekilmez.",
+      "outcome": "FB.7.5.10"
+    },
+    {
+      "id": 24,
+      "visual": "☕ 🧻",
+      "scenario": "Kumlu su, filtre kâğıdından geçiriliyor.",
+      "question": "Bu ayırma yöntemi hangisidir?",
+      "options": [
+        "Süzme",
+        "Damıtma",
+        "Mıknatısla ayırma",
+        "Kristallendirme"
+      ],
+      "answer": 0,
+      "explanation": "Süzme, çözünmeyen katıyı sıvıdan ayırır.",
+      "outcome": "FB.7.5.10"
+    },
+    {
+      "id": 25,
+      "visual": "🧂 ☀️",
+      "scenario": "Tuzlu su ısıtılarak suyun buharlaşması sağlanıyor; kapta tuz kalıyor.",
+      "question": "Tuzu elde etmek için hangi yöntem uygulanmıştır?",
+      "options": [
+        "Buharlaştırma",
+        "Süzme",
+        "Mıknatısla ayırma",
+        "Eleme"
+      ],
+      "answer": 0,
+      "explanation": "Su buharlaşır ve çözünmüş tuz geride kalır.",
+      "outcome": "FB.7.5.10"
+    },
+    {
+      "id": 26,
+      "visual": "🛢️",
+      "scenario": "Birbirine karışmayan yağ ve su aynı kapta bekletiliyor.",
+      "question": "Bu sıvıları ayırmak için hangi araç uygundur?",
+      "options": [
+        "Ayırma hunisi",
+        "Mıknatıs",
+        "Eleme kabı",
+        "Termometre"
+      ],
+      "answer": 0,
+      "explanation": "Yoğunluk farkı ve karışmama özelliği ayırma hunisiyle ayrılmalarını sağlar.",
+      "outcome": "FB.7.5.10"
+    },
+    {
+      "id": 27,
+      "visual": "🪨",
+      "scenario": "Farklı büyüklükteki katı taneler elek kullanılarak ayrılıyor.",
+      "question": "Bu yöntem hangi özelliğe dayanır?",
+      "options": [
+        "Tanecik boyutu",
+        "Renk",
+        "Koku",
+        "Elektrik yükü"
+      ],
+      "answer": 0,
+      "explanation": "Eleme, tanecik büyüklüğü farkından yararlanır.",
+      "outcome": "FB.7.5.10"
+    },
+    {
+      "id": 28,
+      "visual": "🧪",
+      "scenario": "Alkol ve su gibi birbiri içinde çözünen sıvılar kaynama noktası farkıyla ayrılıyor.",
+      "question": "Uygun ayırma yöntemi hangisidir?",
+      "options": [
+        "Damıtma",
+        "Mıknatısla ayırma",
+        "Süzme",
+        "Eleme"
+      ],
+      "answer": 0,
+      "explanation": "Damıtma, sıvıların kaynama noktası farkından yararlanır.",
+      "outcome": "FB.7.5.10"
+    },
+    {
+      "id": 29,
+      "visual": "🧱",
+      "scenario": "Demir-kükürt karışımı ısıtılmadan önce mıknatısla ayrılabiliyor; ısıtıldıktan sonra yeni bir madde oluşuyor.",
+      "question": "Bu gözlem hangi farkı gösterir?",
+      "options": [
+        "Karışım fiziksel, bileşik kimyasal yollarla oluşur",
+        "Karışım ve bileşik aynıdır",
+        "Mıknatıs her maddeyi çeker",
+        "Elementler karışamaz"
+      ],
+      "answer": 0,
+      "explanation": "Karışımda maddeler özelliklerini korur; kimyasal tepkimeyle yeni bileşik oluşabilir.",
+      "outcome": "FB.7.5.4"
+    },
+    {
+      "id": 30,
+      "visual": "🧫",
+      "scenario": "Bir öğrenci homojen ve heterojen karışımları sınıflandırıyor.",
+      "question": "Aşağıdaki eşleştirmelerden hangisi doğrudur?",
+      "options": [
+        "Tuzlu su-homojen; kumlu su-heterojen",
+        "Kumlu su-homojen; hava-heterojen",
+        "Salata-homojen; tuzlu su-heterojen",
+        "Saf su-heterojen; hava-element"
+      ],
+      "answer": 0,
+      "explanation": "Tuzlu su homojen çözelti, kumlu su ise heterojen karışımdır.",
+      "outcome": "FB.7.5.8"
+    }
+  ]
+}
