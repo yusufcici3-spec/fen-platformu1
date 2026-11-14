@@ -1,3 +1,4 @@
+// 7. sınıf 4-7. ünitelerin ortak, görsel destekli 30 soruluk test ekranı.
 "use client";
 import { useMemo, useState } from "react";
 import Link from "next/link";
