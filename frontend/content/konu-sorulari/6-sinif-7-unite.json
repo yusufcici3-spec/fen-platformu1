@@ -1,459 +1,489 @@
 {
-  "grade": 6,
-  "unit": 7,
-  "title": "Sürdürülebilir Yaşam ve Etkileşim",
-  "slug": "surdurulebilir-yasam-ve-etkilesim",
-  "description": "Maarif Modeli öğrenme çıktılarıyla eşleştirilmiş 30 özgün senaryolu ve görsel destekli soru.",
-  "questions": [
-    {
-      "id": 1,
-      "outcome": "FB.6.7.1",
-      "visual": "🌳🐦 🧪",
-      "scenario": "Ormanda farklı ağaç, kuş ve böcek türleri yaşıyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
-      "question": "Bu çeşitlilik nedir?",
-      "options": [
-        "Biyoçeşitlilik",
-        "Yoğunluk",
-        "Genleşme",
-        "Yansıma"
-      ],
-      "answer": 0,
-      "explanation": "Biyoçeşitlilik canlıların çeşitliliğidir."
-    },
-    {
-      "id": 2,
-      "outcome": "FB.6.7.1",
-      "visual": "🌳🐦 📋",
-      "scenario": "Ormanda farklı ağaç, kuş ve böcek türleri yaşıyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
-      "question": "Bu çeşitlilik nedir?",
-      "options": [
-        "Biyoçeşitlilik",
-        "Yoğunluk",
-        "Genleşme",
-        "Yansıma"
-      ],
-      "answer": 0,
-      "explanation": "Biyoçeşitlilik canlıların çeşitliliğidir."
-    },
-    {
-      "id": 3,
-      "outcome": "FB.6.7.1",
-      "visual": "🏞️🐟 🧪",
-      "scenario": "Gölde canlılar su, ışık ve sıcaklıkla etkileşim hâlinde. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
-      "question": "Bu bütün nedir?",
-      "options": [
-        "Habitat",
-        "Ekosistem",
-        "Popülasyon",
-        "Saf madde"
-      ],
-      "answer": 1,
-      "explanation": "Ekosistem canlı ve cansız çevrenin etkileşimidir."
-    },
-    {
-      "id": 4,
-      "outcome": "FB.6.7.1",
-      "visual": "🏞️🐟 📋",
-      "scenario": "Gölde canlılar su, ışık ve sıcaklıkla etkileşim hâlinde. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
-      "question": "Bu bütün nedir?",
-      "options": [
-        "Habitat",
-        "Ekosistem",
-        "Popülasyon",
-        "Saf madde"
-      ],
-      "answer": 1,
-      "explanation": "Ekosistem canlı ve cansız çevrenin etkileşimidir."
-    },
-    {
-      "id": 5,
-      "outcome": "FB.6.7.1",
-      "visual": "🌷 🧪",
-      "scenario": "Bir bitki doğal olarak yalnızca belirli bölgede yetişiyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
-      "question": "Bu tür nasıl adlandırılır?",
-      "options": [
-        "Göçmen",
-        "Endemik",
-        "Evcil",
-        "İstilacı"
-      ],
-      "answer": 1,
-      "explanation": "Endemik türün doğal yayılışı belirli bölgeyle sınırlıdır."
-    },
-    {
-      "id": 6,
-      "outcome": "FB.6.7.1",
-      "visual": "🌷 📋",
-      "scenario": "Bir bitki doğal olarak yalnızca belirli bölgede yetişiyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
-      "question": "Bu tür nasıl adlandırılır?",
-      "options": [
-        "Göçmen",
-        "Endemik",
-        "Evcil",
-        "İstilacı"
-      ],
-      "answer": 1,
-      "explanation": "Endemik türün doğal yayılışı belirli bölgeyle sınırlıdır."
-    },
-    {
-      "id": 7,
-      "outcome": "FB.6.7.1",
-      "visual": "🐝🌼 🧪",
-      "scenario": "Arıların polen taşıması bitkilerin çoğalmasına yardım ediyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
-      "question": "Bu örnek neyi gösterir?",
-      "options": [
-        "Canlı etkileşimlerinin ekosistemi desteklemesini",
-        "Bütün canlıların aynı besini yemesini",
-        "Cansız çevrenin yok olmasını",
-        "Türlerin etkilenmemesini"
-      ],
-      "answer": 0,
-      "explanation": "Tozlaşma bitkilerin çoğalmasına katkı sağlar."
-    },
-    {
-      "id": 8,
-      "outcome": "FB.6.7.1",
-      "visual": "🐝🌼 📋",
-      "scenario": "Arıların polen taşıması bitkilerin çoğalmasına yardım ediyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
-      "question": "Bu örnek neyi gösterir?",
-      "options": [
-        "Canlı etkileşimlerinin ekosistemi desteklemesini",
-        "Bütün canlıların aynı besini yemesini",
-        "Cansız çevrenin yok olmasını",
-        "Türlerin etkilenmemesini"
-      ],
-      "answer": 0,
-      "explanation": "Tozlaşma bitkilerin çoğalmasına katkı sağlar."
-    },
-    {
-      "id": 9,
-      "outcome": "FB.6.7.2",
-      "visual": "🏗️🌳 🧪",
-      "scenario": "Yapılaşma sonrası ormandaki yaşam alanı küçülüyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
-      "question": "Bu tehdit nedir?",
-      "options": [
-        "Habitat kaybı",
-        "Tozlaşma",
-        "Ayrıştırma",
-        "Yenilenme"
-      ],
-      "answer": 0,
-      "explanation": "Yaşam alanlarının daralması habitat kaybıdır."
-    },
-    {
-      "id": 10,
-      "outcome": "FB.6.7.2",
-      "visual": "🏗️🌳 📋",
-      "scenario": "Yapılaşma sonrası ormandaki yaşam alanı küçülüyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
-      "question": "Bu tehdit nedir?",
-      "options": [
-        "Habitat kaybı",
-        "Tozlaşma",
-        "Ayrıştırma",
-        "Yenilenme"
-      ],
-      "answer": 0,
-      "explanation": "Yaşam alanlarının daralması habitat kaybıdır."
-    },
-    {
-      "id": 11,
-      "outcome": "FB.6.7.2",
-      "visual": "🗑️🌊 🧪",
-      "scenario": "Gölde atık artarken su kalitesi ve balık sayısı azalıyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
-      "question": "Uygun tahmin hangisidir?",
-      "options": [
-        "Kirlilik sürerse balıklar olumsuz etkilenebilir",
-        "Bütün balıklar aynı gün yok olur",
-        "Kirlilik etkilemez",
-        "Bütün türler artar"
-      ],
-      "answer": 0,
-      "explanation": "Veriler kirliliğin canlıları etkileyebileceğini düşündürür."
-    },
-    {
-      "id": 12,
-      "outcome": "FB.6.7.2",
-      "visual": "🗑️🌊 📋",
-      "scenario": "Gölde atık artarken su kalitesi ve balık sayısı azalıyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
-      "question": "Uygun tahmin hangisidir?",
-      "options": [
-        "Kirlilik sürerse balıklar olumsuz etkilenebilir",
-        "Bütün balıklar aynı gün yok olur",
-        "Kirlilik etkilemez",
-        "Bütün türler artar"
-      ],
-      "answer": 0,
-      "explanation": "Veriler kirliliğin canlıları etkileyebileceğini düşündürür."
-    },
-    {
-      "id": 13,
-      "outcome": "FB.6.7.2",
-      "visual": "🌡️🐾 🧪",
-      "scenario": "Uzun süreli sıcaklık artışı bazı türlerin yaşam alanını daraltıyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
-      "question": "Bu tehdit hangisidir?",
-      "options": [
-        "İklim değişikliği",
-        "Tozlaşma",
-        "Genleşme",
-        "Yansıma"
-      ],
-      "answer": 0,
-      "explanation": "İklim koşullarındaki değişimler habitatları etkiler."
-    },
-    {
-      "id": 14,
-      "outcome": "FB.6.7.2",
-      "visual": "🌡️🐾 📋",
-      "scenario": "Uzun süreli sıcaklık artışı bazı türlerin yaşam alanını daraltıyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
-      "question": "Bu tehdit hangisidir?",
-      "options": [
-        "İklim değişikliği",
-        "Tozlaşma",
-        "Genleşme",
-        "Yansıma"
-      ],
-      "answer": 0,
-      "explanation": "İklim koşullarındaki değişimler habitatları etkiler."
-    },
-    {
-      "id": 15,
-      "outcome": "FB.6.7.2",
-      "visual": "🦋🌱 🧪",
-      "scenario": "Dışarıdan gelen bir tür hızla çoğalıp yerel türlerle rekabet ediyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
-      "question": "Bu tür nasıl adlandırılır?",
-      "options": [
-        "Endemik",
-        "İstilacı",
-        "Ayrıştırıcı",
-        "Üretici"
-      ],
-      "answer": 1,
-      "explanation": "İstilacı türler yerel türler üzerinde baskı oluşturabilir."
-    },
-    {
-      "id": 16,
-      "outcome": "FB.6.7.2",
-      "visual": "🦋🌱 📋",
-      "scenario": "Dışarıdan gelen bir tür hızla çoğalıp yerel türlerle rekabet ediyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
-      "question": "Bu tür nasıl adlandırılır?",
-      "options": [
-        "Endemik",
-        "İstilacı",
-        "Ayrıştırıcı",
-        "Üretici"
-      ],
-      "answer": 1,
-      "explanation": "İstilacı türler yerel türler üzerinde baskı oluşturabilir."
-    },
-    {
-      "id": 17,
-      "outcome": "FB.6.7.3",
-      "visual": "🏭🌫️ 🧪",
-      "scenario": "Kışın yoğun yakıt kullanılan mahallede hava kalitesi kötüleşiyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
-      "question": "İnsan sağlığı nasıl etkilenebilir?",
-      "options": [
-        "Solunum yolları olumsuz etkilenebilir",
-        "Göz rengi değişir",
-        "Kemik yoğunluğu artar",
-        "Biyoçeşitlilik artar"
-      ],
-      "answer": 0,
-      "explanation": "Yanma kirleticileri solunum sağlığını etkileyebilir."
-    },
-    {
-      "id": 18,
-      "outcome": "FB.6.7.3",
-      "visual": "🏭🌫️ 📋",
-      "scenario": "Kışın yoğun yakıt kullanılan mahallede hava kalitesi kötüleşiyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
-      "question": "İnsan sağlığı nasıl etkilenebilir?",
-      "options": [
-        "Solunum yolları olumsuz etkilenebilir",
-        "Göz rengi değişir",
-        "Kemik yoğunluğu artar",
-        "Biyoçeşitlilik artar"
-      ],
-      "answer": 0,
-      "explanation": "Yanma kirleticileri solunum sağlığını etkileyebilir."
-    },
-    {
-      "id": 19,
-      "outcome": "FB.6.7.3",
-      "visual": "🏡🌲 🧪",
-      "scenario": "Evde yalıtım ve verimli ısıtma öneriliyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
-      "question": "Neden yararlı olabilir?",
-      "options": [
-        "Daha az yakıt ve emisyon",
-        "Yakıt tüketimini artırma",
-        "Kirliliği kesin sıfırlama",
-        "Enerjiyi sınırsız yapma"
-      ],
-      "answer": 0,
-      "explanation": "Verimlilik yakıt ihtiyacını azaltabilir."
-    },
-    {
-      "id": 20,
-      "outcome": "FB.6.7.3",
-      "visual": "🏡🌲 📋",
-      "scenario": "Evde yalıtım ve verimli ısıtma öneriliyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
-      "question": "Neden yararlı olabilir?",
-      "options": [
-        "Daha az yakıt ve emisyon",
-        "Yakıt tüketimini artırma",
-        "Kirliliği kesin sıfırlama",
-        "Enerjiyi sınırsız yapma"
-      ],
-      "answer": 0,
-      "explanation": "Verimlilik yakıt ihtiyacını azaltabilir."
-    },
-    {
-      "id": 21,
-      "outcome": "FB.6.7.4",
-      "visual": "🗑️🏞️ 🧪",
-      "scenario": "Okul yakınındaki dereye plastik atıklar bırakılıyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
-      "question": "Çözümden önce ne yapılmalı?",
-      "options": [
-        "Kaynak ve atık miktarı belirlenmeli",
-        "Veri toplamadan karar verilmeli",
-        "Atıklar dereye itilmeli",
-        "Sorun görmezden gelinmeli"
-      ],
-      "answer": 0,
-      "explanation": "Sorun ve nedenleri verilerle tanımlanmalıdır."
-    },
-    {
-      "id": 22,
-      "outcome": "FB.6.7.4",
-      "visual": "🗑️🏞️ 📋",
-      "scenario": "Okul yakınındaki dereye plastik atıklar bırakılıyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
-      "question": "Çözümden önce ne yapılmalı?",
-      "options": [
-        "Kaynak ve atık miktarı belirlenmeli",
-        "Veri toplamadan karar verilmeli",
-        "Atıklar dereye itilmeli",
-        "Sorun görmezden gelinmeli"
-      ],
-      "answer": 0,
-      "explanation": "Sorun ve nedenleri verilerle tanımlanmalıdır."
-    },
-    {
-      "id": 23,
-      "outcome": "FB.6.7.4",
-      "visual": "♻️🏫 🧪",
-      "scenario": "Okulda kâğıt ve plastik ayrı kutularda toplanacak. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
-      "question": "Etki hangi veriyle izlenebilir?",
-      "options": [
-        "Toplanan atık miktarı",
-        "Ayakkabı numarası",
-        "Kapı rengi",
-        "Ders saati"
-      ],
-      "answer": 0,
-      "explanation": "Atık miktarını izlemek uygulama başarısını gösterir."
-    },
-    {
-      "id": 24,
-      "outcome": "FB.6.7.4",
-      "visual": "♻️🏫 📋",
-      "scenario": "Okulda kâğıt ve plastik ayrı kutularda toplanacak. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
-      "question": "Etki hangi veriyle izlenebilir?",
-      "options": [
-        "Toplanan atık miktarı",
-        "Ayakkabı numarası",
-        "Kapı rengi",
-        "Ders saati"
-      ],
-      "answer": 0,
-      "explanation": "Atık miktarını izlemek uygulama başarısını gösterir."
-    },
-    {
-      "id": 25,
-      "outcome": "FB.6.7.4",
-      "visual": "💧🚰 🧪",
-      "scenario": "Okulda muslukların açık kalması su tüketimini artırıyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
-      "question": "Uygun çözüm hangisidir?",
-      "options": [
-        "Tasarruf aparatı ve tüketim ölçümü",
-        "Muslukları açık bırakmak",
-        "Veri kaydetmemek",
-        "Kaynağı kapatmak"
-      ],
-      "answer": 0,
-      "explanation": "Tasarruf ve ölçüm su tüketimini azaltabilir."
-    },
-    {
-      "id": 26,
-      "outcome": "FB.6.7.4",
-      "visual": "💧🚰 📋",
-      "scenario": "Okulda muslukların açık kalması su tüketimini artırıyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
-      "question": "Uygun çözüm hangisidir?",
-      "options": [
-        "Tasarruf aparatı ve tüketim ölçümü",
-        "Muslukları açık bırakmak",
-        "Veri kaydetmemek",
-        "Kaynağı kapatmak"
-      ],
-      "answer": 0,
-      "explanation": "Tasarruf ve ölçüm su tüketimini azaltabilir."
-    },
-    {
-      "id": 27,
-      "outcome": "FB.6.7.4",
-      "visual": "🌳🏙️ 🧪",
-      "scenario": "Mahallede yeşil alanlar azalmış; yerel türlerle alan oluşturulacak. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
-      "question": "Amaç nedir?",
-      "options": [
-        "Habitatları desteklemek",
-        "Atığı artırmak",
-        "Ağaçları kaldırmak",
-        "Su israfı"
-      ],
-      "answer": 0,
-      "explanation": "Yerel bitkiler yaşam alanlarını destekler."
-    },
-    {
-      "id": 28,
-      "outcome": "FB.6.7.4",
-      "visual": "🌳🏙️ 📋",
-      "scenario": "Mahallede yeşil alanlar azalmış; yerel türlerle alan oluşturulacak. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
-      "question": "Amaç nedir?",
-      "options": [
-        "Habitatları desteklemek",
-        "Atığı artırmak",
-        "Ağaçları kaldırmak",
-        "Su israfı"
-      ],
-      "answer": 0,
-      "explanation": "Yerel bitkiler yaşam alanlarını destekler."
-    },
-    {
-      "id": 29,
-      "outcome": "FB.6.7.4",
-      "visual": "📊♻️ 🧪",
-      "scenario": "Atık azaltma kampanyası öncesi 40 kg, sonrası 25 kg atık ölçülüyor. Okulun fen kulübü aynı durumu ikinci bir deney düzeneğinde gözlemliyor.",
-      "question": "Hangi çıkarım yapılır?",
-      "options": [
-        "Atık 15 kg azalmıştır",
-        "Atık 25 kg artmıştır",
-        "Değişmemiştir",
-        "Ölçülemez"
-      ],
-      "answer": 0,
-      "explanation": "40−25=15 kg azalma vardır."
-    },
-    {
-      "id": 30,
-      "outcome": "FB.6.7.4",
-      "visual": "📊♻️ 📋",
-      "scenario": "Atık azaltma kampanyası öncesi 40 kg, sonrası 25 kg atık ölçülüyor. Öğrenciler gözlem sonuçlarını tabloya kaydedip sınıfta tartışıyor.",
-      "question": "Hangi çıkarım yapılır?",
-      "options": [
-        "Atık 15 kg azalmıştır",
-        "Atık 25 kg artmıştır",
-        "Değişmemiştir",
-        "Ölçülemez"
-      ],
-      "answer": 0,
-      "explanation": "40−25=15 kg azalma vardır."
-    }
-  ]
+ "grade": 6,
+ "unit": 7,
+ "title": "Sürdürülebilir Yaşam ve Etkileşim",
+ "slug": "surdurulebilir-yasam-ve-etkilesim",
+ "description": "30 uzun senaryolu, görselli yeni nesil soru.",
+ "questions": [
+  {
+   "id": 1,
+   "outcome": "FB.6.7.1",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q01.svg",
+   "imageAlt": "İki orman alanındaki canlı türü sayılarını gösteren tablo",
+   "scenario": "Bir doğa kulübü, aynı büyüklükteki iki orman alanında (A ve B) bir yıl boyunca gözlem yaparak buldukları canlı türlerinin sayısını tabloya yazıyor. A ormanı karışık yaprak döken ve iğne yapraklı ağaçlardan, B ormanı ise tek tür çam ağaçlarından oluşuyor.",
+   "question": "Tablodaki verilere göre aşağıdakilerden hangisi doğrudur?",
+   "options": [
+    "B ormanının biyoçeşitliliği daha yüksektir; çünkü B'de ağaç sayısı daha fazladır.",
+    "A ormanının biyoçeşitliliği daha yüksektir; çünkü A'da daha fazla canlı türü yaşamaktadır.",
+    "İki ormanın biyoçeşitliliği aynıdır; çünkü alanlar eşit büyüklüktedir.",
+    "Biyoçeşitlilik yalnızca ağaç türü sayısıyla belirlenir."
+   ],
+   "answer": 1,
+   "explanation": "Biyoçeşitlilik bir alandaki canlı türlerinin çeşitliliğini kapsar. A ormanında her canlı grubunda daha fazla tür bulunduğundan biyoçeşitliliği daha yüksektir."
+  },
+  {
+   "id": 2,
+   "outcome": "FB.6.7.1",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q02.svg",
+   "imageAlt": "Göl ekosistemindeki canlı ve cansız bileşenleri gösteren şema",
+   "scenario": "Bir öğrenci, yakınındaki gölü gözlemleyip gördüklerini şekildeki gibi işaretliyor. Öğretmeni, bir ekosistemin hem canlı hem de cansız bileşenlerden oluştuğunu belirterek öğrencilerden bu bileşenleri ayırmalarını istiyor.",
+   "question": "Şekilde gösterilenlerden hangileri ekosistemin cansız bileşenleridir?",
+   "options": [
+    "Balık, kurbağa ve ördek",
+    "Sazlık bitkisi, su ve balık",
+    "Güneş ışığı, hava, su ve su sıcaklığı",
+    "Güneş ışığı, kurbağa ve su"
+   ],
+   "answer": 2,
+   "explanation": "Güneş ışığı, hava, su ve sıcaklık cansız çevre faktörleridir. Balık, kurbağa, ördek ve sazlık bitkisi canlı bileşenlerdir."
+  },
+  {
+   "id": 3,
+   "outcome": "FB.6.7.1",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q03.svg",
+   "imageAlt": "Arılı ve arısız elma bahçesinde toplanan elma sayısı",
+   "scenario": "Bir köyde aynı cins ve sayıda elma ağacı bulunan iki bahçeden biri arı kovanlarına yakın, diğeri çevresinde hiç arı yaşamayan bir bölgededir. Bahar sonunda iki bahçeden toplanan elma sayısı sütun grafiğinde verilmiştir. Bahçelere uygulanan bakım ve sulama aynıdır.",
+   "question": "Bu veriler arıların hangi önemli işlevini destekler?",
+   "options": [
+    "Toprağı gübreleyerek ağaçların daha hızlı büyümesini sağlar.",
+    "Ağaçları mikroplardan koruyarak yapraklarını çoğaltır.",
+    "Tozlaşmaya yardımcı olarak bitkilerin çoğalmasını ve meyve oluşumunu artırır.",
+    "Elma ağaçlarına besin üreterek ışık enerjisinden bağımsız beslenmesini sağlar."
+   ],
+   "answer": 2,
+   "explanation": "Arılar çiçekten çiçeğe polen taşıyarak tozlaşmaya yardımcı olur. Arının bulunduğu bahçede daha fazla meyve oluşması bu işlevi destekler."
+  },
+  {
+   "id": 4,
+   "outcome": "FB.6.7.1",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q04.svg",
+   "imageAlt": "Ot, çekirge, kurbağa, yılan, şahin ve tavşan arasındaki besin ağı",
+   "scenario": "Bir çayır ekosisteminin besin ilişkileri şekildeki besin ağı ile gösterilmiştir. Oklar besinden onu yiyen canlıya doğrudur. Bir hastalık nedeniyle bölgedeki kurbağaların çoğu ölüyor.",
+   "question": "Kurbağa sayısının azalması, bu besin ağında kısa vadede aşağıdakilerden hangisine yol açabilir?",
+   "options": [
+    "Çekirge sayısı azalabilir, yılan sayısı artabilir.",
+    "Ot sayısı doğrudan artar, şahin sayısı kesin olarak artar.",
+    "Çekirge sayısı artabilir, yılan sayısı azalabilir.",
+    "Hiçbir canlının sayısı değişmez; çünkü besin ağında bağlantılar önemsizdir."
+   ],
+   "answer": 2,
+   "explanation": "Kurbağalar çekirgeleri yer; sayıları azalınca çekirgeler daha az avlanır. Yılanlar kurbağalarla beslendiği için besin azalır ve yılan sayısı azalabilir."
+  },
+  {
+   "id": 5,
+   "outcome": "FB.6.7.1",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q05.svg",
+   "imageAlt": "K, L, M ve N türlerinin doğal yayılış alanlarını gösteren tablo",
+   "scenario": "Bir bilim insanı, dört türün doğal yayılış alanlarını tabloya işliyor. Doğal yayılışı belirli bir bölgeyle sınırlı olan türlere endemik tür denir. Öğrenciler tablodaki türlerden hangilerinin endemik olduğunu belirleyecek.",
+   "question": "Tablodaki türlerden hangileri endemiktir?",
+   "options": [
+    "L ve N",
+    "K ve M",
+    "K ve L",
+    "M ve N"
+   ],
+   "answer": 1,
+   "explanation": "K yalnızca Abant Gölü çevresinde, M yalnızca Güneybatı Anadolu'da bulunduğu için endemiktir. L ve N çok geniş alanlarda yaşar."
+  },
+  {
+   "id": 6,
+   "outcome": "FB.6.7.1",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q06.svg",
+   "imageAlt": "Ölü yapraktan toprağa mineral dönüşümünü gösteren akış şeması",
+   "scenario": "Bir ormanda yere düşen yapraklar ve ölü canlı kalıntıları zamanla ortadan kalkıyor. Öğrenciler, bu maddelerin ayrıştırıcı canlılar sayesinde parçalandığını ve toprağın zenginleştiğini öğreniyor. Orman toprağında mantar ve bakteriler çok azalırsa ne olacağını tartışıyorlar.",
+   "question": "Ayrıştırıcıların azalması durumunda aşağıdakilerden hangisinin olması beklenir?",
+   "options": [
+    "Organik maddeler daha hızlı parçalanır; toprak daha verimli olur.",
+    "Organik maddeler daha geç parçalanır; toprak verimliliği ve bitki gelişimi olumsuz etkilenebilir.",
+    "Ayrıştırıcılar besin ağından çıktığı için hiçbir canlı etkilenmez.",
+    "Ölü yapraklar kendiliğinden mineral hâline gelir; topraktaki değişim aynı kalır."
+   ],
+   "answer": 1,
+   "explanation": "Ayrıştırıcılar organik maddeleri parçalayarak minerallerin toprağa karışmasını sağlar. Sayıları azalırsa bu döngü yavaşlar ve bitkiler olumsuz etkilenebilir."
+  },
+  {
+   "id": 7,
+   "outcome": "FB.6.7.1",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q07.svg",
+   "imageAlt": "Dört bilgi kaynağının özelliklerini gösteren tablo",
+   "scenario": "Bir öğrenci, yaşadığı bölgedeki bir kuş türünün sayısının azaldığı bilgisini araştırıyor ve dört ayrı kaynağa ulaşıyor. Öğretmeni, kaynakların doğruluğunu değerlendirirken ölçüm verisine ve yönteme bakılması gerektiğini söylüyor.",
+   "question": "Öğrencinin tabloya göre bilgisini dayandırması için en güvenilir kaynak hangisidir?",
+   "options": [
+    "II",
+    "III",
+    "I",
+    "IV"
+   ],
+   "answer": 2,
+   "explanation": "Ölçüm verisi ve yöntemi açıkça verilen araştırma raporu, doğrulanabilir olduğu için en güvenilir kaynaktır. Diğer kaynaklarda kanıt ve yöntem eksiktir."
+  },
+  {
+   "id": 8,
+   "outcome": "FB.6.7.1",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q08.svg",
+   "imageAlt": "Orman, sulak alan, tarım arazisi ve kent merkezinde gözlenen tür sayısı grafiği",
+   "scenario": "Bir okul araştırma grubu, aynı büyüklükteki dört alanda (orman, sulak alan, tarım arazisi, kent merkezi) bir ay boyunca gözlem yaparak gördükleri canlı türü sayısını sütun grafiğinde gösteriyor. Gözlem süreleri ve yöntemleri aynıdır.",
+   "question": "Grafiğe göre aşağıdaki yorumlardan hangisi doğrudur?",
+   "options": [
+    "Tür sayısı en fazla olan orman, en çeşitli yaşam alanıdır; kent merkezinde çeşitlilik daha düşüktür.",
+    "Kent merkezi en çok tür barındıran alandır.",
+    "Tarım arazisi ormandan daha fazla canlı türüne sahiptir.",
+    "Dört alanın biyoçeşitliliği aynıdır."
+   ],
+   "answer": 0,
+   "explanation": "Grafikte tür sayısı ormanda 80 ile en yüksek, kent merkezinde 12 ile en düşüktür. Bu veriler ormanın daha yüksek tür çeşitliliğine sahip olduğunu gösterir."
+  },
+  {
+   "id": 9,
+   "outcome": "FB.6.7.2",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q09.svg",
+   "imageAlt": "Yolla ikiye bölünen orman alanı",
+   "scenario": "Bir orman alanının ortasından geçen yeni bir karayolu yapılıyor ve orman iki küçük parçaya ayrılıyor. Bölgede yaşayan küçük memelilerin yolun karşısına geçmeye çalışırken öldüğü, iki alandaki hayvan topluluklarının birbiriyle karşılaşmadığı gözleniyor.",
+   "question": "Bu durum biyoçeşitlilik açısından hangi tehdit faktörüne örnektir ve olası sonucu nedir?",
+   "options": [
+    "Aşırı avlanma; canlıların sayısı doğal olarak artar.",
+    "İstilacı tür yayılması; yerli türlerin yaşam alanı genişler.",
+    "Habitat parçalanması; canlıların hareketi ve topluluklar arası etkileşim azalır.",
+    "Habitat parçalanması; canlılar arasındaki etkileşim kesinlikle artar."
+   ],
+   "answer": 2,
+   "explanation": "Yaşam alanının yollarla küçük parçalara bölünmesi habitat parçalanmasıdır. Canlıların hareketi ve popülasyonlar arası etkileşim zorlaşır, türler tehlikeye girebilir."
+  },
+  {
+   "id": 10,
+   "outcome": "FB.6.7.2",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q10.svg",
+   "imageAlt": "Atık madde miktarı ve balık türü sayısının yıllara göre değişimi",
+   "scenario": "Bir gölde 2015'ten 2023'e kadar yapılan ölçümlerde, gölün çevresindeki fabrikalardan suya karışan atık madde miktarı artarken göldeki balık türü sayısının azaldığı belirlenmiştir. Araştırmacılar bu verilerden yola çıkarak bir tahminde bulunacak.",
+   "question": "Aşağıdaki tahminlerden hangisi verilerle en iyi desteklenir?",
+   "options": [
+    "Atık madde miktarı artmaya devam ederse göldeki balık türü sayısı daha da azalabilir.",
+    "Atık madde miktarı artmaya devam ederse balık türü sayısı kesinlikle artar.",
+    "Balık türü sayısındaki değişim atık madde miktarıyla hiçbir şekilde ilişkili değildir.",
+    "Atık madde miktarı artmaya devam etse de göldeki tür sayısı sabit kalacaktır."
+   ],
+   "answer": 0,
+   "explanation": "Verilerde atık miktarı arttıkça balık türü sayısı azalmıştır. Bu eğilim sürerse tür sayısının azalması beklenir; ancak tahmin yine de yeni verilerle sınanmalıdır."
+  },
+  {
+   "id": 11,
+   "outcome": "FB.6.7.2",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q11.svg",
+   "imageAlt": "Dört ifade ve dayanaklarının listelendiği tablo",
+   "scenario": "Bir öğrenci, göldeki balık popülasyonuyla ilgili farklı kişilerden dört ifade topluyor. Tabloda ifadeler ve dayanakları verilmiştir. Öğretmen, bilimsel bir değerlendirmede ölçülmüş verilerin varsayımlardan ayrılması gerektiğini söylüyor.",
+   "question": "Tablodaki ifadelerden hangisi ölçüme dayalı veriye örnektir?",
+   "options": [
+    "II",
+    "III",
+    "IV",
+    "I"
+   ],
+   "answer": 3,
+   "explanation": "Yıllık ölçüm kayıtlarına dayanan I numaralı ifade veridir. Diğer ifadeler varsayım, duyum veya hatıraya dayanmaktadır."
+  },
+  {
+   "id": 12,
+   "outcome": "FB.6.7.2",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q12.svg",
+   "imageAlt": "Bir kelebek türünün 1995 ve 2025'teki yaşam kuşağı yüksekliklerini gösteren dağ şeması",
+   "scenario": "Bir dağda yaşayan bir kelebek türü 1995'te 800–1200 m yükseklikler arasında görülürken, 2025'te 1000–1400 m yükseklikler arasında görülmüştür. Aynı dönemde bölgenin ortalama sıcaklığının arttığı ölçülmüştür. Araştırmacı, sıcaklık artışının türün yükseklere kaymasına neden olduğunu tahmin ediyor.",
+   "question": "Bu tahmin hakkında aşağıdakilerden hangisi doğrudur?",
+   "options": [
+    "Tahmin veriyle uyumludur, ancak geçerliliği için başka etkenlerin (örneğin yaşam alanı değişimi) de araştırılması gerekir.",
+    "Tahmin kesin bir gerçektir; başka bir araştırma yapmaya gerek yoktur.",
+    "Tahmin yanlıştır; çünkü sıcaklık canlıların yaşam alanını hiçbir zaman etkilemez.",
+    "Tahmin yalnızca tek bir gözleme dayandığı için tamamen anlamsızdır."
+   ],
+   "answer": 0,
+   "explanation": "Sıcaklık artışı ve türün yükseğe kayması birlikte gözlenmiştir; bu tahmini destekler. Ancak bir tahmin kesin değildir; başka etkenler de araştırılarak geçerliği sınanmalıdır."
+  },
+  {
+   "id": 13,
+   "outcome": "FB.6.7.2",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q13.svg",
+   "imageAlt": "Yerli ve yabancı balık türü sayılarının 2016–2024 arasındaki değişimi",
+   "scenario": "Bir gölde sonradan görülen yabancı bir balık türü hızla çoğalıyor. Yabancı tür, yerli balıkların besinini ve yumurtalarını tüketebiliyor. Araştırmacılar 2016–2024 arasında iki türün sayısını izleyip grafiğe işliyor.",
+   "question": "Grafiğe göre aşağıdaki yorumlardan hangisi en doğrudur?",
+   "options": [
+    "Yabancı tür arttıkça yerli türün sayısı azalmıştır; istilacı bir tür biyoçeşitliliği tehdit edebilir.",
+    "Yabancı tür arttıkça yerli türün sayısı da artmıştır.",
+    "İki türün sayısı birbirinden bağımsız değişmiştir.",
+    "Yabancı tür gölün biyoçeşitliliğini artırmıştır."
+   ],
+   "answer": 0,
+   "explanation": "Grafikte yabancı tür çoğaldıkça yerli türün sayısı azalmıştır. İstilacı türler yerli türlerle rekabet ederek biyoçeşitliliği tehdit edebilir."
+  },
+  {
+   "id": 14,
+   "outcome": "FB.6.7.2",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q14.svg",
+   "imageAlt": "Balık stoku ve yıllık avlanan miktarın yıllara göre değişimi",
+   "scenario": "Bir denizde belirli bir balık türünün stoku ve yıllık avlanan miktarı 20 yıl boyunca kaydedilmiştir. Avlanan miktar yıllar içinde sürekli artarken balık stokunun azaldığı grafikte görülmektedir. Yetkililer avlanma kotasını belirlemeden önce veriyi inceliyor.",
+   "question": "Veriler dikkate alındığında en uygun yaklaşım hangisidir?",
+   "options": [
+    "Avlanma miktarını artırmak; çünkü stok zaten azalmaktadır.",
+    "Veriyi dikkate almamak; çünkü avlanma türün sayısını hiç etkilemez.",
+    "Yalnızca bir yılın verisine bakarak karar vermek.",
+    "Avlanma miktarını sınırlamak; aksi hâlde stokun daha da azalması ve türün tehlikeye girmesi olasıdır."
+   ],
+   "answer": 3,
+   "explanation": "Avlanma arttıkça stok azalmıştır. Aşırı avlanma biyoçeşitliliği tehdit eden bir faktördür; bu nedenle avlanmayı sınırlamak türün sürdürülebilirliği için mantıklıdır."
+  },
+  {
+   "id": 15,
+   "outcome": "FB.6.7.2",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q15.svg",
+   "imageAlt": "A, B, C ve D göllerinde kirlilik, habitat kaybı ve balık sayısı tablosu",
+   "scenario": "Bir öğrenci yalnızca A gölünü inceleyerek \"Bütün göllerde balık sayısının azalmasının tek nedeni kirliliktir\" sonucuna varıyor. Öğretmen, farklı göllerden toplanan verilerin tabloda olduğunu belirtiyor ve öğrencinin yargısını tabloya göre sorgulamasını istiyor.",
+   "question": "Tablodaki verilere göre öğrencinin yargısı için aşağıdakilerden hangisi söylenebilir?",
+   "options": [
+    "Yargı geçerlidir; çünkü tek bir gölde kirlilik gözlenmesi yeterlidir.",
+    "Yargı geçerlidir; çünkü D gölünde de balık sayısı azalmıştır.",
+    "Yargı geçerli değildir; çünkü C gölündeki balık sayısı hiç değişmemiştir.",
+    "Yargı geçerli değildir; B gölünde kirlilik olmadığı hâlde balık sayısı azalmıştır, yani başka etkenler de rol oynayabilir."
+   ],
+   "answer": 3,
+   "explanation": "B gölünde kirlilik yokken balık sayısı azalmıştır; bu nedenle azalmanın tek nedeni kirlilik değildir. Tek bir örnekten tüm ekosistemler için kesin sonuç çıkarılamaz."
+  },
+  {
+   "id": 16,
+   "outcome": "FB.6.7.2",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q16.svg",
+   "imageAlt": "Koruma alanı ve korunmayan komşu alandaki tür sayılarının yıllara göre değişimi",
+   "scenario": "Bir sulak alanda 2016'dan itibaren avlanma ve yapılaşma yasaklanarak koruma alanı oluşturuldu. Komşu bir alanda ise herhangi bir koruma önlemi alınmadı. İki alanda gözlenen kuş türü sayısı yıllar içinde grafikte gösterilmiştir.",
+   "question": "Grafiğe göre aşağıdaki çıkarımlardan hangisi en doğrudur?",
+   "options": [
+    "Korumanın yapıldığı alanda tür sayısı artarken korunmayan alanda azalmıştır; koruma önlemleri biyoçeşitliliğe olumlu katkı yapmış olabilir.",
+    "Korunmayan alanda tür sayısı artmış, koruma alanında azalmıştır.",
+    "İki alandaki tür sayısı birbirinden bağımsız ve sabittir.",
+    "Koruma önlemleri alınan alan için kesin olarak başka hiçbir etken rol oynamamıştır."
+   ],
+   "answer": 0,
+   "explanation": "Koruma alanında tür sayısı artmış, korunmayan alanda azalmıştır. Karşılaştırma, koruma önlemlerinin olumlu etkisini destekler; yine de diğer etkenler de değerlendirilmelidir."
+  },
+  {
+   "id": 17,
+   "outcome": "FB.6.7.3",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q17.svg",
+   "imageAlt": "Üç mahallenin ısınma yakıtı ve hava kirliliği ölçümü tablosu",
+   "scenario": "Bir şehirde üç mahallede kış ayında aynı gün ve aynı yöntemle hava kirliliği ölçülmüştür. Ölçüm sonuçları ve mahallelerde ağırlıklı kullanılan ısınma yakıtı tabloda verilmiştir. Üç mahallenin büyüklüğü ve yol trafiği benzerdir.",
+   "question": "Tablodaki verilere göre aşağıdaki çıkarımlardan hangisi en doğrudur?",
+   "options": [
+    "Isınma yakıtı hava kirliliğini hiçbir şekilde etkilemez.",
+    "A mahallesinde hava kirliliği daha yüksektir; ısınma yakıtı türü bu farkın nedenlerinden biri olabilir.",
+    "B ve C mahallelerinde kirlilik A mahallesinden yüksektir.",
+    "Kömür kullanan mahalle her zaman en temiz havaya sahiptir."
+   ],
+   "answer": 1,
+   "explanation": "A mahallesinde kömür ağırlıklı kullanılıyor ve ölçülen değer daha yüksek. Diğer koşullar benzer olduğundan yakıt türü bu farkın nedenlerinden biri olabilir; fakat kesin sonuç için başka etkenler de değerlendirilmelidir."
+  },
+  {
+   "id": 18,
+   "outcome": "FB.6.7.3",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q18.svg",
+   "imageAlt": "Aylara göre kirletici ölçümlerini gösteren çizgi grafiği",
+   "scenario": "Bir şehrin hava kalitesi istasyonunda bir yıl boyunca ölçülen aylık ortalama kirletici değerleri çizgi grafiğinde gösterilmiştir. Şehirde sanayi üretimi ve trafik yıl boyunca yaklaşık aynı düzeydedir; kış aylarında konutlarda ısınma amaçlı yakıt kullanımı artmaktadır.",
+   "question": "Grafikteki değişimin olası bir nedeni aşağıdakilerden hangisidir?",
+   "options": [
+    "Yaz aylarında ısınma amaçlı yakıt kullanımının artması",
+    "Yaz aylarında trafiğin ve sanayinin sıfıra inmesi",
+    "Kış aylarında güneş ışığının artması",
+    "Kış aylarında ısınma amaçlı yakıt kullanımının artması"
+   ],
+   "answer": 3,
+   "explanation": "Kirletici değerler kış aylarında yükselmekte, yaz aylarında düşmektedir. Diğer etkenler sabit olduğuna göre kış aylarında artan ısınma amaçlı yakıt kullanımı olası bir nedendir."
+  },
+  {
+   "id": 19,
+   "outcome": "FB.6.7.3",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q19.svg",
+   "imageAlt": "Hava kirliliği düzeyine göre solunum şikâyetiyle başvuru sayısı",
+   "scenario": "Bir ilçedeki sağlık ocağı, hava kirliliği düzeyinin değiştiği günlerde solunum şikâyetiyle başvuran kişi sayısını kaydediyor. Veriler sütun grafiğinde gösterilmiştir. Bir öğrenci grafiğe bakarak sonuç çıkarmaya çalışıyor.",
+   "question": "Grafiğe dayalı en uygun ifade aşağıdakilerden hangisidir?",
+   "options": [
+    "Hava kirliliği arttıkça başvuru sayısı azalmıştır.",
+    "Hava kirliliği ile solunum şikâyetleri arasında hiçbir ilişki yoktur.",
+    "Hava kirliliği arttıkça solunum şikâyetiyle başvuru sayısı artmıştır; kirliliğin solunum sağlığını etkileyebileceği desteklenir.",
+    "Veriler kirliliğin tüm hastalıklara neden olduğunu kesin olarak kanıtlar."
+   ],
+   "answer": 2,
+   "explanation": "Grafikte kirlilik düzeyi arttıkça başvuru sayısı da artmıştır. Bu durum hava kirliliğinin solunum sağlığını olumsuz etkileyebileceği fikrini destekler; ancak kesin ve genel bir kanıt olarak sunulamaz."
+  },
+  {
+   "id": 20,
+   "outcome": "FB.6.7.3",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q20.svg",
+   "imageAlt": "Hava girişi açık ve kapalı sobayı karşılaştıran şema",
+   "scenario": "Bir evde kömür sobasının hava giriş kapağı ısınmayı yavaşlatmak için kapatılıyor. Bir süre sonra sobanın bulunduğu odada kokunun arttığı ve havanın bunalttığı fark ediliyor. Teknisyen, yanma için oksijenin gerekli olduğunu ve yetersiz oksijende bazı zararlı ürünlerin oluşabileceğini söylüyor.",
+   "question": "Bu durumla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+   "options": [
+    "Hava girişi kapatıldığında yanma daha iyi olur; zararlı ürün oluşmaz.",
+    "Yanma için oksijen gerekmez; havalandırmanın bir önemi yoktur.",
+    "Eksik yanma yalnızca daha fazla ısı üretir; sağlığa etkisi yoktur.",
+    "Hava girişi kısıldığında yanma için gerekli oksijen azalır; eksik yanma zararlı ürünlerin oluşmasına yol açabilir."
+   ],
+   "answer": 3,
+   "explanation": "Yanma için oksijen gerekir. Hava girişi azaldığında eksik yanma olur ve zararlı ürünler oluşabilir. Bu nedenle ısınma sistemlerinde yeterli havalandırma ve düzenli bakım önemlidir."
+  },
+  {
+   "id": 21,
+   "outcome": "FB.6.7.3",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q21.svg",
+   "imageAlt": "Yalıtımlı ve yalıtımsız binanın doğal gaz tüketimi",
+   "scenario": "Aynı büyüklükte ve aynı şehirde bulunan iki bina, kış boyunca aynı iç sıcaklığa ısıtılıyor. Birinin duvarlarına ısı yalıtımı yapılmış, diğerinde yalıtım yoktur. İki binanın kış dönemi doğal gaz tüketimi grafikte gösterilmiştir.",
+   "question": "Grafiğe göre aşağıdaki sonuçlardan hangisi çıkarılabilir?",
+   "options": [
+    "Isı yalıtımı ısı kaybını azalttığı için aynı konfor için daha az yakıt harcanır.",
+    "Isı yalıtımı yakıt tüketimini artırır.",
+    "Isı yalıtımının yakıt tüketimine hiçbir etkisi yoktur.",
+    "Yalıtımsız bina daha az yakıt harcar."
+   ],
+   "answer": 0,
+   "explanation": "Yalıtımlı binanın tüketimi daha düşüktür. Isı yalıtımı ısı kaybını azalttığı için aynı sıcaklığı sağlamak üzere daha az yakıt gerekir."
+  },
+  {
+   "id": 22,
+   "outcome": "FB.6.7.3",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q22.svg",
+   "imageAlt": "Isınma yakıtlarıyla ilgili dört iddia ve gerekçelerini gösteren tablo",
+   "scenario": "Bir okuldaki tartışma kulübü, ısınma yakıtlarıyla ilgili dört iddia ve bunların gerekçelerini tabloya yazıyor. Öğrencilerden gerekçesi iddiayı mantıksal olarak desteklemeyen ifadeyi bulmaları isteniyor.",
+   "question": "Tablodaki iddialardan hangisinin gerekçesi mantıksal açıdan geçersizdir?",
+   "options": [
+    "II",
+    "I",
+    "III",
+    "IV"
+   ],
+   "answer": 0,
+   "explanation": "Bir yakıtın ucuz olması, çevreye ve sağlığa etkisinin olmadığını göstermez. Ekonomik olmak ile çevresel etki ayrı kavramlardır; bu yüzden II numaralı gerekçe geçersizdir."
+  },
+  {
+   "id": 23,
+   "outcome": "FB.6.7.3",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q23.svg",
+   "imageAlt": "Yakıt yakılmasından iklim değişikliğine giden neden-sonuç zinciri",
+   "scenario": "Bir sunumda öğrenci, yakıtların yanmasıyla iklim arasındaki ilişkiyi dört basamaklı bir şema ile gösteriyor. Şemada yakıtların yakılması sonucu açığa çıkan karbondioksitin atmosferdeki sera gazı miktarını artırdığı ve iklimin etkilenebileceği belirtiliyor.",
+   "question": "Bu şema aşağıdaki sonuçlardan hangisini destekler?",
+   "options": [
+    "Yakıt kullanımı arttıkça atmosferdeki sera gazı miktarı kesin olarak azalır.",
+    "Yakıt kullanımının hava ve iklim üzerinde etkisi yoktur.",
+    "İklim değişikliği yalnızca yakıt kullanılmadığı zaman görülür.",
+    "Isınma amaçlı yakıt kullanımının artması atmosferdeki karbondioksit miktarını artırarak iklim değişikliğine katkıda bulunabilir."
+   ],
+   "answer": 3,
+   "explanation": "Yakıtların yanması karbondioksit açığa çıkarır. Sera gazlarının artması iklim değişikliğini etkileyebilir; şema bu neden-sonuç zincirini gösterir."
+  },
+  {
+   "id": 24,
+   "outcome": "FB.6.7.4",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q24.svg",
+   "imageAlt": "Dere kıyısındaki plastik atık sorununun yer, gözlem ve olası neden tablosu",
+   "scenario": "Bir okulun çevre kulübü, okul çevresindeki derenin kıyısında yağıştan sonra çok miktarda plastik atık biriktiğini fark ediyor. Öğrenciler bir çözüm üretmek istiyor ve problemi tabloda özetliyor.",
+   "question": "Çözüm önerisi geliştirmeden önce öğrencilerin atması gereken en uygun adım hangisidir?",
+   "options": [
+    "Dereye atık atan kişilerin kim olduğunu tahmin edip onları suçlamak.",
+    "Atıkların miktarını, yerini ve olası kaynağını gözlem ve kayıtlarla belirleyerek sorunu net biçimde tanımlamak.",
+    "Hiçbir veri toplamadan dereyi tamamen kapatmak.",
+    "Sorunun kendiliğinden geçeceğini varsayıp beklemek."
+   ],
+   "answer": 1,
+   "explanation": "Etkili bir çözüm için önce sorun; nerede, ne zaman ve neden oluştuğu bilgileriyle net tanımlanmalı, gözlem ve kayıtlarla veri toplanmalıdır."
+  },
+  {
+   "id": 25,
+   "outcome": "FB.6.7.4",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q25.svg",
+   "imageAlt": "Proje öncesi ve sonrası yanlış kutuya atılan atık oranını gösteren sütun grafiği",
+   "scenario": "Bir okulda atıkların karışık toplandığı fark edildi. Çevre kulübü, bahçeye renkli ve etiketli atık kutuları yerleştirdi ve öğrencilere bilgilendirme yaptı. Proje başlamadan önce ve bir ay sonra yanlış kutuya atılan atık oranı ölçüldü; sonuçlar grafikte verilmiştir.",
+   "question": "Grafiğe göre projenin etkililiği için aşağıdakilerden hangisi söylenebilir?",
+   "options": [
+    "Proje başarısızdır; çünkü yanlış kutuya atılan atık oranı artmıştır.",
+    "Proje, ölçülen yanlış atma oranını %70'ten %25'e düşürmüştür; çözüm etkili olmuş görünmektedir.",
+    "Proje hakkında veri bulunmadığı için hiçbir değerlendirme yapılamaz.",
+    "Proje etkili olmuştur; çünkü kutuların rengi güzeldir."
+   ],
+   "answer": 1,
+   "explanation": "Proje öncesi ve sonrası ölçüm, çözümün etkisini göstermek için gereklidir. Yanlış atma oranı %70'ten %25'e düşmüştür; bu çözümün etkili olduğuna dair kanıttır."
+  },
+  {
+   "id": 26,
+   "outcome": "FB.6.7.4",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q26.svg",
+   "imageAlt": "Damlayan musluktan saatlere göre toplanan su miktarı tablosu",
+   "scenario": "Okulun lavabosundaki bozuk bir musluk sürekli damlatıyor. Çevre kulübü bir kapla damlayan suyu toplayıp tabloya yazıyor. Damlama hızı sürekli aynıdır ve musluk gece de damlatmaya devam etmektedir.",
+   "question": "Damlama hızı aynı kalırsa 10 günde yaklaşık kaç litre su boşa akar? (1 L = 1000 mL)",
+   "options": [
+    "2,88 L",
+    "28,8 L",
+    "288 L",
+    "1,2 L"
+   ],
+   "answer": 1,
+   "explanation": "Her saat 120 mL akıyor. 1 günde 120 × 24 = 2880 mL. 10 günde 28 800 mL = 28,8 L'dir."
+  },
+  {
+   "id": 27,
+   "outcome": "FB.6.7.4",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q27.svg",
+   "imageAlt": "Orman yangınlarının nedenlerini yüzdeleriyle gösteren tablo",
+   "scenario": "Bir ilin orman müdürlüğü, son yıllardaki orman yangınlarının nedenlerini inceleyip yüzdelerini tabloya yazmıştır. Veriler, yangınların büyük bölümünün insan kaynaklı olduğunu göstermektedir. Bir çevre kulübü, bu veriye dayalı bir çözüm önerisi hazırlıyor.",
+   "question": "Tablodaki verilere dayanarak en uygun çözüm önerisi hangisidir?",
+   "options": [
+    "Yalnızca yangın söndürme araçlarını artırmak; yangınların neden çıktığı önemsizdir.",
+    "Ormanları tamamen ziyarete kapatıp hiçbir bilgilendirme yapmamak.",
+    "Orman içinde ateş yakmanın ve sigara atmanın tehlikelerini anlatan uyarı levhaları koymak, piknik alanlarını belirleyip denetlemek ve bilgilendirme yapmak.",
+    "Tabloya bakmadan her yöre için aynı sloganı yaymak."
+   ],
+   "answer": 2,
+   "explanation": "Etkili çözüm sorunun nedenlerine yöneliktir. Yangınların büyük bölümü piknik ateşi ve izmarit kaynaklı olduğundan bilgilendirme, uyarı ve denetim bu nedenlere doğrudan yöneliktir."
+  },
+  {
+   "id": 28,
+   "outcome": "FB.6.7.4",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q28.svg",
+   "imageAlt": "Dört çözüm önerisinin uygulanabilirlik, maliyet ve ölçülebilirlik tablosu",
+   "scenario": "Bir okul, çevresindeki derede biriken atık sorununa çözüm arıyor. Öğrenciler dört öneriyi uygulanabilirlik, maliyet ve sonucun ölçülebilir olması bakımından karşılaştırarak tabloya yazıyor. Okul yönetimi en uygun öneriyi seçecek.",
+   "question": "Tablodaki kriterlere göre en uygun öneri hangisidir?",
+   "options": [
+    "II",
+    "III",
+    "IV",
+    "I"
+   ],
+   "answer": 3,
+   "explanation": "I numaralı öneri yüksek uygulanabilirliğe, düşük maliyete sahiptir ve sonucu ölçülebilir. Etkili bir çözüm, nedene yönelik, uygulanabilir ve ölçülebilir olmalıdır."
+  },
+  {
+   "id": 29,
+   "outcome": "FB.6.7.4",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q29.svg",
+   "imageAlt": "2000, 2010 ve 2020 yıllarında orman alanını gösteren grafik",
+   "scenario": "Bir bölgede orman alanı 2000 yılında 500 hektar, 2010'da 440 hektar ve 2020'de 380 hektar olarak ölçülmüştür. Ormansızlaşmanın nedenleri değişmeden aynı hızda sürdüğü varsayılırsa orman alanındaki azalma yaklaşık aynı örüntüyü izleyecektir.",
+   "question": "Bu örüntü sürerse 2030 yılında orman alanı yaklaşık kaç hektar olması beklenir?",
+   "options": [
+    "320 hektar",
+    "380 hektar",
+    "260 hektar",
+    "500 hektar"
+   ],
+   "answer": 0,
+   "explanation": "Her 10 yılda orman alanı 60 hektar azalmıştır. Aynı örüntü sürerse 2030'da 380 − 60 = 320 hektar olur. Tahmin, yeni verilerle sınanmalıdır."
+  },
+  {
+   "id": 30,
+   "outcome": "FB.6.7.4",
+   "image": "/denemeler/6-7-unite-yeni-nesil/q30.svg",
+   "imageAlt": "Sorunu belirle, veri topla, çözümü uygula ve son adım soru işareti şeması",
+   "scenario": "Bir okulun çevre kulübü su tasarrufu projesi yürütüyor. Kulüp önce okulun su tüketimini belirliyor, verileri topluyor ve çeşme sensörleri takarak çözümü uyguluyor. Proje akışındaki son adım şemada soru işaretiyle gösterilmiştir.",
+   "question": "Etkili bir proje için soru işareti ile gösterilen son adım aşağıdakilerden hangisi olmalıdır?",
+   "options": [
+    "Projeyi bitirip sonuç hakkında yalnızca duyuru yapmak",
+    "Uygulama sonrasında su tüketimini yeniden ölçüp sonucu başlangıç verileriyle karşılaştırmak",
+    "Verileri silip yeni bir proje başlatmak",
+    "Sonuç ölçmeden projenin başarılı olduğunu ilan etmek"
+   ],
+   "answer": 1,
+   "explanation": "Çözüm uygulandıktan sonra ölçüm yeniden yapılarak değişim takip edilmelidir. Böylece proje yalnızca slogandan ibaret kalmaz; etkisi değerlendirilebilir."
+  }
+ ]
 }

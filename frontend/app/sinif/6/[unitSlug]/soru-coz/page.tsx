@@ -7,7 +7,7 @@ import unit5 from "@/content/konu-sorulari/6-sinif-5-unite.json";
 import unit6 from "@/content/konu-sorulari/6-sinif-6-unite.json";
 import unit7 from "@/content/konu-sorulari/6-sinif-7-unite.json";
 
-type Question = { id:number; outcome:string; visual:string; scenario:string; question:string; options:string[]; answer:number; explanation:string };
+type Question = { id:number; outcome:string; visual?:string; image?:string; imageAlt?:string; scenario:string; question:string; options:string[]; answer:number; explanation:string };
 const banks: Record<string,{unit:number;title:string;slug:string;questions:Question[]}> = {
   "isigin-yansimasi-ve-renkler": unit4 as any,
   "maddenin-ayirt-edici-ozellikleri": unit5 as any,
@@ -42,7 +42,7 @@ export default function Grade6UnitQuizPage({params}:{params:{unitSlug:string}}) 
    <div className="flex items-center justify-between gap-3 text-sm"><span className="font-bold text-beaker">Soru {index+1} / 30</span><span className="text-lab-inkMuted">Doğru: {score}</span></div>
    <div className="mt-3 h-2 overflow-hidden rounded-full bg-lab-paperLine dark:bg-white/10"><div className="h-full rounded-full bg-beaker transition-all" style={{width:`${(index+1)/30*100}%`}} /></div>
    <div className="mt-6 rounded-2xl bg-gradient-to-br from-sky-50 to-indigo-50 p-5 dark:from-sky-950/40 dark:to-indigo-950/30">
-    <div className="text-center text-5xl sm:text-6xl" aria-label="Soru görseli">{current.visual}</div>
+    {current.image?<img src={current.image} alt={current.imageAlt||"Soru görseli"} className="mx-auto w-full max-w-2xl rounded-xl border border-lab-paperLine bg-white" />:<div className="text-center text-5xl sm:text-6xl" aria-label="Soru görseli">{current.visual}</div>}
     <p className="mt-4 leading-7 text-lab-ink dark:text-lab-paper">{current.scenario}</p>
    </div>
    <p className="mt-5 text-xs font-bold uppercase tracking-wide text-beaker">{current.outcome}</p>
