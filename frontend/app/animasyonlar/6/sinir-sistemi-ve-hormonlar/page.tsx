@@ -33,6 +33,12 @@ const dot=(id:string,x:number,y:number)=><g key={id} onClick={()=>onPick(id)} on
 return <svg viewBox="0 0 420 520" className="diagram" role="img" aria-label="Anatomik sinir sistemi şeması">
 <defs><linearGradient id="skin" x2="0" y2="1"><stop stopColor="#f5d9c5"/><stop offset="1" stopColor="#d9aa8e"/></linearGradient><linearGradient id="brain" x2="1" y2="1"><stop stopColor="#ffb5aa"/><stop offset="1" stopColor="#d56b83"/></linearGradient></defs>
 <path d="M210 88 Q145 88 120 140 L95 235 L125 275 L151 220 L157 345 L138 490 L190 490 L210 350 L230 490 L282 490 L263 345 L269 220 L295 275 L325 235 L300 140 Q275 88 210 88Z" fill="url(#skin)" stroke="#bd927a" strokeWidth="3"/>
+<path d="M210 24 C174 24 151 52 154 91 C156 123 171 148 187 158 L187 190 Q187 207 210 211 Q233 207 233 190 L233 158 C249 148 264 123 266 91 C269 52 246 24 210 24Z" fill="url(#skin)" stroke="#a97862" strokeWidth="4"/>
+<path d="M187 185 Q174 180 169 194 Q169 207 187 207 M233 185 Q246 180 251 194 Q251 207 233 207" fill="#efc5ad" stroke="#a97862" strokeWidth="2"/>
+<path d="M190 170 Q198 166 204 170 M216 170 Q222 166 230 170" fill="none" stroke="#654b43" strokeWidth="3" strokeLinecap="round"/>
+<circle cx="198" cy="176" r="2.5" fill="#334155"/><circle cx="222" cy="176" r="2.5" fill="#334155"/>
+<path d="M210 178 L205 190 L212 192 M201 201 Q210 207 219 201" fill="none" stroke="#9b6558" strokeWidth="2.5" strokeLinecap="round"/>
+<path d="M188 204 L188 224 M232 204 L232 224" stroke="#bd927a" strokeWidth="3"/>
 <path d="M210 100 C176 95 155 123 160 151 C145 176 167 199 188 198 Q207 218 224 198 Q252 211 268 186 Q285 160 260 139 Q259 108 231 110 Q219 97 210 100Z" fill="url(#brain)" stroke="#9f425b" strokeWidth="3"/>
 <path d="M210 105 Q198 132 211 151 Q195 171 211 195 M175 119 Q194 137 181 154 M245 118 Q228 139 248 157 M162 158 Q184 170 178 188" fill="none" stroke="#a94460" strokeWidth="3" strokeLinecap="round"/>
 <path d="M252 173 Q284 168 286 194 Q284 220 260 220 Q242 209 242 193Z" fill="#a76ac2" stroke="#69438e" strokeWidth="3"/>
