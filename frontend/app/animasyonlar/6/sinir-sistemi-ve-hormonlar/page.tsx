@@ -39,12 +39,16 @@ return <svg viewBox="0 0 420 520" className="diagram" role="img" aria-label="Ana
 <circle cx="198" cy="176" r="2.5" fill="#334155"/><circle cx="222" cy="176" r="2.5" fill="#334155"/>
 <path d="M210 178 L205 190 L212 192 M201 201 Q210 207 219 201" fill="none" stroke="#9b6558" strokeWidth="2.5" strokeLinecap="round"/>
 <path d="M188 204 L188 224 M232 204 L232 224" stroke="#bd927a" strokeWidth="3"/>
+<g transform="translate(67.2 -20) scale(.68)">
 <path d="M210 100 C176 95 155 123 160 151 C145 176 167 199 188 198 Q207 218 224 198 Q252 211 268 186 Q285 160 260 139 Q259 108 231 110 Q219 97 210 100Z" fill="url(#brain)" stroke="#9f425b" strokeWidth="3"/>
 <path d="M210 105 Q198 132 211 151 Q195 171 211 195 M175 119 Q194 137 181 154 M245 118 Q228 139 248 157 M162 158 Q184 170 178 188" fill="none" stroke="#a94460" strokeWidth="3" strokeLinecap="round"/>
+</g>
+<g transform="translate(67.2 -20) scale(.68)">
 <path d="M252 173 Q284 168 286 194 Q284 220 260 220 Q242 209 242 193Z" fill="#a76ac2" stroke="#69438e" strokeWidth="3"/>
+</g>
 <path d="M210 197 L214 251 L214 426" fill="none" stroke="#e6a63f" strokeWidth="13" strokeLinecap="round"/>
 <path d="M214 270 Q177 289 151 337 M214 298 Q254 315 286 350 M214 340 Q177 358 151 399 M214 367 Q250 386 285 422 M214 402 Q190 423 172 465 M214 416 Q245 438 270 474" fill="none" stroke="#e6a63f" strokeWidth="6" strokeLinecap="round"/>
-{dot("beyin",185,150)}{dot("beyincik",267,194)}{dot("omurilik-sogani",212,225)}{dot("omurilik",214,328)}{dot("sinirler",285,422)}
+{dot("beyin",193,82)}{dot("beyincik",249,112)}{dot("omurilik-sogani",211,133)}{dot("omurilik",214,328)}{dot("sinirler",285,422)}
 <g fontSize="12" fontWeight="700" fill="#49647d"><text x="14" y="145">Beyin</text><path d="M56 148 L169 150" stroke="#49647d"/><text x="298" y="193">Beyincik</text><path d="M295 196 L282 196" stroke="#49647d"/><text x="8" y="232">Omurilik</text><text x="8" y="247">soğanı</text><path d="M95 235 L199 226" stroke="#49647d"/><text x="300" y="328">Omurilik</text><path d="M297 331 L227 331" stroke="#49647d"/><text x="299" y="431">Çevresel</text><text x="299" y="446">sinirler</text></g>
 <text x="210" y="512" textAnchor="middle" fontSize="11" fill="#64748b">Noktaları seçerek yapıları keşfet</text></svg>
 }
