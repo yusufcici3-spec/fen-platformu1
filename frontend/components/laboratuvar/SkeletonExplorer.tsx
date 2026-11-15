@@ -36,21 +36,21 @@ export default function SkeletonExplorer(){
       </defs>
       <text x="150" y="15" textAnchor="middle" fontSize="9" fill="#94a3b8">Önden görünüm • Anatomik şematik model</text>
       <g stroke="#9b8969" strokeWidth="1.15" strokeLinecap="round" strokeLinejoin="round" fill="url(#bonefill)">
-        <!-- Skull -->
+        {/* Skull */}
         <path d="M132 31 Q135 20 150 20 Q165 20 168 31 L170 48 Q170 61 161 69 L158 77 L142 77 L139 69 Q130 61 130 48Z" strokeWidth="1.8"/>
         <path d="M137 39 Q142 33 147 39 L145 48 Q140 52 136 47Z M153 39 Q158 33 163 39 L164 47 Q160 52 155 48Z" fill="#8c8068"/>
         <path d="M148 48 L150 56 L152 48Z" fill="#8c8068"/>
         <path d="M140 59 Q150 64 160 59 L157 69 Q150 74 143 69Z" fill="#e7d8b9"/>
         <path d="M143 62 L143 68 M147 63 L147 70 M151 63 L151 70 M155 62 L155 68" fill="none" strokeWidth=".8"/>
-        <!-- Neck vertebrae -->
+        {/* Neck vertebrae */}
         <path d="M144 77 L156 77 L157 91 L143 91Z"/>
         <path d="M145 81 L155 81 M145 86 L155 86" fill="none"/>
-        <!-- Clavicles and shoulder blades -->
+        {/* Clavicles and shoulder blades */}
         <path d="M147 94 Q130 87 112 94 Q105 97 99 103 Q118 101 135 108 L149 103Z"/>
         <path d="M153 94 Q170 87 188 94 Q195 97 201 103 Q182 101 165 108 L151 103Z"/>
         <path d="M111 105 Q100 116 106 140 L119 153 L128 137 L124 111Z" fill="url(#boneShade)"/>
         <path d="M189 105 Q200 116 194 140 L181 153 L172 137 L176 111Z" fill="url(#boneShade)"/>
-        <!-- Rib cage -->
+        {/* Rib cage */}
         <path d="M148 103 L152 103 L154 176 L146 176Z"/>
         <g fill="none" stroke="url(#bonefill)" strokeWidth="5.3">
           <path d="M148 108 Q128 103 116 111 Q110 116 116 123 Q127 131 147 130"/>
@@ -64,7 +64,7 @@ export default function SkeletonExplorer(){
           <path d="M147 158 Q136 157 132 166 Q130 172 138 176 L147 172"/>
           <path d="M153 158 Q164 157 168 166 Q170 172 162 176 L153 172"/>
         </g>
-        <!-- Sternum and spine -->
+        {/* Sternum and spine */}
         <path d="M147 108 Q150 104 153 108 L154 168 Q150 174 146 168Z" fill="#e8d8b8"/>
         <g fill="url(#boneShade)" strokeWidth=".9">
           <rect x="145" y="94" width="10" height="7" rx="3"/>
@@ -79,44 +79,44 @@ export default function SkeletonExplorer(){
           <rect x="145" y="183" width="10" height="7" rx="3"/>
           <rect x="145" y="193" width="10" height="7" rx="3"/>
         </g>
-        <!-- Pelvis -->
+        {/* Pelvis */}
         <path d="M132 178 Q119 174 113 184 Q108 198 120 213 L139 226 L148 216 L145 195 Q139 187 132 178Z"/>
         <path d="M168 178 Q181 174 187 184 Q192 198 180 213 L161 226 L152 216 L155 195 Q161 187 168 178Z"/>
         <path d="M139 194 Q150 187 161 194 L166 211 Q160 224 150 225 Q140 224 134 211Z" fill="#d9c8a6"/>
         <path d="M143 194 Q150 190 157 194 L159 207 Q150 216 141 207Z" fill="#243449" stroke="none"/>
-        <!-- Arms: humerus -->
+        {/* Arms: humerus */}
         <path d="M105 106 Q99 105 97 112 L84 154 Q82 160 87 163 Q93 165 96 158 L112 119Z" strokeWidth="1.4"/>
         <path d="M195 106 Q201 105 203 112 L216 154 Q218 160 213 163 Q207 165 204 158 L188 119Z" strokeWidth="1.4"/>
         <circle cx="89" cy="162" r="6" fill="url(#boneShade)"/><circle cx="211" cy="162" r="6" fill="url(#boneShade)"/>
-        <!-- Forearm radius and ulna -->
+        {/* Forearm radius and ulna */}
         <path d="M86 166 Q81 169 82 175 L75 211 Q74 217 79 218 Q84 219 86 212 L94 176Z"/>
         <path d="M92 166 Q97 168 97 175 L91 211 Q90 217 85 216 Q81 214 84 207 L86 176Z"/>
         <path d="M214 166 Q219 169 218 175 L225 211 Q226 217 221 218 Q216 219 214 212 L206 176Z"/>
         <path d="M208 166 Q203 168 203 175 L209 211 Q210 217 215 216 Q219 214 216 207 L214 176Z"/>
-        <!-- Hands and fingers -->
+        {/* Hands and fingers */}
         <path d="M76 216 L89 217 L91 229 L83 235 L73 228Z M224 216 L211 217 L209 229 L217 235 L227 228Z"/>
         <g fill="none" stroke="url(#bonefill)" strokeWidth="2.8">
           <path d="M76 226 L67 239 L62 250 M80 230 L75 245 L73 257 M84 231 L82 247 L82 260 M88 229 L89 244 L92 255 M73 226 L61 230 L55 239"/>
           <path d="M224 226 L233 239 L238 250 M220 230 L225 245 L227 257 M216 231 L218 247 L218 260 M212 229 L211 244 L208 255 M227 226 L239 230 L245 239"/>
         </g>
-        <!-- Femurs -->
+        {/* Femurs */}
         <path d="M137 219 Q131 219 130 227 L134 274 Q135 281 142 281 Q148 280 146 273 L145 229 Q145 220 137 219Z" strokeWidth="1.5"/>
         <path d="M163 219 Q169 219 170 227 L166 274 Q165 281 158 281 Q152 280 154 273 L155 229 Q155 220 163 219Z" strokeWidth="1.5"/>
-        <!-- Kneecaps -->
+        {/* Kneecaps */}
         <ellipse cx="140" cy="282" rx="7" ry="8"/><ellipse cx="160" cy="282" rx="7" ry="8"/>
-        <!-- Tibia and fibula -->
+        {/* Tibia and fibula */}
         <path d="M136 290 Q132 289 133 296 L136 342 Q137 349 142 348 L144 342 L142 296Z"/>
         <path d="M145 291 L148 296 L146 341 L143 345 L141 340 L140 297Z"/>
         <path d="M164 290 Q168 289 167 296 L164 342 Q163 349 158 348 L156 342 L158 296Z"/>
         <path d="M155 291 L152 296 L154 341 L157 345 L159 340 L160 297Z"/>
-        <!-- Feet: tarsals, metatarsals and toes -->
+        {/* Feet: tarsals, metatarsals and toes */}
         <path d="M136 346 Q130 345 128 351 L119 358 Q116 363 123 365 L147 364 L148 356 L143 347Z"/>
         <path d="M164 346 Q170 345 172 351 L181 358 Q184 363 177 365 L153 364 L152 356 L157 347Z"/>
         <g fill="none" stroke="url(#bonefill)" strokeWidth="3.2">
           <path d="M128 356 L113 365 L104 367 M132 358 L121 370 L116 375 M137 359 L130 372 L128 379 M141 359 L138 373 L139 380 M172 356 L187 365 L196 367 M168 358 L179 370 L184 375 M163 359 L170 372 L172 379 M159 359 L162 373 L161 380"/>
         </g>
       </g>
-      <!-- Selectable bone markers -->
+      {/* Selectable bone markers */}
       {bones.map((b,i)=>{
         const coords:Record<string,[number,number]>={kafatasi:[150,48],omurga:[150,155],kaburga:[177,127],gogus:[150,132],pelvis:[150,207],humerus:[91,137],radius:[82,188],el:[72,245],femur:[140,250],diz:[140,282],tibia:[140,319],ayak:[130,367]};
         const [x,y]=coords[b.id]; const chosen=selected===b.id;
