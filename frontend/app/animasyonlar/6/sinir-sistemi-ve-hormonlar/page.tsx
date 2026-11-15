@@ -30,26 +30,20 @@ const quiz=[
 ];
 function NervousDiagram({active,onPick}:{active:string;onPick:(s:string)=>void}){
 const dot=(id:string,x:number,y:number)=><g key={id} onClick={()=>onPick(id)} onKeyDown={e=>{if(e.key==="Enter"||e.key===" ")onPick(id)}} role="button" tabIndex={0} style={{cursor:"pointer"}}><circle cx={x} cy={y} r={active===id?15:10} fill={active===id?"#fbbf24":"#2696d2"} stroke="white" strokeWidth="4"/></g>;
-return <svg viewBox="0 0 420 520" className="diagram" role="img" aria-label="Anatomik sinir sistemi şeması">
+return <svg viewBox="0 0 420 520" className="diagram" role="img" aria-label="İnsan silüeti üzerinde anatomik sinir sistemi şeması">
 <defs><linearGradient id="skin" x2="0" y2="1"><stop stopColor="#f5d9c5"/><stop offset="1" stopColor="#d9aa8e"/></linearGradient><linearGradient id="brain" x2="1" y2="1"><stop stopColor="#ffb5aa"/><stop offset="1" stopColor="#d56b83"/></linearGradient></defs>
-<path d="M210 88 Q145 88 120 140 L95 235 L125 275 L151 220 L157 345 L138 490 L190 490 L210 350 L230 490 L282 490 L263 345 L269 220 L295 275 L325 235 L300 140 Q275 88 210 88Z" fill="url(#skin)" stroke="#bd927a" strokeWidth="3"/>
-<path d="M210 24 C174 24 151 52 154 91 C156 123 171 148 187 158 L187 190 Q187 207 210 211 Q233 207 233 190 L233 158 C249 148 264 123 266 91 C269 52 246 24 210 24Z" fill="url(#skin)" stroke="#a97862" strokeWidth="4"/>
-<path d="M187 185 Q174 180 169 194 Q169 207 187 207 M233 185 Q246 180 251 194 Q251 207 233 207" fill="#efc5ad" stroke="#a97862" strokeWidth="2"/>
-<path d="M190 170 Q198 166 204 170 M216 170 Q222 166 230 170" fill="none" stroke="#654b43" strokeWidth="3" strokeLinecap="round"/>
-<circle cx="198" cy="176" r="2.5" fill="#334155"/><circle cx="222" cy="176" r="2.5" fill="#334155"/>
-<path d="M210 178 L205 190 L212 192 M201 201 Q210 207 219 201" fill="none" stroke="#9b6558" strokeWidth="2.5" strokeLinecap="round"/>
-<path d="M188 204 L188 224 M232 204 L232 224" stroke="#bd927a" strokeWidth="3"/>
-<g transform="translate(67.2 -20) scale(.68)">
-<path d="M210 100 C176 95 155 123 160 151 C145 176 167 199 188 198 Q207 218 224 198 Q252 211 268 186 Q285 160 260 139 Q259 108 231 110 Q219 97 210 100Z" fill="url(#brain)" stroke="#9f425b" strokeWidth="3"/>
-<path d="M210 105 Q198 132 211 151 Q195 171 211 195 M175 119 Q194 137 181 154 M245 118 Q228 139 248 157 M162 158 Q184 170 178 188" fill="none" stroke="#a94460" strokeWidth="3" strokeLinecap="round"/>
+<path d="M210 85 Q150 85 125 130 L98 225 L126 265 L155 215 L160 345 L140 485 L190 485 L210 340 L230 485 L280 485 L260 345 L265 215 L294 265 L322 225 L295 130 Q270 85 210 85Z" fill="url(#skin)" stroke="#bd927a" strokeWidth="3"/>
+<circle cx="210" cy="55" r="37" fill="url(#skin)" stroke="#bd927a" strokeWidth="3"/>
+<path d="M195 89 L195 103 M225 89 L225 103" stroke="#bd927a" strokeWidth="3"/>
+<g transform="translate(117.6 -12.2) scale(.42)">
+<path d="M210 100 C176 95 155 123 160 151 C145 176 167 199 188 198 Q207 218 224 198 Q252 211 268 186 Q285 160 260 139 Q259 108 231 110 Q219 97 210 100Z" fill="url(#brain)" stroke="#9f425b" strokeWidth="5"/>
+<path d="M210 105 Q198 132 211 151 Q195 171 211 195 M175 119 Q194 137 181 154 M245 118 Q228 139 248 157 M162 158 Q184 170 178 188" fill="none" stroke="#a94460" strokeWidth="6" strokeLinecap="round"/>
+<path d="M252 173 Q284 168 286 194 Q284 220 260 220 Q242 209 242 193Z" fill="#a76ac2" stroke="#69438e" strokeWidth="6"/>
 </g>
-<g transform="translate(67.2 -20) scale(.68)">
-<path d="M252 173 Q284 168 286 194 Q284 220 260 220 Q242 209 242 193Z" fill="#a76ac2" stroke="#69438e" strokeWidth="3"/>
-</g>
-<path d="M210 197 L214 251 L214 426" fill="none" stroke="#e6a63f" strokeWidth="13" strokeLinecap="round"/>
-<path d="M214 270 Q177 289 151 337 M214 298 Q254 315 286 350 M214 340 Q177 358 151 399 M214 367 Q250 386 285 422 M214 402 Q190 423 172 465 M214 416 Q245 438 270 474" fill="none" stroke="#e6a63f" strokeWidth="6" strokeLinecap="round"/>
-{dot("beyin",193,82)}{dot("beyincik",249,112)}{dot("omurilik-sogani",211,133)}{dot("omurilik",214,328)}{dot("sinirler",285,422)}
-<g fontSize="12" fontWeight="700" fill="#49647d"><text x="14" y="145">Beyin</text><path d="M56 148 L169 150" stroke="#49647d"/><text x="298" y="193">Beyincik</text><path d="M295 196 L282 196" stroke="#49647d"/><text x="8" y="232">Omurilik</text><text x="8" y="247">soğanı</text><path d="M95 235 L199 226" stroke="#49647d"/><text x="300" y="328">Omurilik</text><path d="M297 331 L227 331" stroke="#49647d"/><text x="299" y="431">Çevresel</text><text x="299" y="446">sinirler</text></g>
+<path d="M210 88 L210 145 L210 425" fill="none" stroke="#e6a63f" strokeWidth="11" strokeLinecap="round"/>
+<path d="M210 165 Q177 185 151 235 M210 190 Q254 210 286 250 M210 245 Q177 270 151 330 M210 275 Q250 300 285 350 M210 345 Q180 380 172 450 M210 370 Q245 405 270 460" fill="none" stroke="#e6a63f" strokeWidth="6" strokeLinecap="round"/>
+{dot("beyin",199,54)}{dot("beyincik",226,68)}{dot("omurilik-sogani",210,91)}{dot("omurilik",210,285)}{dot("sinirler",285,350)}
+<g fontSize="12" fontWeight="700" fill="#49647d"><text x="14" y="54">Beyin</text><path d="M55 57 L176 57" stroke="#49647d"/><text x="285" y="78">Beyincik</text><path d="M280 81 L241 72" stroke="#49647d"/><text x="8" y="120">Omurilik</text><text x="8" y="135">soğanı</text><path d="M95 123 L199 93" stroke="#49647d"/><text x="300" y="286">Omurilik</text><path d="M297 289 L224 289" stroke="#49647d"/><text x="300" y="360">Çevresel</text><text x="300" y="375">sinirler</text></g>
 <text x="210" y="512" textAnchor="middle" fontSize="11" fill="#64748b">Noktaları seçerek yapıları keşfet</text></svg>
 }
 function GlandDiagram({active,onPick}:{active:string;onPick:(s:string)=>void}){
