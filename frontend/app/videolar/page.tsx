@@ -77,6 +77,15 @@ const videos = [
     poster: "/videolar/7-sinif-3-unite-vucudumuzdaki-sistemler.jpg",
     link: { href: "/sinif/7/vucudumuzdaki-sistemler", label: "Konu anlatımını aç" },
   },
+  {
+    id: "8-sinif-1-unite",
+    grade: "8. SINIF · 1. ÜNİTE",
+    title: "Mevsimler ve İklim",
+    description: "8. sınıf 1. ünite (FB.8.1.1–2): Dünya'nın hareketleri ve eksen eğikliği, mevsimlerin oluşumu, iklim ile hava durumu farkı, iklimi etkileyen faktörler, basınç, rüzgâr ve yağış; kısa bir soru turu.",
+    src: "/videolar/8-sinif-1-unite-mevsimler-ve-iklim.mp4",
+    poster: "/videolar/8-sinif-1-unite-mevsimler-ve-iklim.jpg",
+    link: { href: "/sinif/8", label: "8. sınıf konularına git" },
+  },
 ];
 
 export default function VideosPage() {
