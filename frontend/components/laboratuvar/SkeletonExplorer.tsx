@@ -29,34 +29,102 @@ export default function SkeletonExplorer(){
     <div className="flex flex-wrap items-center justify-between gap-3"><div><p className="text-xs font-bold uppercase tracking-wider text-beaker">Etkileşimli model</p><h2 className="mt-1 text-xl font-bold">İskeleti keşfet</h2></div><span className="rounded-full bg-beaker/10 px-3 py-1 text-xs font-semibold text-beaker-dark dark:text-beaker-light">Bir kemiğe dokun</span></div>
     <p className="mt-2 text-sm text-lab-inkMuted dark:text-lab-paper/60">İskelet üzerindeki renkli noktaları veya aşağıdaki kemik adlarını seç. Sağda görevi ve özellikleri görüntülenecek.</p>
     <div className="mt-4 overflow-hidden rounded-2xl bg-gradient-to-b from-sky-50 to-indigo-50 dark:from-slate-900 dark:to-slate-800">
-    <svg viewBox="0 0 300 390" role="img" aria-label="Seçilebilir temel kemikleri gösteren şematik insan iskeleti" className="mx-auto block w-full max-w-[390px]">
-      <defs><linearGradient id="bonefill" x1="0" x2="1"><stop offset="0%" stopColor="#fffaf0"/><stop offset="100%" stopColor="#e8d8b8"/></linearGradient></defs>
-      <g stroke="#8b9ab0" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="url(#bonefill)">
-       <path d="M132 34 Q150 21 168 34 Q179 48 169 64 L164 76 L136 76 L131 63 Q121 47 132 34Z" strokeWidth="2.5"/>
-       <path d="M139 76 L139 87 L161 87 L161 76 M137 88 Q120 94 115 113 L120 142 L180 142 L185 113 Q180 94 163 88Z"/>
-       <path d="M120 100 Q150 91 180 100 M117 108 Q150 100 183 108 M118 116 Q150 108 182 116 M120 124 Q150 116 180 124 M122 132 Q150 124 178 132" fill="none" strokeWidth="3"/>
-       <path d="M147 88 L147 169 M153 88 L153 169" strokeWidth="3"/>
-       <path d="M120 142 Q107 151 117 174 L132 202 L143 197 L131 164 L138 145 M180 142 Q193 151 183 174 L168 202 L157 197 L169 164 L162 145"/>
-       <path d="M117 174 L108 197 L116 201 L129 180 M183 174 L192 197 L184 201 L171 180"/>
-       <path d="M129 193 Q150 184 171 193 L179 207 Q150 220 121 207Z" strokeWidth="2.5"/>
-       <path d="M133 211 L142 211 L145 264 L136 264Z M155 211 L164 211 L161 264 L152 264Z" strokeWidth="2.5"/>
-       <path d="M136 264 L145 264 L143 277 L135 277Z M152 264 L161 264 L165 277 L157 277Z"/>
-       <path d="M135 277 L143 277 L141 333 L134 333Z M157 277 L165 277 L169 333 L162 333Z" strokeWidth="2.5"/>
-       <path d="M134 333 L141 333 L146 345 L126 347 L119 342Z M162 333 L169 333 L180 342 L174 347 L154 345Z"/>
-       <path d="M125 346 L130 348 M133 345 L137 349 M159 345 L164 349 M168 346 L173 349" fill="none"/>
-       <path d="M135 103 L117 111 L103 145 L96 168 L103 171 L114 151 L130 123 M165 103 L183 111 L197 145 L204 168 L197 171 L186 151 L170 123" strokeWidth="7"/>
-       <path d="M95 168 L91 181 L98 184 L104 171 M205 168 L209 181 L202 184 L196 171" strokeWidth="4"/>
-       <path d="M142 34 Q150 27 158 34 M141 49 L146 50 M154 50 L159 49 M145 59 Q150 62 155 59" fill="none" strokeWidth="1.4"/>
+    <svg viewBox="0 0 300 390" role="img" aria-label="Anatomik insan iskeleti; kemik bölgeleri seçilebilir" className="mx-auto block w-full max-w-[390px]">
+      <defs>
+        <linearGradient id="bonefill" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stopColor="#fffdf5"/><stop offset="48%" stopColor="#f0e3c7"/><stop offset="100%" stopColor="#cbb995"/></linearGradient>
+        <linearGradient id="boneShade" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stopColor="#fffaf0"/><stop offset="100%" stopColor="#d8c7a5"/></linearGradient>
+      </defs>
+      <text x="150" y="15" textAnchor="middle" fontSize="9" fill="#94a3b8">Önden görünüm • Anatomik şematik model</text>
+      <g stroke="#9b8969" strokeWidth="1.15" strokeLinecap="round" strokeLinejoin="round" fill="url(#bonefill)">
+        <!-- Skull -->
+        <path d="M132 31 Q135 20 150 20 Q165 20 168 31 L170 48 Q170 61 161 69 L158 77 L142 77 L139 69 Q130 61 130 48Z" strokeWidth="1.8"/>
+        <path d="M137 39 Q142 33 147 39 L145 48 Q140 52 136 47Z M153 39 Q158 33 163 39 L164 47 Q160 52 155 48Z" fill="#8c8068"/>
+        <path d="M148 48 L150 56 L152 48Z" fill="#8c8068"/>
+        <path d="M140 59 Q150 64 160 59 L157 69 Q150 74 143 69Z" fill="#e7d8b9"/>
+        <path d="M143 62 L143 68 M147 63 L147 70 M151 63 L151 70 M155 62 L155 68" fill="none" strokeWidth=".8"/>
+        <!-- Neck vertebrae -->
+        <path d="M144 77 L156 77 L157 91 L143 91Z"/>
+        <path d="M145 81 L155 81 M145 86 L155 86" fill="none"/>
+        <!-- Clavicles and shoulder blades -->
+        <path d="M147 94 Q130 87 112 94 Q105 97 99 103 Q118 101 135 108 L149 103Z"/>
+        <path d="M153 94 Q170 87 188 94 Q195 97 201 103 Q182 101 165 108 L151 103Z"/>
+        <path d="M111 105 Q100 116 106 140 L119 153 L128 137 L124 111Z" fill="url(#boneShade)"/>
+        <path d="M189 105 Q200 116 194 140 L181 153 L172 137 L176 111Z" fill="url(#boneShade)"/>
+        <!-- Rib cage -->
+        <path d="M148 103 L152 103 L154 176 L146 176Z"/>
+        <g fill="none" stroke="url(#bonefill)" strokeWidth="5.3">
+          <path d="M148 108 Q128 103 116 111 Q110 116 116 123 Q127 131 147 130"/>
+          <path d="M152 108 Q172 103 184 111 Q190 116 184 123 Q173 131 153 130"/>
+          <path d="M147 119 Q125 115 113 126 Q108 133 116 140 Q128 147 147 142"/>
+          <path d="M153 119 Q175 115 187 126 Q192 133 184 140 Q172 147 153 142"/>
+          <path d="M147 132 Q127 129 118 141 Q113 148 121 155 Q132 161 147 154"/>
+          <path d="M153 132 Q173 129 182 141 Q187 148 179 155 Q168 161 153 154"/>
+          <path d="M147 145 Q132 143 124 154 Q120 161 128 167 Q137 172 147 165"/>
+          <path d="M153 145 Q168 143 176 154 Q180 161 172 167 Q163 172 153 165"/>
+          <path d="M147 158 Q136 157 132 166 Q130 172 138 176 L147 172"/>
+          <path d="M153 158 Q164 157 168 166 Q170 172 162 176 L153 172"/>
+        </g>
+        <!-- Sternum and spine -->
+        <path d="M147 108 Q150 104 153 108 L154 168 Q150 174 146 168Z" fill="#e8d8b8"/>
+        <g fill="url(#boneShade)" strokeWidth=".9">
+          <rect x="145" y="94" width="10" height="7" rx="3"/>
+          <rect x="145" y="103" width="10" height="7" rx="3"/>
+          <rect x="145" y="113" width="10" height="7" rx="3"/>
+          <rect x="145" y="123" width="10" height="7" rx="3"/>
+          <rect x="145" y="133" width="10" height="7" rx="3"/>
+          <rect x="145" y="143" width="10" height="7" rx="3"/>
+          <rect x="145" y="153" width="10" height="7" rx="3"/>
+          <rect x="145" y="163" width="10" height="7" rx="3"/>
+          <rect x="145" y="173" width="10" height="7" rx="3"/>
+          <rect x="145" y="183" width="10" height="7" rx="3"/>
+          <rect x="145" y="193" width="10" height="7" rx="3"/>
+        </g>
+        <!-- Pelvis -->
+        <path d="M132 178 Q119 174 113 184 Q108 198 120 213 L139 226 L148 216 L145 195 Q139 187 132 178Z"/>
+        <path d="M168 178 Q181 174 187 184 Q192 198 180 213 L161 226 L152 216 L155 195 Q161 187 168 178Z"/>
+        <path d="M139 194 Q150 187 161 194 L166 211 Q160 224 150 225 Q140 224 134 211Z" fill="#d9c8a6"/>
+        <path d="M143 194 Q150 190 157 194 L159 207 Q150 216 141 207Z" fill="#243449" stroke="none"/>
+        <!-- Arms: humerus -->
+        <path d="M105 106 Q99 105 97 112 L84 154 Q82 160 87 163 Q93 165 96 158 L112 119Z" strokeWidth="1.4"/>
+        <path d="M195 106 Q201 105 203 112 L216 154 Q218 160 213 163 Q207 165 204 158 L188 119Z" strokeWidth="1.4"/>
+        <circle cx="89" cy="162" r="6" fill="url(#boneShade)"/><circle cx="211" cy="162" r="6" fill="url(#boneShade)"/>
+        <!-- Forearm radius and ulna -->
+        <path d="M86 166 Q81 169 82 175 L75 211 Q74 217 79 218 Q84 219 86 212 L94 176Z"/>
+        <path d="M92 166 Q97 168 97 175 L91 211 Q90 217 85 216 Q81 214 84 207 L86 176Z"/>
+        <path d="M214 166 Q219 169 218 175 L225 211 Q226 217 221 218 Q216 219 214 212 L206 176Z"/>
+        <path d="M208 166 Q203 168 203 175 L209 211 Q210 217 215 216 Q219 214 216 207 L214 176Z"/>
+        <!-- Hands and fingers -->
+        <path d="M76 216 L89 217 L91 229 L83 235 L73 228Z M224 216 L211 217 L209 229 L217 235 L227 228Z"/>
+        <g fill="none" stroke="url(#bonefill)" strokeWidth="2.8">
+          <path d="M76 226 L67 239 L62 250 M80 230 L75 245 L73 257 M84 231 L82 247 L82 260 M88 229 L89 244 L92 255 M73 226 L61 230 L55 239"/>
+          <path d="M224 226 L233 239 L238 250 M220 230 L225 245 L227 257 M216 231 L218 247 L218 260 M212 229 L211 244 L208 255 M227 226 L239 230 L245 239"/>
+        </g>
+        <!-- Femurs -->
+        <path d="M137 219 Q131 219 130 227 L134 274 Q135 281 142 281 Q148 280 146 273 L145 229 Q145 220 137 219Z" strokeWidth="1.5"/>
+        <path d="M163 219 Q169 219 170 227 L166 274 Q165 281 158 281 Q152 280 154 273 L155 229 Q155 220 163 219Z" strokeWidth="1.5"/>
+        <!-- Kneecaps -->
+        <ellipse cx="140" cy="282" rx="7" ry="8"/><ellipse cx="160" cy="282" rx="7" ry="8"/>
+        <!-- Tibia and fibula -->
+        <path d="M136 290 Q132 289 133 296 L136 342 Q137 349 142 348 L144 342 L142 296Z"/>
+        <path d="M145 291 L148 296 L146 341 L143 345 L141 340 L140 297Z"/>
+        <path d="M164 290 Q168 289 167 296 L164 342 Q163 349 158 348 L156 342 L158 296Z"/>
+        <path d="M155 291 L152 296 L154 341 L157 345 L159 340 L160 297Z"/>
+        <!-- Feet: tarsals, metatarsals and toes -->
+        <path d="M136 346 Q130 345 128 351 L119 358 Q116 363 123 365 L147 364 L148 356 L143 347Z"/>
+        <path d="M164 346 Q170 345 172 351 L181 358 Q184 363 177 365 L153 364 L152 356 L157 347Z"/>
+        <g fill="none" stroke="url(#bonefill)" strokeWidth="3.2">
+          <path d="M128 356 L113 365 L104 367 M132 358 L121 370 L116 375 M137 359 L130 372 L128 379 M141 359 L138 373 L139 380 M172 356 L187 365 L196 367 M168 358 L179 370 L184 375 M163 359 L170 372 L172 379 M159 359 L162 373 L161 380"/>
+        </g>
       </g>
+      <!-- Selectable bone markers -->
       {bones.map((b,i)=>{
-       const coords:Record<string,[number,number]>={kafatasi:[150,48],omurga:[150,154],kaburga:[174,119],gogus:[150,116],pelvis:[150,202],humerus:[111,126],radius:[98,158],el:[94,178],femur:[139,239],diz:[140,274],tibia:[140,309],ayak:[132,343]};
-       const [x,y]=coords[b.id]; const chosen=selected===b.id;
-       return <g key={b.id} onClick={()=>setSelected(b.id)} role="button" tabIndex={0} aria-label={b.name} onKeyDown={e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();setSelected(b.id)}}} className="cursor-pointer">
-        <circle cx={x} cy={y} r={chosen?10:7} fill={chosen?"#0f766e":"#f59e0b"} stroke="white" strokeWidth="2"/>
-        <text x={x} y={y+3.2} textAnchor="middle" fontSize="9" fontWeight="bold" fill="white">{i+1}</text>
-       </g>
+        const coords:Record<string,[number,number]>={kafatasi:[150,48],omurga:[150,155],kaburga:[177,127],gogus:[150,132],pelvis:[150,207],humerus:[91,137],radius:[82,188],el:[72,245],femur:[140,250],diz:[140,282],tibia:[140,319],ayak:[130,367]};
+        const [x,y]=coords[b.id]; const chosen=selected===b.id;
+        return <g key={b.id} onClick={()=>setSelected(b.id)} role="button" tabIndex={0} aria-label={b.name} onKeyDown={e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();setSelected(b.id)}}} className="cursor-pointer">
+          <circle cx={x} cy={y} r={chosen?9:6.5} fill={chosen?"#0f766e":"#f59e0b"} stroke="white" strokeWidth="2"/>
+          <text x={x} y={y+3} textAnchor="middle" fontSize="8" fontWeight="bold" fill="white">{i+1}</text>
+        </g>
       })}
-      <text x="12" y="20" fontSize="9" fill="#64748b">Önden görünüm • Şematik model</text>
     </svg></div>
     <div className="mt-4 flex flex-wrap gap-2">{groups.map(g=><button key={g} onClick={()=>setFilter(g)} className={`rounded-full border px-3 py-2 text-xs font-semibold ${filter===g?"border-beaker bg-beaker text-white":"border-lab-paperLine bg-white text-lab-inkMuted dark:bg-lab-inkSoft dark:text-lab-paper"}`}>{g}</button>)}</div>
     <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-3">{visible.map((b)=><button key={b.id} onClick={()=>setSelected(b.id)} className={`rounded-xl border p-3 text-left text-sm transition ${selected===b.id?"border-beaker bg-beaker/10 ring-1 ring-beaker":"border-lab-paperLine hover:border-beaker/50 dark:border-white/10"}`}><span className="block text-xs text-lab-inkMuted dark:text-lab-paper/50">{b.group}</span><span className="mt-1 block font-semibold">{b.name}</span></button>)}</div>
