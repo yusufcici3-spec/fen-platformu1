@@ -8,6 +8,7 @@ const items = [
   { title: "Kuvvet ve Enerji", href: "/animasyonlar/7/kuvvet-enerji", icon: "💪", category: "KUVVET VE ENERJİ" },
   { title: "Kinetik ve Potansiyel Enerji", href: "/animasyonlar/7/kinetik-potansiyel", icon: "⚡", category: "ENERJİ" },
   { title: "Işığın Kırılması", href: "/animasyonlar/7/isigin-kirilmasi", icon: "🔦", description: "Hava, su ve cam arasında ışığın izlediği yolu deneyerek gözlemle.", category: "IŞIĞIN MADDE İLE ETKİLEŞİMİ" },
+  { title: "Kalın Kenarlı ve İnce Kenarlı Mercekler", href: "/animasyonlar/7/mercekler", icon: "🔍", description: "Mercek türünü ve cisim uzaklığını değiştir; ışınları ve görüntüyü keşfet.", category: "IŞIĞIN MADDE İLE ETKİLEŞİMİ" },
   { title: "Sindirim Sistemi", href: "/animasyonlar/7/sindirim-sistemi", icon: "🥗", category: "VÜCUDUMUZ" },
   { title: "Dolaşım Sistemi", href: "/animasyonlar/7/dolasim-sistemi", icon: "❤️", category: "VÜCUDUMUZ" },
   { title: "Solunum Sistemi", href: "/animasyonlar/7/solunum-sistemi", icon: "🫁", category: "VÜCUDUMUZ" },
