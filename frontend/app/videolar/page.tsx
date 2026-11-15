@@ -86,6 +86,15 @@ const videos = [
     poster: "/videolar/8-sinif-1-unite-mevsimler-ve-iklim.jpg",
     link: { href: "/sinif/8", label: "8. sınıf konularına git" },
   },
+  {
+    id: "8-sinif-2-unite",
+    grade: "8. SINIF · 2. ÜNİTE",
+    title: "DNA ve Genetik Kod",
+    description: "8. sınıf 2. ünite: DNA'nın yapısı, nükleotit, gen ve kromozom, DNA'nın kendini eşlemesi, kalıtım ve çaprazlama, mutasyon ile modifikasyon, adaptasyon ve biyoteknoloji; kısa bir soru turu.",
+    src: "/videolar/8-sinif-2-unite-dna-ve-genetik-kod.mp4",
+    poster: "/videolar/8-sinif-2-unite-dna-ve-genetik-kod.jpg",
+    link: { href: "/sinif/8", label: "8. sınıf konularına git" },
+  },
 ];
 
 export default function VideosPage() {
