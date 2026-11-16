@@ -8,7 +8,7 @@ const fmt=(n:number)=>Number.isInteger(n)?String(n):n.toFixed(1).replace(".",","
 export default function MakaraLaboratuvariPage(){
  const [mode,setMode]=useState<Mode>("fixed");
  const [weight,setWeight]=useState(100);
- const [strands,setStrands]=useState(2);
+ const [strands,setStrands]=useState(4);
  const [lift,setLift]=useState(1);
  const [showAnswer,setShowAnswer]=useState(false);
  const [quizAnswer,setQuizAnswer]=useState<number|null>(null);
@@ -55,7 +55,7 @@ export default function MakaraLaboratuvariPage(){
     </svg>
     <div className="pulley-controls">
      <div className="pulley-control"><label><span>Yükün ağırlığı</span><b>{weight} N</b></label><input type="range" min="20" max="200" step="10" value={weight} onChange={e=>setWeight(+e.target.value)}/></div>
-     {mode==="compound"&&<div className="pulley-control"><label><span>Yükü taşıyan ip sayısı</span><b>{strands}</b></label><input type="range" min="2" max="6" step="1" value={strands} onChange={e=>setStrands(+e.target.value)}/></div>}
+     {mode==="compound"&&<div className="pulley-control"><label><span>Yükü taşıyan ip sayısı</span><b>4</b></label><p className="pulley-muted">Bu palanga çiziminde iki sabit ve iki hareketli makara vardır; yükü dört ip parçası taşır.</p></div>}
      <div className="pulley-control"><label><span>Yükün yükselme miktarı</span><b>{fmt(lift)} m</b></label><input type="range" min="0.5" max="3" step="0.5" value={lift} onChange={e=>setLift(+e.target.value)}/></div>
     </div>
    </section>
