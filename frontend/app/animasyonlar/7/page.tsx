@@ -10,6 +10,7 @@ const items = [
   { title: "Işığın Kırılması", href: "/animasyonlar/7/isigin-kirilmasi", icon: "🔦", description: "Hava, su ve cam arasında ışığın izlediği yolu deneyerek gözlemle.", category: "IŞIĞIN MADDE İLE ETKİLEŞİMİ" },
   { title: "Kalın Kenarlı ve İnce Kenarlı Mercekler", href: "/animasyonlar/7/mercekler", icon: "🔍", description: "Mercek türünü ve cisim uzaklığını değiştir; ışınları ve görüntüyü keşfet.", category: "IŞIĞIN MADDE İLE ETKİLEŞİMİ" },
   { title: "Atom Modellerinin Tarihsel Gelişimi", href: "/animasyonlar/7/atom-modelleri", icon: "⚛️", description: "Demokritos’tan modern atom teorisine modelleri yıllara göre incele.", category: "ATOMUN YAPISI" },
+  { title: "Atom, Molekül ve Bileşik Modelleme", href: "/animasyonlar/7/atom-molekul-bilesik", icon: "🧪", description: "Atomları birleştirerek model oluştur; atom, molekül ve bileşik ayrımını keşfet.", category: "SAF MADDELER" },
   { title: "Sindirim Sistemi", href: "/animasyonlar/7/sindirim-sistemi", icon: "🥗", category: "VÜCUDUMUZ" },
   { title: "Dolaşım Sistemi", href: "/animasyonlar/7/dolasim-sistemi", icon: "❤️", category: "VÜCUDUMUZ" },
   { title: "Solunum Sistemi", href: "/animasyonlar/7/solunum-sistemi", icon: "🫁", category: "VÜCUDUMUZ" },
