@@ -10,7 +10,8 @@ export default function MakaraLaboratuvariPage(){
  const [weight,setWeight]=useState(100);
  const [strands,setStrands]=useState(2);
  const [lift,setLift]=useState(1);
- const [showAnswer,setShowAnswer]=useState(false);\n const [quizAnswer,setQuizAnswer]=useState<number|null>(null);
+ const [showAnswer,setShowAnswer]=useState(false);
+ const [quizAnswer,setQuizAnswer]=useState<number|null>(null);
  const support=mode==="fixed"?1:mode==="movable"?2:strands;
  const effort=weight/support;
  const rope=lift*support;
