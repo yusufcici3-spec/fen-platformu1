@@ -127,6 +127,7 @@ const raw = `
 
 const elements:ElementData[] = raw.split("\n").map(line=>{const [z,s,n,mass,g,p,t,state]=line.split("|");return {z:+z,s,n,mass,g:+g,p:+p,t,state};});
 const colors:Record<string,string> = {"Alkali metal":"#fca5a5","Toprak alkali metal":"#fdba74","Geçiş metali":"#fcd34d","Metal":"#fde68a","Yarı metal":"#86efac","Ametal":"#93c5fd","Halojen":"#c4b5fd","Soy gaz":"#f9a8d4","Lantanit":"#67e8f9","Aktinit":"#a5b4fc"};
+const groupLabel=(g:number)=>g===1?"1A":g===2?"2A":g===3?"3B":g===4?"4B":g===5?"5B":g===6?"6B":g===7?"7B":g<=10?"8B":g===11?"1B":g===12?"2B":`${g-10}A`;
 const filters=["Tümü","Metal","Ametal","Yarı metal","Soy gaz","Halojen","Lantanit","Aktinit","Alkali metal","Toprak alkali metal","Geçiş metali"];
 
 export default function PeriyodikCetvelPage(){
@@ -158,8 +159,8 @@ export default function PeriyodikCetvelPage(){
     <div className="ptable-legend">{Object.entries(colors).map(([k,v])=><span className="legend" key={k} style={{background:v}}>{k}</span>)}</div>
    </section>
    <aside className="ptable-side"><small style={{color:"#64748b",fontWeight:900}}>SEÇİLİ ELEMENT · ATOM NO {selected.z}</small><div className="big-symbol">{selected.s}</div><div className="el-name">{selected.n}</div><span className="type" style={{background:colors[selected.t]}}>{selected.t}</span><div className="ptable-facts">
-    <div className="fact"><small>Atom numarası</small><b>{selected.z}</b></div><div className="fact"><small>Kimyasal sembol</small><b>{selected.s}</b></div><div className="fact"><small>Atom kütlesi (u)</small><b>{selected.mass}</b></div><div className="fact"><small>Grup</small><b>{selected.g}. grup</b></div><div className="fact"><small>Periyot</small><b>{selected.p}. periyot</b></div><div className="fact"><small>Oda sıcaklığında</small><b>{selected.state}</b></div>
-   </div><p className="ptable-note">Atom numarası, nötr atomdaki proton sayısını gösterir. Grup ve periyot bilgileri modern periyodik cetveldeki konumunu belirtir. Bazı süper ağır elementlerin fiziksel hâlleri deneysel olarak tam belirlenemediğinden tahmini kabul edilir.</p><button className="ptable-filter" style={{width:"100%",marginTop:8}} onClick={()=>{setSelected(elements[0]);setQuery("");setFilter("Tümü");}}>Cetveli sıfırla</button></aside>
+    <div className="fact"><small>Atom numarası</small><b>{selected.z}</b></div><div className="fact"><small>Kimyasal sembol</small><b>{selected.s}</b></div><div className="fact"><small>Atom kütlesi (u)</small><b>{selected.mass}</b></div><div className="fact"><small>Grup</small><b>{groupLabel(selected.g)} grubu</b></div><div className="fact"><small>Periyot</small><b>{selected.p}. periyot</b></div><div className="fact"><small>Oda sıcaklığında</small><b>{selected.state}</b></div>
+   </div><p className="ptable-note">Atom numarası, nötr atomdaki proton sayısını gösterir. Grup bilgisi, 8. sınıf düzeyinde kullanılan A/B grup gösterimine göre verilmiştir. Bazı süper ağır elementlerin fiziksel hâlleri deneysel olarak tam belirlenemediğinden tahmini kabul edilir.</p><button className="ptable-filter" style={{width:"100%",marginTop:8}} onClick={()=>{setSelected(elements[0]);setQuery("");setFilter("Tümü");}}>Cetveli sıfırla</button></aside>
   </div>
   <p style={{fontSize:11,color:"#64748b",marginTop:13}}>Not: Atom kütleleri yaygın kullanılan yaklaşık değerlerdir; radyoaktif ve kısa ömürlü elementlerde gösterilen sayılar en kararlı izotopa dayalı kütle numarası olabilir.</p>
   <div style={{marginTop:15}}><Link href="/animasyonlar/8" style={{color:"#2563eb",fontWeight:800,textDecoration:"none"}}>← 8. sınıf animasyonlarına dön</Link></div>
