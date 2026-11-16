@@ -7,6 +7,7 @@ const items = [
   { title: "Sıvı Basıncı Laboratuvarı", href: "/animasyonlar/8/sivi-basinci", icon: "💧", description: "Derinliği, yoğunluğu ve kabın şeklini değiştirerek basıncı gözlemle.", category: "BASINÇ" },
   { title: "Açık Hava Basıncı Laboratuvarı", href: "/animasyonlar/8/acik-hava-basinci", icon: "🌬️", description: "Torricelli deneyinde rakımı, tüp eğimini ve sıvıyı değiştirerek açık hava basıncını gözlemle.", category: "BASINÇ" },
   { title: "Katı Basıncı Simülatörü", href: "/animasyonlar/8/katı-basıncı", icon: "⚖️", description: "Ağırlık ve temas yüzey alanını değiştir.", category: "BASINÇ" },
+  { title: "Makara ve Palanga Laboratuvarı", href: "/animasyonlar/8/makaralar", icon: "⚙️", description: "Sabit, hareketli makara ve palanga düzeneklerinde yükü, kuvveti ve ip miktarını değiştirerek deney yap.", category: "BASİT MAKİNELER" },
   { title: "Bezelyelerde Kalıtım", href: "/animasyonlar/8/kalitim", icon: "🌱", description: "Çaprazlamaları yap ve yavru özelliklerini incele.", category: "DNA VE GENETİK KOD" },
   { title: "DNA Baz Eşleşmeleri", href: "/animasyonlar/8/dna-eslesmesi", icon: "🧬", description: "DNA zincirini tamamlayarak baz eşleşmelerini öğren.", category: "DNA VE GENETİK KOD" },
   { title: "Asit-Baz Ayraç Laboratuvarı", href: "/animasyonlar/8/asit-baz-ayraclari", icon: "🧪", description: "Turnusol, mor lahana ve diğer ayıraçlarla maddeleri test et.", category: "MADDE VE ENDÜSTRİ" },
