@@ -10,7 +10,7 @@ export default function MakaraLaboratuvariPage(){
  const [weight,setWeight]=useState(100);
  const [strands,setStrands]=useState(2);
  const [lift,setLift]=useState(1);
- const [showAnswer,setShowAnswer]=useState(false);
+ const [showAnswer,setShowAnswer]=useState(false);\n const [quizAnswer,setQuizAnswer]=useState<number|null>(null);
  const support=mode==="fixed"?1:mode==="movable"?2:strands;
  const effort=weight/support;
  const rope=lift*support;
@@ -25,9 +25,9 @@ export default function MakaraLaboratuvariPage(){
   <nav className="pulley-crumb"><Link href="/animasyonlar">Animasyonlar</Link> / <Link href="/animasyonlar/8">8. Sınıf</Link> / Makara Laboratuvarı</nav>
   <header className="pulley-hero"><small>8. SINIF · BASİT MAKİNELER</small><h1>Makara ve Palanga Laboratuvarı</h1><p>Sabit ve hareketli makaraları, ardından palanga düzeneklerini incele. Yükü ve yükselme miktarını değiştir; gereken kuvveti ve çekmen gereken ip miktarını anında gözlemle.</p></header>
   <div className="pulley-tabs">
-   <button className={"pulley-btn "+(mode==="fixed"?"active":"")} onClick={()=>{setMode("fixed");setShowAnswer(false)}}>📍 Sabit makara</button>
-   <button className={"pulley-btn "+(mode==="movable"?"active":"")} onClick={()=>{setMode("movable");setShowAnswer(false)}}>⬆️ Hareketli makara</button>
-   <button className={"pulley-btn "+(mode==="compound"?"active":"")} onClick={()=>{setMode("compound");setShowAnswer(false)}}>⚙️ Palanga</button>
+   <button className={"pulley-btn "+(mode==="fixed"?"active":"")} onClick={()=>{setMode("fixed");setShowAnswer(false);setQuizAnswer(null)}}>📍 Sabit makara</button>
+   <button className={"pulley-btn "+(mode==="movable"?"active":"")} onClick={()=>{setMode("movable");setShowAnswer(false);setQuizAnswer(null)}}>⬆️ Hareketli makara</button>
+   <button className={"pulley-btn "+(mode==="compound"?"active":"")} onClick={()=>{setMode("compound");setShowAnswer(false);setQuizAnswer(null)}}>⚙️ Palanga</button>
   </div>
   <div className="pulley-grid">
    <section className="pulley-card"><h2>{title} düzeneği</h2><p className="pulley-muted">Kontrolleri değiştirerek düzeneğin nasıl çalıştığını gözlemle.</p>
