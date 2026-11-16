@@ -18,15 +18,16 @@ export default function KaldiracLaboratuvariPage(){
  const [lift,setLift]=useState(10);
  const [show,setShow]=useState(false);
  const [answer,setAnswer]=useState<number|null>(null);
- const force=load*loadArm/effortArm;
+ const actualLoadArm=type==="third"?loadArm+effortArm:loadArm;
+ const actualEffortArm=type==="second"?loadArm+effortArm:effortArm;
+ const force=load*actualLoadArm/actualEffortArm;
  const forceGain=load/force;
- const pathRatio=effortArm/loadArm;
- const pivot=type==="first"?310:130;
- const loadX=type==="first"?pivot-loadArm*55:type==="second"?pivot+loadArm*55:pivot+effortArm*55;
- const effortX=type==="first"?pivot+effortArm*55:type==="second"?pivot+(loadArm+effortArm)*35:pivot+effortArm*55;
+ const pathRatio=actualEffortArm/actualLoadArm;
+ const pivot=type==="first"?310:85;
+ const loadX=type==="first"?pivot-loadArm*45:type==="second"?pivot+loadArm*45:pivot+(effortArm+loadArm)*45;
+ const effortX=type==="first"?pivot+effortArm*45:type==="second"?pivot+(loadArm+effortArm)*45:pivot+effortArm*45;
  const endX=type==="third"?pivot+(loadArm+effortArm)*55: type==="second"?pivot+(loadArm+effortArm)*35:pivot+effortArm*55;
- const loadArmPx=type==="first"?loadArm*55:type==="second"?loadArm*55:effortArm*55;
- const effortArmPx=type==="first"?effortArm*55:type==="second"?effortArm*35:effortArm*55;
+ 
  const result=useMemo(()=>`Denge için kuvvet × kuvvet kolu = yük × yük kolu. Gerekli kuvvet: ${fmt(force)} N. Kuvvet kazancı: ${fmt(forceGain)} kat.`,[force,forceGain]);
  const choose=(t:LeverType)=>{setType(t);setShow(false);setAnswer(null);if(t==="first"){setLoadArm(2);setEffortArm(4)}if(t==="second"){setLoadArm(2);setEffortArm(4)}if(t==="third"){setLoadArm(4);setEffortArm(2)}};
  return <main className="lever-page"><style jsx global>{`
@@ -73,7 +74,7 @@ export default function KaldiracLaboratuvariPage(){
      <div className="lever-metric"><small>Yükün hareketi</small><b>{fmt(lift/pathRatio)} cm</b></div>
     </div>
     <div className="lever-callout"><b>Bu kaldıraçta:</b><br/>{descriptions[type]}</div>
-    <div className="lever-callout"><b>Nasıl hesaplanır?</b><br/>Kuvvet × kuvvet kolu = Yük × yük kolu.<br/>Kuvvet kazancı = Yük / Kuvvet = Kuvvet kolu / Yük kolu.<br/>Yol oranı = Kuvvet kolu / Yük kolu.</div>
+    <div className="lever-callout"><b>Nasıl hesaplanır?</b><br/>Kuvvet × kuvvet kolu = Yük × yük kolu.<br/>Kuvvet kazancı = Yük / Kuvvet = Kuvvet kolu / Yük kolu.<br/>Yol oranı (kuvvetin aldığı yol / yükün aldığı yol) = Kuvvet kolu / Yük kolu.</div>
     <button className="lever-btn active" style={{width:"100%",marginTop:10}} onClick={()=>setShow(v=>!v)}>{show?"Açıklamayı gizle":"Sonucu açıkla"}</button>
     {show&&<div className="lever-callout">{result}<br/>Kuvvet kolu uzadıkça aynı yükü dengelemek için gereken kuvvet azalır. Kuvvetten kazanç varsa yoldan kayıp vardır.</div>}
    </aside>
