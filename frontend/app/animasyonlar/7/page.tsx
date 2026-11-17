@@ -15,6 +15,7 @@ const items = [
   { title: "Dolaşım Sistemi", href: "/animasyonlar/7/dolasim-sistemi", icon: "❤️", category: "VÜCUDUMUZ" },
   { title: "Solunum Sistemi", href: "/animasyonlar/7/solunum-sistemi", icon: "🫁", category: "VÜCUDUMUZ" },
   { title: "Boşaltım Sistemi", href: "/animasyonlar/7/bosaltim-sistemi", icon: "🫘", category: "VÜCUDUMUZ" },
+  { title: "Elektroskop Laboratuvarı", href: "/animasyonlar/7/elektroskop", icon: "⚡", description: "Yükleri yaklaştır, dokundur ve etki ile elektriklenme basamaklarını uygula.", category: "ELEKTRİKLENME" },
   { title: "Passafenola 7", href: "/animasyonlar/7/passafenola7", icon: "🎯", category: "EĞİTİCİ OYUN" },
   { title: "Fen Futbolu 7", href: "/animasyonlar/7/fen-futbolu", icon: "⚽", category: "EĞİTİCİ OYUN" },
   { title: "MilyonerFen 7", href: "/animasyonlar/7/milyoner", icon: "🏆", category: "EĞİTİCİ OYUN" },
