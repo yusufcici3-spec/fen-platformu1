@@ -439,9 +439,9 @@ export function BasitMakinelerNotes() {
 
       <Section no="10" title="Mini Test (Kendini Dene)">
         <ol className="list-decimal space-y-2 pl-5">
-          <li>Kuvvet kolu 90 cm, yük kolu 30 cm olan kaldıraçla 120 N&apos;luk yük dengelenmek isteniyor. Gerekli kuvvet kaç N'dur? <span className="text-lab-inkMuted">(Cevap: 40 N)</span></li>
+          <li>Kuvvet kolu 90 cm, yük kolu 30 cm olan kaldıraçla 120 N&apos;luk yük dengelenmek isteniyor. Gerekli kuvvet kaç N&apos;dur? <span className="text-lab-inkMuted">(Cevap: 40 N)</span></li>
           <li>Yükü 6 ipin taşıdığı ideal bir palanga ile 600 N&apos;luk yük kaldırmak için kaç N kuvvet gerekir? <span className="text-lab-inkMuted">(Cevap: 100 N)</span></li>
-          <li>8 m uzunluğundaki sürtünmesiz rampa ile 2 m yüksekliğe 400 N&apos;luk yük çıkarılırken gereken kuvvet kaç N'dur? <span className="text-lab-inkMuted">(Cevap: 100 N)</span></li>
+          <li>8 m uzunluğundaki sürtünmesiz rampa ile 2 m yüksekliğe 400 N&apos;luk yük çıkarılırken gereken kuvvet kaç N&apos;dur? <span className="text-lab-inkMuted">(Cevap: 100 N)</span></li>
           <li>Kuvvetten kazanç sağlayan bir sistem aynı zamanda ne kaybettirir? <span className="text-lab-inkMuted">(Cevap: Yoldan kayıp)</span></li>
         </ol>
       </Section>
