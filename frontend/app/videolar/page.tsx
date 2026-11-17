@@ -104,6 +104,15 @@ const videos = [
     poster: "/videolar/8-sinif-3-unite-basinc.jpg",
     link: { href: "/sinif/8", label: "8. sınıf konularına git" },
   },
+  {
+    id: "8-sinif-4-unite",
+    grade: "8. SINIF · 4. ÜNİTE",
+    title: "Madde ve Endüstri",
+    description: "8. sınıf 4. ünite: periyodik sistem, fiziksel ve kimyasal değişimler, kimyasal tepkimeler ve kütlenin korunumu, asitler ve bazlar (pH), maddenin ısı ile etkileşimi ve öz ısı, Türkiye'de kimya endüstrisi; kısa bir soru turu.",
+    src: "/videolar/8-sinif-4-unite-madde-ve-endustri.mp4",
+    poster: "/videolar/8-sinif-4-unite-madde-ve-endustri.jpg",
+    link: { href: "/sinif/8", label: "8. sınıf konularına git" },
+  },
 ];
 
 export default function VideosPage() {
