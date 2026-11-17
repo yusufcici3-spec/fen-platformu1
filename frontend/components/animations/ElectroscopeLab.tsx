@@ -13,8 +13,8 @@ export default function ElectroscopeLab({ grade }: { grade: 7 | 8 }) {
   const [stage,setStage] = useState<Stage>("neutral");
   const [showParticles,setShowParticles] = useState(true);
   const induced = stage === "induction-done" ? (charge === "negative" ? "positive" : "negative") : null;
-  const deflection = stage === "neutral" ? 0 : stage === "near" || stage === "induction-near" || stage === "grounded" || stage === "ground-removed" ? 18 : stage === "contact" || stage === "induction-done" ? 34 : 0;
-  const leafCharge = stage === "contact" ? charge : induced;
+  const deflection = stage === "neutral" || stage === "grounded" ? 0 : stage === "near" || stage === "induction-near" || stage === "ground-removed" ? 18 : stage === "contact" || stage === "induction-done" ? 34 : 0;
+  const leafCharge = stage === "contact" || stage === "near" || stage === "induction-near" ? charge : stage === "ground-removed" || stage === "induction-done" ? (charge === "negative" ? "positive" : "negative") : null;
   const explanation = useMemo(() => {
     switch(stage) {
       case "neutral": return "Elektroskop başlangıçta nötrdür. Yapraklar birbirini itmediği için kapalı durur.";
