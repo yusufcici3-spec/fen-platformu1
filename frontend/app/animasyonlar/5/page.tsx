@@ -7,6 +7,7 @@ const items = [
   { title: "Ay Yüzeyini Keşfet", href: "/animasyonlar/5/ay-yuzeyi", icon: "🚀", description: "Astronotla Ay yüzeyini ve kraterleri keşfet.", category: "UZAY" },
   { title: "Dinamometre Simülatörü", href: "/animasyonlar/5/dinamometre", icon: "⚖️", description: "Kuvveti dinamometre ile ölçmeyi dene.", category: "KUVVET" },
   { title: "Dinamometreni Ölçeklendir", href: "/animasyonlar/5/dinamometre-olcekle", icon: "📏", description: "Dinamometre ölçeğini oluştur ve ölçüm yap.", category: "KUVVET" },
+  { title: "Bitki ve Hayvan Hücresi Laboratuvarı", href: "/animasyonlar/5/bitki-hayvan-hucresi", icon: "🧫", description: "Hücre türünü değiştir; organelleri seçerek görevlerini keşfet.", category: "CANLILAR" },
   { title: "Mikroskop Masası", href: "/animasyonlar/5/mikroskop", icon: "🔬", description: "Mikroskop parçalarını ve örnek incelemeyi keşfet.", category: "CANLILAR" },
   { title: "İskelet Sistemi Animasyonu", href: "/laboratuvar/destek-hareket", icon: "🦴", description: "Destek ve hareket sistemini incele.", category: "VÜCUDUMUZ" },
   { title: "Fen Koşusu 5", href: "/animasyonlar/5/fen-kosusu5", icon: "🏃", description: "Fen sorularını çözerek parkuru tamamla.", category: "EĞİTİCİ OYUN" },
