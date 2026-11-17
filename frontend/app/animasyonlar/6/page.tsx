@@ -8,6 +8,7 @@ const items = [
   { title: "Sinir Sistemi ve Hormonlar", href: "/animasyonlar/6/sinir-sistemi-ve-hormonlar", icon: "🧠", description: "Sinir sistemi yapılarını ve iç salgı bezlerini seç; isimlerini bul ve mini testi çöz.", category: "VÜCUDUMUZ" },
   { title: "Bileşke Kuvvet Simülatörü", href: "/animasyonlar/6/bileske-kuvvet", icon: "🧲", description: "Kuvvetlerin yönünü ve büyüklüğünü değiştir.", category: "KUVVET" },
   { title: "Işığın Soğurulması Laboratuvarı", href: "/animasyonlar/6/isigin-sogurulmasi", icon: "💡", description: "Farklı renk ışıkları renkli zeminlere gönder; yansıyan ve soğurulan ışığı gözlemle.", category: "IŞIK VE RENKLER" },
+  { title: "Çukur ve Tümsek Ayna Laboratuvarı", href: "/animasyonlar/6/cukur-tumsek-aynalar", icon: "🪞", description: "Ayna türünü ve cisim uzaklığını değiştir; görüntünün yerini, yönünü ve boyutunu gözlemle.", category: "IŞIĞIN YANSIMASI" },
   { title: "Sürat ve Hız Animasyonu", href: "/animasyonlar/6/surat-ve-hiz", icon: "🚗", description: "Aracı hareket ettir; alınan yol ve yer değiştirmeyi karşılaştır.", category: "HAREKET" },
   { title: "İp Çekme Etkinliği", href: "/animasyonlar/6/ip-cekme", icon: "🪢", description: "Kuvvetlerin etkisini takım çalışması etkinliğiyle gözlemle.", category: "KUVVET" },
   { title: "Çiçekli Bitkilerin Yaşam Döngüsü", href: "/animasyonlar/6/cicekli-bitkiler-yasam-dongusu", icon: "🌼", category: "BİTKİLER" },
