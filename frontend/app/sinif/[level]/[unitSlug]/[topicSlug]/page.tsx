@@ -13,6 +13,7 @@ import { PrevNextNav } from "@/components/topic/PrevNextNav";
 import { MarkCompleteButton } from "@/components/topic/MarkCompleteButton";
 import { decodeStoredHtml } from "@/lib/renderHtml";
 import { getStaticUnit } from "@/lib/maarifContent";
+import { BasitMakinelerNotes } from "@/components/topic/BasitMakinelerNotes";
 import { StaticTopicContent } from "@/components/topic/StaticTopicContent";
 
 interface Params { level:string; unitSlug:string; topicSlug:string; }
@@ -26,6 +27,7 @@ export default async function TopicPage({params}:{params:Params}) {
   let topic:TopicDetail|null=null;
   try { const res=await apiFetch<TopicDetail>(`/konular/${params.topicSlug}?unitSlug=${encodeURIComponent(params.unitSlug)}`); topic=res.data??null; } catch { topic=null; }
   if(!topic) notFound();
+  const isBasit=level===8&&params.unitSlug==="basit-makineler";
   return <>
     <div className="grid-paper-bg border-b border-lab-paperLine/70 dark:border-white/10"><div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8">
       <nav className="flex flex-wrap items-center gap-1 text-xs text-lab-inkMuted dark:text-lab-paper/50"><Link href={`/sinif/${level}`}>{level}. Sınıf</Link><span>/</span><Link href={`/sinif/${level}/${params.unitSlug}`}>{topic.unit?.title??"Ünite"}</Link><span>/</span><span>{topic.title}</span></nav>
@@ -33,6 +35,8 @@ export default async function TopicPage({params}:{params:Params}) {
       <div className="mt-5 flex flex-wrap gap-3"><MarkCompleteButton topicId={topic.id}/><Link href={`/pratik?topicId=${topic.id}&title=${encodeURIComponent(topic.title+" - Soru Çöz")}`} className="fixed top-24 right-4 z-40 rounded-full bg-beaker px-5 py-3 text-sm font-bold text-white shadow-xl transition hover:scale-105 sm:top-28 sm:right-8">📝 Soru Çöz</Link></div>
     </div></div>
     <section className="mx-auto max-w-4xl space-y-8 px-4 py-10 sm:px-6 lg:px-8">
+      {isBasit&&<BasitMakinelerNotes/>}
+      {isBasit&&<h2 id="konu-icerigi-resimleri" className="font-display text-2xl font-bold">🖼️ Konu içeriği resimleri</h2>}
       {topic.contents.length>0?<div className="space-y-5">{topic.contents.map(block=><ContentBlock key={block.id} block={block}/>)}</div>:topic.content?<div className="prose prose-sm max-w-none dark:prose-invert" dangerouslySetInnerHTML={{__html:decodeStoredHtml(topic.content)}}/>:null}
       <LearningOutcomesList outcomes={topic.learningOutcomes}/><GlossaryList terms={topic.glossaryTerms}/><ExperimentList experiments={topic.experiments}/><ImageGallery images={topic.images}/><VideoList videos={topic.videos}/><PdfList pdfs={topic.pdfs}/><PrevNextNav classLevel={level} unitSlug={params.unitSlug} previous={topic.previousTopic} next={topic.nextTopic}/>
     </section>
