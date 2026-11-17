@@ -13,6 +13,7 @@ const items = [
   { title: "DNA Baz Eşleşmeleri", href: "/animasyonlar/8/dna-eslesmesi", icon: "🧬", description: "DNA zincirini tamamlayarak baz eşleşmelerini öğren.", category: "DNA VE GENETİK KOD" },
   { title: "Asit-Baz Ayraç Laboratuvarı", href: "/animasyonlar/8/asit-baz-ayraclari", icon: "🧪", description: "Turnusol, mor lahana ve diğer ayıraçlarla maddeleri test et.", category: "MADDE VE ENDÜSTRİ" },
   { title: "118 Elementli Periyodik Cetvel", href: "/animasyonlar/8/periyodik-cetvel", icon: "⚛️", description: "118 elementin tamamını incele; seçtiğin elementin özelliklerini keşfet.", category: "MADDE VE ENDÜSTRİ" },
+  { title: "Elektroskop Laboratuvarı", href: "/animasyonlar/8/elektroskop", icon: "⚡", description: "Yükleri yaklaştır, dokundur ve etki ile elektriklenme basamaklarını uygula.", category: "ELEKTRİKLENME" },
   { title: "Passafenola", href: "/animasyonlar/8/passafenola", icon: "🎯", description: "Fen sorularıyla kelime turunu tamamla.", category: "EĞİTİCİ OYUN" },
 ];
 
