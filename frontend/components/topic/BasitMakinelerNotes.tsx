@@ -327,7 +327,7 @@ export function BasitMakinelerNotes() {
           <li><b>Palanga:</b> Sabit ve hareketli makaraların birlikte kullanıldığı sistemdir. Yükü taşıyan ip sayısı n ise <b>F = Y/n</b>, çekilen ip boyu = n · h.</li>
         </ul>
         <Box tone="formula" title="📐 Örnek">
-          <p>240 N'luk yük, yükü 4 ipin taşıdığı bir palanga ile 2 m yükseğe çıkarılıyor (ağırlık ve sürtünme ihmal).</p>
+          <p>240 N&apos;luk yük, yükü 4 ipin taşıdığı bir palanga ile 2 m yükseğe çıkarılıyor (ağırlık ve sürtünme ihmal).</p>
           <p>F = 240 / 4 = <b>60 N</b>; çekilen ip boyu = 4 × 2 = <b>8 m</b>; yapılan iş = 60 × 8 = 240 × 2 = <b>480 J</b> (işten kazanç yok).</p>
         </Box>
       </Section>
@@ -345,7 +345,7 @@ export function BasitMakinelerNotes() {
           </div>
         </div>
         <Box tone="formula" title="📐 Örnek">
-          <p>Boyu 5 m, yüksekliği 1 m olan sürtünmesiz rampadan 300 N'luk yük çıkarılıyor.</p>
+          <p>Boyu 5 m, yüksekliği 1 m olan sürtünmesiz rampadan 300 N&apos;luk yük çıkarılıyor.</p>
           <p>F = 300 · 1 / 5 = <b>60 N</b>. Kuvvetten 5 kat kazanç var, yol 5 kat uzadı.</p>
         </Box>
       </Section>
@@ -439,9 +439,9 @@ export function BasitMakinelerNotes() {
 
       <Section no="10" title="Mini Test (Kendini Dene)">
         <ol className="list-decimal space-y-2 pl-5">
-          <li>Kuvvet kolu 90 cm, yük kolu 30 cm olan kaldıraçla 120 N'luk yük dengelenmek isteniyor. Gerekli kuvvet kaç N'dur? <span className="text-lab-inkMuted">(Cevap: 40 N)</span></li>
-          <li>Yükü 6 ipin taşıdığı ideal bir palanga ile 600 N'luk yük kaldırmak için kaç N kuvvet gerekir? <span className="text-lab-inkMuted">(Cevap: 100 N)</span></li>
-          <li>8 m uzunluğundaki sürtünmesiz rampa ile 2 m yüksekliğe 400 N'luk yük çıkarılırken gereken kuvvet kaç N'dur? <span className="text-lab-inkMuted">(Cevap: 100 N)</span></li>
+          <li>Kuvvet kolu 90 cm, yük kolu 30 cm olan kaldıraçla 120 N&apos;luk yük dengelenmek isteniyor. Gerekli kuvvet kaç N'dur? <span className="text-lab-inkMuted">(Cevap: 40 N)</span></li>
+          <li>Yükü 6 ipin taşıdığı ideal bir palanga ile 600 N&apos;luk yük kaldırmak için kaç N kuvvet gerekir? <span className="text-lab-inkMuted">(Cevap: 100 N)</span></li>
+          <li>8 m uzunluğundaki sürtünmesiz rampa ile 2 m yüksekliğe 400 N&apos;luk yük çıkarılırken gereken kuvvet kaç N'dur? <span className="text-lab-inkMuted">(Cevap: 100 N)</span></li>
           <li>Kuvvetten kazanç sağlayan bir sistem aynı zamanda ne kaybettirir? <span className="text-lab-inkMuted">(Cevap: Yoldan kayıp)</span></li>
         </ol>
       </Section>
