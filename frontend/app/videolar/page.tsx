@@ -95,6 +95,15 @@ const videos = [
     poster: "/videolar/8-sinif-2-unite-dna-ve-genetik-kod.jpg",
     link: { href: "/sinif/8", label: "8. sınıf konularına git" },
   },
+  {
+    id: "8-sinif-3-unite",
+    grade: "8. SINIF · 3. ÜNİTE",
+    title: "Basınç",
+    description: "8. sınıf 3. ünite: katı basıncı (P = F/A), sıvı basıncı (P = h·d·g), bileşik kaplar, Pascal prensibi, açık hava basıncı ve Torricelli deneyi, gaz basıncı ve manometre; hesap örnekleri ve kısa bir soru turu.",
+    src: "/videolar/8-sinif-3-unite-basinc.mp4",
+    poster: "/videolar/8-sinif-3-unite-basinc.jpg",
+    link: { href: "/sinif/8", label: "8. sınıf konularına git" },
+  },
 ];
 
 export default function VideosPage() {
