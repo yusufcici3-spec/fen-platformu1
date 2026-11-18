@@ -2,10 +2,7 @@
 
 import { useMemo, useState } from "react";
 
-type Phase = "day" | "night";
-
 export default function SeaLandBreezeLab() {
-  const [phase, setPhase] = useState<Phase>("day");
   const [hour, setHour] = useState(14);
   const [playing, setPlaying] = useState(true);
   const [showLabels, setShowLabels] = useState(true);
@@ -44,8 +41,8 @@ export default function SeaLandBreezeLab() {
         <div className="flex flex-wrap items-center justify-between gap-3 p-4 sm:p-5">
           <div><div className="text-xs font-black tracking-widest text-cyan-300">ETKİLEŞİMLİ KIYI SİMÜLATÖRÜ</div><h2 className="mt-1 text-xl font-black">Rüzgârın yönünü sen değiştir</h2></div>
           <div className="flex gap-2">
-            <button onClick={() => {setPhase("day"); setHour(14); setAnswer(null);}} className={`rounded-full px-4 py-2 text-sm font-bold ${phase === "day" ? "bg-amber-300 text-slate-950" : "bg-white/10 text-white"}`}>☀️ Gündüz</button>
-            <button onClick={() => {setPhase("night"); setHour(2); setAnswer(null);}} className={`rounded-full px-4 py-2 text-sm font-bold ${phase === "night" ? "bg-indigo-300 text-slate-950" : "bg-white/10 text-white"}`}>🌙 Gece</button>
+            <button onClick={() => {setHour(14); setAnswer(null);}} className={`rounded-full px-4 py-2 text-sm font-bold ${data.day ? "bg-amber-300 text-slate-950" : "bg-white/10 text-white"}`}>☀️ Gündüz</button>
+            <button onClick={() => {setHour(2); setAnswer(null);}} className={`rounded-full px-4 py-2 text-sm font-bold ${!data.day ? "bg-indigo-300 text-slate-950" : "bg-white/10 text-white"}`}>🌙 Gece</button>
           </div>
         </div>
         <div className="px-4 pb-3"><label className="flex items-center justify-between text-sm font-bold"><span>Günün saati</span><span className="rounded-lg bg-white/10 px-3 py-1 text-cyan-200">{String(hour).padStart(2,"0")}:00</span></label><input aria-label="Günün saati" type="range" min="0" max="23" step="1" value={hour} onChange={e=>{setHour(Number(e.target.value));setAnswer(null);}} className="mt-2 w-full accent-cyan-300"/><div className="flex justify-between text-xs text-slate-400"><span>00.00</span><span>06.00</span><span>12.00</span><span>18.00</span><span>23.00</span></div><p className="mt-2 text-xs text-slate-300">Saati değiştir; kara ve deniz sıcaklıklarının, rüzgâr yönü ve şiddetinin nasıl değiştiğini gözlemle.</p></div>
