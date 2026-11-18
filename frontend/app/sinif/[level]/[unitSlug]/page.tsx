@@ -7,6 +7,7 @@ import { apiFetch } from "@/lib/api";
 import { UnitSummary, TopicSummary } from "@/types/curriculum";
 import { getStaticUnit } from "@/lib/maarifContent";
 import { MaddeEndustriNotes } from "@/components/topic/MaddeEndustriNotes";
+import { BasincNotes } from "@/components/topic/BasincNotes";
 import { UnitTopicImages } from "@/components/topic/UnitTopicImages";
 
 export const dynamic = "force-dynamic";
@@ -77,9 +78,11 @@ export default async function UnitPage({ params }: { params: { level: string; un
           {level === 8 && (unit.code?.startsWith("F.8.6") || unit.title.toLocaleLowerCase("tr-TR").includes("besin zinciri") || params.unitSlug.includes("besin-zinciri") || params.unitSlug.includes("enerji-donusumleri")) ? <Link href="/sinif/8/enerji-donusumleri-ve-cevre-bilimi/soru-coz" className="inline-flex items-center gap-2 rounded-full bg-beaker px-5 py-2.5 text-sm font-semibold text-white hover:bg-beaker-dark">📝 Bu Üniteden 100 Soru Çöz</Link> : unit.topics.length > 0 && <Link href={`/pratik?unitId=${unit.id}&title=${encodeURIComponent(unit.title + " - Soru Çöz")}`} className="inline-flex items-center gap-2 rounded-full border border-beaker px-5 py-2.5 text-sm font-semibold text-beaker">📝 Genel Soru Çöz</Link>}
         </div>
         {level === 8 && params.unitSlug === "madde-ve-endustri" && <MaddeEndustriNotes />}
+        {level === 8 && params.unitSlug === "basinc" && <BasincNotes />}
+        {level === 8 && params.unitSlug === "basinc" && <UnitTopicImages unitSlug={params.unitSlug} topics={unit.topics} />}
         {level === 8 && params.unitSlug === "madde-ve-endustri" && <UnitTopicImages unitSlug={params.unitSlug} topics={unit.topics} />}
         <div className="mt-8" />
-        {params.unitSlug === "madde-ve-endustri" ? null : unit.topics.length === 0 ? <div className="mt-6"><EmptyPanelState title="Bu ünite için henüz konu eklenmedi" description="Konular yönetim panelinden eklendikçe burada listelenecek." /></div> : <div className="mt-6"><TopicListWithProgress topics={unit.topics} level={level} unitSlug={unit.slug} /></div>}
+        {params.unitSlug === "madde-ve-endustri" || params.unitSlug === "basinc" ? null : unit.topics.length === 0 ? <div className="mt-6"><EmptyPanelState title="Bu ünite için henüz konu eklenmedi" description="Konular yönetim panelinden eklendikçe burada listelenecek." /></div> : <div className="mt-6"><TopicListWithProgress topics={unit.topics} level={level} unitSlug={unit.slug} /></div>}
       </section>
     </>
   );
