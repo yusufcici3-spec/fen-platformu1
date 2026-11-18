@@ -6,7 +6,7 @@ const GREEN = "#16a34a";
 const WOOD = "#b8854a";
 const GRAY = "#64748b";
 
-function Arrow({ x1, y1, x2, y2, color = BLUE }: { x1: number; y1: number; x2: number; y2: number; color?: string }) {
+export function Arrow({ x1, y1, x2, y2, color = BLUE }: { x1: number; y1: number; x2: number; y2: number; color?: string }) {
   const a = Math.atan2(y2 - y1, x2 - x1);
   const s = 9;
   const p1 = `${x2},${y2}`;
@@ -20,7 +20,7 @@ function Arrow({ x1, y1, x2, y2, color = BLUE }: { x1: number; y1: number; x2: n
   );
 }
 
-function T({ x, y, children, color, size = 13, anchor = "middle", bold = false }: { x: number; y: number; children: ReactNode; color?: string; size?: number; anchor?: "start" | "middle" | "end"; bold?: boolean }) {
+export function T({ x, y, children, color, size = 13, anchor = "middle", bold = false }: { x: number; y: number; children: ReactNode; color?: string; size?: number; anchor?: "start" | "middle" | "end"; bold?: boolean }) {
   return (
     <text x={x} y={y} fontSize={size} textAnchor={anchor} fill={color ?? "currentColor"} fontWeight={bold ? 700 : 400} fontFamily="sans-serif">
       {children}
@@ -28,7 +28,7 @@ function T({ x, y, children, color, size = 13, anchor = "middle", bold = false }
   );
 }
 
-function Fig({ children, caption, h = 170 }: { children: ReactNode; caption: string; h?: number }) {
+export function Fig({ children, caption, h = 170 }: { children: ReactNode; caption: string; h?: number }) {
   return (
     <figure className="rounded-2xl border border-lab-paperLine bg-white p-3 dark:border-white/10 dark:bg-white/5">
       <svg viewBox={`0 0 300 ${h}`} className="w-full text-slate-800 dark:text-slate-100" role="img" aria-label={caption}>
@@ -216,7 +216,7 @@ function Gears() {
   );
 }
 
-function Section({ no, title, children }: { no: string; title: string; children: ReactNode }) {
+export function Section({ no, title, children }: { no: string; title: string; children: ReactNode }) {
   return (
     <section className="rounded-3xl border border-lab-paperLine bg-white p-5 shadow-sm dark:border-white/10 dark:bg-white/[0.03] sm:p-7">
       <h3 className="flex items-center gap-3 font-display text-xl font-bold">
@@ -228,7 +228,7 @@ function Section({ no, title, children }: { no: string; title: string; children:
   );
 }
 
-function Box({ tone, title, children }: { tone: "info" | "warn" | "formula"; title: string; children: ReactNode }) {
+export function Box({ tone, title, children }: { tone: "info" | "warn" | "formula"; title: string; children: ReactNode }) {
   const cls = {
     info: "border-sky-300 bg-sky-50 dark:border-sky-500/40 dark:bg-sky-500/10",
     warn: "border-amber-300 bg-amber-50 dark:border-amber-500/40 dark:bg-amber-500/10",
