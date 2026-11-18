@@ -278,7 +278,7 @@ export function BasitMakinelerNotes() {
         <Box tone="formula" title="📐 İş ve Güç">
           <p>İş = Kuvvet × Yol → <b>W = F · x</b> (birim: joule, J)</p>
           <p>İdeal makinede: <b>F · x(kuvvet yolu) = Y · h(yük yolu)</b></p>
-          <p>Verim = (Yararlı iş / Harcanan iş) × 100. Sürtünme varsa verim %100'den küçüktür.</p>
+          <p>Verim = (Yararlı iş / Harcanan iş) × 100. Sürtünme varsa verim %100&apos;den küçüktür.</p>
         </Box>
       </Section>
 
