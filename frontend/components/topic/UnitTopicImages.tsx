@@ -1,4 +1,5 @@
 import { apiFetch } from "@/lib/api";
+import { ImageLightboxGrid } from "./ImageLightboxGrid";
 import { decodeStoredHtml } from "@/lib/renderHtml";
 import { TopicDetail, TopicSummary } from "@/types/curriculum";
 
@@ -44,22 +45,14 @@ export async function UnitTopicImages({ unitSlug, topics }: { unitSlug: string; 
   return (
     <section id="konu-icerigi-resimleri" className="mt-10 rounded-3xl border border-lab-paperLine bg-white p-5 shadow-sm dark:border-white/10 dark:bg-white/[0.03] sm:p-7">
       <h2 className="font-display text-2xl font-bold">🖼️ Konu içeriği resimleri</h2>
-      <p className="mt-1 text-sm text-lab-inkMuted dark:text-lab-paper/70">Bu üniteye eklenen konu görselleri. Büyütmek için resme tıkla.</p>
+      <p className="mt-1 text-sm text-lab-inkMuted dark:text-lab-paper/70">Bu üniteye eklenen konu görselleri. Büyütmek için resme dokun.</p>
       {withImgs.length === 0 ? (
         <p className="mt-4 rounded-2xl bg-beaker/5 p-4 text-sm">Henüz bu konuya görsel eklenmemiş. Görseller yönetim panelinden eklendikçe burada listelenir.</p>
       ) : (
         withImgs.map(({ topic, imgs }) => (
           <div key={topic.id} className="mt-5">
             <h3 className="font-semibold">{topic.title}</h3>
-            <div className="mt-2 grid grid-cols-2 gap-3 sm:grid-cols-3">
-              {imgs.map((img) => (
-                <a key={img.id} href={imgUrl(img.url)} target="_blank" rel="noopener noreferrer" className="group overflow-hidden rounded-2xl border border-lab-paperLine dark:border-white/10">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={imgUrl(img.url)} alt={img.caption ?? topic.title} loading="lazy" className="aspect-video w-full bg-lab-paperLine/40 object-cover transition group-hover:scale-105" />
-                  {img.caption && <p className="p-2 text-xs text-lab-inkMuted dark:text-lab-paper/60">{img.caption}</p>}
-                </a>
-              ))}
-            </div>
+            <ImageLightboxGrid images={imgs.map((i) => ({ id: i.id, src: imgUrl(i.url), alt: i.caption ?? topic.title, caption: i.caption }))} />
           </div>
         ))
       )}
