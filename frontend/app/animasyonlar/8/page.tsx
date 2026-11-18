@@ -4,6 +4,7 @@ export const metadata = { title: "8. Sınıf Animasyonları | Fen Bilimleri" };
 
 const items = [
   { title: "Mevsimler ve İklim Simülatörü", href: "/animasyonlar/8/mevsimler", icon: "🌎", description: "Güneş ışınlarının geliş açısını ve mevsimleri keşfet.", category: "MEVSİMLER VE İKLİM" },
+  { title: "Deniz ve Kara Meltemleri", href: "/animasyonlar/8/deniz-kara-meltemi", icon: "🌊", description: "Gündüz ve geceyi değiştir; sıcaklık, basınç ve rüzgâr yönü ilişkisini keşfet.", category: "MEVSİMLER VE İKLİM" },
   { title: "Sıvı Basıncı Laboratuvarı", href: "/animasyonlar/8/sivi-basinci", icon: "💧", description: "Derinliği, yoğunluğu ve kabın şeklini değiştirerek basıncı gözlemle.", category: "BASINÇ" },
   { title: "Açık Hava Basıncı Laboratuvarı", href: "/animasyonlar/8/acik-hava-basinci", icon: "🌬️", description: "Torricelli deneyinde rakımı, tüp eğimini ve sıvıyı değiştirerek açık hava basıncını gözlemle.", category: "BASINÇ" },
   { title: "Katı Basıncı Simülatörü", href: "/animasyonlar/8/katı-basıncı", icon: "⚖️", description: "Ağırlık ve temas yüzey alanını değiştir.", category: "BASINÇ" },
