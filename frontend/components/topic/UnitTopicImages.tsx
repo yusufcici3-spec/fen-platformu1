@@ -28,12 +28,12 @@ export async function UnitTopicImages({ unitSlug, topics }: { unitSlug: string; 
           const text = decodeStoredHtml(html);
           while ((m = re.exec(text))) {
             const alt = /\balt=["']([^"']*)["']/i.exec(m[0]);
-            add(m[1], alt?.[1] || null);
+            add(m[1].replace(/&amp;/g, "&"), alt?.[1] || null);
           }
         };
         (d?.contents ?? []).forEach((b) => scan(b.bodyHtml));
         scan(d?.content);
-        (d?.images ?? []).forEach((i) => add(i.url, i.caption));
+        (d?.images ?? []).forEach((i) => add(imgUrl(i.url), i.caption));
       } catch {
         imgs = [];
       }
@@ -52,7 +52,7 @@ export async function UnitTopicImages({ unitSlug, topics }: { unitSlug: string; 
         withImgs.map(({ topic, imgs }) => (
           <div key={topic.id} className="mt-5">
             <h3 className="font-semibold">{topic.title}</h3>
-            <ImageLightboxGrid images={imgs.map((i) => ({ id: i.id, src: imgUrl(i.url), alt: i.caption ?? topic.title, caption: i.caption }))} />
+            <ImageLightboxGrid images={imgs.map((i) => ({ id: i.id, src: i.url, alt: i.caption ?? topic.title, caption: i.caption }))} />
           </div>
         ))
       )}
