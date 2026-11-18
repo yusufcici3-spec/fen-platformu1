@@ -79,7 +79,7 @@ export default async function UnitPage({ params }: { params: { level: string; un
         {level === 8 && params.unitSlug === "madde-ve-endustri" && <MaddeEndustriNotes />}
         {level === 8 && params.unitSlug === "madde-ve-endustri" && <UnitTopicImages unitSlug={params.unitSlug} topics={unit.topics} />}
         <div className="mt-8" />
-        {unit.topics.length === 0 ? <div className="mt-6"><EmptyPanelState title="Bu ünite için henüz konu eklenmedi" description="Konular yönetim panelinden eklendikçe burada listelenecek." /></div> : <div className="mt-6"><TopicListWithProgress topics={unit.topics} level={level} unitSlug={unit.slug} /></div>}
+        {params.unitSlug === "madde-ve-endustri" ? null : unit.topics.length === 0 ? <div className="mt-6"><EmptyPanelState title="Bu ünite için henüz konu eklenmedi" description="Konular yönetim panelinden eklendikçe burada listelenecek." /></div> : <div className="mt-6"><TopicListWithProgress topics={unit.topics} level={level} unitSlug={unit.slug} /></div>}
       </section>
     </>
   );

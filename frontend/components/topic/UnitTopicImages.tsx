@@ -1,4 +1,5 @@
 import { apiFetch } from "@/lib/api";
+import { decodeStoredHtml } from "@/lib/renderHtml";
 import { TopicDetail, TopicSummary } from "@/types/curriculum";
 
 function imgUrl(url: string) {
@@ -12,7 +13,26 @@ export async function UnitTopicImages({ unitSlug, topics }: { unitSlug: string; 
       let imgs: { id: string; url: string; caption: string | null }[] = [];
       try {
         const res = await apiFetch<TopicDetail>(`/konular/${t.slug}?unitSlug=${encodeURIComponent(unitSlug)}`);
-        imgs = res.data?.images ?? [];
+        const d = res.data;
+        const seen = new Set<string>();
+        const add = (url: string | null | undefined, caption: string | null) => {
+          if (!url || seen.has(url)) return;
+          seen.add(url);
+          imgs.push({ id: `${t.id}-${imgs.length}`, url, caption });
+        };
+        const scan = (html: string | null | undefined) => {
+          if (!html) return;
+          const re = /<img\b[^>]*?\bsrc=["']([^"']+)["'][^>]*>/gi;
+          let m: RegExpExecArray | null;
+          const text = decodeStoredHtml(html);
+          while ((m = re.exec(text))) {
+            const alt = /\balt=["']([^"']*)["']/i.exec(m[0]);
+            add(m[1], alt?.[1] || null);
+          }
+        };
+        (d?.contents ?? []).forEach((b) => scan(b.bodyHtml));
+        scan(d?.content);
+        (d?.images ?? []).forEach((i) => add(i.url, i.caption));
       } catch {
         imgs = [];
       }
