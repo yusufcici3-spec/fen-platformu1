@@ -4,14 +4,11 @@ import { useState } from "react";
 import styles from "./ZygoteJourney.module.css";
 
 const stages = [
-  { title: "Döllenme", time: "0. gün", detail: "Sperm hücresi ile yumurta hücresi birleşir. Yeni canlıya ait ilk hücre olan zigot oluşur.", cells: 1, kind: "single" },
-  { title: "Zigot", time: "1. gün", detail: "Zigot, döllenme sonucu oluşan tek hücreli yapıdır. Gelişimin başlangıç noktasıdır.", cells: 1, kind: "single" },
-  { title: "Hücre bölünmeleri", time: "2–3. gün", detail: "Zigot art arda mitoz bölünmeler geçirir. Hücre sayısı artarken oluşan hücrelerin toplam büyüklüğü başlangıçta belirgin şekilde artmaz.", cells: 8, kind: "cluster" },
-  { title: "Morula", time: "3–4. gün", detail: "Hücreler çoğalarak dut görünümüne benzeyen sıkı bir hücre kümesi oluşturur. Bu evreye morula denir.", cells: 16, kind: "morula" },
-  { title: "Blastokist", time: "5–6. gün", detail: "Hücre kümesinin içinde boşluk oluşur. Blastokist rahme doğru ilerler.", cells: 12, kind: "ring" },
-  { title: "Embriyo", time: "2–8. hafta", detail: "Rahim duvarına tutunan yapı gelişimini sürdürür. Temel organ ve vücut yapılarının oluşumu başlar.", cells: 1, kind: "embryo" },
-  { title: "Fetüs", time: "9. hafta–doğum", detail: "Organ ve sistemler büyüyüp olgunlaşır. Bu dönem doğuma kadar devam eder.", cells: 1, kind: "fetus" },
-  { title: "Bebek", time: "Doğum", detail: "Gelişim sürecinin sonunda bebek dünyaya gelir. Büyüme ve gelişme doğumdan sonra da devam eder.", cells: 1, kind: "baby" },
+  { title: "Döllenme", time: "Başlangıç", detail: "Sperm hücresi ile yumurta hücresi birleşir. Bu olaya döllenme denir ve sonucunda zigot oluşur.", kind: "fertilization", fact: "Döllenme, sperm ve yumurta hücrelerinin birleşmesidir." },
+  { title: "Zigot", time: "İlk hücre", detail: "Döllenme sonucunda oluşan ilk hücreye zigot denir. Zigot, büyüme ve gelişme sürecinin başlangıcıdır.", kind: "single", fact: "Zigot, yeni canlının ilk hücresidir." },
+  { title: "Embriyo", time: "Gelişimin ilk dönemi", detail: "Zigotun geçirdiği hücre bölünmeleri ve gelişim sonucunda embriyo oluşur. Embriyo büyüyüp gelişmeye devam eder.", kind: "embryo", fact: "Embriyo, büyüme ve gelişme sürecinin bir aşamasıdır." },
+  { title: "Fetüs", time: "Doğuma kadar", detail: "Embriyo gelişimini sürdürerek fetüs hâline gelir. Fetüs büyür ve doğuma hazırlanır.", kind: "fetus", fact: "Fetüs dönemi doğuma kadar devam eder." },
+  { title: "Bebek ve doğum", time: "Doğum", detail: "Büyüme ve gelişme sonucunda bebek dünyaya gelir. Büyüme ve gelişme doğumdan sonra da devam eder.", kind: "baby", fact: "Büyüme ve gelişme doğumdan sonra da sürer." },
 ];
 
 export default function ZygoteJourney() {
@@ -22,8 +19,8 @@ export default function ZygoteJourney() {
     <section className={styles.shell} aria-label="Zigottan bebeğe gelişim animasyonu">
       <div className={styles.intro}>
         <span className={styles.kicker}>İNSANDA ÜREME, BÜYÜME VE GELİŞME</span>
-        <h2>Tek bir hücreden bebeğe uzanan yolculuk</h2>
-        <p>Basamakları seçerek döllenmeden doğuma kadar gerçekleşen gelişim aşamalarını keşfet.</p>
+        <h2>Zigottan Bebeğe</h2>
+        <p>Kitaptaki sıralamayı takip ederek döllenmeden doğuma kadar gelişim aşamalarını incele.</p>
       </div>
 
       <div className={styles.timeline} aria-label="Gelişim basamakları">
@@ -39,15 +36,18 @@ export default function ZygoteJourney() {
         <div className={styles.visualPanel}>
           <div className={styles.visualTop}><span>GELİŞİM MODELİ</span><strong>{stage.time}</strong></div>
           <div className={styles.visual} key={stage.kind + active}>
-            {stage.kind === "single" && <div className={styles.singleCell}><span /></div>}
-            {(stage.kind === "cluster" || stage.kind === "morula" || stage.kind === "ring") && (
-              <div className={stage.kind === "ring" ? styles.ring : styles.cluster}>
-                {Array.from({ length: stage.cells }, (_, i) => <i key={i} />)}
+            {stage.kind === "fertilization" && (
+              <div className={styles.fertilization}>
+                <div className={styles.gamete}><span className={styles.sperm}><i /></span><b>Sperm</b></div>
+                <div className={styles.fertilizationArrow}>↓</div>
+                <div className={styles.gamete}><span className={styles.egg}><i /></span><b>Yumurta</b></div>
+                <strong className={styles.fertilizationLabel}>Döllenme</strong>
               </div>
             )}
+            {stage.kind === "single" && <div className={styles.singleCell}><span /></div>}
             {stage.kind === "embryo" && <div className={styles.embryo}><span /></div>}
             {stage.kind === "fetus" && <div className={styles.fetus}><span /></div>}
-            {stage.kind === "baby" && <div className={styles.baby}><span>👶</span></div>}
+            {stage.kind === "baby" && <div className={styles.baby}><span>👶</span><b>Doğum</b></div>}
           </div>
           <p className={styles.visualCaption}>Şematik gösterimdir; gerçek boyut ve şekilleri temsil etmez.</p>
         </div>
@@ -55,7 +55,7 @@ export default function ZygoteJourney() {
           <span className={styles.counter}>AŞAMA {active + 1} / {stages.length}</span>
           <h3>{stage.title}</h3>
           <p>{stage.detail}</p>
-          <div className={styles.keyFact}><strong>Unutma</strong><span>{active < 5 ? "Mitoz bölünmeler hücre sayısını artırır." : "Büyüme ve gelişme doğumdan sonra da sürer."}</span></div>
+          <div className={styles.keyFact}><strong>Unutma</strong><span>{stage.fact}</span></div>
           <div className={styles.controls}>
             <button type="button" onClick={() => setActive(Math.max(0, active - 1))} disabled={active === 0}>← Önceki</button>
             <button type="button" onClick={() => setActive(Math.min(stages.length - 1, active + 1))} disabled={active === stages.length - 1}>Sonraki aşama →</button>
@@ -63,7 +63,7 @@ export default function ZygoteJourney() {
         </div>
       </div>
       <div className={styles.progressTrack}><span style={{ width: ((active + 1) / stages.length) * 100 + "%" }} /></div>
-      <p className={styles.footerNote}>Not: Süreler yaklaşık değerlerdir ve bireysel farklılıklar gösterebilir.</p>
+      <p className={styles.footerNote}>Sıralama: Döllenme → Zigot → Embriyo → Fetüs → Bebek (doğum).</p>
     </section>
   );
 }
