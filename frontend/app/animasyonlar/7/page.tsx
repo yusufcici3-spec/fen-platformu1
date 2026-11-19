@@ -4,7 +4,6 @@ export const metadata = { title: "7. Sınıf Animasyonları | Fen Bilimleri" };
 
 const items = [
   { title: "Uzay Teknolojileri ve Yıldızların Yaşamı", href: "/animasyonlar/7/uzay-teknolojileri", icon: "🛰️", description: "Uzay araçlarını ve yıldızların yaşam aşamalarını keşfet.", category: "UZAY" },
-  { title: "Ağırlık ve Enlem", href: "/animasyonlar/7/agirlik-enlem", icon: "🌍", category: "KUVVET VE ENERJİ" },
   { title: "Kuvvet ve Enerji", href: "/animasyonlar/7/kuvvet-enerji", icon: "💪", category: "KUVVET VE ENERJİ" },
   { title: "Kinetik ve Potansiyel Enerji", href: "/animasyonlar/7/kinetik-potansiyel", icon: "⚡", category: "ENERJİ" },
   { title: "Işığın Kırılması", href: "/animasyonlar/7/isigin-kirilmasi", icon: "🔦", description: "Hava, su ve cam arasında ışığın izlediği yolu deneyerek gözlemle.", category: "IŞIĞIN MADDE İLE ETKİLEŞİMİ" },
