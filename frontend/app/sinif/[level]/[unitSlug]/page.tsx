@@ -10,6 +10,7 @@ import { MaddeEndustriNotes } from "@/components/topic/MaddeEndustriNotes";
 import { BasincNotes } from "@/components/topic/BasincNotes";
 import { DnaGenetikNotes } from "@/components/topic/DnaGenetikNotes";
 import { MevsimIklimNotes } from "@/components/topic/MevsimIklimNotes";
+import { BesinZinciriNotes } from "@/components/topic/BesinZinciriNotes";
 import { UnitTopicImages } from "@/components/topic/UnitTopicImages";
 
 export const dynamic = "force-dynamic";
@@ -83,12 +84,14 @@ export default async function UnitPage({ params }: { params: { level: string; un
         {level === 8 && params.unitSlug === "basinc" && <BasincNotes />}
         {level === 8 && params.unitSlug === "dna-ve-genetik-kod" && <DnaGenetikNotes />}
         {level === 8 && params.unitSlug === "mevsimler-ve-iklim" && <MevsimIklimNotes />}
+        {level === 8 && params.unitSlug === "besin-zinciri-ve-enerji-akisi" && <BesinZinciriNotes />}
+        {level === 8 && params.unitSlug === "besin-zinciri-ve-enerji-akisi" && <UnitTopicImages unitSlug={params.unitSlug} topics={unit.topics} />}
         {level === 8 && params.unitSlug === "mevsimler-ve-iklim" && <UnitTopicImages unitSlug={params.unitSlug} topics={unit.topics} />}
         {level === 8 && params.unitSlug === "dna-ve-genetik-kod" && <UnitTopicImages unitSlug={params.unitSlug} topics={unit.topics} />}
         {level === 8 && params.unitSlug === "basinc" && <UnitTopicImages unitSlug={params.unitSlug} topics={unit.topics} />}
         {level === 8 && params.unitSlug === "madde-ve-endustri" && <UnitTopicImages unitSlug={params.unitSlug} topics={unit.topics} />}
         <div className="mt-8" />
-        {params.unitSlug === "madde-ve-endustri" || params.unitSlug === "basinc" || params.unitSlug === "dna-ve-genetik-kod" || params.unitSlug === "mevsimler-ve-iklim" ? null : unit.topics.length === 0 ? <div className="mt-6"><EmptyPanelState title="Bu ünite için henüz konu eklenmedi" description="Konular yönetim panelinden eklendikçe burada listelenecek." /></div> : <div className="mt-6"><TopicListWithProgress topics={unit.topics} level={level} unitSlug={unit.slug} /></div>}
+        {params.unitSlug === "madde-ve-endustri" || params.unitSlug === "basinc" || params.unitSlug === "dna-ve-genetik-kod" || params.unitSlug === "mevsimler-ve-iklim" || params.unitSlug === "besin-zinciri-ve-enerji-akisi" ? null : unit.topics.length === 0 ? <div className="mt-6"><EmptyPanelState title="Bu ünite için henüz konu eklenmedi" description="Konular yönetim panelinden eklendikçe burada listelenecek." /></div> : <div className="mt-6"><TopicListWithProgress topics={unit.topics} level={level} unitSlug={unit.slug} /></div>}
       </section>
     </>
   );
