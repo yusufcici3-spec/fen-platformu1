@@ -146,6 +146,11 @@ html.embedded .modal{max-height:none}
       <label><input type="radio" name="u" value="0" checked><span>İki ünite birden</span></label>
       <label><input type="radio" name="u" value="1"><span>1. Ünite</span></label>
       <label><input type="radio" name="u" value="2"><span>2. Ünite</span></label>
+      <label><input type="radio" name="u" value="3"><span>3. Ünite</span></label>
+      <label><input type="radio" name="u" value="4"><span>4. Ünite</span></label>
+      <label><input type="radio" name="u" value="5"><span>5. Ünite</span></label>
+      <label><input type="radio" name="u" value="6"><span>6. Ünite</span></label>
+      <label><input type="radio" name="u" value="7"><span>7. Ünite</span></label>
     </div>
     <button class="big" id="bBegin">Maçı başlat ▶</button>
   </div>
@@ -168,7 +173,15 @@ html.embedded .modal{max-height:none}
 //    2 = Kuvvet, İş ve Enerji İlişkisi / Enerji Dönüşümleri (FB.7.2.1-3: iş, kinetik ve potansiyel enerji,
 //        enerjinin korunumu; iş, enerji, joule, esneklik ve çekim potansiyel enerjisi, ısı)
 // o[0] her zaman doğru cevap; oyun seçenekleri karıştırarak gösterir.
-const UNITS = { 1: "1. Ünite · Uzay Araştırmaları", 2: "2. Ünite · Kuvvet, İş ve Enerji" };
+const UNITS = {
+  1: "1. Ünite · Uzay Araştırmaları",
+  2: "2. Ünite · Kuvvet, İş ve Enerji",
+  3: "3. Ünite · Hücre ve Bölünmeler",
+  4: "4. Ünite · Saf Madde ve Karışımlar",
+  5: "5. Ünite · Işığın Madde ile Etkileşimi",
+  6: "6. Ünite · Canlılarda Üreme, Büyüme ve Gelişme",
+  7: "7. Ünite · Elektrik Devreleri"
+};
 
 const BANK = [
   // ---------- 1. Ünite: Uzay Araştırmaları ----------
@@ -230,6 +243,42 @@ const BANK = [
   { u: 2, q: "Enerjinin korunumu ilkesine göre hangisi doğrudur?", o: ["Enerji yoktan var edilemez, vardan yok edilemez; dönüşür", "Enerji kullanıldıkça yok olur", "Enerji yoktan var edilebilir", "Enerji yalnızca ısıya dönüşür"], n: "Enerji bir türden diğerine dönüşür; toplamı korunur." },
   { u: 2, q: "Fren yapan bir aracın tekerleklerinde hareket enerjisi (kinetik) çoğunlukla hangi enerjiye dönüşür?", o: ["Isı enerjisi", "Çekim potansiyel enerjisi", "Esneklik potansiyel enerjisi", "Elektrik enerjisi"], n: "Sürtünme nedeniyle mekanik enerjinin bir kısmı ısıya dönüşür." },
   { u: 2, q: "Hız treninin (roller coaster) en yüksek noktasında enerji durumu hangisidir?", o: ["Potansiyel enerji en büyük, kinetik enerji en küçük", "Kinetik enerji en büyük", "Potansiyel enerji sıfır", "Enerji yoktur"], n: "En yüksek noktada hız küçüktür; aşağı inerken potansiyel enerji kinetik enerjiye dönüşür." }
+
+  // ---------- 3. Ünite: Hücre ve Bölünmeler ----------
+  { u: 3, q: "Canlıların temel yapı ve görev birimi hangisidir?", o: ["Hücre", "Doku", "Organ", "Sistem"], n: "Hücre, canlıların temel yapı ve görev birimidir." },
+  { u: 3, q: "Hücrede kalıtsal bilgiyi taşıyan ve hücreyi yöneten yapı hangisidir?", o: ["Çekirdek", "Hücre zarı", "Sitoplazma", "Mitokondri"], n: "Çekirdek, kalıtsal bilgiyi taşır ve hücresel faaliyetleri yönetir." },
+  { u: 3, q: "Bitki hücresini hayvan hücresinden ayıran yapılardan biri hangisidir?", o: ["Hücre duvarı", "Hücre zarı", "Sitoplazma", "Çekirdek"], n: "Bitki hücrelerinde hücre duvarı bulunur; hayvan hücrelerinde bulunmaz." },
+  { u: 3, q: "Mitoz bölünmenin canlılar için temel önemi hangisidir?", o: ["Büyüme, gelişme ve onarımı sağlaması", "Kromozom sayısını yarıya indirmesi", "Üreme hücrelerini oluşturması", "Kalıtsal çeşitliliği artırması"], n: "Mitoz, çok hücreli canlılarda büyüme ve onarımda görev alır." },
+  { u: 3, q: "Mayoz bölünme sonucunda kromozom sayısı nasıl değişir?", o: ["Yarıya iner", "İki katına çıkar", "Değişmeden kalır", "Sıfırlanır"], n: "Mayoz, üreme hücrelerinin oluşmasını sağlar ve kromozom sayısını yarıya indirir." },
+
+  // ---------- 4. Ünite: Saf Madde ve Karışımlar ----------
+  { u: 4, q: "Tek tür tanecikten oluşan ve belirli özellikleri bulunan maddelere ne denir?", o: ["Saf madde", "Karışım", "Çözelti", "Süspansiyon"], n: "Elementler ve bileşikler saf madde sınıfındadır." },
+  { u: 4, q: "Aşağıdakilerden hangisi elementtir?", o: ["Demir", "Su", "Tuzlu su", "Hava"], n: "Demir, tek cins atomdan oluşan bir elementtir." },
+  { u: 4, q: "Farklı maddelerin özelliklerini kaybetmeden bir araya gelmesiyle oluşan maddeye ne denir?", o: ["Karışım", "Element", "Bileşik", "Atom"], n: "Karışımlarda maddeler kendi özelliklerini korur." },
+  { u: 4, q: "Kum ile su karışımını birbirinden ayırmak için hangi yöntem kullanılabilir?", o: ["Süzme", "Damıtma", "Mıknatısla ayırma", "Buharlaştırma"], n: "Kum suda çözünmez; süzme yöntemiyle ayrılabilir." },
+  { u: 4, q: "Tuzlu sudan tuzu elde etmek için hangi ayırma yöntemi kullanılabilir?", o: ["Buharlaştırma", "Eleme", "Mıknatısla ayırma", "Süzme"], n: "Su buharlaştırıldığında tuz geride kalır." },
+
+  // ---------- 5. Ünite: Işığın Madde ile Etkileşimi ----------
+  { u: 5, q: "Işığın düzgün ve parlak bir yüzeye çarparak geri dönmesine ne denir?", o: ["Yansıma", "Kırılma", "Soğurulma", "Dağılma"], n: "Ayna gibi yüzeylerde ışık yansıması gözlenir." },
+  { u: 5, q: "Düz aynada oluşan görüntünün özelliklerinden hangisi doğrudur?", o: ["Cisimle aynı boydadır", "Daima terstir", "Cisimden küçüktür", "Perde üzerine düşürülebilir"], n: "Düz aynadaki görüntü sanaldır ve cismin boyuna eşittir." },
+  { u: 5, q: "Işığın bir ortamdan başka bir ortama geçerken yön değiştirmesine ne denir?", o: ["Kırılma", "Yansıma", "Gölge", "Soğurulma"], n: "Işık farklı saydam ortamlarda hız değiştirdiği için kırılabilir." },
+  { u: 5, q: "Beyaz ışık prizmadan geçirildiğinde hangi olay gerçekleşir?", o: ["Renklerine ayrılır", "Tamamen yok olur", "Sadece kırmızıya dönüşür", "Hızlanarak görünmez olur"], n: "Beyaz ışık farklı renklerden oluşur ve prizma bu renkleri ayırabilir." },
+  { u: 5, q: "Siyah renkli yüzeyler ışığı genellikle nasıl etkiler?", o: ["Işığın büyük bölümünü soğurur", "Işığın tamamını yansıtır", "Işığı üretir", "Işığı kırmadan geçirir"], n: "Koyu renkli yüzeyler ışığı daha fazla soğurur." },
+
+  // ---------- 6. Ünite: Canlılarda Üreme, Büyüme ve Gelişme ----------
+  { u: 6, q: "Canlılarda eşeyli üremenin gerçekleşmesi için hangi hücreler birleşir?", o: ["Sperm ve yumurta", "İki vücut hücresi", "İki sinir hücresi", "Kas ve kemik hücresi"], n: "Eşeyli üremede sperm ve yumurta hücreleri birleşerek zigotu oluşturur." },
+  { u: 6, q: "Döllenme sonucunda oluşan ilk hücreye ne denir?", o: ["Zigot", "Embriyo", "Fetüs", "Yumurta"], n: "Sperm ve yumurtanın birleşmesiyle zigot oluşur." },
+  { u: 6, q: "İnsanda embriyonun gelişimini sürdürdüğü organ hangisidir?", o: ["Rahim", "Mide", "Akciğer", "Böbrek"], n: "Embriyo rahme tutunur ve gelişimini burada sürdürür." },
+  { u: 6, q: "Başkalaşım geçiren canlılardan hangisine örnek verilebilir?", o: ["Kelebek", "Kedi", "İnsan", "Serçe"], n: "Kelebek yumurta, tırtıl, pupa ve ergin evrelerinden geçer." },
+  { u: 6, q: "Bitkilerde tozlaşma nedir?", o: ["Polenlerin dişi organın tepeciğine taşınması", "Tohumun çimlenmesi", "Kökün su alması", "Yaprağın fotosentez yapması"], n: "Tozlaşma, polenlerin dişi organın tepeciğine ulaşmasıdır." },
+
+  // ---------- 7. Ünite: Elektrik Devreleri ----------
+  { u: 7, q: "Elektrik devresinde ampulün ışık vermesi için devre nasıl olmalıdır?", o: ["Kapalı devre olmalıdır", "Açık devre olmalıdır", "Pil devreden çıkarılmalıdır", "Bağlantı kablosu kopuk olmalıdır"], n: "Kapalı devrede elektrik akımı geçebilir." },
+  { u: 7, q: "Bir elektrik devresinde pilin görevi nedir?", o: ["Elektrik enerjisi sağlamak", "Devreyi açıp kapatmak", "Akımı ışığa çevirmek", "Kabloyu yalıtmak"], n: "Pil, devrede elektrik enerjisi kaynağıdır." },
+  { u: 7, q: "Seri bağlı bir devrede ampullerden biri çıkarılırsa ne olur?", o: ["Devre kesilir ve diğer ampuller de söner", "Diğer ampuller daha parlak yanar", "Hiçbir şey değişmez", "Pil sayısı artar"], n: "Seri devrede tek akım yolu vardır; bağlantı koparsa devre açılır." },
+  { u: 7, q: "Paralel bağlı devrelerde ampullerden biri çıkarılırsa diğer ampul için ne söylenir?", o: ["Diğer ampul yanmaya devam edebilir", "Kesinlikle söner", "Pil bozulur", "Devrede akım tamamen yok olur"], n: "Paralel kollarda bağımsız akım yolları bulunur." },
+  { u: 7, q: "Bir devrede pil sayısı artırılır ve diğer değişkenler sabit tutulursa ampul parlaklığı genellikle nasıl değişir?", o: ["Artar", "Azalır", "Değişmez", "Ampul kesinlikle söner"], n: "Uygun şekilde bağlanan pil sayısının artması ampulün parlaklığını artırabilir." }
+
 ];
 
 const $ = id => document.getElementById(id);
