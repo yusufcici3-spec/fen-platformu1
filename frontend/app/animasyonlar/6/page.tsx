@@ -14,6 +14,7 @@ const items = [
   { title: "Çiçekli Bitkilerin Yaşam Döngüsü", href: "/animasyonlar/6/cicekli-bitkiler-yasam-dongusu", icon: "🌼", category: "BİTKİLER" },
   { title: "Çiçeğin Kısımları ve Görevleri", href: "/animasyonlar/6/cicegin-kisimlari", icon: "🌺", description: "Çiçeğin bölümlerine dokunarak görevlerini öğren.", category: "BİTKİLER" },
   { title: "Eşeysiz Üreme Çeşitleri", href: "/animasyonlar/6/esesiz-ureme", icon: "🧫", category: "ÜREME" },
+  { title: "Zigottan Bebeğe Gelişim", href: "/animasyonlar/6/zigottan-bebege", icon: "👶", description: "Döllenmeden doğuma kadar gelişim basamaklarını sırayla keşfet.", category: "ÜREME VE GELİŞME" },
   { title: "MilyonerFen 6", href: "/animasyonlar/6/milyoner", icon: "🏆", category: "EĞİTİCİ OYUN" },
   { title: "Fen Futbolu 6", href: "/animasyonlar/6/fen-futbolu6", icon: "⚽", category: "EĞİTİCİ OYUN" },
 ];
