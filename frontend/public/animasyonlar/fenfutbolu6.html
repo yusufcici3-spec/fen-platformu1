@@ -106,7 +106,7 @@ html.embedded .modal{max-height:none}
 <noscript>Bu oyun için JavaScript gereklidir.</noscript>
 <div class="app"><div class="wrap">
   <div><h1>⚽ Fen Futbolu · 6. Sınıf</h1>
-  <p class="sub">Güneş Sistemi ve Tutulmalar &nbsp;•&nbsp; Kuvvet ve Hareket</p></div>
+  <p class="sub">7 Ünite · Fen Bilimleri</p></div>
 
   <div class="board">
     <div class="pl" id="pl0"><div class="kit k1">11</div><div><div class="nm">SALAH</div><div class="balls" id="balls0"><i>⚽</i><i>⚽</i><i>⚽</i></div></div></div>
@@ -147,6 +147,11 @@ html.embedded .modal{max-height:none}
       <label><input type="radio" name="u" value="0" checked><span>İki ünite birden</span></label>
       <label><input type="radio" name="u" value="1"><span>1. Ünite</span></label>
       <label><input type="radio" name="u" value="2"><span>2. Ünite</span></label>
+      <label><input type="radio" name="u" value="3"><span>3. Ünite</span></label>
+      <label><input type="radio" name="u" value="4"><span>4. Ünite</span></label>
+      <label><input type="radio" name="u" value="5"><span>5. Ünite</span></label>
+      <label><input type="radio" name="u" value="6"><span>6. Ünite</span></label>
+      <label><input type="radio" name="u" value="7"><span>7. Ünite</span></label>
     </div>
     <button class="big" id="bBegin">Maçı başlat ▶</button>
   </div>
@@ -169,7 +174,15 @@ html.embedded .modal{max-height:none}
 //    2 = Kuvvet ve Hareket (FB.6.2.1-3: bileşke kuvvet, dengelenmiş/dengelenmemiş kuvvet,
 //        sürat ve hız; büyüklük, yön, doğrultu, uygulama noktası, alınan yol, yer değiştirme, zaman)
 // o[0] her zaman doğru cevap; oyun seçenekleri karıştırarak gösterir.
-const UNITS = { 1: "1. Ünite · Güneş Sistemi ve Tutulmalar", 2: "2. Ünite · Kuvvet ve Hareket" };
+const UNITS = {
+  1: "1. Ünite · Güneş Sistemi ve Tutulmalar",
+  2: "2. Ünite · Kuvvetin Etkisinde Hareket",
+  3: "3. Ünite · Canlılarda Sistemler",
+  4: "4. Ünite · Işığın Yansıması ve Renkler",
+  5: "5. Ünite · Maddenin Ayırt Edici Özellikleri",
+  6: "6. Ünite · Elektriğin İletimi ve Direnç",
+  7: "7. Ünite · Sürdürülebilir Yaşam ve Etkileşim"
+};
 
 const BANK = [
   // ---------- 1. Ünite: Güneş Sistemi ve Tutulmalar ----------
@@ -223,6 +236,51 @@ const BANK = [
   { u: 2, q: "Bir öğrenci okul bahçesinde tur atıp başladığı noktaya dönüyor. Öğrencinin yer değiştirmesi için ne söylenir?", o: ["Sıfırdır", "Aldığı yola eşittir", "Turun yarısıdır", "Sonsuzdur"], n: "Yer değiştirme, ilk ve son konum arasındaki en kısa uzaklıktır; başladığı yere döndüyse sıfırdır." },
   { u: 2, q: "Bir cismin hareketinde alınan yol ile yer değiştirme aynı olabilir mi?", o: ["Evet, düz bir yolda tek yönde giderse", "Hayır, hiçbir zaman", "Yalnızca duran cisimde", "Yalnızca daire yörüngede"], n: "Doğrusal ve tek yönlü harekette alınan yol yer değiştirmeye eşittir." },
   { u: 2, q: "Hız bir cismin hangi bilgilerini birlikte verir?", o: ["Birim zamandaki yer değiştirmeyi ve yönünü", "Yalnızca kütlesini", "Yalnızca rengini", "Yalnızca zamanını"], n: "Hız, hem hızlı olup olmadığını hem de yönünü belirtir." }
+  // ---------- 3. Ünite: Canlılarda Sistemler ----------
+  { u: 3, q: "Vücudumuza destek sağlayan, iç organlarımızı koruyan ve hareket etmemize yardımcı olan sistem hangisidir?", o: ["Destek ve hareket sistemi", "Sindirim sistemi", "Solunum sistemi", "Boşaltım sistemi"], n: "İskelet ve kaslar birlikte destek ve hareket sistemini oluşturur." },
+  { u: 3, q: "Kemiklerin birleştiği ve hareketi kolaylaştıran yapılara ne denir?", o: ["Eklem", "Kas", "Damar", "Sinir"], n: "Eklemler kemiklerin birbirine bağlandığı bölgelerdir." },
+  { u: 3, q: "Kaslar hareket sırasında kemiklere nasıl yardımcı olur?", o: ["Kasılıp gevşeyerek kemikleri hareket ettirir", "Kemikleri eriterek", "Kanı süzerek", "Besinleri parçalayarak"], n: "Kaslar kasılıp gevşeyerek kemiklerin hareket etmesini sağlar." },
+  { u: 3, q: "Vücuda oksijen ve besinlerin taşınmasında görevli sistem hangisidir?", o: ["Dolaşım sistemi", "Sindirim sistemi", "Destek ve hareket sistemi", "Duyu organları"], n: "Kalp, kan ve damarlar dolaşım sisteminin temel yapılarını oluşturur." },
+  { u: 3, q: "Solunum sisteminde gaz alışverişinin gerçekleştiği küçük hava kesecikleri hangileridir?", o: ["Alveoller", "Bronşlar", "Yutak", "Gırtlak"], n: "Akciğerlerdeki alveollerde oksijen ve karbondioksit alışverişi yapılır." },
+  { u: 3, q: "Vücudumuzdaki atık maddelerin uzaklaştırılmasında temel görevli organ hangisidir?", o: ["Böbrek", "Mide", "Kalp", "Pankreas"], n: "Böbrekler kanı süzerek idrar oluşumuna katkı sağlar." },
+  { u: 3, q: "Vücudumuzdaki sistemlerin sağlıklı çalışması için hangisi önemlidir?", o: ["Dengeli beslenme ve düzenli hareket", "Sürekli hareketsiz kalma", "Yetersiz uyku", "Tek tip beslenme"], n: "Dengeli beslenme, hareket ve yeterli uyku vücut sağlığını destekler." },
+
+  // ---------- 4. Ünite: Işığın Yansıması ve Renkler ----------
+  { u: 4, q: "Işığın bir yüzeye çarparak geldiği ortama geri dönmesine ne denir?", o: ["Yansıma", "Kırılma", "Soğurulma", "Buharlaşma"], n: "Işığın yüzeye çarpıp geri dönmesi yansıma olayıdır." },
+  { u: 4, q: "Düzgün yansıma en iyi hangi yüzeyde gerçekleşir?", o: ["Pürüzsüz ve parlak yüzey", "Pürüzlü duvar", "Kumaş", "Toprak"], n: "Düzgün yüzeylere paralel gelen ışınlar düzenli biçimde yansır." },
+  { u: 4, q: "Dağınık yansımada ışınların farklı yönlere yayılmasının temel nedeni nedir?", o: ["Yüzeyin pürüzlü olması", "Işığın tamamen yok olması", "Yüzeyin saydam olması", "Işığın ses enerjisine dönüşmesi"], n: "Pürüzlü yüzeylerde yüzey normalleri farklı olduğundan ışınlar farklı yönlere yansır." },
+  { u: 4, q: "Düz aynada oluşan görüntü için hangisi doğrudur?", o: ["Cisimle aynı boydadır", "Her zaman cisimden küçüktür", "Perde üzerine düşürülebilir", "Her zaman terstir"], n: "Düz aynada görüntü sanal, düz ve cismin boyuyla aynıdır." },
+  { u: 4, q: "Beyaz ışık hangi renklerin birleşiminden oluşur?", o: ["Gökkuşağındaki tüm ışık renkleri", "Yalnız kırmızı ve mavi", "Yalnız siyah ve beyaz", "Yalnız sarı ve yeşil"], n: "Beyaz ışık, görünür ışık tayfındaki renklerin birleşimidir." },
+  { u: 4, q: "Kırmızı bir cisim beyaz ışık altında neden kırmızı görünür?", o: ["Kırmızı ışığı yansıtıp diğer renklerin çoğunu soğurduğu için", "Bütün renkleri yansıttığı için", "Işık üretmediği için", "Sadece mavi ışığı yansıttığı için"], n: "Cisimler yansıttıkları ışığın rengiyle görünür." },
+  { u: 4, q: "Siyah yüzeyler ışık enerjisinin büyük bölümüne genellikle ne yapar?", o: ["Soğurur", "Tamamını yansıtır", "Renklerine ayırır", "Elektrik enerjisine dönüştürür"], n: "Siyah yüzeyler ışığı büyük oranda soğurur." },
+
+  // ---------- 5. Ünite: Maddenin Ayırt Edici Özellikleri ----------
+  { u: 5, q: "Bir maddenin miktarına bağlı olmayan, onu tanımamıza yardımcı olan özelliklere ne denir?", o: ["Ayırt edici özellik", "Kütle", "Hacim", "Ağırlık"], n: "Yoğunluk, erime noktası ve kaynama noktası ayırt edici özelliklere örnektir." },
+  { u: 5, q: "Bir maddenin birim hacminin kütlesine ne denir?", o: ["Yoğunluk", "Sıcaklık", "Isı", "Kuvvet"], n: "Yoğunluk = kütle / hacim bağıntısıyla hesaplanır." },
+  { u: 5, q: "Aynı sıcaklıkta eşit hacimli iki maddeden kütlesi daha büyük olanın yoğunluğu için ne söylenir?", o: ["Daha büyüktür", "Daha küçüktür", "Kesinlikle sıfırdır", "Aynıdır"], n: "Eşit hacimde kütlesi büyük olan maddenin yoğunluğu daha büyüktür." },
+  { u: 5, q: "Saf bir katının erime süresince sıcaklığı, erime tamamlanana kadar genellikle nasıl değişir?", o: ["Sabit kalır", "Sürekli artar", "Sürekli azalır", "Önce sıfıra iner"], n: "Saf maddeler hâl değiştirirken erime sıcaklığında sabit kalır." },
+  { u: 5, q: "Saf bir sıvının kaynama sıcaklığı aşağıdakilerden hangisine örnektir?", o: ["Ayırt edici özellik", "Kütle", "Hacim", "Ağırlık"], n: "Belirli basınçta saf maddelerin kaynama sıcaklığı ayırt edicidir." },
+  { u: 5, q: "Isı alan bir maddenin taneciklerinin hareketi ve sıcaklığı için genel olarak ne söylenebilir?", o: ["Hâl değişimi yoksa tanecik hareketi hızlanabilir ve sıcaklığı artabilir", "Her zaman sıcaklığı azalır", "Kütlesi yok olur", "Yoğunluğu mutlaka sıfırlanır"], n: "Isı alışverişi maddenin sıcaklığını veya hâlini değiştirebilir." },
+  { u: 5, q: "Bir sıvının donma noktası ile aynı basınçtaki erime noktası arasındaki ilişki nasıldır?", o: ["Birbirine eşittir", "Donma noktası daima yüksektir", "Erime noktası daima sıfırdır", "Aralarında ilişki yoktur"], n: "Saf maddelerde aynı basınçta erime ve donma sıcaklıkları eşittir." },
+
+  // ---------- 6. Ünite: Elektriğin İletimi ve Direnç ----------
+  { u: 6, q: "Elektrik akımını kolaylıkla ileten maddelere ne denir?", o: ["İletken", "Yalıtkan", "Saydam", "Esnek"], n: "Bakır ve alüminyum gibi metaller elektrik iletkenidir." },
+  { u: 6, q: "Aşağıdakilerden hangisi elektrik yalıtkanıdır?", o: ["Plastik", "Bakır", "Alüminyum", "Demir"], n: "Plastik elektrik akımını kolay iletmez ve yalıtkan olarak kullanılır." },
+  { u: 6, q: "Elektrik devresinde akımın geçişine karşı gösterilen zorluğa ne denir?", o: ["Elektriksel direnç", "Sürat", "Kütle", "Basınç"], n: "Direnç, elektrik akımına karşı gösterilen etkidir." },
+  { u: 6, q: "Aynı maddeden yapılmış tellerden uzunluğu daha fazla olanın direnci, diğer özellikler aynıysa nasıl değişir?", o: ["Artar", "Azalır", "Sıfır olur", "Değişmez"], n: "Telin uzunluğu arttıkça elektriksel direnç artar." },
+  { u: 6, q: "Aynı maddeden yapılmış tellerden kesit alanı daha büyük olanın direnci, uzunluk aynıysa nasıl değişir?", o: ["Azalır", "Artar", "Sonsuz olur", "Değişmez"], n: "Tel kalınlaştıkça yani kesit alanı arttıkça direnç azalır." },
+  { u: 6, q: "Elektrik kablolarının iç kısmında genellikle bakır, dış kaplamasında plastik kullanılmasının nedeni nedir?", o: ["Bakır iletken, plastik yalıtkandır", "İkisi de yalıtkandır", "Bakır yalıtkan, plastik iletkendir", "İkisi de elektriği üretir"], n: "Bakır akımı taşır, plastik kullanıcıyı elektrik temasından korur." },
+  { u: 6, q: "Elektrik devresinde direnç arttığında, pil aynı kalırsa akım için genel olarak ne söylenir?", o: ["Azalır", "Artar", "Kesinlikle değişmez", "Yönü mutlaka tersine döner"], n: "Aynı gerilimde direnç arttıkça devreden geçen akım azalır." },
+
+  // ---------- 7. Ünite: Sürdürülebilir Yaşam ve Etkileşim ----------
+  { u: 7, q: "Bir ekosistemde canlıların birbirleriyle ve cansız çevreyle ilişkilerinin tümüne ne denir?", o: ["Ekolojik etkileşim", "Yansıma", "Elektriklenme", "Yoğunluk"], n: "Ekosistemde canlılar ve çevre koşulları sürekli etkileşim içindedir." },
+  { u: 7, q: "Bir canlının yaşamını sürdürdüğü doğal çevreye ne denir?", o: ["Habitat", "Popülasyon", "Tür", "Besin ağı"], n: "Habitat, canlının doğal yaşam alanıdır." },
+  { u: 7, q: "Aynı bölgede yaşayan aynı türe ait canlıların oluşturduğu topluluğa ne denir?", o: ["Popülasyon", "Ekosistem", "Komünite", "Habitat"], n: "Popülasyon aynı tür bireylerden oluşur." },
+  { u: 7, q: "Biyoçeşitliliğin korunması neden önemlidir?", o: ["Ekosistemlerin dengesinin ve canlı kaynaklarının devamı için", "Bütün canlıların aynı tür olması için", "Doğal yaşam alanlarını azaltmak için", "Besin zincirlerini ortadan kaldırmak için"], n: "Biyoçeşitlilik ekosistemlerin dayanıklılığı ve doğal dengenin sürmesi için önemlidir." },
+  { u: 7, q: "Aşağıdakilerden hangisi doğal kaynakların sürdürülebilir kullanımına örnektir?", o: ["Gereksiz enerji tüketimini azaltmak", "Ormanları kontrolsüz kesmek", "Suyu boşa akıtmak", "Atıkları doğaya bırakmak"], n: "Kaynakları tasarruflu kullanmak gelecek nesiller için de korunmalarını sağlar." },
+  { u: 7, q: "Atıkların yeniden işlenerek yeni ürünlere dönüştürülmesine ne denir?", o: ["Geri dönüşüm", "Yakıt tüketimi", "Erozyon", "Buharlaşma"], n: "Geri dönüşüm ham madde ve enerji tasarrufu sağlayabilir." },
+  { u: 7, q: "Bir bölgede yaşayan canlıların doğal yaşam alanlarının bozulması hangi sonuca yol açabilir?", o: ["Biyoçeşitliliğin azalmasına", "Bütün türlerin çoğalmasına", "Ekosistemin hiç etkilenmemesine", "Su kaynaklarının sınırsız olmasına"], n: "Habitat kaybı türlerin yaşamını tehdit ederek biyoçeşitliliği azaltabilir." }
+
 ];
 
 const $ = id => document.getElementById(id);
@@ -698,20 +756,3 @@ resetMatch(); requestAnimationFrame(loop);
     let h = document.body.getBoundingClientRect().height;
     document.querySelectorAll(".overlay.show .modal").forEach(m => {
       h = Math.max(h, m.getBoundingClientRect().bottom + window.scrollY + 24);
-    });
-    return Math.ceil(h);
-  }
-  function send() {
-    const v = height();
-    if (v !== lastH) { lastH = v; post({ type: "html-anim-height", height: v }); }
-  }
-  setInterval(send, 300); send(); post({ type: "html-anim-ready" });
-  new MutationObserver(() => {
-    const sig = [...document.querySelectorAll(".overlay.show")].map(o => o.id).join(",");
-    if (sig && sig !== lastSig && interacted) post({ type: "html-anim-scroll" });
-    lastSig = sig; send();
-  }).observe(document.body, { subtree: true, attributes: true, attributeFilter: ["class"] });
-})();
-</script>
-</body>
-</html>
