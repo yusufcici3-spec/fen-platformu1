@@ -141,16 +141,16 @@ html.embedded .modal{max-height:none}
       4. Aynı oyuncu kendi cevapladığı iki soruyu üst üste doğru bilirse <b>kaleciyi dondurma</b> hakkı kazanır. Şut öncesi buz düğmesine basarak kullanabilir.<br>
       5. <b>İlk 3 golü atan maçı kazanır.</b>
     </div>
-    <p style="margin-top:14px">Konular:</p>
+    <p style="margin-top:14px">Konular: (Birden fazla ünite seçebilirsin)</p>
     <div class="opts2">
-      <label><input type="radio" name="u" value="0" checked><span>İki ünite birden</span></label>
-      <label><input type="radio" name="u" value="1"><span>1. Ünite</span></label>
-      <label><input type="radio" name="u" value="2"><span>2. Ünite</span></label>
-      <label><input type="radio" name="u" value="3"><span>3. Ünite</span></label>
-      <label><input type="radio" name="u" value="4"><span>4. Ünite</span></label>
-      <label><input type="radio" name="u" value="5"><span>5. Ünite</span></label>
-      <label><input type="radio" name="u" value="6"><span>6. Ünite</span></label>
-      <label><input type="radio" name="u" value="7"><span>7. Ünite</span></label>
+      <label><input type="checkbox" id="allUnits" checked><span>Tüm üniteler</span></label>
+      <label><input type="checkbox" name="u" value="1" checked><span>1. Ünite</span></label>
+      <label><input type="checkbox" name="u" value="2" checked><span>2. Ünite</span></label>
+      <label><input type="checkbox" name="u" value="3" checked><span>3. Ünite</span></label>
+      <label><input type="checkbox" name="u" value="4" checked><span>4. Ünite</span></label>
+      <label><input type="checkbox" name="u" value="5" checked><span>5. Ünite</span></label>
+      <label><input type="checkbox" name="u" value="6" checked><span>6. Ünite</span></label>
+      <label><input type="checkbox" name="u" value="7" checked><span>7. Ünite</span></label>
     </div>
     <button class="big" id="bBegin">Maçı başlat ▶</button>
   </div>
@@ -366,7 +366,7 @@ const sfx = {
 };
 
 // ---------- durum ----------
-let st, pool = [], pi = 0, unitMode = 0, roundTimer = null, shotTimer = null, particles = [], banner = null;
+let st, pool = [], pi = 0, selectedUnits = [1,2,3,4,5,6,7], roundTimer = null, shotTimer = null, particles = [], banner = null;
 const stats = () => [{ ok: 0, bad: 0 }, { ok: 0, bad: 0 }];
 let G;  // oyun durumu
 
@@ -376,7 +376,7 @@ function resetMatch() {
         qCount: 0, aimStart: 0, shot: null, shooter: 0, lastAim: 0, streak: [0,0], freezeTokens: [0,0], freezeActive: false };
   setCrowd(false); updateFreezeButton();
   particles = []; banner = null;
-  const src = BANK.filter(q => unitMode === 0 || q.u === unitMode);
+  const src = BANK.filter(q => selectedUnits.includes(q.u));
   pool = shuffle(src); pi = 0;
   renderBoard();
 }
@@ -729,16 +729,14 @@ document.addEventListener("visibilitychange", () => {
 // ---------- olaylar ----------
 function begin() {
   try{ac=ac||new (window.AudioContext||window.webkitAudioContext)();if(ac.state==="suspended")ac.resume();}catch(e){}
-  applyPlayers();
-  unitMode = parseInt(document.querySelector('input[name="u"]:checked').value, 10);
+  selectedUnits = [...document.querySelectorAll('input[name="u"]:checked')].map(box => Number(box.value));
+  if (!selectedUnits.length) { alert("Maça başlamak için en az bir ünite seçmelisin."); return; }
   resetMatch();
   $("ovStart").classList.remove("show");
   $("ovEnd").classList.remove("show");
   nextQuestion();
 }
 $("bBegin").onclick = begin;
-buildPicker();
-applyPlayers();
 $("bAgain").onclick = () => {
   $("ovEnd").classList.remove("show");
   $("ovStart").classList.add("show");
