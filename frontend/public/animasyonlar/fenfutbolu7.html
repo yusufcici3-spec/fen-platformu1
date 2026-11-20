@@ -729,3 +729,62 @@ document.addEventListener("visibilitychange", () => {
 // ---------- olaylar ----------
 function begin() {
   try{ac=ac||new (window.AudioContext||window.webkitAudioContext)();if(ac.state==="suspended")ac.resume();}catch(e){}
+  applyPlayers();
+  unitMode = parseInt(document.querySelector('input[name="u"]:checked').value, 10);
+  resetMatch();
+  $("ovStart").classList.remove("show");
+  $("ovEnd").classList.remove("show");
+  nextQuestion();
+}
+$("bBegin").onclick = begin;
+buildPicker();
+applyPlayers();
+$("bAgain").onclick = () => {
+  $("ovEnd").classList.remove("show");
+  $("ovStart").classList.add("show");
+};
+$("bRestart").onclick = () => {
+  resetMatch();
+  $("ovEnd").classList.remove("show");
+  $("ovStart").classList.add("show");
+  $("opts").innerHTML = "";
+  $("q").textContent = "";
+};
+$("shoot").onclick = shoot;
+cv.addEventListener("pointerdown", () => {
+  if (G.phase === "aim") shoot();
+});
+$("bSound").onclick = () => {
+  sound = !sound;
+  $("bSound").textContent = sound ? "🔊 Ses açık" : "🔇 Ses kapalı";
+};
+document.addEventListener("keydown", e => {
+  if (document.querySelector(".overlay.show")) return;
+  if (e.code === "Space" || e.key === " ") {
+    if (G.phase === "aim") { e.preventDefault(); shoot(); }
+    else if (G.phase === "question") e.preventDefault();
+  } else if (G.phase === "question" && /^[1-4]$/.test(e.key)) {
+    answer(parseInt(e.key, 10) - 1);
+  }
+});
+resetMatch();
+requestAnimationFrame(loop);
+
+// ---------- site içine gömülü kullanım (iframe) ----------
+(function () {
+  if (window.parent === window) return;
+  document.documentElement.classList.add("embedded");
+  let interacted = false, lastH = 0;
+  $("bBegin").addEventListener("click", () => { interacted = true; });
+  const post = m => { try { window.parent.postMessage(m, window.location.origin); } catch (e) {} };
+  function sendHeight() {
+    const h = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+    if (h !== lastH) { lastH = h; post({ type: "fen-animation-height", height: h }); }
+  }
+  new ResizeObserver(sendHeight).observe(document.body);
+  window.addEventListener("load", sendHeight);
+  window.addEventListener("resize", sendHeight);
+})();
+</script>
+</body>
+</html>
