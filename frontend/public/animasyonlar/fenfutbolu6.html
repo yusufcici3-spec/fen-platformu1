@@ -88,6 +88,10 @@ canvas{display:block;width:100%;height:auto;aspect-ratio:16/9;border-radius:20px
 .opts2 span{display:block;padding:.5em 1.1em;border-radius:99px;border:2px solid #4f86e6;background:#030c26;font-size:.9rem}
 .opts2 input:checked+span{background:#ffd23f;color:#2b1700;border-color:#ffd23f;font-weight:700}
 .opts2 input:focus-visible+span{outline:3px solid #fff}
+.unit-picker .all-units{width:100%;display:flex;justify-content:center;margin-bottom:3px}
+.unit-picker .all-units span{background:#173d77;border-color:#8db8ff;color:#fff;font-weight:800}
+.unit-picker .all-units input:checked+span{background:#ffd23f;border-color:#ffd23f;color:#2b1700}
+.unit-help{font-size:.82rem;color:#b9c9e7;margin:0 0 12px}
 .big{font:inherit;font-weight:800;font-size:1.15rem;color:#fff;border:0;border-radius:14px;padding:.8em 2.2em;cursor:pointer;background:linear-gradient(#2ecf62,#13873b)}
 .big:hover{filter:brightness(1.12)}
 .trophy{font-size:3.4rem;margin:.1em 0}
@@ -143,16 +147,17 @@ html.embedded .modal{max-height:none}
       4. <b>İlk 3 golü atan maçı kazanır.</b>
     </div>
     <p style="margin-top:14px">Konular:</p>
-    <div class="opts2">
-      <label><input type="radio" name="u" value="0" checked><span>İki ünite birden</span></label>
-      <label><input type="radio" name="u" value="1"><span>1. Ünite</span></label>
-      <label><input type="radio" name="u" value="2"><span>2. Ünite</span></label>
-      <label><input type="radio" name="u" value="3"><span>3. Ünite</span></label>
-      <label><input type="radio" name="u" value="4"><span>4. Ünite</span></label>
-      <label><input type="radio" name="u" value="5"><span>5. Ünite</span></label>
-      <label><input type="radio" name="u" value="6"><span>6. Ünite</span></label>
-      <label><input type="radio" name="u" value="7"><span>7. Ünite</span></label>
+    <div class="opts2 unit-picker" aria-label="Oynanacak üniteleri seç">
+      <label class="all-units"><input type="checkbox" id="allUnits" checked><span>Tüm üniteleri seç</span></label>
+      <label><input type="checkbox" name="u" value="1" checked><span>1. Ünite</span></label>
+      <label><input type="checkbox" name="u" value="2" checked><span>2. Ünite</span></label>
+      <label><input type="checkbox" name="u" value="3" checked><span>3. Ünite</span></label>
+      <label><input type="checkbox" name="u" value="4" checked><span>4. Ünite</span></label>
+      <label><input type="checkbox" name="u" value="5" checked><span>5. Ünite</span></label>
+      <label><input type="checkbox" name="u" value="6" checked><span>6. Ünite</span></label>
+      <label><input type="checkbox" name="u" value="7" checked><span>7. Ünite</span></label>
     </div>
+    <p class="unit-help">İstediğin üniteleri birlikte seçebilirsin. Örneğin 1, 4, 2 ve 6. üniteleri işaretleyebilirsin.</p>
     <button class="big" id="bBegin">Maçı başlat ▶</button>
   </div>
 </div>
@@ -369,7 +374,7 @@ const sfx = {
 };
 
 // ---------- durum ----------
-let st, pool = [], pi = 0, unitMode = 0, roundTimer = null, shotTimer = null, particles = [], banner = null;
+let st, pool = [], pi = 0, selectedUnits = [1,2,3,4,5,6,7], roundTimer = null, shotTimer = null, particles = [], banner = null;
 const stats = () => [{ ok: 0, bad: 0 }, { ok: 0, bad: 0 }];
 let G;  // oyun durumu
 
@@ -378,7 +383,7 @@ function resetMatch() {
   G = { phase: "intro", goals: [0, 0], stats: stats(), cur: null, asker: 0, answerer: 0, stolen: false, wrong: [], deadline: 0, qTotal: 0,
         qCount: 0, aimStart: 0, shot: null, shooter: 0, lastAim: 0 };
   particles = []; banner = null;
-  const src = BANK.filter(q => unitMode === 0 || q.u === unitMode);
+  const src = BANK.filter(q => selectedUnits.includes(q.u));
   pool = shuffle(src); pi = 0;
   renderBoard();
 }
@@ -698,61 +703,3 @@ function frame(now) {
     const left = clamp((G.deadline - now) / G.total, 0, 1);
     $("bar").style.transform = "scaleX(" + left + ")";
   } else if (G.phase === "aim") $("bar").style.transform = "scaleX(1)";
-}
-// Çizim bir hata verse bile oyun durmasın
-function loop(now) {
-  requestAnimationFrame(loop);
-  try { frame(now); } catch (e) { console.error(e); }
-}
-// Mantık (süre) çizimden bağımsız çalışır
-setInterval(() => {
-  try { if (G.phase === "question" && performance.now() >= G.deadline) wrongAnswer(null, true); } catch (e) { console.error(e); }
-}, 200);
-// Sekme arka plana alınınca süreyi dondur
-let hiddenAt = 0;
-document.addEventListener("visibilitychange", () => {
-  if (document.hidden) { hiddenAt = performance.now(); return; }
-  if (!hiddenAt) return;
-  const d = performance.now() - hiddenAt; hiddenAt = 0;
-  if (G.deadline) G.deadline += d;
-  if (G.aimStart) G.aimStart += d;
-  if (banner) banner.t += d;
-  if (G.shot && !G.shot.done) G.shot.start += d;
-  lastFrame = performance.now();
-});
-
-// ---------- olaylar ----------
-function begin() {
-  applyPlayers();
-  unitMode = parseInt(document.querySelector("input[name=u]:checked").value, 10);
-  resetMatch();
-  $("ovStart").classList.remove("show"); $("ovEnd").classList.remove("show");
-  nextQuestion();
-}
-$("bBegin").onclick = begin;
-buildPicker(); applyPlayers();
-$("bAgain").onclick = () => { $("ovEnd").classList.remove("show"); $("ovStart").classList.add("show"); };
-$("bRestart").onclick = () => { resetMatch(); $("ovEnd").classList.remove("show"); $("ovStart").classList.add("show"); $("opts").innerHTML = ""; $("q").textContent = ""; };
-$("shoot").onclick = shoot;
-cv.addEventListener("pointerdown", () => { if (G.phase === "aim") shoot(); });
-$("bSound").onclick = () => { sound = !sound; $("bSound").textContent = sound ? "🔊 Ses açık" : "🔇 Ses kapalı"; };
-document.addEventListener("keydown", e => {
-  if (document.querySelector(".overlay.show")) return;
-  if (e.code === "Space" || e.key === " ") { if (G.phase === "aim") { e.preventDefault(); shoot(); } else if (G.phase === "question") e.preventDefault(); }
-  else if (G.phase === "question" && /^[1-4]$/.test(e.key)) answer(parseInt(e.key, 10) - 1);
-});
-
-// ilk durum
-resetMatch(); requestAnimationFrame(loop);
-
-// ---------- site içine gömülü kullanım (iframe) ----------
-(function () {
-  if (window.parent === window) return;
-  document.documentElement.classList.add("embedded");
-  let interacted = false, lastH = 0, lastSig = "";
-  $("bBegin").addEventListener("click", () => { interacted = true; });
-  const post = m => { try { window.parent.postMessage(m, window.location.origin); } catch (e) {} };
-  function height() {
-    let h = document.body.getBoundingClientRect().height;
-    document.querySelectorAll(".overlay.show .modal").forEach(m => {
-      h = Math.max(h, m.getBoundingClientRect().bottom + window.scrollY + 24);
