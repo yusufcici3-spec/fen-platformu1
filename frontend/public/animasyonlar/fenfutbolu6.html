@@ -703,3 +703,107 @@ function frame(now) {
     const left = clamp((G.deadline - now) / G.total, 0, 1);
     $("bar").style.transform = "scaleX(" + left + ")";
   } else if (G.phase === "aim") $("bar").style.transform = "scaleX(1)";
+}
+
+// Çizim döngüsü ve soru süresi
+function loop(now) {
+  requestAnimationFrame(loop);
+  try { frame(now); } catch (e) { console.error("Fen Futbolu 6 çizim hatası:", e); }
+}
+setInterval(() => {
+  try { if (G && G.phase === "question" && performance.now() >= G.deadline) wrongAnswer(null, true); }
+  catch (e) { console.error("Fen Futbolu 6 süre hatası:", e); }
+}, 200);
+
+let hiddenAt = 0;
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) { hiddenAt = performance.now(); return; }
+  if (!hiddenAt || !G) return;
+  const d = performance.now() - hiddenAt; hiddenAt = 0;
+  if (G.deadline) G.deadline += d;
+  if (G.aimStart) G.aimStart += d;
+  if (banner) banner.t += d;
+  if (G.shot && !G.shot.done) G.shot.start += d;
+  lastFrame = performance.now();
+});
+
+function syncAllUnits() {
+  const boxes = [...document.querySelectorAll('input[name="u"]')];
+  const all = document.getElementById("allUnits");
+  if (all) {
+    all.checked = boxes.length > 0 && boxes.every(box => box.checked);
+    all.indeterminate = boxes.some(box => box.checked) && !all.checked;
+  }
+}
+function begin() {
+  try {
+    if (typeof ac !== "undefined" && ac && ac.state === "suspended") ac.resume();
+  } catch (e) {}
+  applyPlayers();
+  selectedUnits = [...document.querySelectorAll('input[name="u"]:checked')].map(box => Number(box.value));
+  if (!selectedUnits.length) {
+    alert("Maça başlamak için en az bir ünite seçmelisin.");
+    return;
+  }
+  resetMatch();
+  $("ovStart").classList.remove("show");
+  $("ovEnd").classList.remove("show");
+  nextQuestion();
+}
+$("bBegin").addEventListener("click", begin);
+const allUnitsControl = document.getElementById("allUnits");
+if (allUnitsControl) {
+  allUnitsControl.addEventListener("change", () => {
+    document.querySelectorAll('input[name="u"]').forEach(box => { box.checked = allUnitsControl.checked; });
+    syncAllUnits();
+  });
+}
+document.querySelectorAll('input[name="u"]').forEach(box => box.addEventListener("change", syncAllUnits));
+syncAllUnits();
+buildPicker();
+applyPlayers();
+$("bAgain").onclick = () => {
+  $("ovEnd").classList.remove("show");
+  $("ovStart").classList.add("show");
+};
+$("bRestart").onclick = () => {
+  resetMatch();
+  $("ovEnd").classList.remove("show");
+  $("ovStart").classList.add("show");
+  $("opts").innerHTML = "";
+  $("q").textContent = "";
+};
+$("shoot").onclick = shoot;
+cv.addEventListener("pointerdown", () => { if (G.phase === "aim") shoot(); });
+const soundButton = document.getElementById("bSound");
+if (soundButton) soundButton.onclick = () => {
+  sound = !sound;
+  soundButton.textContent = sound ? "🔊 Ses açık" : "🔇 Ses kapalı";
+};
+document.addEventListener("keydown", e => {
+  if (document.querySelector(".overlay.show")) return;
+  if (e.code === "Space" || e.key === " ") {
+    if (G.phase === "aim") { e.preventDefault(); shoot(); }
+    else if (G.phase === "question") e.preventDefault();
+  } else if (G.phase === "question" && /^[1-4]$/.test(e.key)) answer(Number(e.key) - 1);
+});
+resetMatch();
+requestAnimationFrame(loop);
+
+// iframe içinde yükseklik bildirimi
+(function () {
+  if (window.parent === window) return;
+  document.documentElement.classList.add("embedded");
+  let lastH = 0;
+  const post = message => { try { window.parent.postMessage(message, window.location.origin); } catch (e) {} };
+  function sendHeight() {
+    const h = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+    if (h !== lastH) { lastH = h; post({ type: "fen-animation-height", height: h }); }
+  }
+  if (typeof ResizeObserver !== "undefined") new ResizeObserver(sendHeight).observe(document.body);
+  window.addEventListener("load", sendHeight);
+  window.addEventListener("resize", sendHeight);
+})();
+</script>
+</body>
+</html>
