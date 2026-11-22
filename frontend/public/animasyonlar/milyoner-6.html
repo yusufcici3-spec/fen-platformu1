@@ -59,6 +59,13 @@ body{margin:0;background:transparent;color:var(--ink);font:16px/1.45 system-ui,-
 (function(){
 var PRIZES=[100,200,300,500,1000,2000,4000,8000,16000,32000,64000,125000,250000,500000,1000000];
 var SAFE=[4,9];
+var audioCtx=null,soundOn=true,lastTick=-1;
+function audioReady(){try{var AC=window.AudioContext||window.webkitAudioContext;if(!AC)return null;if(!audioCtx)audioCtx=new AC();if(audioCtx.state==='suspended')audioCtx.resume();return audioCtx}catch(e){return null}}
+function tone(freq,dur,type,vol,delay){if(!soundOn)return;var x=audioReady();if(!x)return;var t=x.currentTime+(delay||0),o=x.createOscillator(),g=x.createGain();o.type=type||'sine';o.frequency.value=freq;g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(vol||.07,t+.01);g.gain.exponentialRampToValueAtTime(.0001,t+dur);o.connect(g);g.connect(x.destination);o.start(t);o.stop(t+dur+.02)}
+function playCorrect(){tone(660,.16,'sine',.09,0);tone(880,.18,'sine',.09,.13);tone(1100,.28,'sine',.08,.28)}
+function playWrong(){tone(220,.28,'triangle',.11,0);tone(165,.42,'triangle',.09,.2)}
+function playTick(){tone(880,.055,'square',.035,0)}
+
 function tl(n){return n.toLocaleString('tr-TR')+' ₺'}
 function time(i){return i<5?30:(i<10?45:60)}
 // [kazanım, soru, [doğru, yanlış, yanlış, yanlış], açıklama]
@@ -108,18 +115,81 @@ var HARD=[
 ['FB.6.2.2','Dengelenmiş kuvvetlerin etkisindeki bir cisim için hangisi doğrudur?',['Duruyorsa durmaya, hareketliyse sabit hızla hareket etmeye devam eder','Mutlaka durur','Mutlaka hızlanır','Mutlaka yavaşlar'],'Bileşke 0 olduğundan cismin hareket durumu değişmez.']
 ];
 var TIERS=[EASY,MED,HARD];
+var EXTRA=[
+[
+['FB.6.3.1','Sinir sisteminin temel görevlerinden biri hangisidir?',['Vücudun yönetim ve koordinasyonunu sağlamak','Besinleri sindirmek','Kanı süzmek','Oksijen üretmek'],'Sinir sistemi vücudun faaliyetlerini düzenler.'],
+['FB.6.3.1','Beyin hangi görevde etkilidir?',['Düşünme ve öğrenme','Kanı pompalama','Besin emilimi','İdrar oluşturma'],'Beyin düşünme, hafıza ve öğrenme gibi faaliyetleri yönetir.'],
+['FB.6.3.1','Refleks davranışlarının hızlı gerçekleşmesinde hangi yapı görev alır?',['Omurilik','Mide','Akciğer','Böbrek'],'Bazı refleksler omurilik tarafından yönetilir.'],
+['FB.6.3.2','Vücuttaki iç salgı bezleri hangi sistemi oluşturur?',['Denetleyici ve düzenleyici sistemin hormonal bölümünü','Sindirim sistemini','Dolaşım sistemini','Destek sistemini'],'Hormonlar iç salgı bezlerinden salgılanır ve vücut faaliyetlerini düzenler.'],
+['FB.6.3.3','İskelet ve kas sistemi birlikte neyi sağlar?',['Destek ve hareketi','Besin emilimini','Gaz alışverişini','Kanı süzmeyi'],'Kemikler ve kaslar birlikte vücudun hareket etmesini sağlar.'],
+['FB.6.3.3','Kemiklerin birleştiği hareketli bağlantı noktalarına ne denir?',['Eklem','Kas','Kıkırdak','Tendon'],'Eklemler kemiklerin birleştiği bölgelerdir.'],
+['FB.6.3.4','Solunum sisteminde gaz alışverişi hangi organda gerçekleşir?',['Akciğer','Kalp','Mide','Karaciğer'],'Akciğerlerde oksijen kana geçer, karbondioksit dışarı verilir.'],
+['FB.6.3.4','Besinlerin kana geçebilecek kadar küçük parçalara ayrılması hangi olaydır?',['Sindirim','Dolaşım','Boşaltım','Solunum'],'Sindirim besinleri yapı taşlarına ayırır.'],
+['FB.6.3.5','Kanı vücuda pompalayan organ hangisidir?',['Kalp','Akciğer','Beyin','Böbrek'],'Kalp kanın damarlar içinde dolaşmasını sağlar.'],
+['FB.6.3.5','Kandaki atık maddelerin süzülmesinde hangi organ görev alır?',['Böbrek','Mide','Kalp','Pankreas'],'Böbrekler kanı süzer ve idrar oluşumuna katkı sağlar.']
+],
+[
+['FB.6.4.1','Işığın düzgün yüzeyden yansımasına ne denir?',['Düzgün yansıma','Dağınık yansıma','Kırılma','Soğurulma'],'Düzgün yüzeylerde paralel ışınlar yansıma sonrasında paralel kalır.'],
+['FB.6.4.1','Pürüzlü yüzeylerde ışığın farklı yönlere yansıması nedir?',['Dağınık yansıma','Düzgün yansıma','Tam yansıma','Kırılma'],'Pürüzlü yüzeylerde ışık farklı yönlere dağılır.'],
+['FB.6.4.1','Düz aynada görüntünün boyu cismin boyuna göre nasıldır?',['Eşittir','Daha büyüktür','Daha küçüktür','Her zaman sıfırdır'],'Düz aynada görüntü cismin boyuyla aynıdır.'],
+['FB.6.4.1','Düz aynada görüntü aynaya göre nerede oluşur?',['Aynanın arkasında, cisme eşit uzaklıkta','Aynanın önünde','Aynanın üzerinde','Cismin yanında'],'Düz aynada görüntü aynanın arkasında ve cisimle eşit uzaklıktadır.'],
+['FB.6.4.2','Beyaz ışık hangi renklerden oluşur?',['Gökkuşağındaki tüm renklerden','Yalnız kırmızıdan','Yalnız maviden','Siyah ve beyazdan'],'Beyaz ışık birçok rengin birleşimidir.'],
+['FB.6.4.2','Siyah cisimler üzerine düşen ışığın çoğunu nasıl davranır?',['Soğurur','Yansıtır','Geçirir','Üretir'],'Siyah yüzeyler ışığın büyük bölümünü soğurur.'],
+['FB.6.4.2','Beyaz yüzeyler ışığın büyük bölümüne nasıl davranır?',['Yansıtır','Soğurur','Yok eder','Elektriğe dönüştürür'],'Beyaz yüzeyler ışığın büyük bölümünü yansıtır.'],
+['FB.6.4.2','Kırmızı cisim beyaz ışık altında neden kırmızı görünür?',['Kırmızı ışığı yansıtıp diğer renkleri daha çok soğurduğu için','Bütün renkleri soğurduğu için','Işık üretmediği için','Sadece mavi ışığı yansıttığı için'],'Cisim kendi rengindeki ışığı yansıtır.'],
+['FB.6.4.2','Işık kaynağı olmayan cisimleri görmemizin temel nedeni nedir?',['Üzerlerine düşen ışığı gözümüze yansıtmaları','Ses çıkarmaları','Isı üretmeleri','Hareket etmeleri'],'Cisimlerden yansıyan ışık gözümüze ulaştığında onları görürüz.'],
+['FB.6.4.1','Gelme açısı ile yansıma açısı arasındaki ilişki nasıldır?',['Birbirine eşittir','Biri daima iki katıdır','Toplamları 180 derecedir','İlişki yoktur'],'Yansıma kanununa göre gelme açısı yansıma açısına eşittir.']
+],
+[
+['FB.6.5.1','Saf maddelerin belirli bir sıcaklıkta gerçekleşen hâl değişimi sıcaklığına ne denir?',['Erime veya kaynama noktası','Yoğunluk','Kütle','Hacim'],'Saf maddelerin ayırt edici hâl değişim sıcaklıkları vardır.'],
+['FB.6.5.1','Bir maddenin birim hacimdeki kütlesi nedir?',['Yoğunluk','Kütle','Ağırlık','Sıcaklık'],'Yoğunluk kütlenin hacme oranıdır.'],
+['FB.6.5.1','Aynı hacimdeki iki maddeden kütlesi büyük olanın yoğunluğu nasıldır?',['Daha büyüktür','Daha küçüktür','Aynıdır','Sıfırdır'],'Hacim eşitse kütlesi büyük olanın yoğunluğu da büyüktür.'],
+['FB.6.5.2','Katı bir maddenin ısı alarak sıvı hâle geçmesine ne denir?',['Erime','Donma','Yoğuşma','Süblimleşme'],'Erime katıdan sıvıya geçiştir.'],
+['FB.6.5.2','Sıvının ısı vererek katı hâle geçmesi nedir?',['Donma','Erime','Buharlaşma','Kaynama'],'Donma sıvıdan katıya geçiştir.'],
+['FB.6.5.2','Sıvının yüzeyinden her sıcaklıkta gaz hâline geçmesi nedir?',['Buharlaşma','Donma','Erime','Yoğuşma'],'Buharlaşma sıvının yüzeyinde gerçekleşebilir.'],
+['FB.6.5.2','Gazın ısı vererek sıvı hâle geçmesine ne denir?',['Yoğuşma','Buharlaşma','Erime','Süblimleşme'],'Yoğuşma gazdan sıvıya geçiştir.'],
+['FB.6.5.3','Isı alan bir maddenin taneciklerinin hareket enerjisi genellikle nasıl değişir?',['Artar','Azalır','Yok olur','Değişmez'],'Isı alan maddenin tanecik hareketi çoğunlukla hızlanır.'],
+['FB.6.5.3','Sıcaklık hangi araçla ölçülür?',['Termometre','Dinamometre','Barometre','Ampermetre'],'Sıcaklık termometre ile ölçülür.'],
+['FB.6.5.1','Yoğunluğun SI birimi hangisidir?',['kg/m³','Newton','Pascal','Joule'],'Yoğunluk kütle/hacim oranıdır; SI birimi kg/m³ tür.']
+],
+[
+['FB.6.6.1','Elektrik akımını iyi ileten maddelere ne denir?',['İletken','Yalıtkan','Saydam','Esnek'],'Metaller gibi bazı maddeler elektrik akımını iletir.'],
+['FB.6.6.1','Plastik kaplı kabloların dış yüzeyinde plastik kullanılmasının nedeni nedir?',['Yalıtkan olması','İletken olması','Mıknatıs olması','Isı üretmesi'],'Plastik elektrik akımını kolay iletmez ve güvenlik sağlar.'],
+['FB.6.6.1','Bakır tel hangi özelliği nedeniyle elektrik kablolarında kullanılır?',['İyi iletken olması','Yalıtkan olması','Saydam olması','Kırılgan olması'],'Bakır elektrik akımını iyi iletir.'],
+['FB.6.6.2','Bir devrede ampul parlaklığını etkileyen devre elemanı hangisidir?',['Direnç','Anahtarın rengi','Pil yatağının şekli','Kablo rengi'],'Direnç akımın geçişini zorlaştırır ve ampul parlaklığını etkiler.'],
+['FB.6.6.2','Bir iletkenin uzunluğu artırılırsa direnci genellikle nasıl değişir?',['Artar','Azalır','Değişmez','Sıfırlanır'],'Aynı cins ve kalınlıktaki iletkende uzunluk arttıkça direnç artar.'],
+['FB.6.6.2','Aynı uzunluktaki iletkenin kesit alanı artarsa direnç nasıl değişir?',['Azalır','Artar','Değişmez','Sonsuz olur'],'Kesit alanı büyüdükçe akımın geçişi kolaylaşır ve direnç azalır.'],
+['FB.6.6.2','Elektrik devresinde direncin birimi nedir?',['Ohm','Amper','Volt','Watt'],'Direnç ohm (Ω) ile ölçülür.'],
+['FB.6.6.1','Aşağıdakilerden hangisi yalıtkandır?',['Cam','Bakır','Alüminyum','Demir'],'Cam elektrik akımını iyi iletmez.'],
+['FB.6.6.2','Basit elektrik devresinde ampulün yanması için devre nasıl olmalıdır?',['Kapalı devre','Açık devre','Pil olmadan','Anahtar çıkarılmış'],'Akımın dolaşabilmesi için devrenin kapalı olması gerekir.'],
+['FB.6.6.2','Bir devrede ampul sayısı ve pil sayısı sabitken direnç artırılırsa parlaklık genellikle nasıl değişir?',['Azalır','Artar','Değişmez','Önce sonsuz olur'],'Direnç arttığında akım azalır; ampul parlaklığı düşer.']
+],
+[
+['FB.6.7.1','Canlı ve cansız çevrenin bir arada oluşturduğu sisteme ne denir?',['Ekosistem','Popülasyon','Organ','Hücre'],'Ekosistem canlı ve cansız bileşenleri kapsar.'],
+['FB.6.7.1','Bir bölgede yaşayan aynı tür canlıların oluşturduğu topluluk nedir?',['Popülasyon','Komünite','Ekosistem','Habitat'],'Popülasyon aynı tür bireylerden oluşur.'],
+['FB.6.7.1','Canlının doğal yaşam alanına ne denir?',['Habitat','Popülasyon','Doku','Organizma'],'Habitat canlının yaşadığı doğal ortamdır.'],
+['FB.6.7.2','Besin zincirinde kendi besinini üreten canlılara ne denir?',['Üretici','Tüketici','Ayrıştırıcı','Avcı'],'Bitkiler fotosentezle üretici canlılardır.'],
+['FB.6.7.2','Ölü canlıları ve atıkları parçalayan canlılar hangi gruptadır?',['Ayrıştırıcı','Üretici','Otçul','Etçil'],'Bakteri ve mantarlar ayrıştırıcıdır.'],
+['FB.6.7.2','Besin zincirinin temel enerji kaynağı çoğunlukla nedir?',['Güneş','Ay','Toprak','Rüzgâr'],'Üreticiler Güneş enerjisini kimyasal enerjiye dönüştürür.'],
+['FB.6.7.3','Aşağıdakilerden hangisi yenilenebilir enerji kaynağıdır?',['Güneş','Kömür','Petrol','Doğal gaz'],'Güneş enerjisi yenilenebilir bir kaynaktır.'],
+['FB.6.7.3','Atıkların yeniden ham madde olarak kullanılması nedir?',['Geri dönüşüm','Yakma','Depolama','Çöpe atma'],'Geri dönüşüm doğal kaynak kullanımını azaltır.'],
+['FB.6.7.3','Su tasarrufu için hangisi yapılmalıdır?',['Gereksiz yere açık musluk kapatılmalıdır','Musluk sürekli açık bırakılmalıdır','Atık yağ lavaboya dökülmelidir','Sızıntılar görmezden gelinmelidir'],'Su kaynaklarını korumak sürdürülebilir yaşam için önemlidir.'],
+['FB.6.7.3','Karbon ayak izi neyi ifade eder?',['Faaliyetlerin neden olduğu sera gazı salımını','Ayakkabı ölçüsünü','Toprak miktarını','Oksijen miktarını'],'Karbon ayak izi sera gazı salımlarının toplamını ifade eder.']
+]
+];
+
 var Q=[];
-function buildQ(){Q=[];TIERS.forEach(function(t){Q=Q.concat(shuffle(t).slice(0,5))})}
+function buildQ(ids){Q=[];var old=TIERS.reduce(function(a,t){return a.concat(t)},[]);ids.forEach(function(id){if(id===0)Q=Q.concat(old.filter(function(q){return q[0].indexOf('FB.6.1.')===0}));else if(id===1)Q=Q.concat(old.filter(function(q){return q[0].indexOf('FB.6.2.')===0}));else Q=Q.concat(EXTRA[id-2])});Q=shuffle(Q);if(Q.length>15)Q=Q.slice(0,15)}
 
 
 var st;
 function $(i){return document.getElementById(i)}
 function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}
 function safeWon(i){var w=0;SAFE.forEach(function(s){if(i>s)w=PRIZES[s]});return w}
-function newGame(){buildQ();st={i:0,jok:{f:true,a:true,p:true},sel:-1,locked:false,over:false,timer:null,left:0,gone:[],msg:'',opts:[],correct:0,answered:0};startQ()}
+function newGame(){clearInterval(st&&st.timer);var m=$('main');m.innerHTML='<h2>🏆 MilyonerFen 6</h2><p class="note">Oynamak istediğin üniteleri seç. Seçtiğin ünitelerden karışık sorular gelecek.</p><div class="jok"><button class="btn" id="allUnits">Tümünü seç / kaldır</button><button class="btn" id="soundToggle">'+(soundOn?'🔊 Ses açık':'🔇 Ses kapalı')+'</button></div><div id="unitPick" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px"></div><div class="jok"><button class="btn gold" id="startGame">Oyuna başla</button></div>';var names=['Güneş Sistemi ve Tutulmalar','Kuvvetin Etkisinde Hareket','Canlılarda Sistemler','Işığın Yansıması ve Renkler','Maddenin Ayırt Edici Özellikleri','Elektriğin İletimi ve Direnç','Sürdürülebilir Yaşam ve Etkileşim'];names.forEach(function(name,i){var l=document.createElement('label');l.className='btn';l.style.display='flex';l.style.alignItems='center';l.style.gap='8px';l.style.textAlign='left';l.innerHTML='<input type="checkbox" class="unitCheck" value="'+i+'" checked> '+(i+1)+'. Ünite · '+name;$('unitPick').appendChild(l)});$('allUnits').onclick=function(){var a=[].slice.call(document.querySelectorAll('.unitCheck'));var off=a.every(function(x){return x.checked});a.forEach(function(x){x.checked=!off})};$('soundToggle').onclick=function(){soundOn=!soundOn;this.textContent=soundOn?'🔊 Ses açık':'🔇 Ses kapalı';if(soundOn)audioReady()};$('startGame').onclick=function(){var ids=[].slice.call(document.querySelectorAll('.unitCheck:checked')).map(function(x){return +x.value});if(!ids.length){alert('En az bir ünite seçmelisin.');return}audioReady();buildQ(ids);st={i:0,jok:{f:true,a:true,p:true},sel:-1,locked:false,over:false,timer:null,left:0,gone:[],msg:'',opts:[],correct:0,answered:0};startQ()};post()}
 function startQ(){
  var q=Q[st.i];var idx=shuffle([0,1,2,3]);st.opts=idx;st.correctPos=idx.indexOf(0);
- st.sel=-1;st.locked=false;st.gone=[];st.poll=null;st.msg='';st.reveal=false;st.left=time(st.i);
+ st.sel=-1;st.locked=false;st.gone=[];st.poll=null;st.msg='';st.reveal=false;st.left=time(st.i);lastTick=-1;
  clearInterval(st.timer);st.timer=setInterval(tick,250);st.t0=Date.now();
  render();
 }
@@ -128,8 +198,8 @@ function tick(){
  st.left=Math.max(0,time(st.i)-(Date.now()-st.t0)/1000);
  var bar=document.querySelector('.timer i'),tm=document.querySelector('.timer');
  if(bar){bar.style.width=(st.left/time(st.i)*100)+'%';tm.classList.toggle('low',st.left<=10)}
- var tv=$('tv');if(tv)tv.textContent=Math.ceil(st.left)+' sn';
- if(st.left<=0){clearInterval(st.timer);st.locked=true;st.timeout=true;st.reveal=true;st.msg='<b>Süre doldu!</b> '+Q[st.i][3];render()}
+ var tv=$('tv');if(tv)tv.textContent=Math.ceil(st.left)+' sn';var sec=Math.ceil(st.left);if(sec<=18&&sec>0&&sec!==lastTick){playTick();lastTick=sec;}
+ if(st.left<=0){clearInterval(st.timer);playWrong();st.locked=true;st.timeout=true;st.reveal=true;st.msg='<b>Süre doldu!</b> '+Q[st.i][3];render()}
 }
 function render(){
  var m=$('main');var h='';
@@ -176,7 +246,7 @@ function bind(){
 }
 function lock(){
  clearInterval(st.timer);st.locked=true;st.reveal=true;st.answered++;
- var ok=st.sel===st.correctPos;if(ok)st.correct++;
+ var ok=st.sel===st.correctPos;if(ok){st.correct++;playCorrect()}else playWrong();
  st.msg=(ok?'<b>Doğru!</b> ':'<b>Yanlış.</b> Doğru cevap: <b>'+'ABCD'[st.correctPos]+'</b>. ')+Q[st.i][3];
  render();
 }
