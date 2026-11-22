@@ -118,13 +118,57 @@ var NEWH=[
 ];
 var TIERS=[BANK.slice(0,5).concat(NEWE),BANK.slice(5,10).concat(NEWM),BANK.slice(10,15).concat(NEWH)];
 var Q=[];
-function buildQ(){Q=[];TIERS.forEach(function(t){Q=Q.concat(shuffle(t).slice(0,5))})}
+
+var EXTRA_UNITS=[
+{title:"Vücudumuzdaki Sistemler",items:[
+['FB.7.3.1','Besinlerin kana geçebilecek kadar küçük parçalara ayrılmasına ne denir?',['Sindirim','Dolaşım','Solunum','Boşaltım'],'Sindirim, besinlerin yapı taşlarına ayrılmasıdır.'],
+['FB.7.3.1','Besinlerin emiliminin büyük bölümü hangi organda gerçekleşir?',['İnce bağırsak','Mide','Yemek borusu','Kalın bağırsak'],'İnce bağırsaktaki villuslar emilim yüzeyini artırır.'],
+['FB.7.3.2','Kanı vücuda pompalayan organ hangisidir?',['Kalp','Akciğer','Böbrek','Mide'],'Kalp kanı damarlar aracılığıyla pompalar.'],
+['FB.7.3.2','Kanın pıhtılaşmasında görev alan kan hücresi hangisidir?',['Trombosit','Alyuvar','Akyuvar','Nöron'],'Trombositler kanın pıhtılaşmasına yardımcı olur.'],
+['FB.7.3.3','Akciğerlerde gaz alışverişi hangi yapılarda gerçekleşir?',['Alveoller','Bronşlar','Yutak','Soluk borusu'],'Alveoller oksijen ve karbondioksit alışverişinin gerçekleştiği keseciklerdir.'],
+['FB.7.3.4','Kandaki atık maddelerin süzülmesinde görevli organ hangisidir?',['Böbrek','Kalp','Mide','Pankreas'],'Böbrekler kanı süzerek idrar oluşumunu sağlar.']
+]},
+{title:"Işığın Kırılması ve Mercekler",items:[
+['FB.7.4.1','Işık bir ortamdan diğerine geçerken yön değiştirirse hangi olay gerçekleşir?',['Kırılma','Yansıma','Soğurulma','Dağılma'],'Işığın farklı ortama geçerken yön değiştirmesine kırılma denir.'],
+['FB.7.4.1','Işık havadan suya geçerken normale yaklaşır. Bunun temel nedeni nedir?',['Suda ışığın daha yavaş ilerlemesi','Suyun ışık üretmesi','Havanın saydam olmaması','Işığın yok olması'],'Işık optikçe daha yoğun ortama geçerken yavaşlar ve normale yaklaşır.'],
+['FB.7.4.2','İnce kenarlı mercek paralel ışınları nasıl etkiler?',['Bir noktada toplar','Dağıtır','Yansıtır','Soğurur'],'İnce kenarlı mercek yakınsak mercektir.'],
+['FB.7.4.2','Kalın kenarlı merceğe paralel gelen ışınlar nasıl ilerler?',['Dağılarak ilerler','Bir noktada toplanır','Geri yansır','Tamamen soğurulur'],'Kalın kenarlı mercek ıraksak mercektir.'],
+['FB.7.4.2','Büyüteçte hangi mercek türü kullanılır?',['İnce kenarlı mercek','Kalın kenarlı mercek','Düz ayna','Prizma'],'Büyüteç ince kenarlı mercekle büyütülmüş görüntü oluşturur.'],
+['FB.7.4.2','Miyop göz kusurunun düzeltilmesinde hangi mercek kullanılır?',['Kalın kenarlı','İnce kenarlı','Silindirik','Düz cam'],'Miyopluk kalın kenarlı mercekle düzeltilir.']
+]},
+{title:"Maddenin Doğasına Yolculuk",items:[
+['FB.7.5.1','Atomun merkezinde hangi bölüm bulunur?',['Çekirdek','Elektron bulutu','Katman','Molekül'],'Atom çekirdeğinde proton ve nötronlar bulunur.'],
+['FB.7.5.1','Elektronun elektrik yükü nasıldır?',['Negatif','Pozitif','Yüksüz','Değişken'],'Elektron negatif yüklü parçacıktır.'],
+['FB.7.5.2','Tek tür atomdan oluşan saf maddeye ne denir?',['Element','Bileşik','Karışım','Çözelti'],'Elementler tek tür atom içerir.'],
+['FB.7.5.2','Farklı element atomlarının belirli oranlarda birleşmesiyle ne oluşur?',['Bileşik','Element','Karışım','Alaşım'],'Bileşikler farklı element atomlarının kimyasal birleşmesiyle oluşur.'],
+['FB.7.5.3','İki veya daha fazla atomun bağlanmasıyla oluşan yapıya ne denir?',['Molekül','Proton','Elektron','Çekirdek'],'Molekül atomların kimyasal bağlarla birleşmesiyle oluşur.'],
+['FB.7.5.1','Protonun elektrik yükü nasıldır?',['Pozitif','Negatif','Yüksüz','Yoktur'],'Proton pozitif yüklüdür.']
+]},
+{title:"Elektriklenme",items:[
+['FB.7.6.1','Elektriklenme olaylarında cisimler arasında genellikle hangi tanecikler aktarılır?',['Elektronlar','Protonlar','Nötronlar','Çekirdekler'],'Elektriklenme olaylarında hareket eden tanecikler elektronlardır.'],
+['FB.7.6.1','Aynı cins elektrik yükleri birbirine nasıl etki eder?',['İter','Çeker','Etkileşmez','Yok olur'],'Aynı cins yükler birbirini iter.'],
+['FB.7.6.1','Zıt cins elektrik yükleri birbirine nasıl etki eder?',['Çeker','İter','Etkileşmez','Nötrleşmeden uzaklaşır'],'Zıt cins yükler birbirini çeker.'],
+['FB.7.6.2','Bir cismin elektrik yüklü olup olmadığını anlamaya yarayan araç hangisidir?',['Elektroskop','Ampermetre','Barometre','Termometre'],'Elektroskop elektrik yükünün varlığını belirlemeye yarar.'],
+['FB.7.6.2','Topraklama sırasında yük alışverişi hangi büyük iletkenle yapılır?',['Dünya','Plastik','Cam','Tahta'],'Dünya büyük bir yük deposu gibi davranır.'],
+['FB.7.6.1','Nötr bir cisimde pozitif ve negatif yük miktarları nasıldır?',['Eşittir','Pozitif daha fazladır','Negatif daha fazladır','Hiç yük yoktur'],'Nötr cisimde toplam pozitif ve negatif yük miktarları eşittir.']
+]},
+{title:"Sürdürülebilir Yaşam ve Geri Dönüşüm",items:[
+['FB.7.7.1','Atık bir ürünün ham madde olarak yeniden değerlendirilmesine ne denir?',['Geri dönüşüm','Yakma','Depolama','İmha'],'Geri dönüşüm kaynak kullanımını ve atık miktarını azaltır.'],
+['FB.7.7.1','Aşağıdakilerden hangisi yenilenebilir enerji kaynağıdır?',['Güneş','Kömür','Petrol','Doğal gaz'],'Güneş enerjisi yenilenebilir bir enerji kaynağıdır.'],
+['FB.7.7.1','Su tasarrufu için hangi davranış uygundur?',['Musluğu gereksiz yere açık bırakmamak','Sızıntıları önemsememek','Boşa su akıtmak','Atık yağı lavaboya dökmek'],'Suyu verimli kullanmak sürdürülebilir yaşama katkı sağlar.'],
+['FB.7.7.2','Atık piller neden ayrı toplanmalıdır?',['Zararlı maddelerin çevreye yayılmasını önlemek için','Daha hızlı çürümeleri için','Kâğıda dönüştürmek için','Suyu artırmak için'],'Atık piller uygun toplama noktalarına verilmelidir.'],
+['FB.7.7.2','Doğal kaynakları korumak için hangisi yapılmalıdır?',['Gereksiz tüketimi azaltmak','Enerjiyi boşa harcamak','Atıkları doğaya bırakmak','Suyu sürekli akıtmak'],'Bilinçli tüketim doğal kaynakların korunmasına yardımcı olur.'],
+['FB.7.7.1','Organik atıkların uygun koşullarda ayrışmasıyla elde edilen gübreye ne denir?',['Kompost','Plastik','Cam','Metal'],'Kompost organik atıklardan elde edilen doğal gübredir.']
+]}
+];
+
+function buildQ(ids){Q=[];var all=TIERS.reduce(function(a,t){return a.concat(t)},[]);ids.forEach(function(id){if(id===0)Q=Q.concat(all.filter(function(q){return q[0].indexOf('FB.7.1.')===0}));else if(id===1)Q=Q.concat(all.filter(function(q){return q[0].indexOf('FB.7.2.')===0}));else Q=Q.concat(EXTRA_UNITS[id-2].items)});Q=shuffle(Q);if(Q.length>15)Q=Q.slice(0,15)}
 
 var st;
 function $(i){return document.getElementById(i)}
 function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}
 function safeWon(i){var w=0;SAFE.forEach(function(s){if(i>s)w=PRIZES[s]});return w}
-function newGame(){audioReady();buildQ();st={i:0,jok:{f:true,a:true,p:true},sel:-1,locked:false,over:false,timer:null,left:0,gone:[],msg:'',opts:[],correct:0,answered:0};startQ()}
+function newGame(){clearInterval(st&&st.timer);var m=$('main');m.innerHTML='<h2>🏆 MilyonerFen 7</h2><p class="note">Oynamak istediğin üniteleri seç. Seçtiğin ünitelerden karışık sorular gelecek.</p><div class="jok"><button class="btn" id="allUnits">Tümünü seç / kaldır</button><button class="btn" id="soundToggle">'+(soundOn?'🔊 Ses açık':'🔇 Ses kapalı')+'</button></div><div id="unitPick" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px"></div><div class="jok"><button class="btn gold" id="startGame">Oyuna başla</button></div>';var names=['Uzay Çağı','Kuvvet ve Enerjiyi Keşfedelim'].concat(EXTRA_UNITS.map(function(u){return u.title}));names.forEach(function(name,i){var label=document.createElement('label');label.className='btn';label.style.textAlign='left';label.style.display='flex';label.style.alignItems='center';label.style.gap='8px';label.innerHTML='<input type="checkbox" class="unitCheck" value="'+i+'" checked> '+name;$('unitPick').appendChild(label)});$('allUnits').onclick=function(){var boxes=[].slice.call(document.querySelectorAll('.unitCheck'));var turnOff=boxes.every(function(b){return b.checked});boxes.forEach(function(b){b.checked=!turnOff})};$('soundToggle').onclick=function(){soundOn=!soundOn;this.textContent=soundOn?'🔊 Ses açık':'🔇 Ses kapalı';if(soundOn)audioReady()};$('startGame').onclick=function(){var ids=[].slice.call(document.querySelectorAll('.unitCheck:checked')).map(function(b){return +b.value});if(!ids.length){alert('En az bir ünite seçmelisin.');return}audioReady();buildQ(ids);st={i:0,jok:{f:true,a:true,p:true},sel:-1,locked:false,over:false,timer:null,left:0,gone:[],msg:'',opts:[],correct:0,answered:0};startQ()};post()}
 function startQ(){
  var q=Q[st.i];var idx=shuffle([0,1,2,3]);st.opts=idx;st.correctPos=idx.indexOf(0);
  st.sel=-1;st.locked=false;st.gone=[];st.poll=null;st.msg='';st.reveal=false;st.left=time(st.i);
