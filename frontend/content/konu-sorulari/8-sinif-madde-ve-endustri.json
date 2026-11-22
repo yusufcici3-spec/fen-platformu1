@@ -1,0 +1,1287 @@
+{
+ "unit": 4,
+ "title": "Madde ve Endüstri",
+ "slug": "madde-ve-endustri",
+ "questions": [
+  {
+   "id": 1,
+   "outcome": "F.8.4.1 Periyodik sistem",
+   "image": "/soru-gorselleri/madde-ve-endustri/q01.svg",
+   "imageAlt": "Periyodik sistemde işaretli element",
+   "scenario": "Bir kimya öğretmeni, periyodik sistemin ilk 20 elementini gösteren bir tablo hazırlıyor ve bir elementi işaretliyor. Tablodaki satırlar periyodu, sütunlar A grubunu göstermektedir. Öğrenciler işaretli (sarı) elementin sembolünü gizleyerek konumundan hangi özellikleri çıkarabileceklerini tartışıyor. İşaretli elementin sembolü Na'dir.",
+   "question": "İşaretli element periyodik sistemde hangi grup ve periyottadır?",
+   "options": [
+    "8A grubu, 2. periyot",
+    "1A grubu, 3. periyot",
+    "2A grubu, 3. periyot",
+    "1A grubu, 4. periyot"
+   ],
+   "answer": 1,
+   "explanation": "Na elementi 1A grubunda ve 3. periyottadır."
+  },
+  {
+   "id": 2,
+   "outcome": "F.8.4.1 Periyodik sistem",
+   "image": "/soru-gorselleri/madde-ve-endustri/q02.svg",
+   "imageAlt": "Periyodik sistemde işaretli element",
+   "scenario": "Müzedeki bir laboratuvar, periyodik sistemin ilk 20 elementini gösteren bir tablo hazırlıyor ve bir elementi işaretliyor. Tablodaki satırlar periyodu, sütunlar A grubunu göstermektedir. Öğrenciler işaretli (sarı) elementin sembolünü gizleyerek konumundan hangi özellikleri çıkarabileceklerini tartışıyor. İşaretli elementin sembolü Cl'dir.",
+   "question": "İşaretli element hangi sınıfta yer alır?",
+   "options": [
+    "toprak alkali metal",
+    "alkali metal",
+    "halojen (ametal)",
+    "soygaz"
+   ],
+   "answer": 2,
+   "explanation": "Cl, 7A grubunda yer alır ve halojen (ametal) sınıfındadır."
+  },
+  {
+   "id": 3,
+   "outcome": "F.8.4.1 Periyodik sistem",
+   "image": "/soru-gorselleri/madde-ve-endustri/q03.svg",
+   "imageAlt": "Periyodik sistemde işaretli element",
+   "scenario": "Bir öğrenci projesi, periyodik sistemin ilk 20 elementini gösteren bir tablo hazırlıyor ve bir elementi işaretliyor. Tablodaki satırlar periyodu, sütunlar A grubunu göstermektedir. Öğrenciler işaretli (sarı) elementin sembolünü gizleyerek konumundan hangi özellikleri çıkarabileceklerini tartışıyor. İşaretli elementin sembolü Ne'dir.",
+   "question": "İşaretli elementin son yörüngesindeki (değerlik) elektron sayısı kaçtır?",
+   "options": [
+    "7",
+    "9",
+    "8",
+    "10"
+   ],
+   "answer": 2,
+   "explanation": "A grubu numarası değerlik elektron sayısını verir: 8A → 8 elektron."
+  },
+  {
+   "id": 4,
+   "outcome": "F.8.4.1 Periyodik sistem",
+   "image": "/soru-gorselleri/madde-ve-endustri/q04.svg",
+   "imageAlt": "Periyodik sistemde işaretli element",
+   "scenario": "Bir endüstri mühendisi, periyodik sistemin ilk 20 elementini gösteren bir tablo hazırlıyor ve bir elementi işaretliyor. Tablodaki satırlar periyodu, sütunlar A grubunu göstermektedir. Öğrenciler işaretli (sarı) elementin sembolünü gizleyerek konumundan hangi özellikleri çıkarabileceklerini tartışıyor. İşaretli elementin sembolü Ca'dir.",
+   "question": "İşaretli element periyodik sistemde hangi grup ve periyottadır?",
+   "options": [
+    "2A grubu, 4. periyot",
+    "1A grubu, 3. periyot",
+    "2A grubu, 3. periyot",
+    "3A grubu, 4. periyot"
+   ],
+   "answer": 0,
+   "explanation": "Ca elementi 2A grubunda ve 4. periyottadır."
+  },
+  {
+   "id": 5,
+   "outcome": "F.8.4.1 Periyodik sistem",
+   "image": "/soru-gorselleri/madde-ve-endustri/q05.svg",
+   "imageAlt": "Periyodik sistemde işaretli element",
+   "scenario": "Bir yarı iletken fabrikası araştırmacısı, periyodik sistemin ilk 20 elementini gösteren bir tablo hazırlıyor ve bir elementi işaretliyor. Tablodaki satırlar periyodu, sütunlar A grubunu göstermektedir. Öğrenciler işaretli (sarı) elementin sembolünü gizleyerek konumundan hangi özellikleri çıkarabileceklerini tartışıyor. İşaretli elementin sembolü Si'dir.",
+   "question": "İşaretli element hangi sınıfta yer alır?",
+   "options": [
+    "toprak alkali metal",
+    "halojen (ametal)",
+    "alkali metal",
+    "yarı metal"
+   ],
+   "answer": 3,
+   "explanation": "Si, 4A grubunda yer alır ve yarı metal sınıfındadır."
+  },
+  {
+   "id": 6,
+   "outcome": "F.8.4.1 Periyodik sistem",
+   "image": "/soru-gorselleri/madde-ve-endustri/q06.svg",
+   "imageAlt": "Periyodik sistemde işaretli element",
+   "scenario": "Bir hastane teknisyeni, periyodik sistemin ilk 20 elementini gösteren bir tablo hazırlıyor ve bir elementi işaretliyor. Tablodaki satırlar periyodu, sütunlar A grubunu göstermektedir. Öğrenciler işaretli (sarı) elementin sembolünü gizleyerek konumundan hangi özellikleri çıkarabileceklerini tartışıyor. İşaretli elementin sembolü O'dir.",
+   "question": "İşaretli elementin son yörüngesindeki (değerlik) elektron sayısı kaçtır?",
+   "options": [
+    "5",
+    "8",
+    "7",
+    "6"
+   ],
+   "answer": 3,
+   "explanation": "A grubu numarası değerlik elektron sayısını verir: 6A → 6 elektron."
+  },
+  {
+   "id": 7,
+   "outcome": "F.8.4.1 Periyodik sistem",
+   "image": "/soru-gorselleri/madde-ve-endustri/q07.svg",
+   "imageAlt": "Periyodik sistemde işaretli element",
+   "scenario": "Bir ışık sanayii uzmanı, periyodik sistemin ilk 20 elementini gösteren bir tablo hazırlıyor ve bir elementi işaretliyor. Tablodaki satırlar periyodu, sütunlar A grubunu göstermektedir. Öğrenciler işaretli (sarı) elementin sembolünü gizleyerek konumundan hangi özellikleri çıkarabileceklerini tartışıyor. İşaretli elementin sembolü Mg'dir.",
+   "question": "İşaretli element periyodik sistemde hangi grup ve periyottadır?",
+   "options": [
+    "2A grubu, 3. periyot",
+    "2A grubu, 4. periyot",
+    "1A grubu, 2. periyot",
+    "3A grubu, 3. periyot"
+   ],
+   "answer": 0,
+   "explanation": "Mg elementi 2A grubunda ve 3. periyottadır."
+  },
+  {
+   "id": 8,
+   "outcome": "F.8.4.1 Periyodik sistem",
+   "image": "/soru-gorselleri/madde-ve-endustri/q08.svg",
+   "imageAlt": "Periyodik sistemde işaretli element",
+   "scenario": "Bir gübre üreticisi, periyodik sistemin ilk 20 elementini gösteren bir tablo hazırlıyor ve bir elementi işaretliyor. Tablodaki satırlar periyodu, sütunlar A grubunu göstermektedir. Öğrenciler işaretli (sarı) elementin sembolünü gizleyerek konumundan hangi özellikleri çıkarabileceklerini tartışıyor. İşaretli elementin sembolü K'dir.",
+   "question": "İşaretli element hangi sınıfta yer alır?",
+   "options": [
+    "alkali metal",
+    "halojen (ametal)",
+    "toprak alkali metal",
+    "soygaz"
+   ],
+   "answer": 0,
+   "explanation": "K, 1A grubunda yer alır ve alkali metal sınıfındadır."
+  },
+  {
+   "id": 9,
+   "outcome": "F.8.4.1 Periyodik sistem",
+   "image": "/soru-gorselleri/madde-ve-endustri/q09.svg",
+   "imageAlt": "Periyodik sistemde işaretli element",
+   "scenario": "Bir uçak yapım mühendisi, periyodik sistemin ilk 20 elementini gösteren bir tablo hazırlıyor ve bir elementi işaretliyor. Tablodaki satırlar periyodu, sütunlar A grubunu göstermektedir. Öğrenciler işaretli (sarı) elementin sembolünü gizleyerek konumundan hangi özellikleri çıkarabileceklerini tartışıyor. İşaretli elementin sembolü Al'dir.",
+   "question": "İşaretli elementin son yörüngesindeki (değerlik) elektron sayısı kaçtır?",
+   "options": [
+    "2",
+    "3",
+    "5",
+    "4"
+   ],
+   "answer": 1,
+   "explanation": "A grubu numarası değerlik elektron sayısını verir: 3A → 3 elektron."
+  },
+  {
+   "id": 10,
+   "outcome": "F.8.4.1 Periyodik sistem",
+   "image": "/soru-gorselleri/madde-ve-endustri/q10.svg",
+   "imageAlt": "Periyodik sistemde işaretli element",
+   "scenario": "Bir kaynak atölyesi ustası, periyodik sistemin ilk 20 elementini gösteren bir tablo hazırlıyor ve bir elementi işaretliyor. Tablodaki satırlar periyodu, sütunlar A grubunu göstermektedir. Öğrenciler işaretli (sarı) elementin sembolünü gizleyerek konumundan hangi özellikleri çıkarabileceklerini tartışıyor. İşaretli elementin sembolü Ar'dir.",
+   "question": "İşaretli element periyodik sistemde hangi grup ve periyottadır?",
+   "options": [
+    "2A grubu, 3. periyot",
+    "8A grubu, 3. periyot",
+    "8A grubu, 4. periyot",
+    "1A grubu, 2. periyot"
+   ],
+   "answer": 1,
+   "explanation": "Ar elementi 8A grubunda ve 3. periyottadır."
+  },
+  {
+   "id": 11,
+   "outcome": "F.8.4.1 Periyodik sistem",
+   "image": "/soru-gorselleri/madde-ve-endustri/q11.svg",
+   "imageAlt": "Bohr atom modeli",
+   "scenario": "Bir fen kulübü öğrencisi, proton sayısı 3 olan nötr bir atomun elektron dizilimini Bohr modeliyle çiziyor. Yörüngelerdeki elektron sayıları sırasıyla 2, 1 olarak yerleştirilmiş. Atomun hangi grupta ve periyotta bulunduğu merak ediliyor.",
+   "question": "Bu atom periyodik sistemin kaçıncı periyodundadır?",
+   "options": [
+    "2. periyot",
+    "4. periyot",
+    "1. periyot",
+    "3. periyot"
+   ],
+   "answer": 0,
+   "explanation": "Elektronlar 2 yörüngeye dağılmıştır; periyot numarası yörünge sayısına eşittir."
+  },
+  {
+   "id": 12,
+   "outcome": "F.8.4.1 Periyodik sistem",
+   "image": "/soru-gorselleri/madde-ve-endustri/q12.svg",
+   "imageAlt": "Bohr atom modeli",
+   "scenario": "Bir fen kulübü öğrencisi, proton sayısı 11 olan nötr bir atomun elektron dizilimini Bohr modeliyle çiziyor. Yörüngelerdeki elektron sayıları sırasıyla 2, 8, 1 olarak yerleştirilmiş. Atomun hangi grupta ve periyotta bulunduğu merak ediliyor.",
+   "question": "Bu atom hangi A grubundadır?",
+   "options": [
+    "1A",
+    "3A",
+    "2A",
+    "4A"
+   ],
+   "answer": 0,
+   "explanation": "Son yörüngede 1 elektron var → 1A."
+  },
+  {
+   "id": 13,
+   "outcome": "F.8.4.1 Periyodik sistem",
+   "image": "/soru-gorselleri/madde-ve-endustri/q13.svg",
+   "imageAlt": "Bohr atom modeli",
+   "scenario": "Bir fen kulübü öğrencisi, proton sayısı 9 olan nötr bir atomun elektron dizilimini Bohr modeliyle çiziyor. Yörüngelerdeki elektron sayıları sırasıyla 2, 7 olarak yerleştirilmiş. Atomun hangi grupta ve periyotta bulunduğu merak ediliyor.",
+   "question": "Bu atom hangi sınıfa girer?",
+   "options": [
+    "Yarı metal",
+    "Soygaz",
+    "Ametal",
+    "Metal"
+   ],
+   "answer": 2,
+   "explanation": "Son yörüngede 7 elektron bulunan ve 2. periyottaki bu atom ametal sınıfındadır."
+  },
+  {
+   "id": 14,
+   "outcome": "F.8.4.1 Periyodik sistem",
+   "image": "/soru-gorselleri/madde-ve-endustri/q14.svg",
+   "imageAlt": "Bohr atom modeli",
+   "scenario": "Bir fen kulübü öğrencisi, proton sayısı 16 olan nötr bir atomun elektron dizilimini Bohr modeliyle çiziyor. Yörüngelerdeki elektron sayıları sırasıyla 2, 8, 6 olarak yerleştirilmiş. Atomun hangi grupta ve periyotta bulunduğu merak ediliyor.",
+   "question": "Bu atom periyodik sistemin kaçıncı periyodundadır?",
+   "options": [
+    "2. periyot",
+    "5. periyot",
+    "4. periyot",
+    "3. periyot"
+   ],
+   "answer": 3,
+   "explanation": "Elektronlar 3 yörüngeye dağılmıştır; periyot numarası yörünge sayısına eşittir."
+  },
+  {
+   "id": 15,
+   "outcome": "F.8.4.1 Periyodik sistem",
+   "image": "/soru-gorselleri/madde-ve-endustri/q15.svg",
+   "imageAlt": "Bohr atom modeli",
+   "scenario": "Bir fen kulübü öğrencisi, proton sayısı 12 olan nötr bir atomun elektron dizilimini Bohr modeliyle çiziyor. Yörüngelerdeki elektron sayıları sırasıyla 2, 8, 2 olarak yerleştirilmiş. Atomun hangi grupta ve periyotta bulunduğu merak ediliyor.",
+   "question": "Bu atom hangi A grubundadır?",
+   "options": [
+    "2A",
+    "3A",
+    "4A",
+    "1A"
+   ],
+   "answer": 0,
+   "explanation": "Son yörüngede 2 elektron var → 2A."
+  },
+  {
+   "id": 16,
+   "outcome": "F.8.4.1 Periyodik sistem",
+   "image": "/soru-gorselleri/madde-ve-endustri/q16.svg",
+   "imageAlt": "Bohr atom modeli",
+   "scenario": "Bir fen kulübü öğrencisi, proton sayısı 17 olan nötr bir atomun elektron dizilimini Bohr modeliyle çiziyor. Yörüngelerdeki elektron sayıları sırasıyla 2, 8, 7 olarak yerleştirilmiş. Atomun hangi grupta ve periyotta bulunduğu merak ediliyor.",
+   "question": "Bu atom hangi sınıfa girer?",
+   "options": [
+    "Soygaz",
+    "Yarı metal",
+    "Metal",
+    "Ametal"
+   ],
+   "answer": 3,
+   "explanation": "Son yörüngede 7 elektron bulunan ve 3. periyottaki bu atom ametal sınıfındadır."
+  },
+  {
+   "id": 17,
+   "outcome": "F.8.4.1 Periyodik sistem",
+   "image": "/soru-gorselleri/madde-ve-endustri/q17.svg",
+   "imageAlt": "Bohr atom modeli",
+   "scenario": "Bir fen kulübü öğrencisi, proton sayısı 13 olan nötr bir atomun elektron dizilimini Bohr modeliyle çiziyor. Yörüngelerdeki elektron sayıları sırasıyla 2, 8, 3 olarak yerleştirilmiş. Atomun hangi grupta ve periyotta bulunduğu merak ediliyor.",
+   "question": "Bu atom periyodik sistemin kaçıncı periyodundadır?",
+   "options": [
+    "4. periyot",
+    "5. periyot",
+    "2. periyot",
+    "3. periyot"
+   ],
+   "answer": 3,
+   "explanation": "Elektronlar 3 yörüngeye dağılmıştır; periyot numarası yörünge sayısına eşittir."
+  },
+  {
+   "id": 18,
+   "outcome": "F.8.4.1 Periyodik sistem",
+   "image": "/soru-gorselleri/madde-ve-endustri/q18.svg",
+   "imageAlt": "Bohr atom modeli",
+   "scenario": "Bir fen kulübü öğrencisi, proton sayısı 18 olan nötr bir atomun elektron dizilimini Bohr modeliyle çiziyor. Yörüngelerdeki elektron sayıları sırasıyla 2, 8, 8 olarak yerleştirilmiş. Atomun hangi grupta ve periyotta bulunduğu merak ediliyor.",
+   "question": "Bu atom hangi A grubundadır?",
+   "options": [
+    "8A",
+    "3A",
+    "1A",
+    "2A"
+   ],
+   "answer": 0,
+   "explanation": "Son yörüngede 8 elektron var → 8A."
+  },
+  {
+   "id": 19,
+   "outcome": "F.8.4.2 Fiziksel ve kimyasal değişim",
+   "image": "/soru-gorselleri/madde-ve-endustri/q19.svg",
+   "imageAlt": "Dört olay kartı",
+   "scenario": "Fen laboratuvarında dört farklı olay gözlemleniyor. Öğrenciler her olayı kartlara yazıyor ve gözlemlerini not alıyor. Kimyasal değişimlerde yeni maddeler oluşurken fiziksel değişimlerde maddenin kimliği korunur. Kartlardaki olaylar: A) Bakır telin bükülmesi; B) Demirin paslanması; C) Buzun erimesi; D) Tebeşirin ezilmesi.",
+   "question": "Hangisinde kimyasal değişim gerçekleşmiştir?",
+   "options": [
+    "D kartındaki olay",
+    "B kartındaki olay",
+    "C kartındaki olay",
+    "A kartındaki olay"
+   ],
+   "answer": 1,
+   "explanation": "Demirin paslanması: yeni madde oluşur (kahverengi pas oluşumu), kimyasal değişimdir. Diğerleri maddenin yalnızca hâlini/biçimini değiştirir."
+  },
+  {
+   "id": 20,
+   "outcome": "F.8.4.2 Fiziksel ve kimyasal değişim",
+   "image": "/soru-gorselleri/madde-ve-endustri/q20.svg",
+   "imageAlt": "Dört olay kartı",
+   "scenario": "Fen laboratuvarında dört farklı olay gözlemleniyor. Öğrenciler her olayı kartlara yazıyor ve gözlemlerini not alıyor. Kimyasal değişimlerde yeni maddeler oluşurken fiziksel değişimlerde maddenin kimliği korunur. Kartlardaki olaylar: A) Kağıdın yanması; B) Suyun elektrolizi; C) Gümüşün kararması; D) Şekerin suda çözünmesi.",
+   "question": "Hangisinde fiziksel değişim gerçekleşmiştir?",
+   "options": [
+    "D kartındaki olay",
+    "C kartındaki olay",
+    "A kartındaki olay",
+    "B kartındaki olay"
+   ],
+   "answer": 0,
+   "explanation": "Şekerin suda çözünmesi: maddenin kimliği değişmez (çözünme), fiziksel değişimdir. Diğerlerinde yeni madde oluşur."
+  },
+  {
+   "id": 21,
+   "outcome": "F.8.4.2 Fiziksel ve kimyasal değişim",
+   "image": "/soru-gorselleri/madde-ve-endustri/q21.svg",
+   "imageAlt": "Dört olay kartı",
+   "scenario": "Fen laboratuvarında dört farklı olay gözlemleniyor. Öğrenciler her olayı kartlara yazıyor ve gözlemlerini not alıyor. Kimyasal değişimlerde yeni maddeler oluşurken fiziksel değişimlerde maddenin kimliği korunur. Kartlardaki olaylar: A) Sütün ekşimesi; B) Odunun kesilmesi; C) Tuzun suda çözünmesi; D) Naftalinin süblimleşmesi.",
+   "question": "Hangisinde kimyasal değişim gerçekleşmiştir?",
+   "options": [
+    "B kartındaki olay",
+    "D kartındaki olay",
+    "A kartındaki olay",
+    "C kartındaki olay"
+   ],
+   "answer": 2,
+   "explanation": "Sütün ekşimesi: yeni madde oluşur (koku ve tat değişimi), kimyasal değişimdir. Diğerleri maddenin yalnızca hâlini/biçimini değiştirir."
+  },
+  {
+   "id": 22,
+   "outcome": "F.8.4.2 Fiziksel ve kimyasal değişim",
+   "image": "/soru-gorselleri/madde-ve-endustri/q22.svg",
+   "imageAlt": "Dört olay kartı",
+   "scenario": "Fen laboratuvarında dört farklı olay gözlemleniyor. Öğrenciler her olayı kartlara yazıyor ve gözlemlerini not alıyor. Kimyasal değişimlerde yeni maddeler oluşurken fiziksel değişimlerde maddenin kimliği korunur. Kartlardaki olaylar: A) Kibritin yanması; B) Tebeşirin ezilmesi; C) Ekmeğin küflenmesi; D) Yumurtanın pişmesi.",
+   "question": "Hangisinde fiziksel değişim gerçekleşmiştir?",
+   "options": [
+    "A kartındaki olay",
+    "D kartındaki olay",
+    "C kartındaki olay",
+    "B kartındaki olay"
+   ],
+   "answer": 3,
+   "explanation": "Tebeşirin ezilmesi: maddenin kimliği değişmez (şekil değişimi), fiziksel değişimdir. Diğerlerinde yeni madde oluşur."
+  },
+  {
+   "id": 23,
+   "outcome": "F.8.4.2 Fiziksel ve kimyasal değişim",
+   "image": "/soru-gorselleri/madde-ve-endustri/q23.svg",
+   "imageAlt": "Dört olay kartı",
+   "scenario": "Fen laboratuvarında dört farklı olay gözlemleniyor. Öğrenciler her olayı kartlara yazıyor ve gözlemlerini not alıyor. Kimyasal değişimlerde yeni maddeler oluşurken fiziksel değişimlerde maddenin kimliği korunur. Kartlardaki olaylar: A) Gümüşün kararması; B) Çikolatanın erimesi; C) Buzun erimesi; D) Suyun buharlaşması.",
+   "question": "Hangisinde kimyasal değişim gerçekleşmiştir?",
+   "options": [
+    "D kartındaki olay",
+    "A kartındaki olay",
+    "C kartındaki olay",
+    "B kartındaki olay"
+   ],
+   "answer": 1,
+   "explanation": "Gümüşün kararması: yeni madde oluşur (renk değişimi), kimyasal değişimdir. Diğerleri maddenin yalnızca hâlini/biçimini değiştirir."
+  },
+  {
+   "id": 24,
+   "outcome": "F.8.4.2 Fiziksel ve kimyasal değişim",
+   "image": "/soru-gorselleri/madde-ve-endustri/q24.svg",
+   "imageAlt": "Dört olay kartı",
+   "scenario": "Fen laboratuvarında dört farklı olay gözlemleniyor. Öğrenciler her olayı kartlara yazıyor ve gözlemlerini not alıyor. Kimyasal değişimlerde yeni maddeler oluşurken fiziksel değişimlerde maddenin kimliği korunur. Kartlardaki olaylar: A) Elmanın kararması; B) Sodanın sirkeyle tepkimesi; C) Tuzun suda çözünmesi; D) Kağıdın yanması.",
+   "question": "Hangisinde fiziksel değişim gerçekleşmiştir?",
+   "options": [
+    "B kartındaki olay",
+    "C kartındaki olay",
+    "D kartındaki olay",
+    "A kartındaki olay"
+   ],
+   "answer": 1,
+   "explanation": "Tuzun suda çözünmesi: maddenin kimliği değişmez (çözünme), fiziksel değişimdir. Diğerlerinde yeni madde oluşur."
+  },
+  {
+   "id": 25,
+   "outcome": "F.8.4.2 Fiziksel ve kimyasal değişim",
+   "image": "/soru-gorselleri/madde-ve-endustri/q25.svg",
+   "imageAlt": "Dört olay kartı",
+   "scenario": "Fen laboratuvarında dört farklı olay gözlemleniyor. Öğrenciler her olayı kartlara yazıyor ve gözlemlerini not alıyor. Kimyasal değişimlerde yeni maddeler oluşurken fiziksel değişimlerde maddenin kimliği korunur. Kartlardaki olaylar: A) Bakır telin bükülmesi; B) Yağın donması; C) Kibritin yanması; D) Naftalinin süblimleşmesi.",
+   "question": "Hangisinde kimyasal değişim gerçekleşmiştir?",
+   "options": [
+    "A kartındaki olay",
+    "C kartındaki olay",
+    "B kartındaki olay",
+    "D kartındaki olay"
+   ],
+   "answer": 1,
+   "explanation": "Kibritin yanması: yeni madde oluşur (alev ve duman), kimyasal değişimdir. Diğerleri maddenin yalnızca hâlini/biçimini değiştirir."
+  },
+  {
+   "id": 26,
+   "outcome": "F.8.4.2 Fiziksel ve kimyasal değişim",
+   "image": "/soru-gorselleri/madde-ve-endustri/q26.svg",
+   "imageAlt": "Dört olay kartı",
+   "scenario": "Fen laboratuvarında dört farklı olay gözlemleniyor. Öğrenciler her olayı kartlara yazıyor ve gözlemlerini not alıyor. Kimyasal değişimlerde yeni maddeler oluşurken fiziksel değişimlerde maddenin kimliği korunur. Kartlardaki olaylar: A) Yumurtanın pişmesi; B) Çikolatanın erimesi; C) Suyun elektrolizi; D) Demirin paslanması.",
+   "question": "Hangisinde fiziksel değişim gerçekleşmiştir?",
+   "options": [
+    "D kartındaki olay",
+    "C kartındaki olay",
+    "A kartındaki olay",
+    "B kartındaki olay"
+   ],
+   "answer": 3,
+   "explanation": "Çikolatanın erimesi: maddenin kimliği değişmez (hal değişimi), fiziksel değişimdir. Diğerlerinde yeni madde oluşur."
+  },
+  {
+   "id": 27,
+   "outcome": "F.8.4.2 Fiziksel ve kimyasal değişim",
+   "image": "/soru-gorselleri/madde-ve-endustri/q27.svg",
+   "imageAlt": "Dört olay kartı",
+   "scenario": "Fen laboratuvarında dört farklı olay gözlemleniyor. Öğrenciler her olayı kartlara yazıyor ve gözlemlerini not alıyor. Kimyasal değişimlerde yeni maddeler oluşurken fiziksel değişimlerde maddenin kimliği korunur. Kartlardaki olaylar: A) Odunun kesilmesi; B) Şekerin suda çözünmesi; C) Suyun buharlaşması; D) Sodanın sirkeyle tepkimesi.",
+   "question": "Hangisinde kimyasal değişim gerçekleşmiştir?",
+   "options": [
+    "D kartındaki olay",
+    "A kartındaki olay",
+    "C kartındaki olay",
+    "B kartındaki olay"
+   ],
+   "answer": 0,
+   "explanation": "Sodanın sirkeyle tepkimesi: yeni madde oluşur (gaz çıkışı), kimyasal değişimdir. Diğerleri maddenin yalnızca hâlini/biçimini değiştirir."
+  },
+  {
+   "id": 28,
+   "outcome": "F.8.4.2 Fiziksel ve kimyasal değişim",
+   "image": "/soru-gorselleri/madde-ve-endustri/q28.svg",
+   "imageAlt": "Dört olay kartı",
+   "scenario": "Fen laboratuvarında dört farklı olay gözlemleniyor. Öğrenciler her olayı kartlara yazıyor ve gözlemlerini not alıyor. Kimyasal değişimlerde yeni maddeler oluşurken fiziksel değişimlerde maddenin kimliği korunur. Kartlardaki olaylar: A) Elmanın kararması; B) Yağın donması; C) Ekmeğin küflenmesi; D) Sütün ekşimesi.",
+   "question": "Hangisinde fiziksel değişim gerçekleşmiştir?",
+   "options": [
+    "B kartındaki olay",
+    "C kartındaki olay",
+    "D kartındaki olay",
+    "A kartındaki olay"
+   ],
+   "answer": 0,
+   "explanation": "Yağın donması: maddenin kimliği değişmez (hal değişimi), fiziksel değişimdir. Diğerlerinde yeni madde oluşur."
+  },
+  {
+   "id": 29,
+   "outcome": "F.8.4.3 Kimyasal tepkimelerde korunum",
+   "image": "/soru-gorselleri/madde-ve-endustri/q29.svg",
+   "imageAlt": "Tepkimeden önce ve sonra kütleler",
+   "scenario": "Bir kimya öğretmeni, kapalı bir kapta gerçekleşen Karbon ve oksijenin tepkimesi (C + O₂ → CO₂) tepkimesini öğrencilerine kütle korunumu açısından inceletiyor. Tepkimeden önce ve sonra kaplar tartılıyor, gazlar kaptan kaçmıyor. Şekilde madde kütleleri verilmiştir; bilinmeyen kütle '?' ile gösterilmiştir.",
+   "question": "Bilinmeyen kütle kaç gramdır?",
+   "options": [
+    "54 g",
+    "34 g",
+    "44 g",
+    "88 g"
+   ],
+   "answer": 2,
+   "explanation": "Kütle korunumu: Girenlerin toplam kütlesi = ürünlerin toplam kütlesidir. Bilinmeyen kütle 44 g bulunur."
+  },
+  {
+   "id": 30,
+   "outcome": "F.8.4.3 Kimyasal tepkimelerde korunum",
+   "image": "/soru-gorselleri/madde-ve-endustri/q30.svg",
+   "imageAlt": "Tepkimeden önce ve sonra kütleler",
+   "scenario": "Bir kimya öğretmeni, kapalı bir kapta gerçekleşen Hidrojen ve oksijenin tepkimesi (2H₂ + O₂ → 2H₂O) tepkimesini öğrencilerine kütle korunumu açısından inceletiyor. Tepkimeden önce ve sonra kaplar tartılıyor, gazlar kaptan kaçmıyor. Şekilde madde kütleleri verilmiştir; bilinmeyen kütle '?' ile gösterilmiştir.",
+   "question": "Bilinmeyen kütle kaç gramdır?",
+   "options": [
+    "72 g",
+    "46 g",
+    "26 g",
+    "36 g"
+   ],
+   "answer": 3,
+   "explanation": "Kütle korunumu: Girenlerin toplam kütlesi = ürünlerin toplam kütlesidir. Bilinmeyen kütle 36 g bulunur."
+  },
+  {
+   "id": 31,
+   "outcome": "F.8.4.3 Kimyasal tepkimelerde korunum",
+   "image": "/soru-gorselleri/madde-ve-endustri/q31.svg",
+   "imageAlt": "Tepkimeden önce ve sonra kütleler",
+   "scenario": "Bir kimya öğretmeni, kapalı bir kapta gerçekleşen Magnezyumun yanması (2Mg + O₂ → 2MgO) tepkimesini öğrencilerine kütle korunumu açısından inceletiyor. Tepkimeden önce ve sonra kaplar tartılıyor, gazlar kaptan kaçmıyor. Şekilde madde kütleleri verilmiştir; bilinmeyen kütle '?' ile gösterilmiştir.",
+   "question": "Bilinmeyen kütle kaç gramdır?",
+   "options": [
+    "42 g",
+    "22 g",
+    "32 g",
+    "64 g"
+   ],
+   "answer": 2,
+   "explanation": "Kütle korunumu: Girenlerin toplam kütlesi = ürünlerin toplam kütlesidir. Bilinmeyen kütle 32 g bulunur."
+  },
+  {
+   "id": 32,
+   "outcome": "F.8.4.3 Kimyasal tepkimelerde korunum",
+   "image": "/soru-gorselleri/madde-ve-endustri/q32.svg",
+   "imageAlt": "Tepkimeden önce ve sonra kütleler",
+   "scenario": "Bir kimya öğretmeni, kapalı bir kapta gerçekleşen Demir ve kükürdün tepkimesi (Fe + S → FeS) tepkimesini öğrencilerine kütle korunumu açısından inceletiyor. Tepkimeden önce ve sonra kaplar tartılıyor, gazlar kaptan kaçmıyor. Şekilde madde kütleleri verilmiştir; bilinmeyen kütle '?' ile gösterilmiştir.",
+   "question": "Bilinmeyen kütle kaç gramdır?",
+   "options": [
+    "42 g",
+    "22 g",
+    "64 g",
+    "32 g"
+   ],
+   "answer": 3,
+   "explanation": "Kütle korunumu: Girenlerin toplam kütlesi = ürünlerin toplam kütlesidir. Bilinmeyen kütle 32 g bulunur."
+  },
+  {
+   "id": 33,
+   "outcome": "F.8.4.3 Kimyasal tepkimelerde korunum",
+   "image": "/soru-gorselleri/madde-ve-endustri/q33.svg",
+   "imageAlt": "Tepkimeden önce ve sonra kütleler",
+   "scenario": "Bir kimya öğretmeni, kapalı bir kapta gerçekleşen Kalsiyum karbonatın ısıtılması (CaCO₃ → CaO + CO₂) tepkimesini öğrencilerine kütle korunumu açısından inceletiyor. Tepkimeden önce ve sonra kaplar tartılıyor, gazlar kaptan kaçmıyor. Şekilde madde kütleleri verilmiştir; bilinmeyen kütle '?' ile gösterilmiştir.",
+   "question": "Bilinmeyen kütle kaç gramdır?",
+   "options": [
+    "44 g",
+    "54 g",
+    "34 g",
+    "88 g"
+   ],
+   "answer": 0,
+   "explanation": "Kütle korunumu: Girenlerin toplam kütlesi = ürünlerin toplam kütlesidir. Bilinmeyen kütle 44 g bulunur."
+  },
+  {
+   "id": 34,
+   "outcome": "F.8.4.3 Kimyasal tepkimelerde korunum",
+   "image": "/soru-gorselleri/madde-ve-endustri/q34.svg",
+   "imageAlt": "Tepkimeden önce ve sonra kütleler",
+   "scenario": "Bir kimya öğretmeni, kapalı bir kapta gerçekleşen Suyun elektrolizi (2H₂O → 2H₂ + O₂) tepkimesini öğrencilerine kütle korunumu açısından inceletiyor. Tepkimeden önce ve sonra kaplar tartılıyor, gazlar kaptan kaçmıyor. Şekilde madde kütleleri verilmiştir; bilinmeyen kütle '?' ile gösterilmiştir.",
+   "question": "Bilinmeyen kütle kaç gramdır?",
+   "options": [
+    "22 g",
+    "42 g",
+    "64 g",
+    "32 g"
+   ],
+   "answer": 3,
+   "explanation": "Kütle korunumu: Girenlerin toplam kütlesi = ürünlerin toplam kütlesidir. Bilinmeyen kütle 32 g bulunur."
+  },
+  {
+   "id": 35,
+   "outcome": "F.8.4.3 Kimyasal tepkimelerde korunum",
+   "image": "/soru-gorselleri/madde-ve-endustri/q35.svg",
+   "imageAlt": "Tepkimeden önce ve sonra kütleler",
+   "scenario": "Bir kimya öğretmeni, kapalı bir kapta gerçekleşen Çinko ve kükürdün tepkimesi (Zn + S → ZnS) tepkimesini öğrencilerine kütle korunumu açısından inceletiyor. Tepkimeden önce ve sonra kaplar tartılıyor, gazlar kaptan kaçmıyor. Şekilde madde kütleleri verilmiştir; bilinmeyen kütle '?' ile gösterilmiştir.",
+   "question": "Bilinmeyen kütle kaç gramdır?",
+   "options": [
+    "97 g",
+    "194 g",
+    "107 g",
+    "87 g"
+   ],
+   "answer": 0,
+   "explanation": "Kütle korunumu: Girenlerin toplam kütlesi = ürünlerin toplam kütlesidir. Bilinmeyen kütle 97 g bulunur."
+  },
+  {
+   "id": 36,
+   "outcome": "F.8.4.3 Kimyasal tepkimelerde korunum",
+   "image": "/soru-gorselleri/madde-ve-endustri/q36.svg",
+   "imageAlt": "Tepkimeden önce ve sonra kütleler",
+   "scenario": "Bir kimya öğretmeni, kapalı bir kapta gerçekleşen Sodyum bikarbonat ve sirke tepkimesi (kapalı kap) tepkimesini öğrencilerine kütle korunumu açısından inceletiyor. Tepkimeden önce ve sonra kaplar tartılıyor, gazlar kaptan kaçmıyor. Şekilde madde kütleleri verilmiştir; bilinmeyen kütle '?' ile gösterilmiştir.",
+   "question": "Bilinmeyen kütle kaç gramdır?",
+   "options": [
+    "194 g",
+    "174 g",
+    "184 g",
+    "368 g"
+   ],
+   "answer": 2,
+   "explanation": "Kütle korunumu: Girenlerin toplam kütlesi = ürünlerin toplam kütlesidir. Bilinmeyen kütle 184 g bulunur."
+  },
+  {
+   "id": 37,
+   "outcome": "F.8.4.3 Kimyasal tepkimelerde korunum",
+   "image": "/soru-gorselleri/madde-ve-endustri/q37.svg",
+   "imageAlt": "Tepkimeden önce ve sonra kütleler",
+   "scenario": "Bir kimya öğretmeni, kapalı bir kapta gerçekleşen Alüminyumun yanması (4Al + 3O₂ → 2Al₂O₃) tepkimesini öğrencilerine kütle korunumu açısından inceletiyor. Tepkimeden önce ve sonra kaplar tartılıyor, gazlar kaptan kaçmıyor. Şekilde madde kütleleri verilmiştir; bilinmeyen kütle '?' ile gösterilmiştir.",
+   "question": "Bilinmeyen kütle kaç gramdır?",
+   "options": [
+    "194 g",
+    "204 g",
+    "408 g",
+    "214 g"
+   ],
+   "answer": 1,
+   "explanation": "Kütle korunumu: Girenlerin toplam kütlesi = ürünlerin toplam kütlesidir. Bilinmeyen kütle 204 g bulunur."
+  },
+  {
+   "id": 38,
+   "outcome": "F.8.4.3 Kimyasal tepkimelerde korunum",
+   "image": "/soru-gorselleri/madde-ve-endustri/q38.svg",
+   "imageAlt": "Tepkimeden önce ve sonra kütleler",
+   "scenario": "Bir kimya öğretmeni, kapalı bir kapta gerçekleşen Bakır ve kükürdün tepkimesi (Cu + S → CuS) tepkimesini öğrencilerine kütle korunumu açısından inceletiyor. Tepkimeden önce ve sonra kaplar tartılıyor, gazlar kaptan kaçmıyor. Şekilde madde kütleleri verilmiştir; bilinmeyen kütle '?' ile gösterilmiştir.",
+   "question": "Bilinmeyen kütle kaç gramdır?",
+   "options": [
+    "64 g",
+    "42 g",
+    "32 g",
+    "22 g"
+   ],
+   "answer": 2,
+   "explanation": "Kütle korunumu: Girenlerin toplam kütlesi = ürünlerin toplam kütlesidir. Bilinmeyen kütle 32 g bulunur."
+  },
+  {
+   "id": 39,
+   "outcome": "F.8.4.3 Kimyasal tepkime denklemi",
+   "image": "/soru-gorselleri/madde-ve-endustri/q39.svg",
+   "imageAlt": "Denkleştirilmemiş tepkime ve atom sayıları",
+   "scenario": "Kimya kulübü öğrencileri su tepkimesinin denklemini yazıyor. Denklemde atom sayıları henüz eşit değildir; şekildeki tabloda girenler ve ürünlerdeki atom sayıları verilmiştir. Öğrenciler kütlenin korunumuna göre denklemi denkleştirecek.",
+   "question": "Denkleştirilmiş denklemdeki katsayıların toplamı kaçtır?",
+   "options": [
+    "3",
+    "4",
+    "6",
+    "5"
+   ],
+   "answer": 3,
+   "explanation": "Denkleştirilmiş katsayılar: 2, 1, 2 → toplam 5."
+  },
+  {
+   "id": 40,
+   "outcome": "F.8.4.3 Kimyasal tepkime denklemi",
+   "image": "/soru-gorselleri/madde-ve-endustri/q40.svg",
+   "imageAlt": "Denkleştirilmemiş tepkime ve atom sayıları",
+   "scenario": "Kimya kulübü öğrencileri amonyak tepkimesinin denklemini yazıyor. Denklemde atom sayıları henüz eşit değildir; şekildeki tabloda girenler ve ürünlerdeki atom sayıları verilmiştir. Öğrenciler kütlenin korunumuna göre denklemi denkleştirecek.",
+   "question": "Denkleştirilmiş denklemde N₂ için katsayı kaç olur?",
+   "options": [
+    "3",
+    "1",
+    "4",
+    "2"
+   ],
+   "answer": 1,
+   "explanation": "Denkleştirilmiş katsayılar sırasıyla 1, 3, 2 olup N₂ için 1 bulunur."
+  },
+  {
+   "id": 41,
+   "outcome": "F.8.4.3 Kimyasal tepkime denklemi",
+   "image": "/soru-gorselleri/madde-ve-endustri/q41.svg",
+   "imageAlt": "Denkleştirilmemiş tepkime ve atom sayıları",
+   "scenario": "Kimya kulübü öğrencileri magnezyum oksit tepkimesinin denklemini yazıyor. Denklemde atom sayıları henüz eşit değildir; şekildeki tabloda girenler ve ürünlerdeki atom sayıları verilmiştir. Öğrenciler kütlenin korunumuna göre denklemi denkleştirecek.",
+   "question": "Denkleştirilmiş denklemdeki katsayıların toplamı kaçtır?",
+   "options": [
+    "4",
+    "6",
+    "3",
+    "5"
+   ],
+   "answer": 3,
+   "explanation": "Denkleştirilmiş katsayılar: 2, 1, 2 → toplam 5."
+  },
+  {
+   "id": 42,
+   "outcome": "F.8.4.3 Kimyasal tepkime denklemi",
+   "image": "/soru-gorselleri/madde-ve-endustri/q42.svg",
+   "imageAlt": "Denkleştirilmemiş tepkime ve atom sayıları",
+   "scenario": "Kimya kulübü öğrencileri demir(III) oksit tepkimesinin denklemini yazıyor. Denklemde atom sayıları henüz eşit değildir; şekildeki tabloda girenler ve ürünlerdeki atom sayıları verilmiştir. Öğrenciler kütlenin korunumuna göre denklemi denkleştirecek.",
+   "question": "Denkleştirilmiş denklemde Fe için katsayı kaç olur?",
+   "options": [
+    "5",
+    "6",
+    "8",
+    "4"
+   ],
+   "answer": 3,
+   "explanation": "Denkleştirilmiş katsayılar sırasıyla 4, 3, 2 olup Fe için 4 bulunur."
+  },
+  {
+   "id": 43,
+   "outcome": "F.8.4.3 Kimyasal tepkime denklemi",
+   "image": "/soru-gorselleri/madde-ve-endustri/q43.svg",
+   "imageAlt": "Denkleştirilmemiş tepkime ve atom sayıları",
+   "scenario": "Kimya kulübü öğrencileri metan yanması tepkimesinin denklemini yazıyor. Denklemde atom sayıları henüz eşit değildir; şekildeki tabloda girenler ve ürünlerdeki atom sayıları verilmiştir. Öğrenciler kütlenin korunumuna göre denklemi denkleştirecek.",
+   "question": "Denkleştirilmiş denklemdeki katsayıların toplamı kaçtır?",
+   "options": [
+    "7",
+    "5",
+    "6",
+    "4"
+   ],
+   "answer": 2,
+   "explanation": "Denkleştirilmiş katsayılar: 1, 2, 1, 2 → toplam 6."
+  },
+  {
+   "id": 44,
+   "outcome": "F.8.4.3 Kimyasal tepkime denklemi",
+   "image": "/soru-gorselleri/madde-ve-endustri/q44.svg",
+   "imageAlt": "Denkleştirilmemiş tepkime ve atom sayıları",
+   "scenario": "Kimya kulübü öğrencileri alüminyum oksit tepkimesinin denklemini yazıyor. Denklemde atom sayıları henüz eşit değildir; şekildeki tabloda girenler ve ürünlerdeki atom sayıları verilmiştir. Öğrenciler kütlenin korunumuna göre denklemi denkleştirecek.",
+   "question": "Denkleştirilmiş denklemde Al için katsayı kaç olur?",
+   "options": [
+    "5",
+    "8",
+    "4",
+    "6"
+   ],
+   "answer": 2,
+   "explanation": "Denkleştirilmiş katsayılar sırasıyla 4, 3, 2 olup Al için 4 bulunur."
+  },
+  {
+   "id": 45,
+   "outcome": "F.8.4.3 Kimyasal tepkime denklemi",
+   "image": "/soru-gorselleri/madde-ve-endustri/q45.svg",
+   "imageAlt": "Denkleştirilmemiş tepkime ve atom sayıları",
+   "scenario": "Kimya kulübü öğrencileri propan yanması tepkimesinin denklemini yazıyor. Denklemde atom sayıları henüz eşit değildir; şekildeki tabloda girenler ve ürünlerdeki atom sayıları verilmiştir. Öğrenciler kütlenin korunumuna göre denklemi denkleştirecek.",
+   "question": "Denkleştirilmiş denklemdeki katsayıların toplamı kaçtır?",
+   "options": [
+    "14",
+    "13",
+    "12",
+    "4"
+   ],
+   "answer": 1,
+   "explanation": "Denkleştirilmiş katsayılar: 1, 5, 3, 4 → toplam 13."
+  },
+  {
+   "id": 46,
+   "outcome": "F.8.4.3 Kimyasal tepkime denklemi",
+   "image": "/soru-gorselleri/madde-ve-endustri/q46.svg",
+   "imageAlt": "Denkleştirilmemiş tepkime ve atom sayıları",
+   "scenario": "Kimya kulübü öğrencileri potasyum klorat ayrışması tepkimesinin denklemini yazıyor. Denklemde atom sayıları henüz eşit değildir; şekildeki tabloda girenler ve ürünlerdeki atom sayıları verilmiştir. Öğrenciler kütlenin korunumuna göre denklemi denkleştirecek.",
+   "question": "Denkleştirilmiş denklemde KClO₃ için katsayı kaç olur?",
+   "options": [
+    "5",
+    "4",
+    "3",
+    "2"
+   ],
+   "answer": 3,
+   "explanation": "Denkleştirilmiş katsayılar sırasıyla 2, 2, 3 olup KClO₃ için 2 bulunur."
+  },
+  {
+   "id": 47,
+   "outcome": "F.8.4.4 Asitler ve bazlar",
+   "image": "/soru-gorselleri/madde-ve-endustri/q47.svg",
+   "imageAlt": "pH ölçeği ve maddeler",
+   "scenario": "Bir öğrenci, mutfaktaki sıvıların pH değerlerini ölçüp ölçekte işaretliyor. Şekilde ölçülen maddeler pH ölçeği üzerinde gösterilmiştir. Ölçümler oda sıcaklığında yapılmıştır ve asitlik-bazlık yorumu pH değerlerine dayanır.",
+   "question": "Hangisi en kuvvetli asittir?",
+   "options": [
+    "Limon suyu",
+    "Hepsi nötrdür",
+    "Su",
+    "Sabun"
+   ],
+   "answer": 0,
+   "explanation": "pH değeri en küçük olan en kuvvetli asittir."
+  },
+  {
+   "id": 48,
+   "outcome": "F.8.4.4 Asitler ve bazlar",
+   "image": "/soru-gorselleri/madde-ve-endustri/q48.svg",
+   "imageAlt": "pH ölçeği ve maddeler",
+   "scenario": "Temizlik ürünleri incelenirken pH değerleri ölçülüyor. Şekilde ölçülen maddeler pH ölçeği üzerinde gösterilmiştir. Ölçümler oda sıcaklığında yapılmıştır ve asitlik-bazlık yorumu pH değerlerine dayanır.",
+   "question": "Bazik özellikteki madde hangisidir?",
+   "options": [
+    "Çamaşır suyu",
+    "Hiçbiri",
+    "Süt",
+    "Sirke"
+   ],
+   "answer": 0,
+   "explanation": "pH > 7 olan maddeler bazdır."
+  },
+  {
+   "id": 49,
+   "outcome": "F.8.4.4 Asitler ve bazlar",
+   "image": "/soru-gorselleri/madde-ve-endustri/q49.svg",
+   "imageAlt": "pH ölçeği ve maddeler",
+   "scenario": "Laboratuvarda üç sıvının pH'ı ölçülüyor. Şekilde ölçülen maddeler pH ölçeği üzerinde gösterilmiştir. Ölçümler oda sıcaklığında yapılmıştır ve asitlik-bazlık yorumu pH değerlerine dayanır.",
+   "question": "B sıvısı için hangisi doğrudur?",
+   "options": [
+    "Kuvvetli asittir",
+    "Nötrdür; turnusol kâğıdının rengini değiştirmez",
+    "Bazdır; kırmızı turnusolu mavi yapar",
+    "Asittir; mavi turnusolu kırmızı yapar"
+   ],
+   "answer": 1,
+   "explanation": "pH = 7 nötr demektir."
+  },
+  {
+   "id": 50,
+   "outcome": "F.8.4.4 Asitler ve bazlar",
+   "image": "/soru-gorselleri/madde-ve-endustri/q50.svg",
+   "imageAlt": "pH ölçeği ve maddeler",
+   "scenario": "İki asit çözeltisinin pH değerleri ölçülüyor. Şekilde ölçülen maddeler pH ölçeği üzerinde gösterilmiştir. Ölçümler oda sıcaklığında yapılmıştır ve asitlik-bazlık yorumu pH değerlerine dayanır.",
+   "question": "Hangisi daha kuvvetli asittir ve pH farkı nasıl yorumlanır?",
+   "options": [
+    "Y; pH küçüldükçe asitlik artar",
+    "İkisi de aynı asitliktedir",
+    "X; pH büyüdükçe asitlik artar",
+    "X; çünkü pH'ı daha yüksektir"
+   ],
+   "answer": 0,
+   "explanation": "pH 2, pH 4'ten daha asidiktir."
+  },
+  {
+   "id": 51,
+   "outcome": "F.8.4.4 Asitler ve bazlar",
+   "image": "/soru-gorselleri/madde-ve-endustri/q51.svg",
+   "imageAlt": "pH ölçeği ve maddeler",
+   "scenario": "Bir öğrenci mide asidini nötrleştirmek isteyen bir ilacın pH'ını inceliyor. Şekilde ölçülen maddeler pH ölçeği üzerinde gösterilmiştir. Ölçümler oda sıcaklığında yapılmıştır ve asitlik-bazlık yorumu pH değerlerine dayanır.",
+   "question": "İlaçta hangi madde türü bulunur?",
+   "options": [
+    "Tuz",
+    "Nötr yapı",
+    "Asit",
+    "Baz (antiasit)"
+   ],
+   "answer": 3,
+   "explanation": "Mide asidini nötrleştirmek için bazik madde kullanılır; pH 9 baziktir."
+  },
+  {
+   "id": 52,
+   "outcome": "F.8.4.4 Asitler ve bazlar",
+   "image": "/soru-gorselleri/madde-ve-endustri/q52.svg",
+   "imageAlt": "pH ölçeği ve maddeler",
+   "scenario": "Yağmur suyu örneklerinin pH'ı ölçülüyor. Şekilde ölçülen maddeler pH ölçeği üzerinde gösterilmiştir. Ölçümler oda sıcaklığında yapılmıştır ve asitlik-bazlık yorumu pH değerlerine dayanır.",
+   "question": "Asit yağmurunun pH'ı için ne söylenebilir?",
+   "options": [
+    "Saf sudan büyüktür",
+    "Bazik özelliktedir",
+    "Normal yağmura göre daha küçüktür",
+    "Nötrdür"
+   ],
+   "answer": 2,
+   "explanation": "Asit yağmurunun pH değeri normal yağmurdan küçüktür."
+  },
+  {
+   "id": 53,
+   "outcome": "F.8.4.4 Asitler ve bazlar",
+   "image": "/soru-gorselleri/madde-ve-endustri/q53.svg",
+   "imageAlt": "pH ölçeği ve maddeler",
+   "scenario": "Öğrenciler saf suya damla damla asit ekleyip pH değişimini izliyor. Şekilde ölçülen maddeler pH ölçeği üzerinde gösterilmiştir. Ölçümler oda sıcaklığında yapılmıştır ve asitlik-bazlık yorumu pH değerlerine dayanır.",
+   "question": "Asit eklendikçe pH nasıl değişir?",
+   "options": [
+    "Önce artar sonra azalır",
+    "Artar",
+    "Değişmez",
+    "Azalır"
+   ],
+   "answer": 3,
+   "explanation": "Asit eklendikçe ortam asitleşir, pH azalır."
+  },
+  {
+   "id": 54,
+   "outcome": "F.8.4.4 Asitler ve bazlar",
+   "image": "/soru-gorselleri/madde-ve-endustri/q54.svg",
+   "imageAlt": "pH ölçeği ve maddeler",
+   "scenario": "Bir asit çözeltisi saf su ile seyreltiliyor. Şekilde ölçülen maddeler pH ölçeği üzerinde gösterilmiştir. Ölçümler oda sıcaklığında yapılmıştır ve asitlik-bazlık yorumu pH değerlerine dayanır.",
+   "question": "Seyreltme sonucu pH nasıl değişir?",
+   "options": [
+    "Azalır",
+    "14 olur",
+    "Artar ve 7'ye yaklaşır",
+    "Değişmez"
+   ],
+   "answer": 2,
+   "explanation": "Seyreltme asit derişimini azaltır; pH yükselir."
+  },
+  {
+   "id": 55,
+   "outcome": "F.8.4.4 Asitler ve bazlar",
+   "image": "/soru-gorselleri/madde-ve-endustri/q55.svg",
+   "imageAlt": "pH ölçeği ve maddeler",
+   "scenario": "Bir sabun çözeltisi ile bir deterjan çözeltisinin pH'ı kıyaslanıyor. Şekilde ölçülen maddeler pH ölçeği üzerinde gösterilmiştir. Ölçümler oda sıcaklığında yapılmıştır ve asitlik-bazlık yorumu pH değerlerine dayanır.",
+   "question": "Hangisi en bazik özelliktedir?",
+   "options": [
+    "Sirke",
+    "Deterjan",
+    "Sabun",
+    "Hepsi aynı"
+   ],
+   "answer": 2,
+   "explanation": "pH değeri en büyük olan en güçlü bazdır."
+  },
+  {
+   "id": 56,
+   "outcome": "F.8.4.4 Asitler ve bazlar",
+   "image": "/soru-gorselleri/madde-ve-endustri/q56.svg",
+   "imageAlt": "pH ölçeği ve maddeler",
+   "scenario": "Nötrleşme deneyinde kuvvetli asit ile aynı güçte baz eşit miktarda karıştırılıyor. Şekilde ölçülen maddeler pH ölçeği üzerinde gösterilmiştir. Ölçümler oda sıcaklığında yapılmıştır ve asitlik-bazlık yorumu pH değerlerine dayanır.",
+   "question": "Karışımın pH değeri neden 7'ye yakındır?",
+   "options": [
+    "Karışımda tuz oluşmaz",
+    "Asit baz tarafından yok edilir",
+    "Karışım daima asit olur",
+    "Asit ve baz birbirini nötrleştirir, tuz ve su oluşur"
+   ],
+   "answer": 3,
+   "explanation": "Nötrleşmede asit + baz → tuz + su oluşur."
+  },
+  {
+   "id": 57,
+   "outcome": "F.8.4.4 Asitler ve bazlar",
+   "image": "/soru-gorselleri/madde-ve-endustri/q57.svg",
+   "imageAlt": "pH ölçeği ve maddeler",
+   "scenario": "Kırmızı lahana suyu indikatörüne bir madde damlatılıyor ve renk yeşil oluyor. Şekilde ölçülen maddeler pH ölçeği üzerinde gösterilmiştir. Ölçümler oda sıcaklığında yapılmıştır ve asitlik-bazlık yorumu pH değerlerine dayanır.",
+   "question": "Madde nasıl bir maddedir?",
+   "options": [
+    "Bazik",
+    "Nötr",
+    "Tuz",
+    "Asidik"
+   ],
+   "answer": 0,
+   "explanation": "Kırmızı lahana suyu baz ortamda yeşile döner."
+  },
+  {
+   "id": 58,
+   "outcome": "F.8.4.4 Asitler ve bazlar",
+   "image": "/soru-gorselleri/madde-ve-endustri/q58.svg",
+   "imageAlt": "pH ölçeği ve maddeler",
+   "scenario": "Fenolftalein indikatörü kullanılan bir deneyde çözelti pembeleşiyor. Şekilde ölçülen maddeler pH ölçeği üzerinde gösterilmiştir. Ölçümler oda sıcaklığında yapılmıştır ve asitlik-bazlık yorumu pH değerlerine dayanır.",
+   "question": "Çözelti için ne söylenebilir?",
+   "options": [
+    "Asidik ortamdadır",
+    "Tuz çözeltisidir",
+    "Bazik ortamdadır",
+    "Nötrdür"
+   ],
+   "answer": 2,
+   "explanation": "Fenolftalein bazda pembe, asitte renksiz görünür."
+  },
+  {
+   "id": 59,
+   "outcome": "F.8.4.5 Kimya endüstrisi",
+   "image": "/soru-gorselleri/madde-ve-endustri/q59.svg",
+   "imageAlt": "Sütun grafiği",
+   "scenario": "Bir çevre kulübü, atıkların doğada bozunma sürelerini araştırıyor. Aşağıdaki sütun grafiğinde ilgili veriler gösterilmiştir.",
+   "question": "Hangi atık çevre için en uzun süreli kirliliğe neden olur?",
+   "options": [
+    "Plastik şişe",
+    "Cam",
+    "Kağıt",
+    "Muz kabuğu"
+   ],
+   "answer": 1,
+   "explanation": "Grafikte en yüksek çubuk camın bozunma süresidir."
+  },
+  {
+   "id": 60,
+   "outcome": "F.8.4.5 Kimya endüstrisi",
+   "image": "/soru-gorselleri/madde-ve-endustri/q60.svg",
+   "imageAlt": "Sütun grafiği",
+   "scenario": "Bir okul, geri dönüşüm kampanyasında topladığı malzeme miktarlarını kaydediyor. Aşağıdaki sütun grafiğinde ilgili veriler gösterilmiştir.",
+   "question": "Hangi malzemeden en az toplanmıştır?",
+   "options": [
+    "Metal",
+    "Cam",
+    "Kağıt",
+    "Plastik"
+   ],
+   "answer": 0,
+   "explanation": "En kısa çubuk metale aittir (40 kg)."
+  },
+  {
+   "id": 61,
+   "outcome": "F.8.4.5 Kimya endüstrisi",
+   "image": "/soru-gorselleri/madde-ve-endustri/q61.svg",
+   "imageAlt": "Sütun grafiği",
+   "scenario": "Bir fabrikada üretilen kimyasal ürünler ve aylık üretim miktarları gösteriliyor. Aşağıdaki sütun grafiğinde ilgili veriler gösterilmiştir.",
+   "question": "Hangi ürün en fazla üretilmiştir?",
+   "options": [
+    "Boya",
+    "Gübre",
+    "İlaç",
+    "Sabun"
+   ],
+   "answer": 1,
+   "explanation": "Gübre 500 ton ile en uzun çubuğa sahiptir."
+  },
+  {
+   "id": 62,
+   "outcome": "F.8.4.5 Kimya endüstrisi",
+   "image": "/soru-gorselleri/madde-ve-endustri/q62.svg",
+   "imageAlt": "Sütun grafiği",
+   "scenario": "Bir şehirde araç sayısı arttıkça havadaki SO₂ derişimi ölçülüyor. Aşağıdaki sütun grafiğinde ilgili veriler gösterilmiştir.",
+   "question": "Verilere göre hangi çıkarım doğrudur?",
+   "options": [
+    "Zamanla hava kirliliği artmıştır",
+    "Veriler yorum için yetersizdir",
+    "Kirlilik değişmemiştir",
+    "Kirlilik azalmıştır"
+   ],
+   "answer": 0,
+   "explanation": "SO₂ derişimi her yıl artmıştır; bu da asit yağmuru riskini artırır."
+  },
+  {
+   "id": 63,
+   "outcome": "F.8.4.5 Kimya endüstrisi",
+   "image": "/soru-gorselleri/madde-ve-endustri/q63.svg",
+   "imageAlt": "Sütun grafiği",
+   "scenario": "Bir temizlik ürününde üretici uyarısı: 'Çamaşır suyunu asitli temizleyicilerle karıştırmayınız.' Aşağıdaki sütun grafiğinde ilgili veriler gösterilmiştir.",
+   "question": "Bu uyarının nedeni nedir?",
+   "options": [
+    "Renk değişir",
+    "Karıştırınca zehirli gaz çıkabilir",
+    "Daha iyi temizler",
+    "Hiçbir etkisi yoktur"
+   ],
+   "answer": 1,
+   "explanation": "Asit ve çamaşır suyu karıştırılırsa klor gazı oluşabilir; bu yüzden karıştırılmaz."
+  },
+  {
+   "id": 64,
+   "outcome": "F.8.4.5 Kimya endüstrisi",
+   "image": "/soru-gorselleri/madde-ve-endustri/q64.svg",
+   "imageAlt": "Sütun grafiği",
+   "scenario": "Gübre kullanımı arttıkça göllerdeki alg miktarı izleniyor. Aşağıdaki sütun grafiğinde ilgili veriler gösterilmiştir.",
+   "question": "Aşırı gübre kullanımının sonucu nedir?",
+   "options": [
+    "Su kalitesini artırır",
+    "Balık sayısını daima artırır",
+    "Sulara karışarak aşırı alg çoğalmasına yol açabilir",
+    "Hiçbir etkisi olmaz"
+   ],
+   "answer": 2,
+   "explanation": "Aşırı gübre göl ve nehirlere karışıp alg patlamasına neden olur."
+  },
+  {
+   "id": 65,
+   "outcome": "F.8.4.5 Kimya endüstrisi",
+   "image": "/soru-gorselleri/madde-ve-endustri/q65.svg",
+   "imageAlt": "Sütun grafiği",
+   "scenario": "Bir fabrika, ürettiği plastik torbaların yerine kâğıt torba kullanmayı planlıyor. Bozunma süreleri karşılaştırılıyor. Aşağıdaki sütun grafiğinde ilgili veriler gösterilmiştir.",
+   "question": "Bu değişikliğin çevresel avantajı nedir?",
+   "options": [
+    "Kâğıt torba çok daha kısa sürede bozunur",
+    "Ikisi de aynı sürede bozunur",
+    "Plastik daha çabuk bozunur",
+    "Avantaj yoktur"
+   ],
+   "answer": 0,
+   "explanation": "Kâğıdın bozunma süresi çok daha kısadır."
+  },
+  {
+   "id": 66,
+   "outcome": "F.8.4.5 Kimya endüstrisi",
+   "image": "/soru-gorselleri/madde-ve-endustri/q66.svg",
+   "imageAlt": "Sütun grafiği",
+   "scenario": "Üç farklı yakıtın yanması sonucu çıkan CO₂ miktarı karşılaştırılıyor. Aşağıdaki sütun grafiğinde ilgili veriler gösterilmiştir.",
+   "question": "Hangisi atmosfere en az CO₂ salar?",
+   "options": [
+    "Kömür",
+    "Doğalgaz",
+    "Hepsi eşit salar",
+    "Güneş enerjisi"
+   ],
+   "answer": 3,
+   "explanation": "Güneş enerjisi yanma tepkimesi içermez; CO₂ salımı yoktur."
+  },
+  {
+   "id": 67,
+   "outcome": "F.8.4.6 Veri yorumlama",
+   "image": "/soru-gorselleri/madde-ve-endustri/q67.svg",
+   "imageAlt": "Çizgi grafiği",
+   "scenario": "Bir asit çözeltisine azar azar baz eklenirken pH değişimi ölçülüyor. Elde edilen veriler grafikte gösterilmiştir.",
+   "question": "Nötrleşme yaklaşık kaç mL baz eklenince gerçekleşmiştir?",
+   "options": [
+    "50 mL",
+    "30 mL",
+    "20 mL",
+    "10 mL"
+   ],
+   "answer": 1,
+   "explanation": "pH = 7 olduğunda çözelti nötrdür; grafik 30 mL'de 7'yi gösterir."
+  },
+  {
+   "id": 68,
+   "outcome": "F.8.4.6 Veri yorumlama",
+   "image": "/soru-gorselleri/madde-ve-endustri/q68.svg",
+   "imageAlt": "Çizgi grafiği",
+   "scenario": "Açık bir kapta mermer parçası asitle tepkimeye giriyor; kabın kütlesi zamanla ölçülüyor. Elde edilen veriler grafikte gösterilmiştir.",
+   "question": "Kütlenin azalmasının nedeni nedir?",
+   "options": [
+    "Kütlenin korunmaması",
+    "Oluşan gazın kaptan çıkması",
+    "Tartının bozulması",
+    "Maddenin yok olması"
+   ],
+   "answer": 1,
+   "explanation": "Gaz açık kaptan kaçar; sistem kapalı olsaydı kütle değişmezdi."
+  },
+  {
+   "id": 69,
+   "outcome": "F.8.4.6 Veri yorumlama",
+   "image": "/soru-gorselleri/madde-ve-endustri/q69.svg",
+   "imageAlt": "Çizgi grafiği",
+   "scenario": "Bir tepkimede sıcaklık zamanla ölçülüyor. Elde edilen veriler grafikte gösterilmiştir.",
+   "question": "Grafiğe göre tepkime için hangisi söylenebilir?",
+   "options": [
+    "Isı alan bir tepkimedir",
+    "Sıcaklık değişmemiştir",
+    "Isı açığa çıkan (ekzotermik) bir tepkimedir",
+    "Tepkime hiç gerçekleşmemiştir"
+   ],
+   "answer": 2,
+   "explanation": "Sıcaklık artmıştır; ortama ısı verilmiştir."
+  },
+  {
+   "id": 70,
+   "outcome": "F.8.4.6 Veri yorumlama",
+   "image": "/soru-gorselleri/madde-ve-endustri/q70.svg",
+   "imageAlt": "Çizgi grafiği",
+   "scenario": "Sabit miktarda oksijenle farklı miktarlarda magnezyum yakılıyor ve oluşan magnezyum oksit kütlesi ölçülüyor. Elde edilen veriler grafikte gösterilmiştir.",
+   "question": "Grafikte 24 gramdan sonra MgO'nun artmaması neyi gösterir?",
+   "options": [
+    "Tepkimenin tersine döndüğünü",
+    "Oksijenin tükendiğini (sınırlayıcı olduğunu)",
+    "Magnezyumun kütlesinin yok olduğunu",
+    "Kütlenin korunmadığını"
+   ],
+   "answer": 1,
+   "explanation": "Oksijen bittiğinde ürün miktarı artık artmaz."
+  },
+  {
+   "id": 71,
+   "outcome": "F.8.4.6 Veri yorumlama",
+   "image": "/soru-gorselleri/madde-ve-endustri/q71.svg",
+   "imageAlt": "Çizgi grafiği",
+   "scenario": "Bir sıvıdan çıkan gaz miktarı zamanla ölçülüyor. Elde edilen veriler grafikte gösterilmiştir.",
+   "question": "Tepkime hızı zamanla nasıl değişir?",
+   "options": [
+    "Önce sabit sonra hızlanır",
+    "Yavaşlar",
+    "Sabit kalır",
+    "Hızlanır"
+   ],
+   "answer": 1,
+   "explanation": "Eğim giderek azalır; birim zamanda çıkan gaz azalır."
+  },
+  {
+   "id": 72,
+   "outcome": "F.8.4.6 Veri yorumlama",
+   "image": "/soru-gorselleri/madde-ve-endustri/q72.svg",
+   "imageAlt": "Çizgi grafiği",
+   "scenario": "Bir asit-baz titrasyonunda başlangıç pH'ı ölçülüyor ve baz ekledikçe değişiyor. Elde edilen veriler grafikte gösterilmiştir.",
+   "question": "pH 7'ye ulaşıldığında ortam nasıl olur?",
+   "options": [
+    "Asidik",
+    "Bazik",
+    "Nötr",
+    "Tuzlu ve bazik"
+   ],
+   "answer": 2,
+   "explanation": "pH = 7 nötr ortamı gösterir."
+  },
+  {
+   "id": 73,
+   "outcome": "F.8.4.6 Veri yorumlama",
+   "image": "/soru-gorselleri/madde-ve-endustri/q73.svg",
+   "imageAlt": "Çizgi grafiği",
+   "scenario": "Kapalı bir kapta tepkime sürerken kabın toplam kütlesi izleniyor. Elde edilen veriler grafikte gösterilmiştir.",
+   "question": "Grafik hangi yasayı destekler?",
+   "options": [
+    "Gaz kaçışını",
+    "Kütlenin korunumu yasasını",
+    "Maddenin kaybolmasını",
+    "Enerjinin yok olmasını"
+   ],
+   "answer": 1,
+   "explanation": "Kapalı kapta kütle sabit kalır."
+  },
+  {
+   "id": 74,
+   "outcome": "F.8.4.6 Veri yorumlama",
+   "image": "/soru-gorselleri/madde-ve-endustri/q74.svg",
+   "imageAlt": "Çizgi grafiği",
+   "scenario": "Bir çözeltinin pH değeri seyreltme sırasında ölçülüyor. Elde edilen veriler grafikte gösterilmiştir.",
+   "question": "Grafiğe göre çözelti nasıl bir maddedir ve seyrelmeyle ne olur?",
+   "options": [
+    "Asittir; pH azalır",
+    "Bazdır; pH azalır",
+    "Asittir; seyrelince pH artar ama 7'yi geçmez",
+    "Nötrdür; pH değişmez"
+   ],
+   "answer": 2,
+   "explanation": "Asit seyrelince pH artar ve 7'ye yaklaşır ama onu geçmez."
+  },
+  {
+   "id": 75,
+   "outcome": "F.8.4.1 Element, bileşik, karışım",
+   "image": "/soru-gorselleri/madde-ve-endustri/q75.svg",
+   "imageAlt": "Üç kapta parçacık modelleri",
+   "scenario": "Kimya kulübünde parçacık modelleri çizilerek maddelerin sınıflandırılması çalışılıyor. Kırmızı ve mavi daireler iki farklı atom türünü, birbirine yapışık daireler ise atomların birleşerek oluşturduğu molekülleri göstermektedir. Üç kapta farklı maddeler yer almaktadır.",
+   "question": "Hangi kap element modelidir?",
+   "options": [
+    "A kabı",
+    "C kabı",
+    "B kabı",
+    "Hiçbiri"
+   ],
+   "answer": 0,
+   "explanation": "Aynı tür atomlardan oluşan (yalnızca mavi) kap saf elementtir."
+  },
+  {
+   "id": 76,
+   "outcome": "F.8.4.1 Element, bileşik, karışım",
+   "image": "/soru-gorselleri/madde-ve-endustri/q76.svg",
+   "imageAlt": "Üç kapta parçacık modelleri",
+   "scenario": "Kimya kulübünde parçacık modelleri çizilerek maddelerin sınıflandırılması çalışılıyor. Kırmızı ve mavi daireler iki farklı atom türünü, birbirine yapışık daireler ise atomların birleşerek oluşturduğu molekülleri göstermektedir. Üç kapta farklı maddeler yer almaktadır.",
+   "question": "Hangi kap bileşik modelidir?",
+   "options": [
+    "C kabı",
+    "B kabı",
+    "A kabı",
+    "Hiçbiri"
+   ],
+   "answer": 1,
+   "explanation": "Farklı atomların bağ yaparak oluşturduğu aynı tür moleküller bileşiği gösterir."
+  },
+  {
+   "id": 77,
+   "outcome": "F.8.4.1 Element, bileşik, karışım",
+   "image": "/soru-gorselleri/madde-ve-endustri/q77.svg",
+   "imageAlt": "Üç kapta parçacık modelleri",
+   "scenario": "Kimya kulübünde parçacık modelleri çizilerek maddelerin sınıflandırılması çalışılıyor. Kırmızı ve mavi daireler iki farklı atom türünü, birbirine yapışık daireler ise atomların birleşerek oluşturduğu molekülleri göstermektedir. Üç kapta farklı maddeler yer almaktadır.",
+   "question": "Hangi kap karışım modelidir?",
+   "options": [
+    "A kabı",
+    "B kabı",
+    "Hiçbiri",
+    "C kabı"
+   ],
+   "answer": 3,
+   "explanation": "Farklı tür molekülleri bir arada bulunduran kap karışımdır."
+  },
+  {
+   "id": 78,
+   "outcome": "F.8.4.1 Element, bileşik, karışım",
+   "image": "/soru-gorselleri/madde-ve-endustri/q78.svg",
+   "imageAlt": "Üç kapta parçacık modelleri",
+   "scenario": "Bu kez kaplar farklı sırayla yerleştirilmiştir. Kimya kulübünde parçacık modelleri çizilerek maddelerin sınıflandırılması çalışılıyor. Kırmızı ve mavi daireler iki farklı atom türünü, birbirine yapışık daireler ise atomların birleşerek oluşturduğu molekülleri göstermektedir. Üç kapta farklı maddeler yer almaktadır.",
+   "question": "Hangi kap element modelidir?",
+   "options": [
+    "C kabı",
+    "Hiçbiri",
+    "B kabı",
+    "A kabı"
+   ],
+   "answer": 2,
+   "explanation": "Aynı tür atomlardan oluşan (yalnızca mavi) kap saf elementtir."
+  },
+  {
+   "id": 79,
+   "outcome": "F.8.4.1 Element, bileşik, karışım",
+   "image": "/soru-gorselleri/madde-ve-endustri/q79.svg",
+   "imageAlt": "Üç kapta parçacık modelleri",
+   "scenario": "Bu kez kaplar farklı sırayla yerleştirilmiştir. Kimya kulübünde parçacık modelleri çizilerek maddelerin sınıflandırılması çalışılıyor. Kırmızı ve mavi daireler iki farklı atom türünü, birbirine yapışık daireler ise atomların birleşerek oluşturduğu molekülleri göstermektedir. Üç kapta farklı maddeler yer almaktadır.",
+   "question": "Hangi kap bileşik modelidir?",
+   "options": [
+    "Hiçbiri",
+    "B kabı",
+    "A kabı",
+    "C kabı"
+   ],
+   "answer": 3,
+   "explanation": "Farklı atomların bağ yaparak oluşturduğu aynı tür moleküller bileşiği gösterir."
+  },
+  {
+   "id": 80,
+   "outcome": "F.8.4.1 Element, bileşik, karışım",
+   "image": "/soru-gorselleri/madde-ve-endustri/q80.svg",
+   "imageAlt": "Üç kapta parçacık modelleri",
+   "scenario": "Bu kez kaplar farklı sırayla yerleştirilmiştir. Kimya kulübünde parçacık modelleri çizilerek maddelerin sınıflandırılması çalışılıyor. Kırmızı ve mavi daireler iki farklı atom türünü, birbirine yapışık daireler ise atomların birleşerek oluşturduğu molekülleri göstermektedir. Üç kapta farklı maddeler yer almaktadır.",
+   "question": "Hangi kap karışım modelidir?",
+   "options": [
+    "B kabı",
+    "Hiçbiri",
+    "A kabı",
+    "C kabı"
+   ],
+   "answer": 2,
+   "explanation": "Farklı tür molekülleri bir arada bulunduran kap karışımdır."
+  }
+ ]
+}

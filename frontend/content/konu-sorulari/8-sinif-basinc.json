@@ -1,0 +1,1287 @@
+{
+ "unit": 3,
+ "title": "Basınç",
+ "slug": "basinc",
+ "questions": [
+  {
+   "id": 1,
+   "outcome": "F.8.3.1 Katı basıncı",
+   "image": "/soru-gorselleri/basinc/q01.svg",
+   "imageAlt": "Zemin üzerindeki cismin ağırlığı ve temas yüzeyi",
+   "scenario": "Bir sandık, yatay ve sert bir zemine bırakılmıştır. Cismin ağırlığı 600 N olup zemine temas eden yüzeyinin alanı 0,03 m²'dir. Cisim sabit ve dengededir; yüzeye dik etki eden kuvvet ağırlığına eşittir.",
+   "question": "Cismin zemine uyguladığı basınç kaç Pa'dır?",
+   "options": [
+    "18 Pa",
+    "600,03 Pa",
+    "2.000 Pa",
+    "20.000 Pa"
+   ],
+   "answer": 3,
+   "explanation": "P = F / A = 600 / 0,03 = 20.000 Pa."
+  },
+  {
+   "id": 2,
+   "outcome": "F.8.3.1 Katı basıncı",
+   "image": "/soru-gorselleri/basinc/q02.svg",
+   "imageAlt": "Zemin üzerindeki cismin ağırlığı ve temas yüzeyi",
+   "scenario": "Bir marangozun tezgâhı, yatay ve sert bir zemine bırakılmıştır. Cismin ağırlığı 800 N olup zemine temas eden yüzeyinin alanı 0,02 m²'dir. Cisim sabit ve dengededir; yüzeye dik etki eden kuvvet ağırlığına eşittir.",
+   "question": "Cismin zemine uyguladığı basınç kaç Pa'dır?",
+   "options": [
+    "4.000 Pa",
+    "16 Pa",
+    "40.000 Pa",
+    "800,02 Pa"
+   ],
+   "answer": 2,
+   "explanation": "P = F / A = 800 / 0,02 = 40.000 Pa."
+  },
+  {
+   "id": 3,
+   "outcome": "F.8.3.1 Katı basıncı",
+   "image": "/soru-gorselleri/basinc/q03.svg",
+   "imageAlt": "Zemin üzerindeki cismin ağırlığı ve temas yüzeyi",
+   "scenario": "Bir spor salonundaki halter plakası, yatay ve sert bir zemine bırakılmıştır. Cismin ağırlığı 450 N olup zemine temas eden yüzeyinin alanı 0,015 m²'dir. Cisim sabit ve dengededir; yüzeye dik etki eden kuvvet ağırlığına eşittir.",
+   "question": "Cismin zemine uyguladığı basınç kaç Pa'dır?",
+   "options": [
+    "6,75 Pa",
+    "450,01 Pa",
+    "3.000 Pa",
+    "30.000 Pa"
+   ],
+   "answer": 3,
+   "explanation": "P = F / A = 450 / 0,015 = 30.000 Pa."
+  },
+  {
+   "id": 4,
+   "outcome": "F.8.3.1 Katı basıncı",
+   "image": "/soru-gorselleri/basinc/q04.svg",
+   "imageAlt": "Zemin üzerindeki cismin ağırlığı ve temas yüzeyi",
+   "scenario": "Bir tarım makinesi, yatay ve sert bir zemine bırakılmıştır. Cismin ağırlığı 1200 N olup zemine temas eden yüzeyinin alanı 0,4 m²'dir. Cisim sabit ve dengededir; yüzeye dik etki eden kuvvet ağırlığına eşittir.",
+   "question": "Cismin zemine uyguladığı basınç kaç Pa'dır?",
+   "options": [
+    "300 Pa",
+    "3.000 Pa",
+    "1200,4 Pa",
+    "480 Pa"
+   ],
+   "answer": 1,
+   "explanation": "P = F / A = 1200 / 0,4 = 3.000 Pa."
+  },
+  {
+   "id": 5,
+   "outcome": "F.8.3.1 Katı basıncı",
+   "image": "/soru-gorselleri/basinc/q05.svg",
+   "imageAlt": "Zemin üzerindeki cismin ağırlığı ve temas yüzeyi",
+   "scenario": "Bir iğne kutusu, yatay ve sert bir zemine bırakılmıştır. Cismin ağırlığı 90 N olup zemine temas eden yüzeyinin alanı 0,0003 m²'dir. Cisim sabit ve dengededir; yüzeye dik etki eden kuvvet ağırlığına eşittir.",
+   "question": "Cismin zemine uyguladığı basınç kaç Pa'dır?",
+   "options": [
+    "30.000 Pa",
+    "300.000 Pa",
+    "0,03 Pa",
+    "90 Pa"
+   ],
+   "answer": 1,
+   "explanation": "P = F / A = 90 / 0,0003 = 300.000 Pa."
+  },
+  {
+   "id": 6,
+   "outcome": "F.8.3.1 Katı basıncı",
+   "image": "/soru-gorselleri/basinc/q06.svg",
+   "imageAlt": "Zemin üzerindeki cismin ağırlığı ve temas yüzeyi",
+   "scenario": "Bir kasa, yatay zemine 0,2 m²'lik bir yüzeyiyle temas etmektedir ve zemine 5000 Pa basınç uygulamaktadır. Cisim dengededir.",
+   "question": "Cismin ağırlığı kaç N'dur?",
+   "options": [
+    "25.000 N",
+    "100 N",
+    "5000,2 N",
+    "1.000 N"
+   ],
+   "answer": 3,
+   "explanation": "P = F/A → F = P × A = 5000 × 0,2 = 1.000 N."
+  },
+  {
+   "id": 7,
+   "outcome": "F.8.3.1 Katı basıncı",
+   "image": "/soru-gorselleri/basinc/q07.svg",
+   "imageAlt": "Zemin üzerindeki cismin ağırlığı ve temas yüzeyi",
+   "scenario": "Bir buzdolabı, yatay zemine 0,5 m²'lik bir yüzeyiyle temas etmektedir ve zemine 3000 Pa basınç uygulamaktadır. Cisim dengededir.",
+   "question": "Cismin ağırlığı kaç N'dur?",
+   "options": [
+    "150 N",
+    "1.500 N",
+    "6.000 N",
+    "3000,5 N"
+   ],
+   "answer": 1,
+   "explanation": "P = F/A → F = P × A = 3000 × 0,5 = 1.500 N."
+  },
+  {
+   "id": 8,
+   "outcome": "F.8.3.1 Katı basıncı",
+   "image": "/soru-gorselleri/basinc/q08.svg",
+   "imageAlt": "Zemin üzerindeki cismin ağırlığı ve temas yüzeyi",
+   "scenario": "Bir heykel kaidesi, ağırlığı 240 N'dur ve yatay zemine 12000 Pa basınç uygulamaktadır. Cisim dengededir ve zemine temas eden yüzeyin alanı bilinmemektedir.",
+   "question": "Temas yüzeyinin alanı kaç m²'dir?",
+   "options": [
+    "0,03 m²",
+    "0,02 m²",
+    "0,01 m²",
+    "0,2 m²"
+   ],
+   "answer": 1,
+   "explanation": "A = F / P = 240 / 12000 = 0,02 m²."
+  },
+  {
+   "id": 9,
+   "outcome": "F.8.3.1 Katı basıncı",
+   "image": "/soru-gorselleri/basinc/q09.svg",
+   "imageAlt": "Zemin üzerindeki cismin ağırlığı ve temas yüzeyi",
+   "scenario": "Bir fıçı, ağırlığı 480 N'dur ve yatay zemine 8000 Pa basınç uygulamaktadır. Cisim dengededir ve zemine temas eden yüzeyin alanı bilinmemektedir.",
+   "question": "Temas yüzeyinin alanı kaç m²'dir?",
+   "options": [
+    "0,6 m²",
+    "0,09 m²",
+    "0,06 m²",
+    "0,01 m²"
+   ],
+   "answer": 2,
+   "explanation": "A = F / P = 480 / 8000 = 0,06 m²."
+  },
+  {
+   "id": 10,
+   "outcome": "F.8.3.1 Katı basıncı",
+   "image": "/soru-gorselleri/basinc/q10.svg",
+   "imageAlt": "Zemin üzerindeki cismin ağırlığı ve temas yüzeyi",
+   "scenario": "Bir oyuncak vinç, ağırlığı 36 N'dur ve yatay zemine 6000 Pa basınç uygulamaktadır. Cisim dengededir ve zemine temas eden yüzeyin alanı bilinmemektedir.",
+   "question": "Temas yüzeyinin alanı kaç m²'dir?",
+   "options": [
+    "0,06 m²",
+    "0,006 m²",
+    "0,01 m²",
+    "0,02 m²"
+   ],
+   "answer": 1,
+   "explanation": "A = F / P = 36 / 6000 = 0,006 m²."
+  },
+  {
+   "id": 11,
+   "outcome": "F.8.3.1 Katı basıncı",
+   "image": "/soru-gorselleri/basinc/q11.svg",
+   "imageAlt": "Bir bloğun üç farklı yüzeyi",
+   "scenario": "Fen kulübü öğrencileri, ağırlığı 120 N olan dikdörtgen prizma biçimli bir bloğu zemine üç farklı biçimde yerleştiriyor. Blok yarım tonluk bir ekranın üzerinde değil, sert ve düz bir zemin üzerinde durmaktadır. Her konumda taban boyutları şekilde gösterilmiştir.",
+   "question": "En büyük basınç hangi konumda oluşur?",
+   "options": [
+    "Üçünde de eşittir",
+    "II. konum",
+    "III. konum",
+    "I. konum"
+   ],
+   "answer": 2,
+   "explanation": "Ağırlık sabit olduğundan basınç, taban alanıyla ters orantılıdır; en küçük tabanlı konumda basınç en büyüktür."
+  },
+  {
+   "id": 12,
+   "outcome": "F.8.3.1 Katı basıncı",
+   "image": "/soru-gorselleri/basinc/q12.svg",
+   "imageAlt": "Bir bloğun üç farklı yüzeyi",
+   "scenario": "Fen kulübü öğrencileri, ağırlığı 180 N olan dikdörtgen prizma biçimli bir bloğu zemine üç farklı biçimde yerleştiriyor. Blok yarım tonluk bir ekranın üzerinde değil, sert ve düz bir zemin üzerinde durmaktadır. Her konumda taban boyutları şekilde gösterilmiştir.",
+   "question": "En küçük basınç kaç Pa'dır?",
+   "options": [
+    "4.500 Pa",
+    "6.000 Pa",
+    "3.000 Pa",
+    "12.000 Pa"
+   ],
+   "answer": 2,
+   "explanation": "En geniş tabanda P = G/A = 180 / 0.06 = 3.000 Pa."
+  },
+  {
+   "id": 13,
+   "outcome": "F.8.3.1 Katı basıncı",
+   "image": "/soru-gorselleri/basinc/q13.svg",
+   "imageAlt": "Bir bloğun üç farklı yüzeyi",
+   "scenario": "Fen kulübü öğrencileri, ağırlığı 300 N olan dikdörtgen prizma biçimli bir bloğu zemine üç farklı biçimde yerleştiriyor. Blok yarım tonluk bir ekranın üzerinde değil, sert ve düz bir zemin üzerinde durmaktadır. Her konumda taban boyutları şekilde gösterilmiştir.",
+   "question": "En büyük basınç kaç Pa'dır?",
+   "options": [
+    "12.000 Pa",
+    "4.000 Pa",
+    "5.000 Pa",
+    "6.000 Pa"
+   ],
+   "answer": 3,
+   "explanation": "En dar tabanda P = G/A = 300 / 0.05 = 6.000 Pa."
+  },
+  {
+   "id": 14,
+   "outcome": "F.8.3.1 Katı basıncı",
+   "image": "/soru-gorselleri/basinc/q14.svg",
+   "imageAlt": "Bir bloğun üç farklı yüzeyi",
+   "scenario": "Fen kulübü öğrencileri, ağırlığı 100 N olan dikdörtgen prizma biçimli bir bloğu zemine üç farklı biçimde yerleştiriyor. Blok yarım tonluk bir ekranın üzerinde değil, sert ve düz bir zemin üzerinde durmaktadır. Her konumda taban boyutları şekilde gösterilmiştir.",
+   "question": "En büyük ve en küçük basınç oranı (Pmax / Pmin) kaçtır?",
+   "options": [
+    "1",
+    "4",
+    "16",
+    "8"
+   ],
+   "answer": 3,
+   "explanation": "Basınçlar taban alanlarıyla ters orantılıdır: oran = en büyük alan / en küçük alan = 8."
+  },
+  {
+   "id": 15,
+   "outcome": "F.8.3.1 Katı basıncı",
+   "image": "/soru-gorselleri/basinc/q15.svg",
+   "imageAlt": "Bir bloğun üç farklı yüzeyi",
+   "scenario": "Fen kulübü öğrencileri, ağırlığı 250 N olan dikdörtgen prizma biçimli bir bloğu zemine üç farklı biçimde yerleştiriyor. Blok yarım tonluk bir ekranın üzerinde değil, sert ve düz bir zemin üzerinde durmaktadır. Her konumda taban boyutları şekilde gösterilmiştir.",
+   "question": "En büyük basınç hangi konumda oluşur?",
+   "options": [
+    "III. konum",
+    "Üçünde de eşittir",
+    "II. konum",
+    "I. konum"
+   ],
+   "answer": 0,
+   "explanation": "Ağırlık sabit olduğundan basınç, taban alanıyla ters orantılıdır; en küçük tabanlı konumda basınç en büyüktür."
+  },
+  {
+   "id": 16,
+   "outcome": "F.8.3.1 Katı basıncı",
+   "image": "/soru-gorselleri/basinc/q16.svg",
+   "imageAlt": "Bir bloğun üç farklı yüzeyi",
+   "scenario": "Fen kulübü öğrencileri, ağırlığı 160 N olan dikdörtgen prizma biçimli bir bloğu zemine üç farklı biçimde yerleştiriyor. Blok yarım tonluk bir ekranın üzerinde değil, sert ve düz bir zemin üzerinde durmaktadır. Her konumda taban boyutları şekilde gösterilmiştir.",
+   "question": "En küçük basınç kaç Pa'dır?",
+   "options": [
+    "8.000 Pa",
+    "20.000 Pa",
+    "12.800 Pa",
+    "6.400 Pa"
+   ],
+   "answer": 3,
+   "explanation": "En geniş tabanda P = G/A = 160 / 0.025 = 6.400 Pa."
+  },
+  {
+   "id": 17,
+   "outcome": "F.8.3.1 Katı basıncı",
+   "image": "/soru-gorselleri/basinc/q17.svg",
+   "imageAlt": "Bir bloğun üç farklı yüzeyi",
+   "scenario": "Fen kulübü öğrencileri, ağırlığı 240 N olan dikdörtgen prizma biçimli bir bloğu zemine üç farklı biçimde yerleştiriyor. Blok yarım tonluk bir ekranın üzerinde değil, sert ve düz bir zemin üzerinde durmaktadır. Her konumda taban boyutları şekilde gösterilmiştir.",
+   "question": "En büyük basınç kaç Pa'dır?",
+   "options": [
+    "2.000 Pa",
+    "8.000 Pa",
+    "6.000 Pa",
+    "16.000 Pa"
+   ],
+   "answer": 1,
+   "explanation": "En dar tabanda P = G/A = 240 / 0.03 = 8.000 Pa."
+  },
+  {
+   "id": 18,
+   "outcome": "F.8.3.1 Katı basıncı",
+   "image": "/soru-gorselleri/basinc/q18.svg",
+   "imageAlt": "Bir bloğun üç farklı yüzeyi",
+   "scenario": "Fen kulübü öğrencileri, ağırlığı 500 N olan dikdörtgen prizma biçimli bir bloğu zemine üç farklı biçimde yerleştiriyor. Blok yarım tonluk bir ekranın üzerinde değil, sert ve düz bir zemin üzerinde durmaktadır. Her konumda taban boyutları şekilde gösterilmiştir.",
+   "question": "En büyük ve en küçük basınç oranı (Pmax / Pmin) kaçtır?",
+   "options": [
+    "2",
+    "1",
+    "4",
+    "3"
+   ],
+   "answer": 0,
+   "explanation": "Basınçlar taban alanlarıyla ters orantılıdır: oran = en büyük alan / en küçük alan = 2."
+  },
+  {
+   "id": 19,
+   "outcome": "F.8.3.1 Katı basıncı",
+   "image": "/soru-gorselleri/basinc/q19.svg",
+   "imageAlt": "Kuvvet ve alan tablosu",
+   "scenario": "Bir fen kulübü, günlük hayattaki iki nesnenin zemine veya yüzeye uyguladığı basıncı karşılaştırıyor: Tam sivri bir iğne ve İnce uçlu kalem. Ölçülen kuvvet ve temas alanları tabloda verilmiştir.",
+   "question": "Aşağıdaki sonuçlardan hangisi doğrudur?",
+   "options": [
+    "Basınç yalnızca kuvvete bağlıdır, karşılaştırılamaz",
+    "İnce uçlu kalem daha büyük basınç uygular",
+    "İkisi de eşit basınç uygular",
+    "Tam sivri bir iğne daha büyük basınç uygular"
+   ],
+   "answer": 3,
+   "explanation": "P = F/A: Tam sivri bir iğne: 200.000 Pa, İnce uçlu kalem: 40.000 Pa. Büyük olan Tam sivri bir iğne."
+  },
+  {
+   "id": 20,
+   "outcome": "F.8.3.1 Katı basıncı",
+   "image": "/soru-gorselleri/basinc/q20.svg",
+   "imageAlt": "Kuvvet ve alan tablosu",
+   "scenario": "Bir fen kulübü, günlük hayattaki iki nesnenin zemine veya yüzeye uyguladığı basıncı karşılaştırıyor: Kayak ayakkabısı ve Çizme. Ölçülen kuvvet ve temas alanları tabloda verilmiştir.",
+   "question": "Aşağıdaki sonuçlardan hangisi doğrudur?",
+   "options": [
+    "Basınç yalnızca kuvvete bağlıdır, karşılaştırılamaz",
+    "İkisi de eşit basınç uygular",
+    "Çizme daha büyük basınç uygular",
+    "Kayak ayakkabısı daha büyük basınç uygular"
+   ],
+   "answer": 2,
+   "explanation": "P = F/A: Kayak ayakkabısı: 1.500 Pa, Çizme: 20.000 Pa. Büyük olan Çizme."
+  },
+  {
+   "id": 21,
+   "outcome": "F.8.3.1 Katı basıncı",
+   "image": "/soru-gorselleri/basinc/q21.svg",
+   "imageAlt": "Kuvvet ve alan tablosu",
+   "scenario": "Bir fen kulübü, günlük hayattaki iki nesnenin zemine veya yüzeye uyguladığı basıncı karşılaştırıyor: Paletli iş makinesi ve Tekerlekli traktör. Ölçülen kuvvet ve temas alanları tabloda verilmiştir.",
+   "question": "Aşağıdaki sonuçlardan hangisi doğrudur?",
+   "options": [
+    "Tekerlekli traktör daha büyük basınç uygular",
+    "İkisi de eşit basınç uygular",
+    "Basınç yalnızca kuvvete bağlıdır, karşılaştırılamaz",
+    "Paletli iş makinesi daha büyük basınç uygular"
+   ],
+   "answer": 0,
+   "explanation": "P = F/A: Paletli iş makinesi: 20.000 Pa, Tekerlekli traktör: 100.000 Pa. Büyük olan Tekerlekli traktör."
+  },
+  {
+   "id": 22,
+   "outcome": "F.8.3.1 Katı basıncı",
+   "image": "/soru-gorselleri/basinc/q22.svg",
+   "imageAlt": "Kuvvet ve alan tablosu",
+   "scenario": "Bir fen kulübü, günlük hayattaki iki nesnenin zemine veya yüzeye uyguladığı basıncı karşılaştırıyor: Kar ayakkabısı ve Normal ayakkabı. Ölçülen kuvvet ve temas alanları tabloda verilmiştir.",
+   "question": "Aşağıdaki sonuçlardan hangisi doğrudur?",
+   "options": [
+    "Normal ayakkabı daha büyük basınç uygular",
+    "İkisi de eşit basınç uygular",
+    "Basınç yalnızca kuvvete bağlıdır, karşılaştırılamaz",
+    "Kar ayakkabısı daha büyük basınç uygular"
+   ],
+   "answer": 0,
+   "explanation": "P = F/A: Kar ayakkabısı: 5.000 Pa, Normal ayakkabı: 20.000 Pa. Büyük olan Normal ayakkabı."
+  },
+  {
+   "id": 23,
+   "outcome": "F.8.3.1 Katı basıncı",
+   "image": "/soru-gorselleri/basinc/q23.svg",
+   "imageAlt": "Kuvvet ve alan tablosu",
+   "scenario": "Bir fen kulübü, günlük hayattaki iki nesnenin zemine veya yüzeye uyguladığı basıncı karşılaştırıyor: Bıçağın keskin tarafı ve Bıçağın küt tarafı. Ölçülen kuvvet ve temas alanları tabloda verilmiştir.",
+   "question": "Aşağıdaki sonuçlardan hangisi doğrudur?",
+   "options": [
+    "İkisi de eşit basınç uygular",
+    "Bıçağın küt tarafı daha büyük basınç uygular",
+    "Bıçağın keskin tarafı daha büyük basınç uygular",
+    "Basınç yalnızca kuvvete bağlıdır, karşılaştırılamaz"
+   ],
+   "answer": 2,
+   "explanation": "P = F/A: Bıçağın keskin tarafı: 20.000.000 Pa, Bıçağın küt tarafı: 200.000 Pa. Büyük olan Bıçağın keskin tarafı."
+  },
+  {
+   "id": 24,
+   "outcome": "F.8.3.1 Katı basıncı",
+   "image": "/soru-gorselleri/basinc/q24.svg",
+   "imageAlt": "Kuvvet ve alan tablosu",
+   "scenario": "Bir fen kulübü, günlük hayattaki iki nesnenin zemine veya yüzeye uyguladığı basıncı karşılaştırıyor: Deve ayağı ve Keçi tırnağı. Ölçülen kuvvet ve temas alanları tabloda verilmiştir.",
+   "question": "Aşağıdaki sonuçlardan hangisi doğrudur?",
+   "options": [
+    "Basınç yalnızca kuvvete bağlıdır, karşılaştırılamaz",
+    "İkisi de eşit basınç uygular",
+    "Keçi tırnağı daha büyük basınç uygular",
+    "Deve ayağı daha büyük basınç uygular"
+   ],
+   "answer": 2,
+   "explanation": "P = F/A: Deve ayağı: 50.000 Pa, Keçi tırnağı: 500.000 Pa. Büyük olan Keçi tırnağı."
+  },
+  {
+   "id": 25,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q25.svg",
+   "imageAlt": "Sıvı içindeki A noktası ve derinliği",
+   "scenario": "Bir dalgıç, su içinde yüzeyin 5 m altındaki A noktasındaki sıvı basıncını hesaplıyor. Su yoğunluğu 1000 kg/m³, yerçekimi ivmesi g = 10 N/kg alınacaktır. Açık hava basıncı hesaba katılmayacaktır.",
+   "question": "A noktasındaki sıvı basıncı kaç Pa'dır?",
+   "options": [
+    "500.000 Pa",
+    "100.000 Pa",
+    "5.000 Pa",
+    "50.000 Pa"
+   ],
+   "answer": 3,
+   "explanation": "P = h × d × g = 5 × 1000 × 10 = 50.000 Pa."
+  },
+  {
+   "id": 26,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q26.svg",
+   "imageAlt": "Sıvı içindeki A noktası ve derinliği",
+   "scenario": "Bir yüzme havuzunda çocuk, su içinde yüzeyin 8 m altındaki A noktasındaki sıvı basıncını hesaplıyor. Su yoğunluğu 1000 kg/m³, yerçekimi ivmesi g = 10 N/kg alınacaktır. Açık hava basıncı hesaba katılmayacaktır.",
+   "question": "A noktasındaki sıvı basıncı kaç Pa'dır?",
+   "options": [
+    "160.000 Pa",
+    "80.000 Pa",
+    "8.000 Pa",
+    "800.000 Pa"
+   ],
+   "answer": 1,
+   "explanation": "P = h × d × g = 8 × 1000 × 10 = 80.000 Pa."
+  },
+  {
+   "id": 27,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q27.svg",
+   "imageAlt": "Sıvı içindeki A noktası ve derinliği",
+   "scenario": "Laboratuvardaki alkol tankı, alkol içinde yüzeyin 2,5 m altındaki A noktasındaki sıvı basıncını hesaplıyor. Alkol yoğunluğu 800 kg/m³, yerçekimi ivmesi g = 10 N/kg alınacaktır. Açık hava basıncı hesaba katılmayacaktır.",
+   "question": "A noktasındaki sıvı basıncı kaç Pa'dır?",
+   "options": [
+    "200.000 Pa",
+    "40.000 Pa",
+    "20.000 Pa",
+    "2.000 Pa"
+   ],
+   "answer": 2,
+   "explanation": "P = h × d × g = 2,5 × 800 × 10 = 20.000 Pa."
+  },
+  {
+   "id": 28,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q28.svg",
+   "imageAlt": "Sıvı içindeki A noktası ve derinliği",
+   "scenario": "Bir tuz gölünde dalgıç, tuzlu su içinde yüzeyin 10 m altındaki A noktasındaki sıvı basıncını hesaplıyor. Tuzlu su yoğunluğu 1200 kg/m³, yerçekimi ivmesi g = 10 N/kg alınacaktır. Açık hava basıncı hesaba katılmayacaktır.",
+   "question": "A noktasındaki sıvı basıncı kaç Pa'dır?",
+   "options": [
+    "120.000 Pa",
+    "1.200.000 Pa",
+    "240.000 Pa",
+    "12.000 Pa"
+   ],
+   "answer": 0,
+   "explanation": "P = h × d × g = 10 × 1200 × 10 = 120.000 Pa."
+  },
+  {
+   "id": 29,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q29.svg",
+   "imageAlt": "Sıvı içindeki A noktası ve derinliği",
+   "scenario": "Bir fizik deneyinde civa kabı, civa içinde yüzeyin 0,5 m altındaki A noktasındaki sıvı basıncını hesaplıyor. Civa yoğunluğu 13600 kg/m³, yerçekimi ivmesi g = 10 N/kg alınacaktır. Açık hava basıncı hesaba katılmayacaktır.",
+   "question": "A noktasındaki sıvı basıncı kaç Pa'dır?",
+   "options": [
+    "6.800 Pa",
+    "680.000 Pa",
+    "68.000 Pa",
+    "136.000 Pa"
+   ],
+   "answer": 2,
+   "explanation": "P = h × d × g = 0,5 × 13600 × 10 = 68.000 Pa."
+  },
+  {
+   "id": 30,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q30.svg",
+   "imageAlt": "Sıvı içindeki A noktası ve derinliği",
+   "scenario": "Bir denizaltı, deniz suyu içinde yüzeyin 20 m altındaki A noktasındaki sıvı basıncını hesaplıyor. Deniz suyu yoğunluğu 1030 kg/m³, yerçekimi ivmesi g = 10 N/kg alınacaktır. Açık hava basıncı hesaba katılmayacaktır.",
+   "question": "A noktasındaki sıvı basıncı kaç Pa'dır?",
+   "options": [
+    "206.000 Pa",
+    "2.060.000 Pa",
+    "412.000 Pa",
+    "20.600 Pa"
+   ],
+   "answer": 0,
+   "explanation": "P = h × d × g = 20 × 1030 × 10 = 206.000 Pa."
+  },
+  {
+   "id": 31,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q31.svg",
+   "imageAlt": "Sıvı içindeki A noktası ve derinliği",
+   "scenario": "Bir baraj mühendisi, d = 1000 kg/m³ yoğunluklu su dolu bir tanktadır. Tanktaki A noktasında sıvı basıncı 30000 Pa ölçülüyor. g = 10 N/kg alınız.",
+   "question": "A noktasının sıvı yüzeyinden derinliği kaç m'dir?",
+   "options": [
+    "30 m",
+    "1,5 m",
+    "4 m",
+    "3 m"
+   ],
+   "answer": 3,
+   "explanation": "h = P / (d × g) = 30000 / (1000×10) = 3 m."
+  },
+  {
+   "id": 32,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q32.svg",
+   "imageAlt": "Sıvı içindeki A noktası ve derinliği",
+   "scenario": "Bir yağ deposu, d = 800 kg/m³ yoğunluklu yağ dolu bir tanktadır. Tanktaki A noktasında sıvı basıncı 40000 Pa ölçülüyor. g = 10 N/kg alınız.",
+   "question": "A noktasının sıvı yüzeyinden derinliği kaç m'dir?",
+   "options": [
+    "6 m",
+    "2,5 m",
+    "5 m",
+    "50 m"
+   ],
+   "answer": 2,
+   "explanation": "h = P / (d × g) = 40000 / (800×10) = 5 m."
+  },
+  {
+   "id": 33,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q33.svg",
+   "imageAlt": "Sıvı içindeki A noktası ve derinliği",
+   "scenario": "Bir kimya deposu, bilinmeyen bir sıvının yüzeyinden 3 m aşağıdaki A noktasında sıvı basıncını 60000 Pa ölçüyor. g = 10 N/kg'dır. Sıvının cinsini bulmak için yoğunluğunu hesaplayacaktır.",
+   "question": "Sıvının yoğunluğu kaç kg/m³'tür?",
+   "options": [
+    "1000 kg/m³",
+    "2000 kg/m³",
+    "20000 kg/m³",
+    "3000 kg/m³"
+   ],
+   "answer": 1,
+   "explanation": "d = P / (h × g) = 60000 / (3×10) = 2000 kg/m³."
+  },
+  {
+   "id": 34,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q34.svg",
+   "imageAlt": "Sıvı içindeki A noktası ve derinliği",
+   "scenario": "Bir sızdırmazlık testi yapan usta, bilinmeyen bir sıvının yüzeyinden 3 m aşağıdaki A noktasında sıvı basıncını 90000 Pa ölçüyor. g = 10 N/kg'dır. Sıvının cinsini bulmak için yoğunluğunu hesaplayacaktır.",
+   "question": "Sıvının yoğunluğu kaç kg/m³'tür?",
+   "options": [
+    "3000 kg/m³",
+    "30000 kg/m³",
+    "1500 kg/m³",
+    "4500 kg/m³"
+   ],
+   "answer": 0,
+   "explanation": "d = P / (h × g) = 90000 / (3×10) = 3000 kg/m³."
+  },
+  {
+   "id": 35,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q35.svg",
+   "imageAlt": "Üç farklı sıvıda aynı derinlikteki noktalar",
+   "scenario": "Öğrenciler, birbirine karışmayan üç farklı sıvıyı özdeş üç kaba koyuyor. Her kapta sıvı yüzeyinden 20 cm aşağıda bir nokta işaretleniyor ve bu noktalardaki sıvı basıncı karşılaştırılıyor. Sıvıların yoğunlukları şekilde verilmiştir; g = 10 N/kg'dır.",
+   "question": "Basıncı en büyük olan nokta hangisidir?",
+   "options": [
+    "B noktası",
+    "Üçünde de aynıdır",
+    "A noktası",
+    "C noktası"
+   ],
+   "answer": 3,
+   "explanation": "Aynı derinlikte sıvı basıncı yoğunlukla doğru orantılıdır; yoğunluğu en büyük olan sıvıda basınç en büyüktür."
+  },
+  {
+   "id": 36,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q36.svg",
+   "imageAlt": "Üç farklı sıvıda aynı derinlikteki noktalar",
+   "scenario": "Öğrenciler, birbirine karışmayan üç farklı sıvıyı özdeş üç kaba koyuyor. Her kapta sıvı yüzeyinden 30 cm aşağıda bir nokta işaretleniyor ve bu noktalardaki sıvı basıncı karşılaştırılıyor. Sıvıların yoğunlukları şekilde verilmiştir; g = 10 N/kg'dır.",
+   "question": "En büyük basınç değeri kaç Pa'dır?",
+   "options": [
+    "3.600 Pa",
+    "2.400 Pa",
+    "3.000 Pa",
+    "36.000 Pa"
+   ],
+   "answer": 0,
+   "explanation": "P = h × d × g = 0.3 × 1.200 × 10 = 3.600 Pa."
+  },
+  {
+   "id": 37,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q37.svg",
+   "imageAlt": "Üç farklı sıvıda aynı derinlikteki noktalar",
+   "scenario": "Öğrenciler, birbirine karışmayan üç farklı sıvıyı özdeş üç kaba koyuyor. Her kapta sıvı yüzeyinden 10 cm aşağıda bir nokta işaretleniyor ve bu noktalardaki sıvı basıncı karşılaştırılıyor. Sıvıların yoğunlukları şekilde verilmiştir; g = 10 N/kg'dır.",
+   "question": "Basıncı en büyük olan nokta hangisidir?",
+   "options": [
+    "Üçünde de aynıdır",
+    "A noktası",
+    "B noktası",
+    "C noktası"
+   ],
+   "answer": 3,
+   "explanation": "Aynı derinlikte sıvı basıncı yoğunlukla doğru orantılıdır; yoğunluğu en büyük olan sıvıda basınç en büyüktür."
+  },
+  {
+   "id": 38,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q38.svg",
+   "imageAlt": "Üç farklı sıvıda aynı derinlikteki noktalar",
+   "scenario": "Öğrenciler, birbirine karışmayan üç farklı sıvıyı özdeş üç kaba koyuyor. Her kapta sıvı yüzeyinden 5 cm aşağıda bir nokta işaretleniyor ve bu noktalardaki sıvı basıncı karşılaştırılıyor. Sıvıların yoğunlukları şekilde verilmiştir; g = 10 N/kg'dır.",
+   "question": "En büyük basınç değeri kaç Pa'dır?",
+   "options": [
+    "450 Pa",
+    "68.000 Pa",
+    "6.800 Pa",
+    "500 Pa"
+   ],
+   "answer": 2,
+   "explanation": "P = h × d × g = 0.05 × 13.600 × 10 = 6.800 Pa."
+  },
+  {
+   "id": 39,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q39.svg",
+   "imageAlt": "Üç farklı sıvıda aynı derinlikteki noktalar",
+   "scenario": "Öğrenciler, birbirine karışmayan üç farklı sıvıyı özdeş üç kaba koyuyor. Her kapta sıvı yüzeyinden 40 cm aşağıda bir nokta işaretleniyor ve bu noktalardaki sıvı basıncı karşılaştırılıyor. Sıvıların yoğunlukları şekilde verilmiştir; g = 10 N/kg'dır.",
+   "question": "Basıncı en büyük olan nokta hangisidir?",
+   "options": [
+    "A noktası",
+    "Üçünde de aynıdır",
+    "B noktası",
+    "C noktası"
+   ],
+   "answer": 2,
+   "explanation": "Aynı derinlikte sıvı basıncı yoğunlukla doğru orantılıdır; yoğunluğu en büyük olan sıvıda basınç en büyüktür."
+  },
+  {
+   "id": 40,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q40.svg",
+   "imageAlt": "Üç farklı sıvıda aynı derinlikteki noktalar",
+   "scenario": "Öğrenciler, birbirine karışmayan üç farklı sıvıyı özdeş üç kaba koyuyor. Her kapta sıvı yüzeyinden 15 cm aşağıda bir nokta işaretleniyor ve bu noktalardaki sıvı basıncı karşılaştırılıyor. Sıvıların yoğunlukları şekilde verilmiştir; g = 10 N/kg'dır.",
+   "question": "En büyük basınç değeri kaç Pa'dır?",
+   "options": [
+    "1.350 Pa",
+    "1.500 Pa",
+    "18.900 Pa",
+    "1.890 Pa"
+   ],
+   "answer": 3,
+   "explanation": "P = h × d × g = 0.15 × 1.260 × 10 = 1.890 Pa."
+  },
+  {
+   "id": 41,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q41.svg",
+   "imageAlt": "Üç farklı sıvıda aynı derinlikteki noktalar",
+   "scenario": "Öğrenciler, birbirine karışmayan üç farklı sıvıyı özdeş üç kaba koyuyor. Her kapta sıvı yüzeyinden 25 cm aşağıda bir nokta işaretleniyor ve bu noktalardaki sıvı basıncı karşılaştırılıyor. Sıvıların yoğunlukları şekilde verilmiştir; g = 10 N/kg'dır.",
+   "question": "Basıncı en büyük olan nokta hangisidir?",
+   "options": [
+    "C noktası",
+    "A noktası",
+    "B noktası",
+    "Üçünde de aynıdır"
+   ],
+   "answer": 0,
+   "explanation": "Aynı derinlikte sıvı basıncı yoğunlukla doğru orantılıdır; yoğunluğu en büyük olan sıvıda basınç en büyüktür."
+  },
+  {
+   "id": 42,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q42.svg",
+   "imageAlt": "Üç farklı sıvıda aynı derinlikteki noktalar",
+   "scenario": "Öğrenciler, birbirine karışmayan üç farklı sıvıyı özdeş üç kaba koyuyor. Her kapta sıvı yüzeyinden 50 cm aşağıda bir nokta işaretleniyor ve bu noktalardaki sıvı basıncı karşılaştırılıyor. Sıvıların yoğunlukları şekilde verilmiştir; g = 10 N/kg'dır.",
+   "question": "En büyük basınç değeri kaç Pa'dır?",
+   "options": [
+    "4.500 Pa",
+    "60.000 Pa",
+    "6.000 Pa",
+    "5.000 Pa"
+   ],
+   "answer": 2,
+   "explanation": "P = h × d × g = 0.5 × 1.200 × 10 = 6.000 Pa."
+  },
+  {
+   "id": 43,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q43.svg",
+   "imageAlt": "Biçimleri farklı üç kap",
+   "scenario": "Şekilde taban alanları farklı, aynı sıvıyla aynı yüksekliğe doldurulmuş üç kap görülüyor. Sıvının yoğunluğu 1000 kg/m³, sıvı yüksekliği 20 cm'dir. g = 10 N/kg.",
+   "question": "Kapların tabanlarındaki sıvı basınçları için ne söylenebilir?",
+   "options": [
+    "Tabanı en geniş olan kapta en büyüktür",
+    "Üçünde de eşittir ve 2.000 Pa'dır",
+    "Kabın hacmi en büyük olanda en büyüktür",
+    "Tabanı en dar olan kapta en büyüktür"
+   ],
+   "answer": 1,
+   "explanation": "Sıvı basıncı yalnızca h, d ve g'ye bağlıdır; kap şekline ve taban alanına bağlı değildir. P = 0.2×1000×10 = 2.000 Pa."
+  },
+  {
+   "id": 44,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q44.svg",
+   "imageAlt": "Biçimleri farklı üç kap",
+   "scenario": "Şeklin gösterdiği üç farklı biçimdeki kap, aynı sıvıyla ağzına yakın aynı seviyeye kadar doldurulmuştur. Sıvının yoğunluğu 1000 kg/m³, sıvı yüksekliği 30 cm'dir. g = 10 N/kg.",
+   "question": "Tabanı 0.01 m² olan kabın tabanına etki eden sıvı kuvveti kaç N'dur?",
+   "options": [
+    "30 N",
+    "60 N",
+    "300.000 N",
+    "3000,01 N"
+   ],
+   "answer": 0,
+   "explanation": "F = P × A = 3.000 × 0.01 = 30 N."
+  },
+  {
+   "id": 45,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q45.svg",
+   "imageAlt": "Biçimleri farklı üç kap",
+   "scenario": "Fen laboratuvarında, biçimleri farklı üç cam kap aynı sıvıyla eşit yüksekliğe dolduruluyor. Sıvının yoğunluğu 800 kg/m³, sıvı yüksekliği 25 cm'dir. g = 10 N/kg.",
+   "question": "Kapların tabanlarındaki sıvı basınçları için ne söylenebilir?",
+   "options": [
+    "Kabın hacmi en büyük olanda en büyüktür",
+    "Üçünde de eşittir ve 2.000 Pa'dır",
+    "Tabanı en dar olan kapta en büyüktür",
+    "Tabanı en geniş olan kapta en büyüktür"
+   ],
+   "answer": 1,
+   "explanation": "Sıvı basıncı yalnızca h, d ve g'ye bağlıdır; kap şekline ve taban alanına bağlı değildir. P = 0.25×800×10 = 2.000 Pa."
+  },
+  {
+   "id": 46,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q46.svg",
+   "imageAlt": "Biçimleri farklı üç kap",
+   "scenario": "Üç farklı biçimdeki kap aynı sıvı ile eşit seviyeye kadar doldurulmuş ve yatay masaya yerleştirilmiştir. Sıvının yoğunluğu 1000 kg/m³, sıvı yüksekliği 40 cm'dir. g = 10 N/kg.",
+   "question": "Tabanı 0.05 m² olan kabın tabanına etki eden sıvı kuvveti kaç N'dur?",
+   "options": [
+    "4000,05 N",
+    "400 N",
+    "200 N",
+    "80.000 N"
+   ],
+   "answer": 2,
+   "explanation": "F = P × A = 4.000 × 0.05 = 200 N."
+  },
+  {
+   "id": 47,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q47.svg",
+   "imageAlt": "Biçimleri farklı üç kap",
+   "scenario": "Aynı sıvıyla eşit yükseklikte doldurulmuş, taban alanları farklı üç kap gözleniyor. Sıvının yoğunluğu 1200 kg/m³, sıvı yüksekliği 50 cm'dir. g = 10 N/kg.",
+   "question": "Kapların tabanlarındaki sıvı basınçları için ne söylenebilir?",
+   "options": [
+    "Tabanı en dar olan kapta en büyüktür",
+    "Üçünde de eşittir ve 6.000 Pa'dır",
+    "Tabanı en geniş olan kapta en büyüktür",
+    "Kabın hacmi en büyük olanda en büyüktür"
+   ],
+   "answer": 1,
+   "explanation": "Sıvı basıncı yalnızca h, d ve g'ye bağlıdır; kap şekline ve taban alanına bağlı değildir. P = 0.5×1200×10 = 6.000 Pa."
+  },
+  {
+   "id": 48,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q48.svg",
+   "imageAlt": "Biçimleri farklı üç kap",
+   "scenario": "Öğretmen, farklı biçimli üç kabı aynı sıvıyla aynı yüksekliğe dolduruyor. Sıvının yoğunluğu 1000 kg/m³, sıvı yüksekliği 60 cm'dir. g = 10 N/kg.",
+   "question": "Tabanı 0.025 m² olan kabın tabanına etki eden sıvı kuvveti kaç N'dur?",
+   "options": [
+    "240.000 N",
+    "6000,02 N",
+    "150 N",
+    "300 N"
+   ],
+   "answer": 2,
+   "explanation": "F = P × A = 6.000 × 0.025 = 150 N."
+  },
+  {
+   "id": 49,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q49.svg",
+   "imageAlt": "Delikli kap",
+   "scenario": "Üstü açık bir su kabında farklı yüksekliklere aynı büyüklükte üç delik açılmıştır. Delikler tıkaçla kapalıyken su doldurulmuş, sonra tıkaçlar aynı anda çekilmiştir.",
+   "question": "Suyun fışkırma uzaklığı hangi delikte en büyüktür?",
+   "options": [
+    "A deliği",
+    "C deliği",
+    "B deliği",
+    "Üçünde de aynıdır"
+   ],
+   "answer": 1,
+   "explanation": "Sıvı basıncı derinlikle arttığı için en derindeki C deliğinden su en uzağa fışkırır."
+  },
+  {
+   "id": 50,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q50.svg",
+   "imageAlt": "Delikli kap",
+   "scenario": "Bir öğrenci plastik şişenin yan yüzeyine üç ayrı yükseklikten delik açıyor. Delikler tıkaçla kapalıyken su doldurulmuş, sonra tıkaçlar aynı anda çekilmiştir.",
+   "question": "Hangi delikteki sıvı basıncı en küçüktür?",
+   "options": [
+    "A deliği",
+    "B deliği",
+    "C deliği",
+    "Üçünde de aynıdır"
+   ],
+   "answer": 0,
+   "explanation": "Sıvı yüzeyine en yakın delik olan A'da derinlik en küçüktür; basınç da en küçüktür."
+  },
+  {
+   "id": 51,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q51.svg",
+   "imageAlt": "Delikli kap",
+   "scenario": "Yan yüzeyine delikler açılmış, ağzına kadar su dolu bir kapta su fışkırıyor. Delikler tıkaçla kapalıyken su doldurulmuş, sonra tıkaçlar aynı anda çekilmiştir.",
+   "question": "Deliklerdeki sıvı basıncının sıralaması nasıldır?",
+   "options": [
+    "PB > PA > PC",
+    "PA = PB = PC",
+    "PA > PB > PC",
+    "PC > PB > PA"
+   ],
+   "answer": 3,
+   "explanation": "P = h × d × g; derinlik arttıkça basınç artar."
+  },
+  {
+   "id": 52,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q52.svg",
+   "imageAlt": "Delikli kap",
+   "scenario": "Laboratuvarda delikli kap deneyi yapılıyor; üç delikten su fışkırıyor. Delikler tıkaçla kapalıyken su doldurulmuş, sonra tıkaçlar aynı anda çekilmiştir.",
+   "question": "Suyun fışkırma uzaklığı hangi delikte en büyüktür?",
+   "options": [
+    "Üçünde de aynıdır",
+    "A deliği",
+    "C deliği",
+    "B deliği"
+   ],
+   "answer": 2,
+   "explanation": "Sıvı basıncı derinlikle arttığı için en derindeki C deliğinden su en uzağa fışkırır."
+  },
+  {
+   "id": 53,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q53.svg",
+   "imageAlt": "Delikli kap",
+   "scenario": "Bir barajın modeli olarak kullanılan kabın yan yüzeyinde üç delik bulunuyor. Delikler tıkaçla kapalıyken su doldurulmuş, sonra tıkaçlar aynı anda çekilmiştir.",
+   "question": "Hangi delikteki sıvı basıncı en küçüktür?",
+   "options": [
+    "B deliği",
+    "C deliği",
+    "Üçünde de aynıdır",
+    "A deliği"
+   ],
+   "answer": 3,
+   "explanation": "Sıvı yüzeyine en yakın delik olan A'da derinlik en küçüktür; basınç da en küçüktür."
+  },
+  {
+   "id": 54,
+   "outcome": "F.8.3.2 Sıvı basıncı",
+   "image": "/soru-gorselleri/basinc/q54.svg",
+   "imageAlt": "Delikli kap",
+   "scenario": "Öğretmen delikli kap deneyini tahtaya çiziyor. Delikler tıkaçla kapalıyken su doldurulmuş, sonra tıkaçlar aynı anda çekilmiştir.",
+   "question": "Deliklerdeki sıvı basıncının sıralaması nasıldır?",
+   "options": [
+    "PC > PB > PA",
+    "PA = PB = PC",
+    "PA > PB > PC",
+    "PB > PA > PC"
+   ],
+   "answer": 0,
+   "explanation": "P = h × d × g; derinlik arttıkça basınç artar."
+  },
+  {
+   "id": 55,
+   "outcome": "F.8.3.2 Pascal prensibi",
+   "image": "/soru-gorselleri/basinc/q55.svg",
+   "imageAlt": "Hidrolik sistem",
+   "scenario": "Bir araba lifti, hidrolik sistemle çalışır. Küçük pistonun alanı 10 cm², büyük pistonun alanı 200 cm²'dir. Küçük pistona 50 N kuvvet uygulandığında sıvı aracılığıyla büyük pistona kuvvet iletilir. Sıvı sıkıştırılamaz kabul edilir.",
+   "question": "Büyük pistonun uyguladığı kuvvet kaç N'dur?",
+   "options": [
+    "10.000 N",
+    "1.000 N",
+    "2,5 N",
+    "240 N"
+   ],
+   "answer": 1,
+   "explanation": "Pascal prensibi: F₁/A₁ = F₂/A₂ → F₂ = 50×200/10 = 1.000 N."
+  },
+  {
+   "id": 56,
+   "outcome": "F.8.3.2 Pascal prensibi",
+   "image": "/soru-gorselleri/basinc/q56.svg",
+   "imageAlt": "Hidrolik sistem",
+   "scenario": "Berber koltuğu, hidrolik sistemle çalışır. Küçük pistonun alanı 5 cm², büyük pistonun alanı 150 cm²'dir. Küçük pistona 40 N kuvvet uygulandığında sıvı aracılığıyla büyük pistona kuvvet iletilir. Sıvı sıkıştırılamaz kabul edilir.",
+   "question": "Büyük pistonun uyguladığı kuvvet kaç N'dur?",
+   "options": [
+    "1,33 N",
+    "1.200 N",
+    "185 N",
+    "6.000 N"
+   ],
+   "answer": 1,
+   "explanation": "Pascal prensibi: F₁/A₁ = F₂/A₂ → F₂ = 40×150/5 = 1.200 N."
+  },
+  {
+   "id": 57,
+   "outcome": "F.8.3.2 Pascal prensibi",
+   "image": "/soru-gorselleri/basinc/q57.svg",
+   "imageAlt": "Hidrolik sistem",
+   "scenario": "Oto tamirhanesi krikosu, hidrolik sistemle çalışır. Küçük pistonun alanı 20 cm², büyük pistonun alanı 800 cm²'dir. Küçük pistona 100 N kuvvet uygulandığında sıvı aracılığıyla büyük pistona kuvvet iletilir. Sıvı sıkıştırılamaz kabul edilir.",
+   "question": "Büyük pistonun uyguladığı kuvvet kaç N'dur?",
+   "options": [
+    "4.000 N",
+    "80.000 N",
+    "880 N",
+    "2,5 N"
+   ],
+   "answer": 0,
+   "explanation": "Pascal prensibi: F₁/A₁ = F₂/A₂ → F₂ = 100×800/20 = 4.000 N."
+  },
+  {
+   "id": 58,
+   "outcome": "F.8.3.2 Pascal prensibi",
+   "image": "/soru-gorselleri/basinc/q58.svg",
+   "imageAlt": "Hidrolik sistem",
+   "scenario": "Hidrolik pres, hidrolik sistemle çalışır. Küçük pistonun alanı 4 cm², büyük pistonun alanı 100 cm²'dir. Küçük pistona 60 N kuvvet uygulandığında sıvı aracılığıyla büyük pistona kuvvet iletilir. Sıvı sıkıştırılamaz kabul edilir.",
+   "question": "Büyük pistonun uyguladığı kuvvet kaç N'dur?",
+   "options": [
+    "1.500 N",
+    "6.000 N",
+    "2,4 N",
+    "156 N"
+   ],
+   "answer": 0,
+   "explanation": "Pascal prensibi: F₁/A₁ = F₂/A₂ → F₂ = 60×100/4 = 1.500 N."
+  },
+  {
+   "id": 59,
+   "outcome": "F.8.3.2 Pascal prensibi",
+   "image": "/soru-gorselleri/basinc/q59.svg",
+   "imageAlt": "Hidrolik sistem",
+   "scenario": "Atölyedeki hidrolik kaldıraç, hidrolik sistemle çalışır. Küçük pistonun alanı 10 cm², büyük pistonun alanı 300 cm²'dir. Küçük pistona 200 N kuvvet uygulandığında sıvı aracılığıyla büyük pistona kuvvet iletilir. Sıvı sıkıştırılamaz kabul edilir.",
+   "question": "Büyük pistonun uyguladığı kuvvet kaç N'dur?",
+   "options": [
+    "6.000 N",
+    "6,67 N",
+    "490 N",
+    "60.000 N"
+   ],
+   "answer": 0,
+   "explanation": "Pascal prensibi: F₁/A₁ = F₂/A₂ → F₂ = 200×300/10 = 6.000 N."
+  },
+  {
+   "id": 60,
+   "outcome": "F.8.3.2 Pascal prensibi",
+   "image": "/soru-gorselleri/basinc/q60.svg",
+   "imageAlt": "Hidrolik sistem",
+   "scenario": "Bir ekskavatör kolu hidrolik sistemle çalışır. Küçük pistonun alanı 15 cm², büyük pistonun alanı 450 cm²'dir. Büyük pistonun 30 N'luk yükü dengelemesi isteniyor. Sıvı sıkıştırılamaz.",
+   "question": "Küçük pistona uygulanması gereken kuvvet kaç N olmalıdır?",
+   "options": [
+    "30 N",
+    "900 N",
+    "2 N",
+    "1 N"
+   ],
+   "answer": 3,
+   "explanation": "F₁/A₁ = F₂/A₂ → F₁ = 30×15/450 = 1 N."
+  },
+  {
+   "id": 61,
+   "outcome": "F.8.3.2 Pascal prensibi",
+   "image": "/soru-gorselleri/basinc/q61.svg",
+   "imageAlt": "Hidrolik sistem",
+   "scenario": "Dişçi koltuğu hidrolik sistemle çalışır. Küçük pistonun alanı 8 cm², büyük pistonun alanı 400 cm²'dir. Büyük pistonun 60 N'luk yükü dengelemesi isteniyor. Sıvı sıkıştırılamaz.",
+   "question": "Küçük pistona uygulanması gereken kuvvet kaç N olmalıdır?",
+   "options": [
+    "60 N",
+    "2,4 N",
+    "3.000 N",
+    "1,2 N"
+   ],
+   "answer": 3,
+   "explanation": "F₁/A₁ = F₂/A₂ → F₁ = 60×8/400 = 1,2 N."
+  },
+  {
+   "id": 62,
+   "outcome": "F.8.3.2 Pascal prensibi",
+   "image": "/soru-gorselleri/basinc/q62.svg",
+   "imageAlt": "Hidrolik sistem",
+   "scenario": "Hidrolik fren sistemi hidrolik sistemle çalışır. Küçük pistonun alanı 25 cm², büyük pistonun alanı 500 cm²'dir. Büyük pistonun 150 N'luk yükü dengelemesi isteniyor. Sıvı sıkıştırılamaz.",
+   "question": "Küçük pistona uygulanması gereken kuvvet kaç N olmalıdır?",
+   "options": [
+    "7,5 N",
+    "150 N",
+    "3.000 N",
+    "15 N"
+   ],
+   "answer": 0,
+   "explanation": "F₁/A₁ = F₂/A₂ → F₁ = 150×25/500 = 7,5 N."
+  },
+  {
+   "id": 63,
+   "outcome": "F.8.3.2 Pascal prensibi",
+   "image": "/soru-gorselleri/basinc/q63.svg",
+   "imageAlt": "Hidrolik sistem",
+   "scenario": "Kamyon kaldırma platformu, 3000 kg kütleli bir yükü kaldırmak için kullanılıyor. Küçük pistonun alanı 10 cm², büyük pistonun alanı 500 cm²'dir. g = 10 N/kg alınız ve sıvı sıkıştırılamaz kabul ediniz.",
+   "question": "Yükü dengelemek için küçük pistona kaç N kuvvet uygulanmalıdır?",
+   "options": [
+    "600 N",
+    "30.000 N",
+    "6.000 N",
+    "1.500.000 N"
+   ],
+   "answer": 0,
+   "explanation": "Yük ağırlığı = 3000×10 = 30000 N. F₁ = 30000×10/500 = 600 N."
+  },
+  {
+   "id": 64,
+   "outcome": "F.8.3.2 Pascal prensibi",
+   "image": "/soru-gorselleri/basinc/q64.svg",
+   "imageAlt": "Hidrolik sistem",
+   "scenario": "Bir tamirci krikosu, 4000 kg kütleli bir yükü kaldırmak için kullanılıyor. Küçük pistonun alanı 20 cm², büyük pistonun alanı 400 cm²'dir. g = 10 N/kg alınız ve sıvı sıkıştırılamaz kabul ediniz.",
+   "question": "Yükü dengelemek için küçük pistona kaç N kuvvet uygulanmalıdır?",
+   "options": [
+    "40.000 N",
+    "800.000 N",
+    "20.000 N",
+    "2.000 N"
+   ],
+   "answer": 3,
+   "explanation": "Yük ağırlığı = 4000×10 = 40000 N. F₁ = 40000×20/400 = 2.000 N."
+  },
+  {
+   "id": 65,
+   "outcome": "F.8.3.3 Açık hava basıncı",
+   "image": "/soru-gorselleri/basinc/q65.svg",
+   "imageAlt": "Civalı barometre şeması",
+   "scenario": "Torricelli deneyi deniz seviyesinde yapıldığında civa sütunu 76 cm yükselir. Öğrenci aynı barometreyi deniz seviyesinden 1000 m yüksekteki bir kasabaya götürüyor. Yükseklik arttıkça her 10 m'de basınç yaklaşık 1 mmHg azalır.",
+   "question": "Kasabadaki civa sütunu yaklaşık kaç cm olur?",
+   "options": [
+    "76 cm",
+    "66 cm",
+    "86 cm",
+    "56 cm"
+   ],
+   "answer": 1,
+   "explanation": "1000 m'de 100 mmHg = 10 cmHg azalır: 76 − 10 = 66 cmHg."
+  },
+  {
+   "id": 66,
+   "outcome": "F.8.3.3 Açık hava basıncı",
+   "image": "/soru-gorselleri/basinc/q66.svg",
+   "imageAlt": "Civalı barometre şeması",
+   "scenario": "Bir dağcı, deniz seviyesinde 76 cmHg ölçen barometresini 2500 m yüksekliğe çıkarıyor. Her 10 m'de açık hava basıncı yaklaşık 1 mmHg azalmaktadır.",
+   "question": "Tepede civa sütunu yaklaşık kaç cmHg okunur?",
+   "options": [
+    "101 cmHg",
+    "76 cmHg",
+    "51 cmHg",
+    "25 cmHg"
+   ],
+   "answer": 2,
+   "explanation": "2500 m için 250 mmHg = 25 cmHg azalma: 76 − 25 = 51 cmHg."
+  },
+  {
+   "id": 67,
+   "outcome": "F.8.3.3 Açık hava basıncı",
+   "image": "/soru-gorselleri/basinc/q67.svg",
+   "imageAlt": "Civalı barometre şeması",
+   "scenario": "Bir hava durumu istasyonunda barometre 64 cmHg göstermektedir. Deniz seviyesinde basınç 76 cmHg'dir ve her 10 m yükseklikte 1 mmHg azalır.",
+   "question": "İstasyon deniz seviyesinden yaklaşık kaç m yüksektedir?",
+   "options": [
+    "120 m",
+    "12000 m",
+    "1200 m",
+    "640 m"
+   ],
+   "answer": 2,
+   "explanation": "76 − 64 = 12 cmHg = 120 mmHg → 120 × 10 = 1200 m."
+  },
+  {
+   "id": 68,
+   "outcome": "F.8.3.3 Açık hava basıncı",
+   "image": "/soru-gorselleri/basinc/q68.svg",
+   "imageAlt": "Civalı barometre şeması",
+   "scenario": "Bir balon pilotu, barometresinin 55 cmHg gösterdiğini görüyor. Deniz seviyesindeki değer 76 cmHg olup her 10 m'de 1 mmHg azalmaktadır.",
+   "question": "Balon yaklaşık kaç m yükseklikte uçmaktadır?",
+   "options": [
+    "21000 m",
+    "2100 m",
+    "550 m",
+    "210 m"
+   ],
+   "answer": 1,
+   "explanation": "76 − 55 = 21 cmHg = 210 mmHg → 2100 m."
+  },
+  {
+   "id": 69,
+   "outcome": "F.8.3.3 Açık hava basıncı",
+   "image": "/soru-gorselleri/basinc/q69.svg",
+   "imageAlt": "Civalı barometre şeması",
+   "scenario": "Bir öğrenci, Torricelli deneyinde borunun düşeyle yaptığı açıyı değiştirerek tüpü eğiyor. Deney deniz seviyesinde yapılmaktadır ve dış basınç değişmemektedir.",
+   "question": "Civa sütununun dikey yüksekliği (h) kaç cm olur?",
+   "options": [
+    "Sıfır olur",
+    "76 cm'den büyük olur",
+    "76 cm'den küçük olur",
+    "76 cm"
+   ],
+   "answer": 3,
+   "explanation": "Dikey yükseklik dış basınca bağlıdır; boruyu eğmek h'yi değiştirmez, yalnızca borudaki civa uzunluğu artar."
+  },
+  {
+   "id": 70,
+   "outcome": "F.8.3.3 Açık hava basıncı",
+   "image": "/soru-gorselleri/basinc/q70.svg",
+   "imageAlt": "Civalı barometre şeması",
+   "scenario": "İki öğrenci Torricelli deneyini deniz seviyesinde yapıyor. Birincisi ince, ikincisi iki kat daha kalın kesitli bir cam boru kullanıyor. İkisi de aynı civa ve aynı ortamı kullanıyor.",
+   "question": "Kalın borudaki civa sütunu yüksekliği için ne söylenebilir?",
+   "options": [
+    "İnce borudakiyle aynıdır (76 cm)",
+    "Daha küçüktür",
+    "Daha büyüktür",
+    "Yarısı kadardır"
+   ],
+   "answer": 0,
+   "explanation": "Sütun yüksekliği boru kesitine bağlı değildir; yalnızca dış basınca bağlıdır."
+  },
+  {
+   "id": 71,
+   "outcome": "F.8.3.3 Açık hava basıncı",
+   "image": "/soru-gorselleri/basinc/q71.svg",
+   "imageAlt": "Civalı barometre şeması",
+   "scenario": "Torricelli deneyinde civanın yoğunluğu 13,6 g/cm³, suyun yoğunluğu 1 g/cm³'tür. Aynı deney civa yerine su ile yapılsaydı, deniz seviyesinde su sütunu civa sütununun 13,6 katı yükselirdi.",
+   "question": "Su sütununun yüksekliği yaklaşık kaç m olurdu?",
+   "options": [
+    "Yaklaşık 76 cm",
+    "Yaklaşık 1,03 m",
+    "Yaklaşık 103 m",
+    "Yaklaşık 10,3 m"
+   ],
+   "answer": 3,
+   "explanation": "76 × 13,6 = 1033,6 cm ≈ 10,3 m."
+  },
+  {
+   "id": 72,
+   "outcome": "F.8.3.3 Açık hava basıncı",
+   "image": "/soru-gorselleri/basinc/q72.svg",
+   "imageAlt": "Civalı barometre şeması",
+   "scenario": "Bir şehirde barometre 70 cmHg göstermektedir. Aynı anda deniz seviyesindeki başka bir şehirde 76 cmHg ölçülmektedir. Her 10 m yükseklikte 1 mmHg azaldığı kabul edilecektir.",
+   "question": "Birinci şehir deniz seviyesinden yaklaşık kaç m yüksektedir?",
+   "options": [
+    "600 m",
+    "60 m",
+    "6000 m",
+    "700 m"
+   ],
+   "answer": 0,
+   "explanation": "76 − 70 = 6 cmHg = 60 mmHg → 600 m."
+  },
+  {
+   "id": 73,
+   "outcome": "F.8.3.3 Gaz basıncı",
+   "image": "/soru-gorselleri/basinc/q73.svg",
+   "imageAlt": "U borulu manometre",
+   "scenario": "Kapalı bir kaptaki gazın basıncı, ucu açık U borulu manometre ile ölçülüyor. Dış (açık hava) basıncı 76 cmHg'dir. Şekildeki düzenekte civa seviyeleri arasındaki fark 10 cm'dir ve açık koldaki civa gaz tarafına göre daha yüksektedir.",
+   "question": "Kaptaki gazın basıncı kaç cmHg'dir?",
+   "options": [
+    "10 cmHg",
+    "86 cmHg",
+    "76 cmHg",
+    "66 cmHg"
+   ],
+   "answer": 1,
+   "explanation": "Açık kol yüksekse gaz basıncı dış basınçtan büyüktür: 76 + 10 = 86 cmHg."
+  },
+  {
+   "id": 74,
+   "outcome": "F.8.3.3 Gaz basıncı",
+   "image": "/soru-gorselleri/basinc/q74.svg",
+   "imageAlt": "U borulu manometre",
+   "scenario": "Kapalı bir kaptaki gazın basıncı, ucu açık U borulu manometre ile ölçülüyor. Dış (açık hava) basıncı 76 cmHg'dir. Şekildeki düzenekte civa seviyeleri arasındaki fark 14 cm'dir ve açık koldaki civa gaz tarafına göre daha yüksektedir.",
+   "question": "Kaptaki gazın basıncı kaç cmHg'dir?",
+   "options": [
+    "62 cmHg",
+    "90 cmHg",
+    "14 cmHg",
+    "76 cmHg"
+   ],
+   "answer": 1,
+   "explanation": "Açık kol yüksekse gaz basıncı dış basınçtan büyüktür: 76 + 14 = 90 cmHg."
+  },
+  {
+   "id": 75,
+   "outcome": "F.8.3.3 Gaz basıncı",
+   "image": "/soru-gorselleri/basinc/q75.svg",
+   "imageAlt": "U borulu manometre",
+   "scenario": "Kapalı bir kaptaki gazın basıncı, ucu açık U borulu manometre ile ölçülüyor. Dış (açık hava) basıncı 76 cmHg'dir. Şekildeki düzenekte civa seviyeleri arasındaki fark 6 cm'dir ve açık koldaki civa gaz tarafına göre daha alçaktadır.",
+   "question": "Kaptaki gazın basıncı kaç cmHg'dir?",
+   "options": [
+    "76 cmHg",
+    "6 cmHg",
+    "82 cmHg",
+    "70 cmHg"
+   ],
+   "answer": 3,
+   "explanation": "Açık kol alçaksa gaz basıncı dış basınçtan küçüktür: 76 − 6 = 70 cmHg."
+  },
+  {
+   "id": 76,
+   "outcome": "F.8.3.3 Gaz basıncı",
+   "image": "/soru-gorselleri/basinc/q76.svg",
+   "imageAlt": "U borulu manometre",
+   "scenario": "Kapalı bir kaptaki gazın basıncı, ucu açık U borulu manometre ile ölçülüyor. Dış (açık hava) basıncı 76 cmHg'dir. Şekildeki düzenekte civa seviyeleri arasındaki fark 8 cm'dir ve açık koldaki civa gaz tarafına göre daha alçaktadır.",
+   "question": "Kaptaki gazın basıncı kaç cmHg'dir?",
+   "options": [
+    "84 cmHg",
+    "8 cmHg",
+    "68 cmHg",
+    "76 cmHg"
+   ],
+   "answer": 2,
+   "explanation": "Açık kol alçaksa gaz basıncı dış basınçtan küçüktür: 76 − 8 = 68 cmHg."
+  },
+  {
+   "id": 77,
+   "outcome": "F.8.3.3 Gaz basıncı",
+   "image": "/soru-gorselleri/basinc/q77.svg",
+   "imageAlt": "U borulu manometre",
+   "scenario": "Kapalı bir kaptaki gazın basıncı, ucu açık U borulu manometre ile ölçülüyor. Dış (açık hava) basıncı 76 cmHg'dir. Şekildeki düzenekte civa seviyeleri arasındaki fark 20 cm'dir ve açık koldaki civa gaz tarafına göre daha yüksektedir.",
+   "question": "Kaptaki gazın basıncı kaç cmHg'dir?",
+   "options": [
+    "76 cmHg",
+    "20 cmHg",
+    "96 cmHg",
+    "56 cmHg"
+   ],
+   "answer": 2,
+   "explanation": "Açık kol yüksekse gaz basıncı dış basınçtan büyüktür: 76 + 20 = 96 cmHg."
+  },
+  {
+   "id": 78,
+   "outcome": "F.8.3.3 Gaz basıncı",
+   "image": "/soru-gorselleri/basinc/q78.svg",
+   "imageAlt": "U borulu manometre",
+   "scenario": "Kapalı bir kaptaki gazın basıncı, ucu açık U borulu manometre ile ölçülüyor. Dış (açık hava) basıncı 76 cmHg'dir. Şekildeki düzenekte civa seviyeleri arasındaki fark 12 cm'dir ve açık koldaki civa gaz tarafına göre daha alçaktadır.",
+   "question": "Kaptaki gazın basıncı kaç cmHg'dir?",
+   "options": [
+    "88 cmHg",
+    "64 cmHg",
+    "12 cmHg",
+    "76 cmHg"
+   ],
+   "answer": 1,
+   "explanation": "Açık kol alçaksa gaz basıncı dış basınçtan küçüktür: 76 − 12 = 64 cmHg."
+  },
+  {
+   "id": 79,
+   "outcome": "F.8.3.3 Gaz basıncı",
+   "image": "/soru-gorselleri/basinc/q79.svg",
+   "imageAlt": "U borulu manometre",
+   "scenario": "Kapalı bir kaptaki gazın basıncı, ucu açık U borulu manometre ile ölçülüyor. Dış (açık hava) basıncı 76 cmHg'dir. Şekildeki düzenekte civa seviyeleri arasındaki fark 4 cm'dir ve açık koldaki civa gaz tarafına göre daha yüksektedir.",
+   "question": "Kaptaki gazın basıncı kaç cmHg'dir?",
+   "options": [
+    "80 cmHg",
+    "76 cmHg",
+    "72 cmHg",
+    "4 cmHg"
+   ],
+   "answer": 0,
+   "explanation": "Açık kol yüksekse gaz basıncı dış basınçtan büyüktür: 76 + 4 = 80 cmHg."
+  },
+  {
+   "id": 80,
+   "outcome": "F.8.3.3 Gaz basıncı",
+   "image": "/soru-gorselleri/basinc/q80.svg",
+   "imageAlt": "U borulu manometre",
+   "scenario": "Kapalı bir kaptaki gazın basıncı, ucu açık U borulu manometre ile ölçülüyor. Dış (açık hava) basıncı 76 cmHg'dir. Şekildeki düzenekte civa seviyeleri arasındaki fark 16 cm'dir ve açık koldaki civa gaz tarafına göre daha alçaktadır.",
+   "question": "Kaptaki gazın basıncı kaç cmHg'dir?",
+   "options": [
+    "92 cmHg",
+    "60 cmHg",
+    "76 cmHg",
+    "16 cmHg"
+   ],
+   "answer": 1,
+   "explanation": "Açık kol alçaksa gaz basıncı dış basınçtan küçüktür: 76 − 16 = 60 cmHg."
+  }
+ ]
+}

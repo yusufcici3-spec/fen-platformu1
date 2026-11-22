@@ -1,0 +1,1287 @@
+{
+ "unit": 2,
+ "title": "DNA ve Genetik Kod",
+ "slug": "dna-ve-genetik-kod",
+ "questions": [
+  {
+   "id": 1,
+   "outcome": "F.8.2.1 DNA'nın yapısı ve baz eşleşmesi",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q01.svg",
+   "imageAlt": "DNA baz eşleşmesi görseli",
+   "scenario": "Bir biyoloji laboratuvarında DNA'nın bir kısmının birinci ipliğindeki baz dizilimi ATGCCGTA olarak belirleniyor. DNA'nın çift sarmal yapısında bazlar karşılıklı olarak belirli kurallara göre eşleşir. Öğrenciler tamamlayıcı ipliğin dizilimini yazacak.",
+   "question": "Tamamlayıcı ipliğin baz dizilimi aşağıdakilerden hangisidir?",
+   "options": [
+    "UACGGCAU",
+    "GCATTACG",
+    "ATGCCGTA",
+    "TACGGCAT"
+   ],
+   "answer": 3,
+   "explanation": "A–T ve G–C eşleşir: ATGCCGTA → TACGGCAT."
+  },
+  {
+   "id": 2,
+   "outcome": "F.8.2.1 DNA'nın yapısı ve baz eşleşmesi",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q02.svg",
+   "imageAlt": "DNA baz eşleşmesi görseli",
+   "scenario": "Bir biyoloji laboratuvarında DNA'nın bir kısmının birinci ipliğindeki baz dizilimi TACGATC olarak belirleniyor. DNA'nın çift sarmal yapısında bazlar karşılıklı olarak belirli kurallara göre eşleşir. Öğrenciler tamamlayıcı ipliğin dizilimini yazacak.",
+   "question": "Tamamlayıcı ipliğin baz dizilimi aşağıdakilerden hangisidir?",
+   "options": [
+    "CTAGCAT",
+    "CGTAGCT",
+    "ATGCTAG",
+    "AUGCUAG"
+   ],
+   "answer": 2,
+   "explanation": "A–T ve G–C eşleşir: TACGATC → ATGCTAG."
+  },
+  {
+   "id": 3,
+   "outcome": "F.8.2.1 DNA'nın yapısı ve baz eşleşmesi",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q03.svg",
+   "imageAlt": "DNA baz eşleşmesi görseli",
+   "scenario": "Bir DNA molekülünde bazların oranları analiz ediliyor. Adenin (A) bazı toplam bazların %30'unu oluşturuyor. Çift sarmallı DNA'da A ile T, G ile C eşit sayıdadır.",
+   "question": "Bu DNA'da guanin (G) bazı yüzde kaçtır?",
+   "options": [
+    "%40",
+    "%70",
+    "%30",
+    "%20"
+   ],
+   "answer": 3,
+   "explanation": "A=T=30% → A+T=60%. Kalan 40% G+C; G = 20%."
+  },
+  {
+   "id": 4,
+   "outcome": "F.8.2.1 DNA'nın yapısı ve baz eşleşmesi",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q04.svg",
+   "imageAlt": "DNA baz eşleşmesi görseli",
+   "scenario": "Bir DNA örneğinin analizinde timin (T) oranı %28 bulunuyor. Çift iplikli DNA'da bazlar tamamlayıcıdır ve toplam %100'dür.",
+   "question": "Aynı örnekte sitozin (C) yüzde kaçtır?",
+   "options": [
+    "%72",
+    "%38",
+    "%28",
+    "%22"
+   ],
+   "answer": 3,
+   "explanation": "T=A=28% → G+C=44% → C = 22%."
+  },
+  {
+   "id": 5,
+   "outcome": "F.8.2.1 DNA'nın yapısı ve baz eşleşmesi",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q05.svg",
+   "imageAlt": "DNA baz eşleşmesi görseli",
+   "scenario": "Bir bakteri DNA parçası 24 baz çiftinden oluşmaktadır. Her baz çifti iki nükleotit içerir ve bir nükleotit bir fosfat, bir şeker ve bir azotlu bazdan oluşur.",
+   "question": "Bu parçada toplam kaç nükleotit vardır?",
+   "options": [
+    "24",
+    "96",
+    "72",
+    "48"
+   ],
+   "answer": 3,
+   "explanation": "24 çift × 2 = 48 nükleotit."
+  },
+  {
+   "id": 6,
+   "outcome": "F.8.2.1 DNA'nın yapısı ve baz eşleşmesi",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q06.svg",
+   "imageAlt": "DNA baz eşleşmesi görseli",
+   "scenario": "Bir DNA molekülünde guanin (G) oranı %35 olarak bulunmuştur. Çift sarmallı DNA'da C = G ve A = T'dir.",
+   "question": "Bu DNA'da adenin (A) yüzde kaçtır?",
+   "options": [
+    "%32,5",
+    "%35",
+    "%65",
+    "%15"
+   ],
+   "answer": 3,
+   "explanation": "G=C=35% → toplam 70%; A+T=30% → A=15%."
+  },
+  {
+   "id": 7,
+   "outcome": "F.8.2.1 DNA'nın yapısı ve baz eşleşmesi",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q07.svg",
+   "imageAlt": "DNA baz eşleşmesi görseli",
+   "scenario": "Bir DNA ipliğinin dizilimi AAGCTTC olarak okunuyor. Öğrenciler bu iplikle eşleşen tamamlayıcı iplikte hangi bazların kaç adet bulunduğunu hesaplıyor.",
+   "question": "Tamamlayıcı iplikte kaç tane guanin (G) bazı bulunur?",
+   "options": [
+    "4",
+    "3",
+    "1.33",
+    "2"
+   ],
+   "answer": 3,
+   "explanation": "Tamamlayıcı iplik TTCGAAG; G sayısı 2."
+  },
+  {
+   "id": 8,
+   "outcome": "F.8.2.1 DNA'nın yapısı ve baz eşleşmesi",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q08.svg",
+   "imageAlt": "DNA baz eşleşmesi görseli",
+   "scenario": "Bir DNA parçası toplam 100 nükleotitten oluşuyor ve bunların 18 tanesi adenin (A) içeriyor. Çift sarmal DNA'da A=T ve G=C'dir.",
+   "question": "Bu parçada kaç tane guanin (G) nükleotidi vardır?",
+   "options": [
+    "18",
+    "36",
+    "32",
+    "64"
+   ],
+   "answer": 2,
+   "explanation": "A=T=18 → A+T=36; kalan 100−36=64 = G+C → G = 32."
+  },
+  {
+   "id": 9,
+   "outcome": "F.8.2.1 DNA, gen, kromozom",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q09.svg",
+   "imageAlt": "DNA şeması",
+   "scenario": "Aşağıdaki şekilde DNA molekülünün bir kısmı ve bazı yapıları numaralarla gösterilmiştir. Bu yapılardan biri DNA'nın şeker-fosfat omurgasında bulunan ve (yuvarlak) görünen yapı.",
+   "question": "Bu özelliğe sahip yapı şekilde kaç numarayla gösterilmiştir ve adı nedir?",
+   "options": [
+    "3. numara: Azotlu baz",
+    "4. numara: Hidrojen bağı",
+    "1. numara: Fosfat",
+    "2. numara: Şeker"
+   ],
+   "answer": 2,
+   "explanation": "1 numaralı yapı fosfat yapısıdır."
+  },
+  {
+   "id": 10,
+   "outcome": "F.8.2.1 DNA, gen, kromozom",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q10.svg",
+   "imageAlt": "DNA şeması",
+   "scenario": "Aşağıdaki şekilde DNA molekülünün bir kısmı ve bazı yapıları numaralarla gösterilmiştir. Bu yapılardan biri her nükleotitte fosfat ile baz arasında yer alan yapı.",
+   "question": "Bu özelliğe sahip yapı şekilde kaç numarayla gösterilmiştir ve adı nedir?",
+   "options": [
+    "2. numara: Şeker",
+    "3. numara: Azotlu baz",
+    "4. numara: Hidrojen bağı",
+    "1. numara: Fosfat"
+   ],
+   "answer": 0,
+   "explanation": "2 numaralı yapı şeker yapısıdır."
+  },
+  {
+   "id": 11,
+   "outcome": "F.8.2.1 DNA, gen, kromozom",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q11.svg",
+   "imageAlt": "DNA şeması",
+   "scenario": "Aşağıdaki şekilde DNA molekülünün bir kısmı ve bazı yapıları numaralarla gösterilmiştir. Bu yapılardan biri A, T, G, C harfleriyle gösterilen ve iki ipliği birbirine bağlayan yapı.",
+   "question": "Bu özelliğe sahip yapı şekilde kaç numarayla gösterilmiştir ve adı nedir?",
+   "options": [
+    "3. numara: Azotlu baz",
+    "4. numara: Hidrojen bağı",
+    "1. numara: Fosfat",
+    "2. numara: Şeker"
+   ],
+   "answer": 0,
+   "explanation": "3 numaralı yapı azotlu baz yapısıdır."
+  },
+  {
+   "id": 12,
+   "outcome": "F.8.2.1 DNA, gen, kromozom",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q12.svg",
+   "imageAlt": "DNA şeması",
+   "scenario": "Aşağıdaki şekilde DNA molekülünün bir kısmı ve bazı yapıları numaralarla gösterilmiştir. Bu yapılardan biri karşılıklı bazlar arasında oluşan zayıf bağlar.",
+   "question": "Bu özelliğe sahip yapı şekilde kaç numarayla gösterilmiştir ve adı nedir?",
+   "options": [
+    "4. numara: Hidrojen bağı",
+    "3. numara: Azotlu baz",
+    "2. numara: Şeker",
+    "1. numara: Fosfat"
+   ],
+   "answer": 0,
+   "explanation": "4 numaralı yapı hidrojen bağı yapısıdır."
+  },
+  {
+   "id": 13,
+   "outcome": "F.8.2.1 DNA, gen, kromozom",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q13.svg",
+   "imageAlt": "İç içe yapılar",
+   "scenario": "Bir fen kulübü, canlı hücresindeki yapıları büyükten küçüğe sıralıyor. Şekilde yapılar iç içe gösterilmiştir.",
+   "question": "Şekilde iç içe gösterilen yapıların doğru sıralaması (büyükten küçüğe) hangisidir?",
+   "options": [
+    "Hücre > Çekirdek > Kromozom > DNA > Gen > Nükleotit",
+    "Çekirdek > Hücre > DNA > Kromozom > Nükleotit > Gen",
+    "Hücre > Çekirdek > DNA > Kromozom > Gen > Nükleotit",
+    "Hücre > Kromozom > Çekirdek > DNA > Gen > Nükleotit"
+   ],
+   "answer": 0,
+   "explanation": "Hücre çekirdeği içinde kromozomlar, kromozomlar DNA'dan, DNA'nın belirli bölgeleri genlerden, genler nükleotitlerden oluşur."
+  },
+  {
+   "id": 14,
+   "outcome": "F.8.2.1 DNA, gen, kromozom",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q14.svg",
+   "imageAlt": "İç içe yapılar",
+   "scenario": "Öğretmen, canlıların kalıtsal bilgisinin hangi yapılarda depolandığını soruyor. Şekilde yapılar iç içe gösterilmiştir.",
+   "question": "Aşağıdakilerden hangisi doğrudur?",
+   "options": [
+    "Gen, DNA'nın belirli bir özelliği kodlayan bölümüdür",
+    "Nükleotit, kromozomdan büyüktür",
+    "Gen, DNA'dan daha büyüktür",
+    "Kromozom, genden küçüktür"
+   ],
+   "answer": 0,
+   "explanation": "Gen, DNA üzerinde bir özelliğin bilgisini taşıyan bölgedir."
+  },
+  {
+   "id": 15,
+   "outcome": "F.8.2.1 DNA, gen, kromozom",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q15.svg",
+   "imageAlt": "İç içe yapılar",
+   "scenario": "Bir öğrenci hücredeki yapıların hiyerarşisini inceliyor. Şekilde yapılar iç içe gösterilmiştir.",
+   "question": "En içte yer alan ve DNA'nın yapı taşı olan birim hangisidir?",
+   "options": [
+    "Nükleotit",
+    "Gen",
+    "Kromozom",
+    "Çekirdek"
+   ],
+   "answer": 0,
+   "explanation": "DNA, nükleotitlerin birleşmesiyle oluşur."
+  },
+  {
+   "id": 16,
+   "outcome": "F.8.2.1 DNA, gen, kromozom",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q16.svg",
+   "imageAlt": "İç içe yapılar",
+   "scenario": "Genetik bilgi aktarımı konusunda bir sınıf tartışması yapılıyor. Şekilde yapılar iç içe gösterilmiştir.",
+   "question": "Kromozom için hangisi doğrudur?",
+   "options": [
+    "Gen, kromozomdan büyüktür",
+    "DNA ve proteinlerden oluşur, çekirdekte bulunur",
+    "Sitoplazmada serbest dolaşır",
+    "Yalnızca proteinden oluşur"
+   ],
+   "answer": 1,
+   "explanation": "Kromozomlar sıkıca paketlenmiş DNA ve proteinlerden oluşur."
+  },
+  {
+   "id": 17,
+   "outcome": "F.8.2.2 Kromozom sayısı",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q17.svg",
+   "imageAlt": "Kromozom sayıları tablosu",
+   "scenario": "Aşağıdaki tabloda bazı canlıların vücut (eşey olmayan) hücrelerindeki kromozom sayıları verilmiştir. Bir biyoloji öğretmeni bu verilerden yola çıkarak eşey hücreleri ve zigotun kromozom sayılarını sorgulatıyor. Eşey hücreleri mayoz bölünme ile oluşur ve vücut hücrelerinin yarısı kadar kromozom taşır.",
+   "question": "İnsan canlısının sperm hücresi kromozom sayısı kaçtır?",
+   "options": [
+    "25",
+    "46",
+    "23",
+    "92"
+   ],
+   "answer": 2,
+   "explanation": "Gamet kromozom sayısı = 46/2 = 23."
+  },
+  {
+   "id": 18,
+   "outcome": "F.8.2.2 Kromozom sayısı",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q18.svg",
+   "imageAlt": "Kromozom sayıları tablosu",
+   "scenario": "Aşağıdaki tabloda bazı canlıların vücut (eşey olmayan) hücrelerindeki kromozom sayıları verilmiştir. Bir biyoloji öğretmeni bu verilerden yola çıkarak eşey hücreleri ve zigotun kromozom sayılarını sorgulatıyor. Eşey hücreleri mayoz bölünme ile oluşur ve vücut hücrelerinin yarısı kadar kromozom taşır.",
+   "question": "Kedi canlısının yumurta hücresi kromozom sayısı kaçtır?",
+   "options": [
+    "76",
+    "21",
+    "38",
+    "19"
+   ],
+   "answer": 3,
+   "explanation": "Gamet kromozom sayısı = 38/2 = 19."
+  },
+  {
+   "id": 19,
+   "outcome": "F.8.2.2 Kromozom sayısı",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q19.svg",
+   "imageAlt": "Kromozom sayıları tablosu",
+   "scenario": "Aşağıdaki tabloda bazı canlıların vücut (eşey olmayan) hücrelerindeki kromozom sayıları verilmiştir. Bir biyoloji öğretmeni bu verilerden yola çıkarak eşey hücreleri ve zigotun kromozom sayılarını sorgulatıyor. Eşey hücreleri mayoz bölünme ile oluşur ve vücut hücrelerinin yarısı kadar kromozom taşır.",
+   "question": "At canlısının sperm hücresi kromozom sayısı kaçtır?",
+   "options": [
+    "32",
+    "34",
+    "128",
+    "64"
+   ],
+   "answer": 0,
+   "explanation": "Gamet kromozom sayısı = 64/2 = 32."
+  },
+  {
+   "id": 20,
+   "outcome": "F.8.2.2 Kromozom sayısı",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q20.svg",
+   "imageAlt": "Kromozom sayıları tablosu",
+   "scenario": "Aşağıdaki tabloda bazı canlıların vücut (eşey olmayan) hücrelerindeki kromozom sayıları verilmiştir. Bir biyoloji öğretmeni bu verilerden yola çıkarak eşey hücreleri ve zigotun kromozom sayılarını sorgulatıyor. Eşey hücreleri mayoz bölünme ile oluşur ve vücut hücrelerinin yarısı kadar kromozom taşır.",
+   "question": "Güvercin canlısının yumurta hücresi kromozom sayısı kaçtır?",
+   "options": [
+    "80",
+    "40",
+    "42",
+    "160"
+   ],
+   "answer": 1,
+   "explanation": "Gamet kromozom sayısı = 80/2 = 40."
+  },
+  {
+   "id": 21,
+   "outcome": "F.8.2.2 Kromozom sayısı",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q21.svg",
+   "imageAlt": "Kromozom sayıları tablosu",
+   "scenario": "Aşağıdaki tabloda bazı canlıların vücut (eşey olmayan) hücrelerindeki kromozom sayıları verilmiştir. Bir biyoloji öğretmeni bu verilerden yola çıkarak eşey hücreleri ve zigotun kromozom sayılarını sorgulatıyor. Eşey hücreleri mayoz bölünme ile oluşur ve vücut hücrelerinin yarısı kadar kromozom taşır.",
+   "question": "Meyve sineği canlısının gamet kromozom sayısı kaçtır?",
+   "options": [
+    "16",
+    "6",
+    "4",
+    "8"
+   ],
+   "answer": 2,
+   "explanation": "Gamet = 8/2 = 4."
+  },
+  {
+   "id": 22,
+   "outcome": "F.8.2.2 Kromozom sayısı",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q22.svg",
+   "imageAlt": "Kromozom sayıları tablosu",
+   "scenario": "Aşağıdaki tabloda bazı canlıların vücut (eşey olmayan) hücrelerindeki kromozom sayıları verilmiştir. Bir biyoloji öğretmeni bu verilerden yola çıkarak eşey hücreleri ve zigotun kromozom sayılarını sorgulatıyor. Eşey hücreleri mayoz bölünme ile oluşur ve vücut hücrelerinin yarısı kadar kromozom taşır.",
+   "question": "İnsanda bir spermle bir yumurtanın birleşmesiyle oluşan zigotun kromozom sayısı kaçtır?",
+   "options": [
+    "44",
+    "46",
+    "92",
+    "48"
+   ],
+   "answer": 1,
+   "explanation": "23 + 23 = 46; zigot vücut hücresi kadar kromozom taşır."
+  },
+  {
+   "id": 23,
+   "outcome": "F.8.2.2 Kromozom sayısı",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q23.svg",
+   "imageAlt": "Kromozom sayıları tablosu",
+   "scenario": "Aşağıdaki tabloda bazı canlıların vücut (eşey olmayan) hücrelerindeki kromozom sayıları verilmiştir. Bir biyoloji öğretmeni bu verilerden yola çıkarak eşey hücreleri ve zigotun kromozom sayılarını sorgulatıyor. Eşey hücreleri mayoz bölünme ile oluşur ve vücut hücrelerinin yarısı kadar kromozom taşır.",
+   "question": "İnsanın vücut hücresinde kaç tane otozom (eşey olmayan) kromozom bulunur?",
+   "options": [
+    "42",
+    "44",
+    "92",
+    "46"
+   ],
+   "answer": 1,
+   "explanation": "46 − 2 eşey kromozomu = 44 otozom."
+  },
+  {
+   "id": 24,
+   "outcome": "F.8.2.2 Kromozom sayısı",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q24.svg",
+   "imageAlt": "Kromozom sayıları tablosu",
+   "scenario": "Aşağıdaki tabloda bazı canlıların vücut (eşey olmayan) hücrelerindeki kromozom sayıları verilmiştir. Bir biyoloji öğretmeni bu verilerden yola çıkarak eşey hücreleri ve zigotun kromozom sayılarını sorgulatıyor. Eşey hücreleri mayoz bölünme ile oluşur ve vücut hücrelerinin yarısı kadar kromozom taşır.",
+   "question": "Köpek canlısının kromozom çifti sayısı kromozom sayısı kaçtır?",
+   "options": [
+    "41",
+    "156",
+    "78",
+    "39"
+   ],
+   "answer": 3,
+   "explanation": "78/2 = 39 çift."
+  },
+  {
+   "id": 25,
+   "outcome": "F.8.2.3 Kalıtım (Mendel)",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q25.svg",
+   "imageAlt": "Punnett karesi",
+   "scenario": "Bir fen kulübü, bezelye boyu özelliği üzerinde çaprazlama deneyi yapıyor. Uzun özelliği baskın (T), kısa özelliği çekiniktir (t). Anne ve babanın genotipleri Tt ve Tt olup yavruların genotipleri Punnett karesiyle gösterilmiştir. Eşeyli üremede her ebeveyn bir alleli aktarır.",
+   "question": "Yavruların %kaçı TT genotipindedir?",
+   "options": [
+    "%0",
+    "%75",
+    "%50",
+    "%25"
+   ],
+   "answer": 3,
+   "explanation": "Punnett karesinde TT oranı 1/4 = %25."
+  },
+  {
+   "id": 26,
+   "outcome": "F.8.2.3 Kalıtım (Mendel)",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q26.svg",
+   "imageAlt": "Punnett karesi",
+   "scenario": "Bir fen kulübü, tohum rengi özelliği üzerinde çaprazlama deneyi yapıyor. Sarı özelliği baskın (Y), yeşil özelliği çekiniktir (y). Anne ve babanın genotipleri Yy ve yy olup yavruların genotipleri Punnett karesiyle gösterilmiştir. Eşeyli üremede her ebeveyn bir alleli aktarır.",
+   "question": "Yavruların %kaçı sarı fenotipli olur?",
+   "options": [
+    "%0",
+    "%25",
+    "%75",
+    "%50"
+   ],
+   "answer": 3,
+   "explanation": "Baskın allel Y içeren genotipler sarıdır: %50."
+  },
+  {
+   "id": 27,
+   "outcome": "F.8.2.3 Kalıtım (Mendel)",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q27.svg",
+   "imageAlt": "Punnett karesi",
+   "scenario": "Bir fen kulübü, çiçek rengi özelliği üzerinde çaprazlama deneyi yapıyor. Mor özelliği baskın (P), beyaz özelliği çekiniktir (p). Anne ve babanın genotipleri PP ve pp olup yavruların genotipleri Punnett karesiyle gösterilmiştir. Eşeyli üremede her ebeveyn bir alleli aktarır.",
+   "question": "Yavrularda fenotip oranı (baskın : çekinik) nedir?",
+   "options": [
+    "Hepsi baskın (4:0)",
+    "1:1",
+    "1:3",
+    "3:1"
+   ],
+   "answer": 0,
+   "explanation": "4 mor : 0 beyaz yavru beklenir."
+  },
+  {
+   "id": 28,
+   "outcome": "F.8.2.3 Kalıtım (Mendel)",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q28.svg",
+   "imageAlt": "Punnett karesi",
+   "scenario": "Bir fen kulübü, kobay tüy rengi özelliği üzerinde çaprazlama deneyi yapıyor. Siyah özelliği baskın (B), beyaz özelliği çekiniktir (b). Anne ve babanın genotipleri BB ve Bb olup yavruların genotipleri Punnett karesiyle gösterilmiştir. Eşeyli üremede her ebeveyn bir alleli aktarır.",
+   "question": "Bu çaprazlamada beyaz fenotipli yavru olma olasılığı kaçtır?",
+   "options": [
+    "%50",
+    "%25",
+    "%75",
+    "%0"
+   ],
+   "answer": 3,
+   "explanation": "Çekinik fenotip için bb gerekir: %0."
+  },
+  {
+   "id": 29,
+   "outcome": "F.8.2.3 Kalıtım (Mendel)",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q29.svg",
+   "imageAlt": "Punnett karesi",
+   "scenario": "Bir fen kulübü, tohum şekli özelliği üzerinde çaprazlama deneyi yapıyor. Yuvarlak özelliği baskın (R), buruşuk özelliği çekiniktir (r). Anne ve babanın genotipleri Rr ve Rr olup yavruların genotipleri Punnett karesiyle gösterilmiştir. Eşeyli üremede her ebeveyn bir alleli aktarır.",
+   "question": "Yavruların %kaçı RR genotipindedir?",
+   "options": [
+    "%25",
+    "%50",
+    "%0",
+    "%75"
+   ],
+   "answer": 0,
+   "explanation": "Punnett karesinde RR oranı 1/4 = %25."
+  },
+  {
+   "id": 30,
+   "outcome": "F.8.2.3 Kalıtım (Mendel)",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q30.svg",
+   "imageAlt": "Punnett karesi",
+   "scenario": "Bir fen kulübü, bezelye kapsül rengi özelliği üzerinde çaprazlama deneyi yapıyor. Yeşil özelliği baskın (G), sarı özelliği çekiniktir (g). Anne ve babanın genotipleri Gg ve gg olup yavruların genotipleri Punnett karesiyle gösterilmiştir. Eşeyli üremede her ebeveyn bir alleli aktarır.",
+   "question": "Yavruların %kaçı yeşil fenotipli olur?",
+   "options": [
+    "%25",
+    "%50",
+    "%0",
+    "%75"
+   ],
+   "answer": 1,
+   "explanation": "Baskın allel G içeren genotipler yeşildır: %50."
+  },
+  {
+   "id": 31,
+   "outcome": "F.8.2.3 Kalıtım (Mendel)",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q31.svg",
+   "imageAlt": "Punnett karesi",
+   "scenario": "Bir fen kulübü, dil kıvırma özelliği üzerinde çaprazlama deneyi yapıyor. Kıvırabilen özelliği baskın (D), kıvıramayan özelliği çekiniktir (d). Anne ve babanın genotipleri Dd ve Dd olup yavruların genotipleri Punnett karesiyle gösterilmiştir. Eşeyli üremede her ebeveyn bir alleli aktarır.",
+   "question": "Yavrularda fenotip oranı (baskın : çekinik) nedir?",
+   "options": [
+    "1:1",
+    "4:0",
+    "1:0",
+    "3:1"
+   ],
+   "answer": 3,
+   "explanation": "3 kıvırabilen : 1 kıvıramayan yavru beklenir."
+  },
+  {
+   "id": 32,
+   "outcome": "F.8.2.3 Kalıtım (Mendel)",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q32.svg",
+   "imageAlt": "Punnett karesi",
+   "scenario": "Bir fen kulübü, kulak memesi özelliği üzerinde çaprazlama deneyi yapıyor. Serbest özelliği baskın (E), yapışık özelliği çekiniktir (e). Anne ve babanın genotipleri ee ve Ee olup yavruların genotipleri Punnett karesiyle gösterilmiştir. Eşeyli üremede her ebeveyn bir alleli aktarır.",
+   "question": "Bu çaprazlamada yapışık fenotipli yavru olma olasılığı kaçtır?",
+   "options": [
+    "%75",
+    "%50",
+    "%0",
+    "%25"
+   ],
+   "answer": 1,
+   "explanation": "Çekinik fenotip için ee gerekir: %50."
+  },
+  {
+   "id": 33,
+   "outcome": "F.8.2.3 Kalıtım (Mendel)",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q33.svg",
+   "imageAlt": "Punnett karesi",
+   "scenario": "Bir fen kulübü, kobay tüy rengi özelliği üzerinde çaprazlama deneyi yapıyor. Siyah özelliği baskın (B), beyaz özelliği çekiniktir (b). Anne ve babanın genotipleri Bb ve Bb olup yavruların genotipleri Punnett karesiyle gösterilmiştir. Eşeyli üremede her ebeveyn bir alleli aktarır.",
+   "question": "Yavruların %kaçı BB genotipindedir?",
+   "options": [
+    "%25",
+    "%75",
+    "%50",
+    "%0"
+   ],
+   "answer": 0,
+   "explanation": "Punnett karesinde BB oranı 1/4 = %25."
+  },
+  {
+   "id": 34,
+   "outcome": "F.8.2.3 Kalıtım (Mendel)",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q34.svg",
+   "imageAlt": "Punnett karesi",
+   "scenario": "Bir fen kulübü, tohum şekli özelliği üzerinde çaprazlama deneyi yapıyor. Yuvarlak özelliği baskın (R), buruşuk özelliği çekiniktir (r). Anne ve babanın genotipleri RR ve rr olup yavruların genotipleri Punnett karesiyle gösterilmiştir. Eşeyli üremede her ebeveyn bir alleli aktarır.",
+   "question": "Yavruların %kaçı yuvarlak fenotipli olur?",
+   "options": [
+    "%50",
+    "%100",
+    "%25",
+    "%0"
+   ],
+   "answer": 1,
+   "explanation": "Baskın allel R içeren genotipler yuvarlakdır: %100."
+  },
+  {
+   "id": 35,
+   "outcome": "F.8.2.3 Kalıtım (Mendel)",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q35.svg",
+   "imageAlt": "Punnett karesi",
+   "scenario": "Bir fen kulübü, bezelye kapsül rengi özelliği üzerinde çaprazlama deneyi yapıyor. Yeşil özelliği baskın (G), sarı özelliği çekiniktir (g). Anne ve babanın genotipleri Gg ve gg olup yavruların genotipleri Punnett karesiyle gösterilmiştir. Eşeyli üremede her ebeveyn bir alleli aktarır.",
+   "question": "Yavrularda fenotip oranı (baskın : çekinik) nedir?",
+   "options": [
+    "3:1",
+    "4:0",
+    "1:1",
+    "1:3"
+   ],
+   "answer": 2,
+   "explanation": "2 yeşil : 2 sarı yavru beklenir."
+  },
+  {
+   "id": 36,
+   "outcome": "F.8.2.3 Kalıtım (Mendel)",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q36.svg",
+   "imageAlt": "Punnett karesi",
+   "scenario": "Bir fen kulübü, dil kıvırma özelliği üzerinde çaprazlama deneyi yapıyor. Kıvırabilen özelliği baskın (D), kıvıramayan özelliği çekiniktir (d). Anne ve babanın genotipleri Dd ve Dd olup yavruların genotipleri Punnett karesiyle gösterilmiştir. Eşeyli üremede her ebeveyn bir alleli aktarır.",
+   "question": "Bu çaprazlamada kıvıramayan fenotipli yavru olma olasılığı kaçtır?",
+   "options": [
+    "%50",
+    "%0",
+    "%75",
+    "%25"
+   ],
+   "answer": 3,
+   "explanation": "Çekinik fenotip için dd gerekir: %25."
+  },
+  {
+   "id": 37,
+   "outcome": "F.8.2.3 Kalıtım (Mendel)",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q37.svg",
+   "imageAlt": "Punnett karesi",
+   "scenario": "Bir fen kulübü, kulak memesi özelliği üzerinde çaprazlama deneyi yapıyor. Serbest özelliği baskın (E), yapışık özelliği çekiniktir (e). Anne ve babanın genotipleri ee ve Ee olup yavruların genotipleri Punnett karesiyle gösterilmiştir. Eşeyli üremede her ebeveyn bir alleli aktarır.",
+   "question": "Yavruların %kaçı Ee genotipindedir?",
+   "options": [
+    "%25",
+    "%50",
+    "%75",
+    "%0"
+   ],
+   "answer": 1,
+   "explanation": "Punnett karesinde Ee oranı 2/4 = %50."
+  },
+  {
+   "id": 38,
+   "outcome": "F.8.2.3 Kalıtım (Mendel)",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q38.svg",
+   "imageAlt": "Punnett karesi",
+   "scenario": "Bir fen kulübü, bezelye boyu özelliği üzerinde çaprazlama deneyi yapıyor. Uzun özelliği baskın (T), kısa özelliği çekiniktir (t). Anne ve babanın genotipleri TT ve Tt olup yavruların genotipleri Punnett karesiyle gösterilmiştir. Eşeyli üremede her ebeveyn bir alleli aktarır.",
+   "question": "Yavruların %kaçı uzun fenotipli olur?",
+   "options": [
+    "%25",
+    "%0",
+    "%100",
+    "%50"
+   ],
+   "answer": 2,
+   "explanation": "Baskın allel T içeren genotipler uzundır: %100."
+  },
+  {
+   "id": 39,
+   "outcome": "F.8.2.3 Kalıtım (Mendel)",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q39.svg",
+   "imageAlt": "Punnett karesi",
+   "scenario": "Bir fen kulübü, tohum rengi özelliği üzerinde çaprazlama deneyi yapıyor. Sarı özelliği baskın (Y), yeşil özelliği çekiniktir (y). Anne ve babanın genotipleri Yy ve Yy olup yavruların genotipleri Punnett karesiyle gösterilmiştir. Eşeyli üremede her ebeveyn bir alleli aktarır.",
+   "question": "Yavrularda fenotip oranı (baskın : çekinik) nedir?",
+   "options": [
+    "3:1",
+    "1:1",
+    "1:0",
+    "4:0"
+   ],
+   "answer": 0,
+   "explanation": "3 sarı : 1 yeşil yavru beklenir."
+  },
+  {
+   "id": 40,
+   "outcome": "F.8.2.3 Kalıtım (Mendel)",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q40.svg",
+   "imageAlt": "Punnett karesi",
+   "scenario": "Bir fen kulübü, çiçek rengi özelliği üzerinde çaprazlama deneyi yapıyor. Mor özelliği baskın (P), beyaz özelliği çekiniktir (p). Anne ve babanın genotipleri Pp ve pp olup yavruların genotipleri Punnett karesiyle gösterilmiştir. Eşeyli üremede her ebeveyn bir alleli aktarır.",
+   "question": "Bu çaprazlamada beyaz fenotipli yavru olma olasılığı kaçtır?",
+   "options": [
+    "%25",
+    "%50",
+    "%75",
+    "%0"
+   ],
+   "answer": 1,
+   "explanation": "Çekinik fenotip için pp gerekir: %50."
+  },
+  {
+   "id": 41,
+   "outcome": "F.8.2.3 Soy ağacı",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q41.svg",
+   "imageAlt": "Aile soy ağacı",
+   "scenario": "Bir ailenin soy ağacı şekilde gösterilmiştir. Çekinik bir kalıtsal özellik (hastalık) incelenmektedir. Anne ve babanın ikisi de sağlıklıdır; bir çocuk çekinik özelliği (hasta) taşımaktadır. Siyah semboller çekinik özelliği taşıyan bireyleri göstermektedir.",
+   "question": "Anne ve babanın genotipleri nedir?",
+   "options": [
+    "İkisi de AA",
+    "İkisi de Aa (taşıyıcı)",
+    "Anne aa, baba Aa",
+    "Anne AA, baba Aa"
+   ],
+   "answer": 1,
+   "explanation": "Çekinik fenotipli (aa) çocuk her ebeveynden bir a almıştır; sağlıklı ebeveynler Aa'dır."
+  },
+  {
+   "id": 42,
+   "outcome": "F.8.2.3 Soy ağacı",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q42.svg",
+   "imageAlt": "Aile soy ağacı",
+   "scenario": "Bir ailenin soy ağacı şekilde gösterilmiştir. Çekinik bir kalıtsal özellik (hastalık) incelenmektedir. Anne ve baba sağlıklıdır, dört çocuktan biri hastadır. Siyah semboller çekinik özelliği taşıyan bireyleri göstermektedir.",
+   "question": "Bir sonraki çocuğun hasta olma olasılığı nedir?",
+   "options": [
+    "%25",
+    "%50",
+    "%100",
+    "%0"
+   ],
+   "answer": 0,
+   "explanation": "Aa × Aa çaprazlamasında aa olasılığı 1/4'tür."
+  },
+  {
+   "id": 43,
+   "outcome": "F.8.2.3 Soy ağacı",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q43.svg",
+   "imageAlt": "Aile soy ağacı",
+   "scenario": "Bir ailenin soy ağacı şekilde gösterilmiştir. Çekinik bir kalıtsal özellik (hastalık) incelenmektedir. Anne hasta (aa), baba sağlıklıdır ve çocuklardan bazıları hastadır. Siyah semboller çekinik özelliği taşıyan bireyleri göstermektedir.",
+   "question": "Babanın genotipi nedir?",
+   "options": [
+    "aa",
+    "Belirlenemez",
+    "Aa",
+    "AA"
+   ],
+   "answer": 2,
+   "explanation": "Hasta çocuk (aa) babadan a almıştır; baba sağlıklı olduğundan Aa'dır."
+  },
+  {
+   "id": 44,
+   "outcome": "F.8.2.3 Soy ağacı",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q44.svg",
+   "imageAlt": "Aile soy ağacı",
+   "scenario": "Bir ailenin soy ağacı şekilde gösterilmiştir. Çekinik bir kalıtsal özellik (hastalık) incelenmektedir. Anne ve baba hastadır ve üç çocuğu da hastadır. Siyah semboller çekinik özelliği taşıyan bireyleri göstermektedir.",
+   "question": "Anne ve babanın genotipi nedir?",
+   "options": [
+    "İkisi de AA",
+    "İkisi de aa",
+    "Biri AA biri aa",
+    "İkisi de Aa"
+   ],
+   "answer": 1,
+   "explanation": "Çekinik özellik aa ile görülür; ebeveynler aa × aa'dır."
+  },
+  {
+   "id": 45,
+   "outcome": "F.8.2.3 Soy ağacı",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q45.svg",
+   "imageAlt": "Aile soy ağacı",
+   "scenario": "Bir ailenin soy ağacı şekilde gösterilmiştir. Çekinik bir kalıtsal özellik (hastalık) incelenmektedir. Anne hasta (aa), baba sağlıklıdır; üç çocuktan biri hastadır. Siyah semboller çekinik özelliği taşıyan bireyleri göstermektedir.",
+   "question": "Babanın genotipi ve sağlıklı çocukların genotipi nedir?",
+   "options": [
+    "Baba AA; çocuklar AA",
+    "Baba Aa; çocuklar aa",
+    "Baba Aa; sağlıklı çocuklar Aa",
+    "Baba aa; çocuklar Aa"
+   ],
+   "answer": 2,
+   "explanation": "Hasta çocuk varsa baba Aa'dır; sağlıklı çocuk anneden a, babadan A almıştır → Aa."
+  },
+  {
+   "id": 46,
+   "outcome": "F.8.2.3 Soy ağacı",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q46.svg",
+   "imageAlt": "Aile soy ağacı",
+   "scenario": "Bir ailenin soy ağacı şekilde gösterilmiştir. Çekinik bir kalıtsal özellik (hastalık) incelenmektedir. Anne ve baba sağlıklıdır, üç çocukları da sağlıklıdır. Siyah semboller çekinik özelliği taşıyan bireyleri göstermektedir.",
+   "question": "Ebeveynlerin genotipi için ne söylenebilir?",
+   "options": [
+    "Kesin söylenemez; AA veya Aa olabilirler",
+    "Mutlaka aa",
+    "Mutlaka Aa",
+    "Mutlaka AA"
+   ],
+   "answer": 0,
+   "explanation": "Çocuklar sağlıklıdır; ebeveynler AA veya Aa olabilir."
+  },
+  {
+   "id": 47,
+   "outcome": "F.8.2.3 Soy ağacı",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q47.svg",
+   "imageAlt": "Aile soy ağacı",
+   "scenario": "Bir ailenin soy ağacı şekilde gösterilmiştir. Çekinik bir kalıtsal özellik (hastalık) incelenmektedir. Baba hasta (aa), anne sağlıklıdır; bir çocuk hasta, iki çocuk sağlıklıdır. Siyah semboller çekinik özelliği taşıyan bireyleri göstermektedir.",
+   "question": "Annenin genotipi nedir?",
+   "options": [
+    "AA",
+    "Belirlenemez",
+    "Aa",
+    "aa"
+   ],
+   "answer": 2,
+   "explanation": "Hasta çocuk (aa) anneden a almıştır; anne sağlıklı olduğuna göre Aa'dır."
+  },
+  {
+   "id": 48,
+   "outcome": "F.8.2.3 Soy ağacı",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q48.svg",
+   "imageAlt": "Aile soy ağacı",
+   "scenario": "Bir ailenin soy ağacı şekilde gösterilmiştir. Çekinik bir kalıtsal özellik (hastalık) incelenmektedir. Sağlıklı anne ve babanın beş çocuğundan biri hastadır. Siyah semboller çekinik özelliği taşıyan bireyleri göstermektedir.",
+   "question": "Çocuklardan hasta olan hangi genotipe sahiptir?",
+   "options": [
+    "Aa",
+    "aa",
+    "AA",
+    "Belirlenemez"
+   ],
+   "answer": 1,
+   "explanation": "Çekinik özellik yalnızca aa ile görülür."
+  },
+  {
+   "id": 49,
+   "outcome": "F.8.2.3 Çaprazlama verileri",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q49.svg",
+   "imageAlt": "Yavruların sayısı",
+   "scenario": "Bir araştırmacı, bir bitki/hayvan türünde mor (baskın) ve beyaz (çekinik) özelliğini inceliyor. Aynı ebeveyn çiftinden elde edilen yavruların sayıları şekilde verilmiştir: 75 tanesi mor, 25 tanesi beyaz. Çaprazlama sonucunda ortaya çıkan oranlar ebeveyn genotipleri hakkında bilgi verir.",
+   "question": "Ebeveynlerin olası genotipleri hangisidir?",
+   "options": [
+    "PP × Pp",
+    "Pp × pp",
+    "pp × pp",
+    "Pp × Pp"
+   ],
+   "answer": 3,
+   "explanation": "Oran: 3:1 → Tt × Tt."
+  },
+  {
+   "id": 50,
+   "outcome": "F.8.2.3 Çaprazlama verileri",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q50.svg",
+   "imageAlt": "Yavruların sayısı",
+   "scenario": "Bir araştırmacı, bir bitki/hayvan türünde mor (baskın) ve beyaz (çekinik) özelliğini inceliyor. Aynı ebeveyn çiftinden elde edilen yavruların sayıları şekilde verilmiştir: 50 tanesi mor, 50 tanesi beyaz. Çaprazlama sonucunda ortaya çıkan oranlar ebeveyn genotipleri hakkında bilgi verir.",
+   "question": "Ebeveynlerin olası genotipleri hangisidir?",
+   "options": [
+    "Pp × pp",
+    "PP × Pp",
+    "PP × pp",
+    "pp × pp"
+   ],
+   "answer": 0,
+   "explanation": "Oran: 1:1 → heterozigot × çekinik."
+  },
+  {
+   "id": 51,
+   "outcome": "F.8.2.3 Çaprazlama verileri",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q51.svg",
+   "imageAlt": "Yavruların sayısı",
+   "scenario": "Bir araştırmacı, bir bitki/hayvan türünde mor (baskın) ve beyaz (çekinik) özelliğini inceliyor. Aynı ebeveyn çiftinden elde edilen yavruların sayıları şekilde verilmiştir: 100 tanesi mor, 0 tanesi beyaz. Çaprazlama sonucunda ortaya çıkan oranlar ebeveyn genotipleri hakkında bilgi verir.",
+   "question": "Ebeveynlerden en az biri hangi genotiptedir?",
+   "options": [
+    "PP",
+    "pp",
+    "Hiçbiri",
+    "Pp"
+   ],
+   "answer": 0,
+   "explanation": "Tüm yavrular baskın olduğundan ebeveynlerden en az biri homozigot baskın (PP) olmalıdır."
+  },
+  {
+   "id": 52,
+   "outcome": "F.8.2.3 Çaprazlama verileri",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q52.svg",
+   "imageAlt": "Yavruların sayısı",
+   "scenario": "Bir araştırmacı, bir bitki/hayvan türünde mor (baskın) ve beyaz (çekinik) özelliğini inceliyor. Aynı ebeveyn çiftinden elde edilen yavruların sayıları şekilde verilmiştir: 0 tanesi mor, 100 tanesi beyaz. Çaprazlama sonucunda ortaya çıkan oranlar ebeveyn genotipleri hakkında bilgi verir.",
+   "question": "Ebeveynlerin genotipi nedir?",
+   "options": [
+    "Pp × Pp",
+    "pp × pp",
+    "Pp × pp",
+    "PP × pp"
+   ],
+   "answer": 1,
+   "explanation": "Tüm yavrular çekinik (pp) olduğundan her iki ebeveyn pp'dir."
+  },
+  {
+   "id": 53,
+   "outcome": "F.8.2.3 Çaprazlama verileri",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q53.svg",
+   "imageAlt": "Yavruların sayısı",
+   "scenario": "Bir araştırmacı, bir bitki/hayvan türünde uzun (baskın) ve kısa (çekinik) özelliğini inceliyor. Aynı ebeveyn çiftinden elde edilen yavruların sayıları şekilde verilmiştir: 150 tanesi uzun, 50 tanesi kısa. Çaprazlama sonucunda ortaya çıkan oranlar ebeveyn genotipleri hakkında bilgi verir.",
+   "question": "Ebeveynlerin olası genotipleri hangisidir?",
+   "options": [
+    "tt × tt",
+    "TT × Tt",
+    "Tt × tt",
+    "Tt × Tt"
+   ],
+   "answer": 3,
+   "explanation": "Oran: 3:1 → Tt × Tt."
+  },
+  {
+   "id": 54,
+   "outcome": "F.8.2.3 Çaprazlama verileri",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q54.svg",
+   "imageAlt": "Yavruların sayısı",
+   "scenario": "Bir araştırmacı, bir bitki/hayvan türünde siyah (baskın) ve beyaz (çekinik) özelliğini inceliyor. Aynı ebeveyn çiftinden elde edilen yavruların sayıları şekilde verilmiştir: 98 tanesi siyah, 102 tanesi beyaz. Çaprazlama sonucunda ortaya çıkan oranlar ebeveyn genotipleri hakkında bilgi verir.",
+   "question": "Ebeveynlerin olası genotipleri hangisidir?",
+   "options": [
+    "bb × bb",
+    "Bb × bb",
+    "BB × Bb",
+    "BB × bb"
+   ],
+   "answer": 1,
+   "explanation": "Oran: 1:1 → heterozigot × çekinik."
+  },
+  {
+   "id": 55,
+   "outcome": "F.8.2.4 Mutasyon ve modifikasyon",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q55.svg",
+   "imageAlt": "DNA dizisinin önceki ve sonraki hâli",
+   "scenario": "Bir laboratuvarda bir genin DNA dizisi (ATGCCGTA dizisi), kimyasal bir maddeye maruz kaldıktan sonra yeniden okunuyor. Şekilde dizinin önceki ve sonraki hâli gösterilmiştir; farklı olan bölge siyah çerçeveyle işaretlidir.",
+   "question": "Bu değişiklik için hangisi söylenebilir?",
+   "options": [
+    "Bu bir modifikasyondur",
+    "Değişiklik kesinlikle kalıtsal değildir ve çevre kaynaklıdır",
+    "Bu bir mutasyondur; DNA dizisi değişmiştir",
+    "Genotip değişmemiştir"
+   ],
+   "answer": 2,
+   "explanation": "DNA baz diziliminde meydana gelen kalıcı değişiklik mutasyondur."
+  },
+  {
+   "id": 56,
+   "outcome": "F.8.2.4 Mutasyon ve modifikasyon",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q56.svg",
+   "imageAlt": "DNA dizisinin önceki ve sonraki hâli",
+   "scenario": "Bir laboratuvarda bir genin DNA dizisi (TACGATC dizisi), kimyasal bir maddeye maruz kaldıktan sonra yeniden okunuyor. Şekilde dizinin önceki ve sonraki hâli gösterilmiştir; farklı olan bölge siyah çerçeveyle işaretlidir.",
+   "question": "Mutasyon eşey hücrelerinde olursa ne olur?",
+   "options": [
+    "Sonraki nesillere aktarılabilir",
+    "Hiçbir zaman aktarılmaz",
+    "Yalnızca bitkilerde görülür",
+    "Yalnızca zararlı olur"
+   ],
+   "answer": 0,
+   "explanation": "Eşey hücrelerindeki mutasyonlar yavrulara geçebilir."
+  },
+  {
+   "id": 57,
+   "outcome": "F.8.2.4 Mutasyon ve modifikasyon",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q57.svg",
+   "imageAlt": "DNA dizisinin önceki ve sonraki hâli",
+   "scenario": "Bir laboratuvarda bir genin DNA dizisi (GGATCCAA dizisi), kimyasal bir maddeye maruz kaldıktan sonra yeniden okunuyor. Şekilde dizinin önceki ve sonraki hâli gösterilmiştir; farklı olan bölge siyah çerçeveyle işaretlidir.",
+   "question": "Bu değişiklik için hangisi söylenebilir?",
+   "options": [
+    "Bu bir modifikasyondur",
+    "Değişiklik kesinlikle kalıtsal değildir ve çevre kaynaklıdır",
+    "Bu bir mutasyondur; DNA dizisi değişmiştir",
+    "Genotip değişmemiştir"
+   ],
+   "answer": 2,
+   "explanation": "DNA baz diziliminde meydana gelen kalıcı değişiklik mutasyondur."
+  },
+  {
+   "id": 58,
+   "outcome": "F.8.2.4 Mutasyon ve modifikasyon",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q58.svg",
+   "imageAlt": "DNA dizisinin önceki ve sonraki hâli",
+   "scenario": "Bir laboratuvarda bir genin DNA dizisi (ATGCATGC dizisi), kimyasal bir maddeye maruz kaldıktan sonra yeniden okunuyor. Şekilde dizinin önceki ve sonraki hâli gösterilmiştir; farklı olan bölge siyah çerçeveyle işaretlidir.",
+   "question": "Mutasyon eşey hücrelerinde olursa ne olur?",
+   "options": [
+    "Sonraki nesillere aktarılabilir",
+    "Yalnızca bitkilerde görülür",
+    "Yalnızca zararlı olur",
+    "Hiçbir zaman aktarılmaz"
+   ],
+   "answer": 0,
+   "explanation": "Eşey hücrelerindeki mutasyonlar yavrulara geçebilir."
+  },
+  {
+   "id": 59,
+   "outcome": "F.8.2.4 Mutasyon ve modifikasyon",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q59.svg",
+   "imageAlt": "Ölçüm sonuçları",
+   "scenario": "Aynı genotipe sahip iki bitkiden biri güneşli, diğeri gölgeli ortamda yetiştiriliyor. Ölçüm sonuçları şekilde verilmiştir.",
+   "question": "Boy farkının nedeni ve türü nedir?",
+   "options": [
+    "Kalıtsal bir değişimdir",
+    "Kromozom sayısı farkıdır",
+    "DNA'daki mutasyondur",
+    "Çevre koşullarının etkisiyle oluşan modifikasyondur"
+   ],
+   "answer": 3,
+   "explanation": "Aynı genotipe sahip bireylerde çevreye bağlı fenotip farkı modifikasyondur; kalıtsal değildir."
+  },
+  {
+   "id": 60,
+   "outcome": "F.8.2.4 Mutasyon ve modifikasyon",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q60.svg",
+   "imageAlt": "Ölçüm sonuçları",
+   "scenario": "Bir sporcu, yıllarca ağırlık çalışarak kas kütlesini artırıyor. Ölçüm sonuçları şekilde verilmiştir.",
+   "question": "Kas kütlesindeki artış çocuklarına geçer mi?",
+   "options": [
+    "Evet; mutasyondur",
+    "Hayır; modifikasyon kalıtsal değildir",
+    "Evet; her zaman geçer",
+    "Evet; yalnızca erkek çocuğa"
+   ],
+   "answer": 1,
+   "explanation": "Egzersizle kazanılan özellikler genetik bilgiyi değiştirmez."
+  },
+  {
+   "id": 61,
+   "outcome": "F.8.2.4 Mutasyon ve modifikasyon",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q61.svg",
+   "imageAlt": "Ölçüm sonuçları",
+   "scenario": "Yüksek rakıma yerleşen bir kişinin alyuvar sayısı zamanla artıyor. Ölçüm sonuçları şekilde verilmiştir.",
+   "question": "Bu değişim hangi kavramla açıklanır?",
+   "options": [
+    "Kalıtsal çeşitlilik",
+    "Çaprazlama",
+    "Modifikasyon",
+    "Mutasyon"
+   ],
+   "answer": 2,
+   "explanation": "Çevre koşullarına bağlı, kalıtsal olmayan değişimdir."
+  },
+  {
+   "id": 62,
+   "outcome": "F.8.2.4 Mutasyon ve modifikasyon",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q62.svg",
+   "imageAlt": "Ölçüm sonuçları",
+   "scenario": "Bir çiftçi, tohumlar aynı olmasına rağmen farklı gübre uygulanan tarlalarda farklı verim alıyor. Ölçüm sonuçları şekilde verilmiştir.",
+   "question": "Verim farkının nedeni nedir?",
+   "options": [
+    "Çevre koşulları (modifikasyon)",
+    "Mutasyon",
+    "Farklı genotipler",
+    "Kromozom kaybı"
+   ],
+   "answer": 0,
+   "explanation": "Aynı genotip farklı çevrede farklı fenotip gösterebilir."
+  },
+  {
+   "id": 63,
+   "outcome": "F.8.2.5 Biyoteknoloji",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q63.svg",
+   "imageAlt": "Jel elektroforezi",
+   "scenario": "Bir olay yerinden alınan DNA örneği ile üç şüphelinin DNA'ları jel elektroforezinde karşılaştırılıyor. Sonuçlar şekilde gösterilmiştir. Her kişi için bant deseni benzersizdir.",
+   "question": "Hangi şüphelinin DNA'sı olay yeri örneğiyle eşleşiyor?",
+   "options": [
+    "Hiçbiri",
+    "Şüpheli 2",
+    "Şüpheli 3",
+    "Şüpheli 1"
+   ],
+   "answer": 1,
+   "explanation": "Bant desenleri birebir aynı olan örnekler aynı kişiye aittir; çocukta her bant anne veya babadan gelir."
+  },
+  {
+   "id": 64,
+   "outcome": "F.8.2.5 Biyoteknoloji",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q64.svg",
+   "imageAlt": "Jel elektroforezi",
+   "scenario": "Bir adli tıp laboratuvarında kan örneği ile üç şüphelinin DNA bant desenleri karşılaştırılıyor. Sonuçlar şekilde gösterilmiştir. Her kişi için bant deseni benzersizdir.",
+   "question": "Kan örneğiyle eşleşen şüpheli hangisidir?",
+   "options": [
+    "Şüpheli C",
+    "Hiçbiri",
+    "Şüpheli B",
+    "Şüpheli A"
+   ],
+   "answer": 3,
+   "explanation": "Bant desenleri birebir aynı olan örnekler aynı kişiye aittir; çocukta her bant anne veya babadan gelir."
+  },
+  {
+   "id": 65,
+   "outcome": "F.8.2.5 Biyoteknoloji",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q65.svg",
+   "imageAlt": "Jel elektroforezi",
+   "scenario": "Bir babalık testinde çocuğun DNA bantları, annenin ve iki olası babanın bantlarıyla karşılaştırılıyor. Sonuçlar şekilde gösterilmiştir. Her kişi için bant deseni benzersizdir.",
+   "question": "Çocuğun babası kimdir?",
+   "options": [
+    "Hiçbiri",
+    "Anne",
+    "Baba 1",
+    "Baba 2"
+   ],
+   "answer": 2,
+   "explanation": "Bant desenleri birebir aynı olan örnekler aynı kişiye aittir; çocukta her bant anne veya babadan gelir."
+  },
+  {
+   "id": 66,
+   "outcome": "F.8.2.5 Biyoteknoloji",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q66.svg",
+   "imageAlt": "Jel elektroforezi",
+   "scenario": "Bir ailede çocuğun DNA bantları, annenin ve iki olası babanın bantlarıyla karşılaştırılıyor. Sonuçlar şekilde gösterilmiştir. Her kişi için bant deseni benzersizdir.",
+   "question": "Çocuğun biyolojik babası kimdir?",
+   "options": [
+    "Anne",
+    "Hiçbiri",
+    "Baba 2",
+    "Baba 1"
+   ],
+   "answer": 3,
+   "explanation": "Bant desenleri birebir aynı olan örnekler aynı kişiye aittir; çocukta her bant anne veya babadan gelir."
+  },
+  {
+   "id": 67,
+   "outcome": "F.8.2.5 Biyoteknoloji",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q67.svg",
+   "imageAlt": "Jel elektroforezi",
+   "scenario": "Tek yumurta ikizlerinin DNA'larının aynı olup olmadığı jel elektroforezi ile inceleniyor. Sonuçlar şekilde gösterilmiştir. Her kişi için bant deseni benzersizdir.",
+   "question": "Bu sonuca göre hangi çıkarım doğrudur?",
+   "options": [
+    "Hepsinin DNA'sı aynıdır",
+    "İkiz 1 ve İkiz 2'nin DNA'ları aynıdır",
+    "İkiz 1 ve Kardeş'in DNA'ları aynıdır",
+    "İkizlerin DNA'ları farklıdır"
+   ],
+   "answer": 1,
+   "explanation": "Bant desenleri birebir aynı olan örnekler aynı kişiye aittir; çocukta her bant anne veya babadan gelir."
+  },
+  {
+   "id": 68,
+   "outcome": "F.8.2.5 Biyoteknoloji",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q68.svg",
+   "imageAlt": "Jel elektroforezi",
+   "scenario": "Bir adli vakada iki ayrı olay yerinden alınan DNA örneğinin aynı kişiye ait olup olmadığı inceleniyor. Sonuçlar şekilde gösterilmiştir. Her kişi için bant deseni benzersizdir.",
+   "question": "Bu sonuca göre hangi çıkarım doğrudur?",
+   "options": [
+    "Şüphelinin DNA'sı iki yerde de bulunmuştur",
+    "İki DNA tamamen farklıdır",
+    "Sonuç çıkarılamaz",
+    "İki olay yerinde bulunan DNA aynı kişiye ait olabilir ve şüpheliden farklıdır"
+   ],
+   "answer": 3,
+   "explanation": "Bant desenleri birebir aynı olan örnekler aynı kişiye aittir; çocukta her bant anne veya babadan gelir."
+  },
+  {
+   "id": 69,
+   "outcome": "F.8.2.5 Biyoteknoloji",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q69.svg",
+   "imageAlt": "İşlem basamakları",
+   "scenario": "Bir bakteriye insan insülin geni aktarılarak insülin üretilmesi sağlanıyor. İşlem basamakları şekilde gösterilmiştir.",
+   "question": "Bu işlem hangi biyoteknolojik uygulamaya örnektir?",
+   "options": [
+    "Çaprazlama",
+    "Genetik mühendisliği (gen aktarımı)",
+    "Klonlama",
+    "Kök hücre tedavisi"
+   ],
+   "answer": 1,
+   "explanation": "Bir canlıya başka canlıdan gen aktarmak genetik mühendisliğidir."
+  },
+  {
+   "id": 70,
+   "outcome": "F.8.2.5 Biyoteknoloji",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q70.svg",
+   "imageAlt": "İşlem basamakları",
+   "scenario": "Bir hücrenin çekirdeği yumurtadan çıkarılan çekirdeğin yerine konularak genetik olarak özdeş bir canlı elde ediliyor. İşlem basamakları şekilde gösterilmiştir.",
+   "question": "Bu işlem hangi uygulamadır?",
+   "options": [
+    "Gen aktarımı",
+    "Mutasyon",
+    "Klonlama",
+    "Doğal çaprazlama"
+   ],
+   "answer": 2,
+   "explanation": "Genetik olarak özdeş canlı elde etme klonlamadır (ör. Dolly)."
+  },
+  {
+   "id": 71,
+   "outcome": "F.8.2.5 Biyoteknoloji",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q71.svg",
+   "imageAlt": "İşlem basamakları",
+   "scenario": "Bir tarım şirketi, böceklere dayanıklı mısır elde etmek için bir bakteri genini mısıra aktarıyor. İşlem basamakları şekilde gösterilmiştir.",
+   "question": "Elde edilen mısır için hangisi söylenebilir?",
+   "options": [
+    "Genetiği değiştirilmiş organizmadır (GDO)",
+    "Doğal melezdir",
+    "Klonlanmıştır",
+    "Mutasyonla oluşmuştur"
+   ],
+   "answer": 0,
+   "explanation": "Başka canlıdan gen aktarılmış canlı GDO'dur."
+  },
+  {
+   "id": 72,
+   "outcome": "F.8.2.5 Biyoteknoloji",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q72.svg",
+   "imageAlt": "İşlem basamakları",
+   "scenario": "Bir hastanın hasarlı kemik iliği, kök hücre nakli ile tedavi ediliyor. İşlem basamakları şekilde gösterilmiştir.",
+   "question": "Kök hücrelerin temel özelliği hangisidir?",
+   "options": [
+    "Bölünemezler",
+    "Farklı hücre türlerine dönüşebilirler",
+    "Yalnızca ölü hücre üretirler",
+    "DNA içermezler"
+   ],
+   "answer": 1,
+   "explanation": "Kök hücreler farklılaşarak çeşitli hücre türlerine dönüşebilir."
+  },
+  {
+   "id": 73,
+   "outcome": "F.8.2.6 Eşey kalıtımı",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q73.svg",
+   "imageAlt": "Eşey kromozomları Punnett karesi",
+   "scenario": "Bir çiftin çocuklarının cinsiyeti, eşey kromozomlarının kalıtımına göre belirlenir. Anne XX, baba XY eşey kromozomu taşır. Çocuğun cinsiyeti, babadan gelen spermin X veya Y taşımasına bağlıdır. Punnett karesi şekilde verilmiştir.",
+   "question": "Bir çiftin ilk çocuğunun kız olma olasılığı kaçtır?",
+   "options": [
+    "%100",
+    "%75",
+    "%50",
+    "%25"
+   ],
+   "answer": 2,
+   "explanation": "Punnett karesinde 4 yavrudan 2'si XX (kız), 2'si XY (erkek) → %50."
+  },
+  {
+   "id": 74,
+   "outcome": "F.8.2.6 Eşey kalıtımı",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q74.svg",
+   "imageAlt": "Eşey kromozomları Punnett karesi",
+   "scenario": "Bir çiftin çocuklarının cinsiyeti, eşey kromozomlarının kalıtımına göre belirlenir. Anne XX, baba XY eşey kromozomu taşır. Çocuğun cinsiyeti, babadan gelen spermin X veya Y taşımasına bağlıdır. Punnett karesi şekilde verilmiştir.",
+   "question": "Bu çiftin dördüncü çocuğunun erkek olma olasılığı nedir? (Önceki üç çocuk kızdır.)",
+   "options": [
+    "%0",
+    "%25",
+    "%50",
+    "%100"
+   ],
+   "answer": 2,
+   "explanation": "Her doğum bağımsızdır; erkek olma olasılığı daima %50'dir."
+  },
+  {
+   "id": 75,
+   "outcome": "F.8.2.6 Eşey kalıtımı",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q75.svg",
+   "imageAlt": "Eşey kromozomları Punnett karesi",
+   "scenario": "Bir çiftin çocuklarının cinsiyeti, eşey kromozomlarının kalıtımına göre belirlenir. Anne XX, baba XY eşey kromozomu taşır. Çocuğun cinsiyeti, babadan gelen spermin X veya Y taşımasına bağlıdır. Punnett karesi şekilde verilmiştir.",
+   "question": "Bir erkek çocuk Y kromozomunu kimden almıştır?",
+   "options": [
+    "İki ebeveynden de",
+    "Anneden",
+    "Babadan",
+    "Hiçbirinden"
+   ],
+   "answer": 2,
+   "explanation": "Y kromozomu yalnızca babada bulunur; erkek çocuk Y'yi babadan alır."
+  },
+  {
+   "id": 76,
+   "outcome": "F.8.2.6 Eşey kalıtımı",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q76.svg",
+   "imageAlt": "Eşey kromozomları Punnett karesi",
+   "scenario": "Bir çiftin çocuklarının cinsiyeti, eşey kromozomlarının kalıtımına göre belirlenir. Anne XX, baba XY eşey kromozomu taşır. Çocuğun cinsiyeti, babadan gelen spermin X veya Y taşımasına bağlıdır. Punnett karesi şekilde verilmiştir.",
+   "question": "Bir kız çocuğun X kromozomlarını kimden almıştır?",
+   "options": [
+    "İkisi de babadan",
+    "Biri anneden, biri babadan",
+    "Hiçbirinden",
+    "İkisi de anneden"
+   ],
+   "answer": 1,
+   "explanation": "Kız çocuk anneden bir X, babadan bir X alır."
+  },
+  {
+   "id": 77,
+   "outcome": "F.8.2.6 Eşey kalıtımı",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q77.svg",
+   "imageAlt": "Eşey kromozomları Punnett karesi",
+   "scenario": "Bir çiftin çocuklarının cinsiyeti, eşey kromozomlarının kalıtımına göre belirlenir. Anne XX, baba XY eşey kromozomu taşır. Çocuğun cinsiyeti, babadan gelen spermin X veya Y taşımasına bağlıdır. Punnett karesi şekilde verilmiştir.",
+   "question": "İnsanda çocuğun cinsiyetini hangi ebeveyn belirler?",
+   "options": [
+    "Hiçbiri",
+    "İkisi de eşit belirler",
+    "Anne; X veya Y taşıyan yumurta",
+    "Baba; X veya Y taşıyan sperm"
+   ],
+   "answer": 3,
+   "explanation": "Anne yalnızca X verir; cinsiyeti belirleyen spermin X mi Y mi taşıdığıdır."
+  },
+  {
+   "id": 78,
+   "outcome": "F.8.2.6 Eşey kalıtımı",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q78.svg",
+   "imageAlt": "Eşey kromozomları Punnett karesi",
+   "scenario": "Bir çiftin çocuklarının cinsiyeti, eşey kromozomlarının kalıtımına göre belirlenir. Anne XX, baba XY eşey kromozomu taşır. Çocuğun cinsiyeti, babadan gelen spermin X veya Y taşımasına bağlıdır. Punnett karesi şekilde verilmiştir.",
+   "question": "Bir sperm hücresinin X veya Y kromozomu taşıma olasılığı nedir?",
+   "options": [
+    "X %25",
+    "Her ikisi de %100",
+    "Her biri %50",
+    "Y %75"
+   ],
+   "answer": 2,
+   "explanation": "Mayozda X ve Y eşit olasılıkla ayrılır."
+  },
+  {
+   "id": 79,
+   "outcome": "F.8.2.6 Eşey kalıtımı",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q79.svg",
+   "imageAlt": "Eşey kromozomları Punnett karesi",
+   "scenario": "Bir çiftin çocuklarının cinsiyeti, eşey kromozomlarının kalıtımına göre belirlenir. Anne XX, baba XY eşey kromozomu taşır. Çocuğun cinsiyeti, babadan gelen spermin X veya Y taşımasına bağlıdır. Punnett karesi şekilde verilmiştir.",
+   "question": "Bir çiftin 2 çocuğu da erkektir. Üçüncü çocuğun kız olma olasılığı nedir?",
+   "options": [
+    "%0",
+    "%25",
+    "%50",
+    "%100"
+   ],
+   "answer": 2,
+   "explanation": "Olaylar bağımsızdır; her doğumda kız olma olasılığı %50'dir."
+  },
+  {
+   "id": 80,
+   "outcome": "F.8.2.6 Eşey kalıtımı",
+   "image": "/soru-gorselleri/dna-ve-genetik-kod/q80.svg",
+   "imageAlt": "Eşey kromozomları Punnett karesi",
+   "scenario": "Bir çiftin çocuklarının cinsiyeti, eşey kromozomlarının kalıtımına göre belirlenir. Anne XX, baba XY eşey kromozomu taşır. Çocuğun cinsiyeti, babadan gelen spermin X veya Y taşımasına bağlıdır. Punnett karesi şekilde verilmiştir.",
+   "question": "Bir kız çocuğun eşey kromozomu bileşimi hangisidir?",
+   "options": [
+    "XX",
+    "YY",
+    "XY",
+    "X"
+   ],
+   "answer": 0,
+   "explanation": "Dişi bireyler XX, erkek bireyler XY taşır."
+  }
+ ]
+}

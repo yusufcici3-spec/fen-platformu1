@@ -1,0 +1,1287 @@
+{
+ "unit": 5,
+ "title": "Basit Makineler",
+ "slug": "basit-makineler",
+ "questions": [
+  {
+   "id": 1,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q01.svg",
+   "imageAlt": "Dayanağın iki yanına yük asılmış kaldıraç şeması",
+   "scenario": "Okul bahçesindeki tahterevalli için hazırlanan düzenek, dayanağı ortada olan homojen ve ağırlığı ihmal edilen bir çubuktan oluşuyor. Dayanağın bir yanına dayanaktan 40 cm uzağa 60 N'luk yük, diğer yanına dayanaktan 20 cm uzağa bilinmeyen bir yük asılarak çubuk yatay dengeye getiriliyor.",
+   "question": "Çubuğu dengede tutan ikinci yükün ağırlığı kaç N'dur?",
+   "options": [
+    "30 N",
+    "120 N",
+    "240 N",
+    "80 N"
+   ],
+   "answer": 1,
+   "explanation": "Denge koşulu: Kuvvet × kuvvet kolu eşit olmalıdır. 60 × 40 = F × 20 → F = 120 N."
+  },
+  {
+   "id": 2,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q02.svg",
+   "imageAlt": "Dayanağın iki yanına yük asılmış kaldıraç şeması",
+   "scenario": "Hafriyat işçisinin levyesi için hazırlanan düzenek, dayanağı ortada olan homojen ve ağırlığı ihmal edilen bir çubuktan oluşuyor. Dayanağın bir yanına dayanaktan 30 cm uzağa 80 N'luk yük, diğer yanına dayanaktan 60 cm uzağa bilinmeyen bir yük asılarak çubuk yatay dengeye getiriliyor.",
+   "question": "Çubuğu dengede tutan ikinci yükün ağırlığı kaç N'dur?",
+   "options": [
+    "160 N",
+    "80 N",
+    "50 N",
+    "40 N"
+   ],
+   "answer": 3,
+   "explanation": "Denge koşulu: Kuvvet × kuvvet kolu eşit olmalıdır. 80 × 30 = F × 60 → F = 40 N."
+  },
+  {
+   "id": 3,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q03.svg",
+   "imageAlt": "Dayanağın iki yanına yük asılmış kaldıraç şeması",
+   "scenario": "Marangozun kaldıracı için hazırlanan düzenek, dayanağı ortada olan homojen ve ağırlığı ihmal edilen bir çubuktan oluşuyor. Dayanağın bir yanına dayanaktan 20 cm uzağa 90 N'luk yük, diğer yanına dayanaktan 60 cm uzağa bilinmeyen bir yük asılarak çubuk yatay dengeye getiriliyor.",
+   "question": "Çubuğu dengede tutan ikinci yükün ağırlığı kaç N'dur?",
+   "options": [
+    "50 N",
+    "30 N",
+    "60 N",
+    "270 N"
+   ],
+   "answer": 1,
+   "explanation": "Denge koşulu: Kuvvet × kuvvet kolu eşit olmalıdır. 90 × 20 = F × 60 → F = 30 N."
+  },
+  {
+   "id": 4,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q04.svg",
+   "imageAlt": "Dayanağın iki yanına yük asılmış kaldıraç şeması",
+   "scenario": "Çocuk parkındaki ahşap kaldıraç için hazırlanan düzenek, dayanağı ortada olan homojen ve ağırlığı ihmal edilen bir çubuktan oluşuyor. Dayanağın bir yanına dayanaktan 50 cm uzağa 150 N'luk yük, diğer yanına dayanaktan 25 cm uzağa bilinmeyen bir yük asılarak çubuk yatay dengeye getiriliyor.",
+   "question": "Çubuğu dengede tutan ikinci yükün ağırlığı kaç N'dur?",
+   "options": [
+    "600 N",
+    "175 N",
+    "75 N",
+    "300 N"
+   ],
+   "answer": 3,
+   "explanation": "Denge koşulu: Kuvvet × kuvvet kolu eşit olmalıdır. 150 × 50 = F × 25 → F = 300 N."
+  },
+  {
+   "id": 5,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q05.svg",
+   "imageAlt": "Dayanağın iki yanına yük asılmış kaldıraç şeması",
+   "scenario": "Taş kaldıran çiftçinin demir çubuğu için kurulan düzenekte ağırlığı ihmal edilen çubuk dayanak üzerinde yatay dengede duruyor. Sol tarafta dayanaktan 25 cm uzakta 120 N'luk yük asılıdır. Sağ tarafa ise 40 N'luk yük asılmış ve konumu bilinmiyor.",
+   "question": "Sağdaki yük dayanaktan kaç cm uzağa asılmıştır?",
+   "options": [
+    "192 cm",
+    "112.5 cm",
+    "8.33333 cm",
+    "75 cm"
+   ],
+   "answer": 3,
+   "explanation": "120 × 25 = 40 × d → d = 75 cm. Yük ağır olduğu için dayanağa daha yakın asılmalıdır."
+  },
+  {
+   "id": 6,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q06.svg",
+   "imageAlt": "Dayanağın iki yanına yük asılmış kaldıraç şeması",
+   "scenario": "Laboratuvardaki kaldıraç düzeneği için kurulan düzenekte ağırlığı ihmal edilen çubuk dayanak üzerinde yatay dengede duruyor. Sol tarafta dayanaktan 15 cm uzakta 200 N'luk yük asılıdır. Sağ tarafa ise 60 N'luk yük asılmış ve konumu bilinmiyor.",
+   "question": "Sağdaki yük dayanaktan kaç cm uzağa asılmıştır?",
+   "options": [
+    "50 cm",
+    "75 cm",
+    "800 cm",
+    "4.5 cm"
+   ],
+   "answer": 0,
+   "explanation": "200 × 15 = 60 × d → d = 50 cm. Yük ağır olduğu için dayanağa daha yakın asılmalıdır."
+  },
+  {
+   "id": 7,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q07.svg",
+   "imageAlt": "Dayanağın iki yanına yük asılmış kaldıraç şeması",
+   "scenario": "Eski tip kefeli terazi için hazırlanan düzenek, dayanağı ortada olan homojen ve ağırlığı ihmal edilen bir çubuktan oluşuyor. Dayanağın bir yanına dayanaktan 60 cm uzağa 45 N'luk yük, diğer yanına dayanaktan 30 cm uzağa bilinmeyen bir yük asılarak çubuk yatay dengeye getiriliyor.",
+   "question": "Çubuğu dengede tutan ikinci yükün ağırlığı kaç N'dur?",
+   "options": [
+    "22.5 N",
+    "180 N",
+    "75 N",
+    "90 N"
+   ],
+   "answer": 3,
+   "explanation": "Denge koşulu: Kuvvet × kuvvet kolu eşit olmalıdır. 45 × 60 = F × 30 → F = 90 N."
+  },
+  {
+   "id": 8,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q08.svg",
+   "imageAlt": "Dayanağın iki yanına yük asılmış kaldıraç şeması",
+   "scenario": "Kuyu başındaki ağır kova kaldıracı için kurulan düzenekte ağırlığı ihmal edilen çubuk dayanak üzerinde yatay dengede duruyor. Sol tarafta dayanaktan 60 cm uzakta 70 N'luk yük asılıdır. Sağ tarafa ise 120 N'luk yük asılmış ve konumu bilinmiyor.",
+   "question": "Sağdaki yük dayanaktan kaç cm uzağa asılmıştır?",
+   "options": [
+    "102.857 cm",
+    "35 cm",
+    "140 cm",
+    "110 cm"
+   ],
+   "answer": 1,
+   "explanation": "70 × 60 = 120 × d → d = 35 cm. Yük ağır olduğu için dayanağa daha yakın asılmalıdır."
+  },
+  {
+   "id": 9,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q09.svg",
+   "imageAlt": "Dayanağın iki yanına yük asılmış kaldıraç şeması",
+   "scenario": "Pazaryerindeki el kantarı için hazırlanan düzenek, dayanağı ortada olan homojen ve ağırlığı ihmal edilen bir çubuktan oluşuyor. Dayanağın bir yanına dayanaktan 100 cm uzağa 30 N'luk yük, diğer yanına dayanaktan 20 cm uzağa bilinmeyen bir yük asılarak çubuk yatay dengeye getiriliyor.",
+   "question": "Çubuğu dengede tutan ikinci yükün ağırlığı kaç N'dur?",
+   "options": [
+    "150 N",
+    "110 N",
+    "300 N",
+    "6 N"
+   ],
+   "answer": 0,
+   "explanation": "Denge koşulu: Kuvvet × kuvvet kolu eşit olmalıdır. 30 × 100 = F × 20 → F = 150 N."
+  },
+  {
+   "id": 10,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q10.svg",
+   "imageAlt": "Dayanağın iki yanına yük asılmış kaldıraç şeması",
+   "scenario": "Mühendislik kulübünün model vinci için kurulan düzenekte ağırlığı ihmal edilen çubuk dayanak üzerinde yatay dengede duruyor. Sol tarafta dayanaktan 12 cm uzakta 250 N'luk yük asılıdır. Sağ tarafa ise 100 N'luk yük asılmış ve konumu bilinmiyor.",
+   "question": "Sağdaki yük dayanaktan kaç cm uzağa asılmıştır?",
+   "options": [
+    "90 cm",
+    "30 cm",
+    "45 cm",
+    "4.8 cm"
+   ],
+   "answer": 1,
+   "explanation": "250 × 12 = 100 × d → d = 30 cm. Yük ağır olduğu için dayanağa daha yakın asılmalıdır."
+  },
+  {
+   "id": 11,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q11.svg",
+   "imageAlt": "Solda iki, sağda bir yük asılı kaldıraç",
+   "scenario": "Bir deney masasında kurulan dengeli çubuk, dayanak noktasından asılmıştır ve ağırlığı ihmal edilmektedir. Dayanağın solunda 20 cm uzağa 40 N, 25 cm uzağa ise 30 N'luk iki yük asılmıştır. Sağ tarafta dayanaktan 10 cm uzağa bilinmeyen bir yük asılarak sistem dengelenmiştir.",
+   "question": "Sağdaki yükün ağırlığı kaç N'dur?",
+   "options": [
+    "15.5556 N",
+    "80 N",
+    "155 N",
+    "70 N"
+   ],
+   "answer": 2,
+   "explanation": "Toplam sol moment: 40×20 + 30×25 = 1550 N·cm. Sağ moment: F×10 = 1550 → F = 155 N."
+  },
+  {
+   "id": 12,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q12.svg",
+   "imageAlt": "Solda iki, sağda bir yük asılı kaldıraç",
+   "scenario": "Okul kulübünün hazırladığı model terazi, dayanak noktasından asılmıştır ve ağırlığı ihmal edilmektedir. Dayanağın solunda 15 cm uzağa 60 N, 50 cm uzağa ise 30 N'luk iki yük asılmıştır. Sağ tarafta dayanaktan 20 cm uzağa bilinmeyen bir yük asılarak sistem dengelenmiştir.",
+   "question": "Sağdaki yükün ağırlığı kaç N'dur?",
+   "options": [
+    "120 N",
+    "27.6923 N",
+    "90 N",
+    "75 N"
+   ],
+   "answer": 0,
+   "explanation": "Toplam sol moment: 60×15 + 30×50 = 2400 N·cm. Sağ moment: F×20 = 2400 → F = 120 N."
+  },
+  {
+   "id": 13,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q13.svg",
+   "imageAlt": "Solda iki, sağda bir yük asılı kaldıraç",
+   "scenario": "Fizik laboratuvarındaki metre çubuğu düzeneği, dayanak noktasından asılmıştır ve ağırlığı ihmal edilmektedir. Dayanağın solunda 30 cm uzağa 20 N, 40 cm uzağa ise 60 N'luk iki yük asılmıştır. Sağ tarafta dayanaktan 10 cm uzağa bilinmeyen bir yük asılarak sistem dengelenmiştir.",
+   "question": "Sağdaki yükün ağırlığı kaç N'dur?",
+   "options": [
+    "11.4286 N",
+    "300 N",
+    "240 N",
+    "80 N"
+   ],
+   "answer": 1,
+   "explanation": "Toplam sol moment: 20×30 + 60×40 = 3000 N·cm. Sağ moment: F×10 = 3000 → F = 300 N."
+  },
+  {
+   "id": 14,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q14.svg",
+   "imageAlt": "Solda iki, sağda bir yük asılı kaldıraç",
+   "scenario": "Müzedeki eski kaldıraç maketi, dayanak noktasından asılmıştır ve ağırlığı ihmal edilmektedir. Dayanağın solunda 20 cm uzağa 50 N, 50 cm uzağa ise 40 N'luk iki yük asılmıştır. Sağ tarafta dayanaktan 25 cm uzağa bilinmeyen bir yük asılarak sistem dengelenmiştir.",
+   "question": "Sağdaki yükün ağırlığı kaç N'dur?",
+   "options": [
+    "120 N",
+    "80 N",
+    "90 N",
+    "32.1429 N"
+   ],
+   "answer": 0,
+   "explanation": "Toplam sol moment: 50×20 + 40×50 = 3000 N·cm. Sağ moment: F×25 = 3000 → F = 120 N."
+  },
+  {
+   "id": 15,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q15.svg",
+   "imageAlt": "Solda iki, sağda bir yük asılı kaldıraç",
+   "scenario": "Tasarım atölyesinin sergi kolu, dayanak noktasından asılmıştır ve ağırlığı ihmal edilmektedir. Dayanağın solunda 40 cm uzağa 30 N, 60 cm uzağa ise 20 N'luk iki yük asılmıştır. Sağ tarafta dayanaktan 15 cm uzağa bilinmeyen bir yük asılarak sistem dengelenmiştir.",
+   "question": "Sağdaki yükün ağırlığı kaç N'dur?",
+   "options": [
+    "160 N",
+    "50 N",
+    "80 N",
+    "7.5 N"
+   ],
+   "answer": 0,
+   "explanation": "Toplam sol moment: 30×40 + 20×60 = 2400 N·cm. Sağ moment: F×15 = 2400 → F = 160 N."
+  },
+  {
+   "id": 16,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q16.svg",
+   "imageAlt": "Solda iki, sağda bir yük asılı kaldıraç",
+   "scenario": "Robotik kulübünün denge kolu, dayanak noktasından asılmıştır ve ağırlığı ihmal edilmektedir. Dayanağın solunda 10 cm uzağa 80 N, 50 cm uzağa ise 40 N'luk iki yük asılmıştır. Sağ tarafta dayanaktan 20 cm uzağa bilinmeyen bir yük asılarak sistem dengelenmiştir.",
+   "question": "Sağdaki yükün ağırlığı kaç N'dur?",
+   "options": [
+    "100 N",
+    "120 N",
+    "140 N",
+    "40 N"
+   ],
+   "answer": 2,
+   "explanation": "Toplam sol moment: 80×10 + 40×50 = 2800 N·cm. Sağ moment: F×20 = 2800 → F = 140 N."
+  },
+  {
+   "id": 17,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q17.svg",
+   "imageAlt": "Dayanak, yük ve kuvvet konumları işaretli kaldıraç",
+   "scenario": "Teknoloji sınıfında günlük araçların nasıl çalıştığı inceleniyor. Makas kaldıraç olarak modelleniyor ve şemada dayanak, yük ve kuvvetin çubuk üzerindeki konumu gösteriliyor. Öğrenciler şemadaki konumlara bakarak kaldıracın türünü belirleyecek.",
+   "question": "Şemaya göre makas hangi tür kaldıraçtır?",
+   "options": [
+    "I. tür (dayanak ortada)",
+    "III. tür (kuvvet ortada)",
+    "II. tür (yük ortada)",
+    "Kaldıraç değildir"
+   ],
+   "answer": 0,
+   "explanation": "Dayanak, yük ile kuvvet arasındadır; bu 1. tür kaldıraçtır."
+  },
+  {
+   "id": 18,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q18.svg",
+   "imageAlt": "Dayanak, yük ve kuvvet konumları işaretli kaldıraç",
+   "scenario": "Teknoloji sınıfında günlük araçların nasıl çalıştığı inceleniyor. El arabası kaldıraç olarak modelleniyor ve şemada dayanak, yük ve kuvvetin çubuk üzerindeki konumu gösteriliyor. Öğrenciler şemadaki konumlara bakarak kaldıracın türünü belirleyecek.",
+   "question": "Şemaya göre el arabası hangi tür kaldıraçtır?",
+   "options": [
+    "I. tür (dayanak ortada)",
+    "II. tür (yük ortada)",
+    "III. tür (kuvvet ortada)",
+    "Kaldıraç değildir"
+   ],
+   "answer": 1,
+   "explanation": "Yük, dayanak ile kuvvet arasındadır; bu 2. tür kaldıraçtır. Kuvvet kolu hep yük kolundan uzundur, kuvvetten kazanç sağlar."
+  },
+  {
+   "id": 19,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q19.svg",
+   "imageAlt": "Dayanak, yük ve kuvvet konumları işaretli kaldıraç",
+   "scenario": "Teknoloji sınıfında günlük araçların nasıl çalıştığı inceleniyor. Cımbız kaldıraç olarak modelleniyor ve şemada dayanak, yük ve kuvvetin çubuk üzerindeki konumu gösteriliyor. Öğrenciler şemadaki konumlara bakarak kaldıracın türünü belirleyecek.",
+   "question": "Şemaya göre cımbız hangi tür kaldıraçtır?",
+   "options": [
+    "Kaldıraç değildir",
+    "III. tür (kuvvet ortada)",
+    "II. tür (yük ortada)",
+    "I. tür (dayanak ortada)"
+   ],
+   "answer": 1,
+   "explanation": "Kuvvet, dayanak ile yük arasındadır; 3. tür kaldıraçtır. Yük kolu uzun olduğundan kuvvetten kazanç yoktur, yoldan ve hızdan kazanç vardır."
+  },
+  {
+   "id": 20,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q20.svg",
+   "imageAlt": "Dayanak, yük ve kuvvet konumları işaretli kaldıraç",
+   "scenario": "Teknoloji sınıfında günlük araçların nasıl çalıştığı inceleniyor. Fındık kıracağı kaldıraç olarak modelleniyor ve şemada dayanak, yük ve kuvvetin çubuk üzerindeki konumu gösteriliyor. Öğrenciler şemadaki konumlara bakarak kaldıracın türünü belirleyecek.",
+   "question": "Şemaya göre fındık kıracağı hangi tür kaldıraçtır?",
+   "options": [
+    "II. tür (yük ortada)",
+    "I. tür (dayanak ortada)",
+    "III. tür (kuvvet ortada)",
+    "Kaldıraç değildir"
+   ],
+   "answer": 0,
+   "explanation": "Yük, dayanak ile kuvvet arasındadır; bu 2. tür kaldıraçtır. Kuvvet kolu hep yük kolundan uzundur, kuvvetten kazanç sağlar."
+  },
+  {
+   "id": 21,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q21.svg",
+   "imageAlt": "Dayanak, yük ve kuvvet konumları işaretli kaldıraç",
+   "scenario": "Teknoloji sınıfında günlük araçların nasıl çalıştığı inceleniyor. Olta kamışı kaldıraç olarak modelleniyor ve şemada dayanak, yük ve kuvvetin çubuk üzerindeki konumu gösteriliyor. Öğrenciler şemadaki konumlara bakarak kaldıracın türünü belirleyecek.",
+   "question": "Şemaya göre olta kamışı hangi tür kaldıraçtır?",
+   "options": [
+    "II. tür (yük ortada)",
+    "III. tür (kuvvet ortada)",
+    "I. tür (dayanak ortada)",
+    "Kaldıraç değildir"
+   ],
+   "answer": 1,
+   "explanation": "Kuvvet, dayanak ile yük arasındadır; 3. tür kaldıraçtır. Yük kolu uzun olduğundan kuvvetten kazanç yoktur, yoldan ve hızdan kazanç vardır."
+  },
+  {
+   "id": 22,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q22.svg",
+   "imageAlt": "Dayanak, yük ve kuvvet konumları işaretli kaldıraç",
+   "scenario": "Teknoloji sınıfında günlük araçların nasıl çalıştığı inceleniyor. Tahterevalli kaldıraç olarak modelleniyor ve şemada dayanak, yük ve kuvvetin çubuk üzerindeki konumu gösteriliyor. Öğrenciler şemadaki konumlara bakarak kaldıracın türünü belirleyecek.",
+   "question": "Şemaya göre tahterevalli hangi tür kaldıraçtır?",
+   "options": [
+    "II. tür (yük ortada)",
+    "III. tür (kuvvet ortada)",
+    "I. tür (dayanak ortada)",
+    "Kaldıraç değildir"
+   ],
+   "answer": 2,
+   "explanation": "Dayanak, yük ile kuvvet arasındadır; bu 1. tür kaldıraçtır."
+  },
+  {
+   "id": 23,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q23.svg",
+   "imageAlt": "Dayanak, yük ve kuvvet konumları işaretli kaldıraç",
+   "scenario": "Teknoloji sınıfında günlük araçların nasıl çalıştığı inceleniyor. Kapak açacağı kaldıraç olarak modelleniyor ve şemada dayanak, yük ve kuvvetin çubuk üzerindeki konumu gösteriliyor. Öğrenciler şemadaki konumlara bakarak kaldıracın türünü belirleyecek.",
+   "question": "Şemaya göre kapak açacağı hangi tür kaldıraçtır?",
+   "options": [
+    "I. tür (dayanak ortada)",
+    "II. tür (yük ortada)",
+    "Kaldıraç değildir",
+    "III. tür (kuvvet ortada)"
+   ],
+   "answer": 1,
+   "explanation": "Yük, dayanak ile kuvvet arasındadır; bu 2. tür kaldıraçtır. Kuvvet kolu hep yük kolundan uzundur, kuvvetten kazanç sağlar."
+  },
+  {
+   "id": 24,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q24.svg",
+   "imageAlt": "Dayanak, yük ve kuvvet konumları işaretli kaldıraç",
+   "scenario": "Teknoloji sınıfında günlük araçların nasıl çalıştığı inceleniyor. Süpürge kaldıraç olarak modelleniyor ve şemada dayanak, yük ve kuvvetin çubuk üzerindeki konumu gösteriliyor. Öğrenciler şemadaki konumlara bakarak kaldıracın türünü belirleyecek.",
+   "question": "Şemaya göre süpürge hangi tür kaldıraçtır?",
+   "options": [
+    "I. tür (dayanak ortada)",
+    "Kaldıraç değildir",
+    "III. tür (kuvvet ortada)",
+    "II. tür (yük ortada)"
+   ],
+   "answer": 2,
+   "explanation": "Kuvvet, dayanak ile yük arasındadır; 3. tür kaldıraçtır. Yük kolu uzun olduğundan kuvvetten kazanç yoktur, yoldan ve hızdan kazanç vardır."
+  },
+  {
+   "id": 25,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q25.svg",
+   "imageAlt": "Üç kaldıracın kol uzunlukları",
+   "scenario": "Öğrenciler aynı ağırlıktaki yükü, dayanak sabit kalacak biçimde farklı kol uzunluklarına sahip üç kaldıraçla dengelemeye çalışıyor. Şekilde her kaldıraç için yük kolu ve kuvvet kolu uzunlukları verilmiştir. Sürtünme ve çubuk ağırlığı önemsizdir. Kol uzunlukları (yük/kuvvet): I. kaldıraç 40/40 cm, II. kaldıraç 20/60 cm, III. kaldıraç 60/30 cm.",
+   "question": "En küçük kuvvetle dengeyi sağlayan kaldıraç hangisidir?",
+   "options": [
+    "Üçünde de aynı kuvvet gerekir",
+    "III. kaldıraç",
+    "I. kaldıraç",
+    "II. kaldıraç"
+   ],
+   "answer": 3,
+   "explanation": "Kuvvet = yük × yük kolu / kuvvet kolu. Kuvvet kolu / yük kolu oranı en büyük olan kaldıraç (3.00) en az kuvvet gerektirir."
+  },
+  {
+   "id": 26,
+   "outcome": "F.8.5.1 Basit makineler",
+   "image": "/soru-gorselleri/basit-makineler/q26.svg",
+   "imageAlt": "Üç kaldıracın kol uzunlukları",
+   "scenario": "Öğrenciler aynı ağırlıktaki yükü, dayanak sabit kalacak biçimde farklı kol uzunluklarına sahip üç kaldıraçla dengelemeye çalışıyor. Şekilde her kaldıraç için yük kolu ve kuvvet kolu uzunlukları verilmiştir. Sürtünme ve çubuk ağırlığı önemsizdir. Kol uzunlukları (yük/kuvvet): I. kaldıraç 30/90 cm, II. kaldıraç 45/45 cm, III. kaldıraç 50/25 cm.",
+   "question": "En küçük kuvvetle dengeyi sağlayan kaldıraç hangisidir?",
+   "options": [
+    "Üçünde de aynı kuvvet gerekir",
+    "II. kaldıraç",
+    "III. kaldıraç",
+    "I. kaldıraç"
+   ],
+   "answer": 3,
+   "explanation": "Kuvvet = yük × yük kolu / kuvvet kolu. Kuvvet kolu / yük kolu oranı en büyük olan kaldıraç (3.00) en az kuvvet gerektirir."
+  },
+  {
+   "id": 27,
+   "outcome": "F.8.5.1 Makaralar",
+   "image": "/soru-gorselleri/basit-makineler/q27.svg",
+   "imageAlt": "Makara sistemi şeması",
+   "scenario": "Inşaat sahasındaki bir işçi 60 N ağırlığındaki yükü sabit makara ile yukarı çekiyor. İp ağırlığı ve sürtünme ihmal ediliyor.",
+   "question": "Yükü dengede tutmak için gereken kuvvet kaç N olmalıdır?",
+   "options": [
+    "40 N",
+    "60 N",
+    "30 N",
+    "90 N"
+   ],
+   "answer": 1,
+   "explanation": "Sabit makara sadece kuvvetin yönünü değiştirir; F = 60 N olur."
+  },
+  {
+   "id": 28,
+   "outcome": "F.8.5.1 Makaralar",
+   "image": "/soru-gorselleri/basit-makineler/q28.svg",
+   "imageAlt": "Makara sistemi şeması",
+   "scenario": "Atölyedeki bir usta 80 N ağırlığındaki yükü, 2 ip parçasıyla taşınan hareketli makara düzeneğiyle kaldırıyor. Makara ağırlığı ve sürtünme ihmal ediliyor. Yük sabit hızla yükselmektedir.",
+   "question": "İşçinin uyguladığı kuvvet kaç N'dur?",
+   "options": [
+    "160 N",
+    "80 N",
+    "40 N",
+    "20 N"
+   ],
+   "answer": 2,
+   "explanation": "Yükü taşıyan ip sayısı 2'dir. F = (yük) / 2 = 80/2 = 40 N."
+  },
+  {
+   "id": 29,
+   "outcome": "F.8.5.1 Makaralar",
+   "image": "/soru-gorselleri/basit-makineler/q29.svg",
+   "imageAlt": "Makara sistemi şeması",
+   "scenario": "Depodaki bir görevli 200 N ağırlığındaki yükü, 4 ip parçasıyla taşınan hareketli makara düzeneğiyle kaldırıyor. Makara ağırlığı ve sürtünme ihmal ediliyor. Yük sabit hızla yükselmektedir.",
+   "question": "Yükü dengede tutmak için gereken kuvvet kaç N olmalıdır?",
+   "options": [
+    "25 N",
+    "200 N",
+    "50 N",
+    "800 N"
+   ],
+   "answer": 2,
+   "explanation": "Yükü taşıyan ip sayısı 4'dir. F = (yük) / 4 = 200/4 = 50 N."
+  },
+  {
+   "id": 30,
+   "outcome": "F.8.5.1 Makaralar",
+   "image": "/soru-gorselleri/basit-makineler/q30.svg",
+   "imageAlt": "Makara sistemi şeması",
+   "scenario": "Bir marangoz 150 N ağırlığındaki yükü, 3 ip parçasıyla taşınan hareketli makara düzeneğiyle kaldırıyor. Makara ağırlığı ve sürtünme ihmal ediliyor. Yük sabit hızla yükselmektedir.",
+   "question": "İşçinin uyguladığı kuvvet kaç N'dur?",
+   "options": [
+    "25 N",
+    "450 N",
+    "50 N",
+    "150 N"
+   ],
+   "answer": 2,
+   "explanation": "Yükü taşıyan ip sayısı 3'dir. F = (yük) / 3 = 150/3 = 50 N."
+  },
+  {
+   "id": 31,
+   "outcome": "F.8.5.1 Makaralar",
+   "image": "/soru-gorselleri/basit-makineler/q31.svg",
+   "imageAlt": "Makara sistemi şeması",
+   "scenario": "Bir gemi mürettebatı 100 N ağırlığındaki yükü, 2 ip parçasıyla taşınan hareketli makara düzeneğiyle kaldırıyor. Hareketli makaranın ağırlığı 10 N'dur. Yük sabit hızla yükselmektedir.",
+   "question": "Yükü dengede tutmak için gereken kuvvet kaç N olmalıdır?",
+   "options": [
+    "100 N",
+    "200 N",
+    "45 N",
+    "55 N"
+   ],
+   "answer": 3,
+   "explanation": "Yükü taşıyan ip sayısı 2'dir. F = (yük + makara) / 2 = (100+10)/2 = 55 N."
+  },
+  {
+   "id": 32,
+   "outcome": "F.8.5.1 Makaralar",
+   "image": "/soru-gorselleri/basit-makineler/q32.svg",
+   "imageAlt": "Makara sistemi şeması",
+   "scenario": "Bir tiyatro teknisyeni 240 N ağırlığındaki yükü, 4 ip parçasıyla taşınan hareketli makara düzeneğiyle kaldırıyor. Hareketli makaranın ağırlığı 16 N'dur. Yük sabit hızla yükselmektedir.",
+   "question": "İşçinin uyguladığı kuvvet kaç N'dur?",
+   "options": [
+    "960 N",
+    "56 N",
+    "64 N",
+    "240 N"
+   ],
+   "answer": 2,
+   "explanation": "Yükü taşıyan ip sayısı 4'dir. F = (yük + makara) / 4 = (240+16)/4 = 64 N."
+  },
+  {
+   "id": 33,
+   "outcome": "F.8.5.1 Makaralar",
+   "image": "/soru-gorselleri/basit-makineler/q33.svg",
+   "imageAlt": "Makara sistemi şeması",
+   "scenario": "Bir antrenör 300 N ağırlığındaki yükü, 6 ip parçasıyla taşınan hareketli makara düzeneğiyle kaldırıyor. Makara ağırlığı ve sürtünme ihmal ediliyor. Yük sabit hızla yükselmektedir.",
+   "question": "Yükü dengede tutmak için gereken kuvvet kaç N olmalıdır?",
+   "options": [
+    "25 N",
+    "300 N",
+    "50 N",
+    "1800 N"
+   ],
+   "answer": 2,
+   "explanation": "Yükü taşıyan ip sayısı 6'dir. F = (yük) / 6 = 300/6 = 50 N."
+  },
+  {
+   "id": 34,
+   "outcome": "F.8.5.1 Makaralar",
+   "image": "/soru-gorselleri/basit-makineler/q34.svg",
+   "imageAlt": "Makara sistemi şeması",
+   "scenario": "Bir balıkçı 180 N ağırlığındaki yükü, 4 ip parçasıyla taşınan hareketli makara düzeneğiyle kaldırıyor. Hareketli makaranın ağırlığı 20 N'dur. Yük sabit hızla yükselmektedir.",
+   "question": "İşçinin uyguladığı kuvvet kaç N'dur?",
+   "options": [
+    "50 N",
+    "40 N",
+    "720 N",
+    "180 N"
+   ],
+   "answer": 0,
+   "explanation": "Yükü taşıyan ip sayısı 4'dir. F = (yük + makara) / 4 = (180+20)/4 = 50 N."
+  },
+  {
+   "id": 35,
+   "outcome": "F.8.5.1 Makaralar",
+   "image": "/soru-gorselleri/basit-makineler/q35.svg",
+   "imageAlt": "Makara sistemi şeması",
+   "scenario": "Bir atölyede 120 N'luk yük, 2 ip parçasıyla taşınan hareketli makara sistemiyle 2 m yukarı çıkarılacaktır. Usta ipin ucunu çekerek yükü sabit hızla kaldırıyor; sürtünme ve makara ağırlığı ihmal ediliyor.",
+   "question": "Yükü kaldırmak için ipin ucu toplam kaç m çekilmelidir?",
+   "options": [
+    "6 m",
+    "2 m",
+    "8 m",
+    "4 m"
+   ],
+   "answer": 3,
+   "explanation": "Kuvvetten 2 kat kazanılırsa yoldan 2 kat kaybedilir: 2 × 2 = 4 m."
+  },
+  {
+   "id": 36,
+   "outcome": "F.8.5.1 Makaralar",
+   "image": "/soru-gorselleri/basit-makineler/q36.svg",
+   "imageAlt": "Makara sistemi şeması",
+   "scenario": "Bir atölyede 160 N'luk yük, 4 ip parçasıyla taşınan hareketli makara sistemiyle 3 m yukarı çıkarılacaktır. Usta ipin ucunu çekerek yükü sabit hızla kaldırıyor; sürtünme ve makara ağırlığı ihmal ediliyor.",
+   "question": "Yükü kaldırmak için ipin ucu toplam kaç m çekilmelidir?",
+   "options": [
+    "7 m",
+    "3 m",
+    "12 m",
+    "24 m"
+   ],
+   "answer": 2,
+   "explanation": "Kuvvetten 4 kat kazanılırsa yoldan 4 kat kaybedilir: 4 × 3 = 12 m."
+  },
+  {
+   "id": 37,
+   "outcome": "F.8.5.1 Eğik düzlem",
+   "image": "/soru-gorselleri/basit-makineler/q37.svg",
+   "imageAlt": "Eğik düzlem şeması",
+   "scenario": "Bir kargo firması, 400 N ağırlığındaki sandığı 2 m yüksekliğe çıkarmak için 8 m uzunluğunda sürtünmesiz bir rampa kullanıyor. Sandık rampa boyunca sabit hızla itiliyor.",
+   "question": "Sandığı itmek için uygulanması gereken kuvvet kaç N'dur?",
+   "options": [
+    "300 N",
+    "1600 N",
+    "100 N",
+    "400 N"
+   ],
+   "answer": 2,
+   "explanation": "F × L = W × h → F = 400 × 2 / 8 = 100 N."
+  },
+  {
+   "id": 38,
+   "outcome": "F.8.5.1 Eğik düzlem",
+   "image": "/soru-gorselleri/basit-makineler/q38.svg",
+   "imageAlt": "Eğik düzlem şeması",
+   "scenario": "Yapı market deposundaki görevli, 600 N ağırlığındaki sandığı 1,5 m yüksekliğe çıkarmak için 6 m uzunluğunda sürtünmesiz bir rampa kullanıyor. Sandık rampa boyunca sabit hızla itiliyor.",
+   "question": "Sandığı itmek için uygulanması gereken kuvvet kaç N'dur?",
+   "options": [
+    "2400 N",
+    "600 N",
+    "150 N",
+    "450 N"
+   ],
+   "answer": 2,
+   "explanation": "F × L = W × h → F = 600 × 1,5 / 6 = 150 N."
+  },
+  {
+   "id": 39,
+   "outcome": "F.8.5.1 Eğik düzlem",
+   "image": "/soru-gorselleri/basit-makineler/q39.svg",
+   "imageAlt": "Eğik düzlem şeması",
+   "scenario": "Bir müzedeki teknisyen, 300 N ağırlığındaki sandığı 1 m yüksekliğe çıkarmak için 5 m uzunluğunda sürtünmesiz bir rampa kullanıyor. Sandık rampa boyunca sabit hızla itiliyor.",
+   "question": "Sandığı itmek için uygulanması gereken kuvvet kaç N'dur?",
+   "options": [
+    "60 N",
+    "1500 N",
+    "300 N",
+    "240 N"
+   ],
+   "answer": 0,
+   "explanation": "F × L = W × h → F = 300 × 1 / 5 = 60 N."
+  },
+  {
+   "id": 40,
+   "outcome": "F.8.5.1 Eğik düzlem",
+   "image": "/soru-gorselleri/basit-makineler/q40.svg",
+   "imageAlt": "Eğik düzlem şeması",
+   "scenario": "Okul kantini çalışanı, 800 N ağırlığındaki sandığı 0,5 m yüksekliğe çıkarmak için 4 m uzunluğunda sürtünmesiz bir rampa kullanıyor. Sandık rampa boyunca sabit hızla itiliyor.",
+   "question": "Sandığı itmek için uygulanması gereken kuvvet kaç N'dur?",
+   "options": [
+    "400 N",
+    "800 N",
+    "700 N",
+    "100 N"
+   ],
+   "answer": 3,
+   "explanation": "F × L = W × h → F = 800 × 0,5 / 4 = 100 N."
+  },
+  {
+   "id": 41,
+   "outcome": "F.8.5.1 Eğik düzlem",
+   "image": "/soru-gorselleri/basit-makineler/q41.svg",
+   "imageAlt": "Eğik düzlem şeması",
+   "scenario": "Bir taşımacı, 500 N ağırlığındaki sandığı 3 m yüksekliğe çıkarmak için 10 m uzunluğunda sürtünmesiz bir rampa kullanıyor. Sandık rampa boyunca sabit hızla itiliyor.",
+   "question": "Sandığı itmek için uygulanması gereken kuvvet kaç N'dur?",
+   "options": [
+    "1666.67 N",
+    "150 N",
+    "350 N",
+    "500 N"
+   ],
+   "answer": 1,
+   "explanation": "F × L = W × h → F = 500 × 3 / 10 = 150 N."
+  },
+  {
+   "id": 42,
+   "outcome": "F.8.5.1 Eğik düzlem",
+   "image": "/soru-gorselleri/basit-makineler/q42.svg",
+   "imageAlt": "Eğik düzlem şeması",
+   "scenario": "Bir sahne ekibi, 240 N ağırlığındaki sandığı 1 m yüksekliğe çıkarmak için 6 m uzunluğunda sürtünmesiz bir rampa kullanıyor. Sandık rampa boyunca sabit hızla itiliyor.",
+   "question": "Sandığı itmek için uygulanması gereken kuvvet kaç N'dur?",
+   "options": [
+    "1440 N",
+    "200 N",
+    "240 N",
+    "40 N"
+   ],
+   "answer": 3,
+   "explanation": "F × L = W × h → F = 240 × 1 / 6 = 40 N."
+  },
+  {
+   "id": 43,
+   "outcome": "F.8.5.1 Eğik düzlem",
+   "image": "/soru-gorselleri/basit-makineler/q43.svg",
+   "imageAlt": "Eğik düzlem şeması",
+   "scenario": "Bir inşaat işçisi, 900 N'luk yükü 2 m yüksekliğindeki kamyona çıkarmak istiyor. Bir kişinin güvenle uygulayabileceği en büyük kuvvet 150 N'dur. Rampa sürtünmesizdir.",
+   "question": "Rampanın uzunluğu en az kaç m olmalıdır?",
+   "options": [
+    "18 m",
+    "6 m",
+    "4 m",
+    "12 m"
+   ],
+   "answer": 3,
+   "explanation": "F × L = W × h → L = 900 × 2 / 150 = 12 m. Yol uzadıkça gereken kuvvet azalır."
+  },
+  {
+   "id": 44,
+   "outcome": "F.8.5.1 Eğik düzlem",
+   "image": "/soru-gorselleri/basit-makineler/q44.svg",
+   "imageAlt": "Eğik düzlem şeması",
+   "scenario": "Bir bahçıvan, 350 N ağırlığındaki sandığı 2 m yüksekliğe çıkarmak için 10 m uzunluğunda sürtünmesiz bir rampa kullanıyor. Sandık rampa boyunca sabit hızla itiliyor.",
+   "question": "Sandığı itmek için uygulanması gereken kuvvet kaç N'dur?",
+   "options": [
+    "280 N",
+    "1750 N",
+    "350 N",
+    "70 N"
+   ],
+   "answer": 3,
+   "explanation": "F × L = W × h → F = 350 × 2 / 10 = 70 N."
+  },
+  {
+   "id": 45,
+   "outcome": "F.8.5.1 Eğik düzlem",
+   "image": "/soru-gorselleri/basit-makineler/q45.svg",
+   "imageAlt": "Eğik düzlem şeması",
+   "scenario": "Bir lojistik şirketi 720 N'luk yükü 6 m uzunluğundaki sürtünmesiz rampadan 1,2 m yüksekliğe çıkarıyor. Yük aynı yüksekliğe doğrudan dik olarak kaldırılsaydı yapılacak iş ile rampadaki işi karşılaştırmak istiyor.",
+   "question": "Rampada yükü çıkarmak için yapılan iş kaç J'dür?",
+   "options": [
+    "1728 J",
+    "864 J",
+    "4320 J",
+    "432 J"
+   ],
+   "answer": 1,
+   "explanation": "Basit makineler işten kazanç sağlamaz: iş = W × h = 720 × 1,2 = 864 J (kuvvet 144 N × yol 6 m ile aynı)."
+  },
+  {
+   "id": 46,
+   "outcome": "F.8.5.1 Eğik düzlem",
+   "image": "/soru-gorselleri/basit-makineler/q46.svg",
+   "imageAlt": "İki farklı uzunlukta rampa",
+   "scenario": "Aynı 1000 N'luk yükü 1 m yüksekliğe çıkarmak için iki rampa deneniyor: Rampa-1 16 m, Rampa-2 8 m uzunluğundadır. İkisi de sürtünmesizdir.",
+   "question": "Hangi sonuç doğrudur?",
+   "options": [
+    "Rampa-1'de kuvvet 62.5 N, Rampa-2'de 125 N olur",
+    "İki rampada da kuvvet 125 N olur",
+    "Rampa-1'de yapılan iş Rampa-2'dekinden fazladır",
+    "Rampa-1'de kuvvet 125 N, Rampa-2'de 62.5 N olur"
+   ],
+   "answer": 0,
+   "explanation": "Uzun rampada kuvvet küçülür, yol uzar; iş ise her iki rampada W × h kadar aynıdır."
+  },
+  {
+   "id": 47,
+   "outcome": "F.8.5.1 Çıkrık",
+   "image": "/soru-gorselleri/basit-makineler/q47.svg",
+   "imageAlt": "Çıkrık düzeneği",
+   "scenario": "Köydeki kuyunun çıkrığı, silindir yarıçapı 10 cm ve kol uzunluğu 60 cm olan bir çıkrıktır. Silindire sarılı ipin ucundaki 240 N'luk yük, kolun ucundan uygulanan kuvvetle sabit hızla yukarı çekiliyor. Sürtünme ihmal edilmektedir.",
+   "question": "Kolu çevirmek için uygulanması gereken kuvvet kaç N'dur?",
+   "options": [
+    "240 N",
+    "260 N",
+    "40 N",
+    "1440 N"
+   ],
+   "answer": 2,
+   "explanation": "Çıkrıkta F × R = P × r → F = 240 × 10 / 60 = 40 N."
+  },
+  {
+   "id": 48,
+   "outcome": "F.8.5.1 Çıkrık",
+   "image": "/soru-gorselleri/basit-makineler/q48.svg",
+   "imageAlt": "Çıkrık düzeneği",
+   "scenario": "Bir yat marinasındaki halat çıkrığı, silindir yarıçapı 6 cm ve kol uzunluğu 36 cm olan bir çıkrıktır. Silindire sarılı ipin ucundaki 180 N'luk yük, kolun ucundan uygulanan kuvvetle sabit hızla yukarı çekiliyor. Sürtünme ihmal edilmektedir.",
+   "question": "Kolu çevirmek için uygulanması gereken kuvvet kaç N'dur?",
+   "options": [
+    "30 N",
+    "1080 N",
+    "186 N",
+    "180 N"
+   ],
+   "answer": 0,
+   "explanation": "Çıkrıkta F × R = P × r → F = 180 × 6 / 36 = 30 N."
+  },
+  {
+   "id": 49,
+   "outcome": "F.8.5.1 Çıkrık",
+   "image": "/soru-gorselleri/basit-makineler/q49.svg",
+   "imageAlt": "Çıkrık düzeneği",
+   "scenario": "Çiftlikteki su kuyusu çıkrığı, silindir yarıçapı 15 cm ve kol uzunluğu 45 cm olan bir çıkrıktır. Silindire sarılı ipin ucundaki 120 N'luk yük, kolun ucundan uygulanan kuvvetle sabit hızla yukarı çekiliyor. Sürtünme ihmal edilmektedir.",
+   "question": "Kolu çevirmek için uygulanması gereken kuvvet kaç N'dur?",
+   "options": [
+    "120 N",
+    "360 N",
+    "125 N",
+    "40 N"
+   ],
+   "answer": 3,
+   "explanation": "Çıkrıkta F × R = P × r → F = 120 × 15 / 45 = 40 N."
+  },
+  {
+   "id": 50,
+   "outcome": "F.8.5.1 Çıkrık",
+   "image": "/soru-gorselleri/basit-makineler/q50.svg",
+   "imageAlt": "Çıkrık düzeneği",
+   "scenario": "Atölyedeki küçük vinç, silindir yarıçapı 4 cm ve kol uzunluğu 20 cm olan bir çıkrıktır. Silindire sarılı ipin ucundaki 500 N'luk yük, kolun ucundan uygulanan kuvvetle sabit hızla yukarı çekiliyor. Sürtünme ihmal edilmektedir.",
+   "question": "Kolu çevirmek için uygulanması gereken kuvvet kaç N'dur?",
+   "options": [
+    "100 N",
+    "420 N",
+    "2500 N",
+    "500 N"
+   ],
+   "answer": 0,
+   "explanation": "Çıkrıkta F × R = P × r → F = 500 × 4 / 20 = 100 N."
+  },
+  {
+   "id": 51,
+   "outcome": "F.8.5.1 Çıkrık",
+   "image": "/soru-gorselleri/basit-makineler/q51.svg",
+   "imageAlt": "Çıkrık düzeneği",
+   "scenario": "Müzedeki tarihi çıkrık, silindir yarıçapı 12 cm ve kol uzunluğu 36 cm olan bir çıkrıktır. Silindire sarılı ipin ucundaki 90 N'luk yük, kolun ucundan uygulanan kuvvetle sabit hızla yukarı çekiliyor. Sürtünme ihmal edilmektedir.",
+   "question": "Kolu çevirmek için uygulanması gereken kuvvet kaç N'dur?",
+   "options": [
+    "30 N",
+    "90 N",
+    "96 N",
+    "270 N"
+   ],
+   "answer": 0,
+   "explanation": "Çıkrıkta F × R = P × r → F = 90 × 12 / 36 = 30 N."
+  },
+  {
+   "id": 52,
+   "outcome": "F.8.5.1 Çıkrık",
+   "image": "/soru-gorselleri/basit-makineler/q52.svg",
+   "imageAlt": "Çıkrık düzeneği",
+   "scenario": "Okul bahçesi su kuyusunde 300 N'luk yük, kol ucuna uygulanan 50 N'luk kuvvetle dengeleniyor. Silindirin yarıçapı 5 cm'dir; sürtünme ihmal ediliyor.",
+   "question": "Kolun uzunluğu kaç cm'dir?",
+   "options": [
+    "30 cm",
+    "15 cm",
+    "10 cm",
+    "27.2727 cm"
+   ],
+   "answer": 0,
+   "explanation": "F × R = P × r → R = 300 × 5 / 50 = 30 cm."
+  },
+  {
+   "id": 53,
+   "outcome": "F.8.5.1 Çıkrık",
+   "image": "/soru-gorselleri/basit-makineler/q53.svg",
+   "imageAlt": "Çıkrık düzeneği",
+   "scenario": "Dağ evi çıkrığınde 160 N'luk yük, kol ucuna uygulanan 40 N'luk kuvvetle dengeleniyor. Silindirin yarıçapı 8 cm'dir; sürtünme ihmal ediliyor.",
+   "question": "Kolun uzunluğu kaç cm'dir?",
+   "options": [
+    "48 cm",
+    "16 cm",
+    "32 cm",
+    "26.6667 cm"
+   ],
+   "answer": 2,
+   "explanation": "F × R = P × r → R = 160 × 8 / 40 = 32 cm."
+  },
+  {
+   "id": 54,
+   "outcome": "F.8.5.1 Çıkrık",
+   "image": "/soru-gorselleri/basit-makineler/q54.svg",
+   "imageAlt": "Çıkrık düzeneği",
+   "scenario": "Köy meydanındaki bir çıkrığın silindir yarıçapı 10 cm, kolu ise 50 cm uzunluğundadır. Bir kişi kola 40 N kuvvet uygulayarak ipin ucundaki yükü dengede tutuyor. Sürtünme yoktur.",
+   "question": "İpin ucundaki yük kaç N'dur?",
+   "options": [
+    "40 N",
+    "80 N",
+    "200 N",
+    "2000 N"
+   ],
+   "answer": 2,
+   "explanation": "P × r = F × R → P = 40 × 50 / 10 = 200 N."
+  },
+  {
+   "id": 55,
+   "outcome": "F.8.5.1 Dişli çarklar",
+   "image": "/soru-gorselleri/basit-makineler/q55.svg",
+   "imageAlt": "Birbirine geçmiş iki dişli çark",
+   "scenario": "Bir saat tamircisi, birbirine geçmiş iki dişli çarktan oluşan düzenek kuruyor. Sürücü çarkın (A) 24 dişi, sürülen çarkın (B) 12 dişi vardır. A çarkı saat yönünde 10 tam tur döndürülüyor.",
+   "question": "B çarkı kaç tam tur döner?",
+   "options": [
+    "13.3333 tur",
+    "10 tur",
+    "5 tur",
+    "20 tur"
+   ],
+   "answer": 3,
+   "explanation": "Dönme sayıları diş sayısıyla ters orantılıdır: 24 × 10 = 12 × n → n = 20 tur."
+  },
+  {
+   "id": 56,
+   "outcome": "F.8.5.1 Dişli çarklar",
+   "image": "/soru-gorselleri/basit-makineler/q56.svg",
+   "imageAlt": "Birbirine geçmiş iki dişli çark",
+   "scenario": "Bisiklet atölyesindeki usta, birbirine geçmiş iki dişli çarktan oluşan düzenek kuruyor. Sürücü çarkın (A) 20 dişi, sürülen çarkın (B) 40 dişi vardır. A çarkı saat yönünde 8 tam tur döndürülüyor.",
+   "question": "B çarkının dönüş yönü ve devir sayısı hangisidir?",
+   "options": [
+    "Saat yönünde, 16 tur",
+    "Saat yönünde, 4 tur",
+    "Saat yönünün tersi, 16 tur",
+    "Saat yönünün tersi, 4 tur"
+   ],
+   "answer": 3,
+   "explanation": "Birbirine geçen çarklar zıt yönde döner. Devir sayısı: 20 × 8 = 40 × n → n = 4 tur."
+  },
+  {
+   "id": 57,
+   "outcome": "F.8.5.1 Dişli çarklar",
+   "image": "/soru-gorselleri/basit-makineler/q57.svg",
+   "imageAlt": "Birbirine geçmiş iki dişli çark",
+   "scenario": "Bir robotik kulübü, birbirine geçmiş iki dişli çarktan oluşan düzenek kuruyor. Sürücü çarkın (A) 30 dişi, sürülen çarkın (B) 10 dişi vardır. A çarkı saat yönünde 6 tam tur döndürülüyor.",
+   "question": "B çarkı kaç tam tur döner?",
+   "options": [
+    "6 tur",
+    "18 tur",
+    "9 tur",
+    "2 tur"
+   ],
+   "answer": 1,
+   "explanation": "Dönme sayıları diş sayısıyla ters orantılıdır: 30 × 6 = 10 × n → n = 18 tur."
+  },
+  {
+   "id": 58,
+   "outcome": "F.8.5.1 Dişli çarklar",
+   "image": "/soru-gorselleri/basit-makineler/q58.svg",
+   "imageAlt": "Birbirine geçmiş iki dişli çark",
+   "scenario": "Müzik kutusu üreten bir firma, birbirine geçmiş iki dişli çarktan oluşan düzenek kuruyor. Sürücü çarkın (A) 16 dişi, sürülen çarkın (B) 48 dişi vardır. A çarkı saat yönünde 9 tam tur döndürülüyor.",
+   "question": "B çarkının dönüş yönü ve devir sayısı hangisidir?",
+   "options": [
+    "Saat yönünde, 3 tur",
+    "Saat yönünün tersi, 27 tur",
+    "Saat yönünün tersi, 3 tur",
+    "Saat yönünde, 27 tur"
+   ],
+   "answer": 2,
+   "explanation": "Birbirine geçen çarklar zıt yönde döner. Devir sayısı: 16 × 9 = 48 × n → n = 3 tur."
+  },
+  {
+   "id": 59,
+   "outcome": "F.8.5.1 Dişli çarklar",
+   "image": "/soru-gorselleri/basit-makineler/q59.svg",
+   "imageAlt": "Birbirine geçmiş iki dişli çark",
+   "scenario": "Fen kulübü öğrencileri, birbirine geçmiş iki dişli çarktan oluşan düzenek kuruyor. Sürücü çarkın (A) 36 dişi, sürülen çarkın (B) 12 dişi vardır. A çarkı saat yönünde 5 tam tur döndürülüyor.",
+   "question": "B çarkı kaç tam tur döner?",
+   "options": [
+    "5 tur",
+    "7.5 tur",
+    "15 tur",
+    "1.66667 tur"
+   ],
+   "answer": 2,
+   "explanation": "Dönme sayıları diş sayısıyla ters orantılıdır: 36 × 5 = 12 × n → n = 15 tur."
+  },
+  {
+   "id": 60,
+   "outcome": "F.8.5.1 Dişli çarklar",
+   "image": "/soru-gorselleri/basit-makineler/q60.svg",
+   "imageAlt": "Birbirine geçmiş iki dişli çark",
+   "scenario": "Bir model araç yapımcısı, birbirine geçmiş iki dişli çarktan oluşan düzenek kuruyor. Sürücü çarkın (A) 18 dişi, sürülen çarkın (B) 27 dişi vardır. A çarkı saat yönünde 12 tam tur döndürülüyor.",
+   "question": "B çarkının dönüş yönü ve devir sayısı hangisidir?",
+   "options": [
+    "Saat yönünün tersi, 18 tur",
+    "Saat yönünün tersi, 8 tur",
+    "Saat yönünde, 8 tur",
+    "Saat yönünde, 18 tur"
+   ],
+   "answer": 1,
+   "explanation": "Birbirine geçen çarklar zıt yönde döner. Devir sayısı: 18 × 12 = 27 × n → n = 8 tur."
+  },
+  {
+   "id": 61,
+   "outcome": "F.8.5.1 Dişli çarklar",
+   "image": "/soru-gorselleri/basit-makineler/q61.svg",
+   "imageAlt": "Birbirine geçmiş iki dişli çark",
+   "scenario": "Bir otomat teknisyeni, birbirine geçmiş iki dişli çarktan oluşan düzenek kuruyor. Sürücü çarkın (A) 40 dişi, sürülen çarkın (B) 20 dişi vardır. A çarkı saat yönünde 7 tam tur döndürülüyor.",
+   "question": "B çarkı kaç tam tur döner?",
+   "options": [
+    "14 tur",
+    "7 tur",
+    "9.33333 tur",
+    "3.5 tur"
+   ],
+   "answer": 0,
+   "explanation": "Dönme sayıları diş sayısıyla ters orantılıdır: 40 × 7 = 20 × n → n = 14 tur."
+  },
+  {
+   "id": 62,
+   "outcome": "F.8.5.1 Dişli çarklar",
+   "image": "/soru-gorselleri/basit-makineler/q62.svg",
+   "imageAlt": "Birbirine geçmiş iki dişli çark",
+   "scenario": "Bir oyuncak tasarımcısı, birbirine geçmiş iki dişli çarktan oluşan düzenek kuruyor. Sürücü çarkın (A) 12 dişi, sürülen çarkın (B) 36 dişi vardır. A çarkı saat yönünde 15 tam tur döndürülüyor.",
+   "question": "B çarkının dönüş yönü ve devir sayısı hangisidir?",
+   "options": [
+    "Saat yönünün tersi, 5 tur",
+    "Saat yönünde, 5 tur",
+    "Saat yönünde, 45 tur",
+    "Saat yönünün tersi, 45 tur"
+   ],
+   "answer": 0,
+   "explanation": "Birbirine geçen çarklar zıt yönde döner. Devir sayısı: 12 × 15 = 36 × n → n = 5 tur."
+  },
+  {
+   "id": 63,
+   "outcome": "F.8.5.1 Dişli çarklar",
+   "image": "/soru-gorselleri/basit-makineler/q63.svg",
+   "imageAlt": "Birbirine geçmiş iki dişli çark",
+   "scenario": "Bir çıkrık ustası, birbirine geçmiş iki dişli çarktan oluşan düzenek kuruyor. Sürücü çarkın (A) 45 dişi, sürülen çarkın (B) 15 dişi vardır. A çarkı saat yönünde 4 tam tur döndürülüyor.",
+   "question": "B çarkı kaç tam tur döner?",
+   "options": [
+    "4 tur",
+    "12 tur",
+    "6 tur",
+    "1.33333 tur"
+   ],
+   "answer": 1,
+   "explanation": "Dönme sayıları diş sayısıyla ters orantılıdır: 45 × 4 = 15 × n → n = 12 tur."
+  },
+  {
+   "id": 64,
+   "outcome": "F.8.5.1 Dişli çarklar",
+   "image": "/soru-gorselleri/basit-makineler/q64.svg",
+   "imageAlt": "Birbirine geçmiş iki dişli çark",
+   "scenario": "Bir hobi atölyesi, birbirine geçmiş iki dişli çarktan oluşan düzenek kuruyor. Sürücü çarkın (A) 25 dişi, sürülen çarkın (B) 10 dişi vardır. A çarkı saat yönünde 8 tam tur döndürülüyor.",
+   "question": "B çarkının dönüş yönü ve devir sayısı hangisidir?",
+   "options": [
+    "Saat yönünde, 20 tur",
+    "Saat yönünün tersi, 20 tur",
+    "Saat yönünün tersi, 3.2 tur",
+    "Saat yönünde, 3.2 tur"
+   ],
+   "answer": 1,
+   "explanation": "Birbirine geçen çarklar zıt yönde döner. Devir sayısı: 25 × 8 = 10 × n → n = 20 tur."
+  },
+  {
+   "id": 65,
+   "outcome": "F.8.5.1 Vida",
+   "image": "/soru-gorselleri/basit-makineler/q65.svg",
+   "imageAlt": "Adımları farklı iki vida",
+   "scenario": "Marangozhanede aynı çapta ve aynı uzunlukta iki vida, aynı tür tahtaya sokulacaktır. Şekilde görüldüğü gibi Vida-1'in diş aralığı (adımı) daha küçüktür. Usta, tornavida ile aynı kuvveti uygulayarak vidaları döndürecektir.",
+   "question": "Hangi vidayı sokmak için daha az kuvvet gerekir?",
+   "options": [
+    "İkisinde de aynı",
+    "Vida-1",
+    "Vida-2",
+    "Vidalarda kuvvet kazancı yoktur"
+   ],
+   "answer": 1,
+   "explanation": "Adım küçüldükçe vida daha fazla dönerek ilerler, yol uzar ve kuvvetten kazanç artar."
+  },
+  {
+   "id": 66,
+   "outcome": "F.8.5.1 Vida",
+   "image": "/soru-gorselleri/basit-makineler/q66.svg",
+   "imageAlt": "Adımları farklı iki vida",
+   "scenario": "Marangozhanede aynı çapta ve aynı uzunlukta iki vida, aynı tür tahtaya sokulacaktır. Şekilde görüldüğü gibi Vida-1'in diş aralığı (adımı) daha küçüktür. Usta, tornavida ile aynı kuvveti uygulayarak vidaları döndürecektir.",
+   "question": "Hangi vida tahtaya aynı derinliğe daha fazla tur atarak girer?",
+   "options": [
+    "Vida-1",
+    "İkisinde de aynı",
+    "Vidalarda kuvvet kazancı yoktur",
+    "Vida-2"
+   ],
+   "answer": 0,
+   "explanation": "Adımı küçük olan vidanın dişleri sıktır; aynı derinliğe girmesi için daha çok dönmesi gerekir."
+  },
+  {
+   "id": 67,
+   "outcome": "F.8.5.1 Vida",
+   "image": "/soru-gorselleri/basit-makineler/q67.svg",
+   "imageAlt": "Adımları farklı iki vida",
+   "scenario": "Marangozhanede aynı çapta ve aynı uzunlukta iki vida, aynı tür tahtaya sokulacaktır. Şekilde görüldüğü gibi Vida-1'in diş aralığı (adımı) daha küçüktür. Usta, tornavida ile aynı kuvveti uygulayarak vidaları döndürecektir.",
+   "question": "Hangi vidada kuvvetten kazanç daha büyüktür?",
+   "options": [
+    "İkisinde de aynı",
+    "Vidalarda kuvvet kazancı yoktur",
+    "Vida-2",
+    "Vida-1"
+   ],
+   "answer": 3,
+   "explanation": "Vida bir eğik düzlemdir; adım küçükse eğim azdır ve kuvvetten kazanç büyüktür."
+  },
+  {
+   "id": 68,
+   "outcome": "F.8.5.1 Vida",
+   "image": "/soru-gorselleri/basit-makineler/q68.svg",
+   "imageAlt": "Adımları farklı iki vida",
+   "scenario": "Marangozhanede aynı çapta ve aynı uzunlukta iki vida, aynı tür tahtaya sokulacaktır. Şekilde görüldüğü gibi Vida-1'in diş aralığı (adımı) daha küçüktür. Usta, tornavida ile aynı kuvveti uygulayarak vidaları döndürecektir.",
+   "question": "Hangi vidayı sokmak daha uzun sürer?",
+   "options": [
+    "Vidalarda kuvvet kazancı yoktur",
+    "Vida-2",
+    "İkisinde de aynı",
+    "Vida-1"
+   ],
+   "answer": 3,
+   "explanation": "Adım küçükse tam tur başına ilerleme azdır; daha çok dönüş gerekir, ama kuvvet azalır."
+  },
+  {
+   "id": 69,
+   "outcome": "F.8.5.1 Kama",
+   "image": "/soru-gorselleri/basit-makineler/q69.svg",
+   "imageAlt": "İnce ve kalın kama",
+   "scenario": "Oduncu, kütüğü yarmak için kalın ve ince iki balta ağzı (kama) deniyor. İki balta da aynı kuvvetle vuruluyor. Kamalar iki eğik düzlemin birleşimidir.",
+   "question": "Hangi kamada kuvvetten kazanç daha fazladır?",
+   "options": [
+    "İkisinde de aynıdır",
+    "İnce olan (Kama-1)",
+    "Kamada kuvvet kazancı yoktur",
+    "Kalın olan (Kama-2)"
+   ],
+   "answer": 1,
+   "explanation": "Kama ne kadar ince (sivri) olursa eğimi o kadar azdır; kuvvetten kazanç artar, ama yol uzar. İş kazancı yoktur."
+  },
+  {
+   "id": 70,
+   "outcome": "F.8.5.1 Kama",
+   "image": "/soru-gorselleri/basit-makineler/q70.svg",
+   "imageAlt": "İnce ve kalın kama",
+   "scenario": "Bir marangoz aynı kuvvetle iki keski kullanıyor: biri ince, diğeri kalın uçlu. Tahtaya vurarak ilerletiyor. Kamalar iki eğik düzlemin birleşimidir.",
+   "question": "Hangi kamada kuvvetten kazanç daha fazladır?",
+   "options": [
+    "Kalın olan (Kama-2)",
+    "Kamada kuvvet kazancı yoktur",
+    "İnce olan (Kama-1)",
+    "İkisinde de aynıdır"
+   ],
+   "answer": 2,
+   "explanation": "Kama ne kadar ince (sivri) olursa eğimi o kadar azdır; kuvvetten kazanç artar, ama yol uzar. İş kazancı yoktur."
+  },
+  {
+   "id": 71,
+   "outcome": "F.8.5.1 Kama",
+   "image": "/soru-gorselleri/basit-makineler/q71.svg",
+   "imageAlt": "İnce ve kalın kama",
+   "scenario": "Bir mutfak ustası ince ve kalın iki bıçak kullanarak aynı sebzeyi kesiyor, aynı kuvveti uyguluyor. Kamalar iki eğik düzlemin birleşimidir.",
+   "question": "Hangi kamada kuvvetten kazanç daha fazladır?",
+   "options": [
+    "İkisinde de aynıdır",
+    "İnce olan (Kama-1)",
+    "Kamada kuvvet kazancı yoktur",
+    "Kalın olan (Kama-2)"
+   ],
+   "answer": 1,
+   "explanation": "Kama ne kadar ince (sivri) olursa eğimi o kadar azdır; kuvvetten kazanç artar, ama yol uzar. İş kazancı yoktur."
+  },
+  {
+   "id": 72,
+   "outcome": "F.8.5.1 Kama",
+   "image": "/soru-gorselleri/basit-makineler/q72.svg",
+   "imageAlt": "İnce ve kalın kama",
+   "scenario": "Bir taş ustası kayayı çatlatmak için ince ve kalın iki kama kullanıyor. Aynı çekiçle vuruyor. Kamalar iki eğik düzlemin birleşimidir.",
+   "question": "Hangi kamada kuvvetten kazanç daha fazladır?",
+   "options": [
+    "İnce olan (Kama-1)",
+    "Kalın olan (Kama-2)",
+    "Kamada kuvvet kazancı yoktur",
+    "İkisinde de aynıdır"
+   ],
+   "answer": 0,
+   "explanation": "Kama ne kadar ince (sivri) olursa eğimi o kadar azdır; kuvvetten kazanç artar, ama yol uzar. İş kazancı yoktur."
+  },
+  {
+   "id": 73,
+   "outcome": "F.8.5.1 Basit makinelerde iş",
+   "image": "/soru-gorselleri/basit-makineler/q73.svg",
+   "imageAlt": "Üç makinenin ölçüm tablosu",
+   "scenario": "Bir mühendislik öğrencisi üç farklı basit makineyle aynı iş için ölçüm yapıyor. Tabloda her makine için yük, yükün yükseldiği yol, uygulanan kuvvet ve kuvvetin yolu verilmiştir.",
+   "question": "Hangi makinede kuvvetten kazanç en fazladır?",
+   "options": [
+    "Hiçbirinde kuvvet kazancı yoktur",
+    "Makine-2",
+    "Makine-1",
+    "Makine-3"
+   ],
+   "answer": 1,
+   "explanation": "Kuvvet kazancı = yük/kuvvet: 2, 3, 1. En büyük Makine-2'dedir."
+  },
+  {
+   "id": 74,
+   "outcome": "F.8.5.1 Basit makinelerde iş",
+   "image": "/soru-gorselleri/basit-makineler/q74.svg",
+   "imageAlt": "Üç makinenin ölçüm tablosu",
+   "scenario": "Bir fen kulübü üç farklı düzenekle yük kaldırma deneyi yapıyor. Tabloda her makine için yük, yükün yükseldiği yol, uygulanan kuvvet ve kuvvetin yolu verilmiştir.",
+   "question": "Hangi makine yalnızca kuvvetin yönünü değiştirmiş olabilir?",
+   "options": [
+    "Makine-2",
+    "Hiçbiri",
+    "Makine-3",
+    "Makine-1"
+   ],
+   "answer": 2,
+   "explanation": "Yük = kuvvet ve yük yolu = kuvvet yolu ise sabit makara gibi yalnızca yön değişir."
+  },
+  {
+   "id": 75,
+   "outcome": "F.8.5.1 Basit makinelerde iş",
+   "image": "/soru-gorselleri/basit-makineler/q75.svg",
+   "imageAlt": "Üç makinenin ölçüm tablosu",
+   "scenario": "Bir teknik lise öğrencisi üç makinenin verimlerini kıyaslıyor. Tabloda her makine için yük, yükün yükseldiği yol, uygulanan kuvvet ve kuvvetin yolu verilmiştir.",
+   "question": "Tablodaki üç makine için aşağıdakilerden hangisi doğrudur?",
+   "options": [
+    "Kuvvetten kazanç sağlayan makinede iş de azalır",
+    "Yoldan kazanç sağlayan makinede iş artar",
+    "Üçünde de iş kuvvet × yol ile hesaplanır ve yük için yapılan iş, uygulanan kuvvetin işine eşittir",
+    "Kuvvet yolu kısaldıkça gereken iş azalır"
+   ],
+   "answer": 2,
+   "explanation": "İdeal basit makinelerde kuvvetten kazanç yoldan kayıpla dengelenir, iş değişmez."
+  },
+  {
+   "id": 76,
+   "outcome": "F.8.5.1 Basit makinelerde iş",
+   "image": "/soru-gorselleri/basit-makineler/q76.svg",
+   "imageAlt": "Üç makinenin ölçüm tablosu",
+   "scenario": "Fen laboratuvarında üç düzeneğin yük ve kuvvet verileri kaydediliyor. Tabloda her makine için yük, yükün yükseldiği yol, uygulanan kuvvet ve kuvvetin yolu verilmiştir.",
+   "question": "Hangi makinede kuvvet yolu yük yoluna göre en çok uzamıştır?",
+   "options": [
+    "Makine-1",
+    "Makine-2",
+    "Hiçbirinde uzama yok",
+    "Makine-3"
+   ],
+   "answer": 0,
+   "explanation": "Yol oranı = kuvvet yolu / yük yolu: 4, 2, 1. En büyük Makine-1'dedir."
+  },
+  {
+   "id": 77,
+   "outcome": "F.8.5.1 Basit makinelerde iş",
+   "image": "/soru-gorselleri/basit-makineler/q77.svg",
+   "imageAlt": "Üç makinenin ölçüm tablosu",
+   "scenario": "Bir atölye çalışanı üç aracın kuvvet ve yol değerlerini ölçüyor. Tabloda her makine için yük, yükün yükseldiği yol, uygulanan kuvvet ve kuvvetin yolu verilmiştir.",
+   "question": "Hangi makinede kuvvetten kazanç en fazladır?",
+   "options": [
+    "Hiçbirinde kuvvet kazancı yoktur",
+    "Makine-3",
+    "Makine-2",
+    "Makine-1"
+   ],
+   "answer": 3,
+   "explanation": "Kuvvet kazancı = yük/kuvvet: 4, 2, 1. En büyük Makine-1'dedir."
+  },
+  {
+   "id": 78,
+   "outcome": "F.8.5.1 Basit makinelerde iş",
+   "image": "/soru-gorselleri/basit-makineler/q78.svg",
+   "imageAlt": "Üç makinenin ölçüm tablosu",
+   "scenario": "Bir proje ekibi üç basit makineyi aynı yük için deniyor. Tabloda her makine için yük, yükün yükseldiği yol, uygulanan kuvvet ve kuvvetin yolu verilmiştir.",
+   "question": "Hangi makine yalnızca kuvvetin yönünü değiştirmiş olabilir?",
+   "options": [
+    "Makine-1",
+    "Makine-2",
+    "Hiçbiri",
+    "Makine-3"
+   ],
+   "answer": 3,
+   "explanation": "Yük = kuvvet ve yük yolu = kuvvet yolu ise sabit makara gibi yalnızca yön değişir."
+  },
+  {
+   "id": 79,
+   "outcome": "F.8.5.1 Basit makinelerde iş",
+   "image": "/soru-gorselleri/basit-makineler/q79.svg",
+   "imageAlt": "Üç makinenin ölçüm tablosu",
+   "scenario": "Bir ustabaşı üç aletin performansını karşılaştırıyor. Tabloda her makine için yük, yükün yükseldiği yol, uygulanan kuvvet ve kuvvetin yolu verilmiştir.",
+   "question": "Tablodaki üç makine için aşağıdakilerden hangisi doğrudur?",
+   "options": [
+    "Üçünde de iş kuvvet × yol ile hesaplanır ve yük için yapılan iş, uygulanan kuvvetin işine eşittir",
+    "Kuvvet yolu kısaldıkça gereken iş azalır",
+    "Kuvvetten kazanç sağlayan makinede iş de azalır",
+    "Yoldan kazanç sağlayan makinede iş artar"
+   ],
+   "answer": 0,
+   "explanation": "İdeal basit makinelerde kuvvetten kazanç yoldan kayıpla dengelenir, iş değişmez."
+  },
+  {
+   "id": 80,
+   "outcome": "F.8.5.1 Basit makinelerde iş",
+   "image": "/soru-gorselleri/basit-makineler/q80.svg",
+   "imageAlt": "Üç makinenin ölçüm tablosu",
+   "scenario": "Okul kulübü üç makaranın etkinliğini ölçüyor. Tabloda her makine için yük, yükün yükseldiği yol, uygulanan kuvvet ve kuvvetin yolu verilmiştir.",
+   "question": "Hangi makinede kuvvet yolu yük yoluna göre en çok uzamıştır?",
+   "options": [
+    "Makine-3",
+    "Makine-2",
+    "Hiçbirinde uzama yok",
+    "Makine-1"
+   ],
+   "answer": 3,
+   "explanation": "Yol oranı = kuvvet yolu / yük yolu: 4, 2, 1. En büyük Makine-1'dedir."
+  }
+ ]
+}

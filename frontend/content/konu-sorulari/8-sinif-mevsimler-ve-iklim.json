@@ -1,0 +1,1287 @@
+{
+ "unit": 1,
+ "title": "Mevsimler ve İklim",
+ "slug": "mevsimler-ve-iklim",
+ "questions": [
+  {
+   "id": 1,
+   "outcome": "F.8.1.1 Mevsimlerin oluşumu",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q01.svg",
+   "imageAlt": "Dünya'nın yörüngedeki dört konumu",
+   "scenario": "Şekilde Dünya'nın Güneş çevresindeki yörüngesinde dört farklı konumu gösterilmiştir. Dünya'nın dönme ekseni yörünge düzlemine göre 23,5° eğiktir ve bu eksen yönü yörünge boyunca değişmez. Dünya'nın eksenindeki 'K' harfi Kuzey Kutbu'nu göstermektedir. Konumlar I, II, III ve IV olarak numaralandırılmıştır.",
+   "question": "Kuzey Yarımküre'de yaz mevsiminin başladığı konum hangisidir?",
+   "options": [
+    "I. konum",
+    "IV. konum",
+    "III. konum",
+    "II. konum"
+   ],
+   "answer": 0,
+   "explanation": "Eksen eğikliği ve Güneş'e göre konumdan: Kuzey Kutbu Güneş'e dönükse (21 Haziran) KY'de yaz; ters ise (21 Aralık) KY'de kış; eksen Güneş'e yan durumdaysa (Mart/Eylül) gece ve gündüz eşittir. Doğru konum I. konumdur."
+  },
+  {
+   "id": 2,
+   "outcome": "F.8.1.1 Mevsimlerin oluşumu",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q02.svg",
+   "imageAlt": "Dünya'nın yörüngedeki dört konumu",
+   "scenario": "Şekilde Dünya'nın Güneş çevresindeki yörüngesinde dört farklı konumu gösterilmiştir. Dünya'nın dönme ekseni yörünge düzlemine göre 23,5° eğiktir ve bu eksen yönü yörünge boyunca değişmez. Dünya'nın eksenindeki 'K' harfi Kuzey Kutbu'nu göstermektedir. Konumlar I, II, III ve IV olarak numaralandırılmıştır.",
+   "question": "Kuzey Yarımküre'de kış mevsiminin başladığı konum hangisidir?",
+   "options": [
+    "I. konum",
+    "II. konum",
+    "III. konum",
+    "IV. konum"
+   ],
+   "answer": 0,
+   "explanation": "Eksen eğikliği ve Güneş'e göre konumdan: Kuzey Kutbu Güneş'e dönükse (21 Haziran) KY'de yaz; ters ise (21 Aralık) KY'de kış; eksen Güneş'e yan durumdaysa (Mart/Eylül) gece ve gündüz eşittir. Doğru konum I. konumdur."
+  },
+  {
+   "id": 3,
+   "outcome": "F.8.1.1 Mevsimlerin oluşumu",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q03.svg",
+   "imageAlt": "Dünya'nın yörüngedeki dört konumu",
+   "scenario": "Şekilde Dünya'nın Güneş çevresindeki yörüngesinde dört farklı konumu gösterilmiştir. Dünya'nın dönme ekseni yörünge düzlemine göre 23,5° eğiktir ve bu eksen yönü yörünge boyunca değişmez. Dünya'nın eksenindeki 'K' harfi Kuzey Kutbu'nu göstermektedir. Konumlar I, II, III ve IV olarak numaralandırılmıştır.",
+   "question": "Kuzey Yarımküre'de ilkbahar mevsiminin başladığı konum hangisidir?",
+   "options": [
+    "III. konum",
+    "I. konum",
+    "IV. konum",
+    "II. konum"
+   ],
+   "answer": 0,
+   "explanation": "Eksen eğikliği ve Güneş'e göre konumdan: Kuzey Kutbu Güneş'e dönükse (21 Haziran) KY'de yaz; ters ise (21 Aralık) KY'de kış; eksen Güneş'e yan durumdaysa (Mart/Eylül) gece ve gündüz eşittir. Doğru konum III. konumdur."
+  },
+  {
+   "id": 4,
+   "outcome": "F.8.1.1 Mevsimlerin oluşumu",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q04.svg",
+   "imageAlt": "Dünya'nın yörüngedeki dört konumu",
+   "scenario": "Şekilde Dünya'nın Güneş çevresindeki yörüngesinde dört farklı konumu gösterilmiştir. Dünya'nın dönme ekseni yörünge düzlemine göre 23,5° eğiktir ve bu eksen yönü yörünge boyunca değişmez. Dünya'nın eksenindeki 'K' harfi Kuzey Kutbu'nu göstermektedir. Konumlar I, II, III ve IV olarak numaralandırılmıştır.",
+   "question": "Kuzey Yarımküre'de sonbahar mevsiminin başladığı konum hangisidir?",
+   "options": [
+    "II. konum",
+    "IV. konum",
+    "I. konum",
+    "III. konum"
+   ],
+   "answer": 3,
+   "explanation": "Eksen eğikliği ve Güneş'e göre konumdan: Kuzey Kutbu Güneş'e dönükse (21 Haziran) KY'de yaz; ters ise (21 Aralık) KY'de kış; eksen Güneş'e yan durumdaysa (Mart/Eylül) gece ve gündüz eşittir. Doğru konum III. konumdur."
+  },
+  {
+   "id": 5,
+   "outcome": "F.8.1.1 Mevsimlerin oluşumu",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q05.svg",
+   "imageAlt": "Dünya'nın yörüngedeki dört konumu",
+   "scenario": "Şekilde Dünya'nın Güneş çevresindeki yörüngesinde dört farklı konumu gösterilmiştir. Dünya'nın dönme ekseni yörünge düzlemine göre 23,5° eğiktir ve bu eksen yönü yörünge boyunca değişmez. Dünya'nın eksenindeki 'K' harfi Kuzey Kutbu'nu göstermektedir. Konumlar I, II, III ve IV olarak numaralandırılmıştır.",
+   "question": "Güney Yarımküre'de yaz mevsiminin yaşandığı konum hangisidir?",
+   "options": [
+    "II. konum",
+    "IV. konum",
+    "I. konum",
+    "III. konum"
+   ],
+   "answer": 0,
+   "explanation": "Eksen eğikliği ve Güneş'e göre konumdan: Kuzey Kutbu Güneş'e dönükse (21 Haziran) KY'de yaz; ters ise (21 Aralık) KY'de kış; eksen Güneş'e yan durumdaysa (Mart/Eylül) gece ve gündüz eşittir. Doğru konum II. konumdur."
+  },
+  {
+   "id": 6,
+   "outcome": "F.8.1.1 Mevsimlerin oluşumu",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q06.svg",
+   "imageAlt": "Dünya'nın yörüngedeki dört konumu",
+   "scenario": "Şekilde Dünya'nın Güneş çevresindeki yörüngesinde dört farklı konumu gösterilmiştir. Dünya'nın dönme ekseni yörünge düzlemine göre 23,5° eğiktir ve bu eksen yönü yörünge boyunca değişmez. Dünya'nın eksenindeki 'K' harfi Kuzey Kutbu'nu göstermektedir. Konumlar I, II, III ve IV olarak numaralandırılmıştır.",
+   "question": "Güney Yarımküre'de kış mevsiminin yaşandığı konum hangisidir?",
+   "options": [
+    "IV. konum",
+    "II. konum",
+    "III. konum",
+    "I. konum"
+   ],
+   "answer": 3,
+   "explanation": "Eksen eğikliği ve Güneş'e göre konumdan: Kuzey Kutbu Güneş'e dönükse (21 Haziran) KY'de yaz; ters ise (21 Aralık) KY'de kış; eksen Güneş'e yan durumdaysa (Mart/Eylül) gece ve gündüz eşittir. Doğru konum I. konumdur."
+  },
+  {
+   "id": 7,
+   "outcome": "F.8.1.1 Mevsimlerin oluşumu",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q07.svg",
+   "imageAlt": "Dünya'nın yörüngedeki dört konumu",
+   "scenario": "Şekilde Dünya'nın Güneş çevresindeki yörüngesinde dört farklı konumu gösterilmiştir. Dünya'nın dönme ekseni yörünge düzlemine göre 23,5° eğiktir ve bu eksen yönü yörünge boyunca değişmez. Dünya'nın eksenindeki 'K' harfi Kuzey Kutbu'nu göstermektedir. Konumlar I, II, III ve IV olarak numaralandırılmıştır.",
+   "question": "Kuzey Yarımküre'de gündüzün en uzun, gecenin en kısa olduğu konum hangisidir?",
+   "options": [
+    "IV. konum",
+    "II. konum",
+    "III. konum",
+    "I. konum"
+   ],
+   "answer": 2,
+   "explanation": "Eksen eğikliği ve Güneş'e göre konumdan: Kuzey Kutbu Güneş'e dönükse (21 Haziran) KY'de yaz; ters ise (21 Aralık) KY'de kış; eksen Güneş'e yan durumdaysa (Mart/Eylül) gece ve gündüz eşittir. Doğru konum III. konumdur."
+  },
+  {
+   "id": 8,
+   "outcome": "F.8.1.1 Mevsimlerin oluşumu",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q08.svg",
+   "imageAlt": "Dünya'nın yörüngedeki dört konumu",
+   "scenario": "Şekilde Dünya'nın Güneş çevresindeki yörüngesinde dört farklı konumu gösterilmiştir. Dünya'nın dönme ekseni yörünge düzlemine göre 23,5° eğiktir ve bu eksen yönü yörünge boyunca değişmez. Dünya'nın eksenindeki 'K' harfi Kuzey Kutbu'nu göstermektedir. Konumlar I, II, III ve IV olarak numaralandırılmıştır.",
+   "question": "Güneş ışınlarının Yengeç Dönencesi'ne dik geldiği konum hangisidir?",
+   "options": [
+    "IV. konum",
+    "I. konum",
+    "II. konum",
+    "III. konum"
+   ],
+   "answer": 0,
+   "explanation": "Eksen eğikliği ve Güneş'e göre konumdan: Kuzey Kutbu Güneş'e dönükse (21 Haziran) KY'de yaz; ters ise (21 Aralık) KY'de kış; eksen Güneş'e yan durumdaysa (Mart/Eylül) gece ve gündüz eşittir. Doğru konum IV. konumdur."
+  },
+  {
+   "id": 9,
+   "outcome": "F.8.1.1 Mevsimlerin oluşumu",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q09.svg",
+   "imageAlt": "Dünya'nın yörüngedeki dört konumu",
+   "scenario": "Şekilde Dünya'nın Güneş çevresindeki yörüngesinde dört farklı konumu gösterilmiştir. Dünya'nın dönme ekseni yörünge düzlemine göre 23,5° eğiktir ve bu eksen yönü yörünge boyunca değişmez. Dünya'nın eksenindeki 'K' harfi Kuzey Kutbu'nu göstermektedir. Konumlar I, II, III ve IV olarak numaralandırılmıştır.",
+   "question": "Güneş ışınlarının Oğlak Dönencesi'ne dik geldiği konum hangisidir?",
+   "options": [
+    "III. konum",
+    "II. konum",
+    "I. konum",
+    "IV. konum"
+   ],
+   "answer": 3,
+   "explanation": "Eksen eğikliği ve Güneş'e göre konumdan: Kuzey Kutbu Güneş'e dönükse (21 Haziran) KY'de yaz; ters ise (21 Aralık) KY'de kış; eksen Güneş'e yan durumdaysa (Mart/Eylül) gece ve gündüz eşittir. Doğru konum IV. konumdur."
+  },
+  {
+   "id": 10,
+   "outcome": "F.8.1.1 Mevsimlerin oluşumu",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q10.svg",
+   "imageAlt": "Dünya'nın yörüngedeki dört konumu",
+   "scenario": "Şekilde Dünya'nın Güneş çevresindeki yörüngesinde dört farklı konumu gösterilmiştir. Dünya'nın dönme ekseni yörünge düzlemine göre 23,5° eğiktir ve bu eksen yönü yörünge boyunca değişmez. Dünya'nın eksenindeki 'K' harfi Kuzey Kutbu'nu göstermektedir. Konumlar I, II, III ve IV olarak numaralandırılmıştır.",
+   "question": "Kuzey Yarımküre'de en kısa gündüzün yaşandığı konum hangisidir?",
+   "options": [
+    "I. konum",
+    "II. konum",
+    "III. konum",
+    "IV. konum"
+   ],
+   "answer": 1,
+   "explanation": "Eksen eğikliği ve Güneş'e göre konumdan: Kuzey Kutbu Güneş'e dönükse (21 Haziran) KY'de yaz; ters ise (21 Aralık) KY'de kış; eksen Güneş'e yan durumdaysa (Mart/Eylül) gece ve gündüz eşittir. Doğru konum II. konumdur."
+  },
+  {
+   "id": 11,
+   "outcome": "F.8.1.2 Güneş ışınlarının geliş açısı",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q11.svg",
+   "imageAlt": "Çubuk ve gölge",
+   "scenario": "Bir öğrenci, 40° kuzey enleminde bulunan bir şehirde yerdeki dikey bir çubuğun gölgesini 21 Haziran günü öğle vakti ölçüyor. Öğle vakti Güneş ışınlarının yatayla yaptığı açı, o günkü Güneş'in dik geldiği enlem (21 Haziran'da 23,5°K, 21 Aralık'ta 23,5°G, 21 Mart'ta 0°) ile şehrin enlemi arasındaki farka göre belirlenir.",
+   "question": "21 Haziran öğle vakti Güneş ışınları yatay zeminle kaç derecelik açı yapar?",
+   "options": [
+    "40°",
+    "73,5°",
+    "63,5°",
+    "16,5°"
+   ],
+   "answer": 1,
+   "explanation": "Öğle yüksekliği = 90° − |şehir enlemi − Güneş'in dik geldiği enlem|. 21 Haziran için 73,5°."
+  },
+  {
+   "id": 12,
+   "outcome": "F.8.1.2 Güneş ışınlarının geliş açısı",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q12.svg",
+   "imageAlt": "Çubuk ve gölge",
+   "scenario": "Bir öğrenci, 40° kuzey enleminde bulunan bir şehirde yerdeki dikey bir çubuğun gölgesini 21 Aralık günü öğle vakti ölçüyor. Öğle vakti Güneş ışınlarının yatayla yaptığı açı, o günkü Güneş'in dik geldiği enlem (21 Haziran'da 23,5°K, 21 Aralık'ta 23,5°G, 21 Mart'ta 0°) ile şehrin enlemi arasındaki farka göre belirlenir.",
+   "question": "21 Aralık öğle vakti Güneş ışınları yatay zeminle kaç derecelik açı yapar?",
+   "options": [
+    "63,5°",
+    "16,5°",
+    "26,5°",
+    "40°"
+   ],
+   "answer": 2,
+   "explanation": "Öğle yüksekliği = 90° − |şehir enlemi − Güneş'in dik geldiği enlem|. 21 Aralık için 26,5°."
+  },
+  {
+   "id": 13,
+   "outcome": "F.8.1.2 Güneş ışınlarının geliş açısı",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q13.svg",
+   "imageAlt": "Çubuk ve gölge",
+   "scenario": "Bir öğrenci, 40° kuzey enleminde bulunan bir şehirde yerdeki dikey bir çubuğun gölgesini 21 Mart günü öğle vakti ölçüyor. Öğle vakti Güneş ışınlarının yatayla yaptığı açı, o günkü Güneş'in dik geldiği enlem (21 Haziran'da 23,5°K, 21 Aralık'ta 23,5°G, 21 Mart'ta 0°) ile şehrin enlemi arasındaki farka göre belirlenir.",
+   "question": "21 Mart öğle vakti Güneş ışınları yatay zeminle kaç derecelik açı yapar?",
+   "options": [
+    "16,5°",
+    "50°",
+    "40°",
+    "63,5°"
+   ],
+   "answer": 1,
+   "explanation": "Öğle yüksekliği = 90° − |şehir enlemi − Güneş'in dik geldiği enlem|. 21 Mart için 50°."
+  },
+  {
+   "id": 14,
+   "outcome": "F.8.1.2 Güneş ışınlarının geliş açısı",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q14.svg",
+   "imageAlt": "Çubuk ve gölge",
+   "scenario": "Bir öğrenci, 36° kuzey enleminde bulunan bir şehirde yerdeki dikey bir çubuğun gölgesini 21 Haziran günü öğle vakti ölçüyor. Öğle vakti Güneş ışınlarının yatayla yaptığı açı, o günkü Güneş'in dik geldiği enlem (21 Haziran'da 23,5°K, 21 Aralık'ta 23,5°G, 21 Mart'ta 0°) ile şehrin enlemi arasındaki farka göre belirlenir.",
+   "question": "21 Haziran öğle vakti Güneş ışınları yatay zeminle kaç derecelik açı yapar?",
+   "options": [
+    "36°",
+    "77,5°",
+    "12,5°",
+    "59,5°"
+   ],
+   "answer": 1,
+   "explanation": "Öğle yüksekliği = 90° − |şehir enlemi − Güneş'in dik geldiği enlem|. 21 Haziran için 77,5°."
+  },
+  {
+   "id": 15,
+   "outcome": "F.8.1.2 Güneş ışınlarının geliş açısı",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q15.svg",
+   "imageAlt": "Çubuk ve gölge",
+   "scenario": "Bir öğrenci, 36° kuzey enleminde bulunan bir şehirde yerdeki dikey bir çubuğun gölgesini 21 Aralık günü öğle vakti ölçüyor. Öğle vakti Güneş ışınlarının yatayla yaptığı açı, o günkü Güneş'in dik geldiği enlem (21 Haziran'da 23,5°K, 21 Aralık'ta 23,5°G, 21 Mart'ta 0°) ile şehrin enlemi arasındaki farka göre belirlenir.",
+   "question": "21 Aralık öğle vakti Güneş ışınları yatay zeminle kaç derecelik açı yapar?",
+   "options": [
+    "12,5°",
+    "30,5°",
+    "36°",
+    "59,5°"
+   ],
+   "answer": 1,
+   "explanation": "Öğle yüksekliği = 90° − |şehir enlemi − Güneş'in dik geldiği enlem|. 21 Aralık için 30,5°."
+  },
+  {
+   "id": 16,
+   "outcome": "F.8.1.2 Güneş ışınlarının geliş açısı",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q16.svg",
+   "imageAlt": "Çubuk ve gölge",
+   "scenario": "Bir öğrenci, 45° kuzey enleminde bulunan bir şehirde yerdeki dikey bir çubuğun gölgesini 21 Haziran günü öğle vakti ölçüyor. Öğle vakti Güneş ışınlarının yatayla yaptığı açı, o günkü Güneş'in dik geldiği enlem (21 Haziran'da 23,5°K, 21 Aralık'ta 23,5°G, 21 Mart'ta 0°) ile şehrin enlemi arasındaki farka göre belirlenir.",
+   "question": "21 Haziran öğle vakti Güneş ışınları yatay zeminle kaç derecelik açı yapar?",
+   "options": [
+    "45°",
+    "21,5°",
+    "68,5°",
+    "102,75°"
+   ],
+   "answer": 2,
+   "explanation": "Öğle yüksekliği = 90° − |şehir enlemi − Güneş'in dik geldiği enlem|. 21 Haziran için 68,5°."
+  },
+  {
+   "id": 17,
+   "outcome": "F.8.1.2 Güneş ışınlarının geliş açısı",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q17.svg",
+   "imageAlt": "Çubuk ve gölge",
+   "scenario": "Bir öğrenci, 45° kuzey enleminde bulunan bir şehirde yerdeki dikey bir çubuğun gölgesini 21 Aralık günü öğle vakti ölçüyor. Öğle vakti Güneş ışınlarının yatayla yaptığı açı, o günkü Güneş'in dik geldiği enlem (21 Haziran'da 23,5°K, 21 Aralık'ta 23,5°G, 21 Mart'ta 0°) ile şehrin enlemi arasındaki farka göre belirlenir.",
+   "question": "21 Aralık öğle vakti Güneş ışınları yatay zeminle kaç derecelik açı yapar?",
+   "options": [
+    "32,25°",
+    "68,5°",
+    "21,5°",
+    "45°"
+   ],
+   "answer": 2,
+   "explanation": "Öğle yüksekliği = 90° − |şehir enlemi − Güneş'in dik geldiği enlem|. 21 Aralık için 21,5°."
+  },
+  {
+   "id": 18,
+   "outcome": "F.8.1.2 Güneş ışınlarının geliş açısı",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q18.svg",
+   "imageAlt": "Çubuk ve gölge",
+   "scenario": "Bir öğrenci, 30° kuzey enleminde bulunan bir şehirde yerdeki dikey bir çubuğun gölgesini 21 Haziran günü öğle vakti ölçüyor. Öğle vakti Güneş ışınlarının yatayla yaptığı açı, o günkü Güneş'in dik geldiği enlem (21 Haziran'da 23,5°K, 21 Aralık'ta 23,5°G, 21 Mart'ta 0°) ile şehrin enlemi arasındaki farka göre belirlenir.",
+   "question": "21 Haziran öğle vakti Güneş ışınları yatay zeminle kaç derecelik açı yapar?",
+   "options": [
+    "6,5°",
+    "53,5°",
+    "30°",
+    "83,5°"
+   ],
+   "answer": 3,
+   "explanation": "Öğle yüksekliği = 90° − |şehir enlemi − Güneş'in dik geldiği enlem|. 21 Haziran için 83,5°."
+  },
+  {
+   "id": 19,
+   "outcome": "F.8.1.2 Gölge boyu",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q19.svg",
+   "imageAlt": "Üç çubuk ve gölgeleri",
+   "scenario": "Aynı boyda üç çubuğun, aynı şehirde 21 Haziran, 21 Mart ve 21 Aralık günlerinde öğle vakti oluşan gölgeleri şekilde gösterilmiştir. Hangi çubuğun hangi günde ölçüldüğü bilinmemektedir.",
+   "question": "21 Aralık günü öğle vakti ölçülen çubuk hangisidir?",
+   "options": [
+    "C çubuğu",
+    "A çubuğu",
+    "Hepsi aynı günde ölçülmüştür",
+    "B çubuğu"
+   ],
+   "answer": 1,
+   "explanation": "Kuzey Yarımküre'de 21 Aralık'ta Güneş ışınları en küçük açıyla gelir; gölge en uzundur."
+  },
+  {
+   "id": 20,
+   "outcome": "F.8.1.2 Gölge boyu",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q20.svg",
+   "imageAlt": "Üç çubuk ve gölgeleri",
+   "scenario": "Bu kez çubukların sırası değiştirilmiştir. Aynı boyda üç çubuğun, aynı şehirde 21 Haziran, 21 Mart ve 21 Aralık günlerinde öğle vakti oluşan gölgeleri şekilde gösterilmiştir. Hangi çubuğun hangi günde ölçüldüğü bilinmemektedir.",
+   "question": "21 Aralık günü öğle vakti ölçülen çubuk hangisidir?",
+   "options": [
+    "C çubuğu",
+    "B çubuğu",
+    "A çubuğu",
+    "Hepsi aynı günde ölçülmüştür"
+   ],
+   "answer": 0,
+   "explanation": "Kuzey Yarımküre'de 21 Aralık'ta Güneş ışınları en küçük açıyla gelir; gölge en uzundur."
+  },
+  {
+   "id": 21,
+   "outcome": "F.8.1.3 Gece-gündüz süreleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q21.svg",
+   "imageAlt": "İki şehrin gündüz süreleri grafiği",
+   "scenario": "Bir fen kulübü, iki farklı şehirde bir yıl boyunca her ay ortalama gündüz süresini (saat) ölçmüştür. Elde edilen veriler çizgi grafiğinde gösterilmiştir. Ölçümler her ayın 21'inde yapılmıştır.",
+   "question": "Hangi şehir Güney Yarımküre'dedir?",
+   "options": [
+    "Şehir B",
+    "İkisi de",
+    "Şehir A",
+    "Hiçbiri"
+   ],
+   "answer": 0,
+   "explanation": "Güney Yarımküre'de gündüz en uzun Aralık'ta olur; B'nin eğrisi bunu gösterir."
+  },
+  {
+   "id": 22,
+   "outcome": "F.8.1.3 Gece-gündüz süreleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q22.svg",
+   "imageAlt": "İki şehrin gündüz süreleri grafiği",
+   "scenario": "Bir fen kulübü, iki farklı şehirde bir yıl boyunca her ay ortalama gündüz süresini (saat) ölçmüştür. Elde edilen veriler çizgi grafiğinde gösterilmiştir. Ölçümler her ayın 21'inde yapılmıştır.",
+   "question": "Hangi şehir ekvatora en yakındır?",
+   "options": [
+    "Bilinemez",
+    "İkisi de aynı enlemdedir",
+    "Şehir B",
+    "Şehir A"
+   ],
+   "answer": 2,
+   "explanation": "Gün uzunluğu yıl boyu hemen hemen sabitse şehir ekvatordadır."
+  },
+  {
+   "id": 23,
+   "outcome": "F.8.1.3 Gece-gündüz süreleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q23.svg",
+   "imageAlt": "İki şehrin gündüz süreleri grafiği",
+   "scenario": "Bir fen kulübü, iki farklı şehirde bir yıl boyunca her ay ortalama gündüz süresini (saat) ölçmüştür. Elde edilen veriler çizgi grafiğinde gösterilmiştir. Ölçümler her ayın 21'inde yapılmıştır.",
+   "question": "Aralık ayında hangi şehirde gündüz daha uzundur?",
+   "options": [
+    "Şehir B",
+    "Bilinemez",
+    "İkisinde eşittir",
+    "Şehir A"
+   ],
+   "answer": 0,
+   "explanation": "Aralık'ta Güney Yarımküre'de yaz yaşanır; gündüz daha uzundur."
+  },
+  {
+   "id": 24,
+   "outcome": "F.8.1.3 Gece-gündüz süreleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q24.svg",
+   "imageAlt": "İki şehrin gündüz süreleri grafiği",
+   "scenario": "Bir fen kulübü, iki farklı şehirde bir yıl boyunca her ay ortalama gündüz süresini (saat) ölçmüştür. Elde edilen veriler çizgi grafiğinde gösterilmiştir. Ölçümler her ayın 21'inde yapılmıştır.",
+   "question": "A şehrinde Haziran ile Aralık gündüz süreleri farkı kaç saattir?",
+   "options": [
+    "5,4 saat",
+    "2,8 saat",
+    "14,9 saat",
+    "3,4 saat"
+   ],
+   "answer": 0,
+   "explanation": "14,9 − 9,5 = 5,4 saat."
+  },
+  {
+   "id": 25,
+   "outcome": "F.8.1.3 Gece-gündüz süreleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q25.svg",
+   "imageAlt": "İki şehrin gündüz süreleri grafiği",
+   "scenario": "Bir fen kulübü, iki farklı şehirde bir yıl boyunca her ay ortalama gündüz süresini (saat) ölçmüştür. Elde edilen veriler çizgi grafiğinde gösterilmiştir. Ölçümler her ayın 21'inde yapılmıştır.",
+   "question": "Hangi ay(lar)da A şehrinde gece ile gündüz yaklaşık eşittir?",
+   "options": [
+    "Nisan ve Kasım",
+    "Mart ve Eylül",
+    "Haziran ve Aralık",
+    "Ocak ve Temmuz"
+   ],
+   "answer": 1,
+   "explanation": "Gündüz süresi 12 saate yakın olduğu aylar Mart ve Eylül'dür."
+  },
+  {
+   "id": 26,
+   "outcome": "F.8.1.3 Gece-gündüz süreleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q26.svg",
+   "imageAlt": "İki şehrin gündüz süreleri grafiği",
+   "scenario": "Bir fen kulübü, iki farklı şehirde bir yıl boyunca her ay ortalama gündüz süresini (saat) ölçmüştür. Elde edilen veriler çizgi grafiğinde gösterilmiştir. Ölçümler her ayın 21'inde yapılmıştır.",
+   "question": "A şehrinde Haziran ayında gecenin süresi yaklaşık kaç saattir?",
+   "options": [
+    "9,1 saat",
+    "14,9 saat",
+    "5,4 saat",
+    "12 saat"
+   ],
+   "answer": 0,
+   "explanation": "24 − 14,9 = 9,1 saat."
+  },
+  {
+   "id": 27,
+   "outcome": "F.8.1.3 Gece-gündüz süreleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q27.svg",
+   "imageAlt": "İki şehrin gündüz süreleri grafiği",
+   "scenario": "Bir fen kulübü, iki farklı şehirde bir yıl boyunca her ay ortalama gündüz süresini (saat) ölçmüştür. Elde edilen veriler çizgi grafiğinde gösterilmiştir. Ölçümler her ayın 21'inde yapılmıştır.",
+   "question": "Bu grafiğe göre hangi şehir kutba daha yakındır?",
+   "options": [
+    "İkisi de aynı",
+    "Şehir B",
+    "Bilinemez",
+    "Şehir A"
+   ],
+   "answer": 3,
+   "explanation": "Gün uzunluğu yıl içinde çok değişen (0–24 saat) şehir kutba yakındır."
+  },
+  {
+   "id": 28,
+   "outcome": "F.8.1.3 Gece-gündüz süreleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q28.svg",
+   "imageAlt": "İki şehrin gündüz süreleri grafiği",
+   "scenario": "Bir fen kulübü, iki farklı şehirde bir yıl boyunca her ay ortalama gündüz süresini (saat) ölçmüştür. Elde edilen veriler çizgi grafiğinde gösterilmiştir. Ölçümler her ayın 21'inde yapılmıştır.",
+   "question": "Haziran ayında Şehir A'da gündüz kaç saattir ve bu ne anlama gelir?",
+   "options": [
+    "0 saat; kutup gecesi",
+    "12 saat; eşit gece",
+    "24 saat; gece yaşanmaz (kutup gündüzü)",
+    "18 saat; normal"
+   ],
+   "answer": 2,
+   "explanation": "Grafikte Haziran'da 24 saat görülür; Güneş batmaz."
+  },
+  {
+   "id": 29,
+   "outcome": "F.8.1.3 Gece-gündüz süreleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q29.svg",
+   "imageAlt": "İki şehrin gündüz süreleri grafiği",
+   "scenario": "Bir fen kulübü, iki farklı şehirde bir yıl boyunca her ay ortalama gündüz süresini (saat) ölçmüştür. Elde edilen veriler çizgi grafiğinde gösterilmiştir. Ölçümler her ayın 21'inde yapılmıştır.",
+   "question": "Şehir A'da gündüz süresinin en kısa olduğu ay hangisidir?",
+   "options": [
+    "Eylül",
+    "Aralık",
+    "Haziran",
+    "Mart"
+   ],
+   "answer": 1,
+   "explanation": "Kuzey Yarımküre'de gündüz en kısa Aralık'ta."
+  },
+  {
+   "id": 30,
+   "outcome": "F.8.1.3 Gece-gündüz süreleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q30.svg",
+   "imageAlt": "İki şehrin gündüz süreleri grafiği",
+   "scenario": "Bir fen kulübü, iki farklı şehirde bir yıl boyunca her ay ortalama gündüz süresini (saat) ölçmüştür. Elde edilen veriler çizgi grafiğinde gösterilmiştir. Ölçümler her ayın 21'inde yapılmıştır.",
+   "question": "Hangi şehirde gündüz süresinin yıl içindeki değişimi en az gözlenir?",
+   "options": [
+    "İkisinde de aynı",
+    "Bilinemez",
+    "Şehir A",
+    "Şehir B"
+   ],
+   "answer": 3,
+   "explanation": "Ekvatora yakın yerlerde gündüz süresi yıl boyunca sabittir."
+  },
+  {
+   "id": 31,
+   "outcome": "F.8.1.4 Dönenceler ve kutup daireleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q31.svg",
+   "imageAlt": "Paralellerin gösterildiği dünya",
+   "scenario": "Aşağıdaki şekilde Dünya üzerindeki önemli paralel daireleri (Kutup daireleri, dönenceler, ekvator) gösterilmiştir. Şekilde Güneş ışınları, 21 Haziran günü Dünya'ya dik açıyla gelen noktadan temsil edilmektedir.",
+   "question": "21 Haziran günü Güneş ışınları hangi paralele dik gelir?",
+   "options": [
+    "Yengeç Dönencesi",
+    "Ekvator",
+    "Kuzey Kutup Dairesi",
+    "Oğlak Dönencesi"
+   ],
+   "answer": 0,
+   "explanation": "21 Haziran tarihinde Güneş ışınları Yengeç Dönencesi'ne dik gelir (23.5° enlem)."
+  },
+  {
+   "id": 32,
+   "outcome": "F.8.1.4 Dönenceler ve kutup daireleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q32.svg",
+   "imageAlt": "Paralellerin gösterildiği dünya",
+   "scenario": "Aşağıdaki şekilde Dünya üzerindeki önemli paralel daireleri (Kutup daireleri, dönenceler, ekvator) gösterilmiştir. Şekilde Güneş ışınları, 21 Aralık günü Dünya'ya dik açıyla gelen noktadan temsil edilmektedir.",
+   "question": "21 Aralık günü Güneş ışınları hangi paralele dik gelir?",
+   "options": [
+    "Yengeç Dönencesi",
+    "Güney Kutup Dairesi",
+    "Ekvator",
+    "Oğlak Dönencesi"
+   ],
+   "answer": 3,
+   "explanation": "21 Aralık tarihinde Güneş ışınları Oğlak Dönencesi'ne dik gelir (-23.5° enlem)."
+  },
+  {
+   "id": 33,
+   "outcome": "F.8.1.4 Dönenceler ve kutup daireleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q33.svg",
+   "imageAlt": "Paralellerin gösterildiği dünya",
+   "scenario": "Aşağıdaki şekilde Dünya üzerindeki önemli paralel daireleri (Kutup daireleri, dönenceler, ekvator) gösterilmiştir. Şekilde Güneş ışınları, 21 Mart günü Dünya'ya dik açıyla gelen noktadan temsil edilmektedir.",
+   "question": "21 Mart günü Güneş ışınları hangi paralele dik gelir?",
+   "options": [
+    "Kuzey Kutup Dairesi",
+    "Ekvator",
+    "Oğlak Dönencesi",
+    "Yengeç Dönencesi"
+   ],
+   "answer": 1,
+   "explanation": "21 Mart tarihinde Güneş ışınları Ekvator'ne dik gelir (0° enlem)."
+  },
+  {
+   "id": 34,
+   "outcome": "F.8.1.4 Dönenceler ve kutup daireleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q34.svg",
+   "imageAlt": "Paralellerin gösterildiği dünya",
+   "scenario": "Aşağıdaki şekilde Dünya üzerindeki önemli paralel daireleri (Kutup daireleri, dönenceler, ekvator) gösterilmiştir. Şekilde Güneş ışınları, 23 Eylül günü Dünya'ya dik açıyla gelen noktadan temsil edilmektedir.",
+   "question": "23 Eylül günü Güneş ışınları hangi paralele dik gelir?",
+   "options": [
+    "Güney Kutup Dairesi",
+    "Yengeç Dönencesi",
+    "Ekvator",
+    "Oğlak Dönencesi"
+   ],
+   "answer": 2,
+   "explanation": "23 Eylül tarihinde Güneş ışınları Ekvator'ne dik gelir (0° enlem)."
+  },
+  {
+   "id": 35,
+   "outcome": "F.8.1.4 Dönenceler ve kutup daireleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q35.svg",
+   "imageAlt": "Paraleller şeması",
+   "scenario": "Türkiye 36°–42° kuzey enlemleri arasındadır. Türkiye'de Güneş ışınları yıl boyunca hiçbir zaman dik gelmez. Şekilde dünya üzerindeki paraleller ve dönenceler gösterilmiştir.",
+   "question": "Güneş ışınlarının Türkiye'ye dik gelmemesinin nedeni nedir?",
+   "options": [
+    "Türkiye'nin yükseltisi nedeniyle",
+    "Türkiye Yengeç Dönencesi'nin kuzeyinde kaldığı için",
+    "Dünya'nın Güneş'e uzaklığı nedeniyle",
+    "Dünya'nın yuvarlak olması nedeniyle"
+   ],
+   "answer": 1,
+   "explanation": "Dik ışınlar yalnızca iki dönence arasında gelir; Türkiye bu aralığın kuzeyindedir."
+  },
+  {
+   "id": 36,
+   "outcome": "F.8.1.4 Dönenceler ve kutup daireleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q36.svg",
+   "imageAlt": "Paraleller şeması",
+   "scenario": "Bir kutup araştırmacısı, 21 Haziran'da Kuzey Kutup Dairesi'nin içinde bir noktada Güneş'in batmadığını gözlemliyor. Şekilde dünya üzerindeki paraleller ve dönenceler gösterilmiştir.",
+   "question": "Bu durum aşağıdakilerden hangisinin sonucudur?",
+   "options": [
+    "Dünya'nın ekseninin 23,5° eğik olmasının",
+    "Dünya'nın kendi çevresinde dönmesinin durmasının",
+    "Güneş'in hareket etmesinin",
+    "Ay'ın Dünya'ya yakınlığının"
+   ],
+   "answer": 0,
+   "explanation": "Eksen eğikliği nedeniyle yaz aylarında kutup bölgesinde kutup gündüzü yaşanır."
+  },
+  {
+   "id": 37,
+   "outcome": "F.8.1.4 Dönenceler ve kutup daireleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q37.svg",
+   "imageAlt": "Paraleller şeması",
+   "scenario": "Ekvator çevresindeki bir ülkenin vatandaşları yıl boyu hemen hemen aynı uzunlukta gün-gece yaşadıklarını söylüyor. Şekilde dünya üzerindeki paraleller ve dönenceler gösterilmiştir.",
+   "question": "Bunun nedeni nedir?",
+   "options": [
+    "Ekvatorda dönme hareketi yoktur",
+    "Ekvator Güneş'e en uzak noktadır",
+    "Güneş ışınları ekvatora yıl boyu çok az değişen açıyla gelir",
+    "Ekvator dönenceler arasında değildir"
+   ],
+   "answer": 2,
+   "explanation": "Ekvator bölgesinde gün uzunluğu yıl boyunca çok az değişir."
+  },
+  {
+   "id": 38,
+   "outcome": "F.8.1.4 Dönenceler ve kutup daireleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q38.svg",
+   "imageAlt": "Paraleller şeması",
+   "scenario": "Dönenceler arasında kalan bölgede (Tropikal kuşak) yılda iki kez Güneş ışınları öğle vakti dik gelir. Şekilde dünya üzerindeki paraleller ve dönenceler gösterilmiştir.",
+   "question": "Bu bölgede aşağıdakilerden hangisi beklenir?",
+   "options": [
+    "Gündüz süresi kutuplardaki kadar değişir",
+    "Kış mevsimi çok serttir",
+    "Sıcaklık yıl boyunca genel olarak yüksektir",
+    "Yıl boyunca kar yağar"
+   ],
+   "answer": 2,
+   "explanation": "Dik ışınlar nedeniyle ısınma fazladır."
+  },
+  {
+   "id": 39,
+   "outcome": "F.8.1.5 İklim türleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q39.svg",
+   "imageAlt": "Klimogram",
+   "scenario": "Grafik 1. bölgeye aittir. Bir iklim araştırmacısı, bir bölgede uzun yıllar boyunca ölçülen aylık ortalama sıcaklık ve yağış değerlerini iklim grafiği (klimogram) üzerinde gösteriyor. Grafikte sütunlar aylık yağışı, kırmızı çizgi ise aylık ortalama sıcaklığı temsil etmektedir.",
+   "question": "Bu grafik hangi iklim tipine aittir?",
+   "options": [
+    "Çöl iklimi",
+    "Karasal iklim",
+    "Karadeniz iklimi",
+    "Akdeniz iklimi"
+   ],
+   "answer": 3,
+   "explanation": "Akdeniz iklimi: grafikteki sıcaklık ve yağış rejimi bu iklimin özelliğidir."
+  },
+  {
+   "id": 40,
+   "outcome": "F.8.1.5 İklim türleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q40.svg",
+   "imageAlt": "Klimogram",
+   "scenario": "Grafik 2. bölgeye aittir. Bir iklim araştırmacısı, bir bölgede uzun yıllar boyunca ölçülen aylık ortalama sıcaklık ve yağış değerlerini iklim grafiği (klimogram) üzerinde gösteriyor. Grafikte sütunlar aylık yağışı, kırmızı çizgi ise aylık ortalama sıcaklığı temsil etmektedir.",
+   "question": "Yıllık sıcaklık farkı (en sıcak ay − en soğuk ay) kaç °C'dir?",
+   "options": [
+    "11 °C",
+    "24 °C",
+    "17 °C",
+    "22 °C"
+   ],
+   "answer": 2,
+   "explanation": "En yüksek 24, en düşük 7 → fark 17 °C."
+  },
+  {
+   "id": 41,
+   "outcome": "F.8.1.5 İklim türleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q41.svg",
+   "imageAlt": "Klimogram",
+   "scenario": "Grafik 3. bölgeye aittir. Bir iklim araştırmacısı, bir bölgede uzun yıllar boyunca ölçülen aylık ortalama sıcaklık ve yağış değerlerini iklim grafiği (klimogram) üzerinde gösteriyor. Grafikte sütunlar aylık yağışı, kırmızı çizgi ise aylık ortalama sıcaklığı temsil etmektedir.",
+   "question": "En çok yağış hangi ayda düşmüştür?",
+   "options": [
+    "Ağu",
+    "Ara",
+    "May",
+    "Eki"
+   ],
+   "answer": 2,
+   "explanation": "Grafikte en yüksek sütun May ayına aittir (70 mm)."
+  },
+  {
+   "id": 42,
+   "outcome": "F.8.1.5 İklim türleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q42.svg",
+   "imageAlt": "Klimogram",
+   "scenario": "Grafik 4. bölgeye aittir. Bir iklim araştırmacısı, bir bölgede uzun yıllar boyunca ölçülen aylık ortalama sıcaklık ve yağış değerlerini iklim grafiği (klimogram) üzerinde gösteriyor. Grafikte sütunlar aylık yağışı, kırmızı çizgi ise aylık ortalama sıcaklığı temsil etmektedir.",
+   "question": "Grafikteki bölge için aşağıdakilerden hangisi doğrudur?",
+   "options": [
+    "Yağış her mevsim bolca düşer",
+    "Yağış çok azdır, sıcaklık yüksektir",
+    "Kışlar çok soğuktur",
+    "Sıcaklık yıl boyu 0 °C civarındadır"
+   ],
+   "answer": 1,
+   "explanation": "Grafikten sıcaklık ve yağış rejimi okunarak iklim özellikleri belirlenir."
+  },
+  {
+   "id": 43,
+   "outcome": "F.8.1.5 İklim türleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q43.svg",
+   "imageAlt": "Klimogram",
+   "scenario": "Grafik 5. bölgeye aittir. Bir iklim araştırmacısı, bir bölgede uzun yıllar boyunca ölçülen aylık ortalama sıcaklık ve yağış değerlerini iklim grafiği (klimogram) üzerinde gösteriyor. Grafikte sütunlar aylık yağışı, kırmızı çizgi ise aylık ortalama sıcaklığı temsil etmektedir.",
+   "question": "Bu grafik hangi iklim tipine aittir?",
+   "options": [
+    "Ekvatoral iklim",
+    "Akdeniz iklimi",
+    "Karasal iklim",
+    "Karadeniz iklimi"
+   ],
+   "answer": 0,
+   "explanation": "Ekvatoral iklim: grafikteki sıcaklık ve yağış rejimi bu iklimin özelliğidir."
+  },
+  {
+   "id": 44,
+   "outcome": "F.8.1.5 İklim türleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q44.svg",
+   "imageAlt": "Klimogram",
+   "scenario": "Grafik 6. bölgeye aittir. Bir iklim araştırmacısı, bir bölgede uzun yıllar boyunca ölçülen aylık ortalama sıcaklık ve yağış değerlerini iklim grafiği (klimogram) üzerinde gösteriyor. Grafikte sütunlar aylık yağışı, kırmızı çizgi ise aylık ortalama sıcaklığı temsil etmektedir.",
+   "question": "Yıllık sıcaklık farkı (en sıcak ay − en soğuk ay) kaç °C'dir?",
+   "options": [
+    "24 °C",
+    "29 °C",
+    "13 °C",
+    "19 °C"
+   ],
+   "answer": 3,
+   "explanation": "En yüksek 29, en düşük 10 → fark 19 °C."
+  },
+  {
+   "id": 45,
+   "outcome": "F.8.1.5 İklim türleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q45.svg",
+   "imageAlt": "Klimogram",
+   "scenario": "Grafik 7. bölgeye aittir. Bir iklim araştırmacısı, bir bölgede uzun yıllar boyunca ölçülen aylık ortalama sıcaklık ve yağış değerlerini iklim grafiği (klimogram) üzerinde gösteriyor. Grafikte sütunlar aylık yağışı, kırmızı çizgi ise aylık ortalama sıcaklığı temsil etmektedir.",
+   "question": "En çok yağış hangi ayda düşmüştür?",
+   "options": [
+    "Mar",
+    "Eki",
+    "May",
+    "Oca"
+   ],
+   "answer": 1,
+   "explanation": "Grafikte en yüksek sütun Eki ayına aittir (260 mm)."
+  },
+  {
+   "id": 46,
+   "outcome": "F.8.1.5 İklim türleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q46.svg",
+   "imageAlt": "Klimogram",
+   "scenario": "Grafik 8. bölgeye aittir. Bir iklim araştırmacısı, bir bölgede uzun yıllar boyunca ölçülen aylık ortalama sıcaklık ve yağış değerlerini iklim grafiği (klimogram) üzerinde gösteriyor. Grafikte sütunlar aylık yağışı, kırmızı çizgi ise aylık ortalama sıcaklığı temsil etmektedir.",
+   "question": "Grafikteki bölge için aşağıdakilerden hangisi doğrudur?",
+   "options": [
+    "Yazlar kurak ve çok sıcaktır, kışlar ılıktır",
+    "Yıl boyu aynı sıcaklık görülür",
+    "Çok bol yağış alır",
+    "Kışlar çok soğuk, yazlar kısa ve sıcaktır"
+   ],
+   "answer": 3,
+   "explanation": "Grafikten sıcaklık ve yağış rejimi okunarak iklim özellikleri belirlenir."
+  },
+  {
+   "id": 47,
+   "outcome": "F.8.1.5 İklim türleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q47.svg",
+   "imageAlt": "Klimogram",
+   "scenario": "Grafik 9. bölgeye aittir. Bir iklim araştırmacısı, bir bölgede uzun yıllar boyunca ölçülen aylık ortalama sıcaklık ve yağış değerlerini iklim grafiği (klimogram) üzerinde gösteriyor. Grafikte sütunlar aylık yağışı, kırmızı çizgi ise aylık ortalama sıcaklığı temsil etmektedir.",
+   "question": "Bu grafik hangi iklim tipine aittir?",
+   "options": [
+    "Akdeniz iklimi",
+    "Karasal iklim",
+    "Karadeniz iklimi",
+    "Çöl iklimi"
+   ],
+   "answer": 3,
+   "explanation": "Çöl iklimi: grafikteki sıcaklık ve yağış rejimi bu iklimin özelliğidir."
+  },
+  {
+   "id": 48,
+   "outcome": "F.8.1.5 İklim türleri",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q48.svg",
+   "imageAlt": "Klimogram",
+   "scenario": "Grafik 10. bölgeye aittir. Bir iklim araştırmacısı, bir bölgede uzun yıllar boyunca ölçülen aylık ortalama sıcaklık ve yağış değerlerini iklim grafiği (klimogram) üzerinde gösteriyor. Grafikte sütunlar aylık yağışı, kırmızı çizgi ise aylık ortalama sıcaklığı temsil etmektedir.",
+   "question": "Yıllık sıcaklık farkı (en sıcak ay − en soğuk ay) kaç °C'dir?",
+   "options": [
+    "1 °C",
+    "11 °C",
+    "6 °C",
+    "26 °C"
+   ],
+   "answer": 0,
+   "explanation": "En yüksek 26, en düşük 25 → fark 1 °C."
+  },
+  {
+   "id": 49,
+   "outcome": "F.8.1.5 İklim ve hava durumu",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q49.svg",
+   "imageAlt": "Dört ifade kartı",
+   "scenario": "Bir hava durumu sunucusu ile bir iklim bilimci, aynı gün bazı ifadeler kullanıyor. Hava durumu bir yerin kısa süreli atmosfer koşullarını, iklim ise uzun yıllar boyunca görülen ortalama atmosfer koşullarını anlatır. İfadeler kartlar hâlinde verilmiştir. İfadeler: A) Dün İstanbul'da gün boyunca sağanak yağmur yağdı. B) Akdeniz Bölgesi'nde yazlar sıcak ve kurak geçer. C) Bu sabah Ankara'da sis vardı. D) Yarın Trabzon'da yağış bekleniyor.",
+   "question": "Hangi kart bir yerin iklimiyle ilgili bir ifade içerir?",
+   "options": [
+    "A kartı",
+    "D kartı",
+    "C kartı",
+    "B kartı"
+   ],
+   "answer": 3,
+   "explanation": "İklim, uzun yıllara ait genel koşulları anlatır; kısa süreli olaylar (bugün, dün, yarın) hava durumudur."
+  },
+  {
+   "id": 50,
+   "outcome": "F.8.1.5 İklim ve hava durumu",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q50.svg",
+   "imageAlt": "Dört ifade kartı",
+   "scenario": "Bir hava durumu sunucusu ile bir iklim bilimci, aynı gün bazı ifadeler kullanıyor. Hava durumu bir yerin kısa süreli atmosfer koşullarını, iklim ise uzun yıllar boyunca görülen ortalama atmosfer koşullarını anlatır. İfadeler kartlar hâlinde verilmiştir. İfadeler: A) Erzurum'da kışlar uzun ve çok soğuktur. B) Bugün öğleden sonra İzmir'de rüzgâr 40 km/saat. C) Dün gece Antalya'da fırtına çıktı. D) Hafta sonu Bursa'da hava parçalı bulutlu.",
+   "question": "Hangi kart bir yerin iklimiyle ilgili bir ifade içerir?",
+   "options": [
+    "B kartı",
+    "D kartı",
+    "A kartı",
+    "C kartı"
+   ],
+   "answer": 2,
+   "explanation": "İklim, uzun yıllara ait genel koşulları anlatır; kısa süreli olaylar (bugün, dün, yarın) hava durumudur."
+  },
+  {
+   "id": 51,
+   "outcome": "F.8.1.5 İklim ve hava durumu",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q51.svg",
+   "imageAlt": "Dört ifade kartı",
+   "scenario": "Bir hava durumu sunucusu ile bir iklim bilimci, aynı gün bazı ifadeler kullanıyor. Hava durumu bir yerin kısa süreli atmosfer koşullarını, iklim ise uzun yıllar boyunca görülen ortalama atmosfer koşullarını anlatır. İfadeler kartlar hâlinde verilmiştir. İfadeler: A) Rize'de her mevsim yağış görülür. B) Bu hafta Konya'da kar yağdı. C) Dün Edirne'de sis vardı. D) Yarın Ankara 14 °C olacak.",
+   "question": "Hangi kart bir yerin iklimiyle ilgili bir ifade içerir?",
+   "options": [
+    "D kartı",
+    "C kartı",
+    "A kartı",
+    "B kartı"
+   ],
+   "answer": 2,
+   "explanation": "İklim, uzun yıllara ait genel koşulları anlatır; kısa süreli olaylar (bugün, dün, yarın) hava durumudur."
+  },
+  {
+   "id": 52,
+   "outcome": "F.8.1.5 İklim ve hava durumu",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q52.svg",
+   "imageAlt": "Dört ifade kartı",
+   "scenario": "Bir hava durumu sunucusu ile bir iklim bilimci, aynı gün bazı ifadeler kullanıyor. Hava durumu bir yerin kısa süreli atmosfer koşullarını, iklim ise uzun yıllar boyunca görülen ortalama atmosfer koşullarını anlatır. İfadeler kartlar hâlinde verilmiştir. İfadeler: A) Bugün Adana'da sıcaklık 38 °C. B) Bu gece İstanbul'da şimşek çaktı. C) Karadeniz kıyılarında yıl boyu ılıman ve bol yağışlı bir hava görülür. D) Dün sabah Sivas'ta don vardı.",
+   "question": "Hangi kart bir yerin iklimiyle ilgili bir ifade içerir?",
+   "options": [
+    "D kartı",
+    "A kartı",
+    "B kartı",
+    "C kartı"
+   ],
+   "answer": 3,
+   "explanation": "İklim, uzun yıllara ait genel koşulları anlatır; kısa süreli olaylar (bugün, dün, yarın) hava durumudur."
+  },
+  {
+   "id": 53,
+   "outcome": "F.8.1.5 İklim ve hava durumu",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q53.svg",
+   "imageAlt": "Dört ifade kartı",
+   "scenario": "Bir hava durumu sunucusu ile bir iklim bilimci, aynı gün bazı ifadeler kullanıyor. Hava durumu bir yerin kısa süreli atmosfer koşullarını, iklim ise uzun yıllar boyunca görülen ortalama atmosfer koşullarını anlatır. İfadeler kartlar hâlinde verilmiştir. İfadeler: A) Yarın Hakkâri'de kar yağışı bekleniyor. B) Kuzey Kutbu'nda yıl boyu çok soğuk koşullar hüküm sürer. C) Bu öğleden sonra Mersin'de hafif yağmur başladı. D) Dün Van'da rüzgâr çok kuvvetliydi.",
+   "question": "Hangi kart bir yerin iklimiyle ilgili bir ifade içerir?",
+   "options": [
+    "A kartı",
+    "B kartı",
+    "D kartı",
+    "C kartı"
+   ],
+   "answer": 1,
+   "explanation": "İklim, uzun yıllara ait genel koşulları anlatır; kısa süreli olaylar (bugün, dün, yarın) hava durumudur."
+  },
+  {
+   "id": 54,
+   "outcome": "F.8.1.5 İklim ve hava durumu",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q54.svg",
+   "imageAlt": "Dört ifade kartı",
+   "scenario": "Bir hava durumu sunucusu ile bir iklim bilimci, aynı gün bazı ifadeler kullanıyor. Hava durumu bir yerin kısa süreli atmosfer koşullarını, iklim ise uzun yıllar boyunca görülen ortalama atmosfer koşullarını anlatır. İfadeler kartlar hâlinde verilmiştir. İfadeler: A) Karasal iklimde yağış az, sıcaklık farkı büyüktür. B) Bu akşam Çanakkale'de poyraz esiyor. C) Bugün Bolu'da yoğun sis var. D) Yarın Muğla'da güneşli hava bekleniyor.",
+   "question": "Hangi kart bir yerin iklimiyle ilgili bir ifade içerir?",
+   "options": [
+    "A kartı",
+    "D kartı",
+    "C kartı",
+    "B kartı"
+   ],
+   "answer": 0,
+   "explanation": "İklim, uzun yıllara ait genel koşulları anlatır; kısa süreli olaylar (bugün, dün, yarın) hava durumudur."
+  },
+  {
+   "id": 55,
+   "outcome": "F.8.1.5 İklimi etkileyen faktörler",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q55.svg",
+   "imageAlt": "Dağ ve sıcaklık",
+   "scenario": "Bir doğa sporları kulübü, deniz kıyısındaki bir kasabada sıcaklığı 24 °C ölçüyor. Kasabanın hemen yakınındaki dağın zirvesi 1500 m yüksekliktedir. Yükseklik arttıkça sıcaklık, her 100 m'de ortalama 0,6 °C azalır.",
+   "question": "Zirvedeki sıcaklık yaklaşık kaç °C'dir?",
+   "options": [
+    "18 °C",
+    "9 °C",
+    "15 °C",
+    "33 °C"
+   ],
+   "answer": 2,
+   "explanation": "Azalma = 1500/100 × 0,6 = 9 °C → 24 − 9 = 15 °C."
+  },
+  {
+   "id": 56,
+   "outcome": "F.8.1.5 İklimi etkileyen faktörler",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q56.svg",
+   "imageAlt": "Dağ ve sıcaklık",
+   "scenario": "Bir doğa sporları kulübü, deniz kıyısındaki bir kasabada sıcaklığı 18 °C ölçüyor. Kasabanın hemen yakınındaki dağın zirvesi 2000 m yüksekliktedir. Yükseklik arttıkça sıcaklık, her 100 m'de ortalama 0,6 °C azalır.",
+   "question": "Zirvedeki sıcaklık yaklaşık kaç °C'dir?",
+   "options": [
+    "12 °C",
+    "9 °C",
+    "6 °C",
+    "30 °C"
+   ],
+   "answer": 2,
+   "explanation": "Azalma = 2000/100 × 0,6 = 12 °C → 18 − 12 = 6 °C."
+  },
+  {
+   "id": 57,
+   "outcome": "F.8.1.5 İklimi etkileyen faktörler",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q57.svg",
+   "imageAlt": "Dağ ve sıcaklık",
+   "scenario": "Bir doğa sporları kulübü, deniz kıyısındaki bir kasabada sıcaklığı 30 °C ölçüyor. Kasabanın hemen yakınındaki dağın zirvesi 1200 m yüksekliktedir. Yükseklik arttıkça sıcaklık, her 100 m'de ortalama 0,6 °C azalır.",
+   "question": "Zirvedeki sıcaklık yaklaşık kaç °C'dir?",
+   "options": [
+    "18 °C",
+    "37,2 °C",
+    "24 °C",
+    "22,8 °C"
+   ],
+   "answer": 3,
+   "explanation": "Azalma = 1200/100 × 0,6 = 7,2 °C → 30 − 7,2 = 22,8 °C."
+  },
+  {
+   "id": 58,
+   "outcome": "F.8.1.5 İklimi etkileyen faktörler",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q58.svg",
+   "imageAlt": "Dağ ve sıcaklık",
+   "scenario": "Bir doğa sporları kulübü, deniz kıyısındaki bir kasabada sıcaklığı 20 °C ölçüyor. Kasabanın hemen yakınındaki dağın zirvesi 3000 m yüksekliktedir. Yükseklik arttıkça sıcaklık, her 100 m'de ortalama 0,6 °C azalır.",
+   "question": "Zirvedeki sıcaklık yaklaşık kaç °C'dir?",
+   "options": [
+    "2 °C",
+    "3 °C",
+    "38 °C",
+    "14 °C"
+   ],
+   "answer": 0,
+   "explanation": "Azalma = 3000/100 × 0,6 = 18 °C → 20 − 18 = 2 °C."
+  },
+  {
+   "id": 59,
+   "outcome": "F.8.1.5 İklimi etkileyen faktörler",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q59.svg",
+   "imageAlt": "Dağ ve sıcaklık",
+   "scenario": "Bir doğa sporları kulübü, deniz kıyısındaki bir kasabada sıcaklığı 25 °C ölçüyor. Kasabanın hemen yakınındaki dağın zirvesi 800 m yüksekliktedir. Yükseklik arttıkça sıcaklık, her 100 m'de ortalama 0,6 °C azalır.",
+   "question": "Zirvedeki sıcaklık yaklaşık kaç °C'dir?",
+   "options": [
+    "17 °C",
+    "20,2 °C",
+    "29,8 °C",
+    "19 °C"
+   ],
+   "answer": 1,
+   "explanation": "Azalma = 800/100 × 0,6 = 4,8 °C → 25 − 4,8 = 20,2 °C."
+  },
+  {
+   "id": 60,
+   "outcome": "F.8.1.5 İklimi etkileyen faktörler",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q60.svg",
+   "imageAlt": "Dağ ve sıcaklık",
+   "scenario": "Bir doğa sporları kulübü, deniz kıyısındaki bir kasabada sıcaklığı 15 °C ölçüyor. Kasabanın hemen yakınındaki dağın zirvesi 1000 m yüksekliktedir. Yükseklik arttıkça sıcaklık, her 100 m'de ortalama 0,6 °C azalır.",
+   "question": "Zirvedeki sıcaklık yaklaşık kaç °C'dir?",
+   "options": [
+    "13,5 °C",
+    "9 °C",
+    "5 °C",
+    "21 °C"
+   ],
+   "answer": 1,
+   "explanation": "Azalma = 1000/100 × 0,6 = 6 °C → 15 − 6 = 9 °C."
+  },
+  {
+   "id": 61,
+   "outcome": "F.8.1.5 İklimi etkileyen faktörler",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q61.svg",
+   "imageAlt": "Dağ ve sıcaklık",
+   "scenario": "Bir meteoroloji istasyonunda deniz seviyesinde sıcaklık 22 °C, bir dağın zirvesinde aynı anda 10 °C ölçülüyor. Yükseklik arttıkça her 100 m'de sıcaklık ortalama 0,6 °C azalır.",
+   "question": "Dağın zirvesi deniz seviyesinden yaklaşık kaç m yüksekliktedir?",
+   "options": [
+    "4000 m",
+    "2000 m",
+    "1200 m",
+    "1000.0 m"
+   ],
+   "answer": 1,
+   "explanation": "Fark = 22−10 = 12 °C → 12/0,6 × 100 = 2000 m."
+  },
+  {
+   "id": 62,
+   "outcome": "F.8.1.5 İklimi etkileyen faktörler",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q62.svg",
+   "imageAlt": "Dağ ve sıcaklık",
+   "scenario": "Bir meteoroloji istasyonunda deniz seviyesinde sıcaklık 28 °C, bir dağın zirvesinde aynı anda 13 °C ölçülüyor. Yükseklik arttıkça her 100 m'de sıcaklık ortalama 0,6 °C azalır.",
+   "question": "Dağın zirvesi deniz seviyesinden yaklaşık kaç m yüksekliktedir?",
+   "options": [
+    "1250.0 m",
+    "1500 m",
+    "5000 m",
+    "2500 m"
+   ],
+   "answer": 3,
+   "explanation": "Fark = 28−13 = 15 °C → 15/0,6 × 100 = 2500 m."
+  },
+  {
+   "id": 63,
+   "outcome": "F.8.1.6 İklim değişikliği",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q63.svg",
+   "imageAlt": "Yıllara göre değişim grafiği",
+   "scenario": "Bir bilim insanı atmosferdeki CO₂ derişimi (ppm) ve küresel ortalama sıcaklık değişimini (°C) kaydediyor. Veriler 1960–2020 yılları arasındadır.",
+   "question": "Grafiğe göre CO₂ derişimi zamanla nasıl değişmiştir?",
+   "options": [
+    "Sürekli artmıştır",
+    "Sabit kalmıştır",
+    "Azalmıştır",
+    "Önce artıp sonra azalmıştır"
+   ],
+   "answer": 0,
+   "explanation": "CO₂ değerleri 317'den 415'e yükselmiştir; sera etkisi güçlenmiştir."
+  },
+  {
+   "id": 64,
+   "outcome": "F.8.1.6 İklim değişikliği",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q64.svg",
+   "imageAlt": "Yıllara göre değişim grafiği",
+   "scenario": "Bir bilim insanı küresel ortalama sıcaklık sapmasını yıllara göre ölçüyor. Veriler 1960–2020 yılları arasındadır.",
+   "question": "Bu verilere göre hangi çıkarım yapılabilir?",
+   "options": [
+    "Veriler küresel ısınmayı desteklemez",
+    "Sıcaklık azalmaktadır",
+    "Sıcaklık sabittir",
+    "Küresel sıcaklık artış eğilimindedir"
+   ],
+   "answer": 3,
+   "explanation": "Grafik 1960'tan 2020'ye 1 °C artış gösterir."
+  },
+  {
+   "id": 65,
+   "outcome": "F.8.1.6 İklim değişikliği",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q65.svg",
+   "imageAlt": "Yıllara göre değişim grafiği",
+   "scenario": "Bir buzul araştırma ekibi, aynı buzulun yüzey alanını yıllara göre kaydediyor (başlangıç 100 kabul edilmiştir). Veriler 1960–2020 yılları arasındadır.",
+   "question": "Buzul alanındaki azalmanın nedeni ve sonucu nedir?",
+   "options": [
+    "Buzulların büyümesi; kıyılar genişler",
+    "Soğuma; deniz seviyesi düşebilir",
+    "Yağışların artması; deniz seviyesi değişmez",
+    "Küresel ısınma; deniz seviyesi yükselebilir"
+   ],
+   "answer": 3,
+   "explanation": "Isınma buzulları eritir; eriyen buz denizlere karışarak deniz seviyesini yükseltir."
+  },
+  {
+   "id": 66,
+   "outcome": "F.8.1.6 İklim değişikliği",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q66.svg",
+   "imageAlt": "Yıllara göre değişim grafiği",
+   "scenario": "İki grafik birlikte inceleniyor: CO₂ derişimi ve sıcaklık sapması. Veriler 1960–2020 yılları arasındadır.",
+   "question": "İki eğri birlikte incelendiğinde hangi sonuca varılabilir?",
+   "options": [
+    "CO₂ arttıkça sıcaklık azalmıştır",
+    "İkisi arasında ilişki yoktur",
+    "CO₂ arttıkça sıcaklık da artmıştır",
+    "Sıcaklık CO₂'yi azaltmıştır"
+   ],
+   "answer": 2,
+   "explanation": "Eğriler aynı yönde artar; sera gazları ile ısınma arasındaki ilişkiyi gösterir."
+  },
+  {
+   "id": 67,
+   "outcome": "F.8.1.6 İklim değişikliği",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q67.svg",
+   "imageAlt": "Yıllara göre değişim grafiği",
+   "scenario": "Bir belediye, ormansızlaşma ve fosil yakıt kullanımı sonucu atmosferdeki CO₂ miktarının arttığını gösteren bir rapor yayımlıyor. Veriler 1960–2020 yılları arasındadır.",
+   "question": "CO₂ artışını azaltmak için hangisi etkili bir önlemdir?",
+   "options": [
+    "Ormanları azaltmak",
+    "Fosil yakıt kullanımını azaltıp yenilenebilir enerjiye geçmek",
+    "Daha fazla kömür yakmak",
+    "Daha çok özel araç kullanmak"
+   ],
+   "answer": 1,
+   "explanation": "Fosil yakıt kullanımını azaltmak ve ağaçlandırma CO₂ salımını azaltır."
+  },
+  {
+   "id": 68,
+   "outcome": "F.8.1.6 İklim değişikliği",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q68.svg",
+   "imageAlt": "Yıllara göre değişim grafiği",
+   "scenario": "Sera etkisi üzerine bir araştırmada atmosferdeki gazların bir kısmı Dünya'dan yayılan ısıyı tutar. Grafikte CO₂ miktarı gösterilmiştir. Veriler 1960–2020 yılları arasındadır.",
+   "question": "Aşağıdakilerden hangisi bir sera gazıdır?",
+   "options": [
+    "Argon (Ar)",
+    "Helyum (He)",
+    "Karbondioksit (CO₂)",
+    "Azot (N₂)"
+   ],
+   "answer": 2,
+   "explanation": "CO₂, metan ve su buharı başlıca sera gazlarıdır."
+  },
+  {
+   "id": 69,
+   "outcome": "F.8.1.6 İklim değişikliği",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q69.svg",
+   "imageAlt": "Yıllara göre değişim grafiği",
+   "scenario": "Bir kutup bölgesinde buzul kalınlığı yıllara göre ölçülüyor. Veriler 1960–2020 yılları arasındadır.",
+   "question": "2020 yılında buzul kalınlığı 1960'a göre yaklaşık yüzde kaç azalmıştır?",
+   "options": [
+    "%20",
+    "%40",
+    "%60",
+    "%10"
+   ],
+   "answer": 1,
+   "explanation": "100'den 60'a düşmüştür: %40 azalma."
+  },
+  {
+   "id": 70,
+   "outcome": "F.8.1.6 İklim değişikliği",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q70.svg",
+   "imageAlt": "Yıllara göre değişim grafiği",
+   "scenario": "İklim değişikliğinin etkilerini inceleyen bir ekip, bazı bölgelerde kuraklık ve sel olaylarının sıklığının arttığını gözlemliyor. Ortalama sıcaklık sapması grafikte verilmiştir. Veriler 1960–2020 yılları arasındadır.",
+   "question": "Küresel ısınmanın olası bir sonucu hangisidir?",
+   "options": [
+    "Okyanus seviyesinin düşmesi",
+    "Tüm bölgelerde yağışın azalması",
+    "Kutuplarda buzulların büyümesi",
+    "Aşırı hava olaylarının sıklığının artması"
+   ],
+   "answer": 3,
+   "explanation": "Isınma, hava olaylarını şiddetlendirir; kuraklık ve sel olayları artar."
+  },
+  {
+   "id": 71,
+   "outcome": "F.8.1.1 Yarımküreler ve mevsimler",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q71.svg",
+   "imageAlt": "Dünya'nın bulunduğu konum",
+   "scenario": "Şekilde Dünya'nın yörüngesi ve Dünya'nın şu anda bulunduğu konum ★ ile işaretlenmiştir (turuncu halka). Ankara Kuzey Yarımküre'de, Sidney ve Buenos Aires Güney Yarımküre'de bulunmaktadır. Dünya'nın ekseni 23,5° eğiktir ve yönü sabittir.",
+   "question": "Ankara'da (Kuzey Yarımküre) yaz mevsiminin başlangıcı yaşandığı sırada Sidney'de (Güney Yarımküre) hangi mevsim başlar?",
+   "options": [
+    "Kış",
+    "İlkbahar",
+    "Sonbahar",
+    "Yaz"
+   ],
+   "answer": 0,
+   "explanation": "Yarımküreler zıt mevsimleri yaşar."
+  },
+  {
+   "id": 72,
+   "outcome": "F.8.1.1 Yarımküreler ve mevsimler",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q72.svg",
+   "imageAlt": "Dünya'nın bulunduğu konum",
+   "scenario": "Şekilde Dünya'nın yörüngesi ve Dünya'nın şu anda bulunduğu konum ★ ile işaretlenmiştir (turuncu halka). Ankara Kuzey Yarımküre'de, Sidney ve Buenos Aires Güney Yarımküre'de bulunmaktadır. Dünya'nın ekseni 23,5° eğiktir ve yönü sabittir.",
+   "question": "Dünya şekildeki konumda iken Ankara'da hangi mevsim başlar?",
+   "options": [
+    "Kış",
+    "Yaz",
+    "İlkbahar",
+    "Sonbahar"
+   ],
+   "answer": 0,
+   "explanation": "Kuzey Kutbu Güneş'ten uzağa dönüktür; KY'de kış başlar."
+  },
+  {
+   "id": 73,
+   "outcome": "F.8.1.1 Yarımküreler ve mevsimler",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q73.svg",
+   "imageAlt": "Dünya'nın bulunduğu konum",
+   "scenario": "Şekilde Dünya'nın yörüngesi ve Dünya'nın şu anda bulunduğu konum ★ ile işaretlenmiştir (turuncu halka). Ankara Kuzey Yarımküre'de, Sidney ve Buenos Aires Güney Yarımküre'de bulunmaktadır. Dünya'nın ekseni 23,5° eğiktir ve yönü sabittir.",
+   "question": "Dünya şekildeki konumda iken Erzurum'da hangi mevsim başlar?",
+   "options": [
+    "Kış",
+    "İlkbahar",
+    "Sonbahar",
+    "Yaz"
+   ],
+   "answer": 2,
+   "explanation": "Eylül ekinoksundan sonra KY'de sonbahar başlar."
+  },
+  {
+   "id": 74,
+   "outcome": "F.8.1.1 Yarımküreler ve mevsimler",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q74.svg",
+   "imageAlt": "Dünya'nın bulunduğu konum",
+   "scenario": "Şekilde Dünya'nın yörüngesi ve Dünya'nın şu anda bulunduğu konum ★ ile işaretlenmiştir (turuncu halka). Ankara Kuzey Yarımküre'de, Sidney ve Buenos Aires Güney Yarımküre'de bulunmaktadır. Dünya'nın ekseni 23,5° eğiktir ve yönü sabittir.",
+   "question": "Dünya şekildeki konumda iken Buenos Aires'te (Güney Yarımküre) hangi mevsim başlar?",
+   "options": [
+    "Sonbahar",
+    "Yaz",
+    "İlkbahar",
+    "Kış"
+   ],
+   "answer": 0,
+   "explanation": "Mart'ta KY'de ilkbahar başlarken GY'de sonbahar başlar."
+  },
+  {
+   "id": 75,
+   "outcome": "F.8.1.1 Yarımküreler ve mevsimler",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q75.svg",
+   "imageAlt": "Dünya'nın bulunduğu konum",
+   "scenario": "Şekilde Dünya'nın yörüngesi ve Dünya'nın şu anda bulunduğu konum ★ ile işaretlenmiştir (turuncu halka). Ankara Kuzey Yarımküre'de, Sidney ve Buenos Aires Güney Yarımküre'de bulunmaktadır. Dünya'nın ekseni 23,5° eğiktir ve yönü sabittir.",
+   "question": "Dünya şekildeki konumda iken Ankara ve Sidney'de gece-gündüz süreleri için ne söylenebilir?",
+   "options": [
+    "İkisinde de eşittir",
+    "İkisinde de gündüz uzundur",
+    "Ankara'da gündüz kısa, Sidney'de uzundur",
+    "Ankara'da gündüz uzun, Sidney'de gündüz kısadır"
+   ],
+   "answer": 3,
+   "explanation": "21 Haziran'da KY'de gündüz en uzun, GY'de en kısadır."
+  },
+  {
+   "id": 76,
+   "outcome": "F.8.1.1 Yarımküreler ve mevsimler",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q76.svg",
+   "imageAlt": "Dünya'nın bulunduğu konum",
+   "scenario": "Şekilde Dünya'nın yörüngesi ve Dünya'nın şu anda bulunduğu konum ★ ile işaretlenmiştir (turuncu halka). Ankara Kuzey Yarımküre'de, Sidney ve Buenos Aires Güney Yarımküre'de bulunmaktadır. Dünya'nın ekseni 23,5° eğiktir ve yönü sabittir.",
+   "question": "Dünya şekildeki konumda iken Sidney'de hangi mevsim yaşanır?",
+   "options": [
+    "Kış",
+    "Yaz",
+    "İlkbahar",
+    "Sonbahar"
+   ],
+   "answer": 1,
+   "explanation": "21 Aralık'ta GY'de yaz başlar."
+  },
+  {
+   "id": 77,
+   "outcome": "F.8.1.1 Yarımküreler ve mevsimler",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q77.svg",
+   "imageAlt": "Dünya'nın bulunduğu konum",
+   "scenario": "Şekilde Dünya'nın yörüngesi ve Dünya'nın şu anda bulunduğu konum ★ ile işaretlenmiştir (turuncu halka). Ankara Kuzey Yarımküre'de, Sidney ve Buenos Aires Güney Yarımküre'de bulunmaktadır. Dünya'nın ekseni 23,5° eğiktir ve yönü sabittir.",
+   "question": "Dünya şekildeki konumda iken gece ve gündüz süreleri için ne söylenebilir?",
+   "options": [
+    "Kutuplarda gece vardır",
+    "Dünya'nın her yerinde yaklaşık eşittir",
+    "Güney Yarımküre'de gündüz uzundur",
+    "Kuzey Yarımküre'de gündüz uzundur"
+   ],
+   "answer": 1,
+   "explanation": "Ekinoks günlerinde gece-gündüz eşittir."
+  },
+  {
+   "id": 78,
+   "outcome": "F.8.1.1 Yarımküreler ve mevsimler",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q78.svg",
+   "imageAlt": "Dünya'nın bulunduğu konum",
+   "scenario": "Şekilde Dünya'nın yörüngesi ve Dünya'nın şu anda bulunduğu konum ★ ile işaretlenmiştir (turuncu halka). Ankara Kuzey Yarımküre'de, Sidney ve Buenos Aires Güney Yarımküre'de bulunmaktadır. Dünya'nın ekseni 23,5° eğiktir ve yönü sabittir.",
+   "question": "Dünya şekildeki konumda iken Santiago'da (Güney Yarımküre) hangi mevsim başlar?",
+   "options": [
+    "Sonbahar",
+    "Kış",
+    "İlkbahar",
+    "Yaz"
+   ],
+   "answer": 2,
+   "explanation": "Eylül'de KY'de sonbahar, GY'de ilkbahar başlar."
+  },
+  {
+   "id": 79,
+   "outcome": "F.8.1.1 Yarımküreler ve mevsimler",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q79.svg",
+   "imageAlt": "Dünya'nın bulunduğu konum",
+   "scenario": "Şekilde Dünya'nın yörüngesi ve Dünya'nın şu anda bulunduğu konum ★ ile işaretlenmiştir (turuncu halka). Ankara Kuzey Yarımküre'de, Sidney ve Buenos Aires Güney Yarımküre'de bulunmaktadır. Dünya'nın ekseni 23,5° eğiktir ve yönü sabittir.",
+   "question": "Dünya şekildeki konumda iken Yengeç Dönencesi üzerindeki bir yerde öğle Güneş'i nasıl gelir?",
+   "options": [
+    "Kuzeyden yatay",
+    "Güneyden 45° ile",
+    "Tam tepeden (dik)",
+    "Hiç görünmez"
+   ],
+   "answer": 2,
+   "explanation": "21 Haziran'da ışınlar Yengeç Dönencesi'ne diktir."
+  },
+  {
+   "id": 80,
+   "outcome": "F.8.1.1 Yarımküreler ve mevsimler",
+   "image": "/soru-gorselleri/mevsimler-ve-iklim/q80.svg",
+   "imageAlt": "Dünya'nın bulunduğu konum",
+   "scenario": "Şekilde Dünya'nın yörüngesi ve Dünya'nın şu anda bulunduğu konum ★ ile işaretlenmiştir (turuncu halka). Ankara Kuzey Yarımküre'de, Sidney ve Buenos Aires Güney Yarımküre'de bulunmaktadır. Dünya'nın ekseni 23,5° eğiktir ve yönü sabittir.",
+   "question": "Dünya şekildeki konumda iken Kuzey Kutup Dairesi içinde ne yaşanır?",
+   "options": [
+    "Gece gündüz eşit",
+    "Güneş tam tepede",
+    "Kutup gündüzü",
+    "Kutup gecesi (Güneş doğmaz)"
+   ],
+   "answer": 3,
+   "explanation": "Aralık'ta kutup bölgesinde Güneş doğmaz."
+  }
+ ]
+}
