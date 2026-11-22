@@ -211,6 +211,7 @@ function render(){
  var q=Q[st.i];
  h+='<div class="top"><span class="chip">Soru <b>'+(st.i+1)+' / 15</b></span><span class="chip">Ödül: <b>'+tl(PRIZES[st.i])+'</b></span><span class="chip">Kazandığın: <b>'+tl(st.i>0?PRIZES[st.i-1]:0)+'</b></span><span class="chip">Süre: <b id="tv">'+Math.ceil(st.left)+' sn</b></span></div>';
  h+='<div class="timer'+(st.left<=10?' low':'')+'"><i style="width:'+(st.left/time(st.i)*100)+'%"></i></div>';
+ h+='<div class="jok"><button class="btn" id="mute">'+(soundOn?'🔊 Ses açık':'🔇 Ses kapalı')+'</button></div>';
  h+='<div class="tag">'+q[0]+(SAFE.indexOf(st.i)>=0?' · GÜVENLİ BASAMAK':'')+'</div>';
  h+='<div class="q">'+q[1]+'</div><div class="opts">';
  st.opts.forEach(function(oi,p){
@@ -238,6 +239,7 @@ function ladder(){
 function bind(){
  [].forEach.call(document.querySelectorAll('.opt'),function(b){b.onclick=function(){if(st.locked)return;st.sel=parseInt(b.getAttribute('data-p'));render()}});
  var e;
+ if(e=$('mute'))e.onclick=function(){soundOn=!soundOn;e.textContent=soundOn?'🔊 Ses açık':'🔇 Ses kapalı';if(soundOn)audioReady()};
  if(e=$('lock'))e.onclick=lock;if(e=$('cancel'))e.onclick=function(){st.sel=-1;render()};
  if(e=$('jf'))e.onclick=j5050;if(e=$('ja'))e.onclick=jAud;if(e=$('jp'))e.onclick=jTel;
  if(e=$('quit'))e.onclick=function(){finish(st.i>0?PRIZES[st.i-1]:0,st.i)};
