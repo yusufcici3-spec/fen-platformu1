@@ -58,6 +58,14 @@ body{margin:0;background:transparent;color:var(--ink);font:16px/1.45 system-ui,-
 <script>
 (function(){
 var PRIZES=[100,200,300,500,1000,2000,4000,8000,16000,32000,64000,125000,250000,500000,1000000];
+var audioCtx=null,soundOn=true,lastTick=-1;
+function audioReady(){try{var AC=window.AudioContext||window.webkitAudioContext;if(!AC)return null;if(!audioCtx)audioCtx=new AC();if(audioCtx.state==='suspended')audioCtx.resume();return audioCtx}catch(e){return null}}
+function tone(freq,duration,shape,volume,delay){if(!soundOn)return;var ctx=audioReady();if(!ctx)return;var t=ctx.currentTime+(delay||0),o=ctx.createOscillator(),g=ctx.createGain();o.type=shape||'sine';o.frequency.setValueAtTime(freq,t);g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(volume||.07,t+.012);g.gain.exponentialRampToValueAtTime(.0001,t+duration);o.connect(g);g.connect(ctx.destination);o.start(t);o.stop(t+duration+.03)}
+function playCorrect(){tone(660,.16,'sine',.09,0);tone(880,.18,'sine',.09,.13);tone(1100,.28,'sine',.08,.28)}
+function playWrong(){tone(220,.28,'triangle',.11,0);tone(165,.42,'triangle',.09,.2)}
+function playTick(){tone(880,.055,'square',.035,0)}
+function soundControl(){var b=document.createElement('button');b.className='btn';b.textContent=soundOn?'🔊 Ses açık':'🔇 Ses kapalı';b.onclick=function(){soundOn=!soundOn;if(soundOn)audioReady();b.textContent=soundOn?'🔊 Ses açık':'🔇 Ses kapalı'};return b}
+
 var SAFE=[4,9];
 function tl(n){return n.toLocaleString('tr-TR')+' ₺'}
 function time(i){return i<5?30:(i<10?45:60)}
@@ -116,7 +124,7 @@ var st;
 function $(i){return document.getElementById(i)}
 function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}
 function safeWon(i){var w=0;SAFE.forEach(function(s){if(i>s)w=PRIZES[s]});return w}
-function newGame(){buildQ();st={i:0,jok:{f:true,a:true,p:true},sel:-1,locked:false,over:false,timer:null,left:0,gone:[],msg:'',opts:[],correct:0,answered:0};startQ()}
+function newGame(){audioReady();buildQ();st={i:0,jok:{f:true,a:true,p:true},sel:-1,locked:false,over:false,timer:null,left:0,gone:[],msg:'',opts:[],correct:0,answered:0};startQ()}
 function startQ(){
  var q=Q[st.i];var idx=shuffle([0,1,2,3]);st.opts=idx;st.correctPos=idx.indexOf(0);
  st.sel=-1;st.locked=false;st.gone=[];st.poll=null;st.msg='';st.reveal=false;st.left=time(st.i);
@@ -128,8 +136,8 @@ function tick(){
  st.left=Math.max(0,time(st.i)-(Date.now()-st.t0)/1000);
  var bar=document.querySelector('.timer i'),tm=document.querySelector('.timer');
  if(bar){bar.style.width=(st.left/time(st.i)*100)+'%';tm.classList.toggle('low',st.left<=10)}
- var tv=$('tv');if(tv)tv.textContent=Math.ceil(st.left)+' sn';
- if(st.left<=0){clearInterval(st.timer);st.locked=true;st.timeout=true;st.reveal=true;st.msg='<b>Süre doldu!</b> '+Q[st.i][3];render()}
+ var tv=$('tv');if(tv)tv.textContent=Math.ceil(st.left)+' sn';var sec=Math.ceil(st.left);if(sec<=18&&sec>0&&sec!==lastTick){playTick();lastTick=sec;}
+ if(st.left<=0){clearInterval(st.timer);playWrong();st.locked=true;st.timeout=true;st.reveal=true;st.msg='<b>Süre doldu!</b> '+Q[st.i][3];render()}
 }
 function render(){
  var m=$('main');var h='';
@@ -176,7 +184,7 @@ function bind(){
 }
 function lock(){
  clearInterval(st.timer);st.locked=true;st.reveal=true;st.answered++;
- var ok=st.sel===st.correctPos;if(ok)st.correct++;
+ var ok=st.sel===st.correctPos;if(ok){st.correct++;playCorrect()}else playWrong();
  st.msg=(ok?'<b>Doğru!</b> ':'<b>Yanlış.</b> Doğru cevap: <b>'+'ABCD'[st.correctPos]+'</b>. ')+Q[st.i][3];
  render();
 }
