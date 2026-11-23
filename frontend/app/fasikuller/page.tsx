@@ -36,7 +36,7 @@ export default function FasikullerPage({ searchParams }: { searchParams: { sinif
                       <article key={item.url} className="rounded-card border border-lab-paperLine bg-white p-5 shadow-sm dark:border-white/10 dark:bg-lab-inkSoft">
                         <div className="flex items-start gap-3">
                           <span className="text-2xl" aria-hidden="true">📄</span>
-                          <div className="min-w-0 flex-1"><h3 className="font-display font-semibold">{item.title}</h3><p className="text-xs text-lab-inkMuted dark:text-lab-paper/60">PDF · 7 sayfa</p></div>
+                          <div className="min-w-0 flex-1"><h3 className="font-display font-semibold">{item.title}</h3><p className="text-xs text-lab-inkMuted dark:text-lab-paper/60">PDF</p></div>
                         </div>
                         <div className="mt-3 flex flex-wrap gap-2">
                           <a href={item.url} target="_blank" rel="noreferrer" className="rounded-full bg-beaker px-4 py-2 text-sm font-semibold text-white hover:bg-beaker-dark">Aç</a>
