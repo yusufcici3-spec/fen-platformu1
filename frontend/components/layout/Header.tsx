@@ -14,6 +14,7 @@ const NAV_LINKS = [
   { href: "/sinif/7", label: "7. Sınıf" },
   { href: "/sinif/8", label: "8. Sınıf" },
   { href: "/denemeler", label: "Denemeler" },
+  { href: "/fasikuller", label: "Fasiküller" },
   { href: "/oyunlar", label: "Oyunlar" },
   { href: "/#animasyonlar", label: "Animasyonlar" },
   { href: "/yazililar", label: "Yazılılar" },
