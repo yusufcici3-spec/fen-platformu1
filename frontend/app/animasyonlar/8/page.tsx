@@ -16,6 +16,7 @@ const items = [
   { title: "Asit-Baz Ayraç Laboratuvarı", href: "/animasyonlar/8/asit-baz-ayraclari", icon: "🧪", description: "Turnusol, mor lahana ve diğer ayıraçlarla maddeleri test et.", category: "MADDE VE ENDÜSTRİ" },
   { title: "118 Elementli Periyodik Cetvel", href: "/animasyonlar/8/periyodik-cetvel", icon: "⚛️", description: "118 elementin tamamını incele; seçtiğin elementin özelliklerini keşfet.", category: "MADDE VE ENDÜSTRİ" },
   { title: "Elektroskop Laboratuvarı", href: "/animasyonlar/8/elektroskop", icon: "⚡", description: "Yükleri yaklaştır, dokundur ve etki ile elektriklenme basamaklarını uygula.", category: "ELEKTRİKLENME" },
+  { title: "Elektriklenme ve Yük Geçişi Laboratuvarı", href: "/animasyonlar/8/elektriklenme", icon: "⚡", description: "İki cismi yaklaştır, dokundur veya sürt; elektron geçişini ve son yükleri gözlemle.", category: "ELEKTRİKLENME" },
   { title: "Passafenola", href: "/animasyonlar/8/passafenola", icon: "🎯", description: "Fen sorularıyla kelime turunu tamamla.", category: "EĞİTİCİ OYUN" },
   { title: "MilyonerFen 8", href: "/animasyonlar/8/milyoner", icon: "🏆", description: "Ünitelerini seç; her üniteden 30 soruluk havuzla bilgi yarışmasına katıl.", category: "EĞİTİCİ OYUN" },
 ];
