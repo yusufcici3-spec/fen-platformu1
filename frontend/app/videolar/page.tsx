@@ -113,6 +113,15 @@ const videos = [
     poster: "/videolar/8-sinif-4-unite-madde-ve-endustri.jpg",
     link: { href: "/sinif/8", label: "8. sınıf konularına git" },
   },
+  {
+    id: "8-sinif-5-unite",
+    grade: "8. SINIF · 5. ÜNİTE",
+    title: "Basit Makineler",
+    description: "8. sınıf 5. ünite: basit makinelerin temel özellikleri ve iş kazancı olmaması, kaldıraçlar ve türleri, sabit ve hareketli makara, palanga, eğik düzlem, çıkrık, vida ve kama, dişli çark ve kasnak; hesap örnekleri ve kısa bir soru turu.",
+    src: "/videolar/8-sinif-5-unite-basit-makineler.mp4",
+    poster: "/videolar/8-sinif-5-unite-basit-makineler.jpg",
+    link: { href: "/sinif/8/basit-makineler", label: "Basit Makineler konusuna git" },
+  },
 ];
 
 export default function VideosPage() {
