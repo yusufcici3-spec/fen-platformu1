@@ -1,0 +1,375 @@
+{
+  "id": "fenvebilimkulubu1ve2-unitedeneme3",
+  "slug": "fenvebilimkulubu1ve2-unitedeneme3",
+  "title": "fenvebilimkulübü1ve2.ünitedeneme3",
+  "description": "8. sınıf Mevsimler ve İklim ile DNA ve Genetik Kod ünitelerinin tüm kazanımlarını kapsayan; uzun senaryolu, görselli 20 yeni nesil soru.",
+  "classLevel": 8,
+  "durationMin": 40,
+  "units": [
+    "Mevsimler ve İklim",
+    "DNA ve Genetik Kod"
+  ],
+  "source": "8. sınıf Fen Bilimleri 1. ünite (Mevsimler ve İklim) ve 2. ünite (DNA ve Genetik Kod) kazanımları.",
+  "questions": [
+    {
+      "no": 1,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "Mevsimlerin oluşumu",
+      "skill": "Model yorumlama",
+      "scenario": "Fen ve Bilim Kulübü'nde Ela, lambayı Güneş, eğik eksenli küreyi de Dünya olarak kullanarak bir model hazırlıyor. Küre, lambanın çevresinde dolanırken eksen eğikliğini her konumda aynı yönde koruyor. Şekilde kürenin K, L, M ve N konumları gösterilmiştir; kırmızı nokta Kuzey Kutbu'nu, koyu bölge ise Güneş ışığı almayan yüzeyi temsil etmektedir. Kulüp hocası, kürenin konumlarından birinde Kuzey Yarım Küre'de kış, Güney Yarım Küre'de yaz yaşandığını söylüyor.",
+      "image": "/denemeler/8-fenvebilimkulubu-deneme3/q01.svg",
+      "imageAlt": "Eksen eğikliği korunarak Güneş çevresinde dolanan Dünya modelinin K, L, M ve N konumları",
+      "stem": "Bu konum hangisidir ve bu mevsimlerin oluşma nedeni nedir?",
+      "options": [
+        "K konumudur; Dünya Güneş'e en yakın konumda olduğu için Güney Yarım Küre'de yaz yaşanır.",
+        "L konumudur; Kuzey Yarım Küre Güneş'ten uzağa eğik olduğu için ışınlar daha eğik gelir ve gündüzler kısalır, Güney Yarım Küre'de ise tersi yaşanır.",
+        "M konumudur; Güneş ışınları Güney Kutbu'na dik geldiği için Güney Yarım Küre'de yaz yaşanır.",
+        "N konumudur; Kuzey Yarım Küre Güneş'e doğru eğik olduğu için daha fazla ışık alır ve kış yaşanır."
+      ],
+      "answer": 1,
+      "explanation": "Eksen eğikliği yıl boyunca aynı yöne baktığından, Dünya L konumundayken Kuzey Kutbu Güneş'in tersi yönüne eğiktir. Kuzey Yarım Küre'ye ışınlar eğik gelir, gündüzler kısalır ve kış yaşanır; Güney Yarım Küre'de ise ışınlar daha dik gelir, gündüzler uzar ve yaz yaşanır. K ve M konumlarında Güneş ışınları iki yarım küreye de benzer açıyla gelir. Mevsimlerin nedeni Dünya'nın Güneş'e yakınlığı değil, eksen eğikliği ve dolanma hareketidir."
+    },
+    {
+      "no": 2,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "Gece-gündüz süresi ve ışınların geliş açısı",
+      "skill": "Grafik yorumlama",
+      "scenario": "Bir iklim bilimci, K, L ve M kentlerinde yıl boyunca gündüz sürelerini ölçüyor. Kentlerden ikisi 40° enleminde (biri Kuzey, diğeri Güney Yarım Küre'de), biri ise Ekvator üzerindedir. Aylık ortalama gündüz süreleri grafikte verilmiştir.",
+      "image": "/denemeler/8-fenvebilimkulubu-deneme3/q02.svg",
+      "imageAlt": "K, L ve M kentlerinde aylık ortalama gündüz süresi grafiği",
+      "stem": "Grafiğe göre Haziran ayı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        "L kentinde gündüz süresi en kısa olduğundan Güneş ışınları L kentine K kentinden daha dik açıyla gelir.",
+        "M kentinde gündüz süresi sabit olduğundan mevsim farkı en belirgin olarak M kentinde yaşanır.",
+        "K ve L kentleri aynı enlemde olduğundan Haziran ayında gündüz süreleri birbirine eşittir.",
+        "K kenti Kuzey Yarım Küre'dedir ve Güneş ışınları K kentine L kentinden daha dik açıyla gelir."
+      ],
+      "answer": 3,
+      "explanation": "Haziran'da K kentinde gündüz en uzundur; bu, Kuzey Yarım Küre'nin yaz yaşadığını gösterir. Yaz mevsiminde Güneş ışınları daha dik açıyla gelir. L kenti ise aynı enlemde Güney Yarım Küre'dedir ve kış yaşar: gündüz kısadır, ışınlar daha eğik gelir. Ekvator'daki M kentinde gündüz süresi yıl boyunca yaklaşık 12 saattir, mevsim farkı en az buradadır."
+    },
+    {
+      "no": 3,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "Gece-gündüz süresi ve ışınların geliş açısı",
+      "skill": "Deney sonucu yorumlama",
+      "scenario": "Mert, aynı lambadan çıkan aynı genişlikteki ışık demetini düz bir yüzeye sırasıyla 90°, 60° ve 30° geliş açılarıyla gönderiyor. Her denemede yüzeyin aydınlanan alanını ve aynı süre sonunda yüzeye yerleştirilen termometredeki sıcaklık artışını kaydedip tabloya yazıyor.",
+      "image": "/denemeler/8-fenvebilimkulubu-deneme3/q03.svg",
+      "imageAlt": "Aynı genişlikteki ışık demetinin 90°, 60° ve 30° açılarla yüzeye gönderildiği deney ve ölçüm tablosu",
+      "stem": "Bu deney sonuçlarına göre aşağıdaki çıkarımlardan hangisi yapılabilir?",
+      "options": [
+        "Geliş açısı küçüldükçe ışık daha geniş bir alana yayılır; birim yüzeye düşen enerji azaldığı için ısınma da azalır.",
+        "Geliş açısı küçüldükçe ışık demeti daralır; birim yüzeye düşen enerji arttığı için ısınma da artar.",
+        "Geliş açısı değiştikçe ışık demetinin genişliği de değiştiğinden her denemede farklı sıcaklık artışı ölçülmüştür.",
+        "Aydınlanan alan büyüdükçe sıcaklık artışı da büyür; bu yüzden en fazla ısınma 30° geliş açısında gerçekleşmiştir."
+      ],
+      "answer": 0,
+      "explanation": "Işık demetinin genişliği sabittir. Geliş açısı küçüldükçe aynı miktardaki enerji daha geniş bir yüzeye dağılır; birim yüzeye düşen enerji azalır ve sıcaklık artışı küçülür (10 °C → 8 °C → 5 °C). Mevsimlerde yazın havaların daha sıcak olmasının nedeni de Güneş ışınlarının yüzeye daha dik açıyla gelmesidir."
+    },
+    {
+      "no": 4,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "Hava olayları ve iklim",
+      "skill": "Sınıflandırma",
+      "scenario": "Bir haber programında meteoroloji uzmanı ve iklim bilimci, bazı kentlerle ilgili açıklamalar yapıyor. Program editörü bu açıklamaları, kapsadıkları zaman dilimiyle birlikte tabloya yazıyor.",
+      "image": "/denemeler/8-fenvebilimkulubu-deneme3/q04.svg",
+      "imageAlt": "Beş açıklamanın kapsadığı süreyi gösteren tablo",
+      "stem": "Bu açıklamalar “hava durumu” ve “iklim” olarak sınıflandırılırsa aşağıdakilerden hangisi doğru olur?",
+      "options": [
+        "Hava durumu: K, L, O — İklim: M, N",
+        "Hava durumu: L, N — İklim: K, M, O",
+        "Hava durumu: K, M, O — İklim: L, N",
+        "Hava durumu: M, N, O — İklim: K, L"
+      ],
+      "answer": 2,
+      "explanation": "Hava durumu, bir yerde kısa bir süredeki (saatler, günler) atmosfer olaylarını anlatır; K, M ve O böyledir. İklim ise bir bölgede uzun yıllar boyunca gözlenen hava olaylarının ortalama durumunu anlatır; L ve N böyledir."
+    },
+    {
+      "no": 5,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "İklim elemanları ve iklim etkenleri",
+      "skill": "Neden-sonuç ilişkisi kurma",
+      "scenario": "Bir araştırma ekibi, aynı enlemde bulunan ve denize uzaklıkları yaklaşık eşit olan K ve L kentlerinde uzun yıllar boyunca aylık ortalama sıcaklıkları kaydediyor. K kenti deniz seviyesine yakın bir ovada, L kenti ise yüksek bir platoda yer almaktadır. Yer kesiti ve sıcaklık grafiği şekilde verilmiştir.",
+      "image": "/denemeler/8-fenvebilimkulubu-deneme3/q05.svg",
+      "imageAlt": "K ve L kentlerinin yer kesiti ve aylık ortalama sıcaklık grafiği",
+      "stem": "K ve L kentleri arasındaki sıcaklık farkında hangi iklim etkeni belirleyicidir ve bu etkenden hangi iklim elemanı etkilenmiştir?",
+      "options": [
+        "Etken: enlem — Eleman: yağış",
+        "Etken: denize uzaklık — Eleman: nem",
+        "Etken: yükselti — Eleman: sıcaklık",
+        "Etken: bitki örtüsü — Eleman: rüzgâr"
+      ],
+      "answer": 2,
+      "explanation": "Enlem, denize uzaklık ve bitki örtüsü iki kentte de benzerdir; fark yükseltidendir. Yükseklik arttıkça sıcaklık azalır. Sıcaklık, yağış, nem, basınç ve rüzgâr iklim elemanlarıdır; yükselti, enlem, denize uzaklık ve yer şekilleri ise bu elemanları etkileyen iklim etkenleridir."
+    },
+    {
+      "no": 6,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "Basınç farkı ve rüzgâr",
+      "skill": "Veri yorumlama",
+      "scenario": "Bir meteoroloji istasyonu, aynı yükseklikte bulunan K, L ve M merkezlerinde basınç ölçümü yapıyor. Merkezler birbirinden 200 km uzaklıktadır ve ölçülen basınç değerleri haritada verilmiştir.",
+      "image": "/denemeler/8-fenvebilimkulubu-deneme3/q06.svg",
+      "imageAlt": "K, L ve M merkezlerinin basınç değerlerini gösteren harita",
+      "stem": "Bu bölgedeki rüzgârlarla ilgili aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "K'den L'ye esen rüzgâr, K'den M'ye esen rüzgârdan daha hızlıdır.",
+        "Rüzgâr M'den L'ye ve L'den K'ye doğru eser.",
+        "K'den M'ye esen rüzgâr, K'den L'ye esen rüzgârdan daha hızlıdır; çünkü M'nin basıncı L'den büyüktür.",
+        "Merkezler arasında basınç farkı olduğu için üç merkez arasında esen rüzgârların hızı eşittir."
+      ],
+      "answer": 0,
+      "explanation": "Rüzgâr, yüksek basınç alanından alçak basınç alanına doğru eser: K → M ve K → L, ayrıca M → L. Eşit uzaklıkta basınç farkı ne kadar büyükse rüzgâr o kadar hızlıdır. K–L arasında fark 16 hPa, K–M arasında 8 hPa olduğundan K'den L'ye esen rüzgâr daha hızlıdır."
+    },
+    {
+      "no": 7,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "Basınç farkı ve rüzgâr (meltem)",
+      "skill": "Çıkarım yapma",
+      "scenario": "Bir sahil kasabasında yaşayan Aylin, gündüz saat 14.00'te deniz ve kara yüzeylerinin sıcaklığını ve yüzeye yakın basıncını ölçüyor. Akşam olunca rüzgârın yön değiştirdiğini fark ediyor. Ölçümler şemada verilmiştir.",
+      "image": "/denemeler/8-fenvebilimkulubu-deneme3/q07.svg",
+      "imageAlt": "Deniz ve kara üzerindeki sıcaklık ve basınç değerlerini gösteren sahil şeması",
+      "stem": "Şemadaki duruma göre gündüz esen rüzgârın yönü ve gece olacak değişim aşağıdakilerden hangisinde doğru verilmiştir?",
+      "options": [
+        "Gündüz karadan denize doğru eser (kara meltemi); gece deniz daha çabuk soğuyunca rüzgâr denizden karaya eser.",
+        "Gündüz denizden karaya eser; gece rüzgârın yönü değişmez, çünkü deniz her zaman alçak basınç alanıdır.",
+        "Gündüz karadan denize doğru eser; çünkü sıcak hava alçak basınç alanından yüksek basınç alanına hareket eder.",
+        "Gündüz denizden karaya doğru eser (deniz meltemi); gece kara daha çabuk soğuyup basınç artınca rüzgâr karadan denize doğru eser."
+      ],
+      "answer": 3,
+      "explanation": "Gündüz kara daha çabuk ısınır, havası yükselir ve alçak basınç oluşur (1008 hPa). Denizin üstünde basınç daha yüksektir (1014 hPa); hava yüksek basınçtan alçak basınca, yani denizden karaya eser (deniz meltemi). Gece kara daha çabuk soğuyup yüksek basınç alanı olurken deniz görece sıcak kalır; rüzgâr karadan denize eser (kara meltemi)."
+    },
+    {
+      "no": 8,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "Türkiye'nin iklim tipleri",
+      "skill": "Grafik yorumlama",
+      "scenario": "K meteoroloji istasyonunun uzun yıllar ortalamalarından hazırlanan iklim grafiği verilmiştir. Çubuklar aylık toplam yağışı, çizgi ise aylık ortalama sıcaklığı göstermektedir.",
+      "image": "/denemeler/8-fenvebilimkulubu-deneme3/q08.svg",
+      "imageAlt": "K istasyonunun aylık yağış ve sıcaklık grafiği",
+      "stem": "Bu grafikteki veriler hangi iklim tipine aittir ve bu iklimin görüldüğü bölgede aşağıdakilerden hangisinin görülmesi beklenir?",
+      "options": [
+        "Karadeniz iklimi; her mevsim yağış alan geniş yapraklı ormanlar ve çay tarımı görülür.",
+        "Akdeniz iklimi; yaz kuraklığına dayanıklı maki bitki örtüsü ile zeytin ve narenciye yetişir.",
+        "Karasal iklim; kışlar soğuk ve karlı geçer, bozkır (step) bitki örtüsü ve tahıl tarımı yaygındır.",
+        "Karadeniz iklimi; yazlar kurak olduğu için ormanlar yaz aylarında tamamen kurur."
+      ],
+      "answer": 1,
+      "explanation": "Grafikte yazlar sıcak ve çok kurak (Haziran–Ağustos'ta yağış yok denecek kadar az), kışlar ılık ve yağışlıdır. Bu özellikler Akdeniz iklimine aittir. Bu iklimde yaz kuraklığına uyum sağlamış maki bitki örtüsü görülür; zeytin, narenciye gibi ürünler yetişir."
+    },
+    {
+      "no": 9,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "Türkiye'nin iklim tipleri",
+      "skill": "Karşılaştırma",
+      "scenario": "Üç farklı kentin uzun yıllar iklim verileri tabloda verilmiştir. Kentlerin her biri Türkiye'deki üç farklı iklim tipinden (Akdeniz, Karadeniz, Karasal) birinin etkisi altındadır.",
+      "image": "/denemeler/8-fenvebilimkulubu-deneme3/q09.svg",
+      "imageAlt": "K, L ve M kentlerinin sıcaklık ve yağış verilerini gösteren tablo",
+      "stem": "Tablodaki verilere göre aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "L kenti, yağışın tüm mevsimlere dağılması ve ılıman sıcaklıklarıyla Karadeniz iklimini yansıtır.",
+        "K kenti, yıllık sıcaklık farkı en az olduğu için Karadeniz iklimini yansıtır.",
+        "M kenti, kışları soğuk ve karlı geçtiği için Karasal iklimi yansıtır.",
+        "K ve M kentlerinin yağış rejimleri benzer olduğundan ikisi de aynı iklim tipindedir."
+      ],
+      "answer": 0,
+      "explanation": "L kentinde yağış her mevsim görülür, yıllık yağış çok fazladır ve sıcaklık farkı azdır: Karadeniz iklimi. K kentinde kışlar çok soğuk, yağış azdır ve sıcaklık farkı en büyüktür (29 °C): Karasal iklim. M kentinde yazlar sıcak ve kurak, kışlar ılık ve yağışlıdır: Akdeniz iklimi."
+    },
+    {
+      "no": 10,
+      "unit": "Mevsimler ve İklim",
+      "outcome": "Küresel iklim değişikliği",
+      "skill": "Çıkarım yapma ve tartışma",
+      "scenario": "Bir araştırma grubu, 1960'tan günümüze atmosferdeki karbondioksit (CO₂) derişimini ve küresel ortalama sıcaklığın 1951–1980 ortalamasına göre farkını grafikte göstermiştir. Değerler yaklaşık olup sadeleştirilmiştir.",
+      "image": "/denemeler/8-fenvebilimkulubu-deneme3/q10.svg",
+      "imageAlt": "1960-2020 arasında CO₂ derişimi ve küresel sıcaklık farkını gösteren grafik",
+      "stem": "Grafiğe ve küresel iklim değişikliği bilgisine göre aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Sıcaklık artışının nedeni Dünya'nın Güneş'e yaklaşmasıdır; bu nedenle insan faaliyetlerini azaltmak sonucu değiştirmez.",
+        "CO₂ derişiminin artması sera etkisini azaltır; grafikteki sıcaklık artışı yalnızca bir tesadüftür.",
+        "Fosil yakıt kullanımı gibi faaliyetlerle artan sera gazları atmosferde tutulan ısıyı artırarak sıcaklığı yükseltir; yenilenebilir enerji kullanımı ve ağaçlandırma çözüm yollarındandır.",
+        "Küresel iklim değişikliği tamamen doğal bir döngüdür; fosil yakıt kullanımı ve ormansızlaşmanın etkisi yoktur."
+      ],
+      "answer": 2,
+      "explanation": "Grafikte CO₂ derişimi arttıkça küresel sıcaklık farkı da artmaktadır. Fosil yakıtların yakılması ve ormansızlaşma sera gazlarını artırır; sera gazları yer yüzeyinden yayılan ısının bir kısmını tutarak sıcaklığı yükseltir. Enerji tasarrufu, yenilenebilir enerji ve ağaçlandırma bu etkiyi azaltmaya yönelik çözümlerdir."
+    },
+    {
+      "no": 11,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "DNA, gen, nükleotit ve kromozom",
+      "skill": "İlişkilendirme",
+      "scenario": "Bir öğrenci, hücre çekirdeğindeki kalıtım maddesini adım adım büyüterek inceliyor. K, çekirdek içinde X biçiminde görülen yapıdır; L, K yapısını oluşturan çift sarmal moleküldür; M, L molekülünün sarı ile gösterilen ve bir özelliğin oluşumunu belirleyen bölümüdür; N ise M bölümünü oluşturan tekrar eden küçük birimlerden biridir (fosfat, şeker ve organik bazdan oluşur).",
+      "image": "/denemeler/8-fenvebilimkulubu-deneme3/q11.svg",
+      "imageAlt": "Çekirdekteki kromozomdan DNA'ya, gene ve nükleotide yakınlaşan K, L, M, N yapıları",
+      "stem": "K, L, M ve N yapılarının adları aşağıdakilerden hangisinde doğru verilmiştir?",
+      "options": [
+        "K: DNA, L: Kromozom, M: Nükleotit, N: Gen",
+        "K: Kromozom, L: DNA, M: Gen, N: Nükleotit",
+        "K: Kromozom, L: Gen, M: DNA, N: Nükleotit",
+        "K: Gen, L: DNA, M: Kromozom, N: Nükleotit"
+      ],
+      "answer": 1,
+      "explanation": "Çekirdekte DNA sıkıca paketlenerek kromozomları (K) oluşturur. Kromozomun yapısında çift sarmallı DNA molekülü (L) bulunur. DNA'nın bir özelliği belirleyen bölümü gendir (M). Gen ve DNA, nükleotit adı verilen yapı birimlerinin (N) birleşmesiyle oluşur; her nükleotit fosfat, şeker ve organik bazdan meydana gelir."
+    },
+    {
+      "no": 12,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "DNA'nın kendini eşlemesi",
+      "skill": "Grafik yorumlama",
+      "scenario": "Bir öğrenci, bölünerek iki yavru hücre oluşturacak bir hücrenin DNA miktarındaki değişimi zamana karşı grafikte gösteriyor. Bölünmeden önceki ilk hücrenin DNA miktarı 1 birim kabul edilmiştir. Grafikte K, L, M ve N ile işaretlenen dört zaman aralığı bulunmaktadır.",
+      "image": "/denemeler/8-fenvebilimkulubu-deneme3/q12.svg",
+      "imageAlt": "Bölünmeye hazırlanan hücrede DNA miktarının zamanla değişimini gösteren grafik",
+      "stem": "Grafikle ilgili aşağıdaki yorumlardan hangisi doğrudur?",
+      "options": [
+        "L aralığında yeni genler oluşur; bu yüzden yavru hücrelerin genetik bilgisi ana hücreden farklı olur.",
+        "M aralığında DNA'nın eşlenmesi henüz başlamamıştır; eşlenme N aralığında gerçekleşir.",
+        "N aralığında DNA miktarının yarıya inmesi, eşlenmenin hatalı olduğunu gösterir.",
+        "L aralığında DNA kendini eşler; N aralığındaki hücreler, K aralığındaki hücreyle aynı genetik bilgiyi taşır."
+      ],
+      "answer": 3,
+      "explanation": "Hücre bölünmeden önce DNA'sını eşler; DNA miktarı L aralığında 1'den 2'ye çıkar. Bölünme sonunda bu DNA iki yavru hücreye paylaşılır ve her hücrede miktar yeniden 1 olur (N). Eşleme, bazların tamamlayıcı eşleşmesiyle olduğundan yavru hücreler ana hücreyle aynı genetik bilgiye sahiptir."
+    },
+    {
+      "no": 13,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "Çaprazlama (baskın-çekinik, genotip-fenotip)",
+      "skill": "Problem çözme",
+      "scenario": "Bir hayvan yetiştiricisi, tüy rengi bakımından heterozigot (Ss) olan iki siyah kemirgeni çiftleştiriyor. Siyah tüy (S), kahverengi tüye (s) baskındır. Çaprazlama karesinde ebeveynlerin gametleri gösterilmiştir. Bu çiftleşmeden toplam 16 yavru dünyaya gelmesi beklenmektedir.",
+      "image": "/denemeler/8-fenvebilimkulubu-deneme3/q13.svg",
+      "imageAlt": "Ss × Ss çaprazlaması için boş çaprazlama karesi",
+      "stem": "Bu çaprazlamadan beklenen yavrular için aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Genotip oranı 1 SS : 2 Ss : 1 ss olduğundan yaklaşık 4 yavru kahverengi, 12 yavru heterozigot siyah olur.",
+        "Fenotip oranı 1 : 1 olduğundan yaklaşık 8 yavru kahverengi, 8 yavru heterozigot siyah olur.",
+        "Çekinik özellik daha az görüldüğünden yaklaşık 12 yavru kahverengi, 4 yavru siyah olur.",
+        "Genotip oranı 1 SS : 2 Ss : 1 ss olduğundan yaklaşık 4 yavru kahverengi, 8 yavru heterozigot siyah olur."
+      ],
+      "answer": 3,
+      "explanation": "Ss × Ss çaprazlamasında yavruların genotipi %25 SS, %50 Ss, %25 ss olur. 16 yavrudan yaklaşık 4'ü SS (homozigot siyah), 8'i Ss (heterozigot siyah), 4'ü ss (kahverengi) olur. Fenotip oranı 3 siyah : 1 kahverengidir."
+    },
+    {
+      "no": 14,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "Çaprazlama (baskın-çekinik, genotip-fenotip)",
+      "skill": "Bilimsel akıl yürütme",
+      "scenario": "Bezelyelerde sarı tohum rengi (Y), yeşil tohum rengine (y) baskındır. Bir bahçıvan, genotipini bilmediği sarı tohumlu bir bezelye bitkisini yeşil tohumlu bir bitkiyle çaprazlıyor ve 100 yavru bitki elde ediyor. Bahçıvan, bilinmeyen bitkinin YY veya Yy olması durumlarında beklenen sonuçları ve gözlediği sonucu grafiklerde karşılaştırıyor.",
+      "image": "/denemeler/8-fenvebilimkulubu-deneme3/q14.svg",
+      "imageAlt": "Bilinmeyen sarı bezelyenin test çaprazlaması için olası ve gözlenen sonuçları gösteren sütun grafikleri",
+      "stem": "Bilinmeyen sarı bezelyenin genotipi ve gerekçesi aşağıdakilerden hangisinde doğru verilmiştir?",
+      "options": [
+        "Yy; çünkü yavruların yaklaşık yarısı yeşildir, yani bilinmeyen bitki çekinik (y) alleli de taşımaktadır.",
+        "YY; çünkü yavruların çoğunluğu sarı renklidir.",
+        "yy; çünkü yavrular arasında yeşil renkli bitkiler de bulunmaktadır.",
+        "Genotip belirlenemez; çünkü yavrularda iki farklı fenotip görülmüştür."
+      ],
+      "answer": 0,
+      "explanation": "Yeşil bitkinin genotipi yy'dir. Bilinmeyen bitki YY olsaydı bütün yavrular sarı (Yy) olurdu. Yavruların yaklaşık yarısının yeşil (yy) çıkması, bilinmeyen bitkinin de y alleli taşıdığını gösterir; bu durumda genotip Yy'dir. Bitki sarı olduğu için yy olamaz."
+    },
+    {
+      "no": 15,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "Mutasyon ve modifikasyon",
+      "skill": "Karşılaştırma",
+      "scenario": "Bir araştırmacı, dört farklı canlıda gözlenen özellik değişimlerini inceliyor ve her durumda canlının DNA dizisini değişim öncesiyle karşılaştırıyor. Gözlemler ve DNA karşılaştırması sonuçları tabloda verilmiştir.",
+      "image": "/denemeler/8-fenvebilimkulubu-deneme3/q15.svg",
+      "imageAlt": "Dört farklı canlıda gözlenen özellik değişimleri ve DNA dizisi karşılaştırma sonuçları",
+      "stem": "K, L, M ve N durumları için aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "K ve M mutasyondur; çevre koşulları ortadan kalkınca özellik eski hâline döner, L ve N modifikasyondur.",
+        "L ve N modifikasyondur; çevre koşullarının etkisiyle oluştukları için yavrulara aktarılırlar.",
+        "K ve M modifikasyondur; DNA değişmediği için kalıtsal değildir. L ve N mutasyondur; DNA'daki kalıcı değişim yavrulara aktarılabilir.",
+        "Dört durum da mutasyondur; çünkü hepsinde canlının görünüşü değişmiştir."
+      ],
+      "answer": 2,
+      "explanation": "Modifikasyon, çevre koşullarının etkisiyle oluşan, DNA dizisini değiştirmeyen ve kalıtsal olmayan değişimdir (K ve M). Mutasyon ise DNA'nın baz dizisindeki kalıcı değişimdir; üreme hücrelerinde olursa sonraki nesillere aktarılabilir (L ve N)."
+    },
+    {
+      "no": 16,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "Mutasyon ve modifikasyon",
+      "skill": "Neden-sonuç ilişkisi kurma",
+      "scenario": "Şekilde bir gen parçasının baz dizilimi mutasyondan önce ve sonra gösterilmiştir. Durum 1'de bu değişim, UV ışınlarının etkisiyle Ali'nin bir deri hücresinde; Durum 2'de ise Ayşe'nin bir yumurta hücresinde oluşmuştur. Ayşe'nin bu yumurta hücresi döllenerek bir bebeğe dönüşmüştür.",
+      "image": "/denemeler/8-fenvebilimkulubu-deneme3/q16.svg",
+      "imageAlt": "Normal ve mutasyona uğramış baz dizilimi ile iki farklı hücrede oluşan mutasyon durumları",
+      "stem": "Bu mutasyonlarla ilgili aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Mutasyon çevre koşullarının etkisiyle oluşan geçici bir değişimdir; bu yüzden iki durumdaki değişim de kalıtsaldır.",
+        "Mutasyon DNA'daki baz diziliminin değişmesidir; Durum 2'deki mutasyon bebeğin hücrelerine aktarılırken Durum 1'dekinin Ali'nin çocuklarına geçmesi beklenmez.",
+        "Her iki durumdaki mutasyon da çocuklara aktarılır; çünkü DNA değişimi her zaman kalıtsaldır.",
+        "Mutasyonlar canlıya daima yarar sağlar; bu yüzden Durum 1'deki değişim Ali için avantajlıdır."
+      ],
+      "answer": 1,
+      "explanation": "Mutasyon, DNA'daki baz diziliminin değişmesidir; şekilde 5. bazın C yerine G olması buna örnektir. Yalnızca üreme hücrelerinde (yumurta, sperm) oluşan mutasyonlar sonraki nesle aktarılabilir. Deri hücresindeki mutasyon Ali'nin çocuklarına geçmez. Mutasyonlar yararlı, zararlı ya da etkisiz olabilir."
+    },
+    {
+      "no": 17,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "Adaptasyon",
+      "skill": "Karşılaştırma ve çıkarım",
+      "scenario": "Bir biyolog, çölde yaşayan K tilkisi ile kutup bölgesinde yaşayan L tilkisinin bazı özelliklerini karşılaştırıyor. K'nin kulakları büyüktür ve ince damarlarla doludur; L'nin kulakları ise küçüktür. Veriler şekilde verilmiştir.",
+      "image": "/denemeler/8-fenvebilimkulubu-deneme3/q17.svg",
+      "imageAlt": "Çöl tilkisi ve kutup tilkisinin kulak, tüy ve yaşam ortamı karşılaştırması",
+      "stem": "Bu karşılaştırmaya göre aşağıdaki çıkarımlardan hangisi yapılabilir?",
+      "options": [
+        "K'nin büyük kulakları fazla ısıyı atmaya, L'nin küçük kulakları ve sık tüyleri ısı kaybını azaltmaya yardımcı olan, kalıtsal adaptasyonlardır.",
+        "K'nin kulakları, çöl tilkisinin kulaklarını çok kullanması sonucu büyümüştür; bu özellik kazanılmış olduğu için yavrulara aktarılır.",
+        "L'nin beyaz tüyü, tilkinin kutup bölgesine uyum sağlamak istemesi sonucu oluşmuştur.",
+        "Adaptasyonlar, canlının yaşamı boyunca kazandığı geçici özelliklerdir ve ortam değişince kaybolur."
+      ],
+      "answer": 0,
+      "explanation": "Adaptasyon, canlının yaşadığı ortama uyumunu sağlayan kalıtsal özelliktir. Çöl tilkisinin büyük kulakları ısının atılmasını kolaylaştırır; kutup tilkisinin küçük kulakları ve sık tüyü ısı kaybını azaltır. Adaptasyonlar canlının isteğiyle ya da kullanımıyla oluşmaz; yavrulara geçen kalıtsal özelliklerdir."
+    },
+    {
+      "no": 18,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "Doğal seçilim",
+      "skill": "Grafik yorumlama",
+      "scenario": "Bir sanayi bölgesinde yaşayan güveler, gündüz ağaç gövdelerinde dinlenirken kuşlar tarafından avlanmaktadır. Güveler açık veya koyu renklidir ve renk kalıtsal bir özelliktir. Bölgede fabrikalar kurulunca ağaç gövdeleri kurumla kaplanmış, 1960'tan sonra alınan önlemlerle hava temizlenmeye ve ağaç gövdeleri yeniden açık renge dönmeye başlamıştır. Güve topluluğundaki renk oranları grafikte verilmiştir.",
+      "image": "/denemeler/8-fenvebilimkulubu-deneme3/q18.svg",
+      "imageAlt": "Sanayi bölgesinde koyu ve açık renkli güvelerin oranlarının yıllara göre değişimi",
+      "stem": "Grafikteki değişim aşağıdakilerden hangisiyle en doğru biçimde açıklanır?",
+      "options": [
+        "Açık renkli güveler kuşlardan kurtulmak için kendilerini koyu renge dönüştürmüştür.",
+        "Kurum, güvelerin DNA'sını koyu renge çevirerek modifikasyona yol açmıştır ve bu bütün güvelerde kalıtsaldır.",
+        "Doğa koyu güveleri bilinçli olarak seçmiştir; bu yüzden açık renkli güveler tamamen yok olmuştur.",
+        "Kurumlu gövdelerde koyu güveler kuşlara daha az yakalanıp daha çok yaşamış ve çoğalmış, bu özelliği yavrularına aktarmıştır; gövdeler açılınca açık renkliler yeniden avantaj kazanmıştır."
+      ],
+      "answer": 3,
+      "explanation": "Doğal seçilimde ortama uygun özelliğe sahip bireyler daha çok hayatta kalır ve özelliklerini yavrularına aktarır. Kurumlu ağaçlarda koyu güveler daha az fark edilerek avlanmadığı için oranları artmıştır; ortam temizlenince açık renkliler avantajlı hâle gelmiş ve oranları yeniden yükselmiştir. Bireyler kendi rengini isteyerek değiştirmez; açık renkliler de tamamen yok olmamıştır."
+    },
+    {
+      "no": 19,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "Biyoteknolojik uygulamalar",
+      "skill": "Sınıflandırma ve değerlendirme",
+      "scenario": "Bir biyoloji öğretmeni, öğrencilerinden dört biyoteknolojik uygulamayı genetik mühendisliği (bir canlının DNA'sına başka bir canlıdan gen aktarma) bakımından incelemelerini istiyor. Uygulamalar tabloda verilmiştir.",
+      "image": "/denemeler/8-fenvebilimkulubu-deneme3/q19.svg",
+      "imageAlt": "Dört biyoteknolojik uygulamanın tablosu",
+      "stem": "Hangi uygulamalar genetik mühendisliğine örnektir ve bunların çevreye salınması için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        "K ve N; çünkü canlıların DNA'sı değiştirilmiştir ve bu nedenle çevreye hiçbir etkileri olmaz.",
+        "L ve M; çünkü gen aktarılmıştır ve bu canlıların doğaya karışarak diğer canlıları etkileme olasılığı için kontrollü kullanım gerekir.",
+        "K ve L; çünkü bakteriler kullanılmıştır ve bu uygulamaların hepsi çevre için aynı riski taşır.",
+        "Dört uygulamanın tamamı; çünkü hepsinde bir canlıdan faydalanılmıştır ve hepsinin etik boyutu aynıdır."
+      ],
+      "answer": 1,
+      "explanation": "Genetik mühendisliğinde bir canlıdan alınan gen başka bir canlının DNA'sına aktarılır: insülin geni bakteriye (L) ve böcek zehiri geni mısıra (M) aktarılmıştır. Yoğurt (K) ve ekmek mayası (N) geleneksel biyoteknolojiye girer; gen aktarımı yoktur. Genetiği değiştirilmiş canlıların doğaya karışması ve diğer canlıları etkilemesi ihtimali nedeniyle çevresel ve etik değerlendirme gerekir."
+    },
+    {
+      "no": 20,
+      "unit": "DNA ve Genetik Kod",
+      "outcome": "Biyoteknolojik uygulamaların etik ve çevresel boyutu",
+      "skill": "Bilimsel değerlendirme",
+      "scenario": "Bir çiftçi derneği, zararlı böceklere dayanıklı olması için Bt geni aktarılmış pamuk tohumunu kullanıp kullanmamaya karar verecek. Dernek, geleneksel ve Bt'li pamuk tarlalarından alınan verileri ve bir gözlem notunu şekildeki gibi hazırlıyor.",
+      "image": "/denemeler/8-fenvebilimkulubu-deneme3/q20.svg",
+      "imageAlt": "Geleneksel ve Bt'li pamuğun ilaçlama, verim ve maliyet verilerini gösteren grafikler ve gözlem notu",
+      "stem": "Dernek kararı verirken aşağıdaki yaklaşımlardan hangisini benimsemesi en bilimsel ve dengeli olur?",
+      "options": [
+        "Verim arttığı ve ilaç azaldığı için yararlar riskleri aştığından herhangi bir denetime gerek duymamak",
+        "Bt geni diğer tarlalara geçebildiği için genetiği değiştirilmiş tüm bitkilerin kullanımını kesin olarak yasaklamak",
+        "Verimdeki artış ve ilaçlamadaki azalma gibi yararlarla; gen akışı, maliyet ve çevreye etkiler gibi riskleri birlikte değerlendirip izleme ve denetim önlemleri almak",
+        "İlaçlama azaldığı için çevreye hiçbir zarar vermediğini kabul edip komşu tarlalardaki etkileri göz ardı etmek"
+      ],
+      "answer": 2,
+      "explanation": "Biyoteknolojik uygulamalar tarımda verimi artırıp kimyasal ilaç kullanımını azaltabilir; ancak gen akışı, tohum maliyeti ve hedef olmayan canlılara etkiler gibi çevresel ve ekonomik riskler de taşıyabilir. Bilimsel yaklaşım, yarar ve riskleri birlikte değerlendirmek, izleme ve denetim yapmak ve kararı verilere dayandırmaktır."
+    }
+  ]
+}
