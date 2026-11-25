@@ -16,22 +16,29 @@ import { generalLimiter } from "./middleware/rateLimiter";
 export function createApp(): Application {
   const app = express();
 
+  // Vercel reverse proxy arkasında istemci IP'sini güvenli biçimde algıla.
+  app.set("trust proxy", 1);
+
   // ---- Güvenlik başlıkları ----
   app.use(helmet());
 
   // ---- CORS ----
-  // Production ortamında frontend adresi açıkça izinli olmalı.
-  // credentials: true ile birlikte '*' kullanılamaz.
-  const clientUrl = env.isProd
-    ? process.env.FRONTEND_URL ?? "https://fen-platformu1-lrho.vercel.app"
-    : env.clientUrl;
+  // Üretim ortamında ana alan adı, www ve eski Vercel alan adı kabul edilir.
+  const allowedOrigins = [
+    process.env.FRONTEND_URL,
+    "https://fenvebilimkulubu.com",
+    "https://www.fenvebilimkulubu.com",
+    "https://fen-platformu1-lrho.vercel.app",
+  ].filter((origin): origin is string => Boolean(origin));
+
+  const clientUrl = env.isProd ? allowedOrigins : env.clientUrl;
 
   app.use(
     cors({
       origin: clientUrl,
       credentials: true,
       methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-      allowedHeaders: ["Content-Type", "Authorization"],
+      allowedHeaders: ["Content-Type", "Authorization", "X-CSRF-Token", "X-Requested-With"],
     }),
   );
 
