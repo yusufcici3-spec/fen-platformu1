@@ -1,0 +1,196 @@
+{
+  "id": "konu-tarama-kati-basinci-1",
+  "slug": "konu-tarama-kati-basinci-1",
+  "title": "Katı Basıncı Konu Tarama Testi 1",
+  "category": "konu-tarama",
+  "topic": "Katı Basıncı",
+  "description": "8. sınıf Basınç ünitesi, katı basıncı konusundan 10 görselli ve yorum gerektiren soru.",
+  "classLevel": 8,
+  "durationMin": 15,
+  "units": [
+    "Katı Basıncı"
+  ],
+  "source": "Kullanıcı tarafından hazırlanan katı basıncı soruları.",
+  "questions": [
+    {
+      "no": 1,
+      "unit": "Katı Basıncı",
+      "outcome": "Katı basıncı",
+      "skill": "Veri yorumlama",
+      "scenario": "Fen Bilimleri dersinde, katı basıncının hangi değişkenlere bağlı olduğunu incelemek isteyen öğrenciler, özdeş küplerle aşağıdaki düzenekleri oluşturuyor.",
+      "image": "/denemeler/konu-tarama-kati-basinci/q01.jpg",
+      "imageAlt": "Ağırlığı ve temas alanı verilen dört küp düzeneği",
+      "stem": "Bu düzenekler incelendiğinde, aşağıdaki sonuçlardan hangisine ulaşılamaz?",
+      "options": [
+        "Ağırlık arttıkça, zemine uygulanan basınç artar.",
+        "Temas yüzey alanı arttıkça, zemine uygulanan basınç azalır.",
+        "I ve III. düzeneklerde zemine uygulanan basınçlar eşittir.",
+        "I, II ve IV. düzenekler, katı basıncının ağırlığa bağlı olduğunu göstermek için kullanılabilir."
+      ],
+      "answer": 3,
+      "explanation": "Basınç = ağırlık / temas alanı. I: G/S, II: 2G/S, III: 2G/2S = G/S, IV: 3G/3S = G/S. I ve II'de alan sabit, ağırlık değişir (A); II ve III'te ağırlık sabit, alan değişir (B); I ve III'ün basıncı eşittir (C). IV'te hem ağırlık hem alan farklı olduğundan ağırlığın etkisini göstermek için I, II ve IV birlikte kullanılamaz (D)."
+    },
+    {
+      "no": 2,
+      "unit": "Katı Basıncı",
+      "outcome": "Katı basıncı",
+      "skill": "Deney tasarlama",
+      "scenario": "Bir cismin zemine uyguladığı katı basıncı, cismin ağırlığı ile doğru, temas ettiği yüzey alanı ile ters orantılıdır.\n\nFen Bilimleri öğretmeni, katı basıncının bağlı olduğu değişkenleri incelemek için özdeş küpleri kullanarak aşağıdaki düzenekleri oluşturuyor.",
+      "image": "/denemeler/konu-tarama-kati-basinci/q02.jpg",
+      "imageAlt": "Özdeş küplerle kurulan dört düzenek ve temas alanları",
+      "stem": "Buna göre,\nI. I ve III. düzenekler, basıncın yüzey alanına bağlılığını incelemek için uygundur.\nII. II ve IV. düzenekler, basıncın ağırlığa bağlılığını incelemek için uygundur.\nIII. I ve II. düzenekler, ağırlık sabit tutularak yüzey alanının basınca etkisini gösterir.\n\nifadelerinden hangileri doğrudur?",
+      "options": [
+        "Yalnız I",
+        "I ve II",
+        "II ve III",
+        "Yalnız III"
+      ],
+      "answer": 3,
+      "explanation": "Bir değişkenin etkisini incelemek için yalnızca o değişken farklı, diğerleri aynı olmalıdır. I (2 küp, 2S) ve III (3 küp, 3S) düzeneklerinde hem ağırlık hem alan farklıdır (I yanlış). II (2 küp, S) ve IV (4 küp, 3S) düzeneklerinde de ikisi birden farklıdır (II yanlış). I ve II'de küp sayısı (ağırlık) eşit, alan farklıdır; bu yüzden yalnızca III doğrudur."
+    },
+    {
+      "no": 3,
+      "unit": "Katı Basıncı",
+      "outcome": "Katı basıncı",
+      "skill": "Çıkarım yapma",
+      "scenario": "Bir dağ yürüyüşünde, ekip lideri Yusuf Öğretmen, karın çok yumuşak olduğu bir bölgede öğrencilerin batmadan ilerleyebilmesi için iki farklı ekipman kullanılmasını öneriyor: normal bot ve kar ayakkabısı (geniş tabanlı ekipman).\nAşağıda aynı öğrencinin, aynı zeminde ve aynı ağırlıkla (800 N) yürüdüğünde zeminde oluşan iz derinlikleri gösterilmiştir.",
+      "image": "/denemeler/konu-tarama-kati-basinci/q03.jpg",
+      "imageAlt": "Normal bot ve kar ayakkabısının taban alanları ile kardaki iz derinlikleri",
+      "stem": "Bu etkinlikten yararlanarak aşağıdaki çıkarımlardan hangisi yapılamaz?",
+      "options": [
+        "Temas eden yüzey alanı arttıkça zemine uygulanan katı basıncı azalır.",
+        "Aynı ağırlıkta, yüzey alanı küçülen cisim zemine daha fazla basınç uygular.",
+        "Kar ayakkabısının kullanılması, zemine uygulanan basıncı 4 kat azaltır.",
+        "Zeminde oluşan iz derinliği artarsa, zemine uygulanan katı basınç azalır."
+      ],
+      "answer": 3,
+      "explanation": "Ağırlık sabitken yüzey alanı S'den 4S'ye çıkınca basınç 4 kat azalır; kar ayakkabısında iz daha sığdır (A, B, C yapılabilir). İz derinliği basınçla doğru orantılı değişir: iz derinliği arttıkça basınç da artar. D'deki çıkarım bunun tersini söylediği için yapılamaz."
+    },
+    {
+      "no": 4,
+      "unit": "Katı Basıncı",
+      "outcome": "Katı basıncı",
+      "skill": "Problem çözme",
+      "scenario": "Özdeş hamurla hazırlanmış, aynı kalınlıktaki bir pizza, dikdörtgen şeklindeki tepsiye yerleştirilmiş ve 8 eşit dilime bölünmüştür. Başlangıçta pizzanın tamamı tepsi üzerindedir.",
+      "image": "/denemeler/konu-tarama-kati-basinci/q04.jpg",
+      "imageAlt": "Tepsideki pizza ve dilimlerin temas alanları",
+      "stem": "Buna göre aşağıdaki yorumlardan hangisi doğrudur?",
+      "options": [
+        "II. durumda pizzanın tepsiye uyguladığı basınç, I. duruma göre azalmıştır.",
+        "Alınan dilimlerin tabağa uyguladığı basınç, I. durumda pizzanın tepsiye uyguladığı basınca eşittir.",
+        "Tepsiye uygulanan basınç, pizzanın yüzey alanı ile doğru orantılıdır.",
+        "Tabağa uygulanan basınç, II. durumda pizzanın tepsiye uyguladığı basınçtan daha büyüktür."
+      ],
+      "answer": 1,
+      "explanation": "Bir dilimin ağırlığına W, temas alanına S diyelim. I. durum: 8W/8S = W/S. II. durum: 6W/6S = W/S. Tabaktaki 2 dilim: 2W/2S = W/S. Dilimler özdeş ve aynı kalınlıkta olduğundan ağırlık ile alan aynı oranda değişir; bütün durumlarda basınç eşittir."
+    },
+    {
+      "no": 5,
+      "unit": "Katı Basıncı",
+      "outcome": "Katı basıncı",
+      "skill": "Grafik/veri yorumlama",
+      "scenario": "Yusuf Öğretmen, katı basıncının yüzey alanı ve ağırlığa bağlı değişimini göstermek için özdeş küplerden oluşan cisimlerle kum zemin üzerinde bir etkinlik yapıyor. Farklı düzeneklerde cisimleri kum üzerine yerleştirerek oluşan iz derinliklerini ölçüyor.",
+      "image": "/denemeler/konu-tarama-kati-basinci/q05.jpg",
+      "imageAlt": "Kum üzerinde üç düzenek ve iz derinlikleri",
+      "stem": "Buna göre;\nI. I ve II. düzenekler, basıncın ağırlığa bağlı olduğunu gösterir.\nII. I ve III. düzenekler, basıncın yüzey alanına bağlı olduğunu gösterir.\nIII. II. düzeneğin zemine uyguladığı basınç, III. düzeneğinkinden 4 kat fazladır.\n\nifadelerinden hangileri doğrudur?",
+      "options": [
+        "Yalnız I",
+        "I ve II",
+        "II ve III",
+        "I, II ve III"
+      ],
+      "answer": 0,
+      "explanation": "I ve II'de temas alanı aynıdır, yalnızca ağırlık farklıdır; basınç ağırlıkla artar (I doğru). I ve III'te hem ağırlık hem alan farklıdır, bu yüzden yüzey alanının etkisini göstermez (II yanlış). II. düzenekte basınç 2G/S, III. düzenekte 2G/2S'dir; oran 2'dir, 4 değildir (III yanlış). Not: Görseldeki III. düzenek için verilen 3 cm'lik iz derinliği, özdeş küplerle oluşan bu düzenek için 6 cm olmalıdır."
+    },
+    {
+      "no": 6,
+      "unit": "Katı Basıncı",
+      "outcome": "Katı basıncı",
+      "skill": "Grafik yorumlama",
+      "scenario": "K, L, M ve N cisimlerine ait ağırlık ve yere temas eden yüzey alanı değerleri aşağıdaki sütun grafiklerinde verilmiştir. Bu cisimler, şekildeki gibi yatay bir zemine yerleştiriliyor.",
+      "image": "/denemeler/konu-tarama-kati-basinci/q06.jpg",
+      "imageAlt": "K, L, M ve N cisimlerinin ağırlık ve yüzey alanı sütun grafikleri",
+      "stem": "Buna göre verilen ifadelerden hangileri doğrudur?\nI. L cisminin zemine yaptığı basınç, K cisminin zemine yaptığı basınçtan fazladır.\nII. M cisminin zemine yaptığı basınç, N cisminin zemine yaptığı basınçtan fazladır.\nIII. K ve N cisimlerinin zemine yaptıkları basınçlar eşittir.",
+      "options": [
+        "Yalnız I",
+        "Yalnız II",
+        "II ve III",
+        "I, II ve III"
+      ],
+      "answer": 1,
+      "explanation": "Basınç = ağırlık / alan. K: 20/2 = 10, L: 30/4 = 7,5, M: 10/2 = 5, N: 20/6 ≈ 3,3. L'nin basıncı K'dan küçüktür (I yanlış). M'nin basıncı N'den büyüktür (II doğru). K ve N'nin basınçları eşit değildir (III yanlış)."
+    },
+    {
+      "no": 7,
+      "unit": "Katı Basıncı",
+      "outcome": "Katı basıncı",
+      "skill": "Karşılaştırma",
+      "scenario": "Eşit kütleli, dikdörtgen prizma biçimindeki özdeş tahta bloklar kullanılarak I, II, III ve IV numaralı düzenekler oluşturulmuştur. Bir bloğun yatay konumdayken zemine temas eden yüzey alanı 12 cm², dikey konumdayken zemine temas eden yüzey alanı 4 cm²'dir.",
+      "image": "/denemeler/konu-tarama-kati-basinci/q07.jpg",
+      "imageAlt": "Tahta blokların farklı konumlarla oluşturduğu dört düzenek",
+      "stem": "Buna göre I, II, III ve IV numaralı düzeneklerin zemine uyguladığı basınçlar arasındaki ilişki aşağıdakilerden hangisinde doğru verilmiştir?",
+      "options": [
+        "II > III > IV > I",
+        "III > II > I > IV",
+        "I = IV > III > II",
+        "II = IV > I > III"
+      ],
+      "answer": 3,
+      "explanation": "Bir bloğun ağırlığına W diyelim. I: 2W/12 = W/6, II: 2W/(4+4) = W/4, III: 2W/12 = W/6, IV: 3W/12 = W/4. En büyük basınç II ve IV'tedir (W/4 ile eşit). I ve III'ün basıncı ise W/6'dır. Seçeneklerde II = IV olan tek sıralama D'dir; ancak bu seçenekte I ile III'ün de eşit olması gerekir."
+    },
+    {
+      "no": 8,
+      "unit": "Katı Basıncı",
+      "outcome": "Katı basıncı",
+      "skill": "Grafik seçme",
+      "scenario": "Bir sporcu, aynı ağırlıkla farklı hareketleri yaparak zemine farklı şekillerde temas ediyor. Sporcunun yaptığı hareketler ve zemine temas eden yüzeylerin durumu aşağıda verilmiştir.",
+      "image": "/denemeler/konu-tarama-kati-basinci/q08.jpg",
+      "imageAlt": "Sporcunun dört farklı duruşu ve A, B, C, D basınç grafikleri",
+      "stem": "Buna göre, sporcunun zemine uyguladığı basınçların figürlere göre karşılaştırılması, aşağıdaki grafiklerden hangisinde doğru verilmiştir?",
+      "options": [
+        "A grafiği (2 > 1 > 3 = 4)",
+        "B grafiği (3 > 2 > 4 > 1)",
+        "C grafiği (2 > 1 = 3 > 4)",
+        "D grafiği (1 > 2 = 3 > 4)"
+      ],
+      "answer": 2,
+      "explanation": "Ağırlık sabit olduğundan basınç, temas alanıyla ters orantılıdır. Tek ayağın ucunda durma (2. figür) en küçük alanı oluşturur, basınç en büyüktür. Yatarken (4. figür) temas alanı en büyüktür, basınç en küçüktür. İki ayakla durma ve diz üstü durmada temas alanları birbirine yakın kabul edildiğinden C grafiği doğrudur."
+    },
+    {
+      "no": 9,
+      "unit": "Katı Basıncı",
+      "outcome": "Katı basıncı",
+      "skill": "Deney tasarlama",
+      "scenario": "Ayşe, katı basıncına etki eden değişkenleri araştırmak için özdeş küplerle kontrollü bir deney tasarlıyor. Deneydeki değişkenler tabloda verilmiştir (bağımsız değişken: yüzey alanı; bağımlı değişken: katı basıncı; kontrol değişkenleri: küp sayısı (ağırlık), zeminin cinsi). Ayşe, 12 özdeş küp kullanarak iki düzenek kuruyor.",
+      "image": "/denemeler/konu-tarama-kati-basinci/q09.jpg",
+      "imageAlt": "12 küple kurulan piramit ve dikdörtgen düzenek ile değişken tablosu",
+      "stem": "Buna göre, Ayşe'nin deney amacına uygun olarak aşağıdaki değişikliklerden hangisini yapması gerekir?",
+      "options": [
+        "I. düzeneğin en üstüne bir küp daha eklenirse (toplam 13 küp olur).",
+        "II. düzeneğin yanına yatay olarak 4 küp daha eklenirse (toplam 16 küp olur).",
+        "I. düzeneğin en üstündeki küp çıkarılıp zemine temas edecek şekilde yanına yerleştirilirse (toplam 12 küp kalır).",
+        "II. düzenekten 3 küp çıkarılırsa (toplam 9 küp kalır)."
+      ],
+      "answer": 2,
+      "explanation": "Deneyde yalnızca bağımsız değişken olan yüzey alanı değişmeli; küp sayısı (ağırlık) sabit kalmalıdır. A, B ve D seçeneklerinde küp sayısı değiştiği için ağırlık da değişir. C seçeneğinde küp sayısı 12 olarak korunur, yalnızca zemine temas eden yüzey alanı değişir."
+    },
+    {
+      "no": 10,
+      "unit": "Katı Basıncı",
+      "outcome": "Katı basıncı",
+      "skill": "Veri yorumlama",
+      "scenario": "Eşit taban alanına sahip, farklı ağırlıktaki mavi, sarı ve kırmızı küplerle I, II, III ve IV numaralı kuleler oluşturuluyor. Bu kulelerin zemine uyguladığı basınçlar ölçülerek grafik elde ediliyor.\nAynı küplerle oluşturulan V numaralı kulenin zemine uyguladığı basıncın, III numaralı kulenin basıncıyla aynı olması isteniyor.",
+      "image": "/denemeler/konu-tarama-kati-basinci/q10.jpg",
+      "imageAlt": "Renkli küplerden oluşan kuleler, basınç grafiği ve V. kule için seçenekler",
+      "stem": "Buna göre V numaralı kule aşağıdakilerden hangisi olabilir?",
+      "options": [
+        "Üç mavi küpten oluşan kule",
+        "Üstten alta kırmızı, sarı, kırmızı küplerden oluşan kule",
+        "Üstten alta mavi, sarı, kırmızı küplerden oluşan kule",
+        "Üstten alta sarı, kırmızı, sarı küplerden oluşan kule"
+      ],
+      "answer": 2,
+      "explanation": "Taban alanları eşit olduğundan basınç, kulenin toplam ağırlığıyla doğru orantılıdır. Mavi = m, sarı = s, kırmızı = k olsun. I: m + 2k = 8; II: m + 2s = 10; III: m + s + k = 9; IV: k + 2s = 11. Çözülünce k = 3, s = 4, m = 2 bulunur. III'ün değeri 9'dur. Seçeneklerden yalnızca C 2 + 4 + 3 = 9 değerini verir (A: 6, B: 10, D: 11)."
+    }
+  ]
+}
