@@ -66,6 +66,11 @@ canvas{display:block;width:100%;height:auto;aspect-ratio:16/9;border-radius:20px
 .fb.bad{border-color:#ff5a5a;color:#ffdcdc;background:#4a101877}
 .shootbtn{display:none;width:100%;margin:0;font:inherit;font-weight:900;font-size:1.25rem;letter-spacing:.06em;color:#2b1700;border:0;border-radius:16px;padding:.9em;cursor:pointer;background:linear-gradient(#ffe14a,#e09b00);box-shadow:0 6px 0 #8a5a00,0 10px 24px #0007;animation:pulse .8s ease-in-out infinite alternate}
 .shootbtn:active{transform:translateY(4px);box-shadow:0 2px 0 #8a5a00}
+.special-actions{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.special-actions button{display:none;font:900 .9rem system-ui;border:2px solid #ffffff55;border-radius:12px;padding:.7em 1em;cursor:pointer;color:#fff;background:#19345b}
+.special-actions button.show{display:inline-block}
+.special-actions button.selected{border-color:#ffd23f;background:#65420b;box-shadow:0 0 18px #ffd23f66}
+#freezeKeeper.selected{border-color:#8be8ff;background:#164e70;box-shadow:0 0 18px #67dcff66}
 .shootbtn.show{display:block}
 @keyframes pulse{to{filter:brightness(1.15);box-shadow:0 6px 0 #8a5a00,0 0 30px #ffd23f}}
 .hint{font-size:.8rem;color:#9db9e6;text-align:center;margin-top:6px}
@@ -120,6 +125,7 @@ html.embedded .modal{max-height:none}
 
   <canvas id="cv" width="960" height="540" aria-label="Penaltı sahası animasyonu"></canvas>
   <button class="shootbtn" id="shoot">⚽ ŞUT ÇEK!</button>
+  <div class="special-actions"><button id="specialShot">🔥 ÖZEL ALEV ŞUTU</button><button id="freezeKeeper">🧊 KALECİYİ DONDUR</button></div>
 
   <div class="panel">
     <div class="qhead"><span class="who w1" id="who">SALAH</span><span class="chip" id="unit"></span><span class="steal" id="steal">🔁 Rakipten gelen soru</span></div>
@@ -382,7 +388,7 @@ let G;  // oyun durumu
 function resetMatch() {
   clearTimeout(roundTimer); clearTimeout(shotTimer);
   G = { phase: "intro", goals: [0, 0], stats: stats(), cur: null, asker: 0, answerer: 0, stolen: false, wrong: [], deadline: 0, qTotal: 0,
-        qCount: 0, aimStart: 0, shot: null, shooter: 0, lastAim: 0 };
+        qCount: 0, aimStart: 0, shot: null, shooter: 0, lastAim: 0, specialShot: false, freezeKeeper: false, celebrateUntil: 0, celebrator: -1 };
   particles = []; banner = null;
   const src = BANK.filter(q => selectedUnits.includes(q.u));
   pool = shuffle(src); pi = 0;
@@ -427,6 +433,7 @@ function renderQuestion() {
     $("opts").appendChild(b);
   });
   $("shoot").classList.remove("show");
+  $("specialShot").classList.remove("show","selected"); $("freezeKeeper").classList.remove("show","selected");
   $("hint").textContent = (TOUCH ? "Cevabı seçmek için seçeneğe dokunun." : "Klavyeden 1-4 tuşlarıyla da cevaplayabilirsiniz.");
   renderBoard();
 }
@@ -465,6 +472,11 @@ function wrongAnswer(i, timeout) {
 // ---------- nişan ve şut ----------
 function startAim(p) {
   G.phase = "aim"; G.shooter = p; G.aimStart = performance.now();
+  G.specialShot = false; G.freezeKeeper = false;
+  const specialBtn = $("specialShot"), freezeBtn = $("freezeKeeper");
+  specialBtn.classList.toggle("show", Math.random() < 0.30); specialBtn.classList.remove("selected");
+  freezeBtn.classList.toggle("show", Math.random() < 0.25); freezeBtn.classList.remove("selected");
+  specialBtn.textContent = "🔥 ÖZEL ALEV ŞUTU"; freezeBtn.textContent = "🧊 KALECİYİ DONDUR";
   $("shoot").classList.add("show");
   $("hint").textContent = (TOUCH ? "Çubuk kale içindeyken ŞUT düğmesine ya da sahaya dokun!" : "Çubuk kale içindeyken Boşluk tuşuna ya da ŞUT düğmesine bas!");
   renderBoard();
@@ -477,16 +489,17 @@ function shoot() {
   let outcome;
   if (Math.abs(x) > 1) outcome = "out";
   else outcome = colOf(x) === col ? "save" : "goal";
-  G.shot = { start: now, x, h, col, outcome, shooter: G.shooter, done: false };
-  G.phase = "shot"; $("shoot").classList.remove("show"); $("hint").textContent = "";
+  if (G.freezeKeeper && Math.abs(x) <= 1) outcome = "goal";
+  G.shot = { start: now, x, h, col, outcome, shooter: G.shooter, done: false, special: G.specialShot, frozen: G.freezeKeeper };
+  G.phase = "shot"; $("shoot").classList.remove("show"); $("specialShot").classList.remove("show"); $("freezeKeeper").classList.remove("show"); $("hint").textContent = "";
   sfx.kick();
   const mine = G.shot; shotTimer = setTimeout(() => { if (G.shot === mine && !mine.done) resolveShot(); }, 1450);
 }
 function resolveShot() {
   const s = G.shot, p = s.shooter; s.done = true;
   if (s.outcome === "goal") {
-    G.goals[p]++; sfx.goal(); banner = { t: performance.now(), text: "GOOOL!", color: "#ffd23f" }; burst(p);
-    setFb("ok", "⚽ <b>GOOOL!</b> " + PLAYERS[p].name + " topu ağlara gönderdi!");
+    G.goals[p]++; G.celebrator = p; G.celebrateUntil = performance.now() + 1900; sfx.goal(); banner = { t: performance.now(), text: s.special ? "🔥 ALEV GOLÜ!" : "GOOOL!", color: s.special ? "#ff8a28" : "#ffd23f" }; burst(p);
+    setFb("ok", (s.special ? "🔥 <b>ÖZEL ALEV ŞUTU!</b> " : "⚽ <b>GOOOL!</b> ") + PLAYERS[p].name + " topu ağlara gönderdi!" + (s.frozen ? " Kaleci donduğu için müdahale edemedi!" : ""));
   } else if (s.outcome === "save") {
     sfx.save(); banner = { t: performance.now(), text: "KURTARDI!", color: "#7ed0ff" };
     setFb("bad", "🧤 <b>Kaleci kurtardı!</b> Şut kalecinin uçtuğu bölgeye gitti.");
@@ -570,9 +583,10 @@ function drawPosts() {
   ctx.lineCap = "butt";
 }
 
-function drawKeeper(t, dive, dir) {
+function drawKeeper(t, dive, dir, frozen) {
   // dive 0..1; dir -1/0/1
-  const idle = Math.sin(t * 3) * 0.12;
+  if (frozen) dive = 0;
+  const idle = frozen ? 0 : Math.sin(t * 3) * 0.12;
   const cx = lerp(480, 480 + dir * 135, ease(dive)), cy = GOAL.line - 6 - (dir === 0 ? ease(dive) * 24 : ease(dive) * 14);
   ctx.save(); ctx.translate(cx, cy); ctx.rotate(dir * 1.15 * ease(dive));
   const arm = dive > 0 ? 1 : 0.55 + idle;
@@ -594,10 +608,11 @@ function drawKeeper(t, dive, dir) {
   ctx.fillStyle = "#22160c"; ctx.beginPath(); ctx.arc(0, -123, 15, Math.PI, 0); ctx.fill();
   ctx.fillStyle = "#222"; ctx.beginPath(); ctx.arc(-5, -117, 1.8, 0, 7); ctx.arc(5, -117, 1.8, 0, 7); ctx.fill();
   ctx.strokeStyle = "#222"; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.arc(0, -112, 4, .1, Math.PI - .1); ctx.stroke();
+  if (frozen) { ctx.strokeStyle = "#9beaff"; ctx.lineWidth = 4; ctx.shadowColor = "#55dfff"; ctx.shadowBlur = 18; ctx.beginPath(); ctx.arc(0, -75, 43, 0, Math.PI * 2); ctx.stroke(); ctx.font = "bold 24px system-ui"; ctx.textAlign = "center"; ctx.fillStyle = "#c8f7ff"; ctx.fillText("❄", 0, -155); ctx.shadowBlur = 0; }
   ctx.restore();
 }
 
-function drawShooter(P, kick) {
+function drawShooter(P, kick, celebrate) {
   const x = 410, y = 535, s = 1.25;
   ctx.save(); ctx.translate(x, y); ctx.scale(s, s); ctx.lineCap = "round";
   // gölge
@@ -614,9 +629,12 @@ function drawShooter(P, kick) {
   // forma
   ctx.fillStyle = P.kit; roundRect(-24, -136, 48, 64, 12); ctx.fill();
   if (P.stripe) { ctx.save(); roundRect(-24, -136, 48, 64, 12); ctx.clip(); ctx.fillStyle = P.stripe; for (let i = -24; i < 24; i += 16) ctx.fillRect(i + 8, -136, 8, 64); ctx.restore(); }
-  // kollar
+  // Kollar: gol sonrası iki kol havaya kalkar
   ctx.strokeStyle = "#e0ac84"; ctx.lineWidth = 9;
-  ctx.beginPath(); ctx.moveTo(-24, -126); ctx.lineTo(-34, -86 + kick * 6); ctx.moveTo(24, -126); ctx.lineTo(34, -86 - kick * 10); ctx.stroke();
+  ctx.beginPath();
+  if (celebrate) { ctx.moveTo(-24, -126); ctx.lineTo(-43, -174); ctx.moveTo(24, -126); ctx.lineTo(43, -174); }
+  else { ctx.moveTo(-24, -126); ctx.lineTo(-34, -86 + kick * 6); ctx.moveTo(24, -126); ctx.lineTo(34, -86 - kick * 10); }
+  ctx.stroke();
   // kafa (arkadan: saç)
   ctx.fillStyle = "#e0ac84"; ctx.beginPath(); ctx.arc(0, -150, 15, 0, 7); ctx.fill();
   ctx.fillStyle = P.hair; ctx.beginPath(); ctx.arc(0, -152, 15.5, 0, 7); ctx.fill();
@@ -627,10 +645,11 @@ function drawShooter(P, kick) {
   ctx.restore();
 }
 
-function drawBall(x, y, r, rot) {
+function drawBall(x, y, r, rot, flaming = false) {
   r = Math.max(2, r || 2);
   ctx.fillStyle = "#0004"; ctx.beginPath(); ctx.ellipse(x, Math.max(y, 300) + r * .9, r * .9, r * .3, 0, 0, 7); ctx.fill();
   ctx.save(); ctx.translate(x, y); ctx.rotate(rot);
+  if (flaming) { const flick = 0.75 + 0.25 * Math.sin(performance.now() / 35); ctx.save(); ctx.shadowColor = "#ff4a00"; ctx.shadowBlur = 24; for (let i = 0; i < 3; i++) { ctx.fillStyle = ["#ff3b00","#ff8a00","#ffe45c"][i]; ctx.beginPath(); ctx.ellipse(-r * (1.2 + i * .12), 0, r * (1.25 + i * .12) * flick, r * (.62 + i * .08), Math.PI, 0, Math.PI * 2); ctx.fill(); } ctx.restore(); }
   ctx.fillStyle = "#fff"; ctx.beginPath(); ctx.arc(0, 0, r, 0, 7); ctx.fill();
   ctx.fillStyle = "#222"; ctx.beginPath(); for (let i = 0; i < 5; i++) { const a = i * 1.2566 - 1.57; ctx.lineTo(Math.cos(a) * r * .45, Math.sin(a) * r * .45); } ctx.fill();
   for (let i = 0; i < 5; i++) { const a = i * 1.2566 - 1.57; ctx.beginPath(); ctx.arc(Math.cos(a) * r * .88, Math.sin(a) * r * .88, r * .22, 0, 7); ctx.fill(); }
@@ -649,7 +668,7 @@ function frame(now) {
   if (sh) {
     const el = (now - sh.start) / 1000;
     kick = clamp(Math.sin(clamp((el - .02) / .28, 0, 1) * Math.PI), 0, 1);
-    tp = (el - .18) / .62;
+    tp = (el - .12) / (sh.special ? .30 : .62);
     keeperDive = clamp((el - .22) / .42, 0, 1); keeperDir = sh.col;
     const tx = gx(sh.x), ty = sh.outcome === "out" ? (sh.h < .5 ? 120 : 235) : 195 + sh.h * 85;
     if (tp >= 0 && tp <= 1) {
@@ -667,14 +686,15 @@ function frame(now) {
   ctx.clearRect(0, 0, CW, CH);
   drawBackground(t);
   drawGoal(ripple);
-  drawKeeper(t, keeperDive, keeperDir);
+  const frozenNow = !!(sh && sh.frozen && !sh.done);
+  drawKeeper(t, keeperDive, keeperDir, frozenNow);
   // gol sonrası top ağın içinde: önce top, sonra direkler
   const behind = sh && sh.outcome === "goal" && tp > 0.9;
-  if (behind) drawBall(ball.x, ball.y, ball.r, ball.rot);
+  if (behind) drawBall(ball.x, ball.y, ball.r, ball.rot, !!(sh && sh.special));
   drawPosts();
-  if (!behind) drawBall(ball.x, ball.y, ball.r, ball.rot);
+  if (!behind) drawBall(ball.x, ball.y, ball.r, ball.rot, !!(sh && sh.special));
   const shooterP = sh ? PLAYERS[sh.shooter] : (G.phase === "aim" ? PLAYERS[G.shooter] : PLAYERS[G.answerer || 0]);
-  if (G.phase !== "intro") drawShooter(shooterP, kick);
+  if (G.phase !== "intro") drawShooter(shooterP, kick, G.celebrator === (sh ? sh.shooter : G.shooter) && now < G.celebrateUntil);
   // nişan çubuğu
   if (G.phase === "aim") {
     const ax = aimNow(now), px = gx(ax), inside = Math.abs(ax) <= 1;
@@ -775,7 +795,11 @@ $("bRestart").onclick = () => {
   $("q").textContent = "";
 };
 $("shoot").onclick = shoot;
+$("specialShot").onclick = () => { if (G.phase !== "aim") return; G.specialShot = !G.specialShot; $("specialShot").classList.toggle("selected", G.specialShot); $("specialShot").textContent = G.specialShot ? "🔥 ALEV ŞUTU SEÇİLDİ" : "🔥 ÖZEL ALEV ŞUTU"; };
+$("freezeKeeper").onclick = () => { if (G.phase !== "aim") return; G.freezeKeeper = !G.freezeKeeper; $("freezeKeeper").classList.toggle("selected", G.freezeKeeper); $("freezeKeeper").textContent = G.freezeKeeper ? "🧊 KALECİ DONDURULDU" : "🧊 KALECİYİ DONDUR"; };
 cv.addEventListener("pointerdown", () => { if (G.phase === "aim") shoot(); });
+$("specialShot").onclick = () => { if (G.phase !== "aim") return; G.specialShot = !G.specialShot; $("specialShot").classList.toggle("selected", G.specialShot); $("specialShot").textContent = G.specialShot ? "🔥 ALEV ŞUTU SEÇİLDİ" : "🔥 ÖZEL ALEV ŞUTU"; };
+$("freezeKeeper").onclick = () => { if (G.phase !== "aim") return; G.freezeKeeper = !G.freezeKeeper; $("freezeKeeper").classList.toggle("selected", G.freezeKeeper); $("freezeKeeper").textContent = G.freezeKeeper ? "🧊 KALECİ DONDURULDU" : "🧊 KALECİYİ DONDUR"; };
 const soundButton = document.getElementById("bSound");
 if (soundButton) soundButton.onclick = () => {
   sound = !sound;
