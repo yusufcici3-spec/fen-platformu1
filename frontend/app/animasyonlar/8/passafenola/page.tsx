@@ -24,7 +24,7 @@ export default function PassafenolaPage() {
           <span className={styles.eyebrow}>8. SINIF · 7 ÜNİTE · OYUN</span>
           <h1>Passafenola</h1>
           <p>
-            Oyun girişinde ünitesini seç. Her harf için bir fen sorusu gelir; cevap o harfle başlar. Doğru bilirsen harf yeşile, yanlışsa
+            Oyun girişinde bir ya da birden fazla ünite, hatta tüm üniteleri seç. Her harf için bir fen sorusu gelir; cevap o harfle başlar. Doğru bilirsen harf yeşile, yanlışsa
             kırmızıya döner. Bilmediğini pas geç, süre bitmeden turu tamamla. Oyun sonunda tüm soruların
             cevaplarını ve kısa bilgi notlarını inceleyebilirsin.
           </p>

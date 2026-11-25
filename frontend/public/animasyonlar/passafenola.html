@@ -82,6 +82,7 @@ button:disabled{opacity:.4;cursor:not-allowed}
 @keyframes rise{from{opacity:0;transform:translateY(24px) scale(.97)}}
 .modal h2{margin:0 0 6px;font-size:1.7rem}
 .modal p{color:#bcd0f2;line-height:1.55;margin:.4em 0}
+.mini{cursor:pointer;background:#0b2a6a;color:#cfe3ff;border:1px solid #5a96ff88;border-radius:99px;padding:.4em 1em;font-size:.85rem}.mini:hover{background:#12378a}
 .uopts{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:8px;margin:12px 0}.uopts span{border-radius:14px;padding:.5em .8em;font-size:.92rem}
 .opts{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:16px 0}
 .opts label{cursor:pointer}
@@ -158,17 +159,17 @@ html.embedded .review{max-height:340px}
   <div class="modal">
     <h2>🎯 Passafenola'ya hoş geldin!</h2>
     <p>Her harf için bir soru gelir; cevap o harfle başlar. Doğru bilirsen harf yeşil, yanlışsa kırmızı olur. Pas geçtiğin sorular tur sonunda tekrar sorulur.</p>
-    <p style="margin-top:14px">Ünitesini seç:</p>
+    <p style="margin-top:14px">Ünite(leri) seç <small>(birden fazla seçebilirsin)</small>:</p>
     <div class="opts uopts" id="uopts">
-      <label><input type="radio" name="u" value="karma" checked><span>🎲 Karma · 1. ve 2. Ünite</span></label>
-      <label><input type="radio" name="u" value="1"><span>1. Ünite · Mevsimler ve İklim</span></label>
-      <label><input type="radio" name="u" value="2"><span>2. Ünite · DNA ve Genetik Kod</span></label>
-      <label><input type="radio" name="u" value="3"><span>3. Ünite · Basınç</span></label>
-      <label><input type="radio" name="u" value="4"><span>4. Ünite · Madde ve Endüstri</span></label>
-      <label><input type="radio" name="u" value="5"><span>5. Ünite · Basit Makineler</span></label>
-      <label><input type="radio" name="u" value="6"><span>6. Ünite · Enerji Dönüşümleri ve Çevre Bilimi</span></label>
-      <label><input type="radio" name="u" value="7"><span>7. Ünite · Elektrik Yükleri ve Elektrik Enerjisi</span></label>
+      <label><input type="checkbox" name="u" value="1" checked><span>1. Ünite · Mevsimler ve İklim</span></label>
+      <label><input type="checkbox" name="u" value="2" checked><span>2. Ünite · DNA ve Genetik Kod</span></label>
+      <label><input type="checkbox" name="u" value="3"><span>3. Ünite · Basınç</span></label>
+      <label><input type="checkbox" name="u" value="4"><span>4. Ünite · Madde ve Endüstri</span></label>
+      <label><input type="checkbox" name="u" value="5"><span>5. Ünite · Basit Makineler</span></label>
+      <label><input type="checkbox" name="u" value="6"><span>6. Ünite · Enerji Dönüşümleri ve Çevre Bilimi</span></label>
+      <label><input type="checkbox" name="u" value="7"><span>7. Ünite · Elektrik Yükleri ve Elektrik Enerjisi</span></label>
     </div>
+    <p style="margin:0"><button type="button" class="mini" id="uAll">✔ Tüm üniteler</button> <button type="button" class="mini" id="uNone">Temizle</button></p>
     <p style="margin-top:14px">Süreni seç:</p>
     <div class="opts" id="opts">
       <label><input type="radio" name="t" value="300"><span>5 dk</span></label>
@@ -377,10 +378,23 @@ const U7 = [
   { l:"Z", unit:7, a:"Zıt", alt:["Zıt yük","Zıt cins"], q:"Aynı cins elektrik yükleri birbirini iter. ... cins elektrik yükleri ise birbirini çeker. Boşluğu doldurun.", note:"Zıt yükler çekişir, aynı yükler iter." }
 ];
 
-const SETS = { karma: Q12, "1": Q12.filter(x => x.unit === 1), "2": Q12.filter(x => x.unit === 2), "3": U3, "4": U4, "5": U5, "6": U6, "7": U7 };
-const TOPICS = { karma: "Mevsimler ve İklim  •  DNA ve Genetik Kod", "1": "Mevsimler ve İklim", "2": "DNA ve Genetik Kod", "3": "Basınç", "4": "Madde ve Endüstri", "5": "Basit Makineler", "6": "Enerji Dönüşümleri ve Çevre Bilimi", "7": "Elektrik Yükleri ve Elektrik Enerjisi" };
-let unitKey = "karma";
-let Q = SETS.karma;
+const POOL = Q12.concat(U3, U4, U5, U6, U7);
+const ORDER = "ABCÇDEFGHIİJKLMNOÖPRSŞTUÜVYZ";
+const TOPICS = { 1: "Mevsimler ve İklim", 2: "DNA ve Genetik Kod", 3: "Basınç", 4: "Madde ve Endüstri", 5: "Basit Makineler", 6: "Enerji Dönüşümleri ve Çevre Bilimi", 7: "Elektrik Yükleri ve Elektrik Enerjisi" };
+function buildSet(keys) {
+  const out = [];
+  [...ORDER].forEach(L => {
+    const c = POOL.filter(x => x.l === L && keys.includes(x.unit));
+    if (c.length) out.push(c[Math.floor(Math.random() * c.length)]);
+  });
+  return out;
+}
+function selKeys() {
+  const k = [...document.querySelectorAll("input[name=u]:checked")].map(x => parseInt(x.value, 10)).sort((a, b) => a - b);
+  return k.length ? k : [1, 2];
+}
+let unitKey = "1-2";
+let Q = buildSet([1, 2]);
 const $ = id => document.getElementById(id);
 let N = Q.length;
 const MAX_HINTS = 3;
@@ -437,6 +451,7 @@ function buildRing() {
     const a = (-90 + i * 360 / N) * Math.PI / 180;
     const el = document.createElement("div");
     el.className = "b"; el.textContent = it.l;
+    const sz = Math.min(10.6, 243 / N); el.style.width = sz + "%"; el.style.margin = (-sz / 2) + "% 0 0 " + (-sz / 2) + "%"; el.style.fontSize = "calc(var(--ring)*" + (0.05 * sz / 10.6).toFixed(4) + ")";
     el.style.left = (50 + 43 * Math.cos(a)) + "%";
     el.style.top = (50 + 43 * Math.sin(a)) + "%";
     ring.appendChild(el);
@@ -444,10 +459,11 @@ function buildRing() {
     return el;
   });
 }
-function setUnit(key) {
-  unitKey = key; Q = SETS[key]; N = Q.length;
+function setUnit(keys) {
+  unitKey = keys.join("-"); Q = buildSet(keys); N = Q.length;
   buildRing();
-  const h = $("hdrTopic"); if (h) h.textContent = TOPICS[key];
+  const h = $("hdrTopic");
+  if (h) h.textContent = keys.length === 7 ? "Tüm üniteler (1-7)" : keys.map(k => TOPICS[k]).join("  •  ");
 }
 buildRing();
 
@@ -571,7 +587,7 @@ function tick() {
 
 function startGame() {
   limit = parseInt(document.querySelector("input[name=t]:checked").value, 10);
-  setUnit(document.querySelector("input[name=u]:checked").value);
+  setUnit(selKeys());
   resetGame(); running = true; last = performance.now();
   clearInterval(timerId); timerId = setInterval(tick, 200);
   $("ovStart").classList.remove("show"); $("ovEnd").classList.remove("show");
@@ -602,7 +618,7 @@ function finish(reason) {
       " — " + esc(it.q) + "</small><small>💡 " + esc(it.note) + "</small></div></div>";
   }).join("");
   try {
-    const key = "passafenola_best_" + (unitKey === "karma" ? "" : unitKey + "_") + limit, prev = parseInt(localStorage.getItem(key) || "-1", 10);
+    const key = "passafenola_best_" + (unitKey === "1-2" ? "" : unitKey + "_") + limit, prev = parseInt(localStorage.getItem(key) || "-1", 10);
     if (c.ok > prev) localStorage.setItem(key, String(c.ok));
   } catch (e) {}
   sfx.end();
@@ -624,9 +640,9 @@ function confetti() {
 
 function showBest() {
   try {
-    const sel = document.querySelector("input[name=t]:checked").value, uk = document.querySelector("input[name=u]:checked").value;
-    const b = localStorage.getItem("passafenola_best_" + (uk === "karma" ? "" : uk + "_") + sel);
-    $("best").textContent = b !== null ? "Bu tarayıcıdaki en iyi sonucun: " + b + " / " + SETS[uk].length : "";
+    const sel = document.querySelector("input[name=t]:checked").value, uk = selKeys().join("-");
+    const b = localStorage.getItem("passafenola_best_" + (uk === "1-2" ? "" : uk + "_") + sel);
+    $("best").textContent = b !== null ? "Bu tarayıcıdaki en iyi sonucun: " + b : "";
   } catch (e) { $("best").textContent = ""; }
 }
 
@@ -651,7 +667,13 @@ $("bRestart").onclick = () => {
   $("ovEnd").classList.remove("show"); $("ovStart").classList.add("show"); showBest();
 };
 document.querySelectorAll("input[name=t]").forEach(r => r.addEventListener("change", showBest));
-document.querySelectorAll("input[name=u]").forEach(r => r.addEventListener("change", () => { setUnit(r.value); resetGame(); render(); showQuestion(); showBest(); }));
+function unitsChanged() { setUnit(selKeys()); resetGame(); render(); showQuestion(); showBest(); }
+document.querySelectorAll("input[name=u]").forEach(r => r.addEventListener("change", () => {
+  if (!document.querySelector("input[name=u]:checked")) r.checked = true;
+  unitsChanged();
+}));
+$("uAll").onclick = () => { document.querySelectorAll("input[name=u]").forEach(x => x.checked = true); unitsChanged(); };
+$("uNone").onclick = () => { document.querySelectorAll("input[name=u]").forEach((x, i) => x.checked = i === 0); unitsChanged(); };
 
 // ilk durum
 limit = 480; resetGame(); $("ans").disabled = true; $("panel").classList.add("blur"); showQuestion(); showBest();
