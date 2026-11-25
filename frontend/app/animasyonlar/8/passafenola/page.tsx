@@ -5,7 +5,7 @@ import styles from "./page.module.css";
 export const metadata = {
   title: "Passafenola | 8. Sınıf Fen Bilimleri",
   description:
-    "Mevsimler ve İklim ile DNA ve Genetik Kod ünitelerinden 21 harflik passaparola oyunu. Her harf için soruyu oku, cevabı yaz, süre bitmeden harfleri tamamla.",
+    "8. sınıf 7 ünitesinden istediğini seçip oynayabileceğin harf harf passaparola oyunu. Her harf için soruyu oku, cevabı yaz, süre bitmeden harfleri tamamla.",
 };
 
 export default function PassafenolaPage() {
@@ -21,10 +21,10 @@ export default function PassafenolaPage() {
         </nav>
 
         <header className={styles.hero}>
-          <span className={styles.eyebrow}>8. SINIF · MEVSİMLER VE İKLİM · DNA VE GENETİK KOD · OYUN</span>
+          <span className={styles.eyebrow}>8. SINIF · 7 ÜNİTE · OYUN</span>
           <h1>Passafenola</h1>
           <p>
-            Her harf için bir fen sorusu gelir; cevap o harfle başlar. Doğru bilirsen harf yeşile, yanlışsa
+            Oyun girişinde ünitesini seç. Her harf için bir fen sorusu gelir; cevap o harfle başlar. Doğru bilirsen harf yeşile, yanlışsa
             kırmızıya döner. Bilmediğini pas geç, süre bitmeden turu tamamla. Oyun sonunda tüm soruların
             cevaplarını ve kısa bilgi notlarını inceleyebilirsin.
           </p>

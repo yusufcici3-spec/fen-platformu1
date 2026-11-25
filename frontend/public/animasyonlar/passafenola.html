@@ -51,6 +51,7 @@ header p{margin:4px 0 0;font-size:.85rem;color:#9db9e6}
 .badge{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-size:1.9rem;font-weight:800;color:#2b1700;
   background:radial-gradient(circle at 35% 28%,#fffbe0 0%,#ffe14a 35%,#e09b00 100%);box-shadow:0 0 22px #ffd23f88}
 .chip{font-size:.8rem;padding:.3em .8em;border-radius:99px;border:1px solid #5a96ff88;color:#bcd6ff;background:#0b2a6a66}
+.chip.u3{border-color:#ffb36a99;color:#ffd9b5;background:#6a3a1a55}.chip.u4{border-color:#5be0a599;color:#c4f5de;background:#14583c55}.chip.u5{border-color:#ffe14a99;color:#fff2a8;background:#6a5a1a55}.chip.u6{border-color:#7be07b99;color:#d1f5d1;background:#1a5a1a55}.chip.u7{border-color:#ff8aa999;color:#ffd0dc;background:#6a1a3a55}
 .chip.u2{border-color:#c68bff99;color:#e4c9ff;background:#3b1a6a55}
 .q{font-size:1.2rem;line-height:1.55;margin:0 0 6px}
 .start{color:#ffd23f;font-weight:700;font-size:.9rem;margin:0 0 4px}
@@ -81,6 +82,7 @@ button:disabled{opacity:.4;cursor:not-allowed}
 @keyframes rise{from{opacity:0;transform:translateY(24px) scale(.97)}}
 .modal h2{margin:0 0 6px;font-size:1.7rem}
 .modal p{color:#bcd0f2;line-height:1.55;margin:.4em 0}
+.uopts{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:8px;margin:12px 0}.uopts span{border-radius:14px;padding:.5em .8em;font-size:.92rem}
 .opts{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:16px 0}
 .opts label{cursor:pointer}
 .opts input{position:absolute;opacity:0}
@@ -113,7 +115,7 @@ html.embedded .review{max-height:340px}
 <div class="app">
   <header>
     <h1>8. Sınıf Fen Bilimleri · Passafenola</h1>
-    <p>Mevsimler ve İklim &nbsp;•&nbsp; DNA ve Genetik Kod</p>
+    <p id="hdrTopic">Mevsimler ve İklim &nbsp;•&nbsp; DNA ve Genetik Kod</p>
   </header>
 
   <main class="stage">
@@ -156,7 +158,17 @@ html.embedded .review{max-height:340px}
   <div class="modal">
     <h2>🎯 Passafenola'ya hoş geldin!</h2>
     <p>Her harf için bir soru gelir; cevap o harfle başlar. Doğru bilirsen harf yeşil, yanlışsa kırmızı olur. Pas geçtiğin sorular tur sonunda tekrar sorulur.</p>
-    <p><b>Konular:</b> Mevsimler ve İklim, DNA ve Genetik Kod</p>
+    <p style="margin-top:14px">Ünitesini seç:</p>
+    <div class="opts uopts" id="uopts">
+      <label><input type="radio" name="u" value="karma" checked><span>🎲 Karma · 1. ve 2. Ünite</span></label>
+      <label><input type="radio" name="u" value="1"><span>1. Ünite · Mevsimler ve İklim</span></label>
+      <label><input type="radio" name="u" value="2"><span>2. Ünite · DNA ve Genetik Kod</span></label>
+      <label><input type="radio" name="u" value="3"><span>3. Ünite · Basınç</span></label>
+      <label><input type="radio" name="u" value="4"><span>4. Ünite · Madde ve Endüstri</span></label>
+      <label><input type="radio" name="u" value="5"><span>5. Ünite · Basit Makineler</span></label>
+      <label><input type="radio" name="u" value="6"><span>6. Ünite · Enerji Dönüşümleri ve Çevre Bilimi</span></label>
+      <label><input type="radio" name="u" value="7"><span>7. Ünite · Elektrik Yükleri ve Elektrik Enerjisi</span></label>
+    </div>
     <p style="margin-top:14px">Süreni seç:</p>
     <div class="opts" id="opts">
       <label><input type="radio" name="t" value="300"><span>5 dk</span></label>
@@ -183,9 +195,9 @@ html.embedded .review{max-height:340px}
 </div>
 <script>
 // Ünite 1: Mevsimler ve İklim  |  Ünite 2: DNA ve Genetik Kod
-const UNITS = { 1: "1. Ünite · Mevsimler ve İklim", 2: "2. Ünite · DNA ve Genetik Kod" };
+const UNITS = { 1: "1. Ünite · Mevsimler ve İklim", 2: "2. Ünite · DNA ve Genetik Kod", 3: "3. Ünite · Basınç", 4: "4. Ünite · Madde ve Endüstri", 5: "5. Ünite · Basit Makineler", 6: "6. Ünite · Enerji Dönüşümleri ve Çevre Bilimi", 7: "7. Ünite · Elektrik Yükleri ve Elektrik Enerjisi" };
 
-const Q = [
+const Q12 = [
   { l: "A", unit: 1, a: "Atmosfer", alt: ["Atmosfer tabakası"],
     q: "Dünya'yı çevreleyen, canlıları zararlı ışınlardan ve ani sıcaklık değişimlerinden koruyan gaz tabakasına ne denir?",
     note: "Atmosfer; azot, oksijen ve diğer gazlardan oluşur." },
@@ -251,8 +263,126 @@ const Q = [
     note: "Zigotta anneden ve babadan gelen kalıtım bilgileri birleşir." }
 ];
 
+const U3 = [
+  { l:"A", unit:3, a:"Alan", alt:["Yüzey alanı"], q:"Katı basıncı P = F / ... bağıntısında kuvvetin uygulandığı yüzeyin büyüklüğüne ne denir?", note:"Yüzey alanı büyüdükçe katı basıncı azalır." },
+  { l:"B", unit:3, a:"Barometre", alt:[], q:"Açık hava basıncını ölçmek için kullanılan alete ne denir?", note:"Kapalı kaplardaki gaz basıncı ise manometreyle ölçülür." },
+  { l:"C", unit:3, a:"Civa", alt:["Cıva"], q:"Torricelli, açık hava basıncını ölçerken bir cam borunun içinde hangi sıvıyı kullanmıştır?", note:"Deniz seviyesinde civa yüksekliği 76 cm'dir." },
+  { l:"D", unit:3, a:"Derinlik", alt:[], q:"Sıvı basıncı; sıvının yoğunluğuna, yer çekimi ivmesine ve sıvı yüzeyinden olan neye bağlıdır?", note:"P = h·d·g; derinlik arttıkça sıvı basıncı artar." },
+  { l:"E", unit:3, a:"Eşit", alt:["Eşit büyüklükte"], q:"Pascal prensibine göre kapalı kaptaki sıvıya uygulanan basınç, sıvının her noktasına nasıl iletilir? (Tek kelime)", note:"Basınç kapalı kaptaki sıvıda her yöne eşit iletilir." },
+  { l:"F", unit:3, a:"Fren", alt:["Hidrolik fren"], q:"Pascal prensibinden yararlanılarak araçları kolayca durduran, içinde sıvı bulunan sisteme ne ad verilir?", note:"Hidrolik fren sisteminde küçük kuvvet büyük bir kuvvete dönüşür." },
+  { l:"G", unit:3, a:"Gaz", alt:["Gazlar"], q:"Bulunduğu kabın çeperlerine her yönde eşit basınç uygulayan, belirli şekli ve hacmi olmayan madde hâli hangisidir?", note:"Gaz basıncı sıcaklık arttıkça ve hacim küçüldükçe artar." },
+  { l:"H", unit:3, a:"Hidrolik", alt:["Hidrolik sistem"], q:"Kriko ve hidrolik asansör gibi, Pascal prensibine göre çalışan sistemlere hangi ad verilir?", note:"Küçük pistona uygulanan kuvvet, büyük pistonda büyütülür." },
+  { l:"İ", unit:3, a:"İğne", alt:[], q:"Ucu çok sivri olduğu için temas yüzeyi küçüktür ve küçük bir kuvvetle bile kumaşı delebilen dikiş aleti hangisidir?", note:"Yüzey küçüldükçe aynı kuvvetle uygulanan basınç artar." },
+  { l:"K", unit:3, a:"Kuvvet", alt:[], q:"Katı basıncı P = F / A bağıntısında yüzeye dik olarak uygulanan, birimi newton (N) olan nicelik hangisidir?", note:"Basınç, birim yüzeye dik etki eden kuvvettir." },
+  { l:"M", unit:3, a:"Manometre", alt:[], q:"Kapalı kaplardaki gazların basıncını ölçen alete ne denir?", note:"Açık hava basıncını ise barometre ölçer." },
+  { l:"N", unit:3, a:"Newton", alt:[], q:"Kuvvetin SI birimi nedir?", note:"1 Pa = 1 N / 1 m² olarak tanımlanır." },
+  { l:"P", unit:3, a:"Pascal", alt:["Pa"], q:"Basıncın SI birimi nedir?", note:"Birim yüzeye 1 N kuvvet dik etki ederse basınç 1 Pa olur." },
+  { l:"R", unit:3, a:"Rakım", alt:["Yükselti"], q:"Deniz seviyesinden yüksekliğe ne denir? Bu değer arttıkça açık hava basıncı azalır.", note:"Yükseldikçe hava seyrekleştiği için açık hava basıncı azalır." },
+  { l:"S", unit:3, a:"Sıvı", alt:["Sıvılar"], q:"Bulunduğu kabın taban ve yan yüzeylerine basınç uygulayan, akışkan ama hacmi sabit olan madde hâli hangisidir?", note:"Sıvılar basıncı her yöne iletir." },
+  { l:"T", unit:3, a:"Torricelli", alt:[], q:"Açık hava basıncını ilk kez deneyle ölçen İtalyan bilim insanı kimdir?", note:"Torricelli deneyi, bir ucu kapalı cam boru ve civa ile yapılır." },
+  { l:"V", unit:3, a:"Vakum", alt:[], q:"Havası boşaltılmış, hava basıncının olmadığı ortama ne denir?", note:"Vakumda hava basıncı sıfırdır." },
+  { l:"Y", unit:3, a:"Yoğunluk", alt:[], q:"Birim hacmin kütlesi olan ve sıvı basıncını doğrudan etkileyen nicelik hangisidir?", note:"Yoğunluğu fazla olan sıvının basıncı da fazladır." }
+];
+const U4 = [
+  { l:"A", unit:4, a:"Asit", alt:[], q:"Suda çözündüğünde ortama H⁺ iyonu veren, pH değeri 7'den küçük olan, tadı ekşi maddelere ne denir?", note:"Limon ve sirke asittir; pH 0-7 arası asidiktir." },
+  { l:"B", unit:4, a:"Baz", alt:["Baz maddeler"], q:"pH değeri 7'den büyük olan, ele kayganlık hissi veren (sabun, kireç suyu gibi) maddelere ne denir?", note:"Bazların pH değeri 7-14 arasındadır." },
+  { l:"C", unit:4, a:"Civa", alt:["Cıva"], q:"Oda koşullarında sıvı hâlde bulunan, sembolü Hg olan metal hangisidir?", note:"Civa termometrelerde kullanılırdı; zehirlidir." },
+  { l:"D", unit:4, a:"Demir", alt:[], q:"Sembolü Fe olan, nemli ortamda oksijenle tepkimeye girip paslanan metal hangisidir?", note:"Paslanma kimyasal bir değişimdir." },
+  { l:"E", unit:4, a:"Element", alt:[], q:"Aynı cins atomlardan oluşan, kimyasal yollarla daha basit maddelere ayrılamayan saf maddelere ne denir?", note:"Periyodik sistemde elementler atom numarasına göre sıralanır." },
+  { l:"F", unit:4, a:"Fiziksel", alt:["Fiziksel değişim"], q:"Maddenin kimliği değişmeden yalnızca şekil, hâl veya görünüm değiştiğinde ne tür bir değişim olur? (Buzun erimesi gibi)", note:"Fiziksel değişimde yeni madde oluşmaz." },
+  { l:"G", unit:4, a:"Gümüş", alt:[], q:"Sembolü Ag olan, takı ve çatal-bıçak yapımında kullanılan parlak metal hangisidir?", note:"Gümüş, elektriği en iyi ileten metaldir." },
+  { l:"H", unit:4, a:"Hidrojen", alt:[], q:"Periyodik sistemde atom numarası 1 olan ilk element hangisidir?", note:"Sembolü H olan hidrojen en hafif elementtir." },
+  { l:"I", unit:4, a:"Isı", alt:[], q:"Sıcaklık farkından dolayı sıcak maddeden soğuk maddeye aktarılan enerjiye ne denir?", note:"Isı birimi joule (J) veya kaloridir." },
+  { l:"İ", unit:4, a:"İyon", alt:[], q:"Elektron alarak ya da vererek yüklü hâle gelmiş atoma ne denir?", note:"Elektron veren atom (+) yüklü iyon olur." },
+  { l:"K", unit:4, a:"Kütle", alt:[], q:"Kimyasal tepkimelerde tepkimeye girenlerin toplamı ile ürünlerin toplamı arasında hangi nicelik korunur?", note:"Kütlenin korunumu: giren maddelerin kütlesi = çıkan maddelerin kütlesi." },
+  { l:"L", unit:4, a:"Lavoisier", alt:[], q:"Kütlenin korunumu kanununu ortaya koyan Fransız bilim insanı kimdir?", note:"Lavoisier'e göre madde yoktan var, vardan yok edilemez." },
+  { l:"M", unit:4, a:"Metal", alt:["Metaller"], q:"Parlak, işlenebilen, ısıyı ve elektriği iyi ileten elementlere ne ad verilir?", note:"Metaller genelde oda koşullarında katıdır (Hg hariç)." },
+  { l:"N", unit:4, a:"Nötr", alt:["Nötür"], q:"pH değeri 7 olan, ne asit ne baz olan (saf su gibi) çözeltilere ne denir?", note:"Saf su nötrdür; pH = 7." },
+  { l:"O", unit:4, a:"Oksijen", alt:[], q:"Yanma olayının gerçekleşmesi için gerekli olan, havanın yaklaşık beşte birini oluşturan gaz hangisidir?", note:"Yanma, maddenin oksijenle tepkimeye girmesidir." },
+  { l:"Ö", unit:4, a:"Öz ısı", alt:["Özısı","Öz ısı"], q:"1 gram maddenin sıcaklığını 1 °C artırmak için gereken ısı miktarına ne denir?", note:"Suyun öz ısısı yüksektir; geç ısınır, geç soğur." },
+  { l:"P", unit:4, a:"Periyot", alt:["Periyotlar"], q:"Periyodik sistemde yatay sıralara ne ad verilir?", note:"Dikey sütunlara grup (aile) denir." },
+  { l:"R", unit:4, a:"Renk", alt:["Renk değişimi"], q:"Turnusol kâğıdı gibi belirteçler (indikatörler) asit veya baz ortamında hangi özelliklerini değiştirir?", note:"Mavi turnusol asitte kırmızıya döner." },
+  { l:"S", unit:4, a:"Sodyum", alt:[], q:"Sembolü Na olan, tuzun (sofra tuzu) yapısında bulunan yumuşak metal hangisidir?", note:"Sofra tuzu NaCl: sodyum + klor." },
+  { l:"T", unit:4, a:"Tepkime", alt:["Kimyasal tepkime"], q:"Maddelerin kimyasal değişime uğrayarak yeni maddelere dönüşmesine kimyasal ... denir. Boşluğu doldurun.", note:"Tepkimeye girenler: reaktifler; oluşanlar: ürünler." },
+  { l:"Ü", unit:4, a:"Ürün", alt:["Ürünler"], q:"Bir kimyasal tepkime sonunda oluşan yeni maddelere ne ad verilir?", note:"Reaktifler tepkimeye girer, ürünler oluşur." },
+  { l:"Y", unit:4, a:"Yanma", alt:["Yanma tepkimesi"], q:"Bir maddenin oksijenle hızlı tepkimeye girip ısı ve ışık açığa çıkarmasına ne denir?", note:"Yanma, kimyasal bir değişimdir." }
+];
+const U5 = [
+  { l:"A", unit:5, a:"Adım", alt:["Vida adımı"], q:"Vidanın ardışık iki dişi arasındaki uzaklığa ne denir? Bu değer küçüldükçe vidada kuvvet kazancı artar.", note:"Vida, silindire sarılmış eğik düzlemdir." },
+  { l:"B", unit:5, a:"Bisiklet", alt:[], q:"Pedal, zincir ve dişli çarklardan oluşan, günlük hayatta sık kullandığımız iki tekerlekli araç hangisidir?", note:"Pedal ile arka tekeri bağlayan zincir dişlilerle çalışır." },
+  { l:"C", unit:5, a:"Cımbız", alt:["Cimbiz"], q:"Kuvvetin dayanak ile yük arasında olduğu, kuvvet kazancı sağlamayan III. tür kaldıraç örneği küçük alet hangisidir?", note:"Cımbız, yoldan ve hızdan kazanç sağlar." },
+  { l:"Ç", unit:5, a:"Çıkrık", alt:[], q:"Kuyudan su çekmede kullanılan, silindir ve koldan oluşan basit makine hangisidir?", note:"Çıkrıkta F × kol uzunluğu = P × silindir yarıçapıdır." },
+  { l:"D", unit:5, a:"Dayanak", alt:["Dayanak noktası"], q:"Kaldıracın üzerinde dönebildiği sabit noktaya ne denir?", note:"Kuvvet ve yük kolları dayanak noktasından ölçülür." },
+  { l:"E", unit:5, a:"Eğik düzlem", alt:["Rampa"], q:"Ağır yükleri yükseğe çıkarmak için kullanılan eğimli yüzeye ne denir? Uzunluk arttıkça gereken kuvvet azalır.", note:"Eğik düzlemde F × L = P × h." },
+  { l:"F", unit:5, a:"Fındık kıracağı", alt:["Fındıkkıran"], q:"Yükün dayanak ile kuvvet arasında bulunduğu II. tür kaldıraca örnek olan, ceviz ve fındığı kıran alet hangisidir?", note:"II. tür kaldıraçlar her zaman kuvvetten kazanç sağlar." },
+  { l:"H", unit:5, a:"Hareketli makara", alt:["Hareketli"], q:"Yükle birlikte hareket eden ve kuvvetten yarı yarıya kazanç sağlayan makara türü hangisidir?", note:"Yükü iki ip taşır: F = P / 2 (makara ağırlığı ihmal)." },
+  { l:"İ", unit:5, a:"İş", alt:[], q:"Basit makinelerle kuvvetten kazanç sağlansa bile hiçbir zaman kazanılamayan nicelik hangisidir?", note:"İş = kuvvet × yol; basit makinelerde iş kazancı yoktur." },
+  { l:"K", unit:5, a:"Kama", alt:[], q:"Balta ve bıçak gibi kesici aletlerde bulunan, iki eğik düzlemin birleşiminden oluşan basit makine hangisidir?", note:"Kama ne kadar inceyse kuvvetten kazanç o kadar fazladır." },
+  { l:"L", unit:5, a:"Levye", alt:[], q:"Büyük taşları ve kayaları yerinden oynatmada kullanılan uzun demir çubuk kaldıraç hangisidir?", note:"Kuvvet kolu uzadıkça gereken kuvvet azalır." },
+  { l:"M", unit:5, a:"Makara", alt:[], q:"Çevresinde oluk bulunan, üzerinden ip geçirilen dönebilen tekere ne denir?", note:"Makaralar sabit veya hareketli olabilir." },
+  { l:"N", unit:5, a:"Newton", alt:[], q:"Basit makine problemlerinde kuvvetin ve ağırlığın birimi nedir?", note:"İş birimi ise joule (J) olur." },
+  { l:"O", unit:5, a:"Olta", alt:["Olta kamışı"], q:"Kuvvetin dayanak ile yük arasında olduğu III. tür kaldıraca örnek olan, balık tutmak için kullanılan araç hangisidir?", note:"III. tür kaldıraçlarda kuvvetten kazanç yoktur." },
+  { l:"P", unit:5, a:"Palanga", alt:[], q:"Sabit ve hareketli makaraların birlikte kullanıldığı, ağır yükleri küçük kuvvetle kaldıran sisteme ne denir?", note:"Yükü taşıyan ip sayısı n ise F = P / n olur." },
+  { l:"S", unit:5, a:"Sabit makara", alt:["Sabit"], q:"Yalnızca kuvvetin yönünü değiştiren, kuvvetten ve yoldan kazanç sağlamayan makara türü hangisidir?", note:"Sabit makarada F = P." },
+  { l:"T", unit:5, a:"Tahterevalli", alt:[], q:"Çocuk parklarında dayanak noktası ortada olan, I. tür kaldıraca örnek oyun aracı hangisidir?", note:"Kuvvet ve yük dayanağın zıt taraflarındadır." },
+  { l:"V", unit:5, a:"Vida", alt:[], q:"Silindire sarılmış eğik düzlem olan, cisimleri bir arada tutmaya yarayan basit makine hangisidir?", note:"Vida adımı küçüldükçe kuvvet kazancı artar." },
+  { l:"Y", unit:5, a:"Yük", alt:[], q:"Basit makinelerde kaldırılmak veya dengelenmek istenen ağırlığa ne denir?", note:"Yük kolu, dayanaktan yüke olan uzaklıktır." },
+  { l:"Z", unit:5, a:"Zincir", alt:[], q:"Bisikletin pedalı ile arka tekerleği arasında dönmeyi ileten, dişlileri birbirine bağlayan halkalı yapı hangisidir?", note:"Zincirle bağlı dişlilerde iki çark aynı yönde döner." }
+];
+const U6 = [
+  { l:"A", unit:6, a:"Atık", alt:["Atıklar"], q:"Kullanıldıktan sonra işe yaramaz hâle gelen ve çevreye bırakılan maddelere ne denir?", note:"Atıkların geri dönüştürülmesi doğal kaynakları korur." },
+  { l:"B", unit:6, a:"Besin zinciri", alt:["Besin"], q:"Canlılar arasındaki beslenme ilişkisini ve enerji akışını gösteren sıraya ne denir?", note:"Besin zinciri üreticiyle başlar." },
+  { l:"C", unit:6, a:"Cansız", alt:["Cansız varlıklar"], q:"Bir ekosistemde su, hava, ışık ve toprak gibi canlı olmayan öğelere ne denir?", note:"Ekosistem canlı ve cansız öğelerden oluşur." },
+  { l:"Ç", unit:6, a:"Çürükçül", alt:["Ayrıştırıcı"], q:"Ölü canlı kalıntılarını ayrıştırarak maddeleri doğaya geri kazandıran canlılara ne denir?", note:"Mantarlar ve bazı bakteriler çürükçüldür." },
+  { l:"D", unit:6, a:"Dönüşüm", alt:["Geri dönüşüm"], q:"Kâğıt, cam ve plastik atıkların yeniden hammadde olarak kullanılmasına geri ... denir. Boşluğu doldurun.", note:"Geri dönüşüm doğal kaynakları ve enerjiyi korur." },
+  { l:"E", unit:6, a:"Ekosistem", alt:[], q:"Bir bölgede yaşayan canlılar ile cansız çevrenin birbiriyle etkileşim hâlinde olduğu sisteme ne denir?", note:"Orman, göl ve çöl birer ekosistemdir." },
+  { l:"F", unit:6, a:"Fotosentez", alt:[], q:"Bitkilerin ışık enerjisini kullanarak karbondioksit ve sudan besin ve oksijen ürettiği olaya ne denir?", note:"Fotosentez kloroplastta gerçekleşir." },
+  { l:"G", unit:6, a:"Güneş", alt:[], q:"Besin zincirinde enerjinin asıl kaynağı hangisidir?", note:"Üreticiler Güneş enerjisini kimyasal enerjiye çevirir." },
+  { l:"H", unit:6, a:"Habitat", alt:["Yaşam alanı"], q:"Bir canlının doğal olarak yaşadığı, beslendiği ve ürediği ortama ne denir?", note:"Habitat bozulursa canlı sayısı azalır." },
+  { l:"I", unit:6, a:"Işık", alt:["Güneş ışığı"], q:"Fotosentez için gerekli olan, bitkilerin yaprağındaki klorofil tarafından soğurulan enerji kaynağı hangisidir?", note:"Işık olmadan fotosentez yapılamaz." },
+  { l:"İ", unit:6, a:"İklim", alt:[], q:"Küresel ısınmayla uzun yıllar içinde değişen, bir bölgenin yıllık hava olaylarının ortalaması nedir?", note:"Sera gazları arttıkça iklim değişir." },
+  { l:"K", unit:6, a:"Karbondioksit", alt:["Karbon dioksit","CO2"], q:"Fotosentezde bitkilerin havadan aldığı, yanma ve solunumla açığa çıkan sera gazı hangisidir?", note:"Karbondioksit artışı küresel ısınmayı hızlandırır." },
+  { l:"M", unit:6, a:"Mantar", alt:["Mantarlar"], q:"Ölü organik maddeleri ayrıştırarak beslenen, bitki ya da hayvan olmayan canlı grubu hangisidir?", note:"Mantarlar doğada çürükçül olarak görev yapar." },
+  { l:"O", unit:6, a:"Oksijen", alt:[], q:"Fotosentez sonunda açığa çıkan ve canlıların solunumunda kullanılan gaz hangisidir?", note:"Bitkiler oksijeni havaya verir." },
+  { l:"P", unit:6, a:"Plastik", alt:["Plastikler"], q:"Doğada yüzlerce yıl çözünmeden kalabilen, kullanımı azaltılması gereken atık maddesi hangisidir?", note:"Plastik atıklar deniz canlılarına zarar verir." },
+  { l:"R", unit:6, a:"Rüzgar", alt:["Rüzgâr"], q:"Türbinleri döndürerek elektrik üretiminde kullanılan, yenilenebilir enerji kaynağı hangisidir?", note:"Rüzgâr, tükenmeyen bir enerji kaynağıdır." },
+  { l:"S", unit:6, a:"Sera", alt:["Sera gazı","Sera gazları"], q:"Karbondioksit ve metan gibi, atmosferde ısıyı tutarak küresel ısınmaya yol açan gazlara ... gazları denir. Boşluğu doldurun.", note:"Sera gazı artışı Dünya'nın ısınmasına yol açar." },
+  { l:"T", unit:6, a:"Tüketici", alt:["Tüketiciler"], q:"Besinlerini kendileri üretemeyip hazır alarak beslenen canlılara ne denir?", note:"Otçullar ve etçiller tüketicidir." },
+  { l:"Ü", unit:6, a:"Üretici", alt:["Üreticiler"], q:"Besin zincirinin başında bulunan, fotosentezle kendi besinini üreten canlılara ne denir?", note:"Bitkiler ve algler üreticidir." },
+  { l:"Y", unit:6, a:"Yenilenebilir", alt:["Yenilenebilir enerji"], q:"Güneş, rüzgâr ve su gibi doğada tükenmeyen enerji kaynaklarına ne tür enerji kaynakları denir?", note:"Fosil yakıtlar ise yenilenemez kaynaklardır." }
+];
+const U7 = [
+  { l:"A", unit:7, a:"Atom", alt:[], q:"Elektron, proton ve nötron adı verilen taneciklerden oluşan, maddenin yapı taşı hangisidir?", note:"Atomun çekirdeğinde proton ve nötron bulunur." },
+  { l:"B", unit:7, a:"Bakır", alt:[], q:"Elektrik kablolarında iletken olarak çok kullanılan, kırmızımsı renkli metal hangisidir?", note:"Bakır elektriği çok iyi iletir." },
+  { l:"C", unit:7, a:"Cam", alt:["Cam çubuk"], q:"İpek kumaşa sürtüldüğünde (+) yüklenen çubuk hangi maddeden yapılmıştır?", note:"Cam çubuk elektron kaybederek (+) yüklenir." },
+  { l:"Ç", unit:7, a:"Çekirdek", alt:[], q:"Atomda proton ve nötronların bulunduğu, pozitif yüklü merkeze ne denir?", note:"Elektronlar çekirdeğin etrafında dolanır." },
+  { l:"D", unit:7, a:"Dokunma", alt:["Dokunma ile elektriklenme"], q:"Yüklü bir cisimle nötr bir cismin temas ettirilmesiyle gerçekleşen elektriklenme çeşidi hangisidir?", note:"Dokunmayla elektriklenmede iki cisim de aynı cins yükle yüklenir." },
+  { l:"E", unit:7, a:"Elektron", alt:[], q:"Atomda (−) yüklü olan ve cisimler arasında geçiş yapabilen tanecik hangisidir?", note:"Elektron alan cisim (−), veren cisim (+) yüklenir." },
+  { l:"F", unit:7, a:"Fosil", alt:["Fosil yakıt"], q:"Kömür, petrol ve doğal gaz gibi yakıtlara ... yakıtlar denir. Boşluğu doldurun.", note:"Fosil yakıtlar yenilenemez; yanınca sera gazı çıkarır." },
+  { l:"G", unit:7, a:"Güneş", alt:["Güneş enerjisi"], q:"Fotovoltaik paneller aracılığıyla elektrik üretilen yenilenebilir enerji kaynağı hangisidir?", note:"Güneş enerjisi temiz ve tükenmezdir." },
+  { l:"H", unit:7, a:"Hidroelektrik", alt:["Hidroelektrik santral"], q:"Barajlarda biriken suyun hareket enerjisinden elektrik üreten santral türü hangisidir?", note:"Hidroelektrik santraller yenilenebilir enerji kullanır." },
+  { l:"I", unit:7, a:"Isı", alt:["Isı enerjisi"], q:"Elektrikli ısıtıcı ve ütüde elektrik enerjisinin dönüştüğü enerji türü hangisidir?", note:"Elektrik enerjisi ısı, ışık, hareket gibi enerjilere dönüşebilir." },
+  { l:"İ", unit:7, a:"İletken", alt:["İletken madde"], q:"Elektrik yüklerini kolayca ileten (metaller gibi) maddelere ne denir?", note:"Plastik, cam ve ahşap ise yalıtkandır." },
+  { l:"K", unit:7, a:"Kömür", alt:[], q:"Termik santrallerde yakılarak elektrik elde edilmesinde kullanılan fosil yakıt hangisidir?", note:"Kömür yakmak karbondioksit salar." },
+  { l:"L", unit:7, a:"Lamba", alt:["Ampul"], q:"Elektrik enerjisini ışık ve ısı enerjisine dönüştüren, evlerimizi aydınlatan araç hangisidir?", note:"LED lambalar daha az enerji harcar." },
+  { l:"M", unit:7, a:"Motor", alt:["Elektrik motoru"], q:"Elektrik enerjisini hareket enerjisine dönüştüren düzenek hangisidir?", note:"Vantilatör ve matkap motorla çalışır." },
+  { l:"N", unit:7, a:"Nötr", alt:["Nötür"], q:"Proton sayısı elektron sayısına eşit olan, yüksüz cisim için kullanılan terim hangisidir?", note:"Nötr cisimde pozitif ve negatif yük miktarı eşittir." },
+  { l:"P", unit:7, a:"Paratoner", alt:["Yıldırımsavar"], q:"Yıldırımın zararından binaları korumak için çatıya yerleştirilen, topraklamaya bağlı sivri uçlu metal çubuk hangisidir?", note:"Paratoner yıldırımı toprağa iletir." },
+  { l:"R", unit:7, a:"Rüzgar", alt:["Rüzgâr"], q:"Türbinler aracılığıyla elektrik üretiminde kullanılan hava hareketi hangisidir?", note:"Rüzgâr santralleri yenilenebilir enerji üretir." },
+  { l:"S", unit:7, a:"Sürtünme", alt:["Sürtünme ile elektriklenme"], q:"Plastik tarağın kuru saça sürtülmesiyle gerçekleşen elektriklenme çeşidi hangisidir?", note:"Sürtünmeyle elektriklenmede cisimlerden biri (+), diğeri (−) yüklenir." },
+  { l:"Ş", unit:7, a:"Şimşek", alt:[], q:"Yıldırım sırasında gökyüzünde gördüğümüz parlak ışık olayı nedir?", note:"Gök gürültüsü ise yıldırımın sesidir." },
+  { l:"T", unit:7, a:"Topraklama", alt:[], q:"Elektrikli cihazların metal gövdesindeki fazla yükün toprağa aktarılmasını sağlayan güvenlik önlemi hangisidir?", note:"Topraklama elektrik çarpmasını önler." },
+  { l:"Ü", unit:7, a:"Ütü", alt:[], q:"Elektrik enerjisini ısı enerjisine dönüştüren, kıyafetlerin kırışıklıklarını gideren ev aleti hangisidir?", note:"Elektrikli ev aletlerinde enerji tasarrufu önemlidir." },
+  { l:"Y", unit:7, a:"Yıldırım", alt:[], q:"Bulutlar arasında ya da bulutla yer arasında oluşan büyük elektrik boşalmasına ne denir?", note:"Yıldırım sırasında ağaç altında durulmamalıdır." },
+  { l:"Z", unit:7, a:"Zıt", alt:["Zıt yük","Zıt cins"], q:"Aynı cins elektrik yükleri birbirini iter. ... cins elektrik yükleri ise birbirini çeker. Boşluğu doldurun.", note:"Zıt yükler çekişir, aynı yükler iter." }
+];
+
+const SETS = { karma: Q12, "1": Q12.filter(x => x.unit === 1), "2": Q12.filter(x => x.unit === 2), "3": U3, "4": U4, "5": U5, "6": U6, "7": U7 };
+const TOPICS = { karma: "Mevsimler ve İklim  •  DNA ve Genetik Kod", "1": "Mevsimler ve İklim", "2": "DNA ve Genetik Kod", "3": "Basınç", "4": "Madde ve Endüstri", "5": "Basit Makineler", "6": "Enerji Dönüşümleri ve Çevre Bilimi", "7": "Elektrik Yükleri ve Elektrik Enerjisi" };
+let unitKey = "karma";
+let Q = SETS.karma;
 const $ = id => document.getElementById(id);
-const N = Q.length;
+let N = Q.length;
 const MAX_HINTS = 3;
 
 // ---------- yardımcılar ----------
@@ -300,16 +430,26 @@ const sfx = {
 
 // ---------- halka ----------
 const ring = $("ring");
-const bubbles = Q.map((it, i) => {
-  const a = (-90 + i * 360 / N) * Math.PI / 180;
-  const el = document.createElement("div");
-  el.className = "b"; el.textContent = it.l;
-  el.style.left = (50 + 43 * Math.cos(a)) + "%";
-  el.style.top = (50 + 43 * Math.sin(a)) + "%";
-  ring.appendChild(el);
-  el.addEventListener("animationend", () => el.classList.remove("pop", "shake"));
-  return el;
-});
+let bubbles = [];
+function buildRing() {
+  bubbles.forEach(b => b.remove());
+  bubbles = Q.map((it, i) => {
+    const a = (-90 + i * 360 / N) * Math.PI / 180;
+    const el = document.createElement("div");
+    el.className = "b"; el.textContent = it.l;
+    el.style.left = (50 + 43 * Math.cos(a)) + "%";
+    el.style.top = (50 + 43 * Math.sin(a)) + "%";
+    ring.appendChild(el);
+    el.addEventListener("animationend", () => el.classList.remove("pop", "shake"));
+    return el;
+  });
+}
+function setUnit(key) {
+  unitKey = key; Q = SETS[key]; N = Q.length;
+  buildRing();
+  const h = $("hdrTopic"); if (h) h.textContent = TOPICS[key];
+}
+buildRing();
 
 // ---------- oyun durumu ----------
 let status, cur, elapsed, limit, hints, hintUsed, running, last, timerId, lastTickSec;
@@ -431,6 +571,7 @@ function tick() {
 
 function startGame() {
   limit = parseInt(document.querySelector("input[name=t]:checked").value, 10);
+  setUnit(document.querySelector("input[name=u]:checked").value);
   resetGame(); running = true; last = performance.now();
   clearInterval(timerId); timerId = setInterval(tick, 200);
   $("ovStart").classList.remove("show"); $("ovEnd").classList.remove("show");
@@ -444,10 +585,11 @@ function finish(reason) {
   const c = counts();
   $("ans").disabled = true;
   render();
+  const rt = c.ok / N;
   const msgs = c.ok === N ? "Muhteşem! Passafenola şampiyonusun! 🏆"
-    : c.ok >= 17 ? "Harika bir performans! 🌟"
-    : c.ok >= 12 ? "Çok iyi gidiyorsun, biraz daha tekrarla! 👏"
-    : c.ok >= 7 ? "Fena değil! Konuları tekrar edip yeniden dene. 💪"
+    : rt >= 0.8 ? "Harika bir performans! 🌟"
+    : rt >= 0.55 ? "Çok iyi gidiyorsun, biraz daha tekrarla! 👏"
+    : rt >= 0.33 ? "Fena değil! Konuları tekrar edip yeniden dene. 💪"
     : "Başlangıç için güzel! Konu tekrarı yapıp tekrar dene. 📚";
   $("endTitle").textContent = reason === "time" ? "⏰ Süre doldu!" : "🎉 Oyun bitti!";
   $("endScore").textContent = c.ok + " / " + N;
@@ -460,11 +602,11 @@ function finish(reason) {
       " — " + esc(it.q) + "</small><small>💡 " + esc(it.note) + "</small></div></div>";
   }).join("");
   try {
-    const key = "passafenola_best_" + limit, prev = parseInt(localStorage.getItem(key) || "-1", 10);
+    const key = "passafenola_best_" + (unitKey === "karma" ? "" : unitKey + "_") + limit, prev = parseInt(localStorage.getItem(key) || "-1", 10);
     if (c.ok > prev) localStorage.setItem(key, String(c.ok));
   } catch (e) {}
   sfx.end();
-  if (c.ok >= 15) confetti();
+  if (rt >= 0.7) confetti();
   setTimeout(() => $("ovEnd").classList.add("show"), 600);
 }
 
@@ -482,9 +624,9 @@ function confetti() {
 
 function showBest() {
   try {
-    const sel = document.querySelector("input[name=t]:checked").value;
-    const b = localStorage.getItem("passafenola_best_" + sel);
-    $("best").textContent = b !== null ? "Bu tarayıcıdaki en iyi sonucun: " + b + " / " + N : "";
+    const sel = document.querySelector("input[name=t]:checked").value, uk = document.querySelector("input[name=u]:checked").value;
+    const b = localStorage.getItem("passafenola_best_" + (uk === "karma" ? "" : uk + "_") + sel);
+    $("best").textContent = b !== null ? "Bu tarayıcıdaki en iyi sonucun: " + b + " / " + SETS[uk].length : "";
   } catch (e) { $("best").textContent = ""; }
 }
 
@@ -509,6 +651,7 @@ $("bRestart").onclick = () => {
   $("ovEnd").classList.remove("show"); $("ovStart").classList.add("show"); showBest();
 };
 document.querySelectorAll("input[name=t]").forEach(r => r.addEventListener("change", showBest));
+document.querySelectorAll("input[name=u]").forEach(r => r.addEventListener("change", () => { setUnit(r.value); resetGame(); render(); showQuestion(); showBest(); }));
 
 // ilk durum
 limit = 480; resetGame(); $("ans").disabled = true; $("panel").classList.add("blur"); showQuestion(); showBest();
