@@ -489,7 +489,7 @@ function shoot() {
   let outcome;
   if (Math.abs(x) > 1) outcome = "out";
   else outcome = colOf(x) === col ? "save" : "goal";
-  if (G.freezeKeeper && Math.abs(x) <= 1) outcome = "goal";
+  if ((G.freezeKeeper || G.specialShot) && Math.abs(x) <= 1) outcome = "goal";
   G.shot = { start: now, x, h, col, outcome, shooter: G.shooter, done: false, special: G.specialShot, frozen: G.freezeKeeper };
   G.phase = "shot"; $("shoot").classList.remove("show"); $("specialShot").classList.remove("show"); $("freezeKeeper").classList.remove("show"); $("hint").textContent = "";
   sfx.kick();
@@ -795,9 +795,9 @@ $("bRestart").onclick = () => {
   $("q").textContent = "";
 };
 $("shoot").onclick = shoot;
+cv.addEventListener("pointerdown", () => { if (G.phase === "aim") shoot(); });
 $("specialShot").onclick = () => { if (G.phase !== "aim") return; G.specialShot = !G.specialShot; $("specialShot").classList.toggle("selected", G.specialShot); $("specialShot").textContent = G.specialShot ? "🔥 ALEV ŞUTU SEÇİLDİ" : "🔥 ÖZEL ALEV ŞUTU"; };
 $("freezeKeeper").onclick = () => { if (G.phase !== "aim") return; G.freezeKeeper = !G.freezeKeeper; $("freezeKeeper").classList.toggle("selected", G.freezeKeeper); $("freezeKeeper").textContent = G.freezeKeeper ? "🧊 KALECİ DONDURULDU" : "🧊 KALECİYİ DONDUR"; };
-cv.addEventListener("pointerdown", () => { if (G.phase === "aim") shoot(); });
 $("specialShot").onclick = () => { if (G.phase !== "aim") return; G.specialShot = !G.specialShot; $("specialShot").classList.toggle("selected", G.specialShot); $("specialShot").textContent = G.specialShot ? "🔥 ALEV ŞUTU SEÇİLDİ" : "🔥 ÖZEL ALEV ŞUTU"; };
 $("freezeKeeper").onclick = () => { if (G.phase !== "aim") return; G.freezeKeeper = !G.freezeKeeper; $("freezeKeeper").classList.toggle("selected", G.freezeKeeper); $("freezeKeeper").textContent = G.freezeKeeper ? "🧊 KALECİ DONDURULDU" : "🧊 KALECİYİ DONDUR"; };
 const soundButton = document.getElementById("bSound");
