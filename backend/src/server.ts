@@ -3,16 +3,20 @@ import { prisma } from "./config/db";
 
 const app = createApp();
 
-const allowedOrigin =
-  process.env.FRONTEND_URL ?? "https://fen-platformu1-lrho.vercel.app";
+const allowedOrigins = new Set([
+  process.env.FRONTEND_URL,
+  "https://fenvebilimkulubu.com",
+  "https://www.fenvebilimkulubu.com",
+  "https://fen-platformu1-lrho.vercel.app",
+].filter((origin): origin is string => Boolean(origin)));
 
 // Frontend kayıt/giriş istekleri için CORS ayarları.
 // credentials: true kullanıldığı için Access-Control-Allow-Origin '*' olamaz.
 app.use((req, res, next) => {
   const requestOrigin = req.headers.origin;
 
-  if (requestOrigin === allowedOrigin) {
-    res.setHeader("Access-Control-Allow-Origin", allowedOrigin);
+  if (requestOrigin && allowedOrigins.has(requestOrigin)) {
+    res.setHeader("Access-Control-Allow-Origin", requestOrigin);
   }
 
   res.setHeader("Vary", "Origin");
