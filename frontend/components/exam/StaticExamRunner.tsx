@@ -159,7 +159,7 @@ export function StaticExamRunner({ exam }: { exam: StaticExam }) {
                 // eslint-disable-next-line @next/next/no-img-element
                 <img src={q.image + (q.image.includes("?") ? "&" : "?") + "v=20261102"} alt={q.imageAlt} loading="lazy" decoding="async" className="mx-auto my-4 h-auto w-full max-w-xl rounded-xl" />
               ) : null}
-              <p className="font-semibold">{q.stem}</p>
+              <p className="whitespace-pre-line font-semibold">{q.stem}</p>
               <div className="mt-3 space-y-2" role="radiogroup" aria-label={`Soru ${q.no} seçenekleri`}>
                 {q.options.map((opt, i) => {
                   const chosen = a === i;

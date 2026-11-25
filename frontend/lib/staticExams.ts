@@ -3,6 +3,7 @@ import examMevsimDna from "@/content/denemeler/8-sinif-yeni-nesil-mevsim-dna.jso
 import examLgs2 from "@/content/denemeler/8-sinif-lgs-denemesi-2.json";
 import examTumKazanımlar from "@/content/denemeler/8-sinif-1-2-unite-tum-kazanimlar-20.json";
 import examIlkUcUnite from "@/content/denemeler/8-sinif-ilk-3-unite-genel-deneme.json";
+import examKatiBasinci1 from "@/content/denemeler/konu-tarama-kati-basinci-1.json";
 import examFenBilimKulubu3 from "@/content/denemeler/8-sinif-fenvebilimkulubu-1-2-unite-deneme-3.json";
 
 export interface StaticExamQuestion {
@@ -28,12 +29,17 @@ export interface StaticExam {
   durationMin: number;
   units: string[];
   source: string;
+  /** "konu-tarama" ise Denemeler sayfasında "Konu Tarama Testleri" başlığı altında listelenir. */
+  category?: string;
+  /** Konu tarama testlerinde konu başlığı (ör. "Katı Basıncı"). */
+  topic?: string;
   questions: StaticExamQuestion[];
 }
 
 // Hazır yeni nesil denemeler
 export const STATIC_EXAMS: StaticExam[] = [
   examFenBilimKulubu3 as unknown as StaticExam,
+  examKatiBasinci1 as unknown as StaticExam,
   exam8 as unknown as StaticExam,
   examMevsimDna as unknown as StaticExam,
   examTumKazanımlar as unknown as StaticExam,
