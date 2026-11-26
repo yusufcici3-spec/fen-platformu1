@@ -89,7 +89,7 @@ export function RecentAdditions() {
                 <span className={`rounded-full px-3 py-1 text-xs font-semibold ${typeStyles[item.type] ?? "bg-slate-100 text-slate-700"}`}>
                   {item.type}
                 </span>
-                <span className="text-xs font-semibold text-emerald-600 dark:text-emerald-400">YENİ</span>
+                {Date.now() - new Date(item.createdAt).getTime() <= 7 * 24 * 60 * 60 * 1000 && (<span className="text-xs font-semibold text-emerald-600 dark:text-emerald-400">YENİ</span>)}
               </div>
               <h3 className="mt-4 font-display text-base font-semibold group-hover:text-beaker-dark dark:group-hover:text-beaker-light">
                 {item.title}
