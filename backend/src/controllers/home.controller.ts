@@ -33,23 +33,22 @@ const cleanQuestionPreview = (body: string) => body
   .slice(0, 76);
 
 export const getRecentTopics = catchAsync(async (_req: Request, res: Response) => {
-  // Eski/içe aktarılmış kayıtlar son eklenenler bölümünde görünmesin.
-  const recentSince = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
+  // İçeriklerin eklenme tarihi eski olsa da ana sayfada en yeni kayıtlar listelensin.
   const topicInclude = { unit: { include: { class: true } } } as const;
 
   const [topics, simulations, games, exams, questions, pdfs, videos, experiments, announcements] = await Promise.all([
-    prisma.topic.findMany({ where: { isPublished: true, createdAt: { gte: recentSince } }, orderBy: { createdAt: "desc" }, take: 12, include: topicInclude }),
-    prisma.simulation.findMany({ where: { isPublished: true, createdAt: { gte: recentSince } }, orderBy: { createdAt: "desc" }, take: 12 }),
-    prisma.game.findMany({ where: { isPublished: true, createdAt: { gte: recentSince } }, orderBy: { createdAt: "desc" }, take: 12 }),
-    prisma.exam.findMany({ where: { isPublished: true, createdAt: { gte: recentSince } }, orderBy: { createdAt: "desc" }, take: 12 }),
+    prisma.topic.findMany({ where: { isPublished: true }, orderBy: { createdAt: "desc" }, take: 12, include: topicInclude }),
+    prisma.simulation.findMany({ where: { isPublished: true }, orderBy: { createdAt: "desc" }, take: 12 }),
+    prisma.game.findMany({ where: { isPublished: true }, orderBy: { createdAt: "desc" }, take: 12 }),
+    prisma.exam.findMany({ where: { isPublished: true }, orderBy: { createdAt: "desc" }, take: 12 }),
     prisma.question.findMany({
-      where: { isActive: true, createdAt: { gte: recentSince }, topic: { is: { isPublished: true } } },
+      where: { isActive: true, topic: { is: { isPublished: true } } },
       orderBy: { createdAt: "desc" }, take: 12, include: { topic: { include: topicInclude } },
     }),
-    prisma.topicPDF.findMany({ where: { createdAt: { gte: recentSince }, topic: { is: { isPublished: true } } }, orderBy: { createdAt: "desc" }, take: 12, include: { topic: { include: topicInclude } } }),
-    prisma.topicVideo.findMany({ where: { createdAt: { gte: recentSince }, topic: { is: { isPublished: true } } }, orderBy: { createdAt: "desc" }, take: 12, include: { topic: { include: topicInclude } } }),
-    prisma.experiment.findMany({ where: { createdAt: { gte: recentSince }, topic: { is: { isPublished: true } } }, orderBy: { createdAt: "desc" }, take: 12, include: { topic: { include: topicInclude } } }),
-    prisma.announcement.findMany({ where: { classLevel: null, targetUserId: null, createdAt: { gte: recentSince } }, orderBy: { createdAt: "desc" }, take: 12 }),
+    prisma.topicPDF.findMany({ where: { topic: { is: { isPublished: true } } }, orderBy: { createdAt: "desc" }, take: 12, include: { topic: { include: topicInclude } } }),
+    prisma.topicVideo.findMany({ where: { topic: { is: { isPublished: true } } }, orderBy: { createdAt: "desc" }, take: 12, include: { topic: { include: topicInclude } } }),
+    prisma.experiment.findMany({ where: { topic: { is: { isPublished: true } } }, orderBy: { createdAt: "desc" }, take: 12, include: { topic: { include: topicInclude } } }),
+    prisma.announcement.findMany({ where: { classLevel: null, targetUserId: null }, orderBy: { createdAt: "desc" }, take: 12 }),
   ]);
 
   const topicHref = (topic: { slug: string; unit: { slug: string; class: { level: number } } }) =>
@@ -77,4 +76,29 @@ export const getRecentTopics = catchAsync(async (_req: Request, res: Response) =
 
   items.sort((a, b) => b.createdAt.getTime() - a.createdAt.getTime());
   return sendSuccess(res, items.slice(0, 9), "Son eklenen içerikler getirildi.");
+});
+
+/** Öğrencilerin en çok ilerleme kaydı oluşturduğu yayınlanmış konuları döner. */
+export const getPopularTopics = catchAsync(async (_req: Request, res: Response) => {
+  const topics = await prisma.topic.findMany({
+    where: { isPublished: true },
+    include: {
+      unit: { include: { class: true } },
+      _count: { select: { progress: true } },
+    },
+    take: 100,
+  });
+
+  const popular = topics
+    .map((topic) => ({
+      id: topic.id,
+      title: topic.title,
+      href: `/sinif/${topic.unit.class.level}/${topic.unit.slug}/${topic.slug}`,
+      classLevel: topic.unit.class.level,
+      activityCount: topic._count.progress,
+    }))
+    .sort((a, b) => b.activityCount - a.activityCount)
+    .slice(0, 6);
+
+  return sendSuccess(res, popular, "Popüler konular getirildi.");
 });
