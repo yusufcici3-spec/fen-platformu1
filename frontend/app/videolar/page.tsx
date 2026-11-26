@@ -122,6 +122,15 @@ const videos = [
     poster: "/videolar/8-sinif-5-unite-basit-makineler.jpg",
     link: { href: "/sinif/8/basit-makineler", label: "Basit Makineler konusuna git" },
   },
+  {
+    id: "8-sinif-6-unite",
+    grade: "8. SINIF · 6. ÜNİTE",
+    title: "Enerji Dönüşümleri ve Çevre Bilimi",
+    description: "8. sınıf 6. ünite: besin zinciri ve enerji akışı, ekoloji piramidi, fotosentez ve hızını etkileyen etkenler, oksijenli ve oksijensiz solunum, su-karbon-azot döngüleri, sera etkisi, küresel iklim değişikliği, ekolojik ayak izi ve geri dönüşüm; kısa soru turu.",
+    src: "/videolar/8-sinif-6-unite-enerji-donusumleri-ve-cevre-bilimi.mp4",
+    poster: "/videolar/8-sinif-6-unite-enerji-donusumleri-ve-cevre-bilimi.jpg",
+    link: { href: "/sinif/8/enerji-donusumleri-ve-cevre-bilimi", label: "Enerji Dönüşümleri konusuna git" },
+  },
 ];
 
 export default function VideosPage() {
