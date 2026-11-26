@@ -108,3 +108,13 @@ export function RecentAdditions() {
     </section>
   );
 }
+
+
+// Shared empty-state component used by the homepage sections.
+export function EmptyState({ message }: { message: string }) {
+  return (
+    <div className="mt-8 rounded-card border border-dashed border-lab-paperLine bg-white/60 p-10 text-center dark:border-white/10 dark:bg-white/5">
+      <p className="text-sm text-lab-inkMuted dark:text-lab-paper/60">{message}</p>
+    </div>
+  );
+}
