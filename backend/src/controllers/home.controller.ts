@@ -39,16 +39,16 @@ export const getRecentTopics = catchAsync(async (_req: Request, res: Response) =
 
   const [topics, simulations, games, exams, questions, pdfs, videos, experiments, announcements] = await Promise.all([
     prisma.topic.findMany({ where: { isPublished: true, createdAt: { gte: recentSince } }, orderBy: { createdAt: "desc" }, take: 12, include: topicInclude }),
-    prisma.simulation.findMany({ where: { isPublished: true }, orderBy: { createdAt: "desc" }, take: 12 }),
-    prisma.game.findMany({ where: { isPublished: true }, orderBy: { createdAt: "desc" }, take: 12 }),
-    prisma.exam.findMany({ where: { isPublished: true }, orderBy: { createdAt: "desc" }, take: 12 }),
+    prisma.simulation.findMany({ where: { isPublished: true, createdAt: { gte: recentSince } }, orderBy: { createdAt: "desc" }, take: 12 }),
+    prisma.game.findMany({ where: { isPublished: true, createdAt: { gte: recentSince } }, orderBy: { createdAt: "desc" }, take: 12 }),
+    prisma.exam.findMany({ where: { isPublished: true, createdAt: { gte: recentSince } }, orderBy: { createdAt: "desc" }, take: 12 }),
     prisma.question.findMany({
       where: { isActive: true, createdAt: { gte: recentSince }, topic: { is: { isPublished: true } } },
       orderBy: { createdAt: "desc" }, take: 12, include: { topic: { include: topicInclude } },
     }),
     prisma.topicPDF.findMany({ where: { createdAt: { gte: recentSince }, topic: { is: { isPublished: true } } }, orderBy: { createdAt: "desc" }, take: 12, include: { topic: { include: topicInclude } } }),
-    prisma.topicVideo.findMany({ where: { topic: { is: { isPublished: true } } }, orderBy: { createdAt: "desc" }, take: 12, include: { topic: { include: topicInclude } } }),
-    prisma.experiment.findMany({ where: { topic: { is: { isPublished: true } } }, orderBy: { createdAt: "desc" }, take: 12, include: { topic: { include: topicInclude } } }),
+    prisma.topicVideo.findMany({ where: { createdAt: { gte: recentSince }, topic: { is: { isPublished: true } } }, orderBy: { createdAt: "desc" }, take: 12, include: { topic: { include: topicInclude } } }),
+    prisma.experiment.findMany({ where: { createdAt: { gte: recentSince }, topic: { is: { isPublished: true } } }, orderBy: { createdAt: "desc" }, take: 12, include: { topic: { include: topicInclude } } }),
     prisma.announcement.findMany({ where: { classLevel: null, targetUserId: null, createdAt: { gte: recentSince } }, orderBy: { createdAt: "desc" }, take: 12 }),
   ]);
 
