@@ -129,7 +129,7 @@ const videos = [
     description: "8. sınıf 6. ünite: besin zinciri ve enerji akışı, ekoloji piramidi, fotosentez ve hızını etkileyen etkenler, oksijenli ve oksijensiz solunum, su-karbon-azot döngüleri, sera etkisi, küresel iklim değişikliği, ekolojik ayak izi ve geri dönüşüm; kısa soru turu.",
     src: "/videolar/8-sinif-6-unite-enerji-donusumleri-ve-cevre-bilimi.mp4",
     poster: "/videolar/8-sinif-6-unite-enerji-donusumleri-ve-cevre-bilimi.jpg",
-    link: { href: "/sinif/8/enerji-donusumleri-ve-cevre-bilimi", label: "Enerji Dönüşümleri konusuna git" },
+    link: { href: "/sinif/8/besin-zinciri-ve-enerji-akisi", label: "Enerji Dönüşümleri konusuna git" },
   },
 ];
 
