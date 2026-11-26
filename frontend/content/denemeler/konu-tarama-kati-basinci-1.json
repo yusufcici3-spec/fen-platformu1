@@ -133,10 +133,10 @@
         "II > III > IV > I",
         "III > II > I > IV",
         "I = IV > III > II",
-        "II = IV > I > III"
+        "II > IV > I = III"
       ],
       "answer": 3,
-      "explanation": "Bir bloğun ağırlığına W diyelim. I: 2W/12 = W/6, II: 2W/(4+4) = W/4, III: 2W/12 = W/6, IV: 3W/12 = W/4. En büyük basınç II ve IV'tedir (W/4 ile eşit). I ve III'ün basıncı ise W/6'dır. Seçeneklerde II = IV olan tek sıralama D'dir; ancak bu seçenekte I ile III'ün de eşit olması gerekir."
+      "explanation": "Bir bloğun ağırlığına W diyelim. I: 2W/12 = W/6, II: 2W/(4+4) = W/4, III: 2W/12 = W/6, IV: 3W/12 = W/4. En büyük basınç II ve IV'tedir (W/4 ile eşit). I ve III'ün basıncı ise W/6'dır. Seçeneklerde I = III eşitliğini içeren tek sıralama D'dir."
     },
     {
       "no": 8,
