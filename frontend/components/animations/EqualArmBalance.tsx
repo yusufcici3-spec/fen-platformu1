@@ -12,7 +12,8 @@ export default function EqualArmBalance() {
   const leftTotal = useMemo(() => left.reduce((a, b) => a + b, 0), [left]);
   const rightTotal = useMemo(() => right.reduce((a, b) => a + b, 0), [right]);
   const difference = leftTotal - rightTotal;
-  const angle = Math.max(-17, Math.min(17, difference * 0.12));
+  const angle = Math.max(-17, Math.min(17, -difference * 0.12));
+  const panDrop = Math.max(-34, Math.min(34, difference * 0.65));
 
   function add(side: Side, mass: number) {
     const setter = side === "left" ? setLeft : setRight;
@@ -58,11 +59,11 @@ export default function EqualArmBalance() {
             <line x1="82" y1="88" x2="418" y2="88" stroke="#c88732" strokeWidth="11" strokeLinecap="round"/>
             <path d="M110 94 V183 M390 94 V183" stroke="#64748b" strokeWidth="3" fill="none"/>
           </g>
-          <g className="pan" style={{ transform: `translateY(${difference > 0 ? 0 : difference < 0 ? 0 : 0}px) rotate(${-angle}deg)` }}>
+          <g className="pan" style={{ transform: `translateY(${panDrop}px)` }}>
             <path d="M58 183 Q110 220 162 183 Z" fill="#dbeafe" stroke="#3978aa" strokeWidth="3"/>
             {renderWeights(left, "left")}
           </g>
-          <g className="pan" style={{ transform: `rotate(${-angle}deg)` }}>
+          <g className="pan" style={{ transform: `translateY(${-panDrop}px)` }}>
             <path d="M338 183 Q390 220 442 183 Z" fill="#dbeafe" stroke="#3978aa" strokeWidth="3"/>
             {renderWeights(right, "right")}
           </g>
