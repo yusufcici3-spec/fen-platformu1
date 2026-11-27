@@ -6,7 +6,15 @@ const nextConfig = {
       { protocol: "http", hostname: "localhost" },
     ],
   },
-  async headers( ) {
+  async rewrites() {
+    return [
+      {
+        source: "/api/:path*",
+        destination: "https://fen-platformu1-backend.vercel.app/api/:path*",
+      },
+    ];
+  },
+  async headers() {
     return [
       {
         source: "/:path*",
