@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { SectionHeading } from "./ClassesSection";
+import { SON_EKLENENLER } from "@/lib/sonEklenenler";
 
 type RecentItem = {
   id: string;
@@ -36,7 +37,7 @@ function formatDate(value: string) {
 }
 
 export function RecentAdditions() {
-  const [items, setItems] = useState<RecentItem[]>([]);
+  const [apiItems, setItems] = useState<RecentItem[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -60,6 +61,10 @@ export function RecentAdditions() {
     return () => { active = false; };
   }, []);
 
+  const items = [...SON_EKLENENLER, ...apiItems]
+    .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
+    .slice(0, 9);
+
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
       <SectionHeading eyebrow="Yeni" title="Son Eklenenler" />
@@ -67,7 +72,7 @@ export function RecentAdditions() {
         Platforma eklenen en yeni konu, soru, simülasyon, oyun ve materyaller.
       </p>
 
-      {loading ? (
+      {loading && items.length === 0 ? (
         <div className="mt-8 rounded-card border border-lab-paperLine p-8 text-center text-sm text-lab-inkMuted dark:border-white/10 dark:text-lab-paper/60">
           Yeni içerikler yükleniyor…
         </div>
