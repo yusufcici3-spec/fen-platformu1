@@ -29,6 +29,12 @@ export function Hero() {
             >
               Konulara Göz At
             </Link>
+            <Link
+              href="/denemeler"
+              className="rounded-full bg-amber-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-amber-500/20 transition hover:bg-amber-600"
+            >
+              LGS Deneme Çöz
+            </Link>
           </div>
         </div>
 
