@@ -1,5 +1,6 @@
 "use client";
 
+import { recordAnswers } from "@/lib/recordAnswers";
 import { useState } from "react";
 import Link from "next/link";
 
@@ -49,7 +50,7 @@ export default function ForceQuizPage() {
   const current = questions[index];
   const score = questions.reduce((sum, q, i) => sum + (answers[i] === q.answer ? 1 : 0), 0);
   const choose = (n: number) => { setChoice(n); setChecked(false); };
-  const check = () => { if (choice === null) return; setAnswers(a => ({...a, [index]: choice})); setChecked(true); };
+  const check = () => { if (choice === null) return; setAnswers(a => ({...a, [index]: choice})); setChecked(true); recordAnswers("6. Sınıf: Kuvvetin Etkisinde Hareket", [{ question: `${current.scenario}\n${current.question}`, options: current.options, selected: choice, answer: current.answer }]); };
   const next = () => { if (index < questions.length - 1) { setIndex(i => i + 1); setChoice(answers[index + 1] ?? null); setChecked(false); } };
   const prev = () => { if (index > 0) { setIndex(i => i - 1); setChoice(answers[index - 1] ?? null); setChecked(false); } };
   const restart = () => { setIndex(0); setChoice(null); setChecked(false); setAnswers({}); };

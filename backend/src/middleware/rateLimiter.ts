@@ -7,6 +7,8 @@ export const generalLimiter = rateLimit({
   max: env.rateLimit.maxRequests,
   standardHeaders: true,
   legacyHeaders: false,
+  // Test cevapları soru başına istek attığı için kendi sınırını kullanır.
+  skip: (req) => req.path === "/analiz/test-sonucu",
   message: {
     success: false,
     message: "Çok fazla istek gönderdiniz. Lütfen daha sonra tekrar deneyin.",
@@ -23,4 +25,12 @@ export const authLimiter = rateLimit({
     success: false,
     message: "Çok fazla deneme yaptınız. 15 dakika sonra tekrar deneyin.",
   },
+});
+
+/** Test cevabı kaydı: aynı okul ağındaki öğrenciler tek IP paylaşabilir. */
+export const attemptLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 1500,
+  standardHeaders: true,
+  legacyHeaders: false,
 });

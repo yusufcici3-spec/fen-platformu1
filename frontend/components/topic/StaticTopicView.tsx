@@ -132,7 +132,7 @@ export async function StaticTopicView({ level: LEVEL, unitSlug: UNIT_SLUG, topic
           </p>
         </div>
 
-        <StaticQuiz questions={topic.quiz} />
+        <StaticQuiz questions={topic.quiz} title={topic.title} />
 
         <div className="grid gap-3 border-t border-lab-paperLine/70 pt-6 dark:border-white/10 sm:grid-cols-2">
           {previous ? (

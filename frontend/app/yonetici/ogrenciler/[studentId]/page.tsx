@@ -10,6 +10,11 @@ import { useAuth } from "@/context/AuthContext";
 import { apiFetch } from "@/lib/api";
 import { AnalysisReport, TeacherNote } from "@/types/analysis";
 
+interface QuestionDetail {
+  quizzes: { title: string; total: number; correct: number }[];
+  wrongQuestions: { source: string; question: string; selected: string | null; correct: string; date: string }[];
+}
+
 interface StudentReportResponse {
   student: { id: string; firstName: string; lastName: string; classLevel: number | null };
   report: AnalysisReport;
@@ -18,6 +23,8 @@ interface StudentReportResponse {
 export default function StudentReportPage({ params }: { params: { studentId: string } }) {
   const { accessToken } = useAuth();
   const [data, setData] = useState<StudentReportResponse | null>(null);
+  const [detail, setDetail] = useState<QuestionDetail | null>(null);
+  const [detailError, setDetailError] = useState(false);
   const [notes, setNotes] = useState<TeacherNote[]>([]);
   const [newNote, setNewNote] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -31,6 +38,9 @@ export default function StudentReportPage({ params }: { params: { studentId: str
   useEffect(() => {
     if (!accessToken) return;
     apiFetch<StudentReportResponse>(`/analiz/ogrenci/${params.studentId}`, { token: accessToken }).then((res) => setData(res.data ?? null));
+    apiFetch<QuestionDetail>(`/analiz/ogrenci/${params.studentId}/sorular`, { token: accessToken })
+      .then((res) => setDetail(res.data ?? null))
+      .catch(() => setDetailError(true));
     loadNotes();
   }, [accessToken, params.studentId, loadNotes]);
 
@@ -138,6 +148,48 @@ export default function StudentReportPage({ params }: { params: { studentId: str
           </ul>
         </Card>
       </div>
+
+      {detailError && <p className="mt-6 text-sm text-reaction-dark">Soru ayrıntıları yüklenemedi. Sayfayı yenileyin.</p>}
+
+      {detail && (
+        <>
+          <Card className="mt-6">
+            <h3 className="font-display text-sm font-semibold">📚 Hazır Testler (deneme, ünite ve konu soruları)</h3>
+            {detail.quizzes.length === 0 ? (
+              <p className="mt-2 text-sm text-lab-inkMuted">Henüz kayıtlı cevap yok.</p>
+            ) : (
+              <ul className="mt-3 space-y-1.5 text-sm">
+                {detail.quizzes.map((q) => (
+                  <li key={q.title} className="flex justify-between gap-3">
+                    <span>{q.title}</span>
+                    <span className="shrink-0 font-mono">{q.total} soru · {q.correct} doğru · {q.total - q.correct} yanlış</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </Card>
+
+          <Card className="mt-6">
+            <h3 className="font-display text-sm font-semibold text-reaction-dark">❌ Yanlış Yaptığı Sorular ({detail.wrongQuestions.length})</h3>
+            {detail.wrongQuestions.length === 0 ? (
+              <p className="mt-2 text-sm text-lab-inkMuted">Kayıtlı yanlış soru yok.</p>
+            ) : (
+              <div className="mt-3 space-y-2">
+                {detail.wrongQuestions.map((w, i) => (
+                  <details key={i} className="rounded-lg border border-lab-paperLine p-3 text-sm dark:border-white/10">
+                    <summary className="cursor-pointer font-medium">
+                      {w.source} · {new Date(w.date).toLocaleDateString("tr-TR")}
+                    </summary>
+                    <p className="mt-2 whitespace-pre-line">{w.question}</p>
+                    {w.selected !== null && <p className="mt-2 text-reaction-dark">Verdiği cevap: {w.selected}</p>}
+                    <p className="mt-1 text-leaf">Doğru cevap: {w.correct}</p>
+                  </details>
+                ))}
+              </div>
+            )}
+          </Card>
+        </>
+      )}
 
       <Card className="mt-6">
         <h3 className="font-display text-sm font-semibold">📝 Öğrenci Hakkında Not Ekle</h3>

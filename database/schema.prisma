@@ -89,6 +89,7 @@ model User {
   childLinks         ParentChild[]           @relation("ParentLinks")
   parentLinks        ParentChild[]           @relation("ChildLinks")
   assistantMessages  AssistantMessage[]
+  staticAttempts     StaticAttempt[]
 
   @@map("users")
 }
@@ -1090,4 +1091,21 @@ model AssistantMessage {
   createdAt DateTime @default(now()) @map("created_at")
 
   @@map("assistant_messages")
+}
+
+/// Kodla yönetilen hazır testlerde (deneme, ünite/konu soruları) verilen cevaplar.
+model StaticAttempt {
+  id           String   @id
+  userId       String   @map("user_id")
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  quizTitle    String   @map("quiz_title")
+  questionKey  String   @map("question_key")
+  questionText String   @map("question_text")
+  selectedText String   @map("selected_text")
+  correctText  String   @map("correct_text")
+  isCorrect    Boolean  @map("is_correct")
+  answeredAt   DateTime @default(now()) @map("answered_at")
+
+  @@unique([userId, questionKey])
+  @@map("static_attempts")
 }

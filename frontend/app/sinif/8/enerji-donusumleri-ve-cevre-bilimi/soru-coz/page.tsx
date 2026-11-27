@@ -1,5 +1,6 @@
 "use client";
 
+import { recordAnswers } from "@/lib/recordAnswers";
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { foodQuestions } from "./questions";
@@ -42,7 +43,7 @@ export default function FoodChainQuiz() {
   const selected=answers[index];
   const score=useMemo(()=>foodQuestions.reduce((n,item,i)=>n+(answers[i]===item.answer?1:0),0),[answers]);
   const choose=(n:number)=>{if(checked)return;setAnswers(p=>({...p,[index]:n}));};
-  const check=()=>{if(selected!==undefined)setChecked(true);};
+  const check=()=>{if(selected===undefined)return;setChecked(true);recordAnswers("8. Sınıf: Enerji Dönüşümleri ve Çevre Bilimi",[{question:q.scenario,options:q.options,selected,answer:q.answer}]);};
   const next=()=>{if(index===foodQuestions.length-1)setFinished(true);else{setIndex(i=>i+1);setChecked(false);}};
   const restart=()=>{setIndex(0);setAnswers({});setChecked(false);setFinished(false);};
   if(finished)return <main className="mx-auto max-w-3xl px-4 py-10"><div className="rounded-3xl border border-emerald-100 bg-white p-8 text-center shadow-sm"><div className="text-5xl">🏆</div><h1 className="mt-4 text-3xl font-black text-slate-900">Çalışma tamamlandı!</h1><p className="mt-3 text-lg text-slate-600">100 soruda <b className="text-emerald-700">{score} doğru</b>, {100-score} yanlış/boş yaptın.</p><div className="mx-auto mt-6 h-4 max-w-md overflow-hidden rounded-full bg-slate-100"><div className="h-full rounded-full bg-emerald-500" style={{width:(score/100*100)+'%'}}/></div><p className="mt-2 text-sm text-slate-500">Başarı oranı: %{Math.round(score/100*100)}</p><button onClick={restart} className="mt-7 rounded-full bg-sky-700 px-6 py-3 font-bold text-white">Yeniden çöz</button><div><Link className="mt-5 inline-block text-sm font-semibold text-sky-700" href="/sinif/8/enerji-donusumleri-ve-cevre-bilimi">← Ünite içeriğine dön</Link></div></div></main>;

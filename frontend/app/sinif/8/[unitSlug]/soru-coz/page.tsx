@@ -1,5 +1,6 @@
 "use client";
 
+import { recordAnswers } from "@/lib/recordAnswers";
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import mevsimler from "@/content/konu-sorulari/8-sinif-mevsimler-ve-iklim.json";
@@ -31,7 +32,7 @@ export default function Grade8UnitQuizPage({ params }: { params: { unitSlug: str
 
   if (!bank) return <main className="mx-auto max-w-3xl p-8"><h1 className="text-2xl font-bold">Soru bankası bulunamadı</h1><Link className="mt-4 inline-block text-beaker" href="/sinif/8">8. sınıf ünitelerine dön</Link></main>;
 
-  const choose = (choice: number) => { if (selected !== null) return; setAnswers((old) => old.map((v, i) => (i === index ? choice : v))); };
+  const choose = (choice: number) => { if (selected !== null) return; recordAnswers(`8. Sınıf: ${bank.title}`,[{question:`${current!.scenario}\n${current!.question}`,options:current!.options,selected:choice,answer:current!.answer}]); setAnswers((old) => old.map((v, i) => (i === index ? choice : v))); };
   const next = () => { if (index === total - 1) setFinished(true); else setIndex((v) => v + 1); };
   const restart = () => { setIndex(0); setAnswers(Array(total).fill(null)); setFinished(false); };
 

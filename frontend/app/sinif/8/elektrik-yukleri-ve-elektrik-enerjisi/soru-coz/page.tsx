@@ -1,5 +1,6 @@
 "use client";
 
+import { recordAnswers } from "@/lib/recordAnswers";
 import { useMemo, useState } from "react";
 import type { ReactNode } from "react";
 import Link from "next/link";
@@ -99,7 +100,7 @@ export default function ElectricQuiz(){
  <h2 className="mt-5 text-base font-bold leading-7 text-slate-900">{q.question}</h2>
  <div className="mt-4 grid gap-3">{q.options.map((option,i)=>{const isSelected=selected===i;const correct=checked&&i===q.answer;const wrong=checked&&isSelected&&i!==q.answer;return <button key={option} onClick={()=>choose(i)} className={"flex items-center gap-3 rounded-2xl border p-4 text-left transition "+(correct?"border-emerald-500 bg-emerald-50":wrong?"border-rose-400 bg-rose-50":isSelected?"border-sky-500 bg-sky-50":"border-slate-200 hover:border-sky-300 hover:bg-slate-50")}><span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-slate-100 text-sm font-black text-slate-600">{String.fromCharCode(65+i)}</span><span className="font-medium text-slate-800">{option}</span>{correct&&<span className="ml-auto text-emerald-700">✓</span>}{wrong&&<span className="ml-auto text-rose-600">✕</span>}</button>})}</div>
  {checked&&<div className={"mt-5 rounded-2xl p-4 "+(selected===q.answer?"bg-emerald-50 text-emerald-900":"bg-amber-50 text-amber-950")}><b>{selected===q.answer?"Doğru cevap!":"Doğru cevap: "+String.fromCharCode(65+q.answer)}</b><p className="mt-2 text-sm leading-6">{q.explanation}</p></div>}
- <div className="mt-6 flex flex-wrap justify-between gap-3"><button disabled={index===0} onClick={()=>{setIndex(i=>i-1);setChecked(answers[index-1]!==undefined)}} className="rounded-full border border-slate-300 px-5 py-2.5 text-sm font-bold text-slate-600 disabled:opacity-30">← Önceki</button>{!checked?<button onClick={()=>{if(selected!==undefined)setChecked(true)}} disabled={selected===undefined} className="rounded-full bg-sky-700 px-6 py-2.5 text-sm font-bold text-white disabled:opacity-40">Cevabı kontrol et</button>:<button onClick={next} className="rounded-full bg-emerald-700 px-6 py-2.5 text-sm font-bold text-white">{index===39?"Sonuçları gör":"Sonraki soru →"}</button>}</div>
+ <div className="mt-6 flex flex-wrap justify-between gap-3"><button disabled={index===0} onClick={()=>{setIndex(i=>i-1);setChecked(answers[index-1]!==undefined)}} className="rounded-full border border-slate-300 px-5 py-2.5 text-sm font-bold text-slate-600 disabled:opacity-30">← Önceki</button>{!checked?<button onClick={()=>{if(selected!==undefined){setChecked(true);recordAnswers("8. Sınıf: Elektrik Yükleri ve Elektrik Enerjisi",[{question:`${q.scenario}\n${q.question}`,options:q.options,selected,answer:q.answer}])}}} disabled={selected===undefined} className="rounded-full bg-sky-700 px-6 py-2.5 text-sm font-bold text-white disabled:opacity-40">Cevabı kontrol et</button>:<button onClick={next} className="rounded-full bg-emerald-700 px-6 py-2.5 text-sm font-bold text-white">{index===39?"Sonuçları gör":"Sonraki soru →"}</button>}</div>
  </section><p className="mt-5 text-center text-xs text-slate-400">Sorular özgün olarak hazırlanmıştır. Görseller eğitim amaçlı şematik modellerdir.</p>
  </main>;
 }
