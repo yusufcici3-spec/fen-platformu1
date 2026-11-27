@@ -1,76 +1,40 @@
-"use client";
-
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import { SectionHeading } from "./ClassesSection";
-import { EmptyState } from "./RecentAdditions";
 
-type PopularTopic = {
-  id: string;
-  title: string;
-  href: string;
-  classLevel: number;
-  activityCount: number;
-};
+// Ana sayfadaki seçilmiş konular. Değiştirmek için bu listeyi düzenle.
+const FEATURED_TOPICS = [
+  { classLevel: 5, title: "Bitki ve Hayvan Hücreleri", href: "/sinif/5/canlilarin-yapisina-yolculuk/bitki-ve-hayvan-hucreleri" },
+  { classLevel: 5, title: "Sürtünme Kuvveti", href: "/sinif/5/kuvveti-taniyalim/surtunme-kuvveti" },
+  { classLevel: 6, title: "Kuvvet ve Bileşke Kuvvet", href: "/sinif/6/kuvvetin-etkisinde-hareket/kuvvet-ve-bileske-kuvvet" },
+  { classLevel: 6, title: "Sinir Sistemi", href: "/sinif/6/canlilarda-sistemler/sinir-sistemi" },
+  { classLevel: 7, title: "Sindirim Sistemi", href: "/sinif/7/vucudumuzdaki-sistemler/sindirim-sistemi" },
+  { classLevel: 8, title: "Elektrik Yükleri ve Elektriklenme", href: "/sinif/8/elektrik-yukleri-ve-elektrik-enerjisi/elektrik-yukleri-ve-elektriklenme" },
+];
 
 export function PopularTopics() {
-  const [topics, setTopics] = useState<PopularTopic[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    let active = true;
-    const load = async () => {
-      try {
-        const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:5000/api"}/anasayfa/populer-konular`,
-          { cache: "no-store" }
-        );
-        if (!response.ok) throw new Error("Popüler konular alınamadı");
-        const json = await response.json();
-        if (active) setTopics(Array.isArray(json.data) ? json.data : []);
-      } catch {
-        if (active) setTopics([]);
-      } finally {
-        if (active) setLoading(false);
-      }
-    };
-    load();
-    return () => { active = false; };
-  }, []);
-
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-      <SectionHeading eyebrow="Trend" title="Popüler Konular" />
+      <SectionHeading eyebrow="Keşfet" title="Öne Çıkan Konular" />
 
-      {loading ? (
-        <div className="mt-8 rounded-card border border-lab-paperLine p-8 text-center text-sm text-lab-inkMuted dark:border-white/10 dark:text-lab-paper/60">
-          Popüler konular yükleniyor…
-        </div>
-      ) : topics.length === 0 ? (
-        <EmptyState message="Öğrenciler konular üzerinde çalıştıkça en çok ilgi görenler burada listelenecek." />
-      ) : (
-        <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {topics.map((topic, index) => (
-            <li key={topic.id}>
-              <Link
-                href={topic.href}
-                className="flex h-full items-center gap-4 rounded-card border border-lab-paperLine bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-md dark:border-white/10 dark:bg-lab-inkSoft"
-              >
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-beaker-light/15 font-display font-bold text-beaker-dark dark:text-beaker-light">
-                  {index + 1}
-                </span>
-                <span className="min-w-0 flex-1">
-                  <span className="block font-semibold text-lab-ink dark:text-lab-paper">{topic.title}</span>
-                  <span className="mt-1 block text-xs text-lab-inkMuted dark:text-lab-paper/60">
-                    {topic.classLevel}. Sınıf · {topic.activityCount} öğrenci etkinliği
-                  </span>
-                </span>
-                <span aria-hidden="true" className="text-beaker-dark dark:text-beaker-light">→</span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      )}
+      <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {FEATURED_TOPICS.map((topic, index) => (
+          <li key={topic.href}>
+            <Link
+              href={topic.href}
+              className="flex h-full items-center gap-4 rounded-card border border-lab-paperLine bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-md dark:border-white/10 dark:bg-lab-inkSoft"
+            >
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-beaker-light/15 font-display font-bold text-beaker-dark dark:text-beaker-light">
+                {index + 1}
+              </span>
+              <span className="min-w-0 flex-1">
+                <span className="block font-semibold text-lab-ink dark:text-lab-paper">{topic.title}</span>
+                <span className="mt-1 block text-xs text-lab-inkMuted dark:text-lab-paper/60">{topic.classLevel}. Sınıf</span>
+              </span>
+              <span aria-hidden="true" className="text-beaker-dark dark:text-beaker-light">→</span>
+            </Link>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }
