@@ -29,6 +29,16 @@ export const search = catchAsync(async (req: Request, res: Response) => {
           { title: { contains: query, mode: "insensitive" } },
           { summary: { contains: query, mode: "insensitive" } },
           { content: { contains: query, mode: "insensitive" } },
+          // Yeni nesil konu anlatımları ayrı içerik bloklarında tutulur.
+          { contents: { some: { OR: [
+            { title: { contains: query, mode: "insensitive" } },
+            { bodyHtml: { contains: query, mode: "insensitive" } },
+          ] } } },
+          // Konuya bağlı sözlük/kavram kayıtlarında da ara.
+          { glossaryTerms: { some: { OR: [
+            { term: { contains: query, mode: "insensitive" } },
+            { definition: { contains: query, mode: "insensitive" } },
+          ] } } },
         ],
       },
       include: { unit: { include: { class: true } } },
@@ -49,9 +59,10 @@ export const search = catchAsync(async (req: Request, res: Response) => {
     prisma.learningOutcome.findMany({
       where: {
         description: { contains: query, mode: "insensitive" },
-        ...(classLevel
-          ? { topic: { unit: { class: { level: Number(classLevel) } } } }
-          : {}),
+        topic: {
+          isPublished: true,
+          ...(classLevel ? { unit: { class: { level: Number(classLevel) } } } : {}),
+        },
       },
       include: { topic: { include: { unit: { include: { class: true } } } } },
       take: 10,
