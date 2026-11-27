@@ -7,7 +7,7 @@ import { env } from "../config/env";
 const accessCookieOptions = {
   httpOnly: true,
   secure: env.isProd,
-  sameSite: (env.isProd ? "none" : "lax") as "none" | "lax",
+  sameSite: "lax" as const,
   maxAge: 60 * 60 * 1000,
   path: "/",
 };
@@ -15,7 +15,7 @@ const accessCookieOptions = {
 const refreshCookieOptions = {
   httpOnly: true,
   secure: env.isProd,
-  sameSite: (env.isProd ? "none" : "lax") as "none" | "lax",
+  sameSite: "lax" as const,
   maxAge: 30 * 24 * 60 * 60 * 1000,
   path: "/api/auth",
 };
