@@ -1,4 +1,5 @@
 "use client";
+import { recordAnswers } from "@/lib/recordAnswers";
 import Link from "next/link";
 import { useState } from "react";
 import bank1 from "@/content/konu-sorulari/5-sinif-1-unite.json";
@@ -15,7 +16,7 @@ export default function UnitQuestionPage({unitSlug}:{unitSlug:string}){
  if(!bank)return <main className="p-10">Soru seti bulunamadı.</main>;
  const questions=bank.questions, q=questions[index], score=questions.reduce((n,item,i)=>n+(answers[i]===item.answer?1:0),0);
  const choose=(i:number)=>{if(!checked)setSelected(i)};
- const check=()=>{if(selected===null)return;setAnswers(a=>({...a,[index]:selected}));setChecked(true)};
+ const check=()=>{if(selected===null)return;setAnswers(a=>({...a,[index]:selected}));setChecked(true);recordAnswers(`5. Sınıf: ${bank.title}`,[{question:`${q.scenario}\n${q.stem}`,options:q.options,selected,answer:q.answer}])};
  const move=(n:number)=>{const next=index+n;setIndex(next);setSelected(answers[next]??null);setChecked(answers[next]!==undefined)};
  const restart=()=>{setIndex(0);setSelected(null);setChecked(false);setAnswers({});setDone(false)};
  return <main className="min-h-screen bg-lab-paper py-8 dark:bg-lab-ink"><div className="mx-auto max-w-3xl px-4 sm:px-6">

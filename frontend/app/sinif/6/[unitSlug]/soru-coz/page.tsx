@@ -1,5 +1,6 @@
 "use client";
 
+import { recordAnswers } from "@/lib/recordAnswers";
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import unit4 from "@/content/konu-sorulari/6-sinif-4-unite.json";
@@ -24,7 +25,7 @@ export default function Grade6UnitQuizPage({params}:{params:{unitSlug:string}}) 
  const selected=answers[index];
  const score=useMemo(()=>answers.reduce<number>((sum,a,i)=>sum+(a===bank?.questions[i]?.answer?1:0),0),[answers,bank]);
  if(!bank) return <main className="mx-auto max-w-3xl p-8"><h1 className="text-2xl font-bold">Soru bankası bulunamadı</h1><Link className="mt-4 inline-block text-beaker" href="/sinif/6">6. sınıf ünitelerine dön</Link></main>;
- const choose=(choice:number)=>{if(selected!==null)return;setAnswers(old=>old.map((v,i)=>i===index?choice:v));};
+ const choose=(choice:number)=>{if(selected!==null)return; recordAnswers(`6. Sınıf: ${bank.title}`,[{question:`${current!.scenario}\n${current!.question}`,options:current!.options,selected:choice,answer:current!.answer}]);setAnswers(old=>old.map((v,i)=>i===index?choice:v));};
  const next=()=>{if(index===bank.questions.length-1)setFinished(true);else setIndex(v=>v+1);};
  const restart=()=>{setIndex(0);setAnswers(Array(bank.questions.length).fill(null));setFinished(false);};
  return <main className="mx-auto max-w-4xl px-4 py-8 sm:px-6">

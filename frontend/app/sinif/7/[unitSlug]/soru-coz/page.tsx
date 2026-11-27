@@ -1,5 +1,6 @@
 // 7. sınıf 4-7. ünitelerin ortak, görsel destekli 30 soruluk test ekranı.
 "use client";
+import { recordAnswers } from "@/lib/recordAnswers";
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import unit4 from "@/content/konu-sorulari/7-sinif-4-unite.json";
@@ -24,7 +25,7 @@ export default function Grade7QuizPage({params}:{params:{unitSlug:string}}){
  const selected=answers[index];
  const score=useMemo(()=>answers.reduce<number>((n,a,i)=>n+(a===bank?.questions[i]?.answer?1:0),0),[answers,bank]);
  if(!bank)return <main className="mx-auto max-w-3xl p-8"><h1 className="text-2xl font-bold">Soru bankası bulunamadı</h1><Link href="/sinif/7">7. sınıf ünitelerine dön</Link></main>;
- const choose=(n:number)=>{if(selected!==null)return;setAnswers(old=>old.map((v,i)=>i===index?n:v));};
+ const choose=(n:number)=>{if(selected!==null)return; recordAnswers(`7. Sınıf: ${bank.title}`,[{question:`${current!.scenario}\n${current!.question}`,options:current!.options,selected:n,answer:current!.answer}]);setAnswers(old=>old.map((v,i)=>i===index?n:v));};
  const next=()=>{if(index===bank.questions.length-1)setFinished(true);else setIndex(v=>v+1);};
  const restart=()=>{setIndex(0);setAnswers(Array(bank.questions.length).fill(null));setFinished(false);};
  return <main className="mx-auto max-w-4xl px-4 py-8 sm:px-6">

@@ -1,5 +1,6 @@
 "use client";
 
+import { recordAnswers } from "@/lib/recordAnswers";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { StaticExam } from "@/lib/staticExams";
 
@@ -67,6 +68,12 @@ export function StaticExamRunner({ exam }: { exam: StaticExam }) {
   }
   function finish() {
     update({ ...state, finished: true });
+    recordAnswers(
+      `${exam.title}: ${exam.units.join(" · ")}`.slice(0, 200),
+      exam.questions
+        .filter((q) => state.answers[q.no] !== undefined)
+        .map((q) => ({ question: `${q.scenario}\n${q.stem}`, options: q.options, selected: state.answers[q.no], answer: q.answer }))
+    );
     setTimeout(() => topRef.current?.scrollIntoView({ behavior: "smooth" }), 50);
   }
   function reset() {

@@ -1,9 +1,10 @@
 "use client";
 
+import { recordAnswers } from "@/lib/recordAnswers";
 import { useState } from "react";
 import type { StaticQuizQuestion } from "@/lib/maarifContent";
 
-export function StaticQuiz({ questions }: { questions: StaticQuizQuestion[] }) {
+export function StaticQuiz({ questions, title }: { questions: StaticQuizQuestion[]; title: string }) {
   const [selected, setSelected] = useState<(number | null)[]>(() => questions.map(() => null));
   const [checked, setChecked] = useState(false);
 
@@ -82,7 +83,13 @@ export function StaticQuiz({ questions }: { questions: StaticQuizQuestion[] }) {
           <button
             type="button"
             disabled={!answered}
-            onClick={() => setChecked(true)}
+            onClick={() => {
+              setChecked(true);
+              recordAnswers(
+                `Konu testi: ${title}`.slice(0, 200),
+                questions.map((q, i) => ({ question: q.body, options: q.options, selected: selected[i]!, answer: q.answer }))
+              );
+            }}
             className="rounded-full bg-beaker px-5 py-2.5 text-sm font-semibold text-white hover:bg-beaker-dark disabled:opacity-50"
           >
             Kontrol et
