@@ -1,6 +1,7 @@
 "use client";
 
 import { createContext, useContext, useEffect, useState, ReactNode } from "react";
+import { apiFetch } from "@/lib/api";
 
 export type UserRole = "STUDENT" | "TEACHER" | "ADMIN" | "PARENT";
 
@@ -24,7 +25,6 @@ interface AuthContextValue {
 }
 
 const AuthContext = createContext<AuthContextValue | undefined>(undefined);
-
 const STORAGE_KEY = "fen-platformu-oturum";
 
 export function AuthProvider({ children }: { children: ReactNode }) {
@@ -33,17 +33,43 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    let active = true;
     const raw = window.localStorage.getItem(STORAGE_KEY);
     if (raw) {
       try {
         const parsed = JSON.parse(raw);
-        setUser(parsed.user);
-        setAccessToken(parsed.accessToken);
+        setUser(parsed.user ?? null);
+        setAccessToken(parsed.accessToken ?? null);
       } catch {
         window.localStorage.removeItem(STORAGE_KEY);
       }
     }
-    setIsLoading(false);
+
+    const handleTokenRefresh = (event: Event) => {
+      const nextToken = (event as CustomEvent<{ accessToken: string }>).detail?.accessToken;
+      if (nextToken) setAccessToken(nextToken);
+    };
+    window.addEventListener("fen-auth-token-refreshed", handleTokenRefresh);
+
+    // Sayfa yeniden açıldığında oturum çerezinden yeni access token al.
+    apiFetch<{ accessToken: string; user: AuthUser }>("/auth/yenile", { method: "POST" })
+      .then((response) => {
+        if (!active || !response.data) return;
+        setUser(response.data.user);
+        setAccessToken(response.data.accessToken);
+        window.localStorage.setItem(STORAGE_KEY, JSON.stringify(response.data));
+      })
+      .catch(() => {
+        // Refresh cookie yoksa mevcut access token süresi dolana kadar kullanılabilir.
+      })
+      .finally(() => {
+        if (active) setIsLoading(false);
+      });
+
+    return () => {
+      active = false;
+      window.removeEventListener("fen-auth-token-refreshed", handleTokenRefresh);
+    };
   }, []);
 
   function login(nextUser: AuthUser, nextToken: string) {
@@ -53,6 +79,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }
 
   function logout() {
+    // Sunucudaki HttpOnly oturum çerezlerini de temizle.
+    void apiFetch("/auth/cikis", { method: "POST" }).catch(() => undefined);
     setUser(null);
     setAccessToken(null);
     window.localStorage.removeItem(STORAGE_KEY);
