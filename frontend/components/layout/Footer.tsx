@@ -14,6 +14,7 @@ const COLUMNS = [
     title: "Platform",
     links: [
       { href: "/denemeler", label: "Denemeler" },
+      { href: "/konu-tarama", label: "Konu Tarama Testleri" },
       { href: "/oyunlar", label: "Oyunlar" },
       { href: "/blog", label: "Blog" },
       { href: "/hakkimizda", label: "Hakkımızda" },

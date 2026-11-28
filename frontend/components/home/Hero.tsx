@@ -30,6 +30,12 @@ export function Hero() {
               Konulara Göz At
             </Link>
             <Link
+              href="/fasikuller"
+              className="rounded-full bg-reaction px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-reaction/20 transition hover:bg-reaction-dark"
+            >
+              Fasiküllere Git
+            </Link>
+            <Link
               href="/denemeler"
               className="rounded-full bg-amber-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-amber-500/20 transition hover:bg-amber-600"
             >

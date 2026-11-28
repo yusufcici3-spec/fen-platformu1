@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { StaticExamRunner } from "@/components/exam/StaticExamRunner";
 import { STATIC_EXAMS, getStaticExam } from "@/lib/staticExams";
@@ -15,6 +15,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
 export default function StaticExamPage({ params }: { params: { slug: string } }) {
   const exam = getStaticExam(params.slug);
   if (!exam) notFound();
+  if (exam.category === "konu-tarama") redirect(`/konu-tarama/${exam.slug}`);
   return (
     <>
       <PageHeader

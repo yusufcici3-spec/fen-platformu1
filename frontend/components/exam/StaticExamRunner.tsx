@@ -115,7 +115,7 @@ export function StaticExamRunner({ exam }: { exam: StaticExam }) {
             <li>Süre “Başla” düğmesine basınca başlar. Süre bitince deneme otomatik tamamlanır.</li>
           </ul>
           <button onClick={start} className="mt-6 rounded-full bg-beaker px-6 py-2.5 text-sm font-semibold text-white hover:bg-beaker-dark">
-            Denemeye Başla
+            {exam.category === "konu-tarama" ? "Teste Başla" : "Denemeye Başla"}
           </button>
         </div>
       </section>
