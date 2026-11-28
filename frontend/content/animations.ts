@@ -1,6 +1,7 @@
 // Animasyon listeleri: sınıf sayfaları ve site içi arama buradan okur.
 
 export const ANIMATIONS_5 = [
+  { title: "Sürtünme Kuvveti Laboratuvarı", href: "/animasyonlar/5/surtunme-kuvveti", icon: "🧲", description: "Zemin pürüzlülüğünü, ağırlığı ve itme kuvvetini değiştirerek sürtünmeyi keşfet.", category: "KUVVET" },
   { title: "Ay'ın Evreleri Simülatörü", href: "/animasyonlar/5/ay-evreleri", icon: "🌙", description: "Ay'ın evrelerini hareketli simülasyonla incele.", category: "GÖKYÜZÜ" },
   { title: "Ay Yüzeyini Keşfet", href: "/animasyonlar/5/ay-yuzeyi", icon: "🚀", description: "Astronotla Ay yüzeyini ve kraterleri keşfet.", category: "UZAY" },
   { title: "Dinamometre Simülatörü", href: "/animasyonlar/5/dinamometre", icon: "⚖️", description: "Kuvveti dinamometre ile ölçmeyi dene.", category: "KUVVET" },
