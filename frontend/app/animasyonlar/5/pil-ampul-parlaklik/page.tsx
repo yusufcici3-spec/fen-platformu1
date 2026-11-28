@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import type { CSSProperties } from "react";
 import { useMemo, useState } from "react";
 
 export default function PilAmpulLaboratuvari() {
@@ -90,7 +91,7 @@ function Control({title,value,min,max,onChange,emoji}:{title:string;value:number
     <div style={{fontSize:12,color:"#a9c8e5",marginTop:9}}>En az {min}, en çok {max}</div>
   </div>;
 }
-const buttonStyle=(background:string)=>({border:0,borderRadius:12,padding:"10px 18px",background,color:"#fff",fontSize:20,fontWeight:800,cursor:"pointer",minWidth:52,opacity:1});
-const infoStyle={background:"#ffffff10",border:"1px solid #ffffff20",borderRadius:18,padding:18};
-const h3Style={fontSize:18,margin:"8px 0"};
-const pStyle={color:"#d0e2f1",lineHeight:1.6,margin:0};
+const buttonStyle=(background:string): CSSProperties => ({border:0,borderRadius:12,padding:"10px 18px",background,color:"#fff",fontSize:20,fontWeight:800,cursor:"pointer",minWidth:52,opacity:1});
+const infoStyle: CSSProperties = {background:"#ffffff10",border:"1px solid #ffffff20",borderRadius:18,padding:18};
+const h3Style: CSSProperties = {fontSize:18,margin:"8px 0"};
+const pStyle: CSSProperties = {color:"#d0e2f1",lineHeight:1.6,margin:0};
