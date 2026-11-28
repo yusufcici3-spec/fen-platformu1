@@ -11,6 +11,7 @@ export type SonEklenen = {
 };
 
 export const SON_EKLENENLER: SonEklenen[] = [
+  { id: "fas-8-basinc", title: "Basınç Fasikülü", type: "PDF", label: "Fasikül", createdAt: "2026-11-28", href: "/fasikuller", classLevel: 8 },
   { id: "fas-8-dna", title: "DNA - Gen - Kromozom - Nükleotid Fasikülü", type: "PDF", label: "Fasikül", createdAt: "2026-11-26", href: "/fasikuller", classLevel: 8 },
   { id: "vid-8-6", title: "Enerji Dönüşümleri ve Çevre Bilimi Konu Anlatım Videosu", type: "Video", label: "Konu anlatımı", createdAt: "2026-11-26", href: "/videolar", classLevel: 8 },
   { id: "konu-6-3", title: "6. Sınıf 3. Ünite: Detaylı Görselli Konu Anlatımı", type: "Konu", label: "Üreme, büyüme ve denetleyici sistemler", createdAt: "2026-11-25", href: "/sinif/6", classLevel: 6 },
