@@ -1,5 +1,5 @@
 import Link from "next/link";
-import HtmlAnimationFrame from "@/components/animations/HtmlAnimationFrame/HtmlAnimationFrame";
+import CirculatorySystem from "@/components/animations/CirculatorySystem/CirculatorySystem";
 
 export const metadata = {
   title: "Dolaşım Sistemi Animasyonu | 7. Sınıf Fen Bilimleri",
@@ -19,7 +19,7 @@ export default function CirculatorySystemPage() {
         <h1 className="mt-2 font-display text-3xl font-bold">Dolaşım Sistemini Keşfet</h1>
         <p className="mt-3 max-w-3xl text-lab-inkMuted">Kan hücrelerinin kalp, akciğer ve vücut arasındaki yolculuğunu izle. Kalp odacıklarına ve damarlara dokunarak görevlerini öğren; küçük ve büyük kan dolaşımını ayrı ayrı incele.</p>
       </header>
-      <HtmlAnimationFrame src="/animasyonlar/dolasim-sistemi.html" title="Kontrol edilebilir dolaşım sistemi animasyonu" minHeight={780} />
+      <CirculatorySystem />
       <div className="mt-8 flex flex-wrap justify-between gap-4 text-sm font-semibold text-beaker">
         <Link href="/animasyonlar/7">← 7. sınıf animasyonlarına dön</Link>
         <Link href="/sinif/7/vucudumuzdaki-sistemler">Vücudumuzdaki Sistemler ünitesine git →</Link>
