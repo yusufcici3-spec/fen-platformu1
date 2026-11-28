@@ -12,12 +12,12 @@ export default function SurtunmeKuvvetiPage() {
   const [surface, setSurface] = useState("wood");
   const [showHint, setShowHint] = useState(false);
 
-  const surfaceInfo = {
+  const surfaceInfo = ({
     ice: { name: "Buz", emoji: "🧊", color: "#c8efff", accent: "#69bde8", base: 12 },
     tile: { name: "Fayans", emoji: "🧱", color: "#dbeafe", accent: "#8ba8c7", base: 35 },
     wood: { name: "Ahşap", emoji: "🪵", color: "#d8a46b", accent: "#9a6237", base: 55 },
     carpet: { name: "Halı", emoji: "🟫", color: "#b68b79", accent: "#754b43", base: 82 },
-  }[surface];
+  } as Record<string, { name: string; emoji: string; color: string; accent: string; base: number }>)[surface];
 
   const maxFriction = Math.round(weight * (roughness / 100) * 10);
   const moving = push > maxFriction;
@@ -113,11 +113,11 @@ export default function SurtunmeKuvvetiPage() {
                     <text x="60" y="147" textAnchor="middle" fill="white" fontSize="23">📦</text>
                     <text x="60" y="94" textAnchor="middle" fill="#1e40af" fontSize="11" fontWeight="bold">{weight} birim</text>
                   </g>
-                  {push>0&&<g><path d="M112 127 H{Math.min(245,112+push*1.1)}" stroke="#059669" strokeWidth="4" markerEnd="url(#pushArrow)" strokeLinecap="round"/><text x="180" y="115" textAnchor="middle" fill="#047857" fontSize="11" fontWeight="bold">İtme →</text></g>}
+                  {push>0&&<g><path d={`M112 127 H${Math.min(245,112+push*1.1)}`}  stroke="#059669" strokeWidth="4" markerEnd="url(#pushArrow)" strokeLinecap="round"/><text x="180" y="115" textAnchor="middle" fill="#047857" fontSize="11" fontWeight="bold">İtme →</text></g>}
                   <path d="M20 171 H340" stroke="#475569" strokeWidth="3"/>
                   <rect x="20" y="174" width="320" height="30" rx="3" fill={surfaceInfo.color}/>
                   {Array.from({length:33},(_,i)=><path key={i} d={`M${20+i*10} 178 l${roughness/18} ${-Math.max(1,roughness/12)}`} stroke={surfaceInfo.accent} strokeWidth="2" opacity={roughness/100+.15}/>)}
-                  <path d="M{Math.max(40,blockX+45)} 185 h-35" stroke="#ea580c" strokeWidth="3" markerEnd="url(#frictionArrow)"/>
+                  <path d={`M${Math.max(40,blockX+45)} 185 h-35`} stroke="#ea580c" strokeWidth="3" markerEnd="url(#frictionArrow)"/>
                   <text x="180" y="218" textAnchor="middle" fill="currentColor" fontSize="10" opacity=".7">Zeminin pürüzlülüğü: %{roughness}</text>
                 </svg>
                 <div className={`mt-2 rounded-2xl px-4 py-3 text-center text-sm font-extrabold ${moving?"bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300":"bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300"}`}>{moving?"🚀 Cisim hareket ediyor!":"🛑 Cisim henüz hareket etmiyor"}</div>
