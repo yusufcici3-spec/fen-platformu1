@@ -1,6 +1,7 @@
 // Animasyon listeleri: sınıf sayfaları ve site içi arama buradan okur.
 
 export const ANIMATIONS_5 = [
+  { title: "Pil ve Ampul Parlaklığı Laboratuvarı", href: "/animasyonlar/5/pil-ampul-parlaklik", icon: "💡", description: "Pil ve ampul sayılarını değiştirerek ampul parlaklığını gözlemle.", category: "ELEKTRİK DEVRELERİ" },
   { title: "Sürtünme Kuvveti Laboratuvarı", href: "/animasyonlar/5/surtunme-kuvveti", icon: "🧲", description: "Zemin pürüzlülüğünü, ağırlığı ve itme kuvvetini değiştirerek sürtünmeyi keşfet.", category: "KUVVET" },
   { title: "Ay'ın Evreleri Simülatörü", href: "/animasyonlar/5/ay-evreleri", icon: "🌙", description: "Ay'ın evrelerini hareketli simülasyonla incele.", category: "GÖKYÜZÜ" },
   { title: "Ay Yüzeyini Keşfet", href: "/animasyonlar/5/ay-yuzeyi", icon: "🚀", description: "Astronotla Ay yüzeyini ve kraterleri keşfet.", category: "UZAY" },
