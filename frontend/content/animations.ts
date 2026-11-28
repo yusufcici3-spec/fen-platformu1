@@ -1,0 +1,71 @@
+// Animasyon listeleri: sınıf sayfaları ve site içi arama buradan okur.
+
+export const ANIMATIONS_5 = [
+  { title: "Ay'ın Evreleri Simülatörü", href: "/animasyonlar/5/ay-evreleri", icon: "🌙", description: "Ay'ın evrelerini hareketli simülasyonla incele.", category: "GÖKYÜZÜ" },
+  { title: "Ay Yüzeyini Keşfet", href: "/animasyonlar/5/ay-yuzeyi", icon: "🚀", description: "Astronotla Ay yüzeyini ve kraterleri keşfet.", category: "UZAY" },
+  { title: "Dinamometre Simülatörü", href: "/animasyonlar/5/dinamometre", icon: "⚖️", description: "Kuvveti dinamometre ile ölçmeyi dene.", category: "KUVVET" },
+  { title: "Dinamometreni Ölçeklendir", href: "/animasyonlar/5/dinamometre-olcekle", icon: "📏", description: "Dinamometre ölçeğini oluştur ve ölçüm yap.", category: "KUVVET" },
+  { title: "Ağırlık ve Enlem", href: "/animasyonlar/5/agirlik-enlem", icon: "🌍", description: "Enlemi değiştirerek ağırlığın nasıl değiştiğini keşfet.", category: "KUVVET" },
+  { title: "Eşit Kollu Terazi Simülasyonu", href: "/animasyonlar/5/esit-kollu-terazi", icon: "⚖️", description: "Kefelere kütle ekle, terazinin dengesini gözlemle.", category: "KÜTLE" },
+  { title: "Bitki ve Hayvan Hücresi Laboratuvarı", href: "/animasyonlar/5/bitki-hayvan-hucresi", icon: "🧫", description: "Hücre türünü değiştir; organelleri seçerek görevlerini keşfet.", category: "CANLILAR" },
+  { title: "Mikroskop Masası", href: "/animasyonlar/5/mikroskop", icon: "🔬", description: "Mikroskop parçalarını ve örnek incelemeyi keşfet.", category: "CANLILAR" },
+  { title: "İskelet Sistemi Animasyonu", href: "/laboratuvar/destek-hareket", icon: "🦴", description: "Destek ve hareket sistemini incele.", category: "VÜCUDUMUZ" },
+  { title: "Fen Koşusu 5", href: "/animasyonlar/5/fen-kosusu5", icon: "🏃", description: "Fen sorularını çözerek parkuru tamamla.", category: "EĞİTİCİ OYUN" },
+  { title: "Fen Yarışı 5", href: "/animasyonlar/5/fen-yarisi5", icon: "🏎️", description: "Soruları yanıtla ve yarışta ilerle.", category: "EĞİTİCİ OYUN" },
+  { title: "MilyonerFen 5", href: "/animasyonlar/5/milyoner", icon: "🏆", description: "Fen bilgini çoktan seçmeli sorularla dene.", category: "EĞİTİCİ OYUN" },
+];
+
+export const ANIMATIONS_6 = [
+  { title: "Güneş Sistemi ve Tutulmalar", href: "/animasyonlar/6/gunes-sistemi", icon: "🪐", description: "Gezegenleri incele; Güneş ve Ay tutulmalarını keşfet.", category: "GÜNEŞ SİSTEMİ" },
+  { title: "Merkezi Sinir Sistemi", href: "/animasyonlar/6/merkezi-sinir-sistemi", icon: "🧠", description: "Beyin, beyincik, omurilik ve refleksleri etkileşimli incele.", category: "VÜCUDUMUZ" },
+  { title: "Sinir Sistemi ve Hormonlar", href: "/animasyonlar/6/sinir-sistemi-ve-hormonlar", icon: "🧠", description: "Sinir sistemi yapılarını ve iç salgı bezlerini seç; isimlerini bul ve mini testi çöz.", category: "VÜCUDUMUZ" },
+  { title: "Bileşke Kuvvet Simülatörü", href: "/animasyonlar/6/bileske-kuvvet", icon: "🧲", description: "Kuvvetlerin yönünü ve büyüklüğünü değiştir.", category: "KUVVET" },
+  { title: "Işığın Soğurulması Laboratuvarı", href: "/animasyonlar/6/isigin-sogurulmasi", icon: "💡", description: "Farklı renk ışıkları renkli zeminlere gönder; yansıyan ve soğurulan ışığı gözlemle.", category: "IŞIK VE RENKLER" },
+  { title: "Çukur ve Tümsek Ayna Laboratuvarı", href: "/animasyonlar/6/cukur-tumsek-aynalar", icon: "🪞", description: "Ayna türünü ve cisim uzaklığını değiştir; görüntünün yerini, yönünü ve boyutunu gözlemle.", category: "IŞIĞIN YANSIMASI" },
+  { title: "Sürat ve Hız Animasyonu", href: "/animasyonlar/6/surat-ve-hiz", icon: "🚗", description: "Aracı hareket ettir; alınan yol ve yer değiştirmeyi karşılaştır.", category: "HAREKET" },
+  { title: "İp Çekme Etkinliği", href: "/animasyonlar/6/ip-cekme", icon: "🪢", description: "Kuvvetlerin etkisini takım çalışması etkinliğiyle gözlemle.", category: "KUVVET" },
+  { title: "Çiçekli Bitkilerin Yaşam Döngüsü", href: "/animasyonlar/6/cicekli-bitkiler-yasam-dongusu", icon: "🌼", category: "BİTKİLER" },
+  { title: "Çiçeğin Kısımları ve Görevleri", href: "/animasyonlar/6/cicegin-kisimlari", icon: "🌺", description: "Çiçeğin bölümlerine dokunarak görevlerini öğren.", category: "BİTKİLER" },
+  { title: "Eşeysiz Üreme Çeşitleri", href: "/animasyonlar/6/esesiz-ureme", icon: "🧫", category: "ÜREME" },
+  { title: "Zigottan Bebeğe Gelişim", href: "/animasyonlar/6/zigottan-bebege", icon: "👶", description: "Döllenmeden doğuma kadar gelişim basamaklarını sırayla keşfet.", category: "ÜREME VE GELİŞME" },
+  { title: "İnsanlarda Üreme Organları", href: "/animasyonlar/6/insanlarda-ureme", icon: "🧬", description: "Erkek ve dişi üreme sistemlerini etkileşimli şemalarla incele.", category: "ÜREME VE GELİŞME" },
+  { title: "MilyonerFen 6", href: "/animasyonlar/6/milyoner", icon: "🏆", category: "EĞİTİCİ OYUN" },
+  { title: "Fen Futbolu 6", href: "/animasyonlar/6/fen-futbolu6", icon: "⚽", category: "EĞİTİCİ OYUN" },
+];
+
+export const ANIMATIONS_7 = [
+  { title: "Uzay Teknolojileri ve Yıldızların Yaşamı", href: "/animasyonlar/7/uzay-teknolojileri", icon: "🛰️", description: "Uzay araçlarını ve yıldızların yaşam aşamalarını keşfet.", category: "UZAY" },
+  { title: "Kuvvet ve Enerji", href: "/animasyonlar/7/kuvvet-enerji", icon: "💪", category: "KUVVET VE ENERJİ" },
+  { title: "Kinetik ve Potansiyel Enerji", href: "/animasyonlar/7/kinetik-potansiyel", icon: "⚡", category: "ENERJİ" },
+  { title: "Işığın Kırılması", href: "/animasyonlar/7/isigin-kirilmasi", icon: "🔦", description: "Hava, su ve cam arasında ışığın izlediği yolu deneyerek gözlemle.", category: "IŞIĞIN MADDE İLE ETKİLEŞİMİ" },
+  { title: "Kalın Kenarlı ve İnce Kenarlı Mercekler", href: "/animasyonlar/7/mercekler", icon: "🔍", description: "Mercek türünü ve cisim uzaklığını değiştir; ışınları ve görüntüyü keşfet.", category: "IŞIĞIN MADDE İLE ETKİLEŞİMİ" },
+  { title: "Atom Modellerinin Tarihsel Gelişimi", href: "/animasyonlar/7/atom-modelleri", icon: "⚛️", description: "Demokritos’tan modern atom teorisine modelleri yıllara göre incele.", category: "ATOMUN YAPISI" },
+  { title: "Atom, Molekül ve Bileşik Modelleme", href: "/animasyonlar/7/atom-molekul-bilesik", icon: "🧪", description: "Atomları birleştirerek model oluştur; atom, molekül ve bileşik ayrımını keşfet.", category: "SAF MADDELER" },
+  { title: "Sindirim Sistemi", href: "/animasyonlar/7/sindirim-sistemi", icon: "🥗", category: "VÜCUDUMUZ" },
+  { title: "Dolaşım Sistemi", href: "/animasyonlar/7/dolasim-sistemi", icon: "❤️", category: "VÜCUDUMUZ" },
+  { title: "Solunum Sistemi", href: "/animasyonlar/7/solunum-sistemi", icon: "🫁", category: "VÜCUDUMUZ" },
+  { title: "Boşaltım Sistemi", href: "/animasyonlar/7/bosaltim-sistemi", icon: "🫘", category: "VÜCUDUMUZ" },
+  { title: "Elektroskop Laboratuvarı", href: "/animasyonlar/7/elektroskop", icon: "⚡", description: "Yükleri yaklaştır, dokundur ve etki ile elektriklenme basamaklarını uygula.", category: "ELEKTRİKLENME" },
+  { title: "Passafenola 7", href: "/animasyonlar/7/passafenola7", icon: "🎯", category: "EĞİTİCİ OYUN" },
+  { title: "Fen Futbolu 7", href: "/animasyonlar/7/fen-futbolu", icon: "⚽", category: "EĞİTİCİ OYUN" },
+  { title: "MilyonerFen 7", href: "/animasyonlar/7/milyoner", icon: "🏆", category: "EĞİTİCİ OYUN" },
+];
+
+export const ANIMATIONS_8 = [
+  { title: "Mevsimler ve İklim Simülatörü", href: "/animasyonlar/8/mevsimler", icon: "🌎", description: "Güneş ışınlarının geliş açısını ve mevsimleri keşfet.", category: "MEVSİMLER VE İKLİM" },
+  { title: "Fotosentez Laboratuvarı", href: "/animasyonlar/8/fotosentez", icon: "🌿", description: "Işık, su ve karbondioksit miktarını değiştirerek fotosentezi gözlemle.", category: "ENERJİ DÖNÜŞÜMLERİ VE ÇEVRE BİLİMİ" },
+  { title: "Deniz ve Kara Meltemleri", href: "/animasyonlar/8/deniz-kara-meltemi", icon: "🌊", description: "Gündüz ve geceyi değiştir; sıcaklık, basınç ve rüzgâr yönü ilişkisini keşfet.", category: "MEVSİMLER VE İKLİM" },
+  { title: "Sıvı Basıncı Laboratuvarı", href: "/animasyonlar/8/sivi-basinci", icon: "💧", description: "Derinliği, yoğunluğu ve kabın şeklini değiştirerek basıncı gözlemle.", category: "BASINÇ" },
+  { title: "Açık Hava Basıncı Laboratuvarı", href: "/animasyonlar/8/acik-hava-basinci", icon: "🌬️", description: "Torricelli deneyinde rakımı, tüp eğimini ve sıvıyı değiştirerek açık hava basıncını gözlemle.", category: "BASINÇ" },
+  { title: "Katı Basıncı Simülatörü", href: "/animasyonlar/8/katı-basıncı", icon: "⚖️", description: "Ağırlık ve temas yüzey alanını değiştir.", category: "BASINÇ" },
+  { title: "Kaldıraç Laboratuvarı", href: "/animasyonlar/8/kaldiraclar", icon: "⚖️", description: "Üç kaldıraç türünde destek noktasını, kuvvet ve yük kollarını değiştir; kuvvet ve yol kazancını incele.", category: "BASİT MAKİNELER" },
+  { title: "Makara ve Palanga Laboratuvarı", href: "/animasyonlar/8/makaralar", icon: "⚙️", description: "Sabit, hareketli makara ve palanga düzeneklerinde yükü, kuvveti ve ip miktarını değiştirerek deney yap.", category: "BASİT MAKİNELER" },
+  { title: "Bezelyelerde Kalıtım", href: "/animasyonlar/8/kalitim", icon: "🌱", description: "Çaprazlamaları yap ve yavru özelliklerini incele.", category: "DNA VE GENETİK KOD" },
+  { title: "DNA Baz Eşleşmeleri", href: "/animasyonlar/8/dna-eslesmesi", icon: "🧬", description: "DNA zincirini tamamlayarak baz eşleşmelerini öğren.", category: "DNA VE GENETİK KOD" },
+  { title: "Asit-Baz Ayraç Laboratuvarı", href: "/animasyonlar/8/asit-baz-ayraclari", icon: "🧪", description: "Turnusol, mor lahana ve diğer ayıraçlarla maddeleri test et.", category: "MADDE VE ENDÜSTRİ" },
+  { title: "118 Elementli Periyodik Cetvel", href: "/animasyonlar/8/periyodik-cetvel", icon: "⚛️", description: "118 elementin tamamını incele; seçtiğin elementin özelliklerini keşfet.", category: "MADDE VE ENDÜSTRİ" },
+  { title: "Elektroskop Laboratuvarı", href: "/animasyonlar/8/elektroskop", icon: "⚡", description: "Yükleri yaklaştır, dokundur ve etki ile elektriklenme basamaklarını uygula.", category: "ELEKTRİKLENME" },
+  { title: "Elektriklenme ve Yük Geçişi Laboratuvarı", href: "/animasyonlar/8/elektriklenme", icon: "⚡", description: "İki cismi yaklaştır, dokundur veya sürt; elektron geçişini ve son yükleri gözlemle.", category: "ELEKTRİKLENME" },
+  { title: "Passafenola", href: "/animasyonlar/8/passafenola", icon: "🎯", description: "Fen sorularıyla kelime turunu tamamla.", category: "EĞİTİCİ OYUN" },
+  { title: "MilyonerFen 8", href: "/animasyonlar/8/milyoner", icon: "🏆", description: "Ünitelerini seç; her üniteden 30 soruluk havuzla bilgi yarışmasına katıl.", category: "EĞİTİCİ OYUN" },
+];

@@ -4,6 +4,7 @@ import { useState, FormEvent } from "react";
 import Link from "next/link";
 import { apiFetch } from "@/lib/api";
 import { SearchResult } from "@/types/curriculum";
+import type { SiteHit } from "@/lib/siteSearch";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { EmptyPanelState } from "@/components/ui/EmptyPanelState";
 
@@ -14,6 +15,7 @@ export default function SearchPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [searched, setSearched] = useState(false);
+  const [siteHits, setSiteHits] = useState<SiteHit[]>([]);
 
   async function handleSearch(e: FormEvent) {
     e.preventDefault();
@@ -25,20 +27,38 @@ export default function SearchPage() {
     setIsLoading(true);
     setSearched(true);
 
+    // Sitedeki dosyalarda tutulan içerikler (konu, animasyon, video, fasikül)
+    let local: SiteHit[] = [];
     try {
-      const params = new URLSearchParams({ q: query });
+      const { searchSite } = await import("@/lib/siteSearch");
+      local = searchSite(query, classLevel || undefined);
+    } catch {}
+    setSiteHits(local);
+
+    // Veritabanındaki içerikler
+    try {
+      const params = new URLSearchParams({ q: query.trim() });
       if (classLevel) params.set("classLevel", String(classLevel));
       const res = await apiFetch<SearchResult>(`/arama?${params.toString()}`);
       setResult(res.data ?? null);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Arama yapılamadı.");
       setResult(null);
+      // Sunucuya ulaşılamasa da sitedeki sonuçlar gösterilmeye devam eder.
+      if (!local.length) setError(err instanceof Error ? err.message : "Arama yapılamadı.");
     } finally {
       setIsLoading(false);
     }
   }
 
-  const totalResults = result ? result.topics.length + result.units.length + result.learningOutcomes.length : 0;
+  // Veritabanından zaten gelen konu ve üniteleri ikinci kez gösterme.
+  const shownHrefs = new Set([
+    ...(result?.topics.map((t) => `/sinif/${t.unit.class.level}/${t.unit.slug}/${t.slug}`) ?? []),
+    ...(result?.units.map((u) => `/sinif/${u.class.level}/${u.slug}`) ?? []),
+  ]);
+  const extraHits = siteHits.filter((h) => !shownHrefs.has(h.href));
+
+  const totalResults =
+    extraHits.length + (result ? result.topics.length + result.units.length + result.learningOutcomes.length : 0);
 
   return (
     <>
@@ -85,11 +105,31 @@ export default function SearchPage() {
               <EmptyPanelState title="Sonuç bulunamadı" description="Farklı bir anahtar kelime ile tekrar deneyebilirsin." />
             ) : (
               <div className="space-y-8">
-                {result!.topics.length > 0 && (
+                {extraHits.length > 0 && (
+                  <div>
+                    <h2 className="font-display text-lg font-semibold">🔎 Sitedeki İçerikler</h2>
+                    <div className="mt-3 space-y-2">
+                      {extraHits.map((h) => (
+                        <Link
+                          key={`${h.kind}-${h.href}-${h.title}`}
+                          href={h.href}
+                          className="block rounded-card border border-lab-paperLine bg-white p-4 transition hover:border-beaker dark:border-white/10 dark:bg-lab-inkSoft"
+                        >
+                          <span className="font-mono text-xs text-beaker-dark dark:text-beaker-light">
+                            {h.kind} · {h.label}
+                          </span>
+                          <p className="mt-1 font-semibold">{h.title}</p>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {result && result.topics.length > 0 && (
                   <div>
                     <h2 className="font-display text-lg font-semibold">📘 Konular</h2>
                     <div className="mt-3 space-y-2">
-                      {result!.topics.map((t) => (
+                      {result.topics.map((t) => (
                         <Link
                           key={t.id}
                           href={`/sinif/${t.unit.class.level}/${t.unit.slug}/${t.slug}`}
@@ -105,11 +145,11 @@ export default function SearchPage() {
                   </div>
                 )}
 
-                {result!.units.length > 0 && (
+                {result && result.units.length > 0 && (
                   <div>
                     <h2 className="font-display text-lg font-semibold">📗 Üniteler</h2>
                     <div className="mt-3 space-y-2">
-                      {result!.units.map((u) => (
+                      {result.units.map((u) => (
                         <Link
                           key={u.id}
                           href={`/sinif/${u.class.level}/${u.slug}`}
@@ -125,11 +165,11 @@ export default function SearchPage() {
                   </div>
                 )}
 
-                {result!.learningOutcomes.length > 0 && (
+                {result && result.learningOutcomes.length > 0 && (
                   <div>
                     <h2 className="font-display text-lg font-semibold">🎯 Kazanımlar</h2>
                     <div className="mt-3 space-y-2">
-                      {result!.learningOutcomes.map((o) => (
+                      {result.learningOutcomes.map((o) => (
                         <Link
                           key={o.id}
                           href={`/sinif/${o.topic.unit.class.level}/${o.topic.unit.slug}/${o.topic.slug}`}

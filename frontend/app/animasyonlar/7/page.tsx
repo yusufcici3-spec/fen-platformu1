@@ -1,24 +1,8 @@
 import AnimationDirectory from "@/components/animations/AnimationDirectory";
+import { ANIMATIONS_7 as items } from "@/content/animations";
 
 export const metadata = { title: "7. Sınıf Animasyonları | Fen Bilimleri" };
 
-const items = [
-  { title: "Uzay Teknolojileri ve Yıldızların Yaşamı", href: "/animasyonlar/7/uzay-teknolojileri", icon: "🛰️", description: "Uzay araçlarını ve yıldızların yaşam aşamalarını keşfet.", category: "UZAY" },
-  { title: "Kuvvet ve Enerji", href: "/animasyonlar/7/kuvvet-enerji", icon: "💪", category: "KUVVET VE ENERJİ" },
-  { title: "Kinetik ve Potansiyel Enerji", href: "/animasyonlar/7/kinetik-potansiyel", icon: "⚡", category: "ENERJİ" },
-  { title: "Işığın Kırılması", href: "/animasyonlar/7/isigin-kirilmasi", icon: "🔦", description: "Hava, su ve cam arasında ışığın izlediği yolu deneyerek gözlemle.", category: "IŞIĞIN MADDE İLE ETKİLEŞİMİ" },
-  { title: "Kalın Kenarlı ve İnce Kenarlı Mercekler", href: "/animasyonlar/7/mercekler", icon: "🔍", description: "Mercek türünü ve cisim uzaklığını değiştir; ışınları ve görüntüyü keşfet.", category: "IŞIĞIN MADDE İLE ETKİLEŞİMİ" },
-  { title: "Atom Modellerinin Tarihsel Gelişimi", href: "/animasyonlar/7/atom-modelleri", icon: "⚛️", description: "Demokritos’tan modern atom teorisine modelleri yıllara göre incele.", category: "ATOMUN YAPISI" },
-  { title: "Atom, Molekül ve Bileşik Modelleme", href: "/animasyonlar/7/atom-molekul-bilesik", icon: "🧪", description: "Atomları birleştirerek model oluştur; atom, molekül ve bileşik ayrımını keşfet.", category: "SAF MADDELER" },
-  { title: "Sindirim Sistemi", href: "/animasyonlar/7/sindirim-sistemi", icon: "🥗", category: "VÜCUDUMUZ" },
-  { title: "Dolaşım Sistemi", href: "/animasyonlar/7/dolasim-sistemi", icon: "❤️", category: "VÜCUDUMUZ" },
-  { title: "Solunum Sistemi", href: "/animasyonlar/7/solunum-sistemi", icon: "🫁", category: "VÜCUDUMUZ" },
-  { title: "Boşaltım Sistemi", href: "/animasyonlar/7/bosaltim-sistemi", icon: "🫘", category: "VÜCUDUMUZ" },
-  { title: "Elektroskop Laboratuvarı", href: "/animasyonlar/7/elektroskop", icon: "⚡", description: "Yükleri yaklaştır, dokundur ve etki ile elektriklenme basamaklarını uygula.", category: "ELEKTRİKLENME" },
-  { title: "Passafenola 7", href: "/animasyonlar/7/passafenola7", icon: "🎯", category: "EĞİTİCİ OYUN" },
-  { title: "Fen Futbolu 7", href: "/animasyonlar/7/fen-futbolu", icon: "⚽", category: "EĞİTİCİ OYUN" },
-  { title: "MilyonerFen 7", href: "/animasyonlar/7/milyoner", icon: "🏆", category: "EĞİTİCİ OYUN" },
-];
 
 export default function SeventhGradeAnimationsPage() {
   return <AnimationDirectory grade={7} items={items} />;
